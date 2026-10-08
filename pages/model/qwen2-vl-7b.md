@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                      score  implies  date        weight
-<a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>                                                      68.5%    44.3   2024-10-10   21% ▇▇▇
+<a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>                                                      68.5%    44.3   2024-10-10   22% ▇▇▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  5.4500 MM-MT-Bench score (1-10)    47.0   2024-10-10    9% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval</a>                                                 62.2%    46.5   2024-10-10    8% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified)</a>                                 27.9%    37.3   2024-10-10    8% ▇

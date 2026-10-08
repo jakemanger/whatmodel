@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                 test                            score  implies  date        weight
 <a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench  <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  18.0%    65.0   2025-11-18   27% ▇▇▇
                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  22.3%    62.5   2025-11-18   26% ▇▇▇
-<a name="open-asr"></a>Open ASR Leaderboard   <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.2%    56.6   2026-03-26   16% ▇▇
+<a name="open-asr"></a>Open ASR Leaderboard   <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.2%    56.5   2026-03-26   16% ▇▇
                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   9.7%    56.9   2026-03-26   16% ▇▇
 <a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench      <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   9.7%    59.9   2026-07-16   13% ▇▇
 prior                  pull toward the middle                   49.7                 2% ▇

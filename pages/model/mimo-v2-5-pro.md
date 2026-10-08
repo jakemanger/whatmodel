@@ -6,7 +6,7 @@
 
 Xiaomi · released 2026-04 · 1023B params (42B active) · mit
 
-**score 68.2** ±1.4 · #64 of 551 · from 3 benchmark results across 1 source
+**score 68.1** ±1.4 · #64 of 551 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                  score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1477.6    69.0   2026-10-01   36% ▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1477.6    69.0   2026-10-01   37% ▇▇▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.0752 IPS    66.0   2026-10-02   36% ▇▇▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                       1467.5    70.5   2026-10-02   26% ▇▇▇
 prior                   pull toward the middle                         50.0                 1% ▇
-                        weighted average                             = 68.2
+                        weighted average                             = 68.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -48,9 +48,9 @@ api (Novita AI) · $0.65/M blended · $0.522 in / $1.044 out per 1M tokens · [n
 
 <pre>
 download               size  score
-4-bit ud-q4_k_xl   ~614.3GB   68.2
-2-bit ud-q2_k_xl   ~307.4GB   68.2
-1-bit ud-iq1_m    ~153.95GB   68.2
+4-bit ud-q4_k_xl   ~614.3GB   68.1
+2-bit ud-q2_k_xl   ~307.4GB   68.1
+1-bit ud-iq1_m    ~153.95GB   68.1
 </pre>
 
 ```sh

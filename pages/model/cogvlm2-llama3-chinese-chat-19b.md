@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source    test                    score  implies  date        weight
 <a name="first-party-zai-cogvlm2-scores"></a>Zhipu AI  <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">OCRBench (lab)</a>          78.0%    44.8   2024-09-03   69% ▇▇▇▇▇▇▇▇
-          <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">TextVQA (lab)</a>           85.0%    78.0   2024-09-03   10% ▇
+          <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">TextVQA (lab)</a>           85.0%    78.1   2024-09-03   10% ▇
           <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">ChartQA (lab)</a>           74.7%    -5.6   2024-09-03    0% ▇
 prior     pull toward the middle           50.0                21% ▇▇▇
           weighted average               = 49.1

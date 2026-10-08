@@ -19,23 +19,23 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Multilingual LibriSpeech Engl…</a>   5.1%    59.2   2026-01-30    3% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">AISHELL-2 test error rate</a>        4.2%    56.5   2026-01-30    3% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">GigaSpeech test WER</a>             25.5%    44.2   2026-01-30    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">VoxPopuli English test WER</a>      10.3%    59.1   2026-01-30    3% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">LibriSpeech test-other WER</a>       3.8%    59.4   2026-01-30    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">VoxPopuli English test WER</a>      10.3%    59.1   2026-01-30    3% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">FLEURS Mandarin test error ra…</a>   2.4%    62.7   2026-01-30    3% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">WenetSpeech test_meeting erro…</a>  32.3%    42.6   2026-01-30    2% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Common Voice Mandarin error r…</a>   6.3%    62.8   2026-01-30    2% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">LibriSpeech test-clean WER</a>       1.4%    63.9   2026-01-30    1% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">FLEURS English test WER</a>          2.4%    74.5   2026-01-30    1% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">TED-LIUM test WER (short-form)</a>   7.7%    43.4   2026-01-30    0% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">FLEURS English test WER</a>          2.4%    74.4   2026-01-30    1% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">TED-LIUM test WER (short-form)</a>   7.7%    43.3   2026-01-30    0% ▇
 <a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  64.4%    48.9   2025-11-18   11% ▇
                         <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  38.9%    54.1   2025-11-18   10% ▇
 <a name="speech-gigaspeechbench-report"></a>GigaSpeechBench: A Re…  <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 7 Arabic di…</a>  50.5%    60.8   2026-06-27    3% ▇
-                        <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 12 English …</a>  24.8%    53.3   2026-06-27    3% ▇
+                        <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 12 English …</a>  24.8%    53.4   2026-06-27    3% ▇
                         <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 6 English a…</a>  39.9%    48.5   2026-06-27    3% ▇
 <a name="speech-stt-qwen-audio3-asr-report"></a>Qwen-Audio-3.0-ASR Te…  <a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR report · C…</a>   6.6%    50.0   2026-09-09    5% ▇
-                        <a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR report · E…</a>   3.7%    58.2   2026-09-09    3% ▇
+                        <a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR report · E…</a>   3.7%    58.1   2026-09-09    3% ▇
 <a name="speech-stt-bangla-riverborn-mit"></a>Bangla Speech-to-Text…  <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpe…</a>  28.7%    54.4   2026-09-24    7% ▇
-<a name="speech-stt-megaasr-report"></a>Mega-ASR                <a href="https://arxiv.org/html/2605.19833v1">Mega-ASR adverse-condition su…</a>  17.3%    52.8   2026-05-19    6% ▇
+<a name="speech-stt-megaasr-report"></a>Mega-ASR                <a href="https://arxiv.org/html/2605.19833v1">Mega-ASR adverse-condition su…</a>  17.3%    52.9   2026-05-19    6% ▇
 <a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSp…</a>   1.5%    68.5   2026-07-19    3% ▇
                         <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   9.5%    34.0   2026-07-19    2% ▇
                         <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>  18.6%    47.5   2026-07-19    1% ▇

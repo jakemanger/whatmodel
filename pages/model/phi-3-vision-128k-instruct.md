@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-05 · 4.15B params · mit
 
-**score 30.1** ±2.8 · #495 of 551 · from 7 benchmark results across 3 sources
+**score 30.1** ±2.8 · #496 of 551 · from 7 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  881.1    27.9   2026-10-02   76% ▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  881.1    27.8   2026-10-02   76% ▇▇▇▇▇▇▇▇▇
 <a name="paper-2404.14219v3-phi3"></a>Phi-3 Technical Report  <a href="https://arxiv.org/html/2404.14219v3#S7">MMMU (val) (lab)</a>                40.4%    35.6   2024-05-23    9% ▇
-                        <a href="https://arxiv.org/html/2404.14219v3#S7">MathVista (testmini) (lab)</a>      44.5%    30.4   2024-05-23    4% ▇
+                        <a href="https://arxiv.org/html/2404.14219v3#S7">MathVista (testmini) (lab)</a>      44.5%    30.3   2024-05-23    4% ▇
                         <a href="https://arxiv.org/html/2404.14219v3#S7">TextVQA (lab)</a>                   70.9%    40.5   2024-05-23    2% ▇
                         <a href="https://arxiv.org/html/2404.14219v3#S7">AI2D test (lab)</a>                 76.7%    26.0   2024-05-23    1% ▇
                         <a href="https://arxiv.org/html/2404.14219v3#S7">ChartQA (lab)</a>                   81.4%   113.0   2024-05-23    0% ▇

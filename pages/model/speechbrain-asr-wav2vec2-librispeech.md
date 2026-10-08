@@ -6,7 +6,7 @@
 
 SpeechBrain · released 2022-06 · 0.32B params · apache-2.0
 
-**score 35.1** ±4.1 · #111 of 128 · from 3 benchmark results across 2 sources
+**score 35.2** ±4.2 · #111 of 128 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -18,7 +18,7 @@ source                  test                            score  implies  date    
 <a name="first-party-speechbrain-asr-cards"></a>SpeechBrain Hugging F…  <a href="https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md">LibriSpeech test-other WER (l…</a>   4.0%    47.3   2024-02-19   18% ▇▇
                         <a href="https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md">LibriSpeech test-clean WER (l…</a>   1.9%    47.1   2024-02-19    6% ▇
 prior                   pull toward the middle                   49.7                 7% ▇
-                        weighted average                       = 35.1
+                        weighted average                       = 35.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version    needs  score
-fp32     ~2.04GB   35.1
+fp32     ~2.04GB   35.2
 </pre>
 
 ```sh

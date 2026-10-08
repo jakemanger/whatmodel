@@ -6,7 +6,7 @@
 
 NVIDIA · released 2021-09 · 0.014B params · ngc-terms-of-use
 
-**score 44.4** ±3.0 · #99 of 128 · from 4 benchmark results across 2 sources
+**score 44.4** ±3.0 · #100 of 128 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -18,7 +18,7 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  13.7%    48.7   2026-03-26   35% ▇▇▇▇
 <a name="speech-nemo-asr-scores-apache"></a>NVIDIA NeMo docs: ASR…  <a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/conformer_en.csv">LibriSpeech test-other WER (l…</a>   6.6%    39.6   2023-07-22   20% ▇▇
                         <a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/conformer_en.csv">LibriSpeech test-clean WER (l…</a>   2.5%    42.3   2023-07-22    6% ▇
-prior                   pull toward the middle                   49.7                 3% ▇
+prior                   pull toward the middle                   49.7                 4% ▇
                         weighted average                       = 44.4
 </pre>
 

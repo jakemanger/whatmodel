@@ -6,7 +6,7 @@
 
 Hugging Face (Distil-Whisper) · released 2023-10 · 0.39B params · mit
 
-**score 46.2** ±3.1 · #93 of 128 · from 3 benchmark results across 2 sources
+**score 46.2** ±3.1 · #94 of 128 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 

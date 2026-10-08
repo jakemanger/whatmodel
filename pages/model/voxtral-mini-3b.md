@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="report-2507.13264v1"></a>Mistral AI              <a href="https://arxiv.org/html/2507.13264v1">GigaSpeech test WER (lab)</a>       10.7%    61.4   2025-07-17    5% ▇
+<a name="report-2507.13264v1"></a>Mistral AI              <a href="https://arxiv.org/html/2507.13264v1">GigaSpeech test WER (lab)</a>       10.7%    61.5   2025-07-17    5% ▇
                         <a href="https://arxiv.org/html/2507.13264v1">SPGISpeech test WER (lab)</a>        2.2%    63.7   2025-07-17    4% ▇
                         <a href="https://arxiv.org/html/2507.13264v1">SwitchBoard WER (lab)</a>           11.3%    62.5   2025-07-17    4% ▇
                         <a href="https://arxiv.org/html/2507.13264v1">CHiME-4 WER (lab)</a>               10.6%    59.7   2025-07-17    4% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">Earnings-21 10-minute long-fo…</a>   9.6%    60.0   2025-07-17    4% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">Earnings-21 10-minute long-fo…</a>   9.6%    60.1   2025-07-17    4% ▇
                         <a href="https://arxiv.org/html/2507.13264v1">Earnings-22 10-minute long-fo…</a>  11.8%    60.7   2025-07-17    4% ▇
                         <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-other WER (l…</a>   4.0%    58.0   2025-07-17    3% ▇
                         <a href="https://arxiv.org/html/2507.13264v1">VoxPopuli English test WER (l…</a>   6.9%    61.9   2025-07-17    3% ▇
@@ -31,10 +31,10 @@ source                  test                            score  implies  date    
 <a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-mini-3b-2507.json">LibriSpeech test-clean WER</a>       1.9%    57.8   2026-09-15    6% ▇
                         <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-mini-3b-2507.json">FLEURS English test WER</a>          3.9%    64.7   2026-09-15    3% ▇
 <a name="speech-stt-megaasr-report"></a>Mega-ASR                <a href="https://arxiv.org/html/2605.19833v1">Mega-ASR adverse-condition su…</a>  12.2%    58.0   2026-05-19    6% ▇
-<a name="speech-stt-cl-spanish-asr-apache"></a>Open ASR Leaderboard …  <a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilea…</a>   8.3%    61.1   2025-10-27    3% ▇
+<a name="speech-stt-cl-spanish-asr-apache"></a>Open ASR Leaderboard …  <a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilea…</a>   8.3%    61.2   2025-10-27    3% ▇
 <a name="speech-stt-bavarian-betthupferl-mit"></a>German dialect ASR Be…  <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  12.1%    57.5   2026-08-24    2% ▇
                         <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  34.0%    60.8   2026-08-24    1% ▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  42.6%    46.7   2025-09-22    1% ▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  42.6%    47.0   2025-09-22    1% ▇
 <a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  15.3%    61.2   2026-08-18    1% ▇
 prior                   pull toward the middle                   49.7                 1% ▇
                         weighted average                       = 60.2

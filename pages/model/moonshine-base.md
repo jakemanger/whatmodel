@@ -6,7 +6,7 @@
 
 Useful Sensors (Moonshine AI) · released 2024-10 · 0.062B params · mit
 
-**score 40.8** ±3.2 · #108 of 128 · from 3 benchmark results across 2 sources
+**score 40.7** ±3.2 · #108 of 128 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-base.json">LibriSpeech test-clean WER</a>       3.3%    42.2   2026-09-15   38% ▇▇▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-base.json">FLEURS English test WER</a>         12.3%    27.6   2026-09-15   17% ▇▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-base.json">LibriSpeech test-clean WER</a>       3.3%    42.3   2026-09-15   38% ▇▇▇▇▇
+                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-base.json">FLEURS English test WER</a>         12.3%    27.7   2026-09-15   17% ▇▇
 <a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  10.0%    43.9   2026-03-26   41% ▇▇▇▇▇
 prior                   pull toward the middle                   49.7                 4% ▇
-                        weighted average                       = 40.8
+                        weighted average                       = 40.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version   needs  score
-fp32     ~0.8GB   40.8
+fp32     ~0.8GB   40.7
 </pre>
 
 ```sh

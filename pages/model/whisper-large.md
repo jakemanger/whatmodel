@@ -6,7 +6,7 @@
 
 OpenAI · released 2022-09 · 1.55B params · apache-2.0
 
-**score 53.3** ±2.6 · #67 of 128 · from 6 benchmark results across 4 sources
+**score 53.3** ±2.6 · #65 of 128 · from 6 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -18,7 +18,7 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   9.4%    58.0   2026-03-26   26% ▇▇▇
 <a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large.json">LibriSpeech test-clean WER</a>       2.7%    47.5   2026-09-15   25% ▇▇▇
                         <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large.json">FLEURS English test WER</a>          4.5%    60.6   2026-09-15   11% ▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  42.6%    47.0   2025-01-12    5% ▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  42.6%    47.3   2025-01-12    5% ▇
 <a name="speech-stt-afrispeech200-report-ccby"></a>AfriSpeech-200          <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 Afri…</a>  30.6%    51.8   2023-09-30    3% ▇
 prior                   pull toward the middle                   49.7                 3% ▇
                         weighted average                       = 53.3

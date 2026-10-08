@@ -22,7 +22,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>       86.2%    54.2   2026-04-28    5% ▇
                         <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>     26.4%    47.4   2026-04-28    4% ▇
                         <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>   55.4%    48.3   2026-04-28    4% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>        56.4%    47.2   2026-04-28    4% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>        56.4%    47.1   2026-04-28    4% ▇
                         <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>         68.7%    48.7   2026-04-28    3% ▇
                         <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecif…</a>  52.4%    54.0   2026-04-28    3% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  89.7%    57.9   2026-04-17    6% ▇

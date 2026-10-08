@@ -52,7 +52,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       57.1%    33.2   2023-09-11    1% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        76.3%    35.8   2023-09-11    1% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                      48.0%    34.8   2023-09-11    1% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            78.1%    32.5   2023-09-11    1% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            78.1%    32.6   2023-09-11    1% ▇
 <a name="paper-2310.06825v1"></a>Mistral 7B              <a href="https://arxiv.org/html/2310.06825v1">ARC Challenge</a>                   43.2%    35.1   2023-10-10    3% ▇
                         <a href="https://arxiv.org/html/2310.06825v1">MATH</a>                             3.9%    30.3   2023-10-10    2% ▇
                         <a href="https://arxiv.org/html/2310.06825v1">GSM8K</a>                           16.0%    27.9   2023-10-10    2% ▇

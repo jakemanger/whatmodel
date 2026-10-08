@@ -6,7 +6,7 @@
 
 Tencent · released 2025-04 · 560B params (56B active) · closed weights
 
-**score 60.9** ±2.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 60.9** ±2.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

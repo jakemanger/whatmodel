@@ -6,7 +6,7 @@
 
 ESPnet · released 2021-12 · cc-by-4.0
 
-**score 45.9** ±3.8 · #94 of 128 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.0** ±3.8 · #95 of 128 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -15,9 +15,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  weight
 <a name="speech-espnet-librispeech-20260929"></a>ESPnet LibriSpeech AS…  <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-other WER (l…</a>   5.1%    45.2    73% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-clean WER (l…</a>   2.1%    47.6    22% ▇▇▇
+                        <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-clean WER (l…</a>   2.1%    47.7    22% ▇▇▇
 prior                   pull toward the middle                   49.7     5% ▇
-                        weighted average                       = 45.9
+                        weighted average                       = 46.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle                   49.7     5% ▇
 
 <pre>
 version     needs  score
-fp32 · CPU   ~8GB   45.9
+fp32 · CPU   ~8GB   46.0
 </pre>
 
 ```sh

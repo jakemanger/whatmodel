@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="first-party-speechbrain-asr-cards"></a>SpeechBrain Hugging F…  <a href="https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech/blob/bcf56f762f37877912578f8800bc2a4f5171e5e5/README.md">LibriSpeech test-other WER (l…</a>   5.5%    37.0   2024-02-19   59% ▇▇▇▇▇▇▇
+<a name="first-party-speechbrain-asr-cards"></a>SpeechBrain Hugging F…  <a href="https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech/blob/bcf56f762f37877912578f8800bc2a4f5171e5e5/README.md">LibriSpeech test-other WER (l…</a>   5.5%    37.1   2024-02-19   59% ▇▇▇▇▇▇▇
                         <a href="https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech/blob/bcf56f762f37877912578f8800bc2a4f5171e5e5/README.md">LibriSpeech test-clean WER (l…</a>   2.3%    36.6   2024-02-19   19% ▇▇
 prior                   pull toward the middle                   49.7                22% ▇▇▇
                         weighted average                       = 39.7

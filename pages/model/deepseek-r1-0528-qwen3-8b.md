@@ -21,7 +21,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2601.02346v1">MATH-500 (lab)</a>                  96.8%    58.7   2026-01-05    6% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecifie…</a>  54.3%    56.4   2026-01-05    5% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>       5.6%    50.5   2026-01-05    4% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unsp…</a>  57.2%    50.7   2026-01-05    3% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unsp…</a>  57.2%    50.6   2026-01-05    3% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecif…</a>  29.2%    45.4   2026-01-05    2% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">SciCode main problems (lab)</a>      2.6%    45.2   2026-01-05    2% ▇
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        43.9%    58.7   2026-08-28   18% ▇▇

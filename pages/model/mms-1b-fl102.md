@@ -6,7 +6,7 @@
 
 Meta · released 2023-05 · 0.96B params · cc-by-nc-4.0
 
-**score -8.4** ±4.5 · #128 of 128 · from 3 benchmark results across 2 sources
+**score -8.4** ±4.6 · #128 of 128 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 

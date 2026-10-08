@@ -6,7 +6,7 @@
 
 Thinking Machines · released 2026-07 · 266B params (12B active) · apache-2.0
 
-**score 66.6** ±0.6 · #77 of 551 · from 31 benchmark results across 4 sources
+**score 66.7** ±0.6 · #76 of 551 · from 31 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -29,7 +29,7 @@ source                  test                                  score  implies  da
                         <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SWE-bench Verified (lab)</a>              80.2%    69.0   2026-07-31    2% ▇
                         <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Terminal-Bench 2.1 (lab)</a>              64.7%    65.2   2026-07-31    1% ▇
                         <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Global-MMLU-Lite (lab)</a>                86.7%    64.1   2026-07-31    1% ▇
-                        <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Humanity's Last Exam (lab)</a>            31.6%    70.3   2026-07-31    1% ▇
+                        <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Humanity's Last Exam (lab)</a>            31.6%    70.4   2026-07-31    1% ▇
                         <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">MMMU Pro (lab)</a>                        74.0%    66.2   2026-07-31    1% ▇
                         <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">IFBench (aggregation unspecif…</a>        82.2%    72.1   2026-07-31    1% ▇
                         <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SimpleQA Verified (lab)</a>               20.6%    58.1   2026-07-31    1% ▇
@@ -44,9 +44,9 @@ source                  test                                  score  implies  da
                         <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SWE-bench Pro (lab)</a>                   55.9%    69.0   2026-07-31    1% ▇
                         <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Toolathlon-Verified (lab)</a>             54.4%    60.9   2026-07-31    0% ▇
                         <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">CharXiv (reasoning questions)…</a>        77.4%    69.0   2026-07-31    0% ▇
-<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard ave…</a>        29.5%    59.3   2026-09-22    1% ▇
+<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard ave…</a>        29.5%    60.5   2026-09-22    1% ▇
 prior                   pull toward the middle                         50.0                 0% ▇
-                        weighted average                             = 66.6
+                        weighted average                             = 66.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -70,8 +70,8 @@ api (Deep Infra) · $0.64/M blended · $0.45 in / $1.2 out per 1M tokens · [dee
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~160.1GB   66.6
-2-bit ud-q2_k_xl   ~80.3GB   66.6
+4-bit ud-q4_k_xl  ~160.1GB   66.7
+2-bit ud-q2_k_xl   ~80.3GB   66.7
 </pre>
 
 ```sh

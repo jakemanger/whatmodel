@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 2.85B params · apache-2.0
 
-**score 34.4** ±1.4 · #464 of 551 · from 5 benchmark results across 2 sources
+**score 34.5** ±1.4 · #463 of 551 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -20,7 +20,7 @@ source                  test                    score  implies  date        weig
 <a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>          40.2%    35.3   2024-03-10   27% ▇▇▇
                         <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                    49.2%    36.8   2024-03-10   12% ▇
 prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 34.4
+                        weighted average               = 34.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle           50.0                 1%
 
 <pre>
 download       size  score
-4-bit fp32  ~11.4GB   34.4
+4-bit fp32  ~11.4GB   34.5
 </pre>
 
 ```sh

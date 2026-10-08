@@ -20,7 +20,7 @@ source                  test                            score  implies  date    
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    94.6%    74.5   2026-03-20    4% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>               46.3%    70.7   2026-08-27    3% ▇
 <a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam (lab)</a>      42.7%    76.9   2026-03-05    5% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                89.3%    79.8   2026-03-05    5% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                89.3%    79.9   2026-03-05    5% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with too…</a>  58.7%    79.8   2026-03-05    3% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-4">FrontierScience-Research (lab)</a>  36.7%    77.7   2026-03-05    1% ▇
 <a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  75.8%    81.7   2026-09-11    8% ▇

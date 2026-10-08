@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                test                            score  implies  date        weight
 <a name="first-party-meta-asr-cards"></a>Meta                  <a href="https://huggingface.co/facebook/data2vec-audio-base-960h/blob/32331f3123e703528918aa688a9a38232d58c872/README.md#evaluation">LibriSpeech test-other WER (l…</a>   7.1%     2.1   2022-05-24   37% ▇▇▇▇
-                      <a href="https://huggingface.co/facebook/data2vec-audio-base-960h/blob/32331f3123e703528918aa688a9a38232d58c872/README.md#evaluation">LibriSpeech test-clean WER (l…</a>   2.8%     3.4   2022-05-24   14% ▇▇
+                      <a href="https://huggingface.co/facebook/data2vec-audio-base-960h/blob/32331f3123e703528918aa688a9a38232d58c872/README.md#evaluation">LibriSpeech test-clean WER (l…</a>   2.8%     3.5   2022-05-24   14% ▇▇
 <a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  28.3%     2.1   2026-03-26   45% ▇▇▇▇▇
 prior                 pull toward the middle                   49.7                 4% ▇
                       weighted average                        = 4.4

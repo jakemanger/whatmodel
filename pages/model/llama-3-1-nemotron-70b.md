@@ -23,7 +23,7 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose</a>        79.9%    49.2   2025-04-14    2% ▇
                         <a href="https://arxiv.org/html/2411.15124v5">PopQA</a>                            36.4%    49.6   2025-04-14    2% ▇
                         <a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2</a>                   62.6%    46.8   2025-04-14    1% ▇
-<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>   84.9%    56.4   2024-11-14   22% ▇▇▇
+<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>   84.9%    56.5   2024-11-14   22% ▇▇▇
 <a name="arena-hard-auto-readme-v2"></a>Arena-Hard-Auto v2.0-…  <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts …</a>   10.3%    48.2   2025-05-01   11% ▇
                         <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writ…</a>   26.9%    52.4   2025-05-01    2% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1298.7    52.1   2026-10-02   10% ▇

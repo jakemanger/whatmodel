@@ -29,7 +29,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  13.5%    31.4   2024-05-07    3% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>   8.9%    30.8   2024-05-07    2% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      34.2%    33.5   2024-05-07    2% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MATH</a>                            10.4%    33.0   2024-05-07    1% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MATH</a>                            10.4%    33.1   2024-05-07    1% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      35.8%    34.8   2024-05-07    1% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">GSM8K</a>                           27.2%    31.5   2024-05-07    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇

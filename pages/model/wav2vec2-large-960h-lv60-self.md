@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="first-party-meta-asr-cards"></a>Meta                  <a href="https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self/blob/54074b1c16f4de6a5ad59affb4caa8f2ea03a119/README.md#evaluation">LibriSpeech test-other WER (l…</a>   3.9%    11.8   2022-05-23   33% ▇▇▇▇
+<a name="first-party-meta-asr-cards"></a>Meta                  <a href="https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self/blob/54074b1c16f4de6a5ad59affb4caa8f2ea03a119/README.md#evaluation">LibriSpeech test-other WER (l…</a>   3.9%    11.9   2022-05-23   33% ▇▇▇▇
                       <a href="https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self/blob/54074b1c16f4de6a5ad59affb4caa8f2ea03a119/README.md#evaluation">LibriSpeech test-clean WER (l…</a>   1.9%    13.7   2022-05-23   12% ▇
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  21.3%    13.7   2026-03-26   41% ▇▇▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  21.3%    13.6   2026-03-26   41% ▇▇▇▇▇
 <a name="speech-stt-afrispeech200-report-ccby"></a>AfriSpeech-200        <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 Afri…</a>  61.1%    18.8   2023-09-30    5% ▇
 <a name="speech-stt-srb-report"></a>Speech Robust Bench   <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  13.5%    28.1   2024-12-09    2% ▇
                       <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       1.8%    51.3   2024-12-09    2% ▇

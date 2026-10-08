@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2025-02 · closed weights
 
-**score 63.9** ±2.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 63.9** ±2.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

@@ -6,7 +6,7 @@
 
 Together AI · released 2023-12 · 7.65B params · apache-2.0
 
-**score 33.5** ±2.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 33.5** ±2.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

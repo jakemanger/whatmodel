@@ -6,7 +6,7 @@
 
 Google · released 2025-06 · 5.44B params (2B active) · gemma
 
-**score 42.9** ±1.6 · #359 of 551 · from 11 benchmark results across 4 sources
+**score 42.9** ±1.6 · #360 of 551 · from 11 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                            score  implies  date    
 <a name="gap-google-gemma3n"></a>Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">HumanEval (lab)</a>                 66.5%    45.4   2026-09-25   18% ▇▇
                         <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">AIME 2025 (lab)</a>                  6.7%    38.6   2026-09-25   13% ▇▇
                         <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU (lab)</a>                      60.1%    43.4   2026-09-25   11% ▇
-                        <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU-Pro (lab)</a>                  40.5%    42.7   2026-09-25   10% ▇
+                        <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU-Pro (lab)</a>                  40.5%    42.6   2026-09-25   10% ▇
                         <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MGSM (lab)</a>                      53.1%    50.4   2026-09-25    9% ▇
                         <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP (lab)</a>                      56.6%    43.3   2026-09-25    8% ▇
                         <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">Global-MMLU (lab)</a>               55.1%    40.6   2026-09-25    5% ▇

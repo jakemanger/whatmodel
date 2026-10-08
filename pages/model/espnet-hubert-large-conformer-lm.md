@@ -6,7 +6,7 @@
 
 ESPnet · released 2022-01 · cc-by-4.0
 
-**score 50.7** ±3.8 · #75 of 128 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.7** ±3.8 · #76 of 128 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

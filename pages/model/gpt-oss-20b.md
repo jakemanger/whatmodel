@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-08 · 21B params (3.6B active) · apache-2.0
 
-**score 56.2** ±0.6 · #194 of 551 · from 42 benchmark results across 14 sources
+**score 56.2** ±0.6 · #195 of 551 · from 42 benchmark results across 14 sources
 
 ## How the score was worked out
 

@@ -1780,6 +1780,1276 @@
    "by": "lab",
    "date": "2025-07-09",
    "note": "Cosmos World Foundation Model Platform paper (NVIDIA; arXiv 2501.03575v3) Table 19 'Evaluation of 3D consistency on base Cosmos models', row 'Cosmos-Predict1-5B-Video2World', column 'Pose estimation success rate (%)' = 27.0% (stored /100). NVIDIA's own models; the table also carries VideoLDM (another lab, not recorded) and a real-video reference row (not a model). Table 10 maps Cosmos-Predict1 names to the diffusion (7B/14B Text2World, Video2World) and autoregressive (4B/12B, 5B/13B Video2World) families."
+  },
+  {
+   "model": "k2-horizon-3-7b",
+   "bench": "aime-2025",
+   "score": 0.892,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'AIME 2025', column '3.7B after' = 89.2 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-7b",
+   "bench": "aime-2025",
+   "score": 0.903,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'AIME 2025', column '7B after' = 90.3 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-3-7b",
+   "bench": "aime-2026",
+   "score": 0.908,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'AIME 2026', column '3.7B after' = 90.8 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-7b",
+   "bench": "aime-2026",
+   "score": 0.902,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'AIME 2026', column '7B after' = 90.2 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-3-7b",
+   "bench": "hmmt-feb-2025",
+   "score": 0.875,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'HMMT Feb 2025', column '3.7B after' = 87.5 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-7b",
+   "bench": "hmmt-feb-2025",
+   "score": 0.877,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'HMMT Feb 2025', column '7B after' = 87.7 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-3-7b",
+   "bench": "hmmt-feb-2026",
+   "score": 0.752,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'HMMT Feb 2026', column '3.7B after' = 75.2 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-7b",
+   "bench": "hmmt-feb-2026",
+   "score": 0.778,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'HMMT Feb 2026', column '7B after' = 77.8 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-3-7b",
+   "bench": "gpqa-diamond",
+   "score": 0.689,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'GPQA Diamond', column '3.7B after' = 68.9 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-7b",
+   "bench": "gpqa-diamond",
+   "score": 0.756,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'GPQA Diamond', column '7B after' = 75.6 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-3-7b",
+   "bench": "hle",
+   "score": 0.14,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'HLE (text)', column '3.7B after' = 14.0 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-7b",
+   "bench": "hle",
+   "score": 0.195,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'HLE (text)', column '7B after' = 19.5 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-3-7b",
+   "bench": "livecodebench-v6-window-unspecified",
+   "score": 0.645,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'LiveCodeBench v6', column '3.7B after' = 64.5 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-7b",
+   "bench": "livecodebench-v6-window-unspecified",
+   "score": 0.727,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'LiveCodeBench v6', column '7B after' = 72.7 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-3-7b",
+   "bench": "ojbench",
+   "score": 0.216,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'OJBench', column '3.7B after' = 21.6 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-7b",
+   "bench": "ojbench",
+   "score": 0.294,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'OJBench', column '7B after' = 29.4 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-3-7b",
+   "bench": "scicode-unspecified",
+   "score": 0.258,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'SciCode', column '3.7B after' = 25.8 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-7b",
+   "bench": "scicode-unspecified",
+   "score": 0.336,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'SciCode', column '7B after' = 33.6 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-3-7b",
+   "bench": "swe-bench-verified",
+   "score": 0.656,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'SWE-bench Verified', column '3.7B after' = 65.6 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-7b",
+   "bench": "swe-bench-verified",
+   "score": 0.724,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'SWE-bench Verified', column '7B after' = 72.4 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-3-7b",
+   "bench": "terminal-bench-2.1",
+   "score": 0.397,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'Terminal-Bench 2.1', column '3.7B after' = 39.7 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-7b",
+   "bench": "terminal-bench-2.1",
+   "score": 0.446,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'Terminal-Bench 2.1', column '7B after' = 44.6 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-3-7b",
+   "bench": "bfcl-v4",
+   "score": 0.646,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'BFCL v4', column '3.7B after' = 64.6 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "k2-horizon-7b",
+   "bench": "bfcl-v4",
+   "score": 0.67,
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "source_id": "first-party-ifm-k2-horizon-scores",
+   "by": "lab",
+   "date": "2026-10-02",
+   "note": "IFM K2-Horizon-7B model card @3b6ae39 (2026-10-02), 'Anti-doom-loop training' table, row 'BFCL v4', column '7B after' = 67.0 (accuracy %, stored /100). The 'after' column is the released checkpoint after the FTPO anti-doom-loop stage (promoted to main on 2026-10-01); the card's settings line: output budgets 500k tokens for AIME/HMMT Feb 2025/LiveCodeBench/OJBench and 256k for HMMT Feb 2026/GPQA Diamond/HLE; GPQA Diamond top_p=1 and 5 repeats; SciCode 3 repeats; SWE-bench Verified (mini-swe-agent) and Terminal-Bench 2.1 (terminus-2, 3 repeats) at 256k context; BFCL v4 at temperature 0.01; variants of benchmark (HLE tool mode, SWE scaffold beyond mini-swe-agent) as printed. The earlier import of this card (@036114c) holds the pre-FTPO checkpoint ('before' values), which is a different evaluator entry."
+  },
+  {
+   "model": "aya-vision-32b",
+   "bench": "kaleidoscope-overall",
+   "score": 0.3927,
+   "source": "https://arxiv.org/html/2504.07072v2",
+   "source_id": "paper-2504.07072v2-kaleidoscope",
+   "by": "independent",
+   "date": "2025-04-29",
+   "note": "Kaleidoscope paper (Cohere Labs; arXiv 2504.07072v2) main results table, row 'Aya-Vision-32B', column Overall Acc. = 39.27 (percent over all 20,911 questions, stored /100). Authors' own evaluation (Sec. 3.2): open-weight models run locally with temperature 0.7, 1024 max tokens, image size 512x512; closed models with chain-of-thought prompts; Sec. 3.1 names GPT-4o as 2024/08/06 and Claude 3.5 Sonnet as 2024/10/22. Overall Acc. is over all responses (format errors counted wrong), not the 'valid responses' column. Gemini 1.5 Pro (snapshot unstated), Aya-Vision-8B, Qwen2.5-VL-7B/3B and Pangea-7B are not recorded (not catalogue checkpoints or unstated)."
+  },
+  {
+   "model": "qwen2-5-vl-72b",
+   "bench": "kaleidoscope-overall",
+   "score": 0.5294,
+   "source": "https://arxiv.org/html/2504.07072v2",
+   "source_id": "paper-2504.07072v2-kaleidoscope",
+   "by": "independent",
+   "date": "2025-04-29",
+   "note": "Kaleidoscope paper (Cohere Labs; arXiv 2504.07072v2) main results table, row 'Qwen2.5-VL-72B', column Overall Acc. = 52.94 (percent over all 20,911 questions, stored /100). Authors' own evaluation (Sec. 3.2): open-weight models run locally with temperature 0.7, 1024 max tokens, image size 512x512; closed models with chain-of-thought prompts; Sec. 3.1 names GPT-4o as 2024/08/06 and Claude 3.5 Sonnet as 2024/10/22. Overall Acc. is over all responses (format errors counted wrong), not the 'valid responses' column. Gemini 1.5 Pro (snapshot unstated), Aya-Vision-8B, Qwen2.5-VL-7B/3B and Pangea-7B are not recorded (not catalogue checkpoints or unstated)."
+  },
+  {
+   "model": "qwen2-5-vl-32b",
+   "bench": "kaleidoscope-overall",
+   "score": 0.4821,
+   "source": "https://arxiv.org/html/2504.07072v2",
+   "source_id": "paper-2504.07072v2-kaleidoscope",
+   "by": "independent",
+   "date": "2025-04-29",
+   "note": "Kaleidoscope paper (Cohere Labs; arXiv 2504.07072v2) main results table, row 'Qwen2.5-VL-32B', column Overall Acc. = 48.21 (percent over all 20,911 questions, stored /100). Authors' own evaluation (Sec. 3.2): open-weight models run locally with temperature 0.7, 1024 max tokens, image size 512x512; closed models with chain-of-thought prompts; Sec. 3.1 names GPT-4o as 2024/08/06 and Claude 3.5 Sonnet as 2024/10/22. Overall Acc. is over all responses (format errors counted wrong), not the 'valid responses' column. Gemini 1.5 Pro (snapshot unstated), Aya-Vision-8B, Qwen2.5-VL-7B/3B and Pangea-7B are not recorded (not catalogue checkpoints or unstated)."
+  },
+  {
+   "model": "molmo-7b-d",
+   "bench": "kaleidoscope-overall",
+   "score": 0.3287,
+   "source": "https://arxiv.org/html/2504.07072v2",
+   "source_id": "paper-2504.07072v2-kaleidoscope",
+   "by": "independent",
+   "date": "2025-04-29",
+   "note": "Kaleidoscope paper (Cohere Labs; arXiv 2504.07072v2) main results table, row 'Molmo-7B-D', column Overall Acc. = 32.87 (percent over all 20,911 questions, stored /100). Authors' own evaluation (Sec. 3.2): open-weight models run locally with temperature 0.7, 1024 max tokens, image size 512x512; closed models with chain-of-thought prompts; Sec. 3.1 names GPT-4o as 2024/08/06 and Claude 3.5 Sonnet as 2024/10/22. Overall Acc. is over all responses (format errors counted wrong), not the 'valid responses' column. Gemini 1.5 Pro (snapshot unstated), Aya-Vision-8B, Qwen2.5-VL-7B/3B and Pangea-7B are not recorded (not catalogue checkpoints or unstated)."
+  },
+  {
+   "model": "gpt-4o-2024-08-06",
+   "bench": "kaleidoscope-overall",
+   "score": 0.5832,
+   "source": "https://arxiv.org/html/2504.07072v2",
+   "source_id": "paper-2504.07072v2-kaleidoscope",
+   "by": "independent",
+   "date": "2025-04-29",
+   "note": "Kaleidoscope paper (Cohere Labs; arXiv 2504.07072v2) main results table, row 'GPT-4o', column Overall Acc. = 58.32 (percent over all 20,911 questions, stored /100). Authors' own evaluation (Sec. 3.2): open-weight models run locally with temperature 0.7, 1024 max tokens, image size 512x512; closed models with chain-of-thought prompts; Sec. 3.1 names GPT-4o as 2024/08/06 and Claude 3.5 Sonnet as 2024/10/22. Overall Acc. is over all responses (format errors counted wrong), not the 'valid responses' column. Gemini 1.5 Pro (snapshot unstated), Aya-Vision-8B, Qwen2.5-VL-7B/3B and Pangea-7B are not recorded (not catalogue checkpoints or unstated)."
+  },
+  {
+   "model": "claude-3-5-sonnet-20241022",
+   "bench": "kaleidoscope-overall",
+   "score": 0.6291,
+   "source": "https://arxiv.org/html/2504.07072v2",
+   "source_id": "paper-2504.07072v2-kaleidoscope",
+   "by": "independent",
+   "date": "2025-04-29",
+   "note": "Kaleidoscope paper (Cohere Labs; arXiv 2504.07072v2) main results table, row 'Claude 3.5 Sonnet', column Overall Acc. = 62.91 (percent over all 20,911 questions, stored /100). Authors' own evaluation (Sec. 3.2): open-weight models run locally with temperature 0.7, 1024 max tokens, image size 512x512; closed models with chain-of-thought prompts; Sec. 3.1 names GPT-4o as 2024/08/06 and Claude 3.5 Sonnet as 2024/10/22. Overall Acc. is over all responses (format errors counted wrong), not the 'valid responses' column. Gemini 1.5 Pro (snapshot unstated), Aya-Vision-8B, Qwen2.5-VL-7B/3B and Pangea-7B are not recorded (not catalogue checkpoints or unstated)."
+  },
+  {
+   "model": "bloom-7b1",
+   "bench": "factual-recall-premium2k-em-0shot",
+   "score": 0.032,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'BLOOM-7.1B', zero-shot EM = 3.2 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, no exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "bloom-7b1",
+   "bench": "factual-recall-premium2k-em-10shot",
+   "score": 0.1815,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'BLOOM-7.1B', 10-shot EM = 18.15 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, 10 exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "llama-7b",
+   "bench": "factual-recall-premium2k-em-0shot",
+   "score": 0.1465,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'LLaMA-7B', zero-shot EM = 14.65 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, no exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "llama-7b",
+   "bench": "factual-recall-premium2k-em-10shot",
+   "score": 0.3505,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'LLaMA-7B', 10-shot EM = 35.05 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, 10 exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "llama-13b",
+   "bench": "factual-recall-premium2k-em-0shot",
+   "score": 0.2135,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'LLaMA-13B', zero-shot EM = 21.35 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, no exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "llama-13b",
+   "bench": "factual-recall-premium2k-em-10shot",
+   "score": 0.412,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'LLaMA-13B', 10-shot EM = 41.2 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, 10 exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "llama-33b",
+   "bench": "factual-recall-premium2k-em-0shot",
+   "score": 0.2725,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'LLaMA-33B', zero-shot EM = 27.25 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, no exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "llama-33b",
+   "bench": "factual-recall-premium2k-em-10shot",
+   "score": 0.489,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'LLaMA-33B', 10-shot EM = 48.9 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, 10 exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "llama-65b",
+   "bench": "factual-recall-premium2k-em-0shot",
+   "score": 0.3525,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'LLaMA-65B', zero-shot EM = 35.25 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, no exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "llama-65b",
+   "bench": "factual-recall-premium2k-em-10shot",
+   "score": 0.5245,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'LLaMA-65B', 10-shot EM = 52.45 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, 10 exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "vicuna-33b-v1-3",
+   "bench": "factual-recall-premium2k-em-0shot",
+   "score": 0.343,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'Vicuna-33B-v1.3', zero-shot EM = 34.3 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, no exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "vicuna-33b-v1-3",
+   "bench": "factual-recall-premium2k-em-10shot",
+   "score": 0.44,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'Vicuna-33B-v1.3', 10-shot EM = 44.0 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, 10 exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "flan-t5-xxl",
+   "bench": "factual-recall-premium2k-em-0shot",
+   "score": 0.206,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'FLAN-T5-XXL (11B)', zero-shot EM = 20.6 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, no exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "flan-t5-xxl",
+   "bench": "factual-recall-premium2k-em-10shot",
+   "score": 0.2095,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'FLAN-T5-XXL (11B)', 10-shot EM = 20.95 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, 10 exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "falcon-7b",
+   "bench": "factual-recall-premium2k-em-0shot",
+   "score": 0.236,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'Falcon-7B', zero-shot EM = 23.6 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, no exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "falcon-7b",
+   "bench": "factual-recall-premium2k-em-10shot",
+   "score": 0.3045,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'Falcon-7B', 10-shot EM = 30.45 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, 10 exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "falcon-40b",
+   "bench": "factual-recall-premium2k-em-0shot",
+   "score": 0.2655,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'Falcon-40B', zero-shot EM = 26.55 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, no exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "falcon-40b",
+   "bench": "factual-recall-premium2k-em-10shot",
+   "score": 0.4225,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'Falcon-40B', 10-shot EM = 42.25 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, 10 exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "falcon-180b-chat",
+   "bench": "factual-recall-premium2k-em-0shot",
+   "score": 0.3995,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'Falcon-180B-chat', zero-shot EM = 39.95 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, no exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "falcon-180b-chat",
+   "bench": "factual-recall-premium2k-em-10shot",
+   "score": 0.493,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'Falcon-180B-chat', 10-shot EM = 49.3 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, 10 exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "mpt-7b",
+   "bench": "factual-recall-premium2k-em-0shot",
+   "score": 0.0345,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'MPT-7B', zero-shot EM = 3.45 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, no exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "mpt-7b",
+   "bench": "factual-recall-premium2k-em-10shot",
+   "score": 0.3045,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'MPT-7B', 10-shot EM = 30.45 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, 10 exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "pythia-6-9b",
+   "bench": "factual-recall-premium2k-em-0shot",
+   "score": 0.11,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'Pythia-6.9B', zero-shot EM = 11.0 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, no exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "pythia-6-9b",
+   "bench": "factual-recall-premium2k-em-10shot",
+   "score": 0.217,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'Pythia-6.9B', 10-shot EM = 21.7 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, 10 exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "pythia-12b",
+   "bench": "factual-recall-premium2k-em-0shot",
+   "score": 0.1525,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'Pythia-12B', zero-shot EM = 15.25 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, no exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "pythia-12b",
+   "bench": "factual-recall-premium2k-em-10shot",
+   "score": 0.232,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'Pythia-12B', 10-shot EM = 23.2 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, 10 exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "mistral-7b-v0-1",
+   "bench": "factual-recall-premium2k-em-0shot",
+   "score": 0.2845,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'Mistral-7B', zero-shot EM = 28.45 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, no exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "mistral-7b-v0-1",
+   "bench": "factual-recall-premium2k-em-10shot",
+   "score": 0.4075,
+   "source": "https://arxiv.org/html/2404.16164v1",
+   "source_id": "paper-2404.16164v1-factrecall",
+   "by": "independent",
+   "date": "2024-04-24",
+   "note": "'Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall' (arXiv 2404.16164v1) Table 1 'Benchmarking results on Premium2k', row 'Mistral-7B', 10-shot EM = 40.75 (percent exact match, stored /100). Authors' own run (Sec. 4: open models via Hugging Face, OpenAI APIs in July 2023); prompts per the paper's Tables 5-7 (instruction + question, 10 exemplars). Closed GPT rows, the instruct/chat variants other than Falcon-180B-chat, Vicuna 7B/13B v1.3, OpenLLaMA, T0++/UL2, MPT-30B and Falcon-180B base are not recorded (not catalogue checkpoints)."
+  },
+  {
+   "model": "cosmos3-super-text2image",
+   "bench": "cvtg-500l-pned-cosmos3",
+   "score": 0.8908,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T11",
+   "source_id": "visual-cosmos3-report",
+   "by": "lab",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA; arXiv 2606.02800v4) Table 11 'Text-to-Image benchmark results', row 'Cosmos3-Super-Text2Image', column CVTG-500L PNED = 89.08 (percent, stored /100). Same table and run as the already-imported UniGenBench 'All' column (NVIDIA's own evaluation of NVIDIA and comparison models). CVTG-500L: 500 CVTG-2K prompts upsampled into long dense descriptions; PNED = per-region normalised edit-distance accuracy of OCR text. Closed-model row (Gemini 3 Pro Image) marked with a dagger in the table."
+  },
+  {
+   "model": "cosmos3-super-text2image",
+   "bench": "cvtg-102ch-pned-cosmos3",
+   "score": 0.4122,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T11",
+   "source_id": "visual-cosmos3-report",
+   "by": "lab",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA; arXiv 2606.02800v4) Table 11 'Text-to-Image benchmark results', row 'Cosmos3-Super-Text2Image', column CVTG-102ch PNED = 41.22 (percent, stored /100). Same table and run as the already-imported UniGenBench 'All' column (NVIDIA's own evaluation of NVIDIA and comparison models). CVTG-102ch: 102 NVIDIA-written Chinese-character prompts; PNED as above. Closed-model row (Gemini 3 Pro Image) marked with a dagger in the table."
+  },
+  {
+   "model": "cosmos3-super-text2image",
+   "bench": "hpsv3-cosmos3",
+   "score": 11.6,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T11",
+   "source_id": "visual-cosmos3-report",
+   "by": "lab",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA; arXiv 2606.02800v4) Table 11 'Text-to-Image benchmark results', row 'Cosmos3-Super-Text2Image', column HPSv3 = 11.6. Same table and run as the already-imported UniGenBench 'All' column (NVIDIA's own evaluation of NVIDIA and comparison models). HPSv3 human-preference score of the generated images (raw units). Closed-model row (Gemini 3 Pro Image) marked with a dagger in the table."
+  },
+  {
+   "model": "nano-banana-pro",
+   "bench": "cvtg-500l-pned-cosmos3",
+   "score": 0.7179,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T11",
+   "source_id": "visual-cosmos3-report",
+   "by": "independent",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA; arXiv 2606.02800v4) Table 11 'Text-to-Image benchmark results', row 'Gemini 3 Pro Image', column CVTG-500L PNED = 71.79 (percent, stored /100). Same table and run as the already-imported UniGenBench 'All' column (NVIDIA's own evaluation of NVIDIA and comparison models). CVTG-500L: 500 CVTG-2K prompts upsampled into long dense descriptions; PNED = per-region normalised edit-distance accuracy of OCR text. Closed-model row (Gemini 3 Pro Image) marked with a dagger in the table."
+  },
+  {
+   "model": "nano-banana-pro",
+   "bench": "cvtg-102ch-pned-cosmos3",
+   "score": 0.764,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T11",
+   "source_id": "visual-cosmos3-report",
+   "by": "independent",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA; arXiv 2606.02800v4) Table 11 'Text-to-Image benchmark results', row 'Gemini 3 Pro Image', column CVTG-102ch PNED = 76.4 (percent, stored /100). Same table and run as the already-imported UniGenBench 'All' column (NVIDIA's own evaluation of NVIDIA and comparison models). CVTG-102ch: 102 NVIDIA-written Chinese-character prompts; PNED as above. Closed-model row (Gemini 3 Pro Image) marked with a dagger in the table."
+  },
+  {
+   "model": "nano-banana-pro",
+   "bench": "hpsv3-cosmos3",
+   "score": 11.78,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T11",
+   "source_id": "visual-cosmos3-report",
+   "by": "independent",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA; arXiv 2606.02800v4) Table 11 'Text-to-Image benchmark results', row 'Gemini 3 Pro Image', column HPSv3 = 11.78. Same table and run as the already-imported UniGenBench 'All' column (NVIDIA's own evaluation of NVIDIA and comparison models). HPSv3 human-preference score of the generated images (raw units). Closed-model row (Gemini 3 Pro Image) marked with a dagger in the table."
+  },
+  {
+   "model": "flux-2-dev",
+   "bench": "cvtg-500l-pned-cosmos3",
+   "score": 0.8498,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T11",
+   "source_id": "visual-cosmos3-report",
+   "by": "independent",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA; arXiv 2606.02800v4) Table 11 'Text-to-Image benchmark results', row 'FLUX.2-dev', column CVTG-500L PNED = 84.98 (percent, stored /100). Same table and run as the already-imported UniGenBench 'All' column (NVIDIA's own evaluation of NVIDIA and comparison models). CVTG-500L: 500 CVTG-2K prompts upsampled into long dense descriptions; PNED = per-region normalised edit-distance accuracy of OCR text. Closed-model row (Gemini 3 Pro Image) marked with a dagger in the table."
+  },
+  {
+   "model": "flux-2-dev",
+   "bench": "cvtg-102ch-pned-cosmos3",
+   "score": 0.6874,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T11",
+   "source_id": "visual-cosmos3-report",
+   "by": "independent",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA; arXiv 2606.02800v4) Table 11 'Text-to-Image benchmark results', row 'FLUX.2-dev', column CVTG-102ch PNED = 68.74 (percent, stored /100). Same table and run as the already-imported UniGenBench 'All' column (NVIDIA's own evaluation of NVIDIA and comparison models). CVTG-102ch: 102 NVIDIA-written Chinese-character prompts; PNED as above. Closed-model row (Gemini 3 Pro Image) marked with a dagger in the table."
+  },
+  {
+   "model": "flux-2-dev",
+   "bench": "hpsv3-cosmos3",
+   "score": 11.38,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T11",
+   "source_id": "visual-cosmos3-report",
+   "by": "independent",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA; arXiv 2606.02800v4) Table 11 'Text-to-Image benchmark results', row 'FLUX.2-dev', column HPSv3 = 11.38. Same table and run as the already-imported UniGenBench 'All' column (NVIDIA's own evaluation of NVIDIA and comparison models). HPSv3 human-preference score of the generated images (raw units). Closed-model row (Gemini 3 Pro Image) marked with a dagger in the table."
+  },
+  {
+   "model": "qwen-image-2512",
+   "bench": "cvtg-500l-pned-cosmos3",
+   "score": 0.9086,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T11",
+   "source_id": "visual-cosmos3-report",
+   "by": "independent",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA; arXiv 2606.02800v4) Table 11 'Text-to-Image benchmark results', row 'Qwen-Image-2512', column CVTG-500L PNED = 90.86 (percent, stored /100). Same table and run as the already-imported UniGenBench 'All' column (NVIDIA's own evaluation of NVIDIA and comparison models). CVTG-500L: 500 CVTG-2K prompts upsampled into long dense descriptions; PNED = per-region normalised edit-distance accuracy of OCR text. Closed-model row (Gemini 3 Pro Image) marked with a dagger in the table."
+  },
+  {
+   "model": "qwen-image-2512",
+   "bench": "cvtg-102ch-pned-cosmos3",
+   "score": 0.7126,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T11",
+   "source_id": "visual-cosmos3-report",
+   "by": "independent",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA; arXiv 2606.02800v4) Table 11 'Text-to-Image benchmark results', row 'Qwen-Image-2512', column CVTG-102ch PNED = 71.26 (percent, stored /100). Same table and run as the already-imported UniGenBench 'All' column (NVIDIA's own evaluation of NVIDIA and comparison models). CVTG-102ch: 102 NVIDIA-written Chinese-character prompts; PNED as above. Closed-model row (Gemini 3 Pro Image) marked with a dagger in the table."
+  },
+  {
+   "model": "qwen-image-2512",
+   "bench": "hpsv3-cosmos3",
+   "score": 11.03,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T11",
+   "source_id": "visual-cosmos3-report",
+   "by": "independent",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA; arXiv 2606.02800v4) Table 11 'Text-to-Image benchmark results', row 'Qwen-Image-2512', column HPSv3 = 11.03. Same table and run as the already-imported UniGenBench 'All' column (NVIDIA's own evaluation of NVIDIA and comparison models). HPSv3 human-preference score of the generated images (raw units). Closed-model row (Gemini 3 Pro Image) marked with a dagger in the table."
+  },
+  {
+   "model": "hunyuanimage-3-0",
+   "bench": "cvtg-500l-pned-cosmos3",
+   "score": 0.8768,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T11",
+   "source_id": "visual-cosmos3-report",
+   "by": "independent",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA; arXiv 2606.02800v4) Table 11 'Text-to-Image benchmark results', row 'Hunyuan 3.0', column CVTG-500L PNED = 87.68 (percent, stored /100). Same table and run as the already-imported UniGenBench 'All' column (NVIDIA's own evaluation of NVIDIA and comparison models). CVTG-500L: 500 CVTG-2K prompts upsampled into long dense descriptions; PNED = per-region normalised edit-distance accuracy of OCR text. Closed-model row (Gemini 3 Pro Image) marked with a dagger in the table."
+  },
+  {
+   "model": "hunyuanimage-3-0",
+   "bench": "cvtg-102ch-pned-cosmos3",
+   "score": 0.7131,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T11",
+   "source_id": "visual-cosmos3-report",
+   "by": "independent",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA; arXiv 2606.02800v4) Table 11 'Text-to-Image benchmark results', row 'Hunyuan 3.0', column CVTG-102ch PNED = 71.31 (percent, stored /100). Same table and run as the already-imported UniGenBench 'All' column (NVIDIA's own evaluation of NVIDIA and comparison models). CVTG-102ch: 102 NVIDIA-written Chinese-character prompts; PNED as above. Closed-model row (Gemini 3 Pro Image) marked with a dagger in the table."
+  },
+  {
+   "model": "hunyuanimage-3-0",
+   "bench": "hpsv3-cosmos3",
+   "score": 11.93,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T11",
+   "source_id": "visual-cosmos3-report",
+   "by": "independent",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA; arXiv 2606.02800v4) Table 11 'Text-to-Image benchmark results', row 'Hunyuan 3.0', column HPSv3 = 11.93. Same table and run as the already-imported UniGenBench 'All' column (NVIDIA's own evaluation of NVIDIA and comparison models). HPSv3 human-preference score of the generated images (raw units). Closed-model row (Gemini 3 Pro Image) marked with a dagger in the table."
+  },
+  {
+   "model": "z-image-turbo",
+   "bench": "cvtg-500l-pned-cosmos3",
+   "score": 0.8695,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T11",
+   "source_id": "visual-cosmos3-report",
+   "by": "independent",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA; arXiv 2606.02800v4) Table 11 'Text-to-Image benchmark results', row 'Z-Image-Turbo', column CVTG-500L PNED = 86.95 (percent, stored /100). Same table and run as the already-imported UniGenBench 'All' column (NVIDIA's own evaluation of NVIDIA and comparison models). CVTG-500L: 500 CVTG-2K prompts upsampled into long dense descriptions; PNED = per-region normalised edit-distance accuracy of OCR text. Closed-model row (Gemini 3 Pro Image) marked with a dagger in the table."
+  },
+  {
+   "model": "z-image-turbo",
+   "bench": "cvtg-102ch-pned-cosmos3",
+   "score": 0.7332,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T11",
+   "source_id": "visual-cosmos3-report",
+   "by": "independent",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA; arXiv 2606.02800v4) Table 11 'Text-to-Image benchmark results', row 'Z-Image-Turbo', column CVTG-102ch PNED = 73.32 (percent, stored /100). Same table and run as the already-imported UniGenBench 'All' column (NVIDIA's own evaluation of NVIDIA and comparison models). CVTG-102ch: 102 NVIDIA-written Chinese-character prompts; PNED as above. Closed-model row (Gemini 3 Pro Image) marked with a dagger in the table."
+  },
+  {
+   "model": "z-image-turbo",
+   "bench": "hpsv3-cosmos3",
+   "score": 11.36,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T11",
+   "source_id": "visual-cosmos3-report",
+   "by": "independent",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA; arXiv 2606.02800v4) Table 11 'Text-to-Image benchmark results', row 'Z-Image-Turbo', column HPSv3 = 11.36. Same table and run as the already-imported UniGenBench 'All' column (NVIDIA's own evaluation of NVIDIA and comparison models). HPSv3 human-preference score of the generated images (raw units). Closed-model row (Gemini 3 Pro Image) marked with a dagger in the table."
+  },
+  {
+   "model": "llama-3-2-3b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.259,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Llama-3.2-3B-Instruct', column Overall = 25.9 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "llama-3-2-1b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.057,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Llama-3.2-1B-Instruct', column Overall = 5.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-3b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.213,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Qwen2.5-3B-Instruct', column Overall = 21.3 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-1-5b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.2,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Qwen2.5-1.5B-Instruct', column Overall = 20.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-coder-1-3b-instruct",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.117,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'deepseek-coder-1.3b-instruct', column Overall = 11.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-1-5b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.022,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'DeepSeek-R1-Distill-Qwen-1.5B', column Overall = 2.2 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "falcon3-3b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.142,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Falcon3-3B-Instruct', column Overall = 14.2 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "falcon3-1b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.034,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Falcon3-1B-Instruct', column Overall = 3.4 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "phi-3-mini-128k-instruct",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.077,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Phi-3-mini-128k-instruct', column Overall = 7.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "granite-3-0-2b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.204,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'granite-3.0-2b-instruct', column Overall = 20.4 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "exaone-3-5-2-4b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.038,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'EXAONE-3.5-2.4B-Instruct', column Overall = 3.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "llama-3-1-8b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.262,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Llama-3.1-8B-Instruct', column Overall = 26.2 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "gemma-2-9b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.39,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'gemma-2-9b-it', column Overall = 39.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-coder-7b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.41,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Qwen2.5-Coder-7B-Instruct', column Overall = 41.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-7b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.357,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Qwen2.5-7B-Instruct', column Overall = 35.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-coder-7b-instruct-v1-5",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.363,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'deepseek-coder-7b-instruct-v1.5', column Overall = 36.3 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-7b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.067,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'DeepSeek-R1-Distill-Qwen-7B', column Overall = 6.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-llama-8b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.049,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'DeepSeek-R1-Distill-Llama-8B', column Overall = 4.9 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "falcon3-7b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.143,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Falcon3-7B-Instruct', column Overall = 14.3 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "yi-coder-9b-chat",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.324,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Yi-Coder-9B-Chat', column Overall = 32.4 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "yi-1-5-9b-chat",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.307,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Yi-1.5-9B-Chat', column Overall = 30.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "granite-3-0-8b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.318,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'granite-3.0-8b-instruct', column Overall = 31.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-coder-14b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.466,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Qwen2.5-Coder-14B-Instruct', column Overall = 46.6 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-14b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.368,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Qwen2.5-14B-Instruct', column Overall = 36.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-coder-v2-lite-instruct",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.27,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'DeepSeek-Coder-V2-Lite-Instruct', column Overall = 27.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-v2-lite-chat",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.15,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'DeepSeek-V2-Lite-Chat', column Overall = 15.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-14b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.313,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'DeepSeek-R1-Distill-Qwen-14B', column Overall = 31.3 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "falcon3-10b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.223,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Falcon3-10B-Instruct', column Overall = 22.3 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "wizardlm-13b-v1-2",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.229,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'WizardLM-13B-V1.2', column Overall = 22.9 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "phi-3-medium-128k-instruct",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.302,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Phi-3-medium-128k-instruct', column Overall = 30.2 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "phi-4",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.371,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'phi-4', column Overall = 37.1 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "mistral-nemo-instruct-2407",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.331,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Mistral-Nemo-Instruct-2407', column Overall = 33.1 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "gemma-2-27b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.464,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'gemma-2-27b-it', column Overall = 46.4 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-coder-32b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.441,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Qwen2.5-Coder-32B-Instruct', column Overall = 44.1 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-32b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.45,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Qwen2.5-32B-Instruct', column Overall = 45.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwq-32b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.329,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'QwQ-32B', column Overall = 32.9 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-coder-33b-instruct",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.328,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'deepseek-coder-33b-instruct', column Overall = 32.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-32b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.306,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'DeepSeek-R1-Distill-Qwen-32B', column Overall = 30.6 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "yi-1-5-34b-chat",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.311,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Yi-1.5-34B-Chat', column Overall = 31.1 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "mistral-small-2409",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.456,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Mistral-Small-Instruct-2409', column Overall = 45.6 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "granite-34b-code-instruct-8k",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.354,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'granite-34b-code-instruct-8k', column Overall = 35.4 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "internlm2-5-20b-chat",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.334,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'internlm2_5-20b-chat', column Overall = 33.4 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "llama-3-1-70b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.503,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Llama-3.1-70B-Instruct', column Overall = 50.3 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "llama-3-3-70b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.329,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Llama-3.3-70B-Instruct', column Overall = 32.9 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-72b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.487,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'Qwen2.5-72B-Instruct', column Overall = 48.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-llm-67b-chat",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.397,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'deepseek-llm-67b-chat', column Overall = 39.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-llama-70b",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.287,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'DeepSeek-R1-Distill-Llama-70B', column Overall = 28.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "wizardlm-70b-v1-0",
+   "bench": "codereviewqa-acr-exact-match",
+   "score": 0.309,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 8 'Automated Code Refinement - Exact Match Rate (%)', row 'WizardLM-70B-V1.0', column Overall = 30.9 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "llama-3-2-3b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.788,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Llama-3.2-3B-Instruct', column Overall = 78.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "llama-3-2-3b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.004,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Llama-3.2-3B-Instruct', column Overall = 0.4 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "llama-3-2-3b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.076,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Llama-3.2-3B-Instruct', column Overall = 7.6 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
   }
  ],
  "benchmarks": [
@@ -1972,6 +3242,216 @@
    "benchmark_family": "cosmos-3d-consistency",
    "direction": "lower",
    "latent_scale": 0.1
+  },
+  {
+   "id": "kaleidoscope-overall",
+   "name": "Kaleidoscope (in-language multimodal exams, 18 languages, overall accuracy)",
+   "category": "llm",
+   "kind": "acc",
+   "url": "https://arxiv.org/html/2504.07072v2#S3.T2",
+   "task": "vision",
+   "setup": {
+    "url": "https://arxiv.org/html/2504.07072v2",
+    "version": "arXiv:2504.07072v2",
+    "metric": "Overall accuracy (Acc.) over all Kaleidoscope questions (multimodal and text-only), format errors counted as incorrect; stored as a fraction.",
+    "protocol": "20,911 multiple-choice exam questions in 18 languages (55% need the image); zero-shot, answer extracted from <ANSWER> tags; open-weight models run locally with temperature 0.7, max 1024 tokens, 512x512 images; closed models use chain-of-thought prompts.",
+    "limitations": "Single prompt format; option counts vary by question so random-guess chance is not a single number (chance stored as 0)."
+   },
+   "reported_scale": "0-1",
+   "suggested_tasks": [
+    "vision"
+   ],
+   "chance": 0,
+   "benchmark_family": "kaleidoscope"
+  },
+  {
+   "id": "factual-recall-premium2k-em-0shot",
+   "name": "Factual knowledge recall, Premium2k exact match (zero-shot)",
+   "category": "llm",
+   "kind": "acc",
+   "url": "https://arxiv.org/html/2404.16164v1#S4.T1",
+   "task": "chat",
+   "setup": {
+    "url": "https://arxiv.org/html/2404.16164v1",
+    "version": "arXiv:2404.16164v1",
+    "metric": "Exact-match accuracy (zero-shot) on the 2,000-question Premium2k subset (fact-recall questions generated from Wikidata triplets with Wikipedia-grounded answers), stored as a fraction.",
+    "protocol": "15k evaluation questions across 20 relation types, Premium2k = a 2k subset with manually verified, specific questions; zero-shot or 10-shot prompts per the paper's Tables 5-7; EM against the answer or its Wikidata aliases.",
+    "limitations": "Questions generated with Claude v1.3; sampling and API snapshots (July 2023) as in the paper; EM only (the 'Contains' column is not recorded)."
+   },
+   "reported_scale": "0-1",
+   "suggested_tasks": [
+    "chat"
+   ],
+   "chance": 0,
+   "benchmark_family": "factual-recall-premium2k"
+  },
+  {
+   "id": "factual-recall-premium2k-em-10shot",
+   "name": "Factual knowledge recall, Premium2k exact match (10-shot)",
+   "category": "llm",
+   "kind": "acc",
+   "url": "https://arxiv.org/html/2404.16164v1#S4.T1",
+   "task": "chat",
+   "setup": {
+    "url": "https://arxiv.org/html/2404.16164v1",
+    "version": "arXiv:2404.16164v1",
+    "metric": "Exact-match accuracy (10-shot) on the 2,000-question Premium2k subset (fact-recall questions generated from Wikidata triplets with Wikipedia-grounded answers), stored as a fraction.",
+    "protocol": "15k evaluation questions across 20 relation types, Premium2k = a 2k subset with manually verified, specific questions; zero-shot or 10-shot prompts per the paper's Tables 5-7; EM against the answer or its Wikidata aliases.",
+    "limitations": "Questions generated with Claude v1.3; sampling and API snapshots (July 2023) as in the paper; EM only (the 'Contains' column is not recorded)."
+   },
+   "reported_scale": "0-1",
+   "suggested_tasks": [
+    "chat"
+   ],
+   "chance": 0,
+   "benchmark_family": "factual-recall-premium2k"
+  },
+  {
+   "id": "cvtg-500l-pned-cosmos3",
+   "name": "CVTG-500L PNED (English long-prompt text rendering, Cosmos 3 report)",
+   "category": "image",
+   "kind": "acc",
+   "url": "https://arxiv.org/html/2606.02800v4#S6.T11",
+   "task": "text-to-image",
+   "setup": {
+    "url": "https://arxiv.org/html/2606.02800v4",
+    "version": "arXiv:2606.02800v4",
+    "metric": "PNED: OCR-extracted text matched to target strings per region by Hungarian matching on normalised edit distance, English long-prompt set of 500 prompts; stored as a fraction.",
+    "protocol": "500 prompts sampled from CVTG-2K (Du et al. 2025), each upsampled into a long dense description; OCR then PNED/GNED scoring (Sec. 6.2).",
+    "limitations": "Maker-run (NVIDIA) comparison of Cosmos 3 against open and closed models in one table; custom prompt sets (CVTG-500L, CVTG-102ch) are specific to the Cosmos 3 report."
+   },
+   "reported_scale": "fraction",
+   "suggested_tasks": [
+    "text-to-image"
+   ],
+   "chance": 0,
+   "benchmark_family": "cosmos3-t2i"
+  },
+  {
+   "id": "cvtg-102ch-pned-cosmos3",
+   "name": "CVTG-102ch PNED (Chinese character rendering, Cosmos 3 report)",
+   "category": "image",
+   "kind": "acc",
+   "url": "https://arxiv.org/html/2606.02800v4#S6.T11",
+   "task": "text-to-image",
+   "setup": {
+    "url": "https://arxiv.org/html/2606.02800v4",
+    "version": "arXiv:2606.02800v4",
+    "metric": "PNED on a 102-prompt Chinese-character set; stored as a fraction.",
+    "protocol": "102 NVIDIA-written prompts covering public spaces, outdoor scenes and digital displays; OCR + PNED as for CVTG-500L.",
+    "limitations": "Maker-run (NVIDIA) comparison of Cosmos 3 against open and closed models in one table; custom prompt sets (CVTG-500L, CVTG-102ch) are specific to the Cosmos 3 report."
+   },
+   "reported_scale": "fraction",
+   "suggested_tasks": [
+    "text-to-image"
+   ],
+   "chance": 0,
+   "benchmark_family": "cosmos3-t2i"
+  },
+  {
+   "id": "hpsv3-cosmos3",
+   "name": "HPSv3 score of Cosmos 3 report text-to-image evaluation images",
+   "category": "image",
+   "kind": "linear",
+   "url": "https://arxiv.org/html/2606.02800v4#S6.T11",
+   "task": "text-to-image",
+   "setup": {
+    "url": "https://arxiv.org/html/2606.02800v4",
+    "version": "arXiv:2606.02800v4",
+    "metric": "Mean HPSv3 human-preference score of the images generated for the report's T2I benchmark prompts (raw HPSv3 units).",
+    "protocol": "Images generated by each model for the report's T2I prompts and scored by HPSv3.",
+    "limitations": "Maker-run (NVIDIA) comparison of Cosmos 3 against open and closed models in one table; custom prompt sets (CVTG-500L, CVTG-102ch) are specific to the Cosmos 3 report."
+   },
+   "reported_scale": "HPSv3 score",
+   "suggested_tasks": [
+    "text-to-image"
+   ],
+   "benchmark_family": "cosmos3-t2i",
+   "latent_scale": 1
+  },
+  {
+   "id": "codereviewqa-acr-exact-match",
+   "name": "CodeReviewQA: automated code refinement, exact match rate",
+   "category": "llm",
+   "kind": "acc",
+   "url": "https://arxiv.org/html/2503.16167v2#S6.T8",
+   "task": "coding",
+   "setup": {
+    "url": "https://arxiv.org/html/2503.16167v2",
+    "version": "arXiv:2503.16167v2",
+    "metric": "Overall exact-match rate (%) of the model's refined code against the human-refined reference over nine programming languages; stored as a fraction.",
+    "protocol": "CodeReviewQA (9 languages, review comments with code); zero-shot greedy generation, exact match after normalisation.",
+    "limitations": "Greedy single run; models listed in the paper's Table 7 only."
+   },
+   "reported_scale": "0-1",
+   "suggested_tasks": [
+    "coding"
+   ],
+   "chance": 0,
+   "benchmark_family": "codereviewqa"
+  },
+  {
+   "id": "codereviewqa-ctr-invariant-accuracy",
+   "name": "CodeReviewQA: change type recognition, invariant accuracy",
+   "category": "llm",
+   "kind": "acc",
+   "url": "https://arxiv.org/html/2503.16167v2#A6",
+   "task": "coding",
+   "setup": {
+    "url": "https://arxiv.org/html/2503.16167v2",
+    "version": "arXiv:2503.16167v2",
+    "metric": "Invariant accuracy (%) on the change-type-recognition multiple-choice probe: a question counts only if the model picks the right answer under every ordering of the options; stored as a fraction.",
+    "protocol": "MCQA probes derived from the same code-review items as the refinement task; log-probability ranking of the option symbols for every option ordering; zero-shot.",
+    "limitations": "Invariant accuracy is stricter than plain accuracy (chance is below 1/N, stored 0)."
+   },
+   "reported_scale": "0-1",
+   "suggested_tasks": [
+    "coding"
+   ],
+   "chance": 0,
+   "benchmark_family": "codereviewqa"
+  },
+  {
+   "id": "codereviewqa-clh-invariant-accuracy",
+   "name": "CodeReviewQA: change localisation (hard), invariant accuracy",
+   "category": "llm",
+   "kind": "acc",
+   "url": "https://arxiv.org/html/2503.16167v2#A6",
+   "task": "coding",
+   "setup": {
+    "url": "https://arxiv.org/html/2503.16167v2",
+    "version": "arXiv:2503.16167v2",
+    "metric": "Invariant accuracy (%) on the hard change-localisation multiple-choice probe, order-invariant as above; stored as a fraction.",
+    "protocol": "MCQA probes derived from the same code-review items as the refinement task; log-probability ranking of the option symbols for every option ordering; zero-shot.",
+    "limitations": "Invariant accuracy is stricter than plain accuracy (chance is below 1/N, stored 0)."
+   },
+   "reported_scale": "0-1",
+   "suggested_tasks": [
+    "coding"
+   ],
+   "chance": 0,
+   "benchmark_family": "codereviewqa"
+  },
+  {
+   "id": "codereviewqa-sih-invariant-accuracy",
+   "name": "CodeReviewQA: solution identification (hard), invariant accuracy",
+   "category": "llm",
+   "kind": "acc",
+   "url": "https://arxiv.org/html/2503.16167v2#A6",
+   "task": "coding",
+   "setup": {
+    "url": "https://arxiv.org/html/2503.16167v2",
+    "version": "arXiv:2503.16167v2",
+    "metric": "Invariant accuracy (%) on the hard solution-identification multiple-choice probe, order-invariant as above; stored as a fraction.",
+    "protocol": "MCQA probes derived from the same code-review items as the refinement task; log-probability ranking of the option symbols for every option ordering; zero-shot.",
+    "limitations": "Invariant accuracy is stricter than plain accuracy (chance is below 1/N, stored 0)."
+   },
+   "reported_scale": "0-1",
+   "suggested_tasks": [
+    "coding"
+   ],
+   "chance": 0,
+   "benchmark_family": "codereviewqa"
   }
  ],
  "ledger": [
@@ -2190,6 +3670,89 @@
    "evidence_url": "https://arxiv.org/abs/2501.03575v3",
    "icon": "arxiv.org",
    "scope": "Table 19 rows for Cosmos-Predict1-7B-Text2World, 7B-Video2World, 4B and 5B-Video2World (Sampson error and pose-estimation success rate). Not used: VideoLDM row, real-video reference, PSNR/SSIM/LPIPS columns, post-trained variants, physics-alignment table (Video2World only)."
+  },
+  {
+   "action": "new",
+   "id": "first-party-ifm-k2-horizon-scores",
+   "name": "IFM K2-Horizon-7B model card, anti-doom-loop table (own models)",
+   "kind": "first-party",
+   "match": [
+    "huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training"
+   ],
+   "exact": true,
+   "license": "Factual vendor-reported score (not licensed content)",
+   "terms_url": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md",
+   "quote": "Owner rule (vendor-reported scores, approved 2026-10-07): a vendor's own published score for its own model may be recorded by hand one figure at a time with the exact URL, date and printed settings; other labs' cells excluded; rows labelled by: 'lab'. The card's own licence is apache-2.0.",
+   "attribution": "Institute of Foundation Models (MBZUAI), K2-Horizon-7B model card @3b6ae39. Own-model rows only.",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "icon": "huggingface.co",
+   "scope": "The 3.7B-after and 7B-after columns of the 'Anti-doom-loop training' table, for twelve benchmarks with existing ids. Not used: before columns (earlier checkpoint), IFEval/IFBench (loose) rows (no exactly matching id), reference-model cells."
+  },
+  {
+   "action": "new",
+   "id": "paper-2504.07072v2-kaleidoscope",
+   "name": "Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation (arXiv:2504.07072v2)",
+   "kind": "paper",
+   "match": [
+    "arxiv.org/html/2504.07072v2"
+   ],
+   "exact": true,
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "terms_url": "https://arxiv.org/abs/2504.07072v2",
+   "quote": "arXiv abstract page for 2504.07072v2 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+   "attribution": "Cohere Labs and collaborators, Kaleidoscope, arXiv:2504.07072v2, CC BY 4.0. No endorsement.",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "evidence_url": "https://arxiv.org/abs/2504.07072v2",
+   "icon": "arxiv.org",
+   "scope": "Overall Acc. column for six models matching catalogue checkpoints (Aya-Vision-32B, Qwen2.5-VL-72B/32B, Molmo-7B-D, GPT-4o 2024-08-06, Claude 3.5 Sonnet 2024-10-22). Not used: Gemini 1.5 Pro (snapshot unstated), other uncatalogued models, multimodal/text-only/valid-response columns."
+  },
+  {
+   "action": "new",
+   "id": "paper-2404.16164v1-factrecall",
+   "name": "Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall (arXiv:2404.16164v1)",
+   "kind": "paper",
+   "match": [
+    "arxiv.org/html/2404.16164v1"
+   ],
+   "exact": true,
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "terms_url": "https://arxiv.org/abs/2404.16164v1",
+   "quote": "arXiv abstract page for 2404.16164v1 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+   "attribution": "Authors of arXiv:2404.16164 (Amazon / UCLA / CMU), CC BY 4.0. No endorsement.",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "evidence_url": "https://arxiv.org/abs/2404.16164v1",
+   "icon": "arxiv.org",
+   "scope": "Table 1 EM columns (zero-shot, 10-shot) for fourteen open models matching catalogue checkpoints. Not used: closed GPT rows, uncatalogued variants, 'Contains' columns, 1-/6-shot columns, full 15k results (Table 4), counterfactual experiments."
+  },
+  {
+   "id": "visual-cosmos3-report",
+   "add_match": [],
+   "reason": "Scope extension only: also record Table 11 CVTG-500L PNED, CVTG-102ch PNED and HPSv3 columns (same table, same run as the imported UniGenBench 'All' column); GNED, Orig/Phys splits and Aesthetic v2 stay unimported."
+  },
+  {
+   "action": "new",
+   "id": "paper-2503.16167v2-codereviewqa",
+   "name": "CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models (arXiv:2503.16167v2)",
+   "kind": "paper",
+   "match": [
+    "arxiv.org/html/2503.16167v2"
+   ],
+   "exact": true,
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "terms_url": "https://arxiv.org/abs/2503.16167v2",
+   "quote": "arXiv abstract page for 2503.16167v2 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+   "attribution": "Authors of arXiv:2503.16167 (CodeReviewQA), CC BY 4.0. No endorsement.",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "evidence_url": "https://arxiv.org/abs/2503.16167v2",
+   "icon": "arxiv.org",
+   "scope": "Overall columns of the ACR exact-match table (Table 8) and the CTR, CL-hard and SI-hard invariant-accuracy tables (Tables 9, 11, 13) for the 48 evaluated models whose Hugging Face repo equals a catalogue repo. Not used: easy CL/SI variants, per-language columns, PPA, advanced-prompting experiments, unmatched models."
   }
  ],
  "models": [
@@ -2337,6 +3900,31 @@
      "reported_label": "nvidia/Cosmos-1.0-Autoregressive-5B-Video2World"
     }
    ]
+  },
+  {
+   "id": "k2-horizon-3-7b",
+   "name": "K2 Horizon 3.7B",
+   "provider": "Institute of Foundation Models (MBZUAI)",
+   "category": "llm",
+   "released": "2026-09",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "params_b": 5.06,
+   "active_b": 5.06,
+   "api": null,
+   "local": null,
+   "model_repo": "https://huggingface.co/IFM/K2-Horizon-3.7B",
+   "identity_note": "Comparison-only, proposed so the K2-Horizon-7B card's anti-doom-loop table counts. The same card reports 'K2-Horizon 3.7B' and '7B' side by side (both released). Weights: https://huggingface.co/IFM/K2-Horizon-3.7B (sha d6e5432c59637093c0e125e791d89ea4a0b53559, created 2026-09-01, apache-2.0, 5,058,255,360 parameters in safetensors metadata; '3.7B' is the makers' dense size name).",
+   "identity_evidence": [
+    {
+     "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+     "reported_label": "3.7B after"
+    },
+    {
+     "source": "https://huggingface.co/IFM/K2-Horizon-3.7B",
+     "reported_label": "IFM/K2-Horizon-3.7B"
+    }
+   ]
   }
  ],
  "gaps": [],
@@ -2384,6 +3972,894 @@
   {
    "source": "https://arxiv.org/abs/2501.03575v3 (Cosmos platform paper, CC BY 4.0)",
    "outcome": "8 rows of two new benchmarks (3D-consistency pose success and Sampson error) for the catalogued Cosmos-1.0-Diffusion-7B-Text2World and three proposed comparison-only NVIDIA siblings. cosmos-1-0-diffusion-7b-text2world 1 -> 3."
+  },
+  {
+   "source": "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md#anti-doom-loop-training",
+   "outcome": "24 own-model rows (K2-Horizon 3.7B and 7B, released 'after' checkpoint) on 12 benchmarks; needs proposed comparison-only k2-horizon-3-7b. NOTE: IFM promoted a new (FTPO) checkpoint to K2-Horizon-7B main on 2026-10-01, so the existing @036114c rows describe the previous checkpoint."
+  },
+  {
+   "source": "https://arxiv.org/abs/2504.07072v2 (Kaleidoscope, CC BY 4.0)",
+   "outcome": "6 rows of new benchmark kaleidoscope-overall. aya-vision-32b 2 -> 3."
+  },
+  {
+   "source": "https://arxiv.org/abs/2404.16164v1 (Factual recall holistic eval, CC BY 4.0)",
+   "outcome": "28 rows of two new benchmarks (Premium2k EM zero-shot and 10-shot). falcon-180b-chat 1 -> 3."
+  },
+  {
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T11 (Cosmos 3 report, existing entry visual-cosmos3-report)",
+   "outcome": "18 rows of three new benchmarks (CVTG-500L PNED, CVTG-102ch PNED, HPSv3) from the same Table 11 run as the imported UniGenBench column (Cosmos3-Nano omitted: catalogued as a video model, so image benchmarks are rejected); cosmos3-super-text2image 2 -> 5."
+  },
+  {
+   "source": "https://arxiv.org/abs/2503.16167v2 (CodeReviewQA, CC BY 4.0)",
+   "outcome": "51 rows of four new benchmarks across 48 catalogue models, identities from the paper's Hugging Face column. exaone-3-5-2-4b 2 -> 6."
   }
- ]
+ ],
+ "held_for_owner": {
+  "reason": "Correlated re-analysis. Rows are NOT in results/benchmarks/ledger so they cannot be merged by accident. The Polyrating rating is a bias-aware re-fit of the same Chatbot Arena votes already in lmarena-text (the Arena-Hard style-control table was held for the same reason in pass 3). If the owner accepts a published re-fit as its own run, adding these 82 rows would take dolphin-2-2-1-mistral-7b, gpt4all-13b-snoozy and fastchat-t5-3b from 2 to 3 counted results (stablelm-tuned-alpha-7b, falcon-180b-chat and snowflake-arctic-instruct already reach 3+ without it).",
+  "benchmarks": [
+   {
+    "id": "polyrating-chatbot-arena-rating",
+    "name": "Polyrating (bias-aware Bradley-Terry re-fit of Chatbot Arena votes, mid-2024 snapshot)",
+    "category": "llm",
+    "kind": "elo",
+    "url": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "task": "chat",
+    "setup": {
+     "url": "https://arxiv.org/html/2409.00696v3",
+     "version": "Table 7, arXiv 2409.00696v3 (Chatbot Arena votes up to mid-2024, 114 models)",
+     "metric": "Polyrating main rating (Elo-like scale) from a multidimensional Bradley-Terry model that separates response-quality from task/prompt-type biases.",
+     "protocol": "Authors refit the public Chatbot Arena pairwise human votes with the Polyrating model; ratings reported with 95% pivot intervals.",
+     "limitations": "Same votes as lmarena-text (strongly correlated, not independent evidence); mid-2024 snapshot."
+    },
+    "reported_scale": "Elo",
+    "suggested_tasks": [
+     "chat"
+    ]
+   }
+  ],
+  "ledger": [
+   {
+    "action": "new",
+    "id": "paper-2409.00696v3-polyrating",
+    "name": "Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation (arXiv:2409.00696v3)",
+    "kind": "paper",
+    "match": [
+     "arxiv.org/html/2409.00696v3"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2409.00696v3",
+    "quote": "arXiv abstract page for 2409.00696v3 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+    "attribution": "Authors of arXiv:2409.00696 (Polyrating), CC BY 4.0. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2409.00696v3",
+    "icon": "arxiv.org",
+    "scope": "Table 7 Rating column for 82 rows that match catalogue models by exact id. Not used: modifiers, unidimensional Table 8, rows whose Arena key is ambiguous or uncatalogued."
+   }
+  ],
+  "results": [
+   {
+    "model": "gpt-4o-2024-05-13",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1297,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'gpt-4o-2024-05-13' (rank 1), column Rating = 1297. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "claude-3-5-sonnet-20240620",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1286,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'claude-3-5-sonnet-20240620' (rank 2), column Rating = 1286. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "claude-3-opus-20240229",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1273,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'claude-3-opus-20240229' (rank 5), column Rating = 1273. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "gpt-4-1106-preview",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1265,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'gpt-4-1106-preview' (rank 7), column Rating = 1265. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "gpt-4-turbo-2024-04-09",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1258,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'gpt-4-turbo-2024-04-09' (rank 9), column Rating = 1258. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "gpt-4-0125-preview",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1255,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'gpt-4-0125-preview' (rank 10), column Rating = 1255. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "gemma-2-27b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1232,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'gemma-2-27b-it' (rank 13), column Rating = 1232. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "nemotron-4-340b-instruct",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1222,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'nemotron-4-340b-instruct' (rank 15), column Rating = 1222. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "claude-3-sonnet-20240229",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1220,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'claude-3-sonnet-20240229' (rank 16), column Rating = 1220. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "gpt-4-0314",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1213,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'gpt-4-0314' (rank 18), column Rating = 1213. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "claude-3-haiku-20240307",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1209,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'claude-3-haiku-20240307' (rank 20), column Rating = 1209. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "gemma-2-9b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1204,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'gemma-2-9b-it' (rank 21), column Rating = 1204. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "glm-4-0520",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1202,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'glm-4-0520' (rank 22), column Rating = 1202. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "gpt-4-0613",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1191,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'gpt-4-0613' (rank 23), column Rating = 1191. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "llama-3-70b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1187,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'llama-3-70b-instruct' (rank 26), column Rating = 1187. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "qwen2-72b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1182,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'qwen2-72b-instruct' (rank 28), column Rating = 1182. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "deepseek-coder-v2",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1181,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'deepseek-coder-v2' (rank 30), column Rating = 1181. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "reka-flash-21b-20240226",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1170,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'reka-flash-21b-20240226' (rank 33), column Rating = 1170. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "claude-2-0",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1164,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'claude-2.0' (rank 34), column Rating = 1164. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "mistral-large-2402",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1163,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'mistral-large-2402' (rank 35), column Rating = 1163. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "qwen1-5-110b-chat",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1161,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'qwen1.5-110b-chat' (rank 37), column Rating = 1161. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "gpt-3-5-turbo-0613",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1161,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'gpt-3.5-turbo-0613' (rank 38), column Rating = 1161. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "claude-2-1",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1156,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'claude-2.1' (rank 39), column Rating = 1156. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "mixtral-8x22b-instruct-v0-1",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1152,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'mixtral-8x22b-instruct-v0.1' (rank 42), column Rating = 1152. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "llama-3-8b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1150,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'llama-3-8b-instruct' (rank 43), column Rating = 1150. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "qwen1-5-72b-chat",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1148,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'qwen1.5-72b-chat' (rank 45), column Rating = 1148. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "gpt-3-5-turbo-0125",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1147,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'gpt-3.5-turbo-0125' (rank 46), column Rating = 1147. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "zephyr-orpo-141b-a35b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1143,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'zephyr-orpo-141b-A35b-v0.1' (rank 47), column Rating = 1143. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "snowflake-arctic-instruct",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1126,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'snowflake-arctic-instruct' (rank 51), column Rating = 1126. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "qwen1-5-32b-chat",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1126,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'qwen1.5-32b-chat' (rank 52), column Rating = 1126. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "yi-1-5-34b-chat",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1126,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'yi-1.5-34b-chat' (rank 53), column Rating = 1126. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "phi-3-medium-4k-instruct",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1126,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'phi-3-medium-4k-instruct' (rank 54), column Rating = 1126. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "tulu-2-dpo-70b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1122,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'tulu-2-dpo-70b' (rank 55), column Rating = 1122. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "mixtral-8x7b-instruct-v0-1",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1114,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'mixtral-8x7b-instruct-v0.1' (rank 56), column Rating = 1114. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "openchat-3-5-0106",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1114,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'openchat-3.5-0106' (rank 57), column Rating = 1114. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "qwen1-5-14b-chat",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1112,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'qwen1.5-14b-chat' (rank 58), column Rating = 1112. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "llama2-70b-steerlm-chat",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1111,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'llama2-70b-steerlm-chat' (rank 59), column Rating = 1111. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "starling-lm-7b-beta",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1111,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'starling-lm-7b-beta' (rank 60), column Rating = 1111. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "llama-2-70b-chat",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1108,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'llama-2-70b-chat' (rank 61), column Rating = 1108. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "gpt-3-5-turbo-1106",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1106,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'gpt-3.5-turbo-1106' (rank 62), column Rating = 1106. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "phi-3-small-8k-instruct",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1103,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'phi-3-small-8k-instruct' (rank 64), column Rating = 1103. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "openchat-3-5",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1101,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'openchat-3.5' (rank 65), column Rating = 1101. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "yi-34b-chat",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1101,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'yi-34b-chat' (rank 67), column Rating = 1101. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "starling-lm-7b-alpha",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1099,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'starling-lm-7b-alpha' (rank 68), column Rating = 1099. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "gemma-1-1-7b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1097,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'gemma-1.1-7b-it' (rank 69), column Rating = 1097. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "deepseek-llm-67b-chat",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1092,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'deepseek-llm-67b-chat' (rank 71), column Rating = 1092. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "nous-hermes-2-mixtral-8x7b-dpo",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1090,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'nous-hermes-2-mixtral-8x7b-dpo' (rank 72), column Rating = 1090. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "qwen1-5-7b-chat",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1086,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'qwen1.5-7b-chat' (rank 73), column Rating = 1086. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "llama-2-13b-chat",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1081,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'llama-2-13b-chat' (rank 75), column Rating = 1081. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "qwen-14b-chat",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1081,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'qwen-14b-chat' (rank 76), column Rating = 1081. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "openhermes-2-5-mistral-7b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1075,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'openhermes-2.5-mistral-7b' (rank 78), column Rating = 1075. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "phi-3-mini-128k-instruct",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1072,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'phi-3-mini-128k-instruct' (rank 79), column Rating = 1072. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "codellama-34b-instruct",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1070,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'codellama-34b-instruct' (rank 80), column Rating = 1070. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "phi-3-mini-4k-instruct",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1068,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'phi-3-mini-4k-instruct' (rank 81), column Rating = 1068. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "solar-10-7b-instruct",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1064,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'solar-10.7b-instruct-v1.0' (rank 82), column Rating = 1064. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "dolphin-2-2-1-mistral-7b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1060,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'dolphin-2.2.1-mistral-7b' (rank 83), column Rating = 1060. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "falcon-180b-chat",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1056,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'falcon-180b-chat' (rank 85), column Rating = 1056. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "mistral-7b-instruct-v0-2",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1054,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'mistral-7b-instruct-v0.2' (rank 86), column Rating = 1054. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "zephyr-7b-alpha",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1051,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'zephyr-7b-alpha' (rank 87), column Rating = 1051. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "zephyr-7b-beta",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1049,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'zephyr-7b-beta' (rank 88), column Rating = 1049. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "gemma-1-1-2b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1044,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'gemma-1.1-2b-it' (rank 89), column Rating = 1044. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "mpt-30b-chat",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1041,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'mpt-30b-chat' (rank 90), column Rating = 1041. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "codellama-70b-instruct",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1039,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'codellama-70b-instruct' (rank 91), column Rating = 1039. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "llama-2-7b-chat",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1036,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'llama-2-7b-chat' (rank 93), column Rating = 1036. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "guanaco-33b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1035,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'guanaco-33b' (rank 94), column Rating = 1035. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "gemma-7b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1029,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'gemma-7b-it' (rank 95), column Rating = 1029. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "stripedhyena-nous-7b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1028,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'stripedhyena-nous-7b' (rank 96), column Rating = 1028. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "qwen1-5-4b-chat",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 1026,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'qwen1.5-4b-chat' (rank 97), column Rating = 1026. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "gemma-2b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 995,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'gemma-2b-it' (rank 100), column Rating = 995. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "olmo-7b-instruct",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 995,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'olmo-7b-instruct' (rank 101), column Rating = 995. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "rwkv-4-raven-14b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 971,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'RWKV-4-Raven-14B' (rank 102), column Rating = 971. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "koala-13b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 967,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'koala-13b' (rank 103), column Rating = 967. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "alpaca-13b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 955,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'alpaca-13b' (rank 104), column Rating = 955. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "chatglm3-6b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 946,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'chatglm3-6b' (rank 105), column Rating = 946. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "mpt-7b-chat",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 944,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'mpt-7b-chat' (rank 106), column Rating = 944. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "chatglm2-6b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 930,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'chatglm2-6b' (rank 107), column Rating = 930. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "gpt4all-13b-snoozy",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 924,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'gpt4all-13b-snoozy' (rank 108), column Rating = 924. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "fastchat-t5-3b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 879,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'fastchat-t5-3b' (rank 110), column Rating = 879. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "chatglm-6b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 874,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'chatglm-6b' (rank 111), column Rating = 874. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "dolly-v2-12b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 856,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'dolly-v2-12b' (rank 112), column Rating = 856. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "llama-13b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 853,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'llama-13b' (rank 113), column Rating = 853. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   },
+   {
+    "model": "stablelm-tuned-alpha-7b",
+    "bench": "polyrating-chatbot-arena-rating",
+    "score": 843,
+    "source": "https://arxiv.org/html/2409.00696v3#A6.T7",
+    "source_id": "paper-2409.00696v3-polyrating",
+    "by": "independent",
+    "date": "2025-02-11",
+    "note": "Polyrating paper (arXiv 2409.00696v3) Table 7 'Leaderboard of human evaluation with modifiers fitted with Polyrating', row 'stablelm-tuned-alpha-7b' (rank 114), column Rating = 843. A bias-aware re-fit of the public Chatbot Arena human votes (Chiang et al. 2024), i.e. the same underlying votes as lmarena-text; row label is the Arena model key, matched to one catalogue model by exact id/name."
+   }
+  ]
+ }
 }

@@ -15,9 +15,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                test                            score  implies  date        weight
 <a name="speech-voxtral-realtime-report"></a>Voxtral Realtime      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   7.3%    58.9   2026-02-11   23% ▇▇▇
-                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   7.1%    58.5   2026-02-11   22% ▇▇▇
+                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   7.1%    58.6   2026-02-11   22% ▇▇▇
                       <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · Common Voice…</a>   8.1%    64.2   2026-02-11   20% ▇▇
-                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-la…</a>   5.9%    61.2   2026-02-11   19% ▇▇
+                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-la…</a>   5.9%    61.3   2026-02-11   19% ▇▇
 <a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1  <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   5.2%    59.1   2026-07-05   12% ▇
 prior                 pull toward the middle                   49.7                 4% ▇
                       weighted average                       = 60.0

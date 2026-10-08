@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-04 · closed weights
 
-**score 58.8** ±0.6 · #165 of 551 · from 34 benchmark results across 14 sources
+**score 58.9** ±0.6 · #164 of 551 · from 34 benchmark results across 14 sources
 
 ## How the score was worked out
 
@@ -49,7 +49,7 @@ source                  test                             score  implies  date   
 <a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Incep…</a>   65.0%    55.6   2026-04-06    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   97.8%    68.3   2025-10-16    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 58.8
+                        weighted average                        = 58.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

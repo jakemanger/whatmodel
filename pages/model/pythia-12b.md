@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 11.8B params · apache-2.0
 
-**score 30.0** ±0.8 · #497 of 551 · from 16 benchmark results across 2 sources
+**score 30.1** ±0.8 · #495 of 551 · from 16 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -31,7 +31,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      90.2%    28.8   2023-05-31    4% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  70.5%    32.8   2023-05-31    3% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 30.0
+                        weighted average                       = 30.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -44,7 +44,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp16  ~23.84GB   30.0
+4-bit fp16  ~23.84GB   30.1
 </pre>
 
 ```sh

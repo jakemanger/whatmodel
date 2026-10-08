@@ -6,7 +6,7 @@
 
 Baidu · released 2026-05 · closed weights
 
-**score 69.7** ±2.3 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 69.7** ±2.4 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

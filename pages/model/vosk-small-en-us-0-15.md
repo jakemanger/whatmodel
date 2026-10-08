@@ -6,7 +6,7 @@
 
 Alpha Cephei (Vosk) · released 2020-12 · apache-2.0
 
-**score 36.9** ±6.1 · #110 of 128 · from 3 benchmark results across 2 sources
+**score 35.7** ±5.9 · #110 of 128 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>  18.4%    38.3   2026-03-19   69% ▇▇▇▇▇▇▇▇
-<a name="first-party-alphacephei-vosk-models"></a>Alpha Cephei Vosk mod…  <a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">LibriSpeech test-clean WER (l…</a>   9.8%    17.4   2026-05-04   13% ▇▇
-                        <a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">TED-LIUM test WER (short-form…</a>  10.4%    28.0   2026-05-04    3% ▇
-prior                   pull toward the middle                   49.7                14% ▇▇
-                        weighted average                       = 36.9
+<a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>  18.4%    36.8   2026-03-19   72% ▇▇▇▇▇▇▇▇▇
+<a name="first-party-alphacephei-vosk-models"></a>Alpha Cephei Vosk mod…  <a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">LibriSpeech test-clean WER (l…</a>   9.8%    16.2   2026-05-04   12% ▇
+                        <a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">TED-LIUM test WER (short-form…</a>  10.4%    27.6   2026-05-04    2% ▇
+prior                   pull toward the middle                   49.7                13% ▇▇
+                        weighted average                       = 35.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version   needs  score
-kaldi    ~0.3GB   36.9
+kaldi    ~0.3GB   35.7
 </pre>
 
 ```sh

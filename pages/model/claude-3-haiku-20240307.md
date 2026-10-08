@@ -32,7 +32,7 @@ source                  test                                                    
                         <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Incep…</a>                            55.3%    48.3   2026-04-06    1% ▇
 <a name="livecodebench-website-20250801"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official (Aug 1…</a>                            20.2%    46.7   2025-08-01    2% ▇
 <a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  5.4600 MM-MT-Bench score (1-10)    46.8   2024-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               68.4%    42.8   2024-10-10    1% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               68.4%    42.7   2024-10-10    1% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                50.4%    45.7   2024-10-10    0% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      44.8%    31.8   2024-10-10    0% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   69.6%   -90.1   2024-10-10    0% ▇
@@ -40,10 +40,10 @@ source                  test                                                    
                         <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/claude-3-haiku">ARC-AGI-2 public evaluation s…</a>                             0.0%    40.8   2026-06-04    0% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>                            74.2%    48.5   2024-04-13    1% ▇
 <a name="paper-2404.14219v3-phi3"></a>Phi-3 Technical Report  <a href="https://arxiv.org/html/2404.14219v3#S7">MMMU (val)</a>                                                40.7%    33.9   2024-05-23    1% ▇
-                        <a href="https://arxiv.org/html/2404.14219v3#S7">MathVista (testmini)</a>                                      33.2%    14.1   2024-05-23    0% ▇
-                        <a href="https://arxiv.org/html/2404.14219v3#S7">TextVQA</a>                                                   62.7%    16.1   2024-05-23    0% ▇
-                        <a href="https://arxiv.org/html/2404.14219v3#S7">AI2D test</a>                                                 60.3%   -33.2   2024-05-23    0% ▇
-                        <a href="https://arxiv.org/html/2404.14219v3#S7">ChartQA</a>                                                   59.3%  -275.2   2024-05-23    0% ▇
+                        <a href="https://arxiv.org/html/2404.14219v3#S7">MathVista (testmini)</a>                                      33.2%    14.0   2024-05-23    0% ▇
+                        <a href="https://arxiv.org/html/2404.14219v3#S7">TextVQA</a>                                                   62.7%    16.0   2024-05-23    0% ▇
+                        <a href="https://arxiv.org/html/2404.14219v3#S7">AI2D test</a>                                                 60.3%   -33.3   2024-05-23    0% ▇
+                        <a href="https://arxiv.org/html/2404.14219v3#S7">ChartQA</a>                                                   59.3%  -275.3   2024-05-23    0% ▇
 <a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>                            999.0    41.2   2024-09-25    0% ▇
 <a name="paper-2501.16411v2-physbench"></a>PhysBench: Benchmarki…  <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world unde…</a>                            39.4%    40.0   2025-01-29    0% ▇
 prior                   pull toward the middle                                             50.0                 0% ▇

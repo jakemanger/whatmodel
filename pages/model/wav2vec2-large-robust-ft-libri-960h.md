@@ -17,8 +17,8 @@ source                  test                            score  implies  date    
 <a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  22.9%    10.6   2026-03-26   77% ▇▇▇▇▇▇▇▇▇
 <a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  15.2%    17.9   2024-12-09    5% ▇
                         <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       2.6%    40.6   2024-12-09    4% ▇
-<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  32.6%    20.2   2026-08-18    7% ▇
-prior                   pull toward the middle                   49.7                 7% ▇
+<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  32.6%    20.3   2026-08-18    7% ▇
+prior                   pull toward the middle                   49.7                 8% ▇
                         weighted average                       = 15.6
 </pre>
 

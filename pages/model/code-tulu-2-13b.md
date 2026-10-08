@@ -18,7 +18,7 @@ source  test                            score  implies  date        weight
         <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     41.0%    38.1   2023-11-20   16% ▇▇
         <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      45.9%    34.4   2023-11-20   16% ▇▇
         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  76.2%    44.3   2023-11-20   14% ▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  55.7%    44.6   2023-11-20    7% ▇
+        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  55.7%    44.7   2023-11-20    7% ▇
 prior   pull toward the middle                   50.0                 1% ▇
         weighted average                       = 39.2
 </pre>

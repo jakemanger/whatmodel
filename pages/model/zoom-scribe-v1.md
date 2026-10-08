@@ -6,7 +6,7 @@
 
 Zoom · released 2026-03 · proprietary
 
-**score 65.7** ±4.7 · #6 of 128 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 65.6** ±4.8 · #6 of 128 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                test                            score  implies  date        weight
 <a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   5.5%    67.2   2026-03-26   91% ▇▇▇▇▇▇▇▇▇▇▇
 prior                 pull toward the middle                   49.7                 9% ▇
-                      weighted average                       = 65.7
+                      weighted average                       = 65.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

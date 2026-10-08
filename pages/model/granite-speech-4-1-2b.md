@@ -6,7 +6,7 @@
 
 IBM · released 2026-04 · 2.31B params · apache-2.0
 
-**score 63.4** ±3.4 · #11 of 128 · from 3 benchmark results across 2 sources
+**score 63.5** ±3.4 · #10 of 128 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -18,7 +18,7 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-4.1-2b.json">FLEURS English test WER</a>          4.1%    62.7   2026-09-15   20% ▇▇
 <a name="speech-stt-yoruba-cs-report"></a>Switch-aware evaluati…  <a href="https://arxiv.org/html/2609.11786v1">AfriCodeSwitch English-Yoruba…</a>  73.5%    60.8   2026-09-10   32% ▇▇▇▇
 prior                   pull toward the middle                   49.7                 5% ▇
-                        weighted average                       = 63.4
+                        weighted average                       = 63.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,8 +38,8 @@ IBM Granite Speech 4.…  <a href="https://huggingface.co/ibm-granite/granite-sp
 
 <pre>
 version               needs  score
-bf16 · mac only     ~6.04GB   63.4
-bf16 · nvidia only  ~6.04GB   63.4
+bf16 · mac only     ~6.04GB   63.5
+bf16 · nvidia only  ~6.04GB   63.5
 </pre>
 
 ```sh

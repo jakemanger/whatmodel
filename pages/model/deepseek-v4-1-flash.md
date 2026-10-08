@@ -6,7 +6,7 @@
 
 DeepSeek · released 2026-09 · 552B params (16B active) · mit
 
-**score 75.8** ±1.0 · #14 of 551 · from 17 benchmark results across 2 sources
+**score 75.9** ±1.0 · #14 of 551 · from 17 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -32,7 +32,7 @@ source                  test                                 score  implies  dat
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  0.0402 IPS    75.0   2026-10-02   18% ▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1474.4    71.2   2026-10-02   13% ▇▇
 prior                   pull toward the middle                        50.0                 0% ▇
-                        weighted average                            = 75.8
+                        weighted average                            = 75.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -59,7 +59,7 @@ api (DeepSeek) · $0.26/M blended · $0.15 in / $0.6 out per 1M tokens · [api-d
 
 <pre>
 download                                   size  score
-4-bit fp8 + fp4 experts · nvidia only  ~510.3GB   75.8
+4-bit fp8 + fp4 experts · nvidia only  ~510.3GB   75.9
 </pre>
 
 ```sh

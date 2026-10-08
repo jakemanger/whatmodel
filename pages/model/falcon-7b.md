@@ -28,7 +28,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      53.0%    34.0   2024-06-07    5% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      68.9%    33.9   2024-06-07    4% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        70.4%    34.4   2024-06-07    2% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       75.9%    35.1   2024-06-07    2% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       75.9%    35.2   2024-06-07    2% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            93.9%    34.2   2024-06-07    2% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           74.6%    34.4   2024-06-07    2% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            78.5%    34.4   2024-06-07    1% ▇

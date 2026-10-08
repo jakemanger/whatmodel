@@ -16,8 +16,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                             score  implies  date        weight
 <a name="report-2512.13961v2"></a>Olmo 3                  <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard (lab)</a>             89.8%    56.0   2026-09-25   13% ▇▇
                         <a href="https://arxiv.org/html/2512.13961v2">AIME 2025 (lab)</a>                  72.5%    55.7   2026-09-25   12% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (la…</a>   58.1%    56.3   2026-09-25   11% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">AIME 2024 (lab)</a>                  76.8%    55.0   2026-09-25   11% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (la…</a>   58.1%    56.3   2026-09-25   11% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">MMLU (lab)</a>                       85.4%    53.7   2026-09-25    7% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlle…</a>   74.2%    60.5   2026-09-25    5% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>            88.2%    58.8   2026-09-25    5% ▇

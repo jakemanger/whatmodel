@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-pipecat-bsd2"></a>Pipecat STT Benchmark…  <a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · poole…</a>   0.8%    70.0   2026-10-01   90% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-pipecat-bsd2"></a>Pipecat STT Benchmark…  <a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · poole…</a>   0.8%    70.1   2026-10-01   90% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.7                10% ▇
                         weighted average                       = 68.0
 </pre>

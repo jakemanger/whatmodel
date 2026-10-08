@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="paper-2210.11416v5"></a>Scaling Instruction-F…  <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>            37.5%    31.8   2022-12-06   44% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                      45.1%    31.7   2022-12-06   33% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                      45.1%    31.8   2022-12-06   33% ▇▇▇▇
                         <a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>                       0.7%    21.5   2022-12-06   17% ▇▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  81.7%    22.3   2025-10-16    4% ▇
 prior                   pull toward the middle                   50.0                 2% ▇

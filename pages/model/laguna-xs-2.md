@@ -6,7 +6,7 @@
 
 Poolside · released 2026-04 · 33B params (3B active) · apache-2.0
 
-**score 61.6** ±1.8 · #140 of 551 · from 4 benchmark results across 2 sources
+**score 61.5** ±1.8 · #142 of 551 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -17,9 +17,9 @@ source                  test                           score  implies  date     
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1301.9    61.9   2026-10-01   60% ▇▇▇▇▇▇▇
 <a name="report-2605.27605v1"></a>Poolside                <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       69.9%    63.2   2026-05-26   16% ▇▇
                         <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   57.7%    61.7   2026-05-26   12% ▇
-                        <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       35.7%    59.0   2026-05-26   12% ▇
+                        <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       35.7%    58.9   2026-05-26   12% ▇
 prior                   pull toward the middle                  50.0                 2% ▇
-                        weighted average                      = 61.6
+                        weighted average                      = 61.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -41,7 +41,7 @@ poolside/Laguna-XS.2 …  <a href="https://huggingface.co/poolside/Laguna-XS.2/b
 
 <pre>
 download                      size  score
-16-bit bf16 · nvidia only  66.89GB   61.6
+16-bit bf16 · nvidia only  66.89GB   61.5
 </pre>
 
 ```sh

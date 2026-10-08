@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 32.8B params · apache-2.0
 
-**score 44.9** ±1.8 · #330 of 551 · from 6 benchmark results across 6 sources
+**score 45.0** ±1.8 · #327 of 551 · from 6 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -21,7 +21,7 @@ source                  test                             score  implies  date   
 <a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   31.7%    48.5   2025-04-28   10% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   83.9%    17.8   2025-10-16    2% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 44.9
+                        weighted average                        = 45.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,8 +34,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~20.18GB   44.9
-8-bit q8_0    ~39.86GB   44.9
+4-bit q4_k_m  ~20.18GB   45.0
+8-bit q8_0    ~39.86GB   45.0
 </pre>
 
 ```sh

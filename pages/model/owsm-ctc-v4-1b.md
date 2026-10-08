@@ -15,8 +15,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.4%    55.5   2026-03-26   62% ▇▇▇▇▇▇▇
-<a name="first-party-espnet-owsm-v4-report"></a>OWSM v4 technical rep…  <a href="https://arxiv.org/html/2506.00338v1">LibriSpeech test-other WER (l…</a>   4.9%    51.7   2025-05-31   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2506.00338v1">LibriSpeech test-clean WER (l…</a>   2.6%    48.4   2025-05-31    8% ▇
+<a name="first-party-espnet-owsm-v4-report"></a>OWSM v4 technical rep…  <a href="https://arxiv.org/html/2506.00338v1">LibriSpeech test-other WER (l…</a>   4.9%    51.6   2025-05-31   25% ▇▇▇
+                        <a href="https://arxiv.org/html/2506.00338v1">LibriSpeech test-clean WER (l…</a>   2.6%    48.3   2025-05-31    8% ▇
 prior                   pull toward the middle                   49.7                 6% ▇
                         weighted average                       = 53.7
 </pre>

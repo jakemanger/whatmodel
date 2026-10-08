@@ -6,7 +6,7 @@
 
 SoundsGood AI · released 2026-05 · 0.288B params · cc-by-nc-4.0
 
-**score 58.1** ±4.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.1** ±4.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

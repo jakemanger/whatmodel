@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-08 · 0.63B params · cc-by-4.0
 
-**score 58.9** ±1.4 · #35 of 128 · from 18 benchmark results across 10 sources
+**score 59.0** ±1.4 · #35 of 128 · from 18 benchmark results across 10 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        4.8%    60.3   2026-03-26   22% ▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        4.8%    60.3   2026-03-26   23% ▇▇▇
                         <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.3%    61.7   2026-03-26    8% ▇
                         <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   9.1%    58.6   2026-03-26    8% ▇
 <a name="speech-stt-ru-mit"></a>Russian STT benchmark…  <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · rulibrispeech c…</a>  10.8%    60.0   2026-08-11    4% ▇
-                        <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · podlodka corpus…</a>   9.3%    59.9   2026-08-11    4% ▇
+                        <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · podlodka corpus…</a>   9.3%    60.0   2026-08-11    4% ▇
                         <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · fleurs corpus W…</a>   5.6%    60.7   2026-08-11    3% ▇
 <a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-tdt-0.6b-v3.json">LibriSpeech test-clean WER</a>       1.9%    56.8   2026-09-15    7% ▇
                         <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-tdt-0.6b-v3.json">FLEURS English test WER</a>          4.8%    57.9   2026-09-15    3% ▇
@@ -28,12 +28,12 @@ source                  test                            score  implies  date    
 <a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   8.3%    63.1   2026-07-16    6% ▇
 <a name="speech-stt-ru-shmyrev-espeech-mit"></a>Russian ASR Leaderboa…  <a href="https://huggingface.co/spaces/ESpeech/russian_asr_leaderboard/blob/cc62862c6f7d12840458f868a17a3058da7e639f/index.html">Russian ASR Leaderboard (N. S…</a>  14.8%    59.8   2026-05-07    4% ▇
 <a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   3.8%    55.3   2026-07-19    2% ▇
-                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>  11.2%    65.3   2026-07-19    2% ▇
+                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>  11.2%    65.4   2026-07-19    2% ▇
 <a name="speech-stt-cl-spanish-asr-apache"></a>Open ASR Leaderboard …  <a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilea…</a>   7.9%    62.6   2025-10-27    4% ▇
 <a name="speech-stt-bavarian-betthupferl-mit"></a>German dialect ASR Be…  <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  15.6%    49.1   2026-08-24    2% ▇
-                        <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  43.1%    48.2   2026-08-24    1% ▇
+                        <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  43.1%    48.3   2026-08-24    1% ▇
 prior                   pull toward the middle                   49.7                 1% ▇
-                        weighted average                       = 58.9
+                        weighted average                       = 59.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -68,9 +68,9 @@ api (Together AI) · $0.0015/audio min · [together.ai](https://www.together.ai/
 
 <pre>
 version               needs  score
-bf16 · mac only     ~2.01GB   58.9
-fp32 · nvidia only  ~3.52GB   58.9
-onnx-fp32           ~3.52GB   58.9
+bf16 · mac only     ~2.01GB   59.0
+fp32 · nvidia only  ~3.52GB   59.0
+onnx-fp32           ~3.52GB   59.0
 </pre>
 
 ```sh

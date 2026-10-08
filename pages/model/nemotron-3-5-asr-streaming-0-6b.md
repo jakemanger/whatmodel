@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-05 · 0.64B params · openmdw-1.1
 
-**score 45.6** ±3.9 · #95 of 128 · from 3 benchmark results across 2 sources
+**score 48.0** ±3.4 · #84 of 128 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,23 +14,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/nemotron-3.5-asr-streaming-0.6b.json">LibriSpeech test-clean WER</a>       3.0%    44.4   2026-09-15   57% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/nemotron-3.5-asr-streaming-0.6b.json">FLEURS English test WER</a>          7.9%    42.2   2026-09-15   25% ▇▇▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  35.9%    56.6   2026-07-09   12% ▇
-prior                   pull toward the middle                   49.7                 6% ▇
-                        weighted average                       = 45.6
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/nemotron-3.5-asr-streaming-0.6b.json">LibriSpeech test-clean WER</a>       3.0%    44.4   2026-09-15   43% ▇▇▇▇▇
+                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/nemotron-3.5-asr-streaming-0.6b.json">FLEURS English test WER</a>          7.9%    42.2   2026-09-15   19% ▇▇
+<a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/aea7914706d44d3163c1c0283e05700900abe7af/README.md">Picovoice STT benchmark · Eng…</a>   7.8%    55.2   2026-10-07   24% ▇▇▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  35.9%    56.6   2026-07-09    9% ▇
+prior                   pull toward the middle                   49.7                 5% ▇
+                        weighted average                       = 48.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt))</sub>
+<sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · Picovoice speech-to-text-benchmark · English batch-engine WER ([Apache-2.0](../../licenses/speech-stt-picovoice-apache.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt))</sub>
 
 ## How to run it
 
 <pre>
 version                               needs  score
-q8_0-gguf (NVIDIA NeMo-Speech.cpp)  ~0.74GB   45.6
-fp32 (transformers &gt;=5.13.0)        ~2.55GB   45.6
+q8_0-gguf (NVIDIA NeMo-Speech.cpp)  ~0.74GB   48.0
+fp32 (transformers &gt;=5.13.0)        ~2.55GB   48.0
 </pre>
 
 ```sh

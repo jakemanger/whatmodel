@@ -6,7 +6,7 @@
 
 AI21 Labs · released 2024-08 · 52B params (12B active) · jamba-open-model-license
 
-**score 45.0** ±1.2 · #327 of 551 · from 12 benchmark results across 3 sources
+**score 45.0** ±1.2 · #328 of 551 · from 12 benchmark results across 3 sources
 
 ## How the score was worked out
 

@@ -26,7 +26,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3</a>                68.0%    49.8   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic</a>                      34.9%    37.8   2026-09-25    3% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">PopQA</a>                           18.0%    44.6   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecif…</a>  23.0%    40.1   2026-09-25    2% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecif…</a>  23.0%    40.0   2026-09-25    2% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecifi…</a>  51.7%    17.9   2026-09-25    1% ▇
 <a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  19.8%    34.1   2025-07-22    3% ▇
 prior                   pull toward the middle                   50.0                 0% ▇

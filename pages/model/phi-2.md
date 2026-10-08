@@ -21,7 +21,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               31.8%    39.4   2024-03-28    8% ▇
 <a name="paper-2404.06395v3"></a>MiniCPM: Unveiling th…  <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                  43.4%    40.3   2024-06-03    5% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                   71.3%    41.6   2024-06-03    4% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                            52.7%    36.0   2024-06-03    3% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                            52.7%    36.0   2024-06-03    2% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>                       47.6%    45.1   2024-06-03    2% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>                           57.2%    46.2   2024-06-03    2% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">MBPP</a>                            55.0%    44.8   2024-06-03    1% ▇
@@ -29,7 +29,7 @@ source                  test                            score  implies  date    
 <a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   4.4%    30.7   2025-08-09    3% ▇
                         <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  30.7%     6.7   2025-08-09    0% ▇
 <a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      31.6%    33.8   2024-01-03    1% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      33.5%    33.9   2024-01-03    1% ▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      33.5%    34.0   2024-01-03    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  93.3%    45.9   2025-10-16    0% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 39.1

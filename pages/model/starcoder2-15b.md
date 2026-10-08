@@ -6,7 +6,7 @@
 
 BigCode · released 2024-02 · 15.96B params · bigcode-openrail-m
 
-**score 38.4** ±0.5 · #413 of 551 · from 16 benchmark results across 4 sources
+**score 38.5** ±0.5 · #413 of 551 · from 16 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -26,12 +26,12 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-O (lab)</a>                47.1%    45.9   2024-02-29    0% ▇
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  44.4%    40.4   2024-05-07    5% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  17.0%    34.2   2024-05-07    3% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            51.2%    40.5   2024-05-07    3% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            51.2%    40.6   2024-05-07    3% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  21.9%    37.9   2024-05-07    2% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      47.4%    43.8   2024-05-07    1% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      46.7%    44.6   2024-05-07    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 38.4
+                        weighted average                       = 38.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -44,8 +44,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~9.9GB   38.4
-8-bit q8_0     ~17GB   38.4
+4-bit q4_k_m  ~9.9GB   38.5
+8-bit q8_0     ~17GB   38.5
 </pre>
 
 ```sh

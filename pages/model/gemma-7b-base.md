@@ -37,7 +37,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">CommonsenseQA (lab)</a>             71.3%    41.3   2024-04-19    1% ▇
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">Social IQA (lab)</a>                51.8%    38.7   2024-04-19    0% ▇
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">PIQA (lab)</a>                      81.2%    37.9   2024-04-19    0% ▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  34.4%    35.6   2024-05-07    5% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  34.4%    35.7   2024-05-07    5% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  15.0%    32.5   2024-05-07    2% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>   7.4%    30.2   2024-05-07    2% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">MATH</a>                            24.1%    44.1   2024-05-07    1% ▇

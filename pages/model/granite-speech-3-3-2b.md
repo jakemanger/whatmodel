@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                 test                            score  implies  date        weight
 <a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench  <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  20.7%    63.1   2025-11-18   38% ▇▇▇▇▇
                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  25.5%    60.2   2025-11-18   37% ▇▇▇▇
-<a name="open-asr"></a>Open ASR Leaderboard   <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.0%    63.7   2026-03-26   23% ▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard   <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.0%    63.7   2026-03-26   22% ▇▇▇
 prior                  pull toward the middle                   49.7                 2% ▇
                        weighted average                       = 61.9
 </pre>

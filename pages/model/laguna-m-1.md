@@ -17,7 +17,7 @@ source                  test                           score  implies  date     
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1348.1    63.8   2026-10-01   60% ▇▇▇▇▇▇▇
 <a name="report-2605.27605v1"></a>Poolside                <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       74.6%    65.4   2026-05-26   15% ▇▇
                         <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       45.8%    64.7   2026-05-26   12% ▇
-                        <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   63.1%    64.4   2026-05-26   12% ▇
+                        <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   63.1%    64.3   2026-05-26   12% ▇
 prior                   pull toward the middle                  50.0                 2% ▇
                         weighted average                      = 64.0
 </pre>

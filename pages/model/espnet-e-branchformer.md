@@ -6,7 +6,7 @@
 
 ESPnet · released 2023-01 · 0.14892B params · cc-by-4.0
 
-**score 46.9** ±3.8 · #89 of 128 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.0** ±3.8 · #89 of 128 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  weight
-<a name="speech-espnet-librispeech-20260929"></a>ESPnet LibriSpeech AS…  <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-other WER (l…</a>   4.6%    46.9    73% ▇▇▇▇▇▇▇▇▇
+<a name="speech-espnet-librispeech-20260929"></a>ESPnet LibriSpeech AS…  <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-other WER (l…</a>   4.6%    47.0    73% ▇▇▇▇▇▇▇▇▇
                         <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-clean WER (l…</a>   2.2%    46.2    22% ▇▇▇
 prior                   pull toward the middle                   49.7     5% ▇
-                        weighted average                       = 46.9
+                        weighted average                       = 47.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle                   49.7     5% ▇
 
 <pre>
 version                                     needs  score
-fp32 (espnet 202610.post2 + espnet_mode…  ~0.81GB   46.9
+fp32 (espnet 202610.post2 + espnet_mode…  ~0.81GB   47.0
 </pre>
 
 ```sh

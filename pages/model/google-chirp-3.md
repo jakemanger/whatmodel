@@ -27,7 +27,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2608.24916v1">BOTNOI Thai telephony · CER</a>     13.4%    75.5   2026-08-03    4% ▇
 <a name="speech-stt-perle-cs-report"></a>Benchmarking Commerci…  <a href="https://arxiv.org/pdf/2605.19069v3">Perle code-switching benchmar…</a>  39.4%    52.7   2026-05-22    5% ▇
 <a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1    <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   4.2%    63.8   2026-07-05    4% ▇
-<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  10.3%    78.5   2026-08-15    1% ▇
+<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  10.3%    78.4   2026-08-15    1% ▇
 prior                   pull toward the middle                   49.7                 1% ▇
                         weighted average                       = 61.5
 </pre>

@@ -6,7 +6,7 @@
 
 Applied Brain Research · released 2025-11 · 0.019B params · applied-brain-research-open-license
 
-**score 42.2** ±4.7 · #103 of 128 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.2** ±4.8 · #103 of 128 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
