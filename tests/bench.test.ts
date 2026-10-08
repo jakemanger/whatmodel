@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { decodeBench, median, validateBench, type Bench } from '../lib/bench.ts';
+import { execFileSync } from 'node:child_process';
+import { ENGINES, median, reportFromText, validateReport, type Report } from '../lib/bench.ts';
 import { readFileSync } from 'node:fs';
 import { measuredSpeed } from '../lib/measured.ts';
 import type { Hardware, Model, Specs, Speed, Variant } from '../lib/types.ts';
@@ -9,31 +10,62 @@ const load = <T>(f: string): T => JSON.parse(readFileSync(new URL(`../data/${f}.
 const models = load<Model[]>('models'), hardware = load<Hardware[]>('hardware'), speeds = load<Speed[]>('speeds');
 const speedFor = (m: Model, v: Variant, s: Specs) => measuredSpeed(speeds, m, v, s);
 
-const run = (): Bench => ({
-  v: 1, at: '2026-09-25T15:25:20Z', nonce: '7eaf45b9-cb7f-4bbe-8e90-ed71328d5dc4', os: 'macos', os_version: '27.0',
-  cpu: 'Apple M2 Pro', gpu: 'Apple M2 Pro', gpu_cores: 16, gpus: 1, ram_gb: 16, vram_gb: null, engine: 'ollama', engine_version: '0.30.8', tokens: 256,
-  runs: [{ model: 'qwen3:8b', digest: '500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41', quant: 'Q4_K_M', params: '8.2B', bytes: 5225388164,
-    gpu_pct: 100, ctx: 4096, load_s: 6, prompt_tokens: [168, 168, 168], pp: [228.4, 220.4, 200.4], gen_tokens: [256, 256, 256], tg: [22.56, 21.05, 18.79], ms: [12334, 13116, 14672] }],
+const report = (): Report => ({
+  schema: 'whatmodel-bench-v3', script_version: '3.0.0',
+  protocol: { prompt_sha256: 'a'.repeat(64), agent_prompt_sha256: 'b'.repeat(64), max_output_tokens: 256, runs: 3, warmups: 1, order_seed: 42,
+    note: 'one call at a time; shuffled rounds; warm-ups discarded; one retry per failed call' },
+  hardware: { os: 'Darwin', arch: 'arm64', chip: 'Apple M2 Pro', ram_gb: 16, gpu_cores: 16 },
+  results: [{ model: 'qwen3-8b', engine: 'ollama', engine_version: '0.30.8', quant: 'Q4_K_M', params: '8.2B', digest: '500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41',
+    samples: [{ gen_tok_s: 22.56, prompt_tok_s: 228.4, load_s: 0.1, output_tokens: 256, elapsed_s: 12.3 }, { gen_tok_s: 21.05, output_tokens: 256 }, { gen_tok_s: 18.79, output_tokens: 256 }] }],
 });
-const link = (b: unknown) => 'https://whatmodel.sh/bench#r=' + Buffer.from(JSON.stringify(b)).toString('base64url');
+const issue = (r: unknown) => '### Benchmark results\n\n```json\n' + JSON.stringify(r) + '\n```\n\nI reviewed this report and release these measurements under CC0 1.0.\n';
 
-test('bench results round-trip through the link and validate', () => {
-  const v = validateBench(decodeBench(link(run())));
+test('bench reports read back from the GitHub issue body and validate', () => {
+  const v = validateReport(reportFromText(issue(report())));
   assert.equal(v.ok, true);
-  assert.equal(median(run().runs[0].tg), 21.05);
-  assert.equal(validateBench(decodeBench(link(run()).split('#r=')[1])).ok, true);
+  assert.equal(validateReport(reportFromText(JSON.stringify(report(), null, 2))).ok, true);
+  assert.equal(median(report().results[0].samples.map((s) => s.gen_tok_s)), 21.05);
+  assert.throws(() => reportFromText('not a report'));
 });
 
-test('bench validation rejects markup, extra fields, bad numbers and oversized results', () => {
-  const markup = run(); markup.runs[0].model = '<img src=x onerror=alert(1)>';
-  assert.equal(validateBench(markup).ok, false);
-  const extra = { ...run(), hostname: 'someones-mac' };
-  assert.equal(validateBench(extra).ok, false);
-  const negative = run(); negative.runs[0].tg = [-5];
-  assert.equal(validateBench(negative).ok, false);
-  const huge = run(); huge.runs = Array.from({ length: 21 }, () => run().runs[0]);
-  assert.equal(validateBench(huge).ok, false);
-  assert.throws(() => decodeBench('not a result'));
+test('bench validation rejects markup, extra fields, bad numbers and oversized reports', () => {
+  const markup = report(); markup.results[0].model = '<img src=x onerror=alert(1)>';
+  assert.equal(validateReport(markup).ok, false);
+  const chip = report(); chip.hardware.chip = 'M2 <script>';
+  assert.equal(validateReport(chip).ok, false);
+  const extra = { ...report(), hostname: 'someones-mac' };
+  assert.equal(validateReport(extra).ok, false);
+  const field = report(); (field.results[0].samples[0] as Record<string, unknown>).output = 'generated text';
+  assert.equal(validateReport(field).ok, false);
+  const negative = report(); negative.results[0].samples[0].gen_tok_s = -5;
+  assert.equal(validateReport(negative).ok, false);
+  const huge = report(); huge.results = Array.from({ length: 41 }, () => report().results[0]);
+  assert.equal(validateReport(huge).ok, false);
+});
+
+test('every report bench.py can write passes the schema, for each engine it times', () => {
+  const py = `
+import json, sys
+sys.path.insert(0, '.')
+import bench
+kinds = [dict(kind='ollama', model='qwen3:8b', quant='Q4_K_M', params='8.2B', digest='0'*64, engine_version='0.30.8'),
+         dict(kind='llama-bench', path='/x/Qwen3-8B-Q4_K_M.gguf', engine_version='version: 6730 (e60f01d9)'),
+         dict(kind='openai', model='m', base='http://127.0.0.1:1234/v1'),
+         dict(kind='claude', engine_version='2.1.290 (Claude Code)'), dict(kind='codex', engine_version='codex-cli 0.46.0'),
+         dict(kind='gemini', engine_version='0.9.0')] + [dict(kind='harness', tool=t) for t in bench.HARNESSES]
+jobs, ids = [], {}
+for t in kinds:
+    t.update(group='local', label='x'); job = bench.Run(t, 1, 1)
+    job.samples = [dict(gen_tok_s=12.5, prompt_tok_s=300.0, output_tokens=200, elapsed_s=3.2, ttft_s=0.4, load_s=0.1, cost_usd=0.01)]
+    jobs.append(job); ids[id(t)] = 'qwen3-8b'
+hw = dict(os='Darwin', arch='arm64', chip='Apple M2 Pro', ram_gb=16, gpu_cores=19, gpu='NVIDIA GeForce RTX 4090', vram_gb=24, gpus=1)
+print(json.dumps(dict(report=bench.public_report(jobs, 256, 3, 1, 123456, hw, ids), engines=sorted(set(bench.ENGINES.values()) - {'agent-cli'} | set(bench.HARNESSES)))))
+`;
+  const out = JSON.parse(execFileSync('python3', ['-I', '-c', py], { cwd: new URL('..', import.meta.url), encoding: 'utf8' }));
+  const v = validateReport(out.report);
+  assert.ok(v.ok, v.ok ? '' : v.errors.join('; '));
+  assert.equal(out.report.results.length, out.engines.length);
+  assert.deepEqual([...ENGINES].sort(), out.engines);
 });
 
 test('board speeds come only from exact download + exact chip measurements', () => {

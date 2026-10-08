@@ -39,7 +39,7 @@ export function csvTables(bench: BenchRun[]): Record<string, string> {
       ["model_id", "hardware", "hardware_kind", "precision", "offload", "speed", "unit", "engine", "settings", "source", "note"],
       speeds.map((x) => [x.model, x.hardware, x.kind, x.quant, x.offload, x.value, x.unit, x.engine, x.settings, x.source, x.note])),
     "bench-runs.csv": toCsv(
-      ["run_id", "submitted", "hardware_id", "hardware", "os", "engine", "model_id", "ollama_model", "precision", "context", "generation_tok_s", "prompt_tok_s", "gpu_percent"],
+      ["run_id", "submitted", "hardware_id", "hardware", "os", "engine", "model_id", "download", "precision", "context", "generation_tok_s", "prompt_tok_s", "gpu_percent"],
       bench.map((b) => [b.id, b.submitted, b.hardware, b.hardware_label, b.os, b.engine, b.model_id, b.model, b.quant, b.ctx, b.tg_median, b.pp_median, b.gpu_pct])),
   };
 }

@@ -1,6 +1,6 @@
-// Results from bench.sh. One schema serves three places: the /bench review page, the
-// database's submit_bench() check (scripts/bench-sql.ts turns it into SQL), and the review script.
-// Strings are limited to plain characters, so a submission can't carry markup.
+// Reports from bench.py (schema whatmodel-bench-v3). The script prints the exact report and the
+// contributor posts it as a GitHub issue; the maintainer's review script reads it back with this
+// schema. Strings are limited to plain characters, so a report can't carry markup.
 
 type Schema = {
   type?: string | string[];
@@ -19,73 +19,88 @@ type Schema = {
 
 const text = (pattern: string, maxLength: number): Schema => ({ type: ["string", "null"], pattern, maxLength });
 const int = (minimum: number, maximum: number): Schema => ({ type: ["integer", "null"], minimum, maximum });
-const series = (item: Schema): Schema => ({ type: "array", maxItems: 10, items: item });
+const num = (maximum: number): Schema => ({ type: ["number", "null"], minimum: 0, maximum });
+const hex64 = text("^[a-f0-9]{64}$", 64);
+const label = (maxLength: number) => text("^[A-Za-z0-9 ._()@+:,/-]*$", maxLength);
 
-const run: Schema = {
+// bench.py ENGINES, plus the agent CLIs it can time (HARNESSES).
+export const ENGINES = ["ollama", "openai-compatible", "llama.cpp", "claude-code", "codex-cli", "gemini-cli", "qwen", "opencode", "goose"] as const;
+// Engines that run the weights on the contributor's machine; only these can become local speeds.
+export const LOCAL_ENGINES: readonly string[] = ["ollama", "llama.cpp"];
+
+const sample: Schema = {
   type: "object",
   additionalProperties: false,
-  required: ["model", "quant", "tg"],
   properties: {
-    model: { type: "string", pattern: "^[A-Za-z0-9._:/-]+$", maxLength: 80 },
-    digest: text("^[a-f0-9]{64}$", 64),
+    elapsed_s: num(3600), output_tokens: int(0, 1e5), reasoning_tokens: int(0, 1e5), gen_tok_s: num(1e5),
+    prompt_tok_s: num(1e6), load_s: num(3600), ttft_s: num(3600), e2e_tok_s: num(1e5), cost_usd: num(100),
+  },
+};
+
+const result: Schema = {
+  type: "object",
+  additionalProperties: false,
+  required: ["model", "engine", "samples"],
+  properties: {
+    model: { type: "string", pattern: "^[a-z0-9][a-z0-9.-]{0,79}$", maxLength: 80 },
+    engine: { enum: [...ENGINES] },
+    engine_version: label(40),
+    samples: { type: "array", minItems: 1, maxItems: 20, items: sample },
     quant: text("^[A-Za-z0-9_.-]*$", 20),
     params: text("^[A-Za-z0-9.]*$", 12),
-    bytes: int(0, 2e12),
-    gpu_pct: int(0, 100),
-    ctx: int(0, 1e7),
-    load_s: { type: ["number", "null"], minimum: 0, maximum: 3600 },
-    prompt_tokens: series(int(0, 1e5)),
-    pp: series({ type: ["number", "null"], minimum: 0, maximum: 1e6 }),
-    gen_tokens: series(int(0, 1e5)),
-    tg: series({ type: ["number", "null"], minimum: 0, maximum: 1e5 }),
-    ms: series(int(0, 3.6e6)),
+    digest: hex64,
+    file: text("^[A-Za-z0-9._+-]*$", 120),
+    settings: text("^[A-Za-z0-9_.=-]*$", 60),
   },
 };
 
-export const BENCH_SCHEMA: Schema = {
+export const REPORT_SCHEMA: Schema = {
   type: "object",
   additionalProperties: false,
-  required: ["v", "at", "nonce", "os", "engine", "engine_version", "tokens", "runs"],
+  required: ["schema", "script_version", "protocol", "hardware", "results"],
   properties: {
-    v: { enum: [1] },
-    at: { type: "string", pattern: "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$", maxLength: 20 },
-    nonce: text("^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$", 36),
-    os: { enum: ["macos", "linux"] },
-    os_version: text("^[A-Za-z0-9._+-]*$", 40),
-    cpu: text("^[A-Za-z0-9 ._()@+-]*$", 80),
-    gpu: text("^[A-Za-z0-9 ._()@+-]*$", 80),
-    gpu_cores: int(0, 1000),
-    gpus: int(0, 64),
-    ram_gb: int(0, 4096),
-    vram_gb: int(0, 4096),
-    engine: { enum: ["ollama"] },
-    engine_version: { type: "string", pattern: "^[A-Za-z0-9._+-]+$", maxLength: 40 },
-    tokens: { type: "integer", minimum: 1, maximum: 4096 },
-    runs: { type: "array", minItems: 1, maxItems: 20, items: run },
+    schema: { enum: ["whatmodel-bench-v3"] },
+    script_version: { type: "string", pattern: "^[0-9]+\\.[0-9]+\\.[0-9]+$", maxLength: 20 },
+    protocol: {
+      type: "object",
+      additionalProperties: false,
+      required: ["prompt_sha256", "max_output_tokens", "runs", "warmups"],
+      properties: {
+        prompt_sha256: hex64, agent_prompt_sha256: hex64, max_output_tokens: { type: "integer", minimum: 1, maximum: 8192 },
+        runs: { type: "integer", minimum: 1, maximum: 20 }, warmups: { type: "integer", minimum: 0, maximum: 5 },
+        order_seed: int(0, 1e9), note: text("^[A-Za-z0-9 ;,.()-]*$", 200),
+      },
+    },
+    hardware: {
+      type: "object",
+      additionalProperties: false,
+      properties: {
+        os: { enum: ["Darwin", "Linux", "Windows", "Other"] }, arch: { enum: ["arm64", "aarch64", "x86_64", "AMD64", "Other"] },
+        chip: label(60), ram_gb: int(0, 8192), gpu: label(60), vram_gb: int(0, 8192), gpus: int(0, 64), gpu_cores: int(0, 1000),
+      },
+    },
+    results: { type: "array", minItems: 1, maxItems: 40, items: result },
   },
 };
 
-export const BENCH_MAX_BYTES = 16384;
+export const REPORT_MAX_BYTES = 32768;
 
-// Public by design (also in bench.sh): this key can only call bench_nonce() and submit_bench().
-export const BENCH_DB = "https://bphtbupywucfbwjncoqb.supabase.co/rest/v1/rpc";
-export const BENCH_DB_KEY = "sb_publishable_10R_ZENqtvIKgveIKJUyEw_q18CtwCQ";
-
-export type BenchRun = {
-  model: string; digest: string | null; quant: string | null; params: string | null; bytes: number | null;
-  gpu_pct: number | null; ctx: number | null; load_s: number | null;
-  prompt_tokens?: (number | null)[]; pp?: (number | null)[]; gen_tokens?: (number | null)[]; tg: (number | null)[]; ms?: (number | null)[];
+export type Sample = Partial<Record<"elapsed_s" | "output_tokens" | "reasoning_tokens" | "gen_tok_s" | "prompt_tok_s" | "load_s" | "ttft_s" | "e2e_tok_s" | "cost_usd", number | null>>;
+export type ReportResult = {
+  model: string; engine: (typeof ENGINES)[number]; engine_version?: string | null; samples: Sample[];
+  quant?: string | null; params?: string | null; digest?: string | null; file?: string | null; settings?: string | null;
 };
-export type Bench = {
-  v: 1; at: string; nonce: string | null; os: "macos" | "linux"; os_version: string | null; cpu: string | null; gpu: string | null;
-  gpu_cores: number | null; gpus: number | null; ram_gb: number | null; vram_gb: number | null;
-  engine: "ollama"; engine_version: string; tokens: number; runs: BenchRun[];
+export type Report = {
+  schema: "whatmodel-bench-v3"; script_version: string;
+  protocol: { prompt_sha256: string; agent_prompt_sha256?: string; max_output_tokens: number; runs: number; warmups: number; order_seed?: number | null; note?: string | null };
+  hardware: { os?: string; arch?: string; chip?: string | null; ram_gb?: number | null; gpu?: string | null; vram_gb?: number | null; gpus?: number | null; gpu_cores?: number | null };
+  results: ReportResult[];
 };
 
 const typeOf = (v: unknown) =>
   v === null ? "null" : Array.isArray(v) ? "array" : typeof v === "number" ? (Number.isInteger(v) ? "integer" : "number") : typeof v;
 
-// The subset of JSON Schema used above, so the page and the database agree on what's valid.
+// The subset of JSON Schema used above.
 function check(v: unknown, s: Schema, path: string, errors: string[]) {
   if (s.enum && !s.enum.includes(v)) return void errors.push(`${path}: unexpected value`);
   if (s.type) {
@@ -115,20 +130,22 @@ function check(v: unknown, s: Schema, path: string, errors: string[]) {
   }
 }
 
-export function validateBench(v: unknown): { ok: true; bench: Bench } | { ok: false; errors: string[] } {
+export function validateReport(v: unknown): { ok: true; report: Report } | { ok: false; errors: string[] } {
   const errors: string[] = [];
-  if (JSON.stringify(v ?? null).length > BENCH_MAX_BYTES) errors.push("result is too large");
-  else check(v, BENCH_SCHEMA, "result", errors);
-  return errors.length ? { ok: false, errors: errors.slice(0, 8) } : { ok: true, bench: v as Bench };
+  if (JSON.stringify(v ?? null).length > REPORT_MAX_BYTES) errors.push("report is too large");
+  else check(v, REPORT_SCHEMA, "report", errors);
+  return errors.length ? { ok: false, errors: errors.slice(0, 8) } : { ok: true, report: v as Report };
 }
 
-// Accepts the whole link the script printed, just its #r=… part, or the raw code.
-export function decodeBench(input: string): unknown {
-  const code = input.trim().replace(/^.*#/, "").replace(/^r=/, "");
-  if (!/^[A-Za-z0-9_-]+$/.test(code) || code.length > BENCH_MAX_BYTES * 2) throw new Error("that doesn't look like a bench result");
-  const b64 = code.replace(/-/g, "+").replace(/_/g, "/");
-  const bytes = Uint8Array.from(atob(b64 + "=".repeat((4 - (b64.length % 4)) % 4)), (c) => c.charCodeAt(0));
-  return JSON.parse(new TextDecoder().decode(bytes));
+// The report from an issue body (its ```json block) or from the saved JSON file itself.
+export function reportFromText(input: string): unknown {
+  if (input.length > REPORT_MAX_BYTES * 2) throw new Error("too long to be a bench report");
+  const block = /```json\s*\n([\s\S]*?)\n```/.exec(input)?.[1] ?? input;
+  try {
+    return JSON.parse(block.trim());
+  } catch {
+    throw new Error("no bench report found: expected the ```json block bench.py writes, or its saved JSON file");
+  }
 }
 
 export function median(xs: (number | null | undefined)[] | undefined): number | null {
