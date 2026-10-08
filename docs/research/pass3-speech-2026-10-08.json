@@ -1,0 +1,1491 @@
+{
+ "about": "Pass 3 research for 104 runnable TTS/STT models that are thin, have no results, or sit in disconnected comparison sets (input: pass3-speech-input.json). Nothing in data/ was edited. Merge results and models with `node scripts/import.ts` (benchmarks can be imported too); add ledger entries by hand (`action: new`) or append `add_match` paths to the named existing entry. `suggested_tasks` on new benchmarks is a proposal for data/tasks.json (empty: no existing speech task fits). Proposed comparison-only models are in `models`. Validated in a scratch copy: `node scripts/check.ts --validate-only` passes (1,294 models, 12,120 results, 781 benchmarks, 711 sources). Counts in `gaps` come from lib/score.ts toCells on that copy.",
+ "results": [
+  {
+   "model": "kokoro-82m",
+   "bench": "paradee-wikitext200-utmos22",
+   "score": 0.88,
+   "raw_value": 4.52,
+   "raw_unit": "UTMOS predicted MOS (1-5)",
+   "scale_offset": 1,
+   "scale_divisor": 4,
+   "source": "https://arxiv.org/html/2610.06817v1",
+   "source_id": "speech-paradee-report-ccby",
+   "by": "independent",
+   "date": "2026-10-05",
+   "date_basis": "arXiv v1 date; run dates not stated",
+   "note": "Paradee (Mahendrakar, arXiv:2610.06817v1, 5 Oct 2026, CC BY 4.0) Table 3 'Paradee against other small open models on the same 200 held-out sentences, with the same scoring' (sentences held out from a 12,000-sentence WikiText-103 corpus; each model speaks its own voice). The author ran every system on one Apple M4 Pro machine (§5). Row 'Kokoro-82M, teacher (af_heart)', column UTMOS = 4.52 ± 0.003 (utmos22_strong checkpoint, mean over the 200 sentences, 95% CI). Stored (UTMOS-1)/4. Teacher model; reference [11] is 'hexgrad, Kokoro-82M, Hugging Face model card, v1.0' (catalogue kokoro-82m, voice af_heart). Paradee's author is not Kokoro's maker, so by=independent."
+  },
+  {
+   "model": "piper-en-us-lessac-medium",
+   "bench": "paradee-wikitext200-utmos22",
+   "score": 0.84,
+   "raw_value": 4.36,
+   "raw_unit": "UTMOS predicted MOS (1-5)",
+   "scale_offset": 1,
+   "scale_divisor": 4,
+   "source": "https://arxiv.org/html/2610.06817v1",
+   "source_id": "speech-paradee-report-ccby",
+   "by": "independent",
+   "date": "2026-10-05",
+   "date_basis": "arXiv v1 date; run dates not stated",
+   "note": "Paradee (Mahendrakar, arXiv:2610.06817v1, 5 Oct 2026, CC BY 4.0) Table 3 'Paradee against other small open models on the same 200 held-out sentences, with the same scoring' (sentences held out from a 12,000-sentence WikiText-103 corpus; each model speaks its own voice). The author ran every system on one Apple M4 Pro machine (§5). Row 'Piper, en_US-lessac-medium', column UTMOS = 4.36 ± 0.02 (utmos22_strong checkpoint, mean over the 200 sentences, 95% CI). Stored (UTMOS-1)/4. Voice en_US-lessac-medium (rhasspy/piper-voices; catalogue piper-en-us-lessac-medium); 15.7M params, 63.2 MB fp32 as printed; timed from text."
+  },
+  {
+   "model": "kitten-tts-nano-0-8",
+   "bench": "paradee-wikitext200-utmos22",
+   "score": 0.7525,
+   "raw_value": 4.01,
+   "raw_unit": "UTMOS predicted MOS (1-5)",
+   "scale_offset": 1,
+   "scale_divisor": 4,
+   "source": "https://arxiv.org/html/2610.06817v1",
+   "source_id": "speech-paradee-report-ccby",
+   "by": "independent",
+   "date": "2026-10-05",
+   "date_basis": "arXiv v1 date; run dates not stated",
+   "note": "Paradee (Mahendrakar, arXiv:2610.06817v1, 5 Oct 2026, CC BY 4.0) Table 3 'Paradee against other small open models on the same 200 held-out sentences, with the same scoring' (sentences held out from a 12,000-sentence WikiText-103 corpus; each model speaks its own voice). The author ran every system on one Apple M4 Pro machine (§5). Row 'KittenTTS nano 0.8 (Bella)', column UTMOS = 4.01 ± 0.04 (utmos22_strong checkpoint, mean over the 200 sentences, 95% CI). Stored (UTMOS-1)/4. Proposed comparison-only model kitten-tts-nano-0-8: printed '14.0M' params and '56.8 MB' fp32 file match KittenML/kitten-tts-nano-0.8-fp32 kitten_tts_nano_v0_8.onnx (56,767,095 bytes @7a1db64); voice Bella. Not the catalogue's kitten-tts-mini-0-8."
+  },
+  {
+   "model": "kokoro-82m",
+   "bench": "paradee-wikitext200-whisper-base-wer",
+   "score": 0.057,
+   "raw_value": 5.7,
+   "raw_unit": "WER %",
+   "scale_divisor": 100,
+   "source": "https://arxiv.org/html/2610.06817v1",
+   "source_id": "speech-paradee-report-ccby",
+   "by": "independent",
+   "date": "2026-10-05",
+   "date_basis": "arXiv v1 date; run dates not stated",
+   "note": "Paradee (Mahendrakar, arXiv:2610.06817v1, 5 Oct 2026, CC BY 4.0) Table 3 'Paradee against other small open models on the same 200 held-out sentences, with the same scoring' (sentences held out from a 12,000-sentence WikiText-103 corpus; each model speaks its own voice). The author ran every system on one Apple M4 Pro machine (§5). Row 'Kokoro-82M, teacher (af_heart)', column WER = 5.7% (Whisper base transcripts vs source text, §5). Stored as a fraction. Teacher model; reference [11] is 'hexgrad, Kokoro-82M, Hugging Face model card, v1.0' (catalogue kokoro-82m, voice af_heart). Paradee's author is not Kokoro's maker, so by=independent."
+  },
+  {
+   "model": "piper-en-us-lessac-medium",
+   "bench": "paradee-wikitext200-whisper-base-wer",
+   "score": 0.088,
+   "raw_value": 8.8,
+   "raw_unit": "WER %",
+   "scale_divisor": 100,
+   "source": "https://arxiv.org/html/2610.06817v1",
+   "source_id": "speech-paradee-report-ccby",
+   "by": "independent",
+   "date": "2026-10-05",
+   "date_basis": "arXiv v1 date; run dates not stated",
+   "note": "Paradee (Mahendrakar, arXiv:2610.06817v1, 5 Oct 2026, CC BY 4.0) Table 3 'Paradee against other small open models on the same 200 held-out sentences, with the same scoring' (sentences held out from a 12,000-sentence WikiText-103 corpus; each model speaks its own voice). The author ran every system on one Apple M4 Pro machine (§5). Row 'Piper, en_US-lessac-medium', column WER = 8.8% (Whisper base transcripts vs source text, §5). Stored as a fraction. Voice en_US-lessac-medium (rhasspy/piper-voices; catalogue piper-en-us-lessac-medium); 15.7M params, 63.2 MB fp32 as printed; timed from text."
+  },
+  {
+   "model": "kitten-tts-nano-0-8",
+   "bench": "paradee-wikitext200-whisper-base-wer",
+   "score": 0.055,
+   "raw_value": 5.5,
+   "raw_unit": "WER %",
+   "scale_divisor": 100,
+   "source": "https://arxiv.org/html/2610.06817v1",
+   "source_id": "speech-paradee-report-ccby",
+   "by": "independent",
+   "date": "2026-10-05",
+   "date_basis": "arXiv v1 date; run dates not stated",
+   "note": "Paradee (Mahendrakar, arXiv:2610.06817v1, 5 Oct 2026, CC BY 4.0) Table 3 'Paradee against other small open models on the same 200 held-out sentences, with the same scoring' (sentences held out from a 12,000-sentence WikiText-103 corpus; each model speaks its own voice). The author ran every system on one Apple M4 Pro machine (§5). Row 'KittenTTS nano 0.8 (Bella)', column WER = 5.5% (Whisper base transcripts vs source text, §5). Stored as a fraction. Proposed comparison-only model kitten-tts-nano-0-8: printed '14.0M' params and '56.8 MB' fp32 file match KittenML/kitten-tts-nano-0.8-fp32 kitten_tts_nano_v0_8.onnx (56,767,095 bytes @7a1db64); voice Bella. Not the catalogue's kitten-tts-mini-0-8."
+  },
+  {
+   "model": "openaudio-s1-mini",
+   "bench": "arabic-tts-arena-elo-20260924",
+   "score": 931.4,
+   "source": "https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json",
+   "source_id": "speech-arabic-tts-arena-apache",
+   "by": "independent",
+   "date": "2026-09-24",
+   "note": "leaderboard.json (last_updated 2026-09-24T00:01:34Z, 8,647 total votes) entry rank 24, model_id fish_speech 'Fish Speech S1-mini', model_url https://huggingface.co/fishaudio/s1-mini (= catalogue openaudio-s1-mini): elo 931.4 ±23.8, 506 battles (W109/L178/T219), retired: true (retired 2026-05-08 per the Space news). Retired entries are NOT frozen: the backend's elo.py 'compute_leaderboard' docstring says 'Fit a Bradley-Terry model to all votes' and only rank computation skips retired ids; this entry's rating moves between daily snapshots with battles fixed at 506 (965.5 on 2026-05-10 @dcef062, 963.7 on 06-02 @fb3b88b, 940.6 on 07-30 @1a26392, 930.1 on 09-05 @a3332e6, 931.4 on 09-24 @6e003a5), so it is on the same scale as the active rows of this snapshot. Requires relaxing the benchmark's 'only active models' rule (see md)."
+  },
+  {
+   "model": "whisper-medium",
+   "bench": "librispeech-test-clean-wer",
+   "score": 0.028,
+   "raw_value": 2.8,
+   "scale_divisor": 100,
+   "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/owsm_v3.1/s2t1/README.md",
+   "source_id": "speech-espnet-librispeech-20260929",
+   "by": "independent",
+   "date": "2024-01-08",
+   "note": "ESPnet repository @b902372 (Apache-2.0), egs2/owsm_v3.1/s2t1/README.md 'Results' table (added 2024-01-08, commit c77d583): 'Here are some of the ASR results (WER or CER) with attention-based greedy search.' Column 'Whisper medium (769M)' = openai/whisper-medium (multilingual, not .en; catalogue whisper-medium). ESPnet ran Whisper itself: OWSM paper (arXiv:2309.13876v3, used only as provenance evidence) states 'To ensure fair comparison, we prepare all test data in ESPnet and evaluate Whisper in the same setup instead of reporting results from their paper', and the OWSM v3.1 paper (arXiv:2401.16658v3) says it follows that setup ('greedy search and apply the Whisper text normalizer before scoring'). Proposed as a second file of the existing ESPnet evaluator (speech-espnet-librispeech-20260929) so the 11 ESPnet LibriSpeech recipe models share a run with a main-scale model; protocol differs from the recipe rows (greedy decoding + Whisper normaliser vs recipe beam search/LM), see md. Row 'LibriSpeech test-clean | eng', Whisper medium = 2.8 (WER %). Stored 0.028."
+  },
+  {
+   "model": "whisper-medium",
+   "bench": "librispeech-test-other-wer",
+   "score": 0.065,
+   "raw_value": 6.5,
+   "scale_divisor": 100,
+   "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/owsm_v3.1/s2t1/README.md",
+   "source_id": "speech-espnet-librispeech-20260929",
+   "by": "independent",
+   "date": "2024-01-08",
+   "note": "ESPnet repository @b902372 (Apache-2.0), egs2/owsm_v3.1/s2t1/README.md 'Results' table (added 2024-01-08, commit c77d583): 'Here are some of the ASR results (WER or CER) with attention-based greedy search.' Column 'Whisper medium (769M)' = openai/whisper-medium (multilingual, not .en; catalogue whisper-medium). ESPnet ran Whisper itself: OWSM paper (arXiv:2309.13876v3, used only as provenance evidence) states 'To ensure fair comparison, we prepare all test data in ESPnet and evaluate Whisper in the same setup instead of reporting results from their paper', and the OWSM v3.1 paper (arXiv:2401.16658v3) says it follows that setup ('greedy search and apply the Whisper text normalizer before scoring'). Proposed as a second file of the existing ESPnet evaluator (speech-espnet-librispeech-20260929) so the 11 ESPnet LibriSpeech recipe models share a run with a main-scale model; protocol differs from the recipe rows (greedy decoding + Whisper normaliser vs recipe beam search/LM), see md. Row 'LibriSpeech test-other | eng', Whisper medium = 6.5 (WER %). Stored 0.065."
+  },
+  {
+   "model": "tacotron2-hifigan-vctk-vits-study",
+   "bench": "vits2021-vctk-mos",
+   "score": 0.535,
+   "raw_value": 3.14,
+   "raw_unit": "MOS (1-5)",
+   "scale_offset": 1,
+   "scale_divisor": 4,
+   "source": "https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+   "source_id": "speech-vits-icml2021",
+   "by": "independent",
+   "date": "2021-07-18",
+   "note": "VITS (Kim, Kong & Son, ICML 2021, PMLR v139; CC BY 4.0 per the PMLR publication agreement) Table 3 'Comparison of evaluated MOS with 95% confidence intervals on the VCTK dataset'. §4.2: 'We trained the models on the VCTK dataset. ... For Tacotron 2, we broadcasted speaker embedding and concatenated it with the encoder output, and for Glow-TTS, we applied the global conditioning ... The evaluation method is the same as that described in Section 4.1' (crowd-sourced 5-point naturalness MOS, raters hear each sample once, loudness-normalised). Same listening test as the existing vits-vctk row (4.38). Stored (MOS-1)/4. Row 'Tacotron 2 + HiFi-GAN', MOS 3.14 (±0.09). Multi-speaker Tacotron 2 (NVIDIA implementation, §3.4 footnote 3) trained on VCTK by the VITS authors, HiFi-GAN vocoder without fine-tuning."
+  },
+  {
+   "model": "glow-tts-hifigan-vctk-vits-study",
+   "bench": "vits2021-vctk-mos",
+   "score": 0.69,
+   "raw_value": 3.76,
+   "raw_unit": "MOS (1-5)",
+   "scale_offset": 1,
+   "scale_divisor": 4,
+   "source": "https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+   "source_id": "speech-vits-icml2021",
+   "by": "independent",
+   "date": "2021-07-18",
+   "note": "VITS (Kim, Kong & Son, ICML 2021, PMLR v139; CC BY 4.0 per the PMLR publication agreement) Table 3 'Comparison of evaluated MOS with 95% confidence intervals on the VCTK dataset'. §4.2: 'We trained the models on the VCTK dataset. ... For Tacotron 2, we broadcasted speaker embedding and concatenated it with the encoder output, and for Glow-TTS, we applied the global conditioning ... The evaluation method is the same as that described in Section 4.1' (crowd-sourced 5-point naturalness MOS, raters hear each sample once, loudness-normalised). Same listening test as the existing vits-vctk row (4.38). Stored (MOS-1)/4. Row 'Glow-TTS + HiFi-GAN', MOS 3.76 (±0.07). Multi-speaker Glow-TTS (jaywalnut310/glow-tts implementation, global speaker conditioning) trained on VCTK by the VITS authors, HiFi-GAN vocoder without fine-tuning."
+  },
+  {
+   "model": "speechbrain-asr-wav2vec2-librispeech",
+   "bench": "librispeech-test-clean-wer",
+   "score": 0.019,
+   "raw_value": 1.9,
+   "scale_divisor": 100,
+   "source": "https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md",
+   "source_id": "first-party-speechbrain-asr-cards",
+   "by": "lab",
+   "date": "2024-02-19",
+   "note": "SpeechBrain card speechbrain/asr-wav2vec2-librispeech @356e347 (license: apache-2.0): 'The performance of the model is the following' table, row 'Release 24-03-22', 'Test clean WER' = 1.90; front-matter model-index 'LibriSpeech (clean) ... Test WER value: 1.90'. wav2vec2-large-960h-lv60-self + 2 DNN layers + CTC, no LM. Differs from PERFORMANCE.md's recipe row (1.65/3.67), so the card value for the released checkpoint is used. Pooled with the other SpeechBrain cards under first-party-speechbrain-asr-cards (one maker's own published results, like first-party-meta-asr-cards)."
+  },
+  {
+   "model": "speechbrain-asr-wav2vec2-librispeech",
+   "bench": "librispeech-test-other-wer",
+   "score": 0.0396,
+   "raw_value": 3.96,
+   "scale_divisor": 100,
+   "source": "https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md",
+   "source_id": "first-party-speechbrain-asr-cards",
+   "by": "lab",
+   "date": "2024-02-19",
+   "note": "SpeechBrain card speechbrain/asr-wav2vec2-librispeech @356e347 (apache-2.0): performance table row 'Release 24-03-22', 'Test other WER' = 3.96; model-index 'LibriSpeech (other) ... Test WER value: 3.96'. Pooled with the other SpeechBrain cards under first-party-speechbrain-asr-cards (one maker's own published results, like first-party-meta-asr-cards)."
+  },
+  {
+   "model": "speechbrain-asr-conformer-largescaleasr",
+   "bench": "librispeech-test-other-wer",
+   "score": 0.046,
+   "raw_value": 4.6,
+   "scale_divisor": 100,
+   "source": "https://huggingface.co/speechbrain/asr-conformer-loquacious/blob/42106e67e454ae361ca2d8311a7a807d5f95a3b9/README.md",
+   "source_id": "first-party-speechbrain-asr-cards",
+   "by": "lab",
+   "date": "2025-02-06",
+   "note": "SpeechBrain card speechbrain/asr-conformer-loquacious @42106e6 (formerly asr-conformer-largescaleasr; apache-2.0; 'This model is a contribution of the Samsung AI Center-Cambridge'): 'The performance of the model is the following' table, row '480M', column 'LibriSpeech test-other' = 4.6 (zero-shot: the model is trained on LargeScaleASR/Loquacious, not LibriSpeech). Conformer encoder + joint CTC/transformer decoder, no external LM. Results added 2025-02-06 (commit 82b04aa 'more results'); later commits README only. The card prints no test-clean value. Pooled with the other SpeechBrain cards under first-party-speechbrain-asr-cards (one maker's own published results, like first-party-meta-asr-cards)."
+  },
+  {
+   "model": "speechbrain-asr-conformer-largescaleasr",
+   "bench": "voxpopuli-en-wer",
+   "score": 0.069,
+   "raw_value": 6.9,
+   "scale_divisor": 100,
+   "source": "https://huggingface.co/speechbrain/asr-conformer-loquacious/blob/42106e67e454ae361ca2d8311a7a807d5f95a3b9/README.md",
+   "source_id": "first-party-speechbrain-asr-cards",
+   "by": "lab",
+   "date": "2025-02-06",
+   "note": "Same card and table, column 'Voxpopuli test' = 6.9 (English VoxPopuli test). Raw evidence only: no other SpeechBrain card in this pool reports VoxPopuli, so this run has one model. Pooled with the other SpeechBrain cards under first-party-speechbrain-asr-cards (one maker's own published results, like first-party-meta-asr-cards)."
+  },
+  {
+   "model": "speechbrain-asr-transformer-transformerlm-librispeech",
+   "bench": "librispeech-test-clean-wer",
+   "score": 0.0227,
+   "raw_value": 2.27,
+   "scale_divisor": 100,
+   "source": "https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech/blob/bcf56f762f37877912578f8800bc2a4f5171e5e5/README.md",
+   "source_id": "first-party-speechbrain-asr-cards",
+   "by": "lab",
+   "date": "2024-02-19",
+   "note": "SpeechBrain card speechbrain/asr-transformer-transformerlm-librispeech @bcf56f7 (apache-2.0): performance table row 'Release 24-03-22', 'Test clean WER' = 2.27; model-index Test WER 2.27 (also PERFORMANCE.md row transformer.yaml 2.27%). Transformer encoder + joint CTC/transformer decoder with Transformer LM. Pooled with the other SpeechBrain cards under first-party-speechbrain-asr-cards (one maker's own published results, like first-party-meta-asr-cards)."
+  },
+  {
+   "model": "speechbrain-asr-transformer-transformerlm-librispeech",
+   "bench": "librispeech-test-other-wer",
+   "score": 0.0553,
+   "raw_value": 5.53,
+   "scale_divisor": 100,
+   "source": "https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech/blob/bcf56f762f37877912578f8800bc2a4f5171e5e5/README.md",
+   "source_id": "first-party-speechbrain-asr-cards",
+   "by": "lab",
+   "date": "2024-02-19",
+   "note": "Same card, 'Test other WER' = 5.53; model-index Test WER 5.53. Pooled with the other SpeechBrain cards under first-party-speechbrain-asr-cards (one maker's own published results, like first-party-meta-asr-cards)."
+  },
+  {
+   "model": "kokoro-82m",
+   "bench": "carun-tts-bench56-whisper-v3-wer",
+   "score": 0.023,
+   "raw_value": 2.3,
+   "scale_divisor": 100,
+   "source": "https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/data/REPORT_DATA.md",
+   "source_id": "speech-carun-tts-bench-apache",
+   "by": "independent",
+   "date": "2026-09-10",
+   "note": "carun/tts-bench @27727b2 (Apache-2.0 repository, committed 2026-09-10 'data: raw results from the published run'), data/REPORT_DATA.md 'Intelligibility — Whisper judge' table, column 'Overall WER' (same value in README's 'WER (Whisper judge)' column). 56 fixed English sentences in 7 categories (harness/corpus.py), one run per engine on an NVIDIA GB10; transcribed with openai/whisper-large-v3 and scored after whisper_normalizer EnglishTextNormalizer on both sides (harness/judge.py). The repo author ran every engine. Row 'kokoro' = 2.3%. engines/run_kokoro.py: kokoro KPipeline (hexgrad/Kokoro-82M v1.0), VOICE = 'af_heart', speed 1."
+  },
+  {
+   "model": "magpie-tts-multilingual-357m",
+   "bench": "carun-tts-bench56-whisper-v3-wer",
+   "score": 0.07,
+   "raw_value": 7.0,
+   "scale_divisor": 100,
+   "source": "https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/data/REPORT_DATA.md",
+   "source_id": "speech-carun-tts-bench-apache",
+   "by": "independent",
+   "date": "2026-09-10",
+   "note": "carun/tts-bench @27727b2 (Apache-2.0 repository, committed 2026-09-10 'data: raw results from the published run'), data/REPORT_DATA.md 'Intelligibility — Whisper judge' table, column 'Overall WER' (same value in README's 'WER (Whisper judge)' column). 56 fixed English sentences in 7 categories (harness/corpus.py), one run per engine on an NVIDIA GB10; transcribed with openai/whisper-large-v3 and scored after whisper_normalizer EnglishTextNormalizer on both sides (harness/judge.py). The repo author ran every engine. Row 'magpie' = 7.0% (default configuration, APPLY_TN = False; the separate 'magpie-tn' text-normalisation run, 5.9%, is not recorded). engines/run_magpie.py: MagpieTTSModel.from_pretrained('nvidia/magpie_tts_multilingual_357m'), language 'en', speaker_index 4 (Sofia)."
+  },
+  {
+   "model": "qwen3-tts-12hz-0-6b-customvoice",
+   "bench": "carun-tts-bench56-whisper-v3-wer",
+   "score": 0.041,
+   "raw_value": 4.1,
+   "scale_divisor": 100,
+   "source": "https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/data/REPORT_DATA.md",
+   "source_id": "speech-carun-tts-bench-apache",
+   "by": "independent",
+   "date": "2026-09-10",
+   "note": "carun/tts-bench @27727b2 (Apache-2.0 repository, committed 2026-09-10 'data: raw results from the published run'), data/REPORT_DATA.md 'Intelligibility — Whisper judge' table, column 'Overall WER' (same value in README's 'WER (Whisper judge)' column). 56 fixed English sentences in 7 categories (harness/corpus.py), one run per engine on an NVIDIA GB10; transcribed with openai/whisper-large-v3 and scored after whisper_normalizer EnglishTextNormalizer on both sides (harness/judge.py). The repo author ran every engine. Row 'qwen3-tts-0.6b' = 4.1%. engines/run_qwen.py: MODEL = 'Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice', SPEAKER = 'Aiden', generate_custom_voice(language='English'), sdpa attention."
+  },
+  {
+   "model": "wayu-paxa-tts-edge",
+   "bench": "wayu-libritts500-en-whisper-v3-cer",
+   "score": 0.011,
+   "raw_value": 1.1,
+   "scale_divisor": 100,
+   "source": "https://arxiv.org/html/2609.03502v1",
+   "source_id": "speech-wayu-thai-tts-ccby",
+   "by": "lab",
+   "date": "2026-09-03",
+   "note": "Building and Evaluating Fixed-Voice Thai TTS from Synthetic Speech (arXiv:2609.03502v1, CC BY 4.0; existing ledger entry speech-wayu-thai-tts-ccby) Table 8 'Final comparison', column 'CER Eng.': caption 'English CER uses 500 held-out LibriTTS lines transcribed with Whisper Large V3'. Same table and run as the recorded Thai CER and keyword-accuracy rows. Stored as a fraction. Row 'Wayu-Paxa-TTS-Edge' = 1.1%."
+  },
+  {
+   "model": "omnivoice",
+   "bench": "wayu-libritts500-en-whisper-v3-cer",
+   "score": 0.009,
+   "raw_value": 0.9,
+   "scale_divisor": 100,
+   "source": "https://arxiv.org/html/2609.03502v1",
+   "source_id": "speech-wayu-thai-tts-ccby",
+   "by": "independent",
+   "date": "2026-09-03",
+   "note": "Building and Evaluating Fixed-Voice Thai TTS from Synthetic Speech (arXiv:2609.03502v1, CC BY 4.0; existing ledger entry speech-wayu-thai-tts-ccby) Table 8 'Final comparison', column 'CER Eng.': caption 'English CER uses 500 held-out LibriTTS lines transcribed with Whisper Large V3'. Same table and run as the recorded Thai CER and keyword-accuracy rows. Stored as a fraction. Row 'OmniVoice teacher' = 0.9%."
+  },
+  {
+   "model": "gemini-3-1-flash-tts-preview",
+   "bench": "wayu-libritts500-en-whisper-v3-cer",
+   "score": 0.008,
+   "raw_value": 0.8,
+   "scale_divisor": 100,
+   "source": "https://arxiv.org/html/2609.03502v1",
+   "source_id": "speech-wayu-thai-tts-ccby",
+   "by": "independent",
+   "date": "2026-09-03",
+   "note": "Building and Evaluating Fixed-Voice Thai TTS from Synthetic Speech (arXiv:2609.03502v1, CC BY 4.0; existing ledger entry speech-wayu-thai-tts-ccby) Table 8 'Final comparison', column 'CER Eng.': caption 'English CER uses 500 held-out LibriTTS lines transcribed with Whisper Large V3'. Same table and run as the recorded Thai CER and keyword-accuracy rows. Stored as a fraction. Row 'Gemini 3.1 Flash TTS' = 0.8%."
+  }
+ ],
+ "benchmarks": [
+  {
+   "id": "paradee-wikitext200-utmos22",
+   "name": "Paradee small-TTS comparison · 200 WikiText-103 sentences · UTMOS (utmos22_strong)",
+   "category": "tts",
+   "kind": "acc",
+   "url": "https://arxiv.org/html/2610.06817v1",
+   "metric": "predicted_mos_utmos",
+   "setup": "Paradee report (arXiv:2610.06817v1) §5 and Table 3: each fixed-voice system reads the same 200 held-out English sentences (held out from a 12,000-sentence WikiText-103 corpus) in its own voice; naturalness predicted with UTMOS (utmos22_strong checkpoint), averaged over the 200 sentences. One author ran all systems.",
+   "scale_transform": "score = (raw UTMOS - 1) / 4",
+   "raw_scale_min": 1,
+   "raw_scale_max": 5,
+   "display_unit": "predicted MOS / 5; not human MOS, not accuracy",
+   "caveats": [
+    "Automatic MOS predictor; the paper notes UTMOS missed an audible buzz artefact (§7, §9).",
+    "Each system uses a different voice (af_heart, lessac, Bella), so the score mixes voice and model quality."
+   ],
+   "suggested_tasks": []
+  },
+  {
+   "id": "paradee-wikitext200-whisper-base-wer",
+   "name": "Paradee small-TTS comparison · 200 WikiText-103 sentences · Whisper-base WER",
+   "category": "tts",
+   "kind": "err",
+   "url": "https://arxiv.org/html/2610.06817v1",
+   "metric": "word_error_rate",
+   "setup": "Same 200 held-out WikiText-103 sentences as paradee-wikitext200-utmos22; audio transcribed with Whisper (base) and compared with the source text (§5). WER % / 100.",
+   "score_unit": "error ratio (source % / 100)",
+   "caveats": [
+    "Whisper base is a small ASR model; the paper says WER 'barely separates our models'.",
+    "Normalisation not stated."
+   ],
+   "suggested_tasks": []
+  },
+  {
+   "id": "carun-tts-bench56-whisper-v3-wer",
+   "name": "carun tts-bench · 56-sentence English corpus · Whisper large-v3 WER",
+   "category": "tts",
+   "kind": "err",
+   "url": "https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/README.md",
+   "metric": "word_error_rate",
+   "setup": "carun/tts-bench (Apache-2.0): 56 English sentences in 7 categories (prose, numbers, acronyms, jargon, names, complex clauses, heteronyms) synthesised once per engine with its default/preset voice; each output transcribed by openai/whisper-large-v3 and scored against the input after the Whisper English normaliser on both sides; overall WER as printed in data/REPORT_DATA.md. The Parakeet-judge column is a correlated second ASR view of the same audio and is not recorded.",
+   "score_unit": "error ratio (source % / 100)",
+   "caveats": [
+    "Small corpus (56 sentences, one seed); the author notes the heteronym category measures nothing.",
+    "Fixed-voice systems each use their own preset voice."
+   ],
+   "suggested_tasks": []
+  },
+  {
+   "id": "wayu-libritts500-en-whisper-v3-cer",
+   "name": "Wayu Thai TTS eval · English CER on 500 held-out LibriTTS lines (Whisper Large V3)",
+   "category": "tts",
+   "kind": "err",
+   "url": "https://arxiv.org/html/2609.03502v1",
+   "metric": "character_error_rate",
+   "setup": "Wayu/Paxa/Typhoon fixed-voice TTS report (arXiv:2609.03502v1) Table 8: each system synthesises 500 held-out LibriTTS English transcript lines with its Thai fixed/reference voice; audio transcribed with Whisper Large V3; mean CER in percent (divided by 100 here). Same evaluator and run as wayu-thai-cer500-typhoon-whisper.",
+   "score_unit": "fraction (source percent / 100)",
+   "setup_sources": [
+    "https://arxiv.org/html/2609.03502v1"
+   ],
+   "caveats": [
+    "Run by the makers of Wayu-Paxa-TTS-Edge, which was trained on LibriTTS transcripts (held-out lines are used for the test).",
+    "English intelligibility of Thai-voiced systems; complements the Thai CER of the same table rather than repeating it."
+   ],
+   "suggested_tasks": []
+  }
+ ],
+ "ledger": [
+  {
+   "action": "new",
+   "id": "speech-paradee-report-ccby",
+   "name": "Paradee: Distilling Kokoro-82M into an 8M-Parameter Single-Voice TTS Model (arXiv:2610.06817v1), Table 3 small-model comparison",
+   "kind": "paper",
+   "match": [
+    "arxiv.org/html/2610.06817v1"
+   ],
+   "exact": true,
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "terms_url": "https://arxiv.org/abs/2610.06817v1",
+   "quote": "arXiv abstract page for 2610.06817v1 links http://creativecommons.org/licenses/by/4.0/ and the HTML header states 'License: CC BY 4.0'. Table 3 caption: 'Paradee against other small open models on the same 200 held-out sentences, with the same scoring. ... Speed is real-time factor on one CPU thread of the same machine.' §5: 'All UTMOS scores are averages over the 200 held-out sentences.' 'Word error rate (WER) comes from transcribing the audio with Whisper (base)'. The single author ran every row.",
+   "attribution": "Sahil Mahendrakar, 'Paradee: Distilling Kokoro-82M into an 8M-Parameter Single-Voice Text-to-Speech Model', arXiv:2610.06817v1 (2026), CC BY 4.0. Table 3 UTMOS and WER, UTMOS stored (x-1)/4 and WER % / 100. No endorsement.",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "evidence_url": "https://arxiv.org/abs/2610.06817v1",
+   "icon": "arxiv.org"
+  },
+  {
+   "id": "speech-espnet-librispeech-20260929",
+   "add_match": [
+    "github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/owsm_v3.1/s2t1/README.md"
+   ],
+   "reason": "Same ESPnet repository and pinned commit b902372 (same Apache-2.0 LICENSE) as the existing LibriSpeech README match. The OWSM v3.1 README's 'Whisper medium (769M)' LibriSpeech test-clean/test-other cells are ESPnet's own runs of openai/whisper-medium (arXiv:2309.13876v3: 'we prepare all test data in ESPnet and evaluate Whisper in the same setup instead of reporting results from their paper'). Adding it to this evaluator puts whisper-medium in the same run as the 11 ESPnet LibriSpeech recipe checkpoints, linking that island to the main STT scale. The entry's scope text ('Only the ESPnet recipe authors' own WER tables, not third-party comparison numbers') would need one sentence added: ESPnet's own runs of public third-party checkpoints in ESPnet READMEs are in scope when the paper states ESPnet ran them. Only the Whisper medium LibriSpeech cells are used; OWSM v3/v3.1 are not catalogue models. Owner decision: this pools two ESPnet protocols (recipe beam search with LM vs greedy search with the Whisper normaliser) under one run level."
+  },
+  {
+   "action": "new",
+   "id": "first-party-speechbrain-asr-cards",
+   "name": "SpeechBrain Hugging Face ASR model cards: published LibriSpeech/VoxPopuli WER for its own checkpoints",
+   "kind": "first-party",
+   "match": [
+    "huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md",
+    "huggingface.co/speechbrain/asr-conformer-loquacious/blob/42106e67e454ae361ca2d8311a7a807d5f95a3b9/README.md",
+    "huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech/blob/bcf56f762f37877912578f8800bc2a4f5171e5e5/README.md"
+   ],
+   "exact": true,
+   "license": "Apache-2.0",
+   "license_url": "https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md",
+   "terms_url": "https://huggingface.co/speechbrain",
+   "quote": "Each card's front matter at the pinned revision declares 'license: apache-2.0' (repository licence, not gated). The WER figures are SpeechBrain's own published results for its own checkpoints ('The performance of the model is the following:' tables and model-index), so the vendor-reported rule also applies.",
+   "attribution": "SpeechBrain (speechbrain organisation on Hugging Face), model cards for asr-wav2vec2-librispeech, asr-conformer-loquacious (Samsung AI Center-Cambridge contribution) and asr-transformer-transformerlm-librispeech at the pinned revisions, Apache-2.0. WER % divided by 100.",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "icon": "huggingface.co",
+   "scope": "LibriSpeech test-clean/test-other and VoxPopuli test WER printed on three pinned speechbrain/* cards, pooled as one maker's evaluation like first-party-meta-asr-cards. PERFORMANCE.md (recipe-level numbers that can differ from the released checkpoint, e.g. wav2vec2 1.65/3.67 vs card 1.90/3.96) is not used."
+  },
+  {
+   "action": "new",
+   "id": "speech-carun-tts-bench-apache",
+   "name": "carun/tts-bench: intelligibility benchmark of four open TTS engines (published run, 2026-09-10)",
+   "kind": "dataset",
+   "match": [
+    "github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/data/REPORT_DATA.md",
+    "github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/README.md"
+   ],
+   "exact": true,
+   "license": "Apache-2.0",
+   "license_url": "https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/LICENSE.txt",
+   "terms_url": "https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/LICENSE.txt",
+   "quote": "Repository LICENSE.txt at the pinned commit is the unmodified Apache License 2.0 (GitHub reports spdx Apache-2.0); no carve-out for data. Commit 27727b2 'data: raw results from the published run' adds data/REPORT_DATA.md and per-utterance JSON. README: 'Two independent ASR systems then transcribe every output, and word error rate is computed against the input text after identical normalisation of both sides.' The author ran all four engines.",
+   "attribution": "Arun C (carun), tts-bench, github.com/carun/tts-bench @27727b2, Apache-2.0. Whisper-judge overall WER, % / 100. No endorsement.",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "icon": "github.com"
+  }
+ ],
+ "models": [
+  {
+   "id": "kitten-tts-nano-0-8",
+   "name": "KittenTTS Nano 0.8",
+   "provider": "KittenML",
+   "category": "tts",
+   "released": "2026-02",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "params_b": 0.014,
+   "api": null,
+   "local": null,
+   "model_repo": "https://huggingface.co/KittenML/kitten-tts-nano-0.8-fp32/tree/7a1db645b1f3ab9420761d87428e042b9cec3f26",
+   "identity_note": "Comparison-only. Paradee Table 3 row 'KittenTTS nano 0.8 (Bella)', 14.0M params, 56.8 MB fp32 file; KittenML/kitten-tts-nano-0.8-fp32 @7a1db64 (created 2026-02-19, Apache-2.0) ships kitten_tts_nano_v0_8.onnx of 56,767,095 bytes. Distinct from kitten-tts-mini-0-8 (80M) and the int8 nano repo. Needed so the two new Paradee benchmarks reach 3 catalogue models; the run itself already has Kokoro-82M and Piper lessac medium.",
+   "identity_sources": [
+    "https://arxiv.org/html/2610.06817v1",
+    "https://huggingface.co/api/models/KittenML/kitten-tts-nano-0.8-fp32/tree/7a1db645b1f3ab9420761d87428e042b9cec3f26"
+   ],
+   "alternative": "If the owner prefers not to add Kitten nano, Paradee itself (sahilmahendrakar/Paradee-8M-v1.0 @f662642, Apache-2.0; Table 3 'Paradee, released ONNX file' UTMOS 4.41, WER 6.0%) would serve the same purpose."
+  },
+  {
+   "id": "tacotron2-hifigan-vctk-vits-study",
+   "name": "Tacotron 2 + HiFi-GAN (VCTK, VITS study)",
+   "provider": "VITS study (public implementations)",
+   "category": "tts",
+   "released": "2021-06",
+   "open_weights": false,
+   "api": null,
+   "local": null,
+   "source": "https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+   "model_repo": "https://github.com/NVIDIA/tacotron2",
+   "identity_note": "Comparison-only. Exact VCTK multi-speaker system in VITS (ICML 2021) Table 3 row 'Tacotron 2 + HiFi-GAN': NVIDIA Tacotron 2 implementation with broadcast speaker embedding concatenated to the encoder output, trained on VCTK (43,470 training clips, 22 kHz) by the VITS authors (§3.1, §4.2), HiFi-GAN second stage without fine-tuning. Study-specific weights, not released; distinct from tacotron2-hifigan-ljspeech. Needed so vits2021-vctk-mos (today a run of one, vits-vctk) has 3 models; the fine-tuned-HiFi-GAN rows (3.19, 3.82) are left out as unnecessary."
+  },
+  {
+   "id": "glow-tts-hifigan-vctk-vits-study",
+   "name": "Glow-TTS + HiFi-GAN (VCTK, VITS study)",
+   "provider": "VITS study (public implementations)",
+   "category": "tts",
+   "released": "2021-06",
+   "open_weights": false,
+   "api": null,
+   "local": null,
+   "source": "https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+   "model_repo": "https://github.com/jaywalnut310/glow-tts",
+   "identity_note": "Comparison-only. Exact VCTK multi-speaker system in VITS (ICML 2021) Table 3 row 'Glow-TTS + HiFi-GAN': jaywalnut310/glow-tts with global speaker conditioning, trained on VCTK by the VITS authors (§4.2), HiFi-GAN second stage without fine-tuning. Study-specific weights, not released; distinct from glow-tts-hifigan-ljspeech and coqui-en-ljspeech-glow-tts."
+  },
+  {
+   "id": "speechbrain-asr-transformer-transformerlm-librispeech",
+   "name": "SpeechBrain Transformer + TransformerLM (LibriSpeech)",
+   "provider": "SpeechBrain",
+   "category": "stt",
+   "released": "2022-03",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "api": null,
+   "local": null,
+   "model_repo": "https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech",
+   "identity_note": "Comparison-only. Exact checkpoint speechbrain/asr-transformer-transformerlm-librispeech @bcf56f7 (repo created 2022-03-02, card release '24-03-22', Apache-2.0): transformer encoder, joint CTC/attention decoder and Transformer LM trained on LibriSpeech 960h. Needed so the SpeechBrain cards pool has a second model on LibriSpeech test-clean (speechbrain-asr-wav2vec2-librispeech) and a third on test-other. No local command verified."
+  },
+  {
+   "id": "qwen3-tts-12hz-0-6b-customvoice",
+   "name": "Qwen3-TTS 12Hz 0.6B CustomVoice",
+   "provider": "Alibaba (Qwen)",
+   "category": "tts",
+   "released": "2026-01",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "api": null,
+   "local": null,
+   "model_repo": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+   "identity_note": "Comparison-only. Exact checkpoint Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice (HF sha 85e237c at 2026-10-08, created 2026-01-21, Apache-2.0), the preset-speaker variant; distinct from the catalogue's qwen3-tts-12hz-0-6b-base (voice-cloning base). carun/tts-bench engines/run_qwen.py loads exactly this repo with speaker 'Aiden'. Needed so the new carun-tts-bench56 benchmark reaches 3 models (run already has Kokoro-82M and Magpie 357M)."
+  }
+ ],
+ "gaps": [
+  {
+   "model": "cartesia-sonic-3-6",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "gemini-3-8-flash-tts",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "gemini-3-8-flash-lite-tts",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "speechify-simba-3-2",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json. Simba 3.2 is in the Datapoint 315k set (gated) and the Qwen-Audio-3.0-TTS report mentions it only via a leaderboard CI."
+  },
+  {
+   "model": "elevenlabs-v3-conversational",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "elevenlabs-turbo-v2-5",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "Still raw-only (Vapi 2026-06-10 export, a one-model run). Lead for the owner: datapointai/tts-human-preferences-large (CC BY 4.0, auto-approved gate) holds forced-choice votes (15 annotators per pair) between eleven_turbo_v2_5, eleven_multilingual_v2, eleven_flash_v2_5 and eleven_monolingual_v1; a Bradley-Terry fit of those votes would give Turbo v2.5 a counted run alongside two main-scale ElevenLabs models, but the parquet files need an account to accept the gate, so nothing was computed. No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "minimax-speech-2-8-turbo",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "minimax-speech-2-6-hd",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json. MiniMax's arXiv:2505.07916 report predates Speech 2.6."
+  },
+  {
+   "model": "smallest-lightning-v3-1-pro",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "openai-tts-1-hd",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "hume-octave-2",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "azure-hd-2-5",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "google-chirp-3-hd",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "amazon-polly-generative",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "openaudio-s1",
+   "category": "tts",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "Fish's s1-mini card (gated, CC BY-NC-SA) prints Seed-TTS-Eval English WER/CER for S1 and S1-mini transcribed with gpt-4o-transcribe, which matches no existing benchmark (seed-tts-en-whisper-v3-wer uses Whisper large-v3) and would be a 2-model vendor benchmark. Fish S2 long-audio and EmergentTTS tables still cannot be mapped (pass-1 reasons)."
+  },
+  {
+   "model": "openaudio-s1-mini",
+   "category": "tts",
+   "counted_before": 2,
+   "counted_after": 3,
+   "main_scale_after": true,
+   "why": "Gains the Arabic TTS Arena (retired row 'Fish Speech S1-mini', fishaudio/s1-mini) and reaches 3, subject to the owner relaxing that benchmark's active-models-only rule. No further licensed source."
+  },
+  {
+   "model": "magpie-tts-multilingual-357m",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "Gains carun/tts-bench (Apache-2.0) Whisper-large-v3 WER, which needs the proposed comparison-only model qwen3-tts-12hz-0-6b-customvoice for the benchmark to reach 3. The NVIDIA held-out card evaluations remain one-model runs; the Parakeet-judge WER in the same repo is a correlated second ASR view and was not added; Paradee and Open TTS Leaderboard (private data) do not help."
+  },
+  {
+   "model": "maya1",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "Only the UncovAI DailyDialog run. 5uck1ess/tts-bench scores Maya1 (unlicensed); no CC BY paper evaluates Maya1 with other catalogue models."
+  },
+  {
+   "model": "breeze-tts-2",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json. Breeze TTS 2 is run by 5uck1ess/tts-bench (runners/breeze_tts2_runner.py), but those scores carry no licence."
+  },
+  {
+   "model": "gpt-transcribe",
+   "category": "stt",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "No new openly licensed measurement. Pass 3 checked: pipecat (gemini-3.5-transcribe-live and Soniox stt-rt-v5 are streaming variants, not this catalogue endpoint), VibeVoice-ASR-Streaming report (CC BY; compares only streaming APIs such as 'Gemini 3.5 Transcribe Live', GPT Live Transcribe), Persian Triple Threat (gpt-transcribe, mai-transcribe-1.5, grok-stt-1.0 and nova-3 rows were run through the OpenRouter gateway, which the existing benchmark excludes by design), verli (unversioned 'soniox', 'gladia-solaria', 'grok-stt' labels), GitHub code search for the API ids, and the MAI-Transcribe-2 / Solaria-3 vendor pages (FLEURS-60 average and 'Earnings22 Cleaned AA' are not benchmarks in benchmarks.json; vendor rows must use existing ids)."
+  },
+  {
+   "model": "mai-transcribe-2",
+   "category": "stt",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No new openly licensed measurement. Pass 3 checked: pipecat (gemini-3.5-transcribe-live and Soniox stt-rt-v5 are streaming variants, not this catalogue endpoint), VibeVoice-ASR-Streaming report (CC BY; compares only streaming APIs such as 'Gemini 3.5 Transcribe Live', GPT Live Transcribe), Persian Triple Threat (gpt-transcribe, mai-transcribe-1.5, grok-stt-1.0 and nova-3 rows were run through the OpenRouter gateway, which the existing benchmark excludes by design), verli (unversioned 'soniox', 'gladia-solaria', 'grok-stt' labels), GitHub code search for the API ids, and the MAI-Transcribe-2 / Solaria-3 vendor pages (FLEURS-60 average and 'Earnings22 Cleaned AA' are not benchmarks in benchmarks.json; vendor rows must use existing ids)."
+  },
+  {
+   "model": "gemini-3-5-transcribe",
+   "category": "stt",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No new openly licensed measurement. Pass 3 checked: pipecat (gemini-3.5-transcribe-live and Soniox stt-rt-v5 are streaming variants, not this catalogue endpoint), VibeVoice-ASR-Streaming report (CC BY; compares only streaming APIs such as 'Gemini 3.5 Transcribe Live', GPT Live Transcribe), Persian Triple Threat (gpt-transcribe, mai-transcribe-1.5, grok-stt-1.0 and nova-3 rows were run through the OpenRouter gateway, which the existing benchmark excludes by design), verli (unversioned 'soniox', 'gladia-solaria', 'grok-stt' labels), GitHub code search for the API ids, and the MAI-Transcribe-2 / Solaria-3 vendor pages (FLEURS-60 average and 'Earnings22 Cleaned AA' are not benchmarks in benchmarks.json; vendor rows must use existing ids)."
+  },
+  {
+   "model": "grok-voice-transcribe-2",
+   "category": "stt",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No new openly licensed measurement. Pass 3 checked: pipecat (gemini-3.5-transcribe-live and Soniox stt-rt-v5 are streaming variants, not this catalogue endpoint), VibeVoice-ASR-Streaming report (CC BY; compares only streaming APIs such as 'Gemini 3.5 Transcribe Live', GPT Live Transcribe), Persian Triple Threat (gpt-transcribe, mai-transcribe-1.5, grok-stt-1.0 and nova-3 rows were run through the OpenRouter gateway, which the existing benchmark excludes by design), verli (unversioned 'soniox', 'gladia-solaria', 'grok-stt' labels), GitHub code search for the API ids, and the MAI-Transcribe-2 / Solaria-3 vendor pages (FLEURS-60 average and 'Earnings22 Cleaned AA' are not benchmarks in benchmarks.json; vendor rows must use existing ids). raven.eval also runs Grok Voice Transcribe 1.0 on the same four German read sets, but even with 1.0 added as a comparison model the benchmark would have only two models."
+  },
+  {
+   "model": "gladia-solaria-3",
+   "category": "stt",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No new openly licensed measurement. Pass 3 checked: pipecat (gemini-3.5-transcribe-live and Soniox stt-rt-v5 are streaming variants, not this catalogue endpoint), VibeVoice-ASR-Streaming report (CC BY; compares only streaming APIs such as 'Gemini 3.5 Transcribe Live', GPT Live Transcribe), Persian Triple Threat (gpt-transcribe, mai-transcribe-1.5, grok-stt-1.0 and nova-3 rows were run through the OpenRouter gateway, which the existing benchmark excludes by design), verli (unversioned 'soniox', 'gladia-solaria', 'grok-stt' labels), GitHub code search for the API ids, and the MAI-Transcribe-2 / Solaria-3 vendor pages (FLEURS-60 average and 'Earnings22 Cleaned AA' are not benchmarks in benchmarks.json; vendor rows must use existing ids)."
+  },
+  {
+   "model": "soniox-v5-async",
+   "category": "stt",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No new openly licensed measurement. Pass 3 checked: pipecat (gemini-3.5-transcribe-live and Soniox stt-rt-v5 are streaming variants, not this catalogue endpoint), VibeVoice-ASR-Streaming report (CC BY; compares only streaming APIs such as 'Gemini 3.5 Transcribe Live', GPT Live Transcribe), Persian Triple Threat (gpt-transcribe, mai-transcribe-1.5, grok-stt-1.0 and nova-3 rows were run through the OpenRouter gateway, which the existing benchmark excludes by design), verli (unversioned 'soniox', 'gladia-solaria', 'grok-stt' labels), GitHub code search for the API ids, and the MAI-Transcribe-2 / Solaria-3 vendor pages (FLEURS-60 average and 'Earnings22 Cleaned AA' are not benchmarks in benchmarks.json; vendor rows must use existing ids)."
+  },
+  {
+   "model": "granite-speech-5-0-470m-turboctc",
+   "category": "stt",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "transcribe.cpp head (95d82e5, 2026-10-08) only adds orukeet and parakeet-ultra; no new evaluator."
+  },
+  {
+   "model": "kyutai-tts-1-6b-en-fr",
+   "category": "tts",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "Only EmergentTTS (2). Kyutai's delayed-streams-modeling repo (Apache-2.0) has no result tables; the DSM paper is CC BY-NC-SA; VoXtream/VoXtream2 (which compare against it) carry the default arXiv licence."
+  },
+  {
+   "model": "cosyvoice-v3-plus",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "amazon-polly-neural",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "mms-tts-amh",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "Only the Addis Amharic benchmark. No other openly licensed Amharic TTS evaluation found (searched arXiv 2025-2026; the Urdu domain study 2608.02235 that uses MMS-TTS is CC BY-NC-ND)."
+  },
+  {
+   "model": "smallest-lightning-v3-1",
+   "category": "tts",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "inworld-tts-1-5-max",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "fish-audio-s2-1-pro",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "xai-grok-tts",
+   "category": "tts",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "elevenlabs-turbo-v2",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "elevenlabs-flash-v2",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "minimax-speech-02-turbo",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "gradium-tts",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No openly licensed measurement of this exact version was found. Pass 3 additionally checked: Hugging Face's new Open TTS Leaderboard (Space hf-audio/open_tts_leaderboard @3456d01 loads results from the private dataset hf-audio/tts_leaderboard_results; no data licence; open-source models only); Datapoint Audio Bench (datapointai/text-to-speech-human-preferences-315k, CC BY 4.0 but manually gated; Elo only as a chart); 5uck1ess/tts-bench (MIT 'applies ONLY to the bench code'; scores unlicensed); Coval and Gradium boards (no data licence); arXiv 2026 TTS papers with an open licence (PilotTTS, Paradee, T5Gemma-TTS, human-fooling-rate study, Beyond Naturalness, PashtoTTS-Bench) — none evaluates this model; vendor pages cite Artificial Analysis or use tests not in benchmarks.json."
+  },
+  {
+   "model": "mai-transcribe-1-5",
+   "category": "stt",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No new openly licensed measurement. Pass 3 checked: pipecat (gemini-3.5-transcribe-live and Soniox stt-rt-v5 are streaming variants, not this catalogue endpoint), VibeVoice-ASR-Streaming report (CC BY; compares only streaming APIs such as 'Gemini 3.5 Transcribe Live', GPT Live Transcribe), Persian Triple Threat (gpt-transcribe, mai-transcribe-1.5, grok-stt-1.0 and nova-3 rows were run through the OpenRouter gateway, which the existing benchmark excludes by design), verli (unversioned 'soniox', 'gladia-solaria', 'grok-stt' labels), GitHub code search for the API ids, and the MAI-Transcribe-2 / Solaria-3 vendor pages (FLEURS-60 average and 'Earnings22 Cleaned AA' are not benchmarks in benchmarks.json; vendor rows must use existing ids). Its Persian row (OpenRouter) is a 113.8% WER failure anyway."
+  },
+  {
+   "model": "distil-small-en",
+   "category": "stt",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "No other licensed evaluator; the children's-ASR edge study that discusses distil-small.en has the default arXiv licence and did not run it."
+  },
+  {
+   "model": "stt-en-conformer-ctc-large",
+   "category": "stt",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "AfriSpeech-200 (CC BY) Table 4 has nvidia/stt-en-conformer-ctc-large but only dev-set WER (test cells are '-'); no dev benchmark exists. NeMo docs/card mismatch unchanged."
+  },
+  {
+   "model": "granite-speech-3-3-8b",
+   "category": "stt",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "No new licensed evaluator (pass-1 version-mismatch reason unchanged)."
+  },
+  {
+   "model": "vibevoice-asr-hf",
+   "category": "stt",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "The Arabic ASR leaderboard and VibeVoice-ASR-Streaming report evaluate microsoft/VibeVoice-ASR, whose safetensors total (8.67B) differs from VibeVoice-ASR-HF (8.33B), so not the same checkpoint."
+  },
+  {
+   "model": "lite-whisper-large-v3-turbo-acc",
+   "category": "stt",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "No new evaluator."
+  },
+  {
+   "model": "speechbrain-asr-conformer-largescaleasr",
+   "category": "stt",
+   "counted_before": 1,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "Gains LibriSpeech test-other from the pooled SpeechBrain cards (2). Its VoxPopuli value is recorded as raw evidence (no second SpeechBrain card reports VoxPopuli English). The Loquacious paper (default arXiv licence) compares only literature Whisper numbers."
+  },
+  {
+   "model": "speechbrain-asr-wav2vec2-librispeech",
+   "category": "stt",
+   "counted_before": 1,
+   "counted_after": 3,
+   "main_scale_after": true,
+   "why": "Gains LibriSpeech test-clean/test-other from the pooled SpeechBrain cards and reaches 3 (needs the proposed comparison-only speechbrain-asr-transformer-transformerlm-librispeech for test-clean)."
+  },
+  {
+   "model": "omniasr-llm-7b-v2",
+   "category": "stt",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "No published score for the December-2025 _v2 checkpoints outside Open ASR; the Arabic, Chilean-Spanish, Bavarian and Quranic leaderboards and arXiv:2606.28884 all name v1 checkpoints."
+  },
+  {
+   "model": "omniasr-llm-3b-v2",
+   "category": "stt",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No published score for the December-2025 _v2 checkpoints outside Open ASR; the Arabic, Chilean-Spanish, Bavarian and Quranic leaderboards and arXiv:2606.28884 all name v1 checkpoints."
+  },
+  {
+   "model": "omniasr-llm-1b-v2",
+   "category": "stt",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No published score for the December-2025 _v2 checkpoints outside Open ASR; the Arabic, Chilean-Spanish, Bavarian and Quranic leaderboards and arXiv:2606.28884 all name v1 checkpoints."
+  },
+  {
+   "model": "omniasr-llm-300m-v2",
+   "category": "stt",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No published score for the December-2025 _v2 checkpoints outside Open ASR; the Arabic, Chilean-Spanish, Bavarian and Quranic leaderboards and arXiv:2606.28884 all name v1 checkpoints."
+  },
+  {
+   "model": "omniasr-ctc-7b-v2",
+   "category": "stt",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "No published score for the December-2025 _v2 checkpoints outside Open ASR; the Arabic, Chilean-Spanish, Bavarian and Quranic leaderboards and arXiv:2606.28884 all name v1 checkpoints."
+  },
+  {
+   "model": "omniasr-ctc-3b-v2",
+   "category": "stt",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No published score for the December-2025 _v2 checkpoints outside Open ASR; the Arabic, Chilean-Spanish, Bavarian and Quranic leaderboards and arXiv:2606.28884 all name v1 checkpoints."
+  },
+  {
+   "model": "omniasr-ctc-300m-v2",
+   "category": "stt",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No published score for the December-2025 _v2 checkpoints outside Open ASR; the Arabic, Chilean-Spanish, Bavarian and Quranic leaderboards and arXiv:2606.28884 all name v1 checkpoints."
+  },
+  {
+   "model": "abr-asr-19m-v2-en",
+   "category": "stt",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "Card model-index repeats the leaderboard values; no independent evaluator."
+  },
+  {
+   "model": "zoom-scribe-v1",
+   "category": "stt",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "No new openly licensed measurement. Pass 3 checked: pipecat (gemini-3.5-transcribe-live and Soniox stt-rt-v5 are streaming variants, not this catalogue endpoint), VibeVoice-ASR-Streaming report (CC BY; compares only streaming APIs such as 'Gemini 3.5 Transcribe Live', GPT Live Transcribe), Persian Triple Threat (gpt-transcribe, mai-transcribe-1.5, grok-stt-1.0 and nova-3 rows were run through the OpenRouter gateway, which the existing benchmark excludes by design), verli (unversioned 'soniox', 'gladia-solaria', 'grok-stt' labels), GitHub code search for the API ids, and the MAI-Transcribe-2 / Solaria-3 vendor pages (FLEURS-60 average and 'Earnings22 Cleaned AA' are not benchmarks in benchmarks.json; vendor rows must use existing ids)."
+  },
+  {
+   "model": "parler-tts-mini-v0-1",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "Only TTSDS v1 composite; its per-factor scores are correlated parts of the same run. Parler cards have no evaluation tables."
+  },
+  {
+   "model": "fish-speech-1-2",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "Only TTSDS v1 composite (pass-1 reasons unchanged)."
+  },
+  {
+   "model": "amphion-valle-librilight-6k",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "Only TTSDS v1 composite (pass-1 reasons unchanged)."
+  },
+  {
+   "model": "openvoice-v1",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "Only TTSDS v1 composite; RVCBench and SAP voice-reconstruction 'OpenVoice' rows are V2."
+  },
+  {
+   "model": "wayu-paxa-tts-edge",
+   "category": "tts",
+   "counted_before": 2,
+   "counted_after": 3,
+   "main_scale_after": true,
+   "why": "Gains English CER on 500 held-out LibriTTS lines (Whisper Large V3) from the same Table 8 as its recorded Thai rows (new benchmark wayu-libritts500-en-whisper-v3-cer, 3 catalogue models) and reaches 3. Pause precision/PPER and speaker similarity in the same table were not added (custom scorer; per-system voice references)."
+  },
+  {
+   "model": "outetts-0-2-500m",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "Only ClonEval LibriSpeech similarity. The Arabic TTS Arena 'OuteTTS 1.0' is Llama-OuteTTS-1.0-1B, a different model; ClonEval emotional-set columns remain correlated duplicates."
+  },
+  {
+   "model": "vits-vctk",
+   "category": "tts",
+   "counted_before": 2,
+   "counted_after": 3,
+   "main_scale_after": true,
+   "why": "Gains the VITS paper's own VCTK listening test (Table 3) by proposing the two study baselines as comparison-only models; reaches 3."
+  },
+  {
+   "model": "supertonic-3",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "Only the Arabic TTS Arena. Supertonic README licence scope still unclear; Open TTS Leaderboard includes Supertone/supertonic-3 but its data is private."
+  },
+  {
+   "model": "chatterbox-multilingual-v3",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "Only the Arabic TTS Arena; the arena's retired 'Multilingual Chatterbox' row is an earlier multilingual release, not V3."
+  },
+  {
+   "model": "voicecraft-830m-tts-enhanced",
+   "category": "tts",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "Two counted results (LibriSpeech HuBERT WER, MaskGCT Seed-TTS). No further licensed evaluator names the TTSEnhanced checkpoint."
+  },
+  {
+   "model": "espnet-multiblank-transducer-8421",
+   "category": "stt",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "Island LINKED via the proposed OWSM v3.1 README row for whisper-medium in the same ESPnet evaluator (see md). Still 2 counted: no independent evaluator runs this ESPnet recipe checkpoint (Multi-Convformer paper copies its LS-960 baselines; E-Branchformer and Branchformer comparisons have the default arXiv licence; ESPnet3 paper has no LibriSpeech table); dev-set splits remain excluded as correlated."
+  },
+  {
+   "model": "espnet-conformer-rnn-transducer",
+   "category": "stt",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "Island LINKED via the proposed OWSM v3.1 README row for whisper-medium in the same ESPnet evaluator (see md). Still 2 counted: no independent evaluator runs this ESPnet recipe checkpoint (Multi-Convformer paper copies its LS-960 baselines; E-Branchformer and Branchformer comparisons have the default arXiv licence; ESPnet3 paper has no LibriSpeech table); dev-set splits remain excluded as correlated."
+  },
+  {
+   "model": "espnet-hubert-large-conformer-lm",
+   "category": "stt",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "Island LINKED via the proposed OWSM v3.1 README row for whisper-medium in the same ESPnet evaluator (see md). Still 2 counted: no independent evaluator runs this ESPnet recipe checkpoint (Multi-Convformer paper copies its LS-960 baselines; E-Branchformer and Branchformer comparisons have the default arXiv licence; ESPnet3 paper has no LibriSpeech table); dev-set splits remain excluded as correlated."
+  },
+  {
+   "model": "espnet-wavlm-large-conformer-lm",
+   "category": "stt",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "Island LINKED via the proposed OWSM v3.1 README row for whisper-medium in the same ESPnet evaluator (see md). Still 2 counted: no independent evaluator runs this ESPnet recipe checkpoint (Multi-Convformer paper copies its LS-960 baselines; E-Branchformer and Branchformer comparisons have the default arXiv licence; ESPnet3 paper has no LibriSpeech table); dev-set splits remain excluded as correlated."
+  },
+  {
+   "model": "espnet-wav2vec2-large-conformer-lm",
+   "category": "stt",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "Island LINKED via the proposed OWSM v3.1 README row for whisper-medium in the same ESPnet evaluator (see md). Still 2 counted: no independent evaluator runs this ESPnet recipe checkpoint (Multi-Convformer paper copies its LS-960 baselines; E-Branchformer and Branchformer comparisons have the default arXiv licence; ESPnet3 paper has no LibriSpeech table); dev-set splits remain excluded as correlated."
+  },
+  {
+   "model": "espnet-multiconvformer",
+   "category": "stt",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "Island LINKED via the proposed OWSM v3.1 README row for whisper-medium in the same ESPnet evaluator (see md). Still 2 counted: no independent evaluator runs this ESPnet recipe checkpoint (Multi-Convformer paper copies its LS-960 baselines; E-Branchformer and Branchformer comparisons have the default arXiv licence; ESPnet3 paper has no LibriSpeech table); dev-set splits remain excluded as correlated."
+  },
+  {
+   "model": "espnet-e-branchformer",
+   "category": "stt",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "Island LINKED via the proposed OWSM v3.1 README row for whisper-medium in the same ESPnet evaluator (see md). Still 2 counted: no independent evaluator runs this ESPnet recipe checkpoint (Multi-Convformer paper copies its LS-960 baselines; E-Branchformer and Branchformer comparisons have the default arXiv licence; ESPnet3 paper has no LibriSpeech table); dev-set splits remain excluded as correlated."
+  },
+  {
+   "model": "espnet-branchformer-18layer",
+   "category": "stt",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "Island LINKED via the proposed OWSM v3.1 README row for whisper-medium in the same ESPnet evaluator (see md). Still 2 counted: no independent evaluator runs this ESPnet recipe checkpoint (Multi-Convformer paper copies its LS-960 baselines; E-Branchformer and Branchformer comparisons have the default arXiv licence; ESPnet3 paper has no LibriSpeech table); dev-set splits remain excluded as correlated."
+  },
+  {
+   "model": "espnet-conformer-s4-decoder",
+   "category": "stt",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "Island LINKED via the proposed OWSM v3.1 README row for whisper-medium in the same ESPnet evaluator (see md). Still 2 counted: no independent evaluator runs this ESPnet recipe checkpoint (Multi-Convformer paper copies its LS-960 baselines; E-Branchformer and Branchformer comparisons have the default arXiv licence; ESPnet3 paper has no LibriSpeech table); dev-set splits remain excluded as correlated."
+  },
+  {
+   "model": "espnet-conformer-2020-lm",
+   "category": "stt",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "Island LINKED via the proposed OWSM v3.1 README row for whisper-medium in the same ESPnet evaluator (see md). Still 2 counted: no independent evaluator runs this ESPnet recipe checkpoint (Multi-Convformer paper copies its LS-960 baselines; E-Branchformer and Branchformer comparisons have the default arXiv licence; ESPnet3 paper has no LibriSpeech table); dev-set splits remain excluded as correlated."
+  },
+  {
+   "model": "espnet-transformer-18layer-lm",
+   "category": "stt",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "Island LINKED via the proposed OWSM v3.1 README row for whisper-medium in the same ESPnet evaluator (see md). Still 2 counted: no independent evaluator runs this ESPnet recipe checkpoint (Multi-Convformer paper copies its LS-960 baselines; E-Branchformer and Branchformer comparisons have the default arXiv licence; ESPnet3 paper has no LibriSpeech table); dev-set splits remain excluded as correlated."
+  },
+  {
+   "model": "vits-ljspeech",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": false,
+   "why": "ISLAND NOT LINKED. Needs a licensed run with the official pretrained_ljs.pth checkpoint and a main-scale model. Checked: StyleTTS 2 (CC BY-NC-SA), Matcha-TTS, OverFlow, Neural HMM, Nix-TTS-era papers (default arXiv licence), Guided-TTS (PMLR CC BY, but no VITS and Grad-TTS at 50 steps), TTSDS v1/v2 system lists (no VITS), EmergentTTS (VCTK model only), VERSA (ESPnet VITS, a different checkpoint), deepfake corpora (no per-system quality), and Paradee/carun (no VITS)."
+  },
+  {
+   "model": "coqui-en-ljspeech-tacotron2-ddc",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed multi-model quality evaluation of this exact Coqui checkpoint exists. Pass 3 checked MLAAD (Coqui models used only to generate spoofs; no per-system quality scores), ShiftySpeech (CC BY; UTMOS only per vocoder, not per TTS system), SpeechFake (ACL 2025; EER only), Coqui/idiap docs and discussions, and searches for German/Spanish/French/Portuguese/Ukrainian/Turkish open-TTS comparisons; 5uck1ess/tts-bench has a Coqui runner but its scores are unlicensed."
+  },
+  {
+   "model": "coqui-en-ljspeech-glow-tts",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed multi-model quality evaluation of this exact Coqui checkpoint exists. Pass 3 checked MLAAD (Coqui models used only to generate spoofs; no per-system quality scores), ShiftySpeech (CC BY; UTMOS only per vocoder, not per TTS system), SpeechFake (ACL 2025; EER only), Coqui/idiap docs and discussions, and searches for German/Spanish/French/Portuguese/Ukrainian/Turkish open-TTS comparisons; 5uck1ess/tts-bench has a Coqui runner but its scores are unlicensed."
+  },
+  {
+   "model": "coqui-en-ljspeech-speedy-speech",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed multi-model quality evaluation of this exact Coqui checkpoint exists. Pass 3 checked MLAAD (Coqui models used only to generate spoofs; no per-system quality scores), ShiftySpeech (CC BY; UTMOS only per vocoder, not per TTS system), SpeechFake (ACL 2025; EER only), Coqui/idiap docs and discussions, and searches for German/Spanish/French/Portuguese/Ukrainian/Turkish open-TTS comparisons; 5uck1ess/tts-bench has a Coqui runner but its scores are unlicensed."
+  },
+  {
+   "model": "coqui-en-ljspeech-fast-pitch",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed multi-model quality evaluation of this exact Coqui checkpoint exists. Pass 3 checked MLAAD (Coqui models used only to generate spoofs; no per-system quality scores), ShiftySpeech (CC BY; UTMOS only per vocoder, not per TTS system), SpeechFake (ACL 2025; EER only), Coqui/idiap docs and discussions, and searches for German/Spanish/French/Portuguese/Ukrainian/Turkish open-TTS comparisons; 5uck1ess/tts-bench has a Coqui runner but its scores are unlicensed."
+  },
+  {
+   "model": "coqui-en-ljspeech-overflow",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed multi-model quality evaluation of this exact Coqui checkpoint exists. Pass 3 checked MLAAD (Coqui models used only to generate spoofs; no per-system quality scores), ShiftySpeech (CC BY; UTMOS only per vocoder, not per TTS system), SpeechFake (ACL 2025; EER only), Coqui/idiap docs and discussions, and searches for German/Spanish/French/Portuguese/Ukrainian/Turkish open-TTS comparisons; 5uck1ess/tts-bench has a Coqui runner but its scores are unlicensed."
+  },
+  {
+   "model": "coqui-en-ljspeech-neural-hmm",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed multi-model quality evaluation of this exact Coqui checkpoint exists. Pass 3 checked MLAAD (Coqui models used only to generate spoofs; no per-system quality scores), ShiftySpeech (CC BY; UTMOS only per vocoder, not per TTS system), SpeechFake (ACL 2025; EER only), Coqui/idiap docs and discussions, and searches for German/Spanish/French/Portuguese/Ukrainian/Turkish open-TTS comparisons; 5uck1ess/tts-bench has a Coqui runner but its scores are unlicensed."
+  },
+  {
+   "model": "coqui-de-thorsten-vits",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed multi-model quality evaluation of this exact Coqui checkpoint exists. Pass 3 checked MLAAD (Coqui models used only to generate spoofs; no per-system quality scores), ShiftySpeech (CC BY; UTMOS only per vocoder, not per TTS system), SpeechFake (ACL 2025; EER only), Coqui/idiap docs and discussions, and searches for German/Spanish/French/Portuguese/Ukrainian/Turkish open-TTS comparisons; 5uck1ess/tts-bench has a Coqui runner but its scores are unlicensed."
+  },
+  {
+   "model": "coqui-es-css10-vits",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed multi-model quality evaluation of this exact Coqui checkpoint exists. Pass 3 checked MLAAD (Coqui models used only to generate spoofs; no per-system quality scores), ShiftySpeech (CC BY; UTMOS only per vocoder, not per TTS system), SpeechFake (ACL 2025; EER only), Coqui/idiap docs and discussions, and searches for German/Spanish/French/Portuguese/Ukrainian/Turkish open-TTS comparisons; 5uck1ess/tts-bench has a Coqui runner but its scores are unlicensed."
+  },
+  {
+   "model": "coqui-fr-css10-vits",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed multi-model quality evaluation of this exact Coqui checkpoint exists. Pass 3 checked MLAAD (Coqui models used only to generate spoofs; no per-system quality scores), ShiftySpeech (CC BY; UTMOS only per vocoder, not per TTS system), SpeechFake (ACL 2025; EER only), Coqui/idiap docs and discussions, and searches for German/Spanish/French/Portuguese/Ukrainian/Turkish open-TTS comparisons; 5uck1ess/tts-bench has a Coqui runner but its scores are unlicensed."
+  },
+  {
+   "model": "coqui-pt-cv-vits",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed multi-model quality evaluation of this exact Coqui checkpoint exists. Pass 3 checked MLAAD (Coqui models used only to generate spoofs; no per-system quality scores), ShiftySpeech (CC BY; UTMOS only per vocoder, not per TTS system), SpeechFake (ACL 2025; EER only), Coqui/idiap docs and discussions, and searches for German/Spanish/French/Portuguese/Ukrainian/Turkish open-TTS comparisons; 5uck1ess/tts-bench has a Coqui runner but its scores are unlicensed."
+  },
+  {
+   "model": "coqui-uk-mai-glow-tts",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed multi-model quality evaluation of this exact Coqui checkpoint exists. Pass 3 checked MLAAD (Coqui models used only to generate spoofs; no per-system quality scores), ShiftySpeech (CC BY; UTMOS only per vocoder, not per TTS system), SpeechFake (ACL 2025; EER only), Coqui/idiap docs and discussions, and searches for German/Spanish/French/Portuguese/Ukrainian/Turkish open-TTS comparisons; 5uck1ess/tts-bench has a Coqui runner but its scores are unlicensed."
+  },
+  {
+   "model": "coqui-tr-common-voice-glow-tts",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No openly licensed multi-model quality evaluation of this exact Coqui checkpoint exists. Pass 3 checked MLAAD (Coqui models used only to generate spoofs; no per-system quality scores), ShiftySpeech (CC BY; UTMOS only per vocoder, not per TTS system), SpeechFake (ACL 2025; EER only), Coqui/idiap docs and discussions, and searches for German/Spanish/French/Portuguese/Ukrainian/Turkish open-TTS comparisons; 5uck1ess/tts-bench has a Coqui runner but its scores are unlicensed."
+  },
+  {
+   "model": "nvidia-tacotron2-waveglow",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "Raw-only: fastpitch2020-ljspeech-mos has only two catalogue models (this and FastPitch 1.0) and the README MOS table has no third system."
+  },
+  {
+   "model": "fastpitch-1-1-waveglow",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "Raw-only: the README pairwise-preference table compares only FastPitch 1.0 and 1.1 (two models)."
+  },
+  {
+   "model": "grad-tts-10-hifigan",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": false,
+   "why": "ISLAND NOT LINKED. Guided-TTS (PMLR v162, CC BY) runs the official Grad-TTS checkpoint but with N=50 reverse steps (not this 10-step configuration) and has no main-scale model; Matcha-TTS (GRAD-10) has the default arXiv licence; ShiftySpeech uses official Grad-TTS only to generate spoof data."
+  },
+  {
+   "model": "speechbrain-fastspeech2-ljspeech",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No multi-model evaluation. SpeechBrain's TTS cards print no scores."
+  },
+  {
+   "model": "lightspeech",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "microsoft/NeuralSpeech LightSpeech README (MIT) reports only RTF; LightSpeech paper carries the default arXiv licence."
+  },
+  {
+   "model": "priorgrad-acoustic",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "microsoft/NeuralSpeech PriorGrad-acoustic README (MIT) has no MOS table; the PriorGrad paper carries the default arXiv licence."
+  },
+  {
+   "model": "neutts-air",
+   "category": "tts",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "Only CodecMOS-Accent (2). 5uck1ess/tts-bench and Gradium's on-device board score it but are unlicensed."
+  },
+  {
+   "model": "parler-tts-mini-v1",
+   "category": "tts",
+   "counted_before": 2,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "Only VERSA (2). No other licensed evaluator names Parler-TTS Mini v1."
+  },
+  {
+   "model": "piper-en-us-lessac-medium",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 2,
+   "main_scale_after": true,
+   "why": "Gains Paradee Table 3 UTMOS and Whisper-base WER (2). sanoTTS (CC BY) uses other Piper voices (amy, kristin); Picovoice's TTS benchmark measures latency only."
+  },
+  {
+   "model": "kitten-tts-mini-0-8",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "Paradee evaluates KittenTTS nano 0.8 (proposed separately), not mini 0.8. No licensed evaluation of mini 0.8."
+  },
+  {
+   "model": "kitten-tts-2",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "Released 2026-09-30; card has only size tables; no evaluation found."
+  },
+  {
+   "model": "pocket-tts",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "Hugging Face's Open TTS Leaderboard scores kyutai/pocket-tts, but its results dataset is private and unlicensed; 5uck1ess/tts-bench scores are unlicensed; CC BY card has no evaluation; catalogue weights are the 2026-09 release."
+  },
+  {
+   "model": "dia-1-6b-0626",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "No evaluation of the 0626 revision found (5uck1ess has a Dia runner, unlicensed)."
+  },
+  {
+   "model": "chatterbox-turbo",
+   "category": "tts",
+   "counted_before": 0,
+   "counted_after": 0,
+   "main_scale_after": false,
+   "why": "Resemble's card cites Podonos preference reports vs competitors (not an existing benchmark, not open data); 5uck1ess/tts-bench scores it but is unlicensed; no CC BY paper evaluates Turbo."
+  },
+  {
+   "model": "dia2-2b",
+   "category": "tts",
+   "counted_before": 1,
+   "counted_after": 1,
+   "main_scale_after": true,
+   "why": "Only UncovAI DailyDialog WER; UncovAI SIM has only two models."
+  }
+ ],
+ "checked": [
+  {
+   "source": "https://arxiv.org/html/2610.06817v1",
+   "outcome": "Paradee (CC BY 4.0). Table 3: Kokoro-82M, Piper en_US-lessac-medium, KittenTTS nano 0.8 (+ Paradee, Kokoro-7M-Distill) on 200 held-out WikiText sentences, UTMOS (utmos22_strong) and Whisper-base WER. 6 rows, 2 new benchmarks, 1 proposed comparison model. Piper 0->2."
+  },
+  {
+   "source": "https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena (leaderboard.json @6e003a5 plus snapshots dcef062, fb3b88b, 1a26392, a3332e6, 82b1597; backend github.com/Navid-Gen-AI/arabic-tts-arena elo.py)",
+   "outcome": "Retired rows are part of the same Bradley-Terry fit over all votes (their ratings change between snapshots with fixed battle counts). Added the retired 'Fish Speech S1-mini' (fishaudio/s1-mini) row; other retired rows are non-catalogue or different versions (OuteTTS 1.0 1B, MOSS-TTS, Multilingual Chatterbox, SpeechT5 Arabic)."
+  },
+  {
+   "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/owsm_v3.1/s2t1/README.md",
+   "outcome": "Apache-2.0, same pinned commit as the ESPnet LibriSpeech evaluator. 'Whisper medium (769M)' LibriSpeech test-clean 2.8 / test-other 6.5, run by ESPnet (arXiv:2309.13876v3: 'we prepare all test data in ESPnet and evaluate Whisper in the same setup'). Proposed as add_match to link the 11-model ESPnet island."
+  },
+  {
+   "source": "https://github.com/espnet/espnet/tree/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2 (librispeech/asr1, owsm_ctc_v3.1, owsm_v4 READMEs)",
+   "outcome": "LibriSpeech README has only ESPnet recipe models; OWSM-CTC v3.1 README has no LibriSpeech table; OWSM v4 README results are images."
+  },
+  {
+   "source": "https://arxiv.org/html/2606.21854v1",
+   "outcome": "ESPnet3 (CC BY 4.0): OWSM pre-training efficiency and Portuguese fine-tuning; no LibriSpeech recipe results."
+  },
+  {
+   "source": "https://arxiv.org/html/2407.03718v1",
+   "outcome": "Multi-Convformer (CC BY-SA 4.0): LS-960 baselines 'reuse the numbers reported by Peng et al.'; own model only, not used."
+  },
+  {
+   "source": "https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+   "outcome": "VITS (existing ledger, CC BY via PMLR). Table 3 VCTK: added Tacotron 2 + HiFi-GAN (3.14) and Glow-TTS + HiFi-GAN (3.76) as study-specific comparison models so vits-vctk's existing VCTK row counts. Fine-tuned rows (3.19, 3.82) not added."
+  },
+  {
+   "source": "https://proceedings.mlr.press/v162/kim22d/kim22d.pdf",
+   "outcome": "Guided-TTS (PMLR, CC BY): official Grad-TTS at N=50 and Glow-TTS pretrained; no 10-step Grad-TTS, no VITS, no main-scale model."
+  },
+  {
+   "source": "https://huggingface.co/speechbrain (asr-wav2vec2-librispeech @356e347, asr-conformer-loquacious @42106e6, asr-transformer-transformerlm-librispeech @bcf56f7; PERFORMANCE.md @1e32ef8)",
+   "outcome": "Apache-2.0 cards pooled as one maker evaluator (like first-party-meta-asr-cards): 6 rows, 1 proposed comparison model. PERFORMANCE.md not used (recipe numbers differ from the released wav2vec2 card)."
+  },
+  {
+   "source": "https://github.com/carun/tts-bench/tree/27727b24abbc688f718992eb5bfc5c7121facfcb",
+   "outcome": "Apache-2.0 repo with committed results. Whisper-large-v3 WER for Kokoro-82M, Magpie 357M and Qwen3-TTS 0.6B CustomVoice (proposed comparison model); NeMo FastPitch and the Parakeet-judge column not used. Magpie 0->1."
+  },
+  {
+   "source": "https://arxiv.org/html/2609.03502v1",
+   "outcome": "Wayu Thai TTS (existing ledger). Table 8 English CER on 500 held-out LibriTTS lines for the same three systems: new benchmark; wayu-paxa 2->3."
+  },
+  {
+   "source": "https://github.com/5uck1ess/tts-bench (@f8b30ed)",
+   "outcome": "Covers many no-result models (Piper, Pocket, Kitten, Chatterbox Turbo, Dia, Coqui, Breeze TTS 2, Maya1, NeuTTS). LICENSE: MIT 'applies ONLY to the bench code'; scores unlicensed. Not used; owner could ask the maintainer (Tym Rabchuk) for a data licence."
+  },
+  {
+   "source": "https://huggingface.co/spaces/hf-audio/open_tts_leaderboard (@3456d01) and blog post 2026-09-30",
+   "outcome": "Hugging Face Open TTS Leaderboard (Seed-TTS eval and CV3-Eval WER/SIM for ~90 open models incl. pocket-tts, kokoro, supertonic-3). Results load from the private dataset hf-audio/tts_leaderboard_results; no licence. Not used; owner could ask HF to publish CSVs under Apache-2.0 as for the Open ASR Leaderboard."
+  },
+  {
+   "source": "https://huggingface.co/datasets/datapointai/tts-human-preferences-large and .../text-to-speech-human-preferences-315k",
+   "outcome": "CC BY 4.0 vote data but gated (auto and manual approval); no printed Elo. The 'large' set compares four ElevenLabs models incl. eleven_turbo_v2_5. Not accessed (accepting gates is an account action for the owner)."
+  },
+  {
+   "source": "https://arxiv.org/html/2310.00274v1",
+   "outcome": "AfriSpeech-200 (existing ledger): NeMo conformer rows have dev WER only; test cells '-'."
+  },
+  {
+   "source": "https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard (@667db1e)",
+   "outcome": "Lists microsoft/VibeVoice-ASR (not the -HF checkpoint; different safetensors size) and v1 omniASR checkpoints."
+  },
+  {
+   "source": "https://arxiv.org/html/2609.02812v2",
+   "outcome": "VibeVoice-ASR-Streaming (CC BY): Table 1 streaming APIs (Gemini 3.5 Transcribe Live, GPT Live Transcribe, GPT Realtime Whisper, Scribe v2 Realtime); Table 3 own-run Nemotron-3.5-ASR, Voxtral-Mini-4B-Realtime, X-ASR (not input models; not added); Table 4 non-HF VibeVoice-ASR."
+  },
+  {
+   "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md",
+   "outcome": "gemini-3.5-transcribe-live and Soniox stt-rt-v5/v4 are streaming endpoints, not catalogue gemini-3-5-transcribe / soniox-v5-async."
+  },
+  {
+   "source": "https://huggingface.co/spaces/Reza2kn/PersianASR-TrippleThreat (@63e7e3f)",
+   "outcome": "openai/gpt-transcribe, microsoft/mai-transcribe-1.5, x-ai/grok-stt-1.0 rows were run via the OpenRouter gateway; the existing benchmark excludes such rows by design (owner decision listed in md)."
+  },
+  {
+   "source": "https://github.com/PhilflowIO/raven.eval/blob/3a42a94096cb893a9f2d3f8338509253feea1183/BENCHMARKS.md",
+   "outcome": "Grok Voice Transcribe 2.0 and 1.0 on the same four German read sets; primeline only on other sets. Adding 1.0 as a comparison model would still leave the benchmark at two models."
+  },
+  {
+   "source": "https://github.com/handy-computer/transcribe.cpp (c1fee50..95d82e5)",
+   "outcome": "New catalog files orukeet and parakeet-ultra only; no input model gains."
+  },
+  {
+   "source": "Pinned-head checks: ZTTS1-Eval, EmergentTTS-Eval, cn-news-tts-bench, rime alpha-tts-benchmark, verli, pipecat, OpenBench, stt-ru-benchmark, Smolevich, PESTE, Bangla (32652cf README rounding only)",
+   "outcome": "All at the pinned commits used in data/; nothing new."
+  },
+  {
+   "source": "Keyword sweep of the 87 multi-model speech source files already in results.json",
+   "outcome": "Searched for every input model name; new usable rows only in the Arabic arena (retired S1-mini) and Wayu Table 8 (English CER). Other hits were already handled or excluded with reasons (streaming variants, unversioned labels, copied baselines)."
+  },
+  {
+   "source": "https://arxiv.org/html/2502.05674v4",
+   "outcome": "ShiftySpeech (CC BY 4.0): official Grad-TTS and Coqui VITS/Glow-TTS/FastPitch used to generate spoofs; UTMOS reported only per vocoder (Table 33)."
+  },
+  {
+   "source": "https://aclanthology.org/2025.acl-long.493.pdf",
+   "outcome": "SpeechFake: generator list includes VITS, Glow-TTS, Grad-TTS; EER only, no quality metrics per system."
+  },
+  {
+   "source": "https://arxiv.org/html/2605.27258v1",
+   "outcome": "PilotTTS (CC BY 4.0): Seed-TTS baselines are not input models."
+  },
+  {
+   "source": "https://arxiv.org/html/2604.01760v1",
+   "outcome": "T5Gemma-TTS (CC BY 4.0): own runs of F5-TTS, XTTS v2, CosyVoice2-0.5B, Kokoro; none is an input model; not added."
+  },
+  {
+   "source": "https://arxiv.org/html/2508.04179v1",
+   "outcome": "Human fooling rates (CC BY 4.0): StyleTTS2 (version unstated), XTTS, GPT-SoVITS, F5-TTS, VoiceCraft, ElevenLabs/PlayHT unversioned; no input model."
+  },
+  {
+   "source": "https://arxiv.org/html/2608.09930v1, 2604.08562v1, 2609.13150v1",
+   "outcome": "CC BY TTS-evaluator studies; no per-system scores for catalogue models."
+  },
+  {
+   "source": "https://arxiv.org/html/2605.26978v1",
+   "outcome": "PashtoTTS-Bench (CC BY 4.0): Edge Pashto voices and OmniVoice only."
+  },
+  {
+   "source": "https://arxiv.org/html/2608.21378v1",
+   "outcome": "sanoTTS (CC BY 4.0): Piper amy/kristin teachers, not lessac."
+  },
+  {
+   "source": "arXiv licence checks (default non-exclusive, not used)",
+   "outcome": "Earnings-22 has CC BY-SA but evaluates unnamed cloud providers in a chart; non-exclusive: Matcha-TTS, OverFlow, Neural HMM, E-Branchformer, E-Branchformer vs Conformer, OWSM v1/v3.1/CTC, Loquacious Set, VoXtream/VoXtream2, VoiceChat-TTS, Diagnose-then-Refine, ARCHI-TTS, MINT-Bench, VoiceMOS 2026, XTTS, EdAcc, children-ASR studies, L2-accent generation, math-TTS intelligibility; StyleTTS 2 is CC BY-NC-SA; Urdu domain study is CC BY-NC-ND."
+  },
+  {
+   "source": "https://huggingface.co/KittenML (kitten-tts-2, kitten-tts-mini-0.8, nano-0.8-fp32), parler-tts, kyutai, neuphonic, nari-labs, ResembleAI, maya-research, OuteAI cards",
+   "outcome": "No evaluation tables on the cards (Kitten nano 0.8 fp32 file size used only for identity)."
+  },
+  {
+   "source": "https://huggingface.co/fishaudio/s1-mini",
+   "outcome": "Gated CC BY-NC-SA card; Seed-TTS-Eval English WER via gpt-4o-transcribe for S1 and S1-mini only (no matching benchmark)."
+  },
+  {
+   "source": "microsoft/NeuralSpeech LightSpeech and PriorGrad-acoustic READMEs @8cf4fbc",
+   "outcome": "MIT; RTF and checkpoints only, no MOS."
+  },
+  {
+   "source": "https://github.com/gauravvij/kokoro-tts-vs-supertonic-3-tts (@b581f89; HeyNEO blog 2026-07-06)",
+   "outcome": "CPU benchmark with UTMOS for Kokoro-82M, Supertonic 3, Inflect-Nano-v1 and Pocket TTS (voice alba); repository has no licence, so not used. Pocket TTS row predates the catalogue's 2026-09 weights anyway."
+  },
+  {
+   "source": "https://www.codesota.com/text-to-speech",
+   "outcome": "Aggregator page with an 'independent UTMOS eval'; no data licence; not used."
+  }
+ ]
+}

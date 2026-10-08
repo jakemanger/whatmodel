@@ -204,7 +204,10 @@
       "molmo-human-pref-elo-2409",
       "molmo2-human-pref-elo",
       "molmo2-captest-f1",
-      "molmo2-videocount-acc"
+      "molmo2-videocount-acc",
+      "caparena-auto-score",
+      "physbench-test-avg",
+      "msearth-mcq-overall"
     ]
   },
   {
@@ -261,7 +264,13 @@
       "kandinsky3-vs-kandinsky-2-2-visual-win",
       "kandinsky3-vs-dall-e-3-visual-win",
       "kandinsky3-vs-sdxl-visual-win",
-      "coco30k-fid-kandinsky21"
+      "coco30k-fid-kandinsky21",
+      "ultratext-bench-composite",
+      "servimage-task-acceptance",
+      "hpsv3-benchmark",
+      "mmmg-image-avg",
+      "mmmg-kg-score-avg",
+      "real-realism-avg"
     ]
   },
   {
@@ -281,7 +290,9 @@
       "gedit-bench-overall-lang-unspecified",
       "kris-bench-overall",
       "gedit-bench-en-overall",
-      "imgedit-bench-overall"
+      "imgedit-bench-overall",
+      "creval-bench-overall",
+      "servimage-task-acceptance"
     ]
   },
   {
@@ -337,7 +348,9 @@
       "v-reasonbench-pass5-avg",
       "vwg-bench-overall",
       "magicarena-i2v-elo-seaweed",
-      "worldreasonbench-human-elo"
+      "worldreasonbench-human-elo",
+      "pai-bench-g-overall",
+      "pai-bench-g-human-elo"
     ]
   },
   {

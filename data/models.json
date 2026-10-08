@@ -41274,5 +41274,290 @@
     "provider": "Cohere",
     "model_repo": "https://huggingface.co/CohereLabs/command-a-vision-07-2025",
     "identity_note": "HF repo sha e1016a8105950a626e7dd91b0a3030f7ae522411, cc-by-nc-4.0, created 2025-07-28; 112B per the Cohere post's comparison table."
+  },
+  {
+    "id": "kitten-tts-nano-0-8",
+    "name": "KittenTTS Nano 0.8",
+    "provider": "KittenML",
+    "category": "tts",
+    "released": "2026-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.014,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/KittenML/kitten-tts-nano-0.8-fp32/tree/7a1db645b1f3ab9420761d87428e042b9cec3f26",
+    "identity_note": "Comparison-only. Paradee Table 3 row 'KittenTTS nano 0.8 (Bella)', 14.0M params, 56.8 MB fp32 file; KittenML/kitten-tts-nano-0.8-fp32 @7a1db64 (created 2026-02-19, Apache-2.0) ships kitten_tts_nano_v0_8.onnx of 56,767,095 bytes. Distinct from kitten-tts-mini-0-8 (80M) and the int8 nano repo. Needed so the two new Paradee benchmarks reach 3 catalogue models; the run itself already has Kokoro-82M and Piper lessac medium.",
+    "identity_sources": [
+      "https://arxiv.org/html/2610.06817v1",
+      "https://huggingface.co/api/models/KittenML/kitten-tts-nano-0.8-fp32/tree/7a1db645b1f3ab9420761d87428e042b9cec3f26"
+    ],
+    "alternative": "If the owner prefers not to add Kitten nano, Paradee itself (sahilmahendrakar/Paradee-8M-v1.0 @f662642, Apache-2.0; Table 3 'Paradee, released ONNX file' UTMOS 4.41, WER 6.0%) would serve the same purpose."
+  },
+  {
+    "id": "tacotron2-hifigan-vctk-vits-study",
+    "name": "Tacotron 2 + HiFi-GAN (VCTK, VITS study)",
+    "provider": "VITS study (public implementations)",
+    "category": "tts",
+    "released": "2021-06",
+    "open_weights": false,
+    "api": null,
+    "local": null,
+    "source": "https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+    "model_repo": "https://github.com/NVIDIA/tacotron2",
+    "identity_note": "Comparison-only. Exact VCTK multi-speaker system in VITS (ICML 2021) Table 3 row 'Tacotron 2 + HiFi-GAN': NVIDIA Tacotron 2 implementation with broadcast speaker embedding concatenated to the encoder output, trained on VCTK (43,470 training clips, 22 kHz) by the VITS authors (§3.1, §4.2), HiFi-GAN second stage without fine-tuning. Study-specific weights, not released; distinct from tacotron2-hifigan-ljspeech. Needed so vits2021-vctk-mos (today a run of one, vits-vctk) has 3 models; the fine-tuned-HiFi-GAN rows (3.19, 3.82) are left out as unnecessary."
+  },
+  {
+    "id": "glow-tts-hifigan-vctk-vits-study",
+    "name": "Glow-TTS + HiFi-GAN (VCTK, VITS study)",
+    "provider": "VITS study (public implementations)",
+    "category": "tts",
+    "released": "2021-06",
+    "open_weights": false,
+    "api": null,
+    "local": null,
+    "source": "https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+    "model_repo": "https://github.com/jaywalnut310/glow-tts",
+    "identity_note": "Comparison-only. Exact VCTK multi-speaker system in VITS (ICML 2021) Table 3 row 'Glow-TTS + HiFi-GAN': jaywalnut310/glow-tts with global speaker conditioning, trained on VCTK by the VITS authors (§4.2), HiFi-GAN second stage without fine-tuning. Study-specific weights, not released; distinct from glow-tts-hifigan-ljspeech and coqui-en-ljspeech-glow-tts."
+  },
+  {
+    "id": "speechbrain-asr-transformer-transformerlm-librispeech",
+    "name": "SpeechBrain Transformer + TransformerLM (LibriSpeech)",
+    "provider": "SpeechBrain",
+    "category": "stt",
+    "released": "2022-03",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech",
+    "identity_note": "Comparison-only. Exact checkpoint speechbrain/asr-transformer-transformerlm-librispeech @bcf56f7 (repo created 2022-03-02, card release '24-03-22', Apache-2.0): transformer encoder, joint CTC/attention decoder and Transformer LM trained on LibriSpeech 960h. Needed so the SpeechBrain cards pool has a second model on LibriSpeech test-clean (speechbrain-asr-wav2vec2-librispeech) and a third on test-other. No local command verified."
+  },
+  {
+    "id": "qwen3-tts-12hz-0-6b-customvoice",
+    "name": "Qwen3-TTS 12Hz 0.6B CustomVoice",
+    "provider": "Alibaba (Qwen)",
+    "category": "tts",
+    "released": "2026-01",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+    "identity_note": "Comparison-only. Exact checkpoint Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice (HF sha 85e237c at 2026-10-08, created 2026-01-21, Apache-2.0), the preset-speaker variant; distinct from the catalogue's qwen3-tts-12hz-0-6b-base (voice-cloning base). carun/tts-bench engines/run_qwen.py loads exactly this repo with speaker 'Aiden'. Needed so the new carun-tts-bench56 benchmark reaches 3 models (run already has Kokoro-82M and Magpie 357M)."
+  },
+  {
+    "id": "minimax-m1-40k",
+    "name": "MiniMax-M1 (40k)",
+    "provider": "MiniMax",
+    "category": "llm",
+    "released": "2025-06",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 456,
+    "active_b": 45.9,
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only, proposed so the MiniMax-M1-80k card runs count. The pinned MiniMax-M1-80k card (@8d1494b) evaluates two own checkpoints side by side, 'MiniMax-M1-80K' (catalogue minimax-m1) and 'MiniMax-M1-40K' (40K thinking budget). Weights: https://huggingface.co/MiniMaxAI/MiniMax-M1-40k (sha 2d1d1c2f00c97fc1245bfce7648649b76e0a8e6e, created 2025-06-05, apache-2.0, 456.1B params in safetensors metadata). Same architecture as M1-80k (456B total, 45.9B active per the card); differs only in RL thinking budget.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md",
+        "reported_label": "MiniMax-M1-40K"
+      },
+      {
+        "source": "https://huggingface.co/MiniMaxAI/MiniMax-M1-40k",
+        "reported_label": "MiniMaxAI/MiniMax-M1-40k"
+      }
+    ]
+  },
+  {
+    "id": "granite-4-1-3b",
+    "name": "Granite 4.1 3B",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2026-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 3,
+    "active_b": 3,
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only, proposed so the granite-4-1-8b card runs count. The pinned granite-4.1-8b card (@1504002) prints one Evaluation Results table with '3B Dense', '8B Dense' and '30B Dense' columns for the Granite 4.1 family. Weights: https://huggingface.co/ibm-granite/granite-4.1-3b (sha c0650403e44e78ec0262dab1c90914c65b196c4e, created 2026-04-06, apache-2.0, 3,402,836,480 params in safetensors metadata). Dense, so active = total.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results",
+        "reported_label": "3B Dense"
+      },
+      {
+        "source": "https://huggingface.co/ibm-granite/granite-4.1-3b",
+        "reported_label": "ibm-granite/granite-4.1-3b"
+      }
+    ]
+  },
+  {
+    "id": "granite-4-1-30b",
+    "name": "Granite 4.1 30B",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2026-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 30,
+    "active_b": 30,
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only, proposed so the granite-4-1-8b card runs count. The pinned granite-4.1-8b card (@1504002) prints one Evaluation Results table with '3B Dense', '8B Dense' and '30B Dense' columns for the Granite 4.1 family. Weights: https://huggingface.co/ibm-granite/granite-4.1-30b (sha 4fae6278f7132abf5e971f9de49ebbad09c54cce, created 2026-04-06, apache-2.0, 28,865,728,512 params in safetensors metadata). Dense, so active = total.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results",
+        "reported_label": "30B Dense"
+      },
+      {
+        "source": "https://huggingface.co/ibm-granite/granite-4.1-30b",
+        "reported_label": "ibm-granite/granite-4.1-30b"
+      }
+    ]
+  },
+  {
+    "id": "ernie-4-5-21b-a3b",
+    "name": "ERNIE 4.5 21B-A3B",
+    "provider": "Baidu",
+    "category": "llm",
+    "released": "2025-06",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 21,
+    "active_b": 3,
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only, proposed so the card-ernie-45-posttrained-final runs count. The pinned ERNIE README (@790a50b) prints a post-trained chart with columns 'ERNIE-4.5-0.3B', 'Qwen3-30B-A3B' (competitor, unused) and 'ERNIE-4.5-21B-A3B'; its model table lists the post-trained ERNIE-4.5-21B-A3B release. Weights: https://huggingface.co/baidu/ERNIE-4.5-21B-A3B-PT (sha 87db95487941cb39592ee0abca3b9155a6d19c5c, created 2025-06-28, apache-2.0, 21,948,655,808 params in safetensors metadata; '-PT' = PyTorch weights, as for the catalogued 300B-A47B).",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md",
+        "reported_label": "ERNIE-4.5-21B-A3B"
+      },
+      {
+        "source": "https://huggingface.co/baidu/ERNIE-4.5-21B-A3B-PT",
+        "reported_label": "baidu/ERNIE-4.5-21B-A3B-PT"
+      }
+    ]
+  },
+  {
+    "id": "lfm2-8b-a1b",
+    "name": "LFM2 8B-A1B",
+    "provider": "Liquid AI",
+    "category": "llm",
+    "released": "2025-10",
+    "open_weights": true,
+    "license": "lfm1.0",
+    "params_b": 8.3,
+    "active_b": 1.5,
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only, proposed so the card-liquidai-lfm2-5-8b-a1b runs count. The pinned LFM2.5-8B-A1B card (@5dd2260) prints 'Improvements over LFM2-8B-A1B' with own LFM2-8B-A1B and LFM2.5-8B-A1B columns. Weights: https://huggingface.co/LiquidAI/LFM2-8B-A1B (sha c1c44ff9fc00db3ebf4516970563f5f383d23670, created 2025-10-07, licence 'other' = LFM Open License v1.0, 8,339,929,856 params in safetensors metadata; 8.3B total / 1.5B active per Liquid's naming).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md",
+        "reported_label": "LFM2-8B-A1B"
+      },
+      {
+        "source": "https://huggingface.co/LiquidAI/LFM2-8B-A1B",
+        "reported_label": "LiquidAI/LFM2-8B-A1B"
+      }
+    ]
+  },
+  {
+    "id": "llava-v1-6-vicuna-13b",
+    "name": "LLaVA-v1.6-Vicuna-13B",
+    "provider": "LLaVA",
+    "category": "llm",
+    "released": "2024-01",
+    "open_weights": true,
+    "license": "llama2",
+    "params_b": 13.35,
+    "active_b": 13.35,
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only, proposed so the LLaVA model-zoo runs of llava-v1-6-34b count. The pinned MODEL_ZOO.md (@c121f04) lists both own LLaVA-1.6 checkpoints in one table: liuhaotian/llava-v1.6-34b (catalogued) and liuhaotian/llava-v1.6-vicuna-13b. Weights: https://huggingface.co/liuhaotian/llava-v1.6-vicuna-13b (sha 22422b4c3a3ef1ba52aca074cc9021216877ce5d, created 2024-01-31, 13,350,844,416 params in safetensors metadata; Vicuna-13B base, so usage follows the Llama 2 licence per the model zoo note).",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md",
+        "reported_label": "LLaVA-1.6 | Vicuna-13B | liuhaotian/llava-v1.6-vicuna-13b"
+      },
+      {
+        "source": "https://huggingface.co/liuhaotian/llava-v1.6-vicuna-13b",
+        "reported_label": "liuhaotian/llava-v1.6-vicuna-13b"
+      }
+    ]
+  },
+  {
+    "id": "cogvlm2-llama3-chinese-chat-19b",
+    "name": "CogVLM2 Llama3 Chinese Chat 19B",
+    "provider": "Zhipu AI (THUDM)",
+    "category": "llm",
+    "released": "2024-05",
+    "open_weights": true,
+    "license": "cogvlm2",
+    "params_b": 19.5,
+    "active_b": 19.5,
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only, proposed so the CogVLM2 card runs of cogvlm2-llama3-chat-19b count. The pinned cogvlm2-llama3-chat-19B card (@f592f29) lists the two own CogVLM2 releases side by side ('cogvlm2-llama3-chat-19B' and 'cogvlm2-llama3-chinese-chat-19B', both Meta-Llama-3-8B-Instruct based, 19B) and scores both in its Benchmark table ('CogVLM2-LLaMA3' and 'CogVLM2-LLaMA3-Chinese'). Weights: https://huggingface.co/zai-org/cogvlm2-llama3-chinese-chat-19B (sha 2c2226281325649d49b8aa237a932367c7da4f26, created 2024-05-16, 19,503,107,328 params in safetensors metadata, licence cogvlm2).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark",
+        "reported_label": "CogVLM2-LLaMA3-Chinese"
+      },
+      {
+        "source": "https://huggingface.co/zai-org/cogvlm2-llama3-chinese-chat-19B",
+        "reported_label": "zai-org/cogvlm2-llama3-chinese-chat-19B"
+      }
+    ]
+  },
+  {
+    "id": "step1x-edit-v1-2-preview",
+    "name": "Step1X-Edit v1.2 Preview",
+    "provider": "StepFun",
+    "category": "image",
+    "released": "2025-09",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only, proposed so the Step1X-Edit-v1p2 card's GEdit and KRIS runs reach three models (benchmark minimum). The pinned card (@ca85b97) prints own rows for Step1X-Edit v1.1, Step1x-edit-v1p2-preview and Step1x-edit-v1p2 (base/thinking/thinking+reflection). Weights: https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2-preview (sha f77b8edcde2d8fad57e6c515439e1a242e2e748e, created 2025-09-07, apache-2.0, 12,442,484,544 params in safetensors metadata); distinct from the final v1p2 release (catalogue step1x-edit-v1-2).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md",
+        "reported_label": "Step1x-edit-v1p2-preview"
+      },
+      {
+        "source": "https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2-preview",
+        "reported_label": "stepfun-ai/Step1X-Edit-v1p2-preview"
+      }
+    ]
+  },
+  {
+    "id": "deepseek-llm-7b-chat",
+    "name": "DeepSeek LLM 7B Chat",
+    "provider": "DeepSeek",
+    "category": "llm",
+    "released": "2023-11",
+    "open_weights": true,
+    "license": "deepseek",
+    "params_b": 7,
+    "active_b": 7,
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only, proposed so the DeepSeek-V2-Lite-Chat card runs count. The pinned DeepSeek-V2-Lite-Chat card (@8586474) prints DeepSeek's own chat models side by side: 'DeepSeek 7B Chat (SFT)', 'DeepSeekMoE 16B Chat (SFT)' and 'DeepSeek-V2-Lite 16B Chat (SFT)' (catalogue deepseek-v2-lite-chat). Weights: https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat (sha afbda8b347ec881666061fa67447046fc5164ec8, created 2023-11-29, DeepSeek model licence); same family as the catalogued deepseek-llm-67b-chat.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model",
+        "reported_label": "DeepSeek 7B Chat (SFT)"
+      },
+      {
+        "source": "https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat",
+        "reported_label": "deepseek-ai/deepseek-llm-7b-chat"
+      }
+    ]
   }
 ]

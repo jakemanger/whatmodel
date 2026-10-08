@@ -10654,18 +10654,19 @@
     "id": "speech-espnet-librispeech-20260929",
     "name": "ESPnet LibriSpeech ASR recipe results (pinned September 2026)",
     "match": [
-      "github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md"
+      "github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+      "github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/owsm_v3.1/s2t1/README.md"
     ],
     "exact": true,
     "kind": "dataset",
     "license": "Apache-2.0",
     "terms_url": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/LICENSE",
     "verdict": "allowed",
-    "checked": "2026-09-29",
+    "checked": "2026-10-08",
     "license_url": "/licenses/speech-espnet-librispeech-20260929.txt",
     "icon": "github.com",
     "quote": "Apache-2.0 covers documentation source. Only the ESPnet recipe authors’ own WER tables, not third-party comparison numbers or external model artefacts. Test-clean and test-other WER only; CER/TER and development-set results are omitted. Decoder/LM choices preserved in each model identity and result note.",
-    "scope": "Apache-2.0 covers documentation source. Only the ESPnet recipe authors’ own WER tables, not third-party comparison numbers or external model artefacts. Test-clean and test-other WER only; CER/TER and development-set results are omitted. Decoder/LM choices preserved in each model identity and result note.",
+    "scope": "Apache-2.0 covers documentation source. Only the ESPnet recipe authors’ own WER tables, not third-party comparison numbers or external model artefacts. Also ESPnet’s own Whisper-medium run in the OWSM v3.1 README at the same commit (greedy decoding, Whisper normaliser; arXiv 2309.13876: “we prepare all test data in ESPnet and evaluate Whisper in the same setup”). Test-clean and test-other WER only; CER/TER and development-set results are omitted. Decoder/LM choices preserved in each model identity and result note.",
     "attribution": "ESPnet developers and recipe contributors. Extracted selected test WER cells from the committed LibriSpeech recipe README; percentages divided by 100. No endorsement."
   },
   {
@@ -12947,7 +12948,8 @@
     "name": "DeepSeek vendor-reported benchmark scores for its own models (Hugging Face model cards)",
     "kind": "first-party",
     "match": [
-      "huggingface.co/deepseek-ai/DeepSeek-V2.5-1210/blob/6f134cbe88cb9284a8ce696e8ac8eefd0bc24ede/README.md#1-introduction"
+      "huggingface.co/deepseek-ai/DeepSeek-V2.5-1210/blob/6f134cbe88cb9284a8ce696e8ac8eefd0bc24ede/README.md#1-introduction",
+      "huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model"
     ],
     "exact": true,
     "license": "Factual vendor-reported score (not licensed content)",
@@ -13056,5 +13058,345 @@
     "evidence_url": "https://storage.googleapis.com/intellect-3-paper/INTELLECT_3_Technical_Report.pdf",
     "icon": "huggingface.co",
     "scope": "Evaluation table (Prime Intellect's own runs of all listed models). Excluded: GLM-4.5 MMLU-Pro (the report marks it 'Reported by AA Index', i.e. Artificial Analysis, which the project does not use). The report PDF itself states no licence, so the MIT card is the cited copy."
+  },
+  {
+    "id": "speech-paradee-report-ccby",
+    "name": "Paradee: Distilling Kokoro-82M into an 8M-Parameter Single-Voice TTS Model (arXiv:2610.06817v1), Table 3 small-model comparison",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2610.06817v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2610.06817v1",
+    "quote": "arXiv abstract page for 2610.06817v1 links http://creativecommons.org/licenses/by/4.0/ and the HTML header states 'License: CC BY 4.0'. Table 3 caption: 'Paradee against other small open models on the same 200 held-out sentences, with the same scoring. ... Speed is real-time factor on one CPU thread of the same machine.' §5: 'All UTMOS scores are averages over the 200 held-out sentences.' 'Word error rate (WER) comes from transcribing the audio with Whisper (base)'. The single author ran every row.",
+    "attribution": "Sahil Mahendrakar, 'Paradee: Distilling Kokoro-82M into an 8M-Parameter Single-Voice Text-to-Speech Model', arXiv:2610.06817v1 (2026), CC BY 4.0. Table 3 UTMOS and WER, UTMOS stored (x-1)/4 and WER % / 100. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2610.06817v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "first-party-speechbrain-asr-cards",
+    "name": "SpeechBrain Hugging Face ASR model cards: published LibriSpeech/VoxPopuli WER for its own checkpoints",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md",
+      "huggingface.co/speechbrain/asr-conformer-loquacious/blob/42106e67e454ae361ca2d8311a7a807d5f95a3b9/README.md",
+      "huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech/blob/bcf56f762f37877912578f8800bc2a4f5171e5e5/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md",
+    "terms_url": "https://huggingface.co/speechbrain",
+    "quote": "Each card's front matter at the pinned revision declares 'license: apache-2.0' (repository licence, not gated). The WER figures are SpeechBrain's own published results for its own checkpoints ('The performance of the model is the following:' tables and model-index), so the vendor-reported rule also applies.",
+    "attribution": "SpeechBrain (speechbrain organisation on Hugging Face), model cards for asr-wav2vec2-librispeech, asr-conformer-loquacious (Samsung AI Center-Cambridge contribution) and asr-transformer-transformerlm-librispeech at the pinned revisions, Apache-2.0. WER % divided by 100.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "icon": "huggingface.co",
+    "scope": "LibriSpeech test-clean/test-other and VoxPopuli test WER printed on three pinned speechbrain/* cards, pooled as one maker's evaluation like first-party-meta-asr-cards. PERFORMANCE.md (recipe-level numbers that can differ from the released checkpoint, e.g. wav2vec2 1.65/3.67 vs card 1.90/3.96) is not used."
+  },
+  {
+    "id": "speech-carun-tts-bench-apache",
+    "name": "carun/tts-bench: intelligibility benchmark of four open TTS engines (published run, 2026-09-10)",
+    "kind": "dataset",
+    "match": [
+      "github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/data/REPORT_DATA.md",
+      "github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/LICENSE.txt",
+    "terms_url": "https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/LICENSE.txt",
+    "quote": "Repository LICENSE.txt at the pinned commit is the unmodified Apache License 2.0 (GitHub reports spdx Apache-2.0); no carve-out for data. Commit 27727b2 'data: raw results from the published run' adds data/REPORT_DATA.md and per-utterance JSON. README: 'Two independent ASR systems then transcribe every output, and word error rate is computed against the input text after identical normalisation of both sides.' The author ran all four engines.",
+    "attribution": "Arun C (carun), tts-bench, github.com/carun/tts-bench @27727b2, Apache-2.0. Whisper-judge overall WER, % / 100. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "icon": "github.com"
+  },
+  {
+    "id": "paper-2610.09823v1-ultratext",
+    "name": "UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation (arXiv:2610.09823v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2610.09823v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2610.09823v1",
+    "quote": "arXiv abstract page for 2610.09823v1 links 'http://creativecommons.org/licenses/by/4.0/' as the licence; the HTML version prints 'License: CC BY 4.0'. CC BY 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+    "attribution": "Deyuan Liu, Yihao Hu, Jingxuan Zhang, Xingying Li, Jun Xie, Jiacheng Liu, Jungang Li, Yu Huang, Xuanyi Liu, Yue Ding, Zecheng Wang, Lei Zhao, Mingda Wang, Zhenglin Cheng, Peng Sun, Tao Lin. UltraText Bench, arXiv:2610.09823v1, CC BY 4.0. Table 5 Composite column extracted; percentages divided by 100; model labels mapped to catalogue ids as noted per row. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2610.09823v1",
+    "icon": "arxiv.org",
+    "scope": "Table 5 Composite column only, for the 24 configurations the authors evaluated themselves (Sec. 5.1 'We evaluated 24 model configurations'). Boogu-Image and HiDream-O1-Image-Dev rows not catalogued; sub-dimension and per-level columns not used (correlated slices)."
+  },
+  {
+    "id": "paper-2603.26174v1-creval",
+    "name": "CREval: An Automated Interpretable Evaluation for Creative Image Manipulation under Complex Instructions (arXiv:2603.26174v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2603.26174v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2603.26174v1",
+    "quote": "arXiv abstract page for 2603.26174v1 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence (CC BY 4.0). CC BY 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+    "attribution": "Chonghuinan Wang, Hongxun Yao et al. (Harbin Institute of Technology), CREval, arXiv:2603.26174v1, CC BY 4.0. Table 2 Overall avg column extracted; divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2603.26174v1",
+    "icon": "arxiv.org",
+    "scope": "Table 2 Overall avg for the models the authors evaluated ('we systematically evaluate a diverse set of state-of-the-art open and closed-source models'). ICEdit not catalogued; 'Qwen-image-Edit' row skipped because the text calls the same reference Qwen-Image-Edit-2509; '(think)' rows skipped."
+  },
+  {
+    "id": "paper-2604.24023v2-servimage",
+    "name": "ServImage: An Image Generation and Editing Benchmark from Real-world Commercial Imaging Services (arXiv:2604.24023v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2604.24023v2"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2604.24023v2",
+    "quote": "arXiv abstract page for 2604.24023v2 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence (CC BY 4.0). CC BY 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+    "attribution": "Fengxian Ji et al., ServImage, arXiv:2604.24023v2, CC BY 4.0. Table 2 Task Acc. column extracted; divided by 100; model labels mapped via the Appendix Table 6 API endpoints. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2604.24023v2",
+    "icon": "arxiv.org",
+    "scope": "Table 2 'Task Acc. (%)' (human payment-decision labels) for 12 of the 16 models the authors ran. Not used: Gemini-Banana-Pro (endpoint 'gemini-2.5-flash-image-pro' at $0.028/call does not identify Nano Banana Pro), Kling-v2 images and Midjourney relax modes (not catalogued / version unstated); revenue, share and ServImageModel-predicted columns."
+  },
+  {
+    "id": "card-opengvlab-internvl2-cards",
+    "name": "OpenGVLab InternVL2 model cards (InternVL2-4B and InternVL2-26B), Evaluation tables",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md#evaluation",
+      "huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md",
+    "terms_url": "https://huggingface.co/OpenGVLab/InternVL2-26B/blob/46f37972e05604cc44a59f72334df220fa197a7b/README.md",
+    "quote": "Both pinned READMEs declare 'license: mit' in their front matter (Hub API cardData.license = mit for OpenGVLab/InternVL2-26B @46f3797 and OpenGVLab/InternVL2-4B @6eb21ec). The MIT grant covers 'this software and associated documentation files' and permits use, copy, modification, publication and distribution, including commercially, with the copyright and permission notice retained. Also within the owner's vendor-reported-score rule (each figure is OpenGVLab's own score for its own model).",
+    "attribution": "OpenGVLab (Shanghai AI Laboratory), InternVL2-4B and InternVL2-26B model cards, MIT licence. Own-model Evaluation columns only; percentages divided by 100, OCRBench by 1000. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://huggingface.co/api/models/OpenGVLab/InternVL2-26B",
+    "icon": "huggingface.co",
+    "scope": "The InternVL2-4B and InternVL2-26B own-model columns of the Image and Video Benchmarks tables in the two pinned cards, pooled as one OpenGVLab evaluator (same team, toolkit and table layout). Competitor and earlier-InternVL columns excluded. MMBench test, CCBench, MMVet, MME, SEED, OpenCompass avg and MMBench-Video rows not used (no catalogue benchmark id or not the existing split)."
+  },
+  {
+    "id": "llava-model-zoo-apache",
+    "name": "LLaVA repository model zoo (haotian-liu/LLaVA docs/MODEL_ZOO.md)",
+    "kind": "first-party",
+    "match": [
+      "github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/LICENSE",
+    "terms_url": "https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/LICENSE",
+    "quote": "Repository LICENSE at the pinned commit is Apache License 2.0 (GitHub API spdx_id Apache-2.0); s.2 grants a perpetual, worldwide, royalty-free copyright licence to reproduce and distribute the Work, which includes documentation such as docs/MODEL_ZOO.md. The figures are also the LLaVA authors' own scores for their own checkpoints (vendor-reported rule).",
+    "attribution": "Haotian Liu et al., LLaVA (haotian-liu/LLaVA) docs/MODEL_ZOO.md @c121f04, Apache-2.0. LLaVA-1.6 table, MMMU and TextVQA columns; divided by 100. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://api.github.com/repos/haotian-liu/LLaVA/license",
+    "icon": "github.com",
+    "scope": "Own-checkpoint rows of the LLaVA-v1.6 table (MMMU val and TextVQA val columns) only. MathVista (split unstated), VQAv2 (test-dev), MME, MM-Bench and other columns not used; LLaVA-1.5 tables not used."
+  },
+  {
+    "id": "first-party-zai-cogvlm2-scores",
+    "name": "Zhipu AI (THUDM) CogVLM2 model card, Benchmark table (own models)",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark"
+    ],
+    "exact": true,
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md",
+    "quote": "Owner rule (vendor-reported scores, approved 2026-10-07): a vendor's own published score for its own model may be recorded by hand one figure at a time with the exact URL, date and printed settings; other labs' cells excluded; rows labelled by: 'lab'. The card's own licence is the custom 'cogvlm2' licence (license: other), so no open-licence claim is made.",
+    "attribution": "Zhipu AI / THUDM, CogVLM2 model card (zai-org/cogvlm2-llama3-chat-19B @f592f29). Own-model rows only.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "icon": "huggingface.co",
+    "scope": "The two own CogVLM2 rows (CogVLM2-LLaMA3, CogVLM2-LLaMA3-Chinese) of the card's Benchmark table; TextVQA, ChartQA and OCRBench columns only."
+  },
+  {
+    "id": "hpsv3-readme-mit",
+    "name": "HPSv3 repository README, image generation benchmark table (MizzenAI/HPSv3)",
+    "kind": "leaderboard",
+    "match": [
+      "github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/LICENSE",
+    "terms_url": "https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/LICENSE",
+    "quote": "Repository licence MIT (GitHub API spdx_id MIT, root LICENSE at the pinned commit): 'Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files ... to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies', with the copyright and permission notice retained. The README is repository documentation.",
+    "attribution": "MizzenAI, HPSv3 (github.com/MizzenAI/HPSv3) README @bd0c5fc, MIT licence. Overall column of the image generation benchmark table. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://api.github.com/repos/MizzenAI/HPSv3",
+    "icon": "github.com",
+    "scope": "The 'Image Generation Benchmark of HPSv3' table, Overall column. Not used: 'SD2' (2.0 vs 2.1 not stated), 'Gemini 2.0 Flash' (experimental vs preview image endpoint not stated), Infinity, CogView4, PixArt-Sigma and HunyuanDiT (not catalogued or version not stated), per-category columns, and the paper (default arXiv licence)."
+  },
+  {
+    "id": "paper-2512.01989v1-paibench",
+    "name": "PAI-Bench: A Comprehensive Benchmark For Physical AI (arXiv:2512.01989v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2512.01989v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2512.01989v1",
+    "quote": "arXiv abstract page for 2512.01989v1 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence (CC BY 4.0). CC BY 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution. The HTML version prints 'License: CC BY 4.0'.",
+    "attribution": "Fengzhe Zhou, Jiannan Huang, Jialuo Li, Deva Ramanan, Humphrey Shi (Georgia Tech, CMU), PAI-Bench, arXiv:2512.01989v1, CC BY 4.0. Table 3 Overall and Table 8 ELO Overall columns; percentages divided by 100. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2512.01989v1",
+    "icon": "arxiv.org",
+    "scope": "Table 3 Overall and Table 8 human ELO Overall for the catalogued models the authors ran ('We evaluate all models using their default settings'). Generation settings are each model's defaults; CogVideoX/CogVideoX1.5 (T2V vs I2V checkpoint not stated), LTX-Video-2B (version not stated), Wan2.1-I2V-14B-720P, MAGI-1, DynamiCrafter and Cosmos-Predict rows not mapped."
+  },
+  {
+    "id": "genexam-readme-mit",
+    "name": "GenExam leaderboard (OpenGVLab/GenExam README, relaxed score)",
+    "kind": "leaderboard",
+    "match": [
+      "github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/LICENSE",
+    "terms_url": "https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/LICENSE",
+    "quote": "Repository licence MIT (GitHub API spdx_id MIT; root LICENSE at the pinned commit): permission to use, copy, modify, merge, publish, distribute, sublicense and/or sell copies of the software and associated documentation files, with the copyright and permission notice retained. The README leaderboard is repository documentation maintained by the GenExam authors.",
+    "attribution": "OpenGVLab, GenExam (github.com/OpenGVLab/GenExam) README @1f820db, MIT licence. Relaxed Score Overall column; divided by 100. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://api.github.com/repos/OpenGVLab/GenExam",
+    "icon": "github.com",
+    "scope": "Relaxed Score table, Overall column, for the 14 catalogued models that have no genexam-relaxed row from the arXiv paper entry visual-genexam. Not used: 'Qwen-Image-3.0' (non-Pro, not catalogued), 'Seedream 5.0' (Lite vs Pro not stated), 'BAGEL' non-thinking and 'Janus-Pro' (size not stated), '(w/o PE)' rows, and the rows that duplicate paper models. Owner may prefer to merge this entry with visual-genexam (same authors and judge)."
+  },
+  {
+    "id": "paper-2503.12329v1-caparena",
+    "name": "CapArena: Benchmarking and Analyzing Detailed Image Captioning in the LLM Era (arXiv:2503.12329v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2503.12329v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2503.12329v1",
+    "quote": "arXiv abstract page for 2503.12329v1 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence (CC BY 4.0). CC BY 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution. The HTML version prints 'License: CC BY 4.0'.",
+    "attribution": "Kanzhi Cheng, Wenpo Song, Jiaxin Fan et al. (Nanjing University), CapArena, arXiv:2503.12329v1, CC BY 4.0. Table 8 Score_Avg column; model labels mapped to catalogue ids. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2503.12329v1",
+    "icon": "arxiv.org",
+    "scope": "Appendix J Table 8 (CapArena-Auto leaderboard) Score_Avg for 13 catalogued VLMs. Not used: Gemini-2.0-flash-exp, Ovis-2-34B, Ovis-1.6-27B, GLM-4V-Plus, InternVL2.5-8B, Qwen2-VL-2B, Cambrian-34B, LLaVA-1.5-7B (not catalogued) and Hunyuan-standard-vision (snapshot not stated); the human arena ranking (Figure 1, chart only) and per-baseline columns."
+  },
+  {
+    "id": "paper-2501.16411v2-physbench",
+    "name": "PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding (arXiv:2501.16411v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2501.16411v2"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2501.16411v2",
+    "quote": "arXiv abstract page for 2501.16411v2 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence (CC BY 4.0). CC BY 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+    "attribution": "Wei Chow et al., PhysBench, arXiv:2501.16411v2, CC BY 4.0. Table 3 and Appendix Table 28 Avg column; divided by 100. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2501.16411v2",
+    "icon": "arxiv.org",
+    "scope": "Avg column of Table 3 and Appendix Table 28 for 10 catalogued VLMs whose checkpoint is unambiguous. Not used: GPT-4o, GPT-4V, Gemini-1.5-flash/pro, Claude-3.5-sonnet (snapshot not stated), MolmoE-7B-D/72B (naming does not match a released checkpoint), and uncatalogued models."
+  },
+  {
+    "id": "paper-2505.20740v3-msearth",
+    "name": "MSEarth: A Multimodal Benchmark for Earth Science Phenomenon Discovery with MLLMs (arXiv:2505.20740v3)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2505.20740v3"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2505.20740v3",
+    "quote": "arXiv abstract page for 2505.20740v3 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence (CC BY 4.0). CC BY 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution. The HTML version prints 'License: CC BY 4.0'.",
+    "attribution": "Xiangyu Zhao et al., MSEarth, arXiv:2505.20740v3, CC BY 4.0. Table 4 Overall ACC column; divided by 100; model versions from Appendix Table 10. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2505.20740v3",
+    "icon": "arxiv.org",
+    "scope": "Table 4 Overall ACC for 6 catalogued models with stated or unique versions. Not used: GPT-4o (version truncated as 'GPT-4o-20'), GPT-5.2 and Gemini-3-Flash (not in the version table; reasoning setting unstated), Llama3.2-90B-Vision (base path), the authors' fine-tuned MSEarth models and uncatalogued models."
+  },
+  {
+    "id": "paper-2505.17613v2-mmmg",
+    "name": "MMMG: a Comprehensive and Reliable Benchmark for Multitask Multimodal Generation (arXiv:2505.17613v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2505.17613v2"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2505.17613v2",
+    "quote": "arXiv abstract page for 2505.17613v2 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence (CC BY 4.0). CC BY 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+    "attribution": "Jihan Yao, Yushi Hu, Wenyuan Wang, Bin Han et al., MMMG, arXiv:2505.17613v2, CC BY 4.0. Table 3 GenEval column and Appendix Table 9 image Average row; checkpoints from Appendix C. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2505.17613v2",
+    "icon": "arxiv.org",
+    "scope": "Table 3 GenEval column (the authors' own GenEval runs of nine image models) and Appendix Table 9 image-generation Average for the ten catalogued checkpoints listed in Appendix C. Not used: the Arena column (copied), DrawBench/GenAI-Bench VQAScore columns (GenAI-Bench is a 400-prompt subsample), Janus Pro and BLIP-3o (size unstated), interleaved, audio and speech results."
+  },
+  {
+    "id": "paper-2506.10963v2-mmmg-kg",
+    "name": "MMMG: A Massive, Multidisciplinary, Multi-Tier Generation Benchmark for Text-to-Image Reasoning (arXiv:2506.10963v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2506.10963v2"
+    ],
+    "exact": true,
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "terms_url": "https://arxiv.org/abs/2506.10963v2",
+    "quote": "arXiv abstract page for 2506.10963v2 links 'http://creativecommons.org/licenses/by-sa/4.0/' as the article licence (CC BY-SA 4.0). CC BY-SA 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material and Adapted Material, including commercially, subject to attribution and ShareAlike (s.3(b)) for adapted material.",
+    "attribution": "Yuxuan Luo, Yuhui Yuan, Junwen Chen et al., MMMG (T2I reasoning), arXiv:2506.10963v2, CC BY-SA 4.0. Table 2 Avg column; divided by 100. Adapted values remain under CC BY-SA 4.0. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2506.10963v2",
+    "icon": "arxiv.org",
+    "scope": "Table 2 Avg for 7 catalogued models the authors evaluated. Not used: GPT-4o image generation (endpoint not stated), FLUX.1-[pro] (not catalogued), LlamaGen, JanusFlow, SimpleAR, CogView-4, SEED-X, Infinity, FLUX-Reason variants and the recaption/refiner rows."
+  },
+  {
+    "id": "paper-2502.10663v1-real",
+    "name": "REAL: Realism Evaluation of Text-to-Image Generation Models for Effective Data Augmentation (arXiv:2502.10663v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2502.10663v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2502.10663v1",
+    "quote": "arXiv abstract page for 2502.10663v1 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence (CC BY 4.0). CC BY 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution. The HTML version prints 'License: CC BY 4.0'.",
+    "attribution": "Ran Li, Xiaomeng Jin, Heng Ji, REAL, arXiv:2502.10663v1, CC BY 4.0. Table 5 Average Score column. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2502.10663v1",
+    "icon": "arxiv.org",
+    "scope": "Table 5 Average Score for DALL-E 3, Stable Diffusion 1.1 and Kandinsky 3. SD 3.5 Turbo not mapped."
   }
 ]
