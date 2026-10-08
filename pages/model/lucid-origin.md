@@ -6,7 +6,7 @@
 
 Leonardo.Ai · released 2025-08 · closed weights
 
-**score 48.8** ±2.0 · #80 of 136 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.8** ±2.1 · #80 of 136 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

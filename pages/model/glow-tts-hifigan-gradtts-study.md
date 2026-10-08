@@ -6,7 +6,7 @@
 
 Grad-TTS authors / Huawei Noah · released 2021-05 · closed weights
 
-**score 47.7** ±21.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.0** ±21.5 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Grad-TTS 2021 LJ Speech human MOS](https://whatmodel.sh/tts?set=gradtts2021-ljspeech-mos&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-gradtts-icml2021"></a>Grad-TTS: original IC…  <a href="https://proceedings.mlr.press/v139/popov21a/popov21a.pdf">Grad-TTS 2021 LJ Speech human…</a>  4.11 / 5    46.3   2021-07-18   63% ▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                      50.0                37% ▇▇▇▇
-                        weighted average                          = 47.7
+<a name="speech-gradtts-icml2021"></a>Grad-TTS: original IC…  <a href="https://proceedings.mlr.press/v139/popov21a/popov21a.pdf">Grad-TTS 2021 LJ Speech human…</a>  4.11 / 5    45.5   2021-07-18   62% ▇▇▇▇▇▇▇
+prior                   pull toward the middle                      52.1                38% ▇▇▇▇▇
+                        weighted average                          = 48.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

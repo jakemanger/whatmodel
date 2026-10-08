@@ -6,7 +6,7 @@
 
 DeepFloyd · released 2023-04 · 0.9B params · deepfloyd-if-license
 
-**score 29.9** ±2.4 · #122 of 136 · from 3 benchmark results across 3 sources
+**score 32.9** ±2.4 · #117 of 136 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,22 +16,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                        score  implies  date        weight
-<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>                              51.4%    24.8   2023-11-07   43% ▇▇▇▇▇
-<a name="visual-geneval"></a>GenEval authors' resu…  <a href="https://arxiv.org/html/2310.11513v1#A1.T3">GenEval</a>                                                     54.0%    31.7   2023-10-17   43% ▇▇▇▇▇
-<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  5.2300 mean human alignment score    38.2   2024-10-10   11% ▇
-prior                   pull toward the middle                                               49.9                 2% ▇
-                        weighted average                                                   = 29.9
+<a name="visual-geneval"></a>GenEval authors' resu…  <a href="https://arxiv.org/html/2310.11513v1#A1.T3">GenEval</a>                                                     54.0%    32.4   2023-10-17   46% ▇▇▇▇▇
+<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  5.2300 mean human alignment score    35.9   2024-10-10   39% ▇▇▇▇▇
+<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>                              51.4%    22.1   2023-11-07   12% ▇
+prior                   pull toward the middle                                               49.9                 3% ▇
+                        weighted average                                                   = 32.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: HEIM: Holistic Evaluation of Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GenEval authors' results: djghosh13/geneval README and arXiv 2310.11513v1 ([MIT (README); CC-BY-4.0 (arXiv 2310.11513v1)](../../licenses/visual-geneval.txt)) · EvalAlign: Supervised Fine-Tuning Multimodal LLMs with Human-Aligned Data for Evaluating Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: GenEval authors' results: djghosh13/geneval README and arXiv 2310.11513v1 ([MIT (README); CC-BY-4.0 (arXiv 2310.11513v1)](../../licenses/visual-geneval.txt)) · EvalAlign: Supervised Fine-Tuning Multimodal LLMs with Human-Aligned Data for Evaluating Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · HEIM: Holistic Evaluation of Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 version                                   needs  score
-fp16 + model CPU offload (stages I+II, …  ~14GB   29.9
+fp16 + model CPU offload (stages I+II, …  ~14GB   32.9
 </pre>
 
 ```sh

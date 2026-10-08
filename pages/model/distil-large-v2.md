@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.9%    52.3   2026-03-26   42% ▇▇▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.9%    52.4   2026-03-26   42% ▇▇▇▇▇
                         <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  14.7%    45.8   2026-03-26   36% ▇▇▇▇
 <a name="speech-distil-whisper-readme-mit"></a>huggingface/distil-wh…  <a href="https://github.com/huggingface/distil-whisper/blob/a66f5c85be1e32c504e8ed68df7802d2b96db4c0/README.md">Distil-Whisper · 4-set out-of…</a>  10.1%    51.7   2024-03-21   18% ▇▇
 prior                   pull toward the middle                   49.7                 4% ▇

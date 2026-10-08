@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-02 · 6.89B params · apache-2.0
 
-**score 27.6** ±2.6 · #508 of 548 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 26.7** ±2.8 · #513 of 549 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1073.6    26.9   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            50.0                 3% ▇
-                        weighted average                = 27.6
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1073.6    25.9   2026-10-02   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            50.0                 4% ▇
+                        weighted average                = 26.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle            50.0                 3
 
 <pre>
 download         size  score
-16-bit bf16  ~13.78GB   27.6
+16-bit bf16  ~13.78GB   26.7
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Deep Cogito · released 2025-03 · 3.61B params · llama3.2
 
-**score 42.5** ±3.5 · #353 of 548 · from 3 benchmark results across 2 sources
+**score 42.6** ±3.9 · #350 of 549 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  66.8%    41.0   2025-04-09   55% ▇▇▇▇▇▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  73.3%    41.0   2026-04-17   22% ▇▇▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  64.9%    46.8   2026-04-17   18% ▇▇
-prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 42.5
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  66.8%    41.0   2025-04-09   53% ▇▇▇▇▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  73.3%    40.7   2026-04-17   21% ▇▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  64.9%    46.2   2026-04-17   20% ▇▇
+prior                   pull toward the middle                   50.0                 7% ▇
+                        weighted average                       = 42.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~2.67GB   42.5
-8-bit q8_0    ~4.83GB   42.5
+4-bit q4_k_m  ~2.67GB   42.6
+8-bit q8_0    ~4.83GB   42.6
 </pre>
 
 ```sh

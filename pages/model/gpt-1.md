@@ -6,22 +6,31 @@
 
 OpenAI · released 2018-06 · 0.117B params · mit
 
-**score -39.1** ±4.5 · #548 of 548 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 20.3** ±5.2 · #533 of 549 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                            score   implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   2.0%    -48.1   2024-02-05   91% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                    50.0                 9% ▇
-                        weighted average                       = -39.1
+source  test                            score  implies  date        weight
+<a name="acl-2021-findings-acl-404-prost"></a>PROST   <a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zer…</a>  26.1%    16.3   2021-08-01   88% ▇▇▇▇▇▇▇▇▇▇▇
+prior   pull toward the middle                   50.0                12% ▇
+        weighted average                       = 20.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: PROST ([CC BY 4.0](../../licenses/_cc-by-4.0-legalcode.txt))</sub>
+
+<details><summary>Not counted (1)</summary>
+
+<pre>
+source                  test                            score  why
+Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   2.0%  failed run: Already fixed by chance 0.3264 (c7b3953). 1.96% average vs a 32.64% random baseline; GPT-1's 512-token context cannot hold 3- to 25-shot prompts.
+</pre>
+
+</details>
 
 ## How to run it
 
@@ -29,7 +38,7 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download       size  score
-4-bit fp32  ~0.48GB  -39.1
+4-bit fp32  ~0.48GB   20.3
 </pre>
 
 ```sh

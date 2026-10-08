@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-03 · 49.9B params · nvidia-open-model-license
 
-**score 55.1** ±2.6 · #199 of 548 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.9** ±2.8 · #203 of 549 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1327.8    55.2   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            50.0                 3% ▇
-                        weighted average                = 55.1
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1327.8    55.1   2026-10-02   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            50.0                 4% ▇
+                        weighted average                = 54.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,8 +27,8 @@ prior                   pull toward the middle            50.0                 3
 
 <pre>
 download              size  score
-4-bit q4_k_m      ~30.22GB   55.1
-2-bit ud-q2_k_xl  ~19.31GB   55.1
+4-bit q4_k_m      ~30.22GB   54.9
+2-bit ud-q2_k_xl  ~19.31GB   54.9
 </pre>
 
 ```sh

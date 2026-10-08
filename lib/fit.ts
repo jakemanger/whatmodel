@@ -36,7 +36,7 @@ export type Row = {
   quant: string | null; // local variant, e.g. "2-bit"
   speed: RowSpeed | null;
   need_gb: number | null; // memory the smallest local variant needs
-  mem_gb: number | null; // memory the variant shown needs (null when it runs in the cloud)
+  mem_gb: number | null; // memory the variant shown needs; for API rows, what a local download needs (null if none)
   price: number | null; // USD per the category's unit (LLMs: per 1M tokens, 3:1 input:output)
   over_budget: boolean; // has an API, but it costs more than the max price
   also_local: boolean; // listed by its API, but a download also runs locally (on these specs, if given)
@@ -138,9 +138,10 @@ export function rank(models: Model[], scores: Map<string, Scored>, { specs, max 
       quant: q?.label ?? chosen?.quant ?? null,
       speed: chosen ? local : apiSpeed,
       need_gb: smallest ? Math.round(needGb(smallest, cat)) : null,
+      // Listed by its API but downloadable too: show what running it locally needs.
       mem_gb:
         chosen ? Math.round(needGb(chosen, cat) * 10) / 10
-        : run === "none" || (run === "local" && smallest) ? (smallest ? Math.round(needGb(smallest, cat) * 10) / 10 : null)
+        : run === "none" || (run === "local" && smallest) || (run === "api" && (pick ?? smallest)) ? ((pick ?? smallest) ? Math.round(needGb((pick ?? smallest)!, cat) * 10) / 10 : null)
         : null,
       price: price === null ? null : Math.round(price * 10000) / 10000,
       over_budget: !!m.api && !api,

@@ -6,7 +6,7 @@
 
 Google · released 2019-10 · 0.738B params · apache-2.0
 
-**score 34.4** ±3.8 · #458 of 548 · from 3 benchmark results across 1 source
+**score 38.4** ±3.2 · #403 of 549 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="copen-emnlp2022-zero-shot"></a>COPEN   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>  14.0%    35.5   2022-12-07   51% ▇▇▇▇▇▇
-        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  42.6%    30.9   2022-12-07   43% ▇▇▇▇▇
-        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  49.8%  -164.2   2022-12-07    0% ▇
-prior   pull toward the middle                   50.0                 6% ▇
-        weighted average                       = 34.4
+<a name="copen-emnlp2022-zero-shot"></a>COPEN   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  42.6%    37.2   2022-12-07   89% ▇▇▇▇▇▇▇▇▇▇▇
+        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>  14.0%    49.2   2022-12-07    6% ▇
+        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  49.8%    -3.2   2022-12-07    0% ▇
+prior   pull toward the middle                   50.0                 5% ▇
+        weighted average                       = 38.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior   pull toward the middle                   50.0                 6% ▇
 
 <pre>
 download       size  score
-4-bit fp32  ~2.95GB   34.4
+4-bit fp32  ~2.95GB   38.4
 </pre>
 
 ```sh

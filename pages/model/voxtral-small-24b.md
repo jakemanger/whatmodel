@@ -20,10 +20,10 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2507.13264v1">SPGISpeech test WER (lab)</a>        1.9%    64.7   2025-07-17    6% ▇
                         <a href="https://arxiv.org/html/2507.13264v1">SwitchBoard WER (lab)</a>           11.1%    61.5   2025-07-17    6% ▇
                         <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-other WER (l…</a>   3.1%    62.1   2025-07-17    6% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">CHiME-4 WER (lab)</a>                9.6%    60.2   2025-07-17    6% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">CHiME-4 WER (lab)</a>                9.6%    60.3   2025-07-17    6% ▇
                         <a href="https://arxiv.org/html/2507.13264v1">Earnings-21 10-minute long-fo…</a>   9.6%    58.8   2025-07-17    5% ▇
                         <a href="https://arxiv.org/html/2507.13264v1">Earnings-22 10-minute long-fo…</a>  12.5%    58.1   2025-07-17    5% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">VoxPopuli English test WER (l…</a>   6.6%    61.1   2025-07-17    5% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">VoxPopuli English test WER (l…</a>   6.6%    61.2   2025-07-17    5% ▇
                         <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-clean WER (l…</a>   1.5%    63.5   2025-07-17    1% ▇
                         <a href="https://arxiv.org/html/2507.13264v1">FLEURS English test WER (lab)</a>    3.4%    60.7   2025-07-17    1% ▇
 <a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        3.7%    63.3   2026-03-26   23% ▇▇▇

@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 3.48B params · apache-2.0
 
-**score 31.7** ±1.7 · #486 of 548 · from 5 benchmark results across 2 sources
+**score 30.9** ±1.8 · #491 of 549 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  33.1%    34.3   2024-05-07   35% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      36.0%    32.5   2024-05-07   27% ▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                30.6%    30.2   2024-05-07   18% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                31.4%    29.9   2024-05-07   13% ▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  33.4%    14.4   2026-04-17    5% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 31.7
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  33.1%    33.5   2024-05-07   36% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      36.0%    31.6   2024-05-07   26% ▇▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                30.6%    29.1   2024-05-07   18% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                31.4%    29.0   2024-05-07   14% ▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  33.4%    14.9   2026-04-17    5% ▇
+prior                   pull toward the middle                   50.0                 2% ▇
+                        weighted average                       = 30.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~2.13GB   31.7
+4-bit q4_k_m  ~2.13GB   30.9
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Tortoise · released 2022-04 · apache-2.0
 
-**score 26.2** ±2.2 · #90 of 98 · from 14 benchmark results across 8 sources
+**score 25.2** ±2.1 · #90 of 98 · from 14 benchmark results across 8 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,35 +16,35 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  2.73 / 5    20.3   2025-05-11   40% ▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  3.22 / 5    39.0   2025-05-11    5% ▇
-<a name="speech-zstts-eval-casanova-mit"></a>ZS-TTS-Evaluation       <a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/Tortoise_num_autoregressive_samples_256_diffusion_iterations_200/metrics.csv">ZS-TTS-Evaluation · English z…</a>      1.1%    24.7   2024-01-28   14% ▇▇
-                        <a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/Tortoise_num_autoregressive_samples_256_diffusion_iterations_200/metrics.csv">ZS-TTS-Evaluation · English z…</a>     54.9%    26.1   2024-01-28   10% ▇
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     16.4%    35.3   2025-08-10    6% ▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       28.6%    20.0   2025-08-10    3% ▇
-<a name="speech-sap-voicerecon-ccby"></a>An Evaluation Framewo…  <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · hu…</a>     856.2    28.7   2026-06-19    6% ▇
-                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TT…</a>     84.1%    38.4   2026-06-19    1% ▇
-                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · WE…</a>     15.1%    53.1   2026-06-19    0% ▇
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.94 / 5    43.5   2026-03-15    3% ▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.70 / 5    22.7   2026-03-15    2% ▇
-<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     87.8%    37.2   2025-05-15    4% ▇
-<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  3.03 / 5    18.5   2025-05-29    4% ▇
-<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>     87.9%    58.7   2025-04-25    0% ▇
-prior                   pull toward the middle                      49.8                 2% ▇
-                        weighted average                          = 26.2
+<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  2.73 / 5    19.9   2025-05-11   47% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  3.22 / 5    38.9   2025-05-11    4% ▇
+<a name="speech-zstts-eval-casanova-mit"></a>ZS-TTS-Evaluation       <a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/Tortoise_num_autoregressive_samples_256_diffusion_iterations_200/metrics.csv">ZS-TTS-Evaluation · English z…</a>      1.1%    24.2   2024-01-28   13% ▇▇
+                        <a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/Tortoise_num_autoregressive_samples_256_diffusion_iterations_200/metrics.csv">ZS-TTS-Evaluation · English z…</a>     54.9%    25.6   2024-01-28   10% ▇
+<a name="speech-sap-voicerecon-ccby"></a>An Evaluation Framewo…  <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · hu…</a>     856.2    28.2   2026-06-19    5% ▇
+                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TT…</a>     84.1%    36.8   2026-06-19    1% ▇
+                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · WE…</a>     15.1%    53.4   2026-06-19    0% ▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     16.4%    42.0   2025-08-10    3% ▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       28.6%    21.2   2025-08-10    2% ▇
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.94 / 5    42.7   2026-03-15    3% ▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.70 / 5    22.9   2026-03-15    2% ▇
+<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     87.8%    35.7   2025-05-15    4% ▇
+<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  3.03 / 5    17.1   2025-05-29    3% ▇
+<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>     87.9%    56.0   2025-04-25    0% ▇
+prior                   pull toward the middle                      49.9                 2% ▇
+                        weighted average                          = 25.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · ZS-TTS-Evaluation ([MIT](../../licenses/speech-zstts-eval-casanova-mit.txt)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · An Evaluation Framework for TTS Voice Reconstruction ([CC BY 4.0](../../licenses/speech-sap-voicerecon-ccby.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt)) · EmergentTTS-Eval v1 paper ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt)) · TTSDS v1 published results ([MIT](../../licenses/speech-ttsds-v1-mit.txt))</sub>
+<sub>Licences: TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · ZS-TTS-Evaluation ([MIT](../../licenses/speech-zstts-eval-casanova-mit.txt)) · An Evaluation Framework for TTS Voice Reconstruction ([CC BY 4.0](../../licenses/speech-sap-voicerecon-ccby.txt)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt)) · EmergentTTS-Eval v1 paper ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt)) · TTSDS v1 published results ([MIT](../../licenses/speech-ttsds-v1-mit.txt))</sub>
 
 ## How to run it
 
 <pre>
 version                                     needs  score
-fp32 (coqui-tts 0.27.5)                   ~4.53GB   26.2
-fp16 (neonbjb/tortoise-tts) · mac only    ~5.64GB   26.2
-fp16 (neonbjb/tortoise-tts) · nvidia on…  ~5.64GB   26.2
+fp32 (coqui-tts 0.27.5)                   ~4.53GB   25.2
+fp16 (neonbjb/tortoise-tts) · mac only    ~5.64GB   25.2
+fp16 (neonbjb/tortoise-tts) · nvidia on…  ~5.64GB   25.2
 </pre>
 
 ```sh

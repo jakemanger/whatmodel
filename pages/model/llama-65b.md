@@ -6,7 +6,7 @@
 
 Meta · released 2023-02 · 65.2B params · llama-1-noncommercial-research
 
-**score 43.4** ±1.2 · comparison only: no current run option verified · from 13 benchmark results across 1 source
+**score 43.7** ±1.1 · comparison only: no current run option verified · from 13 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,21 +14,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>         23.7%    42.2   2023-02-27   16% ▇▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>              10.6%    46.1   2023-02-27   13% ▇▇
-                        <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>     56.0%    39.8   2023-02-27   12% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>        77.0%    41.0   2023-02-27   11% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>        60.2%    39.8   2023-02-27    7% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>         84.2%    42.4   2023-02-27    7% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>             50.9%    50.2   2023-02-27    7% ▇
+<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>         23.7%    43.0   2023-02-27   16% ▇▇
+                        <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>     56.0%    40.3   2023-02-27   15% ▇▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>              10.6%    46.8   2023-02-27   12% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>        60.2%    40.0   2023-02-27   11% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>        77.0%    42.0   2023-02-27    9% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>             85.3%    45.0   2023-02-27    6% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>              37.7%    46.9   2023-02-27    6% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>              63.4%    48.1   2023-02-27    6% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>          78.9%    41.0   2023-02-27    4% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>        52.3%    41.7   2023-02-27    3% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>              82.8%    41.7   2023-02-27    2% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>         84.2%    42.9   2023-02-27    6% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>             50.9%    51.4   2023-02-27    5% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>              37.7%    48.1   2023-02-27    5% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>              63.4%    49.0   2023-02-27    5% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>          78.9%    41.7   2023-02-27    4% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>        52.3%    42.1   2023-02-27    3% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>              82.8%    42.4   2023-02-27    2% ▇
 prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 43.4
+                        weighted average               = 43.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

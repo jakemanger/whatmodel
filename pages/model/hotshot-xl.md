@@ -6,7 +6,7 @@
 
 Hotshot · released 2023-10 · 2.8B params · openrail++
 
-**score 28.3** ±1.8 · #80 of 87 · from 6 benchmark results across 2 sources
+**score 28.6** ±1.8 · #79 of 87 · from 6 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                  score  implies  date        weight
-<a name="visual-evalcrafter-2023"></a>EvalCrafter: original…  <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quali…</a>  52.98 / 100    25.6                17% ▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quali…</a>  60.38 / 100    27.7                16% ▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal con…</a>  59.96 / 100    26.4                16% ▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video a…</a>  61.52 / 100    28.0                15% ▇▇
+<a name="visual-evalcrafter-2023"></a>EvalCrafter: original…  <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quali…</a>  52.98 / 100    25.9                17% ▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quali…</a>  60.38 / 100    28.1                16% ▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal con…</a>  59.96 / 100    26.8                16% ▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video a…</a>  61.52 / 100    28.3                15% ▇▇
 <a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>        42.7%    29.4   2025-05-17   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>        47.8%    31.1   2025-05-17   13% ▇▇
+                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>        47.8%    31.2   2025-05-17   13% ▇▇
 prior                   pull toward the middle                         49.9                 1% ▇
-                        weighted average                             = 28.3
+                        weighted average                             = 28.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +32,7 @@ prior                   pull toward the middle                         49.9     
 
 <pre>
 version             needs  score
-fp16 · nvidia only  ~10GB   28.3
+fp16 · nvidia only  ~10GB   28.6
 </pre>
 
 ```sh

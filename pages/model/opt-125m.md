@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 0.125B params · opt-175b-license-noncommercial
 
-**score 11.7** ±1.6 · #546 of 548 · from 6 benchmark results across 1 source
+**score 13.3** ±1.6 · #542 of 549 · from 6 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        43.5%    12.1   2023-05-31   30% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            75.1%    13.6   2023-05-31   21% ▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            63.0%    11.2   2023-05-31   17% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  37.9%    13.2   2023-05-31   15% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   18.9%    13.6   2023-05-31    8% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      50.3%    -3.8   2023-05-31    8% ▇
+<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            75.1%    14.7   2023-05-31   33% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        43.5%    13.1   2023-05-31   25% ▇▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  37.9%    14.2   2023-05-31   16% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            63.0%    12.2   2023-05-31   15% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      50.3%     4.5   2023-05-31    7% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   18.9%     6.6   2023-05-31    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 11.7
+                        weighted average                       = 13.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,7 +34,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp16  ~0.25GB   11.7
+4-bit fp16  ~0.25GB   13.3
 </pre>
 
 ```sh

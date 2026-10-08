@@ -6,7 +6,7 @@
 
 Kyutai · released 2025-07 · 1.8B params · cc-by-4.0
 
-**score 47.0** ±6.6 · #60 of 98 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.8** ±6.4 · #59 of 98 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>  21.9%    40.9   2025-08-10   59% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>    12.7%    59.8   2025-08-10   24% ▇▇▇
-prior                   pull toward the middle                   49.8                18% ▇▇
-                        weighted average                       = 47.0
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>  21.9%    42.9   2025-08-10   62% ▇▇▇▇▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>    12.7%    60.4   2025-08-10   22% ▇▇▇
+prior                   pull toward the middle                   49.9                16% ▇▇
+                        weighted average                       = 47.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,8 +30,8 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 version                        needs  score
-bf16 (moshi-mlx) · mac only  ~4.07GB   47.0
-bf16 (moshi) · nvidia only   ~4.07GB   47.0
+bf16 (moshi-mlx) · mac only  ~4.07GB   47.8
+bf16 (moshi) · nvidia only   ~4.07GB   47.8
 </pre>
 
 ```sh

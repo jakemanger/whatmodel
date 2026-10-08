@@ -6,7 +6,7 @@
 
 PromptHero · released 2022-11 · 0.86B params · creativeml-openrail-m
 
-**score 27.7** ±2.4 · #126 of 136 · from 5 benchmark results across 5 sources
+**score 28.3** ±2.2 · #125 of 136 · from 5 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,25 +16,25 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                        score  implies  date        weight
-<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>                              853.0    24.2   2024-06-04   43% ▇▇▇▇▇
-<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>                              61.7%    29.4   2023-11-07   42% ▇▇▇▇▇
-<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  4.8300 mean human alignment score    29.8   2024-10-10   11% ▇
-<a name="visual-imagenhub"></a>ImagenHub: Standardiz…  <a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generat…</a>                              50.0%    24.1   2024-03-10    2% ▇
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>                              27.5%    52.9   2024-02-21    0% ▇
+<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>                              853.0    24.4   2024-06-04   38% ▇▇▇▇▇
+<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  4.8300 mean human alignment score    30.2   2024-10-10   33% ▇▇▇▇
+<a name="visual-imagenhub"></a>ImagenHub: Standardiz…  <a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generat…</a>                              50.0%    29.9   2024-03-10   16% ▇▇
+<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>                              61.7%    28.9   2023-11-07   11% ▇
+<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>                              27.5%    50.4   2024-02-21    0% ▇
 prior                   pull toward the middle                                               49.9                 2% ▇
-                        weighted average                                                   = 27.7
+                        weighted average                                                   = 28.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt)) · HEIM: Holistic Evaluation of Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · EvalAlign: Supervised Fine-Tuning Multimodal LLMs with Human-Aligned Data for Evaluating Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ImagenHub: Standardizing the evaluation of conditional image generation models ([CC-BY-4.0](../../licenses/visual-imagenhub.txt)) · tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>
+<sub>Licences: GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt)) · EvalAlign: Supervised Fine-Tuning Multimodal LLMs with Human-Aligned Data for Evaluating Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ImagenHub: Standardizing the evaluation of conditional image generation models ([CC-BY-4.0](../../licenses/visual-imagenhub.txt)) · HEIM: Holistic Evaluation of Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>
 
 ## How to run it
 
 <pre>
 version                needs  score
-fp16 · nvidia only    ~2.6GB   27.7
-q8_0 (sd.cpp --type)  ~2.1GB   27.7
+fp16 · nvidia only    ~2.6GB   28.3
+q8_0 (sd.cpp --type)  ~2.1GB   28.3
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2023-06 · 6B params · chatglm2-6b-license
 
-**score 23.1** ±2.3 · #526 of 548 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 21.2** ±2.6 · #530 of 549 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1024.7    21.5   2026-10-02   74% ▇▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   47.2%    25.4   2024-04-05   23% ▇▇▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 23.1
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1024.7    20.3   2026-10-02   81% ▇▇▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   47.2%    20.4   2024-04-05   16% ▇▇
+prior                   pull toward the middle                    50.0                 3% ▇
+                        weighted average                        = 21.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download                      size  score
-4-bit fp16 · nvidia only  ~12.49GB   23.1
+4-bit fp16 · nvidia only  ~12.49GB   21.2
 </pre>
 
 ```sh

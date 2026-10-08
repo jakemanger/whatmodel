@@ -6,7 +6,7 @@
 
 Microsoft · released 2026-07 · 4B params
 
-**score 69.6** ±19.4 · #1 of 3 · from 9 benchmark results across 1 source
+**score 69.2** ±19.7 · #1 of 3 · from 9 benchmark results across 1 source
 
 Score within the [CVTG-2K word accuracy](https://whatmodel.sh/image?set=cvtg-2k-word-accuracy%40visual-mage-flow&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-mage-flow"></a>Mage-Flow: An Efficie…  <a href="https://arxiv.org/html/2607.19064v2#S6.T8">GenEval (lab)</a>                   90.0%    70.5   2026-07-22   20% ▇▇
-                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">CVTG-2K word accuracy (lab)</a>     88.7%    53.1   2026-07-22   10% ▇
-                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">TIIF-Bench testmini (short pr…</a>  82.2%    15.8   2026-07-22    8% ▇
-                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">TIIF-Bench testmini (long pro…</a>  84.7%    35.5   2026-07-22    8% ▇
-                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">LongText-Bench (CN) (lab)</a>       82.3%    49.6   2026-07-22    7% ▇
-                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">LongText-Bench (EN) (lab)</a>       94.4%   100.3   2026-07-22    7% ▇
-                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">DPG-Bench (lab)</a>                 86.5%    33.2   2026-07-22    5% ▇
-                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">OneIG-Bench (CN) (lab)</a>          50.5%    27.9   2026-07-22    5% ▇
-                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">OneIG-Bench (EN) (lab)</a>          53.6%    26.8   2026-07-22    5% ▇
-prior                   pull toward the middle                   50.0                24% ▇▇▇
-                        weighted average                       = 69.6
+<a name="visual-mage-flow"></a>Mage-Flow: An Efficie…  <a href="https://arxiv.org/html/2607.19064v2#S6.T8">GenEval (lab)</a>                   90.0%    63.5   2026-07-22   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">CVTG-2K word accuracy (lab)</a>     88.7%    50.2   2026-07-22   10% ▇
+                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">TIIF-Bench testmini (short pr…</a>  82.2%    13.7   2026-07-22    8% ▇
+                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">TIIF-Bench testmini (long pro…</a>  84.7%    33.6   2026-07-22    8% ▇
+                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">LongText-Bench (CN) (lab)</a>       82.3%    48.6   2026-07-22    7% ▇
+                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">LongText-Bench (EN) (lab)</a>       94.4%    97.2   2026-07-22    6% ▇
+                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">DPG-Bench (lab)</a>                 86.5%    32.3   2026-07-22    5% ▇
+                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">OneIG-Bench (CN) (lab)</a>          50.5%    30.5   2026-07-22    5% ▇
+                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">OneIG-Bench (EN) (lab)</a>          53.6%    29.1   2026-07-22    5% ▇
+prior                   pull toward the middle                   53.5                24% ▇▇▇
+                        weighted average                       = 69.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -37,8 +37,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 version                                     needs  score
-bf16 + Qwen3-VL 4B q4_k_m (sd.cpp)        ~13.8GB   69.6
-int8 convrot + Qwen3-VL 4B q4_k_m (sd.c…   ~8.9GB   69.6
+bf16 + Qwen3-VL 4B q4_k_m (sd.cpp)        ~13.8GB   69.2
+int8 convrot + Qwen3-VL 4B q4_k_m (sd.c…   ~8.9GB   69.2
 </pre>
 
 ```sh

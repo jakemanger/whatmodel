@@ -19,7 +19,7 @@ source                  test                            score  implies  date    
 <a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSp…</a>   1.6%    65.0   2026-07-19   23% ▇▇▇
                         <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   1.9%    69.4   2026-07-19   15% ▇▇
                         <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>  10.4%    66.2   2026-07-19   12% ▇
-<a name="speech-stt-pipecat-bsd2"></a>Pipecat STT Benchmark…  <a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · poole…</a>   0.9%    67.8   2026-10-01   45% ▇▇▇▇▇
+<a name="speech-stt-pipecat-bsd2"></a>Pipecat STT Benchmark…  <a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · poole…</a>   0.9%    67.7   2026-10-01   45% ▇▇▇▇▇
 prior                   pull toward the middle                   49.7                 5% ▇
                         weighted average                       = 66.3
 </pre>

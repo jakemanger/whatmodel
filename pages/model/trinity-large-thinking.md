@@ -6,7 +6,7 @@
 
 Arcee AI · released 2026-04 · 398B params (13B active) · openmdw-1.1
 
-**score 60.7** ±1.4 · #144 of 548 · from 5 benchmark results across 2 sources
+**score 60.7** ±1.6 · #149 of 549 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                        score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1237.6    60.0   2026-10-01   48% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>             1367.3    59.6   2026-10-02   27% ▇▇▇
-<a name="first-party-arcee-scores"></a>Arcee AI vendor-repor…  <a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">GPQA Diamond (lab)</a>          76.3%    62.4   2026-04-01   17% ▇▇
-                        <a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">MMLU-Pro (lab)</a>              83.4%    63.4   2026-04-01    6% ▇
-                        <a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">AIME 2025 (lab)</a>             96.3%    94.8   2026-04-01    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1237.6    59.5   2026-10-01   42% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>             1367.3    59.6   2026-10-02   30% ▇▇▇▇
+<a name="first-party-arcee-scores"></a>Arcee AI vendor-repor…  <a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">GPQA Diamond (lab)</a>          76.3%    62.4   2026-04-01   18% ▇▇
+                        <a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">MMLU-Pro (lab)</a>              83.4%    63.0   2026-04-01    7% ▇
+                        <a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">AIME 2025 (lab)</a>             96.3%    82.7   2026-04-01    2% ▇
 prior                   pull toward the middle               50.0                 1% ▇
                         weighted average                   = 60.7
 </pre>

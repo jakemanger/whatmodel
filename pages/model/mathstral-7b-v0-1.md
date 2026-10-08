@@ -6,7 +6,7 @@
 
 Mistral AI · released 2024-07 · 7.25B params · apache-2.0
 
-**score 43.2** ±1.8 · #348 of 548 · from 3 benchmark results across 3 sources
+**score 42.7** ±2.0 · #346 of 549 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_mathstral-7B_5shots.zip">MMLU-Pro</a>                        42.0%    42.2                51% ▇▇▇▇▇▇
-<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   9.0%    43.1                38% ▇▇▇▇▇
-<a name="first-party-mistral-scores"></a>Mistral AI vendor-rep…  <a href="https://huggingface.co/mistralai/Mathstral-7B-v0.1/blob/ec3a48484ef241dfe03282edcb0f25e564923823/README.md#evaluation">MATH (subset unspecified) (la…</a>  56.6%    48.2   2024-07-16    9% ▇
+<a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_mathstral-7B_5shots.zip">MMLU-Pro</a>                        42.0%    41.5                58% ▇▇▇▇▇▇▇
+<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   9.0%    42.9                31% ▇▇▇▇
+<a name="first-party-mistral-scores"></a>Mistral AI vendor-rep…  <a href="https://huggingface.co/mistralai/Mathstral-7B-v0.1/blob/ec3a48484ef241dfe03282edcb0f25e564923823/README.md#evaluation">MATH (subset unspecified) (la…</a>  56.6%    48.2   2024-07-16   10% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 43.2
+                        weighted average                       = 42.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.85GB   43.2
-8-bit q8_0     ~9.2GB   43.2
+4-bit q4_k_m  ~4.85GB   42.7
+8-bit q8_0     ~9.2GB   42.7
 </pre>
 
 ```sh

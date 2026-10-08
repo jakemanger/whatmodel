@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-08 · 7B params · llama2
 
-**score 32.3** ±2.3 · #478 of 548 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 31.4** ±2.5 · #484 of 549 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1115.2    31.6   2026-10-02   74% ▇▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   57.0%    33.0   2024-02-27   23% ▇▇▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 32.3
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1115.2    30.7   2026-10-02   77% ▇▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   57.0%    31.7   2024-02-27   20% ▇▇
+prior                   pull toward the middle                    50.0                 3% ▇
+                        weighted average                        = 31.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,8 +30,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~4.7GB   32.3
-8-bit q8_0    ~8.9GB   32.3
+4-bit q4_k_m  ~4.7GB   31.4
+8-bit q8_0    ~8.9GB   31.4
 </pre>
 
 ```sh

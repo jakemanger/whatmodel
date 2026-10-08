@@ -3,7 +3,9 @@
 //   y[model, run] ≈ a[test] · θ[model] + d[run] + noise(σ[run])
 //
 // y is the benchmark score moved onto a logit scale (after removing the chance
-// rate), so an easy benchmark and a hard one are comparable. θ is each model's
+// rate), so an easy benchmark and a hard one are comparable. Accuracy results are fit as
+// proportions (iteratively reweighted, weight ∝ p(1 − p)), so a result near 0% or 100%
+// counts for less than one in the middle, where a test measures most precisely. θ is each model's
 // ability; a is how well a test separates strong from weak models (saturated
 // ones get a small a); d is a run's level. A run is one evaluator's run of a test.
 // Every run of the same test shares its a, learned from all of them together, but
@@ -44,7 +46,12 @@ export function fromLatent(y: number, b: Benchmark): number {
 }
 
 // One model × benchmark-version data point, averaged over the raw results that fed it.
-export type Cell = { model: string; key: string; bench: string; y: number; results: Result[] };
+// For accuracy tests, q is the share of the way from chance to 100% (unclamped, 0–1).
+export type Cell = { model: string; key: string; bench: string; y: number; q?: number; results: Result[] };
+
+// The share of the way from chance to a perfect score, for accuracy tests.
+export const aboveChance = (score: number, b: Benchmark) =>
+  b.kind === "acc" ? clamp((score - (b.chance ?? 0)) / (1 - (b.chance ?? 0)), 0, 1) : undefined;
 
 // Keep evaluations from different reports separate. `by` discloses self-reporting;
 // it must not pool unrelated labs into one evaluator or split a paper's own comparison run.
@@ -58,21 +65,22 @@ export function toCells(results: Result[], benches: Benchmark[]): Cell[] {
   const bench = new Map(benches.map((b) => [b.id, b]));
   const mean = (ys: number[]) => ys.reduce((s, y) => s + y, 0) / ys.length;
   const group = (items: Cell[]) => {
-    const g = new Map<string, Cell & { ys: number[] }>();
+    const g = new Map<string, Cell & { ys: number[]; qs: number[] }>();
     for (const c of items) {
       const k = `${c.model}|${c.key}`;
-      const e = g.get(k) ?? { ...c, ys: [], results: [] };
+      const e = g.get(k) ?? { ...c, ys: [], qs: [], results: [] };
       e.ys.push(c.y);
+      if (c.q !== undefined) e.qs.push(c.q);
       e.results.push(...c.results);
       g.set(k, e);
     }
-    return [...g.values()].map(({ ys, ...e }) => ({ ...e, y: mean(ys) }));
+    return [...g.values()].map(({ ys, qs, ...e }) => ({ ...e, y: mean(ys), q: qs.length ? mean(qs) : undefined }));
   };
   const count = (cs: Cell[]) => cs.reduce((m, c) => m.set(c.key, (m.get(c.key) ?? 0) + 1), new Map<string, number>());
 
   const raw = results.flatMap((r) => {
     const b = bench.get(r.bench);
-    return b ? [{ model: r.model, bench: r.bench, key: `${r.bench}@${evaluator(r)}`, y: toLatent(r.score, b), results: [r] }] : [];
+    return b && !r.invalid ? [{ model: r.model, bench: r.bench, key: `${r.bench}@${evaluator(r)}`, y: toLatent(r.score, b), q: aboveChance(r.score, b), results: [r] }] : [];
   });
   let cells = group(raw);
 
@@ -114,12 +122,13 @@ export function fit(cells: Cell[], iters = 500): Fit {
   const mi = new Map(models.map((m, i) => [m, i]));
   const ki = new Map(keys.map((k, i) => [k, i]));
   const ti = new Map(tests.map((t, i) => [t, i]));
-  const obs = cells.map((c) => ({ m: mi.get(c.model)!, k: ki.get(c.key)!, y: c.y }));
+  const obs = cells.map((c) => ({ m: mi.get(c.model)!, k: ki.get(c.key)!, y: c.y, q: c.q }));
   const byKey = keys.map((_, k) => obs.filter((o) => o.k === k));
   const byModel = models.map((_, m) => obs.filter((o) => o.m === m));
   const benchOfKey = new Map(cells.map((c) => [c.key, c.bench]));
   const testOf = keys.map((k) => ti.get(benchOfKey.get(k)!)!);
   const keysOf = tests.map((_, t) => keys.flatMap((_, k) => (testOf[k] === t ? [k] : [])));
+  const idx = new Map(obs.map((o, i) => [o, i]));
 
   // Start θ at each model's average within-benchmark z-score.
   const kMean = byKey.map((os) => os.reduce((s, o) => s + o.y, 0) / os.length);
@@ -136,42 +145,65 @@ export function fit(cells: Cell[], iters = 500): Fit {
   const NU0 = 3; // prior noise: σ² ~ 0.25 worth 3 observations
   const S0 = 0.25;
 
+  // Accuracy results are proportions: near 0% or 100% they say little about how far beyond the
+  // edge a model is, so each gets a working value and a weight from its fitted chance of
+  // success p (weight ∝ p(1 − p), relative to its run). Other kinds keep their value and weight 1.
+  const z = obs.map((o) => o.y), w = obs.map(() => 1);
+  const working = () => byKey.forEach((os, k) => {
+    if (os[0].q === undefined) return;
+    let total = 0;
+    for (const o of os) {
+      const i = idx.get(o)!, eta = a[k] * theta[o.m] + d[k], p = sigmoid(eta), u = Math.max(p * (1 - p), 1e-4);
+      z[i] = eta + (o.q! - p) / u; w[i] = u; total += u;
+    }
+    for (const o of os) w[idx.get(o)!] /= total / os.length;
+  });
+
   // A result's run level, estimated from the other models in that run, and that estimate's
   // variance. Alone in its run, a result says nothing about its model (infinite variance).
-  const resid = keys.map(() => 0);
-  const runLevel = (o: { m: number; k: number; y: number }) => {
-    const n = byKey[o.k].length;
-    if (n < 2) return { d: d[o.k], vd: Infinity };
-    return { d: (resid[o.k] - (o.y - a[o.k] * theta[o.m])) / (n - 1), vd: s2[o.k] / (n - 1) };
+  const resid = keys.map(() => 0), wsum = keys.map(() => 0);
+  const runLevel = (o: { m: number; k: number }) => {
+    const i = idx.get(o as never)!, others = wsum[o.k] - w[i];
+    if (byKey[o.k].length < 2 || others <= 1e-9) return { d: d[o.k], vd: Infinity };
+    return { d: (resid[o.k] - w[i] * (z[i] - a[o.k] * theta[o.m])) / others, vd: s2[o.k] / others };
   };
 
   for (let it = 0; it < iters; it++) {
+    if (it > 0) working();
     // Tests: one slope shared by all runs of a test, each run with its own level (ridge prior on a).
-    const mean = byKey.map((os) => [os.reduce((s, o) => s + theta[o.m], 0) / os.length, os.reduce((s, o) => s + o.y, 0) / os.length]);
+    const mean = byKey.map((os) => {
+      let sw = 0, st = 0, sz = 0;
+      for (const o of os) { const i = idx.get(o)!; sw += w[i]; st += w[i] * theta[o.m]; sz += w[i] * z[i]; }
+      return [st / sw, sz / sw];
+    });
     keysOf.forEach((ks, t) => {
       const sbar2 = ks.reduce((s, k) => s + byKey[k].length, 0) / ks.reduce((s, k) => s + byKey[k].length / s2[k], 0);
       let num = LAMBDA_A / sbar2, den = LAMBDA_A / sbar2;
       for (const k of ks) for (const o of byKey[k]) {
-        const ct = theta[o.m] - mean[k][0];
-        num += (ct * (o.y - mean[k][1])) / s2[k];
-        den += (ct * ct) / s2[k];
+        const i = idx.get(o)!, ct = theta[o.m] - mean[k][0];
+        num += (w[i] * ct * (z[i] - mean[k][1])) / s2[k];
+        den += (w[i] * ct * ct) / s2[k];
       }
       aT[t] = Math.max(0.05, num / den);
     });
     byKey.forEach((os, k) => {
       a[k] = aT[testOf[k]];
       d[k] = mean[k][1] - a[k] * mean[k][0];
-      const ssr = os.reduce((s, o) => s + (o.y - a[k] * theta[o.m] - d[k]) ** 2, 0);
+      let ssr = 0, r = 0, sw = 0;
+      for (const o of os) {
+        const i = idx.get(o)!, e = z[i] - a[k] * theta[o.m];
+        ssr += w[i] * (e - d[k]) ** 2; r += w[i] * e; sw += w[i];
+      }
       s2[k] = (ssr + NU0 * S0) / (os.length + NU0);
-      resid[k] = os.reduce((s, o) => s + (o.y - a[k] * theta[o.m]), 0);
+      resid[k] = r; wsum[k] = sw;
     });
     // Models: posterior mean of θ under a N(0, 1) prior.
     const next = byModel.map((os, m) => {
       let prec = 1, num = 0;
       for (const o of os) {
-        const { d: level, vd } = runLevel(o);
-        prec += (a[o.k] * a[o.k]) / (s2[o.k] + vd);
-        num += (a[o.k] * (o.y - level)) / (s2[o.k] + vd);
+        const i = idx.get(o)!, { d: level, vd } = runLevel(o), varO = s2[o.k] / w[i] + vd;
+        prec += (a[o.k] * a[o.k]) / varO;
+        num += (a[o.k] * (z[i] - level)) / varO;
       }
       v[m] = 1 / prec;
       return num / prec;
@@ -182,7 +214,7 @@ export function fit(cells: Cell[], iters = 500): Fit {
     const delta = Math.max(...next.map((t, m) => Math.abs((t - mu) / sd - theta[m])));
     theta = next.map((t) => (t - mu) / sd);
     v = v.map((x) => x / (sd * sd));
-    if (delta < 1e-7) break;
+    if (delta < 1e-7 && it > 2) break;
   }
 
   const scores = new Map<string, Scored>(
@@ -201,8 +233,8 @@ export function fit(cells: Cell[], iters = 500): Fit {
     const m = mi.get(model);
     if (m === undefined) return undefined;
     const parts = byModel[m].map((o) => {
-      const { d: level, vd } = runLevel(o);
-      return { cell: cells[obs.indexOf(o)], d: level, g: toG((o.y - level) / a[o.k]), w: (a[o.k] * a[o.k]) / (s2[o.k] + vd) };
+      const i = idx.get(o)!, { d: level, vd } = runLevel(o);
+      return { cell: cells[i], d: level, g: toG((z[i] - level) / a[o.k]), w: (a[o.k] * a[o.k]) / (s2[o.k] / w[i] + vd) };
     });
     const total = 1 + parts.reduce((s, p) => s + p.w, 0);
     return {

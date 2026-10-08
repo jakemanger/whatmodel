@@ -6,7 +6,7 @@
 
 Hugging Face · released 2025-07 · 3.08B params · apache-2.0
 
-**score 42.7** ±2.4 · #351 of 548 · from 5 benchmark results across 4 sources
+**score 42.1** ±2.5 · #354 of 549 · from 5 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  35.5%    42.7   2026-05-02   40% ▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  67.5%    41.7   2025-07-08   24% ▇▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  75.7%    42.4   2026-04-17   10% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  59.0%    43.6   2026-04-17    8% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  16.2%    42.8   2025-09-30   16% ▇▇
-prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 42.7
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  35.5%    42.5   2026-05-02   42% ▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  67.5%    41.7   2025-07-08   22% ▇▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  75.7%    42.4   2026-04-17    9% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  59.0%    42.4   2026-04-17    8% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  16.2%    40.0   2025-09-30   16% ▇▇
+prior                   pull toward the middle                   50.0                 3% ▇
+                        weighted average                       = 42.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -60,8 +60,8 @@ HuggingFaceTB/SmolLM3…  <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-
 
 <pre>
 download              size  score
-4-bit gguf-q4_k_m  ~2.35GB   42.7
-8-bit gguf-q8_0     ~4.2GB   42.7
+4-bit gguf-q4_k_m  ~2.35GB   42.1
+8-bit gguf-q8_0     ~4.2GB   42.1
 </pre>
 
 ```sh

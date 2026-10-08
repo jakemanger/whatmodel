@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 6.74B params · llama2
 
-**score 35.7** ±0.5 · #447 of 548 · from 62 benchmark results across 7 sources
+**score 37.0** ±0.5 · #426 of 549 · from 62 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -14,75 +14,75 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-mixtral-2401.04088v1"></a>Mixtral of Experts      <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval</a>                       11.6%    34.3   2024-01-08    4% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge</a>                   43.2%    36.5   2024-01-08    4% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande</a>                      69.5%    37.5   2024-01-08    3% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU</a>                            44.4%    32.1   2024-01-08    2% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA</a>                        56.6%    37.1   2024-01-08    2% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH</a>                             3.9%    32.2   2024-01-08    2% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag</a>                       77.1%    37.3   2024-01-08    2% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed boo…</a>  17.5%    37.0   2024-01-08    1% ▇
+<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">ARC Challenge</a>                   46.2%    39.0   2024-04-08   11% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">WinoGrande</a>                      69.6%    38.5   2024-04-08    4% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">OpenBookQA</a>                      31.4%    38.6   2024-04-08    3% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">HellaSwag</a>                       75.9%    39.8   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">ARC Easy</a>                        74.5%    42.1   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">BoolQ</a>                           77.7%    42.4   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">SciQ</a>                            93.6%    38.8   2024-04-08    1% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">PIQA</a>                            77.7%    36.7   2024-04-08    1% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">Social IQA</a>                      43.5%    35.7   2024-04-08    1% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">LAMBADA (OpenAI version), las…</a>  73.5%    38.5   2024-04-08    1% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">TruthfulQA MC2</a>                  39.0%    23.4   2024-04-08    0% ▇
+<a name="paper-mixtral-2401.04088v1"></a>Mixtral of Experts      <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge</a>                   43.2%    37.8   2024-01-08    4% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval</a>                       11.6%    34.6   2024-01-08    2% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande</a>                      69.5%    37.4   2024-01-08    2% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA</a>                        56.6%    37.6   2024-01-08    2% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag</a>                       77.1%    37.8   2024-01-08    2% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU</a>                            44.4%    31.8   2024-01-08    1% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy</a>                        68.7%    32.9   2024-01-08    1% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed boo…</a>  17.5%    37.3   2024-01-08    1% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP</a>                            26.1%    30.9   2024-01-08    1% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy</a>                        68.7%    32.6   2024-01-08    1% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K</a>                           16.0%    26.8   2024-01-08    1% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA</a>                            77.9%    35.1   2024-01-08    1% ▇
-<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">ARC Challenge</a>                   46.2%    38.4   2024-04-08    5% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">HellaSwag</a>                       75.9%    38.7   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">ARC Easy</a>                        74.5%    40.8   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">SciQ</a>                            93.6%    37.3   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">PIQA</a>                            77.7%    35.3   2024-04-08    1% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">BoolQ</a>                           77.7%    41.7   2024-04-08    1% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">WinoGrande</a>                      69.6%    37.7   2024-04-08    1% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">LAMBADA (OpenAI version), las…</a>  73.5%    37.0   2024-04-08    1% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">Social IQA</a>                      43.5%    35.1   2024-04-08    1% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">OpenBookQA</a>                      31.4%    43.2   2024-04-08    0% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">TruthfulQA MC2</a>                  39.0%    20.9   2024-04-08    0% ▇
-<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   48.5%    36.2   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      69.4%    37.4   2024-06-07    3% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      48.4%    33.2   2024-06-07    2% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       76.8%    38.3   2024-06-07    2% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        69.5%    36.9   2024-06-07    2% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            94.5%    38.8   2024-06-07    1% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            76.7%    34.3   2024-06-07    1% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           80.2%    45.0   2024-06-07    1% ▇
-<a name="paper-2310.06825v1"></a>Mistral 7B              <a href="https://arxiv.org/html/2310.06825v1">ARC Challenge</a>                   43.2%    37.0   2023-10-10    3% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH</a>                             3.9%    32.5   2024-01-08    1% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K</a>                           16.0%    27.8   2024-01-08    1% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA</a>                            77.9%    35.4   2024-01-08    1% ▇
+<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   48.5%    37.0   2024-06-07    5% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      48.4%    34.6   2024-06-07    3% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      69.4%    38.3   2024-06-07    3% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       76.8%    39.1   2024-06-07    2% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        69.5%    37.9   2024-06-07    1% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           80.2%    44.6   2024-06-07    1% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            94.5%    39.7   2024-06-07    1% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            76.7%    35.2   2024-06-07    1% ▇
+<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   43.4%    41.1   2023-09-11    3% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      69.1%    37.6   2023-09-11    3% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      31.4%    38.5   2023-09-11    2% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           77.9%    43.0   2023-09-11    2% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       57.1%    38.9   2023-09-11    1% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        76.3%    40.5   2023-09-11    1% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                      48.0%    40.1   2023-09-11    1% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            78.1%    37.3   2023-09-11    1% ▇
+<a name="paper-2310.06825v1"></a>Mistral 7B              <a href="https://arxiv.org/html/2310.06825v1">ARC Challenge</a>                   43.2%    37.2   2023-10-10    3% ▇
                         <a href="https://arxiv.org/html/2310.06825v1">WinoGrande</a>                      69.5%    37.7   2023-10-10    2% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">MATH</a>                             3.9%    32.3   2023-10-10    2% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">GSM8K</a>                           16.0%    29.4   2023-10-10    2% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">MMLU</a>                            44.4%    34.8   2023-10-10    2% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">HumanEval</a>                       11.6%    30.4   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">HellaSwag</a>                       77.1%    39.0   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">TriviaQA</a>                        63.8%    40.2   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">ARC Easy</a>                        68.7%    35.3   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">MBPP</a>                            26.1%    27.7   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">PIQA</a>                            77.9%    36.2   2023-10-10    0% ▇
-<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      69.1%    36.0   2023-09-11    3% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       57.1%    37.9   2023-09-11    2% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        76.3%    39.7   2023-09-11    2% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           77.9%    43.1   2023-09-11    1% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            78.1%    36.4   2023-09-11    1% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                      48.0%    40.7   2023-09-11    1% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   43.4%    45.2   2023-09-11    0% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      31.4%    45.8   2023-09-11    0% ▇
-<a name="paper-2404.06395v3"></a>MiniCPM: Unveiling th…  <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                            44.3%    33.1   2024-06-03    2% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                   42.8%    29.4   2024-06-03    2% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                  33.2%    36.5   2024-06-03    2% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>                       12.2%    31.9   2024-06-03    1% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>                           13.6%    30.4   2024-06-03    1% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">MBPP</a>                            27.2%    31.5   2024-06-03    1% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                          32.4%    40.8   2024-06-03    0% ▇
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  39.3%    31.9   2023-11-20    3% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            41.8%    31.9   2023-11-20    1% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       26.8%    25.5   2023-11-20    1% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  51.2%    41.6   2023-11-20    1% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           12.0%    25.0   2023-11-20    1% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">MATH</a>                             3.9%    33.0   2023-10-10    1% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">MMLU</a>                            44.4%    34.2   2023-10-10    1% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">HellaSwag</a>                       77.1%    39.3   2023-10-10    1% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">GSM8K</a>                           16.0%    29.7   2023-10-10    1% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">TriviaQA</a>                        63.8%    40.4   2023-10-10    1% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">ARC Easy</a>                        68.7%    35.6   2023-10-10    1% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">HumanEval</a>                       11.6%    31.6   2023-10-10    1% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">PIQA</a>                            77.9%    36.5   2023-10-10    0% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">MBPP</a>                            26.1%    27.8   2023-10-10    0% ▇
+<a name="paper-2404.06395v3"></a>MiniCPM: Unveiling th…  <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                   42.8%    31.7   2024-06-03    2% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                  33.2%    33.9   2024-06-03    1% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                            44.3%    32.8   2024-06-03    1% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>                       12.2%    32.3   2024-06-03    1% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">MBPP</a>                            27.2%    31.4   2024-06-03    1% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>                           13.6%    30.4   2024-06-03    0% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                          32.4%    33.6   2024-06-03    0% ▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  39.3%    31.0   2023-11-20    2% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            41.8%    31.3   2023-11-20    1% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           12.0%    26.7   2023-11-20    1% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  51.2%    41.3   2023-11-20    1% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       26.8%    23.9   2023-11-20    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 35.7
+                        weighted average                       = 37.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Mixtral of Experts ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · Mistral 7B ([CC BY 4.0](../../licenses/paper-2310.06825v1-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · MiniCPM: Unveiling the Potential of Small Language Models with Scalable Training Strategies ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt))</sub>
+<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Mixtral of Experts ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Mistral 7B ([CC BY 4.0](../../licenses/paper-2310.06825v1-CC-BY-4.0.txt)) · MiniCPM: Unveiling the Potential of Small Language Models with Scalable Training Strategies ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
@@ -90,7 +90,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download      size  score
-4-bit q4_0  ~3.8GB   35.7
+4-bit q4_0  ~3.8GB   37.0
 </pre>
 
 ```sh

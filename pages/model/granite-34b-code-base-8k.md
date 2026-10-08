@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 33.72B params · apache-2.0
 
-**score 40.3** ±1.8 · #381 of 548 · from 4 benchmark results across 1 source
+**score 39.9** ±1.8 · #378 of 549 · from 4 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  49.1%    41.6   2024-05-07   37% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      47.2%    37.9   2024-05-07   28% ▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                43.3%    39.6   2024-05-07   19% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                44.8%    41.9   2024-05-07   14% ▇▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  49.1%    41.2   2024-05-07   40% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      47.2%    37.4   2024-05-07   26% ▇▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                43.3%    39.1   2024-05-07   18% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                44.8%    41.4   2024-05-07   14% ▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 40.3
+                        weighted average                       = 39.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~21.38GB   40.3
+4-bit q4_k_m  ~21.38GB   39.9
 </pre>
 
 ```sh

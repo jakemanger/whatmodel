@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-01 · 1.07B params · cc-by-4.0
 
-**score 58.6** ±1.9 · #32 of 117 · from 6 benchmark results across 3 sources
+**score 58.7** ±1.9 · #32 of 117 · from 6 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ source                  test                            score  implies  date    
 <a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-rnnt-1.1b.json">LibriSpeech test-clean WER</a>       1.5%    64.0   2026-09-15   14% ▇▇
                         <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-rnnt-1.1b.json">FLEURS English test WER</a>          4.5%    59.8   2026-09-15    6% ▇
 prior                   pull toward the middle                   49.7                 1% ▇
-                        weighted average                       = 58.6
+                        weighted average                       = 58.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,7 +38,7 @@ nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1
 nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">Common Voice 9.0 English test…</a>   5.8%  too few models have it yet
 nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">Earnings-22 WER (short-form, …</a>  14.1%  too few models have it yet
 nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">GigaSpeech test WER</a>             10.0%  too few models have it yet
-nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">LibriSpeech test-clean WER</a>       1.5%  another source's result is used
+nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">LibriSpeech test-clean WER</a>       1.5%  only model in this source's run
 nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">LibriSpeech test-other WER</a>       2.5%  too few models have it yet
 nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">SPGISpeech test WER</a>              3.1%  too few models have it yet
 nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">TED-LIUM test WER (short-form)</a>   3.9%  too few models have it yet
@@ -51,7 +51,7 @@ nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1
 
 <pre>
 version               needs  score
-fp32 · nvidia only  ~5.64GB   58.6
+fp32 · nvidia only  ~5.64GB   58.7
 </pre>
 
 ```sh

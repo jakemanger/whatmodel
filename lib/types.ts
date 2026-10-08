@@ -60,6 +60,7 @@ export type Result = {
   date?: string;
   note?: string;
   source_id?: string; // the data/sources.json entry the source URL falls under
+  invalid?: string; // why this is a failed run, not a measurement of ability; shown, but kept out of scores
 };
 
 // kind "acc": score is a 0-1 fraction, `chance` is the guessing rate.

@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-10 · 1.3B params · deepseek
 
-**score 24.5** ±5.2 · #132 of 136 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 24.9** ±5.3 · #132 of 136 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  23.0%    21.2   2026-06-02   88% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  23.0%    21.5   2026-06-02   88% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                12% ▇
-                        weighted average                       = 24.5
+                        weighted average                       = 24.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,7 +38,7 @@ DeepSeek-AI  <a href="https://arxiv.org/html/2410.13848v1">GenEval</a>  61.0%  t
 
 <pre>
 version              needs  score
-bf16 · nvidia only  ~5.5GB   24.5
+bf16 · nvidia only  ~5.5GB   24.9
 </pre>
 
 ```sh

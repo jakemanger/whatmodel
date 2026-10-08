@@ -6,7 +6,7 @@
 
 Mistral AI · released 2024-05 · 22.25B params · mnpl
 
-**score 48.2** ±0.8 · #277 of 548 · from 7 benchmark results across 4 sources
+**score 47.8** ±0.9 · #279 of 549 · from 7 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      73.8%    48.4   2024-12-26   38% ▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       79.9%    48.8   2024-12-26   36% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           61.9%    45.2   2024-12-26    5% ▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/mistralai--Codestral-22B-v0.1_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  72.8%    46.4   2024-10-19    4% ▇
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  51.1%    47.5   2024-06-09    9% ▇
-<a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>  27.4%    52.2   2026-08-31    4% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  71.0%    44.8   2024-07-02    3% ▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      73.8%    47.9   2024-12-26   39% ▇▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       79.9%    48.5   2024-12-26   33% ▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           61.9%    44.6   2024-12-26    5% ▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/mistralai--Codestral-22B-v0.1_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  72.8%    46.5   2024-10-19    5% ▇
+<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  51.1%    47.0   2024-06-09   11% ▇
+<a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>  27.4%    51.6   2026-08-31    3% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  71.0%    44.8   2024-07-02    2% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 48.2
+                        weighted average                       = 47.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,8 +35,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~13.85GB   48.2
-8-bit q8_0     ~27.2GB   48.2
+4-bit q4_k_m  ~13.85GB   47.8
+8-bit q8_0     ~27.2GB   47.8
 </pre>
 
 ```sh

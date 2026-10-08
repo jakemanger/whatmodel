@@ -1537,7 +1537,8 @@
     "by": "independent",
     "date": "2026-08-28",
     "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'deepseek-r1-0528-qwen3-8b'; run id dszRh7ELyCEukWnwYnUxMp; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.010663485573693416.",
-    "source_id": "epoch-internal"
+    "source_id": "epoch-internal",
+    "invalid": "9.3% on a 4-option test (chance 25%) for a model that scores 61% elsewhere; a reasoning model scoring far below guessing points to unparsed or truncated answers, not ability."
   },
   {
     "model": "llama-3-1-8b",
@@ -9197,7 +9198,8 @@
     "by": "independent",
     "note": "Published entry 'Llama-3.1-Nemotron-Ultra-253B-v1 (FC)'. BFCL V4; 2025-12-16 archive; field Overall Acc. Native function calling (FC) selected when available, otherwise Prompt; no duplicate component scores. Evaluator release referenced by the official leaderboard: f7cf7359b7ac615a0b294831c5ba2bc95ee4a000 (bfcl-eval 2025.12.17); this is reproduction guidance, not a certified execution commit for each archived row. Aggregate CSV does not record per-run temperature, token limit or weight hash; these are left unknown. Date is archive publication, not necessarily inference date. Harness model identifiers: nvidia/llama-3.1-nemotron-ultra-253b-v1.",
     "date": "2025-12-16",
-    "source_id": "bfcl-result-archive-v4"
+    "source_id": "bfcl-result-archive-v4",
+    "invalid": "No function call was ever emitted: 0.00% on every call-producing category and 100% only on Irrelevance Detection, which rewards not calling. The 10% overall is just the irrelevance weight."
   },
   {
     "model": "llama-3-2-1b",
@@ -70421,7 +70423,8 @@
       "column_index": 4,
       "raw_value": "11.9",
       "scale_divisor": 100
-    }
+    },
+    "invalid": "11.9% on GPQA (4 options, chance 25%) in thinking mode; probably unterminated thinking or unparsed answers rather than below-random knowledge. The next-lowest model on this benchmark scores 25.2%."
   },
   {
     "model": "qwen3-5-0-8b",
@@ -105575,7 +105578,8 @@
     "by": "independent",
     "date": "2026-08-28",
     "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'granite-4.0-350m'; run id F6xZSehzKjpybEh8JkGwni; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.009083571075486867.",
-    "source_id": "epoch-internal"
+    "source_id": "epoch-internal",
+    "invalid": "Far below guessing. At 350M this is more plausibly a format failure (no parseable letter) than knowledge 'worse than random'."
   },
   {
     "model": "granite-4-0-350m",
@@ -105975,7 +105979,8 @@
     "by": "independent",
     "date": "2025-01-27",
     "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'Mistral-7B-Instruct-v0.3'; run id YbQkMPC2GtNLhxqTEhhVsa; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.010148891037227303.",
-    "source_id": "epoch-internal"
+    "source_id": "epoch-internal",
+    "invalid": "Below the 25% guess rate, while Epoch's Llama-3.1-8B-Instruct gets 0.27 and Llama-3-8B 0.26. Probably unparsed answers. Epoch's open-mistral-7b also scores 0.132."
   },
   {
     "model": "mistral-7b-instruct-v0-3",
@@ -106935,7 +106940,8 @@
     "by": "independent",
     "date": "2025-01-27",
     "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'Yi-34B-Chat'; run id WxMpEBcTf8qPFPz4BrF86B; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.011372823721448395.",
-    "source_id": "epoch-internal"
+    "source_id": "epoch-internal",
+    "invalid": "Well below the 25% guess rate. Peers of similar age and size score 0.25 to 0.27 in the same Epoch run (deepseek-llm-67b-chat 0.246, Llama-2-70b-chat 0.263), which suggests answer-format failures."
   },
   {
     "model": "yi-34b-chat",
@@ -146390,7 +146396,8 @@
     "by": "independent",
     "date": "2025-12-16",
     "source_id": "bfcl-result-archive-v4",
-    "note": "Published entry 'Ministral-8B-Instruct-2410 (FC)'. BFCL V4; 2025-12-16 archive; field Overall Acc. Native function calling (FC) selected when available, otherwise Prompt; no duplicate component scores. Evaluator release referenced by the official leaderboard: f7cf7359b7ac615a0b294831c5ba2bc95ee4a000 (bfcl-eval 2025.12.17); this is reproduction guidance, not a certified execution commit for each archived row. Aggregate CSV does not record per-run temperature, token limit or weight hash; these are left unknown. Date is archive publication, not necessarily inference date. Model link in the archive: https://huggingface.co/mistralai/Ministral-8B-Instruct-2410."
+    "note": "Published entry 'Ministral-8B-Instruct-2410 (FC)'. BFCL V4; 2025-12-16 archive; field Overall Acc. Native function calling (FC) selected when available, otherwise Prompt; no duplicate component scores. Evaluator release referenced by the official leaderboard: f7cf7359b7ac615a0b294831c5ba2bc95ee4a000 (bfcl-eval 2025.12.17); this is reproduction guidance, not a certified execution commit for each archived row. Aggregate CSV does not record per-run temperature, token limit or weight hash; these are left unknown. Date is archive publication, not necessarily inference date. Model link in the archive: https://huggingface.co/mistralai/Ministral-8B-Instruct-2410.",
+    "invalid": "Same pattern as Nemotron Ultra: zero on every category that needs a call and 100% on irrelevance, so the FC handler never got a parseable call."
   },
   {
     "model": "falcon3-1b",
@@ -177734,7 +177741,8 @@
     "by": "independent",
     "date": "2024-02-05",
     "note": "Open PT-LLM Leaderboard row 'openai-community/openai-gpt' (source=hub, precision=float16, type=pretrained); published average 1.96 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 61cf0c79fa. All nine task scores are at or near zero as published (e.g. ENEM 0.0, BLUEX 0.0, OAB 0.0); recorded as published.",
-    "source_id": "open-pt-llm-leaderboard"
+    "source_id": "open-pt-llm-leaderboard",
+    "invalid": "Already fixed by chance 0.3264 (c7b3953). 1.96% average vs a 32.64% random baseline; GPT-1's 512-token context cannot hold 3- to 25-shot prompts."
   },
   {
     "model": "phi-1",
@@ -179453,7 +179461,8 @@
     "by": "independent",
     "date": "2026-09-25",
     "note": "Liquid AI's own comparison run in the pinned LFM2.5-1.2B-Thinking card Benchmarks table, row 'Llama 3.2 1B Instruct', column 'GPQA Diamond' = 16.57; the card states its methodology for every row (greedy decoding; 'For instruct models, we report scores using greedy decoding'). Same table as the existing LFM2.5-1.2B-Thinking rows. IFEval is the mean of strict/loose prompt/instruction accuracy; BFCLv3 final weighted average with Liquid's custom handler; GPQA/MMLU-Pro/IFBench/AIME25 follow the cited AA methodology but are Liquid's own runs. Multi-IF column not used. Review date is not the evaluation-run date.",
-    "source_id": "card-liquidai-lfm2-5-1-2b-thinking"
+    "source_id": "card-liquidai-lfm2-5-1-2b-thinking",
+    "invalid": "Below guessing in Liquid AI's greedy-decoding comparison run; Epoch measures the same checkpoint at 0.239."
   },
   {
     "model": "llama-3-2-1b",
@@ -184723,7 +184732,8 @@
     "by": "independent",
     "date": "2023-10-30",
     "note": "OpenChat 3.5 model card (pinned 0fc98e3, Apache-2.0), Benchmarks table, row 'Zephyr-β', column 'BBH CoT' = 16.0; 3-shot CoT with the Chain-of-Thought Hub configuration. Card: 'All models are evaluated in chat mode'; only the ChatGPT, Mistral and Open-source SOTA rows are marked as taken from reports, so the OpenChat-3.5, OpenHermes 2.5 and Zephyr-β rows are the OpenChat team's runs. The card notes Zephyr-β 'often fails to follow few-shot CoT instructions' (low BBH CoT/GSM8K). MT-Bench, AGIEval, BBH MC and TruthfulQA columns not used (no exact id or subset not printed). Date is the model repository creation date.",
-    "source_id": "card2-openchat-openchat-3-5"
+    "source_id": "card2-openchat-openchat-3-5",
+    "invalid": "Few-shot CoT format failure in a chat-mode harness: 16.0 vs 44.9 for the same checkpoint in the Tulu 2 paper (3-shot CoT), and below BBH's published random average of 25.7."
   },
   {
     "model": "zephyr-7b-beta",
@@ -184733,7 +184743,8 @@
     "by": "independent",
     "date": "2023-10-30",
     "note": "OpenChat 3.5 model card (pinned 0fc98e3, Apache-2.0), Benchmarks table, row 'Zephyr-β', column 'GSM8K' = 5.1; 8-shot CoT with the Chain-of-Thought Hub configuration. Card: 'All models are evaluated in chat mode'; only the ChatGPT, Mistral and Open-source SOTA rows are marked as taken from reports, so the OpenChat-3.5, OpenHermes 2.5 and Zephyr-β rows are the OpenChat team's runs. The card notes Zephyr-β 'often fails to follow few-shot CoT instructions' (low BBH CoT/GSM8K). MT-Bench, AGIEval, BBH MC and TruthfulQA columns not used (no exact id or subset not printed). Date is the model repository creation date.",
-    "source_id": "card2-openchat-openchat-3-5"
+    "source_id": "card2-openchat-openchat-3-5",
+    "invalid": "Same few-shot CoT format failure: 5.1 vs 28.0 in the Tulu 2 paper's 8-shot CoT run."
   },
   {
     "model": "llama-2-7b",
@@ -187824,5 +187835,125 @@
     "date": "2026-09-23",
     "note": "'Kling O3 Pro'; Table 2 human Bradley-Terry Elo 1471.3 (95% CI [1404.0, 1534.0], score rate 46.2%, 52 games); FAL API, frame-wise edit/transfer.",
     "source_id": "visual-wrop-object-permanence"
+  },
+  {
+    "model": "gpt-1",
+    "bench": "prost-zero-shot-macro",
+    "score": 0.261,
+    "source": "https://aclanthology.org/2021.findings-acl.404.pdf",
+    "by": "independent",
+    "date": "2021-08-01",
+    "note": "Row GPT (116.5M; 'OpenAI's GPT-1'): 26.1%. Table 5 (printed p. 4603), 'Macro Average' column: mean of the 10 concept accuracies (direction, mass, height and circumference averaged over their templates first). Zero-shot, no fine-tuning; authors ran the Hugging Face pretrained checkpoint (Section 4, Table 4). Percent divided by 100. Date is the Findings of ACL-IJCNLP 2021 publication month.",
+    "source_id": "acl-2021-findings-acl-404-prost"
+  },
+  {
+    "model": "gpt-2-small",
+    "bench": "prost-zero-shot-macro",
+    "score": 0.236,
+    "source": "https://aclanthology.org/2021.findings-acl.404.pdf",
+    "by": "independent",
+    "date": "2021-08-01",
+    "note": "Row GPT-2 B (124.4M): 23.6%. Table 5 (printed p. 4603), 'Macro Average' column: mean of the 10 concept accuracies (direction, mass, height and circumference averaged over their templates first). Zero-shot, no fine-tuning; authors ran the Hugging Face pretrained checkpoint (Section 4, Table 4). Percent divided by 100. Date is the Findings of ACL-IJCNLP 2021 publication month.",
+    "source_id": "acl-2021-findings-acl-404-prost"
+  },
+  {
+    "model": "gpt-2-medium",
+    "bench": "prost-zero-shot-macro",
+    "score": 0.268,
+    "source": "https://aclanthology.org/2021.findings-acl.404.pdf",
+    "by": "independent",
+    "date": "2021-08-01",
+    "note": "Row GPT-2 M (354.8M): 26.8%. Table 5 (printed p. 4603), 'Macro Average' column: mean of the 10 concept accuracies (direction, mass, height and circumference averaged over their templates first). Zero-shot, no fine-tuning; authors ran the Hugging Face pretrained checkpoint (Section 4, Table 4). Percent divided by 100. Date is the Findings of ACL-IJCNLP 2021 publication month.",
+    "source_id": "acl-2021-findings-acl-404-prost"
+  },
+  {
+    "model": "gpt-2-large",
+    "bench": "prost-zero-shot-macro",
+    "score": 0.264,
+    "source": "https://aclanthology.org/2021.findings-acl.404.pdf",
+    "by": "independent",
+    "date": "2021-08-01",
+    "note": "Row GPT-2 L (774.0M): 26.4%. Table 5 (printed p. 4603), 'Macro Average' column: mean of the 10 concept accuracies (direction, mass, height and circumference averaged over their templates first). Zero-shot, no fine-tuning; authors ran the Hugging Face pretrained checkpoint (Section 4, Table 4). Percent divided by 100. Date is the Findings of ACL-IJCNLP 2021 publication month.",
+    "source_id": "acl-2021-findings-acl-404-prost"
+  },
+  {
+    "model": "gpt-2-xl",
+    "bench": "prost-zero-shot-macro",
+    "score": 0.301,
+    "source": "https://aclanthology.org/2021.findings-acl.404.pdf",
+    "by": "independent",
+    "date": "2021-08-01",
+    "note": "Row GPT-2 XL (1557.6M): 30.1%. Table 5 (printed p. 4603), 'Macro Average' column: mean of the 10 concept accuracies (direction, mass, height and circumference averaged over their templates first). Zero-shot, no fine-tuning; authors ran the Hugging Face pretrained checkpoint (Section 4, Table 4). Percent divided by 100. Date is the Findings of ACL-IJCNLP 2021 publication month.",
+    "source_id": "acl-2021-findings-acl-404-prost"
+  },
+  {
+    "model": "command-a-plus",
+    "bench": "tau2-telecom",
+    "score": 0.85,
+    "source": "https://cohere.com/blog/command-a-plus",
+    "by": "lab",
+    "date": "2026-05-20",
+    "note": "Text: 'Compared with Command A Reasoning, τ²-Bench Telecom scores improved from 37% to 85%'. Footnote 1: 'τ²-Bench Telecom evaluated using standard settings and user simulation from [Barres et al. 2025]'. Domain pass rate, no aggregate given. Cohere 'Introducing Command A+' blog post (May 20, 2026), fetched 2026-10-08; figure stated in the post's body text (not read from a chart). vendor-reported (rule b): Cohere's own figure for its own model, hand-recorded. Comparator printed in the same sentence is Command A Reasoning / Command A Vision, which are not catalogue models, so this run has one catalogue model and will not count until a second Cohere model with the same benchmark is in the catalogue.",
+    "source_id": "first-party-cohere-scores"
+  },
+  {
+    "model": "command-a-plus",
+    "bench": "terminalbench-hard-gemma4",
+    "score": 0.25,
+    "source": "https://cohere.com/blog/command-a-plus",
+    "by": "lab",
+    "date": "2026-05-20",
+    "note": "Text: 'agentic coding performance on Terminal-Bench Hard reaching 25% from 3%' (Command A Reasoning 3%). Footnote 1: 'Terminal-Bench Hard evaluated using Terminus-2 harness following the methodology of Artificial Analysis' (Cohere's own run; not an Artificial Analysis number). Mapped to the catalogue's only 'Terminal Bench Hard' id; review that the Gemma 4 report's TB-Hard is the same subset. Cohere 'Introducing Command A+' blog post (May 20, 2026), fetched 2026-10-08; figure stated in the post's body text (not read from a chart). vendor-reported (rule b): Cohere's own figure for its own model, hand-recorded. Comparator printed in the same sentence is Command A Reasoning / Command A Vision, which are not catalogue models, so this run has one catalogue model and will not count until a second Cohere model with the same benchmark is in the catalogue.",
+    "source_id": "first-party-cohere-scores"
+  },
+  {
+    "model": "command-a-plus",
+    "bench": "charxiv-rq",
+    "score": 0.527,
+    "source": "https://cohere.com/blog/command-a-plus",
+    "by": "lab",
+    "date": "2026-05-20",
+    "note": "Text: 'CharXiv reasoning improved from 46.9% to 52.7%' (Command A Vision 46.9%). Image 5 caption: 'We follow standard methodology for the given benchmarks.' Cohere 'Introducing Command A+' blog post (May 20, 2026), fetched 2026-10-08; figure stated in the post's body text (not read from a chart). vendor-reported (rule b): Cohere's own figure for its own model, hand-recorded. Comparator printed in the same sentence is Command A Reasoning / Command A Vision, which are not catalogue models, so this run has one catalogue model and will not count until a second Cohere model with the same benchmark is in the catalogue.",
+    "source_id": "first-party-cohere-scores"
+  },
+  {
+    "model": "command-a-reasoning-08-2025",
+    "bench": "tau2-telecom",
+    "score": 0.37,
+    "source": "https://cohere.com/blog/command-a-plus",
+    "by": "lab",
+    "date": "2026-05-20",
+    "note": "Text: 'Compared with Command A Reasoning, τ²-Bench Telecom scores improved from 37% to 85%'. Same footnote-1 settings as the Command A+ row. vendor-reported (rule b).",
+    "source_id": "first-party-cohere-scores"
+  },
+  {
+    "model": "command-a-reasoning-08-2025",
+    "bench": "terminalbench-hard-gemma4",
+    "score": 0.03,
+    "source": "https://cohere.com/blog/command-a-plus",
+    "by": "lab",
+    "date": "2026-05-20",
+    "note": "Text: 'Terminal-Bench Hard reaching 25% from 3%' (3% = Command A Reasoning). Terminus-2 harness per footnote 1. vendor-reported (rule b).",
+    "source_id": "first-party-cohere-scores"
+  },
+  {
+    "model": "command-a-vision-07-2025",
+    "bench": "charxiv-rq",
+    "score": 0.469,
+    "source": "https://cohere.com/blog/command-a-plus",
+    "by": "lab",
+    "date": "2026-05-20",
+    "note": "Text: 'CharXiv reasoning improved from 46.9% to 52.7%' (46.9% = Command A Vision, per Image 5 caption comparing Command A+ with Command A Vision). vendor-reported (rule b).",
+    "source_id": "first-party-cohere-scores"
+  },
+  {
+    "model": "command-a-reasoning-08-2025",
+    "bench": "bfcl-v4",
+    "score": 0.5706,
+    "source": "https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv",
+    "by": "independent",
+    "note": "Published entry 'Command A Reasoning (FC)'. BFCL V4; 2025-12-16 archive; field Overall Acc. Native function calling (FC) selected when available, otherwise Prompt; no duplicate component scores. Evaluator release referenced by the official leaderboard: f7cf7359b7ac615a0b294831c5ba2bc95ee4a000 (bfcl-eval 2025.12.17); this is reproduction guidance, not a certified execution commit for each archived row. Aggregate CSV does not record per-run temperature, token limit or weight hash; these are left unknown. Date is archive publication, not necessarily inference date. Harness model identifiers: command-a-reasoning-08-2025.",
+    "date": "2025-12-16",
+    "source_id": "bfcl-result-archive-v4"
   }
 ]

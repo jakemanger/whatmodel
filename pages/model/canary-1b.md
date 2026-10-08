@@ -19,7 +19,7 @@ source                  test                            score  implies  date    
 <a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b.json">LibriSpeech test-clean WER</a>       1.6%    62.2   2026-09-15   36% ▇▇▇▇
                         <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b.json">FLEURS English test WER</a>          4.4%    59.9   2026-09-15   16% ▇▇
 <a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.5%    59.7   2026-03-26   41% ▇▇▇▇▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  10.2%    49.5   2024-12-09    2% ▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  10.2%    49.6   2024-12-09    2% ▇
                         <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       1.7%    49.9   2024-12-09    2% ▇
 prior                   pull toward the middle                   49.7                 4% ▇
                         weighted average                       = 59.8

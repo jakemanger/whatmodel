@@ -20,7 +20,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2507.13264v1">SPGISpeech test WER</a>              3.1%    57.5   2025-07-17    2% ▇
                         <a href="https://arxiv.org/html/2507.13264v1">SwitchBoard WER</a>                 13.1%    59.4   2025-07-17    2% ▇
                         <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-other WER</a>       3.7%    60.6   2025-07-17    2% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">CHiME-4 WER</a>                     10.9%    59.0   2025-07-17    2% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">CHiME-4 WER</a>                     10.9%    59.1   2025-07-17    2% ▇
                         <a href="https://arxiv.org/html/2507.13264v1">Earnings-21 10-minute long-fo…</a>   9.9%    59.4   2025-07-17    2% ▇
                         <a href="https://arxiv.org/html/2507.13264v1">Earnings-22 10-minute long-fo…</a>  13.1%    58.5   2025-07-17    2% ▇
                         <a href="https://arxiv.org/html/2507.13264v1">VoxPopuli English test WER</a>       9.6%    54.0   2025-07-17    2% ▇
@@ -30,8 +30,8 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Common Voice English WER (ver…</a>   9.9%    55.0   2026-01-30    2% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">WenetSpeech test_net error ra…</a>   9.9%    53.6   2026-01-30    2% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Multilingual LibriSpeech Engl…</a>   4.9%    58.1   2026-01-30    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">AISHELL-2 test error rate</a>        5.1%    50.6   2026-01-30    2% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">GigaSpeech test WER</a>              9.8%    60.6   2026-01-30    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">AISHELL-2 test error rate</a>        5.1%    50.6   2026-01-30    2% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">VoxPopuli English test WER</a>      12.0%    53.4   2026-01-30    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">FLEURS Mandarin test error ra…</a>   4.1%    49.6   2026-01-30    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">WenetSpeech test_meeting erro…</a>  19.1%    49.8   2026-01-30    1% ▇
@@ -52,14 +52,14 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 6 English a…</a>  16.3%    66.0   2026-06-27    1% ▇
 <a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large-v3.json">LibriSpeech test-clean WER</a>       1.8%    58.2   2026-09-15    3% ▇
                         <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large-v3.json">FLEURS English test WER</a>          4.0%    63.0   2026-09-15    1% ▇
-<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench          <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  87.6%    62.2   2026-05-15    2% ▇
+<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench          <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  87.6%    62.6   2026-05-15    2% ▇
                         <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (3…</a>   5.8%    64.8   2026-05-15    2% ▇
 <a name="speech-stt-bangla-riverborn-mit"></a>Bangla Speech-to-Text…  <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpe…</a>  30.7%    51.8   2026-09-24    3% ▇
 <a name="speech-stt-megaasr-report"></a>Mega-ASR                <a href="https://arxiv.org/html/2605.19833v1">Mega-ASR adverse-condition su…</a>  10.7%    59.8   2026-05-19    3% ▇
-<a name="speech-omniasr-paper-bysa"></a>Omnilingual ASR: Open…  <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · FLEUR…</a>  22.6%    42.4   2025-11-12    2% ▇
-                        <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · Commo…</a>  55.6%    37.5   2025-11-12    1% ▇
+<a name="speech-omniasr-paper-bysa"></a>Omnilingual ASR: Open…  <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · FLEUR…</a>  22.6%    42.4   2025-11-12    1% ▇
+                        <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · Commo…</a>  55.6%    37.4   2025-11-12    1% ▇
 <a name="speech-stt-botnoi-thai-report"></a>BOTNOI Thai telephony…  <a href="https://arxiv.org/html/2608.24916v1">BOTNOI report · FLEURS Thai C…</a>   8.8%    62.5   2026-08-03    1% ▇
-                        <a href="https://arxiv.org/html/2608.24916v1">BOTNOI Thai telephony · CER</a>     48.4%    47.4   2026-08-03    1% ▇
+                        <a href="https://arxiv.org/html/2608.24916v1">BOTNOI Thai telephony · CER</a>     48.4%    47.5   2026-08-03    1% ▇
 <a name="speech-glm-asr-readme-apache"></a>zai-org/GLM-ASR READM…  <a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">LibriSpeech test-other WER</a>       3.4%    61.7   2025-12-09    1% ▇
                         <a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">WenetSpeech test_meeting erro…</a>  18.4%    45.6   2025-12-09    1% ▇
                         <a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">LibriSpeech test-clean WER</a>       1.9%    60.7   2025-12-09    0% ▇
@@ -69,12 +69,12 @@ source                  test                            score  implies  date    
 <a name="speech-stt-ru-shmyrev-espeech-mit"></a>Russian ASR Leaderboa…  <a href="https://huggingface.co/spaces/ESpeech/russian_asr_leaderboard/blob/cc62862c6f7d12840458f868a17a3058da7e639f/index.html">Russian ASR Leaderboard (N. S…</a>  15.4%    58.3   2026-05-07    2% ▇
 <a name="speech-stt-peste-apache"></a>PESTE · Persian Speec…  <a href="https://github.com/ArmanJR/PESTE-Benchmark/blob/4ca05cd34f90342d76d12d9e8074e7a26de97e96/generated/leaderboard.csv">PESTE · Persian FLEURS (fa_ir…</a>   6.0%    64.9   2026-08-17    2% ▇
 <a name="speech-distil-whisper-readme-mit"></a>huggingface/distil-wh…  <a href="https://github.com/huggingface/distil-whisper/blob/a66f5c85be1e32c504e8ed68df7802d2b96db4c0/README.md">Distil-Whisper · 4-set out-of…</a>   8.4%    53.9   2024-03-21    1% ▇
-<a name="speech-stt-bavarian-betthupferl-mit"></a>German dialect ASR Be…  <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>   8.8%    67.8   2026-08-24    1% ▇
-                        <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  30.7%    65.4   2026-08-24    0% ▇
+<a name="speech-stt-bavarian-betthupferl-mit"></a>German dialect ASR Be…  <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>   8.8%    67.7   2026-08-24    1% ▇
+                        <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  30.7%    65.3   2026-08-24    0% ▇
 <a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>   5.7%    49.8   2026-03-19    1% ▇
 <a name="speech-stt-turkasr-bench-mit"></a>Turkish ASR Leaderboa…  <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sour…</a>  12.8%    59.1   2026-09-25    1% ▇
 <a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  36.9%    53.6   2025-01-12    1% ▇
-<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  10.1%    78.6   2026-08-15    0% ▇
+<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  10.1%    78.5   2026-08-15    0% ▇
 <a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  14.4%    64.0   2026-08-18    0% ▇
 prior                   pull toward the middle                   49.7                 0% ▇
                         weighted average                       = 57.8

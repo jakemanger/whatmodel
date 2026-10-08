@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 6.74B params · llama2
 
-**score 36.1** ±0.8 · #440 of 548 · from 10 benchmark results across 4 sources
+**score 35.3** ±0.8 · #449 of 549 · from 10 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,18 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       43.3%    37.3   2024-03-28   35% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               27.9%    37.2   2024-03-28   19% ▇▇
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                 34.8%    35.3   2024-01-31   16% ▇▇
-                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                      44.4%    34.4   2024-01-31    7% ▇
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  38.4%    31.4   2023-11-20    6% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            41.5%    31.7   2023-11-20    3% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       64.1%    39.8   2023-11-20    2% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  41.6%    35.4   2023-11-20    2% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           17.0%    28.5   2023-11-20    2% ▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  37.9%    36.6   2024-05-07    8% ▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       43.3%    36.6   2024-03-28   38% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               27.9%    36.4   2024-03-28   17% ▇▇
+<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                 34.8%    34.6   2024-01-31   16% ▇▇
+                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                      44.4%    33.5   2024-01-31    6% ▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  38.4%    30.2   2023-11-20    6% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            41.5%    30.8   2023-11-20    3% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           17.0%    28.4   2023-11-20    2% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  41.6%    34.8   2023-11-20    2% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       64.1%    40.0   2023-11-20    2% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  37.9%    35.8   2024-05-07    8% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 36.1
+                        weighted average                       = 35.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,8 +38,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~4.1GB   36.1
-8-bit q8_0    ~7.2GB   36.1
+4-bit q4_k_m  ~4.1GB   35.3
+8-bit q8_0    ~7.2GB   35.3
 </pre>
 
 ```sh

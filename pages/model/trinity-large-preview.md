@@ -6,7 +6,7 @@
 
 Arcee AI · released 2026-01 · 398B params (13B active) · openmdw-1.1
 
-**score 58.0** ±1.9 · #168 of 548 · from 4 benchmark results across 2 sources
+**score 57.5** ±2.1 · #176 of 549 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1378.6    60.9   2026-10-02   53% ▇▇▇▇▇▇
-<a name="first-party-arcee-scores"></a>Arcee AI vendor-repor…  <a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">GPQA Diamond (lab)</a>       63.3%    56.3   2026-01-27   33% ▇▇▇▇
-                        <a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">MMLU-Pro (lab)</a>           75.2%    55.3   2026-01-27   11% ▇
-                        <a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">AIME 2025 (lab)</a>          24.0%    23.9   2026-01-27    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1378.6    60.9   2026-10-02   52% ▇▇▇▇▇▇
+<a name="first-party-arcee-scores"></a>Arcee AI vendor-repor…  <a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">GPQA Diamond (lab)</a>       63.3%    55.8   2026-01-27   30% ▇▇▇▇
+                        <a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">MMLU-Pro (lab)</a>           75.2%    55.2   2026-01-27   12% ▇
+                        <a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">AIME 2025 (lab)</a>          24.0%    35.4   2026-01-27    4% ▇
 prior                   pull toward the middle            50.0                 2% ▇
-                        weighted average                = 58.0
+                        weighted average                = 57.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,8 +30,8 @@ prior                   pull toward the middle            50.0                 2
 
 <pre>
 download               size  score
-4-bit ud-q4_k_xl  ~247.33GB   58.0
-2-bit ud-q2_k_xl  ~145.84GB   58.0
+4-bit ud-q4_k_xl  ~247.33GB   57.5
+2-bit ud-q2_k_xl  ~145.84GB   57.5
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-04 · 14.7B params · mit
 
-**score 52.4** ±2.2 · #232 of 548 · from 6 benchmark results across 3 sources
+**score 53.0** ±2.3 · #226 of 549 · from 6 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card-microsoft--phi-4-reasoning"></a>microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">HumanEval+ (lab)</a>                92.9%    57.5   2025-04-09   21% ▇▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">MMLU-Pro (lab)</a>                  74.3%    51.7   2025-04-09   15% ▇▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">Arena-Hard (version/judge uns…</a>  73.3%    52.8   2025-04-09   14% ▇▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  48.1%    53.5   2026-05-02   34% ▇▇▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  83.5%    47.7   2026-04-17    8% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  48.7%    37.8   2026-04-17    7% ▇
+<a name="card-microsoft--phi-4-reasoning"></a>microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">HumanEval+ (lab)</a>                92.9%    58.1   2025-04-09   21% ▇▇▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">MMLU-Pro (lab)</a>                  74.3%    52.5   2025-04-09   15% ▇▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">Arena-Hard (version/judge uns…</a>  73.3%    53.7   2025-04-09   15% ▇▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  48.1%    53.6   2026-05-02   37% ▇▇▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  48.7%    33.8   2026-04-17    6% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  83.5%    48.2   2026-04-17    4% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 52.4
+                        weighted average                       = 53.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -57,8 +57,8 @@ api (Microsoft Azure) · $0.22/M blended · $0.125 in / $0.5 out per 1M tokens �
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~9.32GB   52.4
-8-bit q8_0    ~18.14GB   52.4
+4-bit q4_k_m   ~9.32GB   53.0
+8-bit q8_0    ~18.14GB   53.0
 </pre>
 
 ```sh

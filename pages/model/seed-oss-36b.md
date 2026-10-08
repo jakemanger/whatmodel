@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2025-08 · 36.2B params · apache-2.0
 
-**score 62.4** ±2.6 · #133 of 548 · from 3 benchmark results across 1 source
+**score 62.1** ±1.6 · #137 of 549 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>  67.5%    62.4   2026-08-28   44% ▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              71.5%    62.5   2026-08-30   43% ▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>     13.0%    65.1   2026-08-28   10% ▇
-prior     pull toward the middle             50.0                 3% ▇
-          weighted average                 = 62.4
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              71.5%    61.8   2026-08-30   52% ▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>  67.5%    62.6   2026-08-28   39% ▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>     13.0%    63.3   2026-08-28    8% ▇
+prior     pull toward the middle             50.0                 1% ▇
+          weighted average                 = 62.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,7 +36,7 @@ ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OS
 ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">SWE-bench Verified</a>              56.0%  too few models have it yet
 ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">AIME 2024</a>                       91.7%  too few models have it yet
 ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">BeyondAIME</a>                      65.0%  too few models have it yet
-ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">GPQA Diamond</a>                    71.4%  another source's result is used
+ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">GPQA Diamond</a>                    71.4%  only model in this source's run
 ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">IFEval (aggregation unspecifi…</a>  85.8%  too few models have it yet
 ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">KOR-Bench</a>                       70.6%  too few models have it yet
 ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">MMLU</a>                            87.4%  too few models have it yet
@@ -57,8 +57,8 @@ ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OS
 
 <pre>
 download               size  score
-4-bit gguf-q4_k_m  ~22.22GB   62.4
-8-bit gguf-q8_0    ~43.94GB   62.4
+4-bit gguf-q4_k_m  ~22.22GB   62.1
+8-bit gguf-q8_0    ~43.94GB   62.1
 </pre>
 
 ```sh

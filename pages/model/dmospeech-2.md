@@ -6,7 +6,7 @@
 
 Columbia University / NewsBreak (Yinghao Aaron Li, Xilin Jiang et al.) · released 2025-07 · 0.3B params · mit
 
-**score 56.5** ±4.5 · #39 of 98 · from 4 benchmark results across 1 source
+**score 56.9** ±4.5 · #39 of 98 · from 4 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-dmospeech2-report-bysa"></a>DMOSpeech 2: Reinforc…  <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker si…</a>  76.0%    54.6   2025-07-20   31% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker si…</a>  69.8%    56.6   2025-07-20   25% ▇▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer…</a>   1.5%    58.0   2025-07-20   18% ▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper la…</a>   1.8%    61.0   2025-07-20   18% ▇▇
-prior                   pull toward the middle                   49.8                 8% ▇
-                        weighted average                       = 56.5
+<a name="speech-dmospeech2-report-bysa"></a>DMOSpeech 2: Reinforc…  <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker si…</a>  76.0%    55.0   2025-07-20   30% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker si…</a>  69.8%    57.0   2025-07-20   25% ▇▇▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper la…</a>   1.8%    61.3   2025-07-20   19% ▇▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer…</a>   1.5%    58.6   2025-07-20   18% ▇▇
+prior                   pull toward the middle                   49.9                 8% ▇
+                        weighted average                       = 56.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +32,7 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 version                                 needs  score
-fp32 (DMOSpeech2 repo) · nvidia only  ~4.34GB   56.5
+fp32 (DMOSpeech2 repo) · nvidia only  ~4.34GB   56.9
 </pre>
 
 ```sh

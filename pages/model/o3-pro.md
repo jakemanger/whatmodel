@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-06 · proprietary
 
-**score 69.4** ±1.5 · #61 of 548 · from 3 benchmark results across 2 sources
+**score 69.6** ±1.7 · #60 of 549 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://help.openai.com/en/articles/9624314-model-release-notes">GPQA Diamond (lab)</a>              84.0%    68.8   2025-06-10   43% ▇▇▇▇▇
-                        <a href="https://help.openai.com/en/articles/9624314-model-release-notes">AIME 2024 (lab)</a>                 93.0%    71.4   2025-06-10   11% ▇
-<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>  84.9%    69.9   2025-06-28   45% ▇▇▇▇▇
+<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://help.openai.com/en/articles/9624314-model-release-notes">GPQA Diamond (lab)</a>              84.0%    68.8   2025-06-10   44% ▇▇▇▇▇
+                        <a href="https://help.openai.com/en/articles/9624314-model-release-notes">AIME 2024 (lab)</a>                 93.0%    71.2   2025-06-10   13% ▇▇
+<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>  84.9%    70.5   2025-06-28   41% ▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 69.4
+                        weighted average                       = 69.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

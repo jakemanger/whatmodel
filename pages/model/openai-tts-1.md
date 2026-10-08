@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source             test                               score  implies  date        weight
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench  <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acoustic Qu…</a>  3.33 / 5    61.4   2026-07-16   39% ▇▇▇▇▇
-                   <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Ident…</a>  3.46 / 5    58.6   2026-07-16   30% ▇▇▇▇
-                   <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acting / Ro…</a>  3.16 / 5    60.8   2026-07-16   26% ▇▇▇
-prior              pull toward the middle                      49.8                 6% ▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench  <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acoustic Qu…</a>  3.33 / 5    61.4   2026-07-16   40% ▇▇▇▇▇
+                   <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Ident…</a>  3.46 / 5    58.4   2026-07-16   29% ▇▇▇
+                   <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acting / Ro…</a>  3.16 / 5    61.0   2026-07-16   25% ▇▇▇
+prior              pull toward the middle                      49.9                 5% ▇
                    weighted average                          = 59.8
 </pre>
 

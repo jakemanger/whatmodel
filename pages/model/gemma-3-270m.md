@@ -6,7 +6,7 @@
 
 Google · released 2025-08 · 0.27B params · gemma
 
-**score 16.0** ±3.0 · #537 of 548 · from 3 benchmark results across 2 sources
+**score 2.9** ±4.6 · #549 of 549 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="gap-google-gemma3"></a>Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIG-Bench Hard (lab)</a>            26.7%    20.8   2026-09-25   43% ▇▇▇▇▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecifi…</a>  51.2%    10.5   2026-09-25   15% ▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  28.2%     9.4   2025-08-30   38% ▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 4% ▇
-                        weighted average                       = 16.0
+<a name="gap-google-gemma3"></a>Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecifi…</a>  51.2%     2.3   2026-09-25   40% ▇▇▇▇▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIG-Bench Hard (lab)</a>            26.7%     1.3   2026-09-25   29% ▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  28.2%   -14.0   2025-08-30   22% ▇▇▇
+prior                   pull toward the middle                   50.0                 9% ▇
+                        weighted average                        = 2.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -43,8 +43,8 @@ Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_c
 
 <pre>
 download          size  score
-8-bit q8_0     ~0.82GB   16.0
-4-bit QAT qat  ~0.66GB   16.0
+8-bit q8_0     ~0.82GB    2.9
+4-bit QAT qat  ~0.66GB    2.9
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-06 · 1.54B params · apache-2.0
 
-**score 28.5** ±1.2 · #503 of 548 · from 9 benchmark results across 4 sources
+**score 28.3** ±1.0 · #504 of 549 · from 9 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,17 +14,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 q…</a>  41.1%    26.6                37% ▇▇▇▇
-                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>     43.4%    28.9                27% ▇▇▇
-<a name="card2-qwen-qwen2-0-5b-instruct"></a>Qwen2-0.5B-Instruct m…  <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">HumanEval (lab)</a>                 37.8%    29.9   2024-06-03    8% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">GSM8K (lab)</a>                     61.6%    29.1   2024-06-03    7% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">MMLU (lab)</a>                      52.4%    31.4   2024-06-03    5% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">C-Eval (lab)</a>                    63.8%    34.5   2024-06-03    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">IFEval prompt-level strict (l…</a>  29.0%    29.9   2024-06-03    2% ▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  15.3%    24.5   2024-06-19    6% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  36.8%    31.6   2026-09-19    5% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 28.5
+<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>     43.4%    29.2                50% ▇▇▇▇▇▇
+                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 q…</a>  41.1%    26.2                27% ▇▇▇
+<a name="card2-qwen-qwen2-0-5b-instruct"></a>Qwen2-0.5B-Instruct m…  <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">HumanEval (lab)</a>                 37.8%    28.6   2024-06-03    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">GSM8K (lab)</a>                     61.6%    28.2   2024-06-03    4% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">MMLU (lab)</a>                      52.4%    30.8   2024-06-03    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">C-Eval (lab)</a>                    63.8%    32.4   2024-06-03    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">IFEval prompt-level strict (l…</a>  29.0%    28.5   2024-06-03    1% ▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  15.3%    22.6   2024-06-19    4% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  36.8%    30.3   2026-09-19    3% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 28.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -37,8 +37,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~1.42GB   28.5
-8-bit q8_0    ~2.35GB   28.5
+4-bit q4_k_m  ~1.42GB   28.3
+8-bit q8_0    ~2.35GB   28.3
 </pre>
 
 ```sh

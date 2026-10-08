@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 0.352B params · apache-2.0
 
-**score 35.4** ±2.4 · #451 of 548 · from 4 benchmark results across 2 sources
+**score 39.5** ±5.0 · #387 of 549 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,17 +14,25 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         0.3%    38.3   2026-08-28   37% ▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    11.2%    27.7   2026-08-28   37% ▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            0.0%    44.8   2026-08-28    9% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  19.0%    40.0   2025-12-16   15% ▇▇
-prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 35.4
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  19.0%    38.8   2025-12-16   72% ▇▇▇▇▇▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         0.3%    36.2   2026-08-28   15% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            0.0%    33.4   2026-08-28    2% ▇
+prior                   pull toward the middle                   50.0                11% ▇
+                        weighted average                       = 39.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
+<sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+
+<details><summary>Not counted (1)</summary>
+
+<pre>
+source    test          score  why
+Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>  11.2%  failed run: Far below guessing. At 350M this is more plausibly a format failure (no parseable letter) than knowledge 'worse than random'.
+</pre>
+
+</details>
 
 ## How to run it
 
@@ -32,7 +40,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-16-bit bf16  ~1.34GB   35.4
+16-bit bf16  ~1.34GB   39.5
 </pre>
 
 ```sh

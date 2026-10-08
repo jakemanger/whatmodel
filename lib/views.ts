@@ -41,8 +41,9 @@ export const shareBar = (share: number) => "▇".repeat(Math.max(1, Math.round(s
 // Why a published result doesn't count toward the score.
 const UNUSED = {
   untracked: "not a tracked benchmark",
-  "other-source": "too few results from this source to calibrate it; another source's number for this test is used",
-  sparse: "too few models have this result to calibrate it yet",
+  "other-source": "the only model in this source's run of the test, so there is nothing to compare it with there; another run of the test counts",
+  sparse: "fewer than three models have this test yet, or this source ran it for this model alone",
+  failed: "failed run",
 };
 
 export type ScoreRow = { r: Result; g: number; share: number; avg: number };
@@ -59,7 +60,7 @@ export type ModelView =
       sources: SourceSummary[];
       set: ComparisonSet | undefined; // named only when the category has several sets
       groups: { id: string; share: number; rows: ScoreRow[] }[]; // by source, biggest influence first
-      unused: { r: Result; reason: "untracked" | "other-source" | "sparse"; why: string }[];
+      unused: { r: Result; reason: "untracked" | "other-source" | "sparse" | "failed"; why: string }[];
       variants: { v: Variant; label: string; g: number }[];
       measured: Speed[];
       quant: QuantFinding[];
@@ -100,8 +101,8 @@ export function modelView(id: string): ModelView | null {
   const unused = results
     .filter((r) => r.model === id && !used.has(r))
     .map((r) => {
-      const reason = !benchmarkById.has(r.bench) ? "untracked" as const : usedBench.has(r.bench) ? "other-source" as const : "sparse" as const;
-      return { r, reason, why: UNUSED[reason] };
+      const reason = r.invalid ? "failed" as const : !benchmarkById.has(r.bench) ? "untracked" as const : usedBench.has(r.bench) ? "other-source" as const : "sparse" as const;
+      return { r, reason, why: r.invalid ? `failed run: ${r.invalid}` : UNUSED[reason] };
     });
 
   return {

@@ -6,7 +6,7 @@
 
 Alibaba · released 2023-09 · 14.2B params · tongyi-qianwen
 
-**score 38.1** ±1.0 · #407 of 548 · from 4 benchmark results across 3 sources
+**score 37.5** ±1.0 · #411 of 549 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                        46.3%    38.2   2024-03-28   53% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                32.1%    39.2   2024-03-28   28% ▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1139.3    34.2   2026-10-02   14% ▇▇
-<a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>   43.8%    40.9   2024-01-03    5% ▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                        46.3%    37.5   2024-03-28   57% ▇▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                32.1%    38.4   2024-03-28   26% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1139.3    33.4   2026-10-02   12% ▇
+<a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>   43.8%    40.5   2024-01-03    5% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 38.1
+                        weighted average                        = 37.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download         size  score
-16-bit bf16  ~28.33GB   38.1
+16-bit bf16  ~28.33GB   37.5
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 StepFun · released 2025-07 · 12.43B params · apache-2.0
 
-**score 47.6** ±4.5 · #85 of 136 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 47.8** ±4.3 · #83 of 136 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>         69.2%    45.8   2025-12-01   62% ▇▇▇▇▇▇▇
-<a name="visual-weavebench"></a>WEAVE: Unleashing and…  <a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-t…</a>  66.9%    50.8   2025-11-14   29% ▇▇▇▇
-prior                   pull toward the middle                   49.9                 9% ▇
-                        weighted average                       = 47.6
+<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>         69.2%    46.2   2025-12-01   65% ▇▇▇▇▇▇▇▇
+<a name="visual-weavebench"></a>WEAVE: Unleashing and…  <a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-t…</a>  66.9%    51.1   2025-11-14   27% ▇▇▇
+prior                   pull toward the middle                   49.9                 8% ▇
+                        weighted average                       = 47.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~50.6GB   47.6
+bf16 · nvidia only  ~50.6GB   47.8
 </pre>
 
 ```sh

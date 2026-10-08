@@ -17,18 +17,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        2.7%    67.9   2026-03-26   23% ▇▇▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   5.8%    63.7   2026-03-26   10% ▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   6.2%    67.2   2026-03-26    9% ▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   5.8%    63.7   2026-03-26   11% ▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   6.2%    67.3   2026-03-26    9% ▇
 <a name="speech-gigaspeechbench-report"></a>GigaSpeechBench: A Re…  <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 7 Arabic di…</a>  41.1%    62.3   2026-06-27    5% ▇
                         <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 12 English …</a>  16.2%    59.1   2026-06-27    5% ▇
                         <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 6 English a…</a>  21.9%    57.4   2026-06-27    4% ▇
-<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench          <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  91.6%    68.8   2026-05-15    6% ▇
-                        <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (3…</a>   6.9%    59.8   2026-05-15    5% ▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   6.7%    65.9   2026-07-16    7% ▇
-<a name="speech-stt-botnoi-thai-report"></a>BOTNOI Thai telephony…  <a href="https://arxiv.org/html/2608.24916v1">BOTNOI report · FLEURS Thai C…</a>   6.2%    66.4   2026-08-03    4% ▇
+<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench          <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (3…</a>   6.9%    59.9   2026-05-15    6% ▇
+                        <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  91.6%    69.1   2026-05-15    5% ▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   6.7%    65.9   2026-07-16    8% ▇
+<a name="speech-stt-botnoi-thai-report"></a>BOTNOI Thai telephony…  <a href="https://arxiv.org/html/2608.24916v1">BOTNOI report · FLEURS Thai C…</a>   6.2%    66.5   2026-08-03    4% ▇
                         <a href="https://arxiv.org/html/2608.24916v1">BOTNOI Thai telephony · CER</a>     19.7%    63.7   2026-08-03    3% ▇
 <a name="speech-stt-persian-triple-threat-apache"></a>Persian ASR Triple Th…  <a href="https://huggingface.co/spaces/Reza2kn/PersianASR-TrippleThreat/blob/63e7e3f8b3754a92d6c0ac2a9db84344cf7e49bb/results.json">Persian ASR Triple Threat · V…</a>   4.1%    76.8   2026-08-25    5% ▇
-<a name="speech-stt-openbench-mit"></a>Argmax OpenBench · op…  <a href="https://github.com/argmaxinc/OpenBench/blob/e13108070b9693f2646e4a3e22e4b2d0130d779f/BENCHMARKS.md">Argmax OpenBench · earnings22…</a>  10.5%    66.1   2026-01-14    4% ▇
+<a name="speech-stt-openbench-mit"></a>Argmax OpenBench · op…  <a href="https://github.com/argmaxinc/OpenBench/blob/e13108070b9693f2646e4a3e22e4b2d0130d779f/BENCHMARKS.md">Argmax OpenBench · earnings22…</a>  10.5%    66.0   2026-01-14    4% ▇
 <a name="speech-stt-perle-cs-report"></a>Benchmarking Commerci…  <a href="https://arxiv.org/pdf/2605.19069v3">Perle code-switching benchmar…</a>  13.2%    73.8   2026-05-22    4% ▇
 <a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1    <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   3.9%    63.8   2026-07-05    3% ▇
 <a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  12.5%    70.3   2026-08-15    1% ▇

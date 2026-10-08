@@ -6,7 +6,7 @@
 
 Puyuan Peng et al. (UT Austin) · released 2024-04 · 0.83B params · coqui-public-model-license
 
-**score 32.6** ±7.2 · #79 of 98 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.7** ±7.3 · #79 of 98 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-amphion-maskgct-mit"></a>Amphion MaskGCT READM…  <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">LibriSpeech test-clean zero-s…</a>   4.7%    34.3   2024-10-20   42% ▇▇▇▇▇
-                        <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Seed-TTS test-en · Whisper la…</a>   7.6%    21.0   2024-10-20   37% ▇▇▇▇
-prior                   pull toward the middle                   49.8                21% ▇▇▇
-                        weighted average                       = 32.6
+<a name="speech-amphion-maskgct-mit"></a>Amphion MaskGCT READM…  <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">LibriSpeech test-clean zero-s…</a>   4.7%    34.3   2024-10-20   40% ▇▇▇▇▇
+                        <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Seed-TTS test-en · Whisper la…</a>   7.6%    21.4   2024-10-20   38% ▇▇▇▇▇
+prior                   pull toward the middle                   49.9                21% ▇▇▇
+                        weighted average                       = 32.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 version                                     needs  score
-fp32 (jasonppy/VoiceCraft repo) · nvidi…  ~4.53GB   32.6
+fp32 (jasonppy/VoiceCraft repo) · nvidi…  ~4.53GB   32.7
 </pre>
 
 ```sh

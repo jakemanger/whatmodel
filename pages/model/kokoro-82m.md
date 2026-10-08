@@ -6,7 +6,7 @@
 
 hexgrad · released 2025-01 · 0.082B params · apache-2.0
 
-**score 54.6** ±4.6 · #43 of 98 · from 4 benchmark results across 2 sources
+**score 54.5** ±4.4 · #43 of 98 · from 4 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Ident…</a>  3.50 / 5    61.0   2026-07-16   46% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form S…</a>  3.54 / 5    56.1   2026-07-16    5% ▇
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     25.9%    44.6   2025-08-10   29% ▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       13.4%    56.7   2025-08-10   12% ▇
-prior                   pull toward the middle                      49.8                 9% ▇
-                        weighted average                          = 54.6
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Ident…</a>  3.50 / 5    60.8   2026-07-16   43% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form S…</a>  3.54 / 5    56.2   2026-07-16    5% ▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     25.9%    46.6   2025-08-10   34% ▇▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       13.4%    57.4   2025-08-10   10% ▇
+prior                   pull toward the middle                      49.9                 8% ▇
+                        weighted average                          = 54.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,8 +36,8 @@ api (DeepInfra) · $0.62/M chars · [deepinfra.com](https://deepinfra.com/hexgra
 
 <pre>
 version                        needs  score
-bf16 · mac only               ~0.7GB   54.6
-fp32 (kokoro package 0.9.4)  ~0.33GB   54.6
+bf16 · mac only               ~0.7GB   54.5
+fp32 (kokoro package 0.9.4)  ~0.33GB   54.5
 </pre>
 
 ```sh

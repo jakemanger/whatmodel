@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 1.5B params · deepseek
 
-**score 28.2** ±3.9 · #125 of 136 · from 3 benchmark results across 2 sources
+**score 27.9** ±3.9 · #126 of 136 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  26.0%    23.9   2026-06-02   49% ▇▇▇▇▇▇
-<a name="report-2501.17811v1"></a>DeepSeek-AI             <a href="https://arxiv.org/html/2501.17811v1">GenEval (lab)</a>                   73.0%    28.2   2025-01-29   25% ▇▇▇
-                        <a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                 82.6%    31.9   2025-01-29   19% ▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  26.0%    24.1   2026-06-02   51% ▇▇▇▇▇▇
+<a name="report-2501.17811v1"></a>DeepSeek-AI             <a href="https://arxiv.org/html/2501.17811v1">GenEval (lab)</a>                   73.0%    27.3   2025-01-29   23% ▇▇▇
+                        <a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                 82.6%    31.3   2025-01-29   19% ▇▇
 prior                   pull toward the middle                   49.9                 6% ▇
-                        weighted average                       = 28.2
+                        weighted average                       = 27.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,7 +35,7 @@ api (DeepInfra) · $0.0005/image · [deepinfra.com](https://deepinfra.com/deepse
 
 <pre>
 version              needs  score
-bf16 · nvidia only  ~5.5GB   28.2
+bf16 · nvidia only  ~5.5GB   27.9
 </pre>
 
 ```sh

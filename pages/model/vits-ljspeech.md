@@ -6,7 +6,7 @@
 
 Kakao / KAIST · released 2021-06
 
-**score 68.3** ±22.5 · #1 of 1 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 67.4** ±24.0 · #1 of 1 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [VITS 2021 LJ Speech human MOS](https://whatmodel.sh/tts?set=vits2021-ljspeech-mos&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  weight
-<a name="speech-vits-icml2021"></a>VITS: ICML 2021 origi…  <a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS 2021 LJ Speech human MOS…</a>  4.43 / 5    80.0    61% ▇▇▇▇▇▇▇
-prior                   pull toward the middle                      50.0    39% ▇▇▇▇▇
-                        weighted average                          = 68.3
+<a name="speech-vits-icml2021"></a>VITS: ICML 2021 origi…  <a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS 2021 LJ Speech human MOS…</a>  4.43 / 5    81.1    53% ▇▇▇▇▇▇
+prior                   pull toward the middle                      52.1    47% ▇▇▇▇▇▇
+                        weighted average                          = 67.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                      50.0    39% 
 
 <pre>
 version                                     needs  score
-fp32 (jaywalnut310/vits repo) · nvidia …  ~0.15GB   68.3
+fp32 (jaywalnut310/vits repo) · nvidia …  ~0.15GB   67.4
 </pre>
 
 ```sh

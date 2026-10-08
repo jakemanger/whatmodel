@@ -6,7 +6,7 @@
 
 Lightricks · released 2026-08 · 22B params · ltx-2.x-community
 
-**score 68.0** ±5.2 · #16 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 68.0** ±5.2 · #15 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

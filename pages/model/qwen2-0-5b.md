@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-06 · 0.49B params · apache-2.0
 
-**score 21.8** ±2.0 · #532 of 548 · from 7 benchmark results across 3 sources
+**score 20.2** ±2.2 · #534 of 549 · from 7 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,20 +14,20 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card2-qwen-qwen2-0-5b-instruct"></a>Qwen2-0.5B-Instruct m…  <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">HumanEval (lab)</a>                 17.1%    20.4   2024-06-03   22% ▇▇▇
-                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">GSM8K (lab)</a>                     40.1%    21.3   2024-06-03   19% ▇▇
-                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">MMLU (lab)</a>                      37.9%    19.0   2024-06-03   14% ▇▇
-                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">C-Eval (lab)</a>                    45.2%    15.9   2024-06-03    8% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">IFEval prompt-level strict (l…</a>  20.0%    20.5   2024-06-03    5% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  44.4%    23.2   2024-06-07   17% ▇▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  30.6%    26.0   2026-09-19   13% ▇▇
+<a name="card2-qwen-qwen2-0-5b-instruct"></a>Qwen2-0.5B-Instruct m…  <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">HumanEval (lab)</a>                 17.1%    20.0   2024-06-03   25% ▇▇▇
+                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">GSM8K (lab)</a>                     40.1%    20.4   2024-06-03   19% ▇▇
+                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">MMLU (lab)</a>                      37.9%    17.9   2024-06-03   14% ▇▇
+                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">C-Eval (lab)</a>                    45.2%    16.3   2024-06-03   11% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">IFEval prompt-level strict (l…</a>  20.0%    20.1   2024-06-03    6% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  30.6%    24.5   2026-09-19   11% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  44.4%    16.5   2024-06-07   11% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 21.8
+                        weighted average                       = 20.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Qwen2-0.5B-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Qwen2-0.5B-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -35,8 +35,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~0.79GB   21.8
-8-bit q8_0    ~1.09GB   21.8
+4-bit q4_k_m  ~0.79GB   20.2
+8-bit q8_0    ~1.09GB   20.2
 </pre>
 
 ```sh

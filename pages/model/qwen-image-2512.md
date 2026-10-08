@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-12 · 20B params · apache-2.0
 
-**score 55.9** ±1.4 · #57 of 136 · from 6 benchmark results across 6 sources
+**score 55.2** ±1.3 · #58 of 136 · from 6 benchmark results across 6 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1125.4    59.8   2026-09-24   48% ▇▇▇▇▇▇
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   35.3%    52.5   2026-05-14   24% ▇▇▇
-<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>    5.8%    47.4   2026-09-28   15% ▇▇
-<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>   53.2%    58.0   2026-06-09    6% ▇
-<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI pro…</a>   84.3%    58.0   2026-06-23    4% ▇
-<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   52.1%    59.0   2026-05-27    3% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1125.4    59.9   2026-09-24   37% ▇▇▇▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   35.3%    52.9   2026-05-14   30% ▇▇▇▇
+<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>    5.8%    48.6   2026-09-28   21% ▇▇▇
+<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>   53.2%    57.5   2026-06-09    5% ▇
+<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI pro…</a>   84.3%    58.2   2026-06-23    4% ▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   52.1%    59.1   2026-05-27    3% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 55.9
+                        weighted average                        = 55.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,7 +38,7 @@ api (Replicate) · $0.020/image · [replicate.com](https://replicate.com/qwen/qw
 
 <pre>
 version                                     needs  score
-gguf-q4_k_m (Unsloth) + Qwen2.5-VL Q4_K…  ~22.4GB   55.9
+gguf-q4_k_m (Unsloth) + Qwen2.5-VL Q4_K…  ~22.4GB   55.2
 </pre>
 
 ```sh

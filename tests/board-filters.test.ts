@@ -43,6 +43,8 @@ test('models listed by their API also say when a download runs locally', () => {
   assert.equal(glm('').where, 'api');
   assert.equal(glm('').also_local, true, 'no machine given: any download counts');
   assert.match(whereLabel(glm('')), /\+local$/);
+  assert.ok(glm('').mem_gb! > 0, 'a model listed by its API still shows what its download needs');
+  assert.ok(!view().rows.some((r) => r.where === 'api' && !r.also_local && r.mem_gb !== null && !modelsIn('llm').find((m) => m.id === r.id)?.local?.variants.length), 'API-only models show no RAM');
   assert.equal(glm('ram=64&gpu=apple').also_local, false, 'a download too big for this machine does not count');
   assert.equal(glm('max=0').where, 'local');
   assert.ok(!view().rows.some((r) => r.also_local && r.where !== 'api'));

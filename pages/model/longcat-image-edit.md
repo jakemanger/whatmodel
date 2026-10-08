@@ -6,7 +6,7 @@
 
 Meituan · released 2025-12 · 6.27B params · apache-2.0
 
-**score 51.8** ±2.7 · #69 of 136 · from 5 benchmark results across 5 sources
+**score 52.5** ±2.4 · #68 of 136 · from 5 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>       53.0%    54.3   2026-05-13   50% ▇▇▇▇▇▇
-<a name="visual-chartsync"></a>ChartSync: A Benchmar…  <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Over…</a>   47.3%    47.7   2026-07-11   17% ▇▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1001.0    54.6   2026-03-30   15% ▇▇
-<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>    3.6%    45.7   2026-05-29   11% ▇
-<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>   32.2%    45.9   2026-03-26    4% ▇
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>       53.0%    54.9   2026-05-13   51% ▇▇▇▇▇▇
+<a name="visual-chartsync"></a>ChartSync: A Benchmar…  <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Over…</a>   47.3%    49.1   2026-07-11   21% ▇▇▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1001.0    54.9   2026-03-30   14% ▇▇
+<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>    3.6%    45.6   2026-05-29    7% ▇
+<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>   32.2%    47.2   2026-03-26    5% ▇
 prior                   pull toward the middle                    49.9                 3% ▇
-                        weighted average                        = 51.8
+                        weighted average                        = 52.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -47,7 +47,7 @@ api (fal.ai) · $0.15/image · [fal.ai](https://fal.ai/models/fal-ai/longcat-ima
 
 <pre>
 version                                   needs  score
-bf16 + model CPU offload · nvidia only  ~35.7GB   51.8
+bf16 + model CPU offload · nvidia only  ~35.7GB   52.5
 </pre>
 
 ```sh

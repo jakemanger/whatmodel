@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · 235B params (22B active) · apache-2.0
 
-**score 64.1** ±1.3 · #114 of 548 · from 20 benchmark results across 2 sources
+**score 64.1** ±1.3 · #117 of 549 · from 20 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -15,25 +15,25 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                             score  implies  date        weight
 <a name="card2-qwen-qwen3-vl-235b-a22b-instruct"></a>Qwen3-VL-235B-A22B-In…  <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">AIME 2025 (lab)</a>                  74.7%    65.9   2025-09-22    8% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">HMMT 2025 (edition unspecifie…</a>   57.4%    64.9   2025-09-22    5% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">MMLU-Pro (lab)</a>                   81.8%    63.2   2025-09-22    5% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">Arena-Hard v2 aggregate (lab)</a>    77.4%    62.9   2025-09-22    5% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">HMMT 2025 (edition unspecifie…</a>   57.4%    64.9   2025-09-22    5% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">LiveCodeBench v6 (Feb–May 202…</a>   54.3%    65.1   2025-09-22    5% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">MMLU-Redux (lab)</a>                 92.2%    62.3   2025-09-22    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">SimpleQA (lab)</a>                   51.9%    62.7   2025-09-22    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">LiveCodeBench v6 (Feb–May 202…</a>   54.3%    65.2   2025-09-22    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">MMLU-Redux (lab)</a>                 92.2%    62.3   2025-09-22    4% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">SimpleQA (lab)</a>                   51.9%    62.8   2025-09-22    4% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">INCLUDE (lab)</a>                    80.0%    64.5   2025-09-22    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">MultiPL-E (lab)</a>                  86.1%    61.6   2025-09-22    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">SuperGPQA (lab)</a>                  60.4%    62.6   2025-09-22    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">MMLU-ProX (lab)</a>                  77.8%    62.5   2025-09-22    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">Creative Writing v3 (lab)</a>        86.5%    62.6   2025-09-22    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">WritingBench (lab)</a>               85.5%    64.4   2025-09-22    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">ChineseSimpleQA (lab)</a>            83.4%    62.9   2025-09-22    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">SuperGPQA (lab)</a>                  60.4%    62.7   2025-09-22    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">MultiPL-E (lab)</a>                  86.1%    61.6   2025-09-22    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">MMLU-ProX (lab)</a>                  77.8%    62.6   2025-09-22    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">Creative Writing v3 (lab)</a>        86.5%    62.7   2025-09-22    2% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">LiveBench 2024-11-25 (lab)</a>       74.8%    63.5   2025-09-22    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">IFEval (aggregation unspecifi…</a>   87.8%    62.6   2025-09-22    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">Multi-IF (aggregation unspeci…</a>   76.3%    62.9   2025-09-22    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">BFCL v3 (lab)</a>                    67.7%    61.4   2025-09-22    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1413.4    64.8   2026-10-02   24% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1215.1    65.2   2026-10-02   17% ▇▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">Multi-IF (aggregation unspeci…</a>   76.3%    63.0   2025-09-22    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">ChineseSimpleQA (lab)</a>            83.4%    63.0   2025-09-22    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">WritingBench (lab)</a>               85.5%    64.5   2025-09-22    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">BFCL v3 (lab)</a>                    67.7%    61.1   2025-09-22    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance">IFEval (aggregation unspecifi…</a>   87.8%    62.3   2025-09-22    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1413.4    64.9   2026-10-02   22% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1215.1    65.3   2026-10-02   16% ▇▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 64.1
 </pre>

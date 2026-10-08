@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-04 · 7.25B params · tongyi-qianwen
 
-**score 50.3** ±0.9 · #257 of 548 · from 4 benchmark results across 1 source
+**score 49.9** ±1.0 · #260 of 549 · from 4 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      78.7%    50.5   2024-12-26   45% ▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       83.5%    50.6   2024-12-26   43% ▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           69.0%    49.7   2024-12-26    6% ▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--CodeQwen1.5-7B-Chat_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  74.1%    47.1   2024-10-27    5% ▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      78.7%    50.1   2024-12-26   47% ▇▇▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       83.5%    50.4   2024-12-26   39% ▇▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           69.0%    49.4   2024-12-26    7% ▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--CodeQwen1.5-7B-Chat_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  74.1%    47.0   2024-10-27    6% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 50.3
+                        weighted average                       = 49.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,8 +32,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.85GB   50.3
-8-bit q8_0     ~9.2GB   50.3
+4-bit q4_k_m  ~4.85GB   49.9
+8-bit q8_0     ~9.2GB   49.9
 </pre>
 
 ```sh

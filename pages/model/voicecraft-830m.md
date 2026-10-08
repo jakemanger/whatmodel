@@ -6,7 +6,7 @@
 
 Puyuan Peng et al. (UT Austin) · released 2024-03 · 0.83B params · coqui-public-model-license
 
-**score 34.5** ±4.3 · #76 of 98 · from 3 benchmark results across 1 source
+**score 34.1** ±4.4 · #76 of 98 · from 3 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-voicecraft-report-bysa"></a>VoiceCraft: Zero-Shot…  <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS list…</a>  4.17 / 5    36.5   2024-06-14   51% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>     55.0%    33.1   2024-06-14   21% ▇▇▇
-                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>      4.5%    25.7   2024-06-14   21% ▇▇
-prior                   pull toward the middle                      49.8                 7% ▇
-                        weighted average                          = 34.5
+<a name="speech-voicecraft-report-bysa"></a>VoiceCraft: Zero-Shot…  <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS list…</a>  4.17 / 5    36.1   2024-06-14   49% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>     55.0%    32.8   2024-06-14   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>      4.5%    25.3   2024-06-14   21% ▇▇▇
+prior                   pull toward the middle                      49.9                 8% ▇
+                        weighted average                          = 34.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle                      49.8        
 
 <pre>
 version                   needs  score
-fp32 (VoiceCraft repo)  ~4.53GB   34.5
+fp32 (VoiceCraft repo)  ~4.53GB   34.1
 </pre>
 
 ```sh

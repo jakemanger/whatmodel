@@ -6,7 +6,7 @@
 
 Kuaishou (Kling AI) · closed weights
 
-**score 62.7** ±4.6 · #22 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 62.6** ±4.6 · #22 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>                1255.3    64.3   2026-08-27   74% ▇▇▇▇▇▇▇▇▇
-<a name="visual-wrop-object-permanence"></a>Training Object Perma…  <a href="https://arxiv.org/html/2609.28654v1#S5.T2">WROP object-permanence exam (…</a>  1471.3    62.8   2026-09-23   17% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>                1255.3    64.2   2026-08-27   74% ▇▇▇▇▇▇▇▇▇
+<a name="visual-wrop-object-permanence"></a>Training Object Perma…  <a href="https://arxiv.org/html/2609.28654v1#S5.T2">WROP object-permanence exam (…</a>  1471.3    62.7   2026-09-23   17% ▇▇
 prior                   pull toward the middle                    49.9                 9% ▇
-                        weighted average                        = 62.7
+                        weighted average                        = 62.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

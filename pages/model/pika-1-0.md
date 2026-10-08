@@ -6,7 +6,7 @@
 
 Pika · released 2023-11 · proprietary
 
-**score 32.7** ±3.0 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 32.3** ±2.9 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>   19.7%    36.1   2026-01-30   57% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>  29.0%    25.9   2026-01-30   22% ▇▇▇
-<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>  49.6%    26.6   2024-10-01   18% ▇▇
+<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>   19.7%    35.7   2026-01-30   54% ▇▇▇▇▇▇▇
+                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>  29.0%    26.3   2026-01-30   23% ▇▇▇
+<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>  49.6%    26.7   2024-10-01   20% ▇▇
 prior                   pull toward the middle                   49.9                 4% ▇
-                        weighted average                       = 32.7
+                        weighted average                       = 32.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

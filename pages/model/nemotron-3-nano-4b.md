@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-03 · 3.97B params · nvidia-open-model
 
-**score 46.3** ±2.6 · #299 of 548 · from 5 benchmark results across 1 source
+**score 46.0** ±2.8 · #298 of 549 · from 5 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="first-party-nvidia-scores"></a>NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">GPQA (subset unspecified) (la…</a>  53.2%    45.5   2026-03-16   28% ▇▇▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">LiveCodeBench (version unspec…</a>  51.8%    43.0   2026-03-16   24% ▇▇▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">AIME 2025 (lab)</a>                 78.5%    53.6   2026-03-16   21% ▇▇▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">MATH-500 (lab)</a>                  95.4%    42.6   2026-03-16   18% ▇▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">BFCL v3 (lab)</a>                   61.1%    46.2   2026-03-16    7% ▇
-prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 46.3
+<a name="first-party-nvidia-scores"></a>NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">AIME 2025 (lab)</a>                 78.5%    53.6   2026-03-16   25% ▇▇▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">GPQA (subset unspecified) (la…</a>  53.2%    44.3   2026-03-16   24% ▇▇▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">LiveCodeBench (version unspec…</a>  51.8%    42.0   2026-03-16   23% ▇▇▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">MATH-500 (lab)</a>                  95.4%    42.0   2026-03-16   18% ▇▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">BFCL v3 (lab)</a>                   61.1%    45.6   2026-03-16    7% ▇
+prior                   pull toward the middle                   50.0                 4% ▇
+                        weighted average                       = 46.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,11 +31,11 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 source                  test                            score  why
-nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">AIME 2025</a>                       78.5%  another source's result is used
-nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">MATH-500</a>                        95.4%  another source's result is used
-nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">GPQA (subset unspecified)</a>       53.2%  another source's result is used
-nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">LiveCodeBench (version unspec…</a>  51.8%  another source's result is used
-nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">BFCL v3</a>                         61.1%  another source's result is used
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">AIME 2025</a>                       78.5%  only model in this source's run
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">MATH-500</a>                        95.4%  only model in this source's run
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">GPQA (subset unspecified)</a>       53.2%  only model in this source's run
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">LiveCodeBench (version unspec…</a>  51.8%  only model in this source's run
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">BFCL v3</a>                         61.1%  only model in this source's run
 nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">IFEval prompt-level (strictne…</a>  87.9%  too few models have it yet
 </pre>
 
@@ -47,8 +47,8 @@ nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~2.88GB   46.3
-8-bit q8_0    ~5.26GB   46.3
+4-bit q4_k_m  ~2.88GB   46.0
+8-bit q8_0    ~5.26GB   46.0
 </pre>
 
 ```sh

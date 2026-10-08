@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-04 · 3.6B params · cc-by-sa-4.0
 
-**score 11.8** ±1.2 · #545 of 548 · from 11 benchmark results across 1 source
+**score 13.8** ±1.6 · #540 of 549 · from 11 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,19 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source        test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI  <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">ARC Challenge (lab)</a>             25.8%     9.1   2024-04-08   31% ▇▇▇▇
-              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">HellaSwag (lab)</a>                 38.3%    11.3   2024-04-08   14% ▇▇
-              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">ARC Easy (lab)</a>                  42.0%    13.0   2024-04-08   11% ▇
-              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">SciQ (lab)</a>                      71.7%     8.3   2024-04-08   11% ▇
-              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">PIQA (lab)</a>                      63.8%    12.2   2024-04-08    8% ▇
-              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">BoolQ (lab)</a>                     57.6%    17.3   2024-04-08    7% ▇
-              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">WinoGrande (lab)</a>                52.6%    16.7   2024-04-08    6% ▇
-              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">LAMBADA (OpenAI version), las…</a>  41.7%    15.4   2024-04-08    5% ▇
-              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">Social IQA (lab)</a>                35.6%     4.7   2024-04-08    3% ▇
-              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">OpenBookQA (lab)</a>                17.0%    13.8   2024-04-08    2% ▇
-              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">TruthfulQA MC2 (lab)</a>            40.5%    30.8   2024-04-08    1% ▇
+<a name="stablelm-original-eval-json"></a>Stability AI  <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">SciQ (lab)</a>                      71.7%    10.0   2024-04-08   30% ▇▇▇▇
+              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">HellaSwag (lab)</a>                 38.3%    13.1   2024-04-08   13% ▇▇
+              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">ARC Easy (lab)</a>                  42.0%    14.2   2024-04-08   13% ▇▇
+              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">PIQA (lab)</a>                      63.8%    13.5   2024-04-08   10% ▇
+              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">WinoGrande (lab)</a>                52.6%    14.8   2024-04-08    8% ▇
+              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">ARC Challenge (lab)</a>             25.8%    14.2   2024-04-08    7% ▇
+              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">LAMBADA (OpenAI version), las…</a>  41.7%    16.6   2024-04-08    7% ▇
+              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">BoolQ (lab)</a>                     57.6%    21.2   2024-04-08    6% ▇
+              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">Social IQA (lab)</a>                35.6%     9.7   2024-04-08    2% ▇
+              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">OpenBookQA (lab)</a>                17.0%     7.2   2024-04-08    1% ▇
+              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">TruthfulQA MC2 (lab)</a>            40.5%    35.0   2024-04-08    1% ▇
 prior         pull toward the middle                   50.0                 1% ▇
-              weighted average                       = 11.8
+              weighted average                       = 13.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -39,7 +39,7 @@ prior         pull toward the middle                   50.0                 1% �
 
 <pre>
 download        size  score
-4-bit fp32  ~14.82GB   11.8
+4-bit fp32  ~14.82GB   13.8
 </pre>
 
 ```sh

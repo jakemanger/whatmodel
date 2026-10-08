@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-03 · closed weights
 
-**score 58.2** ±2.2 · comparison only: no current run option verified · from 12 benchmark results across 7 sources
+**score 58.7** ±2.2 · comparison only: no current run option verified · from 12 benchmark results across 7 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,20 +16,20 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                score  implies  date        weight
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acoustic Qu…</a>   3.34 / 5    62.0   2026-07-16   14% ▇▇
-                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Language Co…</a>   3.34 / 5    63.7   2026-07-16    8% ▇
-                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Expressiven…</a>   3.23 / 5    62.4   2026-07-16    5% ▇
-<a name="speech-rime-alpha-bench-ccby"></a>Rime Alpha TTS Benchm…  <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/supportbench/supportbench_results.json">Rime SupportBench · paired hu…</a>  -0.90 / 2    52.7   2026-09-13   14% ▇▇
-                        <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/contentbench/contentbench_results.json">Rime ContentBench · paired hu…</a>  -0.31 / 2    57.8   2026-09-13   12% ▇
-<a name="speech-instructttseval-ccby"></a>InstructTTSEval: inst…  <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval ZH · mean ins…</a>      51.1%    52.0   2025-06-19   14% ▇▇
-                        <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval EN · mean ins…</a>      68.5%    49.5   2025-06-19    5% ▇
-<a name="speech-voicefirst-indic-ccby"></a>Preferences of a Voic…  <a href="https://arxiv.org/html/2604.21481v2">Voice-First Nation · 10 India…</a>      942.8    56.9   2026-04-23   12% ▇
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>      60.2%    72.4   2025-08-10    7% ▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>        10.8%    67.4   2025-08-10    3% ▇
-<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>   4.20 / 5    61.2   2025-05-29    4% ▇
-<a name="speech-amharic-addis-bysa"></a>Addis AI Amharic TTS …  <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (…</a>      18.7%  -221.9   2026-08-12    0% ▇
-prior                   pull toward the middle                       49.8                 2% ▇
-                        weighted average                           = 58.2
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acoustic Qu…</a>   3.34 / 5    61.9   2026-07-16   15% ▇▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Language Co…</a>   3.34 / 5    63.6   2026-07-16    9% ▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Expressiven…</a>   3.23 / 5    62.3   2026-07-16    4% ▇
+<a name="speech-rime-alpha-bench-ccby"></a>Rime Alpha TTS Benchm…  <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/supportbench/supportbench_results.json">Rime SupportBench · paired hu…</a>  -0.90 / 2    52.5   2026-09-13   13% ▇▇
+                        <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/contentbench/contentbench_results.json">Rime ContentBench · paired hu…</a>  -0.31 / 2    57.4   2026-09-13   11% ▇
+<a name="speech-instructttseval-ccby"></a>InstructTTSEval: inst…  <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval ZH · mean ins…</a>      51.1%    53.0   2025-06-19   16% ▇▇
+                        <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval EN · mean ins…</a>      68.5%    49.5   2025-06-19    4% ▇
+<a name="speech-voicefirst-indic-ccby"></a>Preferences of a Voic…  <a href="https://arxiv.org/html/2604.21481v2">Voice-First Nation · 10 India…</a>      942.8    56.7   2026-04-23   12% ▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>      60.2%    72.3   2025-08-10    9% ▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>        10.8%    68.0   2025-08-10    3% ▇
+<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>   4.20 / 5    64.2   2025-05-29    2% ▇
+<a name="speech-amharic-addis-bysa"></a>Addis AI Amharic TTS …  <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (…</a>      18.7%  -221.3   2026-08-12    0% ▇
+prior                   pull toward the middle                       49.9                 2% ▇
+                        weighted average                           = 58.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

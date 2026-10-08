@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-04 · 3B params · apache-2.0
 
-**score 18.9** ±2.6 · #536 of 548 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 17.8** ±2.8 · #536 of 549 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          992.5    17.9   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle           50.0                 3% ▇
-                        weighted average               = 18.9
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          992.5    16.6   2026-10-02   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle           50.0                 4% ▇
+                        weighted average               = 17.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,8 +27,8 @@ prior                   pull toward the middle           50.0                 3%
 
 <pre>
 download                     size  score
-4-bit fp16 · nvidia only  ~6.71GB   18.9
-4-bit fp16 · mac only     ~6.71GB   18.9
+4-bit fp16 · nvidia only  ~6.71GB   17.8
+4-bit fp16 · mac only     ~6.71GB   17.8
 </pre>
 
 ```sh

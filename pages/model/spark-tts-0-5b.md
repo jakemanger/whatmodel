@@ -6,7 +6,7 @@
 
 SparkAudio · released 2025-02 · 0.5B params · cc-by-nc-sa-4.0
 
-**score 45.6** ±3.9 · #62 of 98 · from 6 benchmark results across 2 sources
+**score 46.0** ±3.8 · #63 of 98 · from 6 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-dmospeech2-report-bysa"></a>DMOSpeech 2: Reinforc…  <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker si…</a>  65.7%    43.1   2025-07-20   23% ▇▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker si…</a>  57.2%    42.8   2025-07-20   18% ▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer…</a>   1.7%    58.0   2025-07-20   14% ▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper la…</a>   2.3%    56.7   2025-07-20   13% ▇▇
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  41.0%    37.4   2026-05-24   26% ▇▇▇
-                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  33.0%  -125.1   2026-05-24    0% ▇
-prior                   pull toward the middle                   49.8                 6% ▇
-                        weighted average                       = 45.6
+<a name="speech-dmospeech2-report-bysa"></a>DMOSpeech 2: Reinforc…  <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker si…</a>  65.7%    43.8   2025-07-20   25% ▇▇▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker si…</a>  57.2%    43.7   2025-07-20   20% ▇▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper la…</a>   2.3%    57.1   2025-07-20   13% ▇▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer…</a>   1.7%    58.5   2025-07-20   13% ▇▇
+<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  41.0%    37.2   2026-05-24   24% ▇▇▇
+                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  33.0%  -150.0   2026-05-24    0% ▇
+prior                   pull toward the middle                   49.9                 6% ▇
+                        weighted average                       = 46.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,10 +34,10 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 source                  test                            score  why
-Spark-TTS: An Efficie…  <a href="https://arxiv.org/html/2503.01710v1">Seed-TTS test-zh · Paraformer…</a>   1.2%  another source's result is used
-Spark-TTS: An Efficie…  <a href="https://arxiv.org/html/2503.01710v1">Seed-TTS test-zh · speaker si…</a>  67.2%  another source's result is used
-Spark-TTS: An Efficie…  <a href="https://arxiv.org/html/2503.01710v1">Seed-TTS test-en · Whisper la…</a>   2.0%  another source's result is used
-Spark-TTS: An Efficie…  <a href="https://arxiv.org/html/2503.01710v1">Seed-TTS test-en · speaker si…</a>  58.4%  another source's result is used
+Spark-TTS: An Efficie…  <a href="https://arxiv.org/html/2503.01710v1">Seed-TTS test-zh · Paraformer…</a>   1.2%  only model in this source's run
+Spark-TTS: An Efficie…  <a href="https://arxiv.org/html/2503.01710v1">Seed-TTS test-zh · speaker si…</a>  67.2%  only model in this source's run
+Spark-TTS: An Efficie…  <a href="https://arxiv.org/html/2503.01710v1">Seed-TTS test-en · Whisper la…</a>   2.0%  only model in this source's run
+Spark-TTS: An Efficie…  <a href="https://arxiv.org/html/2503.01710v1">Seed-TTS test-en · speaker si…</a>  58.4%  only model in this source's run
 </pre>
 
 </details>
@@ -46,8 +46,8 @@ Spark-TTS: An Efficie…  <a href="https://arxiv.org/html/2503.01710v1">Seed-TTS
 
 <pre>
 version                                  needs  score
-fp32 (Spark-TTS repo CLI)              ~3.92GB   45.6
-mlx-bf16 (mlx-audio 0.5.x) · mac only   ~2.9GB   45.6
+fp32 (Spark-TTS repo CLI)              ~3.92GB   46.0
+mlx-bf16 (mlx-audio 0.5.x) · mac only   ~2.9GB   46.0
 </pre>
 
 ```sh

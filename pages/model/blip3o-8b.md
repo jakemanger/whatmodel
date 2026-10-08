@@ -6,7 +6,7 @@
 
 Salesforce Research · released 2025-05 · 8B params · apache-2.0
 
-**score 36.6** ±2.5 · #110 of 136 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 38.0** ±3.0 · #104 of 136 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   6.7%    34.3   2026-05-14   77% ▇▇▇▇▇▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  52.0%    43.3   2026-06-02   21% ▇▇
-prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 36.6
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   6.7%    34.5   2026-05-14   62% ▇▇▇▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  52.0%    42.9   2026-06-02   35% ▇▇▇▇
+prior                   pull toward the middle                   49.9                 4% ▇
+                        weighted average                       = 38.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version                                     needs  score
-bf16 (official inference.py) · nvidia o…  ~41.3GB   36.6
+bf16 (official inference.py) · nvidia o…  ~41.3GB   38.0
 </pre>
 
 ```sh

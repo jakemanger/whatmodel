@@ -6,7 +6,7 @@
 
 OpenAI · released 2019-11 · 1.558B params · mit
 
-**score 25.9** ±1.0 · #519 of 548 · from 24 benchmark results across 5 sources
+**score 26.7** ±0.9 · #512 of 549 · from 25 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -14,37 +14,38 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      58.3%    26.2   2023-09-11   11% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       40.0%    24.5   2023-09-11    6% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        58.3%    24.6   2023-09-11    5% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           61.8%    24.4   2023-09-11    5% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            70.5%    24.1   2023-09-11    3% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                      39.4%    20.2   2023-09-11    2% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   25.0%     9.1   2023-09-11    2% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      22.4%    14.4   2023-09-11    1% ▇
-<a name="eleutherai-gpt-j-6b-card"></a>EleutherAI GPT-J-6B m…  <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande</a>                      59.4%    29.1   2021-08-06   13% ▇▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                       50.9%    23.7   2021-08-06    8% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  51.2%    20.4   2021-08-06    4% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                            70.8%    22.6   2021-08-06    3% ▇
-<a name="acl-2021-emnlp-main-564"></a>Surface Form Competit…  <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Challenge</a>                   25.2%    24.5   2021-11-01    8% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">OpenBookQA</a>                      22.4%    24.5   2021-11-01    6% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                            69.0%    28.5   2021-11-01    3% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Story Cloze Test</a>                67.6%    30.8   2021-11-01    3% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Easy</a>                        56.2%    31.4   2021-11-01    3% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">HellaSwag</a>                       38.4%    34.5   2021-11-01    3% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">CommonsenseQA</a>                   38.6%    39.0   2021-11-01    1% ▇
-<a name="copen-emnlp2022-zero-shot"></a>COPEN                   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>  11.7%    32.2   2022-12-07    3% ▇
-                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  37.0%    27.3   2022-12-07    3% ▇
-                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  47.1%  -163.0   2022-12-07    0% ▇
-<a name="eleutherai-gpt-neo-2-7b-card"></a>EleutherAI GPT-Neo 2.…  <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">PubMedQA</a>                        58.3%    26.3   2021-04-12    3% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA</a>                          23.6%    19.5   2021-04-12    2% ▇
+<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      58.3%    26.5   2023-09-11    7% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        58.3%    25.5   2023-09-11    5% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           61.8%    25.9   2023-09-11    5% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   25.0%    19.4   2023-09-11    4% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       40.0%    25.8   2023-09-11    4% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            70.5%    25.1   2023-09-11    3% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      22.4%    19.7   2023-09-11    2% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                      39.4%    22.6   2023-09-11    2% ▇
+<a name="acl-2021-emnlp-main-564"></a>Surface Form Competit…  <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">OpenBookQA</a>                      22.4%    26.8   2021-11-01   13% ▇▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">HellaSwag</a>                       38.4%    27.7   2021-11-01    5% ▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Easy</a>                        56.2%    25.2   2021-11-01    3% ▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Challenge</a>                   25.2%    40.4   2021-11-01    3% ▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Story Cloze Test</a>                67.6%    25.4   2021-11-01    3% ▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">CommonsenseQA</a>                   38.6%    30.8   2021-11-01    3% ▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                            69.0%    22.8   2021-11-01    2% ▇
+<a name="eleutherai-gpt-j-6b-card"></a>EleutherAI GPT-J-6B m…  <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande</a>                      59.4%    29.6   2021-08-06    8% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                       50.9%    24.7   2021-08-06    8% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  51.2%    21.0   2021-08-06    4% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                            70.8%    23.5   2021-08-06    3% ▇
+<a name="copen-emnlp2022-zero-shot"></a>COPEN                   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  37.0%    30.5   2022-12-07    5% ▇
+                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>  11.7%    39.1   2022-12-07    0% ▇
+                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  47.1%   -12.3   2022-12-07    0% ▇
+<a name="eleutherai-gpt-neo-2-7b-card"></a>EleutherAI GPT-Neo 2.…  <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">PubMedQA</a>                        58.3%    27.4   2021-04-12    3% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA</a>                          23.6%    21.3   2021-04-12    2% ▇
+<a name="acl-2021-findings-acl-404-prost"></a>PROST                   <a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zer…</a>  30.1%    35.4   2021-08-01    4% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 25.9
+                        weighted average                       = 26.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · Surface Form Competition ([CC BY 4.0](../../licenses/acl-2021-emnlp-main-564-CC-BY-4.0.txt)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt)) · EleutherAI GPT-Neo 2.7B model card ([MIT](../../licenses/eleutherai-gpt-neo-2-7b-card-MIT.txt))</sub>
+<sub>Licences: Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Surface Form Competition ([CC BY 4.0](../../licenses/acl-2021-emnlp-main-564-CC-BY-4.0.txt)) · EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt)) · EleutherAI GPT-Neo 2.7B model card ([MIT](../../licenses/eleutherai-gpt-neo-2-7b-card-MIT.txt)) · PROST ([CC BY 4.0](../../licenses/_cc-by-4.0-legalcode.txt))</sub>
 
 ## How to run it
 
@@ -52,7 +53,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp32  ~6.43GB   25.9
+4-bit fp32  ~6.43GB   26.7
 </pre>
 
 ```sh

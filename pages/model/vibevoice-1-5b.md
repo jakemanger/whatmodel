@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-08 · 2.7B params · mit
 
-**score 48.4** ±6.2 · #56 of 98 · from 3 benchmark results across 2 sources
+**score 48.4** ±6.2 · #57 of 98 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -17,9 +17,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                               score  implies  date        weight
 <a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     48.0%    45.3   2026-05-24   64% ▇▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     23.0%   -65.9   2026-05-24    0% ▇
-<a name="speech-vibevoice-mit-figure"></a>Microsoft VibeVoice o…  <a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preferenc…</a>  3.43 / 5    59.5   2026-09-25   20% ▇▇
-prior                   pull toward the middle                      49.8                15% ▇▇
+                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     23.0%   -82.2   2026-05-24    0% ▇
+<a name="speech-vibevoice-mit-figure"></a>Microsoft VibeVoice o…  <a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preferenc…</a>  3.43 / 5    59.3   2026-09-25   20% ▇▇
+prior                   pull toward the middle                      49.9                16% ▇▇
                         weighted average                          = 48.4
 </pre>
 

@@ -6,7 +6,7 @@
 
 Together · released 2023-05 · 2.8B params · apache-2.0
 
-**score 32.3** ±2.6 · #477 of 548 · from 4 benchmark results across 1 source
+**score 33.3** ±2.7 · #470 of 549 · from 4 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source     test                            score  implies  date        weight
-<a name="redpajama-2024-original-zero-shot"></a>RedPajama  <a href="https://arxiv.org/html/2411.12372v1">WinoGrande (lab)</a>                63.2%    32.7   2024-11-19   48% ▇▇▇▇▇▇
-           <a href="https://arxiv.org/html/2411.12372v1">HellaSwag (lab)</a>                 63.2%    31.7   2024-11-19   26% ▇▇▇
-           <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  65.4%    29.5   2024-11-19   14% ▇▇
-           <a href="https://arxiv.org/html/2411.12372v1">PIQA (lab)</a>                      74.7%    30.7   2024-11-19    9% ▇
+<a name="redpajama-2024-original-zero-shot"></a>RedPajama  <a href="https://arxiv.org/html/2411.12372v1">WinoGrande (lab)</a>                63.2%    34.0   2024-11-19   45% ▇▇▇▇▇
+           <a href="https://arxiv.org/html/2411.12372v1">HellaSwag (lab)</a>                 63.2%    32.5   2024-11-19   28% ▇▇▇
+           <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  65.4%    30.3   2024-11-19   14% ▇▇
+           <a href="https://arxiv.org/html/2411.12372v1">PIQA (lab)</a>                      74.7%    31.5   2024-11-19   10% ▇
 prior      pull toward the middle                   50.0                 3% ▇
-           weighted average                       = 32.3
+           weighted average                       = 33.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +32,7 @@ prior      pull toward the middle                   50.0                 3% ▇
 
 <pre>
 download       size  score
-4-bit fp16  ~5.69GB   32.3
+4-bit fp16  ~5.69GB   33.3
 </pre>
 
 ```sh

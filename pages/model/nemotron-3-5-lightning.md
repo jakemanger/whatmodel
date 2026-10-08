@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-08 · 31.6B params (3.6B active) · openmdw-1.1
 
-**score 59.3** ±1.9 · #159 of 548 · from 3 benchmark results across 2 sources
+**score 59.6** ±2.0 · #156 of 549 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1349.5    57.7   2026-10-02   52% ▇▇▇▇▇▇
-<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   52.9%    63.5   2026-09-07   24% ▇▇▇
-                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   87.7%    59.5   2026-09-07   22% ▇▇▇
+<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   52.9%    63.5   2026-09-07   31% ▇▇▇▇
+                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   87.7%    59.1   2026-09-07   20% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1349.5    57.6   2026-10-02   48% ▇▇▇▇▇▇
 prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 59.3
+                        weighted average                        = 59.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt))</sub>
+<sub>Licences: Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -33,9 +33,9 @@ api (Fireworks AI) · $0.088/M blended · $0.05 in / $0.2 out per 1M tokens · [
 
 <pre>
 download                        size  score
-4-bit q4_k_m                ~19.46GB   59.3
-8-bit q8_0                  ~38.42GB   59.3
-4-bit mlx-nvfp4 · mac only  ~19.46GB   59.3
+4-bit q4_k_m                ~19.46GB   59.6
+8-bit q8_0                  ~38.42GB   59.6
+4-bit mlx-nvfp4 · mac only  ~19.46GB   59.6
 </pre>
 
 ```sh

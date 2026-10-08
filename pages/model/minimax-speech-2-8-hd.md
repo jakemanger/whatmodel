@@ -6,7 +6,7 @@
 
 MiniMax · released 2026-02 · proprietary
 
-**score 64.5** ±2.0 · #15 of 98 · from 6 benchmark results across 3 sources
+**score 64.4** ±2.0 · #15 of 98 · from 6 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>   4.9%    66.1   2026-07-27   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>           7.4%    63.6   2026-07-27   23% ▇▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>           7.4%    67.9   2026-07-27   11% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added la…</a>   2.8%    70.9   2026-07-27    8% ▇
-<a name="speech-cn-news-tts-ccby"></a>CN-NewsTTS Bench v0.1   <a href="https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv">CN-NewsTTS v0.1 · strict pron…</a>  54.8%    62.4   2026-06-22   22% ▇▇▇
+<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>   4.9%    66.1   2026-07-27   23% ▇▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>           7.4%    63.5   2026-07-27   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>           7.4%    67.8   2026-07-27   10% ▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added la…</a>   2.8%    70.7   2026-07-27    8% ▇
+<a name="speech-cn-news-tts-ccby"></a>CN-NewsTTS Bench v0.1   <a href="https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv">CN-NewsTTS v0.1 · strict pron…</a>  54.8%    62.4   2026-06-22   25% ▇▇▇
 <a name="speech-voicefirst-indic-ccby"></a>Preferences of a Voic…  <a href="https://arxiv.org/html/2604.21481v2">Voice-First Nation · 10 India…</a>  993.9    60.8   2026-04-23   10% ▇
-prior                   pull toward the middle                   49.8                 2% ▇
-                        weighted average                       = 64.5
+prior                   pull toward the middle                   49.9                 2% ▇
+                        weighted average                       = 64.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

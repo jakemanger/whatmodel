@@ -71,7 +71,10 @@ fabricated accuracy or Elo conversion. Lower-is-better distances keep their raw 
   the scoring code reads each result against the other models in the same evaluator's run, so it withholds
   runs with one model and benchmarks with fewer than three models across runs. Do not discard genuine evidence to meet
   a coverage target, or manufacture extra independent tests from correlated subtasks.
-- Don't edit or delete existing results unless the source page has changed. Say so in the PR if it has.
+- Don't edit or delete existing results unless the source page has changed. If a result is a failed run, not a
+  measurement of ability, keep it and set `invalid` to the reason: the source flags the run as failed, it scores
+  far below the test's random baseline (wrong format or unparsed answers), or it is structurally impossible
+  (e.g. 0% on every function-calling category). Invalid results stay visible on model pages but are kept out of scores. Say so in the PR if it has.
 - A model whose API and weights are both gone stays (it anchors the fit) with `api: null` and no variants;
   it's no longer listed.
 

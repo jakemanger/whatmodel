@@ -6,7 +6,7 @@
 
 Google · released 2025-02 · proprietary
 
-**score 59.0** ±1.5 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 59.1** ±1.3 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    83.5%    59.6   2025-02-06   37% ▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    65.7%    60.5   2025-02-07   15% ▇▇
-<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>  35.6%    58.3   2025-02-25   46% ▇▇▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    65.7%    59.6   2025-02-07   36% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    83.5%    60.2   2025-02-06   28% ▇▇▇
+<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>  35.6%    57.8   2025-02-25   36% ▇▇▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 59.0
+                        weighted average                       = 59.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

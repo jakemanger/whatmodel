@@ -6,7 +6,7 @@
 
 VITS study (public implementations) · released 2021-06
 
-**score 23.8** ±22.5 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 23.4** ±20.6 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [VITS 2021 LJ Speech human MOS](https://whatmodel.sh/tts?set=vits2021-ljspeech-mos&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                              score  implies  weight
-<a name="speech-vits-icml2021"></a>VITS: ICML 2021 origi…  <a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS 2021 LJ Speech human MOS</a>  3.77 / 5     7.0    61% ▇▇▇▇▇▇▇
-prior                   pull toward the middle                     50.0    39% ▇▇▇▇▇
-                        weighted average                         = 23.8
+<a name="speech-vits-icml2021"></a>VITS: ICML 2021 origi…  <a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS 2021 LJ Speech human MOS</a>  3.77 / 5     8.1    65% ▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                     52.1    35% ▇▇▇▇
+                        weighted average                         = 23.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

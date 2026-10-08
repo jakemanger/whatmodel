@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-09 · closed weights
 
-**score 62.3** ±4.3 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 62.4** ±4.3 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -17,9 +17,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="speech-stt-qwen-audio3-asr-report"></a>Qwen-Audio-3.0-ASR Te…  <a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR report · C…</a>   2.4%    63.9   2026-09-09   55% ▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR report · E…</a>   2.5%    62.4   2026-09-09   38% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR report · E…</a>   2.5%    62.5   2026-09-09   38% ▇▇▇▇▇
 prior                   pull toward the middle                   49.7                 7% ▇
-                        weighted average                       = 62.3
+                        weighted average                       = 62.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

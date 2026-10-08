@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2023-03 · 6.2B params · chatglm-6b-license
 
-**score 22.0** ±2.1 · #531 of 548 · from 4 benchmark results across 2 sources
+**score 21.3** ±2.5 · #529 of 549 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          995.8    18.3   2026-10-02   62% ▇▇▇▇▇▇▇
-<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>                3.1%    19.2   2024-03-10   17% ▇▇
-                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>          31.3%    33.1   2024-03-10   10% ▇
-                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                    36.1%    34.5   2024-03-10    9% ▇
-prior                   pull toward the middle           50.0                 2% ▇
-                        weighted average               = 22.0
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          995.8    16.9   2026-10-02   76% ▇▇▇▇▇▇▇▇▇
+<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                    36.1%    36.5   2024-03-10    8% ▇
+                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>          31.3%    39.1   2024-03-10    7% ▇
+                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>                3.1%    21.9   2024-03-10    6% ▇
+prior                   pull toward the middle           50.0                 3% ▇
+                        weighted average               = 21.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle           50.0                 2%
 
 <pre>
 download                      size  score
-4-bit fp16 · nvidia only  ~13.42GB   22.0
+4-bit fp16 · nvidia only  ~13.42GB   21.3
 </pre>
 
 ```sh

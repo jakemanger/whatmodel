@@ -23,7 +23,7 @@ source                  test                            score  implies  date    
 <a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-tdt-0.6b-v2.json">LibriSpeech test-clean WER</a>       1.7%    60.1   2026-09-15   12% ▇
                         <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-tdt-0.6b-v2.json">FLEURS English test WER</a>          4.1%    62.2   2026-09-15    5% ▇
 <a name="speech-stt-yoruba-cs-report"></a>Switch-aware evaluati…  <a href="https://arxiv.org/html/2609.11786v1">AfriCodeSwitch English-Yoruba…</a>  66.1%    62.7   2026-09-10    8% ▇
-<a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   2.0%    68.2   2026-07-19    4% ▇
+<a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   2.0%    68.1   2026-07-19    4% ▇
                         <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>  11.2%    64.1   2026-07-19    3% ▇
 prior                   pull toward the middle                   49.7                 1% ▇
                         weighted average                       = 61.8
@@ -40,7 +40,7 @@ source                  test                            score  why
 nvidia/parakeet-tdt-0…  <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md">AMI WER (Open ASR / ESB test …</a>  11.2%  too few models have it yet
 nvidia/parakeet-tdt-0…  <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md">Earnings-22 WER (short-form, …</a>  11.2%  too few models have it yet
 nvidia/parakeet-tdt-0…  <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md">GigaSpeech test WER</a>              9.7%  too few models have it yet
-nvidia/parakeet-tdt-0…  <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md">LibriSpeech test-clean WER</a>       1.7%  another source's result is used
+nvidia/parakeet-tdt-0…  <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md">LibriSpeech test-clean WER</a>       1.7%  only model in this source's run
 nvidia/parakeet-tdt-0…  <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md">LibriSpeech test-other WER</a>       3.2%  too few models have it yet
 nvidia/parakeet-tdt-0…  <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md">SPGISpeech test WER</a>              2.2%  too few models have it yet
 nvidia/parakeet-tdt-0…  <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md">TED-LIUM test WER (short-form)</a>   3.4%  too few models have it yet

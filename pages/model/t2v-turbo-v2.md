@@ -6,7 +6,7 @@
 
 UC Santa Barbara · released 2024-10 · apache-2.0
 
-**score 35.6** ±6.1 · #72 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 35.4** ±6.2 · #72 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>  6.22 / 10    32.9   2025-02-28   84% ▇▇▇▇▇▇▇▇▇▇
+<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>  6.22 / 10    32.6   2025-02-28   84% ▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                      49.9                16% ▇▇
-                        weighted average                          = 35.6
+                        weighted average                          = 35.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ api (Replicate) · price unknown · [replicate.com](https://replicate.com/chenxw
 
 <pre>
 version                                     needs  score
-fp32 · nvidia only                         ~9.4GB   35.6
-fp32 checkpoints (official Gradio demo,…  ~16.2GB   35.6
+fp32 · nvidia only                         ~9.4GB   35.4
+fp32 checkpoints (official Gradio demo,…  ~16.2GB   35.4
 </pre>
 
 ```sh

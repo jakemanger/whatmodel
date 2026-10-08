@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-11 · 67B params · deepseek
 
-**score 38.1** ±1.5 · #406 of 548 · from 5 benchmark results across 2 sources
+**score 37.6** ±2.1 · #409 of 549 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,18 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                       score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                6.4%    39.7   2025-01-27   35% ▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    0.8%    39.8   2026-08-28   15% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>               24.6%    27.7   2025-01-27   15% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>       0.0%    44.8   2026-08-28    3% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>            1184.9    39.3   2026-10-02   32% ▇▇▇▇
-prior                   pull toward the middle              50.0                 1% ▇
-                        weighted average                  = 38.1
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>            1184.9    38.7   2026-10-02   55% ▇▇▇▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                6.4%    38.7   2025-01-27   24% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>               24.6%    30.6   2025-01-27   16% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    0.8%    38.9   2026-08-28    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>       0.0%    31.5   2026-08-28    0% ▇
+prior                   pull toward the middle              50.0                 2% ▇
+                        weighted average                  = 37.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -33,8 +33,8 @@ prior                   pull toward the middle              50.0                
 
 <pre>
 download         size  score
-4-bit q4_0    ~40.7GB   38.1
-4-bit q4_k_m  ~40.7GB   38.1
+4-bit q4_0    ~40.7GB   37.6
+4-bit q4_k_m  ~40.7GB   37.6
 </pre>
 
 ```sh

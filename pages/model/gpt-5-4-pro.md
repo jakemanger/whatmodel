@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-03 · proprietary
 
-**score 76.8** ±1.1 · #12 of 548 · from 10 benchmark results across 3 sources
+**score 77.1** ±0.9 · #13 of 549 · from 10 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,18 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>       82.5%    76.1   2026-06-13   32% ▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>          58.5%    75.2   2026-06-13   18% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    94.6%    74.9   2026-03-20    8% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>               46.3%    71.5   2026-08-27    5% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>           58.6%    83.6   2026-03-19    2% ▇
-<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam (lab)</a>      42.7%    76.6   2026-03-05    9% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                89.3%    78.7   2026-03-05    8% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with too…</a>  58.7%    80.0   2026-03-05    6% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4">FrontierScience-Research (lab)</a>  36.7%    75.9   2026-03-05    2% ▇
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  75.8%    83.2   2026-09-11   11% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 76.8
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>          58.5%    75.8   2026-06-13   37% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>       82.5%    76.7   2026-06-13   26% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>           58.6%    79.5   2026-03-19    8% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    94.6%    75.5   2026-03-20    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>               46.3%    71.4   2026-08-27    3% ▇
+<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam (lab)</a>      42.7%    77.6   2026-03-05    5% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                89.3%    79.8   2026-03-05    5% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with too…</a>  58.7%    81.2   2026-03-05    3% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-4">FrontierScience-Research (lab)</a>  36.7%    76.8   2026-03-05    1% ▇
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  75.8%    82.9   2026-09-11    8% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 77.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

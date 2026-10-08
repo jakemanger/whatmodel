@@ -25,7 +25,7 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  39.5%    52.5   2026-08-24    3% ▇
 <a name="speech-stt-turkasr-bench-mit"></a>Turkish ASR Leaderboa…  <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sour…</a>  15.3%    53.1   2026-09-25    5% ▇
 <a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  40.2%    49.1   2025-01-12    4% ▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  12.1%    36.2   2024-12-09    1% ▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  12.1%    36.3   2024-12-09    1% ▇
                         <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       3.9%    25.6   2024-12-09    1% ▇
 prior                   pull toward the middle                   49.7                 2% ▇
                         weighted average                       = 53.5

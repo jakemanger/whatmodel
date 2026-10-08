@@ -1,0 +1,484 @@
+{
+ "about": "No-data / at-random model research, 2026-10-08. Candidate rows for data/results.json, new benchmarks for data/benchmarks.json, ledger additions for data/sources.json (new entries, or {id, add_match}). conditional_results holds rows for two proposed comparison-only Cohere models. Nothing imported; no data/*.json or existing repo file was edited.",
+ "results": [
+  {
+   "model": "gpt-1",
+   "bench": "prost-zero-shot-macro",
+   "score": 0.261,
+   "source": "https://aclanthology.org/2021.findings-acl.404.pdf",
+   "source_id": "acl-2021-findings-acl-404-prost",
+   "by": "independent",
+   "date": "2021-08-01",
+   "note": "Row GPT (116.5M; 'OpenAI's GPT-1'): 26.1%. Table 5 (printed p. 4603), 'Macro Average' column: mean of the 10 concept accuracies (direction, mass, height and circumference averaged over their templates first). Zero-shot, no fine-tuning; authors ran the Hugging Face pretrained checkpoint (Section 4, Table 4). Percent divided by 100. Date is the Findings of ACL-IJCNLP 2021 publication month.",
+   "raw_value": 26.1,
+   "scale_divisor": 100
+  },
+  {
+   "model": "gpt-2-small",
+   "bench": "prost-zero-shot-macro",
+   "score": 0.236,
+   "source": "https://aclanthology.org/2021.findings-acl.404.pdf",
+   "source_id": "acl-2021-findings-acl-404-prost",
+   "by": "independent",
+   "date": "2021-08-01",
+   "note": "Row GPT-2 B (124.4M): 23.6%. Table 5 (printed p. 4603), 'Macro Average' column: mean of the 10 concept accuracies (direction, mass, height and circumference averaged over their templates first). Zero-shot, no fine-tuning; authors ran the Hugging Face pretrained checkpoint (Section 4, Table 4). Percent divided by 100. Date is the Findings of ACL-IJCNLP 2021 publication month.",
+   "raw_value": 23.6,
+   "scale_divisor": 100
+  },
+  {
+   "model": "gpt-2-medium",
+   "bench": "prost-zero-shot-macro",
+   "score": 0.268,
+   "source": "https://aclanthology.org/2021.findings-acl.404.pdf",
+   "source_id": "acl-2021-findings-acl-404-prost",
+   "by": "independent",
+   "date": "2021-08-01",
+   "note": "Row GPT-2 M (354.8M): 26.8%. Table 5 (printed p. 4603), 'Macro Average' column: mean of the 10 concept accuracies (direction, mass, height and circumference averaged over their templates first). Zero-shot, no fine-tuning; authors ran the Hugging Face pretrained checkpoint (Section 4, Table 4). Percent divided by 100. Date is the Findings of ACL-IJCNLP 2021 publication month.",
+   "raw_value": 26.8,
+   "scale_divisor": 100
+  },
+  {
+   "model": "gpt-2-large",
+   "bench": "prost-zero-shot-macro",
+   "score": 0.264,
+   "source": "https://aclanthology.org/2021.findings-acl.404.pdf",
+   "source_id": "acl-2021-findings-acl-404-prost",
+   "by": "independent",
+   "date": "2021-08-01",
+   "note": "Row GPT-2 L (774.0M): 26.4%. Table 5 (printed p. 4603), 'Macro Average' column: mean of the 10 concept accuracies (direction, mass, height and circumference averaged over their templates first). Zero-shot, no fine-tuning; authors ran the Hugging Face pretrained checkpoint (Section 4, Table 4). Percent divided by 100. Date is the Findings of ACL-IJCNLP 2021 publication month.",
+   "raw_value": 26.4,
+   "scale_divisor": 100
+  },
+  {
+   "model": "gpt-2-xl",
+   "bench": "prost-zero-shot-macro",
+   "score": 0.301,
+   "source": "https://aclanthology.org/2021.findings-acl.404.pdf",
+   "source_id": "acl-2021-findings-acl-404-prost",
+   "by": "independent",
+   "date": "2021-08-01",
+   "note": "Row GPT-2 XL (1557.6M): 30.1%. Table 5 (printed p. 4603), 'Macro Average' column: mean of the 10 concept accuracies (direction, mass, height and circumference averaged over their templates first). Zero-shot, no fine-tuning; authors ran the Hugging Face pretrained checkpoint (Section 4, Table 4). Percent divided by 100. Date is the Findings of ACL-IJCNLP 2021 publication month.",
+   "raw_value": 30.1,
+   "scale_divisor": 100
+  },
+  {
+   "model": "command-a-plus",
+   "bench": "tau2-telecom",
+   "score": 0.85,
+   "source": "https://cohere.com/blog/command-a-plus",
+   "by": "lab",
+   "date": "2026-05-20",
+   "note": "Text: 'Compared with Command A Reasoning, τ²-Bench Telecom scores improved from 37% to 85%'. Footnote 1: 'τ²-Bench Telecom evaluated using standard settings and user simulation from [Barres et al. 2025]'. Domain pass rate, no aggregate given. Cohere 'Introducing Command A+' blog post (May 20, 2026), fetched 2026-10-08; figure stated in the post's body text (not read from a chart). vendor-reported (rule b): Cohere's own figure for its own model, hand-recorded. Comparator printed in the same sentence is Command A Reasoning / Command A Vision, which are not catalogue models, so this run has one catalogue model and will not count until a second Cohere model with the same benchmark is in the catalogue."
+  },
+  {
+   "model": "command-a-plus",
+   "bench": "terminalbench-hard-gemma4",
+   "score": 0.25,
+   "source": "https://cohere.com/blog/command-a-plus",
+   "by": "lab",
+   "date": "2026-05-20",
+   "note": "Text: 'agentic coding performance on Terminal-Bench Hard reaching 25% from 3%' (Command A Reasoning 3%). Footnote 1: 'Terminal-Bench Hard evaluated using Terminus-2 harness following the methodology of Artificial Analysis' (Cohere's own run; not an Artificial Analysis number). Mapped to the catalogue's only 'Terminal Bench Hard' id; review that the Gemma 4 report's TB-Hard is the same subset. Cohere 'Introducing Command A+' blog post (May 20, 2026), fetched 2026-10-08; figure stated in the post's body text (not read from a chart). vendor-reported (rule b): Cohere's own figure for its own model, hand-recorded. Comparator printed in the same sentence is Command A Reasoning / Command A Vision, which are not catalogue models, so this run has one catalogue model and will not count until a second Cohere model with the same benchmark is in the catalogue."
+  },
+  {
+   "model": "command-a-plus",
+   "bench": "charxiv-rq",
+   "score": 0.527,
+   "source": "https://cohere.com/blog/command-a-plus",
+   "by": "lab",
+   "date": "2026-05-20",
+   "note": "Text: 'CharXiv reasoning improved from 46.9% to 52.7%' (Command A Vision 46.9%). Image 5 caption: 'We follow standard methodology for the given benchmarks.' Cohere 'Introducing Command A+' blog post (May 20, 2026), fetched 2026-10-08; figure stated in the post's body text (not read from a chart). vendor-reported (rule b): Cohere's own figure for its own model, hand-recorded. Comparator printed in the same sentence is Command A Reasoning / Command A Vision, which are not catalogue models, so this run has one catalogue model and will not count until a second Cohere model with the same benchmark is in the catalogue."
+  }
+ ],
+ "benchmarks": [
+  {
+   "id": "prost-zero-shot-macro",
+   "name": "PROST physical reasoning (zero-shot, 10-concept macro average)",
+   "kind": "acc",
+   "chance": 0.25,
+   "category": "llm",
+   "url": "https://aclanthology.org/2021.findings-acl.404.pdf",
+   "description": "PROST (Aroca-Ouellette et al., Findings of ACL-IJCNLP 2021): 18,736 four-option multiple-choice questions from 14 templates over 10 physical concepts (direction, mass, height, circumference, stackable, rollable, graspable, breakable, slideable, bounceable), asked zero-shot. Score is the macro average of the 10 concept accuracies (multi-template concepts averaged first). Chance 0.25 as stated in the paper ('random guessing would yield an accuracy of 25%'). T5/UnifiedQA rows skip the sliding concept (asterisked 9-concept average) and are not comparable; UnifiedQA is also fine-tuned."
+  }
+ ],
+ "ledger": [
+  {
+   "id": "acl-2021-findings-acl-404-prost",
+   "name": "PROST (Aroca-Ouellette et al., Findings of ACL-IJCNLP 2021) - authors' own zero-shot runs",
+   "kind": "paper",
+   "match": [
+    "aclanthology.org/2021.findings-acl.404.pdf"
+   ],
+   "exact": true,
+   "license": "CC BY 4.0",
+   "terms_url": "https://aclanthology.org/2021.findings-acl.404/",
+   "license_url": "/licenses/_cc-by-4.0-legalcode.txt",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "quote": "ACL Anthology landing page footer for 2021.findings-acl.404: 'Materials published in or after 2016 are licensed on a Creative Commons Attribution 4.0 International License.' Findings of ACL-IJCNLP 2021 is an ACL publication. Section 4: 'We use Huggingface's (Wolf et al., 2020) pretrained models, see Table 4 for the full set.'",
+   "attribution": "Stephane Aroca-Ouellette, Cory Paik, Alessandro Roncone and Katharina Kann; (c)2021 Association for Computational Linguistics. PROST: Physical Reasoning about Objects through Space and Time. Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021, pages 4597-4608.\nSource: https://aclanthology.org/2021.findings-acl.404.pdf\nLicence: CC BY 4.0 - https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells (Table 5 macro averages) transcribed into JSON; percentages divided by 100; model identities clarified. No questions or figures redistributed. No endorsement.",
+   "scope": "Table 5 'Macro Average' column for GPT (openai-gpt) and GPT-2 B/M/L/XL, the five catalogue models. BERT/RoBERTa/ALBERT rows (not in catalogue), T5 and UnifiedQA rows (9-concept average without sliding; UnifiedQA fine-tuned), per-concept columns, Tables 6-7 not imported.",
+   "icon": "arxiv.org"
+  },
+  {
+   "id": "first-party-cohere-scores",
+   "name": "Cohere vendor-reported benchmark scores for its own models (cohere.com blog)",
+   "kind": "first-party",
+   "match": [
+    "cohere.com/blog/command-a-plus"
+   ],
+   "exact": true,
+   "license": "Factual vendor-reported score (not licensed content)",
+   "terms_url": "https://cohere.com/terms-of-use",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "icon": "cohere.com",
+   "attribution": "Cohere, vendor-reported results for Cohere's own models from the 'Introducing Command A+' blog post (May 20, 2026); individual figures from the post's text hand-recorded 2026-10-08; percentages converted to fractions. Lab-reported, not independent measurements. No endorsement.",
+   "quote": "Owner rule (b), approved 2026-10-07 (UPDATING.md 'Vendor-reported scores'): a vendor's own published score for its own model, from its announcement, system/model card or docs, may be recorded by hand one figure at a time with the exact URL, date and printed settings; other labs' cells and cells credited to a third party excluded. The post's Artificial Analysis Intelligence Index (37) is credited to Artificial Analysis and is not recorded; MMMU / MMMU Pro / MathVista figures are not recorded because the post gives no split (val/test, testmini, standard/vision).",
+   "scope": "Command A+ only: τ²-Bench Telecom 85%, Terminal-Bench Hard 25%, CharXiv reasoning 52.7% from the body text. Chart-only figures (AIME 2025, IFBench, SciCode, MT-AIME, WMT24++) and internal North evaluations not recorded. Command A Reasoning (37%, 3%) and Command A Vision (46.9%) are printed but are not catalogue models."
+  }
+ ],
+ "gaps": [
+  {
+   "model": "grok-build-0-1",
+   "why": "xAI publishes no benchmark score for this model: x.ai/news/grok-build-0-1 (May 29 2026), x.ai/news/grok-build-cli (May 25), x.ai/news/grok-build-open-source (Jul 15) and docs.x.ai/developers/models/grok-build-0.1 have none (the widely cited 70.8% SWE-bench Verified has no xAI primary page). Terminal-Bench submissions (Apache-2.0, harbor-framework/terminal-bench @3e9bf0e) have only Grok 4.5/4.6 run inside the Grok Build harness, not grok-build-0.1; Aider polyglot (last update 2025-10) predates it. Open LLM Leaderboard-style data not applicable."
+  },
+  {
+   "model": "command-a-plus",
+   "why": "Partial: three vendor-reported figures recorded from Cohere's launch post (tau2-telecom 0.85, terminalbench-hard-gemma4 0.25, charxiv-rq 0.527) under a new first-party-cohere-scores entry, but the post's comparators are Command A Reasoning (08-2025) and Command A Vision (07-2025), which are not in the catalogue, so each run has one catalogue model and nothing counts yet. Adding those two open-weights Cohere models (comparison-only) with the printed 37%/3%/46.9% would make the runs count. Independent sources checked without a Command A+ row: Terminal-Bench submissions, Aider polyglot (last update 2025-10), earlier thin-llm list (LMArena, Epoch, BFCL, EuroEval etc.); the HF card has no table."
+  },
+  {
+   "model": "breeze-tts-2",
+   "why": "BreezeBlue's own benchmark repos (tts-voice-design-benchmark @bbe4621, TTS-Voice-Direction-Benchmark @c6db436) have no licence and no results tables; the HF card (Apache-2.0 code, non-commercial weights) has no score table and cites only the Artificial Analysis arena (forbidden). The 'Introducing Breeze TTS 2' post (2026-08-07) reports Breeze's own Voice Design / Voice Direction benchmark scores, but those benchmarks are not in benchmarks.json, BreezeBlue has no second catalogue model to form a run, and the other rows are other labs' models (vendor rule excludes them). No open-licensed third-party evaluation found."
+  },
+  {
+   "model": "pocket-tts",
+   "why": "Catalogue pins the in-place updated default English weights (english.yaml = english_2026-09). Kyutai's only evaluation (Jan 2026 tech report, kyutai.org/blog/2026-01-13-pocket-tts) is for english_2026-01; the MIT GitHub README (pushed 2026-10-07) and CC BY 4.0 HF card (sha 3e82814) have no score tables; the CALM paper (arXiv 2509.06926) is CC BY-NC-SA. No evaluation of the 2026-09 weights found."
+  },
+  {
+   "model": "cartesia-sonic-3-6",
+   "why": "Cartesia's launch material cites the Artificial Analysis Speech Arena (forbidden) and company-run listening tests on a non-catalogue protocol; no score on an existing benchmark with a second Cartesia catalogue model (Sonic 3.5/3/2). GEPARD (CC BY) lists an unversioned 'Cartesia'. Checked 2026-10-08: latest Vapi API snapshot (22 entries), and latest heads of ZTTS1-Eval RESULTS_CURRENT.md, EmergentTTS-Eval-public README, Rime alpha-tts-benchmark results, CN-NewsTTS leaderboard.csv, Arabic TTS Arena leaderboard.json, Amharic TTS benchmark summary.json, Open Voice Cloning Leaderboard results.csv and ZS-TTS-Evaluation: none names this model."
+  },
+  {
+   "model": "gemini-3-8-flash-tts",
+   "why": "No Google page found with a TTS score on an existing benchmark; licensed evaluations (RW-Voice-EQ, Amharic, EmergentTTS, Arabic arena) name Gemini 2.5 / 3.1 TTS only. Checked 2026-10-08: latest Vapi API snapshot (22 entries), and latest heads of ZTTS1-Eval RESULTS_CURRENT.md, EmergentTTS-Eval-public README, Rime alpha-tts-benchmark results, CN-NewsTTS leaderboard.csv, Arabic TTS Arena leaderboard.json, Amharic TTS benchmark summary.json, Open Voice Cloning Leaderboard results.csv and ZS-TTS-Evaluation: none names this model."
+  },
+  {
+   "model": "gemini-3-8-flash-lite-tts",
+   "why": "As Gemini 3.8 Flash TTS: no vendor or open-licensed score on an existing benchmark. Checked 2026-10-08: latest Vapi API snapshot (22 entries), and latest heads of ZTTS1-Eval RESULTS_CURRENT.md, EmergentTTS-Eval-public README, Rime alpha-tts-benchmark results, CN-NewsTTS leaderboard.csv, Arabic TTS Arena leaderboard.json, Amharic TTS benchmark summary.json, Open Voice Cloning Leaderboard results.csv and ZS-TTS-Evaluation: none names this model."
+  },
+  {
+   "model": "elevenlabs-v3-conversational",
+   "why": "No ElevenLabs page with a score on an existing benchmark; third-party mentions (e.g. Gradium's hard-case pass rate, Coval board) are vendor/competitor or unlicensed sources, and other labs' rows are excluded. Checked 2026-10-08: latest Vapi API snapshot (22 entries), and latest heads of ZTTS1-Eval RESULTS_CURRENT.md, EmergentTTS-Eval-public README, Rime alpha-tts-benchmark results, CN-NewsTTS leaderboard.csv, Arabic TTS Arena leaderboard.json, Amharic TTS benchmark summary.json, Open Voice Cloning Leaderboard results.csv and ZS-TTS-Evaluation: none names this model."
+  },
+  {
+   "model": "minimax-speech-2-6-hd",
+   "why": "MiniMax's 2.6 release material gives no WER/SIM table (the MiniMax-Speech report covers Speech-02-HD only); no open-licensed run of speech-2.6-hd found. Checked 2026-10-08: latest Vapi API snapshot (22 entries), and latest heads of ZTTS1-Eval RESULTS_CURRENT.md, EmergentTTS-Eval-public README, Rime alpha-tts-benchmark results, CN-NewsTTS leaderboard.csv, Arabic TTS Arena leaderboard.json, Amharic TTS benchmark summary.json, Open Voice Cloning Leaderboard results.csv and ZS-TTS-Evaluation: none names this model."
+  },
+  {
+   "model": "smallest-lightning-v3-1-pro",
+   "why": "Vapi has Lightning v3.1 (not Pro); no Smallest.ai page with a Pro score on an existing benchmark found. Checked 2026-10-08: latest Vapi API snapshot (22 entries), and latest heads of ZTTS1-Eval RESULTS_CURRENT.md, EmergentTTS-Eval-public README, Rime alpha-tts-benchmark results, CN-NewsTTS leaderboard.csv, Arabic TTS Arena leaderboard.json, Amharic TTS benchmark summary.json, Open Voice Cloning Leaderboard results.csv and ZS-TTS-Evaluation: none names this model."
+  },
+  {
+   "model": "hume-octave-2",
+   "why": "Hume's Octave 2 material reports blind preference vs ElevenLabs (not a catalogue benchmark); Hume's Expressive TTS Arena repo (MIT) is code only (votes in a database, no data licence); Luna-TTS report mentioning Octave 2 is arXiv non-exclusive. Checked 2026-10-08: latest Vapi API snapshot (22 entries), and latest heads of ZTTS1-Eval RESULTS_CURRENT.md, EmergentTTS-Eval-public README, Rime alpha-tts-benchmark results, CN-NewsTTS leaderboard.csv, Arabic TTS Arena leaderboard.json, Amharic TTS benchmark summary.json, Open Voice Cloning Leaderboard results.csv and ZS-TTS-Evaluation: none names this model."
+  },
+  {
+   "model": "azure-hd-2-5",
+   "why": "No Microsoft page or licensed evaluation naming HD 2.5 with a score on an existing benchmark. Checked 2026-10-08: latest Vapi API snapshot (22 entries), and latest heads of ZTTS1-Eval RESULTS_CURRENT.md, EmergentTTS-Eval-public README, Rime alpha-tts-benchmark results, CN-NewsTTS leaderboard.csv, Arabic TTS Arena leaderboard.json, Amharic TTS benchmark summary.json, Open Voice Cloning Leaderboard results.csv and ZS-TTS-Evaluation: none names this model."
+  },
+  {
+   "model": "amazon-polly-generative",
+   "why": "Licensed evaluations name Polly Neural (e.g. CN-NewsTTS 'aws_polly'), not the Generative engine; no AWS score page. Checked 2026-10-08: latest Vapi API snapshot (22 entries), and latest heads of ZTTS1-Eval RESULTS_CURRENT.md, EmergentTTS-Eval-public README, Rime alpha-tts-benchmark results, CN-NewsTTS leaderboard.csv, Arabic TTS Arena leaderboard.json, Amharic TTS benchmark summary.json, Open Voice Cloning Leaderboard results.csv and ZS-TTS-Evaluation: none names this model."
+  },
+  {
+   "model": "mai-transcribe-2",
+   "why": "Microsoft AI's model card PDF (microsoft.ai/pdf/MAI-Transcribe-2-Model-Card.pdf, 8 pp.) prints its FLEURS 60-language results only as a chart image and otherwise cites the Artificial Analysis leaderboard (forbidden); the announcement's 5.2% FLEURS-60 average is not a catalogue benchmark and only MAI-Transcribe-1.5 would share the vendor run (a new benchmark needs 3 models). Pipecat, OpenBench, verli, raven, koedesk, Picovoice and Open ASR (GitHub) had nothing new as of 2026-10-07."
+  },
+  {
+   "model": "gladia-solaria-3",
+   "why": "Gladia's own benchmark page (gladia.io/solaria-3) gives Solaria-3 WER on an internal dataset, AA's cleaned Earnings22, noisy audio and Switchboard (33.9%), but every other row is a competitor's model (excluded by the vendor rule) and Gladia has no second catalogue model, so even switchboard-wer would be a one-model run; gladiaio/normalization (MIT) holds normalizer test files, not results. No open-licensed third-party run found."
+  },
+  {
+   "model": "stable-video-diffusion",
+   "why": "No open-licensed result names the 14-frame img2vid checkpoint. Physics-IQ README (CC BY 4.0) has 'Stable Video Diffusion (i2v) 14.8%' but its source paper (arXiv 2501.09038, Table 2: 8 FPS, 1024x576) never says img2vid vs img2vid-xt; VideoPhy's MIT leaderboard 'SVD-T2I2V' is an SDXL+SVD pipeline at 25 frames (XT-style, likely after XT 1.1); Stability's own CC BY 4.0 paper (2311.15127) gives only a preference bar chart for the 25-frame model and a UCF-101 FVD for the text-to-video model; VBench/VBench++ data unlicensed; AIGCBench, DynamiCrafter, T2V-CompBench, I2V leakage papers are arXiv non-exclusive; ConsistI2V and STREAM (CC BY) have no SVD row. Earlier search (thin-visual 2026-10-07) covered the LMArena video splits, Rapidata, Datapoint and ~350 CC BY/BY-SA/CC0 2025-26 arXiv papers."
+  },
+  {
+   "model": "stable-video-diffusion-xt",
+   "why": "Same sources as stable-video-diffusion: Physics-IQ's SVD row does not name the checkpoint; VideoPhy's SVD-T2I2V (25 frames, guidance 1-3, EulerDiscrete) is a text-to-image-to-video pipeline whose SVD checkpoint (img2vid-xt vs xt-1.1, paper June 2024) is not named; the SVD paper's 25-frame human-preference result is a bar chart without printed values; VBench-I2V 'SVD-XT-1.0' numbers have no data licence. Earlier search (thin-visual 2026-10-07) covered the LMArena video splits, Rapidata, Datapoint and ~350 CC BY/BY-SA/CC0 2025-26 arXiv papers."
+  },
+  {
+   "model": "animatediff-v1-5-2",
+   "why": "Evaluations naming the v2 motion module (mm_sd_v15_v2) found only in arXiv non-exclusive papers (I4VGen 2406.02230, AnimateZero 2312.03793, FreeInit 2312.07537, FreeNoise 2310.15169, 2603.17398); VBench's 'AnimateDiff-V2' leaderboard row has no data licence; GenAI-Arena row is an unidentified fal pipeline; ChronoMagic uses v3; LOVE/AIGVE-60K, EvalCrafter, FETV, ConsistI2V (CC BY) have no AnimateDiff v2 row. Earlier search (thin-visual 2026-10-07) covered the LMArena video splits, Rapidata, Datapoint and ~350 CC BY/BY-SA/CC0 2025-26 arXiv papers."
+  },
+  {
+   "model": "coqui-en-ljspeech-tacotron2-ddc",
+   "why": "The Coqui release has no published evaluation of these exact weights; architecture papers (Glow-TTS, OverFlow 2211.06892, Neural HMM 2108.13320, LightSpeech 2102.04040, PriorGrad 2106.06406) are arXiv non-exclusive and evaluate the authors' own training runs/vocoders; the CC BY voice-mapping study (2605.00861) gives acoustic descriptors, not quality scores. Checked 2026-10-08 in addition to the 2026-10-06/07 notes: latest heads of TTSDS (v1 results, TTSDS2 listening/multilingual data), ZTTS1-Eval, EmergentTTS, Rime, CN-NewsTTS, Arabic arena, Amharic, Open Voice Cloning Leaderboard, ZS-TTS-Evaluation, carun/tts-bench @27727b2 (NeMo FastPitch, not Coqui), plus licensed HF TTS-eval datasets (gradium, nineninesix, ntt123, k2-fsa) and recent GitHub TTS benchmark repos (most unlicensed; licensed ones such as zchee/audio-harness commit no results). None has this checkpoint."
+  },
+  {
+   "model": "coqui-en-ljspeech-glow-tts",
+   "why": "The Coqui release has no published evaluation of these exact weights; architecture papers (Glow-TTS, OverFlow 2211.06892, Neural HMM 2108.13320, LightSpeech 2102.04040, PriorGrad 2106.06406) are arXiv non-exclusive and evaluate the authors' own training runs/vocoders; the CC BY voice-mapping study (2605.00861) gives acoustic descriptors, not quality scores. Checked 2026-10-08 in addition to the 2026-10-06/07 notes: latest heads of TTSDS (v1 results, TTSDS2 listening/multilingual data), ZTTS1-Eval, EmergentTTS, Rime, CN-NewsTTS, Arabic arena, Amharic, Open Voice Cloning Leaderboard, ZS-TTS-Evaluation, carun/tts-bench @27727b2 (NeMo FastPitch, not Coqui), plus licensed HF TTS-eval datasets (gradium, nineninesix, ntt123, k2-fsa) and recent GitHub TTS benchmark repos (most unlicensed; licensed ones such as zchee/audio-harness commit no results). None has this checkpoint."
+  },
+  {
+   "model": "coqui-en-ljspeech-speedy-speech",
+   "why": "The Coqui release has no published evaluation of these exact weights; architecture papers (Glow-TTS, OverFlow 2211.06892, Neural HMM 2108.13320, LightSpeech 2102.04040, PriorGrad 2106.06406) are arXiv non-exclusive and evaluate the authors' own training runs/vocoders; the CC BY voice-mapping study (2605.00861) gives acoustic descriptors, not quality scores. Checked 2026-10-08 in addition to the 2026-10-06/07 notes: latest heads of TTSDS (v1 results, TTSDS2 listening/multilingual data), ZTTS1-Eval, EmergentTTS, Rime, CN-NewsTTS, Arabic arena, Amharic, Open Voice Cloning Leaderboard, ZS-TTS-Evaluation, carun/tts-bench @27727b2 (NeMo FastPitch, not Coqui), plus licensed HF TTS-eval datasets (gradium, nineninesix, ntt123, k2-fsa) and recent GitHub TTS benchmark repos (most unlicensed; licensed ones such as zchee/audio-harness commit no results). None has this checkpoint."
+  },
+  {
+   "model": "coqui-en-ljspeech-fast-pitch",
+   "why": "The Coqui release has no published evaluation of these exact weights; architecture papers (Glow-TTS, OverFlow 2211.06892, Neural HMM 2108.13320, LightSpeech 2102.04040, PriorGrad 2106.06406) are arXiv non-exclusive and evaluate the authors' own training runs/vocoders; the CC BY voice-mapping study (2605.00861) gives acoustic descriptors, not quality scores. Checked 2026-10-08 in addition to the 2026-10-06/07 notes: latest heads of TTSDS (v1 results, TTSDS2 listening/multilingual data), ZTTS1-Eval, EmergentTTS, Rime, CN-NewsTTS, Arabic arena, Amharic, Open Voice Cloning Leaderboard, ZS-TTS-Evaluation, carun/tts-bench @27727b2 (NeMo FastPitch, not Coqui), plus licensed HF TTS-eval datasets (gradium, nineninesix, ntt123, k2-fsa) and recent GitHub TTS benchmark repos (most unlicensed; licensed ones such as zchee/audio-harness commit no results). None has this checkpoint."
+  },
+  {
+   "model": "coqui-en-ljspeech-overflow",
+   "why": "The Coqui release has no published evaluation of these exact weights; architecture papers (Glow-TTS, OverFlow 2211.06892, Neural HMM 2108.13320, LightSpeech 2102.04040, PriorGrad 2106.06406) are arXiv non-exclusive and evaluate the authors' own training runs/vocoders; the CC BY voice-mapping study (2605.00861) gives acoustic descriptors, not quality scores. Checked 2026-10-08 in addition to the 2026-10-06/07 notes: latest heads of TTSDS (v1 results, TTSDS2 listening/multilingual data), ZTTS1-Eval, EmergentTTS, Rime, CN-NewsTTS, Arabic arena, Amharic, Open Voice Cloning Leaderboard, ZS-TTS-Evaluation, carun/tts-bench @27727b2 (NeMo FastPitch, not Coqui), plus licensed HF TTS-eval datasets (gradium, nineninesix, ntt123, k2-fsa) and recent GitHub TTS benchmark repos (most unlicensed; licensed ones such as zchee/audio-harness commit no results). None has this checkpoint."
+  },
+  {
+   "model": "coqui-en-ljspeech-neural-hmm",
+   "why": "The Coqui release has no published evaluation of these exact weights; architecture papers (Glow-TTS, OverFlow 2211.06892, Neural HMM 2108.13320, LightSpeech 2102.04040, PriorGrad 2106.06406) are arXiv non-exclusive and evaluate the authors' own training runs/vocoders; the CC BY voice-mapping study (2605.00861) gives acoustic descriptors, not quality scores. Checked 2026-10-08 in addition to the 2026-10-06/07 notes: latest heads of TTSDS (v1 results, TTSDS2 listening/multilingual data), ZTTS1-Eval, EmergentTTS, Rime, CN-NewsTTS, Arabic arena, Amharic, Open Voice Cloning Leaderboard, ZS-TTS-Evaluation, carun/tts-bench @27727b2 (NeMo FastPitch, not Coqui), plus licensed HF TTS-eval datasets (gradium, nineninesix, ntt123, k2-fsa) and recent GitHub TTS benchmark repos (most unlicensed; licensed ones such as zchee/audio-harness commit no results). None has this checkpoint."
+  },
+  {
+   "model": "coqui-de-thorsten-vits",
+   "why": "The Coqui release has no published evaluation of these exact weights; architecture papers (Glow-TTS, OverFlow 2211.06892, Neural HMM 2108.13320, LightSpeech 2102.04040, PriorGrad 2106.06406) are arXiv non-exclusive and evaluate the authors' own training runs/vocoders; the CC BY voice-mapping study (2605.00861) gives acoustic descriptors, not quality scores. Checked 2026-10-08 in addition to the 2026-10-06/07 notes: latest heads of TTSDS (v1 results, TTSDS2 listening/multilingual data), ZTTS1-Eval, EmergentTTS, Rime, CN-NewsTTS, Arabic arena, Amharic, Open Voice Cloning Leaderboard, ZS-TTS-Evaluation, carun/tts-bench @27727b2 (NeMo FastPitch, not Coqui), plus licensed HF TTS-eval datasets (gradium, nineninesix, ntt123, k2-fsa) and recent GitHub TTS benchmark repos (most unlicensed; licensed ones such as zchee/audio-harness commit no results). None has this checkpoint."
+  },
+  {
+   "model": "coqui-es-css10-vits",
+   "why": "The Coqui release has no published evaluation of these exact weights; architecture papers (Glow-TTS, OverFlow 2211.06892, Neural HMM 2108.13320, LightSpeech 2102.04040, PriorGrad 2106.06406) are arXiv non-exclusive and evaluate the authors' own training runs/vocoders; the CC BY voice-mapping study (2605.00861) gives acoustic descriptors, not quality scores. Checked 2026-10-08 in addition to the 2026-10-06/07 notes: latest heads of TTSDS (v1 results, TTSDS2 listening/multilingual data), ZTTS1-Eval, EmergentTTS, Rime, CN-NewsTTS, Arabic arena, Amharic, Open Voice Cloning Leaderboard, ZS-TTS-Evaluation, carun/tts-bench @27727b2 (NeMo FastPitch, not Coqui), plus licensed HF TTS-eval datasets (gradium, nineninesix, ntt123, k2-fsa) and recent GitHub TTS benchmark repos (most unlicensed; licensed ones such as zchee/audio-harness commit no results). None has this checkpoint."
+  },
+  {
+   "model": "coqui-fr-css10-vits",
+   "why": "The Coqui release has no published evaluation of these exact weights; architecture papers (Glow-TTS, OverFlow 2211.06892, Neural HMM 2108.13320, LightSpeech 2102.04040, PriorGrad 2106.06406) are arXiv non-exclusive and evaluate the authors' own training runs/vocoders; the CC BY voice-mapping study (2605.00861) gives acoustic descriptors, not quality scores. Checked 2026-10-08 in addition to the 2026-10-06/07 notes: latest heads of TTSDS (v1 results, TTSDS2 listening/multilingual data), ZTTS1-Eval, EmergentTTS, Rime, CN-NewsTTS, Arabic arena, Amharic, Open Voice Cloning Leaderboard, ZS-TTS-Evaluation, carun/tts-bench @27727b2 (NeMo FastPitch, not Coqui), plus licensed HF TTS-eval datasets (gradium, nineninesix, ntt123, k2-fsa) and recent GitHub TTS benchmark repos (most unlicensed; licensed ones such as zchee/audio-harness commit no results). None has this checkpoint."
+  },
+  {
+   "model": "coqui-pt-cv-vits",
+   "why": "The Coqui release has no published evaluation of these exact weights; architecture papers (Glow-TTS, OverFlow 2211.06892, Neural HMM 2108.13320, LightSpeech 2102.04040, PriorGrad 2106.06406) are arXiv non-exclusive and evaluate the authors' own training runs/vocoders; the CC BY voice-mapping study (2605.00861) gives acoustic descriptors, not quality scores. Checked 2026-10-08 in addition to the 2026-10-06/07 notes: latest heads of TTSDS (v1 results, TTSDS2 listening/multilingual data), ZTTS1-Eval, EmergentTTS, Rime, CN-NewsTTS, Arabic arena, Amharic, Open Voice Cloning Leaderboard, ZS-TTS-Evaluation, carun/tts-bench @27727b2 (NeMo FastPitch, not Coqui), plus licensed HF TTS-eval datasets (gradium, nineninesix, ntt123, k2-fsa) and recent GitHub TTS benchmark repos (most unlicensed; licensed ones such as zchee/audio-harness commit no results). None has this checkpoint."
+  },
+  {
+   "model": "coqui-uk-mai-glow-tts",
+   "why": "The Coqui release has no published evaluation of these exact weights; architecture papers (Glow-TTS, OverFlow 2211.06892, Neural HMM 2108.13320, LightSpeech 2102.04040, PriorGrad 2106.06406) are arXiv non-exclusive and evaluate the authors' own training runs/vocoders; the CC BY voice-mapping study (2605.00861) gives acoustic descriptors, not quality scores. Checked 2026-10-08 in addition to the 2026-10-06/07 notes: latest heads of TTSDS (v1 results, TTSDS2 listening/multilingual data), ZTTS1-Eval, EmergentTTS, Rime, CN-NewsTTS, Arabic arena, Amharic, Open Voice Cloning Leaderboard, ZS-TTS-Evaluation, carun/tts-bench @27727b2 (NeMo FastPitch, not Coqui), plus licensed HF TTS-eval datasets (gradium, nineninesix, ntt123, k2-fsa) and recent GitHub TTS benchmark repos (most unlicensed; licensed ones such as zchee/audio-harness commit no results). None has this checkpoint."
+  },
+  {
+   "model": "coqui-tr-common-voice-glow-tts",
+   "why": "The Coqui release has no published evaluation of these exact weights; architecture papers (Glow-TTS, OverFlow 2211.06892, Neural HMM 2108.13320, LightSpeech 2102.04040, PriorGrad 2106.06406) are arXiv non-exclusive and evaluate the authors' own training runs/vocoders; the CC BY voice-mapping study (2605.00861) gives acoustic descriptors, not quality scores. Checked 2026-10-08 in addition to the 2026-10-06/07 notes: latest heads of TTSDS (v1 results, TTSDS2 listening/multilingual data), ZTTS1-Eval, EmergentTTS, Rime, CN-NewsTTS, Arabic arena, Amharic, Open Voice Cloning Leaderboard, ZS-TTS-Evaluation, carun/tts-bench @27727b2 (NeMo FastPitch, not Coqui), plus licensed HF TTS-eval datasets (gradium, nineninesix, ntt123, k2-fsa) and recent GitHub TTS benchmark repos (most unlicensed; licensed ones such as zchee/audio-harness commit no results). None has this checkpoint."
+  },
+  {
+   "model": "speechbrain-fastspeech2-ljspeech",
+   "why": "SpeechBrain's PERFORMANCE.md / card give no quality table for this TTS checkpoint; no open-licensed multi-model evaluation names it. Checked 2026-10-08 in addition to the 2026-10-06/07 notes: latest heads of TTSDS (v1 results, TTSDS2 listening/multilingual data), ZTTS1-Eval, EmergentTTS, Rime, CN-NewsTTS, Arabic arena, Amharic, Open Voice Cloning Leaderboard, ZS-TTS-Evaluation, carun/tts-bench @27727b2 (NeMo FastPitch, not Coqui), plus licensed HF TTS-eval datasets (gradium, nineninesix, ntt123, k2-fsa) and recent GitHub TTS benchmark repos (most unlicensed; licensed ones such as zchee/audio-harness commit no results). None has this checkpoint."
+  },
+  {
+   "model": "lightspeech",
+   "why": "Official MIT README has runtime numbers only; the LightSpeech paper (arXiv 2102.04040) is non-exclusive. Checked 2026-10-08 in addition to the 2026-10-06/07 notes: latest heads of TTSDS (v1 results, TTSDS2 listening/multilingual data), ZTTS1-Eval, EmergentTTS, Rime, CN-NewsTTS, Arabic arena, Amharic, Open Voice Cloning Leaderboard, ZS-TTS-Evaluation, carun/tts-bench @27727b2 (NeMo FastPitch, not Coqui), plus licensed HF TTS-eval datasets (gradium, nineninesix, ntt123, k2-fsa) and recent GitHub TTS benchmark repos (most unlicensed; licensed ones such as zchee/audio-harness commit no results). None has this checkpoint."
+  },
+  {
+   "model": "priorgrad-acoustic",
+   "why": "PriorGrad paper is arXiv non-exclusive (2106.06406); the ICLR 2022 OpenReview copy (forum _BNiN4IjC5) is behind a challenge page (HTTP 403) so its licence could not be verified. Checked 2026-10-08 in addition to the 2026-10-06/07 notes: latest heads of TTSDS (v1 results, TTSDS2 listening/multilingual data), ZTTS1-Eval, EmergentTTS, Rime, CN-NewsTTS, Arabic arena, Amharic, Open Voice Cloning Leaderboard, ZS-TTS-Evaluation, carun/tts-bench @27727b2 (NeMo FastPitch, not Coqui), plus licensed HF TTS-eval datasets (gradium, nineninesix, ntt123, k2-fsa) and recent GitHub TTS benchmark repos (most unlicensed; licensed ones such as zchee/audio-harness commit no results). None has this checkpoint."
+  },
+  {
+   "model": "piper-en-us-lessac-medium",
+   "why": "The only new open-licensed Piper evaluation (sanoTTS, arXiv 2608.21378, CC BY) scores en_US-amy-medium and en_US-kristin-medium, not lessac-medium; Picovoice's on-device benchmark measures latency/memory only. Checked 2026-10-08 in addition to the 2026-10-06/07 notes: latest heads of TTSDS (v1 results, TTSDS2 listening/multilingual data), ZTTS1-Eval, EmergentTTS, Rime, CN-NewsTTS, Arabic arena, Amharic, Open Voice Cloning Leaderboard, ZS-TTS-Evaluation, carun/tts-bench @27727b2 (NeMo FastPitch, not Coqui), plus licensed HF TTS-eval datasets (gradium, nineninesix, ntt123, k2-fsa) and recent GitHub TTS benchmark repos (most unlicensed; licensed ones such as zchee/audio-harness commit no results). None has this checkpoint."
+  },
+  {
+   "model": "kitten-tts-mini-0-8",
+   "why": "KittenML cards have no score table; community comparisons (offlinetts, Picovoice) are latency/size only or unlicensed. Checked 2026-10-08 in addition to the 2026-10-06/07 notes: latest heads of TTSDS (v1 results, TTSDS2 listening/multilingual data), ZTTS1-Eval, EmergentTTS, Rime, CN-NewsTTS, Arabic arena, Amharic, Open Voice Cloning Leaderboard, ZS-TTS-Evaluation, carun/tts-bench @27727b2 (NeMo FastPitch, not Coqui), plus licensed HF TTS-eval datasets (gradium, nineninesix, ntt123, k2-fsa) and recent GitHub TTS benchmark repos (most unlicensed; licensed ones such as zchee/audio-harness commit no results). None has this checkpoint."
+  },
+  {
+   "model": "kitten-tts-2",
+   "why": "Card (sha f2eee74, 2026-10-07) has size tables only; released 2026-10-02, no evaluation found. Checked 2026-10-08 in addition to the 2026-10-06/07 notes: latest heads of TTSDS (v1 results, TTSDS2 listening/multilingual data), ZTTS1-Eval, EmergentTTS, Rime, CN-NewsTTS, Arabic arena, Amharic, Open Voice Cloning Leaderboard, ZS-TTS-Evaluation, carun/tts-bench @27727b2 (NeMo FastPitch, not Coqui), plus licensed HF TTS-eval datasets (gradium, nineninesix, ntt123, k2-fsa) and recent GitHub TTS benchmark repos (most unlicensed; licensed ones such as zchee/audio-harness commit no results). None has this checkpoint."
+  },
+  {
+   "model": "dia-1-6b-0626",
+   "why": "Nari Labs card (sha ef2795f) has no scores; papers that evaluate 'Dia' use the April 2025 Dia-1.6B or Dia2, not the 0626 checkpoint. Checked 2026-10-08 in addition to the 2026-10-06/07 notes: latest heads of TTSDS (v1 results, TTSDS2 listening/multilingual data), ZTTS1-Eval, EmergentTTS, Rime, CN-NewsTTS, Arabic arena, Amharic, Open Voice Cloning Leaderboard, ZS-TTS-Evaluation, carun/tts-bench @27727b2 (NeMo FastPitch, not Coqui), plus licensed HF TTS-eval datasets (gradium, nineninesix, ntt123, k2-fsa) and recent GitHub TTS benchmark repos (most unlicensed; licensed ones such as zchee/audio-harness commit no results). None has this checkpoint."
+  },
+  {
+   "model": "chatterbox-turbo",
+   "why": "Resemble's MIT card (sha 749d1c1) shows a Podonos preference chart image only; GEPARD (CC BY) and Chatterbox-Flash name unversioned 'Chatterbox' or repeat other reports' numbers. Checked 2026-10-08 in addition to the 2026-10-06/07 notes: latest heads of TTSDS (v1 results, TTSDS2 listening/multilingual data), ZTTS1-Eval, EmergentTTS, Rime, CN-NewsTTS, Arabic arena, Amharic, Open Voice Cloning Leaderboard, ZS-TTS-Evaluation, carun/tts-bench @27727b2 (NeMo FastPitch, not Coqui), plus licensed HF TTS-eval datasets (gradium, nineninesix, ntt123, k2-fsa) and recent GitHub TTS benchmark repos (most unlicensed; licensed ones such as zchee/audio-harness commit no results). None has this checkpoint."
+  },
+  {
+   "model": "tinyllama-1-1b-chat-v1-0",
+   "why": "Still one at-random result (Open PT). Checked: Open LLM Leaderboard v1/v2 results/contents/details (no data licence), Hallucinations Leaderboard results (apache-2.0; only Chat-v0.3/v0.6), Open Medical-LLM results (base 3T only), open-cn-llm, mii-llm, Evalita, lang-uk, la-leaderboard results (none), AlpacaEval leaderboards (none), Stable LM 2 report (CC BY; MT-Bench row 3.46 sits in a table mixing LMSYS-copied values, provenance unstated, MT-Bench not a catalogue benchmark), SLM survey 2409.15790 (base only); TinyLlama paper is non-exclusive and covers the base model."
+  },
+  {
+   "model": "gpt-1",
+   "why": "Partial: one new counted result (PROST zero-shot macro 0.261, CC BY 4.0 ACL paper, 5-model run with GPT-2 S/M/L/XL), but it is only 1.1 points above PROST's 25% chance, so GPT-1 still rests on near-random evidence. No other open-licensed zero-shot run of openai-gpt found: Self-Talk (EMNLP 2020) prints only the best LM per task; COPEN, NumerSense, oLMpics, SyntaxGym (ACL 2020), RICA and Surface Form Competition have no GPT-1 rows; CATS (arXiv 1911.11931) is non-exclusive; BIG-bench has no openai-gpt scores; Open LLM Leaderboard data is unlicensed; fine-tuned GLUE/SWAG/HellaSwag baselines measure different systems."
+  }
+ ],
+ "checked": [
+  {
+   "source": "https://aclanthology.org/2021.findings-acl.404.pdf",
+   "found": "PROST (CC BY 4.0 via ACL Anthology) Table 5 zero-shot macro averages for GPT-1 and four GPT-2 sizes, run by the authors on Hugging Face checkpoints; recorded as new benchmark prost-zero-shot-macro (5 models in one run). GPT-1 26.1% is just above the paper's 25% chance, so it adds a near-floor but genuine second test."
+  },
+  {
+   "source": "https://x.ai/news/grok-build-0-1",
+   "found": "No benchmark numbers (also checked grok-build-cli, grok-build-open-source, docs.x.ai model page)."
+  },
+  {
+   "source": "https://github.com/harbor-framework/terminal-bench/tree/3e9bf0ee42f7/leaderboard/submissions",
+   "found": "Latest submissions (2026-10-06): only xai-grok-4-5/4-6 with the Grok Build harness; no grok-build-0.1 run."
+  },
+  {
+   "source": "https://humannessindex.vapi.ai/api/models",
+   "found": "Live Vapi snapshot (fetched 2026-10-08): 22 entries; none of the target TTS models (no Sonic 3.6, Gemini TTS, Octave, Polly, Azure HD, Eleven v3 Conversational, MiniMax 2.6 HD, Lightning v3.1 Pro). Lightning v3.1 (not Pro) and Sonic 3.5 only."
+  },
+  {
+   "source": "https://huggingface.co/datasets/open-llm-leaderboard/contents",
+   "found": "Open LLM Leaderboard v2 contents (sha 9c09a7c), v1 open-llm-leaderboard-old/results (sha 2347437) and per-model details datasets carry no licence metadata or licence text; the Space's apache-2.0 tag covers its code only. Not usable (same verdict as data-completion-2026-10-06)."
+  },
+  {
+   "source": "https://aclanthology.org/2020.emnlp-main.373.pdf",
+   "found": "Self-Talk (CC BY 4.0) runs GPT (openai-gpt) but only prints the best LM per task for the zero-shot baseline; Table 5 averages self-talk over knowledge sources (a method, not the bare model). Not recorded."
+  },
+  {
+   "source": "https://github.com/google-deepmind/physics-IQ-benchmark/blob/f5d591ce18e501f47e52efbd3885e7c9c128cba4/README.md",
+   "found": "README leaderboard is CC BY 4.0 ('All other materials'); original-leaderboard row 'Stable Video Diffusion (i2v) 14.8%' comes from the Physics-IQ paper (arXiv 2501.09038, non-exclusive), whose Table 2 gives only 8 FPS / 1024x576 and never names img2vid vs img2vid-xt (or XT 1.1). Checkpoint not established; not recorded."
+  },
+  {
+   "source": "https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md",
+   "found": "MIT leaderboards include 'SVD-T2I2V' (11.9 joint human; 35 auto). The paper describes an SDXL-base-1.0 + 'SVD-I2V' pipeline, 25 frames, guidance (1,3), June 2024 (after SVD-XT 1.1); the checkpoint (img2vid-xt vs xt-1.1) is not named, and the row measures a text-to-image-to-video pipeline. Not recorded."
+  },
+  {
+   "source": "https://github.com/Vchitect/VBench/tree/fd18b3d055cb0fc6f066ca90fe2c3c8cbb698490",
+   "found": "Apache-2.0 repo has no result tables (READMEs list only resolution stats); leaderboard Space is MIT code with results loaded from an unlicensed dataset; VBench/VBench++ papers are arXiv non-exclusive. SVD-XT-1.0 / AnimateDiff-v2 VBench numbers not usable."
+  },
+  {
+   "source": "https://arxiv.org/abs/2609.04222",
+   "found": "GEPARD (CC BY 4.0) Seed-TTS-eval tables list 'Chatterbox', 'Cartesia', 'ElevenLabs' without model versions; cannot map to Chatterbox Turbo or Sonic 3.6."
+  },
+  {
+   "source": "https://arxiv.org/abs/2606.07080",
+   "found": "dots.tts report (CC BY 4.0): no target TTS models in its tables."
+  },
+  {
+   "source": "https://arxiv.org/abs/2608.11593",
+   "found": "Luna-TTS report mentions Octave 2 but is arXiv non-exclusive; not usable. MINT-Bench (2604.17958) and VoxCPM2 report (2606.06928) also non-exclusive."
+  },
+  {
+   "source": "https://huggingface.co/datasets/openlifescienceai/results",
+   "found": "Open Medical-LLM results (apache-2.0) have TinyLlama base 3T, a MELT fine-tune, gpt2, gpt2-xl; not TinyLlama-1.1B-Chat-v1.0 or openai-gpt."
+  },
+  {
+   "source": "https://cohere.com/blog/command-a-plus",
+   "found": "Text gives τ²-Bench Telecom 37%→85% and Terminal-Bench Hard 3%→25% (vs Command A Reasoning), MMMU 75.1% (Command A Vision 65.3%), MMMU Pro 63%, MathVista 73.5%→80.6%, CharXiv reasoning 46.9%→52.7%; AA Intelligence Index 37 credited to Artificial Analysis (excluded)."
+  },
+  {
+   "source": "https://huggingface.co/kyutai/pocket-tts/blob/3e82814a68665eec246ff649b14c71331f955c06/README.md",
+   "found": "CC BY 4.0 card, no evaluation table; GitHub kyutai-labs/pocket-tts (MIT) README/configs list english_2026-01/04/09 configs but no results."
+  },
+  {
+   "source": "https://github.com/breezeblue-ai/tts-voice-design-benchmark",
+   "found": "No licence; code and prompts only, no results table (same for TTS-Voice-Direction-Benchmark)."
+  },
+  {
+   "source": "https://github.com/HumeAI/expressive-tts-arena",
+   "found": "MIT code only (README); arena votes/leaderboard are not in the repo."
+  },
+  {
+   "source": "https://microsoft.ai/pdf/MAI-Transcribe-2-Model-Card.pdf",
+   "found": "FLEURS (test split, inferred language, 60 languages) results shown only as an image; 'Artificial Analysis Evaluations' section; no text table."
+  },
+  {
+   "source": "https://github.com/gladiaio/normalization",
+   "found": "MIT repo with text-normalisation test CSVs only; no benchmark results."
+  },
+  {
+   "source": "https://huggingface.co/datasets/hallucinations-leaderboard/results",
+   "found": "apache-2.0 (sha 30f7592); TinyLlama chat rows are only Chat-v0.3 and v0.6 (plus intermediate base checkpoints); no Chat-v1.0, no openai-gpt."
+  },
+  {
+   "source": "https://arxiv.org/abs/2402.17834",
+   "found": "Stable LM 2 report (CC BY 4.0) Table 7 MT-Bench lists TinyLlama-1.1B-Chat-v1.0 3.46, but the table mixes Stability's runs with values identical to the LMSYS leaderboard (Llama2-70B-Chat 6.86, MPT-30B-Chat 6.39, Falcon-40B-Instruct 5.17) and does not say which were run; MT-Bench is not a catalogue benchmark. Tables 4-5 use TinyLlama-1.1B base. Not recorded."
+  },
+  {
+   "source": "https://arxiv.org/html/2409.15790v3",
+   "found": "SLM survey (CC BY 4.0) benchmarks base models only (TinyLlama-1.1B base); no Chat-v1.0."
+  },
+  {
+   "source": "https://huggingface.co/datasets/open-cn-llm-leaderboard/results",
+   "found": "apache-2.0 results tree (1,391 paths), plus mii-llm/results, evalitahf/evalita_llm_results, lang-uk/ukrainian-llm-leaderboard-results, la-leaderboard/results: no TinyLlama-1.1B-Chat-v1.0 or openai-gpt entries."
+  },
+  {
+   "source": "https://github.com/coval-ai/benchmarks/tree/1dc6339fca78abd46c231afb1df86752b9fbaff5",
+   "found": "Coval TTS/STT benchmark: Apache-2.0 code; results live in Postgres behind benchmarks.coval.ai/API with no data licence (same situation as TTS Arena V2). Gradium cites a Coval board (2026-09-08) with Eleven v3 Conversational among 26 TTS models. Owner could ask Coval for permission; not used."
+  },
+  {
+   "source": "https://huggingface.co/datasets/gradium/tts-eval-customer-support-202608",
+   "found": "CC BY 4.0 covers the 500-row text prompt set only; Gradium's results (Sonic 3.6 75.1%, Eleven v3 Conversational 65.4%) are on gradium.ai/content/tts-wer-benchmark-2026 with no licence for the results, and Gradium is a competitor scoring others' models. Not used."
+  },
+  {
+   "source": "https://arxiv.org/abs/2608.21378",
+   "found": "sanoTTS (CC BY 4.0) evaluates Piper en_US-amy-medium and en_US-kristin-medium teachers, not lessac-medium."
+  },
+  {
+   "source": "https://arxiv.org/abs/2605.00861",
+   "found": "Voice-mapping study (CC BY 4.0) of Coqui pre-trained models reports crest factor / CPPs voice-range descriptors, not quality or intelligibility scores; checkpoints not named per Coqui id. Not recorded."
+  },
+  {
+   "source": "https://arxiv.org/abs/2311.15127",
+   "found": "SVD paper is CC BY 4.0 (vendor). Table 2 UCF-101 zero-shot FVD is for the text-to-video model; Figure 6 (25-frame I2V preference vs Gen-2/Pika) is a bar chart without printed values. Nothing recordable for the img2vid releases."
+  },
+  {
+   "source": "https://arxiv.org/abs/2402.04324",
+   "found": "ConsistI2V (CC BY 4.0) I2V-Bench/UCF-101 tables have no SVD or AnimateDiff v2 rows."
+  },
+  {
+   "source": "https://github.com/VILA-Lab/Open-LLM-Leaderboard/blob/b22c4b6078dc27e563cfb6812edd308178892dde/README.md",
+   "found": "OSQ leaderboard (CC BY 4.0 repo; paper 2406.07545 CC BY 4.0) has a 'TinyLlama (1.1B)' row (overall 8.45) but neither the paper, README nor the HF Space small.json names the checkpoint (base vs Chat-v1.0). Not recorded."
+  },
+  {
+   "source": "https://github.com/jzhang38/TinyLlama/blob/8650c0daa0e9100fe38aad0ab7a91bd3234ae320/EVAL.md",
+   "found": "Apache-2.0 vendor eval tables stop at Chat-v0.4 (last edit 2023-12-28, before Chat-v1.0)."
+  },
+  {
+   "source": "https://github.com/tatsu-lab/alpaca_eval",
+   "found": "Apache-2.0 AlpacaEval 1/2 leaderboard CSVs: no TinyLlama or openai-gpt rows."
+  },
+  {
+   "source": "https://github.com/google/BIG-bench",
+   "found": "Apache-2.0 score files cover BIG-G, BIG-G sparse, GPT-3 and PaLM families only; no openai-gpt or GPT-2 score files (gpt2 appears only as a task-data generator)."
+  }
+ ],
+ "conditional_results": {
+  "why": "Rows for models not yet in data/models.json. They are the only comparators printed in the Cohere post; if the owner adds these two open-weights Cohere models (comparison-only), the first-party-cohere-scores runs for tau2-telecom, terminalbench-hard-gemma4 and charxiv-rq get a second model and the command-a-plus rows count. npm run import would skip them today as unknown models.",
+  "proposed_models": [
+   {
+    "id": "command-a-reasoning-08-2025",
+    "name": "Command A Reasoning (08-2025)",
+    "provider": "Cohere",
+    "model_repo": "https://huggingface.co/CohereLabs/command-a-reasoning-08-2025",
+    "identity_note": "HF repo sha bd39aafe2c5e71a044d2f1674accfd9b384d3dbb, cc-by-nc-4.0, created 2025-08-12; 111B per the Cohere post's comparison table."
+   },
+   {
+    "id": "command-a-vision-07-2025",
+    "name": "Command A Vision (07-2025)",
+    "provider": "Cohere",
+    "model_repo": "https://huggingface.co/CohereLabs/command-a-vision-07-2025",
+    "identity_note": "HF repo sha e1016a8105950a626e7dd91b0a3030f7ae522411, cc-by-nc-4.0, created 2025-07-28; 112B per the Cohere post's comparison table."
+   }
+  ],
+  "results": [
+   {
+    "model": "command-a-reasoning-08-2025",
+    "bench": "tau2-telecom",
+    "score": 0.37,
+    "source": "https://cohere.com/blog/command-a-plus",
+    "by": "lab",
+    "date": "2026-05-20",
+    "note": "Text: 'Compared with Command A Reasoning, τ²-Bench Telecom scores improved from 37% to 85%'. Same footnote-1 settings as the Command A+ row. vendor-reported (rule b)."
+   },
+   {
+    "model": "command-a-reasoning-08-2025",
+    "bench": "terminalbench-hard-gemma4",
+    "score": 0.03,
+    "source": "https://cohere.com/blog/command-a-plus",
+    "by": "lab",
+    "date": "2026-05-20",
+    "note": "Text: 'Terminal-Bench Hard reaching 25% from 3%' (3% = Command A Reasoning). Terminus-2 harness per footnote 1. vendor-reported (rule b)."
+   },
+   {
+    "model": "command-a-vision-07-2025",
+    "bench": "charxiv-rq",
+    "score": 0.469,
+    "source": "https://cohere.com/blog/command-a-plus",
+    "by": "lab",
+    "date": "2026-05-20",
+    "note": "Text: 'CharXiv reasoning improved from 46.9% to 52.7%' (46.9% = Command A Vision, per Image 5 caption comparing Command A+ with Command A Vision). vendor-reported (rule b)."
+   }
+  ]
+ }
+}

@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-08 · 2B params · apache-2.0
 
-**score 37.3** ±2.2 · #67 of 87 · from 4 benchmark results across 3 sources
+**score 36.8** ±2.1 · #67 of 87 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,23 +14,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="video-genai-arena-space"></a>GenAI-Arena             <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>  1053.5    38.3   2025-03-22   45% ▇▇▇▇▇
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>    18.6%    34.5   2026-01-30   31% ▇▇▇▇
-                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>   39.0%    35.7   2026-01-30   12% ▇
-<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>   61.8%    40.6   2024-10-01   10% ▇
+<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>    18.6%    33.9   2026-01-30   35% ▇▇▇▇
+                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>   39.0%    35.6   2026-01-30   12% ▇
+<a name="video-genai-arena-space"></a>GenAI-Arena             <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>  1053.5    38.2   2025-03-22   41% ▇▇▇▇▇
+<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>   61.8%    39.9   2024-10-01   10% ▇
 prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 37.3
+                        weighted average                        = 36.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: GenAI-Arena ([MIT](../../licenses/video-genai-arena-space.txt)) · VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation ([CC-BY-4.0](../../licenses/video-chronomagic-bench.txt))</sub>
+<sub>Licences: VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · GenAI-Arena ([MIT](../../licenses/video-genai-arena-space.txt)) · ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation ([CC-BY-4.0](../../licenses/video-chronomagic-bench.txt))</sub>
 
 ## How to run it
 
 <pre>
 version              needs  score
-fp16 · nvidia only  ~5.3GB   37.3
+fp16 · nvidia only  ~5.3GB   36.8
 </pre>
 
 ```sh

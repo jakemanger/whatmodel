@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-02 · 79.7B params (3B active) · apache-2.0
 
-**score 66.1** ±1.5 · #87 of 548 · from 5 benchmark results across 2 sources
+**score 65.3** ±1.7 · #99 of 549 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="vector-inspect-evals-leaderboard"></a>Vector Institute Eval…  <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">GPQA Diamond (Vector Institut…</a>  75.6%    66.7   2026-07-16   31% ▇▇▇▇
-                        <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MATH (Vector Institute, Inspe…</a>  97.8%    71.0   2026-07-16   29% ▇▇▇
-                        <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MMLU-Pro (Vector Institute, I…</a>  82.5%    63.9   2026-07-16   15% ▇▇
-                        <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">HumanEval (Vector Institute, …</a>  91.5%    56.1   2026-07-16   10% ▇
-<a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>  50.5%    65.0   2026-08-31   15% ▇▇
+<a name="vector-inspect-evals-leaderboard"></a>Vector Institute Eval…  <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">GPQA Diamond (Vector Institut…</a>  75.6%    66.4   2026-07-16   37% ▇▇▇▇
+                        <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MATH (Vector Institute, Inspe…</a>  97.8%    70.7   2026-07-16   19% ▇▇
+                        <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MMLU-Pro (Vector Institute, I…</a>  82.5%    63.5   2026-07-16   15% ▇▇
+                        <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">HumanEval (Vector Institute, …</a>  91.5%    54.9   2026-07-16    8% ▇
+<a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>  50.5%    64.8   2026-08-31   20% ▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 66.1
+                        weighted average                       = 65.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -47,8 +47,8 @@ api (Alibaba Cloud Model Studio) · $0.60/M blended · $0.3 in / $1.5 out per 1M
 
 <pre>
 download              size  score
-4-bit q4_k_m      ~48.32GB   66.1
-2-bit ud-q2_k_xl  ~24.41GB   66.1
+4-bit q4_k_m      ~48.32GB   65.3
+2-bit ud-q2_k_xl  ~24.41GB   65.3
 </pre>
 
 ```sh

@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-persian-triple-threat-apache"></a>Persian ASR Triple Th…  <a href="https://huggingface.co/spaces/Reza2kn/PersianASR-TrippleThreat/blob/63e7e3f8b3754a92d6c0ac2a9db84344cf7e49bb/gemini35_transcribe_scores.json">Persian ASR Triple Threat · V…</a>   6.4%    70.0   2026-08-28   84% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-persian-triple-threat-apache"></a>Persian ASR Triple Th…  <a href="https://huggingface.co/spaces/Reza2kn/PersianASR-TrippleThreat/blob/63e7e3f8b3754a92d6c0ac2a9db84344cf7e49bb/gemini35_transcribe_scores.json">Persian ASR Triple Threat · V…</a>   6.4%    69.9   2026-08-28   84% ▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.7                16% ▇▇
                         weighted average                       = 66.8
 </pre>

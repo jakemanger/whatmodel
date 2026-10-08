@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-03 · 31.6B params (3B active) · nvidia-open-model
 
-**score 62.6** ±1.8 · #131 of 548 · from 10 benchmark results across 2 sources
+**score 62.6** ±1.9 · #131 of 549 · from 10 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="report-2603.19220v2"></a>NVIDIA                 <a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>                 92.4%    62.8   2026-03-22   16% ▇▇
-                       <a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>                 90.9%    59.1   2026-03-22   12% ▇
-                       <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Eas…</a>  87.0%    68.5   2026-03-22   11% ▇
-                       <a href="https://arxiv.org/html/2603.19220v2">HMMT February 2025 (lab)</a>        94.6%    63.9   2026-03-22   11% ▇
-                       <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Med…</a>  27.6%    69.6   2026-03-22    8% ▇
-                       <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>           79.3%    63.3   2026-03-22    7% ▇
+<a name="report-2603.19220v2"></a>NVIDIA                 <a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>                 92.4%    63.0   2026-03-22   17% ▇▇
+                       <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Eas…</a>  87.0%    68.4   2026-03-22   11% ▇
+                       <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Med…</a>  27.6%    68.8   2026-03-22   10% ▇
+                       <a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>                 90.9%    58.4   2026-03-22   10% ▇
+                       <a href="https://arxiv.org/html/2603.19220v2">HMMT February 2025 (lab)</a>        94.6%    64.4   2026-03-22    9% ▇
+                       <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>           79.3%    63.6   2026-03-22    7% ▇
                        <a href="https://arxiv.org/html/2603.19220v2">Arena-Hard v2 aggregate (lab)</a>   83.5%    72.8   2026-03-22    6% ▇
-                       <a href="https://arxiv.org/html/2603.19220v2">CL-bench (lab)</a>                  12.2%    54.7   2026-03-22    4% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  70.8%    53.4   2026-04-17   12% ▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  93.3%    62.3   2026-04-17   12% ▇
+                       <a href="https://arxiv.org/html/2603.19220v2">CL-bench (lab)</a>                  12.2%    55.6   2026-03-22    5% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  70.8%    52.6   2026-04-17   13% ▇▇
+                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  93.3%    63.0   2026-04-17   10% ▇
 prior                  pull toward the middle                   50.0                 2% ▇
                        weighted average                       = 62.6
 </pre>
@@ -36,15 +36,15 @@ prior                  pull toward the middle                   50.0            
 
 <pre>
 source                  test                            score  why
-nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">AIME 2025</a>                       92.4%  another source's result is used
-nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">AIME 2026</a>                       90.9%  another source's result is used
-nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">HMMT February 2025</a>              94.6%  another source's result is used
+nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">AIME 2025</a>                       92.4%  only model in this source's run
+nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">AIME 2026</a>                       90.9%  only model in this source's run
+nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">HMMT February 2025</a>              94.6%  only model in this source's run
 nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">LiveCodeBench v6 (Aug 2024–Ma…</a>  87.2%  too few models have it yet
 nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">MMLU-Redux</a>                      86.3%  too few models have it yet
 nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">MMLU-Pro</a>                        79.8%  too few models have it yet
 nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">GPQA Diamond</a>                    76.1%  too few models have it yet
 nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">Humanity's Last Exam</a>            17.7%  too few models have it yet
-nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">Arena-Hard v2 aggregate</a>         83.5%  another source's result is used
+nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">Arena-Hard v2 aggregate</a>         83.5%  only model in this source's run
 nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">IFBench prompt-level</a>            82.9%  too few models have it yet
 nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">LongBench v2</a>                    40.3%  too few models have it yet
 nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">BFCL V4 (December 2025 archiv…</a>  52.9%  too few models have it yet

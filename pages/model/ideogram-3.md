@@ -6,7 +6,7 @@
 
 Ideogram · released 2025-03 · proprietary
 
-**score 51.3** ±1.9 · #71 of 136 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 51.3** ±1.9 · #72 of 136 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,8 +16,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1048.4    52.2   2026-09-24   86% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-rapid-face"></a>Rapidata/Face_Generat…  <a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generatio…</a>   962.9    45.1   2025-09-03   13% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1048.4    52.3   2026-09-24   85% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-rapid-face"></a>Rapidata/Face_Generat…  <a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generatio…</a>   962.9    44.9   2025-09-03   13% ▇▇
 prior                   pull toward the middle                    49.9                 2% ▇
                         weighted average                        = 51.3
 </pre>

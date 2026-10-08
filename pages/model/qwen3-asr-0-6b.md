@@ -6,7 +6,7 @@
 
 Alibaba (Qwen) · released 2026-01 · 0.94B params · apache-2.0
 
-**score 55.6** ±1.4 · #49 of 117 · from 21 benchmark results across 7 sources
+**score 55.6** ±1.5 · #49 of 117 · from 21 benchmark results across 7 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -20,9 +20,9 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Common Voice English WER (ver…</a>   9.9%    55.7   2026-01-30    4% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">WenetSpeech test_net error ra…</a>   6.0%    63.8   2026-01-30    4% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Multilingual LibriSpeech Engl…</a>   6.0%    54.4   2026-01-30    4% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">AISHELL-2 test error rate (la…</a>   3.1%    61.0   2026-01-30    4% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">GigaSpeech test WER (lab)</a>        8.9%    63.2   2026-01-30    4% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">VoxPopuli English test WER (l…</a>  10.0%    58.6   2026-01-30    4% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">AISHELL-2 test error rate (la…</a>   3.1%    61.0   2026-01-30    4% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">VoxPopuli English test WER (l…</a>  10.0%    58.7   2026-01-30    4% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">FLEURS Mandarin test error ra…</a>   2.9%    57.9   2026-01-30    3% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">WenetSpeech test_meeting erro…</a>   6.9%    68.5   2026-01-30    3% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Common Voice Mandarin error r…</a>   6.9%    59.5   2026-01-30    3% ▇

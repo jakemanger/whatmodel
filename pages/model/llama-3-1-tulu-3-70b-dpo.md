@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-11 · 70.55B params · llama3.1
 
-**score 51.3** ±1.3 · #243 of 548 · from 12 benchmark results across 2 sources
+**score 51.3** ±1.1 · #242 of 549 · from 12 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,25 +14,25 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2411.15124v5"></a>Tülu 3: Pushing Front…  <a href="https://arxiv.org/html/2411.15124v5">MMLU (lab)</a>                      83.3%    50.6   2025-04-14    9% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified) (la…</a>  62.3%    52.1   2025-04-14    9% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">GSM8K (lab)</a>                     93.5%    54.7   2025-04-14    8% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">DROP (lab)</a>                      74.1%    52.1   2025-04-14    7% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard (lab)</a>            84.8%    53.0   2025-04-14    6% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlle…</a>  49.6%    47.3   2025-04-14    5% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose (la…</a>  82.6%    51.7   2025-04-14    4% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">PopQA (lab)</a>                     46.3%    54.0   2025-04-14    3% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2 (lab)</a>            67.9%    53.4   2025-04-14    2% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    42.7%    50.7   2025-01-27   25% ▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         4.4%    47.1   2025-03-07   10% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    46.3%    54.0   2025-01-27   10% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    42.7%    50.6   2025-01-27   32% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    46.3%    52.3   2025-01-27   21% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         4.4%    48.1   2025-03-07    9% ▇
+<a name="paper-2411.15124v5"></a>Tülu 3: Pushing Front…  <a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard (lab)</a>            84.8%    52.7   2025-04-14    8% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">MMLU (lab)</a>                      83.3%    50.5   2025-04-14    6% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">DROP (lab)</a>                      74.1%    52.0   2025-04-14    5% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">GSM8K (lab)</a>                     93.5%    55.4   2025-04-14    5% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified) (la…</a>  62.3%    52.2   2025-04-14    5% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlle…</a>  49.6%    46.9   2025-04-14    3% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose (la…</a>  82.6%    51.8   2025-04-14    2% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">PopQA (lab)</a>                     46.3%    54.1   2025-04-14    2% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2 (lab)</a>            67.9%    53.5   2025-04-14    1% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 51.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Tülu 3: Pushing Frontiers in Open Language Model Post-Training ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Tülu 3: Pushing Frontiers in Open Language Model Post-Training ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

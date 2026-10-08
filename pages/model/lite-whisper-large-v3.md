@@ -18,7 +18,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                test                            score  implies  date        weight
 <a name="speech-stt-liteasr-report-ccby"></a>LiteASR               <a href="https://arxiv.org/html/2502.20583v2">LiteASR paper · ESB 8-set ave…</a>  10.2%    55.4   2025-02-27   23% ▇▇▇
                       <a href="https://arxiv.org/html/2502.20583v2">Multilingual LibriSpeech Fren…</a>   6.8%    57.9   2025-02-27   22% ▇▇▇
-                      <a href="https://arxiv.org/html/2502.20583v2">Multilingual LibriSpeech Germ…</a>   7.7%    60.8   2025-02-27   15% ▇▇
+                      <a href="https://arxiv.org/html/2502.20583v2">Multilingual LibriSpeech Germ…</a>   7.7%    60.9   2025-02-27   15% ▇▇
 <a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.4%    54.7   2026-03-26   37% ▇▇▇▇
 prior                 pull toward the middle                   49.7                 3% ▇
                       weighted average                       = 56.3

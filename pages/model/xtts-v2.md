@@ -6,7 +6,7 @@
 
 Coqui · released 2023-11 · 0.482B params · coqui-public-model-license
 
-**score 32.3** ±2.0 · #81 of 98 · from 27 benchmark results across 12 sources
+**score 31.9** ±2.0 · #83 of 98 · from 27 benchmark results across 12 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,47 +16,47 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-zstts-eval-casanova-mit"></a>ZS-TTS-Evaluation       <a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/XTTS_v2.0.2/metrics.csv">ZS-TTS-Evaluation · English z…</a>      0.5%    30.7   2024-01-28   12% ▇
-                        <a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/XTTS_v2.0.2/metrics.csv">ZS-TTS-Evaluation · English z…</a>     64.2%    32.8   2024-01-28    8% ▇
 <a name="speech-voicecraft-report-bysa"></a>VoiceCraft: Zero-Shot…  <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS list…</a>  3.96 / 5    31.7   2024-06-14   11% ▇
-                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>     47.0%    24.5   2024-06-14    4% ▇
-                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>      3.6%    32.9   2024-06-14    4% ▇
-<a name="speech-ditto-tts-report-ccby"></a>DiTTo-TTS: Diffusion …  <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>     49.3%    30.1   2025-02-17    7% ▇
-                        <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>      5.1%    22.1   2025-02-17    5% ▇
-<a name="speech-stylettszs-report-bysa"></a>StyleTTS-ZS: Efficien…  <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  3.74 / 5    29.1   2024-09-16    9% ▇
-                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  3.68 / 5    22.8   2024-09-16    1% ▇
-                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 · …</a>      6.2%    11.3   2024-09-16    0% ▇
-<a name="speech-amphion-maskgct-mit"></a>Amphion MaskGCT READM…  <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">LibriSpeech test-clean zero-s…</a>      4.2%    38.0   2024-10-20    3% ▇
+                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>     47.0%    24.1   2024-06-14    5% ▇
+                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>      3.6%    32.5   2024-06-14    4% ▇
+<a name="speech-zstts-eval-casanova-mit"></a>ZS-TTS-Evaluation       <a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/XTTS_v2.0.2/metrics.csv">ZS-TTS-Evaluation · English z…</a>      0.5%    30.0   2024-01-28   12% ▇
+                        <a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/XTTS_v2.0.2/metrics.csv">ZS-TTS-Evaluation · English z…</a>     64.2%    32.0   2024-01-28    8% ▇
+<a name="speech-ditto-tts-report-ccby"></a>DiTTo-TTS: Diffusion …  <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>     49.3%    29.7   2025-02-17    7% ▇
+                        <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>      5.1%    21.5   2025-02-17    5% ▇
+<a name="speech-stylettszs-report-bysa"></a>StyleTTS-ZS: Efficien…  <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  3.74 / 5    28.5   2024-09-16    9% ▇
+                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  3.68 / 5    23.2   2024-09-16    1% ▇
+                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 · …</a>      6.2%    10.6   2024-09-16    0% ▇
+<a name="speech-amphion-maskgct-mit"></a>Amphion MaskGCT READM…  <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">LibriSpeech test-clean zero-s…</a>      4.2%    38.2   2024-10-20    3% ▇
                         <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Seed-TTS test-en · Whisper la…</a>      3.2%    47.8   2024-10-20    3% ▇
-                        <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Seed-TTS test-zh · Paraformer…</a>      2.9%    47.1   2024-10-20    2% ▇
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     45.0%    43.5   2026-05-24    7% ▇
-                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>      7.0%   127.5   2026-05-24    0% ▇
-<a name="speech-sap-voicerecon-ccby"></a>An Evaluation Framewo…  <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · hu…</a>     776.1    17.5   2026-06-19    5% ▇
-                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TT…</a>     83.5%    34.4   2026-06-19    1% ▇
-                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · WE…</a>     17.3%    42.3   2026-06-19    0% ▇
-<a name="speech-cloneval-space-apache"></a>ClonEval · Open Voice…  <a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · LibriSpeech test-c…</a>     88.8%    27.1   2025-04-09    6% ▇
-<a name="speech-balacoon-baselines-apache"></a>balacoon speech_gen_b…  <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/xtts/daps_celeb/metrics.yaml">balacoon zero-shot TTS · DAPS…</a>     52.9%    18.7   2025-02-18    1% ▇
-                        <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/xtts/vctk/metrics.yaml">balacoon zero-shot TTS · VCTK…</a>     57.7%    18.8   2025-02-18    1% ▇
-                        <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/xtts/daps_celeb/metrics.yaml">balacoon zero-shot TTS · DAPS…</a>      2.8%    70.2   2025-02-18    1% ▇
-                        <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/xtts/vctk/metrics.yaml">balacoon zero-shot TTS · VCTK…</a>      0.8%    59.3   2025-02-18    1% ▇
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.84 / 5    38.5   2026-03-15    3% ▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.69 / 5    22.1   2026-03-15    1% ▇
-<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena        <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>    1014.6    47.7   2026-09-24    2% ▇
-<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>     87.3%    53.9   2025-04-25    0% ▇
-prior                   pull toward the middle                      49.8                 2% ▇
-                        weighted average                          = 32.3
+                        <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Seed-TTS test-zh · Paraformer…</a>      2.9%    47.3   2024-10-20    2% ▇
+<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     45.0%    44.1   2026-05-24    6% ▇
+                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>      7.0%   138.8   2026-05-24    0% ▇
+<a name="speech-sap-voicerecon-ccby"></a>An Evaluation Framewo…  <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · hu…</a>     776.1    16.6   2026-06-19    4% ▇
+                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TT…</a>     83.5%    33.2   2026-06-19    1% ▇
+                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · WE…</a>     17.3%    42.1   2026-06-19    0% ▇
+<a name="speech-cloneval-space-apache"></a>ClonEval · Open Voice…  <a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · LibriSpeech test-c…</a>     88.8%    26.6   2025-04-09    5% ▇
+<a name="speech-balacoon-baselines-apache"></a>balacoon speech_gen_b…  <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/xtts/daps_celeb/metrics.yaml">balacoon zero-shot TTS · DAPS…</a>     52.9%    21.8   2025-02-18    2% ▇
+                        <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/xtts/vctk/metrics.yaml">balacoon zero-shot TTS · VCTK…</a>     57.7%    22.8   2025-02-18    2% ▇
+                        <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/xtts/vctk/metrics.yaml">balacoon zero-shot TTS · VCTK…</a>      0.8%    60.7   2025-02-18    1% ▇
+                        <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/xtts/daps_celeb/metrics.yaml">balacoon zero-shot TTS · DAPS…</a>      2.8%    72.6   2025-02-18    1% ▇
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.84 / 5    38.6   2026-03-15    3% ▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.69 / 5    21.7   2026-03-15    1% ▇
+<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena        <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>    1014.6    47.5   2026-09-24    2% ▇
+<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>     87.3%    53.5   2025-04-25    0% ▇
+prior                   pull toward the middle                      49.9                 2% ▇
+                        weighted average                          = 31.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: ZS-TTS-Evaluation ([MIT](../../licenses/speech-zstts-eval-casanova-mit.txt)) · VoiceCraft: Zero-Shot Speech Editing and Text-to-Speech in the Wild ([CC BY-SA 4.0](../../licenses/speech-voicecraft-report-bysa.txt)) · DiTTo-TTS: Diffusion Transformers for Scalable Text-to-Speech without Domain-Specific Factors ([CC BY 4.0](../../licenses/speech-ditto-tts-report-ccby.txt)) · StyleTTS-ZS: Efficient High-Quality Zero-Shot Text-to-Speech Synthesis with Distilled Time-Varying Style Diffusion ([CC BY-SA 4.0](../../licenses/speech-stylettszs-report-bysa.txt)) · Amphion MaskGCT README · zero-shot TTS results table ([MIT](../../licenses/speech-amphion-maskgct-mit.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt)) · An Evaluation Framework for TTS Voice Reconstruction ([CC BY 4.0](../../licenses/speech-sap-voicerecon-ccby.txt)) · ClonEval · Open Voice Cloning Leaderboard ([Apache-2.0](../../licenses/speech-cloneval-space-apache.txt)) · balacoon speech\_gen\_baselines · zero-shot TTS metrics ([Apache-2.0](../../licenses/speech-balacoon-baselines-apache.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt)) · Arabic TTS Arena ([Apache-2.0](../../licenses/speech-arabic-tts-arena-apache.txt)) · TTSDS v1 published results ([MIT](../../licenses/speech-ttsds-v1-mit.txt))</sub>
+<sub>Licences: VoiceCraft: Zero-Shot Speech Editing and Text-to-Speech in the Wild ([CC BY-SA 4.0](../../licenses/speech-voicecraft-report-bysa.txt)) · ZS-TTS-Evaluation ([MIT](../../licenses/speech-zstts-eval-casanova-mit.txt)) · DiTTo-TTS: Diffusion Transformers for Scalable Text-to-Speech without Domain-Specific Factors ([CC BY 4.0](../../licenses/speech-ditto-tts-report-ccby.txt)) · StyleTTS-ZS: Efficient High-Quality Zero-Shot Text-to-Speech Synthesis with Distilled Time-Varying Style Diffusion ([CC BY-SA 4.0](../../licenses/speech-stylettszs-report-bysa.txt)) · Amphion MaskGCT README · zero-shot TTS results table ([MIT](../../licenses/speech-amphion-maskgct-mit.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt)) · An Evaluation Framework for TTS Voice Reconstruction ([CC BY 4.0](../../licenses/speech-sap-voicerecon-ccby.txt)) · ClonEval · Open Voice Cloning Leaderboard ([Apache-2.0](../../licenses/speech-cloneval-space-apache.txt)) · balacoon speech\_gen\_baselines · zero-shot TTS metrics ([Apache-2.0](../../licenses/speech-balacoon-baselines-apache.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt)) · Arabic TTS Arena ([Apache-2.0](../../licenses/speech-arabic-tts-arena-apache.txt)) · TTSDS v1 published results ([MIT](../../licenses/speech-ttsds-v1-mit.txt))</sub>
 
 ## How to run it
 
 <pre>
 version                                  needs  score
-fp32 (coqui-tts 0.27.5)                ~1.88GB   32.3
-fp32 (coqui-tts 0.27.5) · nvidia only  ~1.88GB   32.3
+fp32 (coqui-tts 0.27.5)                ~1.88GB   31.9
+fp32 (coqui-tts 0.27.5) · nvidia only  ~1.88GB   31.9
 </pre>
 
 ```sh

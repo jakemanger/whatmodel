@@ -6,7 +6,7 @@
 
 Mistral · released 2024-10 · proprietary
 
-**score 41.5** ±1.6 · comparison only: no current run option verified · from 6 benchmark results across 2 sources
+**score 42.3** ±1.7 · comparison only: no current run option verified · from 6 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    14.4%    43.9   2025-01-27   40% ▇▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    25.3%    27.7   2025-01-27   17% ▇▇
-<a name="first-party-mistral-scores"></a>Mistral AI vendor-rep…  <a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">HumanEval (lab)</a>                 77.4%    46.0   2024-10-15   16% ▇▇
-                        <a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">Arena-Hard (version/judge uns…</a>  64.3%    42.2   2024-10-15   11% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    14.4%    43.2   2025-01-27   33% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    25.3%    35.3   2025-01-27   19% ▇▇
+<a name="first-party-mistral-scores"></a>Mistral AI vendor-rep…  <a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">HumanEval (lab)</a>                 77.4%    46.0   2024-10-15   18% ▇▇
+                        <a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">Arena-Hard (version/judge uns…</a>  64.3%    42.1   2024-10-15   12% ▇
                         <a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">MBPP (lab)</a>                      67.7%    43.3   2024-10-15    9% ▇
-                        <a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">MATH (subset unspecified) (la…</a>  51.7%    46.1   2024-10-15    7% ▇
+                        <a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">MATH (subset unspecified) (la…</a>  51.7%    45.3   2024-10-15    7% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 41.5
+                        weighted average                       = 42.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

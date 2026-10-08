@@ -6,7 +6,7 @@
 
 Google · released 2026-09 · proprietary
 
-**score 77.6** ±1.2 · #9 of 548 · from 5 benchmark results across 2 sources
+**score 78.2** ±1.4 · #10 of 549 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                 score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1679.5    77.3   2026-10-01   37% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  0.0757 IPS    77.9   2026-10-02   33% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1525.2    77.2   2026-10-02   21% ▇▇▇
-<a name="first-party-google-scores"></a>Google DeepMind Gemin…  <a href="https://deepmind.google/models/gemini/#performance">LVBench (lab)</a>                        91.7%    81.3                 5% ▇
-                        <a href="https://deepmind.google/models/gemini/#performance">DeepSWE v1.1 (resolved) (lab)</a>        77.9%    79.7                 3% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  0.0757 IPS    78.6   2026-10-02   33% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1679.5    78.1   2026-10-01   33% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1525.2    77.7   2026-10-02   24% ▇▇▇
+<a name="first-party-google-scores"></a>Google DeepMind Gemin…  <a href="https://deepmind.google/models/gemini/#performance">LVBench (lab)</a>                        91.7%    81.5                 5% ▇
+                        <a href="https://deepmind.google/models/gemini/#performance">DeepSWE v1.1 (resolved) (lab)</a>        77.9%    80.2                 4% ▇
 prior                   pull toward the middle                        50.0                 1% ▇
-                        weighted average                            = 77.6
+                        weighted average                            = 78.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

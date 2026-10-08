@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 8.05B params · apache-2.0
 
-**score 40.0** ±2.6 · #385 of 548 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 39.7** ±2.6 · #385 of 549 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  49.6%    41.8   2024-05-07   85% ▇▇▇▇▇▇▇▇▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  45.2%    25.0   2026-04-17   12% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  49.6%    41.4   2024-05-07   87% ▇▇▇▇▇▇▇▇▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  45.2%    21.5   2026-04-17   10% ▇
 prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 40.0
+                        weighted average                       = 39.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.88GB   40.0
+4-bit q4_k_m  ~4.88GB   39.7
 </pre>
 
 ```sh

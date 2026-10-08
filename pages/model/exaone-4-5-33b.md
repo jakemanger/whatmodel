@@ -6,7 +6,7 @@
 
 LG AI Research · released 2026-04 · 34.4B params · exaone
 
-**score 56.9** ±2.3 · #177 of 548 · from 4 benchmark results across 1 source
+**score 57.6** ±2.5 · #174 of 549 · from 4 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">GPQA Diamond (lab)</a>              80.5%    53.6   2026-04-04   37% ▇▇▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">AIME 2025 (lab)</a>                 92.9%    62.6   2026-04-04   27% ▇▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">MMLU-Pro (lab)</a>                  83.3%    54.9   2026-04-04   25% ▇▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">IFEval (aggregation unspecifi…</a>  89.6%    60.3   2026-04-04    9% ▇
-prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 56.9
+<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">GPQA Diamond (lab)</a>              80.5%    54.8   2026-04-04   38% ▇▇▇▇▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">AIME 2025 (lab)</a>                 92.9%    62.6   2026-04-04   30% ▇▇▇▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">MMLU-Pro (lab)</a>                  83.3%    55.5   2026-04-04   24% ▇▇▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">IFEval (aggregation unspecifi…</a>  89.6%    63.0   2026-04-04    5% ▇
+prior                   pull toward the middle                   50.0                 3% ▇
+                        weighted average                       = 57.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 source       test                            score  why
-SqueezeBits  <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">MMLU-Pro</a>                        72.0%  another source's result is used
+SqueezeBits  <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">MMLU-Pro</a>                        72.0%  only model in this source's run
 SqueezeBits  <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">MMMU-Pro standard (SqueezeBit…</a>  17.6%  too few models have it yet
 SqueezeBits  <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">MMMU-Pro vision (SqueezeBits …</a>  21.5%  too few models have it yet
 </pre>
@@ -43,8 +43,8 @@ SqueezeBits  <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f
 
 <pre>
 download               size  score
-4-bit gguf-q4_k_m  ~21.14GB   56.9
-8-bit gguf-q8_0    ~41.78GB   56.9
+4-bit gguf-q4_k_m  ~21.14GB   57.6
+8-bit gguf-q8_0    ~41.78GB   57.6
 </pre>
 
 ```sh

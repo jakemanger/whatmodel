@@ -17,9 +17,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>  10.6%    56.1   2026-07-27   41% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>          11.7%    58.3   2026-07-27   38% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>          11.8%    60.3   2026-07-27   18% ▇▇
-prior                   pull toward the middle                   49.8                 3% ▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>          11.7%    58.2   2026-07-27   38% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>          11.8%    60.2   2026-07-27   18% ▇▇
+prior                   pull toward the middle                   49.9                 3% ▇
                         weighted average                       = 57.5
 </pre>
 

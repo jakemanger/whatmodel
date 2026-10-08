@@ -12775,5 +12775,40 @@
     "attribution": "Open Thoughts official model cards and configuration, observed 2026-10-07",
     "verdict": "allowed",
     "checked": "2026-10-07"
+  },
+  {
+    "id": "acl-2021-findings-acl-404-prost",
+    "name": "PROST (Aroca-Ouellette et al., Findings of ACL-IJCNLP 2021) - authors' own zero-shot runs",
+    "kind": "paper",
+    "match": [
+      "aclanthology.org/2021.findings-acl.404.pdf"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "terms_url": "https://aclanthology.org/2021.findings-acl.404/",
+    "license_url": "/licenses/_cc-by-4.0-legalcode.txt",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "quote": "ACL Anthology landing page footer for 2021.findings-acl.404: 'Materials published in or after 2016 are licensed on a Creative Commons Attribution 4.0 International License.' Findings of ACL-IJCNLP 2021 is an ACL publication. Section 4: 'We use Huggingface's (Wolf et al., 2020) pretrained models, see Table 4 for the full set.'",
+    "attribution": "Stephane Aroca-Ouellette, Cory Paik, Alessandro Roncone and Katharina Kann; (c)2021 Association for Computational Linguistics. PROST: Physical Reasoning about Objects through Space and Time. Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021, pages 4597-4608.\nSource: https://aclanthology.org/2021.findings-acl.404.pdf\nLicence: CC BY 4.0 - https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells (Table 5 macro averages) transcribed into JSON; percentages divided by 100; model identities clarified. No questions or figures redistributed. No endorsement.",
+    "scope": "Table 5 'Macro Average' column for GPT (openai-gpt) and GPT-2 B/M/L/XL, the five catalogue models. BERT/RoBERTa/ALBERT rows (not in catalogue), T5 and UnifiedQA rows (9-concept average without sliding; UnifiedQA fine-tuned), per-concept columns, Tables 6-7 not imported.",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "first-party-cohere-scores",
+    "name": "Cohere vendor-reported benchmark scores for its own models (cohere.com blog)",
+    "kind": "first-party",
+    "match": [
+      "cohere.com/blog/command-a-plus"
+    ],
+    "exact": true,
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://cohere.com/terms-of-use",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "icon": "cohere.com",
+    "attribution": "Cohere, vendor-reported results for Cohere's own models from the 'Introducing Command A+' blog post (May 20, 2026); individual figures from the post's text hand-recorded 2026-10-08; percentages converted to fractions. Lab-reported, not independent measurements. No endorsement.",
+    "quote": "Owner rule (b), approved 2026-10-07 (UPDATING.md 'Vendor-reported scores'): a vendor's own published score for its own model, from its announcement, system/model card or docs, may be recorded by hand one figure at a time with the exact URL, date and printed settings; other labs' cells and cells credited to a third party excluded. The post's Artificial Analysis Intelligence Index (37) is credited to Artificial Analysis and is not recorded; MMMU / MMMU Pro / MathVista figures are not recorded because the post gives no split (val/test, testmini, standard/vision).",
+    "scope": "Command A+ only: τ²-Bench Telecom 85%, Terminal-Bench Hard 25%, CharXiv reasoning 52.7% from the body text. Chart-only figures (AIME 2025, IFBench, SciCode, MT-AIME, WMT24++) and internal North evaluations not recorded. Command A Reasoning (37%, 3%) and Command A Vision (46.9%) are printed but are not catalogue models."
   }
 ]

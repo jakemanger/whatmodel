@@ -6,7 +6,7 @@
 
 Fish Audio · released 2025-06 · proprietary
 
-**score 57.9** ±8.6 · #34 of 98 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 57.9** ±8.5 · #35 of 98 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-fish-s2-report"></a>Fish Audio S2 Technic…  <a href="https://arxiv.org/html/2603.08823v2">Seed-TTS test-en · Whisper la…</a>   1.1%    60.7   2026-03-11   36% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2603.08823v2">Seed-TTS test-zh · Paraformer…</a>   0.5%    62.0   2026-03-11   35% ▇▇▇▇
-prior                   pull toward the middle                   49.8                29% ▇▇▇▇
+<a name="speech-fish-s2-report"></a>Fish Audio S2 Technic…  <a href="https://arxiv.org/html/2603.08823v2">Seed-TTS test-en · Whisper la…</a>   1.1%    60.6   2026-03-11   36% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2603.08823v2">Seed-TTS test-zh · Paraformer…</a>   0.5%    61.9   2026-03-11   34% ▇▇▇▇
+prior                   pull toward the middle                   49.9                29% ▇▇▇▇
                         weighted average                       = 57.9
 </pre>
 

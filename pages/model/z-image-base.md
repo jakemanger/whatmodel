@@ -17,15 +17,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="report-2511.22699v5"></a>Tongyi-MAI              <a href="https://arxiv.org/html/2511.22699v5">GenEval (lab)</a>                   84.0%    56.8   2026-07-06    9% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (lab)</a>       93.5%    58.8   2026-07-06    8% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long pro…</a>  83.0%    57.8   2026-07-06    8% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short pr…</a>  80.2%    57.1   2026-07-06    8% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN) (lab)</a>          53.5%    56.5   2026-07-06    7% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy (lab)</a>     86.7%    55.9   2026-07-06    7% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN) (lab)</a>          54.6%    55.9   2026-07-06    7% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (lab)</a>       93.6%    57.2   2026-07-06    7% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">DPG-Bench (lab)</a>                 88.1%    59.3   2026-07-06    7% ▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  88.1%    56.4   2026-08-25   30% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (lab)</a>       93.5%    58.7   2026-07-06    8% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long pro…</a>  83.0%    57.7   2026-07-06    8% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short pr…</a>  80.2%    57.0   2026-07-06    8% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN) (lab)</a>          53.5%    56.4   2026-07-06    8% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN) (lab)</a>          54.6%    55.8   2026-07-06    8% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy (lab)</a>     86.7%    55.8   2026-07-06    8% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (lab)</a>       93.6%    57.1   2026-07-06    8% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">DPG-Bench (lab)</a>                 88.1%    59.2   2026-07-06    7% ▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  88.1%    56.4   2026-08-25   27% ▇▇▇
 prior                   pull toward the middle                   49.9                 2% ▇
                         weighted average                       = 56.8
 </pre>

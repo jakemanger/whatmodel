@@ -6,7 +6,7 @@
 
 Ant Group · released 2026-09 · 6B params · apache-2.0
 
-**score 65.0** ±38.2 · #1 of 2 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 65.0** ±36.8 · #1 of 2 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [DPG-Bench](https://whatmodel.sh/image?set=dpg-bench%40visual-llada-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="visual-llada-image"></a>LLaDA-Image: Building…  <a href="https://arxiv.org/html/2609.03796v1#S5.T7">GenEval (lab)</a>           82.0%   -25.9   2026-09-03   27% ▇▇▇
-                        <a href="https://arxiv.org/html/2609.03796v1#S5.T8">DPG-Bench (lab)</a>         88.5%    17.4   2026-09-03   13% ▇▇
-prior                   pull toward the middle           50.0                60% ▇▇▇▇▇▇▇
+<a name="visual-llada-image"></a>LLaDA-Image: Building…  <a href="https://arxiv.org/html/2609.03796v1#S5.T7">GenEval (lab)</a>           82.0%   -60.6   2026-09-03   27% ▇▇▇
+                        <a href="https://arxiv.org/html/2609.03796v1#S5.T8">DPG-Bench (lab)</a>         88.5%   -44.9   2026-09-03   12% ▇
+prior                   pull toward the middle           50.0                61% ▇▇▇▇▇▇▇
                         weighted average               = 65.0
 </pre>
 

@@ -6,7 +6,7 @@
 
 Black Forest Labs / Krea · released 2025-07 · 12B params · flux-dev-nc
 
-**score 45.2** ±4.5 · #87 of 136 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 45.9** ±4.4 · #87 of 136 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>  82.0%    47.1   2026-03-29   80% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-knowledge-visualization"></a>Knowledge Visualizati…  <a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (…</a>  18.2%    29.4   2026-04-24   12% ▇
-prior                   pull toward the middle                   49.9                 9% ▇
-                        weighted average                       = 45.2
+<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>  82.0%    47.4   2026-03-29   82% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-knowledge-visualization"></a>Knowledge Visualizati…  <a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (…</a>  18.2%    29.7   2026-04-24   10% ▇
+prior                   pull toward the middle                   49.9                 8% ▇
+                        weighted average                       = 45.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,7 +34,7 @@ api (Replicate) · $0.025/image · [replicate.com](https://replicate.com/black-f
 
 <pre>
 version                                 needs  score
-bf16 + model CPU offload · nvidia only  ~41GB   45.2
+bf16 + model CPU offload · nvidia only  ~41GB   45.9
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Poolside · released 2026-04 · 225B params (23B active) · apache-2.0
 
-**score 64.3** ±1.7 · #107 of 548 · from 4 benchmark results across 2 sources
+**score 64.1** ±2.0 · #116 of 549 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                           score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1348.1    64.3   2026-10-01   73% ▇▇▇▇▇▇▇▇▇
-<a name="report-2605.27605v1"></a>Poolside                <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       74.6%    64.3   2026-05-26   10% ▇
-                        <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       45.8%    66.5   2026-05-26    8% ▇
-                        <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   63.1%    64.6   2026-05-26    7% ▇
-prior                   pull toward the middle                  50.0                 1% ▇
-                        weighted average                      = 64.3
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1348.1    64.1   2026-10-01   66% ▇▇▇▇▇▇▇▇
+<a name="report-2605.27605v1"></a>Poolside                <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       74.6%    63.9   2026-05-26   12% ▇
+                        <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       45.8%    66.2   2026-05-26   10% ▇
+                        <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   63.1%    64.2   2026-05-26   10% ▇
+prior                   pull toward the middle                  50.0                 2% ▇
+                        weighted average                      = 64.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -43,9 +43,9 @@ api (Poolside) · price unknown · [huggingface.co](https://huggingface.co/pools
 
 <pre>
 download                        size  score
-16-bit bf16 · nvidia only   ~451.6GB   64.3
-4-bit fp8 · nvidia only    ~229.08GB   64.3
-4-bit nvfp4 · nvidia only  ~139.29GB   64.3
+16-bit bf16 · nvidia only   ~451.6GB   64.1
+4-bit fp8 · nvidia only    ~229.08GB   64.1
+4-bit nvfp4 · nvidia only  ~139.29GB   64.1
 </pre>
 
 ```sh

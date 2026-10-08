@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-ru-mit"></a>Russian STT benchmark…  <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · rulibrispeech c…</a>  10.2%    59.5   2026-08-07   33% ▇▇▇▇
+<a name="speech-stt-ru-mit"></a>Russian STT benchmark…  <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · rulibrispeech c…</a>  10.2%    59.4   2026-08-07   33% ▇▇▇▇
                         <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · podlodka corpus…</a>   9.3%    58.1   2026-08-07   33% ▇▇▇▇
-                        <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · fleurs corpus W…</a>   4.0%    66.5   2026-08-07   27% ▇▇▇
+                        <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · fleurs corpus W…</a>   4.0%    66.4   2026-08-07   27% ▇▇▇
 prior                   pull toward the middle                   49.7                 6% ▇
                         weighted average                       = 60.3
 </pre>

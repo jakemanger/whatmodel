@@ -6,7 +6,7 @@
 
 BAAI · released 2024-09 · 8B params · apache-2.0
 
-**score 36.1** ±2.0 · #112 of 136 · from 3 benchmark results across 3 sources
+**score 35.2** ±2.3 · #112 of 136 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   8.8%    37.1   2026-05-14   49% ▇▇▇▇▇▇
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       41.7%    34.8   2026-07-01   36% ▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  39.0%    34.0   2026-06-02   13% ▇▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       41.7%    33.9   2026-07-01   46% ▇▇▇▇▇▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   8.8%    37.1   2026-05-14   30% ▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  39.0%    33.9   2026-06-02   21% ▇▇▇
 prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 36.1
+                        weighted average                       = 35.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
+<sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
 
 <details><summary>Not counted (2)</summary>
 
@@ -41,7 +41,7 @@ BAAI    <a href="https://arxiv.org/html/2409.18869v1">GenEval</a>    54.0%  too 
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~22.2GB   36.1
+bf16 · nvidia only  ~22.2GB   35.2
 </pre>
 
 ```sh

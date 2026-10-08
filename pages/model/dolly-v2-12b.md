@@ -6,7 +6,7 @@
 
 Databricks · released 2023-04 · 12B params · mit
 
-**score 18.5** ±2.2 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 17.3** ±2.6 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          982.4    16.8   2026-10-02   69% ▇▇▇▇▇▇▇▇
-<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>                7.9%    28.4   2024-03-10   19% ▇▇
-                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                    25.7%     4.3   2024-03-10   10% ▇
-prior                   pull toward the middle           50.0                 2% ▇
-                        weighted average               = 18.5
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          982.4    15.4   2026-10-02   86% ▇▇▇▇▇▇▇▇▇▇
+<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                    25.7%     8.5   2024-03-10    7% ▇
+                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>                7.9%    45.7   2024-03-10    4% ▇
+prior                   pull toward the middle           50.0                 3% ▇
+                        weighted average               = 17.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

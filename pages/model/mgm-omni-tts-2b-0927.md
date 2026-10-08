@@ -6,7 +6,7 @@
 
 MGM-Omni (CUHK) · released 2025-09 · 2.15B params · apache-2.0
 
-**score 55.2** ±3.9 · comparison only: no current run option verified · from 4 benchmark results across 2 sources
+**score 55.4** ±3.9 · comparison only: no current run option verified · from 4 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/MGM-Omni.md">Seed-TTS test-zh · Paraformer…</a>   1.3%    57.9   2025-11-27   35% ▇▇▇▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/MGM-Omni.md">Seed-TTS test-en · Whisper la…</a>   2.5%    56.2   2025-11-27   33% ▇▇▇▇
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  54.0%    51.5   2026-05-24   26% ▇▇▇
-                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>   9.0%    85.4   2026-05-24    0% ▇
-prior                   pull toward the middle                   49.8                 6% ▇
-                        weighted average                       = 55.2
+<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/MGM-Omni.md">Seed-TTS test-zh · Paraformer…</a>   1.3%    58.0   2025-11-27   35% ▇▇▇▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/MGM-Omni.md">Seed-TTS test-en · Whisper la…</a>   2.5%    56.4   2025-11-27   34% ▇▇▇▇
+<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  54.0%    51.7   2026-05-24   25% ▇▇▇
+                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>   9.0%    91.0   2026-05-24    0% ▇
+prior                   pull toward the middle                   49.9                 6% ▇
+                        weighted average                       = 55.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

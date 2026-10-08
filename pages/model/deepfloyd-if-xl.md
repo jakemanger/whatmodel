@@ -6,7 +6,7 @@
 
 DeepFloyd · released 2023-04 · 4.3B params · deepfloyd-if-license
 
-**score 33.6** ±1.9 · #117 of 136 · from 7 benchmark results across 7 sources
+**score 35.5** ±1.8 · #110 of 136 · from 7 benchmark results across 7 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,26 +16,26 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                        score  implies  date        weight
-<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>                              58.9%    27.5   2023-11-07   26% ▇▇▇
-<a name="visual-geneval"></a>GenEval authors' resu…  <a href="https://github.com/djghosh13/geneval/blob/af4902f24d3ca90ebbb446dd9891a59e0f82725f/README.md">GenEval</a>                                                     61.0%    35.7   2023-10-17   26% ▇▇▇
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>                           2.77 / 5    33.2   2024-12-25   21% ▇▇▇
-<a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>                              38.0%    34.8   2024-08-26   17% ▇▇
-<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  5.4500 mean human alignment score    42.5   2024-10-10    7% ▇
-<a name="visual-imagenhub"></a>ImagenHub: Standardiz…  <a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generat…</a>                              59.0%    38.1   2024-03-10    1% ▇
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>                              27.3%    50.1   2024-02-21    0% ▇
+<a name="visual-geneval"></a>GenEval authors' resu…  <a href="https://github.com/djghosh13/geneval/blob/af4902f24d3ca90ebbb446dd9891a59e0f82725f/README.md">GenEval</a>                                                     61.0%    36.7   2023-10-17   23% ▇▇▇
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>                           2.77 / 5    33.3   2024-12-25   21% ▇▇
+<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  5.4500 mean human alignment score    39.0   2024-10-10   21% ▇▇
+<a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>                              38.0%    34.6   2024-08-26   18% ▇▇
+<a name="visual-imagenhub"></a>ImagenHub: Standardiz…  <a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generat…</a>                              59.0%    35.1   2024-03-10   10% ▇
+<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>                              58.9%    25.5   2023-11-07    6% ▇
+<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>                              27.3%    47.3   2024-02-21    0% ▇
 prior                   pull toward the middle                                               49.9                 1% ▇
-                        weighted average                                                   = 33.6
+                        weighted average                                                   = 35.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: HEIM: Holistic Evaluation of Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GenEval authors' results: djghosh13/geneval README and arXiv 2310.11513v1 ([MIT (README); CC-BY-4.0 (arXiv 2310.11513v1)](../../licenses/visual-geneval.txt)) · EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty ([CC-BY-4.0](../../licenses/visual-conceptmix.txt)) · EvalAlign: Supervised Fine-Tuning Multimodal LLMs with Human-Aligned Data for Evaluating Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ImagenHub: Standardizing the evaluation of conditional image generation models ([CC-BY-4.0](../../licenses/visual-imagenhub.txt)) · tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>
+<sub>Licences: GenEval authors' results: djghosh13/geneval README and arXiv 2310.11513v1 ([MIT (README); CC-BY-4.0 (arXiv 2310.11513v1)](../../licenses/visual-geneval.txt)) · EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · EvalAlign: Supervised Fine-Tuning Multimodal LLMs with Human-Aligned Data for Evaluating Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty ([CC-BY-4.0](../../licenses/visual-conceptmix.txt)) · ImagenHub: Standardizing the evaluation of conditional image generation models ([CC-BY-4.0](../../licenses/visual-imagenhub.txt)) · HEIM: Holistic Evaluation of Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>
 
 ## How to run it
 
 <pre>
 version                                     needs  score
-fp16 + model CPU offload (stages I+II, …  ~29.1GB   33.6
+fp16 + model CPU offload (stages I+II, …  ~29.1GB   35.5
 </pre>
 
 ```sh

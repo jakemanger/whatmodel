@@ -6,7 +6,7 @@
 
 AI21 Labs · released 2024-08 · 52B params (12B active) · jamba-open-model-license
 
-**score 45.6** ±2.6 · #306 of 548 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 45.1** ±2.8 · #311 of 549 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1239.7    45.4   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            50.0                 3% ▇
-                        weighted average                = 45.6
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1239.7    45.0   2026-10-02   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            50.0                 4% ▇
+                        weighted average                = 45.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle            50.0                 3
 
 <pre>
 download                        size  score
-16-bit bf16 · nvidia only  ~103.14GB   45.6
+16-bit bf16 · nvidia only  ~103.14GB   45.1
 </pre>
 
 ```sh

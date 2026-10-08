@@ -6,7 +6,7 @@
 
 AI21 Labs · released 2024-08 · 398B params (94B active) · jamba-open-model-license
 
-**score 48.3** ±1.8 · #275 of 548 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 47.6** ±1.9 · #280 of 549 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_jamba-1.5-large_5shots.zip">MMLU-Pro</a>                 49.5%    45.7                51% ▇▇▇▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1289.4    51.0   2026-10-02   47% ▇▇▇▇▇▇
+<a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_jamba-1.5-large_5shots.zip">MMLU-Pro</a>                 49.5%    45.1                56% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1289.4    50.7   2026-10-02   43% ▇▇▇▇▇
 prior                   pull toward the middle            50.0                 2% ▇
-                        weighted average                = 48.3
+                        weighted average                = 47.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle            50.0                 2
 
 <pre>
 download                                       size  score
-16-bit bf16 weights, experts_int8 at lo…  ~797.11GB   48.3
+16-bit bf16 weights, experts_int8 at lo…  ~797.11GB   47.6
 </pre>
 
 ```sh

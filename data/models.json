@@ -41254,5 +41254,25 @@
         "reported_label": "gemini-2.5-flash-lite-preview-06-17-thinking"
       }
     ]
+  },
+  {
+    "category": "llm",
+    "open_weights": true,
+    "api": null,
+    "id": "command-a-reasoning-08-2025",
+    "name": "Command A Reasoning (08-2025)",
+    "provider": "Cohere",
+    "model_repo": "https://huggingface.co/CohereLabs/command-a-reasoning-08-2025",
+    "identity_note": "HF repo sha bd39aafe2c5e71a044d2f1674accfd9b384d3dbb, cc-by-nc-4.0, created 2025-08-12; 111B per the Cohere post's comparison table."
+  },
+  {
+    "category": "llm",
+    "open_weights": true,
+    "api": null,
+    "id": "command-a-vision-07-2025",
+    "name": "Command A Vision (07-2025)",
+    "provider": "Cohere",
+    "model_repo": "https://huggingface.co/CohereLabs/command-a-vision-07-2025",
+    "identity_note": "HF repo sha e1016a8105950a626e7dd91b0a3030f7ae522411, cc-by-nc-4.0, created 2025-07-28; 112B per the Cohere post's comparison table."
   }
 ]

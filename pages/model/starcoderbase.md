@@ -6,7 +6,7 @@
 
 BigCode · released 2023-05 · 15.5B params · bigcode-openrail-m
 
-**score 32.5** ±1.1 · #476 of 548 · from 10 benchmark results across 3 sources
+**score 31.5** ±1.1 · #483 of 549 · from 10 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,18 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 29.3%    32.2   2024-02-29   30% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      50.6%    30.7   2024-02-29   12% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   23.8%    33.8   2024-02-29   10% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                     21.5%    29.8   2024-02-29    6% ▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  31.9%    33.7   2024-05-07   13% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            37.4%    33.2   2024-05-07   10% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      31.0%    30.4   2024-05-07    7% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      34.4%    32.8   2024-05-07    5% ▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      31.3%    33.9   2024-01-03    3% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      34.2%    34.4   2024-01-03    3% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 32.5
+<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 29.3%    31.4   2024-02-29   31% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      50.6%    29.7   2024-02-29   12% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   23.8%    32.8   2024-02-29   10% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                     21.5%    28.0   2024-02-29    6% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  31.9%    32.7   2024-05-07   13% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            37.4%    32.4   2024-05-07   10% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      31.0%    29.5   2024-05-07    7% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      34.4%    32.0   2024-05-07    5% ▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      31.3%    32.9   2024-01-03    3% ▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      34.2%    33.7   2024-01-03    3% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 31.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,7 +36,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp32  ~63.28GB   32.5
+4-bit fp32  ~63.28GB   31.5
 </pre>
 
 ```sh

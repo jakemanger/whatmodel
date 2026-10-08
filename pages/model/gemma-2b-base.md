@@ -6,7 +6,7 @@
 
 Google · released 2024-02 · 2.51B params · gemma
 
-**score 29.2** ±0.6 · #500 of 548 · from 26 benchmark results across 5 sources
+**score 28.4** ±0.7 · #503 of 549 · from 26 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,34 +14,34 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      20.7%    30.1   2024-12-26   20% ▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       25.0%    30.2   2024-12-26   19% ▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           34.1%    28.9   2024-12-26    3% ▇
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       22.0%    29.9   2024-03-28   19% ▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               12.8%    27.3   2024-03-28   10% ▇
-<a name="paper-gemma-2403.08295v4"></a>Gemma report            <a href="https://arxiv.org/html/2403.08295v4#S3.T6">HumanEval (lab)</a>                 22.0%    30.8   2024-04-19    2% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">ARC Challenge (lab)</a>             42.1%    29.0   2024-04-19    2% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MATH (lab)</a>                      11.8%    27.6   2024-04-19    2% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">WinoGrande (lab)</a>                65.4%    29.6   2024-04-19    2% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">GSM8K (lab)</a>                     17.7%    28.6   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BIG-Bench Hard (lab)</a>            35.2%    28.7   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">OpenBookQA (lab)</a>                47.8%    31.7   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">TriviaQA (lab)</a>                  53.2%    30.2   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MMLU (lab)</a>                      42.3%    22.5   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MBPP (lab)</a>                      29.2%    31.3   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BoolQ (lab)</a>                     69.4%    23.9   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">HellaSwag (lab)</a>                 71.4%    27.5   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">AGIEval English (Gemma report…</a>  24.2%    26.0   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">Natural Questions (closed boo…</a>  12.5%    24.5   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">ARC Easy (lab)</a>                  73.2%    27.0   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">CommonsenseQA (lab)</a>             65.3%    35.1   2024-04-19    0% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">Social IQA (lab)</a>                49.7%    38.9   2024-04-19    0% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">PIQA (lab)</a>                      77.3%    28.4   2024-04-19    0% ▇
-<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 22.0%    29.6   2024-06-19    5% ▇
-                        <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      29.2%    25.7   2024-06-19    2% ▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  17.2%    24.7   2024-05-07    4% ▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       25.0%    29.3   2024-12-26   21% ▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      20.7%    29.3   2024-12-26   18% ▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           34.1%    27.8   2024-12-26    3% ▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       22.0%    28.9   2024-03-28   17% ▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               12.8%    26.3   2024-03-28    7% ▇
+<a name="paper-gemma-2403.08295v4"></a>Gemma report            <a href="https://arxiv.org/html/2403.08295v4#S3.T6">ARC Challenge (lab)</a>             42.1%    29.2   2024-04-19    3% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">OpenBookQA (lab)</a>                47.8%    32.0   2024-04-19    3% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">HumanEval (lab)</a>                 22.0%    29.9   2024-04-19    2% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MATH (lab)</a>                      11.8%    26.7   2024-04-19    2% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">WinoGrande (lab)</a>                65.4%    28.2   2024-04-19    2% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BIG-Bench Hard (lab)</a>            35.2%    25.1   2024-04-19    1% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">TriviaQA (lab)</a>                  53.2%    29.6   2024-04-19    1% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BoolQ (lab)</a>                     69.4%    24.8   2024-04-19    1% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">HellaSwag (lab)</a>                 71.4%    26.8   2024-04-19    1% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MMLU (lab)</a>                      42.3%    20.8   2024-04-19    1% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">GSM8K (lab)</a>                     17.7%    27.6   2024-04-19    1% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MBPP (lab)</a>                      29.2%    30.8   2024-04-19    1% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">Natural Questions (closed boo…</a>  12.5%    24.1   2024-04-19    1% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">AGIEval English (Gemma report…</a>  24.2%    25.3   2024-04-19    1% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">ARC Easy (lab)</a>                  73.2%    26.2   2024-04-19    1% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">CommonsenseQA (lab)</a>             65.3%    35.1   2024-04-19    1% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">Social IQA (lab)</a>                49.7%    39.6   2024-04-19    0% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">PIQA (lab)</a>                      77.3%    27.6   2024-04-19    0% ▇
+<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 22.0%    28.7   2024-06-19    5% ▇
+                        <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      29.2%    24.5   2024-06-19    2% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  17.2%    23.7   2024-05-07    4% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 29.2
+                        weighted average                       = 28.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -54,8 +54,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~1.8GB   29.2
-8-bit q8_0    ~2.7GB   29.2
+4-bit q4_k_m  ~1.8GB   28.4
+8-bit q8_0    ~2.7GB   28.4
 </pre>
 
 ```sh

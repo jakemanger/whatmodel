@@ -6,7 +6,7 @@
 
 Runway · released 2025-12 · proprietary
 
-**score 58.0** ±2.1 · #28 of 87 · from 3 benchmark results across 3 sources
+**score 57.7** ±2.2 · #28 of 87 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1224.7    56.1   2026-09-22   78% ▇▇▇▇▇▇▇▇▇
-<a name="visual-switch-bench"></a>SWITCH: Benchmarking …  <a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH interactive-interface …</a>   36.0%    64.5   2026-07-07   10% ▇
-<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>   36.6%    67.9   2026-08-26   10% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1224.7    56.0   2026-09-22   81% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>   36.6%    68.6   2026-08-26    9% ▇
+<a name="visual-switch-bench"></a>SWITCH: Benchmarking …  <a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH interactive-interface …</a>   36.0%    65.0   2026-07-07    8% ▇
 prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 58.0
+                        weighted average                        = 57.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SWITCH: Benchmarking Modeling and Handling of Tangible Interfaces in Long-horizon Embodied Scenarios ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · SWITCH: Benchmarking Modeling and Handling of Tangible Interfaces in Long-horizon Embodied Scenarios ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/))</sub>
 
 ## How to run it
 

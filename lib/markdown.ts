@@ -182,7 +182,7 @@ export function modelMarkdown(v: ModelView): string {
     if (m.source) out.push(`[Catalogue source](${m.source})`);
     out.push(v.raw.length ? `Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.` : `No reviewed benchmark results yet. This catalogue entry has no score or rank.`);
     if (v.raw.length) out.push(pre([{ head: "test", max: 34 }, { head: "result", right: true }, { head: "reported by" }, { head: "source", max: 30 }],
-      v.raw.map((r) => [benchName(r.bench), resultLabel(r), r.by === "lab" ? "lab" : "independent", { text: shortName(sourceName(r.source)), href: r.source }])));
+      v.raw.map((r) => [benchName(r.bench), resultLabel(r), (r.by === "lab" ? "lab" : "independent") + (r.invalid ? " · failed run, not counted" : ""), { text: shortName(sourceName(r.source)), href: r.source }])));
     out.push(licences(from, v.raw.map((r) => r.source)));
     if (m.api || m.local?.variants.length) {
       out.push(`## How to run it`);
@@ -214,9 +214,9 @@ export function modelMarkdown(v: ModelView): string {
   out.push(pre([{ head: "source", max: 22 }, { head: "test", max: 30 }, { head: "score", right: true }, { head: "implies", right: true }, { head: "date" }, { head: "weight" }], rows));
   out.push(`<sub>~ averaged with other results for the same test</sub>\n\n${licences(from, v.groups.flatMap((g) => g.rows.map((x) => x.r.source)))}`);
   if (v.unused.length) {
-    const why = { untracked: "not a tracked benchmark", "other-source": "another source's result is used", sparse: "too few models have it yet" };
+    const why = { untracked: "not a tracked benchmark", "other-source": "only model in this source's run", sparse: "too few models have it yet", failed: "failed run" };
     out.push(`<details><summary>Not counted (${v.unused.length})</summary>\n\n` + pre([{ head: "source", max: 22 }, { head: "test", max: 30 }, { head: "score", right: true }, { head: "why" }],
-      v.unused.map(({ r, reason }) => [shortName(sourceName(r.source)), { text: benchName(r.bench), href: r.source }, resultLabel(r), why[reason]])) + `\n\n</details>`);
+      v.unused.map(({ r, reason }) => [shortName(sourceName(r.source)), { text: benchName(r.bench), href: r.source }, resultLabel(r), reason === "failed" ? `failed run: ${r.invalid}` : why[reason]])) + `\n\n</details>`);
   }
 
   out.push(`## How to run it`);
@@ -267,7 +267,8 @@ export function methodMarkdown(): string {
   out.push([
     "**a** is a test's sharpness: how many points of result one step of ability is worth. Every run of the same test shares it, learned from all of them together. Saturated tests get a small a and count for less.",
     "**d** is the level of one evaluator's run of a test. Each run keeps its own, so an evaluator whose setup runs hot or cold can't move anyone's score. A result is read against the other models in its run, so a run needs at least two models and a test at least three across its runs. Sparser results stay visible as raw evidence. Lab-reported results are labelled.",
-    "Bounded scores use a logit scale after removing the guessing rate (25% on four-option multiple choice). Error ratios use −log(error + 0.005), preserving errors above 100% caused by insertions. Ratings use a linear transformation. Stored raw values are unchanged.",
+    "Percentages are fit as proportions after removing the guessing rate (25% on four-option multiple choice), on a log-odds scale. A result near 0% or 100% says little about how far beyond that edge a model is, so it counts for less. Error ratios use −log(error + 0.005), preserving errors above 100% caused by insertions. Ratings use a linear transformation. Stored raw values are unchanged.",
+    "A failed run, such as one flagged by its source or one far below random guessing because the answers couldn't be parsed, stays visible on the model page but doesn't count.",
     "Models with few results are pulled toward the middle and get a wider **±**; \\* marks scores from fewer than three results.",
     "Task filters recalculate scores using only that task’s reviewed evaluations. Models need task evidence to appear. Compare within the same task and connected set, not against overall scores. Agent measurements depend on the evaluated harness, tools and reasoning effort.",
     "Arena Agent’s signed IPS effects retain their raw units and are divided by a fixed 0.1 for the latent fit. They are not Elo or success rates. The aggregate is counted once, without duplicate component signals.",

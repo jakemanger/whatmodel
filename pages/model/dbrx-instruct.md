@@ -6,7 +6,7 @@
 
 Databricks · released 2024-03 · 132B params (36B active) · databricks-open-model
 
-**score 45.4** ±0.8 · #310 of 548 · from 9 benchmark results across 5 sources
+**score 44.8** ±0.8 · #315 of 549 · from 9 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,17 +14,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                       score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                                 70.1%    47.0   2024-12-26   35% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                                  75.0%    46.7   2024-12-26   34% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                      55.8%    41.5   2024-12-26    5% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                               11.7%    42.7   2025-01-27    9% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                               32.9%    46.7   2025-01-27    4% ▇
-<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  32.5989 WB-Score    41.1   2024-08-01    8% ▇
-<a name="card-huggingfaceh4-zephyr-orpo-141b-a35b-v0-1"></a>HuggingFaceH4 zephyr-…  <a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">BIG-Bench Hard</a>                             48.5%    40.1   2024-04-10    2% ▇
-                        <a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">IFEval (aggregation unspecifi…</a>             52.1%    36.2   2024-04-10    1% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                                    39.2%    39.6   2025-06-14    2% ▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                                 70.1%    46.5   2024-12-26   35% ▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                                  75.0%    46.3   2024-12-26   32% ▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                      55.8%    40.8   2024-12-26    4% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                               11.7%    42.4   2025-01-27    9% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                               32.9%    44.1   2025-01-27    5% ▇
+<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  32.5989 WB-Score    40.6   2024-08-01    8% ▇
+<a name="card-huggingfaceh4-zephyr-orpo-141b-a35b-v0-1"></a>HuggingFaceH4 zephyr-…  <a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">BIG-Bench Hard</a>                             48.5%    39.7   2024-04-10    3% ▇
+                        <a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">IFEval (aggregation unspecifi…</a>             52.1%    34.7   2024-04-10    1% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                                    39.2%    38.4   2025-06-14    2% ▇
 prior                   pull toward the middle                              50.0                 0% ▇
-                        weighted average                                  = 45.4
+                        weighted average                                  = 44.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -37,8 +37,8 @@ prior                   pull toward the middle                              50.0
 
 <pre>
 download        size  score
-4-bit q4_0   ~79.7GB   45.4
-8-bit q8_0  ~158.9GB   45.4
+4-bit q4_0   ~79.7GB   44.8
+8-bit q8_0  ~158.9GB   44.8
 </pre>
 
 ```sh

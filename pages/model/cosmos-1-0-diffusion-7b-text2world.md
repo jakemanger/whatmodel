@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-01 · 7B params · nvidia-open-model
 
-**score 44.8** ±4.2 · #55 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.3** ±4.1 · #56 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>  24.1%    44.4   2026-01-30   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>  24.1%    43.9   2026-01-30   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                 7% ▇
-                        weighted average                       = 44.8
+                        weighted average                       = 44.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~29.8GB   44.8
+bf16 · nvidia only  ~29.8GB   44.3
 </pre>
 
 ```sh

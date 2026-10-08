@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>   59.2%    39.5   2025-05-17   40% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>   55.7%    37.0   2025-05-17   23% ▇▇▇
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rat…</a>   50.6%    36.7   2025-04-21   19% ▇▇
-<a name="video-seaweed-7b"></a>Seaweed-7B: Cost-Effe…  <a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo…</a>  1000.0    46.3   2025-05-05   14% ▇▇
+<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>   59.2%    39.5   2025-05-17   41% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>   55.7%    37.0   2025-05-17   24% ▇▇▇
+<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rat…</a>   50.6%    36.5   2025-04-21   18% ▇▇
+<a name="video-seaweed-7b"></a>Seaweed-7B: Cost-Effe…  <a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo…</a>  1000.0    46.1   2025-05-05   14% ▇▇
 prior                   pull toward the middle                    49.9                 3% ▇
                         weighted average                        = 39.6
 </pre>

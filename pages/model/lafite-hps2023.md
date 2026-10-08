@@ -6,7 +6,7 @@
 
 LAFITE authors · released 2021-11
 
-**score 47.5** ±14.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.3** ±14.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  weight
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md">HPS v2 benchmark (4-style ave…</a>  24.8%    15.6     7% ▇
+<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md">HPS v2 benchmark (4-style ave…</a>  24.8%    14.7     7% ▇
 prior                   pull toward the middle                   49.9    93% ▇▇▇▇▇▇▇▇▇▇▇
-                        weighted average                       = 47.5
+                        weighted average                       = 47.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

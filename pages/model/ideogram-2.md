@@ -6,7 +6,7 @@
 
 Ideogram · closed weights
 
-**score 48.8** ±2.0 · #79 of 136 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.9** ±2.1 · #79 of 136 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -18,7 +18,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                     score  implies  date        weight
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1013.4    48.8   2026-09-24   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle            49.9                 2% ▇
-                        weighted average                = 48.8
+                        weighted average                = 48.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

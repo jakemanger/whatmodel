@@ -6,7 +6,7 @@
 
 Zyphra · released 2026-06 · 8B params (0.9B active) · apache-2.0
 
-**score 56.3** ±2.5 · #40 of 98 · from 5 benchmark results across 2 sources
+**score 56.3** ±2.5 · #41 of 98 · from 5 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-zonos2-report-bysa"></a>ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>  2.40 / 5    57.0   2026-06-25   29% ▇▇▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>      6.1%    53.3   2026-06-25   23% ▇▇▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>      9.3%    51.7   2026-06-25   20% ▇▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>  3.13 / 5    61.1   2026-06-25   17% ▇▇
-<a name="speech-ztts1-eval-apache"></a>ZTTS1-Eval results sn…  <a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval · FLEURS-R English…</a>     87.5%    64.2   2026-06-22    9% ▇
-prior                   pull toward the middle                      49.8                 2% ▇
+<a name="speech-zonos2-report-bysa"></a>ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>  2.40 / 5    56.9   2026-06-25   27% ▇▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>      6.1%    53.2   2026-06-25   23% ▇▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>      9.3%    51.6   2026-06-25   20% ▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>  3.13 / 5    61.1   2026-06-25   18% ▇▇
+<a name="speech-ztts1-eval-apache"></a>ZTTS1-Eval results sn…  <a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval · FLEURS-R English…</a>     87.5%    63.5   2026-06-22   10% ▇
+prior                   pull toward the middle                      49.9                 2% ▇
                         weighted average                          = 56.3
 </pre>
 

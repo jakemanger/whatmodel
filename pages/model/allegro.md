@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>   56.1%    37.8   2025-05-17   33% ▇▇▇▇
+<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>   56.1%    37.7   2025-05-17   34% ▇▇▇▇
                         <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>   50.7%    33.0   2025-05-17   19% ▇▇
-<a name="video-genai-arena-space"></a>GenAI-Arena             <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>  1001.9    34.5   2025-03-22   46% ▇▇▇▇▇▇
+<a name="video-genai-arena-space"></a>GenAI-Arena             <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>  1001.9    34.4   2025-03-22   45% ▇▇▇▇▇
 prior                   pull toward the middle                    49.9                 2% ▇
                         weighted average                        = 35.6
 </pre>

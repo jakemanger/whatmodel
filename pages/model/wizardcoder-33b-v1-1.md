@@ -6,7 +6,7 @@
 
 WizardLM · released 2024-01 · 33.34B params · msft-research
 
-**score 48.0** ±0.7 · #281 of 548 · from 4 benchmark results across 2 sources
+**score 47.6** ±0.8 · #281 of 549 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              73.2%    48.1   2024-12-26   29% ▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               79.9%    48.8   2024-12-26   28% ▇▇▇
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               73.8%    47.1   2024-03-28   28% ▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       53.3%    48.1   2024-03-28   15% ▇▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              73.2%    47.7   2024-12-26   30% ▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               79.9%    48.5   2024-12-26   26% ▇▇▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               73.8%    46.6   2024-03-28   25% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       53.3%    47.6   2024-03-28   18% ▇▇
 prior                   pull toward the middle           50.0                 0% ▇
-                        weighted average               = 48.0
+                        weighted average               = 47.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,8 +32,8 @@ prior                   pull toward the middle           50.0                 0%
 
 <pre>
 download       size  score
-4-bit q4_k_m  ~20GB   48.0
-8-bit q8_0    ~35GB   48.0
+4-bit q4_k_m  ~20GB   47.6
+8-bit q8_0    ~35GB   47.6
 </pre>
 
 ```sh

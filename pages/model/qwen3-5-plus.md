@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-02 · proprietary
 
-**score 66.5** ±2.1 · #82 of 548 · from 5 benchmark results across 1 source
+**score 66.8** ±1.6 · #80 of 549 · from 5 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                          score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      86.7%    67.0   2026-08-07   30% ▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                  84.8%    67.8   2026-08-07   30% ▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>             25.4%    63.1   2026-08-27   21% ▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>  16.0%    67.9   2026-08-05   11% ▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>         22.0%    71.2   2026-08-07    7% ▇
-prior     pull toward the middle                 50.0                 2% ▇
-          weighted average                     = 66.5
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                  84.8%    67.7   2026-08-07   38% ▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      86.7%    67.4   2026-08-07   21% ▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>  16.0%    66.3   2026-08-05   15% ▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>         22.0%    68.7   2026-08-07   14% ▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>             25.4%    62.7   2026-08-27   10% ▇
+prior     pull toward the middle                 50.0                 1% ▇
+          weighted average                     = 66.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

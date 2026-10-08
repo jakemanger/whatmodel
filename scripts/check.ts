@@ -71,6 +71,7 @@ for (const r of results) {
   if (!/^https?:\/\//.test(r.source ?? "")) errors.push(`${where}: missing source url`);
   if (r.by !== "independent" && r.by !== "lab") errors.push(`${where}: by must be independent|lab`);
   if (b?.kind === "acc" && !(r.score >= 0 && r.score <= 1)) errors.push(`${where}: acc score must be 0-1, got ${r.score}`);
+  if (r.invalid !== undefined && !(typeof r.invalid === "string" && r.invalid.length >= 10)) errors.push(`${where}: invalid must explain why the run failed`);
   if (b?.kind === "elo" && !(r.score > 500 && r.score < 3000)) errors.push(`${where}: implausible elo ${r.score}`);
   if (b?.kind === "err" && !(Number.isFinite(r.score) && r.score >= 0)) errors.push(`${where}: error ratio must be finite and nonnegative, got ${r.score}`);
   if (b?.kind === "linear" && !Number.isFinite(r.score)) errors.push(`${where}: linear score must be finite`);

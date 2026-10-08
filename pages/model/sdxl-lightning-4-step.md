@@ -6,7 +6,7 @@
 
 ByteDance · released 2024-02 · 2.57B params · openrail++
 
-**score 37.4** ±3.1 · #107 of 136 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 37.4** ±3.1 · #106 of 136 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,8 +16,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                  score  implies  date        weight
-<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>       1053.0    38.1   2024-06-04   76% ▇▇▇▇▇▇▇▇▇
-<a name="visual-sdxl-lightning"></a>SDXL-Lightning: Progr…  <a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image)…</a>  22.3000 FID    31.9   2024-03-02   20% ▇▇
+<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>       1053.0    38.2   2024-06-04   75% ▇▇▇▇▇▇▇▇▇
+<a name="visual-sdxl-lightning"></a>SDXL-Lightning: Progr…  <a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image)…</a>  22.3000 FID    32.4   2024-03-02   21% ▇▇▇
 prior                   pull toward the middle                         49.9                 4% ▇
                         weighted average                             = 37.4
 </pre>

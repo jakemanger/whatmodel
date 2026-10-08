@@ -6,7 +6,7 @@
 
 Sber · released 2025-11 · 19B params · mit
 
-**score 51.9** ±2.3 · #41 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 51.8** ±2.3 · #41 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>           1175.2    51.9   2026-09-22   95% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>         86.5%    55.0   2026-04-22    3% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>           1175.2    51.7   2026-09-22   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>         86.5%    55.6   2026-04-22    3% ▇
 prior                   pull toward the middle            49.9                 2% ▇
-                        weighted average                = 51.9
+                        weighted average                = 51.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +32,7 @@ api (fal.ai) · $0.040/sec · [fal.ai](https://fal.ai/models/fal-ai/kandinsky5-p
 
 <pre>
 version                                   needs  score
-bf16 + model CPU offload · nvidia only  ~75.7GB   51.9
+bf16 + model CPU offload · nvidia only  ~75.7GB   51.8
 </pre>
 
 ```sh

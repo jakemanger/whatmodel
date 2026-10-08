@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-small.json">LibriSpeech test-clean WER</a>        3.3%    41.1   2026-09-15   19% ▇▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-small.json">LibriSpeech test-clean WER</a>        3.3%    41.1   2026-09-15   20% ▇▇
                         <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-small.json">FLEURS English test WER</a>           6.5%    48.1   2026-09-15    9% ▇
-<a name="speech-omniasr-paper-bysa"></a>Omnilingual ASR: Open…  <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · FLEUR…</a>   50.8%    32.8   2025-11-12   10% ▇
+<a name="speech-omniasr-paper-bysa"></a>Omnilingual ASR: Open…  <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · FLEUR…</a>   50.8%    32.7   2025-11-12   10% ▇
                         <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · Commo…</a>  111.7%    30.5   2025-11-12    7% ▇
-<a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>    4.1%    55.1   2026-07-19    6% ▇
+<a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>    4.1%    55.0   2026-07-19    6% ▇
                         <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>   14.9%    56.2   2026-07-19    5% ▇
 <a name="speech-stt-cl-spanish-asr-apache"></a>Open ASR Leaderboard …  <a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilea…</a>   16.4%    46.6   2025-10-27   10% ▇
 <a name="speech-stt-peste-apache"></a>PESTE · Persian Speec…  <a href="https://github.com/ArmanJR/PESTE-Benchmark/blob/4ca05cd34f90342d76d12d9e8074e7a26de97e96/generated/leaderboard.csv">PESTE · Persian FLEURS (fa_ir…</a>   26.0%    38.7   2026-08-17   10% ▇

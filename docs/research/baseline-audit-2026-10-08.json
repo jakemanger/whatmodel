@@ -1,0 +1,7089 @@
+{
+ "date": "2026-10-08",
+ "status": "complete",
+ "scope": "All 597 kind=acc benchmarks in data/benchmarks.json, against data/results.json (11,691 results) at reviewed-data HEAD a9ba4e3 (whatmodel c7b3953). No data/*.json or existing file edited. Proposals follow the rule: only a baseline the source itself states, or the mean of per-setting baselines the source lists. The 2026-10-07 'set' decisions were not revisited. Entries marked 'Reopens 2026-10-07' were left at 0 then under the strict 1/k rule and are proposed now only because the source publishes a random baseline.",
+ "how_chance_is_applied": "lib/score.ts toLatent: y = logit(clamp((score - c)/(1 - c), 0.005, 0.995)). Any score at or below c gets y = logit(0.005) = -5.29. A score just above c gets a very negative y too: with c = 0.277, a score 0.011 above chance gives y = -4.17.",
+ "chance": [
+  {
+   "id": "bbh",
+   "chance": 0.257,
+   "evidence_url": "https://arxiv.org/abs/2210.09261",
+   "quote": "Suzgun et al. 2022 (BIG-Bench Hard), Table 3, column 'Srivastava et al. (2022) Random': 'All Tasks (avg) 25.7' (NLP Task avg 29.5, Algorithmic Task avg 21.2); the same column lists every task's random score, e.g. 'Boolean Expressions 50.0', 'Date Understanding 17.2', 'Multi-Step Arithmetic 0', 'Word Sorting 0'.",
+   "note": "Published mean of per-task random baselines over the 23 BBH tasks (sub-tasks of Logical Deduction and Tracking Shuffled Objects averaged first). Free-form tasks count as 0. Reopens the 2026-10-07 'mixed format -> 0' decision on new grounds (a published aggregate baseline)."
+  },
+  {
+   "id": "copen-cic-zero-shot-full-prompt",
+   "chance": 0.277,
+   "evidence_url": "https://aclanthology.org/2022.emnlp-main.335.pdf",
+   "quote": "COPEN (Peng et al., EMNLP 2022), Table 2 'Accuracies (%) of various PLMs on the three tasks using different probing methods. ZP: Zero-shot probing.': row 'Random', CiC column ZP = 27.7.",
+   "note": "Reopens 2026-10-07 (left at 0 because candidate counts vary); the paper itself states the random level for the exact zero-shot protocol."
+  },
+  {
+   "id": "mvbench",
+   "chance": 0.273,
+   "evidence_url": "https://arxiv.org/abs/2311.17005",
+   "quote": "MVBench paper, Table 2: 'Random - 27.3' (Avg column; per-task 20.0-33.3). Caption: '“Random” refers to results from random guesses.'",
+   "note": "Reopens 2026-10-07 (mixed 3-5 options); that note already cited this 27.3%. Low impact: lowest result 0.558."
+  },
+  {
+   "id": "mmmu",
+   "chance": 0.221,
+   "evidence_url": "https://arxiv.org/abs/2311.16502",
+   "quote": "MMMU paper, main results table: 'Random Choice 22.1' (Validation Overall, 900) and 'Frequent Choice 26.8'. Text: 'For reference, we add Random Choice and Frequent Choice baselines'.",
+   "note": "Validation split matches this id (MMMU val). Includes open questions scored as wrong. Reopens 2026-10-07 'mixed format -> 0'. Low impact: lowest result 0.488."
+  },
+  {
+   "id": "mmmu-pro",
+   "chance": 0.126,
+   "evidence_url": "https://arxiv.org/abs/2409.02813",
+   "quote": "MMMU-Pro paper, Table 1: 'Random Choice 24.9 | 12.8 | 12.4' for Standard (4 Opts) | Standard (10 Opts) | Vision. Section 3: 'The overall performance score for MMMU-Pro is calculated as the average of scores from settings (2) and (3)'.",
+   "note": "0.126 = mean of the paper's two published baselines (12.8, 12.4) that define the overall score. Reopens 2026-10-07 (E[1/k] ~ 0.127 measured then). Lowest result 0.312."
+  },
+  {
+   "id": "mmmu-pro-standard-lmms-exaone45",
+   "chance": 0.128,
+   "evidence_url": "https://arxiv.org/abs/2409.02813",
+   "quote": "MMMU-Pro paper, Table 1: 'Random Choice ... 12.8' for Standard (10 Opts).",
+   "note": "Single result; dropped by MIN_RUN, so no score effect."
+  },
+  {
+   "id": "mmmu-pro-vision-lmms-exaone45",
+   "chance": 0.124,
+   "evidence_url": "https://arxiv.org/abs/2409.02813",
+   "quote": "MMMU-Pro paper, Table 1: 'Random Choice ... 12.4' for Vision.",
+   "note": "Single result; dropped by MIN_RUN, so no score effect."
+  },
+  {
+   "id": "mathvista-mini",
+   "chance": 0.179,
+   "evidence_url": "https://arxiv.org/abs/2310.02255",
+   "quote": "MathVista (ICLR 2024), Table 2 (testmini), 'Heuristics baselines': 'Random chance - 17.9' (ALL). Text: 'We include random chance (i.e., one of the options in multiple-choice questions, and empty in the free-form questions) and frequency guess (§F.1) as naive baselines.'",
+   "note": "Reopens 2026-10-07 'mixed format -> 0'. Lowest result 0.50."
+  },
+  {
+   "id": "math-vision",
+   "chance": 0.0717,
+   "evidence_url": "https://arxiv.org/abs/2402.14804",
+   "quote": "MATH-Vision paper, results table: 'Random Chance 7.17' (Overall); text: 'the comparison of models’ performance with random chance (7.17% overall)'.",
+   "note": "Full 3,040-problem test set; sources may use testmini. Negligible impact (lowest 0.46)."
+  },
+  {
+   "id": "videommmu",
+   "chance": 0.14,
+   "evidence_url": "https://arxiv.org/abs/2501.13826",
+   "quote": "Video-MMMU paper, main results table: 'Random Choice 14.00' (Overall; Perception 12.00, Comprehension 14.00, Adaptation 16.00).",
+   "note": "Reopens 2026-10-07 'mixed MC/free-form -> 0'. Low impact: lowest result 0.443."
+  }
+ ],
+ "failed_runs": [
+  {
+   "model": "zephyr-7b-beta",
+   "bench": "bbh",
+   "score": 0.16,
+   "why": "Few-shot CoT format failure in a chat-mode harness: 16.0 vs 44.9 for the same checkpoint in the Tulu 2 paper (3-shot CoT), and below BBH's published random average of 25.7.",
+   "evidence": "OpenChat 3.5 card @0fc98e3, Benchmarks table row 'Zephyr-β^' BBH CoT 16.0; footnote: '^: Zephyr-β often fails to follow few-shot CoT instructions, likely because it was aligned with only chat data but not trained on few-shot data.'",
+   "source_flags": true,
+   "source": "https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md"
+  },
+  {
+   "model": "zephyr-7b-beta",
+   "bench": "gsm8k",
+   "score": 0.051,
+   "why": "Same few-shot CoT format failure: 5.1 vs 28.0 in the Tulu 2 paper's 8-shot CoT run.",
+   "evidence": "OpenChat 3.5 card @0fc98e3, row 'Zephyr-β^' GSM8K 5.1, same '^' footnote as above. gsm8k has chance 0 (correct for free-form), so the floor does not catch it.",
+   "source_flags": true,
+   "source": "https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md"
+  },
+  {
+   "model": "gpt-1",
+   "bench": "open-pt-llm-avg9",
+   "score": 0.0196,
+   "why": "Already fixed by chance 0.3264 (c7b3953). 1.96% average vs a 32.64% random baseline; GPT-1's 512-token context cannot hold 3- to 25-shot prompts.",
+   "evidence": "Leaderboard metadata.json baselines.average = 32.64 at the pinned revision.",
+   "source_flags": false,
+   "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz"
+  },
+  {
+   "model": "deepseek-r1-0528-qwen3-8b",
+   "bench": "gpqa-diamond",
+   "score": 0.0928,
+   "why": "9.3% on a 4-option test (chance 25%) for a model that scores 61% elsewhere; a reasoning model scoring far below guessing points to unparsed or truncated answers, not ability.",
+   "evidence": "Epoch AI gpqa_diamond.csv (benchmark_data.zip, 2026-10-08 download): 'deepseek-r1-0528-qwen3-8b', mean_score 0.0928, stderr 0.0107, run started 2026-08-28. Same model in data/results.json: 0.611 (DeepSeek card) and 0.614 (arXiv 2601.02346). Epoch's per-run inspect logs are linked but return HTTP 403, so the failure mode could not be confirmed.",
+   "source_flags": false,
+   "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv"
+  },
+  {
+   "model": "llama-3-1-nemotron-ultra-253b",
+   "bench": "bfcl-v4",
+   "score": 0.1,
+   "why": "No function call was ever emitted: 0.00% on every call-producing category and 100% only on Irrelevance Detection, which rewards not calling. The 10% overall is just the irrelevance weight.",
+   "evidence": "BFCL-Result 2025-12-16/score/data_overall.csv @cadd76a, row 108 'Llama-3.1-Nemotron-Ultra-253B-v1 (FC)': Overall 10.00%, Non-Live AST 0.00%, Live 0.00%, Multi Turn 0.00%, Web Search 0.00%, Memory 0.00%, Relevance 0.00%, Irrelevance Detection 100.00%.",
+   "source_flags": false,
+   "source": "https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv"
+  },
+  {
+   "model": "ministral-8b-2410",
+   "bench": "bfcl-v4",
+   "score": 0.111,
+   "why": "Same pattern as Nemotron Ultra: zero on every category that needs a call and 100% on irrelevance, so the FC handler never got a parseable call.",
+   "evidence": "Same CSV, row 105 'Ministral-8B-Instruct-2410 (FC)': Overall 11.10%, Non-Live AST 0.0, Live 0.0, Multi Turn 0.0, Relevance 0.00%, Irrelevance 100.00%. By contrast, smaller Falcon3-1B (FC) scores 9.02 Non-Live and Llama-3.2-1B (FC) 38.38.",
+   "source_flags": false,
+   "source": "https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv"
+  },
+  {
+   "model": "qwen3-5-0-8b",
+   "bench": "gpqa-unspecified",
+   "score": 0.119,
+   "why": "11.9% on GPQA (4 options, chance 25%) in thinking mode; probably unterminated thinking or unparsed answers rather than below-random knowledge. The next-lowest model on this benchmark scores 25.2%.",
+   "evidence": "Qwen3.5-2B card @15852e8, language table, Thinking section, row 'GPQA', column 'Qwen3.5-0.8B' = 11.9. The card warns about thinking loops, but only for the 2B: 'In thinking mode, we have observed that when using the recommended sampling parameters, Qwen3.5-2B is more prone to entering thinking loops ... which may prevent it from terminating generation properly.'",
+   "source_flags": "partly (loop warning names the 2B, not the 0.8B)",
+   "source": "https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md"
+  },
+  {
+   "model": "yi-34b-chat",
+   "bench": "gpqa-diamond",
+   "score": 0.1474,
+   "why": "Well below the 25% guess rate. Peers of similar age and size score 0.25 to 0.27 in the same Epoch run (deepseek-llm-67b-chat 0.246, Llama-2-70b-chat 0.263), which suggests answer-format failures.",
+   "evidence": "Epoch gpqa_diamond.csv: 'Yi-34B-Chat' 0.1474, stderr 0.0114. No other GPQA source for this model in the data.",
+   "source_flags": false,
+   "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv"
+  },
+  {
+   "model": "mistral-7b-instruct-v0-3",
+   "bench": "gpqa-diamond",
+   "score": 0.1518,
+   "why": "Below the 25% guess rate, while Epoch's Llama-3.1-8B-Instruct gets 0.27 and Llama-3-8B 0.26. Probably unparsed answers. Epoch's open-mistral-7b also scores 0.132.",
+   "evidence": "Epoch gpqa_diamond.csv: 'Mistral-7B-Instruct-v0.3' 0.1518, stderr 0.0101.",
+   "source_flags": false,
+   "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv"
+  },
+  {
+   "model": "granite-4-0-350m",
+   "bench": "gpqa-diamond",
+   "score": 0.1124,
+   "why": "Far below guessing. At 350M this is more plausibly a format failure (no parseable letter) than knowledge 'worse than random'.",
+   "evidence": "Epoch gpqa_diamond.csv: 'granite-4.0-350m' 0.1124, stderr 0.0091. Weak case: no second source.",
+   "source_flags": false,
+   "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv"
+  },
+  {
+   "model": "llama-3-2-1b",
+   "bench": "gpqa-diamond",
+   "score": 0.1657,
+   "why": "Below guessing in Liquid AI's greedy-decoding comparison run; Epoch measures the same checkpoint at 0.239.",
+   "evidence": "LFM2.5-1.2B-Thinking card @f313478, Benchmarks table, row 'Llama 3.2 1B Instruct', GPQA Diamond 16.57; Epoch gpqa_diamond.csv 'Llama-3.2-1B-Instruct' 0.2393.",
+   "source_flags": false,
+   "source": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md"
+  },
+  {
+   "model": "granite-4-2-3b",
+   "bench": "mmlu-prox-lite",
+   "score": 0.2778,
+   "why": "Possible failed run, moderate evidence. In the same IBM table the 3B trails the 8B by only 6 points on English MMLU-Pro (0.678 vs 0.740) but by 33 points on its multilingual version MMLU-ProX-Lite (0.278 vs 0.611); its other rows track the 8B within 3 to 15 points. It is above the ~0.11 guess rate, so a chance level would not floor it.",
+   "evidence": "granite-4.2-30b card @9e668ce, Evaluation Results, row 'MMLU-ProX lite (IBM)', column '3B Dense' = 27.78; same table 'MMLU-Pro' 3B 67.8 / 8B 74.0 / 30B 77.6. The card gives no note on this cell.",
+   "source_flags": false,
+   "source": "https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md"
+  }
+ ],
+ "effects": {
+  "method": "Refit in memory: lib/data.ts results + benchmarks with chance replaced; per category toCells -> connectedCells -> fit (as lib/data.ts comparisonSets). g on the 50 +/- 15 scale; delta = g_after - g_before for the same model. Threshold for listing: |delta| >= 1.",
+  "summary": {
+   "headline": "Only two proposals move any model by 1 point or more: bbh (7 models, at most -4.8, gemma-3-270m) and copen-cic-zero-shot-full-prompt (6 models, at most ±14, all with just 3 copen results). The seven vision/video proposals (mvbench, mmmu, mmmu-pro x3, mathvista-mini, math-vision, videommmu) each move no model by more than 0.1, because every result sits far above the baseline.",
+   "near_chance_amplification": "toLatent maps (score - c)/(1 - c) through a logit clamped at 0.005, so results a few points above the baseline become very low latents and results at or below it all share the floor (-5.29). Under copen-cic 0.277, gpt-neo-125m (0.288, 1.5% of the way above chance) lands at -4.17 while t5-small (0.401) lands at -1.76. g moves from 22.2 to 7.9 and from 22.5 to 36.2, from an 11-point raw gap. The already-applied open-pt 0.3264 does the same: phi-1 (0.2754), gemma-3-270m (0.2819) and tinyllama-1-1b-chat (0.2822) now share GPT-1's floor. tinyllama's only result is open-pt, so it went from 13.2 to -6.9, tied with GPT-1 (which went from -39.1 to -6.9). This is how the transform works, not a data error, but the choice of floor (0.005) decides how far below the field an at-chance model lands.",
+   "bbh_note": "The paper's 25.7 averages its 23 tasks. Sources that average the 27 sub-tasks would have a random level of about 25.2, within half a point."
+  },
+  "per_change": [
+   {
+    "label": "bbh: 0 -> 0.257",
+    "chance": {
+     "bbh": 0.257
+    },
+    "results_on_bench": 116,
+    "models_scored_on_bench": 101,
+    "max_abs_delta": 4.77,
+    "n_moved_ge_1": 7,
+    "n_moved_ge_3": 1,
+    "movers": [
+     {
+      "model": "gemma-3-270m",
+      "g_before": 5,
+      "g_after": 0.2,
+      "delta": -4.8,
+      "rank_before": 682,
+      "rank_after": 683,
+      "set": "llm:lmarena-text"
+     },
+     {
+      "model": "flan-t5-small",
+      "g_before": 27.4,
+      "g_after": 25.8,
+      "delta": -1.6,
+      "rank_before": 639,
+      "rank_after": 653,
+      "set": "llm:lmarena-text"
+     },
+     {
+      "model": "code-tulu-2-13b",
+      "g_before": 39.6,
+      "g_after": 40.8,
+      "delta": 1.2,
+      "rank_before": 509,
+      "rank_after": 490,
+      "set": "llm:lmarena-text"
+     },
+     {
+      "model": "flan-t5-large",
+      "g_before": 37.7,
+      "g_after": 38.9,
+      "delta": 1.2,
+      "rank_before": 538,
+      "rank_after": 520,
+      "set": "llm:lmarena-text"
+     },
+     {
+      "model": "olmo-2-1b",
+      "g_before": 31.8,
+      "g_after": 30.6,
+      "delta": -1.2,
+      "rank_before": 611,
+      "rank_after": 622,
+      "set": "llm:lmarena-text"
+     },
+     {
+      "model": "tulu-2-13b",
+      "g_before": 38.4,
+      "g_after": 39.6,
+      "delta": 1.1,
+      "rank_before": 524,
+      "rank_after": 510,
+      "set": "llm:lmarena-text"
+     },
+     {
+      "model": "code-tulu-2-7b",
+      "g_before": 37.6,
+      "g_after": 38.6,
+      "delta": 1.1,
+      "rank_before": 540,
+      "rank_after": 523,
+      "set": "llm:lmarena-text"
+     }
+    ],
+    "lowest_scores": [
+     [
+      "zephyr-7b-beta",
+      0.16
+     ],
+     [
+      "llama-2-7b-chat",
+      0.256
+     ],
+     [
+      "gemma-3-270m",
+      0.267
+     ],
+     [
+      "llama-3-2-1b",
+      0.276
+     ]
+    ],
+    "results_floored_below_new_chance": [
+     [
+      "zephyr-7b-beta",
+      0.16
+     ],
+     [
+      "llama-2-7b-chat",
+      0.256
+     ]
+    ],
+    "results_within_3pts_above": [
+     [
+      "gemma-3-270m",
+      0.267
+     ],
+     [
+      "llama-3-2-1b",
+      0.276
+     ]
+    ]
+   },
+   {
+    "label": "copen-cic-zero-shot-full-prompt: 0 -> 0.277",
+    "chance": {
+     "copen-cic-zero-shot-full-prompt": 0.277
+    },
+    "results_on_bench": 8,
+    "models_scored_on_bench": 8,
+    "max_abs_delta": 14.37,
+    "n_moved_ge_1": 6,
+    "n_moved_ge_3": 4,
+    "movers": [
+     {
+      "model": "gpt-neo-125m",
+      "g_before": 22.2,
+      "g_after": 7.9,
+      "delta": -14.4,
+      "rank_before": 664,
+      "rank_after": 680,
+      "set": "llm:lmarena-text"
+     },
+     {
+      "model": "t5-small",
+      "g_before": 22.5,
+      "g_after": 36.2,
+      "delta": 13.7,
+      "rank_before": 662,
+      "rank_after": 560,
+      "set": "llm:lmarena-text"
+     },
+     {
+      "model": "t5-base",
+      "g_before": 30.7,
+      "g_after": 38.7,
+      "delta": 8,
+      "rank_before": 622,
+      "rank_after": 522,
+      "set": "llm:lmarena-text"
+     },
+     {
+      "model": "t5-large",
+      "g_before": 34.4,
+      "g_after": 39.7,
+      "delta": 5.3,
+      "rank_before": 586,
+      "rank_after": 507,
+      "set": "llm:lmarena-text"
+     },
+     {
+      "model": "gpt-2-medium",
+      "g_before": 25.1,
+      "g_after": 23.6,
+      "delta": -1.5,
+      "rank_before": 655,
+      "rank_after": 658,
+      "set": "llm:lmarena-text"
+     },
+     {
+      "model": "gpt-2-small",
+      "g_before": 21.3,
+      "g_after": 19.8,
+      "delta": -1.5,
+      "rank_before": 667,
+      "rank_after": 667,
+      "set": "llm:lmarena-text"
+     }
+    ],
+    "lowest_scores": [
+     [
+      "gpt-neo-125m",
+      0.288
+     ],
+     [
+      "gpt-2-small",
+      0.311
+     ],
+     [
+      "gpt-2-medium",
+      0.32
+     ],
+     [
+      "gpt-2-large",
+      0.338
+     ]
+    ],
+    "results_floored_below_new_chance": [],
+    "results_within_3pts_above": [
+     [
+      "gpt-neo-125m",
+      0.288
+     ]
+    ]
+   },
+   {
+    "label": "mvbench: 0 -> 0.273",
+    "chance": {
+     "mvbench": 0.273
+    },
+    "results_on_bench": 10,
+    "models_scored_on_bench": 10,
+    "max_abs_delta": 0.02,
+    "n_moved_ge_1": 0,
+    "n_moved_ge_3": 0,
+    "movers": [],
+    "lowest_scores": [
+     [
+      "qwen3-5-0-8b",
+      0.558
+     ],
+     [
+      "qwen3-5-2b",
+      0.649
+     ],
+     [
+      "qwen3-5-4b",
+      0.712
+     ],
+     [
+      "qwen3-5-9b",
+      0.744
+     ]
+    ],
+    "results_floored_below_new_chance": [],
+    "results_within_3pts_above": []
+   },
+   {
+    "label": "mmmu: 0 -> 0.221",
+    "chance": {
+     "mmmu": 0.221
+    },
+    "results_on_bench": 16,
+    "models_scored_on_bench": 16,
+    "max_abs_delta": 0.03,
+    "n_moved_ge_1": 0,
+    "n_moved_ge_3": 0,
+    "movers": [],
+    "lowest_scores": [
+     [
+      "gemma-3-4b",
+      0.488
+     ],
+     [
+      "qwen3-5-0-8b",
+      0.49
+     ],
+     [
+      "gemma-3-12b",
+      0.596
+     ],
+     [
+      "mistral-small-3-2",
+      0.625
+     ]
+    ],
+    "results_floored_below_new_chance": [],
+    "results_within_3pts_above": []
+   },
+   {
+    "label": "mmmu-pro: 0 -> 0.126",
+    "chance": {
+     "mmmu-pro": 0.126
+    },
+    "results_on_bench": 36,
+    "models_scored_on_bench": 36,
+    "max_abs_delta": 0.1,
+    "n_moved_ge_1": 0,
+    "n_moved_ge_3": 0,
+    "movers": [],
+    "lowest_scores": [
+     [
+      "qwen3-5-0-8b",
+      0.312
+     ],
+     [
+      "gemma-4-e2b",
+      0.442
+     ],
+     [
+      "qwen2-vl-72b",
+      0.462
+     ],
+     [
+      "mistral-small-3-2",
+      0.491
+     ]
+    ],
+    "results_floored_below_new_chance": [],
+    "results_within_3pts_above": []
+   },
+   {
+    "label": "mmmu-pro-standard-lmms-exaone45: 0 -> 0.128",
+    "chance": {
+     "mmmu-pro-standard-lmms-exaone45": 0.128
+    },
+    "results_on_bench": 1,
+    "models_scored_on_bench": 1,
+    "max_abs_delta": 0,
+    "n_moved_ge_1": 0,
+    "n_moved_ge_3": 0,
+    "movers": [],
+    "lowest_scores": [
+     [
+      "exaone-4-5-33b",
+      0.1757
+     ]
+    ],
+    "results_floored_below_new_chance": [],
+    "results_within_3pts_above": []
+   },
+   {
+    "label": "mmmu-pro-vision-lmms-exaone45: 0 -> 0.124",
+    "chance": {
+     "mmmu-pro-vision-lmms-exaone45": 0.124
+    },
+    "results_on_bench": 1,
+    "models_scored_on_bench": 1,
+    "max_abs_delta": 0,
+    "n_moved_ge_1": 0,
+    "n_moved_ge_3": 0,
+    "movers": [],
+    "lowest_scores": [
+     [
+      "exaone-4-5-33b",
+      0.215
+     ]
+    ],
+    "results_floored_below_new_chance": [],
+    "results_within_3pts_above": []
+   },
+   {
+    "label": "mathvista-mini: 0 -> 0.179",
+    "chance": {
+     "mathvista-mini": 0.179
+    },
+    "results_on_bench": 13,
+    "models_scored_on_bench": 13,
+    "max_abs_delta": 0.02,
+    "n_moved_ge_1": 0,
+    "n_moved_ge_3": 0,
+    "movers": [],
+    "lowest_scores": [
+     [
+      "gemma-3-4b",
+      0.5
+     ],
+     [
+      "qwen3-5-0-8b",
+      0.622
+     ],
+     [
+      "gemma-3-12b",
+      0.629
+     ],
+     [
+      "gemma-3-27b",
+      0.676
+     ]
+    ],
+    "results_floored_below_new_chance": [],
+    "results_within_3pts_above": []
+   },
+   {
+    "label": "math-vision: 0 -> 0.0717",
+    "chance": {
+     "math-vision": 0.0717
+    },
+    "results_on_bench": 12,
+    "models_scored_on_bench": 12,
+    "max_abs_delta": 0.01,
+    "n_moved_ge_1": 0,
+    "n_moved_ge_3": 0,
+    "movers": [],
+    "lowest_scores": [
+     [
+      "gemma-3-27b",
+      0.46
+     ],
+     [
+      "gemma-4-e2b",
+      0.524
+     ],
+     [
+      "gemma-4-e4b",
+      0.595
+     ],
+     [
+      "qwen3-5-4b",
+      0.746
+     ]
+    ],
+    "results_floored_below_new_chance": [],
+    "results_within_3pts_above": []
+   },
+   {
+    "label": "videommmu: 0 -> 0.14",
+    "chance": {
+     "videommmu": 0.14
+    },
+    "results_on_bench": 10,
+    "models_scored_on_bench": 10,
+    "max_abs_delta": 0.03,
+    "n_moved_ge_1": 0,
+    "n_moved_ge_3": 0,
+    "movers": [],
+    "lowest_scores": [
+     [
+      "qwen3-5-0-8b",
+      0.443
+     ],
+     [
+      "qwen3-5-2b",
+      0.621
+     ],
+     [
+      "qwen3-5-4b",
+      0.741
+     ],
+     [
+      "qwen3-5-9b",
+      0.789
+     ]
+    ],
+    "results_floored_below_new_chance": [],
+    "results_within_3pts_above": []
+   }
+  ],
+  "combined": {
+   "label": "all proposals together",
+   "chance": {
+    "bbh": 0.257,
+    "copen-cic-zero-shot-full-prompt": 0.277,
+    "mvbench": 0.273,
+    "mmmu": 0.221,
+    "mmmu-pro": 0.126,
+    "mmmu-pro-standard-lmms-exaone45": 0.128,
+    "mmmu-pro-vision-lmms-exaone45": 0.124,
+    "mathvista-mini": 0.179,
+    "math-vision": 0.0717,
+    "videommmu": 0.14
+   },
+   "results_on_bench": 223,
+   "models_scored_on_bench": 145,
+   "max_abs_delta": 14.21,
+   "n_moved_ge_1": 13,
+   "n_moved_ge_3": 5,
+   "movers": [
+    {
+     "model": "gpt-neo-125m",
+     "g_before": 22.2,
+     "g_after": 8,
+     "delta": -14.2,
+     "rank_before": 664,
+     "rank_after": 680,
+     "set": "llm:lmarena-text"
+    },
+    {
+     "model": "t5-small",
+     "g_before": 22.5,
+     "g_after": 36.3,
+     "delta": 13.9,
+     "rank_before": 662,
+     "rank_after": 559,
+     "set": "llm:lmarena-text"
+    },
+    {
+     "model": "t5-base",
+     "g_before": 30.7,
+     "g_after": 38.9,
+     "delta": 8.1,
+     "rank_before": 622,
+     "rank_after": 522,
+     "set": "llm:lmarena-text"
+    },
+    {
+     "model": "t5-large",
+     "g_before": 34.4,
+     "g_after": 39.8,
+     "delta": 5.4,
+     "rank_before": 586,
+     "rank_after": 507,
+     "set": "llm:lmarena-text"
+    },
+    {
+     "model": "gemma-3-270m",
+     "g_before": 5,
+     "g_after": 0.2,
+     "delta": -4.8,
+     "rank_before": 682,
+     "rank_after": 683,
+     "set": "llm:lmarena-text"
+    },
+    {
+     "model": "flan-t5-small",
+     "g_before": 27.4,
+     "g_after": 25.8,
+     "delta": -1.6,
+     "rank_before": 639,
+     "rank_after": 654,
+     "set": "llm:lmarena-text"
+    },
+    {
+     "model": "gpt-2-medium",
+     "g_before": 25.1,
+     "g_after": 23.8,
+     "delta": -1.3,
+     "rank_before": 655,
+     "rank_after": 658,
+     "set": "llm:lmarena-text"
+    },
+    {
+     "model": "gpt-2-small",
+     "g_before": 21.3,
+     "g_after": 20,
+     "delta": -1.3,
+     "rank_before": 667,
+     "rank_after": 667,
+     "set": "llm:lmarena-text"
+    },
+    {
+     "model": "code-tulu-2-13b",
+     "g_before": 39.6,
+     "g_after": 40.8,
+     "delta": 1.2,
+     "rank_before": 509,
+     "rank_after": 490,
+     "set": "llm:lmarena-text"
+    },
+    {
+     "model": "flan-t5-large",
+     "g_before": 37.7,
+     "g_after": 38.9,
+     "delta": 1.2,
+     "rank_before": 538,
+     "rank_after": 521,
+     "set": "llm:lmarena-text"
+    },
+    {
+     "model": "olmo-2-1b",
+     "g_before": 31.8,
+     "g_after": 30.6,
+     "delta": -1.2,
+     "rank_before": 611,
+     "rank_after": 623,
+     "set": "llm:lmarena-text"
+    },
+    {
+     "model": "tulu-2-13b",
+     "g_before": 38.4,
+     "g_after": 39.6,
+     "delta": 1.1,
+     "rank_before": 524,
+     "rank_after": 511,
+     "set": "llm:lmarena-text"
+    },
+    {
+     "model": "code-tulu-2-7b",
+     "g_before": 37.6,
+     "g_after": 38.6,
+     "delta": 1.1,
+     "rank_before": 540,
+     "rank_after": 525,
+     "set": "llm:lmarena-text"
+    }
+   ]
+  },
+  "reference_open_pt_fix": {
+   "label": "reference: open-pt-llm-avg9 set back to 0 (shows what c7b3953 fixed; deltas are 'with chance 0' minus current)",
+   "chance": {
+    "open-pt-llm-avg9": 0
+   },
+   "results_on_bench": 142,
+   "models_scored_on_bench": 142,
+   "max_abs_delta": 32.13,
+   "n_moved_ge_1": 10,
+   "n_moved_ge_3": 5,
+   "movers": [
+    {
+     "model": "gpt-1",
+     "g_before": -6.9,
+     "g_after": -39.1,
+     "delta": -32.1,
+     "rank_before": 685,
+     "rank_after": 685,
+     "set": "llm:lmarena-text"
+    },
+    {
+     "model": "tinyllama-1-1b-chat-v1-0",
+     "g_before": -6.9,
+     "g_after": 13.2,
+     "delta": 20.2,
+     "rank_before": 684,
+     "rank_after": 678,
+     "set": "llm:lmarena-text"
+    },
+    {
+     "model": "gemma-3-270m",
+     "g_before": 5,
+     "g_after": 16,
+     "delta": 11,
+     "rank_before": 682,
+     "rank_after": 674,
+     "set": "llm:lmarena-text"
+    },
+    {
+     "model": "phi-1",
+     "g_before": 5.3,
+     "g_after": 15.5,
+     "delta": 10.2,
+     "rank_before": 681,
+     "rank_after": 675,
+     "set": "llm:lmarena-text"
+    },
+    {
+     "model": "olmo-7b-twin-2t",
+     "g_before": 29.6,
+     "g_after": 26.1,
+     "delta": -3.5,
+     "rank_before": 627,
+     "rank_after": 650,
+     "set": "llm:lmarena-text"
+    },
+    {
+     "model": "gemma-3n-e2b",
+     "g_before": 45.8,
+     "g_after": 44.2,
+     "delta": -1.6,
+     "rank_before": 407,
+     "rank_after": 441,
+     "set": "llm:lmarena-text"
+    },
+    {
+     "model": "gemini-2-5-pro-exp-03-25",
+     "g_before": 64.9,
+     "g_after": 66.4,
+     "delta": 1.5,
+     "rank_before": 126,
+     "rank_after": 100,
+     "set": "llm:lmarena-text"
+    },
+    {
+     "model": "cogito-v1-preview-llama-3b",
+     "g_before": 44,
+     "g_after": 42.5,
+     "delta": -1.4,
+     "rank_before": 442,
+     "rank_after": 466,
+     "set": "llm:lmarena-text"
+    },
+    {
+     "model": "falcon3-1b",
+     "g_before": 27.4,
+     "g_after": 26,
+     "delta": -1.4,
+     "rank_before": 641,
+     "rank_after": 651,
+     "set": "llm:lmarena-text"
+    },
+    {
+     "model": "cogito-v1-preview-llama-8b",
+     "g_before": 48.8,
+     "g_after": 47.7,
+     "delta": -1.1,
+     "rank_before": 368,
+     "rank_after": 383,
+     "set": "llm:lmarena-text"
+    }
+   ]
+  },
+  "failed_run_influence": {
+   "what": "Diagnostic only, not a deletion proposal: each suspected failed run's current share of its model's g (from fit.explain), the g that cell implies on its own, and the model's g if that one result were left out.",
+   "rows": [
+    {
+     "model": "zephyr-7b-beta",
+     "bench": "bbh",
+     "score": 0.16,
+     "g_now": 31.6,
+     "n_results_in_fit": 14,
+     "cell_key": "bbh@card2-openchat-openchat-3-5",
+     "cell_mean_score": 0.16,
+     "implied_g": 15.4,
+     "share": 0.008,
+     "g_without_this_result_diagnostic": 31.7
+    },
+    {
+     "model": "zephyr-7b-beta",
+     "bench": "gsm8k",
+     "score": 0.051,
+     "g_now": 31.6,
+     "n_results_in_fit": 14,
+     "cell_key": "gsm8k@card2-openchat-openchat-3-5",
+     "cell_mean_score": 0.051,
+     "implied_g": 6.9,
+     "share": 0.005,
+     "g_without_this_result_diagnostic": 31.7
+    },
+    {
+     "model": "deepseek-r1-0528-qwen3-8b",
+     "bench": "gpqa-diamond",
+     "score": 0.0928,
+     "g_now": 51.2,
+     "n_results_in_fit": 16,
+     "cell_key": "gpqa-diamond",
+     "cell_mean_score": 0.0928,
+     "implied_g": 27.5,
+     "share": 0.084,
+     "g_without_this_result_diagnostic": 54.1
+    },
+    {
+     "model": "llama-3-1-nemotron-ultra-253b",
+     "bench": "bfcl-v4",
+     "score": 0.1,
+     "g_now": 53.7,
+     "n_results_in_fit": 4,
+     "cell_key": "bfcl-v4",
+     "cell_mean_score": 0.1,
+     "implied_g": 28.8,
+     "share": 0.097,
+     "g_without_this_result_diagnostic": 56.4
+    },
+    {
+     "model": "ministral-8b-2410",
+     "bench": "bfcl-v4",
+     "score": 0.111,
+     "g_now": 43.5,
+     "n_results_in_fit": 22,
+     "cell_key": "bfcl-v4",
+     "cell_mean_score": 0.111,
+     "implied_g": 30.7,
+     "share": 0.023,
+     "g_without_this_result_diagnostic": 43.8
+    },
+    {
+     "model": "qwen3-5-0-8b",
+     "bench": "gpqa-unspecified",
+     "score": 0.119,
+     "g_now": 33.8,
+     "n_results_in_fit": 52,
+     "cell_key": "gpqa-unspecified@card-qwen--qwen3.5-2b",
+     "cell_mean_score": 0.119,
+     "implied_g": 7,
+     "share": 0.008,
+     "g_without_this_result_diagnostic": 34.3
+    },
+    {
+     "model": "yi-34b-chat",
+     "bench": "gpqa-diamond",
+     "score": 0.1474,
+     "g_now": 38.9,
+     "n_results_in_fit": 6,
+     "cell_key": "gpqa-diamond",
+     "cell_mean_score": 0.1474,
+     "implied_g": 27.5,
+     "share": 0.114,
+     "g_without_this_result_diagnostic": 40.4
+    },
+    {
+     "model": "mistral-7b-instruct-v0-3",
+     "bench": "gpqa-diamond",
+     "score": 0.1518,
+     "g_now": 35.1,
+     "n_results_in_fit": 13,
+     "cell_key": "gpqa-diamond",
+     "cell_mean_score": 0.1518,
+     "implied_g": 27.6,
+     "share": 0.099,
+     "g_without_this_result_diagnostic": 36.1
+    },
+    {
+     "model": "granite-4-0-350m",
+     "bench": "gpqa-diamond",
+     "score": 0.1124,
+     "g_now": 35.5,
+     "n_results_in_fit": 4,
+     "cell_key": "gpqa-diamond",
+     "cell_mean_score": 0.1124,
+     "implied_g": 27.5,
+     "share": 0.366,
+     "g_without_this_result_diagnostic": 40.1
+    },
+    {
+     "model": "llama-3-2-1b",
+     "bench": "gpqa-diamond",
+     "score": 0.1657,
+     "g_now": 29.6,
+     "n_results_in_fit": 39,
+     "cell_key": "gpqa-diamond@card-liquidai-lfm2-5-1-2b-thinking",
+     "cell_mean_score": 0.1657,
+     "implied_g": 28.5,
+     "share": 0.027,
+     "g_without_this_result_diagnostic": 29.6
+    },
+    {
+     "model": "gpt-1",
+     "bench": "open-pt-llm-avg9",
+     "score": 0.0196,
+     "g_now": -6.9,
+     "n_results_in_fit": 1,
+     "cell_key": "open-pt-llm-avg9",
+     "cell_mean_score": 0.0196,
+     "implied_g": -18,
+     "share": 0.837,
+     "g_without_this_result_diagnostic": null
+    }
+   ],
+   "reading": "All except gpt-1 are already floored or diluted. On chance-0.25 GPQA the floor caps the implied g at about 27.5. The biggest current pulls are granite-4-0-350m gpqa-diamond (share 0.37, -4.6 g), deepseek-r1-0528-qwen3-8b gpqa-diamond (-2.9) and llama-3-1-nemotron-ultra-253b bfcl-v4 (-2.7; bfcl-v4 has chance 0, so no floor applies). The zephyr OpenChat-card rows sit in a 3-model run and weigh under 1%."
+  }
+ },
+ "checked_no_published_baseline": [
+  {
+   "id": "open-persian-llm-v2-avg21",
+   "checked": "Space @0167a4a: app.py, utils.py (About text), README.md, leaderboard_data.jsonl",
+   "finding": "No random or majority baseline published; v2 mixes MC tasks with generative GSM8K. Leave 0. Lowest 0.294 (llama-2-13b-chat) is near a plausible MC guess rate but no source states one."
+  },
+  {
+   "id": "bridge-clinical-zeroshot-avg",
+   "checked": "Space @579abc2: docs.md, task_information.json, leaderboards/about.md",
+   "finding": "No random/majority baseline; 87 tasks mix accuracy, F1 and ROUGE. Leave 0."
+  },
+  {
+   "id": "mideind-icelandic-average",
+   "checked": "Space @f8e42e1: app.js, i18n.js, leaderboard.json",
+   "finding": "No baseline; mostly generative/judge-scored. Low end (apertus-8b 0.077, gpt-3.5-turbo 0.129, claude-haiku-4-5 0.157) is low on every column, not one failed column. Leave 0."
+  },
+  {
+   "id": "agieval-en",
+   "checked": "AGIEval paper arXiv 2304.06364v2 (full text)",
+   "finding": "No random baseline stated (only human avg/top). Leave 0. Same for agieval-gemma-en and agieval-marco-unspecified."
+  },
+  {
+   "id": "truthfulqa-mc2",
+   "checked": "Open LLM Leaderboard v1 src/display/utils.py @d1e0a09 (baseline_row 'TruthfulQA 25.0'; about.py: 'for log-likelihood evaluation, we select the random baseline')",
+   "finding": "Published but NOT proposed: 25.0 is wrong for MC2. Computed from truthfulqa/truthful_qa multiple_choice (817 items), a uniform-probability model scores mean(n_true/n_total) = 0.448 on MC2 (0.226 is the MC1 rate). Many real models score below 0.448 (imitative falsehoods), so any floor would erase real differences. Leave 0."
+  },
+  {
+   "id": "polish-eq-bench-v2",
+   "checked": "Space @ec5fcb7 benchmark_results.csv ('Num Questions Parseable' column)",
+   "finding": "Lowest, yi-1-5-6b-chat 0.0519, had 161 of 171 questions parseable, so it is not a parse failure. Chance 0 stays (EQ-Bench scores are already rescaled). Two openchat-3.6 rows with score -2.0e18 in the CSV are correctly not imported."
+  },
+  {
+   "id": "hallusionbench",
+   "checked": "HallusionBench paper arXiv 2310.14566, Table 2",
+   "finding": "Publishes 'Random Chance' per metric: qAcc 15.60, fAcc 18.21, aAcc 45.96. Not proposed: our sources don't say which metric (or which mean of the three) they report. If it is VLMEvalKit's mean of the three, that would be 0.266. Lowest result 0.531, so little is at stake."
+  },
+  {
+   "id": "supergpqa",
+   "checked": "SuperGPQA paper arXiv 2502.14739 (full text)",
+   "finding": "No random baseline stated. Leave 0 (2026-10-07: mixed k, mean 9.67 options)."
+  },
+  {
+   "id": "mmlu-prox",
+   "checked": "MMLU-ProX paper arXiv 2503.10497 (full text)",
+   "finding": "No random baseline stated. Leave 0. Same for mmlu-prox-lite and mmlu-prox-lite-marco."
+  },
+  {
+   "id": "sciclaimeval-t1-pair-dev",
+   "checked": "SciTrue paper arXiv 2609.00654v1 (full text)",
+   "finding": "No random or majority pair-accuracy baseline stated. Leave 0."
+  },
+  {
+   "id": "erqa",
+   "checked": "github.com/embodiedreasoning/ERQA README",
+   "finding": "'The answers are provided as a single letter (A, B, C, D)', but no baseline is stated. Already 'uncertain' on 2026-10-07; leave 0."
+  },
+  {
+   "id": "mmvu / dynamath / embspatialbench",
+   "checked": "arXiv 2501.12380, 2411.00836, 2406.05756 (full text)",
+   "finding": "No random baseline row. Leave 0."
+  },
+  {
+   "id": "mlvu",
+   "checked": "MLVU paper arXiv 2406.04264",
+   "finding": "Per-task 'Random' 25 (dev, 4 options) and 16.7 (test, 6 options) for MC tasks only; generation tasks have none. The split behind our sources is unknown (2026-10-07). Not proposed."
+  },
+  {
+   "id": "mmbench-en-dev-v1-1",
+   "checked": "MMBench paper arXiv 2307.06281",
+   "finding": "Says only that 'random guessing will lead to ~25% Top-1 accuracy for 4-choice questions', the motivation for CircularEval. No baseline for the CircularEval score that is reported. Leave 0."
+  },
+  {
+   "id": "rpc-bench-text-overall / libra-mini-2605",
+   "checked": "benchmark descriptions",
+   "finding": "Judge-scored informativeness (RPC) and exact-match generation (LIBRA). Guessing scores 0 on both, so chance 0 is right."
+  },
+  {
+   "id": "F1 metrics (drop, simple-evals-drop-f1, tulu2-tydiqa-goldp-1shot-f1, widesearch)",
+   "checked": "benchmark definitions",
+   "finding": "All are generative span/answer F1, where a random answer scores about 0, so chance 0 is right. The only classification macro-F1 in the catalogue sits inside aggregates: open-pt-llm-avg9 (handled) and bridge-clinical-zeroshot-avg (no published baseline)."
+  },
+  {
+   "id": "(not a failed-run list entry) matharena-arxivmath-2026-04/05/06, qwen3-5-2b",
+   "checked": "data/results.json notes; MathArena outputs dataset schema (parsed_answer and output_tokens per attempt)",
+   "finding": "Qwen3.5-2B scores 0.019, 0.106 and 0.042 against 0.27 to 0.38 for the next model. Its own card warns of thinking loops ('Qwen3.5-2B is more prone to entering thinking loops'), so these could be unterminated runs, but the next-lowest models are 35B or larger and research math is plausibly near 0 for a 2B. The per-attempt parsed_answer check was not done: the datasets-server filter index was still loading and the parquet is 140 MB. Unverified, so it is left out of failed_runs."
+  }
+ ],
+ "floor_scan": {
+  "rule": "Every kind=acc benchmark, over all its results (any evaluator): lowest score, model, next-lowest and gap. Flags: 'gap>15' = lowest is more than 15 points below every other result; 'below-chance' = lowest is under the recorded chance. Most gap>15 rows are genuinely weak models on generative or agentic tests (chance 0 is correct there); the failed runs that were followed up are in failed_runs.",
+  "columns": [
+   "id",
+   "n",
+   "chance",
+   "lowest",
+   "lowest_model",
+   "next_lowest",
+   "gap",
+   "flag"
+  ],
+  "rows": [
+   [
+    "mmlu-pro",
+    121,
+    0.1,
+    0.1404,
+    "gemma-3-1b",
+    0.147,
+    0.0066,
+    ""
+   ],
+   [
+    "gpqa-diamond",
+    306,
+    0.25,
+    0.0928,
+    "deepseek-r1-0528-qwen3-8b",
+    0.1124,
+    0.0196,
+    "below-chance"
+   ],
+   [
+    "hle",
+    71,
+    0,
+    0.042,
+    "qwen3-8b",
+    0.056,
+    0.014,
+    ""
+   ],
+   [
+    "aime-2025",
+    80,
+    0,
+    0.0033,
+    "llama-3-2-1b",
+    0.01,
+    0.0067,
+    ""
+   ],
+   [
+    "swe-bench-verified",
+    86,
+    0,
+    0.226,
+    "o3-mini",
+    0.23,
+    0.004,
+    ""
+   ],
+   [
+    "aime-2026",
+    24,
+    0,
+    0.208,
+    "gemma-3-27b",
+    0.375,
+    0.167,
+    "gap>15"
+   ],
+   [
+    "swe-bench-pro",
+    14,
+    0,
+    0.457,
+    "gpt-5-mini",
+    0.463,
+    0.006,
+    ""
+   ],
+   [
+    "otis-mock-aime",
+    190,
+    0.001,
+    0,
+    "llama-2-70b-chat",
+    0.0028,
+    0.0028,
+    "below-chance"
+   ],
+   [
+    "frontiermath",
+    83,
+    0,
+    0,
+    "gpt-3-5-turbo-0125",
+    0.0035,
+    0.0035,
+    ""
+   ],
+   [
+    "simpleqa-verified",
+    78,
+    0,
+    0.06,
+    "gpt-4-1-nano-2025-04-14",
+    0.083,
+    0.023,
+    ""
+   ],
+   [
+    "livecodebench-v6",
+    30,
+    0,
+    0.291,
+    "gemma-3-27b",
+    0.351,
+    0.06,
+    ""
+   ],
+   [
+    "epoch-chess",
+    135,
+    0.0496,
+    0,
+    "granite-4-0-micro",
+    0,
+    0,
+    "below-chance"
+   ],
+   [
+    "epoch-ebr",
+    24,
+    0,
+    0.0238,
+    "kimi-k2-6",
+    0.0238,
+    0.0,
+    ""
+   ],
+   [
+    "frontiermath-tier-4-v2",
+    64,
+    0,
+    0,
+    "gemini-3-5-flash-lite",
+    0,
+    0,
+    ""
+   ],
+   [
+    "math-level-5",
+    93,
+    0,
+    0.0329,
+    "llama-2-70b-chat",
+    0.036,
+    0.0031,
+    ""
+   ],
+   [
+    "epoch-mirrorcode",
+    9,
+    0,
+    0.0889,
+    "gemini-3-1-pro",
+    0.1,
+    0.0111,
+    ""
+   ],
+   [
+    "epoch-mystery-games",
+    72,
+    0.0922,
+    0,
+    "gpt-oss-120b",
+    0.03,
+    0.03,
+    "below-chance"
+   ],
+   [
+    "epoch-furniture",
+    29,
+    0,
+    0.2,
+    "qwen3-8-max-0902",
+    0.2083,
+    0.0083,
+    ""
+   ],
+   [
+    "scicode",
+    6,
+    0,
+    0.21,
+    "gemma-4-e2b",
+    0.21,
+    0.0,
+    ""
+   ],
+   [
+    "bbeh-micro",
+    9,
+    0,
+    0.072,
+    "gemma-3-1b",
+    0.11,
+    0.038,
+    ""
+   ],
+   [
+    "hle-gemma4-report",
+    3,
+    0,
+    0.052,
+    "gemma-4-12b",
+    0.087,
+    0.035,
+    ""
+   ],
+   [
+    "ifbench",
+    6,
+    0,
+    0.32,
+    "gemma-3-27b",
+    0.38,
+    0.06,
+    ""
+   ],
+   [
+    "ifeval-gemma4-report",
+    6,
+    0,
+    0.904,
+    "gemma-3-27b",
+    0.946,
+    0.042,
+    ""
+   ],
+   [
+    "mmmlu",
+    28,
+    0.25,
+    0.443,
+    "qwen3-5-0-8b",
+    0.5514,
+    0.1084,
+    ""
+   ],
+   [
+    "mrcr-v2-8needle-128k",
+    8,
+    0,
+    0.135,
+    "gemma-3-27b",
+    0.191,
+    0.056,
+    ""
+   ],
+   [
+    "terminalbench-hard-gemma4",
+    6,
+    0,
+    0.03,
+    "gemma-4-e2b",
+    0.04,
+    0.01,
+    ""
+   ],
+   [
+    "tau2-airline-gemma4",
+    6,
+    0,
+    0.31,
+    "gemma-4-e2b",
+    0.39,
+    0.08,
+    ""
+   ],
+   [
+    "tau2-retail-gemma4",
+    6,
+    0,
+    0.066,
+    "gemma-3-27b",
+    0.346,
+    0.28,
+    "gap>15"
+   ],
+   [
+    "tau2-telecom-gemma4",
+    6,
+    0,
+    0.031,
+    "gemma-3-27b",
+    0.184,
+    0.153,
+    "gap>15"
+   ],
+   [
+    "mmmu-pro",
+    36,
+    0,
+    0.312,
+    "qwen3-5-0-8b",
+    0.442,
+    0.13,
+    ""
+   ],
+   [
+    "math-vision",
+    12,
+    0,
+    0.46,
+    "gemma-3-27b",
+    0.524,
+    0.064,
+    ""
+   ],
+   [
+    "medxpertqa-mm",
+    13,
+    0.2,
+    0.171,
+    "qwen3-5-0-8b",
+    0.235,
+    0.064,
+    "below-chance"
+   ],
+   [
+    "infographicvqa",
+    8,
+    0,
+    0.5,
+    "gemma-3-4b",
+    0.639,
+    0.139,
+    ""
+   ],
+   [
+    "tau2-verified-gpt51-user",
+    14,
+    0,
+    0.4157,
+    "gemini-2-5-flash",
+    0.5344,
+    0.1187,
+    ""
+   ],
+   [
+    "massive-agents-ast-10k",
+    7,
+    0,
+    0.0023,
+    "llama-3-2-1b",
+    0.0433,
+    0.041,
+    ""
+   ],
+   [
+    "aider-polyglot",
+    67,
+    0,
+    0.036,
+    "gpt-4o-mini-2024-07-18",
+    0.049,
+    0.013,
+    ""
+   ],
+   [
+    "bfcl-v4",
+    71,
+    0,
+    0.0717,
+    "gemma-3-1b",
+    0.1,
+    0.0283,
+    ""
+   ],
+   [
+    "click-korean-kim",
+    24,
+    0,
+    0.4281,
+    "phi-4-mini",
+    0.4299,
+    0.0018,
+    ""
+   ],
+   [
+    "cruxeval-zeroeval",
+    38,
+    0,
+    0.215,
+    "gemma-2-2b",
+    0.3312,
+    0.1162,
+    ""
+   ],
+   [
+    "evalperf-correctness-20240328",
+    28,
+    0,
+    0.4369,
+    "llama-3-8b",
+    0.5739,
+    0.1369,
+    ""
+   ],
+   [
+    "gsm8k-zeroeval",
+    33,
+    0,
+    0.4337,
+    "qwen2-1-5b",
+    0.5163,
+    0.0826,
+    ""
+   ],
+   [
+    "haerae-korean-kim",
+    23,
+    0,
+    0.4421,
+    "phi-3-5-mini-instruct",
+    0.4447,
+    0.0026,
+    ""
+   ],
+   [
+    "kmmlu-hard-kim",
+    24,
+    0.25,
+    0.2097,
+    "gpt-3-5-turbo-0613",
+    0.24,
+    0.0303,
+    "below-chance"
+   ],
+   [
+    "kmmlu-pro-kim",
+    6,
+    0,
+    0.792,
+    "deepseek-v4-flash",
+    0.8444,
+    0.0524,
+    ""
+   ],
+   [
+    "kobalt-700-kim",
+    6,
+    0.1,
+    0.7329,
+    "deepseek-v4-flash",
+    0.7614,
+    0.0285,
+    ""
+   ],
+   [
+    "mmlu-redux-zeroeval",
+    41,
+    0.25,
+    0.4111,
+    "qwen2-1-5b",
+    0.5194,
+    0.1083,
+    ""
+   ],
+   [
+    "musr-ko-kim",
+    6,
+    0,
+    0.7147,
+    "gpt-5-6-luna",
+    0.812,
+    0.0973,
+    ""
+   ],
+   [
+    "zebralogic-zeroeval",
+    46,
+    0,
+    0.023,
+    "yi-1-5-9b-chat",
+    0.042,
+    0.019,
+    ""
+   ],
+   [
+    "agieval-en",
+    10,
+    0,
+    0.3825,
+    "wizardlm-13b-v1-2",
+    0.3885,
+    0.006,
+    ""
+   ],
+   [
+    "aime-2024",
+    50,
+    0,
+    0.0089,
+    "granite-3-1-2b",
+    0.0089,
+    0.0,
+    ""
+   ],
+   [
+    "alpacaeval2-lc",
+    34,
+    0,
+    0.058,
+    "smollm2-1-7b",
+    0.074,
+    0.016,
+    ""
+   ],
+   [
+    "arc-challenge",
+    96,
+    0.25,
+    0.181,
+    "pythia-70m",
+    0.188,
+    0.007,
+    "below-chance"
+   ],
+   [
+    "arena-hard-v2",
+    20,
+    0,
+    0.349,
+    "qwen3-4b-thinking-2507",
+    0.3496,
+    0.0006,
+    ""
+   ],
+   [
+    "bbh",
+    116,
+    0,
+    0.16,
+    "zephyr-7b-beta",
+    0.256,
+    0.096,
+    ""
+   ],
+   [
+    "bfcl-v3",
+    64,
+    0,
+    0.1632,
+    "gemma-3-1b",
+    0.1664,
+    0.0032,
+    ""
+   ],
+   [
+    "boolq",
+    47,
+    0.5,
+    0.5765,
+    "stablelm-base-alpha-3b",
+    0.596,
+    0.0195,
+    ""
+   ],
+   [
+    "gpqa-unspecified",
+    49,
+    0.25,
+    0.119,
+    "qwen3-5-0-8b",
+    0.252,
+    0.133,
+    "below-chance"
+   ],
+   [
+    "gsm8k",
+    141,
+    0,
+    0.038,
+    "starcoderbase-7b",
+    0.051,
+    0.013,
+    ""
+   ],
+   [
+    "hellaswag",
+    81,
+    0.25,
+    0.286,
+    "gpt-2-small",
+    0.322,
+    0.036,
+    ""
+   ],
+   [
+    "hmmt-2025-edition-unspecified",
+    24,
+    0,
+    0.292,
+    "deepseek-v3-0324",
+    0.31,
+    0.018,
+    ""
+   ],
+   [
+    "hmmt-feb-2025",
+    27,
+    0,
+    0.102,
+    "qwen3-1-7b",
+    0.229,
+    0.127,
+    ""
+   ],
+   [
+    "humaneval",
+    182,
+    0,
+    0.0082,
+    "bloom-560m",
+    0.018,
+    0.0098,
+    ""
+   ],
+   [
+    "humaneval-plus",
+    61,
+    0,
+    0.024,
+    "stablelm-base-alpha-7b",
+    0.148,
+    0.124,
+    ""
+   ],
+   [
+    "ifbench-prompt",
+    6,
+    0,
+    0.715,
+    "nemotron-3-nano-30b-a3b",
+    0.7256,
+    0.0106,
+    ""
+   ],
+   [
+    "ifbench-unspecified",
+    39,
+    0,
+    0.1593,
+    "llama-3-2-1b",
+    0.1793,
+    0.02,
+    ""
+   ],
+   [
+    "ifeval-instruction-strict",
+    3,
+    0,
+    0.855,
+    "granite-4-0-micro",
+    0.8987,
+    0.0437,
+    ""
+   ],
+   [
+    "ifeval-prompt-unspecified-strictness",
+    1,
+    0,
+    0.879,
+    "nemotron-3-nano-4b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "ifeval-unspecified",
+    70,
+    0,
+    0.44,
+    "qwen3-5-0-8b",
+    0.4607,
+    0.0207,
+    ""
+   ],
+   [
+    "livecodebench-unversioned",
+    27,
+    0,
+    0.019,
+    "gemma-3-1b",
+    0.126,
+    0.107,
+    ""
+   ],
+   [
+    "livecodebench-v3",
+    7,
+    0,
+    0.295,
+    "olmo-3-7b-instruct",
+    0.344,
+    0.049,
+    ""
+   ],
+   [
+    "livecodebench-v5-202407-202412",
+    1,
+    0,
+    0.8119,
+    "nemotron-3-super-120b-a12b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "livecodebench-v6-202408-202505",
+    3,
+    0,
+    0.605,
+    "deepseek-r1-0528-qwen3-8b",
+    0.6825,
+    0.0775,
+    ""
+   ],
+   [
+    "livecodebench-v6-window-unspecified",
+    15,
+    0,
+    0.53,
+    "qwen3-8b",
+    0.572,
+    0.042,
+    ""
+   ],
+   [
+    "longbench-v2",
+    17,
+    0.25,
+    0.261,
+    "qwen3-5-0-8b",
+    0.265,
+    0.004,
+    ""
+   ],
+   [
+    "math",
+    24,
+    0,
+    0.024,
+    "starcoderbase-7b",
+    0.029,
+    0.005,
+    ""
+   ],
+   [
+    "math-500",
+    40,
+    0,
+    0.234,
+    "llama-3-2-1b",
+    0.3507,
+    0.1167,
+    ""
+   ],
+   [
+    "math-subset-unspecified",
+    62,
+    0,
+    0.132,
+    "mistral-7b-instruct-v0-3",
+    0.195,
+    0.063,
+    ""
+   ],
+   [
+    "mbpp-plus",
+    47,
+    0,
+    0.233,
+    "gemma-1-1-2b",
+    0.341,
+    0.108,
+    ""
+   ],
+   [
+    "mgsm",
+    10,
+    0,
+    0.002,
+    "flan-t5-small",
+    0.004,
+    0.002,
+    ""
+   ],
+   [
+    "mmlu",
+    149,
+    0.25,
+    0.257,
+    "dolly-v2-12b",
+    0.262,
+    0.005,
+    ""
+   ],
+   [
+    "mmlu-redux",
+    33,
+    0.25,
+    0.595,
+    "qwen3-5-0-8b",
+    0.715,
+    0.12,
+    ""
+   ],
+   [
+    "multilingual-mmlu",
+    1,
+    0,
+    0.493,
+    "phi-4-mini",
+    null,
+    null,
+    ""
+   ],
+   [
+    "openbookqa",
+    56,
+    0.25,
+    0.164,
+    "gpt-2-small",
+    0.17,
+    0.006,
+    "below-chance"
+   ],
+   [
+    "piqa",
+    92,
+    0.5,
+    0.595,
+    "pythia-70m",
+    0.627,
+    0.032,
+    ""
+   ],
+   [
+    "popqa",
+    37,
+    0,
+    0.096,
+    "gemma-3-1b",
+    0.129,
+    0.033,
+    ""
+   ],
+   [
+    "scicode-main",
+    5,
+    0,
+    0.026,
+    "deepseek-r1-0528-qwen3-8b",
+    0.039,
+    0.013,
+    ""
+   ],
+   [
+    "scicode-subtask",
+    3,
+    0,
+    0.333,
+    "nemotron-3-nano-30b-a3b",
+    0.4205,
+    0.0875,
+    ""
+   ],
+   [
+    "simpleqa",
+    26,
+    0,
+    0.022,
+    "gemma-3-1b",
+    0.03,
+    0.008,
+    ""
+   ],
+   [
+    "social-iqa",
+    37,
+    0.3333,
+    0.3562,
+    "stablelm-base-alpha-3b",
+    0.394,
+    0.0378,
+    ""
+   ],
+   [
+    "swe-bench-live",
+    3,
+    0,
+    0.207,
+    "qwen3-coder-30b-a3b",
+    0.263,
+    0.056,
+    ""
+   ],
+   [
+    "swe-bench-multilingual",
+    38,
+    0,
+    0.293,
+    "deepseek-v3-0324",
+    0.305,
+    0.012,
+    ""
+   ],
+   [
+    "tau-bench-airline",
+    21,
+    0,
+    0.205,
+    "exaone-4-0-1-2b",
+    0.26,
+    0.055,
+    ""
+   ],
+   [
+    "tau-bench-retail",
+    21,
+    0,
+    0.281,
+    "exaone-4-0-1-2b",
+    0.487,
+    0.206,
+    "gap>15"
+   ],
+   [
+    "tau2-bench",
+    25,
+    0,
+    0.116,
+    "qwen3-5-0-8b",
+    0.162,
+    0.046,
+    ""
+   ],
+   [
+    "terminal-bench-2",
+    27,
+    0,
+    0.211,
+    "nemotron-cascade-2-30b-a3b",
+    0.225,
+    0.014,
+    ""
+   ],
+   [
+    "truthfulqa-mc2",
+    30,
+    0,
+    0.3301,
+    "redpajama-incite-7b-base",
+    0.3897,
+    0.0595,
+    ""
+   ],
+   [
+    "winogrande",
+    94,
+    0.5,
+    0.5012,
+    "stablelm-base-alpha-7b",
+    0.503,
+    0.0018,
+    ""
+   ],
+   [
+    "zebralogic",
+    11,
+    0,
+    0.298,
+    "qwen3-0-6b",
+    0.329,
+    0.031,
+    ""
+   ],
+   [
+    "ttsds-v1-default",
+    15,
+    0,
+    0.7031,
+    "amphion-valle-v2",
+    0.7308,
+    0.0277,
+    ""
+   ],
+   [
+    "emergent-tts-6cat-stable-preference",
+    17,
+    0,
+    0.0847,
+    "vits-vctk",
+    0.0902,
+    0.0055,
+    ""
+   ],
+   [
+    "voxtral-tts-minimax9-speaker",
+    3,
+    0,
+    0.4968,
+    "elevenlabs-v3",
+    0.5378,
+    0.041,
+    ""
+   ],
+   [
+    "voxtral-tts-seed-reported-speaker",
+    3,
+    0,
+    0.392,
+    "elevenlabs-v3",
+    0.413,
+    0.021,
+    ""
+   ],
+   [
+    "cn-newstts-v01-strict",
+    7,
+    0,
+    0.244,
+    "amazon-polly-neural",
+    0.2752,
+    0.0312,
+    ""
+   ],
+   [
+    "geneval",
+    29,
+    0,
+    0.41,
+    "sd-1-1",
+    0.42,
+    0.01,
+    ""
+   ],
+   [
+    "dpg-bench",
+    14,
+    0,
+    0.806,
+    "emu3",
+    0.8263,
+    0.0203,
+    ""
+   ],
+   [
+    "tiif-testmini-short",
+    5,
+    0,
+    0.7773,
+    "z-image-turbo",
+    0.802,
+    0.0247,
+    ""
+   ],
+   [
+    "tiif-testmini-long",
+    5,
+    0,
+    0.8005,
+    "z-image-turbo",
+    0.8304,
+    0.0299,
+    ""
+   ],
+   [
+    "oneig-en",
+    10,
+    0,
+    0.47,
+    "omnigen2",
+    0.523,
+    0.053,
+    ""
+   ],
+   [
+    "oneig-cn",
+    9,
+    0,
+    0.491,
+    "mage-flow-turbo",
+    0.505,
+    0.014,
+    ""
+   ],
+   [
+    "cvtg-2k-word-accuracy",
+    7,
+    0,
+    0.851,
+    "mage-flow-base",
+    0.8585,
+    0.0075,
+    ""
+   ],
+   [
+    "longtext-en",
+    9,
+    0,
+    0.904,
+    "mage-flow-base",
+    0.911,
+    0.007,
+    ""
+   ],
+   [
+    "longtext-cn",
+    9,
+    0,
+    0.792,
+    "mage-flow-base",
+    0.801,
+    0.009,
+    ""
+   ],
+   [
+    "humanscore-t2v",
+    12,
+    0,
+    0.748,
+    "cogvideox-5b",
+    0.816,
+    0.068,
+    ""
+   ],
+   [
+    "physics-iq-verified-i2v-bpp",
+    6,
+    0,
+    0.253,
+    "p-video",
+    0.265,
+    0.012,
+    ""
+   ],
+   [
+    "vgi-bench-i2v",
+    9,
+    0,
+    0.191,
+    "hunyuanvideo-1-5-i2v",
+    0.216,
+    0.025,
+    ""
+   ],
+   [
+    "qwen-image-bench-v1",
+    18,
+    0,
+    0.4819,
+    "glm-image",
+    0.4826,
+    0.0007,
+    ""
+   ],
+   [
+    "livecodebench-official-20240101-20241101",
+    31,
+    0,
+    0.036,
+    "deepseek-v2-lite-chat",
+    0.065,
+    0.029,
+    ""
+   ],
+   [
+    "livecodebench-official-20240801-20250501",
+    16,
+    0,
+    0.202,
+    "claude-3-haiku-20240307",
+    0.275,
+    0.073,
+    ""
+   ],
+   [
+    "gsm-plus",
+    2,
+    0,
+    0.5891,
+    "smollm3-3b",
+    0.834,
+    0.2449,
+    "gap>15"
+   ],
+   [
+    "gsm8k-loose-substring",
+    1,
+    0,
+    0.8112,
+    "smollm3-3b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "hmmt-feb-2026",
+    12,
+    0,
+    0.733,
+    "k2-horizon-7b",
+    0.787,
+    0.054,
+    ""
+   ],
+   [
+    "ifeval-mean-four",
+    6,
+    0,
+    0.5237,
+    "llama-3-2-1b",
+    0.6325,
+    0.1088,
+    ""
+   ],
+   [
+    "mgsm-liquid-six-language-loose",
+    1,
+    0,
+    0.6872,
+    "smollm3-3b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "mmmlu-liquid-seven-language",
+    1,
+    0.25,
+    0.5002,
+    "smollm3-3b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "multi-if-three-turn-average",
+    1,
+    0,
+    0.5886,
+    "smollm3-3b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "scicode-unspecified",
+    10,
+    0,
+    0.2411,
+    "granite-4-2-3b",
+    0.316,
+    0.0749,
+    ""
+   ],
+   [
+    "swe-bench-pro-split-unspecified",
+    27,
+    0,
+    0.1911,
+    "granite-4-2-8b",
+    0.3329,
+    0.1418,
+    ""
+   ],
+   [
+    "tau2-retail",
+    18,
+    0,
+    0.3982,
+    "lfm2-5-8b-a1b",
+    0.404,
+    0.0058,
+    ""
+   ],
+   [
+    "tau2-telecom",
+    13,
+    0,
+    0.123,
+    "qwen3-30b-a3b-instruct-2507",
+    0.132,
+    0.009,
+    ""
+   ],
+   [
+    "terminal-bench-2.1",
+    37,
+    0,
+    0.2056,
+    "granite-4-2-8b",
+    0.2924,
+    0.0868,
+    ""
+   ],
+   [
+    "vibevoice-mit-figure-preference-mos",
+    3,
+    0,
+    0.5925,
+    "elevenlabs-v3-alpha",
+    0.6075,
+    0.015,
+    ""
+   ],
+   [
+    "vbench-t2v-subject-consistency-amd",
+    1,
+    0,
+    0.9366,
+    "wan-2-1-14b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "vbench-t2v-background-consistency-amd",
+    1,
+    0,
+    0.9478,
+    "wan-2-1-14b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "vbench-t2v-motion-smoothness-amd",
+    1,
+    0,
+    0.9888,
+    "wan-2-1-14b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "vbench-t2v-aesthetic-quality-amd",
+    1,
+    0,
+    0.6271,
+    "wan-2-1-14b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "vbench-t2v-imaging-quality-amd",
+    1,
+    0,
+    0.6556,
+    "wan-2-1-14b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "vbench-t2v-total",
+    2,
+    0,
+    0.8274,
+    "hunyuanvideo",
+    0.8328,
+    0.0054,
+    ""
+   ],
+   [
+    "vbench-t2v-total-mobilewan-480p",
+    1,
+    0,
+    0.813,
+    "wan-2-2-5b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "target-bench-v2-vggt-wo-i2v",
+    9,
+    0,
+    0.059,
+    "wan-2-1-i2v-turbo",
+    0.084,
+    0.025,
+    ""
+   ],
+   [
+    "agieval-marco-unspecified",
+    7,
+    0,
+    0.396,
+    "qwen3-1-7b",
+    0.436,
+    0.04,
+    ""
+   ],
+   [
+    "browsecomp-ling-single-context",
+    1,
+    0,
+    0.722,
+    "ling-3-0-flash",
+    null,
+    null,
+    ""
+   ],
+   [
+    "c-eval",
+    23,
+    0.25,
+    0.2337,
+    "phi-2",
+    0.3242,
+    0.0905,
+    "below-chance"
+   ],
+   [
+    "chinese-simpleqa",
+    6,
+    0,
+    0.637,
+    "deepseek-r1",
+    0.68,
+    0.043,
+    ""
+   ],
+   [
+    "cmmlu",
+    5,
+    0.25,
+    0.533,
+    "llama-3-8b",
+    0.603,
+    0.07,
+    ""
+   ],
+   [
+    "codegolf-v2-2",
+    2,
+    0,
+    0.11,
+    "gemma-3n-e2b",
+    0.168,
+    0.058,
+    ""
+   ],
+   [
+    "global-mmlu",
+    10,
+    0.25,
+    0.551,
+    "gemma-3n-e2b",
+    0.603,
+    0.052,
+    ""
+   ],
+   [
+    "global-mmlu-marco",
+    7,
+    0.25,
+    0.384,
+    "ministral-3-3b",
+    0.463,
+    0.079,
+    ""
+   ],
+   [
+    "gpqa-diamond-google-relaxed",
+    2,
+    0.25,
+    0.237,
+    "gemma-3n-e4b",
+    0.248,
+    0.011,
+    "below-chance"
+   ],
+   [
+    "imo-answerbench",
+    23,
+    0,
+    0.704,
+    "nemotron-3-nano-30b-a3b",
+    0.735,
+    0.031,
+    ""
+   ],
+   [
+    "kcl-essay-vanilla",
+    1,
+    0,
+    0.326,
+    "exaone-4-0-32b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "kcl-mcqa-vanilla",
+    1,
+    0.2,
+    0.364,
+    "exaone-4-0-32b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "livecodebench-202408-202505-version-unspecified",
+    6,
+    0,
+    0.43,
+    "deepseek-v3-0324",
+    0.635,
+    0.205,
+    "gap>15"
+   ],
+   [
+    "livecodebench-v5-window-unspecified",
+    3,
+    0,
+    0.186,
+    "gemma-3n-e2b",
+    0.257,
+    0.071,
+    ""
+   ],
+   [
+    "mbpp",
+    87,
+    0,
+    0.177,
+    "llama-7b",
+    0.22,
+    0.043,
+    ""
+   ],
+   [
+    "mcp-atlas-v1-500",
+    1,
+    0,
+    0.655,
+    "ling-3-0-flash",
+    null,
+    null,
+    ""
+   ],
+   [
+    "mgsm-marco",
+    7,
+    0,
+    0.47,
+    "ministral-3-3b",
+    0.636,
+    0.166,
+    "gap>15"
+   ],
+   [
+    "mmlu-prox-lite-marco",
+    7,
+    0,
+    0.267,
+    "ministral-3-3b",
+    0.286,
+    0.019,
+    ""
+   ],
+   [
+    "mmmlu-marco",
+    7,
+    0.25,
+    0.394,
+    "ministral-3-3b",
+    0.49,
+    0.096,
+    ""
+   ],
+   [
+    "multi-if-unspecified",
+    23,
+    0,
+    0.679,
+    "qwen3-30b-a3b-instruct-2507",
+    0.69,
+    0.011,
+    ""
+   ],
+   [
+    "musr",
+    1,
+    0,
+    0.699,
+    "ernie-4-5-300b-a47b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "polymath-marco",
+    7,
+    0,
+    0.163,
+    "ministral-3-3b",
+    0.234,
+    0.071,
+    ""
+   ],
+   [
+    "skillsbench-87",
+    1,
+    0,
+    0.448,
+    "ling-3-0-flash",
+    null,
+    null,
+    ""
+   ],
+   [
+    "sysbench-unspecified",
+    2,
+    0,
+    0.698,
+    "ernie-4-5-300b-a47b",
+    0.936,
+    0.238,
+    "gap>15"
+   ],
+   [
+    "tau2-airline",
+    17,
+    0,
+    0.24,
+    "qwen3-4b-instruct-2507",
+    0.3,
+    0.06,
+    ""
+   ],
+   [
+    "thunder-konubench-symbol-zero-shot",
+    2,
+    0.25,
+    0.265,
+    "exaone-4-0-1-2b",
+    0.815,
+    0.55,
+    "gap>15"
+   ],
+   [
+    "widesearch-corrected",
+    1,
+    0,
+    0.736,
+    "ling-3-0-flash",
+    null,
+    null,
+    ""
+   ],
+   [
+    "ztts1-clean-ml9-utmos",
+    8,
+    0,
+    0.5169,
+    "voxcpm2",
+    0.5328,
+    0.0158,
+    ""
+   ],
+   [
+    "ztts1-itw-10lang-utmos",
+    8,
+    0,
+    0.3488,
+    "voxcpm2",
+    0.3505,
+    0.0017,
+    ""
+   ],
+   [
+    "rw-voice-eq-tts-acting",
+    4,
+    0,
+    0.54,
+    "openai-tts-1",
+    0.6575,
+    0.1175,
+    ""
+   ],
+   [
+    "rw-voice-eq-tts-expressiveness",
+    5,
+    0,
+    0.5575,
+    "gpt-4o-mini-tts",
+    0.575,
+    0.0175,
+    ""
+   ],
+   [
+    "rw-voice-eq-tts-voice-identity",
+    5,
+    0,
+    0.615,
+    "openai-tts-1",
+    0.615,
+    0.0,
+    ""
+   ],
+   [
+    "rw-voice-eq-tts-language-switching",
+    4,
+    0,
+    0.5825,
+    "elevenlabs-v3",
+    0.585,
+    0.0025,
+    ""
+   ],
+   [
+    "rw-voice-eq-tts-reliability",
+    5,
+    0,
+    0.6475,
+    "elevenlabs-v3",
+    0.65,
+    0.0025,
+    ""
+   ],
+   [
+    "rw-voice-eq-tts-longform-stability",
+    5,
+    0,
+    0.61,
+    "sesame-csm-1b",
+    0.625,
+    0.015,
+    ""
+   ],
+   [
+    "rw-voice-eq-tts-acoustic-quality",
+    5,
+    0,
+    0.5825,
+    "inworld-realtime-tts-2",
+    0.5825,
+    0.0,
+    ""
+   ],
+   [
+    "emergent-tts-v1-paper-wvmos",
+    9,
+    0,
+    0.5075,
+    "tortoise-tts-v2",
+    0.595,
+    0.0875,
+    ""
+   ],
+   [
+    "ztts1-fleursr-en-ttsds2-prosody",
+    5,
+    0,
+    0.8688,
+    "qwen3-tts-12hz-1-7b-base",
+    0.8745,
+    0.0057,
+    ""
+   ],
+   [
+    "genexam-relaxed",
+    17,
+    0,
+    0.067,
+    "blip3o-8b",
+    0.088,
+    0.021,
+    ""
+   ],
+   [
+    "t2i-reasonbench-overall",
+    14,
+    0,
+    0.417,
+    "emu3",
+    0.423,
+    0.006,
+    ""
+   ],
+   [
+    "tiif-bench-v3-short",
+    12,
+    0,
+    0.677,
+    "midjourney-v7",
+    0.71,
+    0.033,
+    ""
+   ],
+   [
+    "genai-bench-vqascore",
+    4,
+    0,
+    0.75,
+    "midjourney-v7",
+    0.79,
+    0.04,
+    ""
+   ],
+   [
+    "wise-wiscore-overall",
+    20,
+    0,
+    0.23,
+    "janus-1-3b",
+    0.26,
+    0.03,
+    ""
+   ],
+   [
+    "sci-vbench-testmini-human",
+    15,
+    0.2,
+    0.384,
+    "ltx-2-3",
+    0.386,
+    0.002,
+    ""
+   ],
+   [
+    "fepbench-if",
+    9,
+    0,
+    0.334,
+    "ovis-image-7b",
+    0.39,
+    0.056,
+    ""
+   ],
+   [
+    "edit-compass-en-overall",
+    16,
+    0.2,
+    0.238,
+    "instructpix2pix",
+    0.242,
+    0.004,
+    ""
+   ],
+   [
+    "unicbench-en-overall",
+    11,
+    0,
+    0.2922,
+    "instructpix2pix",
+    0.5601,
+    0.2679,
+    "gap>15"
+   ],
+   [
+    "tecci-human-overall-success",
+    5,
+    0,
+    0.057,
+    "gpt-image-1-5",
+    0.167,
+    0.11,
+    ""
+   ],
+   [
+    "skyreels-bench-t2v-human",
+    5,
+    0.2,
+    0.506,
+    "runway-gen-3-alpha",
+    0.564,
+    0.058,
+    ""
+   ],
+   [
+    "skyreels-bench-i2v-human",
+    4,
+    0.2,
+    0.568,
+    "hunyuanvideo-i2v",
+    0.61,
+    0.042,
+    ""
+   ],
+   [
+    "vbench-t2v-total-long-prompts",
+    4,
+    0,
+    0.803,
+    "cogvideox-1-5-5b",
+    0.815,
+    0.012,
+    ""
+   ],
+   [
+    "videophy2-human-joint",
+    6,
+    0,
+    0.105,
+    "videocrafter2",
+    0.172,
+    0.067,
+    ""
+   ],
+   [
+    "videophy-autoeval-avg",
+    10,
+    0,
+    0.29,
+    "pika-1-0",
+    0.29,
+    0.0,
+    ""
+   ],
+   [
+    "v-reasonbench-pass5-avg",
+    5,
+    0,
+    0.1068,
+    "seedance-1-0-lite",
+    0.1134,
+    0.0066,
+    ""
+   ],
+   [
+    "vwg-bench-overall",
+    6,
+    0.2,
+    0.55,
+    "wan-2-5-preview",
+    0.56,
+    0.01,
+    ""
+   ],
+   [
+    "t2vphysbench-human-avg",
+    4,
+    0,
+    0.28,
+    "sora",
+    0.32,
+    0.04,
+    ""
+   ],
+   [
+    "qc-t2i-bench-en-hcq",
+    11,
+    0,
+    0.7621,
+    "flux-1-dev",
+    0.8391,
+    0.077,
+    ""
+   ],
+   [
+    "imagetime-prompt-only",
+    8,
+    0,
+    0.157,
+    "sdxl",
+    0.498,
+    0.341,
+    "gap>15"
+   ],
+   [
+    "gebench-en-ge-score",
+    9,
+    0,
+    0.28,
+    "bagel",
+    0.3301,
+    0.0501,
+    ""
+   ],
+   [
+    "imagenworld-tig-human",
+    6,
+    0,
+    0.64,
+    "sdxl",
+    0.74,
+    0.1,
+    ""
+   ],
+   [
+    "imagenworld-tie-human",
+    5,
+    0,
+    0.45,
+    "instructpix2pix",
+    0.58,
+    0.13,
+    ""
+   ],
+   [
+    "matharena-arxivmath-2025-12",
+    18,
+    0,
+    0.2794,
+    "qwen3-30b-a3b-thinking-2507",
+    0.3235,
+    0.0441,
+    ""
+   ],
+   [
+    "matharena-arxivmath-2026-01",
+    23,
+    0,
+    0.2391,
+    "qwen3-4b-thinking-2507",
+    0.3913,
+    0.1522,
+    "gap>15"
+   ],
+   [
+    "matharena-arxivmath-2026-02",
+    24,
+    0,
+    0.1797,
+    "qwen3-4b-thinking-2507",
+    0.2266,
+    0.0469,
+    ""
+   ],
+   [
+    "matharena-arxivmath-2026-03",
+    15,
+    0,
+    0.4333,
+    "step-3-5-flash",
+    0.45,
+    0.0167,
+    ""
+   ],
+   [
+    "matharena-arxivmath-2026-04",
+    21,
+    0,
+    0.0187,
+    "qwen3-5-2b",
+    0.3375,
+    0.3188,
+    "gap>15"
+   ],
+   [
+    "matharena-arxivmath-2026-05",
+    18,
+    0,
+    0.1062,
+    "qwen3-5-2b",
+    0.375,
+    0.2687,
+    "gap>15"
+   ],
+   [
+    "matharena-arxivmath-2026-06",
+    20,
+    0,
+    0.0417,
+    "qwen3-5-2b",
+    0.2708,
+    0.2292,
+    "gap>15"
+   ],
+   [
+    "matharena-brokenarxiv-2026-02",
+    17,
+    0,
+    0.0282,
+    "kimi-k2-5",
+    0.0323,
+    0.004,
+    ""
+   ],
+   [
+    "matharena-brokenarxiv-2026-03",
+    15,
+    0,
+    0.058,
+    "claude-opus-4-6",
+    0.058,
+    0.0,
+    ""
+   ],
+   [
+    "matharena-brokenarxiv-2026-04",
+    19,
+    0,
+    0.041,
+    "claude-opus-4-7",
+    0.082,
+    0.041,
+    ""
+   ],
+   [
+    "matharena-brokenarxiv-2026-05",
+    9,
+    0,
+    0.085,
+    "step-3-7-flash",
+    0.1,
+    0.015,
+    ""
+   ],
+   [
+    "matharena-brokenarxiv-2026-06",
+    15,
+    0,
+    0.0278,
+    "qwen3-5-2b",
+    0.034,
+    0.0062,
+    ""
+   ],
+   [
+    "matharena-arxivlean-2026-03",
+    6,
+    0,
+    0,
+    "step-3-5-flash",
+    0.0244,
+    0.0244,
+    ""
+   ],
+   [
+    "galileo-agent-v1-tsq",
+    28,
+    0,
+    0.629,
+    "llama-4-scout",
+    0.661,
+    0.032,
+    ""
+   ],
+   [
+    "galileo-agent-v2-action-completion",
+    20,
+    0,
+    0.16,
+    "magistral-small-2506",
+    0.16,
+    0.0,
+    ""
+   ],
+   [
+    "simple-evals-mmlu",
+    18,
+    0.25,
+    0.801,
+    "gpt-4-1-nano-2025-04-14",
+    0.82,
+    0.019,
+    ""
+   ],
+   [
+    "simple-evals-gpqa-diamond",
+    18,
+    0.25,
+    0.402,
+    "gpt-4o-mini-2024-07-18",
+    0.414,
+    0.012,
+    ""
+   ],
+   [
+    "simple-evals-math500",
+    10,
+    0,
+    0.623,
+    "gpt-4-1-nano-2025-04-14",
+    0.814,
+    0.191,
+    "gap>15"
+   ],
+   [
+    "simple-evals-humaneval",
+    16,
+    0,
+    0.837,
+    "gpt-4-1106-preview",
+    0.866,
+    0.029,
+    ""
+   ],
+   [
+    "simple-evals-mgsm",
+    17,
+    0,
+    0.73,
+    "gpt-4-1-nano-2025-04-14",
+    0.851,
+    0.121,
+    ""
+   ],
+   [
+    "simple-evals-drop-f1",
+    18,
+    0,
+    0.748,
+    "o1-preview",
+    0.755,
+    0.007,
+    ""
+   ],
+   [
+    "simple-evals-simpleqa",
+    15,
+    0,
+    0.076,
+    "o1-mini",
+    0.076,
+    0.0,
+    ""
+   ],
+   [
+    "arena-hard-v2-hard-prompt-sc-gemini25",
+    21,
+    0,
+    0.101,
+    "qwen2-5-72b",
+    0.103,
+    0.002,
+    ""
+   ],
+   [
+    "arena-hard-v2-creative-writing",
+    21,
+    0,
+    0.102,
+    "qwen2-5-72b",
+    0.105,
+    0.003,
+    ""
+   ],
+   [
+    "scicode-main-official",
+    16,
+    0,
+    0,
+    "llama-3-1-70b",
+    0,
+    0,
+    ""
+   ],
+   [
+    "judgemark-v2",
+    11,
+    0,
+    0.3572,
+    "llama-3-1-8b",
+    0.4405,
+    0.0833,
+    ""
+   ],
+   [
+    "arcprize-arc-agi-2-public-eval",
+    14,
+    0,
+    0,
+    "claude-3-haiku-20240307",
+    0.0083,
+    0.0083,
+    ""
+   ],
+   [
+    "arcprize-arc-agi-1-public-eval",
+    13,
+    0,
+    0.0712,
+    "claude-3-haiku-20240307",
+    0.5162,
+    0.445,
+    "gap>15"
+   ],
+   [
+    "vector-inspect-gpqa-diamond",
+    9,
+    0.25,
+    0.3194,
+    "command-r-plus-04-2024",
+    0.3838,
+    0.0644,
+    ""
+   ],
+   [
+    "vector-inspect-mmlu-pro",
+    9,
+    0.1,
+    0.4412,
+    "command-r-plus-04-2024",
+    0.6396,
+    0.1985,
+    "gap>15"
+   ],
+   [
+    "vector-inspect-math",
+    9,
+    0,
+    0.2626,
+    "command-r-plus-04-2024",
+    0.6004,
+    0.3378,
+    "gap>15"
+   ],
+   [
+    "vector-inspect-humaneval",
+    9,
+    0,
+    0.622,
+    "command-r-plus-04-2024",
+    0.7866,
+    0.1646,
+    "gap>15"
+   ],
+   [
+    "bridge-clinical-zeroshot-avg",
+    71,
+    0,
+    0.1272,
+    "llama-3-2-1b",
+    0.1426,
+    0.0154,
+    ""
+   ],
+   [
+    "robloxqa-v2-mc",
+    45,
+    0.25,
+    0.745,
+    "qwen3-5-9b",
+    0.7873,
+    0.0423,
+    ""
+   ],
+   [
+    "luau-leetcode-full-pass",
+    45,
+    0,
+    0.0817,
+    "llama-3-1-8b",
+    0.149,
+    0.0673,
+    ""
+   ],
+   [
+    "webapp1k-react-pass1",
+    30,
+    0,
+    0.0679,
+    "llama-3-8b",
+    0.1027,
+    0.0348,
+    ""
+   ],
+   [
+    "webapp1k-duo-react-pass1",
+    43,
+    0,
+    0.087,
+    "deepseek-r1-distill-qwen-32b",
+    0.198,
+    0.111,
+    ""
+   ],
+   [
+    "mideind-icelandic-average",
+    33,
+    0,
+    0.129,
+    "gpt-3-5-turbo-0125",
+    0.1568,
+    0.0278,
+    ""
+   ],
+   [
+    "soohak-mini-avg3",
+    8,
+    0,
+    0.4088,
+    "claude-sonnet-4-5",
+    0.5138,
+    0.105,
+    ""
+   ],
+   [
+    "soohak-challenge-avg3",
+    8,
+    0,
+    0.0569,
+    "claude-sonnet-4-5",
+    0.0804,
+    0.0235,
+    ""
+   ],
+   [
+    "mathconstraint-329-notools",
+    9,
+    0,
+    0.085,
+    "llama-3-3-70b",
+    0.185,
+    0.1,
+    ""
+   ],
+   [
+    "dseffi-bench-pass",
+    16,
+    0,
+    0.171,
+    "deepseek-coder-v2-lite-instruct",
+    0.175,
+    0.004,
+    ""
+   ],
+   [
+    "finsheet-bench-acc",
+    4,
+    0,
+    0.788,
+    "gemini-2-5-pro",
+    0.802,
+    0.014,
+    ""
+   ],
+   [
+    "terminal-bench-2-terminus2",
+    15,
+    0,
+    0.031,
+    "gpt-oss-20b",
+    0.079,
+    0.048,
+    ""
+   ],
+   [
+    "ale-openclaw-overall-pass",
+    11,
+    0,
+    0.043,
+    "grok-4-3",
+    0.086,
+    0.043,
+    ""
+   ],
+   [
+    "medmarks-v-winrate",
+    35,
+    0,
+    0.3214,
+    "gemma-3-4b",
+    0.3503,
+    0.0289,
+    ""
+   ],
+   [
+    "hle-verified-text-full",
+    4,
+    0,
+    0.364,
+    "deepseek-v3-2",
+    0.388,
+    0.024,
+    ""
+   ],
+   [
+    "sciclaimeval-t1-pair-dev",
+    9,
+    0,
+    0.483,
+    "qwen3-5-9b",
+    0.526,
+    0.043,
+    ""
+   ],
+   [
+    "terminalworld-verified-terminus2",
+    6,
+    0,
+    0.49,
+    "minimax-m2-7",
+    0.535,
+    0.045,
+    ""
+   ],
+   [
+    "mathnet-solve-test-micro",
+    9,
+    0,
+    0.147,
+    "llama-4-maverick",
+    0.214,
+    0.067,
+    ""
+   ],
+   [
+    "aragen-v3-3c3h",
+    48,
+    0,
+    0.0048,
+    "mistral-7b-instruct-v0-2",
+    0.0157,
+    0.0109,
+    ""
+   ],
+   [
+    "hindigen-v1-3c3h",
+    23,
+    0,
+    0.491,
+    "gpt-3-5-turbo-0125",
+    0.5029,
+    0.0119,
+    ""
+   ],
+   [
+    "arabic-ifeval-inception-ar-prompt",
+    26,
+    0,
+    0.007,
+    "llama-2-7b-chat",
+    0.02,
+    0.013,
+    ""
+   ],
+   [
+    "polish-eq-bench-v2",
+    52,
+    0,
+    0.0519,
+    "yi-1-5-6b-chat",
+    0.1533,
+    0.1014,
+    ""
+   ],
+   [
+    "cptub-speakleash-avg",
+    64,
+    0,
+    0.2802,
+    "qwen2-5-0-5b",
+    0.2992,
+    0.019,
+    ""
+   ],
+   [
+    "browsergym-genericagent-miniwob",
+    10,
+    0,
+    0.566,
+    "gpt-4o-mini-2024-07-18",
+    0.576,
+    0.01,
+    ""
+   ],
+   [
+    "browsergym-genericagent-workarena-l1",
+    9,
+    0,
+    0.27,
+    "gpt-4o-mini-2024-07-18",
+    0.279,
+    0.009,
+    ""
+   ],
+   [
+    "browsergym-genericagent-workarena-l2",
+    10,
+    0,
+    0.013,
+    "gpt-4o-mini-2024-07-18",
+    0.021,
+    0.008,
+    ""
+   ],
+   [
+    "browsergym-genericagent-webarena",
+    6,
+    0,
+    0.174,
+    "gpt-4o-mini-2024-07-18",
+    0.184,
+    0.01,
+    ""
+   ],
+   [
+    "open-pt-llm-avg9",
+    142,
+    0.3264,
+    0.0196,
+    "gpt-1",
+    0.2754,
+    0.2558,
+    "gap>15,below-chance"
+   ],
+   [
+    "open-persian-llm-v2-avg21",
+    73,
+    0,
+    0.294,
+    "llama-2-13b-chat",
+    0.3063,
+    0.0123,
+    ""
+   ],
+   [
+    "mimic-cdm-avg4",
+    4,
+    0,
+    0.2145,
+    "gemma-3-1b",
+    0.508,
+    0.2935,
+    "gap>15"
+   ],
+   [
+    "mimic-cdm-fi-avg4",
+    5,
+    0,
+    0.2188,
+    "gemma-3-1b",
+    0.694,
+    0.4752,
+    "gap>15"
+   ],
+   [
+    "libra-mini-2605",
+    9,
+    0,
+    0.2826,
+    "phi-3-5-mini-instruct",
+    0.3554,
+    0.0728,
+    ""
+   ],
+   [
+    "rpc-bench-text-overall",
+    9,
+    0,
+    0.2005,
+    "claude-sonnet-4-5",
+    0.2419,
+    0.0414,
+    ""
+   ],
+   [
+    "multi-swe-bench-7lang-magentless",
+    8,
+    0,
+    0.0257,
+    "qwen2-5-72b",
+    0.0362,
+    0.0104,
+    ""
+   ],
+   [
+    "swe-bench-pro-qwen-refined",
+    7,
+    0,
+    0.446,
+    "qwen3-5-35b-a3b",
+    0.495,
+    0.049,
+    ""
+   ],
+   [
+    "skillsbench-qwen-78",
+    5,
+    0,
+    0.044,
+    "qwen3-5-35b-a3b",
+    0.272,
+    0.228,
+    "gap>15"
+   ],
+   [
+    "claw-eval-avg",
+    5,
+    0,
+    0.643,
+    "qwen3-5-27b",
+    0.654,
+    0.011,
+    ""
+   ],
+   [
+    "claw-eval-pass3",
+    8,
+    0,
+    0.462,
+    "qwen3-5-27b",
+    0.481,
+    0.019,
+    ""
+   ],
+   [
+    "qwenclawbench",
+    5,
+    0,
+    0.477,
+    "qwen3-5-35b-a3b",
+    0.518,
+    0.041,
+    ""
+   ],
+   [
+    "mcpmark",
+    4,
+    0,
+    0.27,
+    "qwen3-5-35b-a3b",
+    0.363,
+    0.093,
+    ""
+   ],
+   [
+    "seccodebench",
+    1,
+    0,
+    0.683,
+    "qwen3-5-397b-a17b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "webarena-verified",
+    3,
+    0,
+    0.488,
+    "qwen3-6-27b",
+    0.553,
+    0.065,
+    ""
+   ],
+   [
+    "matharena-apex",
+    7,
+    0,
+    0.126,
+    "hy3-preview",
+    0.387,
+    0.261,
+    "gap>15"
+   ],
+   [
+    "terminal-bench-3",
+    5,
+    0,
+    0.054,
+    "gemini-3-6-flash",
+    0.076,
+    0.022,
+    ""
+   ],
+   [
+    "terminal-bench-4",
+    29,
+    0,
+    0.07,
+    "deepseek-v4-flash",
+    0.103,
+    0.033,
+    ""
+   ],
+   [
+    "deepswe-v1-1",
+    21,
+    0,
+    0.462,
+    "glm-5-2",
+    0.544,
+    0.082,
+    ""
+   ],
+   [
+    "programbench-almost1",
+    2,
+    0,
+    0.155,
+    "deepseek-v4-pro",
+    0.203,
+    0.048,
+    ""
+   ],
+   [
+    "sec-bench-pro",
+    3,
+    0,
+    0.309,
+    "deepseek-v4-flash",
+    0.564,
+    0.255,
+    "gap>15"
+   ],
+   [
+    "exploitgym",
+    3,
+    0,
+    0.018,
+    "deepseek-v4-flash",
+    0.054,
+    0.036,
+    ""
+   ],
+   [
+    "automationbench",
+    3,
+    0,
+    0.377,
+    "deepseek-v4-flash",
+    0.432,
+    0.055,
+    ""
+   ],
+   [
+    "automationbench-public",
+    2,
+    0,
+    0.251,
+    "deepseek-v4-flash",
+    0.318,
+    0.067,
+    ""
+   ],
+   [
+    "agents-last-exam",
+    3,
+    0,
+    0.252,
+    "deepseek-v4-flash",
+    0.257,
+    0.005,
+    ""
+   ],
+   [
+    "chartography-with-tools",
+    9,
+    0,
+    0.75,
+    "claude-opus-4-8",
+    0.789,
+    0.039,
+    ""
+   ],
+   [
+    "babyvision-with-tools",
+    1,
+    0,
+    0.896,
+    "deepseek-v4-1-flash",
+    null,
+    null,
+    ""
+   ],
+   [
+    "zerobench-main-with-tools-pass5",
+    1,
+    0,
+    0.49,
+    "deepseek-v4-1-flash",
+    null,
+    null,
+    ""
+   ],
+   [
+    "toolathlon-verified",
+    10,
+    0,
+    0.455,
+    "inkling",
+    0.544,
+    0.089,
+    ""
+   ],
+   [
+    "terminal-bench-1-terminus1",
+    3,
+    0,
+    0.057,
+    "deepseek-r1-0528",
+    0.133,
+    0.076,
+    ""
+   ],
+   [
+    "frames",
+    3,
+    0,
+    0.733,
+    "deepseek-v3",
+    0.825,
+    0.092,
+    ""
+   ],
+   [
+    "cnmo-2024",
+    3,
+    0,
+    0.432,
+    "deepseek-v3",
+    0.788,
+    0.356,
+    "gap>15"
+   ],
+   [
+    "bfcl-v3-multiturn",
+    1,
+    0,
+    0.37,
+    "deepseek-r1-0528",
+    null,
+    null,
+    ""
+   ],
+   [
+    "cluewsc",
+    2,
+    0.5,
+    0.909,
+    "deepseek-v3",
+    0.928,
+    0.019,
+    ""
+   ],
+   [
+    "arena-hard-v0-1-gpt4-1106",
+    59,
+    0,
+    0.03,
+    "gemma-2b",
+    0.034,
+    0.004,
+    ""
+   ],
+   [
+    "ifeval-prompt-strict",
+    8,
+    0,
+    0.2,
+    "qwen2-0-5b",
+    0.29,
+    0.09,
+    ""
+   ],
+   [
+    "tau-bench-airline-gpt41-user",
+    2,
+    0,
+    0.535,
+    "deepseek-r1-0528",
+    0.62,
+    0.085,
+    ""
+   ],
+   [
+    "aime-2026-i",
+    2,
+    0,
+    0.927,
+    "glm-5",
+    0.929,
+    0.002,
+    ""
+   ],
+   [
+    "browsecomp-context-managed",
+    14,
+    0,
+    0.575,
+    "glm-4-6",
+    0.59,
+    0.015,
+    ""
+   ],
+   [
+    "browsecomp-zh-context-managed",
+    1,
+    0,
+    0.737,
+    "step-3-5-flash",
+    null,
+    null,
+    ""
+   ],
+   [
+    "critpt",
+    4,
+    0,
+    0.046,
+    "glm-5-1",
+    0.054,
+    0.008,
+    ""
+   ],
+   [
+    "gaia-text-only",
+    1,
+    0,
+    0.845,
+    "step-3-5-flash",
+    null,
+    null,
+    ""
+   ],
+   [
+    "xbench-deepsearch-2505",
+    1,
+    0,
+    0.837,
+    "step-3-5-flash",
+    null,
+    null,
+    ""
+   ],
+   [
+    "xbench-deepsearch-2510",
+    1,
+    0,
+    0.563,
+    "step-3-5-flash",
+    null,
+    null,
+    ""
+   ],
+   [
+    "researchrubrics",
+    1,
+    0,
+    0.653,
+    "step-3-5-flash",
+    null,
+    null,
+    ""
+   ],
+   [
+    "forte",
+    6,
+    0,
+    0.703,
+    "gemini-3-1-pro",
+    0.732,
+    0.029,
+    ""
+   ],
+   [
+    "rwsearch",
+    6,
+    0,
+    0.763,
+    "gemini-3-1-pro",
+    0.773,
+    0.01,
+    ""
+   ],
+   [
+    "tau-bench-retail-gpt41-user",
+    2,
+    0,
+    0.635,
+    "minimax-m1",
+    0.639,
+    0.004,
+    ""
+   ],
+   [
+    "omni-math",
+    1,
+    0,
+    0.766,
+    "phi-4-reasoning",
+    null,
+    null,
+    ""
+   ],
+   [
+    "livecodebench-20240801-20250201",
+    1,
+    0,
+    0.538,
+    "phi-4-reasoning",
+    null,
+    null,
+    ""
+   ],
+   [
+    "flenqa-3k",
+    2,
+    0.5,
+    0.82,
+    "phi-4",
+    0.977,
+    0.157,
+    "gap>15"
+   ],
+   [
+    "ifeval-strict-level-unspecified",
+    2,
+    0,
+    0.623,
+    "phi-4",
+    0.834,
+    0.211,
+    "gap>15"
+   ],
+   [
+    "arena-hard-unspecified",
+    18,
+    0,
+    0.233,
+    "granite-3-1-2b",
+    0.2486,
+    0.0156,
+    ""
+   ],
+   [
+    "wildbench-v2",
+    1,
+    0,
+    0.6533,
+    "mistral-small-3-2",
+    null,
+    null,
+    ""
+   ],
+   [
+    "gpqa-main",
+    1,
+    0.25,
+    0.4422,
+    "mistral-small-3-2",
+    null,
+    null,
+    ""
+   ],
+   [
+    "mbpp-plus-pass5",
+    1,
+    0,
+    0.7833,
+    "mistral-small-3-2",
+    null,
+    null,
+    ""
+   ],
+   [
+    "humaneval-plus-pass5",
+    1,
+    0,
+    0.929,
+    "mistral-small-3-2",
+    null,
+    null,
+    ""
+   ],
+   [
+    "chartqa",
+    4,
+    0,
+    0.688,
+    "gemma-3-4b",
+    0.757,
+    0.069,
+    ""
+   ],
+   [
+    "docvqa",
+    7,
+    0,
+    0.758,
+    "gemma-3-4b",
+    0.866,
+    0.108,
+    ""
+   ],
+   [
+    "deepsearchqa",
+    3,
+    0,
+    0.746,
+    "muse-glimmer-30b",
+    0.828,
+    0.082,
+    ""
+   ],
+   [
+    "apex-agents",
+    4,
+    0,
+    0.124,
+    "hy3-preview",
+    0.244,
+    0.12,
+    ""
+   ],
+   [
+    "wildclawbench-35-text",
+    2,
+    0,
+    0.453,
+    "hy3-preview",
+    0.536,
+    0.083,
+    ""
+   ],
+   [
+    "skillsbench-79-text-claude-code",
+    4,
+    0,
+    0.291,
+    "hy3-preview",
+    0.553,
+    0.262,
+    "gap>15"
+   ],
+   [
+    "frontierscience-research",
+    4,
+    0,
+    0.19,
+    "hy3-preview",
+    0.213,
+    0.023,
+    ""
+   ],
+   [
+    "frontierscience-olympiad",
+    2,
+    0,
+    0.7,
+    "hy3-preview",
+    0.748,
+    0.048,
+    ""
+   ],
+   [
+    "usamo-2026",
+    6,
+    0,
+    0.373,
+    "hy3-preview",
+    0.55,
+    0.177,
+    "gap>15"
+   ],
+   [
+    "phybench",
+    2,
+    0,
+    0.714,
+    "hy3-preview",
+    0.774,
+    0.06,
+    ""
+   ],
+   [
+    "cmt-benchmark",
+    2,
+    0,
+    0.194,
+    "hy3-preview",
+    0.378,
+    0.184,
+    "gap>15"
+   ],
+   [
+    "superchem",
+    4,
+    0,
+    0.47,
+    "hy3-preview",
+    0.526,
+    0.056,
+    ""
+   ],
+   [
+    "cl-bench",
+    5,
+    0,
+    0.12,
+    "nemotron-3-nano-30b-a3b",
+    0.122,
+    0.002,
+    ""
+   ],
+   [
+    "cl-bench-life",
+    2,
+    0,
+    0.157,
+    "hy3-preview",
+    0.17,
+    0.013,
+    ""
+   ],
+   [
+    "hr-bench-4k",
+    1,
+    0.25,
+    0.885,
+    "mimo-v2-5",
+    null,
+    null,
+    ""
+   ],
+   [
+    "dailyomni",
+    1,
+    0.25,
+    0.835,
+    "mimo-v2-5",
+    null,
+    null,
+    ""
+   ],
+   [
+    "videoholmes",
+    1,
+    0.1667,
+    0.64,
+    "mimo-v2-5",
+    null,
+    null,
+    ""
+   ],
+   [
+    "facts-grounding",
+    4,
+    0,
+    0.364,
+    "gemma-3-1b",
+    0.701,
+    0.337,
+    "gap>15"
+   ],
+   [
+    "bird-sql-dev",
+    5,
+    0,
+    0.064,
+    "gemma-3-1b",
+    0.363,
+    0.299,
+    "gap>15"
+   ],
+   [
+    "global-mmlu-lite",
+    6,
+    0.25,
+    0.342,
+    "gemma-3-1b",
+    0.545,
+    0.203,
+    "gap>15"
+   ],
+   [
+    "textvqa",
+    3,
+    0,
+    0.578,
+    "gemma-3-4b",
+    0.651,
+    0.073,
+    ""
+   ],
+   [
+    "gedit-bench-overall-lang-unspecified",
+    1,
+    0,
+    0.758,
+    "step1x-edit-v1-2",
+    null,
+    null,
+    ""
+   ],
+   [
+    "wan-bench-2-1-weighted",
+    1,
+    0,
+    0.724,
+    "wan-2-1-14b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "kris-bench-overall",
+    1,
+    0,
+    0.6093,
+    "step1x-edit-v1-2",
+    null,
+    null,
+    ""
+   ],
+   [
+    "livebench-unspecified",
+    1,
+    0,
+    0.476,
+    "phi-4",
+    null,
+    null,
+    ""
+   ],
+   [
+    "bigcodebench-complete",
+    1,
+    0,
+    0.43,
+    "phi-4-mini",
+    null,
+    null,
+    ""
+   ],
+   [
+    "bigcodebench-instruct",
+    2,
+    0,
+    0.338,
+    "phi-4-mini",
+    0.454,
+    0.116,
+    ""
+   ],
+   [
+    "bfcl-version-unspecified",
+    3,
+    0,
+    0.498,
+    "olmo-3-7b-instruct",
+    0.703,
+    0.205,
+    "gap>15"
+   ],
+   [
+    "livecodebench-202408-202501",
+    1,
+    0,
+    0.538,
+    "phi-4-reasoning",
+    null,
+    null,
+    ""
+   ],
+   [
+    "wmt24pp-chrf",
+    4,
+    0,
+    0.359,
+    "gemma-3-1b",
+    0.468,
+    0.109,
+    ""
+   ],
+   [
+    "vqav2-val",
+    3,
+    0,
+    0.624,
+    "gemma-3-4b",
+    0.71,
+    0.086,
+    ""
+   ],
+   [
+    "livecodebench-202407-202501",
+    2,
+    0,
+    0.707,
+    "glm-4-5-air",
+    0.729,
+    0.022,
+    ""
+   ],
+   [
+    "terminal-bench-pre-2",
+    5,
+    0,
+    0.3,
+    "glm-4-5-air",
+    0.313,
+    0.013,
+    ""
+   ],
+   [
+    "sysbench-isr",
+    2,
+    0,
+    0.774,
+    "glm-4-5-air",
+    0.81,
+    0.036,
+    ""
+   ],
+   [
+    "ifeval-strict-mean",
+    1,
+    0,
+    0.909,
+    "command-a",
+    null,
+    null,
+    ""
+   ],
+   [
+    "infobench",
+    1,
+    0,
+    0.949,
+    "command-a",
+    null,
+    null,
+    ""
+   ],
+   [
+    "livecodebench-v5-202410-202502",
+    1,
+    0,
+    0.269,
+    "command-a",
+    null,
+    null,
+    ""
+   ],
+   [
+    "repoqa",
+    1,
+    0,
+    0.926,
+    "command-a",
+    null,
+    null,
+    ""
+   ],
+   [
+    "healthbench",
+    18,
+    0,
+    0.425,
+    "gpt-oss-20b",
+    0.471,
+    0.046,
+    ""
+   ],
+   [
+    "healthbench-hard",
+    14,
+    0,
+    0.108,
+    "gpt-oss-20b",
+    0.221,
+    0.113,
+    ""
+   ],
+   [
+    "minif2f-pass1",
+    1,
+    0,
+    0.5003,
+    "nemotron-3-nano-30b-a3b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "ifbench-prompt-loose",
+    1,
+    0,
+    0.817,
+    "nemotron-3-ultra-550b-a55b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "bfcl-v2-live",
+    1,
+    0,
+    0.741,
+    "llama-3-1-nemotron-ultra-253b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "livecodebench-202408-202502",
+    1,
+    0,
+    0.663,
+    "llama-3-1-nemotron-ultra-253b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "wise-overall-publisher-run",
+    2,
+    0,
+    0.65,
+    "longcat-image",
+    0.7,
+    0.05,
+    ""
+   ],
+   [
+    "gedit-bench-en-overall",
+    4,
+    0,
+    0.485,
+    "uniworld-v1",
+    0.652,
+    0.167,
+    "gap>15"
+   ],
+   [
+    "imgedit-bench-overall",
+    2,
+    0,
+    0.652,
+    "uniworld-v1",
+    0.9,
+    0.248,
+    "gap>15"
+   ],
+   [
+    "tau3-banking",
+    6,
+    0,
+    0.155,
+    "inkling-small",
+    0.235,
+    0.08,
+    ""
+   ],
+   [
+    "wildclawbench",
+    1,
+    0,
+    0.476,
+    "muse-glimmer-30b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "gaia2",
+    1,
+    0,
+    0.433,
+    "muse-glimmer-30b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "skillsbench-with-skills",
+    1,
+    0,
+    0.443,
+    "muse-glimmer-30b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "mmau",
+    2,
+    0,
+    0.77,
+    "inkling-small",
+    0.772,
+    0.002,
+    ""
+   ],
+   [
+    "profbench",
+    3,
+    0,
+    0.321,
+    "granite-4-2-3b",
+    0.412,
+    0.091,
+    ""
+   ],
+   [
+    "birdbench",
+    2,
+    0,
+    0.4107,
+    "granite-4-2-8b",
+    0.4185,
+    0.0078,
+    ""
+   ],
+   [
+    "gsm-symbolic",
+    3,
+    0,
+    0.7982,
+    "granite-4-0-micro",
+    0.837,
+    0.0388,
+    ""
+   ],
+   [
+    "deepmind-math",
+    3,
+    0,
+    0.4456,
+    "granite-4-0-micro",
+    0.5933,
+    0.1477,
+    ""
+   ],
+   [
+    "livecodebench-v4",
+    1,
+    0,
+    0.3,
+    "smollm3-3b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "mixeval-hard",
+    1,
+    0,
+    0.308,
+    "smollm3-3b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "omega",
+    3,
+    0,
+    0.289,
+    "olmo-3-7b-instruct",
+    0.378,
+    0.089,
+    ""
+   ],
+   [
+    "beyondaime",
+    1,
+    0,
+    0.65,
+    "seed-oss-36b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "korbench",
+    1,
+    0,
+    0.706,
+    "seed-oss-36b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "multi-swe-bench",
+    1,
+    0,
+    0.17,
+    "seed-oss-36b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "mgsm-5lang",
+    3,
+    0,
+    0.2856,
+    "granite-4-0-micro",
+    0.3872,
+    0.1016,
+    ""
+   ],
+   [
+    "supergpqa",
+    26,
+    0,
+    0.213,
+    "qwen3-5-0-8b",
+    0.312,
+    0.099,
+    ""
+   ],
+   [
+    "include",
+    27,
+    0.25,
+    0.406,
+    "qwen3-5-0-8b",
+    0.5162,
+    0.1102,
+    ""
+   ],
+   [
+    "mmlu-prox",
+    29,
+    0,
+    0.346,
+    "qwen3-5-0-8b",
+    0.494,
+    0.148,
+    ""
+   ],
+   [
+    "mmlu-prox-lite",
+    3,
+    0,
+    0.2778,
+    "granite-4-2-3b",
+    0.6106,
+    0.3328,
+    "gap>15"
+   ],
+   [
+    "polymath",
+    20,
+    0,
+    0.082,
+    "qwen3-5-0-8b",
+    0.252,
+    0.17,
+    "gap>15"
+   ],
+   [
+    "livebench-20241125",
+    14,
+    0,
+    0.63,
+    "qwen3-4b-instruct-2507",
+    0.69,
+    0.06,
+    ""
+   ],
+   [
+    "writingbench",
+    19,
+    0,
+    0.79,
+    "qwen3-32b",
+    0.803,
+    0.013,
+    ""
+   ],
+   [
+    "creative-writing-v3",
+    12,
+    0,
+    0.756,
+    "qwen3-4b-thinking-2507",
+    0.835,
+    0.079,
+    ""
+   ],
+   [
+    "multichallenge",
+    18,
+    0,
+    0.189,
+    "qwen3-5-0-8b",
+    0.272,
+    0.083,
+    ""
+   ],
+   [
+    "hmmt-nov-2025",
+    18,
+    0,
+    0.089,
+    "qwen3-1-7b",
+    0.196,
+    0.107,
+    ""
+   ],
+   [
+    "hle-with-tools",
+    50,
+    0,
+    0.1548,
+    "nemotron-3-nano-30b-a3b",
+    0.172,
+    0.0172,
+    ""
+   ],
+   [
+    "browsecomp",
+    28,
+    0,
+    0.089,
+    "deepseek-r1-0528",
+    0.213,
+    0.124,
+    ""
+   ],
+   [
+    "browsecomp-zh",
+    12,
+    0,
+    0.357,
+    "deepseek-r1-0528",
+    0.45,
+    0.093,
+    ""
+   ],
+   [
+    "widesearch",
+    11,
+    0,
+    0.571,
+    "qwen3-5-35b-a3b",
+    0.591,
+    0.02,
+    ""
+   ],
+   [
+    "seal-0",
+    4,
+    0,
+    0.414,
+    "qwen3-5-35b-a3b",
+    0.441,
+    0.027,
+    ""
+   ],
+   [
+    "vita-bench",
+    11,
+    0,
+    0.141,
+    "qwen3-30b-a3b-thinking-2507",
+    0.22,
+    0.079,
+    ""
+   ],
+   [
+    "deepplanning",
+    9,
+    0,
+    0.004,
+    "qwen3-next-80b-a3b-thinking",
+    0.049,
+    0.045,
+    ""
+   ],
+   [
+    "ojbench",
+    11,
+    0,
+    0.179,
+    "qwen3-4b-thinking-2507",
+    0.241,
+    0.062,
+    ""
+   ],
+   [
+    "fullstackbench-en",
+    3,
+    0,
+    0.581,
+    "qwen3-5-35b-a3b",
+    0.601,
+    0.02,
+    ""
+   ],
+   [
+    "fullstackbench-zh",
+    3,
+    0,
+    0.55,
+    "qwen3-5-35b-a3b",
+    0.574,
+    0.024,
+    ""
+   ],
+   [
+    "nova-63",
+    11,
+    0,
+    0.403,
+    "qwen3-1-7b",
+    0.424,
+    0.021,
+    ""
+   ],
+   [
+    "global-piqa",
+    11,
+    0.5,
+    0.594,
+    "qwen3-5-0-8b",
+    0.631,
+    0.037,
+    ""
+   ],
+   [
+    "wmt24pp",
+    11,
+    0,
+    0.272,
+    "qwen3-5-0-8b",
+    0.393,
+    0.121,
+    ""
+   ],
+   [
+    "maxife",
+    11,
+    0,
+    0.392,
+    "qwen3-5-0-8b",
+    0.507,
+    0.115,
+    ""
+   ],
+   [
+    "mmmu",
+    16,
+    0,
+    0.488,
+    "gemma-3-4b",
+    0.49,
+    0.002,
+    ""
+   ],
+   [
+    "mathvista-mini",
+    13,
+    0,
+    0.5,
+    "gemma-3-4b",
+    0.622,
+    0.122,
+    ""
+   ],
+   [
+    "dynamath",
+    10,
+    0,
+    0.499,
+    "qwen3-5-0-8b",
+    0.736,
+    0.237,
+    "gap>15"
+   ],
+   [
+    "realworldqa",
+    12,
+    0,
+    0.634,
+    "qwen3-5-0-8b",
+    0.745,
+    0.111,
+    ""
+   ],
+   [
+    "mmstar",
+    15,
+    0.25,
+    0.583,
+    "qwen3-5-0-8b",
+    0.683,
+    0.1,
+    ""
+   ],
+   [
+    "mmbench-en-dev-v1-1",
+    10,
+    0,
+    0.699,
+    "qwen3-5-0-8b",
+    0.833,
+    0.134,
+    ""
+   ],
+   [
+    "simplevqa",
+    10,
+    0,
+    0.313,
+    "qwen3-5-0-8b",
+    0.385,
+    0.072,
+    ""
+   ],
+   [
+    "hallusionbench",
+    9,
+    0,
+    0.531,
+    "qwen3-5-0-8b",
+    0.58,
+    0.049,
+    ""
+   ],
+   [
+    "charxiv-rq",
+    24,
+    0,
+    0.406,
+    "nova-pro",
+    0.413,
+    0.007,
+    ""
+   ],
+   [
+    "ai2d-test",
+    12,
+    0.25,
+    0.699,
+    "qwen3-5-0-8b",
+    0.748,
+    0.049,
+    ""
+   ],
+   [
+    "ocrbench",
+    12,
+    0,
+    0.745,
+    "qwen3-5-0-8b",
+    0.845,
+    0.1,
+    ""
+   ],
+   [
+    "cc-ocr",
+    13,
+    0,
+    0.632,
+    "qwen3-5-0-8b",
+    0.687,
+    0.055,
+    ""
+   ],
+   [
+    "mmlongbench-doc",
+    8,
+    0,
+    0.336,
+    "qwen3-5-0-8b",
+    0.454,
+    0.118,
+    ""
+   ],
+   [
+    "omnidocbench-1-5-overall",
+    13,
+    0,
+    0.61,
+    "qwen3-5-0-8b",
+    0.758,
+    0.148,
+    ""
+   ],
+   [
+    "videomme-with-sub",
+    13,
+    0.25,
+    0.638,
+    "qwen3-5-0-8b",
+    0.756,
+    0.118,
+    ""
+   ],
+   [
+    "videomme-without-sub",
+    12,
+    0.25,
+    0.577,
+    "qwen3-5-0-8b",
+    0.69,
+    0.113,
+    ""
+   ],
+   [
+    "videommmu",
+    10,
+    0,
+    0.443,
+    "qwen3-5-0-8b",
+    0.621,
+    0.178,
+    "gap>15"
+   ],
+   [
+    "mlvu",
+    10,
+    0,
+    0.656,
+    "qwen3-5-0-8b",
+    0.762,
+    0.106,
+    ""
+   ],
+   [
+    "mvbench",
+    10,
+    0,
+    0.558,
+    "qwen3-5-0-8b",
+    0.649,
+    0.091,
+    ""
+   ],
+   [
+    "lvbench",
+    17,
+    0.25,
+    0.451,
+    "qwen3-5-0-8b",
+    0.473,
+    0.022,
+    ""
+   ],
+   [
+    "mmvu",
+    8,
+    0,
+    0.343,
+    "qwen3-5-0-8b",
+    0.486,
+    0.143,
+    ""
+   ],
+   [
+    "screenspot-pro",
+    11,
+    0,
+    0.394,
+    "qwen2-5-vl-32b",
+    0.436,
+    0.042,
+    ""
+   ],
+   [
+    "osworld-verified",
+    21,
+    0,
+    0.356,
+    "qwen3-5-4b",
+    0.382,
+    0.026,
+    ""
+   ],
+   [
+    "androidworld",
+    13,
+    0,
+    0.22,
+    "qwen2-5-vl-32b",
+    0.35,
+    0.13,
+    ""
+   ],
+   [
+    "erqa",
+    12,
+    0,
+    0.345,
+    "qwen3-5-0-8b",
+    0.438,
+    0.093,
+    ""
+   ],
+   [
+    "countbench",
+    10,
+    0,
+    0.77,
+    "qwen3-5-0-8b",
+    0.914,
+    0.144,
+    ""
+   ],
+   [
+    "embspatialbench",
+    10,
+    0,
+    0.686,
+    "qwen3-5-0-8b",
+    0.779,
+    0.093,
+    ""
+   ],
+   [
+    "refspatialbench",
+    10,
+    0,
+    0.235,
+    "qwen3-5-0-8b",
+    0.329,
+    0.094,
+    ""
+   ],
+   [
+    "slake",
+    8,
+    0,
+    0.626,
+    "qwen3-5-0-8b",
+    0.744,
+    0.118,
+    ""
+   ],
+   [
+    "pmc-vqa",
+    8,
+    0,
+    0.404,
+    "qwen3-5-0-8b",
+    0.488,
+    0.084,
+    ""
+   ],
+   [
+    "zerobench-sub",
+    9,
+    0,
+    0.129,
+    "qwen3-5-0-8b",
+    0.171,
+    0.042,
+    ""
+   ],
+   [
+    "vlmsareblind",
+    9,
+    0,
+    0.594,
+    "qwen3-5-0-8b",
+    0.758,
+    0.164,
+    "gap>15"
+   ],
+   [
+    "lingoqa",
+    6,
+    0,
+    0.744,
+    "qwen3-5-4b",
+    0.792,
+    0.048,
+    ""
+   ],
+   [
+    "we-math",
+    3,
+    0,
+    0.752,
+    "qwen3-5-9b",
+    0.754,
+    0.002,
+    ""
+   ],
+   [
+    "multipl-e",
+    9,
+    0,
+    0.4921,
+    "granite-4-0-micro",
+    0.5737,
+    0.0816,
+    ""
+   ],
+   [
+    "nl2repo",
+    17,
+    0,
+    0.205,
+    "qwen3-5-35b-a3b",
+    0.273,
+    0.068,
+    ""
+   ],
+   [
+    "mcp-atlas",
+    15,
+    0,
+    0.52,
+    "glm-4-7",
+    0.624,
+    0.104,
+    ""
+   ],
+   [
+    "toolathlon",
+    28,
+    0,
+    0.238,
+    "glm-4-7",
+    0.269,
+    0.031,
+    ""
+   ],
+   [
+    "cybergym",
+    9,
+    0,
+    0.235,
+    "glm-4-7",
+    0.432,
+    0.197,
+    "gap>15"
+   ],
+   [
+    "tau3-bench",
+    10,
+    0,
+    0.4578,
+    "granite-4-2-3b",
+    0.5806,
+    0.1228,
+    ""
+   ],
+   [
+    "ruler-128k",
+    8,
+    0,
+    0.468,
+    "gemma-3-4b",
+    0.553,
+    0.085,
+    ""
+   ],
+   [
+    "ruler-64k",
+    3,
+    0,
+    0.6752,
+    "granite-4-2-3b",
+    0.8099,
+    0.1347,
+    ""
+   ],
+   [
+    "cruxeval-o",
+    45,
+    0,
+    0.2167,
+    "phi-1",
+    0.27,
+    0.0533,
+    ""
+   ],
+   [
+    "bigcodebench",
+    5,
+    0,
+    0.223,
+    "nova-pro",
+    0.281,
+    0.058,
+    ""
+   ],
+   [
+    "drop",
+    11,
+    0,
+    0.2099,
+    "granite-3-1-2b",
+    0.2384,
+    0.0285,
+    ""
+   ],
+   [
+    "minerva-math",
+    3,
+    0,
+    0.6206,
+    "granite-4-0-micro",
+    0.74,
+    0.1194,
+    ""
+   ],
+   [
+    "aime-2025-with-tools",
+    1,
+    0,
+    0.986,
+    "glm-4-6",
+    null,
+    null,
+    ""
+   ],
+   [
+    "gpqa-unspecified-with-tools",
+    1,
+    0.25,
+    0.829,
+    "glm-4-6",
+    null,
+    null,
+    ""
+   ],
+   [
+    "livecodebench-v6-window-unspecified-with-tools",
+    1,
+    0,
+    0.845,
+    "glm-4-6",
+    null,
+    null,
+    ""
+   ],
+   [
+    "tau2-bench-weighted",
+    2,
+    0,
+    0.675,
+    "glm-4-5",
+    0.759,
+    0.084,
+    ""
+   ],
+   [
+    "agents-last-exam-unspecified",
+    7,
+    0,
+    0.204,
+    "glm-5-2",
+    0.263,
+    0.059,
+    ""
+   ],
+   [
+    "automationbench-v1-0-6",
+    2,
+    0,
+    0.262,
+    "glm-5-2",
+    0.488,
+    0.226,
+    "gap>15"
+   ],
+   [
+    "collie",
+    2,
+    0,
+    0.603,
+    "magistral-small-2509",
+    0.629,
+    0.026,
+    ""
+   ],
+   [
+    "simplevqa-with-tools",
+    1,
+    0,
+    0.792,
+    "step-3-7-flash",
+    null,
+    null,
+    ""
+   ],
+   [
+    "vstar-with-python",
+    1,
+    0,
+    0.953,
+    "step-3-7-flash",
+    null,
+    null,
+    ""
+   ],
+   [
+    "claw-eval-1-1-unspecified",
+    1,
+    0,
+    0.671,
+    "step-3-7-flash",
+    null,
+    null,
+    ""
+   ],
+   [
+    "voicecodebench-batch-ctem",
+    7,
+    0,
+    0.786,
+    "parakeet-tdt-0-6b-v3",
+    0.845,
+    0.059,
+    ""
+   ],
+   [
+    "rime-supportbench-pref-vs-coda",
+    4,
+    0,
+    0.2749,
+    "gpt-4o-mini-tts",
+    0.408,
+    0.1331,
+    ""
+   ],
+   [
+    "rime-contentbench-pref-vs-coda",
+    4,
+    0,
+    0.4224,
+    "gpt-4o-mini-tts",
+    0.4497,
+    0.0273,
+    ""
+   ],
+   [
+    "instructttseval-en-avg",
+    5,
+    0,
+    0.457,
+    "parler-tts-large-v1",
+    0.685,
+    0.228,
+    "gap>15"
+   ],
+   [
+    "instructttseval-zh-avg",
+    3,
+    0,
+    0.511,
+    "gpt-4o-mini-tts",
+    0.848,
+    0.337,
+    "gap>15"
+   ],
+   [
+    "sap-voicerecon-ttsds-mean",
+    8,
+    0,
+    0.792,
+    "metavoice-1b-v0-1",
+    0.83,
+    0.038,
+    ""
+   ],
+   [
+    "codecmos-accent-vctk-clone-nat-mos",
+    12,
+    0,
+    0.5182,
+    "metavoice-1b-v0-1",
+    0.5182,
+    0.0,
+    ""
+   ],
+   [
+    "codecmos-accent-vctk-clone-spk-mos",
+    12,
+    0,
+    0.5677,
+    "neutts-air",
+    0.606,
+    0.0383,
+    ""
+   ],
+   [
+    "hpsv2-benchmark",
+    15,
+    0,
+    0.2355,
+    "glide-filtered",
+    0.2481,
+    0.0126,
+    ""
+   ],
+   [
+    "tifa-v1",
+    6,
+    0,
+    0.581,
+    "attngan-coco",
+    0.586,
+    0.005,
+    ""
+   ],
+   [
+    "imagenhub-t2i-human",
+    5,
+    0,
+    0.5,
+    "openjourney",
+    0.54,
+    0.04,
+    ""
+   ],
+   [
+    "evalmuse-fga-blip2-overall",
+    15,
+    0,
+    0.3125,
+    "sd-1-5",
+    0.3125,
+    0.0,
+    ""
+   ],
+   [
+    "kolorsprompts-human-overall",
+    4,
+    0,
+    0.58,
+    "dall-e-3",
+    0.5925,
+    0.0125,
+    ""
+   ],
+   [
+    "conceptmix-k2",
+    8,
+    0,
+    0.23,
+    "sd-1-4",
+    0.29,
+    0.06,
+    ""
+   ],
+   [
+    "videophy-human-joint",
+    8,
+    0,
+    0.076,
+    "runway-gen-2",
+    0.09,
+    0.014,
+    ""
+   ],
+   [
+    "love-aigve60k-perception-mos",
+    11,
+    0,
+    0.3384,
+    "lvdm-t2v",
+    0.38,
+    0.0416,
+    ""
+   ],
+   [
+    "love-aigve60k-correspondence-mos",
+    11,
+    0,
+    0.422,
+    "lvdm-t2v",
+    0.4373,
+    0.0153,
+    ""
+   ],
+   [
+    "worldmodelbench-human-total",
+    9,
+    0,
+    0.611,
+    "open-sora-1-2",
+    0.622,
+    0.011,
+    ""
+   ],
+   [
+    "videoverse-overall",
+    6,
+    0,
+    0.556,
+    "cogvideox-1-5-5b",
+    0.5585,
+    0.0025,
+    ""
+   ],
+   [
+    "chronomagic-150-gpt4o-mtscore",
+    11,
+    0.2,
+    0.458,
+    "zeroscope-v2-576w",
+    0.496,
+    0.038,
+    ""
+   ],
+   [
+    "arc-easy",
+    84,
+    0.25,
+    0.374,
+    "pythia-70m",
+    0.4205,
+    0.0465,
+    ""
+   ],
+   [
+    "sciq",
+    51,
+    0.25,
+    0.601,
+    "pythia-70m",
+    0.717,
+    0.116,
+    ""
+   ],
+   [
+    "lambada-openai",
+    53,
+    0,
+    0.185,
+    "pythia-70m",
+    0.328,
+    0.143,
+    ""
+   ],
+   [
+    "triviaqa",
+    18,
+    0,
+    0.05,
+    "gpt-3-ada",
+    0.115,
+    0.065,
+    ""
+   ],
+   [
+    "mathqa",
+    4,
+    0.2,
+    0.2364,
+    "gpt-2-xl",
+    0.2405,
+    0.0041,
+    ""
+   ],
+   [
+    "pubmedqa",
+    4,
+    0.3333,
+    0.528,
+    "gpt-3-ada",
+    0.544,
+    0.016,
+    ""
+   ],
+   [
+    "copa",
+    4,
+    0.5,
+    0.61,
+    "gpt-2-small",
+    0.67,
+    0.06,
+    ""
+   ],
+   [
+    "storycloze",
+    4,
+    0.5,
+    0.6,
+    "gpt-2-small",
+    0.63,
+    0.03,
+    ""
+   ],
+   [
+    "commonsenseqa",
+    7,
+    0.2,
+    0.255,
+    "gpt-2-small",
+    0.309,
+    0.054,
+    ""
+   ],
+   [
+    "eq-bench-v1",
+    15,
+    0,
+    0.1519,
+    "text-davinci-001",
+    0.2492,
+    0.0973,
+    ""
+   ],
+   [
+    "seed-tts-en-wavlm-sim",
+    37,
+    0,
+    0.46,
+    "fireredtts-1",
+    0.572,
+    0.112,
+    ""
+   ],
+   [
+    "seed-tts-zh-wavlm-sim",
+    25,
+    0,
+    0.63,
+    "fireredtts-1",
+    0.657,
+    0.027,
+    ""
+   ],
+   [
+    "seed-tts-en-utmos",
+    3,
+    0,
+    0.55,
+    "e2-tts-base",
+    0.665,
+    0.115,
+    ""
+   ],
+   [
+    "seed-tts-en-human-smos",
+    4,
+    0,
+    0.34,
+    "fireredtts-1",
+    0.5175,
+    0.1775,
+    "gap>15"
+   ],
+   [
+    "librispeech-pc-test-clean-f5subset-wavlm-sim",
+    7,
+    0,
+    0.47,
+    "fireredtts-1",
+    0.62,
+    0.15,
+    "gap>15"
+   ],
+   [
+    "librispeech-pc-test-clean-f5subset-utmos",
+    3,
+    0,
+    0.6175,
+    "e2-tts-base",
+    0.7075,
+    0.09,
+    ""
+   ],
+   [
+    "librispeech-test-clean-cross-wavlm-sim",
+    4,
+    0,
+    0.3746,
+    "styletts-2-libritts",
+    0.3755,
+    0.0009,
+    ""
+   ],
+   [
+    "stylettszs-librispeech40-mos-n",
+    3,
+    0,
+    0.635,
+    "hierspeechpp-libritts960",
+    0.67,
+    0.035,
+    ""
+   ],
+   [
+    "stylettszs-librispeech40-mos-s",
+    3,
+    0,
+    0.605,
+    "styletts-2-libritts",
+    0.685,
+    0.08,
+    ""
+   ],
+   [
+    "voicecraft-zs250-wavlm-sim",
+    3,
+    0,
+    0.41,
+    "yourtts",
+    0.47,
+    0.06,
+    ""
+   ],
+   [
+    "voicecraft-zs80-human-nmos",
+    3,
+    0,
+    0.4475,
+    "yourtts",
+    0.74,
+    0.2925,
+    "gap>15"
+   ],
+   [
+    "voxcpm-listening-zh-nmos",
+    4,
+    0,
+    0.55,
+    "maskgct",
+    0.595,
+    0.045,
+    ""
+   ],
+   [
+    "voxcpm-listening-zh-smos",
+    4,
+    0,
+    0.6925,
+    "maskgct",
+    0.7525,
+    0.06,
+    ""
+   ],
+   [
+    "voxcpm-listening-en-nmos",
+    4,
+    0,
+    0.71,
+    "maskgct",
+    0.7575,
+    0.0475,
+    ""
+   ],
+   [
+    "voxcpm-listening-en-smos",
+    4,
+    0,
+    0.7425,
+    "cosyvoice2-0-5b",
+    0.75,
+    0.0075,
+    ""
+   ],
+   [
+    "cv3-eval-hard-en-eres2net-sim",
+    7,
+    0,
+    0.624,
+    "maskgct",
+    0.666,
+    0.042,
+    ""
+   ],
+   [
+    "cv3-eval-hard-en-dnsmos",
+    7,
+    0,
+    0.62,
+    "maskgct",
+    0.6925,
+    0.0725,
+    ""
+   ],
+   [
+    "raon-opentts-eval-overall-wavlm-sim",
+    7,
+    0,
+    0.603,
+    "cosyvoice2-0-5b",
+    0.623,
+    0.02,
+    ""
+   ],
+   [
+    "raon-opentts-eval-human-smos",
+    7,
+    0,
+    0.6325,
+    "cosyvoice2-0-5b",
+    0.635,
+    0.0025,
+    ""
+   ],
+   [
+    "rvcbench-libritts-ecapa-sim",
+    11,
+    0,
+    0.24,
+    "openvoice-v2",
+    0.41,
+    0.17,
+    "gap>15"
+   ],
+   [
+    "wayu-thai-challenge-keyword-acc",
+    3,
+    0,
+    0.682,
+    "wayu-paxa-tts-edge",
+    0.728,
+    0.046,
+    ""
+   ],
+   [
+    "cloneval-ls-test-clean-wavlm-sim",
+    3,
+    0,
+    0.8836,
+    "outetts-0-2-500m",
+    0.8881,
+    0.0045,
+    ""
+   ],
+   [
+    "balacoon-vctk-zero-tts-redimnet-sim",
+    4,
+    0,
+    0.577,
+    "xtts-v2",
+    0.6515,
+    0.0745,
+    ""
+   ],
+   [
+    "balacoon-daps-celeb-zero-tts-redimnet-sim",
+    4,
+    0,
+    0.5291,
+    "xtts-v2",
+    0.6732,
+    0.144,
+    ""
+   ],
+   [
+    "ttsds2-listening-mos",
+    18,
+    0,
+    0.2444,
+    "speecht5-tts",
+    0.2613,
+    0.0169,
+    ""
+   ],
+   [
+    "ttsds2-listening-smos",
+    18,
+    0,
+    0.2645,
+    "amphion-naturalspeech2",
+    0.2957,
+    0.0312,
+    ""
+   ],
+   [
+    "ttsds2-multilingual-en-overall",
+    18,
+    0,
+    0.7951,
+    "parler-tts-large-v1",
+    0.8123,
+    0.0172,
+    ""
+   ],
+   [
+    "ttsds2-multilingual-zh-overall",
+    6,
+    0,
+    0.8057,
+    "fish-speech-1-5",
+    0.8197,
+    0.014,
+    ""
+   ],
+   [
+    "geckonum-task1-exact",
+    4,
+    0.1,
+    0.203,
+    "sd-1-5",
+    0.228,
+    0.025,
+    ""
+   ],
+   [
+    "cruxeval-i",
+    42,
+    0,
+    0.131,
+    "phi-1",
+    0.2716,
+    0.1406,
+    ""
+   ],
+   [
+    "ds-1000",
+    13,
+    0,
+    0.142,
+    "starcoderbase-3b",
+    0.162,
+    0.02,
+    ""
+   ],
+   [
+    "evoeval",
+    43,
+    0,
+    0.128,
+    "gemma-2b-base",
+    0.147,
+    0.019,
+    ""
+   ],
+   [
+    "humanevalsynthesize",
+    36,
+    0,
+    0.115,
+    "gemma-2b",
+    0.172,
+    0.057,
+    ""
+   ],
+   [
+    "ifeval-prompt-loose",
+    26,
+    0,
+    0.442,
+    "qwen2-5-1-5b",
+    0.516,
+    0.074,
+    ""
+   ],
+   [
+    "simple-evals-math",
+    6,
+    0,
+    0.643,
+    "gpt-4-1106-preview",
+    0.645,
+    0.002,
+    ""
+   ],
+   [
+    "zstts-daps-flores-en-ecapa2-secs",
+    4,
+    0,
+    0.4621,
+    "yourtts",
+    0.4728,
+    0.0107,
+    ""
+   ],
+   [
+    "vits2021-ljspeech-mos",
+    5,
+    0,
+    0.6925,
+    "tacotron2-hifigan-ljspeech",
+    0.785,
+    0.0925,
+    ""
+   ],
+   [
+    "vits2021-vctk-mos",
+    1,
+    0,
+    0.845,
+    "vits-vctk",
+    null,
+    null,
+    ""
+   ],
+   [
+    "evalcrafter2023-visual",
+    8,
+    0,
+    0.5219,
+    "show-1",
+    0.5309,
+    0.009,
+    ""
+   ],
+   [
+    "evalcrafter2023-alignment",
+    8,
+    0,
+    0.5121,
+    "zeroscope-v2-xl",
+    0.5446,
+    0.0325,
+    ""
+   ],
+   [
+    "evalcrafter2023-motion",
+    8,
+    0,
+    0.4916,
+    "floor33-pictures-2023-08",
+    0.5247,
+    0.0331,
+    ""
+   ],
+   [
+    "evalcrafter2023-temporal",
+    8,
+    0,
+    0.5024,
+    "floor33-pictures-2023-08",
+    0.5589,
+    0.0565,
+    ""
+   ],
+   [
+    "fastpitch2020-ljspeech-mos",
+    2,
+    0,
+    0.7365,
+    "nvidia-tacotron2-waveglow",
+    0.77,
+    0.0335,
+    ""
+   ],
+   [
+    "fastpitch2021-pairwise-preference",
+    2,
+    0,
+    0.435,
+    "fastpitch-1-0-waveglow",
+    0.565,
+    0.13,
+    ""
+   ],
+   [
+    "gradtts2021-ljspeech-mos",
+    4,
+    0,
+    0.67,
+    "fastspeech-xcmyz-gradtts-study",
+    0.7775,
+    0.1075,
+    ""
+   ],
+   [
+    "versa-librispeech-test-clean-utmos",
+    6,
+    0,
+    0.3375,
+    "amphion-naturalspeech2",
+    0.595,
+    0.2575,
+    "gap>15"
+   ],
+   [
+    "livecodebench-pro-2025q2-easy",
+    6,
+    0,
+    0.545,
+    "nemotron-3-nano-30b-a3b",
+    0.593,
+    0.048,
+    ""
+   ],
+   [
+    "livecodebench-pro-2025q2-medium",
+    6,
+    0,
+    0.035,
+    "nemotron-3-nano-30b-a3b",
+    0.048,
+    0.013,
+    ""
+   ],
+   [
+    "euroeval-en-life-in-the-uk-test-5shot",
+    96,
+    0.25,
+    0.3238,
+    "llama-3-2-1b",
+    0.3344,
+    0.0106,
+    ""
+   ],
+   [
+    "euroeval-en-life-in-the-uk-val-5shot",
+    15,
+    0.25,
+    0.5625,
+    "qwen3-5-0-8b",
+    0.6965,
+    0.134,
+    ""
+   ],
+   [
+    "euroeval-en-hellaswag-test-5shot",
+    64,
+    0.25,
+    0.2852,
+    "granite-3b-code-instruct-2k",
+    0.3214,
+    0.0362,
+    ""
+   ],
+   [
+    "euroeval-en-hellaswag-val-5shot",
+    16,
+    0.25,
+    0.3797,
+    "qwen3-5-0-8b",
+    0.5363,
+    0.1566,
+    "gap>15"
+   ],
+   [
+    "fetv-human-video-quality",
+    3,
+    0,
+    0.5675,
+    "cogvideo-9b",
+    0.655,
+    0.0875,
+    ""
+   ],
+   [
+    "natural-questions",
+    9,
+    0,
+    0.11,
+    "codellama-7b",
+    0.125,
+    0.015,
+    ""
+   ],
+   [
+    "agieval-gemma-en",
+    3,
+    0,
+    0.242,
+    "gemma-2b-base",
+    0.412,
+    0.17,
+    "gap>15"
+   ],
+   [
+    "tulu2-tydiqa-goldp-1shot-f1",
+    26,
+    0,
+    0.227,
+    "llama-2-7b-chat",
+    0.237,
+    0.01,
+    ""
+   ],
+   [
+    "tulu2-codexeval-pass10",
+    26,
+    0,
+    0.24,
+    "llama-2-7b-chat",
+    0.268,
+    0.028,
+    ""
+   ],
+   [
+    "copen-csj-zero-shot-full-prompt",
+    8,
+    0.0476,
+    0.065,
+    "t5-small",
+    0.079,
+    0.014,
+    ""
+   ],
+   [
+    "copen-cpj-zero-shot-full-prompt",
+    8,
+    0.5,
+    0.471,
+    "gpt-2-xl",
+    0.472,
+    0.001,
+    "below-chance"
+   ],
+   [
+    "copen-cic-zero-shot-full-prompt",
+    8,
+    0,
+    0.288,
+    "gpt-neo-125m",
+    0.311,
+    0.023,
+    ""
+   ],
+   [
+    "mmmu-pro-standard-lmms-exaone45",
+    1,
+    0,
+    0.1757,
+    "exaone-4-5-33b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "mmmu-pro-vision-lmms-exaone45",
+    1,
+    0,
+    0.215,
+    "exaone-4-5-33b",
+    null,
+    null,
+    ""
+   ],
+   [
+    "magpie-heldout-ar-speaker-similarity",
+    1,
+    0,
+    0.806,
+    "magpie-tts-multilingual-357m",
+    null,
+    null,
+    ""
+   ],
+   [
+    "magpie-heldout-zh-speaker-similarity",
+    1,
+    0,
+    0.833,
+    "magpie-tts-multilingual-357m",
+    null,
+    null,
+    ""
+   ],
+   [
+    "magpie-heldout-en-speaker-similarity",
+    1,
+    0,
+    0.822,
+    "magpie-tts-multilingual-357m",
+    null,
+    null,
+    ""
+   ],
+   [
+    "magpie-heldout-en-accented-speaker-similarity",
+    1,
+    0,
+    0.746,
+    "magpie-tts-multilingual-357m",
+    null,
+    null,
+    ""
+   ],
+   [
+    "magpie-heldout-fr-speaker-similarity",
+    1,
+    0,
+    0.747,
+    "magpie-tts-multilingual-357m",
+    null,
+    null,
+    ""
+   ],
+   [
+    "magpie-heldout-de-speaker-similarity",
+    1,
+    0,
+    0.742,
+    "magpie-tts-multilingual-357m",
+    null,
+    null,
+    ""
+   ],
+   [
+    "magpie-heldout-hi-speaker-similarity",
+    1,
+    0,
+    0.788,
+    "magpie-tts-multilingual-357m",
+    null,
+    null,
+    ""
+   ],
+   [
+    "magpie-heldout-it-speaker-similarity",
+    1,
+    0,
+    0.773,
+    "magpie-tts-multilingual-357m",
+    null,
+    null,
+    ""
+   ],
+   [
+    "magpie-heldout-ja-speaker-similarity",
+    1,
+    0,
+    0.775,
+    "magpie-tts-multilingual-357m",
+    null,
+    null,
+    ""
+   ],
+   [
+    "magpie-heldout-ko-speaker-similarity",
+    1,
+    0,
+    0.807,
+    "magpie-tts-multilingual-357m",
+    null,
+    null,
+    ""
+   ],
+   [
+    "magpie-heldout-pt-speaker-similarity",
+    1,
+    0,
+    0.753,
+    "magpie-tts-multilingual-357m",
+    null,
+    null,
+    ""
+   ],
+   [
+    "magpie-heldout-es-speaker-similarity",
+    1,
+    0,
+    0.793,
+    "magpie-tts-multilingual-357m",
+    null,
+    null,
+    ""
+   ],
+   [
+    "magpie-heldout-vi-speaker-similarity",
+    1,
+    0,
+    0.725,
+    "magpie-tts-multilingual-357m",
+    null,
+    null,
+    ""
+   ],
+   [
+    "kandinsky3-reference-text-win",
+    3,
+    0,
+    0.32,
+    "kandinsky-2-2",
+    0.35,
+    0.03,
+    ""
+   ],
+   [
+    "kandinsky3-vs-kandinsky-2-2-text-win",
+    1,
+    0,
+    0.52,
+    "kandinsky-3",
+    null,
+    null,
+    ""
+   ],
+   [
+    "kandinsky3-vs-dall-e-3-text-win",
+    1,
+    0,
+    0.36,
+    "kandinsky-3",
+    null,
+    null,
+    ""
+   ],
+   [
+    "kandinsky3-vs-sdxl-text-win",
+    1,
+    0,
+    0.53,
+    "kandinsky-3",
+    null,
+    null,
+    ""
+   ],
+   [
+    "kandinsky3-reference-visual-win",
+    3,
+    0,
+    0.41,
+    "sdxl",
+    0.48,
+    0.07,
+    ""
+   ],
+   [
+    "kandinsky3-vs-kandinsky-2-2-visual-win",
+    1,
+    0,
+    0.5,
+    "kandinsky-3",
+    null,
+    null,
+    ""
+   ],
+   [
+    "kandinsky3-vs-dall-e-3-visual-win",
+    1,
+    0,
+    0.42,
+    "kandinsky-3",
+    null,
+    null,
+    ""
+   ],
+   [
+    "kandinsky3-vs-sdxl-visual-win",
+    1,
+    0,
+    0.57,
+    "kandinsky-3",
+    null,
+    null,
+    ""
+   ],
+   [
+    "frontiermath-erdos",
+    4,
+    0,
+    0,
+    "claude-fable-5-1",
+    0,
+    0,
+    ""
+   ],
+   [
+    "matharena-arxivmath-2026-08",
+    6,
+    0,
+    0.386,
+    "kimi-k3",
+    0.4035,
+    0.0175,
+    ""
+   ],
+   [
+    "matharena-brokenarxiv-2026-08",
+    6,
+    0,
+    0.2024,
+    "muse-spark-1-3",
+    0.2738,
+    0.0714,
+    ""
+   ],
+   [
+    "matharena-arxivlean-2026-06",
+    5,
+    0,
+    0.1522,
+    "claude-fable-5",
+    0.1957,
+    0.0435,
+    ""
+   ],
+   [
+    "automationbench-public-zapier",
+    5,
+    0,
+    0.3717,
+    "gpt-5-6-terra",
+    0.4583,
+    0.0866,
+    ""
+   ],
+   [
+    "aider-code-editing",
+    48,
+    0,
+    0.263,
+    "llama-3-2-3b",
+    0.301,
+    0.038,
+    ""
+   ],
+   [
+    "heim-alignment-winrate",
+    10,
+    0,
+    0.074,
+    "cogview2",
+    0.514,
+    0.44,
+    "gap>15"
+   ],
+   [
+    "vvrbench-accuracy",
+    11,
+    0,
+    0.0002,
+    "sdxl",
+    0.0245,
+    0.0243,
+    ""
+   ],
+   [
+    "vvrbench-challenge-accuracy",
+    7,
+    0,
+    0.0028,
+    "gpt-image-1-mini",
+    0.0111,
+    0.0083,
+    ""
+   ],
+   [
+    "chartsync-overall",
+    9,
+    0,
+    0.459,
+    "step1x-edit-v1-2",
+    0.4725,
+    0.0135,
+    ""
+   ],
+   [
+    "infoedit-avg-sr",
+    7,
+    0,
+    0.004,
+    "qwen-image-edit-2511",
+    0.032,
+    0.028,
+    ""
+   ],
+   [
+    "paintbench-miou",
+    10,
+    0,
+    0.003,
+    "instructpix2pix",
+    0.035,
+    0.032,
+    ""
+   ],
+   [
+    "mechverse-wmb-sum",
+    6,
+    0,
+    0.579,
+    "cogvideox-5b-i2v",
+    0.656,
+    0.077,
+    ""
+   ],
+   [
+    "videoargus-t2v",
+    7,
+    0,
+    0.739,
+    "cogvideox-5b",
+    0.752,
+    0.013,
+    ""
+   ],
+   [
+    "videoargus-ti2v",
+    5,
+    0,
+    0.729,
+    "cogvideox-5b-i2v",
+    0.782,
+    0.053,
+    ""
+   ],
+   [
+    "unigenbench-phys-all-cosmos3",
+    6,
+    0,
+    0.7814,
+    "z-image-turbo",
+    0.8402,
+    0.0588,
+    ""
+   ],
+   [
+    "mindworldbench-intention-accuracy",
+    10,
+    0,
+    0.119,
+    "ltx-2-3",
+    0.13,
+    0.011,
+    ""
+   ],
+   [
+    "vigor-bench-result-avg-image",
+    13,
+    0,
+    0.224,
+    "omnigen2",
+    0.231,
+    0.007,
+    ""
+   ],
+   [
+    "vigor-bench-result-avg-video",
+    3,
+    0,
+    0.178,
+    "sora-2-pro",
+    0.205,
+    0.027,
+    ""
+   ],
+   [
+    "phyground-human-overall",
+    5,
+    0.2,
+    0.512,
+    "ltx-2",
+    0.526,
+    0.014,
+    ""
+   ],
+   [
+    "edival-o-turn3",
+    10,
+    0,
+    0.1299,
+    "instructpix2pix",
+    0.3871,
+    0.2572,
+    "gap>15"
+   ],
+   [
+    "weavebench-avg",
+    6,
+    0,
+    0.446,
+    "bagel",
+    0.605,
+    0.159,
+    "gap>15"
+   ],
+   [
+    "knowvis-brief-overall-en",
+    10,
+    0,
+    0.1819,
+    "flux-1-krea-dev",
+    0.1847,
+    0.0028,
+    ""
+   ],
+   [
+    "realpref-bench-human",
+    6,
+    0,
+    0.6526,
+    "uniworld-v1",
+    0.669,
+    0.0164,
+    ""
+   ],
+   [
+    "switch-i2v-vlm-overall",
+    5,
+    0.2,
+    0.344,
+    "wan-2-7",
+    0.36,
+    0.016,
+    ""
+   ]
+  ],
+  "n_flagged": 69
+ }
+}
