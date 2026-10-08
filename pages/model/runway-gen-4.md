@@ -6,7 +6,7 @@
 
 Runway · released 2025-03 · closed weights
 
-**score 48.6** ±4.2 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 48.7** ±4.1 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  67.8%    50.3   2025-04-21   53% ▇▇▇▇▇▇
-<a name="visual-mindworldbench"></a>MindWorldBench: Evalu…  <a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accu…</a>  18.6%    46.3   2026-09-30   40% ▇▇▇▇▇
+<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  67.8%    50.2   2025-04-21   51% ▇▇▇▇▇▇
+<a name="visual-mindworldbench"></a>MindWorldBench: Evalu…  <a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accu…</a>  18.6%    46.5   2026-09-30   41% ▇▇▇▇▇
 prior                   pull toward the middle                   49.9                 7% ▇
-                        weighted average                       = 48.6
+                        weighted average                       = 48.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

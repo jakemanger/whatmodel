@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-07 · 49B params · nvidia-open-model
 
-**score 55.5** ±2.4 · #195 of 549 · from 3 benchmark results across 2 sources
+**score 55.6** ±2.4 · #194 of 549 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1342.9    56.8   2026-10-02   71% ▇▇▇▇▇▇▇▇▇
-<a name="report-2512.13607v2"></a>NVIDIA                  <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Eas…</a>   61.9%    51.8   2026-03-27   13% ▇▇
-                        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Med…</a>    6.1%    53.6   2026-03-27   13% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1342.9    56.9   2026-10-02   71% ▇▇▇▇▇▇▇▇▇
+<a name="report-2512.13607v2"></a>NVIDIA                  <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Eas…</a>   61.9%    51.9   2026-03-27   14% ▇▇
+                        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Med…</a>    6.1%    53.7   2026-03-27   13% ▇▇
 prior                   pull toward the middle                    50.0                 3% ▇
-                        weighted average                        = 55.5
+                        weighted average                        = 55.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download             size  score
-4-bit ud-q4_k_xl  ~29.9GB   55.5
-2-bit ud-q2_k_xl  ~15.2GB   55.5
+4-bit ud-q4_k_xl  ~29.9GB   55.6
+2-bit ud-q2_k_xl  ~15.2GB   55.6
 </pre>
 
 ```sh

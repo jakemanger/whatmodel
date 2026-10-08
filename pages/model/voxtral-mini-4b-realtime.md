@@ -6,7 +6,7 @@
 
 Mistral · released 2026-02 · 4.43B params · apache-2.0
 
-**score 53.7** ±1.8 · #58 of 117 · from 9 benchmark results across 4 sources
+**score 53.8** ±1.7 · #58 of 117 · from 9 benchmark results across 4 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        6.3%    55.1   2026-03-26   30% ▇▇▇▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.7%    53.5   2026-03-26   14% ▇▇
-<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime        <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   8.5%    56.8   2026-02-11    7% ▇
-                        <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   7.7%    57.9   2026-02-11    7% ▇
-                        <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · Common Voice…</a>  15.2%    52.2   2026-02-11    7% ▇
-                        <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-la…</a>   8.7%    54.6   2026-02-11    6% ▇
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-mini-4b-realtime-2602.json">LibriSpeech test-clean WER</a>       2.1%    54.5   2026-09-15   12% ▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-mini-4b-realtime-2602.json">FLEURS English test WER</a>          6.3%    49.0   2026-09-15    5% ▇
-<a name="speech-stt-pipecat-bsd2"></a>Pipecat STT Benchmark…  <a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · poole…</a>   5.1%    47.3   2026-10-01   11% ▇
-prior                   pull toward the middle                   49.7                 1% ▇
-                        weighted average                       = 53.7
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        6.3%    55.3   2026-03-26   33% ▇▇▇▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.7%    53.5   2026-03-26   12% ▇
+<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime        <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   8.5%    56.7   2026-02-11    7% ▇
+                        <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   7.7%    57.8   2026-02-11    6% ▇
+                        <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · Common Voice…</a>  15.2%    52.1   2026-02-11    6% ▇
+                        <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-la…</a>   8.7%    54.4   2026-02-11    6% ▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-mini-4b-realtime-2602.json">LibriSpeech test-clean WER</a>       2.1%    54.6   2026-09-15   13% ▇▇
+                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-mini-4b-realtime-2602.json">FLEURS English test WER</a>          6.3%    49.6   2026-09-15    6% ▇
+<a name="speech-stt-pipecat-bsd2"></a>Pipecat STT Benchmark…  <a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · poole…</a>   5.1%    47.0   2026-10-01   10% ▇
+prior                   pull toward the middle                   49.8                 1% ▇
+                        weighted average                       = 53.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -41,8 +41,8 @@ api (Mistral AI) · $0.0060/audio min · [docs.mistral.ai](https://docs.mistral.
 
 <pre>
 version                needs  score
-bf16 · nvidia only  ~11.13GB   53.7
-4bit · mac only      ~3.16GB   53.7
+bf16 · nvidia only  ~11.13GB   53.8
+4bit · mac only      ~3.16GB   53.8
 </pre>
 
 ```sh

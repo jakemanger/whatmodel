@@ -6,7 +6,7 @@
 
 TII · released 2023-05 · 41.8B params · apache-2.0
 
-**score 38.3** ±1.7 · #405 of 549 · from 8 benchmark results across 2 sources
+**score 37.2** ±1.5 · #418 of 549 · from 8 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2404.06395v3"></a>MiniCPM: Unveiling th…  <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                   57.7%    38.4   2024-06-03   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                  36.2%    37.3   2024-06-03   19% ▇▇
-                        <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                            53.5%    39.5   2024-06-03   18% ▇▇
-                        <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>                       24.4%    38.9   2024-06-03   10% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">MBPP</a>                            36.5%    37.6   2024-06-03    7% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>                           22.4%    35.6   2024-06-03    6% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                          40.3%    46.0   2024-06-03    4% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  60.3%    34.9   2024-02-05   10% ▇
+<a name="paper-2404.06395v3"></a>MiniCPM: Unveiling th…  <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                   57.7%    37.2   2024-06-03   26% ▇▇▇
+                        <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                  36.2%    36.1   2024-06-03   20% ▇▇
+                        <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                            53.5%    38.3   2024-06-03   16% ▇▇
+                        <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>                       24.4%    37.7   2024-06-03   11% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">MBPP</a>                            36.5%    36.4   2024-06-03    7% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>                           22.4%    34.5   2024-06-03    7% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                          40.3%    44.9   2024-06-03    3% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  60.3%    35.2   2024-02-05    8% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 38.3
+                        weighted average                       = 37.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,8 +36,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_0      ~24GB   38.3
-16-bit bf16  ~83.67GB   38.3
+4-bit q4_0      ~24GB   37.2
+16-bit bf16  ~83.67GB   37.2
 </pre>
 
 ```sh

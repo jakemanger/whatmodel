@@ -6,7 +6,7 @@
 
 OpenAI · released 2023-10 · closed weights
 
-**score 45.2** ±1.3 · comparison only: no current run option verified · from 10 benchmark results across 8 sources
+**score 45.3** ±1.3 · comparison only: no current run option verified · from 10 benchmark results across 8 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -17,17 +17,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                               score  implies  date        weight
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>              967.8    44.4   2026-09-24   42% ▇▇▇▇▇
-<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>     72.2%    42.6   2026-07-12   12% ▇
+<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>     72.2%    42.7   2026-07-12   12% ▇
                         <a href="https://arxiv.org/html/2506.02161v3#S4.T3">GenAI-Bench (VQAScore overall)</a>     81.0%    55.1   2026-07-12    1% ▇
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  3.63 / 5    47.3   2024-12-25   11% ▇
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  3.63 / 5    47.4   2024-12-25   11% ▇
 <a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>     61.0%    47.8   2024-08-26   11% ▇
 <a name="kandinsky3-original-human-comparison"></a>Kandinsky 3.0           <a href="https://arxiv.org/html/2312.03511v2">Human text alignment · wins a…</a>     50.0%    45.9   2023-12-11    4% ▇
                         <a href="https://arxiv.org/html/2312.03511v2">Human visual quality · wins a…</a>     56.0%    42.8   2023-12-11    4% ▇
 <a name="visual-geckonum"></a>Evaluating Numerical …  <a href="https://arxiv.org/html/2406.14774v3#S5.T2">GeckoNum Task 1: exact number…</a>     45.2%    48.2   2025-02-06    7% ▇
-<a name="visual-imagenhub"></a>ImagenHub: Standardiz…  <a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generat…</a>     76.0%    47.7   2024-03-10    5% ▇
+<a name="visual-imagenhub"></a>ImagenHub: Standardiz…  <a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generat…</a>     76.0%    47.8   2024-03-10    5% ▇
 <a name="visual-kolors-readme"></a>Kwai-Kolors/Kolors re…  <a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall s…</a>  3.32 / 5    37.4   2024-11-13    3% ▇
 prior                   pull toward the middle                      49.9                 1% ▇
-                        weighted average                          = 45.2
+                        weighted average                          = 45.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

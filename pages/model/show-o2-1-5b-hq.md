@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  10.1%    38.2   2026-05-14   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  10.1%    38.3   2026-05-14   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                 5% ▇
                         weighted average                       = 38.9
 </pre>

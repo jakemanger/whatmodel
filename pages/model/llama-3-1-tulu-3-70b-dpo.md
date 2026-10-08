@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-11 · 70.55B params · llama3.1
 
-**score 51.3** ±1.1 · #242 of 549 · from 12 benchmark results across 2 sources
+**score 51.4** ±1.1 · #244 of 549 · from 12 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,20 +14,20 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    42.7%    50.6   2025-01-27   32% ▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    46.3%    52.3   2025-01-27   21% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         4.4%    48.1   2025-03-07    9% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    42.7%    50.7   2025-01-27   32% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    46.3%    52.4   2025-01-27   20% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         4.4%    48.2   2025-03-07    9% ▇
 <a name="paper-2411.15124v5"></a>Tülu 3: Pushing Front…  <a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard (lab)</a>            84.8%    52.7   2025-04-14    8% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">MMLU (lab)</a>                      83.3%    50.5   2025-04-14    6% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">DROP (lab)</a>                      74.1%    52.0   2025-04-14    5% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">GSM8K (lab)</a>                     93.5%    55.4   2025-04-14    5% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified) (la…</a>  62.3%    52.2   2025-04-14    5% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlle…</a>  49.6%    46.9   2025-04-14    3% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose (la…</a>  82.6%    51.8   2025-04-14    2% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">MMLU (lab)</a>                      83.3%    50.6   2025-04-14    6% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">GSM8K (lab)</a>                     93.5%    55.3   2025-04-14    5% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">DROP (lab)</a>                      74.1%    52.1   2025-04-14    5% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified) (la…</a>  62.3%    52.3   2025-04-14    5% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlle…</a>  49.6%    47.1   2025-04-14    3% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose (la…</a>  82.6%    51.9   2025-04-14    2% ▇
                         <a href="https://arxiv.org/html/2411.15124v5">PopQA (lab)</a>                     46.3%    54.1   2025-04-14    2% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2 (lab)</a>            67.9%    53.5   2025-04-14    1% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2 (lab)</a>            67.9%    53.6   2025-04-14    1% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 51.3
+                        weighted average                       = 51.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -40,7 +40,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                        size  score
-16-bit bf16 · nvidia only  ~169.82GB   51.3
+16-bit bf16 · nvidia only  ~169.82GB   51.4
 </pre>
 
 ```sh

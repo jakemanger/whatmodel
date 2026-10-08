@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="first-party-cohere-scores"></a>Cohere vendor-reporte…  <a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (lab)</a>          85.0%    81.9   2026-05-20   44% ▇▇▇▇▇
-                        <a href="https://cohere.com/blog/command-a-plus">Terminal Bench Hard (lab)</a>       25.0%    81.3   2026-05-20   34% ▇▇▇▇
+                        <a href="https://cohere.com/blog/command-a-plus">Terminal Bench Hard (lab)</a>       25.0%    81.2   2026-05-20   34% ▇▇▇▇
                         <a href="https://cohere.com/blog/command-a-plus">CharXiv (reasoning questions)…</a>  52.7%    70.1   2026-05-20   15% ▇▇
 prior                   pull toward the middle                   50.0                 7% ▇
                         weighted average                       = 77.7

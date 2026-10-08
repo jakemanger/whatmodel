@@ -114,7 +114,9 @@
       "scicode-main",
       "scicode-main-official",
       "scicode-subtask",
-      "scicode-unspecified"
+      "scicode-unspecified",
+      "humanevalexplain",
+      "humanevalfix"
     ]
   },
   {
@@ -139,7 +141,8 @@
       "ifeval-strict-level-unspecified",
       "arena-hard-unspecified",
       "ifeval-strict-mean",
-      "ifeval-prompt-loose"
+      "ifeval-prompt-loose",
+      "mt-bench-gpt4-single"
     ]
   },
   {
@@ -196,7 +199,12 @@
     "description": "Image understanding and document question answering from Arena’s separately evaluated vision and document tasks. These models interpret images; they are not image generators.",
     "benchmarks": [
       "lmarena-vision",
-      "lmarena-document"
+      "lmarena-document",
+      "mm-mt-bench",
+      "molmo-human-pref-elo-2409",
+      "molmo2-human-pref-elo",
+      "molmo2-captest-f1",
+      "molmo2-videocount-acc"
     ]
   },
   {

@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 176.2B params · bigscience-bloom-rail-1.0
 
-**score 36.1** ±1.9 · #438 of 549 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 34.8** ±1.9 · #457 of 549 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2211.05100v4"></a>BLOOM: A 176B-Paramet…  <a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>         15.5%    35.9   2023-06-27   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2211.05100v4"></a>BLOOM: A 176B-Paramet…  <a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>         15.5%    34.6   2023-06-27   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle           50.0                 2% ▇
-                        weighted average               = 36.1
+                        weighted average               = 34.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle           50.0                 2%
 
 <pre>
 download          size  score
-16-bit bf16  ~352.49GB   36.1
+16-bit bf16  ~352.49GB   34.8
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-08 · 70B params · llama2
 
-**score 39.8** ±1.4 · #381 of 549 · from 8 benchmark results across 3 sources
+**score 40.1** ±1.4 · #382 of 549 · from 8 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="paper-2311.11045v2"></a>Orca 2: Teaching Smal…  <a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>                    71.9%    38.0   2023-11-21   20% ▇▇
-                        <a href="https://arxiv.org/html/2311.11045v2">BIG-Bench Hard</a>                   51.1%    41.5   2023-11-21   17% ▇▇
-                        <a href="https://arxiv.org/html/2311.11045v2">MMLU</a>                             55.0%    36.6   2023-11-21   10% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">GSM8K</a>                            73.2%    45.4   2023-11-21    8% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>                  48.7%    37.5   2023-11-21    8% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>                         80.7%    38.1   2023-11-21    5% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1184.7    38.6   2026-10-02   24% ▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   71.1%    45.0   2024-05-22    7% ▇
+<a name="paper-2311.11045v2"></a>Orca 2: Teaching Smal…  <a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>                    71.9%    38.3   2023-11-21   20% ▇▇
+                        <a href="https://arxiv.org/html/2311.11045v2">BIG-Bench Hard</a>                   51.1%    41.7   2023-11-21   18% ▇▇
+                        <a href="https://arxiv.org/html/2311.11045v2">MMLU</a>                             55.0%    36.9   2023-11-21   10% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">GSM8K</a>                            73.2%    45.3   2023-11-21    9% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>                  48.7%    37.8   2023-11-21    8% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>                         80.7%    38.4   2023-11-21    5% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1184.7    39.0   2026-10-02   23% ▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   71.1%    45.2   2024-05-22    7% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 39.8
+                        weighted average                        = 40.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,8 +34,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~41.42GB   39.8
-4-bit q4_0    ~38.87GB   39.8
+4-bit q4_k_m  ~41.42GB   40.1
+4-bit q4_0    ~38.87GB   40.1
 </pre>
 
 ```sh

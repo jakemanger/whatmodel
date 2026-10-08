@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-03 · 31.6B params (3B active) · nvidia-open-model
 
-**score 62.6** ±1.9 · #131 of 549 · from 10 benchmark results across 2 sources
+**score 62.6** ±1.9 · #132 of 549 · from 10 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="report-2603.19220v2"></a>NVIDIA                 <a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>                 92.4%    63.0   2026-03-22   17% ▇▇
-                       <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Eas…</a>  87.0%    68.4   2026-03-22   11% ▇
+<a name="report-2603.19220v2"></a>NVIDIA                 <a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>                 92.4%    62.9   2026-03-22   17% ▇▇
+                       <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Eas…</a>  87.0%    68.3   2026-03-22   11% ▇
                        <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Med…</a>  27.6%    68.8   2026-03-22   10% ▇
-                       <a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>                 90.9%    58.4   2026-03-22   10% ▇
+                       <a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>                 90.9%    58.3   2026-03-22   10% ▇
                        <a href="https://arxiv.org/html/2603.19220v2">HMMT February 2025 (lab)</a>        94.6%    64.4   2026-03-22    9% ▇
-                       <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>           79.3%    63.6   2026-03-22    7% ▇
-                       <a href="https://arxiv.org/html/2603.19220v2">Arena-Hard v2 aggregate (lab)</a>   83.5%    72.8   2026-03-22    6% ▇
-                       <a href="https://arxiv.org/html/2603.19220v2">CL-bench (lab)</a>                  12.2%    55.6   2026-03-22    5% ▇
+                       <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>           79.3%    63.5   2026-03-22    7% ▇
+                       <a href="https://arxiv.org/html/2603.19220v2">Arena-Hard v2 aggregate (lab)</a>   83.5%    72.6   2026-03-22    6% ▇
+                       <a href="https://arxiv.org/html/2603.19220v2">CL-bench (lab)</a>                  12.2%    55.5   2026-03-22    5% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  70.8%    52.6   2026-04-17   13% ▇▇
                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  93.3%    63.0   2026-04-17   10% ▇
 prior                  pull toward the middle                   50.0                 2% ▇

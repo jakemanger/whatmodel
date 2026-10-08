@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                        score  implies  date        weight
-<a name="visual-geneval"></a>GenEval authors' resu…  <a href="https://arxiv.org/html/2310.11513v1#A1.T3">GenEval</a>                                                     52.0%    31.2   2023-10-17   46% ▇▇▇▇▇
-<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  5.0800 mean human alignment score    33.7   2024-10-10   39% ▇▇▇▇▇
-<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>                              56.6%    25.4   2023-11-07   13% ▇▇
-prior                   pull toward the middle                                               49.9                 3% ▇
+<a name="visual-geneval"></a>GenEval authors' resu…  <a href="https://arxiv.org/html/2310.11513v1#A1.T3">GenEval</a>                                                     52.0%    31.1   2023-10-17   47% ▇▇▇▇▇▇
+<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  5.0800 mean human alignment score    33.7   2024-10-10   38% ▇▇▇▇▇
+<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>                              56.6%    25.5   2023-11-07   13% ▇▇
+prior                   pull toward the middle                                               49.9                 2% ▇
                         weighted average                                                   = 31.9
 </pre>
 

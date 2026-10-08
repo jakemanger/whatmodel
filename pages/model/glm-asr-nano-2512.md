@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-12 · 2.26B params · mit
 
-**score 58.4** ±3.6 · #33 of 117 · from 5 benchmark results across 2 sources
+**score 58.4** ±3.5 · #33 of 117 · from 5 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.0%    56.8   2026-03-26   57% ▇▇▇▇▇▇▇
-<a name="speech-glm-asr-readme-apache"></a>zai-org/GLM-ASR READM…  <a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">LibriSpeech test-other WER (l…</a>   4.2%    55.2   2025-12-09   16% ▇▇
-                        <a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">WenetSpeech test_meeting erro…</a>   6.7%    71.3   2025-12-09   15% ▇▇
-                        <a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">LibriSpeech test-clean WER (l…</a>   2.0%    56.2   2025-12-09    4% ▇
-                        <a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">FLEURS English test WER (lab)</a>    5.8%    60.5   2025-12-09    4% ▇
-prior                   pull toward the middle                   49.7                 5% ▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.0%    56.8   2026-03-26   56% ▇▇▇▇▇▇▇
+<a name="speech-glm-asr-readme-apache"></a>zai-org/GLM-ASR READM…  <a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">LibriSpeech test-other WER (l…</a>   4.2%    55.0   2025-12-09   15% ▇▇
+                        <a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">WenetSpeech test_meeting erro…</a>   6.7%    70.8   2025-12-09   15% ▇▇
+                        <a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">LibriSpeech test-clean WER (l…</a>   2.0%    56.1   2025-12-09    4% ▇
+                        <a href="https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png">FLEURS English test WER (lab)</a>    5.8%    60.0   2025-12-09    4% ▇
+prior                   pull toward the middle                   49.8                 5% ▇
                         weighted average                       = 58.4
 </pre>
 

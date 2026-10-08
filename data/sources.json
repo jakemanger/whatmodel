@@ -12005,13 +12005,15 @@
     "name": "Mistral AI vendor-reported benchmark scores for its own models (Hugging Face model cards)",
     "match": [
       "huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks",
-      "huggingface.co/mistralai/Mathstral-7B-v0.1/blob/ec3a48484ef241dfe03282edcb0f25e564923823/README.md#evaluation"
+      "huggingface.co/mistralai/Mathstral-7B-v0.1/blob/ec3a48484ef241dfe03282edcb0f25e564923823/README.md#evaluation",
+      "huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics",
+      "huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/README.md#vision"
     ],
     "kind": "first-party",
     "license": "Factual vendor-reported score (not licensed content)",
     "terms_url": "https://mistral.ai/terms/",
     "verdict": "allowed",
-    "checked": "2026-10-07",
+    "checked": "2026-10-08",
     "exact": true,
     "icon": "huggingface.co",
     "attribution": "Mistral AI, vendor-reported results for Mistral's own models from its pinned Hugging Face cards; individual figures hand-recorded 2026-10-07; percentages converted to fractions. Lab-reported. No endorsement.",
@@ -12810,5 +12812,249 @@
     "attribution": "Cohere, vendor-reported results for Cohere's own models from the 'Introducing Command A+' blog post (May 20, 2026); individual figures from the post's text hand-recorded 2026-10-08; percentages converted to fractions. Lab-reported, not independent measurements. No endorsement.",
     "quote": "Owner rule (b), approved 2026-10-07 (UPDATING.md 'Vendor-reported scores'): a vendor's own published score for its own model, from its announcement, system/model card or docs, may be recorded by hand one figure at a time with the exact URL, date and printed settings; other labs' cells and cells credited to a third party excluded. The post's Artificial Analysis Intelligence Index (37) is credited to Artificial Analysis and is not recorded; MMMU / MMMU Pro / MathVista figures are not recorded because the post gives no split (val/test, testmini, standard/vision).",
     "scope": "Command A+ only: τ²-Bench Telecom 85%, Terminal-Bench Hard 25%, CharXiv reasoning 52.7% from the body text. Chart-only figures (AIME 2025, IFBench, SciCode, MT-AIME, WMT24++) and internal North evaluations not recorded. Command A Reasoning (37%, 3%) and Command A Vision (46.9%) are printed but are not catalogue models."
+  },
+  {
+    "id": "lmsys-arena-space-mtbench",
+    "name": "LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table",
+    "kind": "leaderboard",
+    "match": [
+      "huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/README.md",
+    "quote": "Space README front matter at the pinned revision 6f2eeeb: 'license: apache-2.0' (public, not gated). The CSV is a committed file of the Space repository. Apache-2.0 §2 grants a perpetual, worldwide, royalty-free copyright licence to reproduce and distribute the Work and Derivative Works.",
+    "attribution": "LMSYS / LMArena, Chatbot Arena leaderboard Space (lmarena-ai/arena-leaderboard, formerly lmsys/chatbot-arena-leaderboard), leaderboard_table_20250804.csv @6f2eeeb, Apache-2.0. MT-Bench column only; Arena Elo and MMLU columns not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/README.md",
+    "icon": "huggingface.co",
+    "scope": "MT-Bench column, rows first published in the 2023 tables (LMSYS's own fastchat.llm_judge runs). This is the Hugging Face Space git repository, not the arena.ai website; models.json identity notes already cite this Space. Review flag: the owner should confirm the Space's Apache-2.0 tag is acceptable for the table data (it is LMSYS's own measurement, so no third-party permission is needed for these rows)."
+  },
+  {
+    "id": "paper-2408.12570v1-jamba15",
+    "name": "Jamba-1.5: Hybrid Transformer-Mamba Models at Scale (AI21, arXiv 2408.12570v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2408.12570v1"
+    ],
+    "license": "CC BY-SA 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/4.0/",
+    "terms_url": "https://arxiv.org/abs/2408.12570v1",
+    "quote": "The arXiv abstract page for 2408.12570 links the licence 'http://creativecommons.org/licenses/by-sa/4.0/' in its licence field (only version v1 exists).",
+    "attribution": "Jamba Team (AI21 Labs), 'Jamba-1.5: Hybrid Transformer-Mamba Models at Scale', arXiv:2408.12570v1, CC BY-SA 4.0. Values transcribed from Tables 2-3 and divided by 100; share-alike applies to adapted tables.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2408.12570v1",
+    "icon": "arxiv.org",
+    "scope": "Jamba-1.5 Mini/Large rows (AI21's own runs, by=lab) and competitor cells marked '† evaluation run by us' (by=independent). Unmarked competitor cells (reported elsewhere) and ⋄ cells (Open LLM Leaderboard) excluded. Preferred over the gated HF card (jamba-open-model-license), whose table is a later CoT re-run with different values."
+  },
+  {
+    "id": "paper-2410.07073v2-pixtral",
+    "name": "Pixtral 12B (Mistral AI, arXiv 2410.07073v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2410.07073v2"
+    ],
+    "license": "CC BY 4.0",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2410.07073v2",
+    "quote": "The arXiv abstract page for 2410.07073 links the licence 'http://creativecommons.org/licenses/by/4.0/' in its licence field. Table 2 caption: 'We re-evaluate all models with the same prompt and evaluation metric'; Sec. 4.1: 'Table 3 evaluates Pixtral 12B against open-source models of comparable size on common text-only benchmarks (again, with common prompting and evaluation protocols)'.",
+    "attribution": "Agrawal et al. (Mistral AI), 'Pixtral 12B', arXiv:2410.07073v2, CC BY 4.0. Values transcribed from Tables 2-3; percentages divided by 100.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2410.07073v2",
+    "icon": "arxiv.org",
+    "scope": "Mistral's own re-evaluation of every listed model (Pixtral 12B rows by=lab, others by=independent). LMSys-Vision column (copied Arena Elo), grey flexible-parsing rows, DocVQA (validation split; the existing docvqa id is the test split) and Table 3 MT-Bench (judge not stated) excluded. Not mapped: LLaVA-OneVision 7B/72B (ov / ov-sft / ov-chat checkpoint not stated), Gemini-1.5-Flash 8B (0827) (experimental checkpoint, not -001)."
+  },
+  {
+    "id": "molmo-card-human-elo",
+    "name": "Ai2 Molmo-72B-0924 model card: Human Preference Elo Rating column",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md",
+    "terms_url": "https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md",
+    "quote": "Model card front matter at the pinned revision: 'license: apache-2.0' (repository licence, not gated). The Elo column is Ai2's own human study (Molmo paper, arXiv 2409.17146, Sec. 'Human evaluation', describes Ai2 querying all 27 models and collecting the pairwise judgments), so Ai2 is the measurement source for every row.",
+    "attribution": "Allen Institute for AI (Ai2), Molmo-72B-0924 model card @ab586dd, Apache-2.0. 'Human Preference Elo Rating' column only.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2409.17146",
+    "icon": "huggingface.co",
+    "scope": "Human Preference Elo column only. 'Average Score on 11 Academic Benchmarks' not used (the paper mixes reported and re-run numbers for other models). Fragment-scoped so any other use of this card stays separate. Not mapped: GPT-4o and GPT-4V (snapshot not stated), Gemini 1.5 Pro/Flash (001 vs 002 not stated), InternVL2 8B/Llama-76B, LLaVA-OneVision (ov/ov-sft/ov-chat not stated), Cambrian-1, xGen-MM, PaliGemma, LLaVA-1.5, Molmo 7B-O and MolmoE 1B (not in the catalogue)."
+  },
+  {
+    "id": "paper-2601.10611v4-molmo2",
+    "name": "Molmo2: Open Weights and Data for Vision-Language Models with Video Understanding and Grounding (Ai2, arXiv 2601.10611v4)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2601.10611v4"
+    ],
+    "license": "CC BY 4.0",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2601.10611v4",
+    "quote": "The arXiv abstract page for 2601.10611 links the licence 'http://creativecommons.org/licenses/by/4.0/' in its licence field.",
+    "attribution": "Ai2 (Allen Institute for AI), 'Molmo2: Open Weights and Data for Vision-Language Models with Video Understanding and Grounding', arXiv:2601.10611v4, CC BY 4.0. Values transcribed from Tables 2 and 6; percentages divided by 100.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2601.10611v4",
+    "icon": "arxiv.org",
+    "scope": "Only Ai2-measured values: the human-preference Elo, Molmo2-CapTest F1 and Molmo2-VideoCount columns of Table 2 (Ai2's own study / new Ai2 benchmarks, all rows), and Ai2's own Molmo/Molmo2 rows in Table 6. Other competitor benchmark cells are excluded because Sec. 4.1 says 'We prioritize author-published results but fill in missing results with the best previously reported values'. Not mapped (not in the catalogue): Qwen3-VL-4B/8B, InternVL3.5, Keye-VL, GLM-4.1V, MiniCPM-V-4.5, Eagle2.5, PLM, LLaVA-Video, VideoChat-Flash, Molmo2-4B/O-7B."
+  },
+  {
+    "id": "paper-2404.14219v3-phi3",
+    "name": "Phi-3 Technical Report (Microsoft, arXiv 2404.14219v3)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2404.14219v3"
+    ],
+    "license": "CC BY 4.0",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2404.14219v3",
+    "quote": "The arXiv HTML of v3 prints 'License: CC BY 4.0' and the abstract page links http://creativecommons.org/licenses/by/4.0/. Table 2 caption: 'All the reported numbers are produced with the exact same pipeline to ensure that the numbers are comparable except for MM1-3B-Chat and MM1-7B-Chat'.",
+    "attribution": "Microsoft, 'Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone', arXiv:2404.14219v3, CC BY 4.0. Values from Table 2 divided by 100.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2404.14219v3",
+    "icon": "arxiv.org",
+    "scope": "Phi-3-Vision table (v3, May 2024) only: Microsoft-run rows for Phi-3-Vision (lab), Claude 3 Haiku and GPT-4V-Turbo (2024-04-09). MM1 columns (copied), LLaVA-1.6 / LLaVA-Next / Qwen-VL-Chat (not in the catalogue), Gemini 1.0 Pro V (vision model not in the catalogue), MMBench (version not stated), ScienceQA/Inter-GPS/POPE (no ids) excluded."
+  },
+  {
+    "id": "microsoft-phi35-vision-card-benchmarks",
+    "name": "Microsoft Phi-3.5-vision-instruct model card: Benchmarks table",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/LICENSE",
+    "terms_url": "https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md",
+    "quote": "Card front matter at the pinned revision: 'license: mit'; card section 'License': 'The model is licensed under the MIT license.' The table is Microsoft's own run: 'we compare Phi-3.5-vision with a set of models over a variety of zero-shot benchmarks using our internal benchmark platform'.",
+    "attribution": "Microsoft, Phi-3.5-vision-instruct model card @12b77fb (MIT). Values divided by 100.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks",
+    "icon": "huggingface.co",
+    "scope": "Benchmarks table, Microsoft-run. Not mapped: Intern-VL-2-8B (not in the catalogue), Gemini-1.5-Flash and Gemini-1.5-Pro (snapshot not stated; Aug 2024 had stable and experimental versions). MMBench (version not stated), ScienceQA, InterGPS and POPE (no ids) excluded."
+  },
+  {
+    "id": "first-party-deepseek-scores",
+    "name": "DeepSeek vendor-reported benchmark scores for its own models (Hugging Face model cards)",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/deepseek-ai/DeepSeek-V2.5-1210/blob/6f134cbe88cb9284a8ce696e8ac8eefd0bc24ede/README.md#1-introduction"
+    ],
+    "exact": true,
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://huggingface.co/deepseek-ai/DeepSeek-V2.5-1210/blob/6f134cbe88cb9284a8ce696e8ac8eefd0bc24ede/README.md",
+    "quote": "Owner rule (b), approved 2026-10-07: a vendor's own published score for its own model may be recorded by hand one figure at a time with exact URL, date and printed settings; other labs' cells excluded; rows labelled by: 'lab'.",
+    "attribution": "DeepSeek, vendor-reported results for DeepSeek's own models from the pinned DeepSeek-V2.5-1210 card; hand-recorded 2026-10-08; percentages converted to fractions. Lab-reported. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "icon": "huggingface.co",
+    "scope": "MATH-500 sentence of the Introduction only (both figures are DeepSeek's own models). The LiveCodeBench (08.01-12.01) pair is not recorded: no existing benchmark id covers that window. Fragment-scoped so it stays separate from any price/context entry for the same card."
+  },
+  {
+    "id": "paper-2406.12793v2-chatglm",
+    "name": "ChatGLM: A Family of Large Language Models from GLM-130B to GLM-4 All Tools (Team GLM, arXiv 2406.12793v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2406.12793v2"
+    ],
+    "license": "CC BY 4.0",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2406.12793v2",
+    "quote": "The arXiv HTML of v2 prints 'License: CC BY 4.0' and the abstract page links http://creativecommons.org/licenses/by/4.0/. Sec. 3.6: 'To evaluate the performance of GLM models on function call, we carry out evaluations on Berkeley Function Call Leaderboard'.",
+    "attribution": "Team GLM (Zhipu AI / Tsinghua), 'ChatGLM: A Family of Large Language Models from GLM-130B to GLM-4 All Tools', arXiv:2406.12793v2, CC BY 4.0. Table 7 Overall values divided by 100.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2406.12793v2",
+    "icon": "arxiv.org",
+    "scope": "Table 7 (BFCL Overall, authors' runs) only. GLM-4-Air (0605) not in the catalogue. Table 1's ChatGLM3 column is ChatGLM3-6B-Base (not the catalogue chat model), so Table 1 was not used for chatglm3-6b."
+  },
+  {
+    "id": "first-party-meta-asr-cards",
+    "name": "Meta (facebook org) Hugging Face ASR model cards: published LibriSpeech WER for its own checkpoints",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/facebook/data2vec-audio-base-960h/blob/32331f3123e703528918aa688a9a38232d58c872/README.md#evaluation",
+      "huggingface.co/facebook/data2vec-audio-large-960h/blob/27aba26eed532b86dcd0f17284a0307de4b51f39/README.md#evaluation",
+      "huggingface.co/facebook/wav2vec2-conformer-rope-large-960h-ft/blob/6b36ef01c6443c67ae7ed0822876d091ab50e4aa/README.md#evaluation",
+      "huggingface.co/facebook/wav2vec2-conformer-rel-pos-large-960h-ft/blob/ca7f36f527f234b3cd4f05ecee30361f971e8e33/README.md#evaluation",
+      "huggingface.co/facebook/wav2vec2-base-960h/blob/22aad52d435eb6dbaf354bdad9b0da84ce7d6156/README.md#evaluation",
+      "huggingface.co/facebook/wav2vec2-large-960h/blob/bdeaacdf88f7a155f50a2704bc967aa81fbbb2ab/README.md#evaluation",
+      "huggingface.co/facebook/wav2vec2-large-960h-lv60-self/blob/54074b1c16f4de6a5ad59affb4caa8f2ea03a119/README.md#evaluation",
+      "huggingface.co/facebook/hubert-large-ls960-ft/blob/ece5fabbf034c1073acae96d5401b25be96709d8/README.md#evaluation",
+      "huggingface.co/facebook/hubert-xlarge-ls960-ft/blob/86a09e67e0c8d074533992379242405825516eca/README.md#evaluation"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/facebook/wav2vec2-base-960h/blob/22aad52d435eb6dbaf354bdad9b0da84ce7d6156/README.md",
+    "terms_url": "https://huggingface.co/facebook",
+    "quote": "Each card's front matter at the pinned revision declares 'license: apache-2.0' (repository licence, not gated). The WER figures are the maker's own published results for its own checkpoints (evaluation section 'Result (WER)' and model-index), so the vendor-reported rule also applies.",
+    "attribution": "Meta AI (facebook organisation on Hugging Face), model cards for data2vec-audio, wav2vec2(-conformer) and HuBERT LibriSpeech checkpoints at the pinned revisions, Apache-2.0. WER % divided by 100.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "icon": "huggingface.co",
+    "scope": "LibriSpeech test-clean/test-other WER printed on nine pinned facebook/* ASR cards, pooled as one maker's evaluation (same greedy transformers snippet), like the existing pooled vendor entries. Each card alone scores one checkpoint, which is why the first pass could not form a run from them. wav2vec2-large-robust-ft-libri-960h prints no WER; not used."
+  },
+  {
+    "id": "paper-2410.05677v3-t2vturbo2",
+    "name": "T2V-Turbo-v2: Enhancing Video Generation Model Post-Training through Data, Reward, and Conditional Guidance Design (arXiv 2410.05677v3)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2410.05677v3"
+    ],
+    "license": "CC BY 4.0",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2410.05677v3",
+    "quote": "The arXiv abstract page for 2410.05677 links the licence 'http://creativecommons.org/licenses/by/4.0/' in its licence field.",
+    "attribution": "Li et al., 'T2V-Turbo-v2', arXiv:2410.05677v3, CC BY 4.0. VBench Total Score values divided by 100.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2410.05677v3",
+    "icon": "arxiv.org",
+    "scope": "Table 1 Total Score for the authors' own T2V-Turbo (VC2) and T2V-Turbo-v2 (w/ MG) only; Quality/Semantic sub-scores (components of the total) and competitor columns (VBench-leaderboard copies) excluded."
+  },
+  {
+    "id": "first-party-wizardlm-scores",
+    "name": "WizardLM team vendor-reported scores for its own WizardCoder models (Hugging Face card)",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct"
+    ],
+    "exact": true,
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md",
+    "quote": "Owner rule (b), approved 2026-10-07: a vendor's own published score for its own model may be recorded by hand one figure at a time with exact URL, date and printed settings; other labs' cells excluded; rows labelled by: 'lab'.",
+    "attribution": "WizardLM team, WizardCoder family table in the pinned WizardCoder-Python-13B-V1.0 card; HumanEval pass@1 hand-recorded 2026-10-08; percentages converted to fractions. Lab-reported. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "icon": "huggingface.co",
+    "scope": "HumanEval column for the three catalogue WizardCoder models (Python-13B, Python-34B, 33B-V1.1). The card licence is llama2 (not an open data licence), so only the vendor rule applies."
+  },
+  {
+    "id": "primeintellect-intellect3-card-eval",
+    "name": "Prime Intellect INTELLECT-3 model card: Evaluation table (Environments Hub runs)",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md",
+    "terms_url": "https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md",
+    "quote": "Card front matter at the pinned revision: 'license: mit'; card text: 'The model, training frameworks, and environments are open-sourced under fully-permissive licenses (MIT and Apache 2.0).' Provenance (technical report, https://storage.googleapis.com/intellect-3-paper/INTELLECT_3_Technical_Report.pdf, Fig. 1 note): 'All the models above were evaluated using our public, reproducible Environments Hub implementations.'",
+    "attribution": "Prime Intellect, INTELLECT-3 model card @ff39d4a (MIT). Values divided by 100.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://storage.googleapis.com/intellect-3-paper/INTELLECT_3_Technical_Report.pdf",
+    "icon": "huggingface.co",
+    "scope": "Evaluation table (Prime Intellect's own runs of all listed models). Excluded: GLM-4.5 MMLU-Pro (the report marks it 'Reported by AA Index', i.e. Artificial Analysis, which the project does not use). The report PDF itself states no licence, so the MIT card is the cited copy."
   }
 ]

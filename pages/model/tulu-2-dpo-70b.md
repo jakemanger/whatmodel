@@ -6,7 +6,7 @@
 
 Ai2 · released 2023-11 · 69B params · ai2-impact-low-risk
 
-**score 40.6** ±1.2 · #370 of 549 · from 9 benchmark results across 5 sources
+**score 41.0** ±1.2 · #368 of 549 · from 9 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,17 +14,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                       score  implies  date        weight
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                       66.0%    45.2   2023-11-20   16% ▇▇
-                        <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                                 67.8%    47.0   2023-11-20    6% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                                71.5%    49.9   2023-11-20    5% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>             35.8%    30.7   2023-11-20    5% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>             68.9%    42.2   2023-11-20    4% ▇
-<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>             15.0%    38.0   2024-11-14   22% ▇▇▇
-<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  27.9838 WB-Score    38.1   2024-08-01   20% ▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                            1177.6    37.8   2026-10-02   17% ▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             74.1%    47.8   2024-03-05    5% ▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>                       66.0%    44.7   2023-11-20   18% ▇▇
+                        <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                                 67.8%    46.5   2023-11-20    7% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                                71.5%    49.1   2023-11-20    6% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>             68.9%    41.7   2023-11-20    4% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>             35.8%    30.1   2023-11-20    4% ▇
+<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>             15.0%    38.3   2024-11-14   21% ▇▇▇
+<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  27.9838 WB-Score    38.4   2024-08-01   19% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                            1177.6    38.2   2026-10-02   16% ▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             74.1%    48.0   2024-03-05    5% ▇
 prior                   pull toward the middle                              50.0                 1% ▇
-                        weighted average                                  = 40.6
+                        weighted average                                  = 41.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,7 +35,7 @@ prior                   pull toward the middle                              50.0
 
 <pre>
 download          size  score
-16-bit bf16  ~137.95GB   40.6
+16-bit bf16  ~137.95GB   41.0
 </pre>
 
 ```sh

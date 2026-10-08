@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-07 · 13B params · llama2
 
-**score 32.3** ±1.5 · #477 of 549 · from 7 benchmark results across 2 sources
+**score 32.7** ±1.4 · #474 of 549 · from 7 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="paper-2311.11045v2"></a>Orca 2: Teaching Smal…  <a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>            50.4%    30.0   2023-11-21   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2311.11045v2">BIG-Bench Hard</a>           38.5%    33.0   2023-11-21   14% ▇▇
-                        <a href="https://arxiv.org/html/2311.11045v2">MMLU</a>                     42.8%    28.9   2023-11-21   10% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">GSM8K</a>                    48.6%    35.6   2023-11-21   10% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>          38.3%    32.7   2023-11-21    9% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>                 69.0%    26.4   2023-11-21    6% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1149.5    34.6   2026-10-02   26% ▇▇▇
+<a name="paper-2311.11045v2"></a>Orca 2: Teaching Smal…  <a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>            50.4%    30.5   2023-11-21   24% ▇▇▇
+                        <a href="https://arxiv.org/html/2311.11045v2">BIG-Bench Hard</a>           38.5%    33.5   2023-11-21   15% ▇▇
+                        <a href="https://arxiv.org/html/2311.11045v2">GSM8K</a>                    48.6%    36.0   2023-11-21   10% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">MMLU</a>                     42.8%    29.4   2023-11-21   10% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>          38.3%    33.1   2023-11-21    9% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>                 69.0%    27.0   2023-11-21    6% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1149.5    35.0   2026-10-02   25% ▇▇▇
 prior                   pull toward the middle            50.0                 1% ▇
-                        weighted average                = 32.3
+                        weighted average                = 32.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,7 +33,7 @@ prior                   pull toward the middle            50.0                 1
 
 <pre>
 download        size  score
-4-bit fp16  ~26.03GB   32.3
+4-bit fp16  ~26.03GB   32.7
 </pre>
 
 ```sh

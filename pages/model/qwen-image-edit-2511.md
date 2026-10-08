@@ -22,7 +22,7 @@ source                  test                             score  implies  date   
 <a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1038.0    60.0   2026-03-30    9% ▇
 <a name="visual-infoedit"></a>InfoEdit: Probing Glo…  <a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing …</a>    0.4%    48.7   2026-09-27    9% ▇
 <a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>    6.7%    58.7   2026-05-29    5% ▇
-<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>   25.8%    39.0   2026-03-26    3% ▇
+<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>   25.8%    39.1   2026-03-26    3% ▇
 prior                   pull toward the middle                    49.9                 2% ▇
                         weighted average                        = 55.7
 </pre>

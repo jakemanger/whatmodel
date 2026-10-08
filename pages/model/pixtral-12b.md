@@ -6,28 +6,37 @@
 
 Mistral · released 2024-09 · 12.4B params · apache-2.0
 
-**score 42.6** ±3.3 · #349 of 549 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.5** ±1.8 · #284 of 549 · from 10 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1025.2    42.3   2026-10-02   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                    50.0                 5% ▇
-                        weighted average                        = 42.6
+source                  test                                                      score  implies  date        weight
+<a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  6.0500 MM-MT-Bench score (1-10)    50.7   2024-10-10   20% ▇▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU (lab)</a>                                                69.2%    43.3   2024-10-10   17% ▇▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval (lab)</a>                                           72.0%    51.3   2024-10-10   10% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified) (la…</a>                            48.1%    51.3   2024-10-10    8% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val) (lab)</a>                                         78.6%    55.5   2024-10-10    6% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val) (lab)</a>                                          52.0%    50.0   2024-10-10    3% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini) (lab)</a>                                58.3%    58.5   2024-10-10    2% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA (lab)</a>                                             81.8%   234.9   2024-10-10    0% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                           1025.2    43.2   2026-10-02   30% ▇▇▇▇
+<a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>                           1016.0    43.8   2024-09-25    2% ▇
+prior                   pull toward the middle                                             50.0                 2% ▇
+                        weighted average                                                 = 47.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Pixtral 12B ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Ai2 Molmo-72B-0924 model card: Human Preference Elo Rating column ([Apache-2.0](https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md))</sub>
 
 ## How to run it
 
 <pre>
 download                       size  score
-16-bit bf16 · nvidia only  ~25.37GB   42.6
+16-bit bf16 · nvidia only  ~25.37GB   47.5
 </pre>
 
 ```sh

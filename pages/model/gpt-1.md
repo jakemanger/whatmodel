@@ -6,7 +6,7 @@
 
 OpenAI · released 2018-06 · 0.117B params · mit
 
-**score 20.3** ±5.2 · #533 of 549 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 19.4** ±5.3 · #532 of 549 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="acl-2021-findings-acl-404-prost"></a>PROST   <a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zer…</a>  26.1%    16.3   2021-08-01   88% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="acl-2021-findings-acl-404-prost"></a>PROST   <a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zer…</a>  26.1%    15.1   2021-08-01   88% ▇▇▇▇▇▇▇▇▇▇▇
 prior   pull toward the middle                   50.0                12% ▇
-        weighted average                       = 20.3
+        weighted average                       = 19.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,7 +38,7 @@ Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open
 
 <pre>
 download       size  score
-4-bit fp32  ~0.48GB   20.3
+4-bit fp32  ~0.48GB   19.4
 </pre>
 
 ```sh

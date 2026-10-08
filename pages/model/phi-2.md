@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-12 · 2.78B params · mit
 
-**score 38.9** ±0.6 · #396 of 549 · from 14 benchmark results across 4 sources
+**score 38.9** ±0.6 · #393 of 549 · from 14 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,20 +14,20 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              45.1%    38.2   2024-12-26   25% ▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               49.4%    37.6   2024-12-26   25% ▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   54.2%    40.1   2024-12-26    3% ▇
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               50.0%    38.7   2024-03-28   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       31.8%    38.3   2024-03-28   11% ▇
-<a name="paper-2404.06395v3"></a>MiniCPM: Unveiling th…  <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>           71.3%    44.4   2024-06-03    3% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>          43.4%    44.9   2024-06-03    3% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                    52.7%    38.7   2024-06-03    2% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>               47.6%    50.8   2024-06-03    1% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">MBPP</a>                    55.0%    50.1   2024-06-03    1% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>                   57.2%    54.8   2024-06-03    1% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                  23.4%    22.3   2024-06-03    1% ▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              31.6%    33.1   2024-01-03    1% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              33.5%    32.9   2024-01-03    1% ▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               49.4%    37.7   2024-12-26   25% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              45.1%    38.4   2024-12-26   25% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   54.2%    40.3   2024-12-26    3% ▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               50.0%    38.8   2024-03-28   20% ▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       31.8%    38.4   2024-03-28   10% ▇
+<a name="paper-2404.06395v3"></a>MiniCPM: Unveiling th…  <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>           71.3%    42.7   2024-06-03    4% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>          43.4%    42.9   2024-06-03    3% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                    52.7%    37.2   2024-06-03    2% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>               47.6%    48.7   2024-06-03    2% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>                   57.2%    52.1   2024-06-03    1% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">MBPP</a>                    55.0%    48.3   2024-06-03    1% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                  23.4%    21.3   2024-06-03    1% ▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              31.6%    32.9   2024-01-03    1% ▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              33.5%    32.8   2024-01-03    1% ▇
 prior                   pull toward the middle           50.0                 0% ▇
                         weighted average               = 38.9
 </pre>

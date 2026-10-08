@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  56.8%    41.3   2025-04-21   88% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  56.8%    41.2   2025-04-21   88% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                12% ▇
                         weighted average                       = 42.3
 </pre>

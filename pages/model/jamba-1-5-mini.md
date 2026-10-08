@@ -6,28 +6,38 @@
 
 AI21 Labs · released 2024-08 · 52B params (12B active) · jamba-open-model-license
 
-**score 45.1** ±2.8 · #311 of 549 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.6** ±1.3 · #320 of 549 · from 11 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1239.7    45.0   2026-10-02   96% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            50.0                 4% ▇
-                        weighted average                = 45.1
+source                  test                             score  implies  date        weight
+<a name="paper-2408.12570v1-jamba15"></a>Jamba-1.5: Hybrid Tra…  <a href="https://arxiv.org/html/2408.12570v1#S6.T2">GSM8K (lab)</a>                      75.8%    42.6   2024-08-22   13% ▇▇
+                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">BIG-Bench Hard (lab)</a>             53.4%    44.1   2024-08-22   13% ▇▇
+                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU (lab)</a>                       69.7%    43.7   2024-08-22   10% ▇
+                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">HumanEval (lab)</a>                  62.8%    46.3   2024-08-22   10% ▇
+                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU-Pro (lab)</a>                   39.8%    45.4   2024-08-22    8% ▇
+                        <a href="https://arxiv.org/html/2408.12570v1#S6.T3">Arena-Hard (version/judge uns…</a>   46.1%    43.8   2024-08-22    8% ▇
+                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified) (la…</a>   32.3%    43.4   2024-08-22    7% ▇
+                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">BFCL (version not stated) (la…</a>   80.7%    44.9   2024-08-22    3% ▇
+                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">ARC Challenge (lab)</a>              85.7%    53.8   2024-08-22    3% ▇
+                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">IFEval (aggregation unspecifi…</a>   75.8%    39.8   2024-08-22    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1239.7    45.2   2026-10-02   22% ▇▇▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 44.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Jamba-1.5: Hybrid Transformer-Mamba Models at Scale ([CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 download                        size  score
-16-bit bf16 · nvidia only  ~103.14GB   45.1
+16-bit bf16 · nvidia only  ~103.14GB   44.6
 </pre>
 
 ```sh

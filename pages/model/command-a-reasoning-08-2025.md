@@ -15,9 +15,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="first-party-cohere-scores"></a>Cohere vendor-reporte…  <a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (lab)</a>          37.0%    55.2   2026-05-20   28% ▇▇▇
-                        <a href="https://cohere.com/blog/command-a-plus">Terminal Bench Hard (lab)</a>        3.0%    55.8   2026-05-20   22% ▇▇▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  57.1%    64.9   2025-12-16   45% ▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 5% ▇
+                        <a href="https://cohere.com/blog/command-a-plus">Terminal Bench Hard (lab)</a>        3.0%    55.9   2026-05-20   22% ▇▇▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  57.1%    64.8   2025-12-16   46% ▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                 4% ▇
                         weighted average                       = 59.5
 </pre>
 

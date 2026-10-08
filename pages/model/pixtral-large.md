@@ -6,7 +6,7 @@
 
 Mistral · released 2024-11 · 124B params · mistral-research
 
-**score 50.7** ±3.3 · #249 of 549 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.5** ±3.0 · #243 of 549 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,9 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1095.2    50.8   2026-10-02   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                    50.0                 5% ▇
-                        weighted average                        = 50.7
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1095.2    51.4   2026-10-02   79% ▇▇▇▇▇▇▇▇▇▇
+<a name="first-party-mistral-scores"></a>Mistral AI vendor-rep…  <a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">MMMU (val) (lab)</a>                 64.0%    52.2   2024-11-18   10% ▇
+                        <a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">MathVista (testmini) (lab)</a>       69.4%    52.8   2024-11-18    6% ▇
+                        <a href="https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics">ChartQA (lab)</a>                    88.1%    81.2   2024-11-18    0% ▇
+prior                   pull toward the middle                    50.0                 4% ▇
+                        weighted average                        = 51.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +30,7 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download                        size  score
-16-bit bf16 · nvidia only  ~248.27GB   50.7
+16-bit bf16 · nvidia only  ~248.27GB   51.5
 </pre>
 
 ```sh

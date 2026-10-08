@@ -18,18 +18,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                             score  implies  date        weight
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1083.9    55.8   2026-09-24   47% ▇▇▇▇▇▇
 <a name="report-2511.22699v5"></a>Tongyi-MAI              <a href="https://arxiv.org/html/2511.22699v5">GenEval (lab)</a>                    82.0%    54.8   2026-07-06    3% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (lab)</a>        91.7%    52.8   2026-07-06    3% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (lab)</a>        91.7%    52.9   2026-07-06    3% ▇
                         <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long pro…</a>   80.0%    53.8   2026-07-06    3% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short pr…</a>   77.7%    54.5   2026-07-06    3% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short pr…</a>   77.7%    54.6   2026-07-06    3% ▇
                         <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN) (lab)</a>           50.7%    55.1   2026-07-06    3% ▇
                         <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN) (lab)</a>           52.8%    55.7   2026-07-06    3% ▇
                         <a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy (lab)</a>      85.9%    55.7   2026-07-06    3% ▇
                         <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (lab)</a>        92.6%    54.4   2026-07-06    3% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">DPG-Bench (lab)</a>                  84.9%    52.4   2026-07-06    3% ▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   85.7%    52.7   2026-08-25   11% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">DPG-Bench (lab)</a>                  84.9%    52.1   2026-07-06    2% ▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   85.7%    52.8   2026-08-25   11% ▇
 <a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>   54.1%    58.3   2026-06-09    7% ▇
-<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI pro…</a>   78.1%    49.1   2026-06-23    5% ▇
-<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>   39.0%    52.2   2026-06-05    4% ▇
+<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI pro…</a>   78.1%    49.2   2026-06-23    5% ▇
+<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>   39.0%    52.3   2026-06-05    4% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
                         weighted average                        = 54.7
 </pre>

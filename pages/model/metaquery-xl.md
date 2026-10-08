@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  55.0%    44.5   2026-06-02   90% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  55.0%    44.6   2026-06-02   90% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                10% ▇
                         weighted average                       = 45.1
 </pre>

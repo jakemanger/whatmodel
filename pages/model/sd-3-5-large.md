@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-10 · 8.1B params · stabilityai-community
 
-**score 41.6** ±1.4 · #92 of 136 · from 7 benchmark results across 7 sources
+**score 41.7** ±1.4 · #91 of 136 · from 7 benchmark results across 7 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -20,11 +20,11 @@ source                  test                            score  implies  date    
 <a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  15.9%    43.3   2026-05-14   18% ▇▇
 <a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       55.2%    41.4   2026-07-01   16% ▇▇
 <a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  46.0%    38.5   2026-06-02    8% ▇
-<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>   2.5%    39.9   2026-09-28    7% ▇
-<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>  794.4    40.9   2026-10-01    5% ▇
+<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>   2.5%    40.0   2026-09-28    7% ▇
+<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>  794.4    41.0   2026-10-01    5% ▇
 <a name="visual-knowledge-visualization"></a>Knowledge Visualizati…  <a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (…</a>  31.1%    58.4   2026-04-24    1% ▇
 prior                   pull toward the middle                   49.9                 1% ▇
-                        weighted average                       = 41.6
+                        weighted average                       = 41.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -39,10 +39,10 @@ api (Replicate) · $0.065/image · [replicate.com](https://replicate.com/stabili
 
 <pre>
 version                          needs  score
-bf16 · nvidia only            ~19.94GB   41.6
-fp8 (TensorRT) · nvidia only   ~5.36GB   41.6
-bf16 + T5 fp16 (sd.cpp)          ~34GB   41.6
-q8_0 (sd.cpp --type)           ~18.2GB   41.6
+bf16 · nvidia only            ~19.94GB   41.7
+fp8 (TensorRT) · nvidia only   ~5.36GB   41.7
+bf16 + T5 fp16 (sd.cpp)          ~34GB   41.7
+q8_0 (sd.cpp --type)           ~18.2GB   41.7
 </pre>
 
 ```sh

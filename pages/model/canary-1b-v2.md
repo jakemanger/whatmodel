@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-08 · 0.98B params · cc-by-4.0
 
-**score 58.1** ±2.0 · #35 of 117 · from 6 benchmark results across 4 sources
+**score 58.0** ±1.8 · #34 of 117 · from 6 benchmark results across 4 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        4.6%    60.0   2026-03-26   38% ▇▇▇▇▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.1%    56.1   2026-03-26   17% ▇▇
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-v2.json">LibriSpeech test-clean WER</a>       1.9%    56.6   2026-09-15   15% ▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-v2.json">FLEURS English test WER</a>          4.5%    59.7   2026-09-15    7% ▇
-<a name="speech-stt-megaasr-report"></a>Mega-ASR                <a href="https://arxiv.org/html/2605.19833v1">Mega-ASR adverse-condition su…</a>  11.8%    57.9   2026-05-19   15% ▇▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        4.6%    59.8   2026-03-26   40% ▇▇▇▇▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.1%    56.2   2026-03-26   15% ▇▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-v2.json">LibriSpeech test-clean WER</a>       1.9%    56.5   2026-09-15   15% ▇▇
+                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-v2.json">FLEURS English test WER</a>          4.5%    59.3   2026-09-15    7% ▇
+<a name="speech-stt-megaasr-report"></a>Mega-ASR                <a href="https://arxiv.org/html/2605.19833v1">Mega-ASR adverse-condition su…</a>  11.8%    57.6   2026-05-19   13% ▇▇
 <a name="speech-stt-cl-spanish-asr-apache"></a>Open ASR Leaderboard …  <a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilea…</a>   9.8%    56.6   2025-10-27    8% ▇
-prior                   pull toward the middle                   49.7                 1% ▇
-                        weighted average                       = 58.1
+prior                   pull toward the middle                   49.8                 1% ▇
+                        weighted average                       = 58.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -54,8 +54,8 @@ nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/bl
 
 <pre>
 version              needs  score
-onnx-fp32           ~5.2GB   58.1
-fp32 · nvidia only  ~5.2GB   58.1
+onnx-fp32           ~5.2GB   58.0
+fp32 · nvidia only  ~5.2GB   58.0
 </pre>
 
 ```sh

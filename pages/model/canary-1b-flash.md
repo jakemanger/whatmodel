@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-03 · 0.81B params · cc-by-4.0
 
-**score 61.1** ±2.1 · #20 of 117 · from 5 benchmark results across 3 sources
+**score 60.7** ±2.0 · #20 of 117 · from 5 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  19.1%    63.4   2025-11-18   29% ▇▇▇
-                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  23.8%    60.6   2025-11-18   27% ▇▇▇
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-flash.json">LibriSpeech test-clean WER</a>       1.6%    61.0   2026-09-15   16% ▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-flash.json">FLEURS English test WER</a>          4.8%    57.7   2026-09-15    7% ▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.3%    60.6   2026-03-26   19% ▇▇
-prior                   pull toward the middle                   49.7                 2% ▇
-                        weighted average                       = 61.1
+<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  19.1%    62.9   2025-11-18   28% ▇▇▇
+                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  23.8%    60.2   2025-11-18   27% ▇▇▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-flash.json">LibriSpeech test-clean WER</a>       1.6%    60.6   2026-09-15   18% ▇▇
+                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-flash.json">FLEURS English test WER</a>          4.8%    57.5   2026-09-15    8% ▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.3%    60.6   2026-03-26   17% ▇▇
+prior                   pull toward the middle                   49.8                 2% ▇
+                        weighted average                       = 60.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,7 +33,7 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version               needs  score
-fp32 · nvidia only  ~4.39GB   61.1
+fp32 · nvidia only  ~4.39GB   60.7
 </pre>
 
 ```sh

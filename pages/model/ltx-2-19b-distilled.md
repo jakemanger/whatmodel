@@ -6,7 +6,7 @@
 
 Lightricks · released 2026-01 · 19B params · ltx-2-community
 
-**score 46.1** ±7.8 · #52 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.1** ±7.8 · #53 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  42.4%    44.7   2026-08-10   74% ▇▇▇▇▇▇▇▇▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  42.4%    44.8   2026-08-10   74% ▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                26% ▇▇▇
                         weighted average                       = 46.1
 </pre>

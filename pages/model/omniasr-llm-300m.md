@@ -6,7 +6,7 @@
 
 Meta · released 2025-11 · 1.63B params · apache-2.0
 
-**score 52.1** ±2.6 · #67 of 117 · from 5 benchmark results across 4 sources
+**score 52.4** ±2.4 · #67 of 117 · from 5 benchmark results across 4 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        9.3%    49.0   2026-03-26   66% ▇▇▇▇▇▇▇▇
-<a name="speech-omniasr-paper-bysa"></a>Omnilingual ASR: Open…  <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · FLEUR…</a>   7.8%    57.7   2025-11-12   13% ▇▇
-                        <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · Commo…</a>   7.1%    63.1   2025-11-12    9% ▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  33.0%    59.9   2025-11-13    5% ▇
-<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  22.1%    50.8   2026-08-15    3% ▇
-prior                   pull toward the middle                   49.7                 3% ▇
-                        weighted average                       = 52.1
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        9.3%    49.6   2026-03-26   69% ▇▇▇▇▇▇▇▇
+<a name="speech-omniasr-paper-bysa"></a>Omnilingual ASR: Open…  <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · FLEUR…</a>   7.8%    57.9   2025-11-12   12% ▇
+                        <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · Commo…</a>   7.1%    63.1   2025-11-12    8% ▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  33.0%    59.6   2025-11-13    5% ▇
+<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  22.1%    51.2   2026-08-15    3% ▇
+prior                   pull toward the middle                   49.8                 2% ▇
+                        weighted average                       = 52.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,7 +33,7 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version    needs  score
-bf16     ~4.41GB   52.1
+bf16     ~4.41GB   52.4
 </pre>
 
 ```sh

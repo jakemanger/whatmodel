@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · 5B params · apache-2.0
 
-**score 49.1** ±3.8 · #46 of 87 · from 5 benchmark results across 5 sources
+**score 49.3** ±3.8 · #46 of 87 · from 5 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,18 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-gap-target-bench"></a>Target-Bench: Can Vid…  <a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT plannin…</a>   8.4%    47.8   2026-04-15   32% ▇▇▇▇
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  44.4%    48.9   2026-08-10   18% ▇▇
-<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric…</a>  78.2%    53.2   2026-08-06   18% ▇▇
-<a name="visual-mechverse"></a>MechVerse: Evaluating…  <a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I…</a>  65.6%    51.5   2026-05-14   16% ▇▇
-<a name="visual-phyground"></a>PhyGround: Benchmarki…  <a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evalu…</a>  52.6%    41.8   2026-05-11   10% ▇
+<a name="visual-gap-target-bench"></a>Target-Bench: Can Vid…  <a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT plannin…</a>   8.4%    47.9   2026-04-15   32% ▇▇▇▇
+<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric…</a>  78.2%    53.5   2026-08-06   18% ▇▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  44.4%    49.0   2026-08-10   18% ▇▇
+<a name="visual-mechverse"></a>MechVerse: Evaluating…  <a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I…</a>  65.6%    51.8   2026-05-14   16% ▇▇
+<a name="visual-phyground"></a>PhyGround: Benchmarki…  <a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evalu…</a>  52.6%    42.0   2026-05-11   10% ▇
 prior                   pull toward the middle                   49.9                 6% ▇
-                        weighted average                       = 49.1
+                        weighted average                       = 49.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Target-Bench: Can Video World Models Achieve Mapless Path Planning with Semantic Targets? ([CC-BY-4.0](../../licenses/visual-gap-target-bench.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MechVerse: Evaluating Physical Motion Consistency in Video Generation Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · PhyGround: Benchmarking Physical Reasoning in Generative World Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Target-Bench: Can Video World Models Achieve Mapless Path Planning with Semantic Targets? ([CC-BY-4.0](../../licenses/visual-gap-target-bench.txt)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · MechVerse: Evaluating Physical Motion Consistency in Video Generation Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · PhyGround: Benchmarking Physical Reasoning in Generative World Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 <details><summary>Not counted (1)</summary>
 
@@ -42,11 +42,11 @@ api  · price unknown · [fal.ai](https://fal.ai/models/fal-ai/wan/v2.2-5b/text-
 
 <pre>
 version                               needs  score
-bf16 · nvidia only                  ~12.5GB   49.1
-q8 · mac only                        ~6.5GB   49.1
-bf16 · mac only                     ~12.5GB   49.1
-fp16 + umt5 q8_0 (sd.cpp)           ~21.4GB   49.1
-gguf-q4_k_m + umt5 q4_k_m (sd.cpp)  ~10.7GB   49.1
+bf16 · nvidia only                  ~12.5GB   49.3
+q8 · mac only                        ~6.5GB   49.3
+bf16 · mac only                     ~12.5GB   49.3
+fp16 + umt5 q8_0 (sd.cpp)           ~21.4GB   49.3
+gguf-q4_k_m + umt5 q4_k_m (sd.cpp)  ~10.7GB   49.3
 </pre>
 
 ```sh

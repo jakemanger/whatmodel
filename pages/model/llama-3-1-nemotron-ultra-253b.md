@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-04 · 253B params · nvidia-open-model
 
-**score 56.3** ±2.2 · #185 of 549 · from 3 benchmark results across 3 sources
+**score 56.8** ±1.5 · #181 of 549 · from 9 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,30 +14,30 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1347.6    57.3   2026-10-02   57% ▇▇▇▇▇▇▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1139.8    56.3   2026-05-10   28% ▇▇▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                          56.7%    52.2   2025-06-14   12% ▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 56.3
+<a name="report-2505.00949v5"></a>NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>               76.0%    57.6   2025-09-09   17% ▇▇
+                        <a href="https://arxiv.org/html/2505.00949v5">AIME 2025 (lab)</a>                  72.5%    58.7   2025-09-09   11% ▇
+                        <a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (lab)</a>                  80.8%    60.0   2025-09-09   10% ▇
+                        <a href="https://arxiv.org/html/2505.00949v5">Arena-Hard (version/judge uns…</a>   87.0%    52.8   2025-09-09    6% ▇
+                        <a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>                   97.0%    55.5   2025-09-09    6% ▇
+                        <a href="https://arxiv.org/html/2505.00949v5">IFEval (aggregation unspecifi…</a>   88.9%    53.5   2025-09-09    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1347.6    57.4   2026-10-02   28% ▇▇▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1139.8    56.3   2026-05-10   14% ▇▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                          56.7%    52.3   2025-06-14    6% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 56.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
+<sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2505.00949v5.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
 
-<details><summary>Not counted (9)</summary>
+<details><summary>Not counted (3)</summary>
 
 <pre>
 source                  test                            score  why
 Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  10.0%  failed run: No function call was ever emitted: 0.00% on every call-producing category and 100% only on Irrelevance Detection, which rewards not calling. The 10% overall is just the irrelevance weight.
-NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">AIME 2024</a>                       80.8%  too few models have it yet
-NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">AIME 2025</a>                       72.5%  too few models have it yet
-NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">Arena-Hard (version/judge uns…</a>  87.0%  too few models have it yet
 NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">BFCL v2 Live</a>                    74.1%  too few models have it yet
-NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond</a>                    76.0%  too few models have it yet
-NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">IFEval (aggregation unspecifi…</a>  88.9%  too few models have it yet
 NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">LiveCodeBench 2024-08 to 2025…</a>  66.3%  too few models have it yet
-NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">MATH-500</a>                        97.0%  too few models have it yet
 </pre>
 
 </details>
@@ -48,8 +48,8 @@ NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">MATH-500</
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~152.3GB   56.3
-2-bit ud-q2_k_xl   ~76.4GB   56.3
+4-bit ud-q4_k_xl  ~152.3GB   56.8
+2-bit ud-q2_k_xl   ~76.4GB   56.8
 </pre>
 
 ```sh

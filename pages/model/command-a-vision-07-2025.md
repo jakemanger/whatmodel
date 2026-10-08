@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="first-party-cohere-scores"></a>Cohere vendor-reporte…  <a href="https://cohere.com/blog/command-a-plus">CharXiv (reasoning questions)…</a>  46.9%    73.7   2026-05-20   69% ▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                31% ▇▇▇▇
+<a name="first-party-cohere-scores"></a>Cohere vendor-reporte…  <a href="https://cohere.com/blog/command-a-plus">CharXiv (reasoning questions)…</a>  46.9%    73.6   2026-05-20   68% ▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                32% ▇▇▇▇
                         weighted average                       = 66.2
 </pre>
 

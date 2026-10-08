@@ -6,7 +6,7 @@
 
 OpenAI · released 2022-09 · 0.769B params · apache-2.0
 
-**score 45.8** ±2.3 · #88 of 117 · from 13 benchmark results across 9 sources
+**score 46.9** ±2.2 · #88 of 117 · from 13 benchmark results across 9 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,21 +16,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-medium.json">LibriSpeech test-clean WER</a>       2.6%    47.9   2026-09-15   21% ▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-medium.json">FLEURS English test WER</a>          4.6%    58.8   2026-09-15    9% ▇
-<a name="speech-omniasr-paper-bysa"></a>Omnilingual ASR: Open…  <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · FLEUR…</a>  47.8%    33.1   2025-11-12   11% ▇
-                        <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · Commo…</a>  87.9%    33.0   2025-11-12    7% ▇
-<a name="speech-stt-liteasr-report-ccby"></a>LiteASR                 <a href="https://arxiv.org/html/2502.20583v2">LiteASR paper · ESB 8-set ave…</a>  14.8%    49.2   2025-02-27   15% ▇▇
-<a name="speech-stt-peste-apache"></a>PESTE · Persian Speec…  <a href="https://github.com/ArmanJR/PESTE-Benchmark/blob/4ca05cd34f90342d76d12d9e8074e7a26de97e96/generated/leaderboard.csv">PESTE · Persian FLEURS (fa_ir…</a>  17.0%    46.5   2026-08-17   11% ▇
-<a name="speech-stt-bavarian-betthupferl-mit"></a>German dialect ASR Be…  <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  18.3%    44.1   2026-08-24    6% ▇
-                        <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  43.1%    48.7   2026-08-24    3% ▇
-<a name="speech-stt-turkasr-bench-mit"></a>Turkish ASR Leaderboa…  <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sour…</a>  16.1%    52.3   2026-09-25    6% ▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  45.6%    42.7   2025-01-12    4% ▇
-<a name="speech-stt-afrispeech200-report-ccby"></a>AfriSpeech-200          <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 Afri…</a>  33.2%    47.7   2023-09-30    3% ▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  12.0%    37.6   2024-12-09    1% ▇
-                        <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       3.9%    26.1   2024-12-09    1% ▇
-prior                   pull toward the middle                   49.7                 2% ▇
-                        weighted average                       = 45.8
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-medium.json">LibriSpeech test-clean WER</a>       2.6%    48.7   2026-09-15   21% ▇▇▇
+                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-medium.json">FLEURS English test WER</a>          4.6%    58.5   2026-09-15   10% ▇
+<a name="speech-omniasr-paper-bysa"></a>Omnilingual ASR: Open…  <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · FLEUR…</a>  47.8%    34.6   2025-11-12   10% ▇
+                        <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · Commo…</a>  87.9%    34.4   2025-11-12    7% ▇
+<a name="speech-stt-liteasr-report-ccby"></a>LiteASR                 <a href="https://arxiv.org/html/2502.20583v2">LiteASR paper · ESB 8-set ave…</a>  14.8%    49.6   2025-02-27   15% ▇▇
+<a name="speech-stt-peste-apache"></a>PESTE · Persian Speec…  <a href="https://github.com/ArmanJR/PESTE-Benchmark/blob/4ca05cd34f90342d76d12d9e8074e7a26de97e96/generated/leaderboard.csv">PESTE · Persian FLEURS (fa_ir…</a>  17.0%    47.6   2026-08-17   12% ▇
+<a name="speech-stt-bavarian-betthupferl-mit"></a>German dialect ASR Be…  <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  18.3%    45.4   2026-08-24    6% ▇
+                        <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  43.1%    49.5   2026-08-24    3% ▇
+<a name="speech-stt-turkasr-bench-mit"></a>Turkish ASR Leaderboa…  <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sour…</a>  16.1%    52.8   2026-09-25    6% ▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  45.6%    44.1   2025-01-12    4% ▇
+<a name="speech-stt-afrispeech200-report-ccby"></a>AfriSpeech-200          <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 Afri…</a>  33.2%    48.9   2023-09-30    2% ▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  12.0%    38.8   2024-12-09    1% ▇
+                        <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       3.9%    26.8   2024-12-09    1% ▇
+prior                   pull toward the middle                   49.8                 2% ▇
+                        weighted average                       = 46.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -41,8 +41,8 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version   needs  score
-fp16     ~2.3GB   45.8
-fp32     ~4.2GB   45.8
+fp16     ~2.3GB   46.9
+fp32     ~4.2GB   46.9
 </pre>
 
 ```sh

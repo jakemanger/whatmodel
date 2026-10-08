@@ -6,7 +6,7 @@
 
 Meta · released 2023-05 · 0.96B params · cc-by-nc-4.0
 
-**score -7.5** ±4.4 · #117 of 117 · from 3 benchmark results across 2 sources
+**score -6.7** ±4.3 · #117 of 117 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  39.8%   -10.5   2026-03-26   84% ▇▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench   <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  30.2%   -34.1   2024-12-09    5% ▇
-                      <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>      15.4%   -16.1   2024-12-09    4% ▇
-prior                 pull toward the middle                   49.7                 7% ▇
-                      weighted average                       = -7.5
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  39.8%    -9.9   2026-03-26   84% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench   <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  30.2%   -35.9   2024-12-09    4% ▇
+                      <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>      15.4%   -11.4   2024-12-09    4% ▇
+prior                 pull toward the middle                   49.8                 7% ▇
+                      weighted average                       = -6.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                 pull toward the middle                   49.7             
 
 <pre>
 version    needs  score
-fp32     ~5.11GB   -7.5
+fp32     ~5.11GB   -6.7
 </pre>
 
 ```sh

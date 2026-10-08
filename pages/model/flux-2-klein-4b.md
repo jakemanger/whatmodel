@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2026-01 · 4B params · apache-2.0
 
-**score 51.5** ±1.6 · #71 of 136 · from 4 benchmark results across 3 sources
+**score 51.6** ±1.6 · #71 of 136 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -21,7 +21,7 @@ source                  test                             score  implies  date   
 <a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   84.3%    51.3   2026-08-25   16% ▇▇
 <a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1031.0    59.3   2026-03-30    6% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 51.5
+                        weighted average                        = 51.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,11 +36,11 @@ api (Cloudflare) · $0.0011/image · [developers.cloudflare.com](https://develop
 
 <pre>
 version                                 needs  score
-bf16 (cpu offload) · nvidia only      ~10.1GB   51.5
-bf16 · nvidia only                    ~10.1GB   51.5
-mlx-4bit · mac only                    ~2.9GB   51.5
-bf16 + Qwen3 4B bf16 (sd.cpp)         ~19.9GB   51.5
-gguf-q4_0 + Qwen3 4B q4_k_m (sd.cpp)   ~6.9GB   51.5
+bf16 (cpu offload) · nvidia only      ~10.1GB   51.6
+bf16 · nvidia only                    ~10.1GB   51.6
+mlx-4bit · mac only                    ~2.9GB   51.6
+bf16 + Qwen3 4B bf16 (sd.cpp)         ~19.9GB   51.6
+gguf-q4_0 + Qwen3 4B q4_k_m (sd.cpp)   ~6.9GB   51.6
 </pre>
 
 ```sh

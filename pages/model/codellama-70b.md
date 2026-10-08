@@ -6,7 +6,7 @@
 
 Meta · released 2024-01 · 68.98B params · llama2
 
-**score 41.7** ±1.5 · #358 of 549 · from 3 benchmark results across 2 sources
+**score 41.5** ±1.2 · #361 of 549 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                 53.0%    40.4   2024-01-31   52% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                      62.4%    43.3   2024-01-31   20% ▇▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  52.8%    42.9   2024-05-07   27% ▇▇▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  52.8%    43.3   2024-05-07   23% ▇▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  28.2%    39.4   2024-05-07   15% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  32.8%    41.4   2024-05-07   13% ▇▇
+<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                 53.0%    40.3   2024-01-31   35% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                      62.4%    43.1   2024-01-31   14% ▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 41.7
+                        weighted average                       = 41.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt))</sub>
+<sub>Licences: Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
@@ -31,8 +33,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit q4_k_m  ~41GB   41.7
-8-bit q8_0    ~73GB   41.7
+4-bit q4_k_m  ~41GB   41.5
+8-bit q8_0    ~73GB   41.5
 </pre>
 
 ```sh

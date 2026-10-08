@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-gap-target-bench"></a>Target-Bench: Can Vid…  <a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT plannin…</a>   5.9%    41.7   2026-04-15   79% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                21% ▇▇
+<a name="visual-gap-target-bench"></a>Target-Bench: Can Vid…  <a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT plannin…</a>   5.9%    41.8   2026-04-15   80% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                20% ▇▇
                         weighted average                       = 43.4
 </pre>
 

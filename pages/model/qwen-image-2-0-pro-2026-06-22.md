@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-06 · proprietary
 
-**score 66.0** ±1.9 · #16 of 136 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 65.9** ±1.8 · #16 of 136 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -19,7 +19,7 @@ source                  test                     score  implies  date        wei
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1191.7    66.4   2026-09-24   79% ▇▇▇▇▇▇▇▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1303.4    65.5   2026-09-30   20% ▇▇
 prior                   pull toward the middle            49.9                 1% ▇
-                        weighted average                = 66.0
+                        weighted average                = 65.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

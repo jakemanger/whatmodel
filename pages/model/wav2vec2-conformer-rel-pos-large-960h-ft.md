@@ -6,7 +6,7 @@
 
 Meta · released 2022-04 · 0.62B params · apache-2.0
 
-**score 13.8** ±4.6 · #113 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 13.1** ±3.1 · #111 of 117 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,20 +16,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  23.3%    10.7   2026-03-26   92% ▇▇▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle                   49.7                 8% ▇
-                      weighted average                       = 13.8
+<a name="first-party-meta-asr-cards"></a>Meta                  <a href="https://huggingface.co/facebook/wav2vec2-conformer-rel-pos-large-960h-ft/blob/ca7f36f527f234b3cd4f05ecee30361f971e8e33/README.md#evaluation">LibriSpeech test-other WER (l…</a>   3.8%    11.8   2022-06-15   40% ▇▇▇▇▇
+                      <a href="https://huggingface.co/facebook/wav2vec2-conformer-rel-pos-large-960h-ft/blob/ca7f36f527f234b3cd4f05ecee30361f971e8e33/README.md#evaluation">LibriSpeech test-clean WER (l…</a>   1.8%    13.3   2022-06-15   14% ▇▇
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  23.3%    11.1   2026-03-26   42% ▇▇▇▇▇
+prior                 pull toward the middle                   49.8                 4% ▇
+                      weighted average                       = 13.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
+<sub>Licences: Meta ([Apache-2.0](https://huggingface.co/facebook/wav2vec2-base-960h/blob/22aad52d435eb6dbaf354bdad9b0da84ce7d6156/README.md)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
 version    needs  score
-fp32     ~3.48GB   13.8
+fp32     ~3.48GB   13.1
 </pre>
 
 ```sh

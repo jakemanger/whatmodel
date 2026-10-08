@@ -6,28 +6,33 @@
 
 Ai2 · released 2024-02 · 6.89B params · apache-2.0
 
-**score 26.7** ±2.8 · #513 of 549 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.5** ±2.0 · #476 of 549 · from 6 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1073.6    25.9   2026-10-02   96% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            50.0                 4% ▇
-                        weighted average                = 26.7
+source                  test                             score  implies  date        weight
+<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4#A5.T8">GSM8K (lab)</a>                      11.0%    36.7   2024-06-07   15% ▇▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">BIG-Bench Hard (lab)</a>             35.8%    39.1   2024-06-07   13% ▇▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (la…</a>   27.8%    37.5   2024-06-07   12% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">MMLU (lab)</a>                       46.1%    46.9   2024-06-07    6% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: TyDiQA gold passage, …</a>   21.7%    25.1   2024-06-07    4% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1073.6    26.4   2026-10-02   48% ▇▇▇▇▇▇
+prior                   pull toward the middle                    50.0                 2% ▇
+                        weighted average                        = 32.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 download         size  score
-16-bit bf16  ~13.78GB   26.7
+16-bit bf16  ~13.78GB   32.5
 </pre>
 
 ```sh

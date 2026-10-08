@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-05 · 16B params · openmdw-1.1
 
-**score 44.7** ±3.8 · #55 of 87 · from 4 benchmark results across 4 sources
+**score 44.7** ±3.7 · #55 of 87 · from 4 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                            score  implies  date    
 <a name="visual-rapid-i2v-realism"></a>Rapidata/image-to-vid…  <a href="https://huggingface.co/datasets/Rapidata/image-to-video-realism/blob/d7abf89e71cb45fff0b08d70df389026cb78024f/README.md#overall-ranking">Rapidata image-to-video reali…</a>  717.1    36.1   2026-10-01   39% ▇▇▇▇▇
 <a name="visual-rapid-relative-camera"></a>Rapidata/relative-cam…  <a href="https://huggingface.co/datasets/Rapidata/relative-camera-movement-human-preference-900k/blob/e03ac787593bada12ac6b088d3d35da4716517c7/README.md#overall-ranking-elo-on-the-alignment-leaderboard">Rapidata relative camera move…</a>  717.5    49.1   2026-09-29   32% ▇▇▇▇
 <a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  44.6%    49.8   2026-08-10   17% ▇▇
-<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>  29.1%    57.1   2026-06-17    6% ▇
+<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>  29.1%    57.2   2026-06-17    6% ▇
 prior                   pull toward the middle                   49.9                 6% ▇
                         weighted average                       = 44.7
 </pre>

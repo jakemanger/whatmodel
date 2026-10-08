@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-12 · 236B params (21B active) · deepseek
 
-**score 55.2** ±2.0 · #202 of 549 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 55.5** ±1.9 · #199 of 549 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,10 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>   72.2%    56.1   2024-12-10   50% ▇▇▇▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1323.4    54.6   2026-10-02   49% ▇▇▇▇▇▇
+<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>   72.2%    56.2   2024-12-10   45% ▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1323.4    54.7   2026-10-02   44% ▇▇▇▇▇
+<a name="first-party-deepseek-scores"></a>DeepSeek vendor-repor…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2.5-1210/blob/6f134cbe88cb9284a8ce696e8ac8eefd0bc24ede/README.md#1-introduction">MATH-500 (lab)</a>                   82.8%    57.6   2024-12-10    9% ▇
 prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 55.2
+                        weighted average                        = 55.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,8 +29,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download           size  score
-4-bit q4_k_m  ~142.45GB   55.2
-2-bit iq2_m    ~76.92GB   55.2
+4-bit q4_k_m  ~142.45GB   55.5
+2-bit iq2_m    ~76.92GB   55.5
 </pre>
 
 ```sh

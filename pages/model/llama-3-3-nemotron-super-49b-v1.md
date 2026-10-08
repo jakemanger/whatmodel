@@ -6,29 +6,45 @@
 
 NVIDIA · released 2025-03 · 49.9B params · nvidia-open-model-license
 
-**score 54.9** ±2.8 · #203 of 549 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.1** ±1.7 · #214 of 549 · from 7 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1327.8    55.1   2026-10-02   96% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            50.0                 4% ▇
-                        weighted average                = 54.9
+source                  test                             score  implies  date        weight
+<a name="report-2505.00949v5"></a>NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>               66.7%    53.3   2025-09-09   21% ▇▇▇
+                        <a href="https://arxiv.org/html/2505.00949v5">AIME 2025 (lab)</a>                  60.0%    52.2   2025-09-09   13% ▇▇
+                        <a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (lab)</a>                  67.5%    50.9   2025-09-09   12% ▇
+                        <a href="https://arxiv.org/html/2505.00949v5">Arena-Hard (version/judge uns…</a>   88.3%    58.1   2025-09-09    8% ▇
+                        <a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>                   96.6%    55.4   2025-09-09    7% ▇
+                        <a href="https://arxiv.org/html/2505.00949v5">IFEval (aggregation unspecifi…</a>   89.2%    57.4   2025-09-09    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1327.8    55.2   2026-10-02   34% ▇▇▇▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 54.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2505.00949v5.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source  test                            score  why
+NVIDIA  <a href="https://arxiv.org/html/2505.00949v5">BFCL v2 Live</a>                    73.7%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2505.00949v5">LiveCodeBench 2024-08 to 2025…</a>  45.5%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
 <pre>
 download              size  score
-4-bit q4_k_m      ~30.22GB   54.9
-2-bit ud-q2_k_xl  ~19.31GB   54.9
+4-bit q4_k_m      ~30.22GB   54.1
+2-bit ud-q2_k_xl  ~19.31GB   54.1
 </pre>
 
 ```sh

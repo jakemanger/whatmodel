@@ -6,7 +6,7 @@
 
 Xwin-LM · released 2023-09 · 70B params · llama2
 
-**score 43.3** ±2.0 · #341 of 549 · from 5 benchmark results across 1 source
+**score 43.3** ±1.9 · #344 of 549 · from 5 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  65.6%    44.8   2023-11-20   44% ▇▇▇▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            65.0%    45.2   2023-11-20   17% ▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           65.5%    47.5   2023-11-20   14% ▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  38.2%    32.1   2023-11-20   13% ▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       66.1%    40.6   2023-11-20    9% ▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  65.6%    44.3   2023-11-20   46% ▇▇▇▇▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            65.0%    44.7   2023-11-20   18% ▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           65.5%    46.9   2023-11-20   15% ▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       66.1%    40.2   2023-11-20   10% ▇
+        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  38.2%    31.6   2023-11-20    9% ▇
 prior   pull toward the middle                   50.0                 2% ▇
         weighted average                       = 43.3
 </pre>

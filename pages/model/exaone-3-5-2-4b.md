@@ -6,7 +6,7 @@
 
 LG AI Research · released 2024-12 · 2.41B params · exaone
 
-**score 32.4** ±3.9 · #476 of 549 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 32.8** ±3.8 · #473 of 549 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  33.4%    28.0   2026-08-11   73% ▇▇▇▇▇▇▇▇▇
-<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">IFEval (aggregation unspecifi…</a>  73.6%    42.6   2024-12-01   20% ▇▇
-prior                   pull toward the middle                   50.0                 7% ▇
-                        weighted average                       = 32.4
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  33.4%    28.4   2026-08-11   73% ▇▇▇▇▇▇▇▇▇
+<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">IFEval (aggregation unspecifi…</a>  73.6%    42.8   2024-12-01   21% ▇▇
+prior                   pull toward the middle                   50.0                 6% ▇
+                        weighted average                       = 32.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,8 +30,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~1.95GB   32.4
-8-bit q8_0    ~3.39GB   32.4
+4-bit q4_k_m  ~1.95GB   32.8
+8-bit q8_0    ~3.39GB   32.8
 </pre>
 
 ```sh

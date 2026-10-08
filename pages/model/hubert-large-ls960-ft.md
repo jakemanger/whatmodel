@@ -6,7 +6,7 @@
 
 Meta · released 2021-06 · 0.32B params · apache-2.0
 
-**score 16.4** ±4.4 · #109 of 117 · from 3 benchmark results across 2 sources
+**score 15.7** ±3.8 · #109 of 117 · from 4 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,22 +16,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  22.7%    11.7   2026-03-26   84% ▇▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench   <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  14.7%    23.5   2024-12-09    5% ▇
-                      <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       2.1%    46.9   2024-12-09    4% ▇
-prior                 pull toward the middle                   49.7                 7% ▇
-                      weighted average                       = 16.4
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  22.7%    12.0   2026-03-26   66% ▇▇▇▇▇▇▇▇
+<a name="first-party-meta-asr-cards"></a>Meta                  <a href="https://huggingface.co/facebook/hubert-large-ls960-ft/blob/ece5fabbf034c1073acae96d5401b25be96709d8/README.md#evaluation">LibriSpeech test-clean WER (l…</a>   1.9%    12.3   2022-05-24   22% ▇▇▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench   <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  14.7%    24.2   2024-12-09    4% ▇
+                      <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       2.1%    46.0   2024-12-09    3% ▇
+prior                 pull toward the middle                   49.8                 6% ▇
+                      weighted average                       = 15.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>
+<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Meta ([Apache-2.0](https://huggingface.co/facebook/wav2vec2-base-960h/blob/22aad52d435eb6dbaf354bdad9b0da84ce7d6156/README.md)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>
 
 ## How to run it
 
 <pre>
 version    needs  score
-fp32     ~2.04GB   16.4
+fp32     ~2.04GB   15.7
 </pre>
 
 ```sh

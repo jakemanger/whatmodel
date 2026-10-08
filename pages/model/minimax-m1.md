@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-06 · 456B params (45.9B active) · apache-2.0
 
-**score 58.9** ±2.8 · #161 of 549 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.9** ±2.8 · #162 of 549 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

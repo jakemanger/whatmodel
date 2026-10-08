@@ -6,7 +6,7 @@
 
 Playground · released 2023-12 · 2.57B params · playground-v2-community
 
-**score 41.7** ±3.5 · #91 of 136 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.7** ±3.5 · #92 of 136 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

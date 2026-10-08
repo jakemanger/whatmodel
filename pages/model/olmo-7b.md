@@ -6,24 +6,29 @@
 
 Allen Institute for AI · released 2024-02 · 6.89B params · apache-2.0
 
-**score 36.9** ±1.2 · #428 of 549 · from 8 benchmark results across 1 source
+**score 34.1** ±1.1 · #461 of 549 · from 13 benchmark results across 1 source
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge (lab)</a>     48.5%    37.0   2024-06-07   30% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA (lab)</a>        50.4%    35.5   2024-06-07   17% ▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande (lab)</a>        67.9%    36.9   2024-06-07   17% ▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag (lab)</a>         76.4%    38.8   2024-06-07    9% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy (lab)</a>          65.4%    34.2   2024-06-07    8% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ (lab)</a>             73.4%    37.4   2024-06-07    7% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">SciQ (lab)</a>              93.8%    37.7   2024-06-07    7% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">PIQA (lab)</a>              78.4%    38.3   2024-06-07    5% ▇
-prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 36.9
+source                  test                            score  implies  date        weight
+<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge (lab)</a>             48.5%    35.2   2024-06-07   25% ▇▇▇
+                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA (lab)</a>                50.4%    33.7   2024-06-07   15% ▇▇
+                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande (lab)</a>                67.9%    35.1   2024-06-07   14% ▇▇
+                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag (lab)</a>                 76.4%    36.9   2024-06-07    8% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy (lab)</a>                  65.4%    32.4   2024-06-07    8% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">SciQ (lab)</a>                      93.8%    35.8   2024-06-07    6% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ (lab)</a>                     73.4%    35.6   2024-06-07    6% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">GSM8K (lab)</a>                      8.5%    30.1   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">PIQA (lab)</a>                      78.4%    36.4   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">BIG-Bench Hard (lab)</a>            31.7%    27.7   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (la…</a>  21.4%    29.3   2024-06-07    3% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">MMLU (lab)</a>                      28.3%    18.5   2024-06-07    2% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: TyDiQA gold passage, …</a>  32.3%    41.7   2024-06-07    1% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 34.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,7 +41,7 @@ prior                   pull toward the middle           50.0                 1%
 
 <pre>
 download        size  score
-4-bit fp32  ~27.55GB   36.9
+4-bit fp32  ~27.55GB   34.1
 </pre>
 
 ```sh

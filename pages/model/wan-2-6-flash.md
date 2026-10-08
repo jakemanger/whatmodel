@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-vwg-bench"></a>From Evaluation to En…  <a href="https://arxiv.org/html/2609.11242v1#S4.T2">VWG-Bench think-with-video re…</a>  56.0%    56.3   2026-09-10   80% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                20% ▇▇
+<a name="visual-vwg-bench"></a>From Evaluation to En…  <a href="https://arxiv.org/html/2609.11242v1#S4.T2">VWG-Bench think-with-video re…</a>  56.0%    56.3   2026-09-10   81% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                19% ▇▇
                         weighted average                       = 55.1
 </pre>
 

@@ -6,20 +6,23 @@
 
 Ant Group · released 2026-09 · 6B params · apache-2.0
 
-**score 65.0** ±36.8 · #1 of 2 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 35.0** ±14.7 · #2 of 2 · from 5 benchmark results across 1 source
 
-Score within the [DPG-Bench](https://whatmodel.sh/image?set=dpg-bench%40visual-llada-image&score=set) comparison set only.
+Score within the [CVTG-2K word accuracy](https://whatmodel.sh/image?set=cvtg-2k-word-accuracy%40visual-llada-image&score=set) comparison set only.
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="visual-llada-image"></a>LLaDA-Image: Building…  <a href="https://arxiv.org/html/2609.03796v1#S5.T7">GenEval (lab)</a>           82.0%   -60.6   2026-09-03   27% ▇▇▇
-                        <a href="https://arxiv.org/html/2609.03796v1#S5.T8">DPG-Bench (lab)</a>         88.5%   -44.9   2026-09-03   12% ▇
-prior                   pull toward the middle           50.0                61% ▇▇▇▇▇▇▇
-                        weighted average               = 65.0
+source                  test                         score  implies  date        weight
+<a name="visual-llada-image"></a>LLaDA-Image: Building…  <a href="https://arxiv.org/html/2609.03796v1#S5.T8">DPG-Bench (lab)</a>              88.5%    60.2   2026-09-03   17% ▇▇
+                        <a href="https://arxiv.org/html/2609.03796v1#S5.T5">LongText-Bench (CN) (lab)</a>    91.9%    57.1   2026-09-03   16% ▇▇
+                        <a href="https://arxiv.org/html/2609.03796v1#S5.T7">GenEval (lab)</a>                82.0%    29.3   2026-09-03    7% ▇
+                        <a href="https://arxiv.org/html/2609.03796v1#S5.T6">CVTG-2K word accuracy (lab)</a>  84.0%    16.9   2026-09-03    6% ▇
+                        <a href="https://arxiv.org/html/2609.03796v1#S5.T5">LongText-Bench (EN) (lab)</a>    89.9%    11.8   2026-09-03    5% ▇
+prior                   pull toward the middle                50.0                49% ▇▇▇▇▇▇
+                        weighted average                    = 35.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,9 +33,9 @@ prior                   pull toward the middle           50.0                61%
 
 <pre>
 version                                     needs  score
-bf16 · nvidia only                        ~59.6GB   65.0
-f16 + LLaDA2 text encoder q8_0 (sd.cpp)   ~38.5GB   65.0
-gguf-q8_0 + LLaDA2 text encoder q4_k (s…  ~21.6GB   65.0
+bf16 · nvidia only                        ~59.6GB   35.0
+f16 + LLaDA2 text encoder q8_0 (sd.cpp)   ~38.5GB   35.0
+gguf-q8_0 + LLaDA2 text encoder q4_k (s…  ~21.6GB   35.0
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-05 · 4.15B params · mit
 
-**score 26.0** ±3.3 · #517 of 549 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.4** ±3.0 · #489 of 549 · from 6 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,20 +14,25 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  881.1    24.8   2026-10-02   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 5% ▇
-                        weighted average                       = 26.0
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  881.1    26.5   2026-10-02   80% ▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2404.14219v3-phi3"></a>Phi-3 Technical Report  <a href="https://arxiv.org/html/2404.14219v3#S7">MMMU (val) (lab)</a>                40.4%    42.6   2024-05-23    9% ▇
+                        <a href="https://arxiv.org/html/2404.14219v3#S7">MathVista (testmini) (lab)</a>      44.5%    58.7   2024-05-23    4% ▇
+                        <a href="https://arxiv.org/html/2404.14219v3#S7">TextVQA (lab)</a>                   70.9%    61.1   2024-05-23    2% ▇
+                        <a href="https://arxiv.org/html/2404.14219v3#S7">AI2D test (lab)</a>                 76.7%    69.5   2024-05-23    2% ▇
+                        <a href="https://arxiv.org/html/2404.14219v3#S7">ChartQA (lab)</a>                   81.4%   212.1   2024-05-23    0% ▇
+prior                   pull toward the middle                   50.0                 4% ▇
+                        weighted average                       = 31.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Phi-3 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 download                      size  score
-16-bit bf16 · nvidia only  ~8.29GB   26.0
+16-bit bf16 · nvidia only  ~8.29GB   31.4
 </pre>
 
 ```sh

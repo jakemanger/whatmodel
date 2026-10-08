@@ -19,7 +19,7 @@ source                  test                             score  implies  date   
 <a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>  1009.0    64.3   2026-09-25   17% ▇▇
 <a name="visual-switch-bench"></a>SWITCH: Benchmarking …  <a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH interactive-interface …</a>   34.4%    60.4   2026-07-07    6% ▇
 <a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>   35.7%    65.8   2026-08-26    5% ▇
-<a name="visual-mechverse"></a>MechVerse: Evaluating…  <a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I…</a>   75.9%    64.1   2026-05-14    2% ▇
+<a name="visual-mechverse"></a>MechVerse: Evaluating…  <a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I…</a>   75.9%    64.2   2026-05-14    2% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
                         weighted average                        = 66.8
 </pre>

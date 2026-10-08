@@ -6,7 +6,7 @@
 
 Meta · released 2021-06 · 0.96B params · apache-2.0
 
-**score 16.8** ±4.2 · #108 of 117 · from 4 benchmark results across 3 sources
+**score 16.2** ±3.7 · #108 of 117 · from 5 benchmark results across 4 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,23 +16,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  22.5%    11.9   2026-03-26   76% ▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-afrispeech200-report-ccby"></a>AfriSpeech-200        <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 Afri…</a>  64.1%    18.3   2023-09-30   10% ▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench   <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  14.7%    23.4   2024-12-09    5% ▇
-                      <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       2.1%    46.9   2024-12-09    4% ▇
-prior                 pull toward the middle                   49.7                 7% ▇
-                      weighted average                       = 16.8
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  22.5%    12.3   2026-03-26   62% ▇▇▇▇▇▇▇
+<a name="first-party-meta-asr-cards"></a>Meta                  <a href="https://huggingface.co/facebook/hubert-xlarge-ls960-ft/blob/86a09e67e0c8d074533992379242405825516eca/README.md#evaluation">LibriSpeech test-clean WER (l…</a>   1.8%    13.7   2023-06-27   20% ▇▇
+<a name="speech-stt-afrispeech200-report-ccby"></a>AfriSpeech-200        <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 Afri…</a>  64.1%    16.7   2023-09-30    7% ▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench   <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  14.7%    24.1   2024-12-09    3% ▇
+                      <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       2.1%    45.9   2024-12-09    3% ▇
+prior                 pull toward the middle                   49.8                 5% ▇
+                      weighted average                       = 16.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · AfriSpeech-200 ([CC BY 4.0](../../licenses/speech-stt-afrispeech200-report-ccby.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>
+<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Meta ([Apache-2.0](https://huggingface.co/facebook/wav2vec2-base-960h/blob/22aad52d435eb6dbaf354bdad9b0da84ce7d6156/README.md)) · AfriSpeech-200 ([CC BY 4.0](../../licenses/speech-stt-afrispeech200-report-ccby.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>
 
 ## How to run it
 
 <pre>
 version    needs  score
-fp32     ~5.11GB   16.8
+fp32     ~5.11GB   16.2
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2025-05 · closed weights
 
-**score 53.0** ±1.9 · #66 of 136 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.0** ±1.8 · #66 of 136 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

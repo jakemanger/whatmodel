@@ -6,7 +6,7 @@
 
 OpenAI · released 2022-09 · 0.244B params · apache-2.0
 
-**score 46.2** ±2.9 · #87 of 117 · from 6 benchmark results across 5 sources
+**score 46.9** ±2.7 · #87 of 117 · from 6 benchmark results across 5 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-small.en.json">LibriSpeech test-clean WER</a>       3.1%    43.1   2026-09-15   31% ▇▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-small.en.json">FLEURS English test WER</a>          6.1%    49.8   2026-09-15   14% ▇▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.6%    49.3   2026-03-26   36% ▇▇▇▇
-<a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>   7.0%    46.9   2026-03-19   10% ▇
-<a name="speech-stt-afrispeech200-report-ccby"></a>AfriSpeech-200          <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 Afri…</a>  41.4%    36.3   2023-09-30    5% ▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       4.0%    25.3   2024-12-09    2% ▇
-prior                   pull toward the middle                   49.7                 3% ▇
-                        weighted average                       = 46.2
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-small.en.json">LibriSpeech test-clean WER</a>       3.1%    44.3   2026-09-15   33% ▇▇▇▇
+                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-small.en.json">FLEURS English test WER</a>          6.1%    50.4   2026-09-15   16% ▇▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.6%    49.4   2026-03-26   33% ▇▇▇▇
+<a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>   7.0%    47.7   2026-03-19   10% ▇
+<a name="speech-stt-afrispeech200-report-ccby"></a>AfriSpeech-200          <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 Afri…</a>  41.4%    36.6   2023-09-30    3% ▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       4.0%    26.1   2024-12-09    1% ▇
+prior                   pull toward the middle                   49.8                 3% ▇
+                        weighted average                       = 46.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,8 +34,8 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version    needs  score
-fp16     ~1.09GB   46.2
-fp32     ~1.67GB   46.2
+fp16     ~1.09GB   46.9
+fp32     ~1.67GB   46.9
 </pre>
 
 ```sh
