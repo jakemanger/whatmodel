@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-12 · 8.66B params · apache-2.0
 
-**score 54.4** ±1.6 · #220 of 551 · from 15 benchmark results across 2 sources
+**score 54.5** ±1.6 · #214 of 551 · from 15 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,23 +14,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1321.8    54.6   2026-10-02   33% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1111.7    53.6   2026-10-02   25% ▇▇▇
-<a name="paper-2601.10611v4-molmo2"></a>Molmo2: Open Weights …  <a href="https://arxiv.org/html/2601.10611v4#S4.T6">InfographicVQA (lab)</a>             80.1%    49.9   2026-04-02    6% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MMMU (val) (lab)</a>                 53.0%    45.9   2026-04-02    6% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">CountBench (lab)</a>                 93.7%    51.8   2026-04-02    5% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">RealWorldQA (lab)</a>                77.6%    52.3   2026-04-02    4% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MathVista (testmini) (lab)</a>       58.9%    45.6   2026-04-02    3% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">DocVQA (lab)</a>                     93.2%    48.2   2026-04-02    3% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1321.8    54.8   2026-10-02   33% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1111.7    53.9   2026-10-02   26% ▇▇▇
+<a name="paper-2601.10611v4-molmo2"></a>Molmo2: Open Weights …  <a href="https://arxiv.org/html/2601.10611v4#S4.T6">InfographicVQA (lab)</a>             80.1%    49.6   2026-04-02    6% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MMMU (val) (lab)</a>                 53.0%    46.0   2026-04-02    6% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">CountBench (lab)</a>                 93.7%    51.7   2026-04-02    5% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">RealWorldQA (lab)</a>                77.6%    52.1   2026-04-02    4% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MathVista (testmini) (lab)</a>       58.9%    45.7   2026-04-02    3% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">DocVQA (lab)</a>                     93.2%    48.0   2026-04-02    3% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">VQAv2 (val) (lab)</a>                87.0%    58.5   2026-04-02    3% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-VideoCount accuracy (v…</a>   35.5%    70.2   2026-04-02    3% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Ai2 Molmo2 human preference E…</a>  1057.0    65.0   2026-04-02    3% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-CapTest dense video ca…</a>   43.2%    66.9   2026-04-02    2% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                  95.8%    81.3   2026-04-02    1% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (lab)</a>                    85.7%    75.3   2026-04-02    1% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">ChartQA (lab)</a>                    86.0%   163.2   2026-04-02    0% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-VideoCount accuracy (v…</a>   35.5%    70.3   2026-04-02    3% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Ai2 Molmo2 human preference E…</a>  1057.0    65.1   2026-04-02    3% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-CapTest dense video ca…</a>   43.2%    67.0   2026-04-02    2% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                  95.8%    81.5   2026-04-02    1% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (lab)</a>                    85.7%    75.9   2026-04-02    1% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">ChartQA (lab)</a>                    86.0%   158.1   2026-04-02    0% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 54.4
+                        weighted average                        = 54.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -41,7 +41,7 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download                      size  score
-4-bit fp32 · nvidia only  ~34.65GB   54.4
+4-bit fp32 · nvidia only  ~34.65GB   54.5
 </pre>
 
 ```sh

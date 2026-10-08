@@ -6,7 +6,7 @@
 
 Show Lab, NUS · released 2025-06 · 1.5B params · apache-2.0
 
-**score 39.5** ±3.2 · #103 of 139 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 39.7** ±3.2 · #102 of 139 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  10.1%    39.0   2026-05-14   96% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  10.1%    39.3   2026-05-14   96% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                 4% ▇
-                        weighted average                       = 39.5
+                        weighted average                       = 39.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version                                    needs  score
-official scripts (checkpoint as stored)…  ~7.9GB   39.5
+official scripts (checkpoint as stored)…  ~7.9GB   39.7
 </pre>
 
 ```sh

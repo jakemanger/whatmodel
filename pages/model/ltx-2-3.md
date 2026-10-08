@@ -6,7 +6,7 @@
 
 Lightricks · released 2026-03 · 22B params · ltx-2-community
 
-**score 36.0** ±2.6 · #70 of 87 · from 4 benchmark results across 4 sources
+**score 36.3** ±2.6 · #70 of 87 · from 4 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>  587.0    34.0   2026-05-11   75% ▇▇▇▇▇▇▇▇▇
-<a name="visual-mindworldbench"></a>MindWorldBench: Evalu…  <a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accu…</a>  11.9%    40.2   2026-09-30   10% ▇
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  38.4%    36.2   2026-08-10    7% ▇
-<a name="visual-phyground"></a>PhyGround: Benchmarki…  <a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evalu…</a>  53.8%    48.8   2026-05-11    5% ▇
+<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>  587.0    34.4   2026-05-11   75% ▇▇▇▇▇▇▇▇▇
+<a name="visual-mindworldbench"></a>MindWorldBench: Evalu…  <a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accu…</a>  11.9%    40.6   2026-09-30   10% ▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  38.4%    36.5   2026-08-10    7% ▇
+<a name="visual-phyground"></a>PhyGround: Benchmarki…  <a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evalu…</a>  53.8%    49.1   2026-05-11    5% ▇
 prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 36.0
+                        weighted average                       = 36.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,7 +34,7 @@ api (Lightricks (LTX API)) · $0.040/sec · [docs.ltx.io](https://docs.ltx.io/pr
 
 <pre>
 version                                     needs  score
-gguf-ud-q4_k_m 22B dev + Gemma 3 12B q4…  ~34.2GB   36.0
+gguf-ud-q4_k_m 22B dev + Gemma 3 12B q4…  ~34.2GB   36.3
 </pre>
 
 ```sh

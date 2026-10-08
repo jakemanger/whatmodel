@@ -6,22 +6,24 @@
 
 TII · released 2023-09 · 180B params · falcon-180b-tii-license
 
-**score 36.2** ±2.8 · #443 of 551 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 40.3** ±1.8 · #394 of 551 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1148.1    35.7   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            50.0                 3% ▇
-                        weighted average                = 36.2
+source                  test                             score  implies  date        weight
+<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>   40.0%    44.1   2024-04-24   33% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>   49.3%    41.9   2024-04-24   24% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1148.1    36.0   2026-10-02   42% ▇▇▇▇▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 40.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -29,7 +31,7 @@ prior                   pull toward the middle            50.0                 3
 
 <pre>
 download        size  score
-4-bit q4_0  ~108.5GB   36.2
+4-bit q4_0  ~108.5GB   40.3
 </pre>
 
 ```sh

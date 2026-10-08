@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-rapid-camera"></a>Rapidata/camera-movem…  <a href="https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md#overall-ranking-elo-on-the-movement-leaderboard">Rapidata camera movement (I2V)</a>  877.6    57.6   2026-09-25   39% ▇▇▇▇▇
-prior                   pull toward the middle                   49.9                61% ▇▇▇▇▇▇▇
+<a name="visual-rapid-camera"></a>Rapidata/camera-movem…  <a href="https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md#overall-ranking-elo-on-the-movement-leaderboard">Rapidata camera movement (I2V)</a>  877.6    57.8   2026-09-25   38% ▇▇▇▇▇
+prior                   pull toward the middle                   49.9                62% ▇▇▇▇▇▇▇
                         weighted average                       = 52.9
 </pre>
 

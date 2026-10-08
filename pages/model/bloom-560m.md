@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 0.559B params · bigscience-bloom-rail-1.0
 
-**score 11.9** ±1.5 · #541 of 551 · from 7 benchmark results across 2 sources
+**score 11.9** ±1.5 · #540 of 551 · from 7 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            80.4%    16.3   2023-05-31   28% ▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        47.6%    13.6   2023-05-31   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  34.1%     7.7   2023-05-31   14% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            63.7%     9.9   2023-05-31   13% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      50.4%     2.7   2023-05-31    8% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   22.1%     5.6   2023-05-31    4% ▇
-<a name="paper-2211.05100v4"></a>BLOOM: A 176B-Paramet…  <a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>                  0.8%     9.4   2023-06-27   10% ▇
+<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            80.4%    16.4   2023-05-31   28% ▇▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        47.6%    13.8   2023-05-31   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  34.1%     7.9   2023-05-31   14% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            63.7%    10.0   2023-05-31   13% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      50.4%     2.8   2023-05-31    8% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   22.1%     5.5   2023-05-31    4% ▇
+<a name="paper-2211.05100v4"></a>BLOOM: A 176B-Paramet…  <a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>                  0.8%     9.2   2023-06-27   10% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 11.9
 </pre>

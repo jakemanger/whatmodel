@@ -6,37 +6,40 @@
 
 MosaicML · released 2023-05 · 6.7B params · apache-2.0
 
-**score 33.4** ±0.9 · comparison only: no current run option verified · from 16 benchmark results across 2 sources
+**score 32.9** ±0.8 · comparison only: no current run option verified · from 19 benchmark results across 4 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>           46.5%    32.1   2024-06-07   17% ▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>              48.6%    31.5   2024-06-07    9% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>              69.9%    34.9   2024-06-07    7% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                70.5%    34.5   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>               77.6%    36.5   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                    93.7%    33.6   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                   74.2%    34.0   2024-06-07    3% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                    77.3%    32.2   2024-06-07    3% ▇
-<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>           40.5%    34.4   2023-09-11   16% ▇▇
-                        <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>              68.0%    32.1   2023-09-11    8% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                   73.9%    33.7   2023-09-11    5% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>              31.4%    34.4   2023-09-11    5% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>               57.1%    33.2   2023-09-11    4% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                74.9%    34.5   2023-09-11    4% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>              45.1%    29.8   2023-09-11    3% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                    78.9%    34.0   2023-09-11    2% ▇
-prior                   pull toward the middle           50.0                 0% ▇
-                        weighted average               = 33.4
+source                  test                            score  implies  date        weight
+<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   46.5%    32.2   2024-06-07   16% ▇▇
+                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      48.6%    31.5   2024-06-07    9% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      69.9%    35.0   2024-06-07    7% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        70.5%    34.6   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       77.6%    36.5   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            93.7%    33.6   2024-06-07    3% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           74.2%    34.1   2024-06-07    3% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            77.3%    32.3   2024-06-07    2% ▇
+<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   40.5%    34.6   2023-09-11   13% ▇▇
+                        <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      68.0%    32.2   2023-09-11    8% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           73.9%    33.9   2023-09-11    5% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      31.4%    34.7   2023-09-11    4% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       57.1%    33.6   2023-09-11    4% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        74.9%    34.6   2023-09-11    4% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                      45.1%    30.0   2023-09-11    3% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            78.9%    34.2   2023-09-11    2% ▇
+<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>   3.5%    23.3   2024-04-24    5% ▇
+                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  30.4%    32.3   2024-04-24    4% ▇
+<a name="paper-2410.14897v1-gencopa"></a>From Test-Taking to T…  <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                            65.6%    17.2   2024-10-18    0% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 32.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt))</sub>
+<sub>Licences: OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

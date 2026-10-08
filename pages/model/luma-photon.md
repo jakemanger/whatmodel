@@ -6,7 +6,7 @@
 
 Luma AI · closed weights
 
-**score 50.2** ±1.9 · #76 of 139 · from 4 benchmark results across 3 sources
+**score 50.4** ±1.9 · #76 of 139 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1035.7    50.3   2026-09-24   60% ▇▇▇▇▇▇▇
-<a name="paper-2505.17613v2-mmmg"></a>MMMG: a Comprehensive…  <a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                          73.8%    51.4   2026-09-30   17% ▇▇
-                        <a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (averag…</a>   58.7%    54.9   2026-09-30   10% ▇
-<a name="visual-rapid-face"></a>Rapidata/Face_Generat…  <a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generatio…</a>   955.5    43.7   2025-09-03   11% ▇
-prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 50.2
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1035.7    50.4   2026-09-24   61% ▇▇▇▇▇▇▇
+<a name="paper-2505.17613v2-mmmg"></a>MMMG: a Comprehensive…  <a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                          73.8%    51.5   2026-09-30   17% ▇▇
+                        <a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (averag…</a>   58.7%    55.0   2026-09-30   10% ▇
+<a name="visual-rapid-face"></a>Rapidata/Face_Generat…  <a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generatio…</a>   955.5    43.8   2025-09-03   11% ▇
+prior                   pull toward the middle                    49.9                 1% ▇
+                        weighted average                        = 50.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

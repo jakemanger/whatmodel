@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 0.162B params · apache-2.0
 
-**score 9.7** ±1.6 · #544 of 551 · from 6 benchmark results across 1 source
+**score 9.8** ±1.6 · #544 of 551 · from 6 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -15,13 +15,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      74.1%    10.4   2023-05-31   34% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  43.5%     9.4   2023-05-31   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  32.8%     6.8   2023-05-31   16% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      62.7%     7.9   2023-05-31   15% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                53.1%    13.2   2023-05-31    7% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  43.5%     9.6   2023-05-31   24% ▇▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  32.8%     6.9   2023-05-31   16% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      62.7%     8.0   2023-05-31   15% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                53.1%    13.3   2023-05-31    7% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             18.8%     3.4   2023-05-31    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                        = 9.7
+                        weighted average                        = 9.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,7 +34,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp16  ~0.37GB    9.7
+4-bit fp16  ~0.37GB    9.8
 </pre>
 
 ```sh

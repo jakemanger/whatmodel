@@ -6,7 +6,7 @@
 
 Ideogram · released 2026-06 · 9.3B params · ideogram-4-nc
 
-**score 66.0** ±2.3 · #16 of 139 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 66.1** ±2.2 · #16 of 139 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -17,9 +17,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                             score  implies  date        weight
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1204.8    68.1   2026-09-24   86% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>   911.9    53.7   2026-10-01   12% ▇
+<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>   911.9    53.9   2026-10-01   12% ▇
 prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 66.0
+                        weighted average                        = 66.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,9 +34,9 @@ api (Together AI) · $0.060/image · [together.ai](https://www.together.ai/model
 
 <pre>
 version                              needs  score
-nf4 · nvidia only                  ~6.08GB   66.0
-mlx-q4 · mac only                  ~6.08GB   66.0
-fp8 + Qwen3-VL 8B q4_k_m (sd.cpp)  ~29.2GB   66.0
+nf4 · nvidia only                  ~6.08GB   66.1
+mlx-q4 · mac only                  ~6.08GB   66.1
+fp8 + Qwen3-VL 8B q4_k_m (sd.cpp)  ~29.2GB   66.1
 </pre>
 
 ```sh

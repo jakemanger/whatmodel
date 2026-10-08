@@ -6,7 +6,7 @@
 
 DeepFloyd · released 2023-04 · 0.9B params · deepfloyd-if-license
 
-**score 32.7** ±2.5 · #121 of 139 · from 3 benchmark results across 3 sources
+**score 32.6** ±2.5 · #121 of 139 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                        score  implies  date        weight
-<a name="visual-geneval"></a>GenEval authors' resu…  <a href="https://arxiv.org/html/2310.11513v1#A1.T3">GenEval</a>                                                     54.0%    32.2   2023-10-17   44% ▇▇▇▇▇
-<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  5.2300 mean human alignment score    35.5   2024-10-10   41% ▇▇▇▇▇
-<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>                              51.4%    21.5   2023-11-07   12% ▇
+<a name="visual-geneval"></a>GenEval authors' resu…  <a href="https://arxiv.org/html/2310.11513v1#A1.T3">GenEval</a>                                                     54.0%    32.1   2023-10-17   44% ▇▇▇▇▇
+<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  5.2300 mean human alignment score    35.4   2024-10-10   41% ▇▇▇▇▇
+<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>                              51.4%    21.4   2023-11-07   12% ▇
 prior                   pull toward the middle                                               49.9                 3% ▇
-                        weighted average                                                   = 32.7
+                        weighted average                                                   = 32.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle                                  
 
 <pre>
 version                                   needs  score
-fp16 + model CPU offload (stages I+II, …  ~14GB   32.7
+fp16 + model CPU offload (stages I+II, …  ~14GB   32.6
 </pre>
 
 ```sh

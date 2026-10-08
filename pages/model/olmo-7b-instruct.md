@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-02 · 6.89B params · apache-2.0
 
-**score 29.9** ±1.7 · #499 of 551 · from 6 benchmark results across 2 sources
+**score 30.3** ±1.8 · #495 of 551 · from 6 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4#A5.T8">GSM8K (lab)</a>                      11.0%    27.7   2024-06-07   19% ▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">BIG-Bench Hard (lab)</a>             35.8%    33.3   2024-06-07   15% ▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (la…</a>   27.8%    32.2   2024-06-07   14% ▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">MMLU (lab)</a>                       46.1%    38.3   2024-06-07    7% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: TyDiQA gold passage, …</a>   21.7%    20.8   2024-06-07    5% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1073.6    27.6   2026-10-02   39% ▇▇▇▇▇
+<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4#A5.T8">GSM8K (lab)</a>                      11.0%    28.1   2024-06-07   19% ▇▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">BIG-Bench Hard (lab)</a>             35.8%    33.4   2024-06-07   16% ▇▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (la…</a>   27.8%    32.4   2024-06-07   14% ▇▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">MMLU (lab)</a>                       46.1%    38.6   2024-06-07    8% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: TyDiQA gold passage, …</a>   21.7%    20.9   2024-06-07    4% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1073.6    27.9   2026-10-02   38% ▇▇▇▇▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 29.9
+                        weighted average                        = 30.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +32,7 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download         size  score
-16-bit bf16  ~13.78GB   29.9
+16-bit bf16  ~13.78GB   30.3
 </pre>
 
 ```sh

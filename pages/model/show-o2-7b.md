@@ -6,7 +6,7 @@
 
 Show Lab, NUS · released 2025-06 · 7B params · apache-2.0
 
-**score 40.4** ±3.1 · #100 of 139 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.0** ±2.4 · #98 of 139 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,20 +16,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  11.2%    40.0   2026-05-14   96% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                 4% ▇
-                        weighted average                       = 40.4
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  11.2%    40.3   2026-05-14   61% ▇▇▇▇▇▇▇
+<a name="first-party-showlab-show-o2-paper"></a>Show Lab Show-o2 paper  <a href="https://arxiv.org/html/2506.15564v3#S4.T5">GenEval (lab)</a>                   76.0%    46.7   2025-09-22   13% ▇▇
+                        <a href="https://arxiv.org/html/2506.15564v3#S4.T6">DPG-Bench (lab)</a>                 86.1%    46.0   2025-09-22   11% ▇
+<a name="paper-2604.25072v1-xtcbench"></a>Beyond Accuracy: Benc…  <a href="https://arxiv.org/html/2604.25072v1">XTC-Bench generation (Overall…</a>  46.5%    32.4   2026-04-27   12% ▇
+prior                   pull toward the middle                   49.9                 3% ▇
+                        weighted average                       = 41.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt))</sub>
+<sub>Licences: GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · Beyond Accuracy: Benchmarking Cross-Task Consistency in Unified Multimodal Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 version                                     needs  score
-official scripts (checkpoint as stored)…  ~22.5GB   40.4
+official scripts (checkpoint as stored)…  ~22.5GB   41.0
 </pre>
 
 ```sh

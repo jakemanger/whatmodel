@@ -6,7 +6,7 @@
 
 Liquid AI · released 2025-10 · 8.3B params (1.5B active) · lfm1.0
 
-**score 46.4** ±0.9 · comparison only: no current run option verified · from 20 benchmark results across 2 sources
+**score 45.9** ±1.0 · comparison only: no current run option verified · from 20 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,28 +14,28 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="report-marco-moe-260425578v1"></a>Marco-MoE: Open Multi…  <a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                           84.6%    48.7   2026-09-25   13% ▇▇
-                        <a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                    31.9%    45.7   2026-09-25   13% ▇▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                            72.1%    48.2   2026-09-25   12% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                        49.5%    47.2   2026-09-25    9% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>       82.6%    51.3   2026-09-25    7% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>          33.8%    45.0   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>         56.5%    42.6   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>   49.0%    44.6   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>     26.5%    48.1   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>        56.5%    48.1   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecif…</a>  45.2%    48.9   2026-09-25    3% ▇
-<a name="card-liquidai-lfm2-5-8b-a1b"></a>LiquidAI/LFM2.5-8B-A1…  <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">AIME 2025 (lab)</a>                 20.0%    45.4   2026-09-25    5% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">MATH-500 (lab)</a>                  74.8%    43.2   2026-09-25    4% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">IFBench (aggregation unspecif…</a>  26.0%    41.3   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">Multi-IF (aggregation unspeci…</a>  58.5%    46.7   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">BFCL V4 (December 2025 archiv…</a>  25.5%    42.0   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Telecom (lab)</a>          13.6%    41.3   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Retail (lab)</a>            7.0%    32.3   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">IFEval (aggregation unspecifi…</a>  79.4%    47.8   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">BFCL v3 (lab)</a>                   45.1%    41.2   2026-09-25    1% ▇
+<a name="report-marco-moe-260425578v1"></a>Marco-MoE: Open Multi…  <a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                           84.6%    48.3   2026-09-25   14% ▇▇
+                        <a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                    31.9%    45.1   2026-09-25   12% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                            72.1%    47.8   2026-09-25   12% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                        49.5%    46.8   2026-09-25    9% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>       82.6%    51.0   2026-09-25    7% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>          33.8%    44.6   2026-09-25    6% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>         56.5%    42.2   2026-09-25    4% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>   49.0%    44.1   2026-09-25    4% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>     26.5%    47.6   2026-09-25    4% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>        56.5%    47.6   2026-09-25    4% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecif…</a>  45.2%    48.5   2026-09-25    3% ▇
+<a name="card-liquidai-lfm2-5-8b-a1b"></a>LiquidAI/LFM2.5-8B-A1…  <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">AIME 2025 (lab)</a>                 20.0%    45.3   2026-09-25    5% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">IFBench (aggregation unspecif…</a>  26.0%    41.4   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">Multi-IF (aggregation unspeci…</a>  58.5%    46.4   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Telecom (lab)</a>          13.6%    40.8   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">MATH-500 (lab)</a>                  74.8%    35.4   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Retail (lab)</a>            7.0%    32.4   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">BFCL V4 (December 2025 archiv…</a>  25.5%    41.8   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">IFEval (aggregation unspecifi…</a>  79.4%    47.6   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">BFCL v3 (lab)</a>                   45.1%    40.9   2026-09-25    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 46.4
+                        weighted average                       = 45.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

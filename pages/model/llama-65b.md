@@ -6,34 +6,36 @@
 
 Meta · released 2023-02 · 65.2B params · llama-1-noncommercial-research
 
-**score 39.5** ±1.1 · comparison only: no current run option verified · from 13 benchmark results across 1 source
+**score 40.4** ±1.0 · comparison only: no current run option verified · from 15 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>         23.7%    37.5   2023-02-27   16% ▇▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>              10.6%    40.8   2023-02-27   14% ▇▇
-                        <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>     56.0%    36.3   2023-02-27   13% ▇▇
-                        <a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>             50.9%    43.1   2023-02-27    9% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>        60.2%    39.0   2023-02-27    8% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>        77.0%    38.2   2023-02-27    8% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>              63.4%    43.2   2023-02-27    6% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>              37.7%    40.0   2023-02-27    6% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>             85.3%    41.2   2023-02-27    6% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>         84.2%    40.4   2023-02-27    5% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>          78.9%    37.7   2023-02-27    4% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>        52.3%    37.9   2023-02-27    3% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>              82.8%    39.4   2023-02-27    2% ▇
-prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 39.5
+source                  test                            score  implies  date        weight
+<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>                 23.7%    38.1   2023-02-27   13% ▇▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>                      10.6%    41.4   2023-02-27   12% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>             56.0%    36.8   2023-02-27   10% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>                     50.9%    43.7   2023-02-27    8% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>                77.0%    38.6   2023-02-27    6% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                60.2%    39.3   2023-02-27    6% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>                      63.4%    43.6   2023-02-27    6% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>                      37.7%    40.6   2023-02-27    5% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>                     85.3%    41.5   2023-02-27    5% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>                 84.2%    40.6   2023-02-27    4% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                  78.9%    38.1   2023-02-27    3% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                52.3%    38.2   2023-02-27    3% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>                      82.8%    39.6   2023-02-27    2% ▇
+<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  35.3%    41.9   2024-04-24    9% ▇
+                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  52.4%    43.5   2024-04-24    7% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 40.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LLaMA: Open and Efficient Foundation Language Models ([CC BY 4.0](../../licenses/paper-2302.13971v1-CC-BY-4.0.txt))</sub>
+<sub>Licences: LLaMA: Open and Efficient Foundation Language Models ([CC BY 4.0](../../licenses/paper-2302.13971v1-CC-BY-4.0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

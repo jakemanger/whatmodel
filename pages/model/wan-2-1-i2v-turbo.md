@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-02 · proprietary
 
-**score 43.7** ±6.9 · #59 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.0** ±6.9 · #59 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-gap-target-bench"></a>Target-Bench: Can Vid…  <a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT plannin…</a>   5.9%    42.2   2026-04-15   80% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-gap-target-bench"></a>Target-Bench: Can Vid…  <a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT plannin…</a>   5.9%    42.5   2026-04-15   80% ▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                20% ▇▇
-                        weighted average                       = 43.7
+                        weighted average                       = 44.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

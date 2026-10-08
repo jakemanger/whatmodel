@@ -6,7 +6,7 @@
 
 SHI Labs · released 2022-11 · mit
 
-**score 29.5** ±4.4 · #128 of 139 · from 3 benchmark results across 2 sources
+**score 29.3** ±4.4 · #128 of 139 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                    score  implies  date        weight
-<a name="visual-imagereward"></a>ImageReward: Learning…  <a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward human ranking of …</a>  340.0000 wins    28.6   2023-12-28   76% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2304.05977v4#S2.T1">MS-COCO 2014 zero-shot FID-30…</a>    18.4000 FID    22.6   2023-12-28   16% ▇▇
+<a name="visual-imagereward"></a>ImageReward: Learning…  <a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward human ranking of …</a>  340.0000 wins    28.5   2023-12-28   76% ▇▇▇▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2304.05977v4#S2.T1">MS-COCO 2014 zero-shot FID-30…</a>    18.4000 FID    22.4   2023-12-28   16% ▇▇
 <a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>          26.6%    38.9   2024-02-21    1% ▇
 prior                   pull toward the middle                           49.9                 8% ▇
-                        weighted average                               = 29.5
+                        weighted average                               = 29.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle                           49.9   
 
 <pre>
 version              needs  score
-fp16 · nvidia only  ~7.2GB   29.5
+fp16 · nvidia only  ~7.2GB   29.3
 </pre>
 
 ```sh

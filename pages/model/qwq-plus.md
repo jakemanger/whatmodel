@@ -6,22 +6,23 @@
 
 Alibaba · released 2025-04 · proprietary
 
-**score 59.2** ±2.0 · #163 of 551 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 59.5** ±2.1 · #161 of 551 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source    test                    score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            65.4%    59.4   2025-04-11   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior     pull toward the middle           50.0                 2% ▇
-          weighted average               = 59.2
+source                  test                            score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    65.4%    59.5   2025-04-11   92% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2505.22113v1-thinkbench"></a>THINK-Bench: Evaluati…  <a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accu…</a>  89.6%    62.5   2025-05-28    6% ▇
+prior                   pull toward the middle                   50.0                 2% ▇
+                        weighted average                       = 59.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · THINK-Bench: Evaluating Thinking Efficiency and Chain-of-Thought Quality of Large Reasoning Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

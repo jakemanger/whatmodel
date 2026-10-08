@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 8.05B params · apache-2.0
 
-**score 38.5** ±1.2 · #412 of 551 · from 9 benchmark results across 2 sources
+**score 38.5** ±1.2 · #415 of 551 · from 9 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  43.5%    39.9   2024-05-07   26% ▇▇▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  43.5%    40.0   2024-05-07   26% ▇▇▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  26.4%    39.4   2024-05-07   15% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      42.2%    36.0   2024-05-07   14% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  29.6%    41.3   2024-05-07   13% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MATH (lab)</a>                      21.4%    40.4   2024-05-07    9% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                36.0%    34.8   2024-05-07    8% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                36.1%    34.8   2024-05-07    7% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">GSM8K (lab)</a>                     61.9%    43.9   2024-05-07    6% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  34.5%    16.5   2026-04-17    2% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      42.2%    36.1   2024-05-07   14% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  29.6%    41.4   2024-05-07   12% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MATH (lab)</a>                      21.4%    40.6   2024-05-07    8% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                36.0%    34.9   2024-05-07    8% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                36.1%    34.9   2024-05-07    7% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">GSM8K (lab)</a>                     61.9%    44.1   2024-05-07    6% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  34.5%    19.2   2026-04-17    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 38.5
 </pre>

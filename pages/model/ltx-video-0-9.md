@@ -6,7 +6,7 @@
 
 Lightricks · released 2024-11 · 2B params · ltxv-rail-m
 
-**score 32.2** ±3.2 · #76 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.6** ±3.2 · #76 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source       test                            score  implies  date        weight
-<a name="video-genai-arena-space"></a>GenAI-Arena  <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>  964.0    31.4   2025-03-22   96% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="video-genai-arena-space"></a>GenAI-Arena  <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>  964.0    31.8   2025-03-22   96% ▇▇▇▇▇▇▇▇▇▇▇
 prior        pull toward the middle                   49.9                 4% ▇
-             weighted average                       = 32.2
+             weighted average                       = 32.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,9 +27,9 @@ prior        pull toward the middle                   49.9                 4% �
 
 <pre>
 version                                     needs  score
-bf16 · nvidia only                         ~5.3GB   32.2
-openvino-int8 (OpenVINO GenAI, one-time…  ~34.6GB   32.2
-bf16 (official inference.py, MPS) · mac…  ~34.6GB   32.2
+bf16 · nvidia only                         ~5.3GB   32.6
+openvino-int8 (OpenVINO GenAI, one-time…  ~34.6GB   32.6
+bf16 (official inference.py, MPS) · mac…  ~34.6GB   32.6
 </pre>
 
 ```sh

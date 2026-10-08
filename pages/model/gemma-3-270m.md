@@ -6,7 +6,7 @@
 
 Google · released 2025-08 · 0.27B params · gemma
 
-**score 12.0** ±3.7 · #540 of 551 · from 3 benchmark results across 2 sources
+**score 11.4** ±3.7 · #542 of 551 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="gap-google-gemma3"></a>Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecifi…</a>  51.2%    18.2   2026-09-25   40% ▇▇▇▇▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIG-Bench Hard (lab)</a>            26.7%     8.5   2026-09-25   32% ▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  28.2%    -4.2   2025-08-30   23% ▇▇▇
+<a name="gap-google-gemma3"></a>Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecifi…</a>  51.2%    17.3   2026-09-25   39% ▇▇▇▇▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIG-Bench Hard (lab)</a>            26.7%     7.8   2026-09-25   32% ▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  28.2%    -4.6   2025-08-30   23% ▇▇▇
 prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 12.0
+                        weighted average                       = 11.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -43,8 +43,8 @@ Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_c
 
 <pre>
 download          size  score
-8-bit q8_0     ~0.82GB   12.0
-4-bit QAT qat  ~0.66GB   12.0
+8-bit q8_0     ~0.82GB   11.4
+4-bit QAT qat  ~0.66GB   11.4
 </pre>
 
 ```sh

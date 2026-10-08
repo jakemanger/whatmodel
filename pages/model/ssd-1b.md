@@ -6,7 +6,7 @@
 
 Segmind · released 2023-10 · 1.3B params · apache-2.0
 
-**score 36.1** ±3.5 · #112 of 139 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.1** ±3.6 · #112 of 139 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

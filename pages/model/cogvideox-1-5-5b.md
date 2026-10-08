@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-11 · 5.57B params · cogvideox
 
-**score 35.7** ±2.4 · #71 of 87 · from 6 benchmark results across 5 sources
+**score 36.0** ±2.4 · #71 of 87 · from 6 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                    score  implies  date        weight
-<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>          50.6%    33.8   2025-05-17   37% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>          49.7%    31.9   2025-05-17   22% ▇▇▇
-<a name="video-videoverse"></a>VideoVerse: Does Your…  <a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.…</a>  894.05 / 1608    38.1   2026-05-15   14% ▇▇
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt…</a>          80.3%    39.2   2025-04-21   10% ▇
-<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-…</a>          75.2%    40.3   2026-08-06    9% ▇
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>          38.6%    36.7   2026-08-10    6% ▇
+<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>          50.6%    34.1   2025-05-17   37% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>          49.7%    32.2   2025-05-17   21% ▇▇▇
+<a name="video-videoverse"></a>VideoVerse: Does Your…  <a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.…</a>  894.05 / 1608    38.6   2026-05-15   14% ▇▇
+<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt…</a>          80.3%    39.6   2025-04-21   11% ▇
+<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-…</a>          75.2%    40.7   2026-08-06    9% ▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>          38.6%    37.0   2026-08-10    6% ▇
 prior                   pull toward the middle                           49.9                 2% ▇
-                        weighted average                               = 35.7
+                        weighted average                               = 36.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +32,7 @@ prior                   pull toward the middle                           49.9   
 
 <pre>
 version                                     needs  score
-bf16 + sequential CPU offload · nvidia …  ~37.8GB   35.7
+bf16 + sequential CPU offload · nvidia …  ~37.8GB   36.0
 </pre>
 
 ```sh

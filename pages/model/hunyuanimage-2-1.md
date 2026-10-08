@@ -6,7 +6,7 @@
 
 Tencent · released 2025-09 · 17B params · tencent-hunyuan-community
 
-**score 57.4** ±2.3 · #51 of 139 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 57.5** ±2.3 · #52 of 139 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>  18.8%    58.2   2026-09-28   82% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>  18.8%    58.3   2026-09-28   82% ▇▇▇▇▇▇▇▇▇▇
 <a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>  49.8%    54.6   2026-06-09   16% ▇▇
 prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 57.4
+                        weighted average                       = 57.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,7 +34,7 @@ api (fal.ai) · $0.10/image · [fal.ai](https://fal.ai/models/fal-ai/hunyuan-ima
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~64.2GB   57.4
+bf16 · nvidia only  ~64.2GB   57.5
 </pre>
 
 ```sh

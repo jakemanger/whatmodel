@@ -6,7 +6,7 @@
 
 Meta · released 2023-02 · 13B params · llama-1-noncommercial-research
 
-**score 32.9** ±1.0 · comparison only: no current run option verified · from 17 benchmark results across 3 sources
+**score 33.6** ±0.9 · comparison only: no current run option verified · from 19 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,30 +14,32 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                   score  implies  date        weight
-<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>                                        15.8%    34.7   2023-02-27    9% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>                                    52.7%    37.0   2023-02-27    9% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>                                              3.9%    31.6   2023-02-27    7% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>                                       73.0%    36.0   2023-02-27    6% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>                                            17.8%    29.6   2023-02-27    6% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                                       56.4%    39.1   2023-02-27    5% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>                                            78.1%    33.8   2023-02-27    5% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>                                        79.2%    36.4   2023-02-27    5% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>                                             46.9%    33.8   2023-02-27    4% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>                                             22.0%    30.6   2023-02-27    4% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                                         74.8%    34.6   2023-02-27    3% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                                       50.4%    36.5   2023-02-27    2% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>                                             80.1%    35.1   2023-02-27    2% ▇
-<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                                         37.1%    32.8   2024-03-10   12% ▇
-                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>                                              13.4%    30.2   2024-03-10    9% ▇
-                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                                   46.2%    34.9   2024-03-10    6% ▇
-<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  2.6100 MT-Bench score (1-10)    13.0   2023-06-19    5% ▇
+<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>                                        15.8%    35.4   2023-02-27    8% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>                                    52.7%    37.6   2023-02-27    8% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>                                              3.9%    32.3   2023-02-27    6% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>                                            17.8%    30.3   2023-02-27    6% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>                                       73.0%    36.5   2023-02-27    5% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>                                            78.1%    34.2   2023-02-27    5% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                                       56.4%    39.5   2023-02-27    5% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>                                        79.2%    36.8   2023-02-27    4% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>                                             46.9%    34.2   2023-02-27    4% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>                                             22.0%    31.2   2023-02-27    4% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                                         74.8%    35.0   2023-02-27    3% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                                       50.4%    37.0   2023-02-27    2% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>                                             80.1%    35.4   2023-02-27    2% ▇
+<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                                         37.1%    32.4   2024-03-10   10% ▇
+                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>                                              13.4%    30.5   2024-03-10    8% ▇
+                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                                   46.2%    34.5   2024-03-10    5% ▇
+<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>                         21.3%    35.4   2024-04-24    6% ▇
+                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>                         41.2%    38.5   2024-04-24    5% ▇
+<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  2.6100 MT-Bench score (1-10)    13.2   2023-06-19    4% ▇
 prior                   pull toward the middle                                          50.0                 0% ▇
-                        weighted average                                              = 32.9
+                        weighted average                                              = 33.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LLaMA: Open and Efficient Foundation Language Models ([CC BY 4.0](../../licenses/paper-2302.13971v1-CC-BY-4.0.txt)) · InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: LLaMA: Open and Efficient Foundation Language Models ([CC BY 4.0](../../licenses/paper-2302.13971v1-CC-BY-4.0.txt)) · InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMSYS Chatbot Arena leaderboard Space: MT-Bench column of the published leaderboard table ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 

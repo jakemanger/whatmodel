@@ -6,7 +6,7 @@
 
 Meituan (OneCAT team) · released 2025-09 · 9B params (3B active) · apache-2.0
 
-**score 21.8** ±6.0 · #137 of 139 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 21.9** ±6.0 · #137 of 139 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                        score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>  24.2%    16.6   2026-05-13   85% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>  24.2%    16.8   2026-05-13   85% ▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle               49.9                15% ▇▇
-                        weighted average                   = 21.8
+                        weighted average                   = 21.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle               49.9               
 
 <pre>
 version                                     needs  score
-bf16 (official generate_txt2img.py) · n…  ~25.1GB   21.8
+bf16 (official generate_txt2img.py) · n…  ~25.1GB   21.9
 </pre>
 
 ```sh

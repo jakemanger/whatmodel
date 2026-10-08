@@ -6,7 +6,7 @@
 
 Tencent · released 2025-03 · tencent-hunyuan-community
 
-**score 44.8** ±4.0 · #56 of 87 · from 3 benchmark results across 2 sources
+**score 45.1** ±4.0 · #57 of 87 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  56.8%    42.1   2025-04-21   50% ▇▇▇▇▇▇
-<a name="paper-2512.01989v1-paibench"></a>PAI-Bench: A Comprehe…  <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference …</a>  964.3    45.6   2025-12-01   25% ▇▇▇
-                        <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video…</a>  77.6%    49.3   2025-12-01   18% ▇▇
+<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  56.8%    42.3   2025-04-21   50% ▇▇▇▇▇▇
+<a name="paper-2512.01989v1-paibench"></a>PAI-Bench: A Comprehe…  <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference …</a>  964.3    45.9   2025-12-01   25% ▇▇▇
+                        <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video…</a>  77.6%    49.7   2025-12-01   18% ▇▇
 prior                   pull toward the middle                   49.9                 7% ▇
-                        weighted average                       = 44.8
+                        weighted average                       = 45.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version                                     needs  score
-bf16 720p + CPU offload (official scrip…  ~57.3GB   44.8
+bf16 720p + CPU offload (official scrip…  ~57.3GB   45.1
 </pre>
 
 ```sh

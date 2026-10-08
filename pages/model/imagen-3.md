@@ -6,7 +6,7 @@
 
 Google · released 2025-01 · closed weights
 
-**score 51.1** ±2.0 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 51.3** ±2.0 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1058.0    52.7   2026-09-24   67% ▇▇▇▇▇▇▇▇
-<a name="paper-2505.17613v2-mmmg"></a>MMMG: a Comprehensive…  <a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                          70.7%    48.7   2026-09-30   19% ▇▇
-                        <a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (averag…</a>   47.4%    46.6   2026-09-30   12% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1058.0    52.8   2026-09-24   68% ▇▇▇▇▇▇▇▇
+<a name="paper-2505.17613v2-mmmg"></a>MMMG: a Comprehensive…  <a href="https://arxiv.org/html/2505.17613v2">GenEval</a>                          70.7%    48.8   2026-09-30   19% ▇▇
+                        <a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (averag…</a>   47.4%    46.7   2026-09-30   11% ▇
 prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 51.1
+                        weighted average                        = 51.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

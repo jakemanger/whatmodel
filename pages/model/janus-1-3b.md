@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-10 · 1.3B params · deepseek
 
-**score 31.6** ±3.5 · #125 of 139 · from 3 benchmark results across 2 sources
+**score 30.9** ±3.5 · #125 of 139 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="report-2501.17811v1"></a>DeepSeek-AI             <a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                 79.7%    36.6   2025-01-29   32% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2501.17811v1">GenEval (lab)</a>                   61.0%    32.1   2025-01-29   31% ▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  23.0%    22.9   2026-06-02   32% ▇▇▇▇
+<a name="report-2501.17811v1"></a>DeepSeek-AI             <a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                 79.7%    35.7   2025-01-29   31% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2501.17811v1">GenEval (lab)</a>                   61.0%    31.5   2025-01-29   31% ▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  23.0%    23.0   2026-06-02   34% ▇▇▇▇
 prior                   pull toward the middle                   49.9                 5% ▇
-                        weighted average                       = 31.6
+                        weighted average                       = 30.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -40,7 +40,7 @@ DeepSeek-AI  <a href="https://arxiv.org/html/2410.13848v1">GenEval</a>  61.0%  o
 
 <pre>
 version              needs  score
-bf16 · nvidia only  ~5.5GB   31.6
+bf16 · nvidia only  ~5.5GB   30.9
 </pre>
 
 ```sh

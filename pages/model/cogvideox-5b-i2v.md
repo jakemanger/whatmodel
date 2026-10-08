@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-09 · 5B params · cogvideox
 
-**score 47.6** ±3.8 · #51 of 87 · from 4 benchmark results across 4 sources
+**score 48.0** ±3.8 · #50 of 87 · from 4 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                score  implies  date        weight
-<a name="visual-mindworldbench"></a>MindWorldBench: Evalu…  <a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accu…</a>      27.7%    56.6   2026-09-30   36% ▇▇▇▇
-<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>   6.75 / 10    36.9   2025-02-28   21% ▇▇
-<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric…</a>      72.9%    45.7   2026-08-06   20% ▇▇
-<a name="visual-mechverse"></a>MechVerse: Evaluating…  <a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I…</a>      57.9%    42.6   2026-05-14   17% ▇▇
+<a name="visual-mindworldbench"></a>MindWorldBench: Evalu…  <a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accu…</a>      27.7%    57.0   2026-09-30   36% ▇▇▇▇
+<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>   6.75 / 10    37.4   2025-02-28   21% ▇▇
+<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric…</a>      72.9%    46.1   2026-08-06   20% ▇▇
+<a name="visual-mechverse"></a>MechVerse: Evaluating…  <a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I…</a>      57.9%    43.0   2026-05-14   17% ▇▇
 prior                   pull toward the middle                       49.9                 6% ▇
-                        weighted average                           = 47.6
+                        weighted average                           = 48.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                       49.9       
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~12.5GB   47.6
+bf16 · nvidia only  ~12.5GB   48.0
 </pre>
 
 ```sh

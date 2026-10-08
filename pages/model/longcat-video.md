@@ -6,7 +6,7 @@
 
 Meituan · released 2025-10 · 13.6B params · mit
 
-**score 50.6** ±2.5 · #45 of 87 · from 4 benchmark results across 4 sources
+**score 51.0** ±2.5 · #45 of 87 · from 4 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>  904.0    50.9   2026-05-11   65% ▇▇▇▇▇▇▇▇
-<a name="visual-mindworldbench"></a>MindWorldBench: Evalu…  <a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accu…</a>  22.2%    50.4   2026-09-30   17% ▇▇
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  45.4%    51.3   2026-08-10    8% ▇
-<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-…</a>  81.1%    48.0   2026-08-06    8% ▇
+<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>  904.0    51.3   2026-05-11   65% ▇▇▇▇▇▇▇▇
+<a name="visual-mindworldbench"></a>MindWorldBench: Evalu…  <a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accu…</a>  22.2%    50.8   2026-09-30   17% ▇▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  45.4%    51.6   2026-08-10    8% ▇
+<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-…</a>  81.1%    48.4   2026-08-06    8% ▇
 prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 50.6
+                        weighted average                       = 51.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,7 +34,7 @@ api (fal.ai) · $0.040/sec · [fal.ai](https://fal.ai/models/fal-ai/longcat-vide
 
 <pre>
 version                needs  score
-bf16 · nvidia only  ~100.4GB   50.6
+bf16 · nvidia only  ~100.4GB   51.0
 </pre>
 
 ```sh

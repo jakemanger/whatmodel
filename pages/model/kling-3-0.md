@@ -6,7 +6,7 @@
 
 Kuaishou (Kling AI) · released 2026-02 · proprietary
 
-**score 67.1** ±4.1 · #18 of 87 · from 3 benchmark results across 3 sources
+**score 67.5** ±4.1 · #18 of 87 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-switch-bench"></a>SWITCH: Benchmarking …  <a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH interactive-interface …</a>  37.4%    64.5   2026-07-07   41% ▇▇▇▇▇
-<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>  44.0%    74.0   2026-08-26   36% ▇▇▇▇
-<a name="visual-mechverse"></a>MechVerse: Evaluating…  <a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I…</a>  76.6%    65.6   2026-05-14   16% ▇▇
+<a name="visual-switch-bench"></a>SWITCH: Benchmarking …  <a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH interactive-interface …</a>  37.4%    64.9   2026-07-07   41% ▇▇▇▇▇
+<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>  44.0%    74.5   2026-08-26   36% ▇▇▇▇
+<a name="visual-mechverse"></a>MechVerse: Evaluating…  <a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I…</a>  76.6%    66.0   2026-05-14   16% ▇▇
 prior                   pull toward the middle                   49.9                 7% ▇
-                        weighted average                       = 67.1
+                        weighted average                       = 67.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -6,7 +6,7 @@
 
 Lightricks · released 2026-08 · 22B params · ltx-2.x-community
 
-**score 67.9** ±5.2 · #15 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 68.3** ±5.2 · #16 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-datapoint-video-bench"></a>Datapoint Video Bench…  <a href="https://huggingface.co/datasets/datapointai/text-to-video-human-preferences-326k/blob/49295b5d625c04480c92c33a2b4c502bf571110b/README.md#leaderboard">Datapoint Video Bench (overal…</a>  978.4    70.2   2026-09-28   89% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-datapoint-video-bench"></a>Datapoint Video Bench…  <a href="https://huggingface.co/datasets/datapointai/text-to-video-human-preferences-326k/blob/49295b5d625c04480c92c33a2b4c502bf571110b/README.md#leaderboard">Datapoint Video Bench (overal…</a>  978.4    70.7   2026-09-28   89% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                11% ▇
-                        weighted average                       = 67.9
+                        weighted average                       = 68.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,9 +31,9 @@ api (Lightricks (LTX API)) · $0.12/sec · [docs.ltx.io](https://docs.ltx.io/pri
 
 <pre>
 version                                     needs  score
-fp8 · nvidia only                         ~13.7GB   67.9
-q8 · mac only                             ~26.9GB   67.9
-gguf-q8_0 22B dev + Gemma 4 12B q8_0 (s…  ~47.7GB   67.9
+fp8 · nvidia only                         ~13.7GB   68.3
+q8 · mac only                             ~26.9GB   68.3
+gguf-q8_0 22B dev + Gemma 4 12B q8_0 (s…  ~47.7GB   68.3
 </pre>
 
 ```sh
