@@ -127,7 +127,7 @@ export function toText(rows: Row[], specs: Specs | null, max: number | null, o: 
   const fit = (s: string) => (s.length > w ? s.slice(0, w - 1) + "…" : s.padEnd(w));
   out.push(c("2", `  ${"#".padStart(3)}  ${"MODEL".padEnd(w)}  ${"SCORE".padStart(7)}  ${"WHERE".padEnd(18)}  ${"SPEED".padStart(12)}  ${"RAM".padStart(5)}  ${o.cat === "llm" ? `${"CONTEXT".padStart(7)}  ` : ""}GET IT`));
   for (const r of shown) {
-    const g = hasScore(r) ? `${Math.round(r.score)}±${Math.round(r.pm)}${r.thin ? "*" : " "}` : "—";
+    const g = hasScore(r) ? `${Math.round(r.score)}±${Math.round(r.pm)}${(r.thin ? "*" : "") + (r.maker_only ? "†" : "") || " "}` : "—";
     const run = whereLabel(r).padEnd(18);
     const color = r.where === "local" ? "32" : r.where === "api" ? "36" : r.where === "local-slow" ? "33" : "2";
     const line = `  ${String(r.rank ?? "—").padStart(3)}  ${fit(displayName(r))}  ${g.padStart(7)}  ${c(color, run)}  ${speedLabel(r.speed).padStart(12)}  ${(r.mem_gb !== null ? `~${Math.round(r.mem_gb)}GB` : "").padStart(5)}  ${o.cat === "llm" ? `${contextLabel(r.context_k).padStart(7)}  ` : ""}${r.cmd ?? ""}`;
@@ -137,6 +137,7 @@ export function toText(rows: Row[], specs: Specs | null, max: number | null, o: 
   if (!o.all && hidden > 0) out.push(c("2", `  + ${hidden} more models don't fit your machine or budget (?all=1)`));
   if (o.retiredCount && max === null && !specs && !shown.some((r) => r.where === "retired")) out.push(c("2", `  + ${o.retiredCount} comparison-only models hidden (drop ?retired=0 to list them)`));
   if (shown.some((r) => r.thin)) out.push(c("2", `  * new or thinly tested: ranked on too few benchmark results`));
+  if (shown.some((r) => r.maker_only)) out.push(c("2", `  † only the maker's own numbers so far`));
   if (shown.some((r) => r.score === null && r.evidence !== "none")) out.push(c("2", "  — not yet calibrated on the overall score scale; use ?set=<id>&score=set for set scores where available"));
   if (shown.some((r) => r.evidence === "none")) out.push(c("2", "  — catalogue entries without reviewed results have no score or rank"));
   if (shown.some((r) => r.speed && r.speed.how !== "measured")) out.push(c("2", `  ~speed: measured on other hardware, or estimated. send your chip/GPU name for exact matches: ${host}/method#speed`));

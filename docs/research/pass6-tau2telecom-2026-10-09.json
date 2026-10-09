@@ -1,0 +1,2017 @@
+{
+  "about": "Pass 6 research (2026-10-09), topic τ²-bench Telecom (benchmark id tau2-telecom), to put Command A+'s Cohere-reported 0.85 in context. Candidate rows only; data/ was not edited. Merge: ledger entries first (strip action/scope/evidence_url; add_match entries extend existing entries' match lists), then models, then results via npm run import. No new benchmark ids. One proposed comparison-only model (qwen3-max-2026-01-23). Row 'by' is 'lab' when the source's authors made the model. Runs are listed in the .md with model counts. Simulated with lib/data.ts fitFor on a scratch copy of the 2026-10-09 working-tree data plus these candidates: Command A+ g 66.8 -> 65.7 (±2.2 -> ±2.0); its τ²-telecom result now implies g 67.7 instead of 74.0 but carries 37.5% of its weight (was 21.7%); tau2-telecom discrimination a 1.92 -> 2.53; Command A Reasoning 53.5 -> 53.6.",
+  "results": [
+    {
+      "model": "qwen3-max-2026-01-23",
+      "bench": "tau2-telecom",
+      "score": 0.9825,
+      "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/qwen3-max_qwen_2026-01-23/submission.json",
+      "source_id": "tau2-bench-leaderboard-qwen",
+      "by": "lab",
+      "date": "2026-01-26",
+      "note": "Qwen's own submission (submitting_organization 'Qwen', submission_date 2026-01-26), model_name 'Qwen3-Max-Thinking'; results.telecom.pass_1 = 98.24561403508771 (rounded to 4 dp; = 448/456 = 114 tasks x 4 trials). methodology: tau2_bench_version v0.1.3, user_simulator gpt-4.1-2025-04-14, modified_prompts false, omitted_questions false, 'Evaluation conducted using standard tau2-bench protocol'. Checkpoint: the trajectory file committed with the submission at 70e700c (web/leaderboard/public/submissions/qwen3-max_qwen_2026-01-23/trajectories/telecom_llm_agent_qwen3-max-2026-01-23_user_simulator_gpt-4.1-2025-04-14.json, removed from git in 20062c7) records agent llm 'qwen3-max-2026-01-23', temperature 0.0, 4 trials, max_steps 200; re-computed pass rate 0.98246. Thinking flag not recorded in llm_args (the snapshot is hybrid). Needs the proposed comparison-only model qwen3-max-2026-01-23."
+    },
+    {
+      "model": "qwen3-max-2025-09-23",
+      "bench": "tau2-telecom",
+      "score": 0.842,
+      "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+      "source_id": "tau2-bench-leaderboard-qwen",
+      "by": "lab",
+      "date": "2025-09-23",
+      "note": "Submission dir qwen3-max_qwen_2024_09_23 (submitting_organization 'Alibaba', model_name 'Qwen3-Max', model_release.release_date 2025-09-23, reference 'Qwen3-Max: Just Scale it' blog); results.telecom.pass_1 = 84.2. methodology: tau2_bench_version 0.1.3, user_simulator null, verification 'Unverified submission - no trajectory data available, unknown evaluation methodology'; notes 'Only average results are in the blog post. Evaluation limited to Pass^1, Pass^2 and Pass^4 scores only'. The submission's own submission_date/evaluation_date say 2024-09-23 (a typo for 2025: the model was released 2025-09-23); date set to the release date. Checkpoint: Qwen3-Max (Instruct) official release of 2025-09-23 = dated API snapshot qwen3-max-2025-09-23 (non-thinking). CAUTION: committed by Sierra staff (957599b / 9df0df8) from Qwen material; where the per-domain values come from is not stated."
+    },
+    {
+      "model": "deepseek-v3-1",
+      "bench": "tau2-telecom",
+      "score": 0.385,
+      "source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md",
+      "source_id": "card-meituan-longcat-flash-chat",
+      "by": "independent",
+      "date": "2025-09-24",
+      "note": "Meituan LongCat-Flash-Chat card (@f0b8e8d, revision 2025-09-24), 'Evaluation Results' table, row 'τ²-Bench (telecom) (avg@4)' (mean pass rate over 4 trials), column 'DeepSeek V3.1' = 38.50. No '*' (the card's mark for values 'sourced from other public reports'), so this is Meituan's own run. User simulator and tau2-bench version not printed. Card note: DeepSeek-V3.1 evaluated in non-thinking mode (only setting this source reports)."
+    },
+    {
+      "model": "qwen3-235b-a22b-instruct-2507",
+      "bench": "tau2-telecom",
+      "score": 0.225,
+      "source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md",
+      "source_id": "card-meituan-longcat-flash-chat",
+      "by": "independent",
+      "date": "2025-09-24",
+      "note": "Meituan LongCat-Flash-Chat card (@f0b8e8d, revision 2025-09-24), 'Evaluation Results' table, row 'τ²-Bench (telecom) (avg@4)' (mean pass rate over 4 trials), column 'Qwen3 MoE-2507' = 22.50. No '*' (the card's mark for values 'sourced from other public reports'), so this is Meituan's own run. User simulator and tau2-bench version not printed. Column is the 235B-total/22B-active Qwen3 MoE '2507' update run in non-thinking mode; the LongCat-Flash technical report (arXiv 2509.01322v1 Sec. 5, read for identity only) names it 'Qwen3-235B-A22B (2507 version)' and says closed models were evaluated 'through their official APIs', i.e. Qwen3-235B-A22B-Instruct-2507."
+    },
+    {
+      "model": "kimi-k2",
+      "bench": "tau2-telecom",
+      "score": 0.675,
+      "source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md",
+      "source_id": "card-meituan-longcat-flash-chat",
+      "by": "independent",
+      "date": "2025-09-24",
+      "note": "Meituan LongCat-Flash-Chat card (@f0b8e8d, revision 2025-09-24), 'Evaluation Results' table, row 'τ²-Bench (telecom) (avg@4)' (mean pass rate over 4 trials), column 'Kimi-K2' = 67.50. No '*' (the card's mark for values 'sourced from other public reports'), so this is Meituan's own run. User simulator and tau2-bench version not printed. 1043B total / 32B active; card published before Kimi-K2-Instruct-0905, so the July 2025 Kimi-K2-Instruct."
+    },
+    {
+      "model": "gpt-4-1",
+      "bench": "tau2-telecom",
+      "score": 0.352,
+      "source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md",
+      "source_id": "card-meituan-longcat-flash-chat",
+      "by": "independent",
+      "date": "2025-09-24",
+      "note": "Meituan LongCat-Flash-Chat card (@f0b8e8d, revision 2025-09-24), 'Evaluation Results' table, row 'τ²-Bench (telecom) (avg@4)' (mean pass rate over 4 trials), column 'GPT-4.1' = 35.20. No '*' (the card's mark for values 'sourced from other public reports'), so this is Meituan's own run. User simulator and tau2-bench version not printed. Reasoning: n/a (non-reasoning model)."
+    },
+    {
+      "model": "claude-sonnet-4-20250514",
+      "bench": "tau2-telecom",
+      "score": 0.462,
+      "source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md",
+      "source_id": "card-meituan-longcat-flash-chat",
+      "by": "independent",
+      "date": "2025-09-24",
+      "note": "Meituan LongCat-Flash-Chat card (@f0b8e8d, revision 2025-09-24), 'Evaluation Results' table, row 'τ²-Bench (telecom) (avg@4)' (mean pass rate over 4 trials), column 'Claude4 Sonnet' = 46.20. No '*' (the card's mark for values 'sourced from other public reports'), so this is Meituan's own run. User simulator and tau2-bench version not printed. Card note: non-thinking mode (only setting this source reports)."
+    },
+    {
+      "model": "gemini-2-5-flash",
+      "bench": "tau2-telecom",
+      "score": 0.165,
+      "source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md",
+      "source_id": "card-meituan-longcat-flash-chat",
+      "by": "independent",
+      "date": "2025-09-24",
+      "note": "Meituan LongCat-Flash-Chat card (@f0b8e8d, revision 2025-09-24), 'Evaluation Results' table, row 'τ²-Bench (telecom) (avg@4)' (mean pass rate over 4 trials), column 'Gemini2.5 Flash' = 16.50. No '*' (the card's mark for values 'sourced from other public reports'), so this is Meituan's own run. User simulator and tau2-bench version not printed. Card note: non-thinking mode (only setting this source reports); stable gemini-2.5-flash (GA June 2025, card dated Sept 2025)."
+    },
+    {
+      "model": "deepseek-v3-1",
+      "bench": "tau2-telecom",
+      "score": 0.237,
+      "source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md",
+      "source_id": "card-meituan-longcat-flash-thinking",
+      "by": "independent",
+      "date": "2025-09-24",
+      "note": "Meituan LongCat-Flash-Thinking card (@7c9aad1, revision 2025-09-24), 'Evaluation Results' table, row 'τ²-Bench-Telecom (Mean@4)', column 'DeepSeek-V3.1-Thinking' = 23.7. Unstarred, so Meituan's own run (the starred GPT-5-Thinking 96.7* is excluded). User simulator / version not printed. DeepSeek V3.1 in thinking mode (highest setting this source reports)."
+    },
+    {
+      "model": "qwen3-235b-a22b-thinking-2507",
+      "bench": "tau2-telecom",
+      "score": 0.473,
+      "source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md",
+      "source_id": "card-meituan-longcat-flash-thinking",
+      "by": "independent",
+      "date": "2025-09-24",
+      "note": "Meituan LongCat-Flash-Thinking card (@7c9aad1, revision 2025-09-24), 'Evaluation Results' table, row 'τ²-Bench-Telecom (Mean@4)', column 'Qwen3-235B-A22B-Thinking-2507' = 47.3. Unstarred, so Meituan's own run (the starred GPT-5-Thinking 96.7* is excluded). User simulator / version not printed. "
+    },
+    {
+      "model": "glm-4-5",
+      "bench": "tau2-telecom",
+      "score": 0.561,
+      "source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md",
+      "source_id": "card-meituan-longcat-flash-thinking",
+      "by": "independent",
+      "date": "2025-09-24",
+      "note": "Meituan LongCat-Flash-Thinking card (@7c9aad1, revision 2025-09-24), 'Evaluation Results' table, row 'τ²-Bench-Telecom (Mean@4)', column 'GLM-4.5' = 56.1. Unstarred, so Meituan's own run (the starred GPT-5-Thinking 96.7* is excluded). User simulator / version not printed. 355B/32B column; mode not printed (thinking card)."
+    },
+    {
+      "model": "o3",
+      "bench": "tau2-telecom",
+      "score": 0.675,
+      "source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md",
+      "source_id": "card-meituan-longcat-flash-thinking",
+      "by": "independent",
+      "date": "2025-09-24",
+      "note": "Meituan LongCat-Flash-Thinking card (@7c9aad1, revision 2025-09-24), 'Evaluation Results' table, row 'τ²-Bench-Telecom (Mean@4)', column 'OpenAI-o3' = 67.5. Unstarred, so Meituan's own run (the starred GPT-5-Thinking 96.7* is excluded). User simulator / version not printed. Reasoning effort not printed."
+    },
+    {
+      "model": "gemini-2-5-pro",
+      "bench": "tau2-telecom",
+      "score": 0.383,
+      "source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md",
+      "source_id": "card-meituan-longcat-flash-thinking",
+      "by": "independent",
+      "date": "2025-09-24",
+      "note": "Meituan LongCat-Flash-Thinking card (@7c9aad1, revision 2025-09-24), 'Evaluation Results' table, row 'τ²-Bench-Telecom (Mean@4)', column 'Gemini2.5-Pro' = 38.3. Unstarred, so Meituan's own run (the starred GPT-5-Thinking 96.7* is excluded). User simulator / version not printed. Stable Gemini 2.5 Pro (card dated Sept 2025); thinking budget not printed."
+    },
+    {
+      "model": "kimi-k2",
+      "bench": "tau2-telecom",
+      "score": 0.658,
+      "source": "https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/README.md",
+      "source_id": "card-moonshotai-kimi-k2-instruct",
+      "by": "lab",
+      "date": "2026-04-23",
+      "note": "Moonshot Kimi-K2-Instruct card (@fd1984e; table first published with the 2025-07-11 release), 'Instruction model evaluation results', row 'Tau2 telecom', metric Avg@4, column 'Kimi K2 Instruct' = 65.8. Unstarred (the card's * marks values 'taken directly from the model's tech report or blog'), so Moonshot's own run; 8k output-token limit for all metrics. User simulator not printed. Same figure as Moonshot's τ²-bench leaderboard submission (tau2-bench-leaderboard-moonshot); recorded again only as this run's own-model anchor."
+    },
+    {
+      "model": "deepseek-v3-0324",
+      "bench": "tau2-telecom",
+      "score": 0.325,
+      "source": "https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/README.md",
+      "source_id": "card-moonshotai-kimi-k2-instruct",
+      "by": "independent",
+      "date": "2026-04-23",
+      "note": "Moonshot Kimi-K2-Instruct card (@fd1984e; table first published with the 2025-07-11 release), 'Instruction model evaluation results', row 'Tau2 telecom', metric Avg@4, column 'DeepSeek-V3-0324' = 32.5. Unstarred (the card's * marks values 'taken directly from the model's tech report or blog'), so Moonshot's own run; 8k output-token limit for all metrics. User simulator not printed. "
+    },
+    {
+      "model": "qwen3-235b-a22b",
+      "bench": "tau2-telecom",
+      "score": 0.221,
+      "source": "https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/README.md",
+      "source_id": "card-moonshotai-kimi-k2-instruct",
+      "by": "independent",
+      "date": "2026-04-23",
+      "note": "Moonshot Kimi-K2-Instruct card (@fd1984e; table first published with the 2025-07-11 release), 'Instruction model evaluation results', row 'Tau2 telecom', metric Avg@4, column 'Qwen3-235B-A22B (non-thinking)' = 22.1. Unstarred (the card's * marks values 'taken directly from the model's tech report or blog'), so Moonshot's own run; 8k output-token limit for all metrics. User simulator not printed. Hybrid April-2025 Qwen3-235B-A22B with thinking off (only setting this source reports)."
+    },
+    {
+      "model": "claude-sonnet-4-20250514",
+      "bench": "tau2-telecom",
+      "score": 0.452,
+      "source": "https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/README.md",
+      "source_id": "card-moonshotai-kimi-k2-instruct",
+      "by": "independent",
+      "date": "2026-04-23",
+      "note": "Moonshot Kimi-K2-Instruct card (@fd1984e; table first published with the 2025-07-11 release), 'Instruction model evaluation results', row 'Tau2 telecom', metric Avg@4, column 'Claude Sonnet 4 (w/o extended thinking)' = 45.2. Unstarred (the card's * marks values 'taken directly from the model's tech report or blog'), so Moonshot's own run; 8k output-token limit for all metrics. User simulator not printed. No extended thinking (only setting this source reports)."
+    },
+    {
+      "model": "claude-opus-4-20250514",
+      "bench": "tau2-telecom",
+      "score": 0.57,
+      "source": "https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/README.md",
+      "source_id": "card-moonshotai-kimi-k2-instruct",
+      "by": "independent",
+      "date": "2026-04-23",
+      "note": "Moonshot Kimi-K2-Instruct card (@fd1984e; table first published with the 2025-07-11 release), 'Instruction model evaluation results', row 'Tau2 telecom', metric Avg@4, column 'Claude Opus 4 (w/o extended thinking)' = 57.0. Unstarred (the card's * marks values 'taken directly from the model's tech report or blog'), so Moonshot's own run; 8k output-token limit for all metrics. User simulator not printed. No extended thinking (only setting this source reports)."
+    },
+    {
+      "model": "gpt-4-1",
+      "bench": "tau2-telecom",
+      "score": 0.386,
+      "source": "https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/README.md",
+      "source_id": "card-moonshotai-kimi-k2-instruct",
+      "by": "independent",
+      "date": "2026-04-23",
+      "note": "Moonshot Kimi-K2-Instruct card (@fd1984e; table first published with the 2025-07-11 release), 'Instruction model evaluation results', row 'Tau2 telecom', metric Avg@4, column 'GPT-4.1' = 38.6. Unstarred (the card's * marks values 'taken directly from the model's tech report or blog'), so Moonshot's own run; 8k output-token limit for all metrics. User simulator not printed. "
+    },
+    {
+      "model": "gemini-2-5-flash-preview-05-20",
+      "bench": "tau2-telecom",
+      "score": 0.169,
+      "source": "https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/README.md",
+      "source_id": "card-moonshotai-kimi-k2-instruct",
+      "by": "independent",
+      "date": "2026-04-23",
+      "note": "Moonshot Kimi-K2-Instruct card (@fd1984e; table first published with the 2025-07-11 release), 'Instruction model evaluation results', row 'Tau2 telecom', metric Avg@4, column 'Gemini 2.5 Flash Preview (05-20)' = 16.9. Unstarred (the card's * marks values 'taken directly from the model's tech report or blog'), so Moonshot's own run; 8k output-token limit for all metrics. User simulator not printed. Thinking setting not printed. (The Qwen3-30B-A3B-Instruct-2507 card later reprints 16.9 for 'Gemini-2.5-Flash Non-Thinking'.)"
+    },
+    {
+      "model": "qwen3-5-4b",
+      "bench": "tau2-telecom",
+      "score": 0.8772,
+      "source": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md",
+      "source_id": "card-liquidai-lfm2-5-8b-a1b",
+      "by": "independent",
+      "date": "2026-09-25",
+      "note": "Liquid AI LFM2.5-8B-A1B card (@5dd2260), section 'Math and agentic workflows', row 'Qwen3.5-4B', column 'Tau² Telecom' = 87.72. Unmarked cell in Liquid's own comparison table; value differs from the model maker's own published figure, so not copied from it. Same run as the existing lfm2-5-8b-a1b 0.8807 and lfm2-8b-a1b 0.136 rows of this card. User simulator / version / reasoning setting not printed. "
+    },
+    {
+      "model": "qwen3-30b-a3b-thinking-2507",
+      "bench": "tau2-telecom",
+      "score": 0.2193,
+      "source": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md",
+      "source_id": "card-liquidai-lfm2-5-8b-a1b",
+      "by": "independent",
+      "date": "2026-09-25",
+      "note": "Liquid AI LFM2.5-8B-A1B card (@5dd2260), section 'Math and agentic workflows', row 'Qwen3-30B-A3B-Thinking-2507', column 'Tau² Telecom' = 21.93. Unmarked cell in Liquid's own comparison table; value differs from the model maker's own published figure, so not copied from it. Same run as the existing lfm2-5-8b-a1b 0.8807 and lfm2-8b-a1b 0.136 rows of this card. User simulator / version / reasoning setting not printed. (Qwen's own card prints 26.3.)"
+    },
+    {
+      "model": "gemma-4-e2b",
+      "bench": "tau2-telecom",
+      "score": 0.2237,
+      "source": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md",
+      "source_id": "card-liquidai-lfm2-5-8b-a1b",
+      "by": "independent",
+      "date": "2026-09-25",
+      "note": "Liquid AI LFM2.5-8B-A1B card (@5dd2260), section 'Math and agentic workflows', row 'Gemma-4-E2B-IT', column 'Tau² Telecom' = 22.37. Unmarked cell in Liquid's own comparison table; value differs from the model maker's own published figure, so not copied from it. Same run as the existing lfm2-5-8b-a1b 0.8807 and lfm2-8b-a1b 0.136 rows of this card. User simulator / version / reasoning setting not printed. (Gemma 4 report prints 19.7.)"
+    },
+    {
+      "model": "gemma-4-e4b",
+      "bench": "tau2-telecom",
+      "score": 0.2675,
+      "source": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md",
+      "source_id": "card-liquidai-lfm2-5-8b-a1b",
+      "by": "independent",
+      "date": "2026-09-25",
+      "note": "Liquid AI LFM2.5-8B-A1B card (@5dd2260), section 'Math and agentic workflows', row 'Gemma-4-E4B-IT', column 'Tau² Telecom' = 26.75. Unmarked cell in Liquid's own comparison table; value differs from the model maker's own published figure, so not copied from it. Same run as the existing lfm2-5-8b-a1b 0.8807 and lfm2-8b-a1b 0.136 rows of this card. User simulator / version / reasoning setting not printed. (Gemma 4 report prints 18.4.)"
+    },
+    {
+      "model": "gpt-oss-120b",
+      "bench": "tau2-telecom",
+      "score": 0.577,
+      "source": "https://arxiv.org/html/2601.07022v1",
+      "source_id": "report-2601.07022v1",
+      "by": "independent",
+      "date": "2026-01-11",
+      "note": "Upstage, Solar Open Technical Report v1 (CC BY 4.0), Table 6 'English Benchmarks', category Agent, row 'Tau 2 Telecom', column 'gpt-oss-120b (117B, high)' = 57.7. Section 7.1: agentic capabilities measured on 'Tau 2 (Airline/Telecom/Retail) (Barres et al., 2025)'; user simulator / trials not printed. The report does not say outright who ran the baselines, but the same tables include Upstage in-house test sets (KBankMMLU, Ko-AIME, Ko Arena Hard v2) for every baseline and these τ² values are not published by the models' makers, so they are Upstage's runs. Reasoning effort high (highest of the two printed; medium = 47.4 not used)."
+    },
+    {
+      "model": "glm-4-5-air",
+      "bench": "tau2-telecom",
+      "score": 0.281,
+      "source": "https://arxiv.org/html/2601.07022v1",
+      "source_id": "report-2601.07022v1",
+      "by": "independent",
+      "date": "2026-01-11",
+      "note": "Upstage, Solar Open Technical Report v1 (CC BY 4.0), Table 6 'English Benchmarks', category Agent, row 'Tau 2 Telecom', column 'GLM-4.5-Air (110B)' = 28.1. Section 7.1: agentic capabilities measured on 'Tau 2 (Airline/Telecom/Retail) (Barres et al., 2025)'; user simulator / trials not printed. The report does not say outright who ran the baselines, but the same tables include Upstage in-house test sets (KBankMMLU, Ko-AIME, Ko Arena Hard v2) for every baseline and these τ² values are not published by the models' makers, so they are Upstage's runs. Thinking mode not printed."
+    },
+    {
+      "model": "exaone-4-0-32b",
+      "bench": "tau2-telecom",
+      "score": 0.261,
+      "source": "https://arxiv.org/html/2601.03286v1",
+      "source_id": "paper-2601.03286v1-hyperclova-x-32b-think",
+      "by": "independent",
+      "date": "2026-01-03",
+      "note": "NAVER HyperCLOVA X 32B Think report v1 (CC BY 4.0), Table 5, row 'Tau 2 – Telecom', column 'EXAONE 4.0 32B' = 26.1. User simulator GPT-4.1 (printed in the Table 5 caption and Table 6 block), Appendix C.1/Table 8: max turns 200, temperature 0.6, 'All models were evaluated in reasoning mode'; the report cites Barres et al. (2025) for the suite. Reasoning mode."
+    },
+    {
+      "model": "gpt-5-1",
+      "bench": "tau2-telecom",
+      "score": 0.809,
+      "source": "https://arxiv.org/html/2601.03286v1",
+      "source_id": "paper-2601.03286v1-hyperclova-x-32b-think",
+      "by": "independent",
+      "date": "2026-01-03",
+      "note": "NAVER HyperCLOVA X 32B Think report v1 (CC BY 4.0), Table 6, block 'User-simulator: GPT-4.1', row 'Tau 2 – Telecom', column 'GPT-5.1 (Medium)' = 80.9. User simulator GPT-4.1 (printed in the Table 5 caption and Table 6 block), Appendix C.1/Table 8: max turns 200, temperature 0.6, 'All models were evaluated in reasoning mode'; the report cites Barres et al. (2025) for the suite. Reasoning effort medium (the only setting printed). The GPT-5.1-user block (81.2) is not used."
+    },
+    {
+      "model": "qwen3-235b-a22b",
+      "bench": "tau2-telecom",
+      "score": 0.205,
+      "source": "https://arxiv.org/html/2601.03286v1",
+      "source_id": "paper-2601.03286v1-hyperclova-x-32b-think",
+      "by": "independent",
+      "date": "2026-01-03",
+      "note": "NAVER HyperCLOVA X 32B Think report v1 (CC BY 4.0), Table 6, block 'User-simulator: GPT-4.1', row 'Tau 2 – Telecom', column 'Qwen3 235B-A22B' = 20.5. User simulator GPT-4.1 (printed in the Table 5 caption and Table 6 block), Appendix C.1/Table 8: max turns 200, temperature 0.6, 'All models were evaluated in reasoning mode'; the report cites Barres et al. (2025) for the suite. Hybrid April-2025 Qwen3-235B-A22B in reasoning mode (Appendix C.1). The GPT-5.1-user block (24.2) is not used."
+    },
+    {
+      "model": "nemotron-3-nano-30b-a3b",
+      "bench": "tau2-telecom",
+      "score": 0.422,
+      "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md#reasoning-benchmark-evaluations",
+      "source_id": "first-party-nvidia-scores",
+      "by": "lab",
+      "date": "2026-08-24",
+      "note": "NVIDIA's own figure for its own model: Nemotron-3-Nano-30B-A3B card (@bf77c31), 'Reasoning Benchmark Evaluations' table, row 'TauBench V2 (Telecom)', column 'NVIDIA-Nemotron-3-Nano-30B-A3B-BF16' = 42.2. Run via NeMo Evaluator SDK with the packaged Tau-2 Bench container. Comparison columns NOT used: the card says '* denotes the accuracy numbers are measured by us' and the unstarred Qwen3-30B-A3B-Thinking-2507 τ² cells (58.0/58.8/26.3) equal Qwen's own card. The card's TauBench V2 (Average) 49.0 is already in data as tau2-bench (card-nvidia-nvidia-nemotron-3-nano-30b-a3b-bf16, a one-model run). Fragment-scoped to first-party-nvidia-scores so NVIDIA's own models form one evaluator."
+    },
+    {
+      "model": "nemotron-3-super-120b-a12b",
+      "bench": "tau2-telecom",
+      "score": 0.6436,
+      "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md#benchmarks",
+      "source_id": "first-party-nvidia-scores",
+      "by": "lab",
+      "date": "2026-08-25",
+      "note": "NVIDIA's own figure for its own model: Nemotron-3-Super-120B-A12B card (@2dc98e2), 'Benchmarks' table, 'TauBench V2' block, row 'Telecom', column 'Nemotron 3 Super' = 64.36. 'dedicated open-source packaged containers for Tau-2 Bench (default prompt)'. Comparison columns (Qwen3.5-122B-A10B 95.00, GPT-OSS-120B 66.00) NOT used: provenance unclear (mixed precision; other cells match makers' or third-party figures). The card's TauBench V2 Average 61.15 is already in data as tau2-bench (one-model card run)."
+    },
+    {
+      "model": "nemotron-3-nano-4b",
+      "bench": "tau2-telecom",
+      "score": 0.33,
+      "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results",
+      "source_id": "first-party-nvidia-scores",
+      "by": "lab",
+      "date": "2026-03-20",
+      "note": "NVIDIA's own figure: Nemotron-3-Nano-4B card (@dfaf35d), 'Evaluation Results' — second table ('We also evaluated our model in Reasoning-On mode'), row 'Tau2-Telecom' = 33 (Reasoning-on, the highest setting; Reasoning-off table gives 24.9, not used). NeMo-Skills harness."
+    },
+    {
+      "model": "exaone-4-5-33b",
+      "bench": "tau2-telecom",
+      "score": 0.73,
+      "source": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results",
+      "source_id": "first-party-lgai-scores",
+      "by": "lab",
+      "date": "2026-07-06",
+      "note": "LG's own figure for its own model: EXAONE 4.5 33B card (@570aa4b), 'Evaluation Results' > 'Language-only Tasks' table, row 'τ2-Bench (Telecom)', column 'EXAONE 4.5 33B (Reasoning)' = 73.0. Reasoning mode. Other columns (GPT-5 mini 74.1, Qwen3-VL 235B Thinking 44.7, Qwen3.5 27B 99.3) are other labs' cells and not used (card licence is not open; rule b). The K-EXAONE column (73.5) is LG's but K-EXAONE is not catalogued."
+    },
+    {
+      "model": "exaone-4-0-32b",
+      "bench": "tau2-telecom",
+      "score": 0.237,
+      "source": "https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results",
+      "source_id": "first-party-lgai-scores",
+      "by": "lab",
+      "date": "2026-08-03",
+      "note": "LG's own figure for its own earlier model: K-EXAONE-236B-A23B card (@61e6d57), 'Evaluation Results' table (reasoning mode), row 'τ2-Bench (Telecom)', column 'EXAONE 4.0 (Reasoning)' = 23.7 (Architecture row 'Dense', Total Params '32B' = EXAONE 4.0 32B). The card says details are in the K-EXAONE technical report (arXiv 2601.01739, CC BY-NC-ND, so not used as a licensed copy). K-EXAONE's own 73.5 is not recorded (not catalogued). GPT-OSS / Qwen3-Thinking-2507 / DeepSeek-V3.2 columns not used (other labs; the Qwen cell equals Qwen's own 45.6)."
+    },
+    {
+      "model": "trinity-large-thinking",
+      "bench": "tau2-telecom",
+      "score": 0.947,
+      "source": "https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks",
+      "source_id": "first-party-arcee-scores",
+      "by": "lab",
+      "date": "2026-05-28",
+      "note": "Arcee's own figure: Trinity-Large-Thinking card (@dc6a99b), 'Benchmarks' table, row 'Tau2-Telecom', column 'Trinity-Large-Thinking' = 94.7. Harness/user simulator/version not printed. Opus-4.6, GLM-5, MiniMax-M2.7, Kimi-K2.5 columns not used (other labs; card licence OpenMDW-1.1 recorded under rule b). SINGLE-MODEL RUN for now (Trinity-Large-Preview's card has no telecom row); a later Arcee card would join it."
+    },
+    {
+      "model": "mistral-medium-3-5",
+      "bench": "tau3-telecom",
+      "score": 0.914,
+      "source": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md#agentic-benchmarks",
+      "source_id": "first-party-mistral-scores",
+      "by": "lab",
+      "date": "2026-07-15",
+      "note": "Mistral's own figure: Mistral-Medium-3.5-128B card (@22b2b86), 'Benchmarks' > 'Agentic Benchmarks', sentence 'It scores 91.4% on τ³-Telecom and 77.6% on SWE-Bench Verified.' τ³ (tau2-bench >= 1.0) telecom, so tau3-telecom, NOT tau2-telecom. Version/user simulator/reasoning effort not printed (card recommends reasoning_effort='high'). SINGLE-MODEL RUN (no other Mistral τ³ figure)."
+    },
+    {
+      "model": "qwen3-30b-a3b",
+      "bench": "tau2-telecom",
+      "score": 0.184,
+      "source": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md",
+      "source_id": "card-qwen--qwen3-4b-instruct-2507",
+      "by": "lab",
+      "date": "2025-08-06",
+      "note": "Qwen's own run in the Qwen/Qwen3-4B-Instruct-2507 card (@cdbee75), performance table row 'TAU2-Telecom', column 'Qwen3-30B-A3B Non-Thinking' = 18.4. Same-lab model (the ledger entry takes own-lab cells only). Joins the existing qwen3-4b-instruct-2507 0.132 row of this card so this card's tau2-telecom run counts (it is a one-model run today). Hybrid Qwen3-30B-A3B with thinking off: the only setting this card reports for it (instruct-model comparison). GPT-4.1-nano cell is '-'."
+    },
+    {
+      "model": "qwen3-4b",
+      "bench": "tau2-telecom",
+      "score": 0.175,
+      "source": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md",
+      "source_id": "card-qwen--qwen3-4b-instruct-2507",
+      "by": "lab",
+      "date": "2025-08-06",
+      "note": "Qwen's own run in the Qwen/Qwen3-4B-Instruct-2507 card (@cdbee75), performance table row 'TAU2-Telecom', column 'Qwen3-4B Non-Thinking' = 17.5. Same-lab model (the ledger entry takes own-lab cells only). Joins the existing qwen3-4b-instruct-2507 0.132 row of this card so this card's tau2-telecom run counts (it is a one-model run today). Hybrid Qwen3-4B with thinking off (only setting this card reports)."
+    },
+    {
+      "model": "claude-opus-4-5",
+      "bench": "tau2-telecom",
+      "score": 0.982,
+      "source": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47/Claude%20Opus%204.5%20System%20Card.pdf#page=26",
+      "source_id": "first-party-anthropic-scores",
+      "by": "lab",
+      "date": "2025-11-24",
+      "note": "Anthropic 'System Card: Claude Opus 4.5' (November 2025; changelog dated November 24, 2025), section 2.8 'τ2-bench', Table 2.8.A, row 'Telecom', column 'Claude Opus 4.5', printed '98.2%'. The same value appears in Table 2.3.A on PDF page 19 as 'τ²-Bench (Telecom) 98.2%' with footnote 4, 'Without extended thinking'. Settings: no extended thinking, the only setting the card reports for this cell. Table 2.3.A caption: 'average over 5 trials ... 200k context window, default effort (high), and default sampling settings'. Modified setup, quoted from the Table 2.8.A caption: 'All above results used Claude Opus 4.1 to simulate the user and included a prompt addendum instructing Claude to better target its known failure modes when using the vanilla prompt. A prompt addendum was also added to the Telecom User prompt to avoid failure modes from the user ending the interaction incorrectly.' Original τ²-bench Telecom domain; the card's separate 'Airline (corrected)' row is not relevant here. Vendor-reported (rule b), hand-recorded from a single fetch of the PDF; the page anchor is the physical PDF page."
+    },
+    {
+      "model": "claude-opus-4-1-20250805",
+      "bench": "tau2-telecom",
+      "score": 0.715,
+      "source": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47/Claude%20Opus%204.5%20System%20Card.pdf#page=26",
+      "source_id": "first-party-anthropic-scores",
+      "by": "lab",
+      "date": "2025-11-24",
+      "note": "Anthropic 'System Card: Claude Opus 4.5' (November 2025), section 2.8, Table 2.8.A, row 'Telecom', column 'Claude Opus 4.1', printed '71.5%'. Table 2.3.A on PDF page 19 also prints 71.5%, with no footnote. Settings for the Opus 4.1 column are not restated; the Table 2.3.A caption says results are 'an average over 5 trials and run with a 64k thinking budget ... Exceptions noted in footnotes'. Modified setup, quoted from the Table 2.8.A caption: 'All above results used Claude Opus 4.1 to simulate the user and included a prompt addendum instructing Claude to better target its known failure modes when using the vanilla prompt. A prompt addendum was also added to the Telecom User prompt to avoid failure modes from the user ending the interaction incorrectly.' Anthropic's own model (Claude Opus 4.1 has one snapshot, claude-opus-4-1-20250805). This is not a duplicate: Anthropic's τ²-leaderboard submission for Opus 4.1 (tau2-bench-leaderboard-anthropic) has only original τ-bench retail and airline. Vendor-reported (rule b)."
+    },
+    {
+      "model": "claude-opus-4-6",
+      "bench": "tau2-telecom",
+      "score": 0.9925,
+      "source": "https://www-cdn.anthropic.com/6a5fa276ac68b9aeb0c8b6af5fa36326e0e166dd/Claude%20Opus%204.6%20System%20Card.pdf#page=21",
+      "source_id": "first-party-anthropic-scores",
+      "by": "lab",
+      "date": "2026-02-05",
+      "note": "Anthropic 'System Card: Claude Opus 4.6' (February 2026; announcement dated 2026-02-05), section 2.7 'τ2-bench', prose: 'Claude Opus 4.6 achieves a score of 99.25% (Telecom) and 91.89% (Retail), averaged over 5 trials, each run with adaptive thinking, max effort, and default sampling settings (temperature, top_p).' The rounded 99.3% is in Table 2.3.A on PDF page 18. Settings: adaptive thinking, max effort (the highest). This card states no user simulator or prompt addendum; the Opus 4.5 card's setup used Claude Opus 4.1 as the user plus agent and Telecom-user prompt addenda, but this card does not say the setup was reused. Airline is not reported ('policy loopholes ... have not yet been incorporated upstream'). Vendor-reported (rule b)."
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "bench": "tau2-telecom",
+      "score": 0.979,
+      "source": "https://www-cdn.anthropic.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75/Claude%20Sonnet%204.6%20System%20Card.pdf#page=18",
+      "source_id": "first-party-anthropic-scores",
+      "by": "lab",
+      "date": "2026-02-17",
+      "note": "Anthropic 'System Card: Claude Sonnet 4.6' (February 17, 2026), section 2.5 'τ2-bench', prose: 'Claude Sonnet 4.6 achieved a score of 97.9% (Telecom) and 91.7% (Retail), averaged over 10 trials, each run with adaptive thinking, max effort, and default sampling settings (temperature, top_p).' Table 2.1.A on PDF page 15 also prints 'τ²-bench ... Telecom 97.9%'. Settings: adaptive thinking, max effort. The card states no user simulator or prompt addendum. Airline is not reported. Vendor-reported (rule b)."
+    },
+    {
+      "model": "gemini-3-pro-preview",
+      "bench": "tau2-telecom",
+      "score": 0.98,
+      "source": "https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_model_evaluation.pdf#page=2",
+      "source_id": "first-party-google-scores",
+      "by": "lab",
+      "date": "2025-11-18",
+      "note": "Google DeepMind 'Model Evaluation – Approach, Methodology & Results: Gemini 3 Pro' (the PDF that deepmind.google/models/evals-methodology/gemini-3-pro/ redirects to; HTTP Last-Modified 18 Nov 2025; 'as of November, 2025'), 'Tool Use' bullet, printed: 'All scores reported above are the average of scores on the three individual categories: Retail, Airline and Telecom. Gemini 3.0 Pro scores 85.3%, 73.0% and 98.0% on these categories respectively.' Telecom = 98.0%. The aggregate τ²-bench is printed only in the PDF's results table, which is an image; it is not recorded. Modified setup, quoted: 'τ2-bench results for Gemini use standard sierra framework with a prompt adjustment to provide instructions relevant to each environment. The user model uses Gemini with a system instruction.' Checkpoint: 'run with the Gemini API for the model-id gemini-3-pro-preview with default sampling settings'. The PDF does not state the thinking level; the Gemini 3.1 Pro model card prints the same 98.0% under 'Gemini 3 Pro Thinking (High)'. Google's own run of its own model. Vendor-reported (rule b)."
+    },
+    {
+      "model": "gemini-3-1-pro",
+      "bench": "tau2-telecom",
+      "score": 0.993,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-1-pro",
+      "source_id": "first-party-google-scores",
+      "by": "lab",
+      "date": "2026-02-19",
+      "note": "Google DeepMind Gemini 3.1 Pro model card, HTML page ('Published 19 February 2026'), Evaluation > Results table ('Results as of February 2026'), row 'τ2-bench / Agentic and tool use / Telecom', column 'Gemini 3.1 Pro Thinking (High)', printed '99.3%'. Retail (90.8%) is also printed; there is no aggregate. Settings: thinking level High. Methodology PDF (deepmind.google/models/evals-methodology/gemini-3-1-pro, 'Published: February, 2026'): 'run with the Gemini API for the model-id gemini-3.1-pro-preview with default sampling settings'. Modified setup, quoted: 'τ2-bench results for Gemini use standard sierra framework with a prompt adjustment to provide instructions relevant to each environment. The user model uses Gemini with a system instruction. The airline version was excluded due to lower quality grading.' Only the own-model column is used; the Sonnet 4.6, Opus 4.6 and GPT-5.2 columns are excluded. Vendor-reported (rule b). URL given without its trailing slash; the ledger entry is exact:false, so it matches either way."
+    },
+    {
+      "model": "gpt-5",
+      "bench": "tau2-telecom",
+      "score": 0.967,
+      "source": "https://openai.com/index/introducing-gpt-5-for-developers",
+      "source_id": "first-party-openai-scores",
+      "by": "lab",
+      "date": "2025-08-07",
+      "note": "OpenAI 'Introducing GPT‑5 for developers' (August 7, 2025), Appendix, 'Function Calling' table, row 'Tau2-bench telecom', column 'GPT-5 (high)', printed '96.7%' (printed as 'Tau 2 -bench telecom'). Read from Internet Archive capture 20261006155708 of https://openai.com/index/introducing-gpt-5-for-developers/ (openai.com returns HTTP 403 to direct fetches). Page text: 'In τ2-bench, a model must use tools to accomplish a customer service task, where there may be a user who can communicate and can take actions on the world state. Reasoning models were run with high reasoning effort.' The page states no prompt change and no user model; the GPT-5.1 and GPT-5.2 posts' prompt additions are not mentioned here. Vendor-reported (rule b): OpenAI's own figure for its own model, hand-recorded. Settings: reasoning effort high. The page body repeats the figure: 'achieving SOTA results on τ2-bench telecom (96.7%)' and 'tool calling (96.7% on τ2-bench telecom)'. The GPT-5.1 developer post repeats 96.7% for 'GPT‑5 (high)', the same figure, so it is not added again. The existing Sierra-run row for GPT-5 (0.9583, tau2-bench-leaderboard-sierra) is a separate measurement."
+    },
+    {
+      "model": "gpt-5-mini",
+      "bench": "tau2-telecom",
+      "score": 0.741,
+      "source": "https://openai.com/index/introducing-gpt-5-for-developers",
+      "source_id": "first-party-openai-scores",
+      "by": "lab",
+      "date": "2025-08-07",
+      "note": "OpenAI 'Introducing GPT‑5 for developers' (August 7, 2025), Appendix, 'Function Calling' table, row 'Tau2-bench telecom', column 'GPT-5 mini (high)', printed '74.1%' (printed as 'Tau 2 -bench telecom'). Read from Internet Archive capture 20261006155708 of https://openai.com/index/introducing-gpt-5-for-developers/ (openai.com returns HTTP 403 to direct fetches). Page text: 'In τ2-bench, a model must use tools to accomplish a customer service task, where there may be a user who can communicate and can take actions on the world state. Reasoning models were run with high reasoning effort.' The page states no prompt change and no user model; the GPT-5.1 and GPT-5.2 posts' prompt additions are not mentioned here. Vendor-reported (rule b): OpenAI's own figure for its own model, hand-recorded. Settings: reasoning effort high. The same 74.1% for GPT-5 mini is printed in the GPT-5.4 mini/nano post, which the 2026-10-07 pass left in 'unmatched'; it appears to be this same August 2025 figure."
+    },
+    {
+      "model": "gpt-5-nano",
+      "bench": "tau2-telecom",
+      "score": 0.355,
+      "source": "https://openai.com/index/introducing-gpt-5-for-developers",
+      "source_id": "first-party-openai-scores",
+      "by": "lab",
+      "date": "2025-08-07",
+      "note": "OpenAI 'Introducing GPT‑5 for developers' (August 7, 2025), Appendix, 'Function Calling' table, row 'Tau2-bench telecom', column 'GPT-5 nano (high)', printed '35.5%' (printed as 'Tau 2 -bench telecom'). Read from Internet Archive capture 20261006155708 of https://openai.com/index/introducing-gpt-5-for-developers/ (openai.com returns HTTP 403 to direct fetches). Page text: 'In τ2-bench, a model must use tools to accomplish a customer service task, where there may be a user who can communicate and can take actions on the world state. Reasoning models were run with high reasoning effort.' The page states no prompt change and no user model; the GPT-5.1 and GPT-5.2 posts' prompt additions are not mentioned here. Vendor-reported (rule b): OpenAI's own figure for its own model, hand-recorded. Settings: reasoning effort high."
+    },
+    {
+      "model": "o3",
+      "bench": "tau2-telecom",
+      "score": 0.582,
+      "source": "https://openai.com/index/introducing-gpt-5-for-developers",
+      "source_id": "first-party-openai-scores",
+      "by": "lab",
+      "date": "2025-08-07",
+      "note": "OpenAI 'Introducing GPT‑5 for developers' (August 7, 2025), Appendix, 'Function Calling' table, row 'Tau2-bench telecom', column 'OpenAI o3 (high)', printed '58.2%' (printed as 'Tau 2 -bench telecom'). Read from Internet Archive capture 20261006155708 of https://openai.com/index/introducing-gpt-5-for-developers/ (openai.com returns HTTP 403 to direct fetches). Page text: 'In τ2-bench, a model must use tools to accomplish a customer service task, where there may be a user who can communicate and can take actions on the world state. Reasoning models were run with high reasoning effort.' The page states no prompt change and no user model; the GPT-5.1 and GPT-5.2 posts' prompt additions are not mentioned here. Vendor-reported (rule b): OpenAI's own figure for its own model, hand-recorded. Settings: reasoning effort high. The Introducing GPT-5 post also carries 0.582 for o3, but only in a Vega-Lite chart spec, which is not used."
+    },
+    {
+      "model": "o4-mini",
+      "bench": "tau2-telecom",
+      "score": 0.405,
+      "source": "https://openai.com/index/introducing-gpt-5-for-developers",
+      "source_id": "first-party-openai-scores",
+      "by": "lab",
+      "date": "2025-08-07",
+      "note": "OpenAI 'Introducing GPT‑5 for developers' (August 7, 2025), Appendix, 'Function Calling' table, row 'Tau2-bench telecom', column 'OpenAI o4-mini (high)', printed '40.5%' (printed as 'Tau 2 -bench telecom'). Read from Internet Archive capture 20261006155708 of https://openai.com/index/introducing-gpt-5-for-developers/ (openai.com returns HTTP 403 to direct fetches). Page text: 'In τ2-bench, a model must use tools to accomplish a customer service task, where there may be a user who can communicate and can take actions on the world state. Reasoning models were run with high reasoning effort.' The page states no prompt change and no user model; the GPT-5.1 and GPT-5.2 posts' prompt additions are not mentioned here. Vendor-reported (rule b): OpenAI's own figure for its own model, hand-recorded. Settings: reasoning effort high. This is a separate measurement from the existing Sierra-run row (0.502, original τ²-bench paper evaluation)."
+    },
+    {
+      "model": "gpt-4-1",
+      "bench": "tau2-telecom",
+      "score": 0.34,
+      "source": "https://openai.com/index/introducing-gpt-5-for-developers",
+      "source_id": "first-party-openai-scores",
+      "by": "lab",
+      "date": "2025-08-07",
+      "note": "OpenAI 'Introducing GPT‑5 for developers' (August 7, 2025), Appendix, 'Function Calling' table, row 'Tau2-bench telecom', column 'GPT-4.1', printed '34.0%' (printed as 'Tau 2 -bench telecom'). Read from Internet Archive capture 20261006155708 of https://openai.com/index/introducing-gpt-5-for-developers/ (openai.com returns HTTP 403 to direct fetches). Page text: 'In τ2-bench, a model must use tools to accomplish a customer service task, where there may be a user who can communicate and can take actions on the world state. Reasoning models were run with high reasoning effort.' The page states no prompt change and no user model; the GPT-5.1 and GPT-5.2 posts' prompt additions are not mentioned here. Vendor-reported (rule b): OpenAI's own figure for its own model, hand-recorded. Non-reasoning model. Caution: the value equals the existing Sierra-run row (0.34, tau2-bench-leaderboard-sierra, from the τ²-bench paper). OpenAI credits no one else and gives the same harness note, but this could be the paper's figure."
+    },
+    {
+      "model": "gpt-4-1-mini",
+      "bench": "tau2-telecom",
+      "score": 0.44,
+      "source": "https://openai.com/index/introducing-gpt-5-for-developers",
+      "source_id": "first-party-openai-scores",
+      "by": "lab",
+      "date": "2025-08-07",
+      "note": "OpenAI 'Introducing GPT‑5 for developers' (August 7, 2025), Appendix, 'Function Calling' table, row 'Tau2-bench telecom', column 'GPT-4.1 mini', printed '44.0%' (printed as 'Tau 2 -bench telecom'). Read from Internet Archive capture 20261006155708 of https://openai.com/index/introducing-gpt-5-for-developers/ (openai.com returns HTTP 403 to direct fetches). Page text: 'In τ2-bench, a model must use tools to accomplish a customer service task, where there may be a user who can communicate and can take actions on the world state. Reasoning models were run with high reasoning effort.' The page states no prompt change and no user model; the GPT-5.1 and GPT-5.2 posts' prompt additions are not mentioned here. Vendor-reported (rule b): OpenAI's own figure for its own model, hand-recorded. Non-reasoning model. This differs from the existing Sierra-run row (0.489), so it is a separate measurement."
+    },
+    {
+      "model": "gpt-4-1-nano-2025-04-14",
+      "bench": "tau2-telecom",
+      "score": 0.121,
+      "source": "https://openai.com/index/introducing-gpt-5-for-developers",
+      "source_id": "first-party-openai-scores",
+      "by": "lab",
+      "date": "2025-08-07",
+      "note": "OpenAI 'Introducing GPT‑5 for developers' (August 7, 2025), Appendix, 'Function Calling' table, row 'Tau2-bench telecom', column 'GPT-4.1 nano', printed '12.1%' (printed as 'Tau 2 -bench telecom'). Read from Internet Archive capture 20261006155708 of https://openai.com/index/introducing-gpt-5-for-developers/ (openai.com returns HTTP 403 to direct fetches). Page text: 'In τ2-bench, a model must use tools to accomplish a customer service task, where there may be a user who can communicate and can take actions on the world state. Reasoning models were run with high reasoning effort.' The page states no prompt change and no user model; the GPT-5.1 and GPT-5.2 posts' prompt additions are not mentioned here. Vendor-reported (rule b): OpenAI's own figure for its own model, hand-recorded. Non-reasoning model. GPT-4.1 nano has a single snapshot, gpt-4.1-nano-2025-04-14."
+    },
+    {
+      "model": "deepseek-v3-2",
+      "bench": "tau2-telecom",
+      "score": 0.962,
+      "source": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/assets/paper.pdf",
+      "source_id": "card2-deepseek-ai-deepseek-v3-2",
+      "by": "lab",
+      "date": "2025-12-01",
+      "note": "DeepSeek-V3.2 tech report PDF committed at assets/paper.pdf in deepseek-ai/DeepSeek-V3.2 @a7e62ac (repo licence MIT: README front-matter 'license: mit', root LICENSE 'MIT License'); linked as 'Tech report' from api-docs.deepseek.com/news/news251201. Section 4 text: 'For τ2-bench, we employ the model itself as the user agent, achieving final category scores of 63.8 (Airline), 81.1 (Retail), and 96.2 (Telecom).' Printed 96.2 -> 0.962. Thinking mode ('Tool-use benchmarks are evaluated using the standard function call format, wherein models are configured to thinking mode'). User simulator = DeepSeek-V3.2 itself, not Sierra's default. An aggregate τ²-Bench (Pass@1) 80.3 is also printed (Table 2; non-thinking 77.2 in the appendix table) - no non-thinking Telecom split. DeepSeek-V3.2-Speciale has no τ²-bench result (API had no tool calls). Text identical to arXiv 2512.02556v1. Alternative copy with the same sentence: https://arxiv.org/html/2512.02556v1 (arXiv non-exclusive licence; would need first-party-deepseek-scores add_match) - use one source only."
+    },
+    {
+      "model": "gpt-4o-2024-11-20",
+      "bench": "tau2-telecom",
+      "score": 0.241,
+      "source": "https://arxiv.org/html/2508.18669v1",
+      "source_id": "paper-2508.18669v1-mua-rl",
+      "by": "independent",
+      "date": "2025-08-26",
+      "note": "Meituan MUA-RL paper v1 (CC BY 4.0), Table 1 'Performance comparison of different models on TAU-Bench. Each model runs in non-thinking mode.', column TAU2 'Telecom', row 'GPT-4o-2024-11-20' = 24.1. Sec. 4.1 Evaluation: 'For TAU1-Bench and TAU2-Bench, we use GPT-4.1 as the user simulator. For each test set, we conduct four repeated tests and take the average.' Meituan authors, so independent for this model. Dated snapshot printed."
+    },
+    {
+      "model": "gpt-4-1",
+      "bench": "tau2-telecom",
+      "score": 0.389,
+      "source": "https://arxiv.org/html/2508.18669v1",
+      "source_id": "paper-2508.18669v1-mua-rl",
+      "by": "independent",
+      "date": "2025-08-26",
+      "note": "Meituan MUA-RL paper v1 (CC BY 4.0), Table 1 'Performance comparison of different models on TAU-Bench. Each model runs in non-thinking mode.', column TAU2 'Telecom', row 'GPT-4.1' = 38.9. Sec. 4.1 Evaluation: 'For TAU1-Bench and TAU2-Bench, we use GPT-4.1 as the user simulator. For each test set, we conduct four repeated tests and take the average.' Meituan authors, so independent for this model. (Sierra's own run: 34.0; Moonshot's: 38.6.)"
+    },
+    {
+      "model": "deepseek-v3-0324",
+      "bench": "tau2-telecom",
+      "score": 0.329,
+      "source": "https://arxiv.org/html/2508.18669v1",
+      "source_id": "paper-2508.18669v1-mua-rl",
+      "by": "independent",
+      "date": "2025-08-26",
+      "note": "Meituan MUA-RL paper v1 (CC BY 4.0), Table 1 'Performance comparison of different models on TAU-Bench. Each model runs in non-thinking mode.', column TAU2 'Telecom', row 'DeepSeek-V3-0324' = 32.9. Sec. 4.1 Evaluation: 'For TAU1-Bench and TAU2-Bench, we use GPT-4.1 as the user simulator. For each test set, we conduct four repeated tests and take the average.' Meituan authors, so independent for this model. (Moonshot's run: 32.5; Qwen card: 34.0.)"
+    },
+    {
+      "model": "qwen3-8b",
+      "bench": "tau2-telecom",
+      "score": 0.191,
+      "source": "https://arxiv.org/html/2508.18669v1",
+      "source_id": "paper-2508.18669v1-mua-rl",
+      "by": "independent",
+      "date": "2025-08-26",
+      "note": "Meituan MUA-RL paper v1 (CC BY 4.0), Table 1 'Performance comparison of different models on TAU-Bench. Each model runs in non-thinking mode.', column TAU2 'Telecom', row 'Qwen3-8B Non-thinking' = 19.1. Sec. 4.1 Evaluation: 'For TAU1-Bench and TAU2-Bench, we use GPT-4.1 as the user simulator. For each test set, we conduct four repeated tests and take the average.' Meituan authors, so independent for this model. Hybrid Qwen3-8B with thinking off (the paper runs every model non-thinking); MUA-RL base model."
+    },
+    {
+      "model": "qwen3-14b",
+      "bench": "tau2-telecom",
+      "score": 0.299,
+      "source": "https://arxiv.org/html/2508.18669v1",
+      "source_id": "paper-2508.18669v1-mua-rl",
+      "by": "independent",
+      "date": "2025-08-26",
+      "note": "Meituan MUA-RL paper v1 (CC BY 4.0), Table 1 'Performance comparison of different models on TAU-Bench. Each model runs in non-thinking mode.', column TAU2 'Telecom', row 'Qwen3-14B Non-thinking' = 29.9. Sec. 4.1 Evaluation: 'For TAU1-Bench and TAU2-Bench, we use GPT-4.1 as the user simulator. For each test set, we conduct four repeated tests and take the average.' Meituan authors, so independent for this model. Hybrid Qwen3-14B, thinking off; MUA-RL base model."
+    },
+    {
+      "model": "qwen3-32b",
+      "bench": "tau2-telecom",
+      "score": 0.248,
+      "source": "https://arxiv.org/html/2508.18669v1",
+      "source_id": "paper-2508.18669v1-mua-rl",
+      "by": "independent",
+      "date": "2025-08-26",
+      "note": "Meituan MUA-RL paper v1 (CC BY 4.0), Table 1 'Performance comparison of different models on TAU-Bench. Each model runs in non-thinking mode.', column TAU2 'Telecom', row 'Qwen3-32B Non-thinking' = 24.8. Sec. 4.1 Evaluation: 'For TAU1-Bench and TAU2-Bench, we use GPT-4.1 as the user simulator. For each test set, we conduct four repeated tests and take the average.' Meituan authors, so independent for this model. Hybrid Qwen3-32B, thinking off; MUA-RL base model."
+    },
+    {
+      "model": "gpt-5-mini",
+      "bench": "tau2-telecom",
+      "score": 0.713,
+      "source": "https://arxiv.org/html/2606.28715v2",
+      "source_id": "paper-2606.28715v2-seataubench",
+      "by": "independent",
+      "date": "2026-09-05",
+      "note": "SEATauBench v2 (CC BY 4.0), Appendix G Table 17 'English Baseline (S1) results', Domain Telecom, row 'GPT-5-mini', column 'EN p@1' = 0.713. Sec. 4: telecom = original τ²-Bench tasks (114); user LLM Qwen3-235B-A22B-Instruct (not the default GPT-4.1), GPT-4.1 NL-assertion judge, three trials per task (q=3), each provider's default hyperparameters, no model-specific tuning. Provider default reasoning effort (not the highest; the only setting reported)."
+    },
+    {
+      "model": "qwen3-235b-a22b-instruct-2507",
+      "bench": "tau2-telecom",
+      "score": 0.357,
+      "source": "https://arxiv.org/html/2606.28715v2",
+      "source_id": "paper-2606.28715v2-seataubench",
+      "by": "independent",
+      "date": "2026-09-05",
+      "note": "SEATauBench v2 (CC BY 4.0), Appendix G Table 17 'English Baseline (S1) results', Domain Telecom, row 'Qwen3-235B', column 'EN p@1' = 0.357. Sec. 4: telecom = original τ²-Bench tasks (114); user LLM Qwen3-235B-A22B-Instruct (not the default GPT-4.1), GPT-4.1 NL-assertion judge, three trials per task (q=3), each provider's default hyperparameters, no model-specific tuning. Caption: 'Qwen3-235B refers to Qwen3-235B-A22B-Instruct-2507.'"
+    },
+    {
+      "model": "kimi-k2-5",
+      "bench": "tau2-telecom",
+      "score": 0.997,
+      "source": "https://arxiv.org/html/2606.28715v2",
+      "source_id": "paper-2606.28715v2-seataubench",
+      "by": "independent",
+      "date": "2026-09-05",
+      "note": "SEATauBench v2 (CC BY 4.0), Appendix G Table 17 'English Baseline (S1) results', Domain Telecom, row 'Kimi-K2.5', column 'EN p@1' = 0.997. Sec. 4: telecom = original τ²-Bench tasks (114); user LLM Qwen3-235B-A22B-Instruct (not the default GPT-4.1), GPT-4.1 NL-assertion judge, three trials per task (q=3), each provider's default hyperparameters, no model-specific tuning. Provider default settings (thinking mode not stated)."
+    },
+    {
+      "model": "qwen3-4b-instruct-2507",
+      "bench": "tau2-telecom",
+      "score": 0.132,
+      "source": "https://arxiv.org/html/2606.03892v2",
+      "source_id": "paper-2606.03892v2-synthesize-and-reward",
+      "by": "independent",
+      "date": "2026-06-03",
+      "note": "IBM Research 'Synthesize and Reward' v2 (CC BY 4.0), Table 3, row 'Qwen3-4B / Base', τ²-bench column 'Telecom' = 13.2. Sec. 4.1: user simulator Qwen3-VL-235B-A22B-Instruct 'across all runs to keep evaluations directly comparable' (not the default GPT-4.1). Checkpoint from the paper's footnoted HF link: Qwen/Qwen3-4B-Instruct-2507. (Equals Qwen's own card figure 13.2 = 15/114; may be coincidence.)"
+    },
+    {
+      "model": "qwen3-8b",
+      "bench": "tau2-telecom",
+      "score": 0.246,
+      "source": "https://arxiv.org/html/2606.03892v2",
+      "source_id": "paper-2606.03892v2-synthesize-and-reward",
+      "by": "independent",
+      "date": "2026-06-03",
+      "note": "IBM Research 'Synthesize and Reward' v2 (CC BY 4.0), Table 3, row 'Qwen3-8B / Base', τ²-bench column 'Telecom' = 24.6. Sec. 4.1: user simulator Qwen3-VL-235B-A22B-Instruct 'across all runs to keep evaluations directly comparable' (not the default GPT-4.1). Checkpoint from the paper's footnoted HF link: Qwen/Qwen3-8B. Thinking mode not stated."
+    },
+    {
+      "model": "qwen2-5-7b",
+      "bench": "tau2-telecom",
+      "score": 0.167,
+      "source": "https://arxiv.org/html/2606.03892v2",
+      "source_id": "paper-2606.03892v2-synthesize-and-reward",
+      "by": "independent",
+      "date": "2026-06-03",
+      "note": "IBM Research 'Synthesize and Reward' v2 (CC BY 4.0), Table 3, row 'Qwen2.5-7B / Base', τ²-bench column 'Telecom' = 16.7. Sec. 4.1: user simulator Qwen3-VL-235B-A22B-Instruct 'across all runs to keep evaluations directly comparable' (not the default GPT-4.1). Checkpoint from the paper's footnoted HF link: Qwen/Qwen2.5-7B-Instruct. "
+    },
+    {
+      "model": "granite-4-1-8b",
+      "bench": "tau2-telecom",
+      "score": 0.175,
+      "source": "https://arxiv.org/html/2606.03892v2",
+      "source_id": "paper-2606.03892v2-synthesize-and-reward",
+      "by": "lab",
+      "date": "2026-06-03",
+      "note": "IBM Research 'Synthesize and Reward' v2 (CC BY 4.0), Table 3, row 'Granite-4.1-8B / Base', τ²-bench column 'Telecom' = 17.5. Sec. 4.1: user simulator Qwen3-VL-235B-A22B-Instruct 'across all runs to keep evaluations directly comparable' (not the default GPT-4.1). Checkpoint from the paper's footnoted HF link: ibm-granite/granite-4.1-8b-instruct. IBM authors, IBM model: by 'lab'."
+    },
+    {
+      "model": "qwen2-5-7b",
+      "bench": "tau2-telecom",
+      "score": 0.088,
+      "source": "https://arxiv.org/html/2602.22697v1",
+      "source_id": "paper-2602.22697v1-interactcs-rl",
+      "by": "independent",
+      "date": "2026-02-26",
+      "note": "Meituan InteractCS-RL v1 (CC BY 4.0), Table 2 'Performance of our InteractCS-RL in τ²-Bench', row 'Qwen2.5-7B', Telecom 'Pass@1' = 8.8%. Sec. 5.3: agents 'based on Qwen2.5-7/14B-Instruct'. τ²-bench setup in App. A.2 (user simulator for τ² not separately stated; the paper's own benchmark uses DeepSeek-V3.2 as user). Values are k/114 (single pass over the 114 tasks). Checkpoint: Qwen2.5-7B-Instruct."
+    },
+    {
+      "model": "qwen2-5-14b",
+      "bench": "tau2-telecom",
+      "score": 0.175,
+      "source": "https://arxiv.org/html/2602.22697v1",
+      "source_id": "paper-2602.22697v1-interactcs-rl",
+      "by": "independent",
+      "date": "2026-02-26",
+      "note": "Meituan InteractCS-RL v1 (CC BY 4.0), Table 2 'Performance of our InteractCS-RL in τ²-Bench', row 'Qwen2.5-14B', Telecom 'Pass@1' = 17.5%. Sec. 5.3: agents 'based on Qwen2.5-7/14B-Instruct'. τ²-bench setup in App. A.2 (user simulator for τ² not separately stated; the paper's own benchmark uses DeepSeek-V3.2 as user). Values are k/114 (single pass over the 114 tasks). Checkpoint: Qwen2.5-14B-Instruct."
+    }
+  ],
+  "benchmarks": [],
+  "ledger": [
+    {
+      "action": "new",
+      "id": "tau2-bench-leaderboard-qwen",
+      "name": "τ²-bench leaderboard: Qwen (Alibaba) own submissions",
+      "kind": "leaderboard",
+      "match": [
+        "github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+        "github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/qwen3-max_qwen_2026-01-23/submission.json"
+      ],
+      "exact": true,
+      "license": "MIT",
+      "license_url": "https://opensource.org/license/mit",
+      "terms_url": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/LICENSE",
+      "quote": "The repository LICENSE at the pinned commit is the MIT License (Copyright (c) 2025 Sierra Research): 'Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files ... to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute ...'. The leaderboard submission files are committed files of the repository (same terms as the existing tau2-bench-leaderboard-* entries).",
+      "attribution": "Qwen team (Alibaba)'s own τ²-bench submissions in the sierra-research/tau2-bench leaderboard (@4ce7c03), MIT. Vendor-run / vendor-reported.",
+      "scope": "Telecom pass^1 (also airline/retail if wanted) from the two committed Qwen submission.json files (legacy τ² board, tau2_bench_version 0.1.3). Each submitting organisation is a separate evaluator; 'Alibaba' and 'Qwen' are the same Qwen team.",
+      "verdict": "allowed",
+      "checked": "2026-10-09",
+      "icon": "github.com"
+    },
+    {
+      "action": "new",
+      "id": "card-meituan-longcat-flash-chat",
+      "name": "Meituan LongCat-Flash-Chat model card (evaluation table)",
+      "kind": "first-party",
+      "match": [
+        "huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md"
+      ],
+      "exact": true,
+      "license": "MIT",
+      "license_url": "https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/LICENSE",
+      "terms_url": "https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/LICENSE",
+      "quote": "Pinned repo front matter 'license: mit'; LICENSE at the same revision: 'MIT License Copyright (c) 2025 Meituan. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including ... to use, copy, modify, merge, publish, distribute ...'. The README is a documentation file of the repository.",
+      "attribution": "Meituan LongCat Team, LongCat-Flash-Chat model card (@f0b8e8d), MIT. Selected τ²-Bench (telecom) cells measured by Meituan; percentages converted to fractions. No endorsement.",
+      "scope": "Evaluation Results table, row 'τ²-Bench (telecom) (avg@4)'. Card note: 'Values marked with * are sourced from other public reports' — no telecom cell is starred, so all seven are Meituan's runs. Card note: 'DeepSeek-V3.1, Qwen3-235B-A22B, Gemini2.5-Flash, and Claude4-Sonnet are evaluated under their non-thinking mode.'",
+      "verdict": "allowed",
+      "checked": "2026-10-09",
+      "icon": "huggingface.co"
+    },
+    {
+      "action": "new",
+      "id": "card-meituan-longcat-flash-thinking",
+      "name": "Meituan LongCat-Flash-Thinking model card (evaluation table)",
+      "kind": "first-party",
+      "match": [
+        "huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md"
+      ],
+      "exact": true,
+      "license": "MIT",
+      "license_url": "https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/LICENSE",
+      "terms_url": "https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/LICENSE",
+      "quote": "Pinned repo front matter 'license: mit' (MIT License, Copyright (c) 2025 Meituan; grant covers 'associated documentation files'). The README is a documentation file of the repository.",
+      "attribution": "Meituan LongCat Team, LongCat-Flash-Thinking model card (@7c9aad1), MIT. Selected τ²-Bench-Telecom cells measured by Meituan; percentages converted to fractions. No endorsement.",
+      "scope": "Evaluation Results table, row 'τ²-Bench-Telecom (Mean@4)'. Card note: 'Values marked with * are sourced from other public reports' — the GPT-5-Thinking cell (96.7*) is starred and NOT used.",
+      "verdict": "allowed",
+      "checked": "2026-10-09",
+      "icon": "huggingface.co"
+    },
+    {
+      "action": "new",
+      "id": "card-moonshotai-kimi-k2-instruct",
+      "name": "Moonshot AI Kimi-K2-Instruct model card (instruction-model evaluation table)",
+      "kind": "first-party",
+      "match": [
+        "huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/README.md"
+      ],
+      "exact": true,
+      "license": "Modified MIT License (Kimi K2)",
+      "license_url": "https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/LICENSE",
+      "terms_url": "https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/LICENSE",
+      "quote": "LICENSE at the pinned revision: 'Modified MIT License Copyright (c) 2025 Moonshot AI Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies ... Our only modification part is that, if the Software (or any derivative works thereof) is used for any of your commercial products or services that have more than 100 million monthly active users, or more than 20 million US dollars (or equivalent in other currencies) in monthly revenue, you shall prominently display \"Kimi K2\" on the user interface of such product or service.' Card section 6: 'Both the code repository and the model weights are released under the Modified MIT License.' Conditional commercial grant (display condition above a size threshold), like the accepted LFM Open License; OWNER SIGN-OFF NEEDED (first Modified-MIT source).",
+      "attribution": "Moonshot AI, Kimi-K2-Instruct model card (@fd1984e), Modified MIT License. Selected Tau2 telecom cells measured by Moonshot; percentages converted to fractions. No endorsement.",
+      "scope": "Section 3 'Instruction model evaluation results', row 'Tau2 telecom' (Avg@4). Footnote: 'Data points marked with * are taken directly from the model's tech report or blog' — no Tau2 cell is starred; 'All metrics ... evaluated with an 8k output token length'; 'we employed avg@k on ... Tau2'.",
+      "verdict": "allowed",
+      "checked": "2026-10-09",
+      "icon": "huggingface.co"
+    },
+    {
+      "action": "new",
+      "id": "report-2601.07022v1",
+      "name": "Solar Open Technical Report (arXiv:2601.07022v1)",
+      "kind": "paper",
+      "match": [
+        "arxiv.org/html/2601.07022v1",
+        "arxiv.org/abs/2601.07022v1"
+      ],
+      "exact": true,
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "terms_url": "https://arxiv.org/abs/2601.07022v1",
+      "quote": "arXiv abstract page for 2601.07022 (v1, only version) links http://creativecommons.org/licenses/by/4.0/ as the article licence; the HTML version prints 'License: CC BY 4.0'. CC BY 4.0 s.2(a)(1) permits reproduction and sharing, including commercially, with attribution.",
+      "attribution": "Upstage Solar Team, Solar Open Technical Report, arXiv:2601.07022v1, CC BY 4.0. Table 6 'Tau 2 Telecom' cells; percentages converted to fractions. No endorsement.",
+      "scope": "Table 6 (English Benchmarks), row 'Tau 2 Telecom'. Section 7.1 cites Barres et al. 2025 for 'Tau 2 (Airline/Telecom/Retail)'. Solar Open itself is not catalogued; gpt-oss-120b (high) and GLM-4.5-Air rows used; gpt-oss-120b (medium) column not used (lower setting).",
+      "verdict": "allowed",
+      "checked": "2026-10-09",
+      "icon": "arxiv.org"
+    },
+    {
+      "action": "add_match",
+      "id": "paper-2601.03286v1-hyperclova-x-32b-think",
+      "add_match": [
+        "arxiv.org/abs/2601.03286v1"
+      ]
+    },
+    {
+      "action": "add_match",
+      "id": "first-party-nvidia-scores",
+      "add_match": [
+        "huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md#reasoning-benchmark-evaluations",
+        "huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md#benchmarks"
+      ]
+    },
+    {
+      "action": "add_match",
+      "id": "first-party-lgai-scores",
+      "add_match": [
+        "huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results"
+      ]
+    },
+    {
+      "action": "add_match",
+      "id": "first-party-mistral-scores",
+      "add_match": [
+        "huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md#agentic-benchmarks"
+      ]
+    },
+    {
+      "action": "add_match",
+      "id": "first-party-anthropic-scores",
+      "add_match": [
+        "www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47/Claude%20Opus%204.5%20System%20Card.pdf",
+        "www-cdn.anthropic.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75/Claude%20Sonnet%204.6%20System%20Card.pdf"
+      ]
+    },
+    {
+      "action": "add_match",
+      "id": "first-party-google-scores",
+      "add_match": [
+        "storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_model_evaluation.pdf",
+        "deepmind.google/models/model-cards/gemini-3-1-pro"
+      ]
+    },
+    {
+      "action": "add_match",
+      "id": "first-party-openai-scores",
+      "add_match": [
+        "openai.com/index/introducing-gpt-5-for-developers"
+      ]
+    },
+    {
+      "action": "add_match",
+      "id": "card2-deepseek-ai-deepseek-v3-2",
+      "add_match": [
+        "huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/assets/paper.pdf"
+      ]
+    },
+    {
+      "action": "new",
+      "id": "paper-2508.18669v1-mua-rl",
+      "name": "MUA-RL: Multi-turn User-interacting Agent Reinforcement Learning for agentic tool use (arXiv:2508.18669v1)",
+      "kind": "paper",
+      "match": [
+        "arxiv.org/html/2508.18669v1",
+        "arxiv.org/abs/2508.18669v1"
+      ],
+      "exact": true,
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "terms_url": "https://arxiv.org/abs/2508.18669v1",
+      "quote": "arXiv abstract page for 2508.18669v1 links http://creativecommons.org/licenses/by/4.0/ as the licence of that version; the HTML prints 'License: CC BY 4.0'. CC BY 4.0 s.2(a)(1) permits reproduction and sharing, including commercially, with attribution.",
+      "attribution": "Weikang Zhao, Xili Wang et al. (Meituan), MUA-RL, arXiv:2508.18669v1, CC BY 4.0. τ²-bench Telecom cells measured by the authors; percentages converted to fractions. No endorsement.",
+      "scope": "Table 1 'TAU2 Telecom' column, 'Existing Baselines' rows and the MUA-RL base models' 'Non-thinking' rows. Not used: the Qwen3-235B-A22B / Qwen3-30B-A3B / Qwen3-4B Non-thinking rows (24.6 / 18.4 / 17.5 are identical to Qwen's own model-card figures, so possibly copied), cold-start and MUA-RL-trained rows (not catalogue models), TCR column.",
+      "verdict": "allowed",
+      "checked": "2026-10-09",
+      "icon": "arxiv.org"
+    },
+    {
+      "action": "new",
+      "id": "paper-2606.28715v2-seataubench",
+      "name": "SEATauBench: Progressively Adapting Tool-Agent-User Evaluation Into Low-Resource Southeast Asian Languages (arXiv:2606.28715v2)",
+      "kind": "paper",
+      "match": [
+        "arxiv.org/html/2606.28715v2",
+        "arxiv.org/abs/2606.28715v2"
+      ],
+      "exact": true,
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "terms_url": "https://arxiv.org/abs/2606.28715v2",
+      "quote": "arXiv abstract page for 2606.28715v2 links http://creativecommons.org/licenses/by/4.0/ as the licence of that version; the HTML prints 'License: CC BY 4.0'. CC BY 4.0 s.2(a)(1) permits reproduction and sharing, including commercially, with attribution.",
+      "attribution": "My Chiffon Nguyen, Aulia Adila et al., SEATauBench, arXiv:2606.28715v2, CC BY 4.0. τ²-bench Telecom cells measured by the authors; percentages converted to fractions. No endorsement.",
+      "scope": "Appendix G Table 17 'English Baseline (S1) results', Telecom rows, column EN p@1 (pass@1). Telecom uses the original τ²-bench tasks ('For the telecom domain, we follow the original τ²-Bench, as its tasks were not updated in the most recent release'); airline/retail use the corrected τ³ tasks and are not used. Localized (L2) settings not used.",
+      "verdict": "allowed",
+      "checked": "2026-10-09",
+      "icon": "arxiv.org"
+    },
+    {
+      "action": "new",
+      "id": "paper-2606.03892v2-synthesize-and-reward",
+      "name": "Synthesize and Reward: Reinforcement Learning for Multi-Step Tool Use in Live Environments (arXiv:2606.03892v2)",
+      "kind": "paper",
+      "match": [
+        "arxiv.org/html/2606.03892v2",
+        "arxiv.org/abs/2606.03892v2"
+      ],
+      "exact": true,
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "terms_url": "https://arxiv.org/abs/2606.03892v2",
+      "quote": "arXiv abstract page for 2606.03892v2 links http://creativecommons.org/licenses/by/4.0/ as the licence of that version; the HTML prints 'License: CC BY 4.0'. CC BY 4.0 s.2(a)(1) permits reproduction and sharing, including commercially, with attribution.",
+      "attribution": "Ibrahim Abdelaziz et al. (IBM Research), Synthesize and Reward, arXiv:2606.03892v2, CC BY 4.0. τ²-bench Telecom cells measured by the authors; percentages converted to fractions. No endorsement.",
+      "scope": "Table 3 'Main results across model families', τ²-bench Telecom column, 'Base' rows only (the four instruction-tuned starting checkpoints). 'Prove'-trained rows are not catalogue models.",
+      "verdict": "allowed",
+      "checked": "2026-10-09",
+      "icon": "arxiv.org"
+    },
+    {
+      "action": "new",
+      "id": "paper-2602.22697v1-interactcs-rl",
+      "name": "Reinforcing Real-world Service Agents: InteractCS-RL (arXiv:2602.22697v1)",
+      "kind": "paper",
+      "match": [
+        "arxiv.org/html/2602.22697v1",
+        "arxiv.org/abs/2602.22697v1"
+      ],
+      "exact": true,
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "terms_url": "https://arxiv.org/abs/2602.22697v1",
+      "quote": "arXiv abstract page for 2602.22697v1 links http://creativecommons.org/licenses/by/4.0/ as the licence of that version; the HTML prints 'License: CC BY 4.0'. CC BY 4.0 s.2(a)(1) permits reproduction and sharing, including commercially, with attribution.",
+      "attribution": "Ning Gao et al. (Meituan), InteractCS-RL, arXiv:2602.22697v1, CC BY 4.0. τ²-bench Telecom cells measured by the authors; percentages converted to fractions. No endorsement.",
+      "scope": "Table 2 'Performance of our InteractCS-RL in τ²-Bench', Telecom Pass@1, base-model rows Qwen2.5-7B and Qwen2.5-14B (the paper's agents are 'based on Qwen2.5-7/14B-Instruct'). SFT/RL rows not catalogue models.",
+      "verdict": "allowed",
+      "checked": "2026-10-09",
+      "icon": "arxiv.org"
+    }
+  ],
+  "models": [
+    {
+      "id": "qwen3-max-2026-01-23",
+      "name": "Qwen3-Max (2026-01-23)",
+      "provider": "Alibaba",
+      "category": "llm",
+      "released": "2026-01",
+      "open_weights": false,
+      "license": "proprietary",
+      "api": null,
+      "local": null,
+      "recovered_original": false,
+      "identity_note": "Comparison-only, proposed so the tau2-bench-leaderboard-qwen telecom run counts. Dated Alibaba Cloud Model Studio snapshot 'qwen3-max-2026-01-23' (release log 2026-01-23: 'Compared with the snapshot as of September 23, 2025, the Qwen-3 series Max model in this release achieves an effective integration of thinking and non-thinking modes'); marketed as Qwen3-Max-Thinking (qwen.ai blog id=qwen3-max-thinking). Distinct from qwen3-max-2025-09-23 and qwen3-max-preview.",
+      "identity_evidence": [
+        {
+          "source": "https://github.com/sierra-research/tau2-bench/blob/70e700cb117905f36ac058a9da10d29420e679b3/web/leaderboard/public/submissions/qwen3-max_qwen_2026-01-23/trajectories/telecom_llm_agent_qwen3-max-2026-01-23_user_simulator_gpt-4.1-2025-04-14.json",
+          "reported_label": "qwen3-max-2026-01-23"
+        },
+        {
+          "source": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+          "reported_label": "qwen3-max-2026-01-23"
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "printed_name": "LongCat-Flash (Chat)",
+      "score": 0.7368,
+      "source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md",
+      "why": "Meituan's own model, not catalogued; its run counts without it (6 catalogue models)."
+    },
+    {
+      "printed_name": "LongCat-Flash-Thinking",
+      "score": 0.831,
+      "source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md",
+      "why": "Not catalogued; run counts without it (5 catalogue models)."
+    },
+    {
+      "printed_name": "LongCat-Flash-Thinking-2601",
+      "score": 0.993,
+      "source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking-2601/blob/dc72d0840cc7b4f1488bf32a14eedc5c3c8a2164/README.md",
+      "why": "Not catalogued; its card's only other own cell is a reprint."
+    },
+    {
+      "printed_name": "LongCat-Flash-Lite / Kimi-Linear-48B-A3B",
+      "score": null,
+      "source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Lite/blob/b62b68827ead0b7fef3ba98b57f18484acaaec06/README.md",
+      "why": "0.728 / 0.1568; neither catalogued, so the card's run has one catalogue model (gemini-2-5-flash-lite 0.2193)."
+    },
+    {
+      "printed_name": "HyperCLOVA X 32B Think",
+      "score": 0.651,
+      "source": "https://arxiv.org/html/2601.03286v1",
+      "why": "Not catalogued (NAVER, open weights). Run counts without it."
+    },
+    {
+      "printed_name": "Qwen3-VL-32B-Thinking",
+      "score": 0.333,
+      "source": "https://arxiv.org/html/2601.03286v1",
+      "why": "Not catalogued (only the 235B Qwen3-VL models are)."
+    },
+    {
+      "printed_name": "Solar Open (102B)",
+      "score": 0.556,
+      "source": "https://arxiv.org/html/2601.07022v1",
+      "why": "Upstage Solar Open 100B not catalogued (solar-pro-4 is a different model). Run counts without it."
+    },
+    {
+      "printed_name": "K-EXAONE 236B (Reasoning)",
+      "score": 0.735,
+      "source": "https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results",
+      "why": "LG model not catalogued; first-party-lgai-scores telecom run counts without it."
+    },
+    {
+      "printed_name": "Granite-4.0-H-Tiny",
+      "score": 0.1667,
+      "source": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md",
+      "why": "Not catalogued (granite-4-0-h-small and -micro are)."
+    },
+    {
+      "printed_name": "Qwen3-Max-Thinking-Preview (qwen3-max-2025-10-30)",
+      "score": 0.9583,
+      "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/qwen3-max_qwen_2025-10-30/submission.json",
+      "why": "Preview checkpoint, not catalogued, and dropped from the leaderboard manifest."
+    },
+    {
+      "printed_name": "Nemotron-Orchestrator-8B (ToolOrchestra system)",
+      "score": 0.886,
+      "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/toolorchestra_nvidia_2025-12-02/submission.json",
+      "why": "Multi-model orchestration system, not a single model."
+    },
+    {
+      "printed_name": "MiMo-V2-Flash",
+      "score": 0.953,
+      "source": "https://arxiv.org/html/2601.02780v2",
+      "why": "Xiaomi's own model (licence: arXiv non-exclusive -> vendor-reported only). Text: 'For general tool-use on τ2-Bench, we employ DeepSeek-V3.2 as the user agent, achieving category scores of 95.3 (Telecom), 79.5 (Retail), 66.0 (Airline).' Not in catalogue (only mimo-v2-pro, -omni, -v2-5, -v2-5-pro, -v2-6-pro). Date 2026-01-08 (v2). Also printed as text on https://mimo.xiaomi.com/blog/mimo-v2-flash (Dec 16, 2025), and an openly licensed copy exists: paper.pdf in the Apache-2.0 repo github.com/XiaomiMiMo/MiMo-V2-Flash @b4eaae40d3728657ff7f0f9397dcce3c9ab3d3b7 (same 95.3 sentence) - prefer that if the model is added."
+    },
+    {
+      "printed_name": "LongCat-Next",
+      "score": 0.6206,
+      "source": "https://arxiv.org/html/2603.27538v1",
+      "why": "Meituan's own omni model, Table 5 'Tau2-Telecom(avg@8)' = 62.06 on 'a curated noise-reduced τ2-Bench' (github.com/AGI-Eval-Official/tau2-bench-revised). Licence non-exclusive. Not in catalogue."
+    },
+    {
+      "printed_name": "Ring-2.6-1T (xhigh)",
+      "score": 0.9496,
+      "source": "https://arxiv.org/html/2606.15079v1",
+      "why": "inclusionAI's own model, Ring-2.6 table row 'τ2-Telecom (Acc)': xhigh 94.96, high 96.71 (use xhigh as highest setting; note high scores higher). Licence CC BY-NC-ND -> own cells only; competitor cells are marked '∗ denotes results from our evaluation' but cannot be used. Not in catalogue (only ling-3-0-flash, ling-flash-2-0, ring-flash-2-0)."
+    },
+    {
+      "printed_name": "KAT-Coder-V2",
+      "score": 0.939,
+      "source": "https://arxiv.org/html/2603.27703v1",
+      "why": "Kuaishou's own model, Table 5 'τ2-Bench Telecom' = 93.9 ('Data points of KAT-Coder-V2 are evaluated on KwaiEnv'; all other columns are from artificialanalysis.ai and excluded). CC BY 4.0. Not in catalogue (only kat-coder-pro-v1)."
+    },
+    {
+      "printed_name": "Qwen3-VL-32B-Thinking",
+      "score": 0.469,
+      "source": "https://arxiv.org/html/2511.21631v2",
+      "why": "Qwen's own model, Table 5 TAU2-Telecom = 46.9. Not in catalogue."
+    },
+    {
+      "printed_name": "Qwen3-VL-30B-A3B-Thinking",
+      "score": 0.272,
+      "source": "https://arxiv.org/html/2511.21631v2",
+      "why": "Qwen's own model, Table 5 TAU2-Telecom = 27.2. Not in catalogue."
+    },
+    {
+      "printed_name": "Seed2.0 Pro",
+      "score": 0.942,
+      "source": "https://arxiv.org/pdf/2607.00248v1",
+      "why": "ByteDance Seed's own model, Seed2.0 Model Card (CC BY 4.0; arXiv has no HTML version, PDF only) Table 11 'τ2-Bench (telecom)' = 94.2. Possible match: catalogue dola-seed-2-0-pro ('Dola Seed 2.0 Pro', Arena-only identity) - identity not verified, so not mapped. Competitor cells (GPT-5.2 High 98.7, Claude-Sonnet-4.5 98.0, Claude-Opus-4.5 98.2, Gemini-3-pro High 98.0) NOT usable: §3.3 says 'the final score is defined as the maximum of the score reported in the official documentation and the score obtained in our tests'."
+    },
+    {
+      "printed_name": "Seed2.0 Lite",
+      "score": 0.921,
+      "source": "https://arxiv.org/pdf/2607.00248v1",
+      "why": "ByteDance Seed's own model, Table 12 'τ2-Bench (telecom)' = 92.1 (Gemini-3-Flash High 94.7 excluded for the max-of-official rule). Not in catalogue."
+    },
+    {
+      "printed_name": "MiMo-V2-Flash (comparator on MiMo-V2-Pro page)",
+      "score": 0.935,
+      "source": "https://mimo.xiaomi.com/blog/mimo-v2-pro",
+      "why": "Not in catalogue. Chart label '93.5' in the 'τ2-bench (Telecom)' cell (March 18, 2026); differs from the 95.3 in the Dec 2025 Flash report/blog, so a different run or Flash revision; no settings printed."
+    },
+    {
+      "printed_name": "ToolACE-2-8B / BitAgent-8B (Fission-GRPO baselines)",
+      "score": null,
+      "source": "https://arxiv.org/html/2601.15625v2",
+      "why": "Not catalogued, and the paper uses the 40-task test split."
+    }
+  ],
+  "checked": [
+    {
+      "source": "github.com/sierra-research/tau2-bench (MIT): latest commit on main is still 4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699 (2026-10-06, 'Add community spotlight featuring τ-Rec (#597)'), the commit already imported",
+      "outcome": "manifest.json lists 29 text submissions, 22 voice submissions and 16 legacy (original τ²) submissions; 73 directories in total (2 examples). Every text/legacy submission checked below."
+    },
+    {
+      "source": "github.com/sierra-research/tau2-bench @4ce7c03 web/leaderboard/public/submissions/manifest 'legacy_submissions' (tau2_bench_version 0.1.3 / 'original tau-bench')",
+      "outcome": "Telecom pass^1 present and already imported: claude-3-7-sonnet, gpt-4-1, gpt-4-1-mini, o4-mini, gpt-5 (Sierra), claude-sonnet-4-5 (Anthropic), kimi-k2 (Moonshot). NEW and proposed: qwen3-max_qwen_2026-01-23 (98.25, Qwen, GPT-4.1 user, trajectories), qwen3-max_qwen_2024_09_23 (84.2, Alibaba, unverified), deepseek-v3.2_deepseek_2025-12-01 (96.2, DeepSeek-V3.2 user, unverified), gemini-3-pro_google_2025-11-18 (98.0, Google run with modified prompts and Gemini user). No telecom value: claude-opus-4 / claude-opus-4-1 / claude-sonnet-4 (Anthropic, 'original tau-bench', telecom null), o3_openai_2025-01-15 (telecom null). SKIPPED: toolorchestra_nvidia_2025-12-02 (telecom 88.6, but it is an orchestration system routing between Nemotron-Orchestrator-8B and other LLMs, custom type, modified agent prompt; not a single model)."
+    },
+    {
+      "source": "github.com/sierra-research/tau2-bench @4ce7c03 web/leaderboard/public/submissions/qwen3-max_qwen_2025-10-30 (still committed, but removed from manifest.json in #149)",
+      "outcome": "Qwen3-Max-Thinking-Preview, telecom 95.83 (v0.1.3, GPT-4.1 user, agent llm 'qwen3-max-2025-10-30' per its trajectory file). Not proposed: dropped from the leaderboard when the final Qwen3-Max-Thinking replaced it, and the preview checkpoint is not in the catalogue (no API snapshot of that name verified). Listed in gaps."
+    },
+    {
+      "source": "github.com/sierra-research/tau2-bench @4ce7c03 web/leaderboard/public/submissions/manifest 'submissions' (τ³, tau2_bench_version 1.0.1, Sierra runs with gpt-5.2 low-reasoning user)",
+      "outcome": "Telecom present only in the 2026-02/03 Sierra runs (claude-opus-4-5, claude-sonnet-4-5, gpt-5-2, glm-5-think, qwen3.5-397b-a17b-think, gemini-3-flash, gemini-3-pro), all already imported as tau3-telecom. gpt-5-2-none_sierra (telecom 57.24 at reasoning effort 'none') SKIPPED: same model as gpt-5-2 at a lower setting (rule 5). All 2026-05/08 Sierra runs (gpt-5-4, gpt-5-5, gpt-5-6-sol, claude-opus-4-6/4-7/4-8/5, claude-fable-5, gemini-2-5-pro, gemini-3-1-pro, grok-4-fast/4-1-fast/4-2/4-5, glm-5-2, kimi-k3, muse-spark-1-1, inkling, qwen3-8-max) have airline/retail/telecom null (banking_knowledge only; already imported). distyl-buttonagent and raft-30b-a3b: no telecom (custom agents). No new tau3-telecom rows."
+    },
+    {
+      "source": "github.com/sierra-research/tau2-bench @4ce7c03 web/leaderboard/public/submissions/voice_submissions (22)",
+      "outcome": "Voice/full-duplex audio agents (gpt-realtime, Gemini Live, Grok voice, Qwen omni realtime, LiveKit, Pine, GPT-Live): different modality and harness, not τ² text telecom. Skipped."
+    },
+    {
+      "source": "github.com/sierra-research/tau2-bench history: glm5-2_zai_2026-06-21/submission.json (deleted in 0f67910, #452; also on branch add-worktreeinclude-public)",
+      "outcome": "Fireworks AI run of GLM-5.2, v1.0.0, telecom 99.34 with GLM-5.2 as its own user simulator. Not at the latest commit and not the leaderboard protocol; skipped. No other unmerged branch carries a text submission missing from main."
+    },
+    {
+      "source": "tau2-bench CHANGELOG.md / README @4ce7c03 and data diff v0.1.3 -> v1.0.1",
+      "outcome": "v1.0.0 (τ³) task fixes cover airline (27 tasks), retail (26) and banking only; v1.0.1 changes banking grading only ('Other domains are unaffected'). Checked in git: the 114 telecom tasks of v0.1.3 tasks.json are byte-identical (same ids, same JSON) to the v1.0.1 'base' split (split_tasks.json base = 114 ids); telecom main_policy.md, tech_support_manual.md, db.toml, user_db.toml unchanged; config DEFAULT_LLM_USER is gpt-4.1(-2025-04-14) in every release. So τ² and τ³ telecom are the same task set; the τ³ leaderboard numbers differ by protocol (Sierra's v1.0.1 runs use a gpt-5.2 low-reasoning user) and harness version."
+    },
+    {
+      "source": "huggingface.co: README of every catalogue model repo (771 repos) plus 60 extra maker repos, scanned for 'telecom'",
+      "outcome": "31 cards print a telecom value. Used: LongCat-Flash-Chat, LongCat-Flash-Thinking (MIT), Kimi-K2-Instruct (Modified MIT, flagged), LFM2.5-8B-A1B comparison table (LFM Open License, existing entry), Nemotron 3 Nano 30B / Super / Nano 4B own cells, EXAONE 4.5 + K-EXAONE own cells, Trinity-Large-Thinking own cell, Mistral Medium 3.5 (τ³), Qwen3-4B Thinking/Instruct-2507 own-lab cells. Not used: see entries below."
+    },
+    {
+      "source": "huggingface.co/meituan-longcat/LongCat-Flash-Thinking-2601 @dc72d08 (MIT)",
+      "outcome": "τ²-Telecom (Avg@4): only two unmarked cells, Qwen3-235B-A22B-Thinking-2507 47.3 (same figure as the LongCat-Flash-Thinking card, a reprint) and LongCat-Flash-Thinking-2601 99.3 (not catalogued); every other cell is † 'sourced from other public reports'. One catalogue model, reprinted value: not proposed."
+    },
+    {
+      "source": "huggingface.co/meituan-longcat/LongCat-Flash-Lite @b62b688 (MIT; report arXiv 2601.21204 is CC BY 4.0)",
+      "outcome": "Tau2-Telecom (avg@8): Kimi-Linear-48B-A3B 15.68, Gemini 2.5 Flash-Lite 21.93, LongCat-Flash-Lite 72.80 own; Qwen3-Next-80B-A3B-Instruct 13.2* copied. Only gemini-2-5-flash-lite is catalogued, so a one-model run; not proposed (would count with a comparison-only LongCat-Flash-Lite or Kimi-Linear entry)."
+    },
+    {
+      "source": "huggingface.co/MiniMaxAI/MiniMax-M2 @757303d and MiniMax-M2.1 @cd97f59 (Modified MIT)",
+      "outcome": "Their τ²-Bench-Telecom rows sit in the 'Intelligence Benchmarks (AA)' tables. M2: 'All scores of other models reported from https://artificialanalysis.ai/' (excluded); M2's own 87 'aligned with Artificial Analysis Intelligence Benchmarking Methodology'. M2.1: 'Derived from internal testing based on the evaluation datasets and methodology referenced in the Artificial Analysis Intelligence Index', but its Sonnet 4.5 (78) and M2 (87) cells repeat the M2 card's AA-sourced figures. Held for owner, not in results."
+    },
+    {
+      "source": "huggingface.co/ServiceNow-AI/Apriel-1.5-15b-Thinker and Apriel-1.6-15b-Thinker (MIT)",
+      "outcome": "'Tau2 bench Telecom' rows are part of the AA Index v3.0 block: 'Text benchmarks included in the Artificial Analysis Index v3.0 use scores reported by Artificial Analysis.' Excluded."
+    },
+    {
+      "source": "huggingface.co/tiiuae/Falcon-H1R-7B @a6f74bf (Falcon-LLM License)",
+      "outcome": "Not used from the card (licence not open). The same figures are already in data from the CC BY report (ledger report-2601.02346v1: falcon-h1r-7b 0.254, qwen3-8b 0.278, qwen3-32b 0.298, added by another pass), so nothing new here."
+    },
+    {
+      "source": "huggingface.co/upstage/Solar-Open-100B @1f59143 (Upstage Solar License) -> arXiv 2601.07022v1 (CC BY 4.0)",
+      "outcome": "Same Table 6 in the CC BY technical report; used from the report (gpt-oss-120b high 57.7, GLM-4.5-Air 28.1). Solar Open itself (55.6) not catalogued."
+    },
+    {
+      "source": "huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 @bf77c31 and -Super-120B-A12B-BF16 @2dc98e2",
+      "outcome": "Own Nemotron telecom cells used (first-party-nvidia-scores). Comparison columns not used: the Nano card says '* denotes the accuracy numbers are measured by us' and its unstarred Qwen3-30B-A3B-Thinking-2507 τ² cells equal Qwen's own card; Super comparison cells have mixed provenance."
+    },
+    {
+      "source": "huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16 @77df655 (OpenMDW-1.1) and arXiv 2606.15007v1 (CC BY 4.0, ledger report-2606.15007v1)",
+      "outcome": "'TauBench V3' (τ³) telecom for 7 models, NVIDIA-run with GPT-5.2 (low) user and an extra AGI-Eval 'tau2-bench-revised' user prompt; the existing ledger scope says competitor columns are excluded. Held for owner (tau3-telecom, not this test). The Lightning/Ultra cards also list 'Synthetic Telecom Tool-Use Trajectories ... Existing Tau2 telecom trajectories originally generated with DeepSeek V3.2' as training data."
+    },
+    {
+      "source": "huggingface.co/Qwen 2507 / Next cards (Apache-2.0)",
+      "outcome": "TAU2-Telecom rows present in 8 cards. Other-lab cells not used (e.g. Qwen3-30B-A3B-Instruct-2507's 'Gemini-2.5-Flash Non-Thinking 16.9' equals Moonshot's earlier Kimi K2 card figure; Kimi K2's 65.8 equals Moonshot's own; GPT-4o '#' rows were run on a substitute model). Own-lab first-time cells added only where they make a one-model card run count (Qwen3-4B Thinking/Instruct-2507 cards). Reprints of already-recorded figures held."
+    },
+    {
+      "source": "huggingface.co/google/gemma-4-*-it cards + arXiv 2607.02770v1 (Gemma 4 report)",
+      "outcome": "Cards print only 'Tau2 (average over 3)' (already tau2-bench). Report Table 5 prints the three domains (already tau2-*-gemma4). See held_for_owner for the same-test recommendation."
+    },
+    {
+      "source": "arXiv 2601.03286v1 HyperCLOVA X 32B Think (CC BY 4.0)",
+      "outcome": "Table 5 / Table 6 Tau 2 – Telecom with an explicit GPT-4.1 user simulator: 3 catalogue models used (EXAONE 4.0 32B, GPT-5.1 medium, Qwen3-235B-A22B). Table 6's GPT-5.1-user block (HCX 92.3, GPT-5.1 81.2, Qwen3 24.2) not used (different user simulator)."
+    },
+    {
+      "source": "arXiv 2601.01739 K-EXAONE technical report",
+      "outcome": "Licence CC BY-NC-ND 4.0: not usable as a licensed copy; LG's own cells taken from the HF card under rule (b)."
+    },
+    {
+      "source": "arXiv 2507.20534 Kimi K2 technical report",
+      "outcome": "Licence CC BY-NC-ND 4.0: not usable; the Kimi-K2-Instruct HF card (Modified MIT) is used instead."
+    },
+    {
+      "source": "arXiv 2509.01322 / 2509.18883 LongCat-Flash(-Thinking) reports",
+      "outcome": "arXiv non-exclusive licence: not a source; read only to confirm comparison-model identities (e.g. 'Qwen3-235B-A22B (2507 version)', 'we conduct evaluations through their official APIs'). The MIT HF cards are the cited sources."
+    },
+    {
+      "source": "arXiv 2512.02556 DeepSeek-V3.2 report",
+      "outcome": "arXiv non-exclusive licence; not used directly (see the vendors agent's notes on the HF-hosted paper.pdf)."
+    },
+    {
+      "source": "github.com/sierra-research/tau2-bench @4ce7c03 gemini-3-pro_google_2025-11-18/submission.json",
+      "outcome": "Telecom 98.0 is Google's own run transcribed by Sierra staff from Google's Gemini 3 Pro evaluation PDF. Recorded once, from Google's PDF under first-party-google-scores (where it pairs with Gemini 3.1 Pro), not again from the leaderboard copy."
+    },
+    {
+      "source": "github.com/sierra-research/tau2-bench @4ce7c03 deepseek-v3.2_deepseek_2025-12-01/submission.json",
+      "outcome": "Telecom 96.2 (user simulator DeepSeek-V3.2) is DeepSeek's own figure transcribed from its technical report. Recorded once, from the report PDF committed in the MIT-licensed deepseek-ai/DeepSeek-V3.2 repo (existing ledger card2-deepseek-ai-deepseek-v3-2, add_match), not again from the leaderboard copy. Single-model run either way."
+    },
+    {
+      "source": "https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47/Claude%20Opus%204.5%20System%20Card.pdf",
+      "outcome": "USED: Opus 4.5 98.2% and Opus 4.1 71.5% (Table 2.8.A, p.26). Sonnet 4.5's 98% (p.26) and 98.0% (Table 2.3.A, p.19) are NOT added: they equal the existing lab row for claude-sonnet-4-5 (0.98) from Anthropic's own τ²-leaderboard submission (tau2-bench-leaderboard-anthropic), with the same prompt-addendum description, so they are the same Anthropic measurement. Gemini 3 Pro 98.0% in Table 2.3.A is another lab's cell, excluded."
+    },
+    {
+      "source": "https://www-cdn.anthropic.com/6a5fa276ac68b9aeb0c8b6af5fa36326e0e166dd/Claude%20Opus%204.6%20System%20Card.pdf",
+      "outcome": "USED: Opus 4.6 99.25% (section 2.7 prose, p.21). Table 2.3.A repeats Opus 4.5 98.2% and Sonnet 4.5 98.0%, already covered; Gemini 3 Pro 98.0% and GPT-5.2 98.7% are other labs' cells, excluded."
+    },
+    {
+      "source": "https://www-cdn.anthropic.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75/Claude%20Sonnet%204.6%20System%20Card.pdf",
+      "outcome": "USED: Sonnet 4.6 97.9% (section 2.5 prose, p.18). Table 2.1.A repeats Opus 4.6 99.3%, Opus 4.5 98.2% and Sonnet 4.5 98.0%, already covered; Gemini 3 Pro and GPT-5.2 cells are other labs', excluded."
+    },
+    {
+      "source": "https://www-cdn.anthropic.com/6d8a8055020700718b0c49369f60816ba2a7c285/Claude%204%20System%20Card.pdf",
+      "outcome": "No τ²-bench mention (Claude Opus 4 / Sonnet 4 system card)."
+    },
+    {
+      "source": "https://www-cdn.anthropic.com/9fa30625273bafdf5af82c93719d7ca606485a16/Claude%204.1%20System%20Card.pdf",
+      "outcome": "No τ²-bench mention."
+    },
+    {
+      "source": "https://www-cdn.anthropic.com/963373e433e489a87a10c823c52a0a013e9172dd/Claude%20Sonnet%204.5%20System%20Card.pdf",
+      "outcome": "No τ²-bench mention."
+    },
+    {
+      "source": "https://www-cdn.anthropic.com/7aad69bf12627d42234e01ee7c36305dc2f6a970/Claude%20Haiku%204.5%20System%20Card.pdf",
+      "outcome": "No τ²-bench mention."
+    },
+    {
+      "source": "https://www-cdn.anthropic.com/037f06850df7fbe871e206dad004c3db5fd50340/Claude%20Opus%204.7%20System%20Card.pdf",
+      "outcome": "No τ²-bench mention."
+    },
+    {
+      "source": "https://www-cdn.anthropic.com/0f0c97ad20d8005706296bd92aa1c27c6b2f4f61/Claude%20Opus%204.8%20System%20Card.pdf",
+      "outcome": "No τ²-bench mention."
+    },
+    {
+      "source": "Claude Opus 5, Sonnet 5, Fable 5 & Mythos 5, Fable 5.1 & Mythos 5.1, Opus 5.5 and Sonnet 5.5 system cards (the PDFs already in first-party-anthropic-scores)",
+      "outcome": "No τ²-bench mention in any of them."
+    },
+    {
+      "source": "https://www.anthropic.com/news/claude-sonnet-4-5",
+      "outcome": "Image only. The benchmark table is an image; the text has only the τ2-bench methodology footnote (extended thinking, agent prompt addendum for Airline and Telecom, Telecom user-prompt addendum)."
+    },
+    {
+      "source": "https://www.anthropic.com/news/claude-haiku-4-5",
+      "outcome": "Image only ('Comparison table of frontier models across popular benchmarks'). The τ2-bench footnote says: average over 10 runs, 128k thinking budget, the same prompt addenda. No Haiku 4.5 telecom value is printed as text anywhere checked."
+    },
+    {
+      "source": "https://www.anthropic.com/news/claude-4 ; https://www.anthropic.com/news/claude-opus-4-1",
+      "outcome": "Original TAU-bench only (Airline/Retail); no τ²-bench Telecom."
+    },
+    {
+      "source": "https://www.anthropic.com/news/claude-opus-4-5 ; claude-opus-4-6 ; claude-sonnet-4-6 ; claude-opus-4-7 ; claude-opus-4-8 ; claude-sonnet-5 ; claude-opus-5 ; anthropic.com/claude-opus-5-5",
+      "outcome": "No τ²-bench Telecom value in text (Opus 4.5 post mentions τ2-bench only in prose about the airline loophole)."
+    },
+    {
+      "source": "https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_model_evaluation.pdf",
+      "outcome": "USED: Gemini 3 Pro Telecom 98.0% (text, p.2). The aggregate is only in the image results table."
+    },
+    {
+      "source": "https://deepmind.google/models/model-cards/gemini-3-1-pro/",
+      "outcome": "USED: Gemini 3.1 Pro Telecom 99.3% (HTML table). It also prints Gemini 3 Pro 98.0%, the same measurement as the methodology PDF, recorded once from the 3 Pro PDF. Sonnet 4.6, Opus 4.6 and GPT-5.2 cells are other labs', excluded."
+    },
+    {
+      "source": "https://storage.googleapis.com/deepmind-media/gemini/gemini_3-1_pro_model_evaluation.pdf",
+      "outcome": "Methodology text only (prompt adjustment, Gemini user model, airline excluded). The results table is an image. Used for the gemini-3-1-pro row's settings."
+    },
+    {
+      "source": "https://storage.googleapis.com/deepmind-media/gemini/gemini_3_flash_model_evaluation.pdf",
+      "outcome": "Aggregate only, image. Gemini 3 Flash τ²-bench is a 'simple average' over Retail, Airline (fixed, per the Opus 4.5 card) and Telecom, with Gemini 3 Pro as the user model. The results table is an image and no per-domain telecom value is printed as text. The Gemini 3 Flash model card PDF (Model-Cards/Gemini-3-Flash-Model-Card.pdf) is also image-only."
+    },
+    {
+      "source": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf ; Gemini-3-1-Pro-Model-Card.pdf",
+      "outcome": "Results tables are images; no τ² text."
+    },
+    {
+      "source": "deepmind.google evals-methodology PDFs for gemini-3-5-flash, 3-6-flash, 3-7-flash, 3-8-flash, 3-1-flash-lite; model cards for gemini-3-5-flash, 3-6-flash, 3-1-flash-lite, 3-5-flash-lite (HTML and PDF); deepmind.google/models/gemini/, /gemini/pro/, /gemini/flash/, /gemini/flash-lite/",
+      "outcome": "No τ²-bench mention."
+    },
+    {
+      "source": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v2_5_report.pdf",
+      "outcome": "No τ²-bench mention (Gemini 2.5 Pro/Flash). Gemini 2.5 τ² values appear only as aggregates in the Gemini 3 image tables."
+    },
+    {
+      "source": "docs.cloud.google.com Gemini guides (3-pro, 3-flash, 3-1-pro, 3-5/3-6/3-7/3-8 flash)",
+      "outcome": "No τ²-bench mention."
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-5-for-developers",
+      "outcome": "USED: 8 OpenAI-model telecom cells (GPT-5, GPT-5 mini, GPT-5 nano, o3, o4-mini, GPT-4.1, GPT-4.1 mini, GPT-4.1 nano), from Internet Archive capture 20261006155708."
+    },
+    {
+      "source": "https://openai.com/index/gpt-5-1-for-developers",
+      "outcome": "USED: GPT-5.1 (high) 95.6% with an added prompt (capture 20260910181654). GPT-5 (high) 96.7% repeats the GPT-5 developer post."
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-5-2",
+      "outcome": "USED: GPT-5.2 Thinking 98.7% (xhigh, telecom instruction added; capture 20261005030805). GPT-5.1 Thinking 95.6% repeats the GPT-5.1 developer post. The effort='none' comparison is a chart only."
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-5",
+      "outcome": "Chart only. Telecom values are only in a Vega-Lite chart spec embedded in the page (GPT-5 stacked bars, o3, and GPT-4o 0.235); not printed text, so not used. Capture 20261004073440."
+    },
+    {
+      "source": "https://openai.com/index/gpt-5-1 ; https://openai.com/index/gpt-5-1-codex-max ; https://openai.com/index/introducing-gpt-5-2-codex",
+      "outcome": "No τ²-bench mention (archive captures 20260929123845, 20261003100014, 20261005202129)."
+    },
+    {
+      "source": "https://openai.com/index/introducing-o3-and-o4-mini",
+      "outcome": "Archive capture returned 403. The page predates τ²-bench (April 2025), so it has no telecom value."
+    },
+    {
+      "source": "openai.com GPT-5.3-Codex / 5.4 / 5.4 mini & nano / 5.5 / 5.6 / 6 pages",
+      "outcome": "Not redone, per instructions (covered 2026-10-07). Note: that pass left GPT-5.4 98.9% and GPT-5.4 mini 93.4%, nano 92.5% and GPT-5 mini 74.1% 'unmatched' because the prompt setup differed from 'original prompts'. Under this brief's rule (record modified-prompt runs with the change quoted) they may deserve another look. GPT-5 mini's 74.1% equals the GPT-5 developer post value recorded here."
+    },
+    {
+      "source": "https://x.ai/news/grok-4-1-fast",
+      "outcome": "AA-credited, excluded. 'τ²-bench Telecom | Score (%) 100%' carries '* Independent evaluation verified by Artificial Analysis'."
+    },
+    {
+      "source": "https://x.ai/news/grok-4 ; grok-4-fast ; grok-4-1 ; grok-4-5 ; grok-4-6 ; grok-4-7 ; grok-code-fast-1 ; https://docs.x.ai/developers/models.md",
+      "outcome": "No τ²-bench mention. The Grok 4.20 and 4.3 posts were not found (guessed slugs returned 404; x.ai/news is behind Cloudflare). The Grok 4.20 telecom 97% seen in press is Artificial Analysis's figure, so it would be excluded anyway."
+    },
+    {
+      "source": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5",
+      "outcome": "Not this test: 'scores 91.4 on τ³-Telecom' (Mistral Medium 3.5) is τ³ (tau3-telecom), not original τ²-bench."
+    },
+    {
+      "source": "mistral.ai/news: mistral-3 (Large 3), mistral-medium-3, magistral, devstral, devstral-2507, devstral-2-vibe-cli, mistral-small-4, mistral-large-4, codestral-25-08, leanstral, mistral-vibe-2-0, mistral-makes-sovereign-open-weight-ai-to-frontier; docs.mistral.ai/models pages for mistral-large-3-25-12, medium-3-25-05, medium-3-1-25-08, medium-3-5-26-04, magistral-medium/small-1-2-25-09, devstral-2-25-12, devstral-small-2-25-12, devstral-medium-1-0-25-07, mistral-small-3-2-25-06, mistral-small-4-0-26-03, ministral-3-14b-25-12, mistral-large-4-0",
+      "outcome": "No τ²-bench mention."
+    },
+    {
+      "source": "https://cdn.amazon.science/c5/3d/84514a224666b5be6de4b43ef4aa/nova-2-0-technical-report2.pdf",
+      "outcome": "AA-credited, excluded. Table 2 (p.5) and Table 5 (p.8) 'τ2-bench Telecom' column carries footnote a: 'This benchmark is sensitive to the choice of user model. For consistency, we report all numbers as benchmarked by https://artificialanalysis.ai.' This covers Nova 2 Lite 76.0, Nova 2 Pro 92.7 and Nova 2 Omni 80.0. Retail and Airline columns are τ²-Bench-Verified (Amazon), not this test. The intro's 'τ2-bench-Verified ... 92.7% (telecom)' is the same AA-credited cell."
+    },
+    {
+      "source": "aboutamazon.com Nova 2 news; docs.aws.amazon.com Nova 2 user guide (what-is-nova-2, whats-new); Bedrock model-cards-amazon",
+      "outcome": "No τ²-bench mention."
+    },
+    {
+      "source": "https://thinkingmachines.ai/news/introducing-inkling/ ; /news/inkling-small/ ; /model-card/inkling/ ; /model-card/inkling-small/ ; inkling-eval-table JS",
+      "outcome": "No τ²-bench Telecom. Only τ³-Banking appears (Inkling-Small page, partly with Artificial Analysis reference data). The '58% τ²-Bench Telecom' in press coverage is not on any first-party page checked."
+    },
+    {
+      "source": "https://ai.meta.com/blog/introducing-muse-spark-msl/ (archive capture 20260926210006) ; https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/ (capture 20261004080532) ; dev.meta.ai/docs/models",
+      "outcome": "Image only or no mention. The Muse Spark benchmark tables are PNG images; no τ² text. No first-party Muse Spark 1.1/1.2/1.3 benchmark page was found (ai.meta.com blog index, archive capture 20261008144301)."
+    },
+    {
+      "source": "https://cohere.com/blog/command-a-reasoning",
+      "outcome": "No τ²-bench Telecom. Original τ-bench (retail+airline average, pass^1 over 10 runs) and an in-house multilingual τ-bench only, with values in a chart image."
+    },
+    {
+      "source": "https://cohere.com/blog/command-a ; https://cohere.com/research/papers/command-a-technical-report.pdf ; cohere.com/blog/command-a-vision ; cohere.com/north ; docs.cohere.com (command-a, command-a-reasoning, command-a-plus, models, changelog)",
+      "outcome": "No τ²-bench Telecom (Command A covers original Taubench retail/airline only). Command A+ telecom 85% and Command A Reasoning 37% are already in results.json from cohere.com/blog/command-a-plus."
+    },
+    {
+      "source": "https://www.ibm.com/granite (and ibm.com/new/announcements Granite 4.0/4.1/4.2 pages)",
+      "outcome": "Not this test: the Granite 4.2 table prints 'τ³-bench' (an aggregate, tau3) only. No τ²-bench Telecom."
+    },
+    {
+      "source": "AI21 (web search) and Microsoft Phi (web search)",
+      "outcome": "No first-party page printing τ²-bench Telecom was found. The catalogue's Jamba 1.5 and Phi-4 family models predate τ²-bench (June 2025). Third-party aggregator figures seen in search (Jamba 1.7) were not used."
+    },
+    {
+      "source": "https://arxiv.org/html/2512.02556v1",
+      "outcome": "DeepSeek-V3.2 report (abs licence: arXiv non-exclusive). §4 text: 'For τ2-bench, we employ the model itself as the user agent, achieving final category scores of 63.8 (Airline), 81.1 (Retail), and 96.2 (Telecom)' (thinking mode). Same text as the MIT-licensed copy assets/paper.pdf in deepseek-ai/DeepSeek-V3.2 @a7e62ac, which is used as the row source instead (openly licensed copy preferred). Table 2 competitor columns print aggregate τ2-Bench only; non-thinking appendix table aggregate only (77.2)."
+    },
+    {
+      "source": "https://arxiv.org/html/2606.19348v1",
+      "outcome": "DeepSeek-V4 report: no τ2-bench rows (agentic: Terminal Bench 2.0, SWE*, BrowseComp, HLE w/ tools, GDPval-AA, MCPAtlas, Toolathlon)."
+    },
+    {
+      "source": "https://arxiv.org/html/2609.19969v1",
+      "outcome": "DeepSeek-V4.1-Flash report: no τ2-bench (τ only as a math symbol)."
+    },
+    {
+      "source": "https://arxiv.org/html/2508.06471v1",
+      "outcome": "GLM-4.5 report (CC BY 4.0): original τ-bench only (TAU-Retail / TAU-Airline, optimized user simulator); no telecom."
+    },
+    {
+      "source": "https://arxiv.org/html/2602.15763v2",
+      "outcome": "GLM-5 report (CC BY 4.0): Table 7 τ2-Bench aggregate only (GLM-5 89.7 etc.); 'We add a small prompt adjustment for Retail and Telecom to avoid failures caused by premature user termination'; Figure 2 is the Artificial Analysis Intelligence Index (AA, excluded). Aggregate only."
+    },
+    {
+      "source": "https://arxiv.org/html/2604.26752v3",
+      "outcome": "GLM-5V-Turbo report: no τ2-bench."
+    },
+    {
+      "source": "https://arxiv.org/html/2506.13585v1",
+      "outcome": "MiniMax-M1 report: original TAU-bench (airline/retail) only."
+    },
+    {
+      "source": "https://arxiv.org/html/2605.26494v2",
+      "outcome": "MiniMax-M2 series report: τ2-Bench telecom appears only in an internal SWA ablation table (Baseline 32.5 vs w/ SWA 21.0) for ablation models, not released checkpoints; skipped. No telecom for released M2/M2.1/M2.5."
+    },
+    {
+      "source": "https://arxiv.org/html/2507.20534v2",
+      "outcome": "Kimi K2 report (CC BY-NC-ND 4.0): Kimi-K2-Instruct telecom 65.8 recorded (flagged as same run as the existing Moonshot leaderboard row); other labs' columns not usable."
+    },
+    {
+      "source": "https://arxiv.org/html/2602.02276v2",
+      "outcome": "Kimi K2.5 report (CC BY-NC-ND): no τ2-bench rows."
+    },
+    {
+      "source": "https://arxiv.org/html/2607.24653v2",
+      "outcome": "Kimi K3 report (CC BY-NC-ND): only τ3-Banking, cited from Artificial Analysis; excluded."
+    },
+    {
+      "source": "https://arxiv.org/html/2510.26692v2",
+      "outcome": "Kimi Linear report: no τ2-bench."
+    },
+    {
+      "source": "https://arxiv.org/html/2505.09388v1",
+      "outcome": "Qwen3 technical report: no τ2-bench (predates telecom domain)."
+    },
+    {
+      "source": "https://arxiv.org/html/2603.00729v1",
+      "outcome": "Qwen3-Coder-Next report: no τ2-bench."
+    },
+    {
+      "source": "https://arxiv.org/html/2604.15804v2",
+      "outcome": "Qwen3.5-Omni report (CC BY 4.0): TAU2Bench aggregate only (82.7/78.0/81.0); no telecom split. Aggregate only."
+    },
+    {
+      "source": "https://arxiv.org/html/2509.17765v1",
+      "outcome": "Qwen3-Omni report: no τ2-bench."
+    },
+    {
+      "source": "https://arxiv.org/html/2511.21631v2",
+      "outcome": "Qwen3-VL report (non-exclusive): Tables 3 and 5 TAU2-Telecom recorded for Qwen's own catalogue models (5 rows); Qwen3-VL-32B/30B-A3B Thinking are gaps; OpenAI o3 60.5 not usable. Tables 2, 4, 6 and 7 (instruct models and 2B-8B thinking models) print no telecom row."
+    },
+    {
+      "source": "https://arxiv.org/html/2609.25611v1",
+      "outcome": "Qwen3.8-Omni report: no τ2-bench."
+    },
+    {
+      "source": "https://arxiv.org/html/2608.30320v1",
+      "outcome": "Qwen3.8-Next architecture report: no τ2-bench."
+    },
+    {
+      "source": "https://arxiv.org/html/2601.02780v2",
+      "outcome": "MiMo-V2-Flash report (non-exclusive): own telecom 95.3 (DeepSeek-V3.2 as user agent) -> gap (not in catalogue). Table 9 competitor columns aggregate τ2 only; Table 7 MOPD telecom cells are internal student/teacher checkpoints."
+    },
+    {
+      "source": "https://arxiv.org/html/2607.13095v1",
+      "outcome": "MiMo-V2.5 inference-optimization paper: no τ2-bench."
+    },
+    {
+      "source": "https://arxiv.org/html/2509.01322v2",
+      "outcome": "LongCat-Flash report (non-exclusive): own LongCat-Flash telecom 73.68 -> gap; DeepSeek V3.1 38.50, Qwen3 MoE-2507 25.60, Kimi-K2 67.50, GPT-4.1 35.20, Claude4 Sonnet 46.20, Gemini2.5 Flash 16.50 are Meituan-measured but licence not open -> not usable."
+    },
+    {
+      "source": "https://arxiv.org/html/2509.18883v2",
+      "outcome": "LongCat-Flash-Thinking report (non-exclusive): own 83.1 -> gap; competitor cells not usable (licence)."
+    },
+    {
+      "source": "https://arxiv.org/html/2601.16725v2",
+      "outcome": "LongCat-Flash-Thinking-2601 report (CC BY 4.0): Qwen3-235B-A22B-Thinking-2507 47.3 (unmarked) recorded; †-marked cells (external reports) excluded; own 99.3 -> gap."
+    },
+    {
+      "source": "https://arxiv.org/html/2511.00279v2",
+      "outcome": "LongCat-Flash-Omni report: no τ2-bench."
+    },
+    {
+      "source": "https://arxiv.org/html/2603.27538v1",
+      "outcome": "LongCat-Next report (non-exclusive): own 62.06 on revised τ2-bench -> gap; Kimi-Linear 15.68 / Qwen3-Omni 4.39 not usable (licence); Qwen3-Next-80B-A3B-Instruct 13.2* copied from public reports."
+    },
+    {
+      "source": "https://arxiv.org/html/2609.36071v1",
+      "outcome": "LongCat-DeepResearch report: no τ2-bench."
+    },
+    {
+      "source": "https://arxiv.org/html/2602.10604v2",
+      "outcome": "Step 3.5 Flash report (non-exclusive): τ2-Bench aggregate only (88.2; GPT-4.1 user at temperature 0, Opus-4.5 airline fixes and user-prompt addendum for retail/telecom, average of 8 runs). Aggregate only."
+    },
+    {
+      "source": "https://static.stepfun.com/blog/step-3.5-flash",
+      "outcome": "StepFun blog: τ²-Bench aggregate only (88.2). Aggregate only."
+    },
+    {
+      "source": "https://static.stepfun.com/blog/step-3.7-flash",
+      "outcome": "StepFun Step 3.7 Flash blog: only 'passes at over 98% across different reasoning difficulty tiers on Tau2-bench Telecom' - a lower bound, no exact figure; skipped."
+    },
+    {
+      "source": "https://platform.stepfun.ai/docs/en/guides/models/step-3.7-flash.md",
+      "outcome": "StepFun docs (also step-3.5-flash.md): no τ2 text."
+    },
+    {
+      "source": "https://arxiv.org/html/2601.09668v2",
+      "outcome": "STEP3-VL-10B report: no τ2-bench (τ only as a symbol)."
+    },
+    {
+      "source": "https://arxiv.org/html/2602.04705v1",
+      "outcome": "ERNIE 5.0 report (CC BY 4.0): TAU2-Bench aggregate only (Table 2; elastic-sparsity table 'TAU2' also aggregate). Aggregate only."
+    },
+    {
+      "source": "https://ernie.baidu.com/blog/publication/ERNIE_Technical_Report.pdf",
+      "outcome": "ERNIE 4.5 technical report PDF: no τ-bench / τ2-bench."
+    },
+    {
+      "source": "https://arxiv.org/html/2609.27284v1",
+      "outcome": "Hunyuan-A13B report: original τ-Bench only."
+    },
+    {
+      "source": "https://arxiv.org/html/2505.15431v3",
+      "outcome": "Hunyuan-TurboS report: no τ-bench."
+    },
+    {
+      "source": "https://github.com/Tencent-Hunyuan/Hy3/blob/b20268970234437e73665fdce202e574eda598f5/README.md",
+      "outcome": "Hy3 GitHub README (also Hy3-preview @38ac237, Hy4-preview @509799b): no τ2 text (benchmark tables not in text). Hunyuan-A13B README @2798f3c: original τ-Bench only. Third-party pages quoting Hy3 'τ²-Bench 92.7' are aggregators, not used."
+    },
+    {
+      "source": "https://arxiv.org/pdf/2607.00248v1",
+      "outcome": "Seed2.0 Model Card (CC BY 4.0, PDF only): Seed2.0 Pro 94.2 / Lite 92.1 telecom -> gaps; competitor cells excluded because §3.3 takes 'the maximum of the score reported in the official documentation and the score obtained in our tests'."
+    },
+    {
+      "source": "https://github.com/ByteDance-Seed/seed-oss/blob/98e12be7c784c46ea98a4f816babb09965899ae0/README.md",
+      "outcome": "Seed-OSS GitHub README (Apache-2.0): TAU1-Retail/Airline only; no τ2 telecom."
+    },
+    {
+      "source": "https://seed.bytedance.com/en/seed2_1",
+      "outcome": "Seed2.1 page (also /en/seed2, /en/seed1_8, /en/seed1_6): no τ2 telecom text (Seed1.8 benchmarks are images)."
+    },
+    {
+      "source": "https://arxiv.org/html/2507.11407v2",
+      "outcome": "EXAONE 4.0 report: original Tau-Bench (Airline/Retail) only."
+    },
+    {
+      "source": "https://arxiv.org/html/2604.08644v1",
+      "outcome": "EXAONE 4.5 report (CC BY-NC-ND): EXAONE 4.5 33B 73.0 recorded; K-EXAONE 73.5 gap; GPT-5 mini 74.1 / Qwen3-VL-235B 44.7 / Qwen3.5-27B 99.3 not used (licence; baselines partly copied from official reports)."
+    },
+    {
+      "source": "https://arxiv.org/html/2601.01739v2",
+      "outcome": "K-EXAONE report (CC BY-NC-ND): EXAONE 4.0 (Reasoning) 23.7 recorded; K-EXAONE 73.5 gap; others not usable."
+    },
+    {
+      "source": "https://arxiv.org/html/2608.04505v1",
+      "outcome": "K-EXAONE 2.0 report: τ3-Banking only; excluded."
+    },
+    {
+      "source": "https://github.com/LG-AI-EXAONE/EXAONE-4.5/blob/0b54191e546e74895c1525ac7a4afdf978c537b4/README.md",
+      "outcome": "EXAONE-4.5 / K-EXAONE (@92b4002) GitHub READMEs: same telecom tables as the arXiv reports (custom EXAONE licence, NOASSERTION); arXiv used instead."
+    },
+    {
+      "source": "https://arxiv.org/html/2601.07022v1",
+      "outcome": "Solar Open report (CC BY 4.0): gpt-oss-120b (high) 57.7 and GLM-4.5-Air 28.1 recorded; Solar Open 55.6 gap."
+    },
+    {
+      "source": "https://arxiv.org/html/2607.20062v2",
+      "outcome": "Solar Open 2 report: τ3 (banking) only; excluded."
+    },
+    {
+      "source": "https://www.upstage.ai/blog/en/solar-pro-4",
+      "outcome": "Solar Pro 4 blog: τ³-Banking only (partly credited to Artificial Analysis); no τ2."
+    },
+    {
+      "source": "https://arxiv.org/html/2510.22115v2",
+      "outcome": "Ling 2.0 report: no τ2-bench."
+    },
+    {
+      "source": "https://arxiv.org/html/2510.18855v2",
+      "outcome": "Ring-1T report: no τ2-bench."
+    },
+    {
+      "source": "https://arxiv.org/html/2606.15079v1",
+      "outcome": "Ling & Ring 2.6 report (CC BY-NC-ND): Ling-2.6 tables print τ2-bench aggregate only; Ring-2.6-1T telecom (xhigh 94.96 / high 96.71) -> gap; competitor cells not usable. Also cites AA Intelligence Index (excluded)."
+    },
+    {
+      "source": "https://github.com/inclusionAI/Ling-V2/blob/733190f90783d07faabd7060fb64550b65d7114d/README.md",
+      "outcome": "inclusionAI GitHub READMEs (Ling-V2, Ring-V2 @4467ce1, Ling-V2.5 @79c5ec5, Ring-V2.5 @c7facea): no τ2 telecom text."
+    },
+    {
+      "source": "https://arxiv.org/html/2507.08297v3",
+      "outcome": "KAT-V1 report: no τ-bench."
+    },
+    {
+      "source": "https://arxiv.org/html/2510.18779v3",
+      "outcome": "KAT-Coder report (CC BY 4.0): τ2-Bench Retail only; no telecom."
+    },
+    {
+      "source": "https://arxiv.org/html/2603.27703v1",
+      "outcome": "KAT-Coder-V2 report (CC BY 4.0): own 93.9 (KwaiEnv) -> gap; all other columns from artificialanalysis.ai -> excluded (AA-credited)."
+    },
+    {
+      "source": "https://arxiv.org/html/2607.05471v1",
+      "outcome": "KAT-Coder-V2.5 report: no τ2-bench."
+    },
+    {
+      "source": "https://arxiv.org/html/2511.05951v1",
+      "outcome": "Klear-AgentForge (Kuaishou) report: original τ-bench only."
+    },
+    {
+      "source": "https://api-docs.deepseek.com/news/news250821",
+      "outcome": "DeepSeek V3.1 release: benchmark tables are images only (v3.1_benchmark_1..3.webp); no τ²/telecom text. Image only, skipped."
+    },
+    {
+      "source": "https://api-docs.deepseek.com/news/news250922",
+      "outcome": "V3.1-Terminus: benchmark image only (deepseek_v3.1_terminus_benchmark_en.png). Image only, skipped."
+    },
+    {
+      "source": "https://api-docs.deepseek.com/news/news250929",
+      "outcome": "V3.2-Exp: benchmark image only (v3_2_benchmark.webp). Image only, skipped."
+    },
+    {
+      "source": "https://api-docs.deepseek.com/news/news251201",
+      "outcome": "V3.2 / V3.2-Speciale: benchmark images only (v3.2_251201_benchmark_table_en.png, agent_benchmark.webp); text links tech report assets/paper.pdf. Image only, skipped."
+    },
+    {
+      "source": "https://api-docs.deepseek.com/news/news260424",
+      "outcome": "V4 Preview (Pro/Flash): benchmark images only. Image only, skipped."
+    },
+    {
+      "source": "https://api-docs.deepseek.com/news/news260813",
+      "outcome": "V4-Pro GA: benchmark table image only (v4_260813_benchmark_table_en.png). Image only, skipped."
+    },
+    {
+      "source": "https://api-docs.deepseek.com/news/news260821",
+      "outcome": "V4-Flash-Vision-Exp: benchmark image only. Image only, skipped."
+    },
+    {
+      "source": "https://api-docs.deepseek.com/news/news260910",
+      "outcome": "V4.1-Flash: benchmark images only. Image only, skipped."
+    },
+    {
+      "source": "https://github.com/deepseek-ai/DeepSeek-V3.2-Exp/blob/87e509a2e5a100d221c97df52c6e8be7835f0057/DeepSeek_V3_2.pdf",
+      "outcome": "V3.2-Exp tech report (repo licence MIT at 87e509a; PDF committed 2025-09-29 in 840f3c9). No τ²-bench at all (agent rows: BrowseComp, BrowseComp_zh, SWE Verified, SWE-bench Multilingual, Terminal-bench). No telecom row."
+    },
+    {
+      "source": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/assets/paper.pdf",
+      "outcome": "Same text as arXiv 2512.02556v1: V3.2 Telecom 96.2 (model itself as user agent); aggregate 80.3 thinking / 77.2 non-thinking; Speciale has no τ². Recorded only as an MIT-licensed alternative source for the parent's existing row."
+    },
+    {
+      "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/2cba9e42aa026125f3ed06c6d98c1db82f7ca027/DeepSeek_V41_Tech_Report.pdf",
+      "outcome": "No τ²-bench / telecom text."
+    },
+    {
+      "source": "huggingface.co/deepseek-ai DeepSeek-V4-Pro, V4-Pro-0813, V4-Flash, V4-Flash-0731, V3.1, V3.1-Terminus repos",
+      "outcome": "No PDF assets in these repos (V4 report = arXiv 2606.19348, already checked by parent: no τ²)."
+    },
+    {
+      "source": "https://z.ai/blog/glm-4.5",
+      "outcome": "Original τ-bench (Retail/Airline) only, charts are images. No τ²/telecom."
+    },
+    {
+      "source": "https://z.ai/blog/glm-4.6",
+      "outcome": "Benchmarks shown as 4 images only; no τ² text. Image only, skipped."
+    },
+    {
+      "source": "https://z.ai/blog/glm-4.7",
+      "outcome": "Aggregate only: τ²-Bench 87.4 for GLM-4.7 (text table). Footnote 3: 'τ²-Bench settings: temperature 0, max new tokens 16384. For τ²-Bench, we added an extra prompt in the Retail and Telecom interactions to avoid failures caused by users ending the interaction incorrectly; for the Airline domain, we applied the domain fixes proposed in the Claude Opus 4.5 release report.' No per-domain telecom cell."
+    },
+    {
+      "source": "https://z.ai/blog/glm-5",
+      "outcome": "Aggregate only: τ²-Bench 89.7 (GLM-5). Note: 'τ²-bench: We add a small prompt adjustment in Retail and Telecom to avoid failures caused by premature user termination. For Airline, we apply the domain fixes proposed in the Claude Opus 4.5 system card.' No telecom cell."
+    },
+    {
+      "source": "https://z.ai/blog/glm-5.1",
+      "outcome": "τ³-bench only ('User simulator: GPT-5.2 (reasoning_effort: low), 4 trials'); excluded (not original τ²)."
+    },
+    {
+      "source": "https://z.ai/blog/glm-5.2",
+      "outcome": "No τ²/τ³ row in the benchmark table."
+    },
+    {
+      "source": "https://z.ai/blog/glm-5.3",
+      "outcome": "No τ² row (agentic: Toolathlon Verified, AutomationBench, GDPval-AA v2 etc.)."
+    },
+    {
+      "source": "https://z.ai/blog/glm-5.3-flash",
+      "outcome": "No τ² row."
+    },
+    {
+      "source": "https://docs.z.ai/guides/llm/glm-4.5",
+      "outcome": "Original TAU-Bench mention only; no telecom."
+    },
+    {
+      "source": "https://docs.z.ai/guides/llm/glm-4.6",
+      "outcome": "No τ² text."
+    },
+    {
+      "source": "https://docs.z.ai/guides/llm/glm-4.7",
+      "outcome": "Aggregate only: '84.7 points on the τ²-Bench' (differs from the blog's 87.4; neither is telecom)."
+    },
+    {
+      "source": "https://docs.z.ai/guides/llm/glm-5",
+      "outcome": "Aggregate mention only (no number for telecom)."
+    },
+    {
+      "source": "https://docs.z.ai/guides/llm/glm-5.1",
+      "outcome": "No τ² text."
+    },
+    {
+      "source": "https://docs.z.ai/guides/llm/glm-5.2",
+      "outcome": "No τ² text."
+    },
+    {
+      "source": "https://docs.z.ai/guides/llm/glm-5.3",
+      "outcome": "No τ² text."
+    },
+    {
+      "source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "outcome": "No τ² text."
+    },
+    {
+      "source": "https://docs.bigmodel.cn/cn/guide/models/text/glm-4.6 (also glm-4.5, glm-4.7, glm-5, glm-5.1, glm-5.2, glm-5.3)",
+      "outcome": "Chinese docs: τ²-Bench named or aggregate only (GLM-4.7 84.7); no telecom cell."
+    },
+    {
+      "source": "https://www.minimax.io/news/minimaxm1",
+      "outcome": "Original TAU-bench only ('In agent tool use scenarios (TAU-bench)...'); table image. No τ²."
+    },
+    {
+      "source": "https://www.minimax.io/news/minimax-m2",
+      "outcome": "Benchmarks are images; text cites the Artificial Analysis index (AA-credited, excluded). No τ² text."
+    },
+    {
+      "source": "https://www.minimax.io/news/minimax-m21",
+      "outcome": "Benchmarks images only; no τ² text. Image only, skipped."
+    },
+    {
+      "source": "https://www.minimax.io/news/minimax-m25",
+      "outcome": "Benchmarks images only ('Further benchmark results of M2.5:' followed by image); no τ² text. Image only, skipped."
+    },
+    {
+      "source": "https://www.minimax.io/blog/minimax-m2-en-1748600000, /blog/minimax-m21, /blog/minimax-m25, /blog/minimax-m27, /blog/minimax-m3, /blog/minimax-m2-her, /blog/forge-scalable-agent-rl-en-1779896141",
+      "outcome": "No τ²/telecom text in any (tables are images where present)."
+    },
+    {
+      "source": "https://www.minimax.io/models/text/m3, /models/text/m27, /models/text",
+      "outcome": "No τ²/telecom text."
+    },
+    {
+      "source": "https://www.minimaxi.com/news/minimax-m2, minimax-m21, minimax-m25",
+      "outcome": "Chinese news pages: no τ²/telecom text."
+    },
+    {
+      "source": "https://platform.minimax.io/docs/llms.txt (52 guide/model .md pages fetched)",
+      "outcome": "No τ²-bench mention in any model/guide page ('telecom' only in privacy policy / terms)."
+    },
+    {
+      "source": "MiniMax-AI / zai-org GitHub READMEs",
+      "outcome": "Not mined: they mirror the Hugging Face cards, which another agent covers."
+    },
+    {
+      "source": "https://moonshotai.github.io/Kimi-K2",
+      "outcome": "JS-rendered shell (repo MoonshotAI/Kimi-K2 gh-pages @245789b, licence NOASSERTION/modified-MIT for the model, content served from statics.moonshot.cn bundle). Bundle has the same Kimi K2 table: Tau2 telecom Avg@4 Kimi-K2-Instruct '65.79'. Used the server-rendered kimi.ai copy instead; same measurement as the existing leaderboard row."
+    },
+    {
+      "source": "https://moonshotai.github.io/Kimi-K2/thinking.html",
+      "outcome": "Kimi K2 Thinking page: no τ²-bench row at all (benchmarks: HLE, BrowseComp, Seal-0, SWE-bench, Terminal-Bench, etc.)."
+    },
+    {
+      "source": "https://www.kimi.ai/blog/kimi-k2",
+      "outcome": "Kimi-K2-Instruct Tau2 telecom Avg@4 65.8 (embedded data 65.79), non-thinking - same table as arXiv 2507.20534v2; not added separately (arXiv row used, itself flagged as the same Moonshot run as the existing leaderboard row). Also prints 'Tau2-bench weighted average*' (aggregate)."
+    },
+    {
+      "source": "https://www.kimi.ai/blog/kimi-k2-thinking",
+      "outcome": "no τ² / telecom."
+    },
+    {
+      "source": "https://www.kimi.ai/blog/kimi-k2-5",
+      "outcome": "no τ² / telecom in text or embedded data."
+    },
+    {
+      "source": "https://www.kimi.ai/blog/kimi-k2-6",
+      "outcome": "no τ² / telecom."
+    },
+    {
+      "source": "https://www.kimi.ai/resources/kimi-k2-7-code",
+      "outcome": "no τ² (Kimi Code Bench, Program Bench, MLS Bench, Claw 24/7, MCP Atlas, MCP Mark only)."
+    },
+    {
+      "source": "https://www.kimi.ai/blog/kimi-k3",
+      "outcome": "no τ²-bench telecom (K3 tech report lists only τ³-Banking, AA-cited)."
+    },
+    {
+      "source": "https://www.kimi.com/ai-models/kimi-k2-5 | kimi-k2-6 | kimi-k3",
+      "outcome": "product pages, no τ² / telecom."
+    },
+    {
+      "source": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart.md | kimi-k2-7-code-quickstart.md | kimi-k2-6-quickstart.md | models.md",
+      "outcome": "no benchmark tables / no τ²."
+    },
+    {
+      "source": "https://docs.qwenlm.ai/research/qwen3-max/index.json (content of qwen.ai/blog?id=241398b9cd6353de490b0f82806c7848c5d2777d) and https://www.alibabacloud.com/blog/qwen3-max-just-scale-it_602621",
+      "outcome": "aggregate only: 'on Tau2-Bench ... Qwen3-Max-Instruct delivers a breakthrough score of 74.8'; no telecom split (charts are images)."
+    },
+    {
+      "source": "https://www.alibabacloud.com/blog/pushing-qwen3-max-thinking-beyond-its-limits_602834 (Qwen3-Max-Thinking post mirror)",
+      "outcome": "aggregate only: 'Tool Use Tau² Bench' row (Qwen3-Max-Thinking column 80.9 etc.), footnote 'We followed the official setting of Tau² Bench with no custom scaffolding'; no telecom."
+    },
+    {
+      "source": "https://www.alibabacloud.com/blog/qwen3-5-towards-native-multimodal-agents_602894 (Qwen3.5 post mirror)",
+      "outcome": "aggregate only: 'TAU2-Bench' row (87.1 ...), airline fixes from Opus 4.5 card; no telecom."
+    },
+    {
+      "source": "https://www.alibabacloud.com/blog/qwen3-6-plus-towards-real-world-agents_603005 | qwen3-6-35b-a3b-agentic-coding-power-now-open-to-all_603043",
+      "outcome": "TAU3-Bench only (excluded, tau3)."
+    },
+    {
+      "source": "https://www.alibabacloud.com/blog/qwen3-6-max-preview-smarter-sharper-still-evolving_603055",
+      "outcome": "no τ² text (results as images)."
+    },
+    {
+      "source": "https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154 | qwen3-7-plus-multimodal-agent-intelligence_603206",
+      "outcome": "no τ² / telecom."
+    },
+    {
+      "source": "https://www.alibabacloud.com/blog/qwen3-8-max-a-new-bar-for-coding-and-cowork_603421 | alibaba-unveils-qwen3-8-max-..._603420 | alibaba-unveils-qwen3-8-27b-..._603463",
+      "outcome": "no τ² / telecom."
+    },
+    {
+      "source": "https://docs.qwenlm.ai/research/{qwen3-next,qwen3-vl,qwen3-omni,qwen3-coder}/index.json (qwen.ai blog content)",
+      "outcome": "no τ² / telecom in text (tables are images)."
+    },
+    {
+      "source": "https://github.com/QwenLM/qwenlm.github.io (@d7c6d50, no licence)",
+      "outcome": "old blog mirror ends 2025 (qwen3, qwen3-coder, qwen3guard, qwen-mt): no τ² / telecom."
+    },
+    {
+      "source": "https://www.alibabacloud.com/help/en/model-studio/model-qwen3-max | text-generation-model | qwen-plus",
+      "outcome": "spec/pricing docs, no τ²."
+    },
+    {
+      "source": "https://mimo.xiaomi.com/blog/mimo-v2-flash (iframe /mimo-v2-flash/index.html)",
+      "outcome": "MiMo-V2-Flash Telecom 95.3 in text -> gap (not in catalogue)."
+    },
+    {
+      "source": "https://github.com/XiaomiMiMo/MiMo-V2-Flash/blob/b4eaae40d3728657ff7f0f9397dcce3c9ab3d3b7/README.md",
+      "outcome": "Apache-2.0; README prints aggregate τ²-Bench only (80.3 for MiMo-V2-Flash; comparator columns). paper.pdf in the same repo prints the 95.3 (Telecom) sentence and MOPD Table 7 (internal student/teacher checkpoints, not releases)."
+    },
+    {
+      "source": "https://mimo.xiaomi.com/blog/mimo-v2-pro (iframe /mimo-v2-pro/index.html)",
+      "outcome": "τ2-bench (Telecom) chart labels: MiMo-V2-Pro 96.8 (recorded), MiMo-V2-Flash 93.5 (gap); other labs excluded."
+    },
+    {
+      "source": "https://mimo.xiaomi.com/blog/mimo-v2-omni (iframe /mimo-v2-omni/index.html)",
+      "outcome": "no τ² / telecom."
+    },
+    {
+      "source": "https://mimo.xiaomi.com/blog/mimo-v2-5 (iframe /mimo-v2-5/index.html)",
+      "outcome": "no τ² / telecom."
+    },
+    {
+      "source": "https://mimo.xiaomi.com/blog/mimo-v2-5-pro (iframe /mimo-v2-5-pro/index.html)",
+      "outcome": "τ³-bench only (excluded)."
+    },
+    {
+      "source": "https://mimo.xiaomi.com/mimo-v2-6/article.html (+ /mimo-v2-6/bench.js)",
+      "outcome": "no τ² / telecom."
+    },
+    {
+      "source": "https://mimo.mi.com/models/en-US/mimo-v2.5-pro | mimo-v2.5 | mimo-v2.6-pro | mimo-v2.6-flash | mimo-v2.6-pro-ultraspeed; https://mimo.mi.com/docs/en-US/news/latest/v2-6; https://mimo.mi.com/docs/en-US/updates/model",
+      "outcome": "no telecom numbers (v2.5-pro page only says 'Leads across major Agent benchmarks including SWE-bench and TAU-bench', no figure)."
+    },
+    {
+      "source": "Asian-vendor sweep, rows not carried over",
+      "outcome": "Dropped as duplicates of rows kept elsewhere in this file: kimi-k2 0.658 from arXiv 2507.20534v2 (same Moonshot run as the leaderboard and HF-card rows; CC BY-NC-ND), exaone-4-5-33b 0.73 and exaone-4-0-32b 0.237 from arXiv 2604.08644v1 / 2601.01739v2 (same LG figures, kept from the HF cards under first-party-lgai-scores; the reports add: temperature 1.0, top-p 0.95, 128K, MTP off; EXAONE 4.0 non-reasoning 16.7), gpt-oss-120b / glm-4-5-air from 2601.07022v1 (same as report-2601.07022v1 rows), qwen3-235b-a22b-thinking-2507 0.473 from 2601.16725v2 (LongCat-Flash-Thinking-2601 report, CC BY 4.0, GPT-4.1 user with adjusted prompting via AGI-Eval tau2-bench-revised; reprint of the LongCat-Flash-Thinking card figure and a one-catalogue-model run)."
+    },
+    {
+      "source": "arXiv 2508.18669v1 MUA-RL (CC BY 4.0)",
+      "outcome": "6 rows (GPT-4.1 user, 4 runs, non-thinking): gpt-4o-2024-11-20, gpt-4-1, deepseek-v3-0324, qwen3-8b/14b/32b. Three Qwen hybrid rows skipped (identical to Qwen-card figures)."
+    },
+    {
+      "source": "arXiv 2606.28715v2 SEATauBench (CC BY 4.0)",
+      "outcome": "3 rows (original τ² telecom tasks, Qwen3-235B-A22B-Instruct user, 3 trials): gpt-5-mini, qwen3-235b-a22b-instruct-2507, kimi-k2-5."
+    },
+    {
+      "source": "arXiv 2606.03892v2 Synthesize and Reward (CC BY 4.0, IBM)",
+      "outcome": "4 base-model rows (Qwen3-VL-235B-A22B-Instruct user): qwen3-4b-instruct-2507, qwen3-8b, qwen2-5-7b, granite-4-1-8b (lab)."
+    },
+    {
+      "source": "arXiv 2602.22697v1 InteractCS-RL (CC BY 4.0, Meituan)",
+      "outcome": "2 base-model rows: qwen2-5-7b 0.088, qwen2-5-14b 0.175."
+    },
+    {
+      "source": "arXiv 2506.07982v1 τ²-Bench paper (CC BY 4.0)",
+      "outcome": "Same four agents as Sierra's legacy leaderboard runs (gpt-4.1-mini, gpt-4.1, o4-mini, claude-3-7-sonnet; GPT-4.1 user, 4 trials); same evaluator, already imported from the leaderboard files. Not added again (the paper's abstract cites o4-mini 42% vs 50.2 in the later leaderboard file; leaderboard kept)."
+    },
+    {
+      "source": "arXiv 2607.15660v1 ToolVerse (CC BY 4.0)",
+      "outcome": "Skipped. 'Advanced Models' rows copy vendor figures (DeepSeek-V3.2 96.2, GPT-4.1 34.0, Kimi-K2 65.8). Base rows Qwen3-4B (Thinking) 13.20 and Qwen3-8B (Thinking) 18.40 are not attainable as avg@4 over 114 tasks (not multiples of 1/456) and equal Qwen-card figures for other checkpoints, so likely copied; only Qwen2.5-14B-Instruct 18.42 remains (one-model run)."
+    },
+    {
+      "source": "arXiv 2609.29050v1 SLCA-GRPO (CC BY 4.0)",
+      "outcome": "Skipped: τ² via evalscope 1.3.0 with task filtering (check_valid_task), 1 trial, DeepSeek-V3.2 user at temperature 0.7; Table 18's text contradicts its own rows (says the Qwen3-8B-Base Original row is zero in all metrics but prints 0.2403 0.2435 0.3617 0.0000), and base-vs-instruct identity of the 'Original' Qwen2.5 rows is unclear."
+    },
+    {
+      "source": "arXiv 2602.12268v2 CM2 (CC BY 4.0)",
+      "outcome": "Skipped: baseline model family anonymised in the paper; checkpoint identity not certain."
+    },
+    {
+      "source": "arXiv 2601.15625v2 Fission-GRPO; 2605.22166v2 Life-Harness; 2609.40169v1 ScholarEvolve; 2608.07885v1 Reason Wide (all CC BY 4.0)",
+      "outcome": "Skipped: evaluate the 40-task telecom 'test' split (v0.2.1 train/test split; base = 114 tasks), a different item set from tau2-telecom; also non-default user simulators (GLM-5, DeepSeek-V4-Flash, GPT-5.2 high)."
+    },
+    {
+      "source": "arXiv 2511.21689 ToolOrchestra",
+      "outcome": "arXiv non-exclusive licence; not usable."
+    },
+    {
+      "source": "arXiv 2512.07850 SABER; τ-trait (impatient users)",
+      "outcome": "CC BY-NC-SA 4.0: not allowed (non-commercial)."
+    },
+    {
+      "source": "Other papers screened by the papers sweep (about 110 arXiv abstracts: tool-use RL, user-simulator and harness studies)",
+      "outcome": "Excluded for licence (non-exclusive / NC), τ³ or τ²-Bench-Verified task sets, a single catalogue model, copied baselines (e.g. AgentScaler, TopoCurate), AA-credited figures (KAT-Coder-V2), or unclear setup (Playbooks, RAC, MM-τ-p², UserProxyBench). See scratch notes."
+    }
+  ],
+  "held_for_owner": [
+    {
+      "item": "Gemma 4 'Tau2 – telecom' (task 4 recommendation): treat tau2-telecom-gemma4 as the same test as tau2-telecom.",
+      "evidence": "(1) The report (arXiv 2607.02770v1, Table 5) labels the rows 'Tau2 – airline / retail / telecom' and cites Barres et al. (2025) 'τ²-bench: Evaluating conversational agents in a dual-control environment' (reference bib.bib4, cited in the table); the three domains are exactly τ²'s, with no banking_knowledge, and their mean equals the HF cards' 'Tau2 (average over 3)' already stored as tau2-bench. (2) The report prints no harness version, user simulator or trial count — but neither do most rows already in tau2-telecom (Qwen, LFM, OpenAI, Cohere 'standard settings and user simulation from Barres et al.'). (3) Whatever tau2-bench release Google ran (the report is dated July 2026, after τ³ v1.0.0), the telecom domain is the same test: the 114 telecom tasks, policy, tech-support manual and DBs are byte-identical from v0.1.3 to v1.0.1, and the default user model stays gpt-4.1. The τ³ airline/retail task fixes do NOT apply to telecom. (4) Run levels are per evaluator, so moving the 6 Gemma rows (gemma4-report ledger) into tau2-telecom keeps their own level and only shares the test's discrimination; it would add a 6-model lab run (Gemma 3 27B non-thinking 3.1% to Gemma 4 31B 69.3%) to the low end of the scale. Recommendation: merge tau2-telecom-gemma4 into tau2-telecom. Keep tau2-airline-gemma4 / tau2-retail-gemma4 separate unless the version is confirmed, because airline and retail tasks changed in v1.0.0. Ids not changed here."
+    },
+    {
+      "item": "Licence sign-off: card-moonshotai-kimi-k2-instruct (Modified MIT).",
+      "evidence": "Rows are in results (7 models). First Modified-MIT source in the ledger: MIT grant incl. documentation plus a 'display \"Kimi K2\"' condition for products over 100M MAU or $20M monthly revenue (a conditional commercial grant like the accepted LFM Open License). Drop the 7 rows if not accepted; Moonshot's own 0.658 is already in data via tau2-bench-leaderboard-moonshot."
+    },
+    {
+      "item": "Licence check: report-2601.03286v1.",
+      "evidence": "Rows are in results (3 models). arXiv licence is CC BY 4.0 but the title block also says '© 2025 NAVER Cloud HyperCLOVA X Team. All rights reserved.' Treated like the MIT 'All rights reserved' precedent; drop the 3 rows if the owner reads it as unclear. This is the only source found that states the GPT-4.1 user simulator for every model."
+    },
+    {
+      "item": "Leaderboard copies of vendor figures: recorded once from the vendor's own document.",
+      "evidence": "The legacy board's DeepSeek-V3.2 (96.2, DeepSeek-V3.2 as user) and Gemini 3 Pro (98.0, Gemini user + prompt adjustment) entries were transcribed by Sierra staff from the vendors' reports. They are recorded from the primary documents instead: deepseek-v3-2 0.962 from the DeepSeek-V3.2 report PDF in the MIT HF repo (card2-deepseek-ai-deepseek-v3-2; a one-model run) and gemini-3-pro-preview 0.98 from Google's evaluation PDF (first-party-google-scores, which pairs it with Gemini 3.1 Pro 0.993). No tau2-bench-leaderboard-deepseek/-google entries are proposed."
+    },
+    {
+      "item": "Qwen3-Max (2025-09-23) leaderboard value 0.842: provenance caution.",
+      "evidence": "Submission is 'Unverified', user_simulator null, notes 'Only average results are in the blog post', and its dates say 2024-09-23. Per-domain origin not stated. It is half of the proposed Qwen run (with the verified Qwen3-Max-Thinking 0.9825), which also needs the comparison-only model qwen3-max-2026-01-23."
+    },
+    {
+      "item": "MiniMax M2 / M2.1 cards: τ²-Bench Telecom under Artificial Analysis methodology (NOT in results).",
+      "evidence": "M2 @757303d: MiniMax-M2 87 (own, 'aligned with Artificial Analysis Intelligence Benchmarking Methodology'); other columns 'reported from https://artificialanalysis.ai/' (excluded by rule 2). M2.1 @cd97f59: MiniMax-M2.1 87.0, MiniMax-M2 87.0, Claude Sonnet 4.5 78.0, Claude Opus 4.5 90.0, Gemini 3 Pro 87.0, GPT-5.2 (thinking) 85.0, DeepSeek V3.2 91.0, 'Derived from internal testing based on the evaluation datasets and methodology referenced in the Artificial Analysis Intelligence Index' — but the M2 and Sonnet 4.5 values repeat the M2 card's AA-sourced figures, so some cells may be copied. Also a different harness (AA's τ²-Bench Telecom), Modified-MIT licence. If wanted at all: own MiniMax cells only, under first-party-minimax-scores, as a separate benchmark id."
+    },
+    {
+      "item": "Nemotron 3 Ultra report τ³ telecom (tau3-telecom, NOT in results).",
+      "evidence": "arXiv 2606.15007v1 (CC BY 4.0, existing ledger report-2606.15007v1 whose scope excludes competitor columns) Sec. 3.7.2 'TauBench V3 ... Telecom': N-3-Ultra 92.9, MiniMax-2.7 89.6, GLM-5.1 96.9, Kimi-K2.6 97.8, Qwen-3.5 397B 98.0, DS-v4-Pro 96.3, DS-v4-Flash 98.3; settings: GPT-5.2 (low) user, extra AGI-Eval 'tau2-bench-revised' user prompt, 8-trial average, 'DeepSeek-V4 models were evaluated under max reasoning'. A 7-model NVIDIA-run τ³ set if the owner widens the ledger scope; DS-v4 checkpoints need identity checks against the catalogue's dated V4 snapshots."
+    },
+    {
+      "item": "Qwen card reprints: mostly already handled in data.",
+      "evidence": "Since this pass started, data/results.json gained the Qwen 2507 card reprints (e.g. qwen3-235b-a22b-thinking-2507 0.456 under its own card; the Qwen3-30B-A3B-Thinking-2507 card's three Qwen cells; the 4B-Thinking card's qwen3-30b-a3b 0.228 and qwen3-4b 0.175, which this file therefore no longer proposes). Still not in data: the Qwen3-235B-A22B-Instruct-2507 card's own-lab cells (Qwen3-235B-A22B Non-thinking 24.6, Instruct-2507 32.5) and the Qwen3-Next-80B-A3B-Instruct card's 'Qwen3-32B Non-Thinking' 24.6. Not proposed: hybrid non-thinking cells whose thinking figure is already recorded, and a reprinted own figure."
+    },
+    {
+      "item": "Context for the Command A+ question.",
+      "evidence": "Telecom is heavily trained on: NVIDIA's Nemotron 3.5 Lightning and Ultra cards list 'Synthetic Telecom Tool-Use Trajectories ... Existing Tau2 telecom trajectories originally generated with DeepSeek V3.2' as training data, and in Liquid's run an 8B-A1B model (LFM2.5-8B-A1B 88.1) and Qwen3.5-4B (87.7) score above Command A+'s 85. 2026-era small models saturate this test, so 85% is not unusual; a high telecom score says little about general ability, and Cohere's two-model run (Command A+ 0.85 vs Command A Reasoning 0.37) is still the only measurement of Command A+ on it."
+    },
+    {
+      "item": "OpenAI modified-prompt telecom figures (NOT in results), consistent with the 2026-10-07 OpenAI pass.",
+      "evidence": "The 2026-10-07 pass kept tau2-telecom to OpenAI's 'original prompts' figures (GPT-5.5 post: GPT-5.5 98.0, GPT-5.4 92.8) and left GPT-5.4 98.9 / GPT-5.4 mini 93.4 / nano 92.5 / GPT-5 mini 74.1 unmatched because the prompt differed. Same treatment here for: gpt-5-1 0.956 (https://openai.com/index/gpt-5-1-for-developers); gpt-5-2 0.987 (https://openai.com/index/introducing-gpt-5-2). GPT-5.1 post footnote: 'For Tau2-bench Telecom, we gave GPT-5.1 a short, generically helpful prompt to improve its performance.' GPT-5.2 post: 'For the Telecom domain, we included a brief, generally helpful instruction in the system prompt'. Putting them in the same first-party-openai-scores run as GPT-5.4's original-prompt 0.928 would rank GPT-5.2 above GPT-5.4 by prompt, not model. If wanted, they belong in a separate 'OpenAI prompt-adjusted telecom' benchmark id with GPT-5.4 98.9, mini 93.4, nano 92.5. The GPT-5 developer-post rows (Aug 2025, no prompt change stated) ARE in results.",
+      "rows": [
+        {
+          "model": "gpt-5-1",
+          "bench": "tau2-telecom",
+          "score": 0.956,
+          "source": "https://openai.com/index/gpt-5-1-for-developers",
+          "source_id": "first-party-openai-scores",
+          "by": "lab",
+          "date": "2025-11-13",
+          "note": "OpenAI 'Introducing GPT‑5.1 for developers' (November 13, 2025), 'Appendix: Model evaluations' table, row 'Tau2-bench Telecom*' (printed 'Tau 2 -bench Telecom*'), column 'GPT‑5.1 (high)', printed '95.6%'. Read from Internet Archive capture 20260910181654 of https://openai.com/index/gpt-5-1-for-developers/ (openai.com returns HTTP 403). Settings: reasoning effort high. Modified prompt, quoted from the footnote: '* For Tau2-bench Telecom, we gave GPT‑5.1 a short, generically helpful prompt to improve its performance.' This is not OpenAI's 'original prompts' setup. User model not stated. The GPT-5.2 post prints the same 95.6% for 'GPT-5.1 Thinking' (high), so it is not added again. Vendor-reported (rule b)."
+        },
+        {
+          "model": "gpt-5-2",
+          "bench": "tau2-telecom",
+          "score": 0.987,
+          "source": "https://openai.com/index/introducing-gpt-5-2",
+          "source_id": "first-party-openai-scores",
+          "by": "lab",
+          "date": "2025-12-11",
+          "note": "OpenAI 'Introducing GPT‑5.2' (December 11, 2025), Appendix 'Detailed benchmarks', 'Tool usage' table, row 'Tau2-bench Telecom', column 'GPT-5.2 Thinking', printed '98.7%'. The body also says: 'GPT‑5.2 Thinking achieves a new state of the art of 98.7% on Tau2-bench Telecom'. Read from Internet Archive capture 20261005030805 of https://openai.com/index/introducing-gpt-5-2/ (openai.com returns HTTP 403). Settings: 'Models were run with maximum available reasoning effort in our API (xhigh for GPT‑5.2 Thinking & Pro, and high for GPT‑5.1 Thinking)', so this is xhigh. GPT-5.2 Thinking is API gpt-5.2. Modified prompt, quoted: 'For the Telecom domain, we included a brief, generally helpful instruction in the system prompt to boost performance. We exclude the Airline subset because of lower-quality ground truth grading.' This is not OpenAI's later 'original prompts' setup. User model not stated. A reasoning.effort='none' comparison is shown only as a chart and is not used. Vendor-reported (rule b)."
+        }
+      ]
+    },
+    {
+      "item": "Qwen3-VL technical report (arXiv 2511.21631v2, non-exclusive licence; rule b own-model cells) — NOT in results.",
+      "evidence": "Table 3 (TAU2-Telecom): Qwen3-VL-235B-A22B-Thinking 44.7 (catalogue qwen3-vl-235b-a22b-thinking; the only new catalogue datum), Qwen3-235B-A22B-Thinking-2507 45.6 (reprint). Table 5 (columns as in Table 4: Qwen3-VL 32B / Qwen3 32B / Qwen3-VL 30B-A3B / Qwen3 30B-A3B / Qwen3 30B-A3B-2507, thinking): 46.9 / 26.3 / 27.2 / 22.8 / 26.3. A first-party-qwen-scores run would anchor the VL model only with reprinted text-model figures, and Qwen3-32B Thinking reads 26.3 here but 27.2 in the Qwen3-Next-80B-Thinking card (columns possibly swapped). Held; if wanted, add qwen3-vl-235b-a22b-thinking 0.447 with the 2507 reprints as anchors under a new first-party-qwen-scores entry.",
+      "rows": [
+        {
+          "model": "qwen3-vl-235b-a22b-thinking",
+          "bench": "tau2-telecom",
+          "score": 0.447,
+          "source": "https://arxiv.org/html/2511.21631v2",
+          "source_id": "first-party-qwen-scores",
+          "by": "lab",
+          "date": "2025-11-27",
+          "note": "Qwen Team, 'Qwen3-VL Technical Report' arXiv 2511.21631v2 (abs licence: arXiv non-exclusive, so Qwen's own-model cells only; OpenAI o3 / Claude columns not used). Text-benchmark eval list includes 'TAU2-Retail, TAU2-Airline, TAU2-Telecom'; no user-simulator or harness change described. Thinking-model sampling: MoE temperature 0.6, top-p 0.95, top-k 20; dense temperature 1.0, top-p 0.95, top-k 20, presence penalty 1.5; max output 32,768 tokens. Table 3 'Comparison among Qwen3-VL-235B-A22B (Thinking) and other reasoning baselines', row TAU2-Telecom, column 'Qwen3-VL 235B-A22B Thinking' = 44.7 -> 0.447 (thinking checkpoint Qwen/Qwen3-VL-235B-A22B-Thinking)."
+        },
+        {
+          "model": "qwen3-235b-a22b-thinking-2507",
+          "bench": "tau2-telecom",
+          "score": 0.456,
+          "source": "https://arxiv.org/html/2511.21631v2",
+          "source_id": "first-party-qwen-scores",
+          "by": "lab",
+          "date": "2025-11-27",
+          "note": "Qwen Team, 'Qwen3-VL Technical Report' arXiv 2511.21631v2 (abs licence: arXiv non-exclusive, so Qwen's own-model cells only; OpenAI o3 / Claude columns not used). Text-benchmark eval list includes 'TAU2-Retail, TAU2-Airline, TAU2-Telecom'; no user-simulator or harness change described. Thinking-model sampling: MoE temperature 0.6, top-p 0.95, top-k 20; dense temperature 1.0, top-p 0.95, top-k 20, presence penalty 1.5; max output 32,768 tokens. Table 3, row TAU2-Telecom, column 'Qwen3 235B-A22B Thinking-2507' = 45.6 -> 0.456 (Qwen's own text-only model, dated 2507 thinking checkpoint).",
+          "flag": "Same 45.6 as the existing Qwen card row for qwen3-235b-a22b-thinking-2507 (Qwen3-Next-80B-A3B-Thinking card) - probably the same Qwen run reused; keep only if Qwen-report rows are treated as their own run."
+        },
+        {
+          "model": "qwen3-32b",
+          "bench": "tau2-telecom",
+          "score": 0.263,
+          "source": "https://arxiv.org/html/2511.21631v2",
+          "source_id": "first-party-qwen-scores",
+          "by": "lab",
+          "date": "2025-11-27",
+          "note": "Qwen Team, 'Qwen3-VL Technical Report' arXiv 2511.21631v2 (abs licence: arXiv non-exclusive, so Qwen's own-model cells only; OpenAI o3 / Claude columns not used). Text-benchmark eval list includes 'TAU2-Retail, TAU2-Airline, TAU2-Telecom'; no user-simulator or harness change described. Thinking-model sampling: MoE temperature 0.6, top-p 0.95, top-k 20; dense temperature 1.0, top-p 0.95, top-k 20, presence penalty 1.5; max output 32,768 tokens. Table 5 'Comparison among Qwen3-VL-32B (Thinking), Qwen3-VL-30B-A3B (Thinking), and corresponding baselines', row TAU2-Telecom, column 'Qwen3 32B Thinking' = 26.3 -> 0.263 (April-2025 hybrid Qwen/Qwen3-32B in thinking mode). Note: the Qwen3-Next-80B-A3B-Thinking card (existing row) prints 27.2 for Qwen3-32B thinking, so this is a different figure."
+        },
+        {
+          "model": "qwen3-30b-a3b",
+          "bench": "tau2-telecom",
+          "score": 0.228,
+          "source": "https://arxiv.org/html/2511.21631v2",
+          "source_id": "first-party-qwen-scores",
+          "by": "lab",
+          "date": "2025-11-27",
+          "note": "Qwen Team, 'Qwen3-VL Technical Report' arXiv 2511.21631v2 (abs licence: arXiv non-exclusive, so Qwen's own-model cells only; OpenAI o3 / Claude columns not used). Text-benchmark eval list includes 'TAU2-Retail, TAU2-Airline, TAU2-Telecom'; no user-simulator or harness change described. Thinking-model sampling: MoE temperature 0.6, top-p 0.95, top-k 20; dense temperature 1.0, top-p 0.95, top-k 20, presence penalty 1.5; max output 32,768 tokens. Table 5, row TAU2-Telecom, column 'Qwen3 30B-A3B Thinking' = 22.8 -> 0.228 (April-2025 hybrid Qwen/Qwen3-30B-A3B in thinking mode; the 2507 thinking checkpoint is a separate column)."
+        },
+        {
+          "model": "qwen3-30b-a3b-thinking-2507",
+          "bench": "tau2-telecom",
+          "score": 0.263,
+          "source": "https://arxiv.org/html/2511.21631v2",
+          "source_id": "first-party-qwen-scores",
+          "by": "lab",
+          "date": "2025-11-27",
+          "note": "Qwen Team, 'Qwen3-VL Technical Report' arXiv 2511.21631v2 (abs licence: arXiv non-exclusive, so Qwen's own-model cells only; OpenAI o3 / Claude columns not used). Text-benchmark eval list includes 'TAU2-Retail, TAU2-Airline, TAU2-Telecom'; no user-simulator or harness change described. Thinking-model sampling: MoE temperature 0.6, top-p 0.95, top-k 20; dense temperature 1.0, top-p 0.95, top-k 20, presence penalty 1.5; max output 32,768 tokens. Table 5, row TAU2-Telecom, column 'Qwen3 30B-A3B Thinking-2507' = 26.3 -> 0.263.",
+          "flag": "Same 26.3 as the existing Qwen card row for qwen3-30b-a3b-thinking-2507 (Qwen3-Next-80B-A3B-Thinking card) - probably the same Qwen run reused."
+        }
+      ]
+    },
+    {
+      "item": "Xiaomi MiMo-V2-Pro τ2-bench (Telecom) 96.8 — chart data only, NOT in results.",
+      "evidence": "mimo.xiaomi.com/blog/mimo-v2-pro (iframe mimo-v2-pro/index.html, 2026-03-18): the value is in the page script's chart data object ({ name: 'τ2-bench (Telecom)', scores: { mimo: 96.8, flash: 93.5, opus: 99.3, ... } }) and rendered as bar labels. Treated like the GPT-5 post's Vega-Lite chart spec (not printed text). Catalogue mimo-v2-pro; it would be a one-model run under a new first-party-xiaomi-scores entry anyway (MiMo-V2-Flash, 93.5 here / 95.3 in its own report, is not catalogued)."
+    },
+    {
+      "item": "ByteDance Seed2.0 Model Card (arXiv 2607.00248v1, CC BY 4.0) — NOT in results.",
+      "evidence": "Seed2.0 Pro 94.2 and Seed2.0 Lite 92.1 τ2-Bench (telecom) (own). Competitor cells excluded: §3.3 takes 'the maximum of the score reported in the official documentation and our own measurement'. Seed2.0 Lite is not catalogued and Seed2.0 Pro may or may not be catalogue dola-seed-2-0-pro (Arena label), so no two-model run."
+    }
+  ]
+}

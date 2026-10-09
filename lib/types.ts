@@ -71,7 +71,7 @@ export type Result = {
 // Linear distances retain their published units with direction "lower".
 export type Benchmark = { id: string; name: string; kind: "acc" | "elo" | "err" | "linear"; chance?: number; url: string; category?: Category; metric?: string; raw_scale_min?: number; raw_scale_max?: number; latent_scale?: number; direction?: "higher" | "lower"; unit?: string };
 
-export type Scored = { id: string; g: number; pm: number; n: number };
+export type Scored = { id: string; g: number; pm: number; n: number; lab?: number }; // lab: counted results the model's own maker reported
 
 export type SpeedUnit = "tok/s" | "s/image" | "s/video" | "x-realtime";
 

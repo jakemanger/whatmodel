@@ -41758,5 +41758,134 @@
         "reported_label": "microsoft/Phi-4-reasoning-plus"
       }
     ]
+  },
+  {
+    "id": "mimo-v2-flash",
+    "name": "MiMo-V2-Flash (309B-A15B)",
+    "provider": "Xiaomi",
+    "category": "llm",
+    "released": "2025-12",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 309.8,
+    "active_b": 15,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash",
+    "identity_note": "Comparison-only, proposed so StepFun's own reproductions in the Step 3.5 Flash card count (column 'MiMo-V2 Flash', '15B' activated / '309B' total). Weights: https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash (sha 1afd314a2406c282e0956375c34a676501c78649, created 2025-12-16, licence mit, 309,785,318,400 parameters in safetensors metadata); its card: 'MiMo-V2-Flash is a Mixture-of-Experts (MoE) language model with 309B total parameters and 15B active parameters.' Distinct from MiMo-V2-Flash-Base, MiMo-V2.5 and MiMo-V2-Pro.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md",
+        "reported_label": "MiMo-V2 Flash"
+      },
+      {
+        "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash/blob/1afd314a2406c282e0956375c34a676501c78649/README.md",
+        "reported_label": "MiMo-V2-Flash"
+      }
+    ]
+  },
+  {
+    "id": "minimax-m2-1",
+    "name": "MiniMax-M2.1",
+    "provider": "MiniMax",
+    "category": "llm",
+    "released": "2025-12",
+    "open_weights": true,
+    "license": "other",
+    "params_b": 228.7,
+    "active_b": 10,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/MiniMaxAI/MiniMax-M2.1",
+    "identity_note": "Comparison-only, proposed so StepFun's own reproductions in the Step 3.5 Flash card count (column 'MiniMax M2.1', '10B' activated / '230B' total). Weights: https://huggingface.co/MiniMaxAI/MiniMax-M2.1 (sha cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c, created 2025-12-20, licence 'modified-mit', 228,689,764,864 parameters in safetensors metadata). Between catalogued minimax-m2 and minimax-m2-5.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md",
+        "reported_label": "MiniMax M2.1"
+      },
+      {
+        "source": "https://huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md",
+        "reported_label": "MiniMaxAI/MiniMax-M2.1"
+      }
+    ]
+  },
+  {
+    "id": "olmo-3-7b-think-dpo",
+    "name": "Olmo 3 7B Think DPO",
+    "provider": "Ai2",
+    "category": "llm",
+    "released": "2025-11",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 7.3,
+    "active_b": 7.3,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/allenai/Olmo-3-7B-Think-DPO",
+    "identity_note": "Comparison-only, proposed so the Olmo-3-7B-Think card's MATH and OMEGA runs count. The pinned card (@d97e442) has a 'DPO' stage row linking [Olmo-3-7B-Think-DPO](https://huggingface.co/allenai/Olmo-3-7B-Think-DPO) and an evaluation column 'Olmo 3 Think 7B DPO'. Weights: allenai/Olmo-3-7B-Think-DPO (sha 7b18bf927b430ff06376fdfa5610eb3b1b6a5c38, created 2025-11-18, apache-2.0, 7,298,011,136 parameters in safetensors metadata). The DPO stage before RLVR; distinct from the final olmo-3-7b-think.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md",
+        "reported_label": "Olmo 3 Think 7B DPO"
+      },
+      {
+        "source": "https://huggingface.co/allenai/Olmo-3-7B-Think-DPO",
+        "reported_label": "allenai/Olmo-3-7B-Think-DPO"
+      }
+    ]
+  },
+  {
+    "id": "qwen3-vl-32b-thinking",
+    "name": "Qwen3-VL 32B Thinking",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2025-10",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 33.4,
+    "active_b": 33.4,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/Qwen/Qwen3-VL-32B-Thinking",
+    "identity_note": "Comparison-only, proposed so the HyperCLOVA X 32B Think report's Terminal Bench Hard run (Table 5) has two catalogue models (with exaone-4-0-32b). The report column 'Qwen3-VL 32B-Thinking' (cited Yang et al., 2025). Maker repo Qwen/Qwen3-VL-32B-Thinking @7edd10f: licence tag apache-2.0, created 2025-10-19, 33,357,390,064 parameters in safetensors metadata (dense). Separate Thinking checkpoint (not Qwen3-VL-32B-Instruct). Card: 'Native 256K context, expandable to 1M'.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen3-VL-32B-Thinking/blob/7edd10ffd1196091948fb245ff63e406ccb2d4d1/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2601.03286v1#S5.T5",
+        "reported_label": "Qwen3-VL 32B-Thinking"
+      },
+      {
+        "source": "https://huggingface.co/Qwen/Qwen3-VL-32B-Thinking",
+        "reported_label": "Qwen/Qwen3-VL-32B-Thinking"
+      }
+    ],
+    "context_k": 256,
+    "context_source": "https://huggingface.co/Qwen/Qwen3-VL-32B-Thinking/blob/7edd10ffd1196091948fb245ff63e406ccb2d4d1/README.md",
+    "context_note": "Context length stated on the official model card."
+  },
+  {
+    "id": "qwen3-max-2026-01-23",
+    "name": "Qwen3-Max (2026-01-23)",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2026-01",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison-only, proposed so the tau2-bench-leaderboard-qwen telecom run counts. Dated Alibaba Cloud Model Studio snapshot 'qwen3-max-2026-01-23' (release log 2026-01-23: 'Compared with the snapshot as of September 23, 2025, the Qwen-3 series Max model in this release achieves an effective integration of thinking and non-thinking modes'); marketed as Qwen3-Max-Thinking (qwen.ai blog id=qwen3-max-thinking). Distinct from qwen3-max-2025-09-23 and qwen3-max-preview.",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/sierra-research/tau2-bench/blob/70e700cb117905f36ac058a9da10d29420e679b3/web/leaderboard/public/submissions/qwen3-max_qwen_2026-01-23/trajectories/telecom_llm_agent_qwen3-max-2026-01-23_user_simulator_gpt-4.1-2025-04-14.json",
+        "reported_label": "qwen3-max-2026-01-23"
+      },
+      {
+        "source": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+        "reported_label": "qwen3-max-2026-01-23"
+      }
+    ]
   }
 ]

@@ -31,6 +31,7 @@ export type Row = {
   n: number;
   evidence?: "none" | "raw" | "comparison";
   thin: boolean; // too few results to trust the rank much
+  maker_only: boolean; // every counted result was reported by the model's own maker
   where: Where;
   cmd: string | null; // the one thing to paste
   quant: string | null; // local variant, e.g. "2-bit"
@@ -133,6 +134,7 @@ export function rank(models: Model[], scores: Map<string, Scored>, { specs, max 
       pm: s ? Math.round(s.pm * 10) / 10 : null,
       n: s?.n ?? 0,
       thin: !!s && s.n < thinBelow,
+      maker_only: !!s && s.n > 0 && s.lab === s.n,
       where: run,
       cmd,
       quant: q?.label ?? chosen?.quant ?? null,

@@ -8152,7 +8152,8 @@
     "name": "deepseek-ai/DeepSeek-V3.2 model card",
     "kind": "first-party",
     "match": [
-      "huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md"
+      "huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md",
+      "huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/assets/paper.pdf"
     ],
     "exact": true,
     "license": "MIT",
@@ -8160,7 +8161,7 @@
     "terms_url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/LICENSE",
     "quote": "README front-matter at the pinned revision declares 'license: mit'; root LICENSE begins 'MIT License'; grant clause: 'Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files ...'. Selected own-lab result cells in the pinned README only; linked blogs, externally hosted images and competitor columns are not used.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
     "attribution": "deepseek-ai. deepseek-ai/DeepSeek-V3.2 model card. Source: https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md. Licence: MIT. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
   },
@@ -11095,7 +11096,8 @@
       "huggingface.co/Qwen/Qwen3-30B-A3B/blob/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39/README.md",
       "huggingface.co/Qwen/Qwen3-4B/blob/1cfa9a7208912126459214e8b04321603b3df60c/README.md",
       "huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md",
-      "huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking/blob/6664affde68449468deb7527186455c7450c13c0/README.md"
+      "huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking/blob/6664affde68449468deb7527186455c7450c13c0/README.md",
+      "huggingface.co/Qwen/Qwen3-VL-32B-Thinking/blob/7edd10ffd1196091948fb245ff63e406ccb2d4d1/README.md"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -11103,7 +11105,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "Qwen (Alibaba) official model cards and technical reports, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-06"
+    "checked": "2026-10-09"
   },
   {
     "id": "first-party-streamlake",
@@ -11481,7 +11483,9 @@
       "anthropic.com/claude-sonnet-5-5",
       "www-cdn.anthropic.com/0f0c97ad20d8005706296bd92aa1c27c6b2f4f61/Claude%20Opus%204.8%20System%20Card.pdf",
       "www-cdn.anthropic.com/037f06850df7fbe871e206dad004c3db5fd50340/Claude%20Opus%204.7%20System%20Card.pdf",
-      "www-cdn.anthropic.com/6a5fa276ac68b9aeb0c8b6af5fa36326e0e166dd/Claude%20Opus%204.6%20System%20Card.pdf"
+      "www-cdn.anthropic.com/6a5fa276ac68b9aeb0c8b6af5fa36326e0e166dd/Claude%20Opus%204.6%20System%20Card.pdf",
+      "www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47/Claude%20Opus%204.5%20System%20Card.pdf",
+      "www-cdn.anthropic.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75/Claude%20Sonnet%204.6%20System%20Card.pdf"
     ],
     "kind": "first-party",
     "license": "Factual vendor-reported score (not licensed content)",
@@ -11502,7 +11506,9 @@
       "deepmind.google/models/model-cards/gemini-3-7-flash",
       "deepmind.google/models/model-cards/gemini-3-5-flash",
       "deepmind.google/models/model-cards/gemini-3-5-flash-lite",
-      "deepmind.google/models/model-cards/gemini-3-1-flash-lite"
+      "deepmind.google/models/model-cards/gemini-3-1-flash-lite",
+      "storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_model_evaluation.pdf",
+      "deepmind.google/models/model-cards/gemini-3-1-pro"
     ],
     "kind": "first-party",
     "license": "Factual vendor-reported score (not licensed content)",
@@ -11550,7 +11556,8 @@
       "openai.com/index/introducing-gpt-5",
       "help.openai.com/en/articles/9624314-model-release-notes",
       "openai.com/index/gpt-4-1",
-      "openai.com/index/introducing-gpt-5-2"
+      "openai.com/index/introducing-gpt-5-2",
+      "openai.com/index/introducing-gpt-5-for-developers"
     ],
     "kind": "first-party",
     "license": "Factual vendor-reported score (not licensed content)",
@@ -11956,13 +11963,14 @@
     "match": [
       "huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance",
       "huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results",
-      "huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation"
+      "huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation",
+      "huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results"
     ],
     "kind": "first-party",
     "license": "Factual vendor-reported score (not licensed content)",
     "terms_url": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/LICENSE",
     "verdict": "allowed",
-    "checked": "2026-10-07",
+    "checked": "2026-10-09",
     "exact": true,
     "icon": "huggingface.co",
     "attribution": "LG AI Research, vendor-reported results for LG's own EXAONE models from its pinned Hugging Face model cards; individual figures hand-recorded 2026-10-07; percentages converted to fractions. Lab-reported, not independent measurements. No endorsement.",
@@ -12008,13 +12016,14 @@
       "huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks",
       "huggingface.co/mistralai/Mathstral-7B-v0.1/blob/ec3a48484ef241dfe03282edcb0f25e564923823/README.md#evaluation",
       "huggingface.co/mistralai/Pixtral-Large-Instruct-2411/blob/c1e51f6f11974a1199685d35c62f5a425c2d001e/README.md#metrics",
-      "huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/README.md#vision"
+      "huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/README.md#vision",
+      "huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md#agentic-benchmarks"
     ],
     "kind": "first-party",
     "license": "Factual vendor-reported score (not licensed content)",
     "terms_url": "https://mistral.ai/terms/",
     "verdict": "allowed",
-    "checked": "2026-10-08",
+    "checked": "2026-10-09",
     "exact": true,
     "icon": "huggingface.co",
     "attribution": "Mistral AI, vendor-reported results for Mistral's own models from its pinned Hugging Face cards; individual figures hand-recorded 2026-10-07; percentages converted to fractions. Lab-reported. No endorsement.",
@@ -12025,13 +12034,17 @@
     "name": "NVIDIA vendor-reported benchmark scores for its own Nemotron models (Hugging Face model cards)",
     "match": [
       "huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results",
-      "huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md#evaluation-results"
+      "huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md#evaluation-results",
+      "arxiv.org/html/2512.20848v1#S3.T3",
+      "arxiv.org/html/2604.12374v1#S3.T5",
+      "huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md#reasoning-benchmark-evaluations",
+      "huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md#benchmarks"
     ],
     "kind": "first-party",
     "license": "Factual vendor-reported score (not licensed content)",
     "terms_url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md",
     "verdict": "allowed",
-    "checked": "2026-10-07",
+    "checked": "2026-10-09",
     "exact": true,
     "icon": "huggingface.co",
     "attribution": "NVIDIA, vendor-reported results for NVIDIA's own Nemotron models from pinned Hugging Face cards; individual figures hand-recorded 2026-10-07; percentages converted to fractions. Lab-reported. No endorsement.",
@@ -13927,5 +13940,249 @@
     "scope": "Benchmark Results table, row CharXiv_DQ only (this pass): Cohere's own VLMEvalKit runs of North-Micro-Vision-Instruct and seven comparison models (Ministral-3-3B-Instruct, LFM2.5-VL-1.6B, Phi-3.5-vision-instruct, Gemma-4-E2B-it, Qwen3-VL-2B-Instruct, Qwen3.5-2B-Instruct, SmolVLM2.2B). Linked HF blog post used only for methodology wording, not numbers.",
     "verdict": "allowed",
     "checked": "2026-10-09"
+  },
+  {
+    "id": "paper-2607.20062v2-solar-open-2",
+    "name": "Solar Open 2 Technical Report (Upstage, arXiv:2607.20062v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2607.20062v2"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2607.20062v2",
+    "quote": "arXiv abstract pages for 2607.20062v1 and 2607.20062v2 both link 'http://creativecommons.org/licenses/by/4.0/' as the article licence; the HTML prints 'License: CC BY 4.0'. CC BY 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including commercially, subject to attribution.",
+    "attribution": "Sungrae Park et al. (Upstage), Solar Open 2 Technical Report, arXiv:2607.20062v2, CC BY 4.0. Table 3 cells for non-Upstage models; percentages converted to fractions. No endorsement.",
+    "scope": "Table 3 (English benchmarks, 'All numbers are measured with our internal evaluation harness'): Command A+, Mistral Medium 3.5 (high), MiMo-V2.5 and DeepSeek-V4-Flash (max; April preview weights) on MMLU-Pro, GPQA-Diamond, HLE (no tools), LiveCodeBench v6, HMMT Feb 2026, AIME 2026, Multi-Challenge, IFBench, SWE-Bench Verified, Terminal Bench Hard, APEX-Agents, MCP-Atlas and the tau3 banking domain. Not used: Solar Open 2 / Solar Open 1 columns (not catalogued), ArtifactsBench and AA-LCR (no benchmark id), GDPval-AA v2 ELO (an Artificial Analysis leaderboard Elo 'measured on 30 June 2026', held), Table 4 Korean benchmarks (out of this pass's scope).",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "arxiv.org",
+    "evidence_url": "https://arxiv.org/abs/2607.20062v2"
+  },
+  {
+    "id": "paper-2601.03286v1-hyperclova-x-32b-think",
+    "name": "HyperCLOVA X 32B Think (NAVER Cloud, arXiv:2601.03286v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2601.03286v1",
+      "arxiv.org/abs/2601.03286v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2601.03286v1",
+    "quote": "arXiv abstract page for 2601.03286v1 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence (only version). CC BY 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including commercially, subject to attribution.",
+    "attribution": "NAVER Cloud HyperCLOVA X Team, HyperCLOVA X 32B Think, arXiv:2601.03286v1, CC BY 4.0. Table 5 Terminal Bench Hard cells; percentages converted to fractions. No endorsement.",
+    "scope": "Table 5 row 'Terminal Bench Hard' (47-task Artificial Analysis split, Terminus-2, reasoning enabled, authors' own Omni-Evaluator runs): EXAONE 4.0 32B and Qwen3-VL 32B-Thinking (comparison-only model proposed); HyperCLOVA X 32B Think row held (model not catalogued). Other Table 5/6 rows not reviewed in this pass (Tau2 rows noted as a lead).",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "arxiv.org",
+    "evidence_url": "https://arxiv.org/abs/2601.03286v1"
+  },
+  {
+    "id": "multiverse-hypernova-60b-2602-card",
+    "name": "Multiverse Computing HyperNova 60B 2602 model card: evaluation table (own runs incl. gpt-oss baselines)",
+    "kind": "dataset",
+    "match": [
+      "huggingface.co/MultiverseComputingCAI/Hypernova-60B-2602/blob/382391945c26d1ab65fc8bdc174865067cf80cd1/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2602/blob/382391945c26d1ab65fc8bdc174865067cf80cd1/README.md",
+    "quote": "Card front matter 'license: apache-2.0' and the 'License' badge (Apache 2.0) at @3823919. Apache-2.0 s.2 grants a perpetual, worldwide, royalty-free copyright licence to reproduce and distribute the Work, including commercially, with notice. The card states 'Reported numbers use the methodology described above' (Multiverse's own runs).",
+    "attribution": "Multiverse Computing, HyperNova 60B 2602 model card (MultiverseComputingCAI/Hypernova-60B-2602 @3823919, Apache-2.0), Terminal Bench (TB-Hard) row; integers converted to fractions. No endorsement.",
+    "scope": "Row 'Terminal Bench' (= Terminal-Bench Hard, AA subset, harbor 0.1.43, terminus-2, reasoning high, 3 repeats): gpt-oss-20b 9 and gpt-oss-120b 22. HyperNova 60B 2602 (16) not catalogued. Other rows (MMLU-Pro, BFCL v4, Tau2-bench Telecom, AIME25, GPQA:d, IFBench, SciCode, LiveCodeBench, AA-LCR, AA-Omniscience) not reviewed in this pass; Tau2 Telecom gpt-oss-20b 59 / gpt-oss-120b 68 is a lead for the tau2 topic.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "nvidia-modelopt-card-baselines",
+    "name": "NVIDIA ModelOpt quantized-checkpoint cards: baseline (unquantized) measurements of third-party models",
+    "kind": "dataset",
+    "match": [
+      "huggingface.co/nvidia/Gemma-4-31B-IT-NVFP4/blob/4135a98a9b728a548947683219633b25682223ac/README.md",
+      "huggingface.co/nvidia/DeepSeek-V4-Pro-0813-NVFP4/blob/949138637e8e8fe190335be2396af62187dc8a83/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0 (Gemma-4-31B-IT-NVFP4 repo) / MIT (DeepSeek-V4-Pro-0813-NVFP4 repo)",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/nvidia/DeepSeek-V4-Pro-0813-NVFP4/blob/949138637e8e8fe190335be2396af62187dc8a83/README.md",
+    "quote": "nvidia/Gemma-4-31B-IT-NVFP4 @4135a98 front matter 'license_name: apache-license-2.0, license_link: https://ai.google.dev/gemma/apache_2' and section 'License and Terms of Use: Apache License 2.0'; nvidia/DeepSeek-V4-Pro-0813-NVFP4 @9491386 front matter 'license: mit' and 'License/Terms of Use: [MIT]'. Both licences permit commercial reuse with notice. The baseline rows are NVIDIA's own measurements of the unquantized source checkpoints.",
+    "attribution": "NVIDIA ModelOpt, evaluation tables of nvidia/Gemma-4-31B-IT-NVFP4 (@4135a98, Apache-2.0) and nvidia/DeepSeek-V4-Pro-0813-NVFP4 (@9491386, MIT); baseline rows only; percentages converted to fractions. No endorsement.",
+    "scope": "Terminal-Bench Hard baseline rows only: Gemma 4 31B IT BF16 27.08 and DeepSeek-V4-Pro-0813 (MXFP4 source) 51.39. Quantized-checkpoint rows not used (they belong in quant.json if wanted). Pooling the two cards into one NVIDIA ModelOpt evaluator run is a judgement call (same team, different sampling settings); see held_for_owner.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "tau2-bench-leaderboard-qwen",
+    "name": "τ²-bench leaderboard: Qwen (Alibaba) own submissions",
+    "kind": "leaderboard",
+    "match": [
+      "github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/qwen3-max_qwen_2024_09_23/submission.json",
+      "github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/qwen3-max_qwen_2026-01-23/submission.json"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://opensource.org/license/mit",
+    "terms_url": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/LICENSE",
+    "quote": "The repository LICENSE at the pinned commit is the MIT License (Copyright (c) 2025 Sierra Research): 'Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files ... to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute ...'. The leaderboard submission files are committed files of the repository (same terms as the existing tau2-bench-leaderboard-* entries).",
+    "attribution": "Qwen team (Alibaba)'s own τ²-bench submissions in the sierra-research/tau2-bench leaderboard (@4ce7c03), MIT. Vendor-run / vendor-reported.",
+    "scope": "Telecom pass^1 (also airline/retail if wanted) from the two committed Qwen submission.json files (legacy τ² board, tau2_bench_version 0.1.3). Each submitting organisation is a separate evaluator; 'Alibaba' and 'Qwen' are the same Qwen team.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "github.com"
+  },
+  {
+    "id": "card-meituan-longcat-flash-chat",
+    "name": "Meituan LongCat-Flash-Chat model card (evaluation table)",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/LICENSE",
+    "terms_url": "https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/LICENSE",
+    "quote": "Pinned repo front matter 'license: mit'; LICENSE at the same revision: 'MIT License Copyright (c) 2025 Meituan. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including ... to use, copy, modify, merge, publish, distribute ...'. The README is a documentation file of the repository.",
+    "attribution": "Meituan LongCat Team, LongCat-Flash-Chat model card (@f0b8e8d), MIT. Selected τ²-Bench (telecom) cells measured by Meituan; percentages converted to fractions. No endorsement.",
+    "scope": "Evaluation Results table, row 'τ²-Bench (telecom) (avg@4)'. Card note: 'Values marked with * are sourced from other public reports' — no telecom cell is starred, so all seven are Meituan's runs. Card note: 'DeepSeek-V3.1, Qwen3-235B-A22B, Gemini2.5-Flash, and Claude4-Sonnet are evaluated under their non-thinking mode.'",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card-meituan-longcat-flash-thinking",
+    "name": "Meituan LongCat-Flash-Thinking model card (evaluation table)",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/LICENSE",
+    "terms_url": "https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/LICENSE",
+    "quote": "Pinned repo front matter 'license: mit' (MIT License, Copyright (c) 2025 Meituan; grant covers 'associated documentation files'). The README is a documentation file of the repository.",
+    "attribution": "Meituan LongCat Team, LongCat-Flash-Thinking model card (@7c9aad1), MIT. Selected τ²-Bench-Telecom cells measured by Meituan; percentages converted to fractions. No endorsement.",
+    "scope": "Evaluation Results table, row 'τ²-Bench-Telecom (Mean@4)'. Card note: 'Values marked with * are sourced from other public reports' — the GPT-5-Thinking cell (96.7*) is starred and NOT used.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card-moonshotai-kimi-k2-instruct",
+    "name": "Moonshot AI Kimi-K2-Instruct model card (instruction-model evaluation table)",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/README.md"
+    ],
+    "exact": true,
+    "license": "Modified MIT License (Kimi K2)",
+    "license_url": "https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/LICENSE",
+    "terms_url": "https://huggingface.co/moonshotai/Kimi-K2-Instruct/blob/fd1984e2b7a3350dbf7305fe73a4ede25c14de50/LICENSE",
+    "quote": "LICENSE at the pinned revision: 'Modified MIT License Copyright (c) 2025 Moonshot AI Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies ... Our only modification part is that, if the Software (or any derivative works thereof) is used for any of your commercial products or services that have more than 100 million monthly active users, or more than 20 million US dollars (or equivalent in other currencies) in monthly revenue, you shall prominently display \"Kimi K2\" on the user interface of such product or service.' Card section 6: 'Both the code repository and the model weights are released under the Modified MIT License.' Conditional commercial grant (display condition above a size threshold), like the accepted LFM Open License; OWNER SIGN-OFF NEEDED (first Modified-MIT source).",
+    "attribution": "Moonshot AI, Kimi-K2-Instruct model card (@fd1984e), Modified MIT License. Selected Tau2 telecom cells measured by Moonshot; percentages converted to fractions. No endorsement.",
+    "scope": "Section 3 'Instruction model evaluation results', row 'Tau2 telecom' (Avg@4). Footnote: 'Data points marked with * are taken directly from the model's tech report or blog' — no Tau2 cell is starred; 'All metrics ... evaluated with an 8k output token length'; 'we employed avg@k on ... Tau2'.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "report-2601.07022v1",
+    "name": "Solar Open Technical Report (arXiv:2601.07022v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2601.07022v1",
+      "arxiv.org/abs/2601.07022v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2601.07022v1",
+    "quote": "arXiv abstract page for 2601.07022 (v1, only version) links http://creativecommons.org/licenses/by/4.0/ as the article licence; the HTML version prints 'License: CC BY 4.0'. CC BY 4.0 s.2(a)(1) permits reproduction and sharing, including commercially, with attribution.",
+    "attribution": "Upstage Solar Team, Solar Open Technical Report, arXiv:2601.07022v1, CC BY 4.0. Table 6 'Tau 2 Telecom' cells; percentages converted to fractions. No endorsement.",
+    "scope": "Table 6 (English Benchmarks), row 'Tau 2 Telecom'. Section 7.1 cites Barres et al. 2025 for 'Tau 2 (Airline/Telecom/Retail)'. Solar Open itself is not catalogued; gpt-oss-120b (high) and GLM-4.5-Air rows used; gpt-oss-120b (medium) column not used (lower setting).",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2508.18669v1-mua-rl",
+    "name": "MUA-RL: Multi-turn User-interacting Agent Reinforcement Learning for agentic tool use (arXiv:2508.18669v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2508.18669v1",
+      "arxiv.org/abs/2508.18669v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2508.18669v1",
+    "quote": "arXiv abstract page for 2508.18669v1 links http://creativecommons.org/licenses/by/4.0/ as the licence of that version; the HTML prints 'License: CC BY 4.0'. CC BY 4.0 s.2(a)(1) permits reproduction and sharing, including commercially, with attribution.",
+    "attribution": "Weikang Zhao, Xili Wang et al. (Meituan), MUA-RL, arXiv:2508.18669v1, CC BY 4.0. τ²-bench Telecom cells measured by the authors; percentages converted to fractions. No endorsement.",
+    "scope": "Table 1 'TAU2 Telecom' column, 'Existing Baselines' rows and the MUA-RL base models' 'Non-thinking' rows. Not used: the Qwen3-235B-A22B / Qwen3-30B-A3B / Qwen3-4B Non-thinking rows (24.6 / 18.4 / 17.5 are identical to Qwen's own model-card figures, so possibly copied), cold-start and MUA-RL-trained rows (not catalogue models), TCR column.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2606.28715v2-seataubench",
+    "name": "SEATauBench: Progressively Adapting Tool-Agent-User Evaluation Into Low-Resource Southeast Asian Languages (arXiv:2606.28715v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2606.28715v2",
+      "arxiv.org/abs/2606.28715v2"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2606.28715v2",
+    "quote": "arXiv abstract page for 2606.28715v2 links http://creativecommons.org/licenses/by/4.0/ as the licence of that version; the HTML prints 'License: CC BY 4.0'. CC BY 4.0 s.2(a)(1) permits reproduction and sharing, including commercially, with attribution.",
+    "attribution": "My Chiffon Nguyen, Aulia Adila et al., SEATauBench, arXiv:2606.28715v2, CC BY 4.0. τ²-bench Telecom cells measured by the authors; percentages converted to fractions. No endorsement.",
+    "scope": "Appendix G Table 17 'English Baseline (S1) results', Telecom rows, column EN p@1 (pass@1). Telecom uses the original τ²-bench tasks ('For the telecom domain, we follow the original τ²-Bench, as its tasks were not updated in the most recent release'); airline/retail use the corrected τ³ tasks and are not used. Localized (L2) settings not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2606.03892v2-synthesize-and-reward",
+    "name": "Synthesize and Reward: Reinforcement Learning for Multi-Step Tool Use in Live Environments (arXiv:2606.03892v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2606.03892v2",
+      "arxiv.org/abs/2606.03892v2"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2606.03892v2",
+    "quote": "arXiv abstract page for 2606.03892v2 links http://creativecommons.org/licenses/by/4.0/ as the licence of that version; the HTML prints 'License: CC BY 4.0'. CC BY 4.0 s.2(a)(1) permits reproduction and sharing, including commercially, with attribution.",
+    "attribution": "Ibrahim Abdelaziz et al. (IBM Research), Synthesize and Reward, arXiv:2606.03892v2, CC BY 4.0. τ²-bench Telecom cells measured by the authors; percentages converted to fractions. No endorsement.",
+    "scope": "Table 3 'Main results across model families', τ²-bench Telecom column, 'Base' rows only (the four instruction-tuned starting checkpoints). 'Prove'-trained rows are not catalogue models.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2602.22697v1-interactcs-rl",
+    "name": "Reinforcing Real-world Service Agents: InteractCS-RL (arXiv:2602.22697v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2602.22697v1",
+      "arxiv.org/abs/2602.22697v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2602.22697v1",
+    "quote": "arXiv abstract page for 2602.22697v1 links http://creativecommons.org/licenses/by/4.0/ as the licence of that version; the HTML prints 'License: CC BY 4.0'. CC BY 4.0 s.2(a)(1) permits reproduction and sharing, including commercially, with attribution.",
+    "attribution": "Ning Gao et al. (Meituan), InteractCS-RL, arXiv:2602.22697v1, CC BY 4.0. τ²-bench Telecom cells measured by the authors; percentages converted to fractions. No endorsement.",
+    "scope": "Table 2 'Performance of our InteractCS-RL in τ²-Bench', Telecom Pass@1, base-model rows Qwen2.5-7B and Qwen2.5-14B (the paper's agents are 'based on Qwen2.5-7/14B-Instruct'). SFT/RL rows not catalogue models.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "arxiv.org"
   }
 ]

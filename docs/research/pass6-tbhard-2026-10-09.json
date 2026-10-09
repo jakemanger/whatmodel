@@ -1,0 +1,1036 @@
+{
+ "about": "Pass 6 research (2026-10-09), topic Terminal-Bench Hard: find other models measured on Command A+'s 'Terminal-Bench Hard 25%' (Cohere blog; stored under terminalbench-hard-gemma4) so the result can be read against them, plus any allowed independent source that measured Command A+ on other tests. Candidate rows only; data/ was not edited. Merge order: ledger entries first (strip action/evidence_url/scope/note; add_match entries extend existing entries), then models, then results via npm run import. No new benchmark id is proposed: every TB-Hard row maps to terminalbench-hard-gemma4 (identity verdict in held_for_owner[0]); the Solar Open 2 rows for other tests map to existing ids. 64 rows: 16 TB-Hard rows in 6 new or extended runs (13 independent, 3 lab) plus 48 independent Solar Open 2 rows for Command A+ and three peers on 12 other existing ids; 1 comparison-only model (qwen3-vl-32b-thinking); 3 new run ledgers (Solar Open 2, HyperCLOVA X, Multiverse), 1 new pooled NVIDIA ModelOpt card ledger, 2 add_match. Scratch merge on the 2026-10-09 tree: check.ts --validate-only passes (1,312 models, 14,048 results); every row resolves to its intended ledger id; Command A+ moves 66.8 (rank 91/700, 7 cells) to 65.4 (rank 113) with the TB-Hard rows alone and to 61.6 (rank 178/701, 20 cells) with everything. Details in pass6-tbhard-2026-10-09.md.",
+ "results": [
+  {
+   "model": "command-a-plus",
+   "bench": "mmlu-pro",
+   "score": 0.79,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'MMLU-Pro', column 'Command A+ 218B-A25B' = 79.0. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' MMLU-Pro (Wang et al., 2024b). Header 'Command A+ / 218B-A25B' = Cohere command-a-plus-05-2026 (218B; the only Command A+ release, May 2026). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mistral-medium-3-5",
+   "bench": "mmlu-pro",
+   "score": 0.812,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'MMLU-Pro', column 'Mistral Medium 3.5 128B dense, high' = 81.2. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' MMLU-Pro (Wang et al., 2024b). Header 'Mistral Medium 3.5 / 128B dense, high' = catalogue mistral-medium-3-5 (128B dense); reasoning effort 'high' as printed. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mimo-v2-5",
+   "bench": "mmlu-pro",
+   "score": 0.846,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'MMLU-Pro', column 'MiMo-V2.5 310B-A15B' = 84.6. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' MMLU-Pro (Wang et al., 2024b). Header 'MiMo-V2.5 / 310B-A15B' = catalogue mimo-v2-5 (XiaomiMiMo/MiMo-V2.5, 310B-A15B). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "deepseek-v4-flash-preview",
+   "bench": "mmlu-pro",
+   "score": 0.859,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'MMLU-Pro', column 'DeepSeek-V4-Flash 284B-A13B, max' = 85.9. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' MMLU-Pro (Wang et al., 2024b). Header 'DeepSeek-V4-Flash / 284B-A13B, max' with reasoning effort 'max'. Report v1 is dated 2026-07-22 and v2 2026-07-24, before DeepSeek-V4-Flash-0731 existed, so this is the April 2026 preview weights (catalogue deepseek-v4-flash-preview), not deepseek-v4-flash (0731). Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "command-a-plus",
+   "bench": "gpqa-diamond",
+   "score": 0.756,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'GPQA-Diamond', column 'Command A+ 218B-A25B' = 75.6. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' GPQA-Diamond (Rein et al., 2024). Header 'Command A+ / 218B-A25B' = Cohere command-a-plus-05-2026 (218B; the only Command A+ release, May 2026). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mistral-medium-3-5",
+   "bench": "gpqa-diamond",
+   "score": 0.775,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'GPQA-Diamond', column 'Mistral Medium 3.5 128B dense, high' = 77.5. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' GPQA-Diamond (Rein et al., 2024). Header 'Mistral Medium 3.5 / 128B dense, high' = catalogue mistral-medium-3-5 (128B dense); reasoning effort 'high' as printed. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mimo-v2-5",
+   "bench": "gpqa-diamond",
+   "score": 0.83,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'GPQA-Diamond', column 'MiMo-V2.5 310B-A15B' = 83.0. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' GPQA-Diamond (Rein et al., 2024). Header 'MiMo-V2.5 / 310B-A15B' = catalogue mimo-v2-5 (XiaomiMiMo/MiMo-V2.5, 310B-A15B). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "deepseek-v4-flash-preview",
+   "bench": "gpqa-diamond",
+   "score": 0.889,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'GPQA-Diamond', column 'DeepSeek-V4-Flash 284B-A13B, max' = 88.9. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' GPQA-Diamond (Rein et al., 2024). Header 'DeepSeek-V4-Flash / 284B-A13B, max' with reasoning effort 'max'. Report v1 is dated 2026-07-22 and v2 2026-07-24, before DeepSeek-V4-Flash-0731 existed, so this is the April 2026 preview weights (catalogue deepseek-v4-flash-preview), not deepseek-v4-flash (0731). Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "command-a-plus",
+   "bench": "hle",
+   "score": 0.114,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'HLE (w/o tools)', column 'Command A+ 218B-A25B' = 11.4. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'HLE without tools'; text-only vs full set not stated. Header 'Command A+ / 218B-A25B' = Cohere command-a-plus-05-2026 (218B; the only Command A+ release, May 2026). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mistral-medium-3-5",
+   "bench": "hle",
+   "score": 0.128,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'HLE (w/o tools)', column 'Mistral Medium 3.5 128B dense, high' = 12.8. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'HLE without tools'; text-only vs full set not stated. Header 'Mistral Medium 3.5 / 128B dense, high' = catalogue mistral-medium-3-5 (128B dense); reasoning effort 'high' as printed. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mimo-v2-5",
+   "bench": "hle",
+   "score": 0.243,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'HLE (w/o tools)', column 'MiMo-V2.5 310B-A15B' = 24.3. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'HLE without tools'; text-only vs full set not stated. Header 'MiMo-V2.5 / 310B-A15B' = catalogue mimo-v2-5 (XiaomiMiMo/MiMo-V2.5, 310B-A15B). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "deepseek-v4-flash-preview",
+   "bench": "hle",
+   "score": 0.323,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'HLE (w/o tools)', column 'DeepSeek-V4-Flash 284B-A13B, max' = 32.3. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'HLE without tools'; text-only vs full set not stated. Header 'DeepSeek-V4-Flash / 284B-A13B, max' with reasoning effort 'max'. Report v1 is dated 2026-07-22 and v2 2026-07-24, before DeepSeek-V4-Flash-0731 existed, so this is the April 2026 preview weights (catalogue deepseek-v4-flash-preview), not deepseek-v4-flash (0731). Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "command-a-plus",
+   "bench": "livecodebench-v6-window-unspecified",
+   "score": 0.861,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'LiveCodeBench (v6)', column 'Command A+ 218B-A25B' = 86.1. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'LiveCodeBench v6'; date window not stated, so the window-unspecified id. Header 'Command A+ / 218B-A25B' = Cohere command-a-plus-05-2026 (218B; the only Command A+ release, May 2026). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mistral-medium-3-5",
+   "bench": "livecodebench-v6-window-unspecified",
+   "score": 0.849,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'LiveCodeBench (v6)', column 'Mistral Medium 3.5 128B dense, high' = 84.9. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'LiveCodeBench v6'; date window not stated, so the window-unspecified id. Header 'Mistral Medium 3.5 / 128B dense, high' = catalogue mistral-medium-3-5 (128B dense); reasoning effort 'high' as printed. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mimo-v2-5",
+   "bench": "livecodebench-v6-window-unspecified",
+   "score": 0.891,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'LiveCodeBench (v6)', column 'MiMo-V2.5 310B-A15B' = 89.1. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'LiveCodeBench v6'; date window not stated, so the window-unspecified id. Header 'MiMo-V2.5 / 310B-A15B' = catalogue mimo-v2-5 (XiaomiMiMo/MiMo-V2.5, 310B-A15B). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "deepseek-v4-flash-preview",
+   "bench": "livecodebench-v6-window-unspecified",
+   "score": 0.923,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'LiveCodeBench (v6)', column 'DeepSeek-V4-Flash 284B-A13B, max' = 92.3. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'LiveCodeBench v6'; date window not stated, so the window-unspecified id. Header 'DeepSeek-V4-Flash / 284B-A13B, max' with reasoning effort 'max'. Report v1 is dated 2026-07-22 and v2 2026-07-24, before DeepSeek-V4-Flash-0731 existed, so this is the April 2026 preview weights (catalogue deepseek-v4-flash-preview), not deepseek-v4-flash (0731). Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "command-a-plus",
+   "bench": "hmmt-feb-2026",
+   "score": 0.735,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'HMMT2602', column 'Command A+ 218B-A25B' = 73.5. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'HMMT2602 ... from MathArena' = HMMT February 2026. Header 'Command A+ / 218B-A25B' = Cohere command-a-plus-05-2026 (218B; the only Command A+ release, May 2026). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mistral-medium-3-5",
+   "bench": "hmmt-feb-2026",
+   "score": 0.629,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'HMMT2602', column 'Mistral Medium 3.5 128B dense, high' = 62.9. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'HMMT2602 ... from MathArena' = HMMT February 2026. Header 'Mistral Medium 3.5 / 128B dense, high' = catalogue mistral-medium-3-5 (128B dense); reasoning effort 'high' as printed. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mimo-v2-5",
+   "bench": "hmmt-feb-2026",
+   "score": 0.614,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'HMMT2602', column 'MiMo-V2.5 310B-A15B' = 61.4. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'HMMT2602 ... from MathArena' = HMMT February 2026. Header 'MiMo-V2.5 / 310B-A15B' = catalogue mimo-v2-5 (XiaomiMiMo/MiMo-V2.5, 310B-A15B). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "deepseek-v4-flash-preview",
+   "bench": "hmmt-feb-2026",
+   "score": 0.947,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'HMMT2602', column 'DeepSeek-V4-Flash 284B-A13B, max' = 94.7. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'HMMT2602 ... from MathArena' = HMMT February 2026. Header 'DeepSeek-V4-Flash / 284B-A13B, max' with reasoning effort 'max'. Report v1 is dated 2026-07-22 and v2 2026-07-24, before DeepSeek-V4-Flash-0731 existed, so this is the April 2026 preview weights (catalogue deepseek-v4-flash-preview), not deepseek-v4-flash (0731). Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "command-a-plus",
+   "bench": "aime-2026",
+   "score": 0.96,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'AIME2026', column 'Command A+ 218B-A25B' = 96.0. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'AIME2026 ... from MathArena'; I and II not split, so aime-2026. Header 'Command A+ / 218B-A25B' = Cohere command-a-plus-05-2026 (218B; the only Command A+ release, May 2026). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mistral-medium-3-5",
+   "bench": "aime-2026",
+   "score": 0.89,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'AIME2026', column 'Mistral Medium 3.5 128B dense, high' = 89.0. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'AIME2026 ... from MathArena'; I and II not split, so aime-2026. Header 'Mistral Medium 3.5 / 128B dense, high' = catalogue mistral-medium-3-5 (128B dense); reasoning effort 'high' as printed. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mimo-v2-5",
+   "bench": "aime-2026",
+   "score": 0.923,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'AIME2026', column 'MiMo-V2.5 310B-A15B' = 92.3. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'AIME2026 ... from MathArena'; I and II not split, so aime-2026. Header 'MiMo-V2.5 / 310B-A15B' = catalogue mimo-v2-5 (XiaomiMiMo/MiMo-V2.5, 310B-A15B). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "deepseek-v4-flash-preview",
+   "bench": "aime-2026",
+   "score": 0.97,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'AIME2026', column 'DeepSeek-V4-Flash 284B-A13B, max' = 97.0. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'AIME2026 ... from MathArena'; I and II not split, so aime-2026. Header 'DeepSeek-V4-Flash / 284B-A13B, max' with reasoning effort 'max'. Report v1 is dated 2026-07-22 and v2 2026-07-24, before DeepSeek-V4-Flash-0731 existed, so this is the April 2026 preview weights (catalogue deepseek-v4-flash-preview), not deepseek-v4-flash (0731). Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "command-a-plus",
+   "bench": "multichallenge",
+   "score": 0.458,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'Multi-Challenge', column 'Command A+ 218B-A25B' = 45.8. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' Multi-Challenge (Sirdeshmukh et al., 2025); judge not stated. Header 'Command A+ / 218B-A25B' = Cohere command-a-plus-05-2026 (218B; the only Command A+ release, May 2026). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mistral-medium-3-5",
+   "bench": "multichallenge",
+   "score": 0.498,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'Multi-Challenge', column 'Mistral Medium 3.5 128B dense, high' = 49.8. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' Multi-Challenge (Sirdeshmukh et al., 2025); judge not stated. Header 'Mistral Medium 3.5 / 128B dense, high' = catalogue mistral-medium-3-5 (128B dense); reasoning effort 'high' as printed. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mimo-v2-5",
+   "bench": "multichallenge",
+   "score": 0.39,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'Multi-Challenge', column 'MiMo-V2.5 310B-A15B' = 39.0. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' Multi-Challenge (Sirdeshmukh et al., 2025); judge not stated. Header 'MiMo-V2.5 / 310B-A15B' = catalogue mimo-v2-5 (XiaomiMiMo/MiMo-V2.5, 310B-A15B). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "deepseek-v4-flash-preview",
+   "bench": "multichallenge",
+   "score": 0.62,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'Multi-Challenge', column 'DeepSeek-V4-Flash 284B-A13B, max' = 62.0. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' Multi-Challenge (Sirdeshmukh et al., 2025); judge not stated. Header 'DeepSeek-V4-Flash / 284B-A13B, max' with reasoning effort 'max'. Report v1 is dated 2026-07-22 and v2 2026-07-24, before DeepSeek-V4-Flash-0731 existed, so this is the April 2026 preview weights (catalogue deepseek-v4-flash-preview), not deepseek-v4-flash (0731). Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "command-a-plus",
+   "bench": "ifbench-unspecified",
+   "score": 0.739,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'IFBench', column 'Command A+ 218B-A25B' = 73.9. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' IFBench (Pyatkin et al., 2025); prompt/instruction-level aggregation not stated, so ifbench-unspecified. Header 'Command A+ / 218B-A25B' = Cohere command-a-plus-05-2026 (218B; the only Command A+ release, May 2026). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mistral-medium-3-5",
+   "bench": "ifbench-unspecified",
+   "score": 0.69,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'IFBench', column 'Mistral Medium 3.5 128B dense, high' = 69.0. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' IFBench (Pyatkin et al., 2025); prompt/instruction-level aggregation not stated, so ifbench-unspecified. Header 'Mistral Medium 3.5 / 128B dense, high' = catalogue mistral-medium-3-5 (128B dense); reasoning effort 'high' as printed. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mimo-v2-5",
+   "bench": "ifbench-unspecified",
+   "score": 0.671,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'IFBench', column 'MiMo-V2.5 310B-A15B' = 67.1. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' IFBench (Pyatkin et al., 2025); prompt/instruction-level aggregation not stated, so ifbench-unspecified. Header 'MiMo-V2.5 / 310B-A15B' = catalogue mimo-v2-5 (XiaomiMiMo/MiMo-V2.5, 310B-A15B). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "deepseek-v4-flash-preview",
+   "bench": "ifbench-unspecified",
+   "score": 0.803,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'IFBench', column 'DeepSeek-V4-Flash 284B-A13B, max' = 80.3. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' IFBench (Pyatkin et al., 2025); prompt/instruction-level aggregation not stated, so ifbench-unspecified. Header 'DeepSeek-V4-Flash / 284B-A13B, max' with reasoning effort 'max'. Report v1 is dated 2026-07-22 and v2 2026-07-24, before DeepSeek-V4-Flash-0731 existed, so this is the April 2026 preview weights (catalogue deepseek-v4-flash-preview), not deepseek-v4-flash (0731). Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "command-a-plus",
+   "bench": "swe-bench-verified",
+   "score": 0.144,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'SWE-Bench Verified', column 'Command A+ 218B-A25B' = 14.4. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' SWE-Bench Verified (Jimenez et al., 2023); agent scaffold not stated (internal harness). Header 'Command A+ / 218B-A25B' = Cohere command-a-plus-05-2026 (218B; the only Command A+ release, May 2026). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mistral-medium-3-5",
+   "bench": "swe-bench-verified",
+   "score": 0.696,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'SWE-Bench Verified', column 'Mistral Medium 3.5 128B dense, high' = 69.6. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' SWE-Bench Verified (Jimenez et al., 2023); agent scaffold not stated (internal harness). Header 'Mistral Medium 3.5 / 128B dense, high' = catalogue mistral-medium-3-5 (128B dense); reasoning effort 'high' as printed. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mimo-v2-5",
+   "bench": "swe-bench-verified",
+   "score": 0.73,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'SWE-Bench Verified', column 'MiMo-V2.5 310B-A15B' = 73.0. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' SWE-Bench Verified (Jimenez et al., 2023); agent scaffold not stated (internal harness). Header 'MiMo-V2.5 / 310B-A15B' = catalogue mimo-v2-5 (XiaomiMiMo/MiMo-V2.5, 310B-A15B). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "deepseek-v4-flash-preview",
+   "bench": "swe-bench-verified",
+   "score": 0.738,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'SWE-Bench Verified', column 'DeepSeek-V4-Flash 284B-A13B, max' = 73.8. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' SWE-Bench Verified (Jimenez et al., 2023); agent scaffold not stated (internal harness). Header 'DeepSeek-V4-Flash / 284B-A13B, max' with reasoning effort 'max'. Report v1 is dated 2026-07-22 and v2 2026-07-24, before DeepSeek-V4-Flash-0731 existed, so this is the April 2026 preview weights (catalogue deepseek-v4-flash-preview), not deepseek-v4-flash (0731). Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "command-a-plus",
+   "bench": "terminalbench-hard-gemma4",
+   "score": 0.25,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'Terminal Bench Hard', column 'Command A+ 218B-A25B' = 25.0. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'Terminal Bench Hard (Merrill et al., 2026)' in the Agents group next to AA-LCR and GDPval-AA (the Artificial Analysis index suite); task count, agent harness and repeats are not printed. Header 'Command A+ / 218B-A25B' = Cohere command-a-plus-05-2026 (218B; the only Command A+ release, May 2026). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mistral-medium-3-5",
+   "bench": "terminalbench-hard-gemma4",
+   "score": 0.333,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'Terminal Bench Hard', column 'Mistral Medium 3.5 128B dense, high' = 33.3. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'Terminal Bench Hard (Merrill et al., 2026)' in the Agents group next to AA-LCR and GDPval-AA (the Artificial Analysis index suite); task count, agent harness and repeats are not printed. Header 'Mistral Medium 3.5 / 128B dense, high' = catalogue mistral-medium-3-5 (128B dense); reasoning effort 'high' as printed. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mimo-v2-5",
+   "bench": "terminalbench-hard-gemma4",
+   "score": 0.417,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'Terminal Bench Hard', column 'MiMo-V2.5 310B-A15B' = 41.7. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'Terminal Bench Hard (Merrill et al., 2026)' in the Agents group next to AA-LCR and GDPval-AA (the Artificial Analysis index suite); task count, agent harness and repeats are not printed. Header 'MiMo-V2.5 / 310B-A15B' = catalogue mimo-v2-5 (XiaomiMiMo/MiMo-V2.5, 310B-A15B). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "deepseek-v4-flash-preview",
+   "bench": "terminalbench-hard-gemma4",
+   "score": 0.341,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'Terminal Bench Hard', column 'DeepSeek-V4-Flash 284B-A13B, max' = 34.1. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'Terminal Bench Hard (Merrill et al., 2026)' in the Agents group next to AA-LCR and GDPval-AA (the Artificial Analysis index suite); task count, agent harness and repeats are not printed. Header 'DeepSeek-V4-Flash / 284B-A13B, max' with reasoning effort 'max'. Report v1 is dated 2026-07-22 and v2 2026-07-24, before DeepSeek-V4-Flash-0731 existed, so this is the April 2026 preview weights (catalogue deepseek-v4-flash-preview), not deepseek-v4-flash (0731). Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "command-a-plus",
+   "bench": "apex-agents",
+   "score": 0.016,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'APEX-Agents', column 'Command A+ 218B-A25B' = 1.6. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' APEX-Agents (Vidgen et al., 2026); pass@k not printed (pass@1 assumed by the id's definition 'as reported'). Header 'Command A+ / 218B-A25B' = Cohere command-a-plus-05-2026 (218B; the only Command A+ release, May 2026). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mistral-medium-3-5",
+   "bench": "apex-agents",
+   "score": 0.061,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'APEX-Agents', column 'Mistral Medium 3.5 128B dense, high' = 6.1. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' APEX-Agents (Vidgen et al., 2026); pass@k not printed (pass@1 assumed by the id's definition 'as reported'). Header 'Mistral Medium 3.5 / 128B dense, high' = catalogue mistral-medium-3-5 (128B dense); reasoning effort 'high' as printed. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mimo-v2-5",
+   "bench": "apex-agents",
+   "score": 0.134,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'APEX-Agents', column 'MiMo-V2.5 310B-A15B' = 13.4. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' APEX-Agents (Vidgen et al., 2026); pass@k not printed (pass@1 assumed by the id's definition 'as reported'). Header 'MiMo-V2.5 / 310B-A15B' = catalogue mimo-v2-5 (XiaomiMiMo/MiMo-V2.5, 310B-A15B). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "deepseek-v4-flash-preview",
+   "bench": "apex-agents",
+   "score": 0.132,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'APEX-Agents', column 'DeepSeek-V4-Flash 284B-A13B, max' = 13.2. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' APEX-Agents (Vidgen et al., 2026); pass@k not printed (pass@1 assumed by the id's definition 'as reported'). Header 'DeepSeek-V4-Flash / 284B-A13B, max' with reasoning effort 'max'. Report v1 is dated 2026-07-22 and v2 2026-07-24, before DeepSeek-V4-Flash-0731 existed, so this is the April 2026 preview weights (catalogue deepseek-v4-flash-preview), not deepseek-v4-flash (0731). Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "command-a-plus",
+   "bench": "mcp-atlas",
+   "score": 0.272,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'MCP-Atlas', column 'Command A+ 218B-A25B' = 27.2. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' MCP-Atlas (Bandi et al., 2026); split/judge not printed, so mcp-atlas (public set, harness per note), not mcp-atlas-v1-500. Header 'Command A+ / 218B-A25B' = Cohere command-a-plus-05-2026 (218B; the only Command A+ release, May 2026). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mistral-medium-3-5",
+   "bench": "mcp-atlas",
+   "score": 0.307,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'MCP-Atlas', column 'Mistral Medium 3.5 128B dense, high' = 30.7. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' MCP-Atlas (Bandi et al., 2026); split/judge not printed, so mcp-atlas (public set, harness per note), not mcp-atlas-v1-500. Header 'Mistral Medium 3.5 / 128B dense, high' = catalogue mistral-medium-3-5 (128B dense); reasoning effort 'high' as printed. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mimo-v2-5",
+   "bench": "mcp-atlas",
+   "score": 0.639,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'MCP-Atlas', column 'MiMo-V2.5 310B-A15B' = 63.9. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' MCP-Atlas (Bandi et al., 2026); split/judge not printed, so mcp-atlas (public set, harness per note), not mcp-atlas-v1-500. Header 'MiMo-V2.5 / 310B-A15B' = catalogue mimo-v2-5 (XiaomiMiMo/MiMo-V2.5, 310B-A15B). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "deepseek-v4-flash-preview",
+   "bench": "mcp-atlas",
+   "score": 0.582,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'MCP-Atlas', column 'DeepSeek-V4-Flash 284B-A13B, max' = 58.2. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' MCP-Atlas (Bandi et al., 2026); split/judge not printed, so mcp-atlas (public set, harness per note), not mcp-atlas-v1-500. Header 'DeepSeek-V4-Flash / 284B-A13B, max' with reasoning effort 'max'. Report v1 is dated 2026-07-22 and v2 2026-07-24, before DeepSeek-V4-Flash-0731 existed, so this is the April 2026 preview weights (catalogue deepseek-v4-flash-preview), not deepseek-v4-flash (0731). Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "command-a-plus",
+   "bench": "tau3-banking",
+   "score": 0.058,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'τ3 (banking)', column 'Command A+ 218B-A25B' = 5.8. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'the τ3 banking domain of the τ-bench suite'; tau2-bench grading version not printed, so tau3-banking (not tau3-banking-v101). Header 'Command A+ / 218B-A25B' = Cohere command-a-plus-05-2026 (218B; the only Command A+ release, May 2026). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mistral-medium-3-5",
+   "bench": "tau3-banking",
+   "score": 0.058,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'τ3 (banking)', column 'Mistral Medium 3.5 128B dense, high' = 5.8. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'the τ3 banking domain of the τ-bench suite'; tau2-bench grading version not printed, so tau3-banking (not tau3-banking-v101). Header 'Mistral Medium 3.5 / 128B dense, high' = catalogue mistral-medium-3-5 (128B dense); reasoning effort 'high' as printed. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "mimo-v2-5",
+   "bench": "tau3-banking",
+   "score": 0.087,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'τ3 (banking)', column 'MiMo-V2.5 310B-A15B' = 8.7. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'the τ3 banking domain of the τ-bench suite'; tau2-bench grading version not printed, so tau3-banking (not tau3-banking-v101). Header 'MiMo-V2.5 / 310B-A15B' = catalogue mimo-v2-5 (XiaomiMiMo/MiMo-V2.5, 310B-A15B). Reasoning setting not printed for this column. Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "deepseek-v4-flash-preview",
+   "bench": "tau3-banking",
+   "score": 0.223,
+   "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+   "source_id": "paper-2607.20062v2-solar-open-2",
+   "by": "independent",
+   "date": "2026-07-24",
+   "note": "Upstage, Solar Open 2 Technical Report (arXiv 2607.20062v2, CC BY 4.0), Table 3 'English benchmark performance', row 'τ3 (banking)', column 'DeepSeek-V4-Flash 284B-A13B, max' = 22.3. Caption and Sec. 5.1: 'All numbers are measured with our internal evaluation harness under identical per-benchmark settings; reasoning-effort settings are noted in the table headers where applicable.' 'the τ3 banking domain of the τ-bench suite'; tau2-bench grading version not printed, so tau3-banking (not tau3-banking-v101). Header 'DeepSeek-V4-Flash / 284B-A13B, max' with reasoning effort 'max'. Report v1 is dated 2026-07-22 and v2 2026-07-24, before DeepSeek-V4-Flash-0731 existed, so this is the April 2026 preview weights (catalogue deepseek-v4-flash-preview), not deepseek-v4-flash (0731). Upstage's own Solar Open 2 / Solar Open 1 columns are not catalogue models (see gaps). Table identical in v1 (2026-07-22) and v2."
+  },
+  {
+   "model": "falcon-h1r-7b",
+   "bench": "terminalbench-hard-gemma4",
+   "score": 0.049,
+   "source": "https://arxiv.org/html/2601.02346v1#S4.T5",
+   "source_id": "report-2601.02346v1",
+   "by": "lab",
+   "date": "2026-01-05",
+   "note": "Falcon-H1R report (TII, arXiv 2601.02346v1, CC BY 4.0), Table 5 'Code generation with reasoning evaluations', column 'TB Hard', row 'Falcon-H1R-7B' = 4.9. Sec. 4.1: 'Terminal-Bench (TB) Hard evaluates 47 hard tasks from the terminal-bench-core dataset (commit 74221fb) using the Terminus 2 agent. Each task is capped at 100 episodes and a 24-hour timeout, with model configurations set to the framework's default values'; 'For TB Hard ... we repeat each evaluation three times and report the average result'; 3 responses per query, max response length 32768. Baselines: 'we evaluated a range of SOTA models ... using each baseline's recommended evaluation configurations'; cells marked * are 'taken from Artificial Analysis' (Apriel-1.5-15b-Thinker 9.9* and GPT-OSS-20B 9.9* excluded); this cell is unstarred, i.e. the authors' own run. Authors' own model; sampling temperature 0.6, top-p 0.95 with the report's system prompt (Sec. 4.1). = tiiuae/Falcon-H1R-7B."
+  },
+  {
+   "model": "qwen3-8b",
+   "bench": "terminalbench-hard-gemma4",
+   "score": 0.021,
+   "source": "https://arxiv.org/html/2601.02346v1#S4.T5",
+   "source_id": "report-2601.02346v1",
+   "by": "independent",
+   "date": "2026-01-05",
+   "note": "Falcon-H1R report (TII, arXiv 2601.02346v1, CC BY 4.0), Table 5 'Code generation with reasoning evaluations', column 'TB Hard', row 'Qwen3-8B' = 2.1. Sec. 4.1: 'Terminal-Bench (TB) Hard evaluates 47 hard tasks from the terminal-bench-core dataset (commit 74221fb) using the Terminus 2 agent. Each task is capped at 100 episodes and a 24-hour timeout, with model configurations set to the framework's default values'; 'For TB Hard ... we repeat each evaluation three times and report the average result'; 3 responses per query, max response length 32768. Baselines: 'we evaluated a range of SOTA models ... using each baseline's recommended evaluation configurations'; cells marked * are 'taken from Artificial Analysis' (Apriel-1.5-15b-Thinker 9.9* and GPT-OSS-20B 9.9* excluded); this cell is unstarred, i.e. the authors' own run. Qwen/Qwen3-8B (hybrid; thinking/non-thinking mode not printed, 'recommended evaluation configuration')."
+  },
+  {
+   "model": "deepseek-r1-0528-qwen3-8b",
+   "bench": "terminalbench-hard-gemma4",
+   "score": 0.014,
+   "source": "https://arxiv.org/html/2601.02346v1#S4.T5",
+   "source_id": "report-2601.02346v1",
+   "by": "independent",
+   "date": "2026-01-05",
+   "note": "Falcon-H1R report (TII, arXiv 2601.02346v1, CC BY 4.0), Table 5 'Code generation with reasoning evaluations', column 'TB Hard', row 'DeepSeek-R1-0528-Qwen3-8B' = 1.4. Sec. 4.1: 'Terminal-Bench (TB) Hard evaluates 47 hard tasks from the terminal-bench-core dataset (commit 74221fb) using the Terminus 2 agent. Each task is capped at 100 episodes and a 24-hour timeout, with model configurations set to the framework's default values'; 'For TB Hard ... we repeat each evaluation three times and report the average result'; 3 responses per query, max response length 32768. Baselines: 'we evaluated a range of SOTA models ... using each baseline's recommended evaluation configurations'; cells marked * are 'taken from Artificial Analysis' (Apriel-1.5-15b-Thinker 9.9* and GPT-OSS-20B 9.9* excluded); this cell is unstarred, i.e. the authors' own run. deepseek-ai/DeepSeek-R1-0528-Qwen3-8B (reasoning-only model)."
+  },
+  {
+   "model": "qwen3-32b",
+   "bench": "terminalbench-hard-gemma4",
+   "score": 0.028,
+   "source": "https://arxiv.org/html/2601.02346v1#S4.T5",
+   "source_id": "report-2601.02346v1",
+   "by": "independent",
+   "date": "2026-01-05",
+   "note": "Falcon-H1R report (TII, arXiv 2601.02346v1, CC BY 4.0), Table 5 'Code generation with reasoning evaluations', column 'TB Hard', row 'Qwen3-32B' = 2.8. Sec. 4.1: 'Terminal-Bench (TB) Hard evaluates 47 hard tasks from the terminal-bench-core dataset (commit 74221fb) using the Terminus 2 agent. Each task is capped at 100 episodes and a 24-hour timeout, with model configurations set to the framework's default values'; 'For TB Hard ... we repeat each evaluation three times and report the average result'; 3 responses per query, max response length 32768. Baselines: 'we evaluated a range of SOTA models ... using each baseline's recommended evaluation configurations'; cells marked * are 'taken from Artificial Analysis' (Apriel-1.5-15b-Thinker 9.9* and GPT-OSS-20B 9.9* excluded); this cell is unstarred, i.e. the authors' own run. Qwen/Qwen3-32B (hybrid; thinking/non-thinking mode not printed, 'recommended evaluation configuration')."
+  },
+  {
+   "model": "exaone-4-0-32b",
+   "bench": "terminalbench-hard-gemma4",
+   "score": 0.036,
+   "source": "https://arxiv.org/html/2601.03286v1#S5.T5",
+   "source_id": "paper-2601.03286v1-hyperclova-x-32b-think",
+   "by": "independent",
+   "date": "2026-01-03",
+   "note": "NAVER Cloud HyperCLOVA X team, 'HyperCLOVA X 32B Think' (arXiv 2601.03286v1, CC BY 4.0), Table 5 (Agent / English), row 'Terminal Bench Hard', column 'EXAONE 4.0 32B' = 3.6. Sec. 5.4: 'TerminalBench Hard, which corresponds to the 47 challenging tasks from the artificial analysis split'; App. C.2: 'all evaluated models utilized the same Terminus-2 agent implementation with reasoning enabled throughout the evaluation'; Sec. 5: 'we test all models in this report using Omni-Evaluator' (the authors' own runs). Columns: HyperCLOVA X 32B Think 9.9, EXAONE 4.0 32B 3.6, Qwen3-VL 32B-Thinking 6.9, InternVL3_5 38B-Thinking '–'. = LGAI-EXAONE/EXAONE-4.0-32B (cited as LG AI Research 2025), reasoning enabled."
+  },
+  {
+   "model": "qwen3-vl-32b-thinking",
+   "bench": "terminalbench-hard-gemma4",
+   "score": 0.069,
+   "source": "https://arxiv.org/html/2601.03286v1#S5.T5",
+   "source_id": "paper-2601.03286v1-hyperclova-x-32b-think",
+   "by": "independent",
+   "date": "2026-01-03",
+   "note": "NAVER Cloud HyperCLOVA X team, 'HyperCLOVA X 32B Think' (arXiv 2601.03286v1, CC BY 4.0), Table 5 (Agent / English), row 'Terminal Bench Hard', column 'Qwen3-VL 32B-Thinking' = 6.9. Sec. 5.4: 'TerminalBench Hard, which corresponds to the 47 challenging tasks from the artificial analysis split'; App. C.2: 'all evaluated models utilized the same Terminus-2 agent implementation with reasoning enabled throughout the evaluation'; Sec. 5: 'we test all models in this report using Omni-Evaluator' (the authors' own runs). Columns: HyperCLOVA X 32B Think 9.9, EXAONE 4.0 32B 3.6, Qwen3-VL 32B-Thinking 6.9, InternVL3_5 38B-Thinking '–'. = Qwen/Qwen3-VL-32B-Thinking (needs the proposed comparison-only model qwen3-vl-32b-thinking; without it this run has one catalogue model)."
+  },
+  {
+   "model": "nemotron-3-nano-30b-a3b",
+   "bench": "terminalbench-hard-gemma4",
+   "score": 0.0851,
+   "source": "https://arxiv.org/html/2512.20848v1#S3.T3",
+   "source_id": "first-party-nvidia-scores",
+   "by": "lab",
+   "date": "2025-12-23",
+   "note": "NVIDIA, Nemotron 3 Nano technical report (arXiv 2512.20848v1, CC BY 4.0), Table 3, row 'Terminal Bench (hard subset)', column 'N-3-Nano' = 8.51 (model card bf77c31 prints 8.5). Sec. 3.4.1: Terminal Bench is 'not onboarded yet in our open source tools and for these we used their official open source implementation'. Own model only: the Qwen3-30B-A3B-Thinking-2507 (5.00) and GPT-OSS 20B (10.00) cells are excluded because the report says comparators use 'officially reported numbers whenever available; if a benchmark is not reported, we take the value from ArtificialAnalysis (AA)' and neither vendor reports TB-Hard (the card marks only its own measurements with *, and these cells are unstarred). Reasoning on (default). Routed to first-party-nvidia-scores via the '#S3.T3' fragment so NVIDIA's own TB-Hard rows form one vendor run with Nemotron 3 Super."
+  },
+  {
+   "model": "nemotron-3-super-120b-a12b",
+   "bench": "terminalbench-hard-gemma4",
+   "score": 0.2578,
+   "source": "https://arxiv.org/html/2604.12374v1#S3.T5",
+   "source_id": "first-party-nvidia-scores",
+   "by": "lab",
+   "date": "2026-04-14",
+   "note": "NVIDIA, Nemotron 3 Super technical report (arXiv 2604.12374v1, CC BY 4.0), Table 5, row 'Terminal Bench (hard subset)', column 'N-3-Super' = 25.78 (card 2dc98e2 identical). Sec. 3.3: 'dedicated open-source packaged containers for ... Terminal Bench Hard (48 tasks)'; 'the same broad benchmark suite and evaluation stack as Nemotron 3 Nano'. BF16 checkpoint (Table 8 FP8 26.04 / NVFP4 24.48 not used). Own model only: Qwen3.5-122B-A10B 26.80 and GPT-OSS-120B 24.00 excluded because comparators are 'officially reported numbers whenever available; when not available ... sourcing values from reputable public aggregators ... or computing scores ourselves' without saying which. Routed to first-party-nvidia-scores via the '#S3.T5' fragment (one NVIDIA vendor run with Nemotron 3 Nano)."
+  },
+  {
+   "model": "gemma-4-31b",
+   "bench": "terminalbench-hard-gemma4",
+   "score": 0.2708,
+   "source": "https://huggingface.co/nvidia/Gemma-4-31B-IT-NVFP4/blob/4135a98a9b728a548947683219633b25682223ac/README.md",
+   "source_id": "nvidia-modelopt-card-baselines",
+   "by": "independent",
+   "date": "2026-07-13",
+   "note": "NVIDIA ModelOpt, nvidia/Gemma-4-31B-IT-NVFP4 card @4135a98 (2026-07-13; repo licence Apache 2.0 per ai.google.dev/gemma/apache_2), 'Evaluation Results' table, row 'Terminal-Bench Hard (pass@1)', column 'Baseline (BF16)' = 27.08% (NVFP4 column 27.08% not used). Footnote: 'Baseline: Gemma-4-31B ... Benchmarked with temperature=1.0, top_p=0.95, max_new_tokens= 131072'; base_model google/gemma-4-31B-it. NVIDIA's own measurement of Google's model; thinking mode and agent harness not printed (NVIDIA's NeMo Evaluator 'terminal-bench-hard' = 47 tasks, Terminus-2)."
+  },
+  {
+   "model": "deepseek-v4-pro",
+   "bench": "terminalbench-hard-gemma4",
+   "score": 0.5139,
+   "source": "https://huggingface.co/nvidia/DeepSeek-V4-Pro-0813-NVFP4/blob/949138637e8e8fe190335be2396af62187dc8a83/README.md",
+   "source_id": "nvidia-modelopt-card-baselines",
+   "by": "independent",
+   "date": "2026-09-10",
+   "note": "NVIDIA ModelOpt, nvidia/DeepSeek-V4-Pro-0813-NVFP4 card @9491386 (2026-09-10; repo licence MIT), 'Evaluation' table, row 'MXFP4 (source)', column 'Terminal-Bench Hard' = 51.39 (NVFP4 row 50.69 not used). 'Baseline: DeepSeek-V4-Pro-0813, whose routed experts already ship in MXFP4' = the official deepseek-ai/DeepSeek-V4-Pro-0813 checkpoint (catalogue deepseek-v4-pro). 'All scores measured on SGLang at temperature 1.0, top_p 1.0, max reasoning effort ... Terminal-Bench Hard [is] single-run.' The -nvfp4-DSpark card @d9a7219 repeats the same measurement and is not used twice."
+  },
+  {
+   "model": "gpt-oss-20b",
+   "bench": "terminalbench-hard-gemma4",
+   "score": 0.09,
+   "source": "https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2602/blob/382391945c26d1ab65fc8bdc174865067cf80cd1/README.md",
+   "source_id": "multiverse-hypernova-60b-2602-card",
+   "by": "independent",
+   "date": "2026-08-07",
+   "note": "Multiverse Computing, MultiverseComputingCAI/Hypernova-60B-2602 card @3823919 (2026-08-07; repo licence apache-2.0), 'Quantitative Results (Reported & Planned)' table, row 'Terminal Bench', column 'gpt-oss-20b' = 9. 'Reported numbers use the methodology described above'; the methodology's only Terminal-Bench entry is 'Terminal-Bench Hard (Artificial Analysis subset): Evaluation framework laude-institute/harbor == 0.1.43; Inference library vLLM == 0.15.0; Reasoning effort: high; Decoding: temperature = 1.0, top_p = 1.0, max-model-len = 131072; Agent: terminus-2, max episodes 100; repeats 3', so the row is TB-Hard. Multiverse's own run of OpenAI's open-weights model (the card's HyperNova 60B 2602 = 16 is a compressed gpt-oss-120b, not catalogued). = openai/gpt-oss-20b, reasoning effort high. Integer-rounded as printed."
+  },
+  {
+   "model": "gpt-oss-120b",
+   "bench": "terminalbench-hard-gemma4",
+   "score": 0.22,
+   "source": "https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2602/blob/382391945c26d1ab65fc8bdc174865067cf80cd1/README.md",
+   "source_id": "multiverse-hypernova-60b-2602-card",
+   "by": "independent",
+   "date": "2026-08-07",
+   "note": "Multiverse Computing, MultiverseComputingCAI/Hypernova-60B-2602 card @3823919 (2026-08-07; repo licence apache-2.0), 'Quantitative Results (Reported & Planned)' table, row 'Terminal Bench', column 'gpt-oss-120b' = 22. 'Reported numbers use the methodology described above'; the methodology's only Terminal-Bench entry is 'Terminal-Bench Hard (Artificial Analysis subset): Evaluation framework laude-institute/harbor == 0.1.43; Inference library vLLM == 0.15.0; Reasoning effort: high; Decoding: temperature = 1.0, top_p = 1.0, max-model-len = 131072; Agent: terminus-2, max episodes 100; repeats 3', so the row is TB-Hard. Multiverse's own run of OpenAI's open-weights model (the card's HyperNova 60B 2602 = 16 is a compressed gpt-oss-120b, not catalogued). = openai/gpt-oss-120b, reasoning effort high. Integer-rounded as printed. The later HyperNova 60B 2605 card @373c5c7 re-measures GPT-OSS-120B at 24.2 under the same harness (vLLM 0.13.0); not recorded (would be a single-catalogue-model run unless pooled)."
+  }
+ ],
+ "benchmarks": [],
+ "ledger": [
+  {
+   "action": "new",
+   "id": "paper-2607.20062v2-solar-open-2",
+   "name": "Solar Open 2 Technical Report (Upstage, arXiv:2607.20062v2)",
+   "kind": "paper",
+   "match": [
+    "arxiv.org/html/2607.20062v2"
+   ],
+   "exact": true,
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "terms_url": "https://arxiv.org/abs/2607.20062v2",
+   "quote": "arXiv abstract pages for 2607.20062v1 and 2607.20062v2 both link 'http://creativecommons.org/licenses/by/4.0/' as the article licence; the HTML prints 'License: CC BY 4.0'. CC BY 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including commercially, subject to attribution.",
+   "attribution": "Sungrae Park et al. (Upstage), Solar Open 2 Technical Report, arXiv:2607.20062v2, CC BY 4.0. Table 3 cells for non-Upstage models; percentages converted to fractions. No endorsement.",
+   "scope": "Table 3 (English benchmarks, 'All numbers are measured with our internal evaluation harness'): Command A+, Mistral Medium 3.5 (high), MiMo-V2.5 and DeepSeek-V4-Flash (max; April preview weights) on MMLU-Pro, GPQA-Diamond, HLE (no tools), LiveCodeBench v6, HMMT Feb 2026, AIME 2026, Multi-Challenge, IFBench, SWE-Bench Verified, Terminal Bench Hard, APEX-Agents, MCP-Atlas and the tau3 banking domain. Not used: Solar Open 2 / Solar Open 1 columns (not catalogued), ArtifactsBench and AA-LCR (no benchmark id), GDPval-AA v2 ELO (an Artificial Analysis leaderboard Elo 'measured on 30 June 2026', held), Table 4 Korean benchmarks (out of this pass's scope).",
+   "verdict": "allowed",
+   "checked": "2026-10-09",
+   "icon": "arxiv.org",
+   "evidence_url": "https://arxiv.org/abs/2607.20062v2"
+  },
+  {
+   "action": "new",
+   "id": "paper-2601.03286v1-hyperclova-x-32b-think",
+   "name": "HyperCLOVA X 32B Think (NAVER Cloud, arXiv:2601.03286v1)",
+   "kind": "paper",
+   "match": [
+    "arxiv.org/html/2601.03286v1"
+   ],
+   "exact": true,
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "terms_url": "https://arxiv.org/abs/2601.03286v1",
+   "quote": "arXiv abstract page for 2601.03286v1 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence (only version). CC BY 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including commercially, subject to attribution.",
+   "attribution": "NAVER Cloud HyperCLOVA X Team, HyperCLOVA X 32B Think, arXiv:2601.03286v1, CC BY 4.0. Table 5 Terminal Bench Hard cells; percentages converted to fractions. No endorsement.",
+   "scope": "Table 5 row 'Terminal Bench Hard' (47-task Artificial Analysis split, Terminus-2, reasoning enabled, authors' own Omni-Evaluator runs): EXAONE 4.0 32B and Qwen3-VL 32B-Thinking (comparison-only model proposed); HyperCLOVA X 32B Think row held (model not catalogued). Other Table 5/6 rows not reviewed in this pass (Tau2 rows noted as a lead).",
+   "verdict": "allowed",
+   "checked": "2026-10-09",
+   "icon": "arxiv.org",
+   "evidence_url": "https://arxiv.org/abs/2601.03286v1"
+  },
+  {
+   "action": "add_match",
+   "id": "first-party-nvidia-scores",
+   "add_match": [
+    "arxiv.org/html/2512.20848v1#S3.T3",
+    "arxiv.org/html/2604.12374v1#S3.T5"
+   ],
+   "note": "Fragment-scoped matches so the two NVIDIA own-model TB-Hard cells (Nemotron 3 Nano report Table 3, Nemotron 3 Super report Table 5) form one NVIDIA vendor run, like the existing '#evaluation-results' card matches; bare report URLs keep resolving to report-2512.20848v1 / report-2604.12374v1. Both reports are CC BY 4.0 (the open copy is cited)."
+  },
+  {
+   "action": "add_match",
+   "id": "first-party-qwen",
+   "add_match": [
+    "huggingface.co/Qwen/Qwen3-VL-32B-Thinking/blob/7edd10ffd1196091948fb245ff63e406ccb2d4d1/README.md"
+   ],
+   "note": "Approves the context_source (first-party specification: 'Native 256K context') of the proposed comparison-only model qwen3-vl-32b-thinking, as for Qwen3-VL-235B-A22B-Thinking."
+  },
+  {
+   "action": "new",
+   "id": "multiverse-hypernova-60b-2602-card",
+   "name": "Multiverse Computing HyperNova 60B 2602 model card: evaluation table (own runs incl. gpt-oss baselines)",
+   "kind": "dataset",
+   "match": [
+    "huggingface.co/MultiverseComputingCAI/Hypernova-60B-2602/blob/382391945c26d1ab65fc8bdc174865067cf80cd1/README.md"
+   ],
+   "exact": true,
+   "license": "Apache-2.0",
+   "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "terms_url": "https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2602/blob/382391945c26d1ab65fc8bdc174865067cf80cd1/README.md",
+   "quote": "Card front matter 'license: apache-2.0' and the 'License' badge (Apache 2.0) at @3823919. Apache-2.0 s.2 grants a perpetual, worldwide, royalty-free copyright licence to reproduce and distribute the Work, including commercially, with notice. The card states 'Reported numbers use the methodology described above' (Multiverse's own runs).",
+   "attribution": "Multiverse Computing, HyperNova 60B 2602 model card (MultiverseComputingCAI/Hypernova-60B-2602 @3823919, Apache-2.0), Terminal Bench (TB-Hard) row; integers converted to fractions. No endorsement.",
+   "scope": "Row 'Terminal Bench' (= Terminal-Bench Hard, AA subset, harbor 0.1.43, terminus-2, reasoning high, 3 repeats): gpt-oss-20b 9 and gpt-oss-120b 22. HyperNova 60B 2602 (16) not catalogued. Other rows (MMLU-Pro, BFCL v4, Tau2-bench Telecom, AIME25, GPQA:d, IFBench, SciCode, LiveCodeBench, AA-LCR, AA-Omniscience) not reviewed in this pass; Tau2 Telecom gpt-oss-20b 59 / gpt-oss-120b 68 is a lead for the tau2 topic.",
+   "verdict": "allowed",
+   "checked": "2026-10-09",
+   "icon": "huggingface.co"
+  },
+  {
+   "action": "new",
+   "id": "nvidia-modelopt-card-baselines",
+   "name": "NVIDIA ModelOpt quantized-checkpoint cards: baseline (unquantized) measurements of third-party models",
+   "kind": "dataset",
+   "match": [
+    "huggingface.co/nvidia/Gemma-4-31B-IT-NVFP4/blob/4135a98a9b728a548947683219633b25682223ac/README.md",
+    "huggingface.co/nvidia/DeepSeek-V4-Pro-0813-NVFP4/blob/949138637e8e8fe190335be2396af62187dc8a83/README.md"
+   ],
+   "exact": true,
+   "license": "Apache-2.0 (Gemma-4-31B-IT-NVFP4 repo) / MIT (DeepSeek-V4-Pro-0813-NVFP4 repo)",
+   "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "terms_url": "https://huggingface.co/nvidia/DeepSeek-V4-Pro-0813-NVFP4/blob/949138637e8e8fe190335be2396af62187dc8a83/README.md",
+   "quote": "nvidia/Gemma-4-31B-IT-NVFP4 @4135a98 front matter 'license_name: apache-license-2.0, license_link: https://ai.google.dev/gemma/apache_2' and section 'License and Terms of Use: Apache License 2.0'; nvidia/DeepSeek-V4-Pro-0813-NVFP4 @9491386 front matter 'license: mit' and 'License/Terms of Use: [MIT]'. Both licences permit commercial reuse with notice. The baseline rows are NVIDIA's own measurements of the unquantized source checkpoints.",
+   "attribution": "NVIDIA ModelOpt, evaluation tables of nvidia/Gemma-4-31B-IT-NVFP4 (@4135a98, Apache-2.0) and nvidia/DeepSeek-V4-Pro-0813-NVFP4 (@9491386, MIT); baseline rows only; percentages converted to fractions. No endorsement.",
+   "scope": "Terminal-Bench Hard baseline rows only: Gemma 4 31B IT BF16 27.08 and DeepSeek-V4-Pro-0813 (MXFP4 source) 51.39. Quantized-checkpoint rows not used (they belong in quant.json if wanted). Pooling the two cards into one NVIDIA ModelOpt evaluator run is a judgement call (same team, different sampling settings); see held_for_owner.",
+   "verdict": "allowed",
+   "checked": "2026-10-09",
+   "icon": "huggingface.co"
+  }
+ ],
+ "models": [
+  {
+   "id": "qwen3-vl-32b-thinking",
+   "name": "Qwen3-VL 32B Thinking",
+   "provider": "Alibaba",
+   "category": "llm",
+   "released": "2025-10",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "params_b": 33.4,
+   "active_b": 33.4,
+   "api": null,
+   "local": null,
+   "model_repo": "https://huggingface.co/Qwen/Qwen3-VL-32B-Thinking",
+   "identity_note": "Comparison-only, proposed so the HyperCLOVA X 32B Think report's Terminal Bench Hard run (Table 5) has two catalogue models (with exaone-4-0-32b). The report column 'Qwen3-VL 32B-Thinking' (cited Yang et al., 2025). Maker repo Qwen/Qwen3-VL-32B-Thinking @7edd10f: licence tag apache-2.0, created 2025-10-19, 33,357,390,064 parameters in safetensors metadata (dense). Separate Thinking checkpoint (not Qwen3-VL-32B-Instruct). Card: 'Native 256K context, expandable to 1M'.",
+   "identity_sources": [
+    "https://huggingface.co/Qwen/Qwen3-VL-32B-Thinking/blob/7edd10ffd1196091948fb245ff63e406ccb2d4d1/README.md"
+   ],
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2601.03286v1#S5.T5",
+     "reported_label": "Qwen3-VL 32B-Thinking"
+    },
+    {
+     "source": "https://huggingface.co/Qwen/Qwen3-VL-32B-Thinking",
+     "reported_label": "Qwen/Qwen3-VL-32B-Thinking"
+    }
+   ],
+   "context_k": 256,
+   "context_source": "https://huggingface.co/Qwen/Qwen3-VL-32B-Thinking/blob/7edd10ffd1196091948fb245ff63e406ccb2d4d1/README.md",
+   "context_note": "Context length stated on the official model card."
+  }
+ ],
+ "gaps": [
+  {
+   "model": "Solar Open 2 (upstage/Solar-Open2-250B @9190fbe, 250B-A15B, Upstage Solar License)",
+   "why": "Upstage's own column in the Solar Open 2 report Table 3 (TB-Hard 28.3, plus the other 12 mapped tests). Not catalogued; the run already has four catalogue models, so no comparison-only entry is proposed. Add it if the owner wants Upstage's flagship on the board."
+  },
+  {
+   "model": "Solar Open 1 / Solar Open 100B (upstage/Solar-Open-100B @1f59143, 102B-A12B)",
+   "why": "Upstage column in the same table (TB-Hard 2.3). Not catalogued."
+  },
+  {
+   "model": "HyperCLOVA X SEED 32B Think (naver-hyperclovax/HyperCLOVAX-SEED-Think-32B @3c2b633, 33.3B, HyperCLOVA X licence)",
+   "why": "Subject of arXiv 2601.03286 (TB-Hard 9.9, lab row). Not catalogued; row and model proposal kept in held_for_owner because qwen3-vl-32b-thinking alone already makes the run count."
+  },
+  {
+   "model": "Phi-4-Reasoning-Plus-14B (microsoft/Phi-4-reasoning-plus @69baf85, MIT)",
+   "why": "Falcon-H1R report TB Hard 2.1 (own run). Catalogue has phi-4-reasoning but not the -plus checkpoint; not mapped. Run already has four catalogue models."
+  },
+  {
+   "model": "Nemotron-H-47B-Reasoning (nvidia/Nemotron-H-47B-Reasoning-128K @18c2a0e)",
+   "why": "Falcon-H1R report TB Hard 1.4 (own run). Not catalogued."
+  },
+  {
+   "model": "Nemotron-Labs-3-Puzzle-75B-A9B (nvidia, OpenMDW-1.1)",
+   "why": "NVIDIA card prints 'Terminal Bench (hard subset)' 24.0 (BF16) with the same 48-task container as Nemotron 3 Super. Not catalogued; could join the NVIDIA vendor run as a third model if added."
+  },
+  {
+   "model": "MiMo-V2-Flash (XiaomiMiMo/MiMo-V2-Flash)",
+   "why": "Card prints Terminal-Bench Hard 30.5, but the comparator cells in the same row match the GLM-4.7 card's cell for cell (likely Artificial Analysis values) and the arXiv report 2601.02780 is not openly licensed; model not catalogued. Not used."
+  },
+  {
+   "model": "North Mini Code 1.0 (CohereLabs/North-Mini-Code-1.0 @d11e61a, Apache-2.0)",
+   "why": "Cohere ran TB-Hard with Terminus-2 'following the same methodology as the Artificial Analysis Intelligence Index', but the scores are only in a chart image (card) and the HF blog prints no TB-Hard number. Not used (no reading values off charts)."
+  },
+  {
+   "benchmark": "ArtifactsBench, AA-LCR (Solar Open 2 report Table 3)",
+   "why": "No benchmark id in data/benchmarks.json. Command A+ 42.8 / 46.0 would be recorded if the owner adds ids (six models each in the run)."
+  },
+  {
+   "benchmark": "Terminal Bench 1.0 (terminal-bench core 0.1.1, Terminus-2) in arXiv 2601.03286 Table 5",
+   "why": "HCX 21.8, EXAONE 4.0 32B 10.0, Qwen3-VL-32B-Thinking 11.3. No existing id fits (terminal-bench-pre-2 is defined as reports before Nov 2025 with version unstated; terminal-bench-1-terminus1 is Terminus 1). Not recorded."
+  },
+  {
+   "model": "HyperNova 60B 2602 / 2605 (MultiverseComputingCAI, Apache-2.0; compressed gpt-oss-120b, 60B / 4.8B active)",
+   "why": "Multiverse's own models in its card runs (TB-Hard 16 on the 2602 card; 12.1 and 15.9 on the 2605 card). Not catalogued; the 2602 card run already counts with gpt-oss-20b and gpt-oss-120b."
+  },
+  {
+   "model": "KAT-Coder-V2 (Kuaishou)",
+   "why": "Own TB-Hard 46.8 in arXiv 2603.27703v1 (CC BY 4.0); comparators there are Artificial Analysis values. Not catalogued; single-model anyway."
+  },
+  {
+   "model": "Apriel-1.5-15B-Thinker (ServiceNow)",
+   "why": "Own TB-Hard 10% in arXiv 2510.01141v1; comparators from Artificial Analysis. Not catalogued."
+  }
+ ],
+ "checked": [
+  {
+   "source": "https://arxiv.org/html/2607.02770v1 (Gemma 4 Technical Report, CC BY 4.0)",
+   "outcome": "Identity check only. Table 5 row 'Terminal Bench Hard' (31B 36.0, 26B-A4B 14.0, 12B 18.0, E4B 8.0, E2B 3.0, Gemma 3 27B 4.0; caption 'All models are in thinking mode unless explicitly stated'). No subset, task count, harness or footnote anywhere in the report; the only Terminal-Bench citation is Merrill et al. 2026 (arXiv 2601.11868) inside a bulk citation list. The HF card google/gemma-4-31B-it @842da37 and ai.google.dev Gemma 4 model card have no Terminal-Bench row. v2 (2026-07-24, also CC BY 4.0) prints the same row with no added detail. Existing 6 rows unchanged."
+  },
+  {
+   "source": "https://arxiv.org/abs/2607.20062v2 (Solar Open 2 Technical Report, Upstage, CC BY 4.0, v1 2026-07-22 / v2 2026-07-24)",
+   "outcome": "Independent run that includes Command A+: Table 3 'All numbers are measured with our internal evaluation harness'. 4 TB-Hard rows (Command A+ 0.25, Mistral Medium 3.5 0.333, MiMo-V2.5 0.417, DeepSeek-V4-Flash preview 0.341) + 48 rows on 12 other existing ids for the same four models. Upstage columns not catalogued (gaps). GDPval-AA Elo held; ArtifactsBench/AA-LCR have no id. Also published as the HF card upstage/Solar-Open2-250B @9190fbe (Upstage Solar License, not open; the arXiv copy is used)."
+  },
+  {
+   "source": "https://arxiv.org/abs/2601.02346v1 (Falcon-H1R, TII, CC BY 4.0; ledger report-2601.02346v1 already allowed)",
+   "outcome": "Table 5 'TB Hard' column: 47 tasks of terminal-bench-core @74221fb, Terminus 2, 3 repeats, own runs except cells starred 'taken from Artificial Analysis'. 4 rows (Falcon-H1R-7B lab; Qwen3-8B, DeepSeek-R1-0528-Qwen3-8B, Qwen3-32B independent). Excluded: Apriel-1.5-15b-Thinker 9.9* and GPT-OSS-20B 9.9* (AA). Not catalogued: Phi-4-Reasoning-Plus 2.1, Nemotron-H-47B-Reasoning 1.4. Same table's τ²-Telecom column (own runs, AA cells starred) is a lead for the τ² topic."
+  },
+  {
+   "source": "https://arxiv.org/abs/2601.03286v1 (HyperCLOVA X 32B Think, NAVER Cloud, CC BY 4.0, 2026-01-03)",
+   "outcome": "Table 5 'Terminal Bench Hard' = 47 tasks of the Artificial Analysis split, Terminus-2, reasoning enabled, all models run by the authors (Omni-Evaluator). 2 rows (EXAONE 4.0 32B 0.036; Qwen3-VL-32B-Thinking 0.069 with a proposed comparison-only model). HCX 32B Think 0.099 held. 'Terminal Bench 1.0' row not recorded (no fitting id). Tau2 rows (Tables 5-6, user simulators GPT-4.1 / GPT-5.1) are a lead for the τ² topic."
+  },
+  {
+   "source": "https://arxiv.org/abs/2512.20848v1 (Nemotron 3 Nano report, CC BY 4.0) and HF card nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 @bf77c31",
+   "outcome": "Own row 8.51 (card 8.5) recorded under first-party-nvidia-scores. Comparators Qwen3-30B-A3B-Thinking-2507 5.00 and GPT-OSS-20B 10.00 (card: 5.0 / 6.0) excluded: the report takes non-official comparator values from Artificial Analysis and the card's '*' (measured by us) is absent on these cells."
+  },
+  {
+   "source": "https://arxiv.org/abs/2604.12374v1 (Nemotron 3 Super report, CC BY 4.0) and HF cards nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-{BF16 @2dc98e2, FP8, NVFP4}",
+   "outcome": "Own row 25.78 ('Terminal Bench Hard (48 tasks)') recorded under first-party-nvidia-scores. Comparators Qwen3.5-122B-A10B 26.80 and GPT-OSS-120B 24.00 excluded (official, aggregator or own run not distinguished). FP8 26.04 / NVFP4 24.48 not used (quantized checkpoints). RedHatAI copies of these cards are the same numbers."
+  },
+  {
+   "source": "https://arxiv.org/abs/2606.15007v1 (Nemotron 3 Ultra report) and nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16, nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16, nvidia/Nemotron-Cascade-2-30B-A3B, nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 cards",
+   "outcome": "Terminal-Bench 2.1 / 2.0 only; no TB-Hard number printed (NeMo Evaluator ships an Ultra TB-Hard config but no published score found)."
+  },
+  {
+   "source": "https://github.com/NVIDIA-NeMo/Evaluator/blob/e77dfb31fd1538080cbfb5a50f0ba0e4cb8f253f/src/nemo_evaluator/benchmarks/terminal_bench_hard.py (Apache-2.0)",
+   "outcome": "Definition only (no scores): 'Terminal-Bench Hard - curated leaderboard subsets of TB v1', registers terminal-bench-hard (47 task names listed) and terminal-bench-hard-aa-split (44 tasks, 'used by the AA scoring pipeline', 4 oracle-unsolvable). Ultra config examples/nemotron/nemotron-3-ultra/v0.3/local_nemotron-3-ultra-550b-a55b_terminal-bench-hard.yaml: agent terminus-2, 8 repeats."
+  },
+  {
+   "source": "https://huggingface.co/nvidia/Gemma-4-31B-IT-NVFP4/blob/4135a98a9b728a548947683219633b25682223ac/README.md (Apache-2.0)",
+   "outcome": "NVIDIA ModelOpt baseline Gemma 4 31B IT BF16 'Terminal-Bench Hard (pass@1)' 27.08% recorded (independent; pooled ledger nvidia-modelopt-card-baselines). Card also has GPQA Diamond, AIME 2025, MMLU Pro, LiveCodeBench, SciCode baseline cells (not this topic)."
+  },
+  {
+   "source": "https://huggingface.co/nvidia/DeepSeek-V4-Pro-0813-NVFP4/blob/949138637e8e8fe190335be2396af62187dc8a83/README.md (MIT)",
+   "outcome": "NVIDIA ModelOpt baseline DeepSeek-V4-Pro-0813 (MXFP4 source, max reasoning, SGLang) Terminal-Bench Hard 51.39 recorded (independent). Same table has τ²-Bench Telecom 96.49 for the same checkpoint: a lead for the τ² topic. nvidia/DeepSeek-V4-Pro-0813-nvfp4-DSpark @d9a7219 repeats the identical measurement (not used twice). Sweep of 108 other nvidia quantized repos modified since 2025-09: no other TB-Hard rows."
+  },
+  {
+   "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-FP8 @e437e1e (OpenMDW-1.1)",
+   "outcome": "Own model 'Terminal Bench (hard subset)' BF16 24.0 / FP8 22.9 / NVFP4 23.4 (48-task container). Model not catalogued (gaps)."
+  },
+  {
+   "source": "https://huggingface.co/zai-org/GLM-4.7 @602d01e (MIT)",
+   "outcome": "Row 'Terminal Bench Hard' GLM-4.7 33.3, GLM-4.6 23.6 + six other labs. Comparator cells (Kimi K2 Thinking 30.6, DeepSeek-V3.2 35.4, Gemini 3.0 Pro 39.0, Claude Sonnet 4.5 33.3, GPT-5-High 30.5) are identical to the MiMo-V2-Flash card's row, so they come from a shared outside source; the card gives Terminal Bench sampling settings but does not say the TB-Hard row is Z.ai's own run. Own-model rows held for the owner; comparators excluded."
+  },
+  {
+   "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash @1afd314 (MIT) and arXiv 2601.02780v2 (non-exclusive arXiv licence)",
+   "outcome": "MiMo-V2-Flash 30.5 plus the same comparator cells as GLM-4.7; no sourcing statement; model not catalogued. Not used."
+  },
+  {
+   "source": "https://huggingface.co/MiniMaxAI/MiniMax-M2 @757303d",
+   "outcome": "Excluded: 'Intelligence Benchmarks' table 'Metric (AA)'; footnote 'All scores of other models reported from https://artificialanalysis.ai/'; MiniMax-M2's own 24 is 'aligned with Artificial Analysis Intelligence Benchmarking Methodology' and matches its AA launch figures (ambiguous whether MiniMax ran it). Single model anyway."
+  },
+  {
+   "source": "https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker @5810d5f",
+   "outcome": "Excluded: 'Text benchmarks included in the Artificial Analysis Index v3.0 use scores reported by Artificial Analysis' (covers its Terminal Bench row)."
+  },
+  {
+   "source": "https://huggingface.co/CohereLabs/North-Mini-Code-1.0 @d11e61a (Apache-2.0) and https://huggingface.co/blog/CohereLabs/introducing-north-mini-code",
+   "outcome": "Cohere ran TB-Hard with Terminus-2 following the AA Intelligence Index methodology, but values are in a chart image only; competitor values are 'from original reports or the Artificial Analysis Intelligence Index'. Not used. Command A+ HF cards (bf16/fp8/w4a4) print no benchmark table."
+  },
+  {
+   "source": "https://arxiv.org/abs/2609.11042v1 (T1, CC BY 4.0)",
+   "outcome": "Its 'Terminal-Bench Hard (TBH) [Li et al., 2026a]' is a different 100-task set and results are in a figure. Not used."
+  },
+  {
+   "source": "arXiv 2606.21140 (Matching Matters), 2608.09119 (Motif 3), 2605.29559, 2602.21193, 2604.19572, 2608.27969, 2608.20169, 2606.24311, 2609.11977 (all arXiv non-exclusive licence); 2606.11926 (CC BY-SA), 2608.18580, 2606.23321, 2609.13356, 2601.07022 (Solar Open 1), 2602.15763 (GLM-5) (CC BY)",
+   "outcome": "No usable TB-Hard table (no TB-Hard row, a different TB version, or not openly licensed). GLM-5 shows only an Artificial Analysis index figure."
+  },
+  {
+   "source": "HF card sweep (latest 300 repos modified since 2025-09-01) of ServiceNow-AI, ibm-granite, upstage, LGAI-EXAONE, Motif-Technologies, arcee-ai, ai21labs, mistralai, RekaAI, LLM360, MBZUAI-IFM, IFM, kakaocorp, skt, naver-hyperclovax, trillionlabs, zai-org, moonshotai, deepseek-ai, Qwen, MiniMaxAI, XiaomiMiMo, stepfun-ai, meituan-longcat, baidu, tencent, inclusionAI, microsoft, google, CohereLabs, LiquidAI, allenai, HuggingFaceTB, swiss-ai, tiiuae, ByteDance-Seed, PrimeIntellect, poolside, Kwaipilot, openai, K-intelligence, RedHatAI, Intel, amd, deepcogito, NousResearch, EssentialAI, Snowflake (2,805 cards)",
+   "outcome": "TB-Hard rows only in the cards listed above (upstage/Solar-Open2-250B, zai-org/GLM-4.7(-FP8), MiniMaxAI/MiniMax-M2, XiaomiMiMo/MiMo-V2-Flash(-Base), tiiuae/Falcon-H1R-7B(-GGUF), CohereLabs/North-Mini-Code-1.0 variants, RedHatAI Nemotron copies). Other labs report Terminal-Bench 2.0/2.1 (e.g. K-EXAONE, A.X K2, Granite 4.2, Motif 3, Trillion Gravity) or nothing."
+  },
+  {
+   "source": "https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2602/blob/382391945c26d1ab65fc8bdc174865067cf80cd1/README.md (Apache-2.0)",
+   "outcome": "2 rows (gpt-oss-20b 0.09, gpt-oss-120b 0.22; independent) from row 'Terminal Bench', defined by the card's methodology as Terminal-Bench Hard (AA subset, harbor 0.1.43, terminus-2, reasoning high, 3 repeats). New ledger multiverse-hypernova-60b-2602-card. Same table's Tau2-bench Telecom row is a lead for the tau2 topic."
+  },
+  {
+   "source": "https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2605 @373c5c7 (Apache-2.0)",
+   "outcome": "Second Multiverse campaign, same TB-Hard protocol (vLLM 0.13.0): GPT-OSS-120B 24.2, HyperNova 60B 2602 12.1, HyperNova 60B 2605 15.9 (row 'Terminal Bench'). Not recorded: only one catalogue model; could be pooled into the Multiverse ledger (gpt-oss-120b then averages 22 and 24.2) if the owner wants. AxionML mirrors of the NVIDIA cards and QuantTrio/cyankiwi/unsloth quant copies of the GLM-4.7, MiniMax-M2, MiMo-V2-Flash and Nemotron cards repeat the originals."
+  },
+  {
+   "source": "https://arxiv.org/abs/2603.27703v1 (KAT-Coder-V2, Kuaishou, CC BY 4.0)",
+   "outcome": "Table 5: KAT-Coder-V2 Terminal-Bench Hard 46.8 ('evaluated on KwaiEnv'); all other columns 'from https://artificialanalysis.ai/evaluations' (excluded). KAT-Coder-V2 is not catalogued (catalogue has kat-coder-pro-v1). Not used."
+  },
+  {
+   "source": "https://arxiv.org/abs/2510.01141v1 (Apriel-1.5-15B-Thinker, CC BY 4.0)",
+   "outcome": "TerminalBench-Hard 10% for its own model ('self-reported ... evaluations were conducted internally'); every other model's score is 'provided by Artificial Analysis'. Apriel-1.5 is not catalogued (only apriel-1-6-15b-thinker, whose card uses AA numbers). Not used."
+  },
+  {
+   "source": "arXiv 2607.04371v2 (Nemotron-Labs-3-Puzzle-75B-A9B paper, non-exclusive arXiv licence)",
+   "outcome": "Own-model 'Terminal Bench (hard subset)' cells for Puzzle variants and Super; licence not open and the Puzzle models are not catalogued. Not used."
+  },
+  {
+   "source": "arXiv 2608.05466v3 (Recursive Synthesis, CC BY 4.0), 2610.02826v1 (Scaling Trajectories, CC BY 4.0)",
+   "outcome": "Their 'Terminal-Bench Hard' is the 100-task TMax-15K subset of Li et al. 2026a (the T1 paper's TBH), not the 47-task AA subset. Not used."
+  },
+  {
+   "source": "https://arxiv.org/abs/2609.13916v1 (North Small Translate / Cohere CAT+, Cohere, CC BY 4.0)",
+   "outcome": "Lead for brief item 4, not TB-Hard: Cohere evaluates Command A+ (reasoning on) next to Gemma 4 31B, Mistral Large 3, Mistral Medium 3.5, Qwen3.5-397B, Qwen3.6-27B, GLM-5.2, GPT-OSS-120B, Nemotron 3 Ultra, Inkling-Small and Muse Glimmer 30B 'in an identical setup' on translation tests (Table 1: GEMBA WMT26, xCOMETxl WMT24++, Terminology, Long context, Structured translation; Command A+ 76.5 / 81.0 / 68.7 / 30.5 / 73.7). No matching benchmark ids exist; new MT ids would be needed. Command A+ cells would be lab rows, the others independent."
+  },
+  {
+   "source": "Further arXiv reports checked (titles/licences logged in scratch): Qwen3, GLM-4.5, LongCat-Flash (+Thinking, Omni, Thinking-2601), K2-Think, K2-V2, Apertus, Devstral, KORMo, KAT-Coder, Ring-1T, Ling 2.0, Kimi Linear, Kimi K2.5, Kimi K3, Apriel-H1, Apriel-Reasoner, Super Apriel, Motif 2 (+Reasoning), LFM2, DeepSeek-V3.2, DeepSeek-V4, DeepSeek-V4.1-Flash, Nanbeige4/4.2, Olmo 3, Olmo Hybrid, INTELLECT-3, Youtu-LLM, K-EXAONE (1 and 2.0), EXAONE 4.5, HyperCLOVA X 8B Omni, Ministral 3, Mi:dm 2.0, Mi:dm K 2.5 Pro, A.X K1, A.X K2, ERNIE 5.0, Step 3.5 Flash, Arcee Trinity Large, Qwen3-Coder-Next, Phi-4-reasoning-vision, Sabia-4, Nemotron-Cascade 2, Intern-S1-Pro, Qwen3.5-Omni, Nemotron 3 Nano Omni, GLM-5V-Turbo, ZAYA1 (+VL), MiniMax-M2 series, Laguna M.1/XS.2, Ling/Ring 2.6, Ring-Zero, KAT-Coder-V2.5, Hunyuan-A13B, Nemotron-Labs-Diffusion, SLAI T-Rex, and ~40 terminal-agent/harness papers (Endless Terminals, TermiGen, Meta-Harness, Tmax, SETA, CLI-Universe, Long-Horizon-Terminal-Bench, Harbor-Index, Mid-Harness, etc.)",
+   "outcome": "No other openly licensed own-run TB-Hard table. Reports either print Terminal-Bench 2.0/2.1/3/4, credit TB-Hard to Artificial Analysis, use the different 100-task TBH, or are under the non-exclusive arXiv licence."
+  },
+  {
+   "source": "GitHub code search ('Terminal-Bench Hard', 'Terminal Bench Hard', 'TerminalBench Hard', 'Terminal Bench (hard subset)', 'terminal-bench-hard', 'TB-Hard')",
+   "outcome": "Only aggregators and AA-derived catalogues (models.dev, Phaseo, llm-registry, Benchboard, suprabench, chutes-bench-runner, etc.) plus the NeMo Evaluator definition. Excluded (rule 2: aggregators / AA copies)."
+  },
+  {
+   "source": "Extra HF org sweep (cards modified since 2025-09-01): unsloth, nvidia (all), cyankiwi, lmstudio-community, nm-testing, neuralmagic, facebook, meta-llama, openbmb, QuantTrio, OpenGVLab, internlm, InternRobotics, apple, AxionML, ByteDance, bytedance-research, cerebras, ornith-ai, amazon, JetBrains, TIGER-Lab, dnotitia, Salesforce, nota-ai, GAIR, Skywork, Zyphra, open-thoughts, MultiverseComputingCAI, KRAFTON, sarvamai, PleIAs, baichuan-inc, NCSOFT, togethercomputer, NovaSky-AI, xai-org, rednote-hilab, princeton-nlp, inceptionai, agentica-org, laude-institute, harborframework, 01-ai, Kwai-Klear, KwaiKAT, Alibaba-NLP, MBZUAI, BAAI, ibm, AI-MO, Nanbeige, YuanLabAI",
+   "outcome": "New TB-Hard hits only in the MultiverseComputingCAI HyperNova cards (above); everything else is a copy of cards already reviewed or carries no TB-Hard row."
+  }
+ ],
+ "held_for_owner": {
+  "reason": "Decisions for the owner. Rows under held_for_owner.results are NOT in results, so they cannot be merged by accident.",
+  "identity_verdict": "Same test, keep one id. 'Terminal-Bench Hard' is the hard-task subset of the original (pre-2.0) Terminal-Bench, terminal-bench-core at commit 74221fb, run with the Terminus 2 agent, as used in the Artificial Analysis Intelligence Index: 47 tasks (Falcon-H1R report; HyperCLOVA X report 'the 47 challenging tasks from the artificial analysis split'; NVIDIA NeMo Evaluator terminal_bench_hard.py lists the 47 task names and a 44-task 'AA split'); NVIDIA's Nemotron 3 Super report says '48 tasks'. Cohere's figure is its own run with 'Terminus-2 harness following the methodology of Artificial Analysis'. The Gemma 4 report prints only the row name 'Terminal Bench Hard' (thinking mode) with no task count, harness or footnote; its only Terminal-Bench citation is the Terminal-Bench 2.0 paper (Merrill et al. 2026, a bulk citation), which Solar Open 2 also cites for the same row name. Nothing indicates Gemma's row is a different test (the reports that run TB 2.0 label it 'Terminal Bench 2.0' separately), so Cohere's and Gemma's rows are not 'clearly different' and no separate id is proposed. It is not a version of terminal-bench-2 / 2.1 / 3 / 4 / pre-2 / 1-terminus1 and must stay separate from them. Variants seen: 47 vs 44 (AA split) vs 48 tasks, 1-8 repeats; recorded per row in note.",
+  "benchmark_description_proposal": {
+   "id": "terminalbench-hard-gemma4",
+   "name": "Terminal-Bench Hard",
+   "description": "Hard-task subset of the original Terminal-Bench (terminal-bench-core, commit 74221fb; 47 tasks, or the 44-task Artificial Analysis split) run with the Terminus 2 agent, as used in the Artificial Analysis Intelligence Index. Pass rate. Task count, repeats and reasoning setting per note. Not Terminal-Bench 2.0/2.1/3.0/4.0.",
+   "url": "https://github.com/NVIDIA-NeMo/Evaluator/blob/e77dfb31fd1538080cbfb5a50f0ba0e4cb8f253f/src/nemo_evaluator/benchmarks/terminal_bench_hard.py",
+   "chance": 0,
+   "why": "The id name ties the test to the Gemma 4 report and has no definition. Renaming the id would touch the 8 existing rows, so only name/description/url are proposed; the id can stay."
+  },
+  "decisions": [
+   "Pooled NVIDIA ModelOpt run (ledger nvidia-modelopt-card-baselines): Gemma 4 31B IT 0.2708 (card @4135a98, temp 1.0/top_p 0.95) and DeepSeek-V4-Pro-0813 0.5139 (card @9491386, SGLang, temp 1.0/top_p 1.0, max effort) are two NVIDIA ModelOpt QA measurements published months apart with different sampling settings. Pooled they form a 2-model independent run; split into one ledger per card they are single-model runs that carry no weight. Recommended: pool (same evaluator, same NVIDIA TB-Hard harness family), as first-party-nvidia-scores already pools cards.",
+   "NVIDIA vendor run: the Nano (8.51) and Super (25.78) own-model cells are routed to first-party-nvidia-scores by '#S3.T3' / '#S3.T5' fragment matches so they form one 2-model lab run. Nano used 'their official open source implementation' of Terminal Bench and Super a '48 tasks' NeMo container, with the Super report stating the same evaluation stack as Nano. If the owner prefers per-report runs, drop the add_match and use bare URLs (then both are single-model runs).",
+   "Command A+ 0.25 in the Solar Open 2 report equals Cohere's self-reported 25% exactly. Upstage states every Table 3 number is its own measurement, so it is recorded as independent; the coincidence is flagged in case the owner wants to ask Upstage. It does not change the reading much: the Solar run puts Command A+ below Mistral Medium 3.5 (33.3), DeepSeek-V4-Flash preview (34.1) and MiMo-V2.5 (41.7).",
+   "Solar Open 2 rows on 12 other tests (48 rows) answer brief item 4 (independent measurements of Command A+). They may also be found by other pass-6 topics; dedupe on (model, bench, source) when merging. In the scratch simulation they move Command A+ far more than the TB-Hard rows (see .md)."
+  ],
+  "models": [
+   {
+    "id": "hyperclovax-seed-think-32b",
+    "name": "HyperCLOVA X SEED 32B Think",
+    "provider": "NAVER Cloud",
+    "category": "llm",
+    "released": "2025-12",
+    "open_weights": true,
+    "license": "hyperclovax",
+    "params_b": 33.3,
+    "active_b": 33.3,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B",
+    "identity_note": "Optional comparison-only (third model in the HyperCLOVA X report's TB-Hard run; qwen3-vl-32b-thinking already makes the run count). Repo naver-hyperclovax/HyperCLOVAX-SEED-Think-32B @3c2b633, created 2025-12-23, licence 'hyperclovax' (custom), 33,313,410,304 parameters (safetensors metadata); the card links its tech report 'HyperCLOVA_X_32B_Think.pdf' = arXiv 2601.03286 'HyperCLOVA X 32B Think'. New provider: needs a maker icon.",
+    "identity_evidence": [
+     {
+      "source": "https://arxiv.org/html/2601.03286v1#S5.T5",
+      "reported_label": "HyperCLOVA X 32B Think"
+     },
+     {
+      "source": "https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B",
+      "reported_label": "HyperCLOVA X SEED 32B Think"
+     }
+    ]
+   }
+  ],
+  "results": [
+   {
+    "model": "hyperclovax-seed-think-32b",
+    "bench": "terminalbench-hard-gemma4",
+    "score": 0.099,
+    "source": "https://arxiv.org/html/2601.03286v1#S5.T5",
+    "source_id": "paper-2601.03286v1-hyperclova-x-32b-think",
+    "by": "lab",
+    "date": "2026-01-03",
+    "note": "HyperCLOVA X 32B Think report Table 5 row 'Terminal Bench Hard', column 'HyperCLOVA X 32B Think' = 9.9; 47-task AA split, Terminus-2, reasoning enabled. Needs the optional comparison-only model above."
+   },
+   {
+    "model": "glm-4-7",
+    "bench": "terminalbench-hard-gemma4",
+    "score": 0.333,
+    "source": "https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md",
+    "source_id": "(new) card-zai-org-glm-4-7-tbh or first-party-zai-scores",
+    "by": "lab",
+    "date": "2025-12-22",
+    "note": "GLM-4.7 card (MIT) 'Performances on Benchmarks' row 'Terminal Bench Hard', column 'GLM-4.7' = 33.3. HELD: the same row's comparator cells match MiMo-V2-Flash's card cell for cell (an outside source, probably Artificial Analysis), and the card does not say Z.ai ran TB-Hard itself (its 'Terminal Bench' settings: temperature 0.7, top-p 1.0, 16,384 new tokens). Record only if the owner accepts it as Z.ai's own measurement."
+   },
+   {
+    "model": "glm-4-6",
+    "bench": "terminalbench-hard-gemma4",
+    "score": 0.236,
+    "source": "https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md",
+    "source_id": "(new) card-zai-org-glm-4-7-tbh or first-party-zai-scores",
+    "by": "lab",
+    "date": "2025-12-22",
+    "note": "Same row, column 'GLM-4.6' = 23.6. Same caveat as GLM-4.7."
+   },
+   {
+    "model": "command-a-plus",
+    "bench": "(no id) gdpval-aa-v2-elo",
+    "score": 712,
+    "source": "https://arxiv.org/html/2607.20062v2#S5.T3",
+    "source_id": "paper-2607.20062v2-solar-open-2",
+    "by": "independent",
+    "date": "2026-07-24",
+    "note": "Solar Open 2 Table 3 'GDPval-AA v2 (ELO)': Solar Open 2 1128, Solar Open 1 –, Command A+ 712, Mistral Medium 3.5 929, MiMo-V2.5 1145, DeepSeek-V4-Flash 1187; 'reported as an ELO rating measured on 30 June 2026'. GDPval-AA is Artificial Analysis's Elo leaderboard; whether Upstage computed these itself is unclear, and there is no benchmark id. Not recommended."
+   }
+  ]
+ }
+}

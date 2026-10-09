@@ -11,7 +11,6 @@
       "terminalbench-hard-gemma4",
       "tau2-airline-gemma4",
       "tau2-retail-gemma4",
-      "tau2-telecom-gemma4",
       "tau2-verified-gpt51-user",
       "massive-agents-ast-10k",
       "bfcl-v4",

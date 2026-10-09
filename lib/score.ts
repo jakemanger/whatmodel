@@ -251,10 +251,12 @@ export function fit(cells: Cell[], iters = 500): Fit {
     if (delta < 1e-7 && it > 2) break;
   }
 
+  const lab = models.map(() => 0);
+  cells.forEach((c, i) => { if (c.results.every((r) => r.by === "lab")) lab[obs[i].m]++; });
   const scores = new Map<string, Scored>(
     models.map((id, m) => [
       id,
-      { id, g: G_MEAN + G_SD * theta[m], pm: G_SD * Math.sqrt(v[m]), n: byModel[m].length },
+      { id, g: G_MEAN + G_SD * theta[m], pm: G_SD * Math.sqrt(v[m]), n: byModel[m].length, lab: lab[m] },
     ])
   );
   const params = new Map(keys.map((k, i) => [k, { a: a[i], d: d[i], sigma: Math.sqrt(s2[i]), n: byKey[i].length }]));

@@ -84,7 +84,7 @@ function boardTable(from: string, cat: Category, rows: BoardView["shown"]) {
     rows.map((r) => [
       String(r.rank ?? "—"),
       { text: displayName(r), href: rel(from, files.model(r.id)) },
-      hasScore(r) ? `${Math.round(r.score)}±${Math.round(r.pm)}${r.thin ? "*" : " "}` : r.evidence === "none" ? "no reviewed results" : r.evidence === "raw" ? "not scored yet" : "not yet calibrated",
+      hasScore(r) ? `${Math.round(r.score)}±${Math.round(r.pm)}${(r.thin ? "*" : "") + (r.maker_only ? "†" : "") || " "}` : r.evidence === "none" ? "no reviewed results" : r.evidence === "raw" ? "not scored yet" : "not yet calibrated",
       whereLabel(r),
       speedLabel(r.speed),
       r.mem_gb !== null ? `~${r.mem_gb < 10 ? r.mem_gb : Math.round(r.mem_gb)}GB` : "",
@@ -128,7 +128,7 @@ export function boardMarkdown(v: BoardView, intro = ""): string {
 
   // Comparison-only models with a score are in the table above; the rest are listed below.
   const { unscored, withoutResults } = v.outside;
-  out.push(`\\* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory · ${v.rows.length} of ${v.models.length} catalogue models listed here · [sources and licences](${rel(from, files.method)}#sources)`);
+  out.push(`\\* new or thinly tested: ranked on too few benchmark results · † only the maker's own numbers so far · ~RAM is estimated; full context may need more memory · ${v.rows.length} of ${v.models.length} catalogue models listed here · [sources and licences](${rel(from, files.method)}#sources)`);
   if (unscored.length || withoutResults.length) {
     const parts = [
       unscored.length && `Raw results, insufficient overlap for an overall score: ${modelLinks(from, unscored)}`,
@@ -199,7 +199,7 @@ export function modelMarkdown(v: ModelView): string {
     m.params_b && `${m.params_b}B params${m.active_b && m.active_b !== m.params_b ? ` (${m.active_b}B active)` : ""}`,
     m.license ? text(m.license) : !m.open_weights && "closed weights"].filter(Boolean);
   out.push(facts.join(" · "));
-  out.push(`**score ${s.g.toFixed(1)}** ±${s.pm.toFixed(1)} · ${v.place ? `#${v.place} of ${v.total}` : "comparison only: no current run option verified"} · from ${pl(s.n, "benchmark result")} across ${pl(v.sources.length, "source")}${s.n < 3 ? " · \\* thinly tested, treat the rank as provisional" : ""}`);
+  out.push(`**score ${s.g.toFixed(1)}** ±${s.pm.toFixed(1)} · ${v.place ? `#${v.place} of ${v.total}` : "comparison only: no current run option verified"} · from ${pl(s.n, "benchmark result")} across ${pl(v.sources.length, "source")}${s.n < 3 ? " · \\* thinly tested, treat the rank as provisional" : ""}${s.n > 0 && s.lab === s.n ? " · † every result so far was reported by its maker" : ""}`);
   if (v.set) out.push(`Score within the [${text(v.set.label)}](${SITE}${CATEGORIES[cat].path}?set=${encodeURIComponent(v.set.id)}&score=set) comparison set only.`);
 
   out.push(`## How the score was worked out`);
