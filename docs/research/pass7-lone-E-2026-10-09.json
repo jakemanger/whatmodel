@@ -1,0 +1,364 @@
+{
+ "about": "Pass 7 batch E (2026-10-09): authors' own comparator measurements for the 22 image / text-to-speech / video sources in lone-batch-E.json (63 own-model results alone in their runs). Candidate rows only; data/ was not edited. Rule applied: only cells the document shows to be the authors' own measurement (explicit statement, per-cell marker, or the lab's own other models in the same table); cells cited to other papers, matching other makers' published figures, or shown only in images were not used. Result: 9 rows (all by: lab) from 3 sources plus 1 comparison-only model (dots-tts-base); no new ledger entries (rows reuse each source's existing ledger id; scope notes are in the .md). Simulated with lib/score.ts toCells on data/ + these rows: 3 of the 63 lone results start counting (dots-tts-soar seed-tts-en-whisper-v3-wer and seed-tts-zh-paraformer-cer; hidream-o1-image dpg-bench) and 2 new 2-model dots.tts SIM runs count; the 2 Qwen3-TTS-12Hz-0.6B-Base rows give their runs 2 models but those tests stay below the scorer's 3-model minimum. Import of models+results into a scratch copy and scripts/check.ts --validate-only pass. held_for_owner (not part of results/models) lists ready options that need a decision, incl. a Kandinsky 2.0 row + model, new-benchmark candidates (CEdit-Bench, OmniContext, Seed-TTS ERes2Net SIM), the Vapi June export, the Wan-Bench table image and LEMAS derived means.",
+ "results": [
+  {
+   "model": "dots-tts-base",
+   "bench": "seed-tts-en-whisper-v3-wer",
+   "score": 0.0134,
+   "raw_value": 1.34,
+   "scale_divisor": 100,
+   "source": "https://arxiv.org/html/2606.07080v2",
+   "source_id": "speech-dots-tts-report",
+   "by": "lab",
+   "date": "2026-08-10",
+   "note": "Table 2 'Zero-shot results on Seed-TTS-Eval', row 'dots.tts (Pretrain)' (2B), column test-en WER(%) = 1.34. Authors' own model: §3.3.1 'All numbers reported under the dots.tts (Pretrain) row are produced with the pretrained checkpoint from Section 3.2.2'; 'dots.tts-Pretrain and dots.tts-SOAR use 10 Euler solver steps with CFG ... effective NFE of 20 ... CFG scale is γ=1.2 ... All runs use float32 and have torch.compile disabled'. ASR: 'Whisper-Large-v3 for English'. Checkpoint: dots-studio/dots.tts-base @ b5aac65a395e04a60a8dacd4e2f4aadc5ad3dbe1, whose card calls it 'the end-to-end pretrained checkpoint' / 'Pretrain (~1.5M h)' and prints the same Seed-TTS-Eval row (1.34 / 76.8)."
+  },
+  {
+   "model": "dots-tts-base",
+   "bench": "seed-tts-zh-paraformer-cer",
+   "score": 0.0096,
+   "raw_value": 0.96,
+   "scale_divisor": 100,
+   "source": "https://arxiv.org/html/2606.07080v2",
+   "source_id": "speech-dots-tts-report",
+   "by": "lab",
+   "date": "2026-08-10",
+   "note": "Table 2 'Zero-shot results on Seed-TTS-Eval', row 'dots.tts (Pretrain)' (2B), column test-zh WER = 0.96 (§3.3.1: 'CER reported as WER for Chinese for table compatibility'; 'Paraformer for Mandarin Chinese'). Same settings as SOAR: 10 Euler steps with CFG γ=1.2 (effective NFE 20), float32, torch.compile disabled. Checkpoint: dots-studio/dots.tts-base @ b5aac65a395e04a60a8dacd4e2f4aadc5ad3dbe1 (card: 'Pretrain (~1.5M h)', same 0.96 / 80.5 test-zh cell)."
+  },
+  {
+   "model": "dots-tts-base",
+   "bench": "seed-tts-en-wavlm-sim",
+   "score": 0.768,
+   "raw_value": 76.8,
+   "scale_divisor": 100,
+   "source": "https://arxiv.org/html/2606.07080v2",
+   "source_id": "speech-dots-tts-report",
+   "by": "lab",
+   "date": "2026-08-10",
+   "note": "Table 2, row 'dots.tts (Pretrain)', column test-en SIM = 76.8 (percent; divided by 100). §3.3.1: 'speaker similarity (SIM) is the cosine similarity between WavLM-SV embeddings of the generated speech and the corresponding reference prompt'; §3.3.3: 'scored with the benchmark's reference ASR and WavLM-SV similarity' (prompt SIM). Settings: 10 Euler steps, CFG 1.2, float32. Checkpoint: dots-studio/dots.tts-base @ b5aac65a395e04a60a8dacd4e2f4aadc5ad3dbe1."
+  },
+  {
+   "model": "dots-tts-base",
+   "bench": "seed-tts-zh-wavlm-sim",
+   "score": 0.805,
+   "raw_value": 80.5,
+   "scale_divisor": 100,
+   "source": "https://arxiv.org/html/2606.07080v2",
+   "source_id": "speech-dots-tts-report",
+   "by": "lab",
+   "date": "2026-08-10",
+   "note": "Table 2, row 'dots.tts (Pretrain)', column test-zh SIM = 80.5 (percent; divided by 100). WavLM-SV cosine to the reference prompt (§3.3.1). Settings: 10 Euler steps, CFG 1.2, float32. Checkpoint: dots-studio/dots.tts-base @ b5aac65a395e04a60a8dacd4e2f4aadc5ad3dbe1."
+  },
+  {
+   "model": "dots-tts-soar",
+   "bench": "seed-tts-en-wavlm-sim",
+   "score": 0.771,
+   "raw_value": 77.1,
+   "scale_divisor": 100,
+   "source": "https://arxiv.org/html/2606.07080v2",
+   "source_id": "speech-dots-tts-report",
+   "by": "lab",
+   "date": "2026-08-10",
+   "note": "Same table row as the existing dots-tts-soar WER result: Table 2, row 'dots.tts (SOAR)' (2B), column test-en SIM = 77.1 (percent; divided by 100). WavLM-SV cosine to the reference prompt (§3.3.1). Own measurement: float32, 10 Euler solver steps, CFG 1.2, effective NFE 20, torch.compile disabled. Added under brief step 5 (other existing benchmark of the same table) so the SIM run has both dots.tts checkpoints."
+  },
+  {
+   "model": "dots-tts-soar",
+   "bench": "seed-tts-zh-wavlm-sim",
+   "score": 0.81,
+   "raw_value": 81.0,
+   "scale_divisor": 100,
+   "source": "https://arxiv.org/html/2606.07080v2",
+   "source_id": "speech-dots-tts-report",
+   "by": "lab",
+   "date": "2026-08-10",
+   "note": "Table 2, row 'dots.tts (SOAR)' (2B), column test-zh SIM = 81.0 (percent; divided by 100). WavLM-SV cosine to the reference prompt (§3.3.1). Own measurement: float32, 10 Euler solver steps, CFG 1.2, effective NFE 20, torch.compile disabled. Added under brief step 5 (same table, existing benchmark id)."
+  },
+  {
+   "model": "hidream-i1-full",
+   "bench": "dpg-bench",
+   "score": 0.8589,
+   "raw_value": 85.89,
+   "scale_divisor": 100,
+   "source": "https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md",
+   "source_id": "visual-hidream",
+   "by": "lab",
+   "date": "2026-09-25",
+   "note": "README 'Evaluation' section, 'DPG-Bench — dense prompt alignment' table, row 'HiDream-I1-Full' (#Params '13.5B + 17B'), column Overall = 85.89 (divided by 100). Same table as the existing HiDream-O1-Image row (89.83). HiDream-I1-Full is HiDream.ai's own earlier model, not marked as copied, so it is treated as a lab measurement per the brief's same-family rule (the README states only 'We benchmark HiDream-O1-Image against state-of-the-art open-source and proprietary models on five widely-used evaluation suites'; the same 85.89 appears for HiDream-I1-Full in LongCat-Image Table 3, consistent with it being HiDream's own earlier published figure). Checkpoint: HiDream-I1-Full (17B), catalogue id hidream-i1-full."
+  },
+  {
+   "model": "qwen3-tts-12hz-0-6b-base",
+   "bench": "seed-tts-en-wer-asr-unstated",
+   "score": 0.0132,
+   "raw_value": 1.32,
+   "scale_divisor": 100,
+   "source": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md",
+   "source_id": "card2-qwen-qwen3-tts-12hz-1-7b-base",
+   "by": "lab",
+   "date": "2026-01-23",
+   "note": "Qwen3-TTS-12Hz-1.7B-Base card @ fd4b254, 'Evaluation' > 'Speech Generation Benchmarks', table 'Zero-shot speech generation on the Seed-TTS test set. Performance is measured by Word Error Rate (WER, ↓)', row 'Qwen3-TTS-12Hz-0.6B-Base', column test-en = 1.32 (percent; divided by 100). Qwen team's own run of its own smaller checkpoint in the same table as the existing 1.7B-Base row: 'During evaluation, we ran inference for all models with dtype=torch.bfloat16 and set max_new_tokens=2048. All other sampling parameters used the defaults from the checkpoint's generate_config.json. For the Seed-Test ... we set language=\"auto\"'. ASR transcriber not stated (hence the -asr-unstated id). Checkpoint: Qwen/Qwen3-TTS-12Hz-0.6B-Base (catalogue qwen3-tts-12hz-0-6b-base)."
+  },
+  {
+   "model": "qwen3-tts-12hz-0-6b-base",
+   "bench": "seed-tts-zh-err-asr-unstated",
+   "score": 0.0092,
+   "raw_value": 0.92,
+   "scale_divisor": 100,
+   "source": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md",
+   "source_id": "card2-qwen-qwen3-tts-12hz-1-7b-base",
+   "by": "lab",
+   "date": "2026-01-23",
+   "note": "Same card table ('Zero-shot speech generation on the Seed-TTS test set ... Word Error Rate (WER, ↓)'), row 'Qwen3-TTS-12Hz-0.6B-Base', column test-zh = 0.92 (percent, labelled WER; divided by 100). Settings: bfloat16, max_new_tokens=2048, checkpoint default sampling, language='auto'. ASR transcriber not stated. Checkpoint: Qwen/Qwen3-TTS-12Hz-0.6B-Base."
+  }
+ ],
+ "benchmarks": [],
+ "ledger": [],
+ "models": [
+  {
+   "id": "dots-tts-base",
+   "name": "dots.tts Base (Pretrain) 2B",
+   "provider": "dots.tts",
+   "category": "tts",
+   "released": "2026-06",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "params_b": 2,
+   "api": null,
+   "local": null,
+   "recovered_original": false,
+   "model_repo": "https://huggingface.co/dots-studio/dots.tts-base",
+   "identity_note": "Comparison-only, proposed so the dots.tts report's Seed-TTS-Eval runs count. The report's 'dots.tts (Pretrain)' row is 'produced with the pretrained checkpoint from Section 3.2.2' (arXiv:2606.07080v2 §3.3.1); the released repo dots-studio/dots.tts-base (sha b5aac65a395e04a60a8dacd4e2f4aadc5ad3dbe1, created 2026-06-03, apache-2.0) describes itself as 'the end-to-end pretrained checkpoint trained on ~1.5M hours of speech' / 'Pretrain (~1.5M h)' and prints the identical Seed-TTS-Eval row (test-en 1.34 / 76.8, test-zh 0.96 / 80.5). Not dots.tts-soar (self-corrective post-trained) or dots.tts-mf (MeanFlow-distilled). params_b is the maker's rounded '2B' system figure (Table 2 Params column); HF safetensors metadata total 2,198,091,778.",
+   "identity_sources": [
+    "https://huggingface.co/dots-studio/dots.tts-base/blob/b5aac65a395e04a60a8dacd4e2f4aadc5ad3dbe1/README.md",
+    "https://arxiv.org/html/2606.07080v2"
+   ],
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2606.07080v2",
+     "reported_label": "dots.tts (Pretrain)"
+    },
+    {
+     "source": "https://huggingface.co/dots-studio/dots.tts-base/blob/b5aac65a395e04a60a8dacd4e2f4aadc5ad3dbe1/README.md",
+     "reported_label": "dots.tts-base — Pretrain (~1.5M h)"
+    }
+   ]
+  }
+ ],
+ "gaps": [
+  {
+   "model": "VoxCPM-Emilia (openbmb, 0.5B, Emilia-trained variant in arXiv 2509.24650v1 Tables 3-5)",
+   "category": "tts",
+   "why": "Same-family lab comparator in the same Seed-TTS-eval table (EN WER 2.34, EN SIM 68.1, ZH CER 1.11, ZH SIM 74.0); would make all four voxcpm-0-5b Seed-TTS runs count, but no released checkpoint (openbmb HF org lists VoxCPM-0.5B, VoxCPM1.5, VoxCPM2 only), so a comparison-only entry has no repo+sha identity. Not proposed."
+  },
+  {
+   "model": "dots.tts (MF) — dots-studio/dots.tts-mf @ c28105adc8228143392b4e346994ff613ee48a06",
+   "category": "tts",
+   "why": "Same-family lab row in arXiv 2606.07080v2 Table 2 ('– MF, NFE=4': test-en 1.29 / 76.2, test-zh 0.94 / 80.0; NFE=3 and NFE=2 rows lower). Identity is certain (card: 'CFG-aware MeanFlow distillation of dots.tts-soar', 'Few-step inference (NFE = 4)', same row printed), but not proposed: dots-tts-base already makes the four Seed-TTS runs count, and the brief limits comparison-only entries to cases that rescue a lone run. Owner may add it as a third comparator (NFE=4 row)."
+  },
+  {
+   "model": "HiDream-O1-Image-Pro (HiDream.ai, '200B+')",
+   "category": "image",
+   "why": "Same-family lab row in the pinned HiDream-O1-Image README tables (GenEval Overall 0.92, DPG-Bench 90.30, HPSv3 10.47, CVTG-2K average 0.9222, LongText EN 0.982 / ZH 0.980). Would make the lone hidream-o1-image GenEval run count. Not in the catalogue and no repo or exact dated API id is given in the README, so no comparison-only entry is proposed."
+  },
+  {
+   "model": "Qwen3-TTS-25Hz-0.6B-Base / Qwen3-TTS-25Hz-1.7B-Base (Qwen)",
+   "category": "tts",
+   "why": "Same-family lab rows in the Qwen3-TTS-12Hz-1.7B-Base card Seed-TTS table (25Hz-0.6B 1.18 / 1.64, 25Hz-1.7B 1.10 / 1.49). Not released on Hugging Face (Qwen org lists only the 12Hz Base/CustomVoice/VoiceDesign checkpoints and the 12Hz tokenizer), so no identity for a comparison-only entry; not needed now that the 12Hz-0.6B-Base row makes the runs count."
+  },
+  {
+   "model": "OmniGen v1 (VectorSpaceLab/BAAI, 3.8B; HF Shitao/OmniGen-v1)",
+   "category": "image",
+   "why": "Same-lab row in OmniGen2 v4 Table 3 GEdit-Bench-EN (O 5.06) and Table 4 OmniContext. Not catalogued; not proposed because the GEdit cell is the circulated Step1X-Edit-paper value rather than a BAAI measurement in this document."
+  },
+  {
+   "model": "Emu3-DPO (BAAI)",
+   "category": "image",
+   "why": "Same-lab row in arXiv 2409.18869v1 Table 7 (GenEval overall 0.52 without rewriter) and Table 8 (DPG-Bench overall 81.60); would make both lone emu3 runs count. No released checkpoint identifiable as the DPO model (HF BAAI: Emu3-Gen, Emu3-Chat, Emu3-Stage1, Emu3-VisionTokenizer, -hf ports), so no comparison-only entry is proposed."
+  },
+  {
+   "model": "Wan2.2 5B - Finetuned (Qualcomm 480p fine-tune of Wan2.2-TI2V-5B) / MobileWan (Qualcomm-AI-Research/mobilewan @ 02d2d1249ff4bb59017f99a5ec50a93fc9b7b7b4)",
+   "category": "video",
+   "why": "The fine-tune is the only same-setting comparator in MobileWan Table 10 (81×480×832 Total 83.12) but has no released checkpoint. MobileWan has released weights (licence tag bsd-3-clause-clear / other, not checked further) but is reported in Table 7, not in the lone row's table, so it would not be the same run setting without owner sign-off. Not proposed."
+  },
+  {
+   "model": "LEMAS-TTS w/ prosody and w/o prosody (LEMAS-Project/LEMAS-TTS @ 386ba356c1885091bfd92105fcabbaa3075d9480, cc-by-4.0)",
+   "category": "tts",
+   "why": "The lab's own comparators in LEMAS Table 4; either would make the lone openaudio-s1-mini lemas-eval-9lang-wer run count. Held: needs a derived 9-language mean (printed Avg inconsistent with its cells) and a folder-to-row mapping (multilingual_prosody = 'w/ prosody', multilingual_grl = 'w/o prosody', inferred from folder names and the GitHub README's 'Select multilingual_grl or multilingual_prosody' / 'supports both prosody-enabled and non-prosody variants')."
+  },
+  {
+   "model": "Kandinsky 1.0 (2022, Sber AI; ruDALL-E-era model)",
+   "category": "image",
+   "why": "Same-family row in the Kandinsky 2.1 card FID table (FID 15.40). No open checkpoint identifiable as 'Kandinsky 1.0'. It would be the third model coco30k-fid-kandinsky21 needs (with 2.1 and the held 2.0 row)."
+  }
+ ],
+ "checked": [
+  {
+   "source": "https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md (speed-glm-image, Apache-2.0)",
+   "outcome": "0 rows. The 'Model Performance' section ('Text Rendering' table: CVTG-2K Word Accuracy/NED/CLIPScore, LongText-Bench AVG/EN/ZH; 'Text-to-Image' table: OneIG-Bench EN/ZH, TIIF-Bench short/long, DPG-Bench) carries no statement on who evaluated the comparator rows (no 'evaluated', 'reproduced', 'official' or similar wording anywhere in the README). The comparator cells are identical to the competitors' own published numbers (e.g. Qwen-Image DPG-Bench 88.32, LongText EN 0.943 / ZH 0.946, OneIG EN 0.539 / ZH 0.548 = the Qwen-Image card values already in results.json under card2-qwen-qwen-image), so they are copied, not Z.ai measurements. The six GLM-Image rows stay lone."
+  },
+  {
+   "source": "https://github.com/ROCm/rocm-blogs/blob/b3bf907bd73c596c49c77b1d178c7c41bcd2713c/blogs/artificial-intelligence/mxfp-t2i-t2v/README.md (visual-gap-amd-mxfp, MIT)",
+   "outcome": "0 rows. Both tables compare only data types of the same checkpoint: 'FLUX.1-schnell Benchmark' rows BF16 / MXFP6 / MXFP4 (GenEval Score(overall) 0.6770 / 0.6768 / 0.6739) and 'Wan2.1-T2V-14B Benchmark' rows BF16 / MXFP6 / MXFP4 on five VBench dimensions. The MXFP rows are AMD-quantised versions of the same model, not separate catalogue models (and would duplicate model+bench+source), and no other model appears in either table. The FLUX.1-schnell GenEval row and the five Wan2.1-T2V-14B VBench rows stay lone."
+  },
+  {
+   "source": "https://arxiv.org/html/2512.07584v1 (report-2512.07584v1, LongCat-Image, CC BY 4.0)",
+   "outcome": "0 rows. Tables 2 (GenEval), 3 (DPG), 4 (WISE), 6 (CVTG-2K), 10 (GEdit-Bench) and 11 (ImgEdit-Bench) give every comparator row with a bibliography citation (e.g. 'Qwen-Image (Wu et al., 2025a)', 'BAGEL (Deng et al., 2025)'), and the reference list says 'Cited by: Table 2, Table 3 ...' for each. There is no statement that the authors generated or re-evaluated the baselines; the only setup wording is §5.1 'We conduct a comprehensive evaluation using a suite of established public benchmarks' and §6.5.1 'We compare our model against competitive baselines using the official metrics provided by the benchmark' (metric, not who ran it). Several cells equal other sources' published figures (Qwen-Image DPG 88.32 = Qwen-Image card row in results.json; Emu3 GenEval 0.54 = Emu3 report Table 7; WISE FLUX.1-dev 0.50 / SD-3.5-large 0.46 / MetaQuery-XL 0.55 = WISE paper rows under visual-wise; BAGEL GEdit-EN G_O 6.52 = BAGEL Table 7; UniWorld-V1 GEdit 4.85 / ImgEdit 3.26 = UniWorld Tables 5 / 4), so they are copied. The six LongCat rows stay lone. See held_for_owner for CEdit-Bench (Table 9), the authors' own new benchmark, where all comparator cells are necessarily their measurements."
+  },
+  {
+   "source": "https://arxiv.org/html/2312.03511v2 (kandinsky3-original-human-comparison, CC BY 4.0)",
+   "outcome": "0 rows (structural). §6 'Human evaluation': 'we conducted side-by-side comparisons of Kandinsky 3.0 with the Kandinsky 2.2 [12], SDXL [10] and DALL-E 3 [11] models. Each study involved 12 people who voted an average of 30,000 times in each SBS.' There are only these three pairwise studies (Figures 10-18), each with Kandinsky 3.0 as the only subject; the opponents' side of the same votes is already recorded and counted under kandinsky3-reference-text-win / kandinsky3-reference-visual-win (kandinsky-2-2, dall-e-3, sdxl). The six kandinsky3-vs-<opponent>-* benchmarks are one-model-per-benchmark by construction, so no comparator exists that could join them."
+  },
+  {
+   "source": "https://huggingface.co/Qwen/Qwen-Image/blob/75e0b4be04f60ec59a75f475837eced720f823b6/README.md (card2-qwen-qwen-image, Apache-2.0)",
+   "outcome": "0 rows. The pinned README has no text table: its only benchmark content is the embedded chart image (line 25, '![](https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-Image/bench.png#center)') and no wording on how comparators were evaluated. Comparator values would have to be read off the chart, which the rules exclude. The five Qwen-Image rows stay lone (the Qwen-Image technical report, if CC BY, would be the place to look for a text table; not in this batch)."
+  },
+  {
+   "source": "https://arxiv.org/html/2509.24650v1 (speech-voxcpm-report-ccby, VoxCPM, CC BY 4.0)",
+   "outcome": "0 rows. §4.1 'Baselines': 'All baseline results were obtained using official implementations with default settings, or as reported in their original papers.' This is a mixed statement and Table 3 ('Performance on Seed-TTS-eval Benchmark') has no per-cell marker separating re-runs from copied values (several baselines cite a paper, e.g. 'CosyVoice2 (Du et al., 2024b)', others only a project, e.g. 'HiggsAudio-v2 (BosonAI, 2025)'), so individual cells cannot be attributed to OpenBMB from the document. The only same-family comparator, 'VoxCPM-Emilia' (0.5B, trained on Emilia; Table 3 EN WER 2.34, SIM 68.1, ZH CER 1.11, SIM 74.0), is not in the catalogue and not released on Hugging Face (openbmb lists only VoxCPM-0.5B, VoxCPM1.5, VoxCPM2), so no checkpoint identity. The four VoxCPM Seed-TTS rows stay lone."
+  },
+  {
+   "source": "https://arxiv.org/html/2503.01710v1 (speech-spark-tts-report-ccby, Spark-TTS, CC BY 4.0)",
+   "outcome": "0 rows. Table 4 ('Results of Spark-TTS and recent TTS models on the Seed test sets ... † denotes closed-sourced models') has no statement on who produced the baseline cells; §6.4 says only 'we assess its performance on Seed-TTS-eval and compare it with existing zero-shot TTS models', and Appendix C merely describes the 'Compared Zero-shot Methods'. Baseline cells equal earlier papers' figures (e.g. FireRedTTS test-zh CER 1.51, test-en WER 3.82 / SIM 0.460 = the FireRedTTS row of the F5-TTS report already in results.json under speech-f5tts-report-ccby; the same FireRedTTS row also appears in VoxCPM Table 3), so they are copied. The Llasa-1B/3B/8B-250k rows come from a different model family (Ye et al., 2025) and are not marked as re-run. No same-family comparator. The four Spark-TTS rows stay lone."
+  },
+  {
+   "source": "https://arxiv.org/html/2505.14683v3 (report-2505.14683v3, BAGEL, CC BY 4.0)",
+   "outcome": "0 rows. Table 5 (GenEval), Table 6 (WISE) and Table 7 (GEdit-Bench, 'G_SC, G_PQ, and G_O refer to the metrics evaluated by GPT-4.1') give each comparator with a bibliography number (e.g. 'FLUX.1-dev^† [35]', 'Step1X-Edit [43]'); the only provenance wording is §7.2 'under the same evaluation settings as MetaQuery-XL' (about BAGEL's own run) and Table 6's '**: Results of GPT-4o are tested by [92]' (a third party). No statement that ByteDance Seed generated the baseline images. WISE comparator cells equal the WISE paper's own figures (e.g. FLUX.1-dev 0.50, SD3.5-large 0.46, MetaQuery-XL 0.55, as also printed in LongCat Table 4), so they are copied. BAGEL^† (LLM rewriter) and 'BAGEL w/ Self-CoT' are settings of the same checkpoint, not separate models. Table 8 IntelligentBench is the authors' new benchmark (so GPT-4o / Gemini 2.0 / Step1X-Edit cells there are their runs), but it has no benchmark id and the 'GPT-4o' / 'Gemini 2.0' image-editing endpoints and the Step1X-Edit version are not identified exactly, so it is not proposed. The three BAGEL rows stay lone."
+  },
+  {
+   "source": "https://arxiv.org/html/2506.03147v4 (report-2506.03147v4, UniWorld-V1, CC BY 4.0)",
+   "outcome": "0 rows. Tables 2 (GenEval), 4 (ImgEdit-Bench, 'We use GPT-4.1 for evaluation') and 5 (GEdit-Bench, 'metrics evaluated by GPT-4.1') give comparators with citation numbers and no statement that the authors generated their outputs; the only provenance notes mark third-party cells ('‡: Results of GPT-4o-Image are tested by [47]'). §4.2's 'we used the rewrite prompt used by blip3o for additional testing' refers to UniWorld-V1's own † run. Comparator cells equal their makers' reports (BAGEL GenEval 0.82 / 0.88†, GEdit G_O 6.52 = BAGEL Tables 5 and 7), so they are copied. UniWorld-V1† is the same checkpoint with an LLM rewriter. The three UniWorld-V1 rows stay lone."
+  },
+  {
+   "source": "https://arxiv.org/html/2606.07080v2 (speech-dots-tts-report, dots.tts, CC BY 4.0)",
+   "outcome": "6 rows (all by: lab), 1 comparison-only model. Baselines are mixed: §3.3.1 'All baseline numbers reported in this section are taken either from the original papers or from the official default inference configuration of the corresponding open-source release; we do not re-tune any baseline', with no per-cell marker, and several baseline cells equal other reports' figures (e.g. F5-TTS 2.00 / 67.0 / 1.53 / 76.0, IndexTTS 2 2.23 / 70.6 / 1.03 / 76.5, VibeVoice 3.04 / 68.9 / 1.16 / 74.4 = VoxCPM Table 3), so no baseline cell is used. Used the lab's own 'dots.tts (Pretrain)' row ('All numbers reported under the dots.tts (Pretrain) row are produced with the pretrained checkpoint from Section 3.2.2'), mapped to the released dots-studio/dots.tts-base (proposed comparison-only model): test-en WER and test-zh CER join the two lone dots-tts-soar runs, and test-en/zh SIM (existing ids seed-tts-en/zh-wavlm-sim) are added for both Pretrain and SOAR. Effect: the 2 lone runs count (2 models each) and 2 new 2-model SIM runs. test-zh-hard has no benchmark id; MF rows left in gaps."
+  },
+  {
+   "source": "https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md (visual-hidream, MIT)",
+   "outcome": "1 row (by: lab). The 'Evaluation' section says only 'We benchmark HiDream-O1-Image against state-of-the-art open-source and proprietary models on five widely-used evaluation suites'; there is no statement that other makers' models were run by HiDream, and their cells equal figures printed elsewhere (Qwen-Image DPG 88.32 = Qwen-Image card row in results.json; GPT Image 1 [High] DPG 85.15 and HiDream-I1-Full 85.89 = the same cells in LongCat-Image Table 3), so no third-party cell is used. The lab's earlier model HiDream-I1-Full appears in the same DPG-Bench table (Overall 85.89) and is added as a lab comparator: the dpg-bench run for this source becomes 2 models. GenEval stays lone: the only same-family comparator there is HiDream-O1-Image-Pro, which is not catalogued (gap)."
+  },
+  {
+   "source": "https://arxiv.org/html/2607.23938v1 (speech-qwen-audio3-tts-report, Qwen-Audio-3.0-TTS, CC BY 4.0)",
+   "outcome": "0 rows. Table 3 ('Zero-shot TTS performance on SEED-TTS-Eval'): every baseline row carries a citation ([8], [2], [6], [12] ...), and the caption's only own-measurement marker covers the ERes2Net SIM values in parentheses: '^† ERes2Net SIM scores were computed by us using the publicly released models. Before reporting these scores, we verified that our reproduced CER/WER and WavLM SIM results closely matched those reported in the corresponding papers.' So the printed CER/WER cells (the lone benchmarks) are the papers' values, not the authors' reruns (e.g. Dots.TTS-2B (SOAR) 0.94 / 1.30 = dots.tts report Table 2; Qwen3-TTS-12Hz-1.7B-Base 0.77 / 1.24 = Qwen card). No same-family comparator with a printed own CER/WER (Qwen3-TTS-12Hz-1.7B-Base and Qwen3.5-Omni-Plus rows are cited [6], [39]). The two Qwen-Audio-3.0-TTS Seed-TTS rows stay lone. See held_for_owner for the † ERes2Net cells."
+  },
+  {
+   "source": "https://arxiv.org/html/2606.24320v2 (speech-zonos2-report-bysa, ZONOS2, CC BY-SA 4.0)",
+   "outcome": "0 rows (structural). The Seed-TTS-Eval numbers appear only in Appendix Table VII ('ZONOS2 evaluation results across speaker similarity, DNSMOS, WER, and emotion accuracy on the CosyVoice 3 Eval and Seed-TTS-Eval benchmarks'), which lists ZONOS2 alone (Test-EN WER 2.05, Test-ZH 2.55, Test-ZH-Hard 11.15). No other model, size or version is reported on Seed-TTS-Eval anywhere in the report (the comparative tables III/IV are ZTTS1-Eval, already counted). The two ZONOS2 Seed-TTS rows stay lone."
+  },
+  {
+   "source": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md (card2-qwen-qwen3-tts-12hz-1-7b-base, Apache-2.0)",
+   "outcome": "2 rows (by: lab). The card says 'During evaluation, we ran inference for all models with dtype=torch.bfloat16 and set max_new_tokens=2048', but the non-Qwen rows carry paper citations (e.g. 'Spark TTS (Wang et al., 2025) | 1.20 | 1.98', 'F5-TTS (Chen et al., 2024) | 1.56 | 1.83', equal to those papers' tables) and include closed Seed-TTS / MiniMax-Speech, so they are not used. Added the lab's own Qwen3-TTS-12Hz-0.6B-Base row (test-zh 0.92, test-en 1.32) to the two lone runs (seed-tts-en-wer-asr-unstated, seed-tts-zh-err-asr-unstated): both runs now have 2 models (MIN_RUN met), but each test still has only these 2 models across all runs, below the scorer's MIN_MODELS = 3, so the rows do not score yet; they will once any third model is recorded on these ASR-unstated ids. The rows are kept because they are valid lab rows for an existing catalogue model and need no new entry. Checked whether the ASR could be pinned (which would move these rows to the whisper/paraformer ids, where they would count): the Qwen3-TTS Technical Report (arXiv 2601.15621v1, CC BY 4.0, Table 5 is the same table) also does not name the transcriber for the Seed-TTS evaluation, so the -asr-unstated ids remain correct. 25Hz rows are unreleased (gap)."
+  },
+  {
+   "source": "https://arxiv.org/html/2506.18871v4 (report-2506.18871v4, OmniGen2 v4, CC BY 4.0)",
+   "outcome": "0 rows. Table 2 (OneIG-Bench-EN column) and Table 3 (GEdit-Bench-EN SC/PQ/O) cite every comparator ([67], [94], [54] ...) and the report has no statement that BAAI generated their outputs; cells equal earlier publications (Qwen-Image-Edit-2509 GEdit O 7.54, BAGEL 6.52, UniWorld-V1 4.85, Step1X-Edit 6.70; OneIG SDXL 0.32 / FLUX.1-dev 0.43 / Qwen-Image 0.54 are rounded versions of the 0.316 / 0.434 / 0.539 printed in the GLM-Image README, and 0.539 is the Qwen-Image card's own value), so they are copied. The only same-lab comparator is OmniGen (v1) on GEdit-EN (O 5.06), which is not catalogued and whose 5.06 is the value circulated from GEdit's originating Step1X-Edit table (same cell in BAGEL Table 7, UniWorld Table 5, LongCat Table 10), i.e. not a BAAI rerun. Table 10's 'Base' rows are internal RL-ablation checkpoints. The two OmniGen2 rows stay lone. OmniContext (Table 4) is BAAI's own new benchmark; see held_for_owner."
+  },
+  {
+   "source": "https://arxiv.org/html/2409.18869v1 (report-2409.18869v1, Emu3, CC BY 4.0)",
+   "outcome": "0 rows. Appendix B on DPG-Bench: 'The results of other methods in the DPG-Benchmark are sourced from [31, 54]' (copied). Table 4 / Table 7 (GenEval) list every other model with a citation and no statement that BAAI ran them (e.g. SDXL 0.55 equals the GenEval paper row under visual-geneval). The only same-lab comparator is Emu3-DPO (Table 7 GenEval 0.52 without rewriter; Table 8 DPG 81.60; 'The output resolution for Emu3-DPO is 720 x 720'), which is not a released checkpoint (BAAI's HF org has Emu3-Gen, Emu3-Chat, Emu3-Stage1 and tokenizer; the Emu3-Gen card does not mention DPO) and is not catalogued. The two Emu3 rows stay lone."
+  },
+  {
+   "source": "https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json (speech-vapi-humanness-20260610, CC BY 4.0)",
+   "outcome": "0 rows (owner policy). The export ('exportedAt': '2026-06-10', 'production leaderboard export from the original prototype deployment', 'totalUniqueVotes': 721) is Vapi's own measurement of all 17 TTS entries, so the other cells would qualify as independent comparators. They were deliberately left out when the benchmark was defined: vapi-humanness-export-20260610 setup says 'only retired Turbo v2.5 retained to avoid duplicate current/historical rows', and the current vapi-humanness-bt-20260925 fit uses 'original prototype aggregate counts as center-strength anchor games', i.e. the same June votes. docs/research/missing-results-followup-2026-10-06.md also says 'do not ... count repeated snapshots as independent tests'. Not overridden here; see held_for_owner."
+  },
+  {
+   "source": "https://arxiv.org/html/2607.06173v1 (visual-gap-mobilewan, MobileWan, CC BY 4.0)",
+   "outcome": "0 rows. The lone row comes from Appendix Table 10 ('Comparison of generation quality of the original Wan2.2 5B model before and after finetuning for our target resolution'), whose only other rows are the same checkpoint at native 121×704×1280 (Total 83.28; a different setting from the 480p benchmark) and 'Wan2.2 5B - Finetuned' at 81×480×832 (Total 83.12), Qualcomm's intermediate fine-tune (§A.4: 'we finetuned the model on a dataset of 5-second 480p videos ... for 2k iterations'), which is not released or catalogued. The main comparison Table 7 lists other models with citations and the text says it compares to models 'that report VBench' (copied). MobileWan itself (Table 7 Total 83.79) is released (HF Qualcomm-AI-Research/mobilewan @ 02d2d1249ff4bb59017f99a5ec50a93fc9b7b7b4) but is not in Table 10 and not catalogued. The Wan2.2-TI2V-5B 480p row stays lone."
+  },
+  {
+   "source": "https://arxiv.org/html/2601.04233v1 (speech-lemas-report-bysa, LEMAS, CC BY-SA 4.0)",
+   "outcome": "0 rows (held). Table 4 ('Objective evaluation of TTS models on multilingual test sets ... Results compare OpenAudio-S1-Mini and LEMAS-TTS models, with and without prosody control') is entirely the authors' own run: §6 'All evaluations follow a unified data construction and inference protocol to ensure fair comparison across models and tasks'; §6.1 'We evaluate LEMAS-TTS on 10 languages and compare it with the contemporaneous open-source baseline OpenAudio-S1-mini'. The only comparators are the lab's own LEMAS-TTS w/o prosody and w/ prosody, released together ('We therefore release both variants') in HF LEMAS-Project/LEMAS-TTS @ 386ba356c1885091bfd92105fcabbaa3075d9480 as pretrained_models/ckpts/multilingual_grl and multilingual_prosody. Not added because (1) the benchmark is a 9-language mean (vi excluded) and the printed LEMAS 'Avg' WER does not equal any mean of its printed per-language cells (w/ prosody: printed 6.39; 9-language mean 4.82; 10-language mean 5.88. w/o prosody: printed 8.06; 5.72; 7.36), whereas OpenAudio's printed 12.27 equals its 9-language mean, so a LEMAS value would have to be derived by us; (2) the HF card does not itself map the two checkpoint folders to the paper's row names. See held_for_owner."
+  },
+  {
+   "source": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B/blob/a064a6c71f5be440641209c07bf2a5ce7a2ff5e4/README.md (card2-wan-ai-wan2-1-t2v-14b, Apache-2.0)",
+   "outcome": "0 rows (held). 'Comparisons to SOTA': 'We compared Wan2.1 with leading open-source and closed-source models ... Using our carefully designed set of 1,035 internal prompts, we tested across 14 major dimensions and 26 sub-dimensions. We then compute the total score by performing a weighted calculation ...' so every column is the Wan team's own measurement. But the table exists only as the committed image assets/vben_vs_sota.png (columns CNTopB, CNTopC, Mochi, CNTopA, Sora, Wan-14B; no text table in the README), and the rules exclude values that are not printed as text. CNTopA/B/C are anonymised and unidentifiable. See held_for_owner for Mochi and Sora."
+  },
+  {
+   "source": "https://arxiv.org/html/2410.13848v1 (report-2410.13848v1, Janus, CC BY 4.0)",
+   "outcome": "0 rows. Table 3 ('Evaluation of text-to-image generation ability on GenEval benchmark') lists every comparator with a citation ([73], [67], [83] ...); §4.3 'Evaluation Setup' describes only how Janus is evaluated, and there is no statement that DeepSeek ran the baselines. Cells equal other sources' figures (SDXL 0.55 = GenEval paper row under visual-geneval; Emu3-Gen 0.54 = Emu3 report Table 7 row in results.json), so they are copied. No same-family comparator (Janus is the first of the family; Janus-Pro came later). The janus-1-3b GenEval row stays lone."
+  },
+  {
+   "source": "https://huggingface.co/kandinsky-community/kandinsky-2-1/blob/04b366659663bf60deacb96fd3e38f1cb39a3be4/README.md (kandinsky21-card-original-fid, Apache-2.0)",
+   "outcome": "0 rows proposed (1 row + 1 model held). '### Evaluation': 'We quantitatively measure the performance of Kandinsky 2.1 on the COCO_30k dataset, in zero-shot mode. The table below presents FID.' Other makers' rows (eDiff-I 6.95, Imagen 7.27, SD 2.1, GigaGAN, DALL-E 2 10.39, GLIDE 12.24, DALL-E 17.89, GLIGEN) are their papers' published FIDs, so not used. The lab's own earlier models are in the same table: Kandinsky 2.0 (20.00), which maps to ai-forever/Kandinsky_2.0 @ 04e8fc7 and could be added as kandinsky-2-0, and Kandinsky 1.0 (15.40), which has no identifiable open checkpoint (gap). With Kandinsky 2.0 the run has 2 models but the test would still have fewer than the scorer's 3, so the row would not count; it is held_for_owner with the full proposed row and model."
+  }
+ ],
+ "held_for_owner": [
+  {
+   "source": "https://arxiv.org/html/2512.07584v1 (report-2512.07584v1, LongCat-Image, CC BY 4.0)",
+   "item": "Possible new benchmark 'CEdit-Bench (EN, G_O, GPT-4o judge)' from Table 9 'Performance comparison on CEdit-Bench'. CEdit-Bench is introduced in this paper (§6.5.1: 'we introduce CEdit-Bench ... 1,464 bilingual (Chinese and English) editing pairs across 15 fine-grained task categories'; 'We benchmark our model against FLUX.1 Kontext, Step1X-Edit, Qwen-Image-Edit, Seedream 4.0, and Nano Banana ... on CEdit-Bench ... utilizing GPT-4o for automated evaluation'), so every cell in Table 9 is Meituan's own measurement. EN G_O column as printed: FLUX.1 Kontext [Pro] 6.53, GPT Image 1 [High] 8.17, Nano Banana 7.20, Seedream 4.0 7.58, FLUX.1 Kontext [Dev] 5.93, Step1X-Edit 6.25, Qwen-Image-Edit 7.52, Qwen-Image-Edit [2509] 7.48, LongCat-Image-Edit 7.67 (CN G_O: 1.43, 8.21, 7.36, 7.57, 1.51, 6.35, 7.46, 7.37, 7.65). Catalogue ids would be flux-1-kontext-pro, gpt-image-1, nano-banana, seedream-4-0, flux-1-kontext-dev, qwen-image-edit, qwen-image-edit-2509, longcat-image-edit (Step1X-Edit version unstated; dropped). It would give longcat-image-edit a counted run, but needs a new benchmark id, which this pass's brief only allows for existing ids. Benchmark dataset hosting and licence not checked. Owner decision: add a new 'cedit-bench-en-overall' id (task image-editing) or leave it. ChineseWord (Table 7, 8,105-prompt set the authors built, PPOCRv5 scoring) is a similar case with only three comparators (Seedream 4.0 58.5, Qwen-Image 56.6, HunyuanImage-3.0 49.3, LongCat-Image 90.7 overall); the paper says it follows 'the protocol of Qwen-Image', so whether those comparator cells were rerun is less certain."
+  },
+  {
+   "source": "https://arxiv.org/html/2312.03511v2 (kandinsky3-original-human-comparison)",
+   "item": "The six kandinsky3-vs-{kandinsky-2-2,dall-e-3,sdxl}-{text,visual}-win benchmarks can never reach two models: each is a single side-by-side study and the paper ran no other study with the same opponent. They mirror the votes already counted in kandinsky3-reference-*-win (Kandinsky 3.0's own win share there would be a self-comparison, which the ledger attribution rules out). Owner decision: keep them as raw evidence (current state) or retire them as permanently uncountable."
+  },
+  {
+   "source": "https://arxiv.org/html/2509.24650v1 (speech-voxcpm-report-ccby)",
+   "item": "Table 3 baselines: 'All baseline results were obtained using official implementations with default settings, or as reported in their original papers.' No per-cell marker. If the owner accepts cell-by-cell inference from comparison with the competitors' papers, the Seed-TTS-eval runs could gain comparators (catalogue matches: f5-tts-base?, maskgct, cosyvoice-300m, cosyvoice2-0-5b, spark-tts-0-5b, fireredtts-1, openaudio-s1-mini, indextts-2, vibevoice-1-5b, higgs-audio-v2). Not done in this pass because the brief requires cells that can be told to be the authors' own from the document itself."
+  },
+  {
+   "source": "https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md (visual-hidream)",
+   "item": "Optional extension outside the lone tables: the README's 'LongText-Bench — long-text rendering, EN & ZH' table has two lab models, HiDream-O1-Image (EN 0.979, ZH 0.978) and HiDream-I1-Full (EN 0.543, ZH 0.024); existing ids longtext-en / longtext-cn. Adding all four would give two new 2-model lab runs. Not added because the brief limits extra cells to other benchmarks of the same table as a lone row, and the ledger scope currently says the source is used for GenEval/DPG overall only."
+  },
+  {
+   "source": "https://arxiv.org/html/2607.23938v1 (speech-qwen-audio3-tts-report)",
+   "item": "Possible new benchmarks 'Seed-TTS test-zh / test-en speaker similarity (ERes2Net)' from Table 3, using only cells the authors computed: the '^†' parenthesised values ('ERes2Net SIM scores were computed by us using the publicly released models') plus the own Qwen-Audio-3.0-TTS row. test-zh: VoxCPM2 (0.756)^†, Dots.TTS-2B (SOAR) (0.818)^†, LongCat-AudioDiT-3.5B (0.806)^†, Qwen-Audio-3.0-TTS (0.847); test-en: VoxCPM2 (0.725)^†, Dots.TTS-2B (SOAR) (0.792)^†, LongCat-AudioDiT-3.5B (0.771)^†, Qwen-Audio-3.0-TTS (0.815). Catalogue ids: voxcpm2, dots-tts-soar, qwen-audio-3-0-tts-plus (LongCat-AudioDiT-3.5B not catalogued). That would be two 3-model runs, but it needs new benchmark ids (the existing seed-tts-*-wavlm-sim ids are WavLM, not ERes2Net), which this pass does not add. Non-† parenthesised values (F5-TTS, CosyVoice3-1.5B) are not marked as their computation."
+  },
+  {
+   "source": "https://arxiv.org/html/2506.18871v4 (report-2506.18871v4, OmniGen2)",
+   "item": "Possible new benchmark 'OmniContext (Average, GPT-4.1-judged in-context generation)' from Table 4 'Overall comparison of existing models on our proposed OmniContext benchmark' (§5.4: 'We introduce the OmniContext benchmark to provide a comprehensive evaluation of the performance of the existing model in this domain'), so all cells there are BAAI's own runs. Average column: Gemini-2.0-Flash-Image 3.62, Gemini-2.5-Flash-Image 7.84, GPT-4o 8.80, UNO 4.71, BAGEL 5.73, Qwen-Image-Edit-2509 7.69, OmniGen 4.34, OmniGen2 7.95 (FLUX.1 Kontext max and InfiniteYou have SINGLE only). Plausible catalogue ids: gemini-2-0-flash-image, nano-banana (Gemini 2.5 Flash Image), bagel, qwen-image-edit-2509, omnigen2; 'GPT-4o' image endpoint is not identified exactly. It would give omnigen2 a counted run but needs a new benchmark id (judge: 'We use GPT-4.1 to assess outputs on three metrics: Prompt Following (PF), Subject Consistency (SC), and an Overall Score (geometric mean of PF and SC)'); not added in this pass."
+  },
+  {
+   "source": "https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json (speech-vapi-humanness-20260610)",
+   "item": "To make the lone elevenlabs-turbo-v2-5 June-export row count, the owner could allow the other June 10 Elo cells from the same file (all Vapi's own ratings, CC BY 4.0), e.g. elevenlabs-eleven-v3 1231.83 (elevenlabs-v3), elevenlabs-flash-v25 1225.44 (elevenlabs-flash-v2-5), elevenlabs-flash-v2 1208.12, elevenlabs-turbo-v2 1201.25, xai-xai-tts 1306.53 (xai-grok-tts), cartesia-sonic-35 1257.23, cartesia-sonic-2 1139.56, cartesia-sonic-3 1096.65, cartesia-sonic 1027.55, gradium-gradium-tts 1098.63, inworld-tts-15-max 1197.31 (5 votes), inworld-tts-2 1189.42 (5 votes); identity for canopy-orpheus, xai-streaming and minimax-minimax-tts would need checking. Trade-off: the same June votes are anchor games inside the current Sept BT fit, so these models would get two correlated Vapi results. Current policy (benchmark setup + 2026-10-06 follow-up note) says no; no rows proposed."
+  },
+  {
+   "source": "https://arxiv.org/html/2601.04233v1 (speech-lemas-report-bysa)",
+   "item": "Owner decision: accept a derived unweighted 9-language WER mean (de,en,es,fr,id,it,pt,ru,zh, as the benchmark defines it for OpenAudio) for the lab's LEMAS-TTS rows, with per-language cells kept as components? Values from printed Table 4 cells: LEMAS-TTS w/ prosody de 0.44, en 1.07, es 4.28, fr 9.87, id 6.38, it 4.43, pt 2.09, ru 11.84, zh 3.00 -> mean 4.8222% (0.048222); LEMAS-TTS w/o prosody de 1.20, en 2.21, es 4.93, fr 10.45, id 7.05, it 5.57, pt 3.12, ru 12.29, zh 4.64 -> mean 5.7178% (0.057178). The paper's own 'Avg' WER for these rows (6.39 / 8.06) does not match any simple mean of its cells, so it is not used. Would need a comparison-only model (e.g. lemas-tts-prosody: HF LEMAS-Project/LEMAS-TTS @ 386ba356c1885091bfd92105fcabbaa3075d9480, checkpoint pretrained_models/ckpts/multilingual_prosody, cc-by-4.0, flow-matching on F5-TTS architecture) and by: lab. Would make the lone OpenAudio-S1-Mini run count."
+  },
+  {
+   "source": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B/blob/a064a6c71f5be440641209c07bf2a5ce7a2ff5e4/README.md (card2-wan-ai-wan2-1-t2v-14b)",
+   "item": "The Wan-Bench 'Weighted Score' row has two identifiable comparators measured by the Wan team ('we tested ...'): 'Mochi' (catalogue mochi-1, Genmo Mochi 1 preview) and 'Sora' (catalogue sora; the OpenAI Sora product as of Feb 2025, version not stated). The values are only in the committed PNG table image assets/vben_vs_sota.png, from which the existing Wan-14B row (0.724) was already transcribed. If the owner accepts digits printed in that table image as 'printed' (as for the existing row), adding mochi-1 and sora would make the lone wan-bench-2-1-weighted run count (3 models). Not done here because the brief excludes image-only values. No numbers transcribed in this file."
+  },
+  {
+   "source": "https://huggingface.co/kandinsky-community/kandinsky-2-1/blob/04b366659663bf60deacb96fd3e38f1cb39a3be4/README.md (kandinsky21-card-original-fid)",
+   "item": "Ready-to-merge but held: a lab comparator row for the lone Kandinsky 2.1 COCO-30k FID run, plus the comparison-only model it needs (both below). Held because it would not change scoring: coco30k-fid-kandinsky21 would have 2 models, and lib/score.ts needs MIN_MODELS = 3 models across a test's runs. The only other same-family row, 'Kandinsky 1.0 (2022)' (FID 15.40), has no identifiable open checkpoint, and the other makers' rows are their papers' published FIDs, so no third model can come from this table. The caveat also applies: the card's setup sentence ('We quantitatively measure the performance of Kandinsky 2.1 on the COCO_30k dataset, in zero-shot mode') names only 2.1.",
+   "proposed_result": {
+    "model": "kandinsky-2-0",
+    "bench": "coco30k-fid-kandinsky21",
+    "score": 20.0,
+    "source": "https://huggingface.co/kandinsky-community/kandinsky-2-1/blob/04b366659663bf60deacb96fd3e38f1cb39a3be4/README.md",
+    "source_id": "kandinsky21-card-original-fid",
+    "by": "lab",
+    "date": "2026-10-06",
+    "note": "Kandinsky 2.1 card @ 04b3666, '### Evaluation' table 'FID metric values for generative models on COCO_30k', row 'Kandinsky 2.0 (2022)', column 'FID (30k)' = 20.00 (raw distance, lower is better). Same table as the existing Kandinsky 2.1 row (8.21). Kandinsky 2.0 is the same Sber AI / AI Forever team's previous model and the row is not marked as copied, so it is taken as a lab measurement under the brief's same-family rule; caveat: the card's setup sentence ('We quantitatively measure the performance of Kandinsky 2.1 on the COCO_30k dataset, in zero-shot mode') names only 2.1, so the 2.0 figure's generation settings are not restated. Checkpoint: ai-forever/Kandinsky_2.0 @ 04e8fc7ea945965edfcb33705ac272d14b9d0f6c (proposed comparison-only kandinsky-2-0). Date is review date, as for the existing row."
+   },
+   "proposed_model": {
+    "id": "kandinsky-2-0",
+    "name": "Kandinsky 2.0",
+    "provider": "AI Forever",
+    "category": "image",
+    "released": "2022-11",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.2,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/ai-forever/Kandinsky_2.0",
+    "identity_note": "Comparison-only, proposed so the Kandinsky 2.1 card's COCO-30k FID table counts. 'Kandinsky 2.0 (2022)' in that table = the AI Forever (Sber AI) multilingual latent diffusion model released as ai-forever/Kandinsky_2.0 (sha 04e8fc7ea945965edfcb33705ac272d14b9d0f6c, created 2022-11-22, apache-2.0; card: 'Kandinsky 2.0 — the first multilingual text2image model', 'UNet size: 1.2B parameters', text encoders mCLIP-XLMR 560M + mT5-encoder-small 146M). The 2.1 card says 2.1 kept 'the UNet diffusion block from Kandinsky 2.0'. params_b is the UNet only. Not Kandinsky 2.1/2.2 or the earlier ruDALL-E 'Kandinsky 1.0'.",
+    "identity_sources": [
+     "https://huggingface.co/ai-forever/Kandinsky_2.0/blob/04e8fc7ea945965edfcb33705ac272d14b9d0f6c/README.md",
+     "https://huggingface.co/kandinsky-community/kandinsky-2-1/blob/04b366659663bf60deacb96fd3e38f1cb39a3be4/README.md"
+    ],
+    "identity_evidence": [
+     {
+      "source": "https://huggingface.co/kandinsky-community/kandinsky-2-1/blob/04b366659663bf60deacb96fd3e38f1cb39a3be4/README.md",
+      "reported_label": "Kandinsky 2.0 (2022)"
+     },
+     {
+      "source": "https://huggingface.co/ai-forever/Kandinsky_2.0/blob/04e8fc7ea945965edfcb33705ac272d14b9d0f6c/README.md",
+      "reported_label": "Kandinsky 2.0"
+     }
+    ]
+   }
+  }
+ ]
+}

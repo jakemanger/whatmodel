@@ -41704,5 +41704,34 @@
         "reported_label": "nvidia/Cosmos-1.0-Autoregressive-5B-Video2World"
       }
     ]
+  },
+  {
+    "id": "dots-tts-base",
+    "name": "dots.tts Base (Pretrain) 2B",
+    "provider": "dots.tts",
+    "category": "tts",
+    "released": "2026-06",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 2,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/dots-studio/dots.tts-base",
+    "identity_note": "Comparison-only, proposed so the dots.tts report's Seed-TTS-Eval runs count. The report's 'dots.tts (Pretrain)' row is 'produced with the pretrained checkpoint from Section 3.2.2' (arXiv:2606.07080v2 §3.3.1); the released repo dots-studio/dots.tts-base (sha b5aac65a395e04a60a8dacd4e2f4aadc5ad3dbe1, created 2026-06-03, apache-2.0) describes itself as 'the end-to-end pretrained checkpoint trained on ~1.5M hours of speech' / 'Pretrain (~1.5M h)' and prints the identical Seed-TTS-Eval row (test-en 1.34 / 76.8, test-zh 0.96 / 80.5). Not dots.tts-soar (self-corrective post-trained) or dots.tts-mf (MeanFlow-distilled). params_b is the maker's rounded '2B' system figure (Table 2 Params column); HF safetensors metadata total 2,198,091,778.",
+    "identity_sources": [
+      "https://huggingface.co/dots-studio/dots.tts-base/blob/b5aac65a395e04a60a8dacd4e2f4aadc5ad3dbe1/README.md",
+      "https://arxiv.org/html/2606.07080v2"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2606.07080v2",
+        "reported_label": "dots.tts (Pretrain)"
+      },
+      {
+        "source": "https://huggingface.co/dots-studio/dots.tts-base/blob/b5aac65a395e04a60a8dacd4e2f4aadc5ad3dbe1/README.md",
+        "reported_label": "dots.tts-base — Pretrain (~1.5M h)"
+      }
+    ]
   }
 ]

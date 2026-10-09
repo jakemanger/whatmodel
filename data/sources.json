@@ -1598,7 +1598,7 @@
     "kind": "dataset",
     "license": "CC BY 4.0",
     "terms_url": "https://arxiv.org/abs/2606.07080v2",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "attribution": "dots.tts Team (Shi Lian et al.); dots.tts Technical Report; arXiv:2606.07080v2. CC BY 4.0. Numerical tables transcribed; percentage metrics divided by 100; explicitly marked macro means derived. No endorsement.",
     "verdict": "allowed",
     "match": [
@@ -1607,7 +1607,8 @@
     "exact": true,
     "icon": "arxiv.org",
     "quote": "The versioned report, including numerical tables. Not a claim about model-weight or underlying audio licences.",
-    "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "scope": " Extended 2026-10-09: also the dots.tts (Pretrain) row (WER/CER/SIM, test-en and test-zh; mapped to dots-tts-base) and the SOAR row's SIM cells; other makers' rows not used."
   },
   {
     "id": "speech-voxtral-realtime-report",
@@ -1833,11 +1834,11 @@
     "license": "MIT",
     "terms_url": "https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/LICENSE",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "license_url": "/licenses/visual-hidream.txt",
     "attribution": "HiDream-ai/HiDream-O1-Image contributors. Extracted selected measured table values; percentages divided by 100 where specified; model labels mapped only to the stated model version. No values estimated or rerun. Source: https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md. No endorsement; provided as-is.",
     "quote": "Only the retained original measurements and accompanying documentation inside this licensed artifact. No permission inferred for copied third-party comparison rows, external websites, model weights, generated media or dataset inputs.",
-    "scope": "Own-model rows only. MIT includes associated documentation in this repository; no external leaderboard database is used.",
+    "scope": "Own-model rows only. MIT includes associated documentation in this repository; no external leaderboard database is used. Extended 2026-10-09: HiDream's own models only (HiDream-O1-Image, plus HiDream-I1-Full in the DPG-Bench table); other makers' rows not used.",
     "icon": "huggingface.co"
   },
   {
@@ -6078,12 +6079,12 @@
   },
   {
     "id": "speed-meta-muse-glimmer-30b",
-    "name": "meta-models/Muse-Glimmer-30B model card (local speed table)",
+    "name": "meta-models/Muse-Glimmer-30B model card (speed and benchmark tables)",
     "kind": "first-party",
     "license": "Apache-2.0",
     "terms_url": "https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/LICENSE",
     "checked": "2026-09-25",
-    "attribution": "Meta Superintelligence Lab, meta-models/Muse-Glimmer-30B model card, revision a4e59da52a7bc87ae7251dd5545c0dd437c44b68. Selected published speed cells transcribed. No endorsement.",
+    "attribution": "Meta Superintelligence Lab, meta-models/Muse-Glimmer-30B model card, revision a4e59da52a7bc87ae7251dd5545c0dd437c44b68. Selected published speed cells and benchmark cells (including Meta's internal run of Gemma 4 31B) transcribed. No endorsement.",
     "match": [
       "huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md"
     ],
@@ -8395,9 +8396,10 @@
     "terms_url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md",
     "quote": "README front-matter declares 'license: apache-2.0'. No root LICENSE file at this revision; standard Apache-2.0 text supplied. Selected own-lab result cells in the pinned README only; linked blogs, images hosted elsewhere and competitor columns are not used.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "Qwen Team, Alibaba. Qwen/Qwen3-TTS-12Hz-1.7B-Base model card. Source: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "Qwen Team, Alibaba. Qwen/Qwen3-TTS-12Hz-1.7B-Base model card. Source: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
+    "scope": " Extended 2026-10-09: also the lab's own Qwen3-TTS-12Hz-0.6B-Base row of the same Seed-TTS table; competitor and 25Hz rows not used."
   },
   {
     "id": "card2-stepfun-ai-step1x-edit-v1p2",
@@ -11489,13 +11491,16 @@
       "www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf",
       "www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf",
       "www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf",
-      "anthropic.com/claude-sonnet-5-5"
+      "anthropic.com/claude-sonnet-5-5",
+      "www-cdn.anthropic.com/0f0c97ad20d8005706296bd92aa1c27c6b2f4f61/Claude%20Opus%204.8%20System%20Card.pdf",
+      "www-cdn.anthropic.com/037f06850df7fbe871e206dad004c3db5fd50340/Claude%20Opus%204.7%20System%20Card.pdf",
+      "www-cdn.anthropic.com/6a5fa276ac68b9aeb0c8b6af5fa36326e0e166dd/Claude%20Opus%204.6%20System%20Card.pdf"
     ],
     "kind": "first-party",
     "license": "Factual vendor-reported score (not licensed content)",
     "terms_url": "https://www.anthropic.com/legal/consumer-terms",
     "verdict": "allowed",
-    "checked": "2026-10-07",
+    "checked": "2026-10-09",
     "exact": true,
     "attribution": "Anthropic PBC, benchmark results it published for its own Claude models in system cards (PDF) and announcement pages, observed 2026-10-07. Individual figures were recorded by hand and converted to fractions, with printed settings in each row's note. Lab-reported, not independent. Not licensed or endorsed by Anthropic.",
     "quote": "Owner rule (b), 2026-10-07 (docs/research/vendor-terms-2026-10-07.md). A vendor's own published score for its own model may be recorded from its announcement page, system or model card, or docs. Each figure is recorded by hand from a single fetch. Only own-model, vendor-computed cells are used, never other labs' rows or cells credited to a third party. No tables, charts or prose are reproduced, and no automated extraction is used. Governing terms: Anthropic Consumer Terms forbid 'crawl, scrape, or otherwise harvest' and bot or script access, but contain no clause against quoting an individual figure. The pages show '© 2026 Anthropic PBC', the system cards carry no licence or copyright statement, and neither grants a licence.",
@@ -11507,13 +11512,16 @@
     "match": [
       "deepmind.google/models/gemini",
       "deepmind.google/models/model-cards/gemini-3-8-flash",
-      "deepmind.google/models/model-cards/gemini-3-7-flash"
+      "deepmind.google/models/model-cards/gemini-3-7-flash",
+      "deepmind.google/models/model-cards/gemini-3-5-flash",
+      "deepmind.google/models/model-cards/gemini-3-5-flash-lite",
+      "deepmind.google/models/model-cards/gemini-3-1-flash-lite"
     ],
     "kind": "first-party",
     "license": "Factual vendor-reported score (not licensed content)",
     "terms_url": "https://policies.google.com/terms",
     "verdict": "allowed",
-    "checked": "2026-10-07",
+    "checked": "2026-10-09",
     "exact": false,
     "attribution": "Google DeepMind, benchmark results it published for its own Gemini models on deepmind.google (Gemini model page, Gemini 3.8 Flash and 3.7 Flash model cards), observed 2026-10-07. Provenance and settings were checked against Google's evaluation-methodology PDFs. Individual figures were recorded by hand and converted to fractions. Lab-reported, not independent. Not licensed or endorsed by Google.",
     "quote": "Owner rule (b), 2026-10-07 (docs/research/vendor-terms-2026-10-07.md). These are Google's own scores for its own models, recorded by hand one figure at a time from a single fetch. Only Google-computed cells are used: cells the methodology PDFs credit to Vals AI, Zapier, Artificial Analysis, leaderboards or other labs are excluded. Google Terms of Service: 'You may use Google's content as allowed by these terms ... but we retain any intellectual property rights that we have in our content.' Automated access is restricted only through robots.txt, and deepmind.google has 'Allow: /'. There is no anti-quoting clause. The page footers link only Privacy and Terms, with no licence. 'exact' is false only because lib/sources.ts sourceIn() never matches an exact entry against a URL whose path ends in '/' (these canonical URLs do). The paths are page-specific.",
@@ -11553,13 +11561,15 @@
       "deploymentsafety.openai.com/gpt-6-1-sol",
       "deploymentsafety.openai.com/gpt-5-6",
       "openai.com/index/introducing-gpt-5",
-      "help.openai.com/en/articles/9624314-model-release-notes"
+      "help.openai.com/en/articles/9624314-model-release-notes",
+      "openai.com/index/gpt-4-1",
+      "openai.com/index/introducing-gpt-5-2"
     ],
     "kind": "first-party",
     "license": "Factual vendor-reported score (not licensed content)",
     "terms_url": "https://openai.com/policies/terms-of-use/",
     "verdict": "allowed",
-    "checked": "2026-10-07",
+    "checked": "2026-10-09",
     "exact": true,
     "icon": "openai.com",
     "attribution": "OpenAI, vendor-reported results for OpenAI's own models from openai.com announcement posts and Deployment Safety Hub system cards; individual figures hand-recorded 2026-10-07 (openai.com posts read from Internet Archive captures because openai.com returns HTTP 403 to direct fetches); percentages converted to fractions. Lab-reported, not independent measurements. No endorsement.",
@@ -12811,11 +12821,11 @@
     "license": "Factual vendor-reported score (not licensed content)",
     "terms_url": "https://cohere.com/terms-of-use",
     "verdict": "allowed",
-    "checked": "2026-10-08",
+    "checked": "2026-10-09",
     "icon": "cohere.com",
-    "attribution": "Cohere, vendor-reported results for Cohere's own models from the 'Introducing Command A+' blog post (May 20, 2026); individual figures from the post's text hand-recorded 2026-10-08; percentages converted to fractions. Lab-reported, not independent measurements. No endorsement.",
+    "attribution": "Cohere, vendor-reported results for Cohere's own models from the 'Introducing Command A+' blog post (May 20, 2026); individual figures from the post's text (2026-10-08) and printed chart labels (2026-10-09) hand-recorded; percentages converted to fractions. Lab-reported, not independent measurements. No endorsement.",
     "quote": "Owner rule (b), approved 2026-10-07 (UPDATING.md 'Vendor-reported scores'): a vendor's own published score for its own model, from its announcement, system/model card or docs, may be recorded by hand one figure at a time with the exact URL, date and printed settings; other labs' cells and cells credited to a third party excluded. The post's Artificial Analysis Intelligence Index (37) is credited to Artificial Analysis and is not recorded; MMMU / MMMU Pro / MathVista figures are not recorded because the post gives no split (val/test, testmini, standard/vision).",
-    "scope": "Command A+ only: τ²-Bench Telecom 85%, Terminal-Bench Hard 25%, CharXiv reasoning 52.7% from the body text. Chart-only figures (AIME 2025, IFBench, SciCode, MT-AIME, WMT24++) and internal North evaluations not recorded. Command A Reasoning (37%, 3%) and Command A Vision (46.9%) are printed but are not catalogue models."
+    "scope": "Command A+ (05-2026) with its printed comparators Command A Reasoning (08-2025) and Command A Vision (07-2025). Body text: τ²-Bench Telecom 85% vs 37%, Terminal-Bench Hard 25% vs 3%, CharXiv reasoning 52.7% vs 46.9%. Chart data labels (Image 3 and Image 5, values printed on the charts, settings in footnote 1): AIME 2025 90% vs 57%, IFBench (loose, prompt-level) 74% vs 36%, SciCode (level unspecified) 38% vs 30%, CharXiv descriptive 88% vs 82%. Not recorded: MT-AIME (internal translation) and WMT24++ (includes internal translations), internal North evaluations, and the Artificial Analysis Intelligence Index."
   },
   {
     "id": "lmsys-arena-space-mtbench",
@@ -13822,5 +13832,113 @@
     "evidence_url": "https://arxiv.org/abs/2410.14897v1",
     "icon": "arxiv.org",
     "scope": "Table 3 COPA test accuracy for nine models matching catalogue checkpoints. Not used: Mistral-7B-v0.3 and MPT-30B (not catalogued), Gen-COPA tables."
+  },
+  {
+    "id": "paper-2510.01141v1-apriel-1-5",
+    "name": "Apriel-1.5-15b-Thinker (arXiv:2510.01141v1), Table 4 multimodal benchmarks",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/abs/2510.01141v1",
+      "arxiv.org/html/2510.01141v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2510.01141v1",
+    "quote": "arXiv abstract page for 2510.01141v1 (the only version, submitted 1 Oct 2025) links 'http://creativecommons.org/licenses/by/4.0/' as the article licence. CC BY 4.0 s.2(a)(1) permits reproduction and sharing, including commercially, with attribution. §5.2: 'We evaluate vision capabilities using the VLMEvalKit toolkit ... For each dataset, we adhere to official or community-standard protocols as implemented in VLMEvalKit and adopt consistent prompts and inference settings across models to ensure fair comparisons.'",
+    "attribution": "Shruthan Radhakrishna et al. (ServiceNow SLAM Lab), Apriel-1.5-15b-Thinker, arXiv:2510.01141v1, CC BY 4.0. Table 4 CharXiv descriptive/reasoning cells. No endorsement.",
+    "scope": "Table 4 CharXiv 'Des' and 'R' columns for Llama 4 Maverick, Qwen 2.5 VL 32B-Instruct and Magistral Small-2509 only (the other catalogue models in Table 4 carry identical ServiceNow numbers in the Apriel-1.6 card and are recorded from there). Not used: Table 3 (credited to Artificial Analysis), GPT-5 Minimal column (lower setting), Kimi-VL-2506 and Apriel-1.5 (not catalogued).",
+    "verdict": "allowed",
+    "checked": "2026-10-09"
+  },
+  {
+    "id": "inspect-charxiv-meridianlabs",
+    "name": "Meridian Labs inspect_charxiv evaluation report (GitHub README)",
+    "kind": "leaderboard",
+    "match": [
+      "github.com/meridianlabs-ai/inspect_charxiv/blob/317e4ff4335d7d4242d8e3c803898b7345973bd2/README.md"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://github.com/meridianlabs-ai/inspect_charxiv/blob/317e4ff4335d7d4242d8e3c803898b7345973bd2/LICENSE",
+    "terms_url": "https://github.com/meridianlabs-ai/inspect_charxiv/blob/317e4ff4335d7d4242d8e3c803898b7345973bd2/LICENSE",
+    "quote": "LICENSE at the pinned commit: 'MIT License / Copyright (c) 2026 Meridian Labs / Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files ... to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute ...'; GitHub reports MIT. README 'License and attribution': 'Code in this repository is MIT-licensed. Question/answer content from the CharXiv dataset ... is CC BY-SA 4.0'. The Evaluation Report table is part of the committed README (documentation). The UK AISI inspect_evals register (register/charxiv/eval.yaml) pins this exact commit.",
+    "attribution": "Meridian Labs (contributor jchengjr), inspect_charxiv @317e4ff, MIT. Evaluation Report accuracies. No endorsement.",
+    "scope": "Evaluation Report rows for claude-fable-5, gpt-4o (alias, = gpt-4o-2024-08-06) and gpt-6-astra, descriptive (4,000) and reasoning (1,000) validation subsets.",
+    "verdict": "allowed",
+    "checked": "2026-10-09"
+  },
+  {
+    "id": "first-party-qwen-scores",
+    "name": "Qwen (Alibaba) vendor-reported benchmark scores for its own models (qwen.ai launch posts, Qwen2.5-VL and Qwen3-VL technical reports, Qwen3.8-Flash-Next card)",
+    "kind": "first-party",
+    "match": [
+      "qwen.ai/blog",
+      "arxiv.org/html/2502.13923v1",
+      "arxiv.org/pdf/2511.21631v2",
+      "huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/de4b8e4d43b917e7706784d8bb445c9af86a3540/README.md"
+    ],
+    "exact": true,
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://qwen.ai/blog?id=qwen3.8",
+    "quote": "Owner rule (b), approved 2026-10-07: a vendor's own published score for its own model, from its announcement, model card, tech report or docs, may be recorded by hand one figure at a time with the exact URL, date and printed settings; other labs' cells excluded; rows labelled by: 'lab'; removed if the vendor objects. The qwen.ai posts show no licence or terms statement; arXiv 2502.13923v1 and 2511.21631v2 carry arXiv's non-exclusive distribution licence (http://arxiv.org/licenses/nonexclusive-distrib/1.0/, checked on the abs pages); the Qwen3.8-Flash-Next card is under the 'Qwen Community License 1.0' (Model-as-a-Service / AI Work Assistant commercial restriction). No open-licence claim is made.",
+    "attribution": "Qwen Team (Alibaba), vendor-reported results for Qwen's own models from qwen.ai launch posts, the Qwen2.5-VL and Qwen3-VL technical reports and the pinned Qwen3.8-Flash-Next card; individual figures hand-recorded 2026-10-09; percentages converted to fractions. Lab-reported, not independent. No endorsement.",
+    "scope": "CharXiv (RQ) without code interpreter and CharXiv (DQ) cells for Qwen's own models only. With-CI cells, other labs' columns, and figures that merely repeat a value already counted in another Qwen card run are not used. The matcher ignores query strings, so 'qwen.ai/blog' covers every qwen.ai/blog?id=... post (all Qwen own posts). qwen.ai/blog is client-rendered; content is served by https://qwen.ai/api/v2/article/?language=en-US&path=<id>&type=qwen_ai.",
+    "icon": "qwenlm.github.io",
+    "verdict": "allowed",
+    "checked": "2026-10-09"
+  },
+  {
+    "id": "first-party-moonshot-scores",
+    "name": "Moonshot AI vendor-reported benchmark scores for its own Kimi models (Hugging Face model cards)",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/moonshotai/Kimi-K2.5/blob/4d01dfe0332d63057c186e0b262165819efb6611/README.md",
+      "huggingface.co/moonshotai/Kimi-K2.6/blob/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/README.md",
+      "huggingface.co/moonshotai/Kimi-K3/blob/f831ab66814297da540d832a5235f8e904f29d06/README.md"
+    ],
+    "exact": true,
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://huggingface.co/moonshotai/Kimi-K3/blob/f831ab66814297da540d832a5235f8e904f29d06/LICENSE",
+    "quote": "Owner rule (b), approved 2026-10-07 (vendor's own score for its own model, hand-recorded one figure at a time; other labs' cells excluded; by: 'lab'). Licences at the pinned revisions: Kimi-K2.5 and Kimi-K2.6 LICENSE = 'Modified MIT License' - the standard MIT grant ('Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files ...') plus 'Our only modification part is that, if the Software (or any derivative works thereof) is used for any of your commercial products or services that have more than 100 million monthly active users, or more than 20 million US dollars (or equivalent in other currencies) in monthly revenue, you shall prominently display \"Kimi K2.5\" [resp. \"Kimi K2.6\"] on the user interface of such product or service.' Kimi-K3 LICENSE = 'Kimi K3 License': MIT-style grant but a Model-as-a-Service business with >US$20M revenue over 12 months 'must enter into a separate agreement with Moonshot AI before using the Software or its derivative works for any commercial purpose', plus the same UI-display clause. Because K3 is not open and the K2.x licence is a modified MIT, the entry relies on rule (b) rather than an open-licence claim.",
+    "attribution": "Moonshot AI, vendor-reported results for its own Kimi K2.5, K2.6 and K3 models from the pinned Hugging Face model cards; hand-recorded 2026-10-09; percentages converted to fractions. Lab-reported, not independent. No endorsement.",
+    "scope": "Own Kimi columns only, CharXiv (RQ) without tools. 'w/ python' / with-tool cells and all other labs' columns (several are re-evaluations marked * or cited from Artificial Analysis / Vals AI) are not used. Alternative: if the owner treats Modified MIT as open, K2.5/K2.6 could get card2-moonshotai-kimi-k2-5 / card2-moonshotai-kimi-k2-6 entries instead, but then each card is a one-model CharXiv run (K2.6 card + its K2.5 column would be two).",
+    "icon": "huggingface.co",
+    "verdict": "allowed",
+    "checked": "2026-10-09"
+  },
+  {
+    "id": "first-party-xiaomi-scores",
+    "name": "Xiaomi MiMo vendor-reported benchmark scores for its own models (mimo.xiaomi.com launch pages)",
+    "kind": "first-party",
+    "match": [
+      "mimo.xiaomi.com/mimo-v2-omni",
+      "mimo.xiaomi.com/mimo-v2-5"
+    ],
+    "exact": true,
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://mimo.xiaomi.com/",
+    "quote": "Owner rule (b), approved 2026-10-07 (vendor's own score for its own model, hand-recorded one figure at a time; other labs' cells excluded; by: 'lab'). The launch pages carry 'Xiaomi MiMo Team · 2026'; the mimo.xiaomi.com home page footer reads '© 2010 - 2026 Xiaomi. All Rights Reserved'. No licence is granted, so no open-licence claim is made. Kept separate from first-party-xiaomi, which covers only specifications.",
+    "attribution": "Xiaomi MiMo Team, vendor-reported results for its own MiMo models from the mimo.xiaomi.com launch pages (MiMo-V2-Omni, 2026-03-18; MiMo-V2.5, 2026-04-22); hand-recorded 2026-10-09; percentages converted to fractions. Lab-reported. No endorsement.",
+    "scope": "CharXiv RQ values for MiMo's own models, from the chart data in the page HTML that the page renders as text labels. Other labs' values on the same charts are not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-09"
+  },
+  {
+    "id": "card2-coherelabs-north-micro-vision-instruct",
+    "name": "CohereLabs/North-Micro-Vision-Instruct model card (benchmark table)",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md",
+    "quote": "README front-matter at the pinned revision declares 'license: apache-2.0' (HF API cardData.license 'apache-2.0', repo not gated); card text: 'North Micro Vision Instruct is a 2.4B-parameter open-weight vision-language model with native-resolution image support, released under the Apache 2.0 license.' No separate LICENSE file in the repo (files: README.md, config/tokenizer/preprocessor JSONs, chat_template.jinja, model.safetensors). Benchmark text: 'We ran vision-language and text-only evaluations with VLMEvalKit, capping generation at 1,024 tokens'.",
+    "attribution": "Cohere (Team Cohere / Cohere Labs). CohereLabs/North-Micro-Vision-Instruct model card, revision fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40. Source: https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md. Licence: Apache-2.0. Changes: selected CharXiv (DQ) cells transcribed into JSON; benchmark names clarified. No endorsement.",
+    "scope": "Benchmark Results table, row CharXiv_DQ only (this pass): Cohere's own VLMEvalKit runs of North-Micro-Vision-Instruct and seven comparison models (Ministral-3-3B-Instruct, LFM2.5-VL-1.6B, Phi-3.5-vision-instruct, Gemma-4-E2B-it, Qwen3-VL-2B-Instruct, Qwen3.5-2B-Instruct, SmolVLM2.2B). Linked HF blog post used only for methodology wording, not numbers.",
+    "verdict": "allowed",
+    "checked": "2026-10-09"
   }
 ]

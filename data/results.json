@@ -187893,7 +187893,7 @@
     "source": "https://cohere.com/blog/command-a-plus",
     "by": "lab",
     "date": "2026-05-20",
-    "note": "Text: 'Compared with Command A Reasoning, τ²-Bench Telecom scores improved from 37% to 85%'. Footnote 1: 'τ²-Bench Telecom evaluated using standard settings and user simulation from [Barres et al. 2025]'. Domain pass rate, no aggregate given. Cohere 'Introducing Command A+' blog post (May 20, 2026), fetched 2026-10-08; figure stated in the post's body text (not read from a chart). vendor-reported (rule b): Cohere's own figure for its own model, hand-recorded. Comparator printed in the same sentence is Command A Reasoning / Command A Vision, which are not catalogue models, so this run has one catalogue model and will not count until a second Cohere model with the same benchmark is in the catalogue.",
+    "note": "Text: 'Compared with Command A Reasoning, τ²-Bench Telecom scores improved from 37% to 85%'. Footnote 1: 'τ²-Bench Telecom evaluated using standard settings and user simulation from [Barres et al. 2025]'. Domain pass rate, no aggregate given. Cohere 'Introducing Command A+' blog post (May 20, 2026), fetched 2026-10-08; figure stated in the post's body text (not read from a chart). vendor-reported (rule b): Cohere's own figure for its own model, hand-recorded. Comparator printed in the same sentence: Command A Reasoning (08-2025) or Command A Vision (07-2025), recorded from the same post.",
     "source_id": "first-party-cohere-scores"
   },
   {
@@ -187903,7 +187903,7 @@
     "source": "https://cohere.com/blog/command-a-plus",
     "by": "lab",
     "date": "2026-05-20",
-    "note": "Text: 'agentic coding performance on Terminal-Bench Hard reaching 25% from 3%' (Command A Reasoning 3%). Footnote 1: 'Terminal-Bench Hard evaluated using Terminus-2 harness following the methodology of Artificial Analysis' (Cohere's own run; not an Artificial Analysis number). Mapped to the catalogue's only 'Terminal Bench Hard' id; review that the Gemma 4 report's TB-Hard is the same subset. Cohere 'Introducing Command A+' blog post (May 20, 2026), fetched 2026-10-08; figure stated in the post's body text (not read from a chart). vendor-reported (rule b): Cohere's own figure for its own model, hand-recorded. Comparator printed in the same sentence is Command A Reasoning / Command A Vision, which are not catalogue models, so this run has one catalogue model and will not count until a second Cohere model with the same benchmark is in the catalogue.",
+    "note": "Text: 'agentic coding performance on Terminal-Bench Hard reaching 25% from 3%' (Command A Reasoning 3%). Footnote 1: 'Terminal-Bench Hard evaluated using Terminus-2 harness following the methodology of Artificial Analysis' (Cohere's own run; not an Artificial Analysis number). Mapped to the catalogue's only 'Terminal Bench Hard' id; review that the Gemma 4 report's TB-Hard is the same subset. Cohere 'Introducing Command A+' blog post (May 20, 2026), fetched 2026-10-08; figure stated in the post's body text (not read from a chart). vendor-reported (rule b): Cohere's own figure for its own model, hand-recorded. Comparator printed in the same sentence: Command A Reasoning (08-2025) or Command A Vision (07-2025), recorded from the same post.",
     "source_id": "first-party-cohere-scores"
   },
   {
@@ -187913,7 +187913,7 @@
     "source": "https://cohere.com/blog/command-a-plus",
     "by": "lab",
     "date": "2026-05-20",
-    "note": "Text: 'CharXiv reasoning improved from 46.9% to 52.7%' (Command A Vision 46.9%). Image 5 caption: 'We follow standard methodology for the given benchmarks.' Cohere 'Introducing Command A+' blog post (May 20, 2026), fetched 2026-10-08; figure stated in the post's body text (not read from a chart). vendor-reported (rule b): Cohere's own figure for its own model, hand-recorded. Comparator printed in the same sentence is Command A Reasoning / Command A Vision, which are not catalogue models, so this run has one catalogue model and will not count until a second Cohere model with the same benchmark is in the catalogue.",
+    "note": "Text: 'CharXiv reasoning improved from 46.9% to 52.7%' (Command A Vision 46.9%). Image 5 caption: 'We follow standard methodology for the given benchmarks.' Cohere 'Introducing Command A+' blog post (May 20, 2026), fetched 2026-10-08; figure stated in the post's body text (not read from a chart). vendor-reported (rule b): Cohere's own figure for its own model, hand-recorded. Comparator printed in the same sentence: Command A Reasoning (08-2025) or Command A Vision (07-2025), recorded from the same post.",
     "source_id": "first-party-cohere-scores"
   },
   {
@@ -202445,5 +202445,885 @@
     "date": "2024-10-18",
     "note": "'From Test-Taking to Test-Making' (arXiv 2410.14897v1) Table 3 'Answering accuracy on COPA test set', row 'phi-2', Accuracy = 0.902. Authors' own run (Sec. 5): 4-shot prompt (Table 2 template, four items from the COPA development set), greedy decoding, Hugging Face inference endpoints; checkpoints named in the Sec. 4 footnotes (bigscience/bloom and bloom-7b1, tiiuae/falcon-7b and 40b, meta-llama/Llama-2-7b/13b/70b, mosaicml/mpt-7b, microsoft/phi-2). COPA test set (500 items). Mistral-7B (v0.3 base), MPT-30B are not catalogue checkpoints and are not recorded.",
     "source_id": "paper-2410.14897v1-gencopa"
+  },
+  {
+    "model": "command-a-plus",
+    "bench": "aime-2025",
+    "score": 0.9,
+    "source": "https://cohere.com/blog/command-a-plus",
+    "by": "lab",
+    "date": "2026-05-20",
+    "note": "Image 3 ('Performance for Command A+ and Command A Reasoning on a range of popular open-source benchmarks'), bar labelled 'AIME 25', Command A+ '90%'. Footnote 1: 'AIME 2025 is evaluated on the official 2025 set of 30 questions, each question being repeated 10 times. The score is the pass@1 over this 300 sample dataset.' Cohere 'Introducing Command A+' blog post (May 20, 2026), fetched 2026-10-09; value printed as a data label on the chart (not read from bar height). vendor-reported (rule b): Cohere's own figure for its own model, hand-recorded. Reasoning setting not stated (Command A+ and Command A Reasoning are reasoning models; default thinking assumed by the post).",
+    "source_id": "first-party-cohere-scores"
+  },
+  {
+    "model": "command-a-reasoning-08-2025",
+    "bench": "aime-2025",
+    "score": 0.57,
+    "source": "https://cohere.com/blog/command-a-plus",
+    "by": "lab",
+    "date": "2026-05-20",
+    "note": "Image 3 ('Performance for Command A+ and Command A Reasoning on a range of popular open-source benchmarks'), bar labelled 'AIME 25', Command A Reasoning '57%'. Footnote 1: 'AIME 2025 is evaluated on the official 2025 set of 30 questions, each question being repeated 10 times. The score is the pass@1 over this 300 sample dataset.' Cohere 'Introducing Command A+' blog post (May 20, 2026), fetched 2026-10-09; value printed as a data label on the chart (not read from bar height). vendor-reported (rule b): Cohere's own figure for its own model, hand-recorded. Reasoning setting not stated (Command A+ and Command A Reasoning are reasoning models; default thinking assumed by the post).",
+    "source_id": "first-party-cohere-scores"
+  },
+  {
+    "model": "command-a-plus",
+    "bench": "ifbench-prompt-loose",
+    "score": 0.74,
+    "source": "https://cohere.com/blog/command-a-plus",
+    "by": "lab",
+    "date": "2026-05-20",
+    "note": "Image 3 ('Performance for Command A+ and Command A Reasoning on a range of popular open-source benchmarks'), bar labelled 'IFBench', Command A+ '74%'. Footnote 1: 'IFBench is for single turn, loose evaluation mode and the score reported corresponds to prompt accuracy over 1470 samples corresponding to 294 unique prompts repeated five times.' Cohere 'Introducing Command A+' blog post (May 20, 2026), fetched 2026-10-09; value printed as a data label on the chart (not read from bar height). vendor-reported (rule b): Cohere's own figure for its own model, hand-recorded. Reasoning setting not stated (Command A+ and Command A Reasoning are reasoning models; default thinking assumed by the post).",
+    "source_id": "first-party-cohere-scores"
+  },
+  {
+    "model": "command-a-reasoning-08-2025",
+    "bench": "ifbench-prompt-loose",
+    "score": 0.36,
+    "source": "https://cohere.com/blog/command-a-plus",
+    "by": "lab",
+    "date": "2026-05-20",
+    "note": "Image 3 ('Performance for Command A+ and Command A Reasoning on a range of popular open-source benchmarks'), bar labelled 'IFBench', Command A Reasoning '36%'. Footnote 1: 'IFBench is for single turn, loose evaluation mode and the score reported corresponds to prompt accuracy over 1470 samples corresponding to 294 unique prompts repeated five times.' Cohere 'Introducing Command A+' blog post (May 20, 2026), fetched 2026-10-09; value printed as a data label on the chart (not read from bar height). vendor-reported (rule b): Cohere's own figure for its own model, hand-recorded. Reasoning setting not stated (Command A+ and Command A Reasoning are reasoning models; default thinking assumed by the post).",
+    "source_id": "first-party-cohere-scores"
+  },
+  {
+    "model": "command-a-plus",
+    "bench": "scicode-unspecified",
+    "score": 0.38,
+    "source": "https://cohere.com/blog/command-a-plus",
+    "by": "lab",
+    "date": "2026-05-20",
+    "note": "Image 3 ('Performance for Command A+ and Command A Reasoning on a range of popular open-source benchmarks'), bar labelled 'SciCode', Command A+ '38%'. Footnote 1: 'Scicode evaluated using 65 test problems which includes 288 subproblems. We prompt each subproblem with the scientist-annotated background following the methodology of Artificial Analysis.' Main-problem vs subproblem scoring not stated, so the unspecified id (Cohere's own run, not an Artificial Analysis number). Cohere 'Introducing Command A+' blog post (May 20, 2026), fetched 2026-10-09; value printed as a data label on the chart (not read from bar height). vendor-reported (rule b): Cohere's own figure for its own model, hand-recorded. Reasoning setting not stated (Command A+ and Command A Reasoning are reasoning models; default thinking assumed by the post).",
+    "source_id": "first-party-cohere-scores"
+  },
+  {
+    "model": "command-a-reasoning-08-2025",
+    "bench": "scicode-unspecified",
+    "score": 0.3,
+    "source": "https://cohere.com/blog/command-a-plus",
+    "by": "lab",
+    "date": "2026-05-20",
+    "note": "Image 3 ('Performance for Command A+ and Command A Reasoning on a range of popular open-source benchmarks'), bar labelled 'SciCode', Command A Reasoning '30%'. Footnote 1: 'Scicode evaluated using 65 test problems which includes 288 subproblems. We prompt each subproblem with the scientist-annotated background following the methodology of Artificial Analysis.' Main-problem vs subproblem scoring not stated, so the unspecified id (Cohere's own run, not an Artificial Analysis number). Cohere 'Introducing Command A+' blog post (May 20, 2026), fetched 2026-10-09; value printed as a data label on the chart (not read from bar height). vendor-reported (rule b): Cohere's own figure for its own model, hand-recorded. Reasoning setting not stated (Command A+ and Command A Reasoning are reasoning models; default thinking assumed by the post).",
+    "source_id": "first-party-cohere-scores"
+  },
+  {
+    "model": "command-a-plus",
+    "bench": "charxiv-dq",
+    "score": 0.88,
+    "source": "https://cohere.com/blog/command-a-plus",
+    "by": "lab",
+    "date": "2026-05-20",
+    "note": "Image 5 ('Comparison of multimodal performance for Command A+ and Command A Vision ... We follow standard methodology for the given benchmarks'), bar labelled 'CharXiv (descriptive)', Command A+ '88%'. Split not printed; the same chart's CharXiv (reasoning) labels (53%/47%) match the body text's 52.7%/46.9% already recorded under charxiv-rq. Cohere 'Introducing Command A+' blog post (May 20, 2026), fetched 2026-10-09; value printed as a data label on the chart (not read from bar height). vendor-reported (rule b): Cohere's own figure for its own model, hand-recorded. Reasoning setting not stated (Command A+ and Command A Reasoning are reasoning models; default thinking assumed by the post).",
+    "source_id": "first-party-cohere-scores"
+  },
+  {
+    "model": "command-a-vision-07-2025",
+    "bench": "charxiv-dq",
+    "score": 0.82,
+    "source": "https://cohere.com/blog/command-a-plus",
+    "by": "lab",
+    "date": "2026-05-20",
+    "note": "Image 5 ('Comparison of multimodal performance for Command A+ and Command A Vision ... We follow standard methodology for the given benchmarks'), bar labelled 'CharXiv (descriptive)', Command A Vision '82%'. Split not printed; see the Command A+ row. Cohere 'Introducing Command A+' blog post (May 20, 2026), fetched 2026-10-09; value printed as a data label on the chart (not read from bar height). vendor-reported (rule b): Cohere's own figure for its own model, hand-recorded. Reasoning setting not stated (Command A+ and Command A Reasoning are reasoning models; default thinking assumed by the post).",
+    "source_id": "first-party-cohere-scores"
+  },
+  {
+    "model": "gpt-5-6-sol",
+    "bench": "terminal-bench-4",
+    "score": 0.373,
+    "source": "https://openai.com/index/gpt-6-astra",
+    "by": "lab",
+    "date": "2026-09-03",
+    "note": "OpenAI 'GPT-6 Astra: A new generation of intelligence' (Sep 3, 2026), Coding table, row 'Terminal-Bench 4.0', column 'GPT-5.6 Sol' = 37.3% (also in the text: 'compared with 37.3% for GPT-5.6 Sol'). Page note: 'Evaluation scores are the maximum at any effort. GPT evaluations were run in our research environment or via our API'; footnote 2: 'GPT-5.6 Sol refers to the version available in our API, ChatGPT Codex, and ChatGPT Work.' Harness not stated. Read from Internet Archive capture 20261004191257 (openai.com returns HTTP 403 to direct fetches). vendor-reported (rule b): OpenAI's own figure for its own model, hand-recorded 2026-10-09; the public leaderboard's maintainer run (37.27%, Codex) is recorded separately.",
+    "source_id": "first-party-openai-scores"
+  },
+  {
+    "model": "apriel-1-6-15b-thinker",
+    "bench": "charxiv-rq",
+    "score": 0.56,
+    "source": "https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md",
+    "by": "lab",
+    "date": "2025-12-22",
+    "note": "ServiceNow-AI/Apriel-1.6-15b-Thinker model card @5810d5f (MIT; commit 2025-12-22), Evaluation section, image-benchmark table under the line 'For image benchmarks, we report evaluations obtained by https://github.com/open-compass/VLMEvalKit' (the card also states 'All other benchmarks were evaluated internally'; only AA-Index text benchmarks are third-party). Row 'CharXiv (reasoning)', column 'Apriel-1.6-15B-Thinker' = 56.00. Setting: own model; reasoning mode is the model default (always thinks). Split not printed; VLMEvalKit's CharXiv tasks use the validation set (CharXiv_reasoning_val / CharXiv_descriptive_val). Same ServiceNow measurements as the Apriel-1.5 paper (arXiv 2510.01141v1, Table 4) for the overlapping models; only the three models absent from this card are taken from the paper, so nothing is recorded twice.",
+    "source_id": "card-final-apriel-1-6-15b-thinker"
+  },
+  {
+    "model": "apriel-1-6-15b-thinker",
+    "bench": "charxiv-dq",
+    "score": 0.8985,
+    "source": "https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md",
+    "by": "lab",
+    "date": "2025-12-22",
+    "note": "ServiceNow-AI/Apriel-1.6-15b-Thinker model card @5810d5f (MIT; commit 2025-12-22), Evaluation section, image-benchmark table under the line 'For image benchmarks, we report evaluations obtained by https://github.com/open-compass/VLMEvalKit' (the card also states 'All other benchmarks were evaluated internally'; only AA-Index text benchmarks are third-party). Row 'CharXiv (descriptive)', column 'Apriel-1.6-15B-Thinker' = 89.85. Setting: own model; reasoning mode is the model default (always thinks). Split not printed; VLMEvalKit's CharXiv tasks use the validation set (CharXiv_reasoning_val / CharXiv_descriptive_val). Same ServiceNow measurements as the Apriel-1.5 paper (arXiv 2510.01141v1, Table 4) for the overlapping models; only the three models absent from this card are taken from the paper, so nothing is recorded twice.",
+    "source_id": "card-final-apriel-1-6-15b-thinker"
+  },
+  {
+    "model": "gpt-5",
+    "bench": "charxiv-rq",
+    "score": 0.715,
+    "source": "https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md",
+    "by": "independent",
+    "date": "2025-12-22",
+    "note": "ServiceNow-AI/Apriel-1.6-15b-Thinker model card @5810d5f (MIT; commit 2025-12-22), Evaluation section, image-benchmark table under the line 'For image benchmarks, we report evaluations obtained by https://github.com/open-compass/VLMEvalKit' (the card also states 'All other benchmarks were evaluated internally'; only AA-Index text benchmarks are third-party). Row 'CharXiv (reasoning)', column 'GPT-5 (high)' = 71.50. Setting: reasoning effort high (label); the same table also has a GPT-5 (Minimal) column (82.45 / 52.80), not used per highest-setting rule; gpt-5 = gpt-5-2025-08-07, the only GPT-5 snapshot. Split not printed; VLMEvalKit's CharXiv tasks use the validation set (CharXiv_reasoning_val / CharXiv_descriptive_val). Same ServiceNow measurements as the Apriel-1.5 paper (arXiv 2510.01141v1, Table 4) for the overlapping models; only the three models absent from this card are taken from the paper, so nothing is recorded twice.",
+    "source_id": "card-final-apriel-1-6-15b-thinker"
+  },
+  {
+    "model": "gpt-5",
+    "bench": "charxiv-dq",
+    "score": 0.9125,
+    "source": "https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md",
+    "by": "independent",
+    "date": "2025-12-22",
+    "note": "ServiceNow-AI/Apriel-1.6-15b-Thinker model card @5810d5f (MIT; commit 2025-12-22), Evaluation section, image-benchmark table under the line 'For image benchmarks, we report evaluations obtained by https://github.com/open-compass/VLMEvalKit' (the card also states 'All other benchmarks were evaluated internally'; only AA-Index text benchmarks are third-party). Row 'CharXiv (descriptive)', column 'GPT-5 (high)' = 91.25. Setting: reasoning effort high (label); the same table also has a GPT-5 (Minimal) column (82.45 / 52.80), not used per highest-setting rule; gpt-5 = gpt-5-2025-08-07, the only GPT-5 snapshot. Split not printed; VLMEvalKit's CharXiv tasks use the validation set (CharXiv_reasoning_val / CharXiv_descriptive_val). Same ServiceNow measurements as the Apriel-1.5 paper (arXiv 2510.01141v1, Table 4) for the overlapping models; only the three models absent from this card are taken from the paper, so nothing is recorded twice.",
+    "source_id": "card-final-apriel-1-6-15b-thinker"
+  },
+  {
+    "model": "glm-4-5v",
+    "bench": "charxiv-rq",
+    "score": 0.63,
+    "source": "https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md",
+    "by": "independent",
+    "date": "2025-12-22",
+    "note": "ServiceNow-AI/Apriel-1.6-15b-Thinker model card @5810d5f (MIT; commit 2025-12-22), Evaluation section, image-benchmark table under the line 'For image benchmarks, we report evaluations obtained by https://github.com/open-compass/VLMEvalKit' (the card also states 'All other benchmarks were evaluated internally'; only AA-Index text benchmarks are third-party). Row 'CharXiv (reasoning)', column 'GLM-4.5V (Thinking)' = 63.00. Setting: thinking mode; GLM-4.5V is the single open-weights release zai-org/GLM-4.5V. Split not printed; VLMEvalKit's CharXiv tasks use the validation set (CharXiv_reasoning_val / CharXiv_descriptive_val). Same ServiceNow measurements as the Apriel-1.5 paper (arXiv 2510.01141v1, Table 4) for the overlapping models; only the three models absent from this card are taken from the paper, so nothing is recorded twice.",
+    "source_id": "card-final-apriel-1-6-15b-thinker"
+  },
+  {
+    "model": "glm-4-5v",
+    "bench": "charxiv-dq",
+    "score": 0.908,
+    "source": "https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md",
+    "by": "independent",
+    "date": "2025-12-22",
+    "note": "ServiceNow-AI/Apriel-1.6-15b-Thinker model card @5810d5f (MIT; commit 2025-12-22), Evaluation section, image-benchmark table under the line 'For image benchmarks, we report evaluations obtained by https://github.com/open-compass/VLMEvalKit' (the card also states 'All other benchmarks were evaluated internally'; only AA-Index text benchmarks are third-party). Row 'CharXiv (descriptive)', column 'GLM-4.5V (Thinking)' = 90.80. Setting: thinking mode; GLM-4.5V is the single open-weights release zai-org/GLM-4.5V. Split not printed; VLMEvalKit's CharXiv tasks use the validation set (CharXiv_reasoning_val / CharXiv_descriptive_val). Same ServiceNow measurements as the Apriel-1.5 paper (arXiv 2510.01141v1, Table 4) for the overlapping models; only the three models absent from this card are taken from the paper, so nothing is recorded twice.",
+    "source_id": "card-final-apriel-1-6-15b-thinker"
+  },
+  {
+    "model": "gemini-2-5-flash",
+    "bench": "charxiv-rq",
+    "score": 0.565,
+    "source": "https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md",
+    "by": "independent",
+    "date": "2025-12-22",
+    "note": "ServiceNow-AI/Apriel-1.6-15b-Thinker model card @5810d5f (MIT; commit 2025-12-22), Evaluation section, image-benchmark table under the line 'For image benchmarks, we report evaluations obtained by https://github.com/open-compass/VLMEvalKit' (the card also states 'All other benchmarks were evaluated internally'; only AA-Index text benchmarks are third-party). Row 'CharXiv (reasoning)', column 'Gemini 2.5 Flash (high)' = 56.50. Setting: thinking budget high (label). No date printed; mapped to the stable gemini-2.5-flash (GA June 2025): the same card labels the September preview explicitly as \"Gemini 2.5 Flash (Sep)\" in its text table, and the image table repeats the Apriel-1.5 paper (2025-10-01) numbers, which predate wide use of the 09-2025 preview. Identity judgement, see md. Split not printed; VLMEvalKit's CharXiv tasks use the validation set (CharXiv_reasoning_val / CharXiv_descriptive_val). Same ServiceNow measurements as the Apriel-1.5 paper (arXiv 2510.01141v1, Table 4) for the overlapping models; only the three models absent from this card are taken from the paper, so nothing is recorded twice.",
+    "source_id": "card-final-apriel-1-6-15b-thinker"
+  },
+  {
+    "model": "gemini-2-5-flash",
+    "bench": "charxiv-dq",
+    "score": 0.836,
+    "source": "https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md",
+    "by": "independent",
+    "date": "2025-12-22",
+    "note": "ServiceNow-AI/Apriel-1.6-15b-Thinker model card @5810d5f (MIT; commit 2025-12-22), Evaluation section, image-benchmark table under the line 'For image benchmarks, we report evaluations obtained by https://github.com/open-compass/VLMEvalKit' (the card also states 'All other benchmarks were evaluated internally'; only AA-Index text benchmarks are third-party). Row 'CharXiv (descriptive)', column 'Gemini 2.5 Flash (high)' = 83.60. Setting: thinking budget high (label). No date printed; mapped to the stable gemini-2.5-flash (GA June 2025): the same card labels the September preview explicitly as \"Gemini 2.5 Flash (Sep)\" in its text table, and the image table repeats the Apriel-1.5 paper (2025-10-01) numbers, which predate wide use of the 09-2025 preview. Identity judgement, see md. Split not printed; VLMEvalKit's CharXiv tasks use the validation set (CharXiv_reasoning_val / CharXiv_descriptive_val). Same ServiceNow measurements as the Apriel-1.5 paper (arXiv 2510.01141v1, Table 4) for the overlapping models; only the three models absent from this card are taken from the paper, so nothing is recorded twice.",
+    "source_id": "card-final-apriel-1-6-15b-thinker"
+  },
+  {
+    "model": "claude-3-7-sonnet-20250219",
+    "bench": "charxiv-rq",
+    "score": 0.709,
+    "source": "https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md",
+    "by": "independent",
+    "date": "2025-12-22",
+    "note": "ServiceNow-AI/Apriel-1.6-15b-Thinker model card @5810d5f (MIT; commit 2025-12-22), Evaluation section, image-benchmark table under the line 'For image benchmarks, we report evaluations obtained by https://github.com/open-compass/VLMEvalKit' (the card also states 'All other benchmarks were evaluated internally'; only AA-Index text benchmarks are third-party). Row 'CharXiv (reasoning)', column 'Claude Sonnet 3.7 (Thinking)' = 70.90. Setting: extended thinking on (budget not stated); claude-3-7-sonnet-20250219 is the only 3.7 Sonnet snapshot. Split not printed; VLMEvalKit's CharXiv tasks use the validation set (CharXiv_reasoning_val / CharXiv_descriptive_val). Same ServiceNow measurements as the Apriel-1.5 paper (arXiv 2510.01141v1, Table 4) for the overlapping models; only the three models absent from this card are taken from the paper, so nothing is recorded twice.",
+    "source_id": "card-final-apriel-1-6-15b-thinker"
+  },
+  {
+    "model": "claude-3-7-sonnet-20250219",
+    "bench": "charxiv-dq",
+    "score": 0.9327,
+    "source": "https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md",
+    "by": "independent",
+    "date": "2025-12-22",
+    "note": "ServiceNow-AI/Apriel-1.6-15b-Thinker model card @5810d5f (MIT; commit 2025-12-22), Evaluation section, image-benchmark table under the line 'For image benchmarks, we report evaluations obtained by https://github.com/open-compass/VLMEvalKit' (the card also states 'All other benchmarks were evaluated internally'; only AA-Index text benchmarks are third-party). Row 'CharXiv (descriptive)', column 'Claude Sonnet 3.7 (Thinking)' = 93.27. Setting: extended thinking on (budget not stated); claude-3-7-sonnet-20250219 is the only 3.7 Sonnet snapshot. Split not printed; VLMEvalKit's CharXiv tasks use the validation set (CharXiv_reasoning_val / CharXiv_descriptive_val). Same ServiceNow measurements as the Apriel-1.5 paper (arXiv 2510.01141v1, Table 4) for the overlapping models; only the three models absent from this card are taken from the paper, so nothing is recorded twice.",
+    "source_id": "card-final-apriel-1-6-15b-thinker"
+  },
+  {
+    "model": "grok-4-fast",
+    "bench": "charxiv-rq",
+    "score": 0.335,
+    "source": "https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md",
+    "by": "independent",
+    "date": "2025-12-22",
+    "note": "ServiceNow-AI/Apriel-1.6-15b-Thinker model card @5810d5f (MIT; commit 2025-12-22), Evaluation section, image-benchmark table under the line 'For image benchmarks, we report evaluations obtained by https://github.com/open-compass/VLMEvalKit' (the card also states 'All other benchmarks were evaluated internally'; only AA-Index text benchmarks are third-party). Row 'CharXiv (reasoning)', column 'Grok 4 Fast (Thinking)' = 33.50. Setting: reasoning mode of grok-4-fast (xAI unified model; thinking = grok-4-fast-reasoning). Low but far above the 10.8% random baseline printed by CharXiv. Split not printed; VLMEvalKit's CharXiv tasks use the validation set (CharXiv_reasoning_val / CharXiv_descriptive_val). Same ServiceNow measurements as the Apriel-1.5 paper (arXiv 2510.01141v1, Table 4) for the overlapping models; only the three models absent from this card are taken from the paper, so nothing is recorded twice.",
+    "source_id": "card-final-apriel-1-6-15b-thinker"
+  },
+  {
+    "model": "grok-4-fast",
+    "bench": "charxiv-dq",
+    "score": 0.6815,
+    "source": "https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md",
+    "by": "independent",
+    "date": "2025-12-22",
+    "note": "ServiceNow-AI/Apriel-1.6-15b-Thinker model card @5810d5f (MIT; commit 2025-12-22), Evaluation section, image-benchmark table under the line 'For image benchmarks, we report evaluations obtained by https://github.com/open-compass/VLMEvalKit' (the card also states 'All other benchmarks were evaluated internally'; only AA-Index text benchmarks are third-party). Row 'CharXiv (descriptive)', column 'Grok 4 Fast (Thinking)' = 68.15. Setting: reasoning mode of grok-4-fast (xAI unified model; thinking = grok-4-fast-reasoning). Low but far above the 10.8% random baseline printed by CharXiv. Split not printed; VLMEvalKit's CharXiv tasks use the validation set (CharXiv_reasoning_val / CharXiv_descriptive_val). Same ServiceNow measurements as the Apriel-1.5 paper (arXiv 2510.01141v1, Table 4) for the overlapping models; only the three models absent from this card are taken from the paper, so nothing is recorded twice.",
+    "source_id": "card-final-apriel-1-6-15b-thinker"
+  },
+  {
+    "model": "llama-4-maverick",
+    "bench": "charxiv-rq",
+    "score": 0.55,
+    "source": "https://arxiv.org/abs/2510.01141v1",
+    "by": "independent",
+    "date": "2025-10-01",
+    "note": "Radhakrishna et al. (ServiceNow), 'Apriel-1.5-15b-Thinker', arXiv 2510.01141v1 (CC BY 4.0), Table 4 (multimodal benchmarks), row 'Llama 4 Maverick', column 'CharXiv R' = 55.00. §5.2: 'We evaluate vision capabilities using the VLMEvalKit toolkit ... adopt consistent prompts and inference settings across models to ensure fair comparisons' (authors' own runs; the AA-sourced numbers in the paper are the text Table 3 only). Identity: Llama-4-Maverick-17B-128E-Instruct is the only Maverick chat release; non-reasoning model. Split not printed; VLMEvalKit CharXiv = validation set. The other Table 4 models (GPT-5, GLM-4.5V, Gemini 2.5 Flash, Claude 3.7 Sonnet, Grok 4 Fast) are recorded from the Apriel-1.6 card, which reprints the same ServiceNow measurements, so they are not duplicated here; Kimi-VL-2506 and Apriel-1.5 are not catalogued.",
+    "source_id": "paper-2510.01141v1-apriel-1-5"
+  },
+  {
+    "model": "llama-4-maverick",
+    "bench": "charxiv-dq",
+    "score": 0.877,
+    "source": "https://arxiv.org/abs/2510.01141v1",
+    "by": "independent",
+    "date": "2025-10-01",
+    "note": "Radhakrishna et al. (ServiceNow), 'Apriel-1.5-15b-Thinker', arXiv 2510.01141v1 (CC BY 4.0), Table 4 (multimodal benchmarks), row 'Llama 4 Maverick', column 'CharXiv Des' = 87.70. §5.2: 'We evaluate vision capabilities using the VLMEvalKit toolkit ... adopt consistent prompts and inference settings across models to ensure fair comparisons' (authors' own runs; the AA-sourced numbers in the paper are the text Table 3 only). Identity: Llama-4-Maverick-17B-128E-Instruct is the only Maverick chat release; non-reasoning model. Split not printed; VLMEvalKit CharXiv = validation set. The other Table 4 models (GPT-5, GLM-4.5V, Gemini 2.5 Flash, Claude 3.7 Sonnet, Grok 4 Fast) are recorded from the Apriel-1.6 card, which reprints the same ServiceNow measurements, so they are not duplicated here; Kimi-VL-2506 and Apriel-1.5 are not catalogued.",
+    "source_id": "paper-2510.01141v1-apriel-1-5"
+  },
+  {
+    "model": "qwen2-5-vl-32b",
+    "bench": "charxiv-rq",
+    "score": 0.391,
+    "source": "https://arxiv.org/abs/2510.01141v1",
+    "by": "independent",
+    "date": "2025-10-01",
+    "note": "Radhakrishna et al. (ServiceNow), 'Apriel-1.5-15b-Thinker', arXiv 2510.01141v1 (CC BY 4.0), Table 4 (multimodal benchmarks), row 'Qwen 2.5 VL 32B-Instruct', column 'CharXiv R' = 39.10. §5.2: 'We evaluate vision capabilities using the VLMEvalKit toolkit ... adopt consistent prompts and inference settings across models to ensure fair comparisons' (authors' own runs; the AA-sourced numbers in the paper are the text Table 3 only). Identity: Qwen/Qwen2.5-VL-32B-Instruct. Split not printed; VLMEvalKit CharXiv = validation set. The other Table 4 models (GPT-5, GLM-4.5V, Gemini 2.5 Flash, Claude 3.7 Sonnet, Grok 4 Fast) are recorded from the Apriel-1.6 card, which reprints the same ServiceNow measurements, so they are not duplicated here; Kimi-VL-2506 and Apriel-1.5 are not catalogued.",
+    "source_id": "paper-2510.01141v1-apriel-1-5"
+  },
+  {
+    "model": "qwen2-5-vl-32b",
+    "bench": "charxiv-dq",
+    "score": 0.725,
+    "source": "https://arxiv.org/abs/2510.01141v1",
+    "by": "independent",
+    "date": "2025-10-01",
+    "note": "Radhakrishna et al. (ServiceNow), 'Apriel-1.5-15b-Thinker', arXiv 2510.01141v1 (CC BY 4.0), Table 4 (multimodal benchmarks), row 'Qwen 2.5 VL 32B-Instruct', column 'CharXiv Des' = 72.50. §5.2: 'We evaluate vision capabilities using the VLMEvalKit toolkit ... adopt consistent prompts and inference settings across models to ensure fair comparisons' (authors' own runs; the AA-sourced numbers in the paper are the text Table 3 only). Identity: Qwen/Qwen2.5-VL-32B-Instruct. Split not printed; VLMEvalKit CharXiv = validation set. The other Table 4 models (GPT-5, GLM-4.5V, Gemini 2.5 Flash, Claude 3.7 Sonnet, Grok 4 Fast) are recorded from the Apriel-1.6 card, which reprints the same ServiceNow measurements, so they are not duplicated here; Kimi-VL-2506 and Apriel-1.5 are not catalogued.",
+    "source_id": "paper-2510.01141v1-apriel-1-5"
+  },
+  {
+    "model": "magistral-small-2509",
+    "bench": "charxiv-rq",
+    "score": 0.529,
+    "source": "https://arxiv.org/abs/2510.01141v1",
+    "by": "independent",
+    "date": "2025-10-01",
+    "note": "Radhakrishna et al. (ServiceNow), 'Apriel-1.5-15b-Thinker', arXiv 2510.01141v1 (CC BY 4.0), Table 4 (multimodal benchmarks), row 'Magistral Small-2509', column 'CharXiv R' = 52.90. §5.2: 'We evaluate vision capabilities using the VLMEvalKit toolkit ... adopt consistent prompts and inference settings across models to ensure fair comparisons' (authors' own runs; the AA-sourced numbers in the paper are the text Table 3 only). Identity: mistralai/Magistral-Small-2509 (Magistral Small 1.2, reasoning model with vision). Split not printed; VLMEvalKit CharXiv = validation set. The other Table 4 models (GPT-5, GLM-4.5V, Gemini 2.5 Flash, Claude 3.7 Sonnet, Grok 4 Fast) are recorded from the Apriel-1.6 card, which reprints the same ServiceNow measurements, so they are not duplicated here; Kimi-VL-2506 and Apriel-1.5 are not catalogued.",
+    "source_id": "paper-2510.01141v1-apriel-1-5"
+  },
+  {
+    "model": "magistral-small-2509",
+    "bench": "charxiv-dq",
+    "score": 0.8227,
+    "source": "https://arxiv.org/abs/2510.01141v1",
+    "by": "independent",
+    "date": "2025-10-01",
+    "note": "Radhakrishna et al. (ServiceNow), 'Apriel-1.5-15b-Thinker', arXiv 2510.01141v1 (CC BY 4.0), Table 4 (multimodal benchmarks), row 'Magistral Small-2509', column 'CharXiv Des' = 82.27. §5.2: 'We evaluate vision capabilities using the VLMEvalKit toolkit ... adopt consistent prompts and inference settings across models to ensure fair comparisons' (authors' own runs; the AA-sourced numbers in the paper are the text Table 3 only). Identity: mistralai/Magistral-Small-2509 (Magistral Small 1.2, reasoning model with vision). Split not printed; VLMEvalKit CharXiv = validation set. The other Table 4 models (GPT-5, GLM-4.5V, Gemini 2.5 Flash, Claude 3.7 Sonnet, Grok 4 Fast) are recorded from the Apriel-1.6 card, which reprints the same ServiceNow measurements, so they are not duplicated here; Kimi-VL-2506 and Apriel-1.5 are not catalogued.",
+    "source_id": "paper-2510.01141v1-apriel-1-5"
+  },
+  {
+    "model": "claude-fable-5",
+    "bench": "charxiv-rq",
+    "score": 0.866,
+    "source": "https://github.com/meridianlabs-ai/inspect_charxiv/blob/317e4ff4335d7d4242d8e3c803898b7345973bd2/README.md",
+    "by": "independent",
+    "date": "2026-09-11",
+    "note": "Meridian Labs inspect_charxiv README @317e4ff (MIT; the commit the UK AISI inspect_evals register pins), 'Evaluation Report' table, row 'anthropic/claude-fable-5' / Subset 'Reasoning' / Samples 1000 / Epochs 1 = '86.6% accuracy' (stderr 1.1). Rows for Fable 5 and GPT-4o were added 2026-09-11 (commit 114bd95), after the 2026-09-08 grading fixes; GPT-6 Astra added 2026-09-11 (414ee24). Validation set (1000 reasoning questions = CharXiv val). Protocol deviations stated by the repo: one question per prompt (original batches per chart), apply_corrections=True (typo-corrected targets accepted as alternatives), grader openai/gpt-4o alias (original grader gpt-4o-2024-05-13). Identity: Anthropic API id claude-fable-5 = catalogue claude-fable-5; reasoning/thinking not set in the README (Inspect defaults, no extended-thinking budget stated).",
+    "source_id": "inspect-charxiv-meridianlabs"
+  },
+  {
+    "model": "claude-fable-5",
+    "bench": "charxiv-dq",
+    "score": 0.943,
+    "source": "https://github.com/meridianlabs-ai/inspect_charxiv/blob/317e4ff4335d7d4242d8e3c803898b7345973bd2/README.md",
+    "by": "independent",
+    "date": "2026-09-11",
+    "note": "Meridian Labs inspect_charxiv README @317e4ff (MIT; the commit the UK AISI inspect_evals register pins), 'Evaluation Report' table, row 'anthropic/claude-fable-5' / Subset 'Descriptive' / Samples 4000 / Epochs 1 = '94.3% accuracy' (stderr 0.4). Rows for Fable 5 and GPT-4o were added 2026-09-11 (commit 114bd95), after the 2026-09-08 grading fixes; GPT-6 Astra added 2026-09-11 (414ee24). Validation set (4000 descriptive questions = CharXiv val). Protocol deviations stated by the repo: one question per prompt (original batches per chart), apply_corrections=True (typo-corrected targets accepted as alternatives), grader openai/gpt-4o alias (original grader gpt-4o-2024-05-13). Identity: Anthropic API id claude-fable-5 = catalogue claude-fable-5; reasoning/thinking not set in the README (Inspect defaults, no extended-thinking budget stated).",
+    "source_id": "inspect-charxiv-meridianlabs"
+  },
+  {
+    "model": "gpt-4o-2024-08-06",
+    "bench": "charxiv-rq",
+    "score": 0.459,
+    "source": "https://github.com/meridianlabs-ai/inspect_charxiv/blob/317e4ff4335d7d4242d8e3c803898b7345973bd2/README.md",
+    "by": "independent",
+    "date": "2026-09-11",
+    "note": "Meridian Labs inspect_charxiv README @317e4ff (MIT; the commit the UK AISI inspect_evals register pins), 'Evaluation Report' table, row 'openai/gpt-4o' / Subset 'Reasoning' / Samples 1000 / Epochs 1 = '45.9% accuracy' (stderr 1.6). Rows for Fable 5 and GPT-4o were added 2026-09-11 (commit 114bd95), after the 2026-09-08 grading fixes; GPT-6 Astra added 2026-09-11 (414ee24). Validation set (1000 reasoning questions = CharXiv val). Protocol deviations stated by the repo: one question per prompt (original batches per chart), apply_corrections=True (typo-corrected targets accepted as alternatives), grader openai/gpt-4o alias (original grader gpt-4o-2024-05-13). Identity: API alias gpt-4o; OpenAI's gpt-4o model page (developers.openai.com/api/docs/models/gpt-4o, observed 2026-09-28 per the catalogue entry) gives gpt-4o-2024-08-06 as the default snapshot, so the alias resolved to that snapshot at run time.",
+    "source_id": "inspect-charxiv-meridianlabs"
+  },
+  {
+    "model": "gpt-4o-2024-08-06",
+    "bench": "charxiv-dq",
+    "score": 0.795,
+    "source": "https://github.com/meridianlabs-ai/inspect_charxiv/blob/317e4ff4335d7d4242d8e3c803898b7345973bd2/README.md",
+    "by": "independent",
+    "date": "2026-09-11",
+    "note": "Meridian Labs inspect_charxiv README @317e4ff (MIT; the commit the UK AISI inspect_evals register pins), 'Evaluation Report' table, row 'openai/gpt-4o' / Subset 'Descriptive' / Samples 4000 / Epochs 1 = '79.5% accuracy' (stderr 0.6). Rows for Fable 5 and GPT-4o were added 2026-09-11 (commit 114bd95), after the 2026-09-08 grading fixes; GPT-6 Astra added 2026-09-11 (414ee24). Validation set (4000 descriptive questions = CharXiv val). Protocol deviations stated by the repo: one question per prompt (original batches per chart), apply_corrections=True (typo-corrected targets accepted as alternatives), grader openai/gpt-4o alias (original grader gpt-4o-2024-05-13). Identity: API alias gpt-4o; OpenAI's gpt-4o model page (developers.openai.com/api/docs/models/gpt-4o, observed 2026-09-28 per the catalogue entry) gives gpt-4o-2024-08-06 as the default snapshot, so the alias resolved to that snapshot at run time.",
+    "source_id": "inspect-charxiv-meridianlabs"
+  },
+  {
+    "model": "gpt-6-astra",
+    "bench": "charxiv-rq",
+    "score": 0.893,
+    "source": "https://github.com/meridianlabs-ai/inspect_charxiv/blob/317e4ff4335d7d4242d8e3c803898b7345973bd2/README.md",
+    "by": "independent",
+    "date": "2026-09-11",
+    "note": "Meridian Labs inspect_charxiv README @317e4ff (MIT; the commit the UK AISI inspect_evals register pins), 'Evaluation Report' table, row 'openai/gpt-6-astra' / Subset 'Reasoning' / Samples 1000 / Epochs 1 = '89.3% accuracy' (stderr 1.0). Rows for Fable 5 and GPT-4o were added 2026-09-11 (commit 114bd95), after the 2026-09-08 grading fixes; GPT-6 Astra added 2026-09-11 (414ee24). Validation set (1000 reasoning questions = CharXiv val). Protocol deviations stated by the repo: one question per prompt (original batches per chart), apply_corrections=True (typo-corrected targets accepted as alternatives), grader openai/gpt-4o alias (original grader gpt-4o-2024-05-13). Identity: OpenAI API id gpt-6-astra = catalogue gpt-6-astra; reasoning effort not stated (API default).",
+    "source_id": "inspect-charxiv-meridianlabs"
+  },
+  {
+    "model": "gpt-6-astra",
+    "bench": "charxiv-dq",
+    "score": 0.962,
+    "source": "https://github.com/meridianlabs-ai/inspect_charxiv/blob/317e4ff4335d7d4242d8e3c803898b7345973bd2/README.md",
+    "by": "independent",
+    "date": "2026-09-11",
+    "note": "Meridian Labs inspect_charxiv README @317e4ff (MIT; the commit the UK AISI inspect_evals register pins), 'Evaluation Report' table, row 'openai/gpt-6-astra' / Subset 'Descriptive' / Samples 4000 / Epochs 1 = '96.2% accuracy' (stderr 0.3). Rows for Fable 5 and GPT-4o were added 2026-09-11 (commit 114bd95), after the 2026-09-08 grading fixes; GPT-6 Astra added 2026-09-11 (414ee24). Validation set (4000 descriptive questions = CharXiv val). Protocol deviations stated by the repo: one question per prompt (original batches per chart), apply_corrections=True (typo-corrected targets accepted as alternatives), grader openai/gpt-4o alias (original grader gpt-4o-2024-05-13). Identity: OpenAI API id gpt-6-astra = catalogue gpt-6-astra; reasoning effort not stated (API default).",
+    "source_id": "inspect-charxiv-meridianlabs"
+  },
+  {
+    "model": "gpt-4-1",
+    "bench": "charxiv-dq",
+    "score": 0.879,
+    "source": "https://openai.com/index/gpt-4-1",
+    "by": "lab",
+    "date": "2025-04-14",
+    "note": "OpenAI 'Introducing GPT-4.1 in the API' (April 14, 2025), appendix table 'Vision' (columns GPT-4.1 | GPT-4.1 mini | GPT-4.1 nano | GPT-4o (2024-11-20) | GPT-4o mini | OpenAI o1 (high) | OpenAI o3-mini (high) | GPT-4.5); read from Internet Archive capture 20261006095914 of the page (openai.com returns HTTP 403 to direct fetches). Row 'CharXiv-D' / column 'GPT-4.1'; value printed as '87.9%'. Column 'GPT-4.1' is the gpt-4.1 API model released with this post (snapshot gpt-4.1-2025-04-14); no reasoning-effort setting (non-reasoning model). No tool use is stated for the Vision table (the post's chart caption: 'In CharXiv-Reasoning, a model answers questions about charts from scientific papers'). Split not stated; CharXiv authors' default is validation. vendor-reported (rule b): OpenAI's own figure for its own model, hand-recorded.",
+    "source_id": "first-party-openai-scores"
+  },
+  {
+    "model": "gpt-4-1-mini",
+    "bench": "charxiv-dq",
+    "score": 0.884,
+    "source": "https://openai.com/index/gpt-4-1",
+    "by": "lab",
+    "date": "2025-04-14",
+    "note": "OpenAI 'Introducing GPT-4.1 in the API' (April 14, 2025), appendix table 'Vision' (columns GPT-4.1 | GPT-4.1 mini | GPT-4.1 nano | GPT-4o (2024-11-20) | GPT-4o mini | OpenAI o1 (high) | OpenAI o3-mini (high) | GPT-4.5); read from Internet Archive capture 20261006095914 of the page (openai.com returns HTTP 403 to direct fetches). Row 'CharXiv-D' / column 'GPT-4.1 mini'; value printed as '88.4%'. Column 'GPT-4.1 mini' is the gpt-4.1-mini API model released with this post (snapshot gpt-4.1-mini-2025-04-14); no reasoning-effort setting. No tool use is stated for the Vision table (the post's chart caption: 'In CharXiv-Reasoning, a model answers questions about charts from scientific papers'). Split not stated; CharXiv authors' default is validation. vendor-reported (rule b): OpenAI's own figure for its own model, hand-recorded.",
+    "source_id": "first-party-openai-scores"
+  },
+  {
+    "model": "gpt-4-1-nano-2025-04-14",
+    "bench": "charxiv-dq",
+    "score": 0.739,
+    "source": "https://openai.com/index/gpt-4-1",
+    "by": "lab",
+    "date": "2025-04-14",
+    "note": "OpenAI 'Introducing GPT-4.1 in the API' (April 14, 2025), appendix table 'Vision' (columns GPT-4.1 | GPT-4.1 mini | GPT-4.1 nano | GPT-4o (2024-11-20) | GPT-4o mini | OpenAI o1 (high) | OpenAI o3-mini (high) | GPT-4.5); read from Internet Archive capture 20261006095914 of the page (openai.com returns HTTP 403 to direct fetches). Row 'CharXiv-D' / column 'GPT-4.1 nano'; value printed as '73.9%'. Column 'GPT-4.1 nano' is the gpt-4.1-nano API model released with this post (only snapshot gpt-4.1-nano-2025-04-14); no reasoning-effort setting. No tool use is stated for the Vision table (the post's chart caption: 'In CharXiv-Reasoning, a model answers questions about charts from scientific papers'). Split not stated; CharXiv authors' default is validation. vendor-reported (rule b): OpenAI's own figure for its own model, hand-recorded.",
+    "source_id": "first-party-openai-scores"
+  },
+  {
+    "model": "gpt-4o-2024-11-20",
+    "bench": "charxiv-dq",
+    "score": 0.853,
+    "source": "https://openai.com/index/gpt-4-1",
+    "by": "lab",
+    "date": "2025-04-14",
+    "note": "OpenAI 'Introducing GPT-4.1 in the API' (April 14, 2025), appendix table 'Vision' (columns GPT-4.1 | GPT-4.1 mini | GPT-4.1 nano | GPT-4o (2024-11-20) | GPT-4o mini | OpenAI o1 (high) | OpenAI o3-mini (high) | GPT-4.5); read from Internet Archive capture 20261006095914 of the page (openai.com returns HTTP 403 to direct fetches). Row 'CharXiv-D' / column 'GPT-4o (2024-11-20)'; value printed as '85.3%'. Column header names the dated snapshot 'GPT-4o (2024-11-20)' = gpt-4o-2024-11-20; no reasoning-effort setting. No tool use is stated for the Vision table (the post's chart caption: 'In CharXiv-Reasoning, a model answers questions about charts from scientific papers'). Split not stated; CharXiv authors' default is validation. vendor-reported (rule b): OpenAI's own figure for its own model, hand-recorded.",
+    "source_id": "first-party-openai-scores"
+  },
+  {
+    "model": "gpt-4o-mini-2024-07-18",
+    "bench": "charxiv-dq",
+    "score": 0.766,
+    "source": "https://openai.com/index/gpt-4-1",
+    "by": "lab",
+    "date": "2025-04-14",
+    "note": "OpenAI 'Introducing GPT-4.1 in the API' (April 14, 2025), appendix table 'Vision' (columns GPT-4.1 | GPT-4.1 mini | GPT-4.1 nano | GPT-4o (2024-11-20) | GPT-4o mini | OpenAI o1 (high) | OpenAI o3-mini (high) | GPT-4.5); read from Internet Archive capture 20261006095914 of the page (openai.com returns HTTP 403 to direct fetches). Row 'CharXiv-D' / column 'GPT-4o mini'; value printed as '76.6%'. Column 'GPT-4o mini': gpt-4o-mini has a single API snapshot, gpt-4o-mini-2024-07-18; no reasoning-effort setting. No tool use is stated for the Vision table (the post's chart caption: 'In CharXiv-Reasoning, a model answers questions about charts from scientific papers'). Split not stated; CharXiv authors' default is validation. vendor-reported (rule b): OpenAI's own figure for its own model, hand-recorded.",
+    "source_id": "first-party-openai-scores"
+  },
+  {
+    "model": "o1-2024-12-17",
+    "bench": "charxiv-dq",
+    "score": 0.889,
+    "source": "https://openai.com/index/gpt-4-1",
+    "by": "lab",
+    "date": "2025-04-14",
+    "note": "OpenAI 'Introducing GPT-4.1 in the API' (April 14, 2025), appendix table 'Vision' (columns GPT-4.1 | GPT-4.1 mini | GPT-4.1 nano | GPT-4o (2024-11-20) | GPT-4o mini | OpenAI o1 (high) | OpenAI o3-mini (high) | GPT-4.5); read from Internet Archive capture 20261006095914 of the page (openai.com returns HTTP 403 to direct fetches). Row 'CharXiv-D' / column 'OpenAI o1 (high)'; value printed as '88.9%'. Column 'OpenAI o1 (high)': reasoning effort high (the highest o1 setting); the reasoning_effort parameter exists only on the API o1 snapshot o1-2024-12-17 (not o1-preview). No tool use is stated for the Vision table (the post's chart caption: 'In CharXiv-Reasoning, a model answers questions about charts from scientific papers'). Split not stated; CharXiv authors' default is validation. vendor-reported (rule b): OpenAI's own figure for its own model, hand-recorded.",
+    "source_id": "first-party-openai-scores"
+  },
+  {
+    "model": "gpt-4-5-preview-2025-02-27",
+    "bench": "charxiv-dq",
+    "score": 0.9,
+    "source": "https://openai.com/index/gpt-4-1",
+    "by": "lab",
+    "date": "2025-04-14",
+    "note": "OpenAI 'Introducing GPT-4.1 in the API' (April 14, 2025), appendix table 'Vision' (columns GPT-4.1 | GPT-4.1 mini | GPT-4.1 nano | GPT-4o (2024-11-20) | GPT-4o mini | OpenAI o1 (high) | OpenAI o3-mini (high) | GPT-4.5); read from Internet Archive capture 20261006095914 of the page (openai.com returns HTTP 403 to direct fetches). Row 'CharXiv-D' / column 'GPT-4.5'; value printed as '90.0%'. Column 'GPT-4.5': OpenAI's GPT-4.5 in the API is gpt-4.5-preview, whose only snapshot is gpt-4.5-preview-2025-02-27 (the same post announces its deprecation); no reasoning-effort setting. No tool use is stated for the Vision table (the post's chart caption: 'In CharXiv-Reasoning, a model answers questions about charts from scientific papers'). Split not stated; CharXiv authors' default is validation. vendor-reported (rule b): OpenAI's own figure for its own model, hand-recorded.",
+    "source_id": "first-party-openai-scores"
+  },
+  {
+    "model": "gpt-5-2",
+    "bench": "charxiv-rq",
+    "score": 0.821,
+    "source": "https://openai.com/index/introducing-gpt-5-2",
+    "by": "lab",
+    "date": "2025-12-11",
+    "note": "OpenAI 'Introducing GPT-5.2' (December 11, 2025), appendix 'Detailed benchmarks', table 'Vision' (columns GPT-5.2 Thinking | GPT-5.2 Pro | GPT-5.1 Thinking); read from Internet Archive capture 20261005030805 of the page (openai.com returns HTTP 403 to direct fetches). Row 'CharXiv reasoning (no tools)' / column 'GPT-5.2 Thinking'; value printed as '82.1%'. Reasoning effort xhigh (table footnote: 'Models were run with maximum available reasoning effort in our API (xhigh for GPT-5.2 Thinking & Pro, and high for GPT-5.1 Thinking)'). Identity: the post says 'GPT-5.2 Thinking is available today in the Responses API and Chat Completions API as gpt-5.2'. Tool setting printed in the row label: no tools (the separate 'CharXiv reasoning (w/ Python)' row is not used). Split not stated; CharXiv authors' default is validation. vendor-reported (rule b): OpenAI's own figure for its own model, hand-recorded.",
+    "source_id": "first-party-openai-scores"
+  },
+  {
+    "model": "gpt-5-1",
+    "bench": "charxiv-rq",
+    "score": 0.67,
+    "source": "https://openai.com/index/introducing-gpt-5-2",
+    "by": "lab",
+    "date": "2025-12-11",
+    "note": "OpenAI 'Introducing GPT-5.2' (December 11, 2025), appendix 'Detailed benchmarks', table 'Vision' (columns GPT-5.2 Thinking | GPT-5.2 Pro | GPT-5.1 Thinking); read from Internet Archive capture 20261005030805 of the page (openai.com returns HTTP 403 to direct fetches). Row 'CharXiv reasoning (no tools)' / column 'GPT-5.1 Thinking'; value printed as '67.0%'. Reasoning effort high (table footnote: maximum available API effort, 'high for GPT-5.1 Thinking'). Identity: OpenAI's GPT-5.1 post (openai.com/index/gpt-5-1) says 'GPT-5.1 Thinking will be released as GPT-5.1 in the API' = gpt-5.1. Tool setting printed in the row label: no tools (the separate 'CharXiv reasoning (w/ Python)' row is not used). Split not stated; CharXiv authors' default is validation. vendor-reported (rule b): OpenAI's own figure for its own model, hand-recorded.",
+    "source_id": "first-party-openai-scores"
+  },
+  {
+    "model": "gemini-3-5-flash",
+    "bench": "charxiv-rq",
+    "score": 0.842,
+    "source": "https://deepmind.google/models/model-cards/gemini-3-5-flash/#evaluation",
+    "by": "lab",
+    "date": "2026-05-19",
+    "note": "Gemini 3.5 Flash model card (HTML, 'Published 19 May 2026'), Evaluation > Results table ('Results as of May, 2026'), row 'Multimodal / CharXiv Reasoning (Information synthesis from complex charts)', notes 'No tools', column 'Gemini 3.5 Flash' = 84.2%. Evaluation PDF (deepmind.google/models/evals-methodology/gemini-3-5-flash -> gemini_3-5_flash_model_evaluation.pdf): 'CharXiv Reasoning results for Gemini models and GPT 5.5 are self-computed'; pass@1, Gemini API model-id gemini-3.5-flash, default sampling; thinking level not stated (default). Split not stated in this PDF; Google's Gemini 3 Pro/3 Flash methodology PDFs state the 1,000 validation reasoning questions. Same value repeated in the 3.6 Flash card. vendor-reported (rule b).",
+    "source_id": "first-party-google-scores"
+  },
+  {
+    "model": "gemini-3-1-pro",
+    "bench": "charxiv-rq",
+    "score": 0.833,
+    "source": "https://deepmind.google/models/model-cards/gemini-3-5-flash/#evaluation",
+    "by": "lab",
+    "date": "2026-05-19",
+    "note": "Gemini 3.5 Flash model card (HTML, published 19 May 2026), Results table, row 'CharXiv Reasoning', notes 'No tools', column 'Gemini 3.1 Pro' = 83.3%. Google's own model: the evaluation PDF says CharXiv Reasoning results for Gemini models are self-computed (pass@1, default sampling). Thinking level for the 3.1 Pro column not stated. The Gemini 3.1 Pro's own card has no CharXiv row; the same 83.3% is printed in the 3.6 Flash card. Catalogue id gemini-3-1-pro = 'Gemini 3.1 Pro (Preview)' (the only 3.1 Pro). vendor-reported (rule b).",
+    "source_id": "first-party-google-scores"
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "charxiv-rq",
+    "score": 0.803,
+    "source": "https://deepmind.google/models/model-cards/gemini-3-5-flash/#evaluation",
+    "by": "lab",
+    "date": "2026-05-19",
+    "note": "Gemini 3.5 Flash model card (HTML, published 19 May 2026), Results table, row 'CharXiv Reasoning', notes 'No tools', column 'Gemini 3 Flash' = 80.3%; self-computed per the 3.5 Flash evaluation PDF ('CharXiv Reasoning results for Gemini models ... are self-computed'). Same 80.3% ('No tools', column 'Gemini 3 Flash Thinking') on the Gemini 3 Flash launch page deepmind.google/models/gemini/flash/ in Internet Archive captures 20260101235310-20260502123253; the Gemini 3 Flash eval PDF names API model-id gemini-3-flash-preview and the 1,000 validation reasoning questions. Gemini 3 Flash's own card/eval PDF tables are images (not used). vendor-reported (rule b).",
+    "source_id": "first-party-google-scores"
+  },
+  {
+    "model": "gemini-3-1-flash-lite",
+    "bench": "charxiv-rq",
+    "score": 0.732,
+    "source": "https://deepmind.google/models/model-cards/gemini-3-1-flash-lite/#evaluation",
+    "by": "lab",
+    "date": "2026-03-03",
+    "note": "Gemini 3.1 Flash-Lite model card (HTML, 'Published 3 March 2026'), Results table ('as of March, 2026'), row 'CharXiv Reasoning (Information synthesis from complex charts)', column 'Gemini 3.1 Flash-Lite High' = 73.2%. The row's Notes cell is blank, but GPT-5 mini's cell is marked '(+ python)', and the 3.5 Flash-Lite card prints the same 73.2% for 3.1 Flash-Lite under 'No tools' (with tools 75.6%), so this is the no-tools score. Evaluation PDF (gemini_3-1_flash-lite_model_evaluation.pdf): 'CharXiv Reasoning results for Gemini models ... are self-computed'; pass@1, Gemini API model-id gemini-3.1-flash-lite-preview, default sampling, high thinking. vendor-reported (rule b).",
+    "source_id": "first-party-google-scores"
+  },
+  {
+    "model": "gemini-2-5-flash",
+    "bench": "charxiv-rq",
+    "score": 0.637,
+    "source": "https://deepmind.google/models/model-cards/gemini-3-1-flash-lite/#evaluation",
+    "by": "lab",
+    "date": "2026-03-03",
+    "note": "Gemini 3.1 Flash-Lite model card (HTML, published 3 March 2026), Results table, row 'CharXiv Reasoning', column 'Gemini 2.5 Flash Dynamic' = 63.7% (dynamic thinking, the only setting printed). Self-computed: the evaluation PDF says 'CharXiv Reasoning results for Gemini models ... are self-computed'. The same 63.7% is printed as 'No tools', column 'Gemini 2.5 Flash Thinking', on the archived Gemini 3 Flash page (deepmind.google/models/gemini/flash/, IA capture 20260101235310). Mapped to the GA gemini-2-5-flash (the page names no snapshot; the GA model was the served 'Gemini 2.5 Flash' in 2026). vendor-reported (rule b).",
+    "source_id": "first-party-google-scores"
+  },
+  {
+    "model": "gemini-2-5-flash-lite",
+    "bench": "charxiv-rq",
+    "score": 0.555,
+    "source": "https://deepmind.google/models/model-cards/gemini-3-1-flash-lite/#evaluation",
+    "by": "lab",
+    "date": "2026-03-03",
+    "note": "Gemini 3.1 Flash-Lite model card (HTML, published 3 March 2026), Results table, row 'CharXiv Reasoning', column 'Gemini 2.5 Flash-Lite Dynamic' = 55.5% (dynamic thinking, the only setting printed; no tools, see the 3.1 Flash-Lite row note). Self-computed per the evaluation PDF ('CharXiv Reasoning results for Gemini models ... are self-computed'). Mapped to GA gemini-2-5-flash-lite (no snapshot named on the page). vendor-reported (rule b).",
+    "source_id": "first-party-google-scores"
+  },
+  {
+    "model": "gemini-3-5-flash-lite",
+    "bench": "charxiv-rq",
+    "score": 0.745,
+    "source": "https://deepmind.google/models/model-cards/gemini-3-5-flash-lite/#evaluation",
+    "by": "lab",
+    "date": "2026-07-21",
+    "note": "Gemini 3.5 Flash-Lite model card (HTML, 'Published 21 July 2026'), Results table ('as of July, 2026'), row 'CharXiv Reasoning (Information synthesis from complex charts)', notes 'No tools', column 'Gemini 3.5 Flash-Lite' = 74.5% (with tools 76.5% not used). Evaluation PDF (gemini_3-5_flash-lite_model_evaluation.pdf): 'CharXiv Reasoning results for all models are self-computed'; pass@1, Gemini API model-id gemini-3.5-flash-lite, high thinking, default sampling. Same cell on deepmind.google/models/gemini/flash-lite/. vendor-reported (rule b).",
+    "source_id": "first-party-google-scores"
+  },
+  {
+    "model": "gemini-3-pro-preview",
+    "bench": "charxiv-rq",
+    "score": 0.814,
+    "source": "https://deepmind.google/models/gemini/pro/",
+    "by": "lab",
+    "date": "2025-11-18",
+    "note": "Gemini 3 Pro launch page deepmind.google/models/gemini/pro/ (Gemini 3 launched 18 Nov 2025), 'Performance' table, row 'Information synthesis from complex charts / CharXiv Reasoning', column 'Gemini 3 Pro' = 81.4%. Read from Internet Archive capture 20251203081720 (https://web.archive.org/web/20251203081720/https://deepmind.google/models/gemini/pro/); the live page now shows the Gemini 3.1 Pro table, which has no CharXiv row. Same 81.4% labelled 'No tools' (column 'Gemini 3 Pro Thinking') on the archived Gemini 3 Flash page (captures 20260101235310 to 20260502123253). Gemini 3 Pro eval PDF (gemini_3_pro_model_evaluation.pdf): pass@1, Gemini API model-id gemini-3-pro-preview, default sampling; 'CharXiV Reasoning results are on 1000 reasoning questions from the validation split'. The model card's own table is an image (not used). vendor-reported (rule b).",
+    "source_id": "first-party-google-scores"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "bench": "charxiv-rq",
+    "score": 0.696,
+    "source": "https://deepmind.google/models/gemini/pro/",
+    "by": "lab",
+    "date": "2025-11-18",
+    "note": "Gemini 3 Pro launch page deepmind.google/models/gemini/pro/, 'Performance' table, row 'CharXiv Reasoning', column 'Gemini 2.5 Pro' = 69.6%. Read from Internet Archive capture 20251203081720; the live page no longer prints this row. Same 69.6% labelled 'No tools' (column 'Gemini 2.5 Pro Thinking') on the archived Gemini 3 Flash page (captures 20260101235310 to 20260502123253). Google's own Gemini model on Google's page. The Gemini 3 Pro eval PDF says Gemini results are run through the Gemini API on the 1,000 validation reasoning questions; the PDF says Google computed CharXiv itself where no self-reported number existed. Mapped to the GA gemini-2-5-pro (no snapshot named; Nov 2025). vendor-reported (rule b).",
+    "source_id": "first-party-google-scores"
+  },
+  {
+    "model": "claude-opus-4-7",
+    "bench": "charxiv-rq",
+    "score": 0.813,
+    "source": "https://www-cdn.anthropic.com/0f0c97ad20d8005706296bd92aa1c27c6b2f4f61/Claude%20Opus%204.8%20System%20Card.pdf#page=219",
+    "by": "lab",
+    "date": "2026-05-28",
+    "note": "Anthropic Claude Opus 4.8 System Card (May 28, 2026), §8.12.4 'CharXiv Reasoning' prose (PDF p.219): 'Claude Opus 4.7 scored 81.3% and 90.1% in the same settings' (no tools / Python tools); no-tools figure recorded. Settings: 1,000 validation questions, adaptive thinking at max effort, five runs. §8.12 says Opus 4.8 grading removes the student's thinking trace and 'we re-evaluated all prior models with the new grader'. This is the same grader as the existing Opus 4.8 (80.5%), Sonnet 5 and Sonnet 4.6 rows. Opus 4.7's own card prints 82.1% under the earlier grader; that value is under skipped. vendor-reported (rule b).",
+    "source_id": "first-party-anthropic-scores"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "bench": "charxiv-rq",
+    "score": 0.691,
+    "source": "https://www-cdn.anthropic.com/037f06850df7fbe871e206dad004c3db5fd50340/Claude%20Opus%204.7%20System%20Card.pdf#page=191",
+    "by": "lab",
+    "date": "2026-04-16",
+    "note": "Anthropic Claude Opus 4.7 System Card (April 16, 2026), §8.1 Evaluation summary table (PDF p.191), row 'CharXiv Reasoning' / 'No tools', column 'Claude Opus 4.6' = 69.1%. Footnote 39: 'Reflects updated CharXiv evaluation settings introduced in the Claude Mythos Preview System Card (p 194); differs from values in the Claude Opus 4.6 system card'. That change replaced the Claude Sonnet 4 grader with Claude Sonnet 4.6. The same figure is in the prose of §8.9.2 (p.204): 'Claude Opus 4.6 scored 69.1% and 84.7% in the same settings'. Settings: 1,000 validation questions, adaptive thinking at max effort, five runs. The own-card 68.5% (old grader) is under skipped. vendor-reported (rule b).",
+    "source_id": "first-party-anthropic-scores"
+  },
+  {
+    "model": "claude-opus-4-5",
+    "bench": "charxiv-rq",
+    "score": 0.657,
+    "source": "https://www-cdn.anthropic.com/6a5fa276ac68b9aeb0c8b6af5fa36326e0e166dd/Claude%20Opus%204.6%20System%20Card.pdf#page=36",
+    "by": "lab",
+    "date": "2026-02-05",
+    "note": "Anthropic Claude Opus 4.6 System Card (dated 'February 2026'; Opus 4.6 announced Feb 5, 2026), §2.19.3 'CharXiv Reasoning' prose (PDF p.36): Opus 4.6 68.5% without tools and 77.4% with an image-cropping tool; 'In the same settings, Claude Opus 4.5 scored 65.7% and 68.7%, respectively'. No-tools 65.7% recorded. Settings: 1,000 validation questions, adaptive thinking, max effort, five runs. CAVEAT: graded with the earlier Claude Sonnet 4 grader, which the Mythos Preview card (p.194) replaced with Sonnet 4.6 because it depressed scores. For Opus 4.6 the change was 68.5% to 69.1% without tools. This is the only Opus 4.5 CharXiv figure Anthropic printed as text. Opus 4.5's own card has no CharXiv. vendor-reported (rule b).",
+    "source_id": "first-party-anthropic-scores"
+  },
+  {
+    "model": "qwen3-8-27b",
+    "bench": "charxiv-rq",
+    "score": 0.837,
+    "source": "https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md",
+    "by": "lab",
+    "date": "2026-08-14",
+    "note": "Pinned Qwen/Qwen3.8-27B model card (apache-2.0), VL Performance table, section 'General Multimodal Intelligence', row 'Scientific chart analysis / CharXiv (RQ)', column 'Qwen3.8-27B': cell 'Without CI 83.7 / With CI 90.2'; the without-code-interpreter value 83.7 is used, the With CI (tool) value is not. Card footnote: 'MathVision, BabyVision, and CharXiv (RQ): Where both settings are available, cells report “Without CI” and “With CI” separately ... A small number of incorrect ground-truth annotations in MathVision and CharXiv (RQ) were corrected following manual verification, and all reported scores on those benchmarks were computed using the corrected annotations.' So this is CharXiv RQ on Qwen's corrected key. Thinking mode (card default; no effort stated for the row). Split not stated; CharXiv authors' default is validation. Checkpoint pinned by repo sha 1d4bf0f. Vendor-reported (rule b): Qwen's own evaluation of its own model; other labs' columns not used.",
+    "source_id": "card-qwen--qwen3.8-27b"
+  },
+  {
+    "model": "qwen3-7-plus",
+    "bench": "charxiv-rq",
+    "score": 0.858,
+    "source": "https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md",
+    "by": "lab",
+    "date": "2026-08-14",
+    "note": "Pinned Qwen/Qwen3.8-27B model card (apache-2.0), VL Performance table, section 'General Multimodal Intelligence', row 'Scientific chart analysis / CharXiv (RQ)', column 'Qwen3.7-Plus' (same-lab API model, catalogue qwen3-7-plus): cell 'Without CI 85.8 / With CI 85.9'; 85.8 (no code interpreter) used. Same corrected-annotation footnote as the Qwen3.8-27B row, so this differs from the 84.4 Qwen printed in the Qwen3.7-Plus launch post (original key; recorded separately under first-party-qwen-scores). Split not stated; CharXiv authors' default is validation. Vendor-reported (rule b): Qwen's own evaluation of its own model; other labs' columns not used. Run: with qwen3-8-27b this makes a 2-model run for card-qwen--qwen3.8-27b (the card's Qwen3.6-27B cell, 78.4, repeats the existing card-qwen--qwen3.6-27b figure and is not re-recorded).",
+    "source_id": "card-qwen--qwen3.8-27b"
+  },
+  {
+    "model": "qwen3-8-flash-next",
+    "bench": "charxiv-rq",
+    "score": 0.846,
+    "source": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/de4b8e4d43b917e7706784d8bb445c9af86a3540/README.md",
+    "by": "lab",
+    "date": "2026-08-27",
+    "note": "Pinned Qwen/Qwen3.8-Flash-Next model card (sha de4b8e4; licence Qwen Community License 1.0, not open, so recorded under rule b), benchmark table, section 'General Multimodal Intelligence', row 'Scientific chart analysis / CharXiv (RQ)', column 'Qwen3.8-Flash-Next': 'Without CI 84.6 / With CI 90.6'; 84.6 (no code interpreter) used. Footnote 5: 'MathVision, CharXiv (RQ): scores are reported as \"without CI / with CI\"'. This card's footnote mentions corrected annotations for MathVision only, but its Qwen3.8-27B (83.7) and Qwen3.7-Plus (85.8) cells equal the Qwen3.8-27B card's corrected-key values, so treat it as the corrected key. Same 84.6 in the launch post https://qwen.ai/blog?id=qwen3.8-flash-next (2026-08-26). Thinking mode (card default). Split not stated; CharXiv authors' default is validation. Vendor-reported (rule b): Qwen's own evaluation of its own model; other labs' columns not used.",
+    "source_id": "first-party-qwen-scores"
+  },
+  {
+    "model": "qwen3-8-2-4t-a95b",
+    "bench": "charxiv-rq",
+    "score": 0.884,
+    "source": "https://qwen.ai/blog?id=qwen3.8",
+    "by": "lab",
+    "date": "2026-08-03",
+    "note": "Qwen3.8-Max launch post 'Qwen3.8-Max: A New Bar for Coding and Cowork' (August 3, 2026), multimodal table, section 'Document & Office Intelligence', row 'CharXiv (RQ)', column 'Qwen3.8-Max': '88.4 / 93.5'; footnote 1: 'MathVision, BabyVision, CharXiv (RQ), and ZeroBench: Scores are reported as “without CI / with CI.” A small number of incorrect ground-truth annotations in MathVision and CharXiv (RQ) were corrected following manual verification.' 88.4 = without code interpreter, corrected key. Identity: the post says Qwen3.8-Max is '2.4T parameters (95B active), with open weights releasing next week' and uses API model 'qwen3.8-max' -> catalogue qwen3-8-2-4t-a95b (Qwen/Qwen3.8-2.4T-A95B, undated qwen3.8-max), not the later dated snapshot qwen3-8-max-0902. The post gives reasoning_effort 'xhigh (default)'; the effort for this row is not stated. Split not stated; CharXiv authors' default is validation. Page is client-rendered; the post HTML was read on 2026-10-09 from Qwen's own article endpoint (https://qwen.ai/api/v2/article/?language=en-US&path=qwen3.8&type=qwen_ai), which the blog page itself calls. Vendor-reported (rule b): Qwen's own evaluation of its own model; other labs' columns not used.",
+    "source_id": "first-party-qwen-scores"
+  },
+  {
+    "model": "qwen3-7-plus",
+    "bench": "charxiv-rq",
+    "score": 0.844,
+    "source": "https://qwen.ai/blog?id=qwen3.7-plus",
+    "by": "lab",
+    "date": "2026-06-01",
+    "note": "Qwen3.7-Plus launch post 'Qwen3.7-Plus: Multimodal Agent Intelligence' (2026-06-01), 'Multimodal Benchmarks' table, section 'Multimodal Reasoning', row 'CharXiv(RQ)', column 'Qwen3.7-Plus': '85.9 / 84.4'; footnote: '* BabyVision and CharXiv(RQ): Scores are reported as \"with CI / without CI\".' -> 84.4 is without code interpreter (85.9 with CI not used). No annotation-correction note in this post (Qwen's August tables print 85.8 without CI for Qwen3.7-Plus on a corrected key; that figure is recorded under card-qwen--qwen3.8-27b). Split not stated; CharXiv authors' default is validation. Page is client-rendered; the post HTML was read on 2026-10-09 from Qwen's own article endpoint (https://qwen.ai/api/v2/article/?language=en-US&path=qwen3.7-plus&type=qwen_ai), which the blog page itself calls. Vendor-reported (rule b): Qwen's own evaluation of its own model; other labs' columns not used.",
+    "source_id": "first-party-qwen-scores"
+  },
+  {
+    "model": "qwen3-6-plus",
+    "bench": "charxiv-rq",
+    "score": 0.815,
+    "source": "https://qwen.ai/blog?id=qwen3.6",
+    "by": "lab",
+    "date": "2026-04-02",
+    "note": "Qwen3.6-Plus launch post 'Qwen3.6-Plus: Towards Real World Agents' (2026-04-02), vision-language table, section 'Text Recognition and Document Understanding', row 'CharXiv(RQ)', column 'Qwen3.6-Plus' = 81.5 (single value; no tool variant printed). The same 81.5 is reprinted for Qwen3.6-Plus in the Qwen3.7-Plus post. The Alibaba Cloud community mirror of this post shows the tables only as images. Split not stated; CharXiv authors' default is validation. Page is client-rendered; the post HTML was read on 2026-10-09 from Qwen's own article endpoint (https://qwen.ai/api/v2/article/?language=en-US&path=qwen3.6&type=qwen_ai), which the blog page itself calls. Vendor-reported (rule b): Qwen's own evaluation of its own model; other labs' columns not used.",
+    "source_id": "first-party-qwen-scores"
+  },
+  {
+    "model": "qwen3-5-397b-a17b",
+    "bench": "charxiv-rq",
+    "score": 0.808,
+    "source": "https://qwen.ai/blog?id=qwen3.5",
+    "by": "lab",
+    "date": "2026-02-16",
+    "note": "Qwen3.5 launch post 'Qwen3.5: Towards Native Multimodal Agents' (2026-02-16), vision-language table, section 'Text Recognition and Document Understanding', row 'CharXiv(RQ)', column 'Qwen3.5-397B-A17B' = 80.8 (open-weight model; not the hosted Qwen3.5-Plus id). FLAG: same figure as the existing row from card-qwen--qwen3.5-397b-a17b, but that card run holds only this one model for charxiv-rq and is therefore withheld; recording the text copy in the Qwen vendor run lets the figure count once. Drop this row if the owner prefers never to repeat a figure across sources. Split not stated; CharXiv authors' default is validation. Page is client-rendered; the post HTML was read on 2026-10-09 from Qwen's own article endpoint (https://qwen.ai/api/v2/article/?language=en-US&path=qwen3.5&type=qwen_ai), which the blog page itself calls. Vendor-reported (rule b): Qwen's own evaluation of its own model; other labs' columns not used.",
+    "source_id": "first-party-qwen-scores"
+  },
+  {
+    "model": "qwen3-vl-235b-a22b-thinking",
+    "bench": "charxiv-rq",
+    "score": 0.661,
+    "source": "https://arxiv.org/pdf/2511.21631v2#page=15",
+    "by": "lab",
+    "date": "2025-11-27",
+    "note": "Qwen3-VL Technical Report, arXiv 2511.21631v2 (licence: arXiv non-exclusive distribution, not open -> rule b), Table 2 'Performance of Qwen3-VL-235B-A22B and top-tier models on visual benchmarks' on PDF page 15, section 'Document Understanding', row 'CharXiv(RQ)', column 'Qwen3-VL 235B-A22B / thinking' = 66.1 (the table marks values sourced from other reports with *, none on Qwen columns). The v2 HTML rendering omits Tables 2-4, so the PDF page is cited (PDF sha256 ee075d08e67de1148d6437c6c1d481f7894183b8793905a2deb5f62664f49380). The HF cards for this model show results only as images (not used). Split not stated; CharXiv authors' default is validation. Vendor-reported (rule b): Qwen's own evaluation of its own model; other labs' columns not used.",
+    "source_id": "first-party-qwen-scores"
+  },
+  {
+    "model": "qwen3-vl-235b-a22b-instruct",
+    "bench": "charxiv-rq",
+    "score": 0.621,
+    "source": "https://arxiv.org/pdf/2511.21631v2#page=15",
+    "by": "lab",
+    "date": "2025-11-27",
+    "note": "Qwen3-VL Technical Report, arXiv 2511.21631v2 (arXiv non-exclusive licence -> rule b), Table 2 on PDF page 15, section 'Document Understanding', row 'CharXiv(RQ)', column 'Qwen3-VL 235B-A22B / instruct' = 62.1. Split not stated; CharXiv authors' default is validation. Vendor-reported (rule b): Qwen's own evaluation of its own model; other labs' columns not used.",
+    "source_id": "first-party-qwen-scores"
+  },
+  {
+    "model": "qwen3-vl-235b-a22b-thinking",
+    "bench": "charxiv-dq",
+    "score": 0.905,
+    "source": "https://arxiv.org/pdf/2511.21631v2#page=15",
+    "by": "lab",
+    "date": "2025-11-27",
+    "note": "Qwen3-VL Technical Report, arXiv 2511.21631v2 (arXiv non-exclusive licence -> rule b), Table 2 on PDF page 15, section 'Document Understanding', row 'CharXiv(DQ)', column 'Qwen3-VL 235B-A22B / thinking' = 90.5. Split not stated; CharXiv authors' default is validation. Vendor-reported (rule b): Qwen's own evaluation of its own model; other labs' columns not used.",
+    "source_id": "first-party-qwen-scores"
+  },
+  {
+    "model": "qwen3-vl-235b-a22b-instruct",
+    "bench": "charxiv-dq",
+    "score": 0.894,
+    "source": "https://arxiv.org/pdf/2511.21631v2#page=15",
+    "by": "lab",
+    "date": "2025-11-27",
+    "note": "Qwen3-VL Technical Report, arXiv 2511.21631v2 (arXiv non-exclusive licence -> rule b), Table 2 on PDF page 15, section 'Document Understanding', row 'CharXiv(DQ)', column 'Qwen3-VL 235B-A22B / instruct' = 89.4. Split not stated; CharXiv authors' default is validation. Vendor-reported (rule b): Qwen's own evaluation of its own model; other labs' columns not used.",
+    "source_id": "first-party-qwen-scores"
+  },
+  {
+    "model": "qwen2-5-vl-72b",
+    "bench": "charxiv-rq",
+    "score": 0.497,
+    "source": "https://arxiv.org/html/2502.13923v1#S3.T5",
+    "by": "lab",
+    "date": "2025-02-19",
+    "note": "Qwen2.5-VL Technical Report, arXiv 2502.13923v1 (only version; licence arXiv non-exclusive distribution -> rule b), HTML Table 5 (#S3.T5) 'Performance of Qwen2.5-VL and other models on OCR, chart, and document understanding benchmarks', row 'CharXiv RQ/DQ', column 'Qwen2.5-VL 72B': '49.7/ 87.4' -> RQ 49.7. Qwen2.5-VL 72B = the released Qwen2.5-VL-72B-Instruct (catalogue qwen2-5-vl-72b). The Qwen2.5-VL-32B/72B HF cards have no CharXiv row. Split not stated; CharXiv authors' default is validation. Vendor-reported (rule b): Qwen's own evaluation of its own model; other labs' columns not used.",
+    "source_id": "first-party-qwen-scores"
+  },
+  {
+    "model": "qwen2-5-vl-72b",
+    "bench": "charxiv-dq",
+    "score": 0.874,
+    "source": "https://arxiv.org/html/2502.13923v1#S3.T5",
+    "by": "lab",
+    "date": "2025-02-19",
+    "note": "Qwen2.5-VL Technical Report, arXiv 2502.13923v1 (arXiv non-exclusive licence -> rule b), HTML Table 5 (#S3.T5), row 'CharXiv RQ/DQ', column 'Qwen2.5-VL 72B': '49.7/ 87.4' -> DQ 87.4. Split not stated; CharXiv authors' default is validation. Vendor-reported (rule b): Qwen's own evaluation of its own model; other labs' columns not used.",
+    "source_id": "first-party-qwen-scores"
+  },
+  {
+    "model": "kimi-k2-5",
+    "bench": "charxiv-rq",
+    "score": 0.775,
+    "source": "https://huggingface.co/moonshotai/Kimi-K2.5/blob/4d01dfe0332d63057c186e0b262165819efb6611/README.md",
+    "by": "lab",
+    "date": "2026-04-30",
+    "note": "Pinned moonshotai/Kimi-K2.5 model card (sha 4d01dfe; README front-matter 'license: other / license_name: modified-mit'), evaluation table, section 'Image & Video', row 'CharXiv (RQ)', column 'Kimi K2.5 (Thinking)' = 77.5. Footnotes: 'We report results for Kimi K2.5 ... with thinking mode enabled'; 'temperature = 1.0, top-p = 0.95'; vision benchmarks 'Max-tokens = 64k, averaged over three runs (avg@3)'. No tool use for this row. Same 77.5 reprinted as the Kimi K2.5 column of the K2.6 card and in the K2.5 tech report (arXiv 2602.02276v2, CC BY-NC-ND 4.0, not used). Split not stated; CharXiv authors' default is validation. Vendor-reported (rule b): Moonshot's own model; other labs' columns not used.",
+    "source_id": "first-party-moonshot-scores"
+  },
+  {
+    "model": "kimi-k2-6",
+    "bench": "charxiv-rq",
+    "score": 0.804,
+    "source": "https://huggingface.co/moonshotai/Kimi-K2.6/blob/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/README.md",
+    "by": "lab",
+    "date": "2026-05-19",
+    "note": "Pinned moonshotai/Kimi-K2.6 model card (sha 7eb5002; Modified MIT), evaluation table, section 'Vision', row 'CharXiv (RQ)', column 'Kimi K2.6' = 80.4; the separate row 'CharXiv (RQ) (w/ python)' (86.7) is a tool setting and not used. Footnotes: 'results for Kimi K2.6 and Kimi K2.5 with thinking mode enabled'; 'temperature = 1.0, top-p = 1.0, and a context length of 262,144 tokens'; vision 'Max-tokens = 98,304, averaged over three runs (avg@3)'. Same 80.4 on kimi.com/blog/kimi-k2-6. Split not stated; CharXiv authors' default is validation. Vendor-reported (rule b); other labs' columns not used.",
+    "source_id": "first-party-moonshot-scores"
+  },
+  {
+    "model": "kimi-k3",
+    "bench": "charxiv-rq",
+    "score": 0.848,
+    "source": "https://huggingface.co/moonshotai/Kimi-K3/blob/f831ab66814297da540d832a5235f8e904f29d06/README.md",
+    "by": "lab",
+    "date": "2026-09-02",
+    "note": "Pinned moonshotai/Kimi-K3 model card (sha f831ab6; licence 'Kimi K3 License', not open: Model-as-a-Service commercial restriction -> rule b), evaluation table, section 'Vision', row 'CharXiv (RQ)', column 'Kimi K3 (max)': '84.8 / 91.3'. Footnote: 'All Kimi K3 results are obtained with reasoning effort set to 'max' and temperature = 1.0 ... vision benchmarks without tools, we set top-p = 0.95 ... For HLE-Full, MMMU-Pro, CharXiv (RQ), MathVision, and ZeroBench, each cell reports the scores without and with tool augmentation (general tools for HLE-Full, Python for the vision benchmarks), in that order.' -> 84.8 without tools; 91.3 (Python) not used. Same figures on kimi.com/blog/kimi-k3. Split not stated; CharXiv authors' default is validation. Vendor-reported (rule b); other labs' columns not used.",
+    "source_id": "first-party-moonshot-scores"
+  },
+  {
+    "model": "mimo-v2-omni",
+    "bench": "charxiv-rq",
+    "score": 0.801,
+    "source": "https://mimo.xiaomi.com/mimo-v2-omni",
+    "by": "lab",
+    "date": "2026-03-18",
+    "note": "Xiaomi MiMo-V2-Omni launch page (dated 'March 18th, 2026'), 'Perception' benchmark chart, entry 'CharXiv RQ' (subtitle 'Chart Understanding'), MiMo-V2-Omni = 80.1. FLAG: the number is in the page HTML as chart data (perceptionData: {name: 'CharXiv RQ', ... scores: {omni: 80.1, ...}}) and the page renders it as a text label (score.toFixed(1)) on the bar, so it is printed text, not a bar-height reading; the caller may still prefer to treat chart labels as out of scope. The prose says MiMo-V2-Omni was evaluated on image understanding '(MMMU-Pro, CharXiv RQ)'. Settings not stated. Same 80.1 is repeated for MiMo-V2-Omni on the MiMo-V2.5 page. Split not stated; CharXiv authors' default is validation. Vendor-reported (rule b): Xiaomi's own model; other labs' scores not used.",
+    "source_id": "first-party-xiaomi-scores"
+  },
+  {
+    "model": "mimo-v2-5",
+    "bench": "charxiv-rq",
+    "score": 0.81,
+    "source": "https://mimo.xiaomi.com/mimo-v2-5",
+    "by": "lab",
+    "date": "2026-04-22",
+    "note": "Xiaomi MiMo-V2.5 launch page (dated 'April 22nd, 2026'), multimodal benchmark chart, entry 'CharXiv RQ' (subtitle 'Chart Understanding'), MiMo-V2.5 = 81.0, held in the page HTML as chart data (multimodalData scores {mimo25: 81.0, omni: 80.1, ...}) and rendered as a text label (score.toFixed(1)). FLAG: same figure as the existing card2-xiaomimimo-mimo-v2-5 row, which was read from a chart image in the card and is a one-model run (withheld); this text copy sits in Xiaomi's vendor run with mimo-v2-omni so it can count. Drop if the owner prefers not to repeat a figure. Settings not stated. Split not stated; CharXiv authors' default is validation. Vendor-reported (rule b).",
+    "source_id": "first-party-xiaomi-scores"
+  },
+  {
+    "model": "nova-premier",
+    "bench": "charxiv-dq",
+    "score": 0.846,
+    "source": "https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf",
+    "by": "lab",
+    "date": "2025-04-30",
+    "note": "Amazon 'Amazon Nova Premier: Technical Report and Model Card' (published April 30, 2025 per the report), Table 1 (PDF page 3), row 'CharXiv (Descriptive/Reasoning)', column 'Nova Premier' printed '84.6/48.8'; descriptive value (first of the printed pair) used. Methods text: 'For chart understanding, we use CharXiv [24] as the benchmark without CoT prompt, and we report accuracy based on correctness binary score that is assigned by GPT-4o.' Split not stated; CharXiv authors' default is validation. Companion to the existing charxiv-rq row (48.8) from the same table. Vendor-reported (rule b): Amazon's own figure for its own model, hand-recorded; Claude-3.5 Sonnet-v2, Claude-3.7 Sonnet and GPT-4.5 columns not used.",
+    "source_id": "first-party-amazon-scores"
+  },
+  {
+    "model": "nova-pro",
+    "bench": "charxiv-dq",
+    "score": 0.705,
+    "source": "https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf",
+    "by": "lab",
+    "date": "2025-04-30",
+    "note": "Amazon 'Amazon Nova Premier: Technical Report and Model Card' (April 30, 2025), Table 1 (PDF page 3), row 'CharXiv (Descriptive/Reasoning)', column 'Nova Pro' printed '70.5/40.6'; descriptive value used. No CoT, GPT-4o-graded binary correctness (methods text). Split not stated; CharXiv authors' default is validation. Nova Pro here is the original Nova Pro (the report's comparator; Nova Premier is described as an addendum to the Nova family report), same mapping as the existing nova-pro charxiv-rq row (40.6). Vendor-reported (rule b), hand-recorded; other labs' columns not used.",
+    "source_id": "first-party-amazon-scores"
+  },
+  {
+    "model": "ministral-3-3b",
+    "bench": "charxiv-dq",
+    "score": 0.766,
+    "source": "https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md",
+    "by": "independent",
+    "date": "2026-08-10",
+    "note": "Column 'Ministral-3-3B-Instruct' (size row '3.8B'), cell '0.766'. Identity: Ministral 3 3B Instruct exists only as mistralai/Ministral-3-3B-Instruct-2512 (catalogue ministral-3-3b; the Reasoning-2512 variant is a separate id and is not the 'Instruct' column). Cohere's own run, Benchmark Results table of the pinned North-Micro-Vision-Instruct model card (Apache-2.0), section 'Chart / Document / OCR', row 'CharXiv_DQ' (printed 'CharXiv<sub>DQ</sub>'). Card text above the table: 'We ran vision-language and text-only evaluations with VLMEvalKit, capping generation at 1,024 tokens'. Cohere's linked HF blog (methodology only, not used for numbers): comparison models run with their vLLM implementation where available, else Hugging Face inference, 'following the authors' recommended vision and text inference settings', and 'Because the comparison focuses on instruction-tuned, non-reasoning models, we capped generation at 1,024 tokens'. Split not printed in the card; VLMEvalKit's only CharXiv descriptive dataset is the validation set (github.com/open-compass/VLMEvalKit/blob/c09a0585e4801065b322147774946099bc0fc85f/vlmeval/dataset/charxiv.py (DATASET_URL lists only CharXiv_descriptive_val / CharXiv_reasoning_val)). Values printed as fractions (no conversion). CharXiv row identical since the first card upload of 2026-08-10 (commit 4b0ecf6) through the pinned revision. Rule (a): openly licensed card, authors' own measurement of another lab's model -> by: independent.",
+    "source_id": "card2-coherelabs-north-micro-vision-instruct"
+  },
+  {
+    "model": "phi-3-5-vision-instruct",
+    "bench": "charxiv-dq",
+    "score": 0.637,
+    "source": "https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md",
+    "by": "independent",
+    "date": "2026-08-10",
+    "note": "Column 'Phi-3.5-vision-instruct' (size row '4.2B', licence row 'MIT'), cell '0.637'. Identity: exact HF repo name microsoft/Phi-3.5-vision-instruct (catalogue phi-3-5-vision-instruct, 4.15B params). Cohere's own run, Benchmark Results table of the pinned North-Micro-Vision-Instruct model card (Apache-2.0), section 'Chart / Document / OCR', row 'CharXiv_DQ' (printed 'CharXiv<sub>DQ</sub>'). Card text above the table: 'We ran vision-language and text-only evaluations with VLMEvalKit, capping generation at 1,024 tokens'. Cohere's linked HF blog (methodology only, not used for numbers): comparison models run with their vLLM implementation where available, else Hugging Face inference, 'following the authors' recommended vision and text inference settings', and 'Because the comparison focuses on instruction-tuned, non-reasoning models, we capped generation at 1,024 tokens'. Split not printed in the card; VLMEvalKit's only CharXiv descriptive dataset is the validation set (github.com/open-compass/VLMEvalKit/blob/c09a0585e4801065b322147774946099bc0fc85f/vlmeval/dataset/charxiv.py (DATASET_URL lists only CharXiv_descriptive_val / CharXiv_reasoning_val)). Values printed as fractions (no conversion). CharXiv row identical since the first card upload of 2026-08-10 (commit 4b0ecf6) through the pinned revision. Rule (a): openly licensed card, authors' own measurement of another lab's model -> by: independent.",
+    "source_id": "card2-coherelabs-north-micro-vision-instruct"
+  },
+  {
+    "model": "gemma-4-e2b",
+    "bench": "charxiv-dq",
+    "score": 0.751,
+    "source": "https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md",
+    "by": "independent",
+    "date": "2026-08-10",
+    "note": "Column 'Gemma-4-E2B-it' (size row '5.1B'), cell '0.751'. Identity: google/gemma-4-E2B-it = catalogue gemma-4-e2b model_repo (params_b 5.1). Thinking not used per the blog's 'instruction-tuned, non-reasoning' framing and the 1,024-token cap. Cohere's own run, Benchmark Results table of the pinned North-Micro-Vision-Instruct model card (Apache-2.0), section 'Chart / Document / OCR', row 'CharXiv_DQ' (printed 'CharXiv<sub>DQ</sub>'). Card text above the table: 'We ran vision-language and text-only evaluations with VLMEvalKit, capping generation at 1,024 tokens'. Cohere's linked HF blog (methodology only, not used for numbers): comparison models run with their vLLM implementation where available, else Hugging Face inference, 'following the authors' recommended vision and text inference settings', and 'Because the comparison focuses on instruction-tuned, non-reasoning models, we capped generation at 1,024 tokens'. Split not printed in the card; VLMEvalKit's only CharXiv descriptive dataset is the validation set (github.com/open-compass/VLMEvalKit/blob/c09a0585e4801065b322147774946099bc0fc85f/vlmeval/dataset/charxiv.py (DATASET_URL lists only CharXiv_descriptive_val / CharXiv_reasoning_val)). Values printed as fractions (no conversion). CharXiv row identical since the first card upload of 2026-08-10 (commit 4b0ecf6) through the pinned revision. Rule (a): openly licensed card, authors' own measurement of another lab's model -> by: independent.",
+    "source_id": "card2-coherelabs-north-micro-vision-instruct"
+  },
+  {
+    "model": "qwen3-5-2b",
+    "bench": "charxiv-dq",
+    "score": 0.761,
+    "source": "https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md",
+    "by": "independent",
+    "date": "2026-08-10",
+    "note": "Column 'Qwen3.5-2B-Instruct' (size row '2.1B'), cell '0.761'. Identity: there is no Qwen/Qwen3.5-2B-Instruct repo (HF API returns 401/not found); the post-trained hybrid-thinking checkpoint is Qwen/Qwen3.5-2B (catalogue qwen3-5-2b, model_repo Qwen/Qwen3.5-2B; Qwen-Base is separate). 'Instruct' read as the non-thinking use of Qwen/Qwen3.5-2B, consistent with the blog's 'instruction-tuned, non-reasoning models' and the 1,024-token cap. Card size 2.1B vs catalogue 2.27B (card sizes appear rounded/differently counted). Existing qwen3-5-2b CharXiv rows from Qwen's own card are thinking mode; keep the mode distinction. Cohere's own run, Benchmark Results table of the pinned North-Micro-Vision-Instruct model card (Apache-2.0), section 'Chart / Document / OCR', row 'CharXiv_DQ' (printed 'CharXiv<sub>DQ</sub>'). Card text above the table: 'We ran vision-language and text-only evaluations with VLMEvalKit, capping generation at 1,024 tokens'. Cohere's linked HF blog (methodology only, not used for numbers): comparison models run with their vLLM implementation where available, else Hugging Face inference, 'following the authors' recommended vision and text inference settings', and 'Because the comparison focuses on instruction-tuned, non-reasoning models, we capped generation at 1,024 tokens'. Split not printed in the card; VLMEvalKit's only CharXiv descriptive dataset is the validation set (github.com/open-compass/VLMEvalKit/blob/c09a0585e4801065b322147774946099bc0fc85f/vlmeval/dataset/charxiv.py (DATASET_URL lists only CharXiv_descriptive_val / CharXiv_reasoning_val)). Values printed as fractions (no conversion). CharXiv row identical since the first card upload of 2026-08-10 (commit 4b0ecf6) through the pinned revision. Rule (a): openly licensed card, authors' own measurement of another lab's model -> by: independent.",
+    "source_id": "card2-coherelabs-north-micro-vision-instruct"
+  },
+  {
+    "model": "gemma-4-31b",
+    "bench": "charxiv-rq",
+    "score": 0.777,
+    "source": "https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md",
+    "by": "independent",
+    "date": "2026-08-11",
+    "note": "Meta Superintelligence Lab, pinned Muse Glimmer-30B model card (Apache-2.0), Benchmarks table, section '*Multimodal*', row 'Charxiv Reasoning', column 'Gemma4-31B Thinking Mode', cell '77.7'. Meta's linked 'Muse Glimmer Eval Methodology' (research.meta.ai/static/muse-glimmer-methodology, fetched 2026-10-09; settings only): 'CharXiv Reasoning: We use 1,000 chart reasoning questions from the CharXiv validation set. Grading uses gpt-oss-120b as an LLM judge ... We report the average task success rate across four attempts. We report internal run results for Gemma4-31B and our model, and a self-reported number for Qwen3.6-27B.' and 'For Gemma4-31B, we follow the recommended sampling configuration and we use thinking mode and temperature=1.0/top_p=0.95/top_k=64'. No tool use described for CharXiv (the same document names a Python cropping tool only for ScreenSpot-Pro). Validation split, no tools. Identity: Gemma4-31B = google/gemma-4-31B-it (catalogue gemma-4-31b model_repo). Rule (a): Apache-licensed card, Meta's own measurement of Google's model -> by: independent; joins the existing muse-glimmer-30b charxiv-rq row (78.8) from the same card, making a 2-model run. Qwen3.6-27B column (78.4) not used: methodology says it is a self-reported number (equals Qwen's own card value already recorded). Ledger speed-meta-muse-glimmer-30b already matches this exact URL; its name/attribution still say 'speed table / speed cells' and may want widening to benchmark cells.",
+    "source_id": "speed-meta-muse-glimmer-30b"
+  },
+  {
+    "model": "dots-tts-base",
+    "bench": "seed-tts-en-whisper-v3-wer",
+    "score": 0.0134,
+    "source": "https://arxiv.org/html/2606.07080v2",
+    "by": "lab",
+    "date": "2026-08-10",
+    "note": "Table 2 'Zero-shot results on Seed-TTS-Eval', row 'dots.tts (Pretrain)' (2B), column test-en WER(%) = 1.34. Authors' own model: §3.3.1 'All numbers reported under the dots.tts (Pretrain) row are produced with the pretrained checkpoint from Section 3.2.2'; 'dots.tts-Pretrain and dots.tts-SOAR use 10 Euler solver steps with CFG ... effective NFE of 20 ... CFG scale is γ=1.2 ... All runs use float32 and have torch.compile disabled'. ASR: 'Whisper-Large-v3 for English'. Checkpoint: dots-studio/dots.tts-base @ b5aac65a395e04a60a8dacd4e2f4aadc5ad3dbe1, whose card calls it 'the end-to-end pretrained checkpoint' / 'Pretrain (~1.5M h)' and prints the same Seed-TTS-Eval row (1.34 / 76.8).",
+    "source_id": "speech-dots-tts-report"
+  },
+  {
+    "model": "dots-tts-base",
+    "bench": "seed-tts-zh-paraformer-cer",
+    "score": 0.0096,
+    "source": "https://arxiv.org/html/2606.07080v2",
+    "by": "lab",
+    "date": "2026-08-10",
+    "note": "Table 2 'Zero-shot results on Seed-TTS-Eval', row 'dots.tts (Pretrain)' (2B), column test-zh WER = 0.96 (§3.3.1: 'CER reported as WER for Chinese for table compatibility'; 'Paraformer for Mandarin Chinese'). Same settings as SOAR: 10 Euler steps with CFG γ=1.2 (effective NFE 20), float32, torch.compile disabled. Checkpoint: dots-studio/dots.tts-base @ b5aac65a395e04a60a8dacd4e2f4aadc5ad3dbe1 (card: 'Pretrain (~1.5M h)', same 0.96 / 80.5 test-zh cell).",
+    "source_id": "speech-dots-tts-report"
+  },
+  {
+    "model": "dots-tts-base",
+    "bench": "seed-tts-en-wavlm-sim",
+    "score": 0.768,
+    "source": "https://arxiv.org/html/2606.07080v2",
+    "by": "lab",
+    "date": "2026-08-10",
+    "note": "Table 2, row 'dots.tts (Pretrain)', column test-en SIM = 76.8 (percent; divided by 100). §3.3.1: 'speaker similarity (SIM) is the cosine similarity between WavLM-SV embeddings of the generated speech and the corresponding reference prompt'; §3.3.3: 'scored with the benchmark's reference ASR and WavLM-SV similarity' (prompt SIM). Settings: 10 Euler steps, CFG 1.2, float32. Checkpoint: dots-studio/dots.tts-base @ b5aac65a395e04a60a8dacd4e2f4aadc5ad3dbe1.",
+    "source_id": "speech-dots-tts-report"
+  },
+  {
+    "model": "dots-tts-base",
+    "bench": "seed-tts-zh-wavlm-sim",
+    "score": 0.805,
+    "source": "https://arxiv.org/html/2606.07080v2",
+    "by": "lab",
+    "date": "2026-08-10",
+    "note": "Table 2, row 'dots.tts (Pretrain)', column test-zh SIM = 80.5 (percent; divided by 100). WavLM-SV cosine to the reference prompt (§3.3.1). Settings: 10 Euler steps, CFG 1.2, float32. Checkpoint: dots-studio/dots.tts-base @ b5aac65a395e04a60a8dacd4e2f4aadc5ad3dbe1.",
+    "source_id": "speech-dots-tts-report"
+  },
+  {
+    "model": "dots-tts-soar",
+    "bench": "seed-tts-en-wavlm-sim",
+    "score": 0.771,
+    "source": "https://arxiv.org/html/2606.07080v2",
+    "by": "lab",
+    "date": "2026-08-10",
+    "note": "Same table row as the existing dots-tts-soar WER result: Table 2, row 'dots.tts (SOAR)' (2B), column test-en SIM = 77.1 (percent; divided by 100). WavLM-SV cosine to the reference prompt (§3.3.1). Own measurement: float32, 10 Euler solver steps, CFG 1.2, effective NFE 20, torch.compile disabled. Added under brief step 5 (other existing benchmark of the same table) so the SIM run has both dots.tts checkpoints.",
+    "source_id": "speech-dots-tts-report"
+  },
+  {
+    "model": "dots-tts-soar",
+    "bench": "seed-tts-zh-wavlm-sim",
+    "score": 0.81,
+    "source": "https://arxiv.org/html/2606.07080v2",
+    "by": "lab",
+    "date": "2026-08-10",
+    "note": "Table 2, row 'dots.tts (SOAR)' (2B), column test-zh SIM = 81.0 (percent; divided by 100). WavLM-SV cosine to the reference prompt (§3.3.1). Own measurement: float32, 10 Euler solver steps, CFG 1.2, effective NFE 20, torch.compile disabled. Added under brief step 5 (same table, existing benchmark id).",
+    "source_id": "speech-dots-tts-report"
+  },
+  {
+    "model": "hidream-i1-full",
+    "bench": "dpg-bench",
+    "score": 0.8589,
+    "source": "https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "note": "README 'Evaluation' section, 'DPG-Bench — dense prompt alignment' table, row 'HiDream-I1-Full' (#Params '13.5B + 17B'), column Overall = 85.89 (divided by 100). Same table as the existing HiDream-O1-Image row (89.83). HiDream-I1-Full is HiDream.ai's own earlier model, not marked as copied, so it is treated as a lab measurement per the brief's same-family rule (the README states only 'We benchmark HiDream-O1-Image against state-of-the-art open-source and proprietary models on five widely-used evaluation suites'; the same 85.89 appears for HiDream-I1-Full in LongCat-Image Table 3, consistent with it being HiDream's own earlier published figure). Checkpoint: HiDream-I1-Full (17B), catalogue id hidream-i1-full.",
+    "source_id": "visual-hidream"
+  },
+  {
+    "model": "qwen3-tts-12hz-0-6b-base",
+    "bench": "seed-tts-en-wer-asr-unstated",
+    "score": 0.0132,
+    "source": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md",
+    "by": "lab",
+    "date": "2026-01-23",
+    "note": "Qwen3-TTS-12Hz-1.7B-Base card @ fd4b254, 'Evaluation' > 'Speech Generation Benchmarks', table 'Zero-shot speech generation on the Seed-TTS test set. Performance is measured by Word Error Rate (WER, ↓)', row 'Qwen3-TTS-12Hz-0.6B-Base', column test-en = 1.32 (percent; divided by 100). Qwen team's own run of its own smaller checkpoint in the same table as the existing 1.7B-Base row: 'During evaluation, we ran inference for all models with dtype=torch.bfloat16 and set max_new_tokens=2048. All other sampling parameters used the defaults from the checkpoint's generate_config.json. For the Seed-Test ... we set language=\"auto\"'. ASR transcriber not stated (hence the -asr-unstated id). Checkpoint: Qwen/Qwen3-TTS-12Hz-0.6B-Base (catalogue qwen3-tts-12hz-0-6b-base).",
+    "source_id": "card2-qwen-qwen3-tts-12hz-1-7b-base"
+  },
+  {
+    "model": "qwen3-tts-12hz-0-6b-base",
+    "bench": "seed-tts-zh-err-asr-unstated",
+    "score": 0.0092,
+    "source": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md",
+    "by": "lab",
+    "date": "2026-01-23",
+    "note": "Same card table ('Zero-shot speech generation on the Seed-TTS test set ... Word Error Rate (WER, ↓)'), row 'Qwen3-TTS-12Hz-0.6B-Base', column test-zh = 0.92 (percent, labelled WER; divided by 100). Settings: bfloat16, max_new_tokens=2048, checkpoint default sampling, language='auto'. ASR transcriber not stated. Checkpoint: Qwen/Qwen3-TTS-12Hz-0.6B-Base.",
+    "source_id": "card2-qwen-qwen3-tts-12hz-1-7b-base"
   }
 ]
