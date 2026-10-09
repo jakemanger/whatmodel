@@ -8275,11 +8275,11 @@
     "license": "MIT",
     "license_url": "/licenses/distil-whisper--distil-large-v3.5.txt",
     "terms_url": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
-    "quote": "README front-matter declares 'license: mit'. No root LICENSE file at this revision; standard MIT text supplied. Selected own-lab result cells in the pinned README only; linked blogs, images hosted elsewhere and competitor columns are not used.",
+    "quote": "README front-matter declares 'license: mit'. No root LICENSE file at this revision; standard MIT text supplied. Own-lab cells of the Short-Form and Long-Form Evaluation tables in the pinned README, including the Distil-Whisper team's earlier distil-v2 / distil-v3 columns; the OpenAI large-v3 / large-v3-turbo columns are not used (no statement that the card authors ran them), nor are linked blogs or images hosted elsewhere.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "Hugging Face (Distil-Whisper). distil-whisper/distil-large-v3.5 model card. Source: https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md. Licence: MIT. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "Hugging Face (Distil-Whisper). distil-whisper/distil-large-v3.5 model card. Source: https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md. Licence: MIT. Changes: own-lab numerical cells (distil-large-v3.5 and the earlier distil-v2 / distil-v3 columns) transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
   },
   {
     "id": "card2-nvidia-parakeet-tdt-0-6b-v2",
@@ -10675,38 +10675,21 @@
     "attribution": "ESPnet developers and recipe contributors. Extracted selected test WER cells from the committed LibriSpeech recipe README; percentages divided by 100. No endorsement."
   },
   {
-    "id": "speech-nvidia-jasper-dle",
-    "name": "NVIDIA Jasper committed training accuracy",
+    "id": "speech-nvidia-dle-asr",
+    "name": "NVIDIA DeepLearningExamples Jasper and QuartzNet READMEs",
     "match": [
-      "github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/Jasper/README.md"
+      "github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/Jasper/README.md",
+      "github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md"
     ],
     "exact": true,
     "kind": "dataset",
     "license": "Apache-2.0",
     "terms_url": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/Jasper/LICENSE",
     "verdict": "allowed",
-    "checked": "2026-09-29",
-    "license_url": "/licenses/speech-nvidia-jasper-dle.txt",
+    "checked": "2026-10-09",
+    "license_url": "/licenses/speech-nvidia-dle-asr.txt",
     "icon": "github.com",
-    "quote": "Apache-2.0 covers the documentation source. Only NVIDIA’s own A100 training-accuracy table (greedy decoding); not other seeds, hardware throughput, or third-party paper comparisons.",
-    "scope": "Apache-2.0 covers the documentation source. Only NVIDIA’s own A100 training-accuracy table (greedy decoding); not other seeds, hardware throughput, or third-party paper comparisons.",
-    "attribution": "NVIDIA Corporation. Selected LibriSpeech test-clean/test-other WER cells; percentage / 100. No endorsement."
-  },
-  {
-    "id": "speech-nvidia-quartznet-dle",
-    "name": "NVIDIA QuartzNet committed training accuracy",
-    "match": [
-      "github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md"
-    ],
-    "exact": true,
-    "kind": "dataset",
-    "license": "Apache-2.0",
-    "terms_url": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/LICENSE",
-    "verdict": "allowed",
-    "checked": "2026-09-29",
-    "license_url": "/licenses/speech-nvidia-quartznet-dle.txt",
-    "icon": "github.com",
-    "quote": "Apache-2.0 covers the documentation source. Only NVIDIA’s own A100 training-accuracy table (greedy decoding); not other seeds, hardware throughput, or third-party paper comparisons.",
+    "quote": "Apache-2.0 covers the documentation source. Both READMEs sit in the same repository at the same commit and report the same protocol (NVIDIA's own A100 training-accuracy table, greedy decoding, LibriSpeech test-clean / test-other), so they are one evaluator's run. Only those tables; not other seeds, hardware throughput, or third-party paper comparisons.",
     "scope": "Apache-2.0 covers the documentation source. Only NVIDIA’s own A100 training-accuracy table (greedy decoding); not other seeds, hardware throughput, or third-party paper comparisons.",
     "attribution": "NVIDIA Corporation. Selected LibriSpeech test-clean/test-other WER cells; percentage / 100. No endorsement."
   },

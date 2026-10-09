@@ -161219,7 +161219,7 @@
     "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/Jasper/README.md",
     "by": "lab",
     "note": "NVIDIA DGX A100 training accuracy table, mixed precision, greedy decoding without language model. Exact DLE recipe run; not a generic architecture or Open ASR score.",
-    "source_id": "speech-nvidia-jasper-dle"
+    "source_id": "speech-nvidia-dle-asr"
   },
   {
     "model": "jasper-10x5-nvidia-dle",
@@ -161228,7 +161228,7 @@
     "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/Jasper/README.md",
     "by": "lab",
     "note": "NVIDIA DGX A100 training accuracy table, mixed precision, greedy decoding without language model. Exact DLE recipe run; not a generic architecture or Open ASR score.",
-    "source_id": "speech-nvidia-jasper-dle"
+    "source_id": "speech-nvidia-dle-asr"
   },
   {
     "model": "quartznet-15x5-nvidia-dle",
@@ -161237,7 +161237,7 @@
     "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md",
     "by": "lab",
     "note": "NVIDIA DGX A100 training accuracy table, mixed precision, greedy decoding without language model. Exact DLE recipe run; not a generic architecture or Open ASR score.",
-    "source_id": "speech-nvidia-quartznet-dle"
+    "source_id": "speech-nvidia-dle-asr"
   },
   {
     "model": "quartznet-15x5-nvidia-dle",
@@ -161246,7 +161246,7 @@
     "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md",
     "by": "lab",
     "note": "NVIDIA DGX A100 training accuracy table, mixed precision, greedy decoding without language model. Exact DLE recipe run; not a generic architecture or Open ASR score.",
-    "source_id": "speech-nvidia-quartznet-dle"
+    "source_id": "speech-nvidia-dle-asr"
   },
   {
     "model": "vits-ljspeech",
@@ -203325,5 +203325,175 @@
     "date": "2026-01-23",
     "note": "Same card table ('Zero-shot speech generation on the Seed-TTS test set ... Word Error Rate (WER, ↓)'), row 'Qwen3-TTS-12Hz-0.6B-Base', column test-zh = 0.92 (percent, labelled WER; divided by 100). Settings: bfloat16, max_new_tokens=2048, checkpoint default sampling, language='auto'. ASR transcriber not stated. Checkpoint: Qwen/Qwen3-TTS-12Hz-0.6B-Base.",
     "source_id": "card2-qwen-qwen3-tts-12hz-1-7b-base"
+  },
+  {
+    "model": "distil-large-v3",
+    "bench": "ami-wer",
+    "score": 0.1516,
+    "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+    "by": "lab",
+    "date": "2026-04-13",
+    "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Short-Form Evaluation' table (columns: Dataset | Size / h | large-v3 | large-v3-turbo | distil-v3 | distil-v3.5), row 'AMI', column 'distil-v3' = 15.16 (%). Setup printed for the table: 'We've evaluated the model on 5 in-distribution (ID) test sets and 2 out-of-distribution (OOD) test sets for short-form transcription, as done in Open ASR Leaderboard' and 'WER results shown here are post-normalization' (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is the Distil-Whisper team's own previous version (column header links https://huggingface.co/distil-whisper/distil-large-v3 in the summary table) -> catalogue distil-large-v3; by lab (same Hugging Face Distil-Whisper family, not marked as copied). The four columns in this table are numerically identical to the HF Open ASR Leaderboard CSV (github.com/huggingface/open_asr_leaderboard @16743c6 en_shortform.csv), which Hugging Face (the same organisation; card authors Le Bihan, Zheng and Srivastav are leaderboard maintainers) runs, so this is HF's own pipeline measurement. Converted from percent.",
+    "source_id": "card2-distil-whisper-distil-large-v3-5"
+  },
+  {
+    "model": "distil-large-v3",
+    "bench": "gigaspeech-wer",
+    "score": 0.1008,
+    "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+    "by": "lab",
+    "date": "2026-04-13",
+    "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Short-Form Evaluation' table (columns: Dataset | Size / h | large-v3 | large-v3-turbo | distil-v3 | distil-v3.5), row 'Gigaspeech', column 'distil-v3' = 10.08 (%). Setup printed for the table: 'We've evaluated the model on 5 in-distribution (ID) test sets and 2 out-of-distribution (OOD) test sets for short-form transcription, as done in Open ASR Leaderboard' and 'WER results shown here are post-normalization' (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is the Distil-Whisper team's own previous version (column header links https://huggingface.co/distil-whisper/distil-large-v3 in the summary table) -> catalogue distil-large-v3; by lab (same Hugging Face Distil-Whisper family, not marked as copied). The four columns in this table are numerically identical to the HF Open ASR Leaderboard CSV (github.com/huggingface/open_asr_leaderboard @16743c6 en_shortform.csv), which Hugging Face (the same organisation; card authors Le Bihan, Zheng and Srivastav are leaderboard maintainers) runs, so this is HF's own pipeline measurement. Converted from percent.",
+    "source_id": "card2-distil-whisper-distil-large-v3-5"
+  },
+  {
+    "model": "distil-large-v3",
+    "bench": "librispeech-test-clean-wer",
+    "score": 0.0254,
+    "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+    "by": "lab",
+    "date": "2026-04-13",
+    "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Short-Form Evaluation' table (columns: Dataset | Size / h | large-v3 | large-v3-turbo | distil-v3 | distil-v3.5), row 'LS Clean', column 'distil-v3' = 2.54 (%). Setup printed for the table: 'We've evaluated the model on 5 in-distribution (ID) test sets and 2 out-of-distribution (OOD) test sets for short-form transcription, as done in Open ASR Leaderboard' and 'WER results shown here are post-normalization' (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is the Distil-Whisper team's own previous version (column header links https://huggingface.co/distil-whisper/distil-large-v3 in the summary table) -> catalogue distil-large-v3; by lab (same Hugging Face Distil-Whisper family, not marked as copied). The four columns in this table are numerically identical to the HF Open ASR Leaderboard CSV (github.com/huggingface/open_asr_leaderboard @16743c6 en_shortform.csv), which Hugging Face (the same organisation; card authors Le Bihan, Zheng and Srivastav are leaderboard maintainers) runs, so this is HF's own pipeline measurement. Converted from percent.",
+    "source_id": "card2-distil-whisper-distil-large-v3-5"
+  },
+  {
+    "model": "distil-large-v3",
+    "bench": "librispeech-test-other-wer",
+    "score": 0.0519,
+    "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+    "by": "lab",
+    "date": "2026-04-13",
+    "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Short-Form Evaluation' table (columns: Dataset | Size / h | large-v3 | large-v3-turbo | distil-v3 | distil-v3.5), row 'LS Other', column 'distil-v3' = 5.19 (%). Setup printed for the table: 'We've evaluated the model on 5 in-distribution (ID) test sets and 2 out-of-distribution (OOD) test sets for short-form transcription, as done in Open ASR Leaderboard' and 'WER results shown here are post-normalization' (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is the Distil-Whisper team's own previous version (column header links https://huggingface.co/distil-whisper/distil-large-v3 in the summary table) -> catalogue distil-large-v3; by lab (same Hugging Face Distil-Whisper family, not marked as copied). The four columns in this table are numerically identical to the HF Open ASR Leaderboard CSV (github.com/huggingface/open_asr_leaderboard @16743c6 en_shortform.csv), which Hugging Face (the same organisation; card authors Le Bihan, Zheng and Srivastav are leaderboard maintainers) runs, so this is HF's own pipeline measurement. Converted from percent.",
+    "source_id": "card2-distil-whisper-distil-large-v3-5"
+  },
+  {
+    "model": "distil-large-v3",
+    "bench": "tedlium-wer",
+    "score": 0.0386,
+    "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+    "by": "lab",
+    "date": "2026-04-13",
+    "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Short-Form Evaluation' table (columns: Dataset | Size / h | large-v3 | large-v3-turbo | distil-v3 | distil-v3.5), row 'Tedlium', column 'distil-v3' = 3.86 (%). Setup printed for the table: 'We've evaluated the model on 5 in-distribution (ID) test sets and 2 out-of-distribution (OOD) test sets for short-form transcription, as done in Open ASR Leaderboard' and 'WER results shown here are post-normalization' (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is the Distil-Whisper team's own previous version (column header links https://huggingface.co/distil-whisper/distil-large-v3 in the summary table) -> catalogue distil-large-v3; by lab (same Hugging Face Distil-Whisper family, not marked as copied). The four columns in this table are numerically identical to the HF Open ASR Leaderboard CSV (github.com/huggingface/open_asr_leaderboard @16743c6 en_shortform.csv), which Hugging Face (the same organisation; card authors Le Bihan, Zheng and Srivastav are leaderboard maintainers) runs, so this is HF's own pipeline measurement. Converted from percent.",
+    "source_id": "card2-distil-whisper-distil-large-v3-5"
+  },
+  {
+    "model": "distil-large-v3",
+    "bench": "earnings22-wer",
+    "score": 0.1179,
+    "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+    "by": "lab",
+    "date": "2026-04-13",
+    "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Short-Form Evaluation' table (columns: Dataset | Size / h | large-v3 | large-v3-turbo | distil-v3 | distil-v3.5), row 'Earnings22', column 'distil-v3' = 11.79 (%). Setup printed for the table: 'We've evaluated the model on 5 in-distribution (ID) test sets and 2 out-of-distribution (OOD) test sets for short-form transcription, as done in Open ASR Leaderboard' and 'WER results shown here are post-normalization' (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is the Distil-Whisper team's own previous version (column header links https://huggingface.co/distil-whisper/distil-large-v3 in the summary table) -> catalogue distil-large-v3; by lab (same Hugging Face Distil-Whisper family, not marked as copied). The four columns in this table are numerically identical to the HF Open ASR Leaderboard CSV (github.com/huggingface/open_asr_leaderboard @16743c6 en_shortform.csv), which Hugging Face (the same organisation; card authors Le Bihan, Zheng and Srivastav are leaderboard maintainers) runs, so this is HF's own pipeline measurement. Converted from percent.",
+    "source_id": "card2-distil-whisper-distil-large-v3-5"
+  },
+  {
+    "model": "distil-large-v3",
+    "bench": "spgispeech-wer",
+    "score": 0.0327,
+    "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+    "by": "lab",
+    "date": "2026-04-13",
+    "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Short-Form Evaluation' table (columns: Dataset | Size / h | large-v3 | large-v3-turbo | distil-v3 | distil-v3.5), row 'SPGISpeech', column 'distil-v3' = 3.27 (%). Setup printed for the table: 'We've evaluated the model on 5 in-distribution (ID) test sets and 2 out-of-distribution (OOD) test sets for short-form transcription, as done in Open ASR Leaderboard' and 'WER results shown here are post-normalization' (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is the Distil-Whisper team's own previous version (column header links https://huggingface.co/distil-whisper/distil-large-v3 in the summary table) -> catalogue distil-large-v3; by lab (same Hugging Face Distil-Whisper family, not marked as copied). The four columns in this table are numerically identical to the HF Open ASR Leaderboard CSV (github.com/huggingface/open_asr_leaderboard @16743c6 en_shortform.csv), which Hugging Face (the same organisation; card authors Le Bihan, Zheng and Srivastav are leaderboard maintainers) runs, so this is HF's own pipeline measurement. Converted from percent.",
+    "source_id": "card2-distil-whisper-distil-large-v3-5"
+  },
+  {
+    "model": "distil-large-v2",
+    "bench": "tedlium-longform-wer",
+    "score": 0.0966,
+    "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+    "by": "lab",
+    "date": "2026-04-13",
+    "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Long-Form Evaluation' table (columns: Dataset | Size / h | large-v3-turbo | distil-v2 | distil-v3 | distil-v3.5), row 'tedlium-long-form', column 'distil-v2' = 9.66 (%). Setup printed for the table: 'using the sequential decoding algorithm (condition_on_prev_tokens=False, return_timestamps=True)'; WER post-normalisation (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is an earlier Distil-Whisper English model by the same HF team (Distil-Large-v2 linked in the card Training Details (huggingface.co/distil-whisper/distil-large-v2)) -> catalogue distil-large-v2; by lab. These long-form cells are not copies of the Open ASR long-form CSV (e.g. distil-v3 earnings22 15.06 here vs 14.98 in en_longform.csv @16743c6), consistent with the card's own sequential-decoding run. Converted from percent.",
+    "source_id": "card2-distil-whisper-distil-large-v3-5"
+  },
+  {
+    "model": "distil-large-v2",
+    "bench": "meanwhile-longform-wer",
+    "score": 0.1675,
+    "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+    "by": "lab",
+    "date": "2026-04-13",
+    "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Long-Form Evaluation' table (columns: Dataset | Size / h | large-v3-turbo | distil-v2 | distil-v3 | distil-v3.5), row 'meanwhile', column 'distil-v2' = 16.75 (%). Setup printed for the table: 'using the sequential decoding algorithm (condition_on_prev_tokens=False, return_timestamps=True)'; WER post-normalisation (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is an earlier Distil-Whisper English model by the same HF team (Distil-Large-v2 linked in the card Training Details (huggingface.co/distil-whisper/distil-large-v2)) -> catalogue distil-large-v2; by lab. These long-form cells are not copies of the Open ASR long-form CSV (e.g. distil-v3 earnings22 15.06 here vs 14.98 in en_longform.csv @16743c6), consistent with the card's own sequential-decoding run. Converted from percent.",
+    "source_id": "card2-distil-whisper-distil-large-v3-5"
+  },
+  {
+    "model": "distil-large-v2",
+    "bench": "earnings21-longform-wer",
+    "score": 0.1509,
+    "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+    "by": "lab",
+    "date": "2026-04-13",
+    "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Long-Form Evaluation' table (columns: Dataset | Size / h | large-v3-turbo | distil-v2 | distil-v3 | distil-v3.5), row 'earnings21', column 'distil-v2' = 15.09 (%). Setup printed for the table: 'using the sequential decoding algorithm (condition_on_prev_tokens=False, return_timestamps=True)'; WER post-normalisation (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is an earlier Distil-Whisper English model by the same HF team (Distil-Large-v2 linked in the card Training Details (huggingface.co/distil-whisper/distil-large-v2)) -> catalogue distil-large-v2; by lab. These long-form cells are not copies of the Open ASR long-form CSV (e.g. distil-v3 earnings22 15.06 here vs 14.98 in en_longform.csv @16743c6), consistent with the card's own sequential-decoding run. Converted from percent.",
+    "source_id": "card2-distil-whisper-distil-large-v3-5"
+  },
+  {
+    "model": "distil-large-v2",
+    "bench": "earnings22-longform-wer",
+    "score": 0.1911,
+    "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+    "by": "lab",
+    "date": "2026-04-13",
+    "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Long-Form Evaluation' table (columns: Dataset | Size / h | large-v3-turbo | distil-v2 | distil-v3 | distil-v3.5), row 'earnings22', column 'distil-v2' = 19.11 (%). Setup printed for the table: 'using the sequential decoding algorithm (condition_on_prev_tokens=False, return_timestamps=True)'; WER post-normalisation (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is an earlier Distil-Whisper English model by the same HF team (Distil-Large-v2 linked in the card Training Details (huggingface.co/distil-whisper/distil-large-v2)) -> catalogue distil-large-v2; by lab. These long-form cells are not copies of the Open ASR long-form CSV (e.g. distil-v3 earnings22 15.06 here vs 14.98 in en_longform.csv @16743c6), consistent with the card's own sequential-decoding run. Converted from percent.",
+    "source_id": "card2-distil-whisper-distil-large-v3-5"
+  },
+  {
+    "model": "distil-large-v2",
+    "bench": "rev16-longform-wer",
+    "score": 0.2115,
+    "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+    "by": "lab",
+    "date": "2026-04-13",
+    "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Long-Form Evaluation' table (columns: Dataset | Size / h | large-v3-turbo | distil-v2 | distil-v3 | distil-v3.5), row 'rev16', column 'distil-v2' = 21.15 (%). Setup printed for the table: 'using the sequential decoding algorithm (condition_on_prev_tokens=False, return_timestamps=True)'; WER post-normalisation (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is an earlier Distil-Whisper English model by the same HF team (Distil-Large-v2 linked in the card Training Details (huggingface.co/distil-whisper/distil-large-v2)) -> catalogue distil-large-v2; by lab. These long-form cells are not copies of the Open ASR long-form CSV (e.g. distil-v3 earnings22 15.06 here vs 14.98 in en_longform.csv @16743c6), consistent with the card's own sequential-decoding run. Converted from percent.",
+    "source_id": "card2-distil-whisper-distil-large-v3-5"
+  },
+  {
+    "model": "distil-large-v3",
+    "bench": "tedlium-longform-wer",
+    "score": 0.039,
+    "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+    "by": "lab",
+    "date": "2026-04-13",
+    "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Long-Form Evaluation' table (columns: Dataset | Size / h | large-v3-turbo | distil-v2 | distil-v3 | distil-v3.5), row 'tedlium-long-form', column 'distil-v3' = 3.9 (%). Setup printed for the table: 'using the sequential decoding algorithm (condition_on_prev_tokens=False, return_timestamps=True)'; WER post-normalisation (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is an earlier Distil-Whisper English model by the same HF team (distil-large-v3 linked in the summary table (huggingface.co/distil-whisper/distil-large-v3)) -> catalogue distil-large-v3; by lab. These long-form cells are not copies of the Open ASR long-form CSV (e.g. distil-v3 earnings22 15.06 here vs 14.98 in en_longform.csv @16743c6), consistent with the card's own sequential-decoding run. Converted from percent.",
+    "source_id": "card2-distil-whisper-distil-large-v3-5"
+  },
+  {
+    "model": "distil-large-v3",
+    "bench": "meanwhile-longform-wer",
+    "score": 0.0704,
+    "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+    "by": "lab",
+    "date": "2026-04-13",
+    "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Long-Form Evaluation' table (columns: Dataset | Size / h | large-v3-turbo | distil-v2 | distil-v3 | distil-v3.5), row 'meanwhile', column 'distil-v3' = 7.04 (%). Setup printed for the table: 'using the sequential decoding algorithm (condition_on_prev_tokens=False, return_timestamps=True)'; WER post-normalisation (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is an earlier Distil-Whisper English model by the same HF team (distil-large-v3 linked in the summary table (huggingface.co/distil-whisper/distil-large-v3)) -> catalogue distil-large-v3; by lab. These long-form cells are not copies of the Open ASR long-form CSV (e.g. distil-v3 earnings22 15.06 here vs 14.98 in en_longform.csv @16743c6), consistent with the card's own sequential-decoding run. Converted from percent.",
+    "source_id": "card2-distil-whisper-distil-large-v3-5"
+  },
+  {
+    "model": "distil-large-v3",
+    "bench": "earnings21-longform-wer",
+    "score": 0.1054,
+    "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+    "by": "lab",
+    "date": "2026-04-13",
+    "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Long-Form Evaluation' table (columns: Dataset | Size / h | large-v3-turbo | distil-v2 | distil-v3 | distil-v3.5), row 'earnings21', column 'distil-v3' = 10.54 (%). Setup printed for the table: 'using the sequential decoding algorithm (condition_on_prev_tokens=False, return_timestamps=True)'; WER post-normalisation (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is an earlier Distil-Whisper English model by the same HF team (distil-large-v3 linked in the summary table (huggingface.co/distil-whisper/distil-large-v3)) -> catalogue distil-large-v3; by lab. These long-form cells are not copies of the Open ASR long-form CSV (e.g. distil-v3 earnings22 15.06 here vs 14.98 in en_longform.csv @16743c6), consistent with the card's own sequential-decoding run. Converted from percent.",
+    "source_id": "card2-distil-whisper-distil-large-v3-5"
+  },
+  {
+    "model": "distil-large-v3",
+    "bench": "earnings22-longform-wer",
+    "score": 0.1506,
+    "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+    "by": "lab",
+    "date": "2026-04-13",
+    "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Long-Form Evaluation' table (columns: Dataset | Size / h | large-v3-turbo | distil-v2 | distil-v3 | distil-v3.5), row 'earnings22', column 'distil-v3' = 15.06 (%). Setup printed for the table: 'using the sequential decoding algorithm (condition_on_prev_tokens=False, return_timestamps=True)'; WER post-normalisation (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is an earlier Distil-Whisper English model by the same HF team (distil-large-v3 linked in the summary table (huggingface.co/distil-whisper/distil-large-v3)) -> catalogue distil-large-v3; by lab. These long-form cells are not copies of the Open ASR long-form CSV (e.g. distil-v3 earnings22 15.06 here vs 14.98 in en_longform.csv @16743c6), consistent with the card's own sequential-decoding run. Converted from percent.",
+    "source_id": "card2-distil-whisper-distil-large-v3-5"
+  },
+  {
+    "model": "distil-large-v3",
+    "bench": "rev16-longform-wer",
+    "score": 0.1376,
+    "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+    "by": "lab",
+    "date": "2026-04-13",
+    "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Long-Form Evaluation' table (columns: Dataset | Size / h | large-v3-turbo | distil-v2 | distil-v3 | distil-v3.5), row 'rev16', column 'distil-v3' = 13.76 (%). Setup printed for the table: 'using the sequential decoding algorithm (condition_on_prev_tokens=False, return_timestamps=True)'; WER post-normalisation (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is an earlier Distil-Whisper English model by the same HF team (distil-large-v3 linked in the summary table (huggingface.co/distil-whisper/distil-large-v3)) -> catalogue distil-large-v3; by lab. These long-form cells are not copies of the Open ASR long-form CSV (e.g. distil-v3 earnings22 15.06 here vs 14.98 in en_longform.csv @16743c6), consistent with the card's own sequential-decoding run. Converted from percent.",
+    "source_id": "card2-distil-whisper-distil-large-v3-5"
   }
 ]

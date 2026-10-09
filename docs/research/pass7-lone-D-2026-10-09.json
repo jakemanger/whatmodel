@@ -1,0 +1,483 @@
+{
+ "about": "Pass 7 batch D (2026-10-09): 12 openly licensed speech-to-text sources whose own-model rows were alone in their runs (lone-batch-D.json, 69 lone rows). For each lone row, the same table's comparator columns were checked for evidence that the authors measured them under the same setup. Candidate rows only; data/ was not edited. Merge: results via npm run import (no new ledger ids: every row reuses the existing source_id and its exact pinned URL; the ledger scope/quote text of the card2-* entries says 'competitor columns are not used' and should be reworded as listed in the .md). No models, benchmarks or ledger entries are proposed. Counted-result effect simulated with lib/score.ts toCells on a scratch copy of data/ (import of the 17 rows): 12,299 -> 12,324.",
+ "results": [
+  {
+   "model": "distil-large-v3",
+   "bench": "ami-wer",
+   "score": 0.1516,
+   "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+   "source_id": "card2-distil-whisper-distil-large-v3-5",
+   "by": "lab",
+   "date": "2026-04-13",
+   "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Short-Form Evaluation' table (columns: Dataset | Size / h | large-v3 | large-v3-turbo | distil-v3 | distil-v3.5), row 'AMI', column 'distil-v3' = 15.16 (%). Setup printed for the table: 'We've evaluated the model on 5 in-distribution (ID) test sets and 2 out-of-distribution (OOD) test sets for short-form transcription, as done in Open ASR Leaderboard' and 'WER results shown here are post-normalization' (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is the Distil-Whisper team's own previous version (column header links https://huggingface.co/distil-whisper/distil-large-v3 in the summary table) -> catalogue distil-large-v3; by lab (same Hugging Face Distil-Whisper family, not marked as copied). The four columns in this table are numerically identical to the HF Open ASR Leaderboard CSV (github.com/huggingface/open_asr_leaderboard @16743c6 en_shortform.csv), which Hugging Face (the same organisation; card authors Le Bihan, Zheng and Srivastav are leaderboard maintainers) runs, so this is HF's own pipeline measurement. Converted from percent.",
+   "evidence": {
+    "kind": "table",
+    "section": "Short-Form Evaluation",
+    "row_label": "AMI",
+    "column_label": "distil-v3",
+    "raw_value": "15.16",
+    "scale_divisor": 100
+   }
+  },
+  {
+   "model": "distil-large-v3",
+   "bench": "gigaspeech-wer",
+   "score": 0.1008,
+   "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+   "source_id": "card2-distil-whisper-distil-large-v3-5",
+   "by": "lab",
+   "date": "2026-04-13",
+   "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Short-Form Evaluation' table (columns: Dataset | Size / h | large-v3 | large-v3-turbo | distil-v3 | distil-v3.5), row 'Gigaspeech', column 'distil-v3' = 10.08 (%). Setup printed for the table: 'We've evaluated the model on 5 in-distribution (ID) test sets and 2 out-of-distribution (OOD) test sets for short-form transcription, as done in Open ASR Leaderboard' and 'WER results shown here are post-normalization' (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is the Distil-Whisper team's own previous version (column header links https://huggingface.co/distil-whisper/distil-large-v3 in the summary table) -> catalogue distil-large-v3; by lab (same Hugging Face Distil-Whisper family, not marked as copied). The four columns in this table are numerically identical to the HF Open ASR Leaderboard CSV (github.com/huggingface/open_asr_leaderboard @16743c6 en_shortform.csv), which Hugging Face (the same organisation; card authors Le Bihan, Zheng and Srivastav are leaderboard maintainers) runs, so this is HF's own pipeline measurement. Converted from percent.",
+   "evidence": {
+    "kind": "table",
+    "section": "Short-Form Evaluation",
+    "row_label": "Gigaspeech",
+    "column_label": "distil-v3",
+    "raw_value": "10.08",
+    "scale_divisor": 100
+   }
+  },
+  {
+   "model": "distil-large-v3",
+   "bench": "librispeech-test-clean-wer",
+   "score": 0.0254,
+   "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+   "source_id": "card2-distil-whisper-distil-large-v3-5",
+   "by": "lab",
+   "date": "2026-04-13",
+   "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Short-Form Evaluation' table (columns: Dataset | Size / h | large-v3 | large-v3-turbo | distil-v3 | distil-v3.5), row 'LS Clean', column 'distil-v3' = 2.54 (%). Setup printed for the table: 'We've evaluated the model on 5 in-distribution (ID) test sets and 2 out-of-distribution (OOD) test sets for short-form transcription, as done in Open ASR Leaderboard' and 'WER results shown here are post-normalization' (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is the Distil-Whisper team's own previous version (column header links https://huggingface.co/distil-whisper/distil-large-v3 in the summary table) -> catalogue distil-large-v3; by lab (same Hugging Face Distil-Whisper family, not marked as copied). The four columns in this table are numerically identical to the HF Open ASR Leaderboard CSV (github.com/huggingface/open_asr_leaderboard @16743c6 en_shortform.csv), which Hugging Face (the same organisation; card authors Le Bihan, Zheng and Srivastav are leaderboard maintainers) runs, so this is HF's own pipeline measurement. Converted from percent.",
+   "evidence": {
+    "kind": "table",
+    "section": "Short-Form Evaluation",
+    "row_label": "LS Clean",
+    "column_label": "distil-v3",
+    "raw_value": "2.54",
+    "scale_divisor": 100
+   }
+  },
+  {
+   "model": "distil-large-v3",
+   "bench": "librispeech-test-other-wer",
+   "score": 0.0519,
+   "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+   "source_id": "card2-distil-whisper-distil-large-v3-5",
+   "by": "lab",
+   "date": "2026-04-13",
+   "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Short-Form Evaluation' table (columns: Dataset | Size / h | large-v3 | large-v3-turbo | distil-v3 | distil-v3.5), row 'LS Other', column 'distil-v3' = 5.19 (%). Setup printed for the table: 'We've evaluated the model on 5 in-distribution (ID) test sets and 2 out-of-distribution (OOD) test sets for short-form transcription, as done in Open ASR Leaderboard' and 'WER results shown here are post-normalization' (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is the Distil-Whisper team's own previous version (column header links https://huggingface.co/distil-whisper/distil-large-v3 in the summary table) -> catalogue distil-large-v3; by lab (same Hugging Face Distil-Whisper family, not marked as copied). The four columns in this table are numerically identical to the HF Open ASR Leaderboard CSV (github.com/huggingface/open_asr_leaderboard @16743c6 en_shortform.csv), which Hugging Face (the same organisation; card authors Le Bihan, Zheng and Srivastav are leaderboard maintainers) runs, so this is HF's own pipeline measurement. Converted from percent.",
+   "evidence": {
+    "kind": "table",
+    "section": "Short-Form Evaluation",
+    "row_label": "LS Other",
+    "column_label": "distil-v3",
+    "raw_value": "5.19",
+    "scale_divisor": 100
+   }
+  },
+  {
+   "model": "distil-large-v3",
+   "bench": "tedlium-wer",
+   "score": 0.0386,
+   "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+   "source_id": "card2-distil-whisper-distil-large-v3-5",
+   "by": "lab",
+   "date": "2026-04-13",
+   "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Short-Form Evaluation' table (columns: Dataset | Size / h | large-v3 | large-v3-turbo | distil-v3 | distil-v3.5), row 'Tedlium', column 'distil-v3' = 3.86 (%). Setup printed for the table: 'We've evaluated the model on 5 in-distribution (ID) test sets and 2 out-of-distribution (OOD) test sets for short-form transcription, as done in Open ASR Leaderboard' and 'WER results shown here are post-normalization' (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is the Distil-Whisper team's own previous version (column header links https://huggingface.co/distil-whisper/distil-large-v3 in the summary table) -> catalogue distil-large-v3; by lab (same Hugging Face Distil-Whisper family, not marked as copied). The four columns in this table are numerically identical to the HF Open ASR Leaderboard CSV (github.com/huggingface/open_asr_leaderboard @16743c6 en_shortform.csv), which Hugging Face (the same organisation; card authors Le Bihan, Zheng and Srivastav are leaderboard maintainers) runs, so this is HF's own pipeline measurement. Converted from percent.",
+   "evidence": {
+    "kind": "table",
+    "section": "Short-Form Evaluation",
+    "row_label": "Tedlium",
+    "column_label": "distil-v3",
+    "raw_value": "3.86",
+    "scale_divisor": 100
+   }
+  },
+  {
+   "model": "distil-large-v3",
+   "bench": "earnings22-wer",
+   "score": 0.1179,
+   "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+   "source_id": "card2-distil-whisper-distil-large-v3-5",
+   "by": "lab",
+   "date": "2026-04-13",
+   "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Short-Form Evaluation' table (columns: Dataset | Size / h | large-v3 | large-v3-turbo | distil-v3 | distil-v3.5), row 'Earnings22', column 'distil-v3' = 11.79 (%). Setup printed for the table: 'We've evaluated the model on 5 in-distribution (ID) test sets and 2 out-of-distribution (OOD) test sets for short-form transcription, as done in Open ASR Leaderboard' and 'WER results shown here are post-normalization' (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is the Distil-Whisper team's own previous version (column header links https://huggingface.co/distil-whisper/distil-large-v3 in the summary table) -> catalogue distil-large-v3; by lab (same Hugging Face Distil-Whisper family, not marked as copied). The four columns in this table are numerically identical to the HF Open ASR Leaderboard CSV (github.com/huggingface/open_asr_leaderboard @16743c6 en_shortform.csv), which Hugging Face (the same organisation; card authors Le Bihan, Zheng and Srivastav are leaderboard maintainers) runs, so this is HF's own pipeline measurement. Converted from percent.",
+   "evidence": {
+    "kind": "table",
+    "section": "Short-Form Evaluation",
+    "row_label": "Earnings22",
+    "column_label": "distil-v3",
+    "raw_value": "11.79",
+    "scale_divisor": 100
+   }
+  },
+  {
+   "model": "distil-large-v3",
+   "bench": "spgispeech-wer",
+   "score": 0.0327,
+   "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+   "source_id": "card2-distil-whisper-distil-large-v3-5",
+   "by": "lab",
+   "date": "2026-04-13",
+   "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Short-Form Evaluation' table (columns: Dataset | Size / h | large-v3 | large-v3-turbo | distil-v3 | distil-v3.5), row 'SPGISpeech', column 'distil-v3' = 3.27 (%). Setup printed for the table: 'We've evaluated the model on 5 in-distribution (ID) test sets and 2 out-of-distribution (OOD) test sets for short-form transcription, as done in Open ASR Leaderboard' and 'WER results shown here are post-normalization' (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is the Distil-Whisper team's own previous version (column header links https://huggingface.co/distil-whisper/distil-large-v3 in the summary table) -> catalogue distil-large-v3; by lab (same Hugging Face Distil-Whisper family, not marked as copied). The four columns in this table are numerically identical to the HF Open ASR Leaderboard CSV (github.com/huggingface/open_asr_leaderboard @16743c6 en_shortform.csv), which Hugging Face (the same organisation; card authors Le Bihan, Zheng and Srivastav are leaderboard maintainers) runs, so this is HF's own pipeline measurement. Converted from percent.",
+   "evidence": {
+    "kind": "table",
+    "section": "Short-Form Evaluation",
+    "row_label": "SPGISpeech",
+    "column_label": "distil-v3",
+    "raw_value": "3.27",
+    "scale_divisor": 100
+   }
+  },
+  {
+   "model": "distil-large-v2",
+   "bench": "tedlium-longform-wer",
+   "score": 0.0966,
+   "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+   "source_id": "card2-distil-whisper-distil-large-v3-5",
+   "by": "lab",
+   "date": "2026-04-13",
+   "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Long-Form Evaluation' table (columns: Dataset | Size / h | large-v3-turbo | distil-v2 | distil-v3 | distil-v3.5), row 'tedlium-long-form', column 'distil-v2' = 9.66 (%). Setup printed for the table: 'using the sequential decoding algorithm (condition_on_prev_tokens=False, return_timestamps=True)'; WER post-normalisation (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is an earlier Distil-Whisper English model by the same HF team (Distil-Large-v2 linked in the card Training Details (huggingface.co/distil-whisper/distil-large-v2)) -> catalogue distil-large-v2; by lab. These long-form cells are not copies of the Open ASR long-form CSV (e.g. distil-v3 earnings22 15.06 here vs 14.98 in en_longform.csv @16743c6), consistent with the card's own sequential-decoding run. Converted from percent.",
+   "evidence": {
+    "kind": "table",
+    "section": "Long-Form Evaluation",
+    "row_label": "tedlium-long-form",
+    "column_label": "distil-v2",
+    "raw_value": "9.66",
+    "scale_divisor": 100
+   }
+  },
+  {
+   "model": "distil-large-v2",
+   "bench": "meanwhile-longform-wer",
+   "score": 0.1675,
+   "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+   "source_id": "card2-distil-whisper-distil-large-v3-5",
+   "by": "lab",
+   "date": "2026-04-13",
+   "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Long-Form Evaluation' table (columns: Dataset | Size / h | large-v3-turbo | distil-v2 | distil-v3 | distil-v3.5), row 'meanwhile', column 'distil-v2' = 16.75 (%). Setup printed for the table: 'using the sequential decoding algorithm (condition_on_prev_tokens=False, return_timestamps=True)'; WER post-normalisation (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is an earlier Distil-Whisper English model by the same HF team (Distil-Large-v2 linked in the card Training Details (huggingface.co/distil-whisper/distil-large-v2)) -> catalogue distil-large-v2; by lab. These long-form cells are not copies of the Open ASR long-form CSV (e.g. distil-v3 earnings22 15.06 here vs 14.98 in en_longform.csv @16743c6), consistent with the card's own sequential-decoding run. Converted from percent.",
+   "evidence": {
+    "kind": "table",
+    "section": "Long-Form Evaluation",
+    "row_label": "meanwhile",
+    "column_label": "distil-v2",
+    "raw_value": "16.75",
+    "scale_divisor": 100
+   }
+  },
+  {
+   "model": "distil-large-v2",
+   "bench": "earnings21-longform-wer",
+   "score": 0.1509,
+   "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+   "source_id": "card2-distil-whisper-distil-large-v3-5",
+   "by": "lab",
+   "date": "2026-04-13",
+   "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Long-Form Evaluation' table (columns: Dataset | Size / h | large-v3-turbo | distil-v2 | distil-v3 | distil-v3.5), row 'earnings21', column 'distil-v2' = 15.09 (%). Setup printed for the table: 'using the sequential decoding algorithm (condition_on_prev_tokens=False, return_timestamps=True)'; WER post-normalisation (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is an earlier Distil-Whisper English model by the same HF team (Distil-Large-v2 linked in the card Training Details (huggingface.co/distil-whisper/distil-large-v2)) -> catalogue distil-large-v2; by lab. These long-form cells are not copies of the Open ASR long-form CSV (e.g. distil-v3 earnings22 15.06 here vs 14.98 in en_longform.csv @16743c6), consistent with the card's own sequential-decoding run. Converted from percent.",
+   "evidence": {
+    "kind": "table",
+    "section": "Long-Form Evaluation",
+    "row_label": "earnings21",
+    "column_label": "distil-v2",
+    "raw_value": "15.09",
+    "scale_divisor": 100
+   }
+  },
+  {
+   "model": "distil-large-v2",
+   "bench": "earnings22-longform-wer",
+   "score": 0.1911,
+   "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+   "source_id": "card2-distil-whisper-distil-large-v3-5",
+   "by": "lab",
+   "date": "2026-04-13",
+   "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Long-Form Evaluation' table (columns: Dataset | Size / h | large-v3-turbo | distil-v2 | distil-v3 | distil-v3.5), row 'earnings22', column 'distil-v2' = 19.11 (%). Setup printed for the table: 'using the sequential decoding algorithm (condition_on_prev_tokens=False, return_timestamps=True)'; WER post-normalisation (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is an earlier Distil-Whisper English model by the same HF team (Distil-Large-v2 linked in the card Training Details (huggingface.co/distil-whisper/distil-large-v2)) -> catalogue distil-large-v2; by lab. These long-form cells are not copies of the Open ASR long-form CSV (e.g. distil-v3 earnings22 15.06 here vs 14.98 in en_longform.csv @16743c6), consistent with the card's own sequential-decoding run. Converted from percent.",
+   "evidence": {
+    "kind": "table",
+    "section": "Long-Form Evaluation",
+    "row_label": "earnings22",
+    "column_label": "distil-v2",
+    "raw_value": "19.11",
+    "scale_divisor": 100
+   }
+  },
+  {
+   "model": "distil-large-v2",
+   "bench": "rev16-longform-wer",
+   "score": 0.2115,
+   "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+   "source_id": "card2-distil-whisper-distil-large-v3-5",
+   "by": "lab",
+   "date": "2026-04-13",
+   "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Long-Form Evaluation' table (columns: Dataset | Size / h | large-v3-turbo | distil-v2 | distil-v3 | distil-v3.5), row 'rev16', column 'distil-v2' = 21.15 (%). Setup printed for the table: 'using the sequential decoding algorithm (condition_on_prev_tokens=False, return_timestamps=True)'; WER post-normalisation (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is an earlier Distil-Whisper English model by the same HF team (Distil-Large-v2 linked in the card Training Details (huggingface.co/distil-whisper/distil-large-v2)) -> catalogue distil-large-v2; by lab. These long-form cells are not copies of the Open ASR long-form CSV (e.g. distil-v3 earnings22 15.06 here vs 14.98 in en_longform.csv @16743c6), consistent with the card's own sequential-decoding run. Converted from percent.",
+   "evidence": {
+    "kind": "table",
+    "section": "Long-Form Evaluation",
+    "row_label": "rev16",
+    "column_label": "distil-v2",
+    "raw_value": "21.15",
+    "scale_divisor": 100
+   }
+  },
+  {
+   "model": "distil-large-v3",
+   "bench": "tedlium-longform-wer",
+   "score": 0.039,
+   "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+   "source_id": "card2-distil-whisper-distil-large-v3-5",
+   "by": "lab",
+   "date": "2026-04-13",
+   "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Long-Form Evaluation' table (columns: Dataset | Size / h | large-v3-turbo | distil-v2 | distil-v3 | distil-v3.5), row 'tedlium-long-form', column 'distil-v3' = 3.9 (%). Setup printed for the table: 'using the sequential decoding algorithm (condition_on_prev_tokens=False, return_timestamps=True)'; WER post-normalisation (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is an earlier Distil-Whisper English model by the same HF team (distil-large-v3 linked in the summary table (huggingface.co/distil-whisper/distil-large-v3)) -> catalogue distil-large-v3; by lab. These long-form cells are not copies of the Open ASR long-form CSV (e.g. distil-v3 earnings22 15.06 here vs 14.98 in en_longform.csv @16743c6), consistent with the card's own sequential-decoding run. Converted from percent.",
+   "evidence": {
+    "kind": "table",
+    "section": "Long-Form Evaluation",
+    "row_label": "tedlium-long-form",
+    "column_label": "distil-v3",
+    "raw_value": "3.9",
+    "scale_divisor": 100
+   }
+  },
+  {
+   "model": "distil-large-v3",
+   "bench": "meanwhile-longform-wer",
+   "score": 0.0704,
+   "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+   "source_id": "card2-distil-whisper-distil-large-v3-5",
+   "by": "lab",
+   "date": "2026-04-13",
+   "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Long-Form Evaluation' table (columns: Dataset | Size / h | large-v3-turbo | distil-v2 | distil-v3 | distil-v3.5), row 'meanwhile', column 'distil-v3' = 7.04 (%). Setup printed for the table: 'using the sequential decoding algorithm (condition_on_prev_tokens=False, return_timestamps=True)'; WER post-normalisation (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is an earlier Distil-Whisper English model by the same HF team (distil-large-v3 linked in the summary table (huggingface.co/distil-whisper/distil-large-v3)) -> catalogue distil-large-v3; by lab. These long-form cells are not copies of the Open ASR long-form CSV (e.g. distil-v3 earnings22 15.06 here vs 14.98 in en_longform.csv @16743c6), consistent with the card's own sequential-decoding run. Converted from percent.",
+   "evidence": {
+    "kind": "table",
+    "section": "Long-Form Evaluation",
+    "row_label": "meanwhile",
+    "column_label": "distil-v3",
+    "raw_value": "7.04",
+    "scale_divisor": 100
+   }
+  },
+  {
+   "model": "distil-large-v3",
+   "bench": "earnings21-longform-wer",
+   "score": 0.1054,
+   "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+   "source_id": "card2-distil-whisper-distil-large-v3-5",
+   "by": "lab",
+   "date": "2026-04-13",
+   "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Long-Form Evaluation' table (columns: Dataset | Size / h | large-v3-turbo | distil-v2 | distil-v3 | distil-v3.5), row 'earnings21', column 'distil-v3' = 10.54 (%). Setup printed for the table: 'using the sequential decoding algorithm (condition_on_prev_tokens=False, return_timestamps=True)'; WER post-normalisation (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is an earlier Distil-Whisper English model by the same HF team (distil-large-v3 linked in the summary table (huggingface.co/distil-whisper/distil-large-v3)) -> catalogue distil-large-v3; by lab. These long-form cells are not copies of the Open ASR long-form CSV (e.g. distil-v3 earnings22 15.06 here vs 14.98 in en_longform.csv @16743c6), consistent with the card's own sequential-decoding run. Converted from percent.",
+   "evidence": {
+    "kind": "table",
+    "section": "Long-Form Evaluation",
+    "row_label": "earnings21",
+    "column_label": "distil-v3",
+    "raw_value": "10.54",
+    "scale_divisor": 100
+   }
+  },
+  {
+   "model": "distil-large-v3",
+   "bench": "earnings22-longform-wer",
+   "score": 0.1506,
+   "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+   "source_id": "card2-distil-whisper-distil-large-v3-5",
+   "by": "lab",
+   "date": "2026-04-13",
+   "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Long-Form Evaluation' table (columns: Dataset | Size / h | large-v3-turbo | distil-v2 | distil-v3 | distil-v3.5), row 'earnings22', column 'distil-v3' = 15.06 (%). Setup printed for the table: 'using the sequential decoding algorithm (condition_on_prev_tokens=False, return_timestamps=True)'; WER post-normalisation (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is an earlier Distil-Whisper English model by the same HF team (distil-large-v3 linked in the summary table (huggingface.co/distil-whisper/distil-large-v3)) -> catalogue distil-large-v3; by lab. These long-form cells are not copies of the Open ASR long-form CSV (e.g. distil-v3 earnings22 15.06 here vs 14.98 in en_longform.csv @16743c6), consistent with the card's own sequential-decoding run. Converted from percent.",
+   "evidence": {
+    "kind": "table",
+    "section": "Long-Form Evaluation",
+    "row_label": "earnings22",
+    "column_label": "distil-v3",
+    "raw_value": "15.06",
+    "scale_divisor": 100
+   }
+  },
+  {
+   "model": "distil-large-v3",
+   "bench": "rev16-longform-wer",
+   "score": 0.1376,
+   "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+   "source_id": "card2-distil-whisper-distil-large-v3-5",
+   "by": "lab",
+   "date": "2026-04-13",
+   "note": "distil-large-v3.5 card @728a769, 'Performance' > 'Long-Form Evaluation' table (columns: Dataset | Size / h | large-v3-turbo | distil-v2 | distil-v3 | distil-v3.5), row 'rev16', column 'distil-v3' = 13.76 (%). Setup printed for the table: 'using the sequential decoding algorithm (condition_on_prev_tokens=False, return_timestamps=True)'; WER post-normalisation (Whisper basic normaliser). Same table and setting as the existing distil-v3.5 row. Comparator is an earlier Distil-Whisper English model by the same HF team (distil-large-v3 linked in the summary table (huggingface.co/distil-whisper/distil-large-v3)) -> catalogue distil-large-v3; by lab. These long-form cells are not copies of the Open ASR long-form CSV (e.g. distil-v3 earnings22 15.06 here vs 14.98 in en_longform.csv @16743c6), consistent with the card's own sequential-decoding run. Converted from percent.",
+   "evidence": {
+    "kind": "table",
+    "section": "Long-Form Evaluation",
+    "row_label": "rev16",
+    "column_label": "distil-v3",
+    "raw_value": "13.76",
+    "scale_divisor": 100
+   }
+  }
+ ],
+ "benchmarks": [],
+ "ledger": [],
+ "models": [],
+ "gaps": [
+  {
+   "model": "Grok Voice Transcribe 1.0 (xAI slug grok-voice-transcribe-1.0)",
+   "category": "stt",
+   "why": "Comparator in raven.eval BENCHMARKS.md @f9f621e, same samples and settings as grok-voice-transcribe-2. Exact identity; candidate model + row held (2 models on a test that needs 3 to count)."
+  },
+  {
+   "model": "OpenAI whisper-large-v3 / whisper-large-v3-turbo columns of the distil-large-v3.5 card",
+   "category": "stt",
+   "why": "Both catalogued; held for owner because the card gives no statement that the authors ran them (short-form cells equal the Open ASR Leaderboard CSV). Would add 19 rows to runs that already count via the distil-v2/v3 lab rows."
+  },
+  {
+   "model": "seamless-m4t-medium",
+   "category": "stt",
+   "why": "Baseline in arXiv:2509.14128v2 Tables 11-13 (lead in held_for_owner); not catalogued. Only relevant if that report is added as a source."
+  },
+  {
+   "model": "granite-speech-4.1-2b-plus / granite-speech-4.1-2b-nar",
+   "category": "stt",
+   "why": "Sibling IBM cards; not catalogued and not in the speech-granite41-punctuation-apache document. If their pinned cards print the same LibriSpeech-PC PER table (LScln), a pooled IBM-cards evaluator could give granite41-lscln-punctuation-error a second model. Not checked in this pass (separate documents)."
+  },
+  {
+   "model": "primeline/parakeet-primeline",
+   "category": "stt",
+   "why": "Measured by raven.eval on Tuda-De, full MLS and Common Voice 19 subsets (not the 4-set 100-utterance read-aloud mix of raven-de-read4-wer); not catalogued; would not join the lone run."
+  }
+ ],
+ "checked": [
+  {
+   "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md (card2-distil-whisper-distil-large-v3-5, MIT)",
+   "outcome": "17 lab rows: distil-large-v3 on the 7 short-form sets (Short-Form Evaluation table, column 'distil-v3') and distil-large-v2 + distil-large-v3 on the 5 long-form sets (Long-Form Evaluation table, columns 'distil-v2'/'distil-v3'). Same-family columns by the HF Distil-Whisper team, not marked as copied. Each of the 12 lone runs gets 2 (short-form) or 3 (long-form) models. Simulated with lib/score.ts toCells on a scratch copy: 10 of the 12 existing distil-v3.5 rows and 15 of the 17 new rows count (counted results 12,299 -> 12,324); ami-wer and earnings22-wer stay uncounted because those tests still have only 2 models across counting runs (MIN_MODELS = 3) - they would count if the Whisper columns or the NVIDIA pooling below are accepted. Whisper large-v3 / large-v3-turbo columns NOT used: the only setup sentences are about 'the model' ('We've evaluated the model on 5 in-distribution ... as done in Open ASR Leaderboard'; long-form 'We've evaluated the model ... using the sequential decoding algorithm'), with no statement that the OpenAI baselines were run by the authors; the short-form large-v3/large-v3-turbo cells are identical to the Open ASR Leaderboard CSV (e.g. large-v3 AMI 15.95, LS Clean 2.01, Earnings22 11.29 = openai/whisper-large-v3 in en_shortform.csv @16743c6). Held for owner (see held_for_owner). Rel. RTFx, RTFx table and the 'Short-Form OOD WER' 2-set average (no matching benchmark id) not used."
+  },
+  {
+   "source": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/541d1f99c6b0c3cd0b11a95167540bb8edefd82b/README.md (card2-nvidia-parakeet-tdt-0-6b-v3, CC BY 4.0)",
+   "outcome": "0 rows: no comparator cells in text. Every text table ('Multilingual ASR' Fleurs/MLS/CoVoST, 'Huggingface Open-ASR-Leaderboard', 'Noise Robustness') has only the row `parakeet-tdt-0.6b-v3`; model-index lists only parakeet-tdt-0.6b-v3. The cross-model comparison is only the chart image plots/asr.png ('Figure 1: ASR WER comparison across different models'), which we do not read. 12 lone runs stay lone. Lead: the linked Technical Report arXiv:2509.14128 (see gaps/held_for_owner)."
+  },
+  {
+   "source": "https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md (card2-nvidia-canary-1b-v2, CC BY 4.0)",
+   "outcome": "0 rows: no comparator cells in text. 'Benchmark Results' says 'This section reports the evaluation results of the Canary-1b-v2 model'; ASR, Open ASR Leaderboard, AST, Noise, Hallucination and Long-form tables all have the single row `Canary-1b-v2`. Comparisons with other models exist only as chart images plots/asr.png, x_en.png, en_x.png (not used). 12 lone runs stay lone."
+  },
+  {
+   "source": "https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md (card2-nvidia-parakeet-rnnt-1-1b, CC BY 4.0)",
+   "outcome": "0 rows: the 'Performance' table ('summarizes the performance of the available models in this collection with the Transducer decoder ... greedy decoding') has one row, version 1.22.0 of this model; no other model in text. 9 lone runs stay lone."
+  },
+  {
+   "source": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md (card2-nvidia-parakeet-tdt-0-6b-v2, CC BY 4.0)",
+   "outcome": "0 rows: 'Base Performance', 'Noise Robustness' and 'Telephony Audio Performance' tables contain only parakeet-tdt-0.6b-v2 (clean / SNR / 8 kHz rows of the same model). No comparator. 8 lone runs stay lone."
+  },
+  {
+   "source": "https://huggingface.co/nvidia/canary-qwen-2.5b/blob/b1469e1bba1cfe140205529c79c434ca47180960/README.md (card2-nvidia-canary-qwen-2-5b, CC BY 4.0)",
+   "outcome": "0 rows: 'ASR Performance (w/o PnC)' has one row (Version 2.5.0, Canary-Qwen-2.5B); hallucination, noise and fairness tables are the same model only. No comparator. 8 lone runs stay lone."
+  },
+  {
+   "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/Jasper/README.md (speech-nvidia-jasper-dle, Apache-2.0)",
+   "outcome": "0 rows: no comparator model. 'Training accuracy: NVIDIA DGX A100' table has one row (8 GPUs, 64, mixed: test-clean 3.41, test-other 9.71); the DGX-1 table and the 'Training stability test' seed tables are further runs of the same Jasper recipe, not other catalogue models. 2 lone runs stay lone (see held_for_owner: pooling with the QuartzNet README at the same commit)."
+  },
+  {
+   "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md (speech-nvidia-quartznet-dle, Apache-2.0)",
+   "outcome": "0 rows: no comparator model. 'Training accuracy: NVIDIA DGX A100' table has one row (8 GPUs, 144, mixed: test-clean 3.69, test-other 10.69); the seed-stability table is the same recipe. 2 lone runs stay lone (see held_for_owner)."
+  },
+  {
+   "source": "https://huggingface.co/ibm-granite/granite-speech-4.1-2b/blob/de575db64086f84fdc79da4932d1076e965bc546/README.md (speech-granite41-punctuation-apache, Apache-2.0)",
+   "outcome": "0 rows: the PER / Cap-F1 table ('We also evaluated our model on a variety of corpora to assess its punctuation and capitalization capabilities') has one model only (rows are test sets LScln ... CV-PT). The sentence 'We evaluated granite-speech-4.1-2b alongside other speech-language models in the less than 8b parameter range as well as dedicated ASR and AST systems' refers to WER/BLEU results shown only as chart images (cdn-uploads PNGs) and an Open ASR leaderboard RTFx/WER plot; no comparator cell in text. Lone run stays lone. Sibling cards granite-speech-4.1-2b-plus / -nar are separate documents and models not in the catalogue (gap)."
+  },
+  {
+   "source": "https://arxiv.org/html/2609.20104v1 (speech-stt-granite5-report-bysa, CC BY-SA 4.0)",
+   "outcome": "0 rows: Tables 2, 3 and 5 (WER on the public Open ASR sets) contain only ablation / training-stage variants of granite-speech-5.0-470m-turboctc (Proposed vs Convolutional front end / Grouped attention / No self-conditioning; Base / LLM distillation / Robust fine tuning; AdamW / Muon / MuonP), none of which is a released catalogue checkpoint. Other models (incl. granite-speech-5.0-470m-turboctc-nc) appear only in Figure 1, a leaderboard Pareto chart. Lone run stays lone."
+  },
+  {
+   "source": "https://github.com/PhilflowIO/raven.eval/blob/f9f621e23b0e83e29aa18e8ffcd4656805c68145/BENCHMARKS.md (speech-stt-raven-mit, MIT)",
+   "outcome": "0 rows imported; 1 ready candidate held (see held_for_owner). Grok Voice Transcribe 1.0 on raven-de-read4-wer = mean of committed expected.json wer_pct 7.2067 / 6.7545 / 8.2212 / 11.2676 = 8.3625% (0.083625), measured by the same author on the same samples: 'Its predecessor Grok Voice Transcribe 1.0 ran on the same samples with the same settings (500 of 500, 1.50 h, USD 0.15)'. Not catalogued; identity exact (xAI slug grok-voice-transcribe-1.0, EOL 2026-10-02). Held because a 2-model test still fails MIN_MODELS = 3 in lib/score.ts, so the new model would add no counted result. Not used: primeline/parakeet-primeline rows (different subsets: Tuda-De, full MLS, CV19; model not catalogued), Swiss BLEU/WER rows, DER section."
+  },
+  {
+   "source": "https://huggingface.co/speechbrain/asr-conformer-loquacious/blob/42106e67e454ae361ca2d8311a7a807d5f95a3b9/README.md (first-party-speechbrain-asr-cards, Apache-2.0)",
+   "outcome": "0 rows: 'The performance of the model is the following' table has one row (480M Conformer: validation 6.8, test 7.5, LibriSpeech test-other 4.6, CommonVoice 18 test 12.0, Voxpopuli test 6.9). The other two pooled cards (asr-wav2vec2-librispeech @356e347, asr-transformer-transformerlm-librispeech @bcf56f7) print only LibriSpeech test-clean/test-other. HF API search finds no other speechbrain/* Loquacious/LargeScaleASR card that could join the VoxPopuli run. Lone run stays lone. CommonVoice 18 cell not mapped (no CV18 benchmark id; commonvoice-en-wer-version-unspecified does not fit a stated version)."
+  }
+ ],
+ "held_for_owner": [
+  {
+   "source_id": "card2-distil-whisper-distil-large-v3-5",
+   "source": "https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md",
+   "reason": "OpenAI Whisper comparator columns with no statement of who evaluated them. Short-form table columns 'large-v3' and 'large-v3-turbo' are digit-for-digit the Open ASR Leaderboard CSV values (en_shortform.csv @16743c6: whisper-large-v3 AMI 15.95, Gigaspeech 10.02, LS Clean 2.01, LS Other 3.91, Tedlium 3.86, Earnings22 11.29, SPGISpeech 2.94; turbo 16.13/10.14/2.10/4.24/3.57/11.63/2.97), i.e. leaderboard numbers. The leaderboard is run by Hugging Face and three of the card's four authors maintain it, so the owner may treat them as HF's own measurement, but the card does not say so. Long-form 'large-v3-turbo' column (tedlium-long-form 3.07, meanwhile 5.03, earnings21 9.84, earnings22 13.32, rev16 12.82) is NOT identical to the leaderboard long-form CSV (turbo earnings22 13.1, tedlium 3.23 there), so it looks like the card's own sequential-decoding run, but again no sentence says the baselines were run by the authors.",
+   "would_add": "If accepted (by independent): whisper-large-v3 on ami/gigaspeech/librispeech-test-clean/librispeech-test-other/tedlium/earnings22/spgispeech (7 rows) and whisper-large-v3-turbo on the same 7 short-form sets plus tedlium-longform/meanwhile-longform/earnings21-longform/earnings22-longform/rev16-longform (12 rows). Simulated on top of this file's 17 rows: all 19 count and the ami-wer / earnings22-wer distil rows start counting too (+23 counted results, 12,324 -> 12,347; every row from this card would count)."
+  },
+  {
+   "source_id": "speech-nvidia-jasper-dle + speech-nvidia-quartznet-dle",
+   "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/",
+   "reason": "Ledger structure, not new numbers. The two READMEs are in the same Apache-2.0 repo at the same commit, both by NVIDIA, both report 'word error rate (WER) of the acoustic model with greedy decoding on all LibriSpeech dev and test datasets for mixed precision training' on 8x A100 80GB after training on LibriSpeech 960h (Jasper: PyTorch 20.10-py3 container; QuartzNet: 21.07-py3). If the owner merges the two ledger entries into one evaluator (e.g. 'speech-nvidia-dle-asr', match = both README URLs, like first-party-meta-asr-cards / first-party-speechbrain-asr-cards), librispeech-test-clean-wer and librispeech-test-other-wer would each become a 2-model run (jasper-10x5-nvidia-dle vs quartznet-15x5-nvidia-dle) and all 4 lone rows would count. Caveat: different NGC containers and separate README sections, so it is a pooling of two published lab runs rather than one table.",
+   "would_add": "No new rows; existing 4 rows re-keyed to one source_id. Simulated with toCells on a scratch copy (on top of this file's 17 rows): all 4 count (+4 counted results, 12,324 -> 12,328)."
+  },
+  {
+   "source_id": "card2-nvidia-parakeet-tdt-0-6b-v3 + card2-nvidia-canary-1b-v2 + card2-nvidia-parakeet-rnnt-1-1b + card2-nvidia-parakeet-tdt-0-6b-v2 + card2-nvidia-canary-qwen-2-5b",
+   "source": "huggingface.co/nvidia/{parakeet-tdt-0.6b-v3@541d1f9, canary-1b-v2@d455706, parakeet-rnnt-1.1b@2acc4c6, parakeet-tdt-0.6b-v2@ae9ad07, canary-qwen-2.5b@b1469e1}/README.md",
+   "reason": "Ledger structure, not new numbers. None of the five NVIDIA cards prints another model in text, so their 49 lone rows can only count if the owner pools them as one maker's evaluation, as already done for first-party-meta-asr-cards, first-party-speechbrain-asr-cards and (rule b) first-party-nvidia-scores ('one vendor entry groups that vendor's pages into one evaluator'). All five cards use the HF Open ASR Leaderboard datasets with greedy decoding and no external LM; the FLEURS/MLS/CoVoST averages on the parakeet-v3 and canary-1b-v2 cards are both 'WER ... after removing Punctuation and Capitalization'. Simulated with lib/score.ts toCells on a scratch copy (same 49 rows, the five match URLs merged into one entry, e.g. 'first-party-nvidia-asr-cards'), on top of this file's 17 rows: the ami, earnings22, gigaspeech, librispeech-test-clean, librispeech-test-other, spgispeech, tedlium and voxpopuli-en runs become 5-model runs and all 40 of those rows count, and the distil ami-wer / earnings22-wer rows start counting as well (+44 counted results, 12,324 -> 12,368). fleurs-25eu-avg, mls-6lang-avg and covost2-13lang-avg become 2-model runs (parakeet-v3 + canary-1b-v2) but stay uncounted (tests need 3 models); commonvoice-9-en, fleurs-en and earnings22-longform stay single. Caveats: (1) the cards were written at different times (canary-qwen v2.5.0, parakeet-rnnt v1.22.0 ...), so it is a pool of NVIDIA's published runs, not one table; (2) most per-set values are identical to the Open ASR Leaderboard CSV (e.g. parakeet-tdt-0.6b-v2 AMI 11.16, canary-1b-v2 AMI 16.01), whose average already enters open-asr-wer, so the per-set rows partly restate the leaderboard's own measurement.",
+   "would_add": "No new rows; 49 existing rows re-keyed to one source_id; 40 of them (plus 4 distil rows) start counting."
+  },
+  {
+   "source_id": "(new) arXiv:2509.14128v2",
+   "source": "https://arxiv.org/html/2509.14128v2",
+   "reason": "Lead, not imported (new document outside this batch). 'Canary-1B-v2 & Parakeet-TDT-0.6B-v3' technical report, linked from both NVIDIA cards; arXiv abs pages for v1 and v2 both link http://creativecommons.org/licenses/by-sa/4.0/ (HTML v2 prints 'License: CC BY-SA 4.0'). Tables 11-13 give per-language FLEURS / MLS / CoVoST2 WER for whisper-large-v3, seamless-m4t-v2-large, seamless-m4t-medium, Voxtral-Mini-3B-2507, Phi-4-multimodal-instruct, Parakeet-TDT-0.6B-v3 and Canary-1B-v2. Section 6.1: 'For comparative analysis, we consider several strong baselines: Whisper-large-v3 (1.55B), seamless-m4t-v2-large (2.3B), and seamless-m4t-medium (1.2B) ... In addition, we include Voxtral-Mini-3B-2507 ... and Phi-4-multimodal-instruct' and 'For ASR performance evaluation, we report normalized WER (%). We use the Hugging Face Open ASR Leaderboard normalizers ... the newly added multilingual normalizer for non-English test sets' - consistent with the authors running every baseline, but no explicit 'we evaluated the baselines ourselves'. Only per-language cells are printed; the 25-language / 6-language / 13-language means that our benchmark ids need would have to be derived (seamless lacks Latvian, Voxtral/Phi-4 cover only some languages). Table 5 (Open ASR per-set WER for Whisper-large-v3, Voxtral-Mini-3B-2507, Phi-4-multimodal-instruct and the two NVIDIA models) is NOT usable: 'calculated with the official repository and reported on the Hugging Face Open ASR Leaderboard' (leaderboard numbers; Whisper row identical to en_shortform.csv).",
+   "would_add": "If the owner accepts the evaluation statement and a derived per-language mean: a new CC BY-SA ledger entry and independent/lab rows for whisper-large-v3, seamless-m4t-v2-large (catalogued) plus the two NVIDIA models on fleurs-25eu-avg-wer (25-language mean; whisper has all 25 cells), mls-6lang-avg-wer and covost2-13lang-avg-wer; or a new per-language benchmark set. seamless-m4t-medium is not catalogued."
+  },
+  {
+   "source_id": "speech-stt-raven-mit",
+   "source": "https://github.com/PhilflowIO/raven.eval/blob/f9f621e23b0e83e29aa18e8ffcd4656805c68145/BENCHMARKS.md",
+   "reason": "Ready candidate, held because it would still not count. Grok Voice Transcribe 1.0 was run by the raven.eval author on the same 400 utterances with the same settings as Grok Voice Transcribe 2.0 ('Its predecessor Grok Voice Transcribe 1.0 ran on the same samples with the same settings (500 of 500, 1.50 h, USD 0.15)'), and its identity is exact (xAI slug grok-voice-transcribe-1.0; EOL 2026-10-02 per xAI release notes). Adding it makes the raven-de-read4-wer run a 2-model run, but lib/score.ts also needs MIN_MODELS = 3 models across a test's runs, and raven-de-read4-wer exists only in this source, whose BENCHMARKS.md has no third model on these four sets (primeline/parakeet-primeline ran other subsets). Simulated with toCells on a scratch copy: both Grok rows stay uncounted. So the comparison-only model is not proposed now; add both when raven.eval commits a third provider on the same samples.",
+   "candidate_result": {
+    "model": "grok-voice-transcribe-1-0",
+    "bench": "raven-de-read4-wer",
+    "score": 0.083625,
+    "raw_value": 8.3625,
+    "scale_divisor": 100,
+    "source": "https://github.com/PhilflowIO/raven.eval/blob/f9f621e23b0e83e29aa18e8ffcd4656805c68145/BENCHMARKS.md",
+    "source_id": "speech-stt-raven-mit",
+    "by": "independent",
+    "date": "2026-09-18",
+    "note": "raven.eval BENCHMARKS.md @f9f621e, section 'WER — German ASR (public datasets)', rows 'xai/grok-voice-transcribe-1.0' (WER strict %: avemio-german-mixed-test 7.21, fleurs 6.75, mls-de 8.22, voxpopuli-de 11.27; n=100 each). Setup quote: 'Its predecessor Grok Voice Transcribe 1.0 ran on the same samples with the same settings (500 of 500, 1.50 h, USD 0.15)' as Grok Voice Transcribe 2.0 (hosted, us-east-1, language=de, format=true, 2026-09-18) - the raven.eval author's own run of both. Derived unweighted mean of the four committed expected.json wer_pct values (7.2067, 6.7545, 8.2212, 11.2676 -> 8.3625%), same derivation as the existing grok-voice-transcribe-2 row (Swiss spc-test / fhnw sets excluded as in the benchmark definition). Checkpoint: summary.json model_id 'grok-voice-transcribe-1.0' (adapter xai, model_revision grok-voice-transcribe-1.0), the xAI API slug named in xAI's release notes; maps to the proposed comparison-only model grok-voice-transcribe-1-0.",
+    "per_set": {
+     "avemio-german-mixed-test": {
+      "wer_pct": 7.2067,
+      "n": 100
+     },
+     "fleurs": {
+      "wer_pct": 6.7545,
+      "n": 100
+     },
+     "mls-de": {
+      "wer_pct": 8.2212,
+      "n": 100
+     },
+     "voxpopuli-de": {
+      "wer_pct": 11.2676,
+      "n": 100
+     }
+    },
+    "raw_sources": [
+     "https://github.com/PhilflowIO/raven.eval/blob/f9f621e23b0e83e29aa18e8ffcd4656805c68145/artifacts/2026-09-18-avemio-german-mixed-test-grok-voice-transcribe-1-0/xai-grok-voice-transcribe-1.0/expected.json",
+     "https://github.com/PhilflowIO/raven.eval/blob/f9f621e23b0e83e29aa18e8ffcd4656805c68145/artifacts/2026-09-18-fleurs-grok-voice-transcribe-1-0/xai-grok-voice-transcribe-1.0/expected.json",
+     "https://github.com/PhilflowIO/raven.eval/blob/f9f621e23b0e83e29aa18e8ffcd4656805c68145/artifacts/2026-09-18-mls-de-grok-voice-transcribe-1-0/xai-grok-voice-transcribe-1.0/expected.json",
+     "https://github.com/PhilflowIO/raven.eval/blob/f9f621e23b0e83e29aa18e8ffcd4656805c68145/artifacts/2026-09-18-voxpopuli-de-grok-voice-transcribe-1-0/xai-grok-voice-transcribe-1.0/expected.json"
+    ],
+    "derived": "unweighted mean of four set-level corpus WERs",
+    "data_license": "MIT"
+   },
+   "candidate_model": {
+    "id": "grok-voice-transcribe-1-0",
+    "name": "Grok Voice Transcribe 1.0",
+    "provider": "xAI",
+    "category": "stt",
+    "released": "2026-04",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "released_source": "https://docs.x.ai/developers/release-notes.md",
+    "identity_note": "Comparison-only, proposed so the raven.eval German read-aloud run (raven-de-read4-wer) has a second model next to grok-voice-transcribe-2. Exact xAI API slug 'grok-voice-transcribe-1.0' (raven.eval summary.json model_id/model_revision, run 2026-09-18). xAI release notes: September 'Use grok-voice-transcribe-1.0 or grok-voice-transcribe-2.0; the default is grok-voice-transcribe-2.0'; October 'grok-voice-transcribe-1.0 is deprecated and reaches end of life on October 2, 2026. All requests to that slug are routed to grok-voice-transcribe-2.0'. So api: null (slug now serves 2.0). released = month xAI Speech to Text became generally available (April 2026 release note; that note does not name the slug, so treat the month as approximate). Distinct from grok-voice-transcribe-2.",
+    "identity_evidence": [
+     {
+      "source": "https://github.com/PhilflowIO/raven.eval/blob/f9f621e23b0e83e29aa18e8ffcd4656805c68145/artifacts/2026-09-18-fleurs-grok-voice-transcribe-1-0/xai-grok-voice-transcribe-1.0/summary.json",
+      "reported_label": "grok-voice-transcribe-1.0"
+     },
+     {
+      "source": "https://docs.x.ai/developers/release-notes.md",
+      "reported_label": "grok-voice-transcribe-1.0"
+     }
+    ]
+   }
+  }
+ ]
+}
