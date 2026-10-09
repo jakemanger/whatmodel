@@ -389,9 +389,10 @@
     "terms_url": "https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/LICENSE.txt",
     "quote": "Repository root licence at pinned revision; selected own-model table cells in README only.",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "ByteDance-Seed/Seed-OSS-36B-Instruct authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "ByteDance-Seed/Seed-OSS-36B-Instruct authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-C-2026-10-09.md."
   },
   {
     "id": "card-minimaxai--minimax-m1-80k",
@@ -423,9 +424,10 @@
     "terms_url": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507/blob/ac9c66cc9b46af7306746a9250f23d47083d689e/LICENSE",
     "quote": "Repository root licence at pinned revision; selected own-model table cells in README only.",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "Qwen/Qwen3-235B-A22B-Instruct-2507 authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "Qwen/Qwen3-235B-A22B-Instruct-2507 authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-A-2026-10-09.md. Detail: Also the same-family 'Qwen3-235B-A22B Non-thinking' column on the recorded rows, and the TAU1/TAU2 rows for the own model, the Non-thinking column and the '#'-marked (Qwen-generated, GPT-4o-20241120) cells."
   },
   {
     "id": "card-qwen--qwen3-235b-a22b-thinking-2507",
@@ -440,9 +442,10 @@
     "terms_url": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/LICENSE",
     "quote": "Repository root licence at pinned revision; selected own-model table cells in README only.",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "Qwen/Qwen3-235B-A22B-Thinking-2507 authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "Qwen/Qwen3-235B-A22B-Thinking-2507 authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-B-2026-10-09.md."
   },
   {
     "id": "card-qwen--qwen3-30b-a3b-instruct-2507",
@@ -457,9 +460,10 @@
     "terms_url": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507/blob/0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe/LICENSE",
     "quote": "Repository root licence at pinned revision; selected own-model table cells in README only.",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "Qwen/Qwen3-30B-A3B-Instruct-2507 authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "Qwen/Qwen3-30B-A3B-Instruct-2507 authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-B-2026-10-09.md."
   },
   {
     "id": "card-qwen--qwen3-30b-a3b-thinking-2507",
@@ -474,9 +478,10 @@
     "terms_url": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507/blob/144afc2f379b542fdd4e85a1fcd5e1f79112d95d/LICENSE",
     "quote": "Repository root licence at pinned revision; selected own-model table cells in README only.",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "Qwen/Qwen3-30B-A3B-Thinking-2507 authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "Qwen/Qwen3-30B-A3B-Thinking-2507 authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-C-2026-10-09.md."
   },
   {
     "id": "card-qwen--qwen3-4b-instruct-2507",
@@ -508,9 +513,10 @@
     "terms_url": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/blob/768f209d9ea81521153ed38c47d515654e938aea/LICENSE",
     "quote": "Repository root licence at pinned revision; selected own-model table cells in README only.",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "Qwen/Qwen3-4B-Thinking-2507 authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "Qwen/Qwen3-4B-Thinking-2507 authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-C-2026-10-09.md."
   },
   {
     "id": "card-qwen--qwen3-next-80b-a3b-instruct",
@@ -525,9 +531,10 @@
     "terms_url": "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/LICENSE",
     "quote": "Repository root licence at pinned revision; selected own-model table cells in README only.",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "Qwen/Qwen3-Next-80B-A3B-Instruct authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "Qwen/Qwen3-Next-80B-A3B-Instruct authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-C-2026-10-09.md."
   },
   {
     "id": "card-qwen--qwen3-next-80b-a3b-thinking",
@@ -559,9 +566,10 @@
     "terms_url": "https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/2fc06364715b967f1860aea9cf38778875588b17/LICENSE",
     "quote": "Repository root licence at pinned revision; selected own-model table cells in README only.",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "Qwen/Qwen3.5-0.8B authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "Qwen/Qwen3.5-0.8B authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-C-2026-10-09.md."
   },
   {
     "id": "card-qwen--qwen3.5-122b-a10b",
@@ -576,9 +584,10 @@
     "terms_url": "https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/LICENSE",
     "quote": "Repository root licence at pinned revision; selected own-model table cells in README only.",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "Qwen/Qwen3.5-122B-A10B authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "Qwen/Qwen3.5-122B-A10B authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-C-2026-10-09.md."
   },
   {
     "id": "card-qwen--qwen3.5-27b",
@@ -593,9 +602,10 @@
     "terms_url": "https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/LICENSE",
     "quote": "Repository root licence at pinned revision; selected own-model table cells in README only.",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "Qwen/Qwen3.5-27B authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "Qwen/Qwen3.5-27B authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-A-2026-10-09.md. Detail: Also the Qwen-family columns (Qwen3.5-122B-A10B, Qwen3.5-35B-A3B, Qwen3-235B-A22B = Thinking-2507) on the recorded rows, and the TAU2-Bench and MathVision rows (own, family and footnoted competitor cells)."
   },
   {
     "id": "card-qwen--qwen3.5-2b",
@@ -644,9 +654,10 @@
     "terms_url": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/LICENSE",
     "quote": "Repository root licence at pinned revision; selected own-model table cells in README only.",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "Qwen/Qwen3.5-397B-A17B authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "Qwen/Qwen3.5-397B-A17B authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-A-2026-10-09.md. Detail: Also competitor cells of the TAU2-Bench row and the MathVision row, whose footnotes state all models were evaluated under the card's setup."
   },
   {
     "id": "card-qwen--qwen3.5-4b",
@@ -661,9 +672,10 @@
     "terms_url": "https://huggingface.co/Qwen/Qwen3.5-4B/blob/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/LICENSE",
     "quote": "Repository root licence at pinned revision; selected own-model table cells in README only.",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "Qwen/Qwen3.5-4B authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "Qwen/Qwen3.5-4B authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-A-2026-10-09.md. Detail: Also the same-family columns (Qwen3-Next-80B-A3B-Thinking, Qwen3-30B-A3B-Thinking-2507, Qwen3.5-9B) on the recorded rows, and the MathVision row (own, Qwen3.5-9B, GPT-5-Nano, Gemini-2.5-Flash-Lite)."
   },
   {
     "id": "card-qwen--qwen3.5-9b",
@@ -678,9 +690,10 @@
     "terms_url": "https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/LICENSE",
     "quote": "Repository root licence at pinned revision; selected own-model table cells in README only.",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "Qwen/Qwen3.5-9B authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "Qwen/Qwen3.5-9B authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-B-2026-10-09.md."
   },
   {
     "id": "card-qwen--qwen3.6-27b",
@@ -695,9 +708,10 @@
     "terms_url": "https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/LICENSE",
     "quote": "Repository root licence at pinned revision; selected own-model table cells in README only.",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "Qwen/Qwen3.6-27B authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "Qwen/Qwen3.6-27B authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-C-2026-10-09.md."
   },
   {
     "id": "card-qwen--qwen3.6-35b-a3b",
@@ -712,9 +726,10 @@
     "terms_url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/LICENSE",
     "quote": "Repository root licence at pinned revision; selected own-model table cells in README only.",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "Qwen/Qwen3.6-35B-A3B authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "Qwen/Qwen3.6-35B-A3B authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-A-2026-10-09.md. Detail: All Qwen-family columns (Qwen3.5-27B, Qwen3.5-35B-A3B, Qwen3.6-35B-A3B) of both tables; Gemma 4 columns only on SWE-bench Pro (refined), NL2Repo, SkillsBench (78-task subset) and QwenClawBench, whose footnotes show Qwen ran every column."
   },
   {
     "id": "card-qwen--qwen3.8-27b",
@@ -729,9 +744,10 @@
     "terms_url": "https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/LICENSE",
     "quote": "Repository root licence at pinned revision; selected own-model table cells in README only.",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "Qwen/Qwen3.8-27B authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "Qwen/Qwen3.8-27B authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-C-2026-10-09.md."
   },
   {
     "id": "card-deepseek-ai--deepseek-r1",
@@ -746,9 +762,10 @@
     "terms_url": "https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/LICENSE",
     "quote": "Repository root licence at pinned revision; selected own-model table cells in README only.",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "deepseek-ai/DeepSeek-R1 authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "deepseek-ai/DeepSeek-R1 authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-A-2026-10-09.md. Detail: Own DeepSeek R1 column and same-lab DeepSeek V3 / R1-Distill cells (unchanged scope; this pass only fills R1 cells the first import skipped)."
   },
   {
     "id": "card-deepseek-ai--deepseek-r1-0528",
@@ -763,9 +780,10 @@
     "terms_url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/blob/4236a6af538feda4548eca9ab308586007567f52/LICENSE",
     "quote": "Repository root licence at pinned revision; selected own-model table cells in README only.",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "deepseek-ai/DeepSeek-R1-0528 authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "deepseek-ai/DeepSeek-R1-0528 authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-C-2026-10-09.md."
   },
   {
     "id": "card-meituan-longcat--longcat-2.0",
@@ -780,9 +798,10 @@
     "terms_url": "https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/LICENSE",
     "quote": "Pinned README declares 'license: mit' and states: 'Any contributions to this repository are licensed under the MIT License, unless otherwise stated.' Evaluation Results: 'Unless noted with `*`, all scores are measured in-house under a unified harness.' Own-model cells and unstarred (in-house) competitor cells are selected; starred cells ('cited from the model's official report') are excluded.",
     "verdict": "allowed",
-    "checked": "2026-10-06",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "meituan-longcat/LongCat-2.0 authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "meituan-longcat/LongCat-2.0 authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-B-2026-10-09.md."
   },
   {
     "id": "card-microsoft--phi-4-reasoning",
@@ -797,9 +816,10 @@
     "terms_url": "https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/LICENSE",
     "quote": "Repository root licence at pinned revision; selected own-model table cells in README only.",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "microsoft/Phi-4-reasoning authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "microsoft/Phi-4-reasoning authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-B-2026-10-09.md."
   },
   {
     "id": "card-zai-org--glm-5.1",
@@ -814,9 +834,10 @@
     "terms_url": "https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/LICENSE",
     "quote": "Repository root licence at pinned revision; selected own-model table cells in README only.",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "zai-org/GLM-5.1 authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "zai-org/GLM-5.1 authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-B-2026-10-09.md."
   },
   {
     "id": "card-zai-org--glm-5.2",
@@ -831,9 +852,10 @@
     "terms_url": "https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/LICENSE",
     "quote": "Repository root licence at pinned revision; selected own-model table cells in README only.",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "zai-org/GLM-5.2 authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement."
+    "attribution": "zai-org/GLM-5.2 authors. Selected own-model results, percentages converted to fractions and used to derive relative scores. Full repository licence notice linked; no endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-A-2026-10-09.md. Detail: Also the GLM-5.1 column on HLE, AIME 2026, GPQA-Diamond and SWE-bench Pro, and every column of the MCP-Atlas row (footnote: 'All models were evaluated ...')."
   },
   {
     "id": "unreviewed-hf",
@@ -1359,7 +1381,7 @@
     "name": "microsoft/Phi-4-mini-instruct model card",
     "license": "MIT",
     "terms_url": "https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/LICENSE",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "attribution": "microsoft, Phi-4-mini-instruct model card. MIT. Selected benchmark results; changed to normalized numerical JSON. No endorsement.",
     "verdict": "allowed",
     "kind": "first-party",
@@ -1369,14 +1391,15 @@
     ],
     "icon": "huggingface.co",
     "quote": "Root repository LICENSE covers distributed source documentation, including README.md; source-card declaration agrees. This assessment is for document/data reuse, separate from deploying model weights.",
-    "license_url": "/licenses/card-microsoft-phi-4-mini-instruct.txt"
+    "license_url": "/licenses/card-microsoft-phi-4-mini-instruct.txt",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-C-2026-10-09.md."
   },
   {
     "id": "card-microsoft-phi-4-mini-reasoning",
     "name": "microsoft/Phi-4-mini-reasoning model card",
     "license": "MIT",
     "terms_url": "https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/LICENSE",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "attribution": "microsoft, Phi-4-mini-reasoning model card. MIT. Selected benchmark results; changed to normalized numerical JSON. No endorsement.",
     "verdict": "allowed",
     "kind": "first-party",
@@ -1386,7 +1409,8 @@
     ],
     "icon": "huggingface.co",
     "quote": "Root repository LICENSE covers distributed source documentation, including README.md; source-card declaration agrees. This assessment is for document/data reuse, separate from deploying model weights.",
-    "license_url": "/licenses/card-microsoft-phi-4-mini-reasoning.txt"
+    "license_url": "/licenses/card-microsoft-phi-4-mini-reasoning.txt",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-C-2026-10-09.md."
   },
   {
     "id": "card-nvidia-nemotron-cascade-2-30b-a3b",
@@ -1512,7 +1536,7 @@
     "name": "Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling",
     "license": "CC BY 4.0",
     "terms_url": "https://creativecommons.org/licenses/by/4.0/",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "attribution": "Falcon-H1R authors / Technology Innovation Institute. Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling. arXiv:2601.02346v1. CC BY 4.0. Selected numerical data, percent-to-fraction conversion and labels normalized; no endorsement.",
     "verdict": "allowed",
     "kind": "first-party",
@@ -1522,7 +1546,8 @@
     ],
     "icon": "huggingface.co",
     "quote": "The pinned report itself explicitly declares CC BY 4.0. This licence applies to report contents, regardless of a different model-weight licence.",
-    "license_url": "/licenses/report-2601.02346v1.txt"
+    "license_url": "/licenses/report-2601.02346v1.txt",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-C-2026-10-09.md."
   },
   {
     "id": "speech-ttsds-v1-mit",
@@ -1608,7 +1633,7 @@
     "icon": "arxiv.org",
     "quote": "The versioned report, including numerical tables. Not a claim about model-weight or underlying audio licences.",
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
-    "scope": " Extended 2026-10-09: also the dots.tts (Pretrain) row (WER/CER/SIM, test-en and test-zh; mapped to dots-tts-base) and the SOAR row's SIM cells; other makers' rows not used."
+    "scope": " Extended 2026-10-09: also the dots.tts (Pretrain) row (WER/CER/SIM, test-en and test-zh; mapped to dots-tts-base) and the SOAR row's SIM cells; other makers' rows not used. Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-E-2026-10-09.md."
   },
   {
     "id": "speech-voxtral-realtime-report",
@@ -1838,7 +1863,7 @@
     "license_url": "/licenses/visual-hidream.txt",
     "attribution": "HiDream-ai/HiDream-O1-Image contributors. Extracted selected measured table values; percentages divided by 100 where specified; model labels mapped only to the stated model version. No values estimated or rerun. Source: https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md. No endorsement; provided as-is.",
     "quote": "Only the retained original measurements and accompanying documentation inside this licensed artifact. No permission inferred for copied third-party comparison rows, external websites, model weights, generated media or dataset inputs.",
-    "scope": "Own-model rows only. MIT includes associated documentation in this repository; no external leaderboard database is used. Extended 2026-10-09: HiDream's own models only (HiDream-O1-Image, plus HiDream-I1-Full in the DPG-Bench table); other makers' rows not used. Also the LongText-Bench table's two HiDream rows (HiDream-O1-Image, HiDream-I1-Full).",
+    "scope": "Own-model rows only. MIT includes associated documentation in this repository; no external leaderboard database is used. Extended 2026-10-09: HiDream's own models only (HiDream-O1-Image, plus HiDream-I1-Full in the DPG-Bench table); other makers' rows not used. Also the LongText-Bench table's two HiDream rows (HiDream-O1-Image, HiDream-I1-Full). Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-E-2026-10-09.md.",
     "icon": "huggingface.co"
   },
   {
@@ -2046,13 +2071,13 @@
     "license": "Apache-2.0",
     "terms_url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "attribution": "mistralai/Ministral-3-14B-Instruct-2512 — mistralai/Ministral-3-14B-Instruct-2512 model card\nSource: https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md\nLicence declaration: Apache-2.0 (pinned README metadata).\nChanges: Selected own-model table cells or printed chart labels transcribed into JSON; percentages divided by 100, already-fractional values preserved; benchmark aliases/settings documented. Logos and full chart artwork are not redistributed in the results.\nAttribution to mistralai. No endorsement.",
     "exact": true,
     "kind": "first-party",
     "icon": "huggingface.co",
     "license_url": "/licenses/cards-gap-NOTICE.txt",
-    "scope": "Accepted as publisher-authored data in the licensed repository README (or the publisher’s own chart embedded in that README). The pinned README declares license: apache-2.0 through the Hub’s documented repository-licensing mechanism. Apache 2.0 section 1 includes documentation source; section 2 grants reproduction, derivative-work and distribution rights; section 4 conditions are retained. No separate documentation exclusion or incompatible notice was found for the selected own-model material. This is a repository-specific scope assessment, not a rule that first-party facts or linked external blogs are automatically reusable. A separate root LICENSE file is not required to recognize the explicit standard-licence declaration; the complete Apache text accompanies this extraction.",
+    "scope": "Accepted as publisher-authored data in the licensed repository README (or the publisher’s own chart embedded in that README). The pinned README declares license: apache-2.0 through the Hub’s documented repository-licensing mechanism. Apache 2.0 section 1 includes documentation source; section 2 grants reproduction, derivative-work and distribution rights; section 4 conditions are retained. No separate documentation exclusion or incompatible notice was found for the selected own-model material. This is a repository-specific scope assessment, not a rule that first-party facts or linked external blogs are automatically reusable. A separate root LICENSE file is not required to recognize the explicit standard-licence declaration; the complete Apache text accompanies this extraction. Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-A-2026-10-09.md. Detail: Instruct table, rows Ministral 3 14B/8B/3B (Instruct 2512) on Arena Hard and MATH Maj@1.",
     "quote": "Explicit licence on the pinned publication. Full terms, attribution and modification notices retained in the linked notice."
   },
   {
@@ -2100,13 +2125,13 @@
     "license": "Apache-2.0",
     "terms_url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "attribution": "mistralai/Ministral-3-3B-Reasoning-2512 — mistralai/Ministral-3-3B-Reasoning-2512 model card\nSource: https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md\nLicence declaration: Apache-2.0 (pinned README metadata).\nChanges: Selected own-model table cells or printed chart labels transcribed into JSON; percentages divided by 100, already-fractional values preserved; benchmark aliases/settings documented. Logos and full chart artwork are not redistributed in the results.\nAttribution to mistralai. No endorsement.",
     "exact": true,
     "kind": "first-party",
     "icon": "huggingface.co",
     "license_url": "/licenses/cards-gap-NOTICE.txt",
-    "scope": "Accepted as publisher-authored data in the licensed repository README (or the publisher’s own chart embedded in that README). The pinned README declares license: apache-2.0 through the Hub’s documented repository-licensing mechanism. Apache 2.0 section 1 includes documentation source; section 2 grants reproduction, derivative-work and distribution rights; section 4 conditions are retained. No separate documentation exclusion or incompatible notice was found for the selected own-model material. This is a repository-specific scope assessment, not a rule that first-party facts or linked external blogs are automatically reusable. A separate root LICENSE file is not required to recognize the explicit standard-licence declaration; the complete Apache text accompanies this extraction.",
+    "scope": "Accepted as publisher-authored data in the licensed repository README (or the publisher’s own chart embedded in that README). The pinned README declares license: apache-2.0 through the Hub’s documented repository-licensing mechanism. Apache 2.0 section 1 includes documentation source; section 2 grants reproduction, derivative-work and distribution rights; section 4 conditions are retained. No separate documentation exclusion or incompatible notice was found for the selected own-model material. This is a repository-specific scope assessment, not a rule that first-party facts or linked external blogs are automatically reusable. A separate root LICENSE file is not required to recognize the explicit standard-licence declaration; the complete Apache text accompanies this extraction. Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-C-2026-10-09.md.",
     "quote": "Explicit licence on the pinned publication. Full terms, attribution and modification notices retained in the linked notice."
   },
   {
@@ -2118,13 +2143,13 @@
     "license": "Apache-2.0",
     "terms_url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "attribution": "mistralai/Ministral-3-8B-Instruct-2512 — mistralai/Ministral-3-8B-Instruct-2512 model card\nSource: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512/blob/5b26027e7b19eeb4b7352e1fed3926375dd2cb4d/README.md\nLicence declaration: Apache-2.0 (pinned README metadata).\nChanges: Selected own-model table cells or printed chart labels transcribed into JSON; percentages divided by 100, already-fractional values preserved; benchmark aliases/settings documented. Logos and full chart artwork are not redistributed in the results.\nAttribution to mistralai. No endorsement.",
     "exact": true,
     "kind": "first-party",
     "icon": "huggingface.co",
     "license_url": "/licenses/cards-gap-NOTICE.txt",
-    "scope": "Accepted as publisher-authored data in the licensed repository README (or the publisher’s own chart embedded in that README). The pinned README declares license: apache-2.0 through the Hub’s documented repository-licensing mechanism. Apache 2.0 section 1 includes documentation source; section 2 grants reproduction, derivative-work and distribution rights; section 4 conditions are retained. No separate documentation exclusion or incompatible notice was found for the selected own-model material. This is a repository-specific scope assessment, not a rule that first-party facts or linked external blogs are automatically reusable. A separate root LICENSE file is not required to recognize the explicit standard-licence declaration; the complete Apache text accompanies this extraction.",
+    "scope": "Accepted as publisher-authored data in the licensed repository README (or the publisher’s own chart embedded in that README). The pinned README declares license: apache-2.0 through the Hub’s documented repository-licensing mechanism. Apache 2.0 section 1 includes documentation source; section 2 grants reproduction, derivative-work and distribution rights; section 4 conditions are retained. No separate documentation exclusion or incompatible notice was found for the selected own-model material. This is a repository-specific scope assessment, not a rule that first-party facts or linked external blogs are automatically reusable. A separate root LICENSE file is not required to recognize the explicit standard-licence declaration; the complete Apache text accompanies this extraction. Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-C-2026-10-09.md.",
     "quote": "Explicit licence on the pinned publication. Full terms, attribution and modification notices retained in the linked notice."
   },
   {
@@ -2190,13 +2215,13 @@
     "license": "CC BY 4.0",
     "terms_url": "https://creativecommons.org/licenses/by/4.0/",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "attribution": "Liquid AI (2025). LFM2 Technical Report. arXiv:2511.23404v1. https://arxiv.org/html/2511.23404v1\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nSelected Table7 SmolLM3-3B own reevaluation cells and AppendixC methods; percentages normalized to fractions and benchmark names clarified. No endorsement.",
     "exact": true,
     "kind": "paper",
     "icon": "arxiv.org",
     "license_url": "/licenses/cards-gap-NOTICE.txt",
-    "scope": "Pinned report explicitly declares CC BY4.0; Table7 states all results use the authors’ internal evaluation harness. These are Liquid AI’s independent evaluations of SmolLM3-3B, not third-party copied comparisons. The report licence permits commercial reuse independently of any LFM model licence/revenue threshold.",
+    "scope": "Pinned report explicitly declares CC BY4.0; Table7 states all results use the authors’ internal evaluation harness. These are Liquid AI’s independent evaluations of SmolLM3-3B, not third-party copied comparisons. The report licence permits commercial reuse independently of any LFM model licence/revenue threshold. Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-A-2026-10-09.md. Detail: Table 7 (internal harness, all columns): SmolLM3-3B plus LFM2-8B-A1B (lab), Llama-3.2-3B-Instruct, Gemma-3-4B-it and Qwen3-4B (original).",
     "quote": "Explicit licence on the pinned publication. Full terms, attribution and modification notices retained in the linked notice."
   },
   {
@@ -2960,14 +2985,15 @@
     ],
     "license": "CC BY 4.0",
     "terms_url": "https://creativecommons.org/licenses/by/4.0/",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "attribution": "Hongseok Oh, Wonseok Hwang and Kyoung-Woon On; ©2026 Association for Computational Linguistics. Korean Canonical Legal Benchmark: Toward Knowledge-Independent Evaluation of LLMs’ Legal Reasoning Capabilities.\nSource: https://aclanthology.org/2026.eacl-short.17.pdf\nLicence: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/\nChanges: Selected numerical cells transcribed into JSON; percentages divided by100; benchmark names and settings clarified. No model weights, test questions, full chart artwork or model-generated answers redistributed.\nNo endorsement.",
     "verdict": "allowed",
     "exact": true,
     "kind": "paper",
     "icon": "arxiv.org",
     "license_url": "/licenses/cards-final-NOTICE.txt",
-    "quote": "This is an ACL-owned 2026 publication, explicitly covered by ACL’s post2016 CC BY4.0 publication policy. Selected table statistics are the paper authors’ original evaluations, not reprinted LG card scores. EXAONE’s NC model licence and any NC benchmark dataset/code licence are not transferred to the article’s independently authored results. Only aggregate numerical findings and methods are extracted, not dataset questions, rubric text, inference outputs or code. No alternate licence is marked on these numerical tables."
+    "quote": "This is an ACL-owned 2026 publication, explicitly covered by ACL’s post2016 CC BY4.0 publication policy. Selected table statistics are the paper authors’ original evaluations, not reprinted LG card scores. EXAONE’s NC model licence and any NC benchmark dataset/code licence are not transferred to the article’s independently authored results. Only aggregate numerical findings and methods are extracted, not dataset questions, rubric text, inference outputs or code. No alternate licence is marked on these numerical tables.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-A-2026-10-09.md. Detail: Tables 2 and 3, vanilla column, every catalogued model with a pinned checkpoint (23 models), not only Exaone 4.0 32B."
   },
   {
     "id": "first-party-meta",
@@ -6094,7 +6120,7 @@
     "icon": "huggingface.co",
     "quote": "Pinned repository contains the full Apache License 2.0 as LICENSE and the README YAML declares `license: apache-2.0` (line 2); the card also states \"License: Apache 2.0\". Apache-2.0 sections 1, 2 and 4 cover documentation in Source form and permit reproduction/derivative works subject to preserving the licence and marking changes. USAGE_POLICY.md governs use of the model, not reuse of the card's measurements. RedHatAI/Muse-Glimmer-30B carries a byte-identical copy of this README; the first-party original is cited.",
     "license_url": "/licenses/speed-meta-muse-glimmer-30b-Apache-2.0.txt",
-    "scope": " Benchmark cells only where Meta's linked methodology report says Meta ran them; cells it says were sourced from Artificial Analysis (τ³-Banking, Terminal-Bench 2.1, SciCode, MMMU-Pro, and any marked (AA)) are not used (removed 2026-10-09)."
+    "scope": " Benchmark cells only where Meta's linked methodology report says Meta ran them; cells it says were sourced from Artificial Analysis (τ³-Banking, Terminal-Bench 2.1, SciCode, MMMU-Pro, and any marked (AA)) are not used (removed 2026-10-09). Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-B-2026-10-09.md."
   },
   {
     "id": "quant-qwen-hf-qwen3-0-6b-gptq-int8",
@@ -8024,9 +8050,10 @@
     "terms_url": "https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md",
     "quote": "README front-matter at the pinned revision declares 'license: mit'; no root LICENSE file; grant clause: 'Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files ...'. Selected own-lab result cells in the pinned README only; linked blogs, externally hosted images and competitor columns are not used.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "zai-org. zai-org/GLM-5 model card. Source: https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md. Licence: MIT. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "zai-org. zai-org/GLM-5 model card. Source: https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md. Licence: MIT. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-B-2026-10-09.md."
   },
   {
     "id": "card2-zai-org-glm-4-7",
@@ -8041,9 +8068,10 @@
     "terms_url": "https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md",
     "quote": "README front-matter at the pinned revision declares 'license: mit'; no root LICENSE file; grant clause: 'Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files ...'. Selected own-lab result cells in the pinned README only; linked blogs, externally hosted images and competitor columns are not used.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "zai-org. zai-org/GLM-4.7 model card. Source: https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md. Licence: MIT. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "zai-org. zai-org/GLM-4.7 model card. Source: https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md. Licence: MIT. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-B-2026-10-09.md."
   },
   {
     "id": "card2-zai-org-glm-4-7-flash",
@@ -8075,9 +8103,10 @@
     "terms_url": "https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md",
     "quote": "README front-matter at the pinned revision declares 'license: apache-2.0'; no root LICENSE file; grant clause: 'each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work ...'. Selected own-lab result cells in the pinned README only; linked blogs, externally hosted images and competitor columns are not used.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "stepfun-ai. stepfun-ai/Step-3.5-Flash model card. Source: https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "stepfun-ai. stepfun-ai/Step-3.5-Flash model card. Source: https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-A-2026-10-09.md. Detail: Also the starred ('*' = StepFun's reproduction under the same test conditions) competitor cells of the Detailed Benchmarks table, except xbench-DeepSearch rows."
   },
   {
     "id": "card2-deepseek-ai-deepseek-v4-1-flash",
@@ -8126,9 +8155,10 @@
     "terms_url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/LICENSE",
     "quote": "README front-matter at the pinned revision declares 'license: mit'; root LICENSE begins 'MIT License'; grant clause: 'Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files ...'. Selected own-lab result cells in the pinned README only; linked blogs, externally hosted images and competitor columns are not used.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "deepseek-ai. deepseek-ai/DeepSeek-V3.1 model card. Source: https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md. Licence: MIT. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "deepseek-ai. deepseek-ai/DeepSeek-V3.1 model card. Source: https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md. Licence: MIT. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-B-2026-10-09.md."
   },
   {
     "id": "card2-deepseek-ai-deepseek-v3-0324",
@@ -8212,9 +8242,10 @@
     "terms_url": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md",
     "quote": "README front-matter at the pinned revision declares 'license: apache-2.0'; no root LICENSE file; grant clause: 'each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work ...'. Selected own-lab result cells in the pinned README only; linked blogs, externally hosted images and competitor columns are not used.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "mistralai. mistralai/Mistral-Small-3.2-24B-Instruct-2506 model card. Source: https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "mistralai. mistralai/Mistral-Small-3.2-24B-Instruct-2506 model card. Source: https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-A-2026-10-09.md. Detail: Also the 'Small 3.1 24B Instruct' comparison row (Mistral's own previous checkpoint) of the same tables."
   },
   {
     "id": "card2-mistralai-magistral-small-2509",
@@ -8229,9 +8260,10 @@
     "terms_url": "https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md",
     "quote": "README front-matter at the pinned revision declares 'license: apache-2.0'; no root LICENSE file; grant clause: 'each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work ...'. Selected own-lab result cells in the pinned README only; linked blogs, externally hosted images and competitor columns are not used.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "mistralai. mistralai/Magistral-Small-2509 model card. Source: https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "mistralai. mistralai/Magistral-Small-2509 model card. Source: https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-C-2026-10-09.md."
   },
   {
     "id": "card2-google-gemma-4-31b-it",
@@ -8282,7 +8314,8 @@
     "verdict": "allowed",
     "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "Hugging Face (Distil-Whisper). distil-whisper/distil-large-v3.5 model card. Source: https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md. Licence: MIT. Changes: own-lab numerical cells (distil-large-v3.5 and the earlier distil-v2 / distil-v3 columns) transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "Hugging Face (Distil-Whisper). distil-whisper/distil-large-v3.5 model card. Source: https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md. Licence: MIT. Changes: own-lab numerical cells (distil-large-v3.5 and the earlier distil-v2 / distil-v3 columns) transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-D-2026-10-09.md."
   },
   {
     "id": "card2-nvidia-parakeet-tdt-0-6b-v2",
@@ -8402,7 +8435,7 @@
     "checked": "2026-10-09",
     "icon": "huggingface.co",
     "attribution": "Qwen Team, Alibaba. Qwen/Qwen3-TTS-12Hz-1.7B-Base model card. Source: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
-    "scope": " Extended 2026-10-09: also the lab's own Qwen3-TTS-12Hz-0.6B-Base row of the same Seed-TTS table; competitor and 25Hz rows not used."
+    "scope": " Extended 2026-10-09: also the lab's own Qwen3-TTS-12Hz-0.6B-Base row of the same Seed-TTS table; competitor and 25Hz rows not used. Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-E-2026-10-09.md."
   },
   {
     "id": "card2-stepfun-ai-step1x-edit-v1p2",
@@ -8468,9 +8501,10 @@
     "terms_url": "https://arxiv.org/abs/2412.08905v1",
     "quote": "arXiv abstract page for 2412.08905v1 states the article licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Only the authors' own-model result cells are used; baseline/competitor columns are excluded.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "arxiv.org",
-    "attribution": "Marah Abdin et al. (Microsoft Research). Phi-4 Technical Report. arXiv:2412.08905v1. CC BY 4.0. Source: https://arxiv.org/html/2412.08905v1. Changes: selected own-model numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "Marah Abdin et al. (Microsoft Research). Phi-4 Technical Report. arXiv:2412.08905v1. CC BY 4.0. Source: https://arxiv.org/html/2412.08905v1. Changes: selected own-model numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-B-2026-10-09.md."
   },
   {
     "id": "report-2503.01743v2",
@@ -8485,9 +8519,10 @@
     "terms_url": "https://arxiv.org/abs/2503.01743v2",
     "quote": "arXiv abstract page for 2503.01743v2 states the article licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Only the authors' own-model result cells are used; baseline/competitor columns are excluded.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "arxiv.org",
-    "attribution": "Microsoft (Abouelenin et al.). Phi-4-Mini Technical Report: Compact yet Powerful Multimodal Language Models via Mixture-of-LoRAs. arXiv:2503.01743v2. CC BY 4.0. Source: https://arxiv.org/html/2503.01743v2. Changes: selected own-model numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "Microsoft (Abouelenin et al.). Phi-4-Mini Technical Report: Compact yet Powerful Multimodal Language Models via Mixture-of-LoRAs. arXiv:2503.01743v2. CC BY 4.0. Source: https://arxiv.org/html/2503.01743v2. Changes: selected own-model numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-A-2026-10-09.md. Detail: Also the Phi-3.5-Mini column of Tables 7-8 (same lab) and the unstarred (reproduced) rows of Table 9 including the AIME 2024 column."
   },
   {
     "id": "report-2504.21318v1",
@@ -8502,9 +8537,10 @@
     "terms_url": "https://arxiv.org/abs/2504.21318v1",
     "quote": "arXiv abstract page for 2504.21318v1 states the article licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Only the authors' own-model result cells are used; baseline/competitor columns are excluded.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "arxiv.org",
-    "attribution": "Marah Abdin et al. (Microsoft). Phi-4-reasoning Technical Report. arXiv:2504.21318v1. CC BY 4.0. Source: https://arxiv.org/html/2504.21318v1. Changes: selected own-model numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "Marah Abdin et al. (Microsoft). Phi-4-reasoning Technical Report. arXiv:2504.21318v1. CC BY 4.0. Source: https://arxiv.org/html/2504.21318v1. Changes: selected own-model numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-C-2026-10-09.md."
   },
   {
     "id": "report-2503.19786v1",
@@ -8553,9 +8589,10 @@
     "terms_url": "https://arxiv.org/abs/2602.15763v2",
     "quote": "arXiv abstract page for 2602.15763v2 states the article licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Only the authors' own-model result cells are used; baseline/competitor columns are excluded.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "arxiv.org",
-    "attribution": "GLM-5 Team, Zhipu AI. GLM-5: from Vibe Coding to Agentic Engineering. arXiv:2602.15763v2. CC BY 4.0. Source: https://arxiv.org/html/2602.15763v2. Changes: selected own-model numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "GLM-5 Team, Zhipu AI. GLM-5: from Vibe Coding to Agentic Engineering. arXiv:2602.15763v2. CC BY 4.0. Source: https://arxiv.org/html/2602.15763v2. Changes: selected own-model numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-C-2026-10-09.md."
   },
   {
     "id": "report-2504.00698v2",
@@ -8570,9 +8607,10 @@
     "terms_url": "https://arxiv.org/abs/2504.00698v2",
     "quote": "arXiv abstract page for 2504.00698v2 states the article licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). No HTML rendering exists; cells transcribed from the pinned PDF via pdftotext -layout. Only the 'Command A' row is used (not Command A Expert/Agentic/Reasoning, Command R7B or external models). The report's statement that model weights are CC-BY-NC does not restrict the report text licence.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "arxiv.org",
-    "attribution": "Cohere (Team Cohere et al.). Command A: An Enterprise-Ready Large Language Model. arXiv:2504.00698v2. CC BY 4.0. Source: https://arxiv.org/pdf/2504.00698v2. Changes: selected own-model numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "Cohere (Team Cohere et al.). Command A: An Enterprise-Ready Large Language Model. arXiv:2504.00698v2. CC BY 4.0. Source: https://arxiv.org/pdf/2504.00698v2. Changes: selected own-model numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-A-2026-10-09.md. Detail: Besides the Command A row: internal-reproduction cells of Tables 12-14 (comparators' second value where '/' is printed), the asterisked internal cell of Table 15, and Cohere's own family rows (Command R7B, Command R Refresh, Command R+ Refresh) in Tables 3, 12-14, 21, 22."
   },
   {
     "id": "report-2508.10925v1",
@@ -8638,9 +8676,10 @@
     "terms_url": "https://arxiv.org/abs/2606.15007v1",
     "quote": "arXiv abstract page for 2606.15007v1 states the article licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Only the authors' own-model result cells are used; baseline/competitor columns are excluded.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "arxiv.org",
-    "attribution": "NVIDIA. Nemotron 3 Ultra: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Model for Agentic Reasoning. arXiv:2606.15007v1. CC BY 4.0. Source: https://arxiv.org/html/2606.15007v1. Changes: selected own-model numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "NVIDIA. Nemotron 3 Ultra: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Model for Agentic Reasoning. arXiv:2606.15007v1. CC BY 4.0. Source: https://arxiv.org/html/2606.15007v1. Changes: selected own-model numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-B-2026-10-09.md."
   },
   {
     "id": "report-2603.19220v2",
@@ -8655,9 +8694,10 @@
     "terms_url": "https://arxiv.org/abs/2603.19220v2",
     "quote": "arXiv abstract page for 2603.19220v2 states the article licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Used: the authors' own Nemotron-Cascade-2 cells, and Table 1 baseline cells marked ‡ (baselines NVIDIA evaluated itself with recommended settings). Unmarked baseline cells are official numbers copied from other reports and are excluded. Table 6 LiveCodeBench Pro baseline cells are recorded only with needs_review.",
     "verdict": "allowed",
-    "checked": "2026-10-06",
+    "checked": "2026-10-09",
     "icon": "arxiv.org",
-    "attribution": "NVIDIA. Nemotron-Cascade 2: Post-Training LLMs with Cascade RL and Multi-Domain On-Policy Distillation. arXiv:2603.19220v2. CC BY 4.0. Source: https://arxiv.org/html/2603.19220v2. Changes: selected own-model numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "NVIDIA. Nemotron-Cascade 2: Post-Training LLMs with Cascade RL and Multi-Domain On-Policy Distillation. arXiv:2603.19220v2. CC BY 4.0. Source: https://arxiv.org/html/2603.19220v2. Changes: selected own-model numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-A-2026-10-09.md. Detail: Table 1: own column plus NVIDIA's Nemotron-3-Nano and Nemotron-3-Super columns, and only the '‡'-marked (NVIDIA-evaluated) Qwen3.5-35B-A3B cells."
   },
   {
     "id": "report-2604.12374v1",
@@ -8895,9 +8935,10 @@
     "terms_url": "https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md",
     "quote": "README front-matter at the pinned revision declares 'license: apache-2.0'; no root LICENSE file; grant clause: 'each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work ...'. Selected own-lab result cells in the pinned README only; linked blogs, externally hosted images and competitor columns are not used.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "allenai. allenai/Olmo-3-7B-Think model card. Source: https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "allenai. allenai/Olmo-3-7B-Think model card. Source: https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-A-2026-10-09.md. Detail: Also the 'Olmo 3 Think 7B DPO' column (Ai2's own intermediate checkpoint) on MATH and OMEGA."
   },
   {
     "id": "card2-allenai-olmo-3-1-32b-think",
@@ -8912,9 +8953,10 @@
     "terms_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md",
     "quote": "README front-matter at the pinned revision declares 'license: apache-2.0'; no root LICENSE file; grant clause: 'each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work ...'. Selected own-lab result cells in the pinned README only; linked blogs, externally hosted images and competitor columns are not used.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "allenai. allenai/Olmo-3.1-32B-Think model card. Source: https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "allenai. allenai/Olmo-3.1-32B-Think model card. Source: https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-B-2026-10-09.md."
   },
   {
     "id": "card2-allenai-olmo-3-7b-instruct",
@@ -8929,9 +8971,10 @@
     "terms_url": "https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md",
     "quote": "README front-matter at the pinned revision declares 'license: apache-2.0'; no root LICENSE file; grant clause: 'each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work ...'. Selected own-lab result cells in the pinned README only; linked blogs, externally hosted images and competitor columns are not used.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "allenai. allenai/Olmo-3-7B-Instruct model card. Source: https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "allenai. allenai/Olmo-3-7B-Instruct model card. Source: https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-B-2026-10-09.md."
   },
   {
     "id": "card2-ibm-granite-granite-4-1-8b",
@@ -9014,9 +9057,10 @@
     "terms_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
     "quote": "README front-matter at the pinned revision declares 'license: apache-2.0'; no root LICENSE file; grant clause: 'each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work ...'. Fragment-scoped to the README '## Evaluation' section (own-model benchmark cells); the same README path without a fragment stays under gap-card-smollm3-3b, whose reviewed scope is context fields.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
-    "attribution": "HuggingFaceTB. HuggingFaceTB/SmolLM3-3B model card. Source: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "HuggingFaceTB. HuggingFaceTB/SmolLM3-3B model card. Source: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
+    "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-C-2026-10-09.md."
   },
   {
     "id": "card2-zai-org-glm-4-6",
@@ -10040,10 +10084,10 @@
     "terms_url": "https://arxiv.org/abs/2310.06825v1",
     "license_url": "/licenses/paper-2310.06825v1-CC-BY-4.0.txt",
     "verdict": "allowed",
-    "checked": "2026-10-06",
+    "checked": "2026-10-09",
     "attribution": "Albert Q. Jiang, Alexandre Sablayrolles, Arthur Mensch et al. (2023). Mistral 7B. arXiv:2310.06825v1. https://arxiv.org/abs/2310.06825v1\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
     "quote": "The arXiv abstract page for 2310.06825v1 links the licence 'http://creativecommons.org/licenses/by/4.0/' in its licence field, and the HTML version header states 'License: CC BY 4.0'.",
-    "scope": "Table 2: authors' own evaluations of LLaMA 2 7B/13B, Mistral 7B and the code-pretrained Code Llama 7B base checkpoint (not Instruct/Python). Columns MMLU, HellaSwag, WinoGrande, PIQA, ARC-e/c, Natural Questions, TriviaQA, HumanEval, MBPP, MATH and GSM8K; benchmark settings remain as reported. Chat-model Table 3 and figures excluded. Code Llama and Natural Questions scope reviewed 2026-10-06.",
+    "scope": "Table 2: authors' own evaluations of LLaMA 2 7B/13B, Mistral 7B and the code-pretrained Code Llama 7B base checkpoint (not Instruct/Python). Columns MMLU, HellaSwag, WinoGrande, PIQA, ARC-e/c, Natural Questions, TriviaQA, HumanEval, MBPP, MATH and GSM8K; benchmark settings remain as reported. Chat-model Table 3 and figures excluded. Code Llama and Natural Questions scope reviewed 2026-10-06. Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-C-2026-10-09.md.",
     "icon": "arxiv.org"
   },
   {

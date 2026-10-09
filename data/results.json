@@ -215580,5 +215580,385 @@
     "date": "2026-02-26",
     "note": "Meituan InteractCS-RL v1 (CC BY 4.0), Table 2 'Performance of our InteractCS-RL in τ²-Bench', row 'Qwen2.5-14B', Telecom 'Pass@1' = 17.5%. Sec. 5.3: agents 'based on Qwen2.5-7/14B-Instruct'. τ²-bench setup in App. A.2 (user simulator for τ² not separately stated; the paper's own benchmark uses DeepSeek-V3.2 as user). Values are k/114 (single pass over the 114 tasks). Checkpoint: Qwen2.5-14B-Instruct.",
     "source_id": "paper-2602.22697v1-interactcs-rl"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "mmlu-pro",
+    "score": 0.857,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'MMLU-Pro', column 'Qwen3-Max-Thinking' = 85.7 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "mmlu-redux",
+    "score": 0.928,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'MMLU-Redux', column 'Qwen3-Max-Thinking' = 92.8 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "supergpqa",
+    "score": 0.673,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'SuperGPQA', column 'Qwen3-Max-Thinking' = 67.3 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "c-eval",
+    "score": 0.937,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'C-Eval', column 'Qwen3-Max-Thinking' = 93.7 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "ifeval-unspecified",
+    "score": 0.934,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'IFEval', column 'Qwen3-Max-Thinking' = 93.4 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "ifbench-unspecified",
+    "score": 0.709,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'IFBench', column 'Qwen3-Max-Thinking' = 70.9 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "multichallenge",
+    "score": 0.633,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'MultiChallenge', column 'Qwen3-Max-Thinking' = 63.3 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "longbench-v2",
+    "score": 0.606,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'LongBench v2', column 'Qwen3-Max-Thinking' = 60.6 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "gpqa-unspecified",
+    "score": 0.874,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'GPQA', column 'Qwen3-Max-Thinking' = 87.4 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "hle",
+    "score": 0.302,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'HLE', column 'Qwen3-Max-Thinking' = 30.2 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "livecodebench-v6",
+    "score": 0.859,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'LiveCodeBench v6', column 'Qwen3-Max-Thinking' = 85.9 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "hmmt-feb-2025",
+    "score": 0.98,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'HMMT Feb 25', column 'Qwen3-Max-Thinking' = 98.0 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "hmmt-nov-2025",
+    "score": 0.947,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'HMMT Nov 25', column 'Qwen3-Max-Thinking' = 94.7 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "imo-answerbench",
+    "score": 0.839,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'IMOAnswerBench', column 'Qwen3-Max-Thinking' = 83.9 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "aime-2026",
+    "score": 0.933,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'AIME26', column 'Qwen3-Max-Thinking' = 93.3 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "bfcl-v4",
+    "score": 0.677,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'BFCL-V4', column 'Qwen3-Max-Thinking' = 67.7 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "tau2-bench",
+    "score": 0.846,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'TAU2-Bench', column 'Qwen3-Max-Thinking' = 84.6 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "vita-bench",
+    "score": 0.409,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'VITA-Bench', column 'Qwen3-Max-Thinking' = 40.9 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "deepplanning",
+    "score": 0.287,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'DeepPlanning', column 'Qwen3-Max-Thinking' = 28.7 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "toolathlon",
+    "score": 0.188,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'Tool Decathlon', column 'Qwen3-Max-Thinking' = 18.8 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "mcpmark",
+    "score": 0.335,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'MCP-Mark', column 'Qwen3-Max-Thinking' = 33.5 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "hle-with-tools",
+    "score": 0.498,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'HLE w/ tool', column 'Qwen3-Max-Thinking' = 49.8 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "browsecomp",
+    "score": 0.539,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'BrowseComp', column 'Qwen3-Max-Thinking' = 53.9 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "browsecomp-zh",
+    "score": 0.609,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'BrowseComp-zh', column 'Qwen3-Max-Thinking' = 60.9 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "widesearch",
+    "score": 0.579,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'WideSearch', column 'Qwen3-Max-Thinking' = 57.9 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "seal-0",
+    "score": 0.469,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'Seal-0', column 'Qwen3-Max-Thinking' = 46.9 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "mmmlu",
+    "score": 0.844,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'MMMLU', column 'Qwen3-Max-Thinking' = 84.4 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "mmlu-prox",
+    "score": 0.785,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'MMLU-ProX', column 'Qwen3-Max-Thinking' = 78.5 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "nova-63",
+    "score": 0.542,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'NOVA-63', column 'Qwen3-Max-Thinking' = 54.2 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "include",
+    "score": 0.823,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'INCLUDE', column 'Qwen3-Max-Thinking' = 82.3 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "global-piqa",
+    "score": 0.86,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'Global PIQA', column 'Qwen3-Max-Thinking' = 86.0 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "polymath",
+    "score": 0.647,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'PolyMATH', column 'Qwen3-Max-Thinking' = 64.7 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "wmt24pp",
+    "score": 0.776,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'WMT24++', column 'Qwen3-Max-Thinking' = 77.6 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "maxife",
+    "score": 0.84,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'MAXIFE', column 'Qwen3-Max-Thinking' = 84.0 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "swe-bench-verified",
+    "score": 0.753,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'SWE-bench Verified', column 'Qwen3-Max-Thinking' = 75.3 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "swe-bench-multilingual",
+    "score": 0.667,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'SWE-bench Multilingual', column 'Qwen3-Max-Thinking' = 66.7 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "seccodebench",
+    "score": 0.575,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'SecCodeBench', column 'Qwen3-Max-Thinking' = 57.5 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "qwen3-max-2026-01-23",
+    "bench": "terminal-bench-2",
+    "score": 0.225,
+    "note": "Qwen3.5-397B-A17B model card @8472618 (Apache-2.0), Language table, row 'Terminal Bench 2', column 'Qwen3-Max-Thinking' = 22.5 Column 'Qwen3-Max-Thinking' mapped 2026-10-09 to the dated snapshot qwen3-max-2026-01-23 (Alibaba's release of Qwen3-Max-Thinking, 23 Jan 2026), the only Qwen3-Max-Thinking release before this card (Feb 2026); thinking mode. Same-lab column (by: lab).",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md",
+    "by": "lab",
+    "date": "2026-09-25",
+    "source_id": "card-qwen--qwen3.5-397b-a17b"
   }
 ]
