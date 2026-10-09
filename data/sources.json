@@ -1838,7 +1838,7 @@
     "license_url": "/licenses/visual-hidream.txt",
     "attribution": "HiDream-ai/HiDream-O1-Image contributors. Extracted selected measured table values; percentages divided by 100 where specified; model labels mapped only to the stated model version. No values estimated or rerun. Source: https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md. No endorsement; provided as-is.",
     "quote": "Only the retained original measurements and accompanying documentation inside this licensed artifact. No permission inferred for copied third-party comparison rows, external websites, model weights, generated media or dataset inputs.",
-    "scope": "Own-model rows only. MIT includes associated documentation in this repository; no external leaderboard database is used. Extended 2026-10-09: HiDream's own models only (HiDream-O1-Image, plus HiDream-I1-Full in the DPG-Bench table); other makers' rows not used.",
+    "scope": "Own-model rows only. MIT includes associated documentation in this repository; no external leaderboard database is used. Extended 2026-10-09: HiDream's own models only (HiDream-O1-Image, plus HiDream-I1-Full in the DPG-Bench table); other makers' rows not used. Also the LongText-Bench table's two HiDream rows (HiDream-O1-Image, HiDream-I1-Full).",
     "icon": "huggingface.co"
   },
   {
@@ -3754,7 +3754,7 @@
   },
   {
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "exact": true,
     "id": "speech-qwen-audio3-tts-report",
     "name": "Qwen-Audio-3.0-TTS technical report",
@@ -3767,7 +3767,8 @@
     "icon": "arxiv.org",
     "license_url": "/licenses/speech-qwen-audio3-tts-report.txt",
     "attribution": "Bajian Xiang et al. (Alibaba Token Foundry); Qwen-Audio-3.0-TTS: Freely Controllable and Highly Robust Speech Synthesis with Multi-Stage Training Paradigm; arXiv:2607.23938v1. CC BY 4.0. Changes: selected own-run CV3-Eval and SEED-TTS-Eval cells, percent/100, derived equal-language means (marked). No endorsement.",
-    "quote": "arXiv abstract page for 2607.23938v1 links the licence 'http://creativecommons.org/licenses/by/4.0/' (CC BY 4.0) for this version; the HTML header states 'License: CC BY 4.0'. Applies to the report's text and tables; not a claim about model weights. The report's quoted Artificial Analysis Elo is excluded."
+    "quote": "arXiv abstract page for 2607.23938v1 links the licence 'http://creativecommons.org/licenses/by/4.0/' (CC BY 4.0) for this version; the HTML header states 'License: CC BY 4.0'. Applies to the report's text and tables; not a claim about model weights. The report's quoted Artificial Analysis Elo is excluded.",
+    "scope": " Extended 2026-10-09: Table 3 ERes2Net SIM (in parentheses) for the authors' own model and the cells marked † ('ERes2Net SIM scores were computed by us using the publicly released models'); unmarked parenthesised values not used."
   },
   {
     "verdict": "allowed",
@@ -8771,9 +8772,10 @@
     "terms_url": "https://arxiv.org/abs/2506.18871v4",
     "quote": "arXiv abstract page for 2506.18871v4 states the article licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Only the authors' own-model result cells are used; baseline/competitor columns are excluded.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "arxiv.org",
-    "attribution": "Chenyuan Wu et al. (BAAI). OmniGen2: Towards Instruction-Aligned Multimodal Generation. arXiv:2506.18871v4. CC BY 4.0. Source: https://arxiv.org/html/2506.18871v4. Changes: selected own-model numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "Chenyuan Wu et al. (BAAI). OmniGen2: Towards Instruction-Aligned Multimodal Generation. arXiv:2506.18871v4. CC BY 4.0. Source: https://arxiv.org/html/2506.18871v4. Changes: selected own-model numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
+    "scope": " Extended 2026-10-09: Table 4 OmniContext Average for every catalogue model (OmniContext is introduced in this report, so all its cells are the authors' own GPT-4.1-judged runs)."
   },
   {
     "id": "report-2512.07584v1",
@@ -8788,9 +8790,10 @@
     "terms_url": "https://arxiv.org/abs/2512.07584v1",
     "quote": "arXiv abstract page for 2512.07584v1 states the article licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Only the authors' own-model result cells are used; baseline/competitor columns are excluded.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "arxiv.org",
-    "attribution": "Meituan LongCat Team. LongCat-Image Technical Report. arXiv:2512.07584v1. CC BY 4.0. Source: https://arxiv.org/html/2512.07584v1. Changes: selected own-model numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "Meituan LongCat Team. LongCat-Image Technical Report. arXiv:2512.07584v1. CC BY 4.0. Source: https://arxiv.org/html/2512.07584v1. Changes: selected own-model numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
+    "scope": " Extended 2026-10-09: Table 9 CEdit-Bench EN and CN G_O for every catalogue model (CEdit-Bench is introduced in this report, so all its cells are the authors' own GPT-4o-judged runs)."
   },
   {
     "id": "report-2506.03147v4",

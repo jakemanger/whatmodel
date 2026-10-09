@@ -386,7 +386,10 @@
       "gedit-bench-en-overall",
       "imgedit-bench-overall",
       "creval-bench-overall",
-      "servimage-task-acceptance"
+      "servimage-task-acceptance",
+      "cedit-bench-en-overall",
+      "cedit-bench-cn-overall",
+      "omnicontext-average"
     ]
   },
   {
@@ -479,7 +482,9 @@
       "seed-tts-zh-wavlm-sim",
       "seed-tts-en-utmos",
       "seed-tts-en-human-smos",
-      "zstts-daps-flores-en-cer"
+      "zstts-daps-flores-en-cer",
+      "seed-tts-zh-eres2net-sim",
+      "seed-tts-en-eres2net-sim"
     ]
   },
   {

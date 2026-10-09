@@ -1,0 +1,343 @@
+{
+  "about": "Owner-recommended additions from pass 7 batch E held items (2026-10-09): tests introduced in CC BY reports (every cell the authors' own run), cells marked as computed by the authors, and HiDream's own LongText rows.",
+  "results": [
+    {
+      "model": "flux-1-kontext-pro",
+      "bench": "cedit-bench-en-overall",
+      "score": 0.653,
+      "source": "https://arxiv.org/html/2512.07584v1",
+      "by": "independent",
+      "date": "2025-12-08",
+      "note": "LongCat-Image report (Meituan), arXiv:2512.07584v1, CC BY 4.0, Table 9 'Performance comparison on CEdit-Bench', column CEdit-Bench-EN G_O, row 'FLUX.1 Kontext [Pro]' = 6.53. CEdit-Bench is introduced in this report (§6.5.1) and judged with GPT-4o, so every cell is the authors' own run. 0–10 scale divided by 10."
+    },
+    {
+      "model": "flux-1-kontext-pro",
+      "bench": "cedit-bench-cn-overall",
+      "score": 0.143,
+      "source": "https://arxiv.org/html/2512.07584v1",
+      "by": "independent",
+      "date": "2025-12-08",
+      "note": "LongCat-Image report (Meituan), arXiv:2512.07584v1, CC BY 4.0, Table 9 'Performance comparison on CEdit-Bench', column CEdit-Bench-CN G_O, row 'FLUX.1 Kontext [Pro]' = 1.43. CEdit-Bench is introduced in this report (§6.5.1) and judged with GPT-4o, so every cell is the authors' own run. 0–10 scale divided by 10."
+    },
+    {
+      "model": "gpt-image-1",
+      "bench": "cedit-bench-en-overall",
+      "score": 0.817,
+      "source": "https://arxiv.org/html/2512.07584v1",
+      "by": "independent",
+      "date": "2025-12-08",
+      "note": "LongCat-Image report (Meituan), arXiv:2512.07584v1, CC BY 4.0, Table 9 'Performance comparison on CEdit-Bench', column CEdit-Bench-EN G_O, row 'GPT Image 1 [High]' = 8.17. CEdit-Bench is introduced in this report (§6.5.1) and judged with GPT-4o, so every cell is the authors' own run. 0–10 scale divided by 10. Quality setting 'High' as printed."
+    },
+    {
+      "model": "gpt-image-1",
+      "bench": "cedit-bench-cn-overall",
+      "score": 0.821,
+      "source": "https://arxiv.org/html/2512.07584v1",
+      "by": "independent",
+      "date": "2025-12-08",
+      "note": "LongCat-Image report (Meituan), arXiv:2512.07584v1, CC BY 4.0, Table 9 'Performance comparison on CEdit-Bench', column CEdit-Bench-CN G_O, row 'GPT Image 1 [High]' = 8.21. CEdit-Bench is introduced in this report (§6.5.1) and judged with GPT-4o, so every cell is the authors' own run. 0–10 scale divided by 10. Quality setting 'High' as printed."
+    },
+    {
+      "model": "nano-banana",
+      "bench": "cedit-bench-en-overall",
+      "score": 0.72,
+      "source": "https://arxiv.org/html/2512.07584v1",
+      "by": "independent",
+      "date": "2025-12-08",
+      "note": "LongCat-Image report (Meituan), arXiv:2512.07584v1, CC BY 4.0, Table 9 'Performance comparison on CEdit-Bench', column CEdit-Bench-EN G_O, row 'Nano Banana' = 7.2. CEdit-Bench is introduced in this report (§6.5.1) and judged with GPT-4o, so every cell is the authors' own run. 0–10 scale divided by 10. The text names Nano Banana as Gemini-2.5-flash-image."
+    },
+    {
+      "model": "nano-banana",
+      "bench": "cedit-bench-cn-overall",
+      "score": 0.736,
+      "source": "https://arxiv.org/html/2512.07584v1",
+      "by": "independent",
+      "date": "2025-12-08",
+      "note": "LongCat-Image report (Meituan), arXiv:2512.07584v1, CC BY 4.0, Table 9 'Performance comparison on CEdit-Bench', column CEdit-Bench-CN G_O, row 'Nano Banana' = 7.36. CEdit-Bench is introduced in this report (§6.5.1) and judged with GPT-4o, so every cell is the authors' own run. 0–10 scale divided by 10. The text names Nano Banana as Gemini-2.5-flash-image."
+    },
+    {
+      "model": "seedream-4-0",
+      "bench": "cedit-bench-en-overall",
+      "score": 0.758,
+      "source": "https://arxiv.org/html/2512.07584v1",
+      "by": "independent",
+      "date": "2025-12-08",
+      "note": "LongCat-Image report (Meituan), arXiv:2512.07584v1, CC BY 4.0, Table 9 'Performance comparison on CEdit-Bench', column CEdit-Bench-EN G_O, row 'Seedream 4.0' = 7.58. CEdit-Bench is introduced in this report (§6.5.1) and judged with GPT-4o, so every cell is the authors' own run. 0–10 scale divided by 10."
+    },
+    {
+      "model": "seedream-4-0",
+      "bench": "cedit-bench-cn-overall",
+      "score": 0.757,
+      "source": "https://arxiv.org/html/2512.07584v1",
+      "by": "independent",
+      "date": "2025-12-08",
+      "note": "LongCat-Image report (Meituan), arXiv:2512.07584v1, CC BY 4.0, Table 9 'Performance comparison on CEdit-Bench', column CEdit-Bench-CN G_O, row 'Seedream 4.0' = 7.57. CEdit-Bench is introduced in this report (§6.5.1) and judged with GPT-4o, so every cell is the authors' own run. 0–10 scale divided by 10."
+    },
+    {
+      "model": "flux-1-kontext-dev",
+      "bench": "cedit-bench-en-overall",
+      "score": 0.593,
+      "source": "https://arxiv.org/html/2512.07584v1",
+      "by": "independent",
+      "date": "2025-12-08",
+      "note": "LongCat-Image report (Meituan), arXiv:2512.07584v1, CC BY 4.0, Table 9 'Performance comparison on CEdit-Bench', column CEdit-Bench-EN G_O, row 'FLUX.1 Kontext [Dev]' = 5.93. CEdit-Bench is introduced in this report (§6.5.1) and judged with GPT-4o, so every cell is the authors' own run. 0–10 scale divided by 10."
+    },
+    {
+      "model": "flux-1-kontext-dev",
+      "bench": "cedit-bench-cn-overall",
+      "score": 0.151,
+      "source": "https://arxiv.org/html/2512.07584v1",
+      "by": "independent",
+      "date": "2025-12-08",
+      "note": "LongCat-Image report (Meituan), arXiv:2512.07584v1, CC BY 4.0, Table 9 'Performance comparison on CEdit-Bench', column CEdit-Bench-CN G_O, row 'FLUX.1 Kontext [Dev]' = 1.51. CEdit-Bench is introduced in this report (§6.5.1) and judged with GPT-4o, so every cell is the authors' own run. 0–10 scale divided by 10."
+    },
+    {
+      "model": "qwen-image-edit",
+      "bench": "cedit-bench-en-overall",
+      "score": 0.752,
+      "source": "https://arxiv.org/html/2512.07584v1",
+      "by": "independent",
+      "date": "2025-12-08",
+      "note": "LongCat-Image report (Meituan), arXiv:2512.07584v1, CC BY 4.0, Table 9 'Performance comparison on CEdit-Bench', column CEdit-Bench-EN G_O, row 'Qwen-Image-Edit' = 7.52. CEdit-Bench is introduced in this report (§6.5.1) and judged with GPT-4o, so every cell is the authors' own run. 0–10 scale divided by 10."
+    },
+    {
+      "model": "qwen-image-edit",
+      "bench": "cedit-bench-cn-overall",
+      "score": 0.746,
+      "source": "https://arxiv.org/html/2512.07584v1",
+      "by": "independent",
+      "date": "2025-12-08",
+      "note": "LongCat-Image report (Meituan), arXiv:2512.07584v1, CC BY 4.0, Table 9 'Performance comparison on CEdit-Bench', column CEdit-Bench-CN G_O, row 'Qwen-Image-Edit' = 7.46. CEdit-Bench is introduced in this report (§6.5.1) and judged with GPT-4o, so every cell is the authors' own run. 0–10 scale divided by 10."
+    },
+    {
+      "model": "qwen-image-edit-2509",
+      "bench": "cedit-bench-en-overall",
+      "score": 0.748,
+      "source": "https://arxiv.org/html/2512.07584v1",
+      "by": "independent",
+      "date": "2025-12-08",
+      "note": "LongCat-Image report (Meituan), arXiv:2512.07584v1, CC BY 4.0, Table 9 'Performance comparison on CEdit-Bench', column CEdit-Bench-EN G_O, row 'Qwen-Image-Edit [2509]' = 7.48. CEdit-Bench is introduced in this report (§6.5.1) and judged with GPT-4o, so every cell is the authors' own run. 0–10 scale divided by 10."
+    },
+    {
+      "model": "qwen-image-edit-2509",
+      "bench": "cedit-bench-cn-overall",
+      "score": 0.737,
+      "source": "https://arxiv.org/html/2512.07584v1",
+      "by": "independent",
+      "date": "2025-12-08",
+      "note": "LongCat-Image report (Meituan), arXiv:2512.07584v1, CC BY 4.0, Table 9 'Performance comparison on CEdit-Bench', column CEdit-Bench-CN G_O, row 'Qwen-Image-Edit [2509]' = 7.37. CEdit-Bench is introduced in this report (§6.5.1) and judged with GPT-4o, so every cell is the authors' own run. 0–10 scale divided by 10."
+    },
+    {
+      "model": "longcat-image-edit",
+      "bench": "cedit-bench-en-overall",
+      "score": 0.767,
+      "source": "https://arxiv.org/html/2512.07584v1",
+      "by": "lab",
+      "date": "2025-12-08",
+      "note": "LongCat-Image report (Meituan), arXiv:2512.07584v1, CC BY 4.0, Table 9 'Performance comparison on CEdit-Bench', column CEdit-Bench-EN G_O, row 'LongCat-Image-Edit' = 7.67. CEdit-Bench is introduced in this report (§6.5.1) and judged with GPT-4o, so every cell is the authors' own run. 0–10 scale divided by 10."
+    },
+    {
+      "model": "longcat-image-edit",
+      "bench": "cedit-bench-cn-overall",
+      "score": 0.765,
+      "source": "https://arxiv.org/html/2512.07584v1",
+      "by": "lab",
+      "date": "2025-12-08",
+      "note": "LongCat-Image report (Meituan), arXiv:2512.07584v1, CC BY 4.0, Table 9 'Performance comparison on CEdit-Bench', column CEdit-Bench-CN G_O, row 'LongCat-Image-Edit' = 7.65. CEdit-Bench is introduced in this report (§6.5.1) and judged with GPT-4o, so every cell is the authors' own run. 0–10 scale divided by 10."
+    },
+    {
+      "model": "gemini-2-0-flash-image",
+      "bench": "omnicontext-average",
+      "score": 0.362,
+      "source": "https://arxiv.org/html/2506.18871v4",
+      "by": "independent",
+      "date": "2026-04-21",
+      "note": "OmniGen2 report (BAAI), arXiv:2506.18871v4, CC BY 4.0, Table 4 'Overall comparison of existing models on our proposed OmniContext benchmark', column 'Average', row 'Gemini-2.0-Flash-Image' = 3.62. OmniContext is introduced in this report (§5.4; GPT-4.1 judge), so every cell is the authors' own run. 0–10 scale divided by 10."
+    },
+    {
+      "model": "nano-banana",
+      "bench": "omnicontext-average",
+      "score": 0.784,
+      "source": "https://arxiv.org/html/2506.18871v4",
+      "by": "independent",
+      "date": "2026-04-21",
+      "note": "OmniGen2 report (BAAI), arXiv:2506.18871v4, CC BY 4.0, Table 4 'Overall comparison of existing models on our proposed OmniContext benchmark', column 'Average', row 'Gemini-2.5-Flash-Image' = 7.84. OmniContext is introduced in this report (§5.4; GPT-4.1 judge), so every cell is the authors' own run. 0–10 scale divided by 10."
+    },
+    {
+      "model": "bagel",
+      "bench": "omnicontext-average",
+      "score": 0.573,
+      "source": "https://arxiv.org/html/2506.18871v4",
+      "by": "independent",
+      "date": "2026-04-21",
+      "note": "OmniGen2 report (BAAI), arXiv:2506.18871v4, CC BY 4.0, Table 4 'Overall comparison of existing models on our proposed OmniContext benchmark', column 'Average', row 'BAGEL' = 5.73. OmniContext is introduced in this report (§5.4; GPT-4.1 judge), so every cell is the authors' own run. 0–10 scale divided by 10."
+    },
+    {
+      "model": "qwen-image-edit-2509",
+      "bench": "omnicontext-average",
+      "score": 0.769,
+      "source": "https://arxiv.org/html/2506.18871v4",
+      "by": "independent",
+      "date": "2026-04-21",
+      "note": "OmniGen2 report (BAAI), arXiv:2506.18871v4, CC BY 4.0, Table 4 'Overall comparison of existing models on our proposed OmniContext benchmark', column 'Average', row 'Qwen-Image-Edit-2509' = 7.69. OmniContext is introduced in this report (§5.4; GPT-4.1 judge), so every cell is the authors' own run. 0–10 scale divided by 10."
+    },
+    {
+      "model": "omnigen2",
+      "bench": "omnicontext-average",
+      "score": 0.795,
+      "source": "https://arxiv.org/html/2506.18871v4",
+      "by": "lab",
+      "date": "2026-04-21",
+      "note": "OmniGen2 report (BAAI), arXiv:2506.18871v4, CC BY 4.0, Table 4 'Overall comparison of existing models on our proposed OmniContext benchmark', column 'Average', row 'OmniGen2' = 7.95. OmniContext is introduced in this report (§5.4; GPT-4.1 judge), so every cell is the authors' own run. 0–10 scale divided by 10."
+    },
+    {
+      "model": "voxcpm2",
+      "bench": "seed-tts-zh-eres2net-sim",
+      "score": 0.756,
+      "source": "https://arxiv.org/html/2607.23938v1",
+      "by": "independent",
+      "date": "2026-07-27",
+      "note": "Qwen-Audio-3.0-TTS report (Alibaba), arXiv:2607.23938v1, CC BY 4.0, Table 3 'Zero-shot TTS performance on SEED-TTS-Eval', test-zh SIM, row 'VoxCPM2', value in parentheses (ERes2Net) = 0.756. Marked '†': 'ERes2Net SIM scores were computed by us using the publicly released models'."
+    },
+    {
+      "model": "voxcpm2",
+      "bench": "seed-tts-en-eres2net-sim",
+      "score": 0.725,
+      "source": "https://arxiv.org/html/2607.23938v1",
+      "by": "independent",
+      "date": "2026-07-27",
+      "note": "Qwen-Audio-3.0-TTS report (Alibaba), arXiv:2607.23938v1, CC BY 4.0, Table 3 'Zero-shot TTS performance on SEED-TTS-Eval', test-en SIM, row 'VoxCPM2', value in parentheses (ERes2Net) = 0.725. Marked '†': 'ERes2Net SIM scores were computed by us using the publicly released models'."
+    },
+    {
+      "model": "dots-tts-soar",
+      "bench": "seed-tts-zh-eres2net-sim",
+      "score": 0.818,
+      "source": "https://arxiv.org/html/2607.23938v1",
+      "by": "independent",
+      "date": "2026-07-27",
+      "note": "Qwen-Audio-3.0-TTS report (Alibaba), arXiv:2607.23938v1, CC BY 4.0, Table 3 'Zero-shot TTS performance on SEED-TTS-Eval', test-zh SIM, row 'Dots.TTS-2B (SOAR)', value in parentheses (ERes2Net) = 0.818. Marked '†': 'ERes2Net SIM scores were computed by us using the publicly released models'."
+    },
+    {
+      "model": "dots-tts-soar",
+      "bench": "seed-tts-en-eres2net-sim",
+      "score": 0.792,
+      "source": "https://arxiv.org/html/2607.23938v1",
+      "by": "independent",
+      "date": "2026-07-27",
+      "note": "Qwen-Audio-3.0-TTS report (Alibaba), arXiv:2607.23938v1, CC BY 4.0, Table 3 'Zero-shot TTS performance on SEED-TTS-Eval', test-en SIM, row 'Dots.TTS-2B (SOAR)', value in parentheses (ERes2Net) = 0.792. Marked '†': 'ERes2Net SIM scores were computed by us using the publicly released models'."
+    },
+    {
+      "model": "qwen-audio-3-0-tts-plus",
+      "bench": "seed-tts-zh-eres2net-sim",
+      "score": 0.847,
+      "source": "https://arxiv.org/html/2607.23938v1",
+      "by": "lab",
+      "date": "2026-07-27",
+      "note": "Qwen-Audio-3.0-TTS report (Alibaba), arXiv:2607.23938v1, CC BY 4.0, Table 3 'Zero-shot TTS performance on SEED-TTS-Eval', test-zh SIM, row 'Qwen-Audio-3.0-TTS', value in parentheses (ERes2Net) = 0.847. The authors' own model."
+    },
+    {
+      "model": "qwen-audio-3-0-tts-plus",
+      "bench": "seed-tts-en-eres2net-sim",
+      "score": 0.815,
+      "source": "https://arxiv.org/html/2607.23938v1",
+      "by": "lab",
+      "date": "2026-07-27",
+      "note": "Qwen-Audio-3.0-TTS report (Alibaba), arXiv:2607.23938v1, CC BY 4.0, Table 3 'Zero-shot TTS performance on SEED-TTS-Eval', test-en SIM, row 'Qwen-Audio-3.0-TTS', value in parentheses (ERes2Net) = 0.815. The authors' own model."
+    },
+    {
+      "model": "hidream-o1-image",
+      "bench": "longtext-en",
+      "score": 0.979,
+      "source": "https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md",
+      "by": "lab",
+      "date": "2026-09-25",
+      "note": "HiDream-O1-Image README @2c2d29f (MIT), 'LongText-Bench — long-text rendering, EN & ZH' table, row 'HiDream-O1-Image', column 'LongText-Bench-EN' = 0.979. HiDream's own model; other makers' rows not used."
+    },
+    {
+      "model": "hidream-o1-image",
+      "bench": "longtext-cn",
+      "score": 0.978,
+      "source": "https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md",
+      "by": "lab",
+      "date": "2026-09-25",
+      "note": "HiDream-O1-Image README @2c2d29f (MIT), 'LongText-Bench — long-text rendering, EN & ZH' table, row 'HiDream-O1-Image', column 'LongText-Bench-ZH' = 0.978. HiDream's own model; other makers' rows not used."
+    },
+    {
+      "model": "hidream-i1-full",
+      "bench": "longtext-en",
+      "score": 0.543,
+      "source": "https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md",
+      "by": "lab",
+      "date": "2026-09-25",
+      "note": "HiDream-O1-Image README @2c2d29f (MIT), 'LongText-Bench — long-text rendering, EN & ZH' table, row 'HiDream-I1-Full', column 'LongText-Bench-EN' = 0.543. HiDream's own model; other makers' rows not used."
+    },
+    {
+      "model": "hidream-i1-full",
+      "bench": "longtext-cn",
+      "score": 0.024,
+      "source": "https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md",
+      "by": "lab",
+      "date": "2026-09-25",
+      "note": "HiDream-O1-Image README @2c2d29f (MIT), 'LongText-Bench — long-text rendering, EN & ZH' table, row 'HiDream-I1-Full', column 'LongText-Bench-ZH' = 0.024. HiDream's own model; other makers' rows not used."
+    }
+  ],
+  "benchmarks": [
+    {
+      "id": "cedit-bench-en-overall",
+      "name": "CEdit-Bench-EN overall (G_O, GPT-4o judge)",
+      "category": "image",
+      "kind": "acc",
+      "url": "https://arxiv.org/html/2512.07584v1",
+      "description": "CEdit-Bench (introduced in the LongCat-Image report: 1,464 bilingual editing pairs across 15 task categories), English instructions, overall score G_O on the 0–10 VLM-judge scale (GPT-4o), divided by 10. Not GEdit-Bench.",
+      "suggested_tasks": [
+        "image-to-image"
+      ]
+    },
+    {
+      "id": "cedit-bench-cn-overall",
+      "name": "CEdit-Bench-CN overall (G_O, GPT-4o judge)",
+      "category": "image",
+      "kind": "acc",
+      "url": "https://arxiv.org/html/2512.07584v1",
+      "description": "CEdit-Bench Chinese-instruction track, overall score G_O on the 0–10 VLM-judge scale (GPT-4o), divided by 10. Separate from the English track.",
+      "suggested_tasks": [
+        "image-to-image"
+      ]
+    },
+    {
+      "id": "omnicontext-average",
+      "name": "OmniContext average (GPT-4.1 judge)",
+      "category": "image",
+      "kind": "acc",
+      "url": "https://arxiv.org/html/2506.18871v4",
+      "description": "OmniContext (introduced in the OmniGen2 report): in-context, subject-driven generation from reference images over eight subtasks (single, multiple and scene; character, object and both). Average of the subtask overall scores (geometric mean of prompt following and subject consistency, GPT-4.1 judge, 0–10), divided by 10.",
+      "suggested_tasks": [
+        "image-to-image"
+      ]
+    },
+    {
+      "id": "seed-tts-zh-eres2net-sim",
+      "name": "Seed-TTS test-zh · speaker similarity (ERes2Net SV)",
+      "category": "tts",
+      "kind": "acc",
+      "url": "https://arxiv.org/html/2607.23938v1",
+      "description": "Zero-shot voice cloning on Seed-TTS-Eval test-zh; cosine similarity of ERes2Net speaker-verification embeddings between generated and reference speech. Kept apart from the WavLM-based seed-tts-zh-wavlm-sim.",
+      "suggested_tasks": [
+        "voice-cloning"
+      ]
+    },
+    {
+      "id": "seed-tts-en-eres2net-sim",
+      "name": "Seed-TTS test-en · speaker similarity (ERes2Net SV)",
+      "category": "tts",
+      "kind": "acc",
+      "url": "https://arxiv.org/html/2607.23938v1",
+      "description": "Zero-shot voice cloning on Seed-TTS-Eval test-en; cosine similarity of ERes2Net speaker-verification embeddings between generated and reference speech. Kept apart from the WavLM-based seed-tts-en-wavlm-sim.",
+      "suggested_tasks": [
+        "voice-cloning"
+      ]
+    }
+  ],
+  "ledger": [],
+  "models": []
+}
