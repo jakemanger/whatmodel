@@ -14228,5 +14228,24 @@
     "verdict": "allowed",
     "checked": "2026-10-09",
     "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2609.13916v1-north-small-translate",
+    "name": "Cohere — North Small Translate (arXiv:2609.13916v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2609.13916v1",
+      "arxiv.org/abs/2609.13916v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2609.13916v1",
+    "quote": "arXiv abstract page for 2609.13916v1 links http://creativecommons.org/licenses/by/4.0/; the HTML header prints 'License: CC BY 4.0'. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques', so the table cells are Cohere's own runs.",
+    "attribution": "Kocmi et al. (Cohere), North Small Translate: Advanced Cost-Effective Translation, arXiv:2609.13916v1, CC BY 4.0. Table 1 cells for catalogue models; percentages divided by 100. No endorsement.",
+    "scope": "Table 1 GEMBA WMT26, xCOMETxl WMT24++ and Terminology columns for catalogue models (Command A+ as Cohere's own model, by: lab; the others by: independent). Long-context (one document per language) and the internal structured-translation suite not used; DeepL, Google Translate, North Small Translate and Command A Translate are not catalogue models.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "arxiv.org"
   }
 ]

@@ -215960,5 +215960,315 @@
     "by": "lab",
     "date": "2026-09-25",
     "source_id": "card-qwen--qwen3.5-397b-a17b"
+  },
+  {
+    "model": "mistral-large-3",
+    "bench": "wmt26-gemba-esa",
+    "score": 0.816,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Mistral Large 3', column 'GEMBA WMT26' = 81.6. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT26 General MT test set, all languages; reference-free GPT-5.6 Sol judge (GEMBA-ESA), mean of adequacy and fluency, segment-weighted per document.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "mistral-large-3",
+    "bench": "wmt24pp",
+    "score": 0.783,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Mistral Large 3', column 'xCOMETxl WMT24++' = 78.3. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. Metric xCOMET-XL (not XXL).",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "mistral-large-3",
+    "bench": "wmt25-terminology",
+    "score": 0.912,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Mistral Large 3', column 'Terminology' = 91.2. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT25 Terminology Translation Task, proper-terminology condition, en→de/es/ru/zh-Hant and zh-Hant→en; corpus-level term success rate, micro-averaged over both tracks.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "qwen3-5-397b-a17b",
+    "bench": "wmt26-gemba-esa",
+    "score": 0.816,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Qwen 3.5 397B', column 'GEMBA WMT26' = 81.6. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT26 General MT test set, all languages; reference-free GPT-5.6 Sol judge (GEMBA-ESA), mean of adequacy and fluency, segment-weighted per document.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "qwen3-5-397b-a17b",
+    "bench": "wmt24pp",
+    "score": 0.785,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Qwen 3.5 397B', column 'xCOMETxl WMT24++' = 78.5. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. Metric xCOMET-XL (not XXL).",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "qwen3-5-397b-a17b",
+    "bench": "wmt25-terminology",
+    "score": 0.87,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Qwen 3.5 397B', column 'Terminology' = 87.0. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT25 Terminology Translation Task, proper-terminology condition, en→de/es/ru/zh-Hant and zh-Hant→en; corpus-level term success rate, micro-averaged over both tracks.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "gemma-4-31b",
+    "bench": "wmt26-gemba-esa",
+    "score": 0.795,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Gemma 4 31b', column 'GEMBA WMT26' = 79.5. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT26 General MT test set, all languages; reference-free GPT-5.6 Sol judge (GEMBA-ESA), mean of adequacy and fluency, segment-weighted per document.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "gemma-4-31b",
+    "bench": "wmt24pp",
+    "score": 0.792,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Gemma 4 31b', column 'xCOMETxl WMT24++' = 79.2. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. Metric xCOMET-XL (not XXL).",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "gemma-4-31b",
+    "bench": "wmt25-terminology",
+    "score": 0.921,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Gemma 4 31b', column 'Terminology' = 92.1. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT25 Terminology Translation Task, proper-terminology condition, en→de/es/ru/zh-Hant and zh-Hant→en; corpus-level term success rate, micro-averaged over both tracks.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "inkling-small",
+    "bench": "wmt26-gemba-esa",
+    "score": 0.785,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Inkling Small', column 'GEMBA WMT26' = 78.5. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT26 General MT test set, all languages; reference-free GPT-5.6 Sol judge (GEMBA-ESA), mean of adequacy and fluency, segment-weighted per document.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "inkling-small",
+    "bench": "wmt24pp",
+    "score": 0.787,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Inkling Small', column 'xCOMETxl WMT24++' = 78.7. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. Metric xCOMET-XL (not XXL).",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "inkling-small",
+    "bench": "wmt25-terminology",
+    "score": 0.911,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Inkling Small', column 'Terminology' = 91.1. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT25 Terminology Translation Task, proper-terminology condition, en→de/es/ru/zh-Hant and zh-Hant→en; corpus-level term success rate, micro-averaged over both tracks.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "muse-glimmer-30b",
+    "bench": "wmt26-gemba-esa",
+    "score": 0.782,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Muse Glimmer 30B', column 'GEMBA WMT26' = 78.2. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT26 General MT test set, all languages; reference-free GPT-5.6 Sol judge (GEMBA-ESA), mean of adequacy and fluency, segment-weighted per document.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "muse-glimmer-30b",
+    "bench": "wmt24pp",
+    "score": 0.777,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Muse Glimmer 30B', column 'xCOMETxl WMT24++' = 77.7. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. Metric xCOMET-XL (not XXL).",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "muse-glimmer-30b",
+    "bench": "wmt25-terminology",
+    "score": 0.901,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Muse Glimmer 30B', column 'Terminology' = 90.1. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT25 Terminology Translation Task, proper-terminology condition, en→de/es/ru/zh-Hant and zh-Hant→en; corpus-level term success rate, micro-averaged over both tracks.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "command-a-plus",
+    "bench": "wmt26-gemba-esa",
+    "score": 0.765,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "lab",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Command A+', column 'GEMBA WMT26' = 76.5. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT26 General MT test set, all languages; reference-free GPT-5.6 Sol judge (GEMBA-ESA), mean of adequacy and fluency, segment-weighted per document.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "command-a-plus",
+    "bench": "wmt24pp",
+    "score": 0.81,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "lab",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Command A+', column 'xCOMETxl WMT24++' = 81.0. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. Metric xCOMET-XL (not XXL).",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "command-a-plus",
+    "bench": "wmt25-terminology",
+    "score": 0.687,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "lab",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Command A+', column 'Terminology' = 68.7. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT25 Terminology Translation Task, proper-terminology condition, en→de/es/ru/zh-Hant and zh-Hant→en; corpus-level term success rate, micro-averaged over both tracks.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "glm-5-2",
+    "bench": "wmt26-gemba-esa",
+    "score": 0.765,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'GLM 5.2', column 'GEMBA WMT26' = 76.5. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT26 General MT test set, all languages; reference-free GPT-5.6 Sol judge (GEMBA-ESA), mean of adequacy and fluency, segment-weighted per document.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "glm-5-2",
+    "bench": "wmt24pp",
+    "score": 0.788,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'GLM 5.2', column 'xCOMETxl WMT24++' = 78.8. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. Metric xCOMET-XL (not XXL).",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "glm-5-2",
+    "bench": "wmt25-terminology",
+    "score": 0.782,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'GLM 5.2', column 'Terminology' = 78.2. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT25 Terminology Translation Task, proper-terminology condition, en→de/es/ru/zh-Hant and zh-Hant→en; corpus-level term success rate, micro-averaged over both tracks.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "mistral-medium-3-5",
+    "bench": "wmt26-gemba-esa",
+    "score": 0.757,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Mistral Medium 3.5', column 'GEMBA WMT26' = 75.7. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT26 General MT test set, all languages; reference-free GPT-5.6 Sol judge (GEMBA-ESA), mean of adequacy and fluency, segment-weighted per document.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "mistral-medium-3-5",
+    "bench": "wmt24pp",
+    "score": 0.767,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Mistral Medium 3.5', column 'xCOMETxl WMT24++' = 76.7. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. Metric xCOMET-XL (not XXL).",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "mistral-medium-3-5",
+    "bench": "wmt25-terminology",
+    "score": 0.903,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Mistral Medium 3.5', column 'Terminology' = 90.3. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT25 Terminology Translation Task, proper-terminology condition, en→de/es/ru/zh-Hant and zh-Hant→en; corpus-level term success rate, micro-averaged over both tracks.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "gpt-oss-120b",
+    "bench": "wmt26-gemba-esa",
+    "score": 0.723,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'GPT-OSS 120B', column 'GEMBA WMT26' = 72.3. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT26 General MT test set, all languages; reference-free GPT-5.6 Sol judge (GEMBA-ESA), mean of adequacy and fluency, segment-weighted per document.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "gpt-oss-120b",
+    "bench": "wmt24pp",
+    "score": 0.766,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'GPT-OSS 120B', column 'xCOMETxl WMT24++' = 76.6. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. Metric xCOMET-XL (not XXL).",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "gpt-oss-120b",
+    "bench": "wmt25-terminology",
+    "score": 0.838,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'GPT-OSS 120B', column 'Terminology' = 83.8. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT25 Terminology Translation Task, proper-terminology condition, en→de/es/ru/zh-Hant and zh-Hant→en; corpus-level term success rate, micro-averaged over both tracks.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "nemotron-3-ultra-550b-a55b",
+    "bench": "wmt26-gemba-esa",
+    "score": 0.671,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Nemotron 3 Ultra 550B', column 'GEMBA WMT26' = 67.1. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT26 General MT test set, all languages; reference-free GPT-5.6 Sol judge (GEMBA-ESA), mean of adequacy and fluency, segment-weighted per document.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "nemotron-3-ultra-550b-a55b",
+    "bench": "wmt25-terminology",
+    "score": 0.848,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Nemotron 3 Ultra 550B', column 'Terminology' = 84.8. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT25 Terminology Translation Task, proper-terminology condition, en→de/es/ru/zh-Hant and zh-Hant→en; corpus-level term success rate, micro-averaged over both tracks.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "qwen3-6-27b",
+    "bench": "wmt26-gemba-esa",
+    "score": 0.619,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Qwen 3.6 27B', column 'GEMBA WMT26' = 61.9. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT26 General MT test set, all languages; reference-free GPT-5.6 Sol judge (GEMBA-ESA), mean of adequacy and fluency, segment-weighted per document.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "qwen3-6-27b",
+    "bench": "wmt25-terminology",
+    "score": 0.892,
+    "source": "https://arxiv.org/html/2609.13916v1",
+    "by": "independent",
+    "date": "2026-09-12",
+    "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Qwen 3.6 27B', column 'Terminology' = 89.2. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT25 Terminology Translation Task, proper-terminology condition, en→de/es/ru/zh-Hant and zh-Hant→en; corpus-level term success rate, micro-averaged over both tracks.",
+    "source_id": "paper-2609.13916v1-north-small-translate"
   }
 ]
