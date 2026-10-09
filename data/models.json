@@ -41733,5 +41733,30 @@
         "reported_label": "dots.tts-base — Pretrain (~1.5M h)"
       }
     ]
+  },
+  {
+    "id": "phi-4-reasoning-plus",
+    "name": "Phi-4-reasoning-plus 14B",
+    "provider": "Microsoft",
+    "category": "llm",
+    "released": "2025-04",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 14.7,
+    "active_b": 14.7,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/microsoft/Phi-4-reasoning-plus",
+    "identity_note": "Comparison-only, proposed so the Phi-4-reasoning card's 'Model Quality' runs count. The pinned Phi-4-reasoning card (@1de18ec) evaluates two own checkpoints side by side: 'Phi-4-reasoning' (catalogue phi-4-reasoning) and 'Phi-4-reasoning-plus' (additional outcome-based RL on top of Phi-4-reasoning). Weights: https://huggingface.co/microsoft/Phi-4-reasoning-plus (HF API sha 69baf8528e1bcf05f475034d9e5dd32875ed125f, created 2025-04-17, licence mit, 14,659,507,200 parameters in safetensors metadata). Distinct from phi-4-reasoning; do not merge.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md",
+        "reported_label": "Phi-4-reasoning-plus"
+      },
+      {
+        "source": "https://huggingface.co/microsoft/Phi-4-reasoning-plus",
+        "reported_label": "microsoft/Phi-4-reasoning-plus"
+      }
+    ]
   }
 ]

@@ -6084,7 +6084,7 @@
     "kind": "first-party",
     "license": "Apache-2.0",
     "terms_url": "https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/LICENSE",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "attribution": "Meta Superintelligence Lab, meta-models/Muse-Glimmer-30B model card, revision a4e59da52a7bc87ae7251dd5545c0dd437c44b68. Selected published speed cells and benchmark cells (including Meta's internal run of Gemma 4 31B) transcribed. No endorsement.",
     "match": [
       "huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md"
@@ -6093,7 +6093,8 @@
     "exact": true,
     "icon": "huggingface.co",
     "quote": "Pinned repository contains the full Apache License 2.0 as LICENSE and the README YAML declares `license: apache-2.0` (line 2); the card also states \"License: Apache 2.0\". Apache-2.0 sections 1, 2 and 4 cover documentation in Source form and permit reproduction/derivative works subject to preserving the licence and marking changes. USAGE_POLICY.md governs use of the model, not reuse of the card's measurements. RedHatAI/Muse-Glimmer-30B carries a byte-identical copy of this README; the first-party original is cited.",
-    "license_url": "/licenses/speed-meta-muse-glimmer-30b-Apache-2.0.txt"
+    "license_url": "/licenses/speed-meta-muse-glimmer-30b-Apache-2.0.txt",
+    "scope": " Benchmark cells only where Meta's linked methodology report says Meta ran them; cells it says were sourced from Artificial Analysis (τ³-Banking, Terminal-Bench 2.1, SciCode, MMMU-Pro, and any marked (AA)) are not used (removed 2026-10-09)."
   },
   {
     "id": "quant-qwen-hf-qwen3-0-6b-gptq-int8",
