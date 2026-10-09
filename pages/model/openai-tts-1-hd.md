@@ -6,7 +6,7 @@
 
 OpenAI · released 2023-11 · proprietary
 
-**score 57.6** ±6.2 · #36 of 100 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 57.6** ±6.1 · #35 of 100 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,8 +16,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source             test                               score  implies  date        weight
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench  <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Ident…</a>  3.46 / 5    59.1   2026-07-16   85% ▇▇▇▇▇▇▇▇▇▇
-prior              pull toward the middle                      49.7                15% ▇▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench  <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Ident…</a>  3.46 / 5    59.0   2026-07-16   85% ▇▇▇▇▇▇▇▇▇▇
+prior              pull toward the middle                      49.8                15% ▇▇
                    weighted average                          = 57.6
 </pre>
 

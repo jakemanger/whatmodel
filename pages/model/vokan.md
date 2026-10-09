@@ -6,7 +6,7 @@
 
 ShoukanLabs · released 2024-03 · mit
 
-**score 47.6** ±14.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.5** ±14.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>  84.5%    34.1   2025-04-25   14% ▇▇
-prior                   pull toward the middle                   49.7                86% ▇▇▇▇▇▇▇▇▇▇
-                        weighted average                       = 47.6
+<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>  84.5%    34.0   2025-04-25   14% ▇▇
+prior                   pull toward the middle                   49.8                86% ▇▇▇▇▇▇▇▇▇▇
+                        weighted average                       = 47.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

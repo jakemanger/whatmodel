@@ -6,7 +6,9 @@
 
 Meta · released 2025-11 · 6.5B params · apache-2.0
 
-**score 56.6** ±2.4 · #50 of 128 · from 4 benchmark results across 3 sources
+**score 56.6** ±2.4 · #51 of 128 · from 4 benchmark results across 3 sources
+
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -14,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        6.2%    56.7   2026-03-26   67% ▇▇▇▇▇▇▇▇
-<a name="speech-omniasr-paper-bysa"></a>Omnilingual ASR: Open…  <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · FLEUR…</a>   7.3%    59.0   2025-11-12   15% ▇▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        6.2%    56.7   2026-03-26   68% ▇▇▇▇▇▇▇▇
+<a name="speech-omniasr-paper-bysa"></a>Omnilingual ASR: Open…  <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · FLEUR…</a>   7.3%    58.9   2025-11-12   15% ▇▇
                         <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · Commo…</a>  13.8%    55.7   2025-11-12   10% ▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  38.1%    53.0   2025-11-13    5% ▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  38.1%    52.9   2025-11-13    5% ▇
 prior                   pull toward the middle                   49.7                 2% ▇
                         weighted average                       = 56.6
 </pre>

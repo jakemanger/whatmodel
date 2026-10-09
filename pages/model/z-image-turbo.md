@@ -6,7 +6,7 @@
 
 Alibaba (Tongyi-MAI) · released 2025-11 · 6B params · apache-2.0
 
-**score 54.3** ±1.4 · #61 of 139 · from 18 benchmark results across 7 sources
+**score 54.7** ±1.4 · #63 of 139 · from 18 benchmark results across 7 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,31 +16,31 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                              score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>            1083.9    55.5   2026-09-24   34% ▇▇▇▇
-<a name="report-2511.22699v5"></a>Tongyi-MAI              <a href="https://arxiv.org/html/2511.22699v5">GenEval (lab)</a>                     82.0%    53.0   2026-07-06    4% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (lab)</a>         91.7%    50.7   2026-07-06    4% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (lab)</a>         92.6%    52.2   2026-07-06    4% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">DPG-Bench (lab)</a>                   84.9%    44.5   2026-07-06    4% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy (lab)</a>       85.9%    54.0   2026-07-06    4% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN) (lab)</a>            50.7%    56.3   2026-07-06    3% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN) (lab)</a>            52.8%    56.4   2026-07-06    3% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long pro…</a>    80.0%    53.4   2026-07-06    3% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short pr…</a>    77.7%    54.1   2026-07-06    3% ▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>    85.7%    52.7   2026-08-25   11% ▇
-<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI pro…</a>    78.1%    48.3   2026-06-23    5% ▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 repor…</a>  11.3600    57.4   2026-06-23    2% ▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese char…</a>    73.3%    72.3   2026-06-23    1% ▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-…</a>    87.0%   111.6   2026-06-23    0% ▇
-<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>    54.4%    59.2   2026-10-07    6% ▇
+<a name="report-2511.22699v5"></a>Tongyi-MAI              <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (lab)</a>         91.7%    54.4   2026-07-06    6% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (lab)</a>         92.6%    54.8   2026-07-06    5% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">GenEval (lab)</a>                     82.0%    53.4   2026-07-06    4% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy (lab)</a>       85.9%    55.1   2026-07-06    4% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN) (lab)</a>            50.7%    57.1   2026-07-06    3% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN) (lab)</a>            52.8%    57.2   2026-07-06    3% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">DPG-Bench (lab)</a>                   84.9%    44.9   2026-07-06    3% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long pro…</a>    80.0%    54.2   2026-07-06    3% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short pr…</a>    77.7%    55.0   2026-07-06    3% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>            1083.9    55.3   2026-09-24   32% ▇▇▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>    85.7%    52.7   2026-08-25   10% ▇
+<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI pro…</a>    78.1%    47.9   2026-06-23    4% ▇
+                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 repor…</a>  11.3600    57.2   2026-06-23    2% ▇
+                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese char…</a>    73.3%    72.1   2026-06-23    1% ▇
+                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-…</a>    87.0%   111.5   2026-06-23    0% ▇
+<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>    54.4%    59.4   2026-10-07    7% ▇
 <a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>    54.1%    58.6   2026-06-09    6% ▇
 <a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>    39.0%    51.9   2026-06-05    4% ▇
 prior                   pull toward the middle                     49.9                 1% ▇
-                        weighted average                         = 54.3
+                        weighted average                         = 54.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Tongyi-MAI ([CC BY 4.0](../../licenses/report-2511.22699v5.txt)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt))</sub>
+<sub>Licences: Tongyi-MAI ([CC BY 4.0](../../licenses/report-2511.22699v5.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt))</sub>
 
 ## How to run it
 
@@ -50,8 +50,8 @@ api (Replicate (PrunaAI optimized)) · $0.0050/image · [replicate.com](https://
 
 <pre>
 version                                     needs  score
-bf16 · nvidia only                        ~14.9GB   54.3
-gguf-q3_k (+ Qwen3-4B Q4_K_M text encod…   ~7.7GB   54.3
+bf16 · nvidia only                        ~14.9GB   54.7
+gguf-q3_k (+ Qwen3-4B Q4_K_M text encod…   ~7.7GB   54.7
 </pre>
 
 ```sh

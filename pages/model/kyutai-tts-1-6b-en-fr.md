@@ -6,7 +6,7 @@
 
 Kyutai · released 2025-07 · 1.8B params · cc-by-4.0
 
-**score 47.9** ±6.5 · #62 of 100 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.0** ±6.5 · #62 of 100 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -18,8 +18,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>  21.9%    42.9   2025-08-10   61% ▇▇▇▇▇▇▇
                         <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>    12.7%    60.8   2025-08-10   22% ▇▇▇
-prior                   pull toward the middle                   49.7                17% ▇▇
-                        weighted average                       = 47.9
+prior                   pull toward the middle                   49.8                17% ▇▇
+                        weighted average                       = 48.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,8 +30,8 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version                        needs  score
-bf16 (moshi-mlx) · mac only  ~4.07GB   47.9
-bf16 (moshi) · nvidia only   ~4.07GB   47.9
+bf16 (moshi-mlx) · mac only  ~4.07GB   48.0
+bf16 (moshi) · nvidia only   ~4.07GB   48.0
 </pre>
 
 ```sh

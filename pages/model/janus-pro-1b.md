@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 1.5B params · deepseek
 
-**score 34.9** ±3.5 · #117 of 139 · from 3 benchmark results across 2 sources
+**score 34.1** ±3.5 · #118 of 139 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="report-2501.17811v1"></a>DeepSeek-AI             <a href="https://arxiv.org/html/2501.17811v1">GenEval (lab)</a>                   73.0%    40.4   2025-01-29   30% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                 82.6%    38.4   2025-01-29   29% ▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  26.0%    25.5   2026-06-02   37% ▇▇▇▇
+<a name="report-2501.17811v1"></a>DeepSeek-AI             <a href="https://arxiv.org/html/2501.17811v1">GenEval (lab)</a>                   73.0%    39.8   2025-01-29   30% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                 82.6%    38.4   2025-01-29   23% ▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  26.0%    25.6   2026-06-02   41% ▇▇▇▇▇
 prior                   pull toward the middle                   49.9                 5% ▇
-                        weighted average                       = 34.9
+                        weighted average                       = 34.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,7 +35,7 @@ api (DeepInfra) · $0.0005/image · [deepinfra.com](https://deepinfra.com/deepse
 
 <pre>
 version              needs  score
-bf16 · nvidia only  ~5.5GB   34.9
+bf16 · nvidia only  ~5.5GB   34.1
 </pre>
 
 ```sh

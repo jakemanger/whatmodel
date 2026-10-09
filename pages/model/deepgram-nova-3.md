@@ -6,7 +6,9 @@
 
 Deepgram · released 2025-02 · proprietary
 
-**score 61.9** ±1.8 · #18 of 128 · from 15 benchmark results across 10 sources
+**score 61.8** ±1.8 · #18 of 128 · from 15 benchmark results across 10 sources
+
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -14,23 +16,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-ru-mit"></a>Russian STT benchmark…  <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · rulibrispeech c…</a>   8.9%    63.0   2026-08-07    7% ▇
-                        <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · podlodka corpus…</a>   7.1%    64.4   2026-08-07    6% ▇
+<a name="speech-stt-ru-mit"></a>Russian STT benchmark…  <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · rulibrispeech c…</a>   8.9%    62.9   2026-08-07    7% ▇
+                        <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · podlodka corpus…</a>   7.1%    64.3   2026-08-07    6% ▇
                         <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · fleurs corpus W…</a>   6.6%    55.4   2026-08-07    5% ▇
-<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench          <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  90.9%    68.4   2026-05-15    8% ▇
+<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench          <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  90.9%    68.3   2026-05-15    8% ▇
                         <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (3…</a>   8.2%    58.0   2026-05-15    7% ▇
 <a name="speech-stt-bangla-riverborn-mit"></a>Bangla Speech-to-Text…  <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpe…</a>  10.1%    69.2   2026-09-24   13% ▇▇
 <a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSp…</a>   2.5%    57.7   2026-07-19    6% ▇
-                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   2.9%    61.1   2026-07-19    4% ▇
-                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>  16.1%    51.8   2026-07-19    3% ▇
-<a name="speech-stt-pipecat-bsd2"></a>Pipecat STT Benchmark…  <a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · poole…</a>   1.4%    65.3   2026-10-01   11% ▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   9.5%    60.1   2026-07-16   10% ▇
-<a name="speech-gigaspeechbench-report"></a>GigaSpeechBench: A Re…  <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 7 Arabic di…</a>  46.6%    61.1   2026-06-27    7% ▇
+                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   2.9%    61.0   2026-07-19    4% ▇
+                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>  16.1%    51.7   2026-07-19    3% ▇
+<a name="speech-stt-pipecat-bsd2"></a>Pipecat STT Benchmark…  <a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · poole…</a>   1.4%    65.2   2026-10-01   11% ▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   9.5%    59.9   2026-07-16   10% ▇
+<a name="speech-gigaspeechbench-report"></a>GigaSpeechBench: A Re…  <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 7 Arabic di…</a>  46.6%    61.0   2026-06-27    7% ▇
 <a name="speech-stt-openbench-mit"></a>Argmax OpenBench · op…  <a href="https://github.com/argmaxinc/OpenBench/blob/e13108070b9693f2646e4a3e22e4b2d0130d779f/BENCHMARKS.md">Argmax OpenBench · earnings22…</a>  15.3%    60.2   2025-12-12    6% ▇
-<a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1    <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   7.5%    49.9   2026-07-05    4% ▇
+<a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1    <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   7.5%    49.8   2026-07-05    4% ▇
 <a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  14.1%    67.2   2026-08-15    2% ▇
 prior                   pull toward the middle                   49.7                 1% ▇
-                        weighted average                       = 61.9
+                        weighted average                       = 61.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

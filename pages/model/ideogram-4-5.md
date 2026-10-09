@@ -6,7 +6,7 @@
 
 Ideogram · proprietary
 
-**score 66.9** ±3.6 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 67.0** ±3.6 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -17,9 +17,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                             score  implies  date        weight
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1351.4    71.4   2026-09-30   64% ▇▇▇▇▇▇▇▇
-<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>   967.6    60.8   2026-10-01   31% ▇▇▇▇
+<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>   967.6    60.7   2026-10-01   30% ▇▇▇▇
 prior                   pull toward the middle                    49.9                 6% ▇
-                        weighted average                        = 66.9
+                        weighted average                        = 67.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -6,7 +6,7 @@
 
 Meta · released 2023-02 · 65.2B params · llama-1-noncommercial-research
 
-**score 40.4** ±1.0 · comparison only: no current run option verified · from 15 benchmark results across 2 sources
+**score 39.9** ±1.0 · comparison only: no current run option verified · from 15 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,23 +14,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>                 23.7%    38.1   2023-02-27   13% ▇▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>                      10.6%    41.4   2023-02-27   12% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>             56.0%    36.8   2023-02-27   10% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>                     50.9%    43.7   2023-02-27    8% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>                77.0%    38.6   2023-02-27    6% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                60.2%    39.3   2023-02-27    6% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>                      63.4%    43.6   2023-02-27    6% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>                      37.7%    40.6   2023-02-27    5% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>                     85.3%    41.5   2023-02-27    5% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>                 84.2%    40.6   2023-02-27    4% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                  78.9%    38.1   2023-02-27    3% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                52.3%    38.2   2023-02-27    3% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>                      82.8%    39.6   2023-02-27    2% ▇
-<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  35.3%    41.9   2024-04-24    9% ▇
-                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  52.4%    43.5   2024-04-24    7% ▇
+<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>                 23.7%    37.6   2023-02-27   14% ▇▇
+                        <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>             56.0%    36.4   2023-02-27   11% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>                      10.6%    40.9   2023-02-27    9% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>                     50.9%    43.3   2023-02-27    8% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>                77.0%    38.3   2023-02-27    7% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                60.2%    39.0   2023-02-27    6% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>                     85.3%    41.1   2023-02-27    5% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>                      37.7%    40.0   2023-02-27    5% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>                      63.4%    43.5   2023-02-27    5% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>                 84.2%    40.3   2023-02-27    4% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                  78.9%    37.6   2023-02-27    3% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                52.3%    36.5   2023-02-27    3% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>                      82.8%    39.4   2023-02-27    2% ▇
+<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  35.3%    41.5   2024-04-24   10% ▇
+                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  52.4%    43.1   2024-04-24    7% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 40.4
+                        weighted average                       = 39.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

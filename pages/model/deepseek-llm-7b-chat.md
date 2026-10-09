@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-11 · 7B params · deepseek
 
-**score 35.2** ±1.6 · comparison only: no current run option verified · from 8 benchmark results across 1 source
+**score 34.7** ±1.6 · comparison only: no current run option verified · from 8 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="first-party-deepseek-scores"></a>DeepSeek vendor-repor…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">HumanEval (lab)</a>         45.1%    36.6   2024-06-25   19% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">GSM8K (lab)</a>             62.6%    37.1   2024-06-25   17% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">BIG-Bench Hard (lab)</a>    43.1%    35.8   2024-06-25   16% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MATH (lab)</a>              14.7%    34.4   2024-06-25   13% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MMLU (lab)</a>              49.7%    35.4   2024-06-25   12% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MBPP (lab)</a>              39.0%    34.7   2024-06-25    8% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">C-Eval (lab)</a>            44.7%    29.3   2024-06-25    7% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">CMMLU (lab)</a>             51.2%    29.7   2024-06-25    6% ▇
+<a name="first-party-deepseek-scores"></a>DeepSeek vendor-repor…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">HumanEval (lab)</a>         45.1%    36.1   2024-06-25   20% ▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">GSM8K (lab)</a>             62.6%    36.7   2024-06-25   17% ▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">BIG-Bench Hard (lab)</a>    43.1%    35.3   2024-06-25   17% ▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MMLU (lab)</a>              49.7%    34.9   2024-06-25   12% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MATH (lab)</a>              14.7%    33.2   2024-06-25   11% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MBPP (lab)</a>              39.0%    34.1   2024-06-25    9% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">C-Eval (lab)</a>            44.7%    29.2   2024-06-25    8% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">CMMLU (lab)</a>             51.2%    29.3   2024-06-25    6% ▇
 prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 35.2
+                        weighted average               = 34.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

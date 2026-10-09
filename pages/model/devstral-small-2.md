@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 24B params · apache-2.0
 
-**score 57.5** ±2.9 · #178 of 551 · from 3 benchmark results across 1 source
+**score 57.8** ±2.8 · #173 of 551 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                          score  implies  date        weight
-<a name="card-mistralai-devstral-small-2-24b-instruct-2512"></a>mistralai/Devstral-Sm…  <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>      68.0%    60.4   2026-09-25   39% ▇▇▇▇▇
-                        <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>  55.7%    59.1   2026-09-25   29% ▇▇▇
-                        <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (lab)</a>      22.5%    52.7   2026-09-25   28% ▇▇▇
+<a name="card-mistralai-devstral-small-2-24b-instruct-2512"></a>mistralai/Devstral-Sm…  <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>      68.0%    60.6   2026-09-25   42% ▇▇▇▇▇
+                        <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (lab)</a>      22.5%    53.7   2026-09-25   28% ▇▇▇
+                        <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>  55.7%    59.0   2026-09-25   27% ▇▇▇
 prior                   pull toward the middle                 50.0                 4% ▇
-                        weighted average                     = 57.5
+                        weighted average                     = 57.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior                   pull toward the middle                 50.0             
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~14.9GB   57.5
-8-bit q8_0    ~29.3GB   57.5
+4-bit q4_k_m  ~14.9GB   57.8
+8-bit q8_0    ~29.3GB   57.8
 </pre>
 
 ```sh

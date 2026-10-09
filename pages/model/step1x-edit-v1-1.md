@@ -6,7 +6,7 @@
 
 StepFun · released 2025-07 · 12.43B params · apache-2.0
 
-**score 46.5** ±3.2 · #87 of 139 · from 4 benchmark results across 3 sources
+**score 47.0** ±3.3 · #86 of 139 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card2-stepfun-ai-step1x-edit-v1p2"></a>stepfun-ai/Step1X-Edi…  <a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (lab)</a>        51.6%    46.1   2025-12-29   24% ▇▇▇
-                        <a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">GEdit-Bench overall (G_O, lan…</a>  69.7%    45.2   2025-12-29   24% ▇▇▇
-<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>         69.2%    45.4   2025-12-01   33% ▇▇▇▇
-<a name="visual-weavebench"></a>WEAVE: Unleashing and…  <a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-t…</a>  66.9%    50.6   2025-11-14   15% ▇▇
-prior                   pull toward the middle                   49.9                 4% ▇
-                        weighted average                       = 46.5
+<a name="card2-stepfun-ai-step1x-edit-v1p2"></a>stepfun-ai/Step1X-Edi…  <a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (lab)</a>        51.6%    46.8   2025-12-29   25% ▇▇▇
+                        <a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">GEdit-Bench overall (G_O, lan…</a>  69.7%    45.8   2025-12-29   25% ▇▇▇
+<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>         69.2%    45.7   2025-12-01   33% ▇▇▇▇
+<a name="visual-weavebench"></a>WEAVE: Unleashing and…  <a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-t…</a>  66.9%    51.7   2025-11-14   13% ▇▇
+prior                   pull toward the middle                   49.9                 5% ▇
+                        weighted average                       = 47.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +32,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~50.6GB   46.5
+bf16 · nvidia only  ~50.6GB   47.0
 </pre>
 
 ```sh

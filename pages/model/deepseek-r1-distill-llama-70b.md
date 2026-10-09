@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 70B params · MIT; underlying Llama 3.3 licence applies to weights
 
-**score 56.2** ±1.1 · #189 of 551 · from 14 benchmark results across 6 sources
+**score 57.2** ±0.8 · #179 of 551 · from 18 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -14,27 +14,31 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    89.9%    61.1   2025-03-10   27% ▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    55.7%    56.2   2025-03-10   25% ▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        51.4%    60.0   2025-03-07    9% ▇
-<a name="card-deepseek-ai--deepseek-r1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspec…</a>  57.5%    55.9   2026-09-25    6% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>              65.2%    55.3   2026-09-25    5% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                 70.0%    53.8   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                  94.5%    56.3   2026-09-25    2% ▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>  47.3%    51.5   2025-05-31    5% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  28.7%    46.6   2025-05-31    4% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  68.8%    52.4   2025-05-31    3% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  61.2%    38.0   2025-05-31    0% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  39.8%    56.8   2025-04-28    6% ▇
-<a name="judgemark-v2-results"></a>Judgemark v2 results    <a href="https://github.com/EQ-bench/Judgemark-v2/blob/2388448a0401c4d6ed5502ff18953adba944a255/results/scores.csv">Judgemark v2 (LLM-as-judge fo…</a>  59.7%    50.1   2025-01-31    3% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  39.8%    25.5   2026-04-17    2% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 56.2
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    55.7%    56.0   2025-03-10   16% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    89.9%    61.2   2025-03-10   16% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        51.4%    59.6   2025-03-07   10% ▇
+<a name="card-deepseek-ai--deepseek-r1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>              65.2%    57.1   2026-09-25   14% ▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspec…</a>  57.5%    57.6   2026-09-25    6% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                 70.0%    56.9   2026-09-25    3% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                  94.5%    55.3   2026-09-25    3% ▇
+<a name="report-2504.21318v1"></a>Microsoft               <a href="https://arxiv.org/html/2504.21318v1">GPQA Diamond</a>                    66.2%    58.3   2025-04-30   15% ▇▇
+                        <a href="https://arxiv.org/html/2504.21318v1">AIME 2025</a>                       51.5%    53.7   2025-04-30    4% ▇
+                        <a href="https://arxiv.org/html/2504.21318v1">AIME 2024</a>                       69.3%    57.9   2025-04-30    3% ▇
+                        <a href="https://arxiv.org/html/2504.21318v1">Omni-MATH</a>                       63.4%    48.4   2025-04-30    0% ▇
+<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>  47.3%    52.5   2025-05-31    2% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  28.7%    46.8   2025-05-31    1% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  68.8%    54.4   2025-05-31    1% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  61.2%    23.6   2025-05-31    0% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  39.8%    57.1   2025-04-28    3% ▇
+<a name="judgemark-v2-results"></a>Judgemark v2 results    <a href="https://github.com/EQ-bench/Judgemark-v2/blob/2388448a0401c4d6ed5502ff18953adba944a255/results/scores.csv">Judgemark v2 (LLM-as-judge fo…</a>  59.7%    49.6   2025-01-31    2% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  39.8%    24.2   2026-04-17    1% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 57.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · deepseek-ai/DeepSeek-R1 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Judgemark v2 results ([MIT](../../licenses/judgemark-v2-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · deepseek-ai/DeepSeek-R1 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1.txt)) · Microsoft ([CC BY 4.0](../../licenses/report-2504.21318v1.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Judgemark v2 results ([MIT](../../licenses/judgemark-v2-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 ## How to run it
 
@@ -44,9 +48,9 @@ api (Novita AI) · $0.80/M blended · $0.8 in / $0.8 out per 1M tokens · [novit
 
 <pre>
 download              size  score
-4-bit q4_k_m      ~42.52GB   56.2
-8-bit q8_0        ~74.98GB   56.2
-2-bit ud-q2_k_xl  ~26.97GB   56.2
+4-bit q4_k_m      ~42.52GB   57.2
+8-bit q8_0        ~74.98GB   57.2
+2-bit ud-q2_k_xl  ~26.97GB   57.2
 </pre>
 
 ```sh

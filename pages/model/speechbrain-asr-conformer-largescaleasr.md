@@ -6,7 +6,9 @@
 
 SpeechBrain · released 2025-02 · 0.48B params · apache-2.0
 
-**score 47.8** ±4.3 · #85 of 128 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 47.9** ±4.3 · #84 of 128 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -15,9 +17,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.5%    50.3   2026-03-26   73% ▇▇▇▇▇▇▇▇▇
-<a name="first-party-speechbrain-asr-cards"></a>SpeechBrain Hugging F…  <a href="https://huggingface.co/speechbrain/asr-conformer-loquacious/blob/42106e67e454ae361ca2d8311a7a807d5f95a3b9/README.md">LibriSpeech test-other WER (l…</a>   4.6%    37.7   2025-02-06   20% ▇▇
+<a name="first-party-speechbrain-asr-cards"></a>SpeechBrain Hugging F…  <a href="https://huggingface.co/speechbrain/asr-conformer-loquacious/blob/42106e67e454ae361ca2d8311a7a807d5f95a3b9/README.md">LibriSpeech test-other WER (l…</a>   4.6%    38.2   2025-02-06   20% ▇▇
 prior                   pull toward the middle                   49.7                 7% ▇
-                        weighted average                       = 47.8
+                        weighted average                       = 47.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -37,7 +39,7 @@ SpeechBrain Hugging F…  <a href="https://huggingface.co/speechbrain/asr-confor
 
 <pre>
 version   needs  score
-fp32     ~2.8GB   47.8
+fp32     ~2.8GB   47.9
 </pre>
 
 ```sh

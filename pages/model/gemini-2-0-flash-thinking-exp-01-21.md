@@ -6,7 +6,7 @@
 
 Google · released 2025-01 · proprietary
 
-**score 55.9** ±1.4 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 56.5** ±1.3 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    57.1%    56.6   2025-02-06   42% ▇▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        57.8%    61.4   2025-03-07   14% ▇▇
-<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>  18.2%    53.4   2025-01-21   43% ▇▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    57.1%    56.5   2025-02-06   41% ▇▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        57.8%    60.9   2025-03-07   25% ▇▇▇
+<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>  18.2%    53.4   2025-01-21   33% ▇▇▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 55.9
+                        weighted average                       = 56.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

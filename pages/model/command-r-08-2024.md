@@ -6,7 +6,7 @@
 
 Cohere · released 2024-08 · 32.3B params · cc-by-nc-4.0
 
-**score 46.5** ±1.7 · #304 of 551 · from 6 benchmark results across 6 sources
+**score 45.0** ±1.2 · #321 of 551 · from 13 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -14,19 +14,26 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1250.4    47.1   2026-10-02   35% ▇▇▇▇
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>   38.3%    42.5   2024-09-11   35% ▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   74.4%    48.9   2025-08-30   12% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   59.8%    51.1   2026-09-19   11% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   88.2%    52.2   2026-04-17    5% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   95.1%    53.0   2025-10-16    2% ▇
+<a name="report-2504.00698v2"></a>Cohere                  <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8) (…</a>   73.2%    43.1   2025-04-14   12% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                      74.3%    44.4   2025-04-14    9% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>         11.6%    42.8   2025-04-14    8% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Fe…</a>   11.0%    41.2   2025-04-14    7% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>    34.3%    47.9   2025-04-14    6% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>             47.3%    48.1   2025-04-14    5% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises…</a>    1.8%    42.3   2025-04-14    4% ▇
+<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>   38.3%    42.2   2024-09-11   19% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1250.4    46.8   2026-10-02   17% ▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   74.4%    48.6   2025-08-30    6% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   59.8%    50.7   2026-09-19    5% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   88.2%    53.0   2026-04-17    2% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   95.1%    52.3   2025-10-16    1% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 46.5
+                        weighted average                        = 45.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: Cohere ([CC BY 4.0](../../licenses/report-2504.00698v2.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
@@ -36,8 +43,8 @@ api (Cohere) · $0.26/M blended · $0.15 in / $0.6 out per 1M tokens · [docs.co
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~19.88GB   46.5
-8-bit q8_0    ~39.26GB   46.5
+4-bit q4_k_m  ~19.88GB   45.0
+8-bit q8_0    ~39.26GB   45.0
 </pre>
 
 ```sh

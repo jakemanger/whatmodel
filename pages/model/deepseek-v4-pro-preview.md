@@ -6,7 +6,7 @@
 
 DeepSeek · released 2026-04 · 1600B params (49B active) · mit
 
-**score 69.7** ±1.0 · #56 of 551 · from 10 benchmark results across 3 sources
+**score 69.5** ±0.7 · #55 of 551 · from 28 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,29 +14,47 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 202…</a>   51.2%    69.9   2026-09-11   21% ▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>   51.6%    71.4   2026-09-11   12% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 202…</a>   55.8%    68.6   2026-09-11   10% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>   73.9%    74.3   2026-09-11    8% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet">MathArena BrokenArXiv April 2…</a>   22.1%    68.6   2026-09-11    7% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2…</a>   15.2%    68.3   2026-09-11    4% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv Februar…</a>   13.3%    67.8   2026-09-11    4% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1446.0    67.8   2026-10-01   17% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1457.8    69.6   2026-10-02   12% ▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1329.7    71.2   2026-05-10    6% ▇
+<a name="report-2606.15007v1"></a>NVIDIA                  <a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified)</a>        87.8%    67.4   2026-06-12    5% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified</a>               74.5%    67.0   2026-06-12    5% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro</a>                         87.5%    67.8   2026-06-12    4% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam</a>             37.7%    72.3   2026-06-12    4% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual</a>           76.5%    69.5   2026-06-12    4% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">SciCode subproblems</a>              50.5%    69.3   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1</a>               49.2%    62.1   2026-06-12    2% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">τ³-bench</a>                         73.2%    68.7   2026-06-12    2% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX</a>                        85.6%    69.0   2026-06-12    2% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">BrowseComp</a>                       59.4%    70.8   2026-06-12    2% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">LongBench v2</a>                     62.1%    66.8   2026-06-12    2% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">MultiChallenge</a>                   64.1%    69.4   2026-06-12    2% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose)</a>     79.1%    68.3   2026-06-12    2% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam with too…</a>   48.2%    68.9   2026-06-12    2% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">LiveCodeBench v6 (window unsp…</a>   92.5%    75.3   2026-06-12    1% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">CritPt</a>                           14.0%    79.6   2026-06-12    1% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench</a>                  93.0%    76.5   2026-06-12    1% ▇
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 202…</a>   51.2%    70.1   2026-09-11   11% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>   51.6%    71.6   2026-09-11    7% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 202…</a>   55.8%    68.9   2026-09-11    5% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>   73.9%    74.2   2026-09-11    5% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet">MathArena BrokenArXiv April 2…</a>   22.1%    68.8   2026-09-11    4% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2…</a>   15.2%    68.4   2026-09-11    2% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv Februar…</a>   13.3%    67.9   2026-09-11    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1446.0    67.8   2026-10-01    9% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1457.8    69.5   2026-10-02    6% ▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1329.7    71.0   2026-05-10    3% ▇
+<a name="card-zai-org--glm-5.2"></a>zai-org/GLM-5.2 model…  <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">MCP-Atlas (public set)</a>           73.6%    70.3   2026-09-25    2% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 69.7
+                        weighted average                        = 69.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt))</sub>
+<sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2606.15007v1.txt)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · zai-org/GLM-5.2 model card ([mit](../../licenses/zai-org--GLM-5.2.txt))</sub>
 
 ## How to run it
 
 <pre>
 download                                  size  score
-4-bit fp4 + fp8 mixed · nvidia only  ~864.72GB   69.7
+4-bit fp4 + fp8 mixed · nvidia only  ~864.72GB   69.5
 </pre>
 
 ```sh

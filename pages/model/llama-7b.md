@@ -6,7 +6,7 @@
 
 Meta · released 2023-02 · 6.7B params · llama-1-noncommercial-research
 
-**score 32.0** ±0.6 · comparison only: no current run option verified · from 34 benchmark results across 5 sources
+**score 31.6** ±0.7 · comparison only: no current run option verified · from 34 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,47 +14,47 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>                 10.5%    31.4   2023-02-27    4% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>             47.6%    35.3   2023-02-27    4% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>                       2.9%    29.9   2023-02-27    3% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>                70.1%    33.9   2023-02-27    3% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>                     11.0%    26.5   2023-02-27    3% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>                     76.5%    32.7   2023-02-27    2% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>                 76.1%    34.2   2023-02-27    2% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                57.2%    40.9   2023-02-27    2% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>                      35.1%    25.1   2023-02-27    2% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>                      17.7%    28.0   2023-02-27    2% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                  72.8%    33.2   2023-02-27    2% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                48.9%    34.8   2023-02-27    1% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>                      79.8%    35.2   2023-02-27    1% ▇
-<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   44.5%    31.3   2024-06-07    9% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      51.2%    33.1   2024-06-07    5% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      70.5%    35.8   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        67.9%    32.4   2024-06-07    3% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       76.2%    35.4   2024-06-07    2% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            93.9%    34.2   2024-06-07    2% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           75.4%    35.5   2024-06-07    2% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            77.2%    32.2   2024-06-07    1% ▇
-<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   38.5%    33.4   2023-09-11    7% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      66.9%    31.3   2023-09-11    5% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           73.2%    33.3   2023-09-11    3% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       56.2%    33.0   2023-09-11    2% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      28.4%    28.9   2023-09-11    2% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        68.2%    28.5   2023-09-11    2% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                      46.6%    32.8   2023-09-11    2% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            77.9%    32.5   2023-09-11    1% ▇
-<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                  30.9%    26.5   2024-03-10    5% ▇
-                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>                       10.3%    28.5   2024-03-10    4% ▇
-                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                            35.2%    26.1   2024-03-10    2% ▇
-<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  14.6%    30.9   2024-04-24    3% ▇
-                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  35.0%    35.1   2024-04-24    3% ▇
+<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   44.5%    31.0   2024-06-07    9% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      51.2%    32.9   2024-06-07    5% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      70.5%    35.5   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        67.9%    32.0   2024-06-07    3% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       76.2%    35.1   2024-06-07    2% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            93.9%    33.8   2024-06-07    2% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           75.4%    35.2   2024-06-07    2% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            77.2%    32.0   2024-06-07    2% ▇
+<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>                 10.5%    30.9   2023-02-27    4% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>             47.6%    34.8   2023-02-27    4% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>                70.1%    33.7   2023-02-27    3% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>                     76.5%    32.6   2023-02-27    3% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>                     11.0%    25.7   2023-02-27    2% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>                 76.1%    33.9   2023-02-27    2% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                57.2%    40.2   2023-02-27    2% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>                       2.9%    27.7   2023-02-27    2% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>                      17.7%    27.4   2023-02-27    2% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>                      35.1%    24.2   2023-02-27    2% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                  72.8%    32.8   2023-02-27    2% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                48.9%    32.9   2023-02-27    1% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>                      79.8%    35.1   2023-02-27    1% ▇
+<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   38.5%    33.1   2023-09-11    7% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      66.9%    31.0   2023-09-11    5% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           73.2%    33.0   2023-09-11    3% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       56.2%    32.7   2023-09-11    2% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        68.2%    28.1   2023-09-11    2% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      28.4%    28.1   2023-09-11    2% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                      46.6%    31.8   2023-09-11    2% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            77.9%    32.2   2023-09-11    1% ▇
+<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                  30.9%    25.9   2024-03-10    5% ▇
+                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>                       10.3%    28.0   2024-03-10    4% ▇
+                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                            35.2%    25.4   2024-03-10    2% ▇
+<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  14.6%    30.5   2024-04-24    3% ▇
+                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  35.0%    34.8   2024-04-24    3% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 32.0
+                        weighted average                       = 31.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LLaMA: Open and Efficient Foundation Language Models ([CC BY 4.0](../../licenses/paper-2302.13971v1-CC-BY-4.0.txt)) · OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · LLaMA: Open and Efficient Foundation Language Models ([CC BY 4.0](../../licenses/paper-2302.13971v1-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

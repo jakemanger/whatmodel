@@ -6,7 +6,7 @@
 
 TII · released 2023-05 · 41.8B params · apache-2.0
 
-**score 36.5** ±1.2 · #441 of 551 · from 11 benchmark results across 4 sources
+**score 36.1** ±1.2 · #446 of 551 · from 11 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,19 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2404.06395v3"></a>MiniCPM: Unveiling th…  <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                   57.7%    36.7   2024-06-03   19% ▇▇
-                        <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                  36.2%    35.1   2024-06-03   17% ▇▇
-                        <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                            53.5%    37.4   2024-06-03   11% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>                       24.4%    36.2   2024-06-03   10% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>                           22.4%    32.8   2024-06-03    7% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">MBPP</a>                            36.5%    35.0   2024-06-03    6% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                          40.3%    36.2   2024-06-03    3% ▇
-<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  26.6%    38.1   2024-04-24   11% ▇
-                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  42.3%    38.6   2024-04-24    9% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  60.3%    36.6   2024-02-05    5% ▇
-<a name="paper-2410.14897v1-gencopa"></a>From Test-Taking to T…  <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                            84.4%    41.6   2024-10-18    1% ▇
+<a name="paper-2404.06395v3"></a>MiniCPM: Unveiling th…  <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                   57.7%    36.3   2024-06-03   19% ▇▇
+                        <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                  36.2%    34.7   2024-06-03   17% ▇▇
+                        <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>                       24.4%    35.8   2024-06-03   10% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                            53.5%    37.0   2024-06-03   10% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>                           22.4%    32.1   2024-06-03    7% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">MBPP</a>                            36.5%    34.6   2024-06-03    6% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                          40.3%    35.9   2024-06-03    3% ▇
+<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  26.6%    37.7   2024-04-24   12% ▇
+                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  42.3%    38.2   2024-04-24   10% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  60.3%    36.3   2024-02-05    5% ▇
+<a name="paper-2410.14897v1-gencopa"></a>From Test-Taking to T…  <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                            84.4%    41.2   2024-10-18    1% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 36.5
+                        weighted average                       = 36.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -39,8 +39,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_0      ~24GB   36.5
-16-bit bf16  ~83.67GB   36.5
+4-bit q4_0      ~24GB   36.1
+16-bit bf16  ~83.67GB   36.1
 </pre>
 
 ```sh

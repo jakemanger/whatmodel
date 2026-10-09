@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2025-05 · closed weights
 
-**score 51.7** ±1.9 · #70 of 139 · from 4 benchmark results across 3 sources
+**score 49.5** ±1.7 · #78 of 139 · from 6 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,17 +16,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1058.7    52.9   2026-09-24   60% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1176.5    51.4   2026-09-30   17% ▇▇
-<a name="paper-2604.24023v2-servimage"></a>ServImage: An Image G…  <a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (hu…</a>   16.5%    48.8   2026-06-19   16% ▇▇
-<a name="paper-2603.26174v1-creval"></a>CREval: An Automated …  <a href="https://arxiv.org/html/2603.26174v1">CREval-Bench creative image e…</a>   74.9%    50.0   2026-03-27    6% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1058.7    52.6   2026-09-24   45% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1176.5    51.3   2026-09-30   14% ▇▇
+<a name="report-2512.07584v1"></a>Meituan LongCat         <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-CN overall (G_O, …</a>   14.3%    38.7   2025-12-08   14% ▇▇
+                        <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-EN overall (G_O, …</a>   65.3%    48.4   2025-12-08    9% ▇
+<a name="paper-2604.24023v2-servimage"></a>ServImage: An Image G…  <a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (hu…</a>   16.5%    48.3   2026-06-19   13% ▇▇
+<a name="paper-2603.26174v1-creval"></a>CREval: An Automated …  <a href="https://arxiv.org/html/2603.26174v1">CREval-Bench creative image e…</a>   74.9%    50.1   2026-03-27    5% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 51.7
+                        weighted average                        = 49.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ServImage: An Image Generation and Editing Benchmark from Real-world Commercial Imaging Services ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · CREval: An Automated Interpretable Evaluation for Creative Image Manipulation under Complex Instructions ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Meituan LongCat ([CC BY 4.0](../../licenses/report-2512.07584v1.txt)) · ServImage: An Image Generation and Editing Benchmark from Real-world Commercial Imaging Services ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · CREval: An Automated Interpretable Evaluation for Creative Image Manipulation under Complex Instructions ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

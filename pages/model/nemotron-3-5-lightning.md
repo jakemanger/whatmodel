@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-08 · 31.6B params (3.6B active) · openmdw-1.1
 
-**score 59.7** ±1.9 · #158 of 551 · from 3 benchmark results across 2 sources
+**score 59.6** ±2.0 · #156 of 551 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   52.9%    63.2   2026-09-07   32% ▇▇▇▇
-                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   87.7%    59.1   2026-09-07   20% ▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1349.5    57.8   2026-10-02   46% ▇▇▇▇▇▇
+<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   52.9%    63.2   2026-09-07   34% ▇▇▇▇
+                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   87.7%    59.0   2026-09-07   19% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1349.5    57.6   2026-10-02   45% ▇▇▇▇▇
 prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 59.7
+                        weighted average                        = 59.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,9 +33,9 @@ api (Fireworks AI) · $0.088/M blended · $0.05 in / $0.2 out per 1M tokens · [
 
 <pre>
 download                        size  score
-4-bit q4_k_m                ~19.46GB   59.7
-8-bit q8_0                  ~38.42GB   59.7
-4-bit mlx-nvfp4 · mac only  ~19.46GB   59.7
+4-bit q4_k_m                ~19.46GB   59.6
+8-bit q8_0                  ~38.42GB   59.6
+4-bit mlx-nvfp4 · mac only  ~19.46GB   59.6
 </pre>
 
 ```sh

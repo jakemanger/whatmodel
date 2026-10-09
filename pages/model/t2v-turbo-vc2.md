@@ -6,7 +6,7 @@
 
 UC Santa Barbara · released 2024-05 · cc-by-4.0
 
-**score 38.3** ±2.7 · #67 of 87 · from 3 benchmark results across 3 sources
+**score 38.3** ±2.7 · #67 of 87 · from 3 benchmark results across 3 sources · † every result so far was reported by its maker
 
 ## How the score was worked out
 

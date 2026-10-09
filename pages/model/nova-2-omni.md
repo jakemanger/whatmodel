@@ -6,7 +6,7 @@
 
 Amazon · released 2025-11 · closed weights
 
-**score 63.9** ±7.2 · #116 of 551 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 64.1** ±7.0 · #109 of 551 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source      test                            score  implies  date        weight
-<a name="amazon-tau2-verified"></a>Amazon AGI  <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 us…</a>  75.7%    68.2   2026-09-25   76% ▇▇▇▇▇▇▇▇▇
-prior       pull toward the middle                   50.0                24% ▇▇▇
-            weighted average                       = 63.9
+<a name="amazon-tau2-verified"></a>Amazon AGI  <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 us…</a>  75.7%    68.0   2026-09-25   78% ▇▇▇▇▇▇▇▇▇
+prior       pull toward the middle                   50.0                22% ▇▇▇
+            weighted average                       = 64.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

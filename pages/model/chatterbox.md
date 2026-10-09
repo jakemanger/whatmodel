@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     24.5%    45.3   2025-08-10   51% ▇▇▇▇▇▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     24.5%    45.3   2025-08-10   50% ▇▇▇▇▇▇
                         <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       13.1%    59.3   2025-08-10   17% ▇▇
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.23 / 5    58.1   2026-03-15   13% ▇▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.33 / 5    57.0   2026-03-15    6% ▇
-prior                   pull toward the middle                      49.7                13% ▇▇
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.23 / 5    57.4   2026-03-15   13% ▇▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.33 / 5    56.3   2026-03-15    7% ▇
+prior                   pull toward the middle                      49.8                13% ▇▇
                         weighted average                          = 50.6
 </pre>
 

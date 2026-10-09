@@ -6,7 +6,7 @@
 
 01.AI · released 2024-05 · 6.06B params · apache-2.0
 
-**score 35.0** ±2.0 · #459 of 551 · from 4 benchmark results across 4 sources
+**score 34.8** ±2.0 · #459 of 551 · from 4 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                       score  implies  date        weight
-<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  23.3181 WB-Score    37.2   2024-08-01   61% ▇▇▇▇▇▇▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>              5.2%    21.0   2024-06-19   18% ▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             62.6%    38.8   2024-05-16   16% ▇▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>             92.1%    42.3   2025-10-16    4% ▇
+<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  23.3181 WB-Score    36.9   2024-08-01   62% ▇▇▇▇▇▇▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>              5.2%    20.6   2024-06-19   17% ▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             62.6%    38.4   2024-05-16   15% ▇▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>             92.1%    42.0   2025-10-16    4% ▇
 prior                   pull toward the middle                              50.0                 2% ▇
-                        weighted average                                  = 35.0
+                        weighted average                                  = 34.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,8 +32,8 @@ prior                   pull toward the middle                              50.0
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.14GB   35.0
-8-bit q8_0    ~7.77GB   35.0
+4-bit q4_k_m  ~4.14GB   34.8
+8-bit q8_0    ~7.77GB   34.8
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 BAAI · released 2024-09 · 8B params · apache-2.0
 
-**score 35.4** ±2.2 · #115 of 139 · from 4 benchmark results across 4 sources
+**score 35.1** ±2.2 · #115 of 139 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       41.7%    34.5   2026-07-01   44% ▇▇▇▇▇
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   8.8%    38.4   2026-05-14   31% ▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  39.0%    34.8   2026-06-02   15% ▇▇
-<a name="paper-2506.10963v2-mmmg-kg"></a>MMMG: A Massive         <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generati…</a>   6.1%    25.5   2025-06-13    8% ▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       41.7%    34.2   2026-07-01   43% ▇▇▇▇▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   8.8%    38.0   2026-05-14   31% ▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  39.0%    34.7   2026-06-02   17% ▇▇
+<a name="paper-2506.10963v2-mmmg-kg"></a>MMMG: A Massive         <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generati…</a>   6.1%    25.2   2025-06-13    7% ▇
 prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 35.4
+                        weighted average                       = 35.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -42,7 +42,7 @@ BAAI    <a href="https://arxiv.org/html/2409.18869v1">GenEval</a>    54.0%  too 
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~22.2GB   35.4
+bf16 · nvidia only  ~22.2GB   35.1
 </pre>
 
 ```sh

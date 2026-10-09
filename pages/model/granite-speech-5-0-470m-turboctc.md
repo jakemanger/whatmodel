@@ -8,6 +8,8 @@ IBM · released 2026-08 · 0.47B params · apache-2.0
 
 **score 63.3** ±4.2 · #12 of 128 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
+
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
@@ -15,7 +17,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                        score  implies  date        weight
 <a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-5.0-470m-turboctc.json">LibriSpeech test-clean WER</a>   1.3%    66.6   2026-09-15   64% ▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-5.0-470m-turboctc.json">FLEURS English test WER</a>      4.6%    59.3   2026-09-15   29% ▇▇▇
+                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-5.0-470m-turboctc.json">FLEURS English test WER</a>      4.6%    59.2   2026-09-15   29% ▇▇▇▇
 prior                   pull toward the middle               49.7                 7% ▇
                         weighted average                   = 63.3
 </pre>

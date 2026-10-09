@@ -6,7 +6,7 @@
 
 Plachtaa (community) · released 2023-08 · mit
 
-**score 28.0** ±4.3 · #90 of 100 · from 5 benchmark results across 3 sources
+**score 27.7** ±4.2 · #90 of 100 · from 5 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-versa-toolkit-ccby"></a>VERSA toolkit paper: …  <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>  3.38 / 5    27.5   2025-03-27   44% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>     27.3%   -37.1   2025-03-27    1% ▇
-<a name="speech-cloneval-space-apache"></a>ClonEval · Open Voice…  <a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · LibriSpeech test-c…</a>     90.1%    31.5   2025-04-09   34% ▇▇▇▇
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.07 / 5     6.6   2026-03-15    9% ▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.86 / 5    29.7   2026-03-15    5% ▇
-prior                   pull toward the middle                      49.7                 7% ▇
-                        weighted average                          = 28.0
+<a name="speech-versa-toolkit-ccby"></a>VERSA toolkit paper: …  <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>  3.38 / 5    27.3   2025-03-27   45% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>     27.3%   -35.5   2025-03-27    1% ▇
+<a name="speech-cloneval-space-apache"></a>ClonEval · Open Voice…  <a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · LibriSpeech test-c…</a>     90.1%    31.5   2025-04-09   33% ▇▇▇▇
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.07 / 5     7.2   2026-03-15    9% ▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.86 / 5    29.6   2026-03-15    5% ▇
+prior                   pull toward the middle                      49.8                 7% ▇
+                        weighted average                          = 27.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,7 +33,7 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version                          needs  score
-fp32 (Plachtaa/VALL-E-X repo)  ~1.62GB   28.0
+fp32 (Plachtaa/VALL-E-X repo)  ~1.62GB   27.7
 </pre>
 
 ```sh

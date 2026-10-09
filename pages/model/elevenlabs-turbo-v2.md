@@ -6,7 +6,7 @@
 
 ElevenLabs · released 2023-11 · proprietary
 
-**score 63.9** ±3.2 · #16 of 100 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 63.9** ±3.1 · #16 of 100 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                             score  implies  date        weight
 <a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1216.0    64.4   2026-09-25   96% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                    49.7                 4% ▇
+prior                   pull toward the middle                    49.8                 4% ▇
                         weighted average                        = 63.9
 </pre>
 

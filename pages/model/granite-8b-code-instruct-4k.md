@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 8.05B params · apache-2.0
 
-**score 43.4** ±1.5 · #345 of 551 · from 4 benchmark results across 2 sources
+**score 43.5** ±1.5 · #345 of 551 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  49.6%    42.6   2024-05-07   42% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  40.9%    46.2   2024-05-07   28% ▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  40.4%    44.9   2024-05-07   25% ▇▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  45.2%    23.3   2026-04-17    4% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  49.6%    42.4   2024-05-07   42% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  40.9%    46.0   2024-05-07   29% ▇▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  40.4%    44.6   2024-05-07   26% ▇▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  45.2%    21.0   2026-04-17    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 43.4
+                        weighted average                       = 43.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.88GB   43.4
+4-bit q4_k_m  ~4.88GB   43.5
 </pre>
 
 ```sh

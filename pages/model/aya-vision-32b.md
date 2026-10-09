@@ -6,7 +6,7 @@
 
 Cohere · released 2025-03 · 33.1B params · cc-by-nc-4.0
 
-**score 41.9** ±2.6 · #372 of 551 · from 3 benchmark results across 3 sources
+**score 42.1** ±2.7 · #371 of 551 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1000.2    41.7   2026-10-02   66% ▇▇▇▇▇▇▇▇
-<a name="paper-2504.07072v2-kaleidoscope"></a>Kaleidoscope: In-lang…  <a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope (in-language mul…</a>   39.3%    44.9   2025-04-29   24% ▇▇▇
-<a name="paper-2508.13680v5-vmmu"></a>VMMU: A Vietnamese Mu…  <a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal u…</a>   22.5%    31.4   2026-09-23    7% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1000.2    41.8   2026-10-02   63% ▇▇▇▇▇▇▇▇
+<a name="paper-2504.07072v2-kaleidoscope"></a>Kaleidoscope: In-lang…  <a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope (in-language mul…</a>   39.3%    44.8   2025-04-29   27% ▇▇▇
+<a name="paper-2508.13680v5-vmmu"></a>VMMU: A Vietnamese Mu…  <a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal u…</a>   22.5%    31.3   2026-09-23    7% ▇
 prior                   pull toward the middle                    50.0                 3% ▇
-                        weighted average                        = 41.9
+                        weighted average                        = 42.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,7 +33,7 @@ api (Cohere) · price unknown · [docs.cohere.com](https://docs.cohere.com/docs/
 
 <pre>
 download        size  score
-4-bit fp16  ~66.28GB   41.9
+4-bit fp16  ~66.28GB   42.1
 </pre>
 
 ```sh

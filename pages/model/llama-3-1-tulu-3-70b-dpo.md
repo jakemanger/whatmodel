@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-11 · 70.55B params · llama3.1
 
-**score 52.3** ±1.1 · #243 of 551 · from 12 benchmark results across 2 sources
+**score 51.8** ±1.0 · #248 of 551 · from 12 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,20 +14,20 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    42.7%    51.3   2025-01-27   29% ▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    46.3%    52.5   2025-01-27   19% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         4.4%    48.7   2025-03-07    5% ▇
-<a name="paper-2411.15124v5"></a>Tülu 3: Pushing Front…  <a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard (lab)</a>            84.8%    53.9   2025-04-14   10% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">MMLU (lab)</a>                      83.3%    52.2   2025-04-14    7% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">GSM8K (lab)</a>                     93.5%    55.9   2025-04-14    7% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified) (la…</a>  62.3%    51.9   2025-04-14    6% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">DROP (lab)</a>                      74.1%    52.5   2025-04-14    5% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlle…</a>  49.6%    49.3   2025-04-14    5% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose (la…</a>  82.6%    52.8   2025-04-14    3% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">PopQA (lab)</a>                     46.3%    57.8   2025-04-14    2% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2 (lab)</a>            67.9%    53.2   2025-04-14    2% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 52.3
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    42.7%    51.0   2025-01-27   31% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    46.3%    52.4   2025-01-27   20% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         4.4%    48.5   2025-03-07    8% ▇
+<a name="paper-2411.15124v5"></a>Tülu 3: Pushing Front…  <a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard (lab)</a>            84.8%    53.6   2025-04-14    9% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">MMLU (lab)</a>                      83.3%    52.0   2025-04-14    6% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">GSM8K (lab)</a>                     93.5%    55.6   2025-04-14    6% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified) (la…</a>  62.3%    50.5   2025-04-14    5% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">DROP (lab)</a>                      74.1%    52.2   2025-04-14    5% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlle…</a>  49.6%    49.0   2025-04-14    4% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose (la…</a>  82.6%    52.3   2025-04-14    2% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">PopQA (lab)</a>                     46.3%    58.0   2025-04-14    2% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2 (lab)</a>            67.9%    50.9   2025-04-14    1% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 51.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -40,7 +40,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                        size  score
-16-bit bf16 · nvidia only  ~169.82GB   52.3
+16-bit bf16 · nvidia only  ~169.82GB   51.8
 </pre>
 
 ```sh

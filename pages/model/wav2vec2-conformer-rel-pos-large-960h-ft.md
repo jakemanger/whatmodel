@@ -8,15 +8,17 @@ Meta · released 2022-04 · 0.62B params · apache-2.0
 
 **score 13.4** ±3.4 · #122 of 128 · from 3 benchmark results across 2 sources
 
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
+
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="first-party-meta-asr-cards"></a>Meta                  <a href="https://huggingface.co/facebook/wav2vec2-conformer-rel-pos-large-960h-ft/blob/ca7f36f527f234b3cd4f05ecee30361f971e8e33/README.md#evaluation">LibriSpeech test-other WER (l…</a>   3.8%    12.7   2022-06-15   37% ▇▇▇▇
-                      <a href="https://huggingface.co/facebook/wav2vec2-conformer-rel-pos-large-960h-ft/blob/ca7f36f527f234b3cd4f05ecee30361f971e8e33/README.md#evaluation">LibriSpeech test-clean WER (l…</a>   1.8%    14.8   2022-06-15   14% ▇▇
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  23.3%    10.0   2026-03-26   45% ▇▇▇▇▇
+<a name="first-party-meta-asr-cards"></a>Meta                  <a href="https://huggingface.co/facebook/wav2vec2-conformer-rel-pos-large-960h-ft/blob/ca7f36f527f234b3cd4f05ecee30361f971e8e33/README.md#evaluation">LibriSpeech test-other WER (l…</a>   3.8%    12.8   2022-06-15   37% ▇▇▇▇
+                      <a href="https://huggingface.co/facebook/wav2vec2-conformer-rel-pos-large-960h-ft/blob/ca7f36f527f234b3cd4f05ecee30361f971e8e33/README.md#evaluation">LibriSpeech test-clean WER (l…</a>   1.8%    14.9   2022-06-15   14% ▇▇
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  23.3%     9.9   2026-03-26   45% ▇▇▇▇▇
 prior                 pull toward the middle                   49.7                 4% ▇
                       weighted average                       = 13.4
 </pre>

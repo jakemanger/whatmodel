@@ -6,7 +6,7 @@
 
 Grad-TTS authors / Huawei Noah · released 2021-05 · 0.0148B params
 
-**score 64.8** ±23.3 · #1 of 1 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 64.8** ±23.3 · #1 of 1 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [Grad-TTS 2021 LJ Speech human MOS](https://whatmodel.sh/tts?set=gradtts2021-ljspeech-mos&score=set) comparison set only.
 

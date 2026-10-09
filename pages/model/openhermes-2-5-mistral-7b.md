@@ -6,7 +6,7 @@
 
 Nous Research · released 2023-10 · 7.24B params · apache-2.0
 
-**score 40.2** ±1.3 · #395 of 551 · from 8 benchmark results across 5 sources
+**score 39.9** ±1.3 · #400 of 551 · from 8 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="card2-openchat-openchat-3-5"></a>OpenChat 3.5 model ca…  <a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">HumanEval</a>                        48.2%    40.5   2023-10-30   16% ▇▇
-                        <a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">GSM8K</a>                            73.5%    41.4   2023-10-30   11% ▇
-                        <a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">BIG-Bench Hard</a>                   59.9%    41.2   2023-10-30   11% ▇
-                        <a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">MMLU</a>                             63.8%    43.3   2023-10-30    9% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1175.9    39.0   2026-10-02   20% ▇▇
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   16.3%    38.8   2025-08-09   18% ▇▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>   37.5%    37.2   2024-06-19    8% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   66.5%    42.0   2024-02-27    7% ▇
+<a name="card2-openchat-openchat-3-5"></a>OpenChat 3.5 model ca…  <a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">HumanEval</a>                        48.2%    40.1   2023-10-30   17% ▇▇
+                        <a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">BIG-Bench Hard</a>                   59.9%    40.9   2023-10-30   11% ▇
+                        <a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">GSM8K</a>                            73.5%    41.1   2023-10-30   11% ▇
+                        <a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">MMLU</a>                             63.8%    43.2   2023-10-30    8% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1175.9    38.6   2026-10-02   20% ▇▇
+<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   16.3%    38.4   2025-08-09   19% ▇▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>   37.5%    36.8   2024-06-19    8% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   66.5%    41.7   2024-02-27    7% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 40.2
+                        weighted average                        = 39.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,8 +34,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.84GB   40.2
-8-bit q8_0    ~9.19GB   40.2
+4-bit q4_k_m  ~4.84GB   39.9
+8-bit q8_0    ~9.19GB   39.9
 </pre>
 
 ```sh

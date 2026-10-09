@@ -6,7 +6,7 @@
 
 Baidu · released 2026-04 · 8B params · apache-2.0
 
-**score 58.6** ±2.4 · #43 of 139 · from 7 benchmark results across 3 sources
+**score 59.4** ±2.4 · #40 of 139 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,15 +16,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-ernie-image"></a>ERNIE-Image model rep…  <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">GenEval (lab)</a>                   88.6%    60.9   2026-09-25   13% ▇▇
-                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (EN) (lab)</a>       96.8%    64.9   2026-09-25   12% ▇
-                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (CN) (lab)</a>       95.9%    60.4   2026-09-25   11% ▇
-                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (CN) (lab)</a>          52.1%    57.8   2026-09-25   11% ▇
-                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (EN) (lab)</a>          55.4%    58.4   2026-09-25   11% ▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  89.4%    58.5   2026-08-25   27% ▇▇▇
-<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>  896.9    52.2   2026-10-01   14% ▇▇
+<a name="visual-ernie-image"></a>ERNIE-Image model rep…  <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (EN) (lab)</a>       96.8%    64.9   2026-09-25   16% ▇▇
+                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (CN) (lab)</a>       95.9%    61.5   2026-09-25   13% ▇▇
+                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">GenEval (lab)</a>                   88.6%    61.4   2026-09-25   12% ▇
+                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (CN) (lab)</a>          52.1%    58.7   2026-09-25   10% ▇
+                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (EN) (lab)</a>          55.4%    59.3   2026-09-25   10% ▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  89.4%    58.6   2026-08-25   24% ▇▇▇
+<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>  896.9    52.1   2026-10-01   13% ▇▇
 prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 58.6
+                        weighted average                       = 59.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -39,8 +39,8 @@ api (fal.ai) · $0.030/image · [fal.ai](https://fal.ai/models/fal-ai/ernie-imag
 
 <pre>
 version                                     needs  score
-bf16 · nvidia only                        ~19.7GB   58.6
-gguf-ud-q4_k_m + Ministral 3B (sd.cpp, …  ~17.1GB   58.6
+bf16 · nvidia only                        ~19.7GB   59.4
+gguf-ud-q4_k_m + Ministral 3B (sd.cpp, …  ~17.1GB   59.4
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 MIT Han Lab / NVIDIA · released 2024-10 · 8.12B params · mit
 
-**score 31.8** ±5.5 · #123 of 139 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.5** ±5.3 · #124 of 139 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  31.0%    29.1   2026-06-02   87% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                13% ▇▇
-                        weighted average                       = 31.8
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  31.0%    29.1   2026-06-02   88% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                12% ▇
+                        weighted average                       = 31.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version                                   needs  score
-bf16 (official inference.py) · nvidia o…  ~20GB   31.8
+bf16 (official inference.py) · nvidia o…  ~20GB   31.5
 </pre>
 
 ```sh

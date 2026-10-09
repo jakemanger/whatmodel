@@ -6,7 +6,9 @@
 
 ESPnet · released 2020-07 · cc-by-4.0
 
-**score 42.5** ±3.8 · #102 of 128 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.6** ±3.8 · #102 of 128 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -15,9 +17,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  weight
 <a name="speech-espnet-librispeech-20260929"></a>ESPnet LibriSpeech AS…  <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-other WER (l…</a>   6.2%    41.9    73% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-clean WER (l…</a>   2.5%    42.7    22% ▇▇▇
-prior                   pull toward the middle                   49.7     5% ▇
-                        weighted average                       = 42.5
+                        <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-clean WER (l…</a>   2.5%    42.8    22% ▇▇▇
+prior                   pull toward the middle                   49.7     6% ▇
+                        weighted average                       = 42.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +30,7 @@ prior                   pull toward the middle                   49.7     5% ▇
 
 <pre>
 version                                     needs  score
-fp32 (espnet 202610.post2 + espnet_mode…  ~1.02GB   42.5
+fp32 (espnet 202610.post2 + espnet_mode…  ~1.02GB   42.6
 </pre>
 
 ```sh

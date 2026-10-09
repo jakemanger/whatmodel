@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                           score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1301.9    62.0   2026-10-01   60% ▇▇▇▇▇▇▇
-<a name="report-2605.27605v1"></a>Poolside                <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       69.9%    63.2   2026-05-26   16% ▇▇
-                        <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   57.7%    61.8   2026-05-26   12% ▇
-                        <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       35.7%    59.0   2026-05-26   11% ▇
-prior                   pull toward the middle                  50.0                 2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1301.9    61.8   2026-10-01   58% ▇▇▇▇▇▇▇
+<a name="report-2605.27605v1"></a>Poolside                <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       69.9%    63.3   2026-05-26   17% ▇▇
+                        <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       35.7%    59.8   2026-05-26   12% ▇
+                        <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   57.7%    61.5   2026-05-26   11% ▇
+prior                   pull toward the middle                  50.0                 1% ▇
                         weighted average                      = 61.6
 </pre>
 

@@ -6,7 +6,9 @@
 
 Hugging Face (Distil-Whisper) · released 2024-03 · 0.76B params · mit
 
-**score 54.9** ±3.1 · #56 of 128 · from 3 benchmark results across 2 sources
+**score 57.6** ±2.0 · #43 of 128 · from 13 benchmark results across 3 sources
+
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -14,22 +16,42 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.5%    55.0   2026-03-26   39% ▇▇▇▇▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   9.8%    56.8   2026-03-26   38% ▇▇▇▇▇
-<a name="speech-distil-whisper-readme-mit"></a>huggingface/distil-wh…  <a href="https://github.com/huggingface/distil-whisper/blob/a66f5c85be1e32c504e8ed68df7802d2b96db4c0/README.md">Distil-Whisper · 4-set out-of…</a>   9.7%    52.1   2024-03-21   19% ▇▇
-prior                   pull toward the middle                   49.7                 4% ▇
-                        weighted average                       = 54.9
+<a name="card2-distil-whisper-distil-large-v3-5"></a>distil-whisper/distil…  <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Meanwhile long-form WER (lab)</a>    7.0%    61.1   2026-04-13    9% ▇
+                        <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">TED-LIUM long-form WER (lab)</a>     3.9%    62.8   2026-04-13    9% ▇
+                        <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Rev16 long-form WER (lab)</a>       13.8%    58.9   2026-04-13    7% ▇
+                        <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Earnings-21 long-form WER (la…</a>  10.5%    58.2   2026-04-13    7% ▇
+                        <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Earnings-22 long-form WER (la…</a>  15.1%    56.7   2026-04-13    7% ▇
+                        <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">SPGISpeech test WER (lab)</a>        3.3%    58.5   2026-04-13    6% ▇
+                        <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">GigaSpeech test WER (lab)</a>       10.1%    60.0   2026-04-13    6% ▇
+                        <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">LibriSpeech test-other WER (l…</a>   5.2%    56.8   2026-04-13    4% ▇
+                        <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">LibriSpeech test-clean WER (l…</a>   2.5%    51.7   2026-04-13    2% ▇
+                        <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">TED-LIUM test WER (short-form…</a>   3.9%    96.2   2026-04-13    0% ▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   9.8%    56.8   2026-03-26   17% ▇▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.5%    55.0   2026-03-26   16% ▇▇
+<a name="speech-distil-whisper-readme-mit"></a>huggingface/distil-wh…  <a href="https://github.com/huggingface/distil-whisper/blob/a66f5c85be1e32c504e8ed68df7802d2b96db4c0/README.md">Distil-Whisper · 4-set out-of…</a>   9.7%    52.2   2024-03-21    7% ▇
+prior                   pull toward the middle                   49.7                 2% ▇
+                        weighted average                       = 57.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · huggingface/distil-whisper README ([MIT](https://github.com/huggingface/distil-whisper/blob/a66f5c85be1e32c504e8ed68df7802d2b96db4c0/LICENSE))</sub>
+<sub>Licences: distil-whisper/distil-large-v3.5 model card ([MIT](../../licenses/distil-whisper--distil-large-v3.5.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · huggingface/distil-whisper README ([MIT](https://github.com/huggingface/distil-whisper/blob/a66f5c85be1e32c504e8ed68df7802d2b96db4c0/LICENSE))</sub>
+
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source                  test                            score  why
+distil-whisper/distil…  <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">AMI WER (Open ASR / ESB test …</a>  15.2%  too few models have it yet
+distil-whisper/distil…  <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Earnings-22 WER (short-form, …</a>  11.8%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
 <pre>
 version    needs  score
-fp16     ~2.32GB   54.9
+fp16     ~2.32GB   57.6
 </pre>
 
 ```sh

@@ -16,8 +16,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>  87.1%    55.4   2025-04-25   14% ▇▇
-prior                   pull toward the middle                   49.7                86% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>  87.1%    55.1   2025-04-25   14% ▇▇
+prior                   pull toward the middle                   49.8                86% ▇▇▇▇▇▇▇▇▇▇
                         weighted average                       = 50.5
 </pre>
 

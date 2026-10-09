@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-11 · 7.3B params · apache-2.0
 
-**score 42.7** ±0.9 · #357 of 551 · from 18 benchmark results across 3 sources
+**score 44.1** ±0.9 · #336 of 551 · from 20 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,39 +14,39 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="report-2512.13961v2"></a>Olmo 3                  <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard (lab)</a>             71.2%    44.6   2026-09-25   15% ▇▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2025 (lab)</a>                  32.5%    40.6   2026-09-25    9% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">MMLU (lab)</a>                       69.1%    43.2   2026-09-25    8% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2024 (lab)</a>                  44.3%    42.0   2026-09-25    8% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">HumanEval+ (lab)</a>                 77.2%    46.7   2026-09-25    6% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>            64.4%    39.1   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (la…</a>   40.4%    44.5   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlle…</a>   40.9%    47.0   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">MBPP+ (lab)</a>                      60.2%    47.8   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3 (lab)</a>           29.5%    30.2   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                 32.9%    36.7   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                      14.1%    39.3   2026-09-25    2% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecif…</a>   32.3%    46.1   2026-09-25    2% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecifi…</a>   85.6%    54.4   2026-09-25    1% ▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.3503    42.0   2026-05-02   17% ▇▇
-                        <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   35.0%    42.8   2026-05-02    6% ▇
+<a name="report-2512.13961v2"></a>Olmo 3                  <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard (lab)</a>             71.2%    45.6   2026-09-25   16% ▇▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2024 (lab)</a>                  44.3%    44.0   2026-09-25   13% ▇▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2025 (lab)</a>                  32.5%    41.7   2026-09-25   10% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">MMLU (lab)</a>                       69.1%    44.1   2026-09-25    8% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">HumanEval+ (lab)</a>                 77.2%    47.7   2026-09-25    7% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (la…</a>   40.4%    46.0   2026-09-25    6% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>            64.4%    40.3   2026-09-25    5% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlle…</a>   40.9%    47.9   2026-09-25    4% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">MBPP+ (lab)</a>                      60.2%    48.3   2026-09-25    3% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3 (lab)</a>           29.5%    31.0   2026-09-25    3% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                 32.9%    38.2   2026-09-25    3% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                      14.1%    39.9   2026-09-25    2% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecif…</a>   32.3%    46.2   2026-09-25    2% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecifi…</a>   85.6%    54.9   2026-09-25    1% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.3503    42.5   2026-05-02   10% ▇
+                        <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   35.0%    43.6   2026-05-02    5% ▇
+<a name="card2-allenai-olmo-3-7b-instruct"></a>allenai/Olmo-3-7B-Ins…  <a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">OMEGA (math generalisation) (…</a>   28.9%    53.6   2026-06-25    1% ▇
+                        <a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">MATH (subset unspecified) (la…</a>   87.3%    59.0   2026-06-25    1% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   75.1%    42.9   2026-04-17    1% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   61.3%    44.3   2026-04-17    1% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   61.3%    44.4   2026-04-17    1% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 42.7
+                        weighted average                        = 44.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Olmo 3 ([CC BY 4.0](../../licenses/report-2512.13961v2.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
+<sub>Licences: Olmo 3 ([CC BY 4.0](../../licenses/report-2512.13961v2.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · allenai/Olmo-3-7B-Instruct model card ([Apache-2.0](../../licenses/allenai--Olmo-3-7B-Instruct.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
-<details><summary>Not counted (3)</summary>
+<details><summary>Not counted (1)</summary>
 
 <pre>
-source                  test                         score  why
-allenai/Olmo-3-7B-Ins…  <a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">BFCL (version not stated)</a>    49.8%  too few models have it yet
-allenai/Olmo-3-7B-Ins…  <a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">MATH (subset unspecified)</a>    87.3%  too few models have it yet
-allenai/Olmo-3-7B-Ins…  <a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">OMEGA (math generalisation)</a>  28.9%  too few models have it yet
+source                  test                       score  why
+allenai/Olmo-3-7B-Ins…  <a href="https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md">BFCL (version not stated)</a>  49.8%  too few models have it yet
 </pre>
 
 </details>
@@ -57,8 +57,8 @@ allenai/Olmo-3-7B-Ins…  <a href="https://huggingface.co/allenai/Olmo-3-7B-Inst
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.88GB   42.7
-8-bit q8_0    ~9.26GB   42.7
+4-bit q4_k_m  ~4.88GB   44.1
+8-bit q8_0    ~9.26GB   44.1
 </pre>
 
 ```sh

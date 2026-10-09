@@ -6,7 +6,7 @@
 
 Neuphonic · released 2025-10 · 0.552B params · apache-2.0
 
-**score 37.5** ±9.6 · #77 of 100 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.2** ±9.4 · #77 of 100 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.06 / 5    49.1   2026-03-15   42% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.27 / 5    -5.5   2026-03-15   22% ▇▇▇
-prior                   pull toward the middle                      49.7                36% ▇▇▇▇
-                        weighted average                          = 37.5
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.06 / 5    48.6   2026-03-15   43% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.27 / 5    -4.9   2026-03-15   22% ▇▇▇
+prior                   pull toward the middle                      49.8                35% ▇▇▇▇
+                        weighted average                          = 37.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,9 +30,9 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version                           needs  score
-q4_0 (neutts 1.4.1)             ~4.01GB   37.5
-bf16 (neutts 1.4.1)                ~5GB   37.5
-bf16 (neutts 1.4.1) · mac only  ~4.98GB   37.5
+q4_0 (neutts 1.4.1)             ~4.01GB   37.2
+bf16 (neutts 1.4.1)                ~5GB   37.2
+bf16 (neutts 1.4.1) · mac only  ~4.98GB   37.2
 </pre>
 
 ```sh

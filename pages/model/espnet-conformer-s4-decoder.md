@@ -6,7 +6,9 @@
 
 ESPnet · released 2022-12 · 0.1132B params · cc-by-4.0
 
-**score 45.7** ±3.8 · #96 of 128 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 45.7** ±3.8 · #96 of 128 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -16,7 +18,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  weight
 <a name="speech-espnet-librispeech-20260929"></a>ESPnet LibriSpeech AS…  <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-other WER (l…</a>   5.0%    45.6    73% ▇▇▇▇▇▇▇▇▇
                         <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-clean WER (l…</a>   2.3%    45.0    22% ▇▇▇
-prior                   pull toward the middle                   49.7     5% ▇
+prior                   pull toward the middle                   49.7     6% ▇
                         weighted average                       = 45.7
 </pre>
 

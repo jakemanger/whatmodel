@@ -6,7 +6,7 @@
 
 Amazon Web Services · closed weights
 
-**score 44.2** ±4.4 · #68 of 100 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.6** ±4.4 · #67 of 100 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="speech-cn-news-tts-ccby"></a>CN-NewsTTS Bench v0.1  <a href="https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv">CN-NewsTTS v0.1 · strict pron…</a>  24.4%    43.8   2026-06-22   92% ▇▇▇▇▇▇▇▇▇▇▇
-prior                  pull toward the middle                   49.7                 8% ▇
-                       weighted average                       = 44.2
+<a name="speech-cn-news-tts-ccby"></a>CN-NewsTTS Bench v0.1  <a href="https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv">CN-NewsTTS v0.1 · strict pron…</a>  24.4%    44.2   2026-06-22   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior                  pull toward the middle                   49.8                 8% ▇
+                       weighted average                       = 44.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

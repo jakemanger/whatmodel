@@ -6,7 +6,7 @@
 
 Mistral · released 2025-09 · 24B params · apache-2.0
 
-**score 53.9** ±1.7 · #223 of 551 · from 7 benchmark results across 4 sources
+**score 55.6** ±1.1 · #200 of 551 · from 13 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -14,29 +14,31 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    47.6%    53.1   2026-08-30   52% ▇▇▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        28.1%    55.6   2026-08-30   16% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            3.0%    47.8   2026-08-30    3% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  32.3%    50.1   2026-04-03   14% ▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  89.4%    61.7   2026-04-17    4% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  95.5%    61.4   2026-04-17    3% ▇
-<a name="card-mistralai-mistral-small-4-119b-2603"></a>mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">LiveCodeBench (version unspec…</a>  60.7%    58.8   2026-09-25    7% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    47.6%    53.1   2026-08-30   28% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        28.1%    55.4   2026-08-30   16% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            3.0%    49.5   2026-08-30    2% ▇
+<a name="card2-mistralai-magistral-small-2509"></a>mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (lab)</a>              70.1%    55.2   2026-02-23   15% ▇▇
+                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>                 86.1%    60.7   2026-02-23    9% ▇
+                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>                 77.3%    59.4   2026-02-23    8% ▇
+                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unsp…</a>  70.9%    65.3   2026-02-23    3% ▇
+<a name="paper-2510.01141v1-apriel-1-5"></a>Apriel-1.5-15b-Thinker  <a href="https://arxiv.org/abs/2510.01141v1">CharXiv (reasoning questions)</a>   52.9%    55.5   2025-10-01    5% ▇
+                        <a href="https://arxiv.org/abs/2510.01141v1">CharXiv descriptive questions</a>   82.3%    55.3   2025-10-01    3% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  32.3%    49.7   2026-04-03    5% ▇
+<a name="card-mistralai-mistral-small-4-119b-2603"></a>mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">LiveCodeBench (version unspec…</a>  60.7%    57.5   2026-09-25    5% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  89.4%    64.4   2026-04-17    1% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  95.5%    63.9   2026-04-17    1% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 53.9
+                        weighted average                       = 55.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · mistralai/Mistral-Small-4-119B-2603 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · mistralai/Magistral-Small-2509 model card ([Apache-2.0](../../licenses/mistralai--Magistral-Small-2509.txt)) · Apriel-1.5-15b-Thinker ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · mistralai/Mistral-Small-4-119B-2603 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
-<details><summary>Not counted (5)</summary>
+<details><summary>Not counted (1)</summary>
 
 <pre>
 source                  test                            score  why
-mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024</a>                       86.1%  too few models have it yet
-mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025</a>                       77.3%  too few models have it yet
-mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond</a>                    70.1%  only model in this source's run
-mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unsp…</a>  70.9%  too few models have it yet
 mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">COLLIE (constrained text gene…</a>  60.3%  too few models have it yet
 </pre>
 
@@ -50,8 +52,8 @@ api (Amazon Bedrock) · $0.75/M blended · $0.5 in / $1.5 out per 1M tokens · [
 
 <pre>
 download              size  score
-4-bit gguf-q4_k_m  ~14.9GB   53.9
-8-bit gguf-q8_0    ~29.3GB   53.9
+4-bit gguf-q4_k_m  ~14.9GB   55.6
+8-bit gguf-q8_0    ~29.3GB   55.6
 </pre>
 
 ```sh

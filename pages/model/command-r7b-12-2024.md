@@ -6,7 +6,7 @@
 
 Cohere · released 2024-12 · 8.03B params · cc-by-nc-4.0
 
-**score 48.8** ±2.3 · #277 of 551 · from 4 benchmark results across 3 sources
+**score 42.7** ±1.3 · #364 of 551 · from 14 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,17 +14,37 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  32.1%    49.2   2025-12-16   23% ▇▇▇
-                        <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         51.7%    48.6   2025-06-14   16% ▇▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>  56.4%    51.4   2026-04-06   39% ▇▇▇▇▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  50.4%    43.4   2026-09-19   20% ▇▇
-prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 48.8
+<a name="report-2504.00698v2"></a>Cohere                  <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8) (…</a>  69.6%    41.2   2025-04-14   16% ▇▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                     72.0%    42.9   2025-04-14   11% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>         3.6%    35.2   2025-04-14    8% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">MMLU-Pro (lab)</a>                  42.4%    42.3   2025-04-14    7% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Fe…</a>   9.0%    38.7   2025-04-14    7% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>   30.9%    45.5   2025-04-14    7% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>            42.2%    44.8   2025-04-14    6% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">GPQA Diamond (simple-evals) (…</a>  26.3%    35.1   2025-04-14    5% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises…</a>   2.7%    43.6   2025-04-14    3% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">MMLU (simple-evals, zero-shot…</a>  65.2%    34.2   2025-04-14    3% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  32.1%    49.4   2025-12-16    5% ▇
+                        <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         51.7%    48.4   2025-06-14    5% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>  56.4%    52.0   2026-04-06    9% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  50.4%    43.0   2026-09-19    6% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 42.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Cohere ([CC BY 4.0](../../licenses/report-2504.00698v2.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source  test                            score  why
+Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">IFEval strict, mean of prompt…</a>  77.9%  too few models have it yet
+Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">InFoBench</a>                       85.6%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
@@ -32,8 +52,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~5.32GB   48.8
-8-bit q8_0    ~10.14GB   48.8
+4-bit q4_k_m   ~5.32GB   42.7
+8-bit q8_0    ~10.14GB   42.7
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Mistral · released 2025-06 · closed weights
 
-**score 52.9** ±2.6 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 54.2** ±1.5 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1304.8    53.0   2026-10-02   85% ▇▇▇▇▇▇▇▇▇▇
-<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   32.0%    52.7   2025-11-18   12% ▇
-prior                   pull toward the middle                    50.0                 3% ▇
-                        weighted average                        = 52.9
+<a name="card2-mistralai-magistral-small-2509"></a>mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (lab)</a>               70.8%    56.1   2026-02-23   30% ▇▇▇▇
+                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>                  73.6%    54.0   2026-02-23   17% ▇▇
+                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>                  65.0%    53.4   2026-02-23   16% ▇▇
+                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unsp…</a>   59.4%    56.4   2026-02-23    5% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1304.8    52.7   2026-10-02   27% ▇▇▇
+<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   32.0%    52.4   2025-11-18    4% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 54.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt))</sub>
+<sub>Licences: mistralai/Magistral-Small-2509 model card ([Apache-2.0](../../licenses/mistralai--Magistral-Small-2509.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt))</sub>
 
 ## How to run it
 

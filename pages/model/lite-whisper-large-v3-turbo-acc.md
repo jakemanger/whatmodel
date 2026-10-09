@@ -6,7 +6,9 @@
 
 Efficient-Speech (LiteASR) · released 2025-02 · 0.66B params · apache-2.0
 
-**score 54.4** ±3.9 · #59 of 128 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 54.4** ±3.9 · #60 of 128 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
 ## How the score was worked out
 

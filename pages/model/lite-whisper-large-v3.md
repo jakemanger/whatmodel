@@ -8,6 +8,8 @@ Efficient-Speech (LiteASR) · released 2025-02 · 1.35B params · apache-2.0
 
 **score 57.0** ±3.0 · #46 of 128 · from 4 benchmark results across 2 sources
 
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
+
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
@@ -16,7 +18,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                test                            score  implies  date        weight
 <a name="speech-stt-liteasr-report-ccby"></a>LiteASR               <a href="https://arxiv.org/html/2502.20583v2">Multilingual LibriSpeech Fren…</a>   6.8%    58.5   2025-02-27   24% ▇▇▇
                       <a href="https://arxiv.org/html/2502.20583v2">LiteASR paper · ESB 8-set ave…</a>  10.2%    55.9   2025-02-27   21% ▇▇▇
-                      <a href="https://arxiv.org/html/2502.20583v2">Multilingual LibriSpeech Germ…</a>   7.7%    61.5   2025-02-27   16% ▇▇
+                      <a href="https://arxiv.org/html/2502.20583v2">Multilingual LibriSpeech Germ…</a>   7.7%    61.4   2025-02-27   16% ▇▇
 <a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.4%    55.4   2026-03-26   36% ▇▇▇▇
 prior                 pull toward the middle                   49.7                 4% ▇
                       weighted average                       = 57.0

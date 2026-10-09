@@ -6,7 +6,7 @@
 
 Hume AI · released 2025-02 · proprietary
 
-**score 59.2** ±5.0 · #32 of 100 · from 4 benchmark results across 3 sources
+**score 59.2** ±5.0 · #33 of 100 · from 4 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -18,9 +18,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                               score  implies  date        weight
 <a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     46.8%    62.6   2025-08-10   44% ▇▇▇▇▇
                         <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       12.8%    59.5   2025-08-10   13% ▇▇
-<a name="speech-instructttseval-ccby"></a>InstructTTSEval: inst…  <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval EN · mean ins…</a>     71.1%    54.3   2025-06-19   21% ▇▇▇
-<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  4.18 / 5    63.2   2025-05-29   12% ▇
-prior                   pull toward the middle                      49.7                10% ▇
+<a name="speech-instructttseval-ccby"></a>InstructTTSEval: inst…  <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval EN · mean ins…</a>     71.1%    54.2   2025-06-19   21% ▇▇▇
+<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  4.18 / 5    63.3   2025-05-29   12% ▇
+prior                   pull toward the middle                      49.8                10% ▇
                         weighted average                          = 59.2
 </pre>
 

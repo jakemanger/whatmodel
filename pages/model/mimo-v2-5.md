@@ -6,7 +6,7 @@
 
 Xiaomi · released 2026-04 · 310B params (15B active) · mit
 
-**score 66.9** ±1.5 · #75 of 551 · from 4 benchmark results across 2 sources
+**score 65.8** ±1.0 · #87 of 551 · from 18 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,23 +14,37 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1437.6    67.5   2026-10-01   38% ▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1433.6    67.0   2026-10-02   27% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1233.2    67.2   2026-10-02   21% ▇▇
-<a name="paper-2606.05405v2"></a>Agents' Last Exam       <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall ful…</a>    8.6%    65.8   2026-06-11   13% ▇▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 66.9
+<a name="paper-2607.20062v2-solar-open-2"></a>Solar Open 2 Technica…  <a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond</a>                     83.0%    64.5   2026-07-24   15% ▇▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>              41.7%    69.2   2026-07-24    7% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro</a>                         84.6%    65.1   2026-07-24    6% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unsp…</a>   89.1%    66.7   2026-07-24    4% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam</a>             24.3%    67.6   2026-07-24    4% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>             13.4%    69.9   2026-07-24    3% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecif…</a>   67.1%    60.7   2026-07-24    3% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>                        92.3%    61.3   2026-07-24    3% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking</a>                  8.7%    59.7   2026-07-24    3% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge</a>                   39.0%    55.7   2026-07-24    3% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>               73.0%    69.1   2026-07-24    2% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>           63.9%    71.4   2026-07-24    1% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026</a>               61.4%    49.0   2026-07-24    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1437.6    67.4   2026-10-01   17% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1433.6    66.8   2026-10-02   11% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1233.2    67.0   2026-10-02    9% ▇
+<a name="paper-2606.05405v2"></a>Agents' Last Exam       <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall ful…</a>    8.6%    65.6   2026-06-11    5% ▇
+<a name="first-party-xiaomi-scores"></a>Xiaomi MiMo vendor-re…  <a href="https://mimo.xiaomi.com/mimo-v2-5">CharXiv (reasoning questions)…</a>   81.0%    68.5   2026-04-22    3% ▇
+prior                   pull toward the middle                    50.0                 0% ▇
+                        weighted average                        = 65.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Agents' Last Exam ([CC BY 4.0](../../licenses/paper-2606.05405v2-CC-BY-4.0.txt))</sub>
+<sub>Licences: Solar Open 2 Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Agents' Last Exam ([CC BY 4.0](../../licenses/paper-2606.05405v2-CC-BY-4.0.txt))</sub>
 
 <details><summary>Not counted (7)</summary>
 
 <pre>
 source                  test                            score  why
-XiaomiMiMo/MiMo-V2.5 …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">CharXiv (reasoning questions)</a>   81.0%  too few models have it yet
+XiaomiMiMo/MiMo-V2.5 …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">CharXiv (reasoning questions)</a>   81.0%  only model in this source's run
 XiaomiMiMo/MiMo-V2.5 …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">Daily-Omni</a>                      83.5%  too few models have it yet
 XiaomiMiMo/MiMo-V2.5 …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">HR-Bench 4K</a>                     88.5%  too few models have it yet
 XiaomiMiMo/MiMo-V2.5 …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">MMMU Pro</a>                        77.9%  too few models have it yet
@@ -49,8 +63,8 @@ api (Novita AI) · $0.21/M blended · $0.168 in / $0.336 out per 1M tokens · [n
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~186.5GB   66.9
-2-bit ud-q2_k_xl   ~93.5GB   66.9
+4-bit ud-q4_k_xl  ~186.5GB   65.8
+2-bit ud-q2_k_xl   ~93.5GB   65.8
 </pre>
 
 ```sh

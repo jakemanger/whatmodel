@@ -6,7 +6,7 @@
 
 Google · released 2025-06 · closed weights
 
-**score 64.3** ±0.7 · #105 of 551 · from 23 benchmark results across 11 sources
+**score 64.5** ±0.7 · #101 of 551 · from 27 benchmark results across 14 sources
 
 ## How the score was worked out
 
@@ -14,36 +14,40 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        24.6%    63.8   2026-06-11   25% ▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     85.3%    67.2   2025-11-16    9% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>               57.6%    61.6   2026-02-13    8% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>            0.0%    60.4   2026-06-11    7% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         84.7%    66.2   2025-11-16    3% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            20.0%    67.8   2025-12-08    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1227.0    58.9   2026-10-01    9% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1445.6    68.3   2026-10-02    7% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1247.5    68.8   2026-10-02    5% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style c…</a>  1142.1    62.2   2026-08-24    3% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>  1430.6    65.8   2026-09-13    2% ▇
-<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   65.4%    67.8   2026-09-07    5% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        24.6%    63.8   2026-06-11   20% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     85.3%    67.1   2025-11-16    8% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>               57.6%    61.9   2026-02-13    8% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>            0.0%    60.6   2026-06-11    6% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         84.7%    66.0   2025-11-16    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            20.0%    67.6   2025-12-08    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1227.0    58.7   2026-10-01    8% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1445.6    68.1   2026-10-02    5% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1247.5    68.6   2026-10-02    4% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style c…</a>  1142.1    61.7   2026-08-24    2% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>  1430.6    65.6   2026-09-13    2% ▇
+<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   65.4%    67.8   2026-09-07    4% ▇
                         <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   92.8%    67.1   2026-09-07    2% ▇
-<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   32.6%    65.7   2026-01-17    3% ▇
-<a name="tau2-bench-leaderboard-sierra"></a>τ²/τ³-bench leaderboa…  <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-2-5-pro_sierra_2026-05-05/submission.json">τ³-bench banking_knowledge (v…</a>   13.7%    60.9   2026-05-05    3% ▇
-<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard ave…</a>   52.2%    73.0   2026-09-11    2% ▇
-<a name="paper-2601.10611v4-molmo2"></a>Molmo2: Open Weights …  <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-VideoCount accuracy (v…</a>   35.8%    67.8   2026-04-02    1% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Ai2 Molmo2 human preference E…</a>  1096.0    70.4   2026-04-02    1% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-CapTest dense video ca…</a>   42.1%    63.5   2026-04-02    0% ▇
+<a name="acl-kcl-2026"></a>Korean Canonical Lega…  <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>                60.5%    71.8   2026-09-25    4% ▇
+                        <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                 66.1%    75.7   2026-09-25    2% ▇
+<a name="first-party-google-scores"></a>Google DeepMind Gemin…  <a href="https://deepmind.google/models/gemini/pro/">CharXiv (reasoning questions)…</a>   69.6%    62.0   2025-11-18    5% ▇
+<a name="card-meituan-longcat-flash-thinking"></a>Meituan LongCat-Flash…  <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">τ²-bench Telecom</a>                 38.3%    61.4   2025-09-24    4% ▇
+<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   32.6%    65.4   2026-01-17    3% ▇
+<a name="tau2-bench-leaderboard-sierra"></a>τ²/τ³-bench leaderboa…  <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-2-5-pro_sierra_2026-05-05/submission.json">τ³-bench banking_knowledge (v…</a>   13.7%    60.7   2026-05-05    2% ▇
+<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard ave…</a>   52.2%    72.8   2026-09-11    1% ▇
+<a name="paper-2601.10611v4-molmo2"></a>Molmo2: Open Weights …  <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-VideoCount accuracy (v…</a>   35.8%    67.6   2026-04-02    1% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Ai2 Molmo2 human preference E…</a>  1096.0    70.3   2026-04-02    0% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-CapTest dense video ca…</a>   42.1%    63.3   2026-04-02    0% ▇
 <a name="paper-2603.07316v1"></a>FinSheet-Bench: From …  <a href="https://arxiv.org/html/2603.07316v1">FinSheet-Bench accuracy (501 …</a>   78.8%    68.6   2026-03-07    1% ▇
-<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   43.0%    59.5   2025-11-18    1% ▇
-<a name="amazon-tau2-verified"></a>Amazon AGI              <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 us…</a>   56.4%    52.6   2026-09-25    1% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   93.0%   163.4   2026-09-22    0% ▇
+<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   43.0%    59.2   2025-11-18    1% ▇
+<a name="amazon-tau2-verified"></a>Amazon AGI              <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 us…</a>   56.4%    52.9   2026-09-25    1% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   93.0%   163.3   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 64.3
+                        weighted average                        = 64.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) · τ²/τ³-bench leaderboard: Sierra's own evaluation runs ([MIT](https://opensource.org/license/mit)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt)) · Molmo2: Open Weights and Data for Vision-Language Models with Video Understanding and Grounding ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · FinSheet-Bench: From Simple Lookups to Complex Reasoning ([CC BY 4.0](../../licenses/paper-2603.07316v1-CC-BY-4.0.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt)) · Amazon AGI ([MIT](../../licenses/tau2-verified-MIT.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · Korean Canonical Legal Benchmark: Toward Knowledge-Independent Evaluation of LLMs’ Legal Reasoning Capabilities ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · Meituan LongCat-Flash-Thinking model card ([MIT](https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/LICENSE)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) · τ²/τ³-bench leaderboard: Sierra's own evaluation runs ([MIT](https://opensource.org/license/mit)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt)) · Molmo2: Open Weights and Data for Vision-Language Models with Video Understanding and Grounding ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · FinSheet-Bench: From Simple Lookups to Complex Reasoning ([CC BY 4.0](../../licenses/paper-2603.07316v1-CC-BY-4.0.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt)) · Amazon AGI ([MIT](../../licenses/tau2-verified-MIT.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 

@@ -6,7 +6,7 @@
 
 Kakao / KAIST · released 2021-06
 
-**score 67.4** ±24.0 · #1 of 1 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 67.4** ±24.0 · #1 of 1 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [VITS 2021 LJ Speech human MOS](https://whatmodel.sh/tts?set=vits2021-ljspeech-mos&score=set) comparison set only.
 

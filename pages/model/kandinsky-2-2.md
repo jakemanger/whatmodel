@@ -6,7 +6,7 @@
 
 AI Forever · released 2023-07 · 1.22B params · apache-2.0
 
-**score 36.5** ±4.6 · #111 of 139 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.5** ±4.6 · #111 of 139 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

@@ -6,7 +6,9 @@
 
 Meta · released 2025-12 · 2.28B params · apache-2.0
 
-**score 56.7** ±2.9 · #48 of 128 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.7** ±2.9 · #49 of 128 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
 ## How the score was worked out
 

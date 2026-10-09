@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-08 · 4.15B params · mit
 
-**score 35.9** ±2.5 · #447 of 551 · from 8 benchmark results across 4 sources
+**score 37.9** ±2.2 · #428 of 551 · from 9 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,27 +14,28 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  919.5    32.8   2026-10-02   62% ▇▇▇▇▇▇▇
-<a name="microsoft-phi35-vision-card-benchmarks"></a>Microsoft Phi-3.5-vis…  <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MMMU (val) (lab)</a>                43.0%    40.6   2024-08-20   14% ▇▇
-                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MathVista (testmini) (lab)</a>      43.9%    34.4   2024-08-20    5% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">TextVQA (lab)</a>                   72.0%    45.2   2024-08-20    3% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">AI2D test (lab)</a>                 78.1%    36.2   2024-08-20    2% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">ChartQA (lab)</a>                   81.8%    99.2   2024-08-20    0% ▇
-<a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>  982.0    40.0   2024-09-25    6% ▇
-<a name="paper-2501.16411v2-physbench"></a>PhysBench: Benchmarki…  <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world unde…</a>  39.8%    43.5   2025-01-29    5% ▇
-prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 35.9
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  919.5    33.0   2026-10-02   42% ▇▇▇▇▇
+<a name="microsoft-phi35-vision-card-benchmarks"></a>Microsoft Phi-3.5-vis…  <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MMMU (val) (lab)</a>                43.0%    41.9   2024-08-20   13% ▇▇
+                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MathVista (testmini) (lab)</a>      43.9%    37.4   2024-08-20    5% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">TextVQA (lab)</a>                   72.0%    46.3   2024-08-20    3% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">AI2D test (lab)</a>                 78.1%    39.5   2024-08-20    2% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">ChartQA (lab)</a>                   81.8%    61.4   2024-08-20    0% ▇
+<a name="card2-coherelabs-north-micro-vision-instruct"></a>CohereLabs/North-Micr…  <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CharXiv descriptive questions</a>   63.7%    40.4   2026-08-10   21% ▇▇▇
+<a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>  982.0    40.8   2024-09-25    6% ▇
+<a name="paper-2501.16411v2-physbench"></a>PhysBench: Benchmarki…  <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world unde…</a>  39.8%    44.5   2025-01-29    5% ▇
+prior                   pull toward the middle                   50.0                 2% ▇
+                        weighted average                       = 37.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Microsoft Phi-3.5-vision-instruct model card: Benchmarks table ([MIT](https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/LICENSE)) · Ai2 Molmo-72B-0924 model card: Human Preference Elo Rating column ([Apache-2.0](https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md)) · PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Microsoft Phi-3.5-vision-instruct model card: Benchmarks table ([MIT](https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/LICENSE)) · CohereLabs/North-Micro-Vision-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Ai2 Molmo-72B-0924 model card: Human Preference Elo Rating column ([Apache-2.0](https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md)) · PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 download                      size  score
-16-bit bf16 · nvidia only  ~8.29GB   35.9
+16-bit bf16 · nvidia only  ~8.29GB   37.9
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 latent-consistency · released 2023-11 · 1.33B params · openrail++
 
-**score 32.2** ±3.6 · #122 of 139 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.2** ±3.5 · #122 of 139 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,8 +16,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  2.66 / 5    31.2   2024-12-25   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                      49.9                 6% ▇
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  2.66 / 5    31.2   2024-12-25   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                      49.9                 5% ▇
                         weighted average                          = 32.2
 </pre>
 

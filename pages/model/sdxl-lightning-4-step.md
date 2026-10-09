@@ -16,8 +16,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                  score  implies  date        weight
-<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>       1053.0    37.8   2024-06-04   75% ▇▇▇▇▇▇▇▇▇
-<a name="visual-sdxl-lightning"></a>SDXL-Lightning: Progr…  <a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image)…</a>  22.3000 FID    31.9   2024-03-02   21% ▇▇▇
+<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>       1053.0    37.9   2024-06-04   74% ▇▇▇▇▇▇▇▇▇
+<a name="visual-sdxl-lightning"></a>SDXL-Lightning: Progr…  <a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image)…</a>  22.3000 FID    32.0   2024-03-02   21% ▇▇▇
 prior                   pull toward the middle                         49.9                 4% ▇
                         weighted average                             = 37.1
 </pre>

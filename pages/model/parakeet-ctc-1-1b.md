@@ -6,7 +6,9 @@
 
 NVIDIA · released 2024-01 · 1.06B params · cc-by-4.0
 
-**score 56.6** ±2.7 · #49 of 128 · from 4 benchmark results across 2 sources
+**score 56.6** ±2.7 · #50 of 128 · from 4 benchmark results across 2 sources
+
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -14,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.4%    55.6   2026-03-26   29% ▇▇▇▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   9.3%    58.2   2026-03-26   29% ▇▇▇
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-ctc-1.1b.json">LibriSpeech test-clean WER</a>       1.8%    58.3   2026-09-15   27% ▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-ctc-1.1b.json">FLEURS English test WER</a>          5.6%    53.2   2026-09-15   12% ▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   9.3%    58.3   2026-03-26   30% ▇▇▇▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.4%    55.6   2026-03-26   29% ▇▇▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-ctc-1.1b.json">LibriSpeech test-clean WER</a>       1.8%    58.3   2026-09-15   26% ▇▇▇
+                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-ctc-1.1b.json">FLEURS English test WER</a>          5.6%    53.1   2026-09-15   12% ▇
 prior                   pull toward the middle                   49.7                 3% ▇
                         weighted average                       = 56.6
 </pre>

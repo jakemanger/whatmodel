@@ -6,7 +6,7 @@
 
 TII · released 2026-01 · 7.59B params · falcon-llm
 
-**score 58.0** ±1.3 · #174 of 551 · from 10 benchmark results across 1 source
+**score 58.1** ±1.1 · #172 of 551 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,18 +14,20 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="report-2601.02346v1"></a>Falcon-H1R: Pushing t…  <a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond (lab)</a>              61.3%    55.0   2026-09-25   28% ▇▇▇
-                        <a href="https://arxiv.org/html/2601.02346v1">AIME 2024 (lab)</a>                 88.1%    60.6   2026-09-25   14% ▇▇
-                        <a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro (lab)</a>                  72.1%    56.2   2026-09-25   13% ▇▇
-                        <a href="https://arxiv.org/html/2601.02346v1">AIME 2025 (lab)</a>                 83.1%    60.1   2026-09-25   13% ▇▇
-                        <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecifie…</a>  64.9%    61.0   2026-09-25    8% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>      11.1%    60.3   2026-09-25    8% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unsp…</a>  68.6%    58.9   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">MATH-500 (lab)</a>                  97.4%    64.3   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecif…</a>  53.4%    59.1   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">SciCode main problems (lab)</a>      3.9%    49.6   2026-09-25    3% ▇
+<a name="report-2601.02346v1"></a>Falcon-H1R: Pushing t…  <a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond (lab)</a>              61.3%    55.4   2026-09-25   21% ▇▇
+                        <a href="https://arxiv.org/html/2601.02346v1">τ²-bench Telecom (lab)</a>          25.4%    54.7   2026-01-05   14% ▇▇
+                        <a href="https://arxiv.org/html/2601.02346v1">AIME 2024 (lab)</a>                 88.1%    60.8   2026-09-25   11% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1#S4.T5">Terminal-Bench Hard (lab)</a>        4.9%    60.1   2026-01-05    9% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">AIME 2025 (lab)</a>                 83.1%    60.8   2026-09-25    9% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro (lab)</a>                  72.1%    56.1   2026-09-25    9% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecifie…</a>  64.9%    61.4   2026-09-25    7% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">MATH-500 (lab)</a>                  97.4%    60.2   2026-09-25    6% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>      11.1%    61.5   2026-09-25    5% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unsp…</a>  68.6%    59.7   2026-09-25    4% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">SciCode main problems (lab)</a>      3.9%    50.1   2026-09-25    2% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecif…</a>  53.4%    59.7   2026-09-25    2% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 58.0
+                        weighted average                       = 58.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,8 +40,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download              size  score
-4-bit gguf-q4_k_m  ~5.05GB   58.0
-8-bit gguf-q8_0    ~9.61GB   58.0
+4-bit gguf-q4_k_m  ~5.05GB   58.1
+8-bit gguf-q8_0    ~9.61GB   58.1
 </pre>
 
 ```sh

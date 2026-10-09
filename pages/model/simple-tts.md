@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-ditto-tts-report-ccby"></a>DiTTo-TTS: Diffusion …  <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>  50.3%    29.7   2025-02-17   50% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>   4.1%    25.1   2025-02-17   38% ▇▇▇▇▇
-prior                   pull toward the middle                   49.7                12% ▇
+<a name="speech-ditto-tts-report-ccby"></a>DiTTo-TTS: Diffusion …  <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>  50.3%    29.7   2025-02-17   51% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>   4.1%    25.1   2025-02-17   37% ▇▇▇▇
+prior                   pull toward the middle                   49.8                12% ▇
                         weighted average                       = 30.4
 </pre>
 

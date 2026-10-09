@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-03 · 120.6B params (12.7B active) · nvidia-open-model
 
-**score 61.3** ±1.4 · #142 of 551 · from 8 benchmark results across 3 sources
+**score 62.1** ±1.1 · #131 of 551 · from 14 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,28 +14,34 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>   30.5%    62.4   2026-09-11   20% ▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>   48.9%    62.0   2026-09-11   19% ▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>   33.8%    59.2   2026-09-11   12% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1360.5    59.0   2026-10-02   25% ▇▇▇
-<a name="report-2603.19220v2"></a>NVIDIA                  <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Eas…</a>   81.7%    65.3   2026-03-22    7% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>                  89.8%    59.7   2026-03-22    7% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Med…</a>   23.2%    68.6   2026-03-22    5% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>            77.2%    61.9   2026-03-22    4% ▇
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>   30.5%    62.9   2026-09-11   13% ▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>   48.9%    62.6   2026-09-11   12% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>   33.8%    59.9   2026-09-11    7% ▇
+<a name="report-2603.19220v2"></a>NVIDIA                  <a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>                  90.2%    60.5   2026-03-22    8% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>                  89.8%    59.3   2026-03-22    5% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>            77.2%    62.1   2026-03-22    5% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">MultiChallenge (lab)</a>             55.2%    65.5   2026-03-22    3% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Eas…</a>   81.7%    65.5   2026-03-22    3% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">MMLU-ProX (lab)</a>                  79.4%    66.0   2026-03-22    3% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">SciCode (level unspecified) (…</a>   42.1%    63.4   2026-03-22    3% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Med…</a>   23.2%    68.7   2026-03-22    2% ▇
+<a name="first-party-nvidia-scores"></a>NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md#benchmarks">τ²-bench Telecom (lab)</a>           64.4%    61.8   2026-08-25   17% ▇▇
+                        <a href="https://arxiv.org/html/2604.12374v1#S3.T5">Terminal-Bench Hard (lab)</a>        25.8%    67.0   2026-04-14    6% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1360.5    58.8   2026-10-02   13% ▇▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 61.3
+                        weighted average                        = 62.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · NVIDIA ([CC BY 4.0](../../licenses/report-2603.19220v2.txt))</sub>
+<sub>Licences: MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · NVIDIA ([CC BY 4.0](../../licenses/report-2603.19220v2.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 <details><summary>Not counted (15)</summary>
 
 <pre>
 source                  test                            score  why
 nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md">MMLU-Pro</a>                        83.7%  too few models have it yet
-nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md">AIME 2025</a>                       90.2%  too few models have it yet
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md">AIME 2025</a>                       90.2%  only model in this source's run
 nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md">HMMT February 2025</a>              93.7%  too few models have it yet
 nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md">GPQA (subset unspecified)</a>       79.2%  too few models have it yet
 nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md">LiveCodeBench v5 (Jul–Dec 202…</a>  81.2%  too few models have it yet
@@ -47,8 +53,8 @@ nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron
 nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md">IFBench prompt-level</a>            72.6%  too few models have it yet
 NVIDIA                  <a href="https://arxiv.org/html/2604.12374v1">BrowseComp</a>                      31.3%  too few models have it yet
 NVIDIA                  <a href="https://arxiv.org/html/2604.12374v1">Humanity's Last Exam with too…</a>  22.8%  too few models have it yet
-NVIDIA                  <a href="https://arxiv.org/html/2604.12374v1">MMLU-ProX</a>                       79.4%  too few models have it yet
-NVIDIA                  <a href="https://arxiv.org/html/2604.12374v1">MultiChallenge</a>                  55.2%  too few models have it yet
+NVIDIA                  <a href="https://arxiv.org/html/2604.12374v1">MMLU-ProX</a>                       79.4%  only model in this source's run
+NVIDIA                  <a href="https://arxiv.org/html/2604.12374v1">MultiChallenge</a>                  55.2%  only model in this source's run
 </pre>
 
 </details>
@@ -61,7 +67,7 @@ api (Amazon Bedrock) · $0.28/M blended · $0.15 in / $0.65 out per 1M tokens ·
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~72.86GB   61.3
+4-bit q4_k_m  ~72.86GB   62.1
 </pre>
 
 ```sh

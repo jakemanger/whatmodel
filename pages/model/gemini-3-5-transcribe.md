@@ -6,7 +6,9 @@
 
 Google · released 2026-08 · proprietary
 
-**score 67.3** ±6.3 · #3 of 128 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 67.2** ±6.3 · #3 of 128 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -16,7 +18,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="speech-stt-persian-triple-threat-apache"></a>Persian ASR Triple Th…  <a href="https://huggingface.co/spaces/Reza2kn/PersianASR-TrippleThreat/blob/63e7e3f8b3754a92d6c0ac2a9db84344cf7e49bb/gemini35_transcribe_scores.json">Persian ASR Triple Threat · V…</a>   6.4%    70.5   2026-08-28   84% ▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.7                16% ▇▇
-                        weighted average                       = 67.3
+                        weighted average                       = 67.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

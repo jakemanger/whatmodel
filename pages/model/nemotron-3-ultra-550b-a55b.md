@@ -6,50 +6,43 @@
 
 NVIDIA · released 2026-06 · 550B params (55B active) · openmdw
 
-**score 66.5** ±1.5 · #79 of 551 · from 5 benchmark results across 2 sources
+**score 66.5** ±0.8 · #78 of 551 · from 22 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                           score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   85.4%    67.6   2026-08-10   33% ▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   20.0%    68.7   2026-08-27   15% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          12.0%    63.1   2026-08-10   14% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>       86.7%    67.2   2026-08-10   10% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                1426.2    66.1   2026-10-02   28% ▇▇▇
-prior                   pull toward the middle                  50.0                 1% ▇
-                        weighted average                      = 66.5
+source                  test                             score  implies  date        weight
+<a name="report-2606.15007v1"></a>NVIDIA                  <a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified) (la…</a>   87.0%    67.1   2026-06-12    8% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified (lab)</a>         70.7%    65.6   2026-06-12    7% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro (lab)</a>                   86.8%    67.6   2026-06-12    7% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual (lab)</a>     67.7%    63.9   2026-06-12    5% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam (lab)</a>       26.7%    65.6   2026-06-12    5% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1 (lab)</a>         56.4%    66.7   2026-06-12    4% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">SciCode subproblems (lab)</a>        44.6%    65.9   2026-06-12    4% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">τ³-bench (lab)</a>                   70.9%    67.3   2026-06-12    4% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX (lab)</a>                  83.0%    66.2   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">BrowseComp (lab)</a>                 44.4%    62.8   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose) …</a>   81.7%    71.1   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">MultiChallenge (lab)</a>             63.8%    69.6   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">LongBench v2 (lab)</a>               61.9%    67.5   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">LiveCodeBench v6 (window unsp…</a>   89.0%    70.5   2026-06-12    2% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam with too…</a>   37.4%    61.3   2026-06-12    2% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench (lab)</a>            88.6%    70.9   2026-06-12    2% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">CritPt (lab)</a>                      3.1%    60.5   2026-06-12    2% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     85.4%    67.4   2026-08-10   11% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         86.7%    66.9   2026-08-10    6% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     20.0%    68.7   2026-08-27    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            12.0%    63.0   2026-08-10    4% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1426.2    66.0   2026-10-02    8% ▇
+prior                   pull toward the middle                    50.0                 0% ▇
+                        weighted average                        = 66.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
-
-<details><summary>Not counted (16)</summary>
-
-<pre>
-source  test                            score  why
-NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">BrowseComp</a>                      44.4%  too few models have it yet
-NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified)</a>       87.0%  too few models have it yet
-NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam</a>            26.7%  too few models have it yet
-NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam with too…</a>  37.4%  too few models have it yet
-NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose)</a>    81.7%  too few models have it yet
-NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench</a>                 88.6%  too few models have it yet
-NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">LiveCodeBench v6 (window unsp…</a>  89.0%  too few models have it yet
-NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">LongBench v2</a>                    61.9%  too few models have it yet
-NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro</a>                        86.8%  too few models have it yet
-NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX</a>                       83.0%  too few models have it yet
-NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">MultiChallenge</a>                  63.8%  too few models have it yet
-NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">SciCode subproblems</a>             44.6%  too few models have it yet
-NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual</a>          67.7%  too few models have it yet
-NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified</a>              70.7%  too few models have it yet
-NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">τ³-bench</a>                        70.9%  too few models have it yet
-NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1</a>              56.4%  too few models have it yet
-</pre>
-
-</details>
+<sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2606.15007v1.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-07 · 106B params (12B active) · mit
 
-**score 60.7** ±0.8 · #150 of 551 · from 31 benchmark results across 7 sources
+**score 60.8** ±0.8 · #146 of 551 · from 32 benchmark results across 8 sources
 
 ## How the score was worked out
 
@@ -14,44 +14,45 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="primeintellect-intellect3-card-eval"></a>Prime Intellect INTEL…  <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">GPQA Diamond</a>                     73.3%    61.4   2025-11-27   16% ▇▇
+<a name="primeintellect-intellect3-card-eval"></a>Prime Intellect INTEL…  <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">GPQA Diamond</a>                     73.3%    61.6   2025-11-27   15% ▇▇
+                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024</a>                        84.6%    62.4   2025-11-27    8% ▇
                         <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2025</a>                        82.0%    62.7   2025-11-27    6% ▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024</a>                        84.6%    62.3   2025-11-27    6% ▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MMLU-Pro</a>                         73.9%    60.0   2025-11-27    4% ▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Humanity's Last Exam</a>             13.3%    60.6   2025-11-27    3% ▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">LiveCodeBench v6 (Aug 2024–Ma…</a>   61.5%    58.5   2025-11-27    2% ▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MATH-500</a>                         97.8%    71.8   2025-11-27    1% ▇
-<a name="report-2508.06471v1"></a>GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">AIME 2024 (lab)</a>                  89.4%    63.5   2025-08-08    3% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">MMLU (lab)</a>                       87.4%    58.9   2025-08-08    3% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">SWE-bench Verified (lab)</a>         57.6%    60.1   2025-08-08    3% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">MMLU-Pro (lab)</a>                   81.4%    61.3   2025-08-08    3% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">GPQA (subset unspecified) (la…</a>   75.0%    63.6   2025-08-08    3% ▇
+                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MMLU-Pro</a>                         73.9%    59.9   2025-11-27    4% ▇
+                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Humanity's Last Exam</a>             13.3%    60.8   2025-11-27    4% ▇
+                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">LiveCodeBench v6 (Aug 2024–Ma…</a>   61.5%    58.6   2025-11-27    2% ▇
+                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MATH-500</a>                         97.8%    66.6   2025-11-27    1% ▇
+<a name="report-2508.06471v1"></a>GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">AIME 2024 (lab)</a>                  89.4%    63.2   2025-08-08    4% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">MATH-500 (lab)</a>                   98.1%    65.0   2025-08-08    3% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">SWE-bench Verified (lab)</a>         57.6%    60.6   2025-08-08    3% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">GPQA (subset unspecified) (la…</a>   75.0%    62.7   2025-08-08    3% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">MMLU (lab)</a>                       87.4%    59.0   2025-08-08    3% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">MMLU-Pro (lab)</a>                   81.4%    61.1   2025-08-08    3% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">τ-bench Retail (lab)</a>             77.9%    64.4   2025-08-08    2% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">BrowseComp (lab)</a>                 21.3%    53.3   2025-08-08    2% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">SimpleQA (lab)</a>                   14.5%    55.4   2025-08-08    2% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">Humanity's Last Exam (lab)</a>       10.6%    56.5   2025-08-08    2% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">τ-bench Airline (lab)</a>            60.8%    65.5   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">SimpleQA (lab)</a>                   14.5%    55.5   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">Humanity's Last Exam (lab)</a>       10.6%    56.8   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">BrowseComp (lab)</a>                 21.3%    53.7   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">τ-bench Airline (lab)</a>            60.8%    66.1   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">MultiChallenge (lab)</a>             42.5%    57.1   2025-08-08    1% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">IFEval prompt-level strict (l…</a>   86.3%    63.2   2025-08-08    1% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">Terminal-Bench (pre-2.0 relea…</a>   30.0%    59.3   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">SciCode (level unspecified) (…</a>   37.3%    59.7   2025-08-08    1% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">MultiChallenge (lab)</a>             42.5%    55.9   2025-08-08    1% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">MATH-500 (lab)</a>                   98.1%    72.5   2025-08-08    1% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">Terminal-Bench (pre-2.0 relea…</a>   30.0%    59.5   2025-08-08    1% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">IFEval prompt-level strict (l…</a>   86.3%    63.4   2025-08-08    1% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">BFCL v3 (lab)</a>                    76.4%    65.0   2025-08-08    1% ▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5410    59.1   2026-05-02   14% ▇▇
-                        <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   54.1%    58.4   2026-05-02    6% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1373.3    60.4   2026-10-02    8% ▇
-<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   44.0%    60.3   2025-11-18    1% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   80.4%    54.9   2026-04-17    1% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   95.8%    64.6   2026-04-17    0% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   98.1%    71.0   2025-10-16    0% ▇
-                        <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   90.7%    85.8   2026-09-22    0% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">BFCL v3 (lab)</a>                    76.4%    64.5   2025-08-08    1% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5410    59.8   2026-05-02    8% ▇
+                        <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   54.1%    59.0   2026-05-02    5% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1373.3    60.2   2026-10-02    7% ▇
+<a name="report-2601.07022v1"></a>Solar Open Technical …  <a href="https://arxiv.org/html/2601.07022v1">τ²-bench Telecom</a>                 28.1%    54.3   2026-01-11    3% ▇
+<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   44.0%    60.0   2025-11-18    1% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   80.4%    57.2   2026-04-17    0% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   95.8%    66.7   2026-04-17    0% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   98.1%    70.6   2025-10-16    0% ▇
+                        <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   90.7%    85.6   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 60.7
+                        weighted average                        = 60.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Prime Intellect INTELLECT-3 model card: Evaluation table ([MIT](https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md)) · GLM-4.5 Team ([CC BY 4.0](../../licenses/report-2508.06471v1.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: Prime Intellect INTELLECT-3 model card: Evaluation table ([MIT](https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md)) · GLM-4.5 Team ([CC BY 4.0](../../licenses/report-2508.06471v1.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Solar Open Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 <details><summary>Not counted (2)</summary>
 
@@ -71,8 +72,8 @@ api (Z.AI) · $0.43/M blended · $0.2 in / $1.1 out per 1M tokens · [docs.z.ai]
 
 <pre>
 download             size  score
-4-bit ud-q4_k_xl  ~64.1GB   60.7
-2-bit ud-q2_k_xl  ~32.3GB   60.7
+4-bit ud-q4_k_xl  ~64.1GB   60.8
+2-bit ud-q2_k_xl  ~32.3GB   60.8
 </pre>
 
 ```sh

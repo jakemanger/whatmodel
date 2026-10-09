@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2024-02 · 6.89B params · apache-2.0
 
-**score 31.6** ±1.1 · #489 of 551 · from 13 benchmark results across 1 source
+**score 31.3** ±1.1 · #489 of 551 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,21 +14,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge (lab)</a>             48.5%    33.4   2024-06-07   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA (lab)</a>                50.4%    32.7   2024-06-07   13% ▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande (lab)</a>                67.9%    33.2   2024-06-07   11% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">GSM8K (lab)</a>                      8.5%    25.0   2024-06-07    7% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy (lab)</a>                  65.4%    30.2   2024-06-07    7% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag (lab)</a>                 76.4%    35.6   2024-06-07    6% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">BIG-Bench Hard (lab)</a>            31.7%    26.2   2024-06-07    6% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">SciQ (lab)</a>                      93.8%    33.9   2024-06-07    6% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ (lab)</a>                     73.4%    33.4   2024-06-07    5% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (la…</a>  21.4%    26.7   2024-06-07    5% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">PIQA (lab)</a>                      78.4%    34.4   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">MMLU (lab)</a>                      28.3%    19.9   2024-06-07    3% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: TyDiQA gold passage, …</a>  32.3%    32.4   2024-06-07    2% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 31.6
+<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge (lab)</a>             48.5%    33.1   2024-06-07   24% ▇▇▇
+                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA (lab)</a>                50.4%    32.5   2024-06-07   13% ▇▇
+                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande (lab)</a>                67.9%    32.9   2024-06-07   11% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy (lab)</a>                  65.4%    29.9   2024-06-07    7% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">GSM8K (lab)</a>                      8.5%    24.0   2024-06-07    7% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag (lab)</a>                 76.4%    35.3   2024-06-07    6% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">SciQ (lab)</a>                      93.8%    33.6   2024-06-07    6% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">BIG-Bench Hard (lab)</a>            31.7%    25.7   2024-06-07    6% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ (lab)</a>                     73.4%    33.2   2024-06-07    6% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (la…</a>  21.4%    26.2   2024-06-07    5% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">PIQA (lab)</a>                      78.4%    34.1   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">MMLU (lab)</a>                      28.3%    19.1   2024-06-07    3% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: TyDiQA gold passage, …</a>  32.3%    31.9   2024-06-07    2% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 31.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -41,7 +41,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp32  ~27.55GB   31.6
+4-bit fp32  ~27.55GB   31.3
 </pre>
 
 ```sh

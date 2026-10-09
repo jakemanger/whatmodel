@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-05 · 64B params · openmdw-1.1
 
-**score 62.4** ±2.2 · #26 of 139 · from 5 benchmark results across 2 sources
+**score 62.2** ±2.3 · #27 of 139 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                              score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>            1151.8    62.6   2026-09-24   83% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI pro…</a>    91.4%    69.5   2026-06-23    9% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>            1151.8    62.4   2026-09-24   82% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI pro…</a>    91.4%    69.6   2026-06-23    9% ▇
                         <a href="https://arxiv.org/html/2606.02800v4#S6.T11">HPSv3 score of Cosmos 3 repor…</a>  11.6000    62.7   2026-06-23    5% ▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese char…</a>    41.2%    12.0   2026-06-23    1% ▇
-                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-…</a>    89.1%   173.2   2026-06-23    0% ▇
+                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-102ch PNED (Chinese char…</a>    41.2%    12.7   2026-06-23    1% ▇
+                        <a href="https://arxiv.org/html/2606.02800v4#S6.T11">CVTG-500L PNED (English long-…</a>    89.1%   173.1   2026-06-23    0% ▇
 prior                   pull toward the middle                     49.9                 2% ▇
-                        weighted average                         = 62.4
+                        weighted average                         = 62.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,7 +33,7 @@ prior                   pull toward the middle                     49.9         
 
 <pre>
 version                needs  score
-bf16 · nvidia only  ~154.1GB   62.4
+bf16 · nvidia only  ~154.1GB   62.2
 </pre>
 
 ```sh

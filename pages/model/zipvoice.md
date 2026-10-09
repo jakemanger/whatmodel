@@ -6,7 +6,7 @@
 
 k2-fsa (Xiaomi) · released 2025-06 · 0.123B params · apache-2.0
 
-**score 57.8** ±3.6 · #35 of 100 · from 6 benchmark results across 2 sources
+**score 57.2** ±3.7 · #37 of 100 · from 6 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-omnivoice-report-ccby"></a>OmniVoice: Towards Om…  <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · speaker si…</a>  75.1%    56.7   2026-04-01   23% ▇▇▇
-                        <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-en · speaker si…</a>  69.7%    58.3   2026-04-01   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-en · Whisper la…</a>   1.7%    62.4   2026-04-01   17% ▇▇
-                        <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · Paraformer…</a>   1.4%    56.1   2026-04-01   14% ▇▇
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  58.0%    57.0   2026-05-24   19% ▇▇
-                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>   5.0%   229.2   2026-05-24    0% ▇
-prior                   pull toward the middle                   49.7                 5% ▇
-                        weighted average                       = 57.8
+<a name="speech-omnivoice-report-ccby"></a>OmniVoice: Towards Om…  <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · speaker si…</a>  75.1%    56.1   2026-04-01   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-en · speaker si…</a>  69.7%    57.7   2026-04-01   21% ▇▇▇
+                        <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-en · Whisper la…</a>   1.7%    61.9   2026-04-01   17% ▇▇
+                        <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · Paraformer…</a>   1.4%    55.6   2026-04-01   14% ▇▇
+<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  58.0%    56.4   2026-05-24   20% ▇▇
+                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>   5.0%   209.8   2026-05-24    0% ▇
+prior                   pull toward the middle                   49.8                 5% ▇
+                        weighted average                       = 57.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,9 +34,9 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version                      needs  score
-fp32 (ZipVoice repo)       ~0.55GB   57.8
-onnx-fp32 (ZipVoice repo)  ~0.55GB   57.8
-onnx-int8 (ZipVoice repo)  ~0.18GB   57.8
+fp32 (ZipVoice repo)       ~0.55GB   57.2
+onnx-fp32 (ZipVoice repo)  ~0.55GB   57.2
+onnx-int8 (ZipVoice repo)  ~0.18GB   57.2
 </pre>
 
 ```sh

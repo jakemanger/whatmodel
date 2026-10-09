@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-03 · 1.3B params · mit
 
-**score 19.1** ±1.9 · #530 of 551 · from 6 benchmark results across 2 sources
+**score 19.0** ±1.9 · #530 of 551 · from 6 benchmark results across 2 sources · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="eleutherai-gpt-j-6b-card"></a>EleutherAI GPT-J-6B m…  <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag (lab)</a>                 48.9%    18.2   2021-08-06   29% ▇▇▇
+<a name="eleutherai-gpt-j-6b-card"></a>EleutherAI GPT-J-6B m…  <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag (lab)</a>                 48.9%    18.0   2021-08-06   29% ▇▇▇
                         <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande (lab)</a>                55.0%    16.9   2021-08-06   20% ▇▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  57.2%    21.1   2021-08-06   18% ▇▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA (lab)</a>                      71.1%    19.8   2021-08-06   12% ▇
-<a name="eleutherai-gpt-neo-2-7b-card"></a>EleutherAI GPT-Neo 2.…  <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">PubMedQA (lab)</a>                  54.4%    17.0   2021-04-12   10% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA (lab)</a>                    24.1%    18.3   2021-04-12   10% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  57.2%    20.8   2021-08-06   19% ▇▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA (lab)</a>                      71.1%    19.9   2021-08-06   12% ▇
+<a name="eleutherai-gpt-neo-2-7b-card"></a>EleutherAI GPT-Neo 2.…  <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA (lab)</a>                    24.1%    18.0   2021-04-12   10% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">PubMedQA (lab)</a>                  54.4%    16.6   2021-04-12    9% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 19.1
+                        weighted average                       = 19.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,7 +34,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp32  ~5.31GB   19.1
+4-bit fp32  ~5.31GB   19.0
 </pre>
 
 ```sh

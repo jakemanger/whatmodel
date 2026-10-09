@@ -6,7 +6,7 @@
 
 Mistral · released 2026-04 · 128B params · modified-mit
 
-**score 62.1** ±1.3 · #136 of 551 · from 5 benchmark results across 2 sources
+**score 61.7** ±0.9 · #137 of 551 · from 18 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,18 +14,40 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                  score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1262.9    60.4   2026-10-01   29% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.1238 IPS    62.3   2026-10-02   29% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                       1426.9    66.2   2026-10-02   20% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>       1199.5    63.5   2026-10-02   16% ▇▇
-<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard ave…</a>        14.9%    51.9   2026-09-26    5% ▇
-prior                   pull toward the middle                         50.0                 1% ▇
-                        weighted average                             = 62.1
+<a name="paper-2607.20062v2-solar-open-2"></a>Solar Open 2 Technica…  <a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond</a>                          77.5%    62.6   2026-07-24   16% ▇▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro</a>                              81.2%    63.0   2026-07-24    6% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>                   33.3%    66.4   2026-07-24    5% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unsp…</a>        84.9%    61.7   2026-07-24    4% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>                             89.0%    56.5   2026-07-24    3% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecif…</a>        69.0%    63.3   2026-07-24    3% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam</a>                  12.8%    57.4   2026-07-24    3% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge</a>                        49.8%    63.9   2026-07-24    2% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>                   6.1%    58.5   2026-07-24    2% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking</a>                       5.8%    55.2   2026-07-24    2% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>                    69.6%    67.9   2026-07-24    2% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>                30.7%    48.7   2026-07-24    1% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026</a>                    62.9%    52.8   2026-07-24    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1262.9    60.2   2026-10-01   15% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.1238 IPS    62.3   2026-10-02   14% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                       1426.9    66.1   2026-10-02   10% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>       1199.5    63.4   2026-10-02    7% ▇
+<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard ave…</a>        14.9%    51.5   2026-09-26    3% ▇
+prior                   pull toward the middle                         50.0                 0% ▇
+                        weighted average                             = 61.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>
+<sub>Licences: Solar Open 2 Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>
+
+<details><summary>Not counted (1)</summary>
+
+<pre>
+source                  test                            score  why
+Mistral AI vendor-rep…  <a href="https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md#agentic-benchmarks">τ³-bench telecom (tau2-bench …</a>  91.4%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
@@ -35,8 +57,8 @@ api (Mistral AI) · $3.00/M blended · $1.5 in / $7.5 out per 1M tokens · [docs
 
 <pre>
 download             size  score
-4-bit q4_k_m      ~77.3GB   62.1
-2-bit ud-q2_k_xl  ~38.9GB   62.1
+4-bit q4_k_m      ~77.3GB   61.7
+2-bit ud-q2_k_xl  ~38.9GB   61.7
 </pre>
 
 ```sh

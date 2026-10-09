@@ -4,7 +4,7 @@
 
 [llm](../README.md) · [image](image.md) · **video** · [tts](tts.md) · [stt](stt.md)
 
-updated 2026-10-08 13:23 UTC · 123 models · scores combine 49 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/video)
+updated 2026-10-09 04:48 UTC · 123 models · scores combine 49 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/video)
 
 Run `curl "whatmodel.sh/video?mac=$(sysctl -n hw.memsize)"` to see what your Mac can run, or `curl whatmodel.sh/video` for this list in your terminal.
 
@@ -144,12 +144,12 @@ curl.exe "whatmodel.sh/video?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemo
  56  <a href="model/longcat-video.md">LongCat-Video</a>                             51±3   api $0.040/sec +local  ~100GB  <a href="https://fal.ai/models/fal-ai/longcat-video/text-to-video/720p">fal.ai</a>
  57  <a href="model/luma-dream-machine-1-6.md">Luma Dream Machine 1.6</a>                    51±8*  comparison only
  58  <a href="model/wan-2-2-5b.md">Wan 2.2 TI2V 5B</a>                           51±4   api price unknown +l…  ~6.5GB  <a href="https://fal.ai/models/fal-ai/wan/v2.2-5b/text-to-video">fal.ai</a>
- 59  <a href="model/seaweed-7b.md">Seaweed-7B</a>                                50±6*  comparison only
+ 59  <a href="model/seaweed-7b.md">Seaweed-7B</a>                               50±6*†  comparison only
  60  <a href="model/runway-gen-4.md">Runway Gen-4</a>                              50±4*  comparison only
  61  <a href="model/open-sora-plan-1-3.md">Open-Sora Plan v1.3 (T2V)</a>                 50±7*  local                   ~24GB  git clone https://g…
  62  <a href="model/veo-2.md">Veo 2</a>                                     49±2   comparison only
  63  <a href="model/wan-2-2-a14b.md">Wan 2.2 A14B</a>                              49±2   api $0.080/sec +local   ~31GB  <a href="https://fal.ai/models/fal-ai/wan/v2.2-a14b/text-to-video">fal.ai</a>
- 64  <a href="model/cosmos-1-0-diffusion-7b-video2world.md">Cosmos-1.0-Diffusion-7B-V…</a>                49±5*  comparison only
+ 64  <a href="model/cosmos-1-0-diffusion-7b-video2world.md">Cosmos-1.0-Diffusion-7B-V…</a>               49±5*†  comparison only
  65  <a href="model/ltx-2.md">LTX-2</a>                                     49±2   local                  ~120GB  pip install git+htt…
  66  <a href="model/cogvideox-5b-i2v.md">CogVideoX-5B-I2V</a>                          48±4   local                   ~13GB  python -c "import t…
  67  <a href="model/wan-2-1-14b.md">Wan 2.1 14B</a>                               48±3   api $0.24/sec +local    ~20GB  <a href="https://replicate.com/wavespeedai/wan-2.1-t2v-720p">replicate.com</a>
@@ -173,10 +173,10 @@ curl.exe "whatmodel.sh/video?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemo
  85  <a href="model/mochi-1.md">Mochi 1</a>                                   40±2   api price unknown +l…  ~6.5GB  <a href="https://replicate.com/genmoai/mochi-1">replicate.com</a>
  86  <a href="model/runway-gen-3-alpha.md">Runway Gen-3 Alpha</a>                        40±3   comparison only
  87  <a href="model/pandora.md">Pandora (world model)</a>                     40±7*  comparison only
- 88  <a href="model/t2v-turbo-ms.md">T2V-Turbo (MS)</a>                            39±6*  comparison only
+ 88  <a href="model/t2v-turbo-ms.md">T2V-Turbo (MS)</a>                           39±6*†  comparison only
  89  <a href="model/hunyuanvideo.md">HunyuanVideo</a>                              39±2   api price unknown +l…   ~28GB  <a href="https://fal.ai/models/fal-ai/hunyuan-video">fal.ai</a>
  90  <a href="model/t2v-turbo-v2.md">T2V-Turbo-v2</a>                              39±5*  api price unknown +l…  ~9.4GB  <a href="https://replicate.com/chenxwh/t2v-turbo-v2">replicate.com</a>
- 91  <a href="model/t2v-turbo-vc2.md">T2V-Turbo (VC2)</a>                           38±3   local                  ~9.4GB  git clone https://g…
+ 91  <a href="model/t2v-turbo-vc2.md">T2V-Turbo (VC2)</a>                           38±3†  local                  ~9.4GB  git clone https://g…
  92  <a href="model/vidu-1-5.md">Vidu 1.5</a>                                  38±3*  comparison only
  93  <a href="model/cogvideox-2b.md">CogVideoX-2B</a>                              37±2   local                  ~5.3GB  python -c "import t…
  94  <a href="model/runway-gen-4-turbo.md">Runway Gen-4 Turbo</a>                        37±3*  api $0.050/sec                 <a href="https://docs.dev.runwayml.com/guides/models">docs.dev.runwayml.c…</a>
@@ -186,12 +186,12 @@ curl.exe "whatmodel.sh/video?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemo
  98  <a href="model/allegro.md">Allegro</a>                                   36±2   local                  ~9.3GB  python -c "import t…
  99  <a href="model/kling-1-0.md">Kling 1.0</a>                                 35±6*  comparison only
 100  <a href="model/videocrafter2.md">VideoCrafter2</a>                             35±2   local                  ~9.4GB  git clone https://g…
-101  <a href="model/cosmos-1-0-autoregressive-4b.md">Cosmos-1.0-Autoregressive…</a>                35±5*  comparison only
+101  <a href="model/cosmos-1-0-autoregressive-4b.md">Cosmos-1.0-Autoregressive…</a>               35±5*†  comparison only
 102  <a href="model/lavie.md">LaVie (base T2V)</a>                          33±2   local                  ~4.9GB  git clone https://g…
 103  <a href="model/ltx-video-0-9.md">LTX-Video 0.9 (2B)</a>                        33±3*  local                  ~5.3GB  python -c "import t…
 104  <a href="model/pika-1-0.md">Pika 1.0</a>                                  33±3   comparison only
 105  <a href="model/open-sora-1-1.md">Open-Sora 1.1</a>                             32±6*  local                   ~14GB  git clone https://g…
-106  <a href="model/cosmos-1-0-autoregressive-5b-video2world.md">Cosmos-1.0-Autoregressive…</a>                31±5*  comparison only
+106  <a href="model/cosmos-1-0-autoregressive-5b-video2world.md">Cosmos-1.0-Autoregressive…</a>               31±5*†  comparison only
 107  <a href="model/nova-0-6b-t2v.md">NOVA-0.6B T2V</a>                             30±3*  local                  ~9.3GB  git clone https://g…
 108  <a href="model/hotshot-xl.md">Hotshot-XL</a>                                29±2   local                   ~10GB  git clone https://g…
 109  <a href="model/pikalab-2023-09.md">PikaLab (September 2023)</a>                  28±2   comparison only
@@ -211,4 +211,4 @@ curl.exe "whatmodel.sh/video?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemo
   —  <a href="model/stable-video-diffusion-xt.md">Stable Video Diffusion XT…</a>  no reviewed results  local                    ~8GB  uv run --with torch…
 </pre>
 
-\* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory · 123 of 123 catalogue models listed here · [sources and licences](method.md#sources)
+\* new or thinly tested: ranked on too few benchmark results · † only the maker's own numbers so far · ~RAM is estimated; full context may need more memory · 123 of 123 catalogue models listed here · [sources and licences](method.md#sources)

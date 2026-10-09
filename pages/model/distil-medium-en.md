@@ -6,7 +6,9 @@
 
 Hugging Face (Distil-Whisper) · released 2023-10 · 0.39B params · mit
 
-**score 46.2** ±3.1 · #94 of 128 · from 3 benchmark results across 2 sources
+**score 46.2** ±3.1 · #93 of 128 · from 3 benchmark results across 2 sources
+
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -14,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.8%    49.0   2026-03-26   39% ▇▇▇▇▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  19.0%    40.4   2026-03-26   38% ▇▇▇▇▇
-<a name="speech-distil-whisper-readme-mit"></a>huggingface/distil-wh…  <a href="https://github.com/huggingface/distil-whisper/blob/a66f5c85be1e32c504e8ed68df7802d2b96db4c0/README.md">Distil-Whisper · 4-set out-of…</a>  11.1%    51.3   2024-03-21   19% ▇▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  19.0%    40.8   2026-03-26   41% ▇▇▇▇▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.8%    49.0   2026-03-26   39% ▇▇▇▇▇
+<a name="speech-distil-whisper-readme-mit"></a>huggingface/distil-wh…  <a href="https://github.com/huggingface/distil-whisper/blob/a66f5c85be1e32c504e8ed68df7802d2b96db4c0/README.md">Distil-Whisper · 4-set out-of…</a>  11.1%    51.9   2024-03-21   16% ▇▇
 prior                   pull toward the middle                   49.7                 4% ▇
                         weighted average                       = 46.2
 </pre>

@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 30B params · opt-175b-license-noncommercial
 
-**score 33.7** ±1.2 · #467 of 551 · from 6 benchmark results across 1 source
+**score 33.4** ±1.2 · #467 of 551 · from 6 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   34.6%    34.4   2023-05-31   41% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      68.2%    34.6   2023-05-31   19% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        70.0%    31.9   2023-05-31   16% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            77.6%    33.3   2023-05-31   10% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  71.5%    33.5   2023-05-31    7% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            91.1%    30.1   2023-05-31    7% ▇
+<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   34.6%    34.3   2023-05-31   38% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      68.2%    34.2   2023-05-31   20% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        70.0%    31.7   2023-05-31   16% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            77.6%    33.0   2023-05-31   10% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  71.5%    33.3   2023-05-31    8% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            91.1%    29.9   2023-05-31    8% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 33.7
+                        weighted average                       = 33.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,7 +34,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp16  ~59.95GB   33.7
+4-bit fp16  ~59.95GB   33.4
 </pre>
 
 ```sh

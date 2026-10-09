@@ -6,7 +6,9 @@
 
 SpeechBrain · released 2022-06 · 0.32B params · apache-2.0
 
-**score 35.2** ±4.2 · #111 of 128 · from 3 benchmark results across 2 sources
+**score 35.3** ±4.2 · #111 of 128 · from 3 benchmark results across 2 sources
+
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -15,10 +17,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  14.3%    29.4   2026-03-26   69% ▇▇▇▇▇▇▇▇
-<a name="first-party-speechbrain-asr-cards"></a>SpeechBrain Hugging F…  <a href="https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md">LibriSpeech test-other WER (l…</a>   4.0%    47.3   2024-02-19   18% ▇▇
-                        <a href="https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md">LibriSpeech test-clean WER (l…</a>   1.9%    47.1   2024-02-19    6% ▇
+<a name="first-party-speechbrain-asr-cards"></a>SpeechBrain Hugging F…  <a href="https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md">LibriSpeech test-other WER (l…</a>   4.0%    47.7   2024-02-19   18% ▇▇
+                        <a href="https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md">LibriSpeech test-clean WER (l…</a>   1.9%    47.9   2024-02-19    6% ▇
 prior                   pull toward the middle                   49.7                 7% ▇
-                        weighted average                       = 35.2
+                        weighted average                       = 35.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +31,7 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version    needs  score
-fp32     ~2.04GB   35.2
+fp32     ~2.04GB   35.3
 </pre>
 
 ```sh

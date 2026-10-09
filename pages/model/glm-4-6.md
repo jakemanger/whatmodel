@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-09 · 357B params (32B active) · mit
 
-**score 64.5** ±1.3 · #104 of 551 · from 11 benchmark results across 6 sources
+**score 62.7** ±1.0 · #125 of 551 · from 23 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -14,41 +14,41 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1339.4    63.5   2026-10-01   29% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1424.1    65.9   2026-10-02   20% ▇▇
-<a name="card2-zai-org-glm-4-7"></a>zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">AIME 2025 (lab)</a>                  93.9%    66.7   2026-01-29   10% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">MMLU-Pro (lab)</a>                   83.2%    64.0   2026-01-29    7% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">HMMT February 2025 (lab)</a>         89.2%    62.0   2026-01-29    5% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">LiveCodeBench v6 (window unsp…</a>   82.8%    66.0   2026-01-29    3% ▇
-<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   24.5%    62.1   2026-01-17   11% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   72.4%    73.5   2025-12-16    8% ▇
-<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   57.8%    59.2   2025-11-19    7% ▇
+<a name="card2-zai-org-glm-4-7"></a>zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">GPQA Diamond (lab)</a>               81.0%    63.3   2026-01-29    9% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">AIME 2025 (lab)</a>                  93.9%    66.4   2026-01-29    6% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">SWE-bench Verified (lab)</a>         68.0%    63.7   2026-01-29    5% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">MMLU-Pro (lab)</a>                   83.2%    63.6   2026-01-29    4% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">HMMT February 2025 (lab)</a>         89.2%    60.9   2026-01-29    4% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">τ²-bench aggregate (lab)</a>         75.2%    60.4   2026-01-29    4% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">HMMT November 2025 (lab)</a>         87.7%    62.2   2026-01-29    3% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">Terminal-Bench 2.0 (lab)</a>         24.5%    56.1   2026-01-29    3% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">SWE-bench Multilingual (lab)</a>     53.8%    59.5   2026-01-29    3% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">BrowseComp (lab)</a>                 45.1%    62.3   2026-01-29    3% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">Humanity's Last Exam (lab)</a>       17.2%    60.8   2026-01-29    3% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">IMO-AnswerBench (lab)</a>            73.5%    59.6   2026-01-29    3% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">LiveCodeBench v6 (window unsp…</a>   82.8%    63.6   2026-01-29    3% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">BrowseComp with context manag…</a>   57.5%    56.8   2026-01-29    2% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">BrowseComp-ZH (lab)</a>              49.5%    57.8   2026-01-29    2% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">Humanity's Last Exam with too…</a>   30.4%    58.1   2026-01-29    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1339.4    63.4   2026-10-01   16% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1424.1    65.8   2026-10-02   11% ▇
+<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   24.5%    61.9   2026-01-17    6% ▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   57.8%    59.1   2025-11-19    4% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   72.4%    73.3   2025-12-16    4% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   95.7%    55.4   2025-10-16    0% ▇
-                        <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   90.5%    79.3   2026-09-22    0% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 64.5
+                        <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   90.5%    79.0   2026-09-22    0% ▇
+prior                   pull toward the middle                    50.0                 0% ▇
+                        weighted average                        = 62.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · zai-org/GLM-4.7 model card ([MIT](../../licenses/zai-org--GLM-4.7.txt)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: zai-org/GLM-4.7 model card ([MIT](../../licenses/zai-org--GLM-4.7.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
-<details><summary>Not counted (17)</summary>
+<details><summary>Not counted (5)</summary>
 
 <pre>
 source                  test                            score  why
-zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">BrowseComp</a>                      45.1%  too few models have it yet
-zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">BrowseComp with context manag…</a>  57.5%  too few models have it yet
-zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">BrowseComp-ZH</a>                   49.5%  too few models have it yet
-zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">GPQA Diamond</a>                    81.0%  too few models have it yet
-zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">Humanity's Last Exam</a>            17.2%  too few models have it yet
-zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">Humanity's Last Exam with too…</a>  30.4%  too few models have it yet
-zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">HMMT November 2025</a>              87.7%  too few models have it yet
-zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">IMO-AnswerBench</a>                 73.5%  too few models have it yet
-zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">SWE-bench Multilingual</a>          53.8%  too few models have it yet
-zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">SWE-bench Verified</a>              68.0%  too few models have it yet
-zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">τ²-bench aggregate</a>              75.2%  too few models have it yet
-zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">Terminal-Bench 2.0</a>              24.5%  too few models have it yet
 zai-org/GLM-4.6 model…  <a href="https://huggingface.co/zai-org/GLM-4.6/blob/be72194883d968d7923a07e2f61681ea9a2826d1/README.md">AIME 2025 with tools</a>            98.6%  too few models have it yet
 zai-org/GLM-4.6 model…  <a href="https://huggingface.co/zai-org/GLM-4.6/blob/be72194883d968d7923a07e2f61681ea9a2826d1/README.md">GPQA (subset unspecified) wit…</a>  82.9%  too few models have it yet
 zai-org/GLM-4.6 model…  <a href="https://huggingface.co/zai-org/GLM-4.6/blob/be72194883d968d7923a07e2f61681ea9a2826d1/README.md">LiveCodeBench v6 (window unsp…</a>  84.5%  too few models have it yet
@@ -66,9 +66,9 @@ api (Z.AI) · $1.00/M blended · $0.6 in / $2.2 out per 1M tokens · [docs.z.ai]
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~214.7GB   64.5
-2-bit ud-q2_k_xl  ~107.6GB   64.5
-1-bit ud-iq1_s    ~54.05GB   64.5
+4-bit ud-q4_k_xl  ~214.7GB   62.7
+2-bit ud-q2_k_xl  ~107.6GB   62.7
+1-bit ud-iq1_s    ~54.05GB   62.7
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 SimianLuo (LCM authors) · released 2023-10 · 0.86B params · mit
 
-**score 23.3** ±3.5 · #136 of 139 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 23.4** ±3.5 · #136 of 139 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>  817.0    21.8   2024-06-04   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>  817.0    22.0   2024-06-04   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                 5% ▇
-                        weighted average                       = 23.3
+                        weighted average                       = 23.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,9 +29,9 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version                          needs  score
-fp32 · nvidia only              ~4.6GB   23.3
-openvino-int8 (OpenVINO GenAI)  ~1.7GB   23.3
-openvino-fp16 (OpenVINO GenAI)    ~3GB   23.3
+fp32 · nvidia only              ~4.6GB   23.4
+openvino-int8 (OpenVINO GenAI)  ~1.7GB   23.4
+openvino-fp16 (OpenVINO GenAI)    ~3GB   23.4
 </pre>
 
 ```sh

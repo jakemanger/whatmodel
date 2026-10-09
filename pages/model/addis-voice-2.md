@@ -6,7 +6,7 @@
 
 Addis AI · closed weights
 
-**score 50.2** ±16.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.2** ±15.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,8 +16,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-amharic-addis-bysa"></a>Addis AI Amharic TTS …  <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (…</a>   4.4%   283.2   2026-08-12    0% ▇
-prior                   pull toward the middle                   49.7               100% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="speech-amharic-addis-bysa"></a>Addis AI Amharic TTS …  <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (…</a>   4.4%   282.9   2026-08-12    0% ▇
+prior                   pull toward the middle                   49.8               100% ▇▇▇▇▇▇▇▇▇▇▇▇
                         weighted average                       = 50.2
 </pre>
 

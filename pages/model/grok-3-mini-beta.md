@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2025-04 · proprietary
 
-**score 61.8** ±1.0 · comparison only: no current run option verified · from 8 benchmark results across 6 sources
+**score 61.7** ±1.0 · comparison only: no current run option verified · from 8 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     75.5%    63.1   2025-05-26   21% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     88.1%    62.2   2025-04-10   12% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         77.8%    64.3   2025-04-10    8% ▇
-<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>   49.3%    60.8   2025-04-10   27% ▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1363.5    59.3   2026-10-02   13% ▇▇
-<a name="livecodebench-website-20250801"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official (Aug 1…</a>   66.7%    65.2   2025-08-01   10% ▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1146.8    56.9   2026-05-10    7% ▇
-<a name="paper-2505.22113v1-thinkbench"></a>THINK-Bench: Evaluati…  <a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accu…</a>   91.8%    66.3   2025-05-28    1% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     75.5%    63.0   2025-05-26   23% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         77.8%    64.1   2025-04-10   15% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     88.1%    61.8   2025-04-10   13% ▇▇
+<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>   49.3%    60.5   2025-04-10   21% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1363.5    59.1   2026-10-02   12% ▇
+<a name="livecodebench-website-20250801"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official (Aug 1…</a>   66.7%    64.6   2025-08-01    8% ▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1146.8    56.7   2026-05-10    6% ▇
+<a name="paper-2505.22113v1-thinkbench"></a>THINK-Bench: Evaluati…  <a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accu…</a>   91.8%    65.5   2025-05-28    2% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 61.8
+                        weighted average                        = 61.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

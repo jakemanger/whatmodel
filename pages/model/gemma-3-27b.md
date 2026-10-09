@@ -6,7 +6,7 @@
 
 Google · released 2025-03 · 27.4B params · gemma
 
-**score 51.8** ±0.5 · #247 of 551 · from 77 benchmark results across 23 sources
+**score 51.7** ±0.5 · #249 of 551 · from 79 benchmark results across 24 sources
 
 ## How the score was worked out
 
@@ -14,90 +14,92 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="gemma4-report"></a>Gemma Team              <a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (lab)</a>               42.4%    48.8   2026-07-02    4% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMLU-Pro (lab)</a>                   67.6%    54.3   2026-07-02    2% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – airline (lab)</a>             39.0%    48.7   2026-07-02    2% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMMLU (lab)</a>                      70.7%    50.9   2026-07-02    2% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">InfographicVQA (lab)</a>             70.6%    50.7   2026-07-02    2% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (lab)</a>                46.0%    45.1   2026-07-02    1% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MMMU Pro (lab)</a>                   49.7%    50.8   2026-07-02    1% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFBench (lab)</a>                    32.0%    45.8   2026-07-02    1% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">LiveCodeBench v6 (Feb–May 202…</a>   29.1%    43.1   2026-07-02    1% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MRCR v2 8-needle, 128k (lab)</a>     13.5%    44.4   2026-07-02    1% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Big Bench Extra Hard micro av…</a>   19.3%    45.0   2026-07-02    1% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">SciCode (lab)</a>                    21.0%    50.1   2026-07-02    1% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Terminal Bench Hard (lab)</a>         4.0%    48.2   2026-07-02    1% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – telecom (lab)</a>              3.1%    40.8   2026-07-02    1% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFEval (lab)</a>                     90.4%    38.6   2026-07-02    1% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>               6.6%    36.3   2026-07-02    1% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">OmniDocBench 1.5 ↓ (lab)</a>         36.5%    46.0   2026-07-02    1% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">AIME 2026 (lab)</a>                  20.8%    28.7   2026-07-02    0% ▇
-<a name="gap-google-gemma3"></a>Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIG-Bench Hard (lab)</a>             87.6%    53.2   2026-09-25    3% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">HumanEval (lab)</a>                  87.8%    50.4   2026-09-25    1% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">SimpleQA (lab)</a>                   10.0%    53.5   2026-09-25    1% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">Global-MMLU-Lite (lab)</a>           75.1%    55.6   2026-09-25    1% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">GSM8K (lab)</a>                      95.9%    52.2   2026-09-25    1% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIRD-SQL (dev) (lab)</a>             54.4%    53.9   2026-09-25    1% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MATH (subset unspecified) (la…</a>   89.0%    55.8   2026-09-25    1% ▇
+<a name="gemma4-report"></a>Gemma Team              <a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (lab)</a>               42.4%    48.1   2026-07-02    4% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMLU-Pro (lab)</a>                   67.6%    53.5   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – airline (lab)</a>             39.0%    48.1   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMMLU (lab)</a>                      70.7%    50.4   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (lab)</a>                46.0%    45.4   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">InfographicVQA (lab)</a>             70.6%    50.2   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MMMU Pro (lab)</a>                   49.7%    50.3   2026-07-02    1% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFBench (lab)</a>                    32.0%    45.3   2026-07-02    1% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">τ²-bench Telecom (lab)</a>            3.1%    45.3   2026-07-02    1% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">LiveCodeBench v6 (Feb–May 202…</a>   29.1%    42.6   2026-07-02    1% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MRCR v2 8-needle, 128k (lab)</a>     13.5%    43.8   2026-07-02    1% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">SciCode (lab)</a>                    21.0%    49.6   2026-07-02    1% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Big Bench Extra Hard micro av…</a>   19.3%    44.4   2026-07-02    1% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Terminal-Bench Hard (lab)</a>         4.0%    47.9   2026-07-02    1% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFEval (lab)</a>                     90.4%    37.9   2026-07-02    1% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>               6.6%    35.8   2026-07-02    1% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">OmniDocBench 1.5 ↓ (lab)</a>         36.5%    45.6   2026-07-02    1% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">AIME 2026 (lab)</a>                  20.8%    30.7   2026-07-02    0% ▇
+<a name="gap-google-gemma3"></a>Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIG-Bench Hard (lab)</a>             87.6%    53.5   2026-09-25    3% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">LiveCodeBench (version unspec…</a>   29.7%    52.3   2026-09-25    2% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">SimpleQA (lab)</a>                   10.0%    53.3   2026-09-25    1% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">HumanEval (lab)</a>                  87.8%    50.5   2026-09-25    1% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">Global-MMLU-Lite (lab)</a>           75.1%    55.7   2026-09-25    1% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">GSM8K (lab)</a>                      95.9%    52.7   2026-09-25    1% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MBPP (lab)</a>                       74.4%    50.6   2026-09-25    1% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">LiveCodeBench (version unspec…</a>   29.7%    51.4   2026-09-25    1% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">FACTS Grounding (lab)</a>            74.9%    49.7   2026-09-25    1% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MMMU (val) (lab)</a>                 64.9%    55.3   2026-09-25    1% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MATH (subset unspecified) (la…</a>   89.0%    55.6   2026-09-25    1% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">FACTS Grounding (lab)</a>            74.9%    49.8   2026-09-25    1% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MMMU (val) (lab)</a>                 64.9%    55.0   2026-09-25    1% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIRD-SQL (dev) (lab)</a>             54.4%    56.0   2026-09-25    1% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">DocVQA (lab)</a>                     86.6%    45.4   2026-09-25    0% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MathVista (testmini) (lab)</a>       67.6%    55.8   2026-09-25    0% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">TextVQA (lab)</a>                    65.1%    27.9   2026-09-25    0% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">ChartQA (lab)</a>                    78.0%    52.8   2026-09-25    0% ▇
-<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                   83.7%    54.1   2025-10-08    3% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                             81.8%    52.4   2025-10-08    3% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>   63.4%    57.7   2025-10-08    1% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                   63.9%    48.4   2025-10-08    1% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                            91.1%    51.4   2025-10-08    1% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>        76.2%    57.4   2025-10-08    1% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                            30.9%    48.5   2025-10-08    1% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>        83.4%    53.5   2025-10-08    0% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     74.0%    57.4   2025-03-13    6% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     47.7%    53.2   2026-08-27    4% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         22.5%    54.7   2026-08-27    1% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             0.0%    45.7   2026-08-27    0% ▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.4610    51.9   2026-05-02    5% ▇
-                        <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   46.1%    52.1   2026-05-02    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1365.4    59.6   2026-10-02    3% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1159.8    59.2   2026-10-02    2% ▇
-<a name="arena-hard-auto-readme-v2"></a>Arena-Hard-Auto v2.0-…  <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts …</a>   15.0%    50.4   2025-05-01    3% ▇
-                        <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writ…</a>   69.9%    71.4   2025-05-01    0% ▇
-<a name="report-2503.19786v1"></a>Gemma Team              <a href="https://arxiv.org/html/2503.19786v1">MMLU (lab)</a>                       76.9%    52.4   2025-03-25    2% ▇
-                        <a href="https://arxiv.org/html/2503.19786v1">RULER 128k (lab)</a>                 66.0%    54.1   2025-03-25    1% ▇
-                        <a href="https://arxiv.org/html/2503.19786v1">WMT24++ (chrF) (lab)</a>             53.4%    48.9   2025-03-25    0% ▇
-                        <a href="https://arxiv.org/html/2503.19786v1">VQAv2 (val) (lab)</a>                71.0%    45.6   2025-03-25    0% ▇
-                        <a href="https://arxiv.org/html/2503.19786v1">AI2D test (lab)</a>                  84.5%    49.4   2025-03-25    0% ▇
-<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   84.5%    55.4   2026-09-07    2% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MathVista (testmini) (lab)</a>       67.6%    55.6   2026-09-25    0% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">TextVQA (lab)</a>                    65.1%    32.1   2026-09-25    0% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">ChartQA (lab)</a>                    78.0%    45.7   2026-09-25    0% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     74.0%    57.0   2025-03-13    7% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     47.7%    53.1   2026-08-27    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         22.5%    54.8   2026-08-27    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             0.0%    45.6   2026-08-27    0% ▇
+<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                   83.7%    53.5   2025-10-08    3% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                             81.8%    51.9   2025-10-08    2% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>   63.4%    57.0   2025-10-08    2% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                   63.9%    47.4   2025-10-08    1% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                            91.1%    50.9   2025-10-08    1% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>        76.2%    56.7   2025-10-08    1% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                            30.9%    47.9   2025-10-08    1% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>        83.4%    52.9   2025-10-08    0% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.4610    52.6   2026-05-02    3% ▇
+                        <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   46.1%    52.8   2026-05-02    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1365.4    59.4   2026-10-02    3% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1159.8    59.1   2026-10-02    2% ▇
+<a name="report-2503.19786v1"></a>Gemma Team              <a href="https://arxiv.org/html/2503.19786v1">MMLU (lab)</a>                       76.9%    52.8   2025-03-25    2% ▇
+                        <a href="https://arxiv.org/html/2503.19786v1">RULER 128k (lab)</a>                 66.0%    52.1   2025-03-25    1% ▇
+                        <a href="https://arxiv.org/html/2503.19786v1">WMT24++ (chrF) (lab)</a>             53.4%    49.0   2025-03-25    0% ▇
+                        <a href="https://arxiv.org/html/2503.19786v1">VQAv2 (val) (lab)</a>                71.0%    45.8   2025-03-25    0% ▇
+                        <a href="https://arxiv.org/html/2503.19786v1">AI2D test (lab)</a>                  84.5%    49.6   2025-03-25    0% ▇
+<a name="arena-hard-auto-readme-v2"></a>Arena-Hard-Auto v2.0-…  <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts …</a>   15.0%    50.0   2025-05-01    3% ▇
+                        <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writ…</a>   69.9%    70.5   2025-05-01    0% ▇
+<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   84.5%    55.3   2026-09-07    2% ▇
                         <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   16.3%    47.7   2026-09-07    2% ▇
-<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>    4.9%    47.7   2025-03-15    3% ▇
-<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-…</a>   65.5%    54.6   2025-03-16    1% ▇
-                        <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   19.8%    44.0   2025-03-14    1% ▇
-<a name="mimic-cdm-leaderboard"></a>MIMIC Clinical Decisi…  <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM full information (4…</a>   75.5%    50.3   2025-07-04    1% ▇
-                        <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM clinical decision m…</a>   70.5%    53.9   2025-07-04    1% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   29.5%    47.6   2025-12-16    1% ▇
-                        <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                          59.1%    54.4   2025-06-14    1% ▇
-<a name="card2-google-gemma-4-31b-it"></a>google/gemma-4-31B-it…  <a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">τ²-bench aggregate (lab)</a>         16.2%    43.6   2026-07-20    2% ▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1159.4    58.0   2026-05-10    1% ▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   76.1%    56.1   2026-08-11    1% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   39.9%    57.1   2025-04-28    1% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   78.7%    53.0   2025-04-08    1% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   64.6%    55.2   2026-09-19    1% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   82.1%    56.6   2026-04-17    0% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   92.1%    57.0   2026-04-17    0% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Incep…</a>   50.3%    44.4   2026-04-06    1% ▇
-<a name="paper-2508.13680v5-vmmu"></a>VMMU: A Vietnamese Mu…  <a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal u…</a>   39.1%    51.6   2026-09-23    1% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   97.0%    61.7   2025-10-16    0% ▇
-                        <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   92.6%   147.1   2026-09-22    0% ▇
+<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>    4.9%    47.6   2025-03-15    3% ▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   19.8%    43.8   2025-03-14    1% ▇
+                        <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-…</a>   65.5%    54.3   2025-03-16    1% ▇
+<a name="mimic-cdm-leaderboard"></a>MIMIC Clinical Decisi…  <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM full information (4…</a>   75.5%    50.1   2025-07-04    1% ▇
+                        <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM clinical decision m…</a>   70.5%    54.1   2025-07-04    1% ▇
+<a name="acl-kcl-2026"></a>Korean Canonical Lega…  <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>                23.6%    53.1   2026-09-25    1% ▇
+                        <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                 35.1%    54.6   2026-09-25    1% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   29.5%    47.0   2025-12-16    1% ▇
+                        <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                          59.1%    53.9   2025-06-14    1% ▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1159.4    57.8   2026-05-10    1% ▇
+<a name="card2-google-gemma-4-31b-it"></a>google/gemma-4-31B-it…  <a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">τ²-bench aggregate (lab)</a>         16.2%    41.5   2026-07-20    1% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   76.1%    56.0   2026-08-11    1% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   78.7%    52.7   2025-04-08    1% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   39.9%    57.4   2025-04-28    1% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   64.6%    54.8   2026-09-19    1% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Incep…</a>   50.3%    44.3   2026-04-06    1% ▇
+<a name="paper-2508.13680v5-vmmu"></a>VMMU: A Vietnamese Mu…  <a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal u…</a>   39.1%    51.3   2026-09-23    0% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   82.1%    58.3   2026-04-17    0% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   92.1%    58.5   2026-04-17    0% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   97.0%    61.3   2025-10-16    0% ▇
+                        <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   92.6%   146.9   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 51.8
+                        weighted average                        = 51.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Gemma Team ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Google DeepMind Gemma 3 270M IT model card ([CC-BY-4.0](../../licenses/cards-final-NOTICE.txt)) · 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Arena-Hard-Auto v2.0-Preview leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-Apache-2.0.txt)) · Gemma Team ([CC BY 4.0](../../licenses/report-2503.19786v1.txt)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · MIMIC Clinical Decision Making leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · google/gemma-4-31B-it model card ([Apache-2.0](../../licenses/google--gemma-4-31B-it.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · VMMU: A Vietnamese Multitask Multimodal Understanding and Reasoning Benchmark ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: Gemma Team ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Google DeepMind Gemma 3 270M IT model card ([CC-BY-4.0](../../licenses/cards-final-NOTICE.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Gemma Team ([CC BY 4.0](../../licenses/report-2503.19786v1.txt)) · Arena-Hard-Auto v2.0-Preview leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-Apache-2.0.txt)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · MIMIC Clinical Decision Making leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Korean Canonical Legal Benchmark: Toward Knowledge-Independent Evaluation of LLMs’ Legal Reasoning Capabilities ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · google/gemma-4-31B-it model card ([Apache-2.0](../../licenses/google--gemma-4-31B-it.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · VMMU: A Vietnamese Multitask Multimodal Understanding and Reasoning Benchmark ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
@@ -107,9 +109,9 @@ api (DeepInfra) · $0.10/M blended · $0.08 in / $0.16 out per 1M tokens · [dee
 
 <pre>
 download           size  score
-4-bit q4_k_m   ~16.94GB   51.8
-4-bit QAT qat  ~16.94GB   51.8
-8-bit q8_0     ~33.38GB   51.8
+4-bit q4_k_m   ~16.94GB   51.7
+4-bit QAT qat  ~16.94GB   51.7
+8-bit q8_0     ~33.38GB   51.7
 </pre>
 
 ```sh

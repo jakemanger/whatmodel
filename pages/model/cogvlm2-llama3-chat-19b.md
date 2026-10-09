@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-05 · 19.5B params · cogvlm2
 
-**score 41.8** ±2.5 · #373 of 551 · from 5 benchmark results across 3 sources
+**score 42.7** ±2.5 · #362 of 551 · from 5 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                              score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>    963.7    37.6   2026-10-02   60% ▇▇▇▇▇▇▇
-<a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>  -8.5000    47.2   2025-03-16   25% ▇▇▇
-<a name="first-party-zai-cogvlm2-scores"></a>Zhipu AI                <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">OCRBench (lab)</a>                    75.6%    44.8   2024-09-03   11% ▇
-                        <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">TextVQA (lab)</a>                     84.2%    70.4   2024-09-03    2% ▇
-                        <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">ChartQA (lab)</a>                     81.0%    91.0   2024-09-03    0% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>    963.7    37.8   2026-10-02   53% ▇▇▇▇▇▇
+<a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>  -8.5000    47.5   2025-03-16   29% ▇▇▇▇
+<a name="first-party-zai-cogvlm2-scores"></a>Zhipu AI                <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">OCRBench (lab)</a>                    75.6%    45.5   2024-09-03   11% ▇
+                        <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">TextVQA (lab)</a>                     84.2%    66.5   2024-09-03    3% ▇
+                        <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">ChartQA (lab)</a>                     81.0%    58.1   2024-09-03    1% ▇
 prior                   pull toward the middle                     50.0                 3% ▇
-                        weighted average                         = 41.8
+                        weighted average                         = 42.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior                   pull toward the middle                     50.0         
 
 <pre>
 download                                      size  score
-16-bit bf16 · nvidia only                 ~39.01GB   41.8
-4-bit int4 (bitsandbytes at load) · nvi…  ~39.01GB   41.8
+16-bit bf16 · nvidia only                 ~39.01GB   42.7
+4-bit int4 (bitsandbytes at load) · nvi…  ~39.01GB   42.7
 </pre>
 
 ```sh

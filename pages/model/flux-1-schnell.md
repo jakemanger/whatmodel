@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2024-08 · 12B params · apache-2.0
 
-**score 41.0** ±2.3 · #97 of 139 · from 4 benchmark results across 4 sources
+**score 40.6** ±2.3 · #99 of 139 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       57.6%    43.2   2026-07-01   48% ▇▇▇▇▇▇
-<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>   2.9%    41.2   2026-09-28   17% ▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  40.0%    35.3   2026-06-02   17% ▇▇
-<a name="visual-rapid-face"></a>Rapidata/Face_Generat…  <a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generatio…</a>  885.1    38.9   2025-09-03   16% ▇▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       57.6%    42.9   2026-07-01   47% ▇▇▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  40.0%    35.2   2026-06-02   19% ▇▇
+<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>   2.9%    40.8   2026-09-28   17% ▇▇
+<a name="visual-rapid-face"></a>Rapidata/Face_Generat…  <a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generatio…</a>  885.1    38.6   2025-09-03   16% ▇▇
 prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 41.0
+                        weighted average                       = 40.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · Rapidata/Face\_Generation\_Benchmark ([CDLA-Permissive-2.0](../../licenses/visual-rapid-face-CDLA-Permissive-2.0.txt))</sub>
+<sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/Face\_Generation\_Benchmark ([CDLA-Permissive-2.0](../../licenses/visual-rapid-face-CDLA-Permissive-2.0.txt))</sub>
 
 <details><summary>Not counted (1)</summary>
 
@@ -45,10 +45,10 @@ api (Replicate) · $0.0030/image · [replicate.com](https://replicate.com/black-
 
 <pre>
 version                needs  score
-bf16 · nvidia only   ~29.3GB   41.0
-gguf-q8_0            ~28.3GB   41.0
-mlx-4bit · mac only   ~7.7GB   41.0
-bf16 · mac only      ~29.3GB   41.0
+bf16 · nvidia only   ~29.3GB   40.6
+gguf-q8_0            ~28.3GB   40.6
+mlx-4bit · mac only   ~7.7GB   40.6
+bf16 · mac only      ~29.3GB   40.6
 </pre>
 
 ```sh

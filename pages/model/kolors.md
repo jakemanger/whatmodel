@@ -6,7 +6,7 @@
 
 Kuaishou (Kolors team) · released 2024-07 · 2.6B params · kolors-model-license
 
-**score 38.5** ±3.2 · #107 of 139 · from 3 benchmark results across 3 sources
+**score 38.4** ±3.1 · #107 of 139 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  2.93 / 5    35.1   2024-12-25   74% ▇▇▇▇▇▇▇▇▇
-<a name="visual-kolors-readme"></a>Kwai-Kolors/Kolors re…  <a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall s…</a>  3.59 / 5    45.9   2024-11-13   19% ▇▇
-<a name="hpsv3-readme-mit"></a>HPSv3 repository READ…  <a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchm…</a>   10.5500    60.8   2025-12-05    3% ▇
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  2.93 / 5    35.1   2024-12-25   75% ▇▇▇▇▇▇▇▇▇
+<a name="visual-kolors-readme"></a>Kwai-Kolors/Kolors re…  <a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall s…</a>  3.59 / 5    45.8   2024-11-13   18% ▇▇
+<a name="hpsv3-readme-mit"></a>HPSv3 repository READ…  <a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchm…</a>   10.5500    60.2   2025-12-05    3% ▇
 prior                   pull toward the middle                      49.9                 4% ▇
-                        weighted average                          = 38.5
+                        weighted average                          = 38.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle                      49.9        
 
 <pre>
 version               needs  score
-fp16 · nvidia only  ~21.6GB   38.5
+fp16 · nvidia only  ~21.6GB   38.4
 </pre>
 
 ```sh

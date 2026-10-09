@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 2.78B params · apache-2.0
 
-**score 27.3** ±1.2 · #511 of 551 · from 10 benchmark results across 2 sources
+**score 27.2** ±1.2 · #511 of 551 · from 10 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,18 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             29.5%    29.1   2023-05-31   20% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  64.4%    27.6   2023-05-31   17% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                59.4%    25.4   2023-05-31   15% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      88.2%    25.6   2023-05-31   10% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      73.9%    27.5   2023-05-31   10% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  64.7%    28.5   2023-05-31    9% ▇
-<a name="redpajama-2024-original-zero-shot"></a>RedPajama               <a href="https://arxiv.org/html/2411.12372v1">WinoGrande</a>                      60.1%    26.0   2024-11-19    8% ▇
+<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             29.5%    28.8   2023-05-31   19% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  64.4%    27.4   2023-05-31   17% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                59.4%    25.3   2023-05-31   15% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      88.2%    25.4   2023-05-31   10% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      73.9%    27.3   2023-05-31   10% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  64.7%    28.3   2023-05-31    9% ▇
+<a name="redpajama-2024-original-zero-shot"></a>RedPajama               <a href="https://arxiv.org/html/2411.12372v1">WinoGrande</a>                      60.1%    26.1   2024-11-19    8% ▇
                         <a href="https://arxiv.org/html/2411.12372v1">HellaSwag</a>                       59.3%    26.6   2024-11-19    5% ▇
-                        <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  64.7%    26.9   2024-11-19    3% ▇
-                        <a href="https://arxiv.org/html/2411.12372v1">PIQA</a>                            74.0%    26.9   2024-11-19    2% ▇
+                        <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  64.7%    26.8   2024-11-19    3% ▇
+                        <a href="https://arxiv.org/html/2411.12372v1">PIQA</a>                            74.0%    27.2   2024-11-19    2% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 27.3
+                        weighted average                       = 27.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,7 +38,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp16  ~5.68GB   27.3
+4-bit fp16  ~5.68GB   27.2
 </pre>
 
 ```sh

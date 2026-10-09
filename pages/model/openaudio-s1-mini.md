@@ -6,7 +6,7 @@
 
 Fish Audio · released 2025-06 · 0.5B params · cc-by-nc-sa-4.0
 
-**score 44.5** ±8.0 · #67 of 100 · from 3 benchmark results across 2 sources
+**score 44.4** ±7.9 · #68 of 100 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.29 / 5    60.8   2026-03-15   27% ▇▇▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.16 / 5    45.6   2026-03-15   14% ▇▇
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.29 / 5    60.0   2026-03-15   28% ▇▇▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.16 / 5    45.1   2026-03-15   14% ▇▇
 <a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena        <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>     931.4    27.5   2026-09-24   34% ▇▇▇▇
-prior                   pull toward the middle                      49.7                25% ▇▇▇
-                        weighted average                          = 44.5
+prior                   pull toward the middle                      49.8                24% ▇▇▇
+                        weighted average                          = 44.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -42,8 +42,8 @@ api  · price unknown · [docs.fish.audio](https://docs.fish.audio/developer-gui
 
 <pre>
 version                                 needs  score
-bf16 · nvidia only                     ~1.7GB   44.5
-bf16 (fish-speech official repo CLI)  ~3.61GB   44.5
+bf16 · nvidia only                     ~1.7GB   44.4
+bf16 (fish-speech official repo CLI)  ~3.61GB   44.4
 </pre>
 
 ```sh

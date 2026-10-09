@@ -6,7 +6,9 @@
 
 Google · proprietary
 
-**score 59.8** ±2.8 · #31 of 128 · from 5 benchmark results across 3 sources
+**score 59.8** ±2.9 · #31 of 128 · from 5 benchmark results across 3 sources
+
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -14,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-bangla-riverborn-mit"></a>Bangla Speech-to-Text…  <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpe…</a>  21.9%    57.6   2026-09-24   33% ▇▇▇▇
+<a name="speech-stt-bangla-riverborn-mit"></a>Bangla Speech-to-Text…  <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpe…</a>  21.9%    57.6   2026-09-24   34% ▇▇▇▇
 <a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.4%    61.1   2026-03-26   32% ▇▇▇▇
 <a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSp…</a>   2.3%    59.4   2026-07-19   15% ▇▇
-                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   2.3%    67.1   2026-07-19    9% ▇
+                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   2.3%    67.0   2026-07-19    9% ▇
                         <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>  12.7%    60.8   2026-07-19    7% ▇
 prior                   pull toward the middle                   49.7                 3% ▇
                         weighted average                       = 59.8

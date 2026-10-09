@@ -6,7 +6,7 @@
 
 WizardLM · released 2024-01 · 33.34B params · msft-research
 
-**score 48.5** ±0.7 · #280 of 551 · from 5 benchmark results across 3 sources
+**score 48.2** ±0.7 · #287 of 551 · from 5 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              73.2%    48.6   2024-12-26   29% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               79.9%    49.3   2024-12-26   28% ▇▇▇
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               73.8%    47.5   2024-03-28   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       53.3%    48.4   2024-03-28   16% ▇▇
-<a name="first-party-wizardlm-scores"></a>WizardLM team vendor-…  <a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">HumanEval (lab)</a>         79.9%    48.3   2024-01-19    5% ▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              73.2%    48.3   2024-12-26   30% ▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               79.9%    49.0   2024-12-26   28% ▇▇▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               73.8%    47.2   2024-03-28   21% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       53.3%    48.2   2024-03-28   16% ▇▇
+<a name="first-party-wizardlm-scores"></a>WizardLM team vendor-…  <a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">HumanEval (lab)</a>         79.9%    48.0   2024-01-19    4% ▇
 prior                   pull toward the middle           50.0                 0% ▇
-                        weighted average               = 48.5
+                        weighted average               = 48.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,8 +33,8 @@ prior                   pull toward the middle           50.0                 0%
 
 <pre>
 download       size  score
-4-bit q4_k_m  ~20GB   48.5
-8-bit q8_0    ~35GB   48.5
+4-bit q4_k_m  ~20GB   48.2
+8-bit q8_0    ~35GB   48.2
 </pre>
 
 ```sh

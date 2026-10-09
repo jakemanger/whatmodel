@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-07 · 13B params · llama2
 
-**score 34.9** ±1.2 · #460 of 551 · from 13 benchmark results across 4 sources
+**score 34.4** ±1.3 · #463 of 551 · from 13 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,21 +14,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="paper-2311.11045v2"></a>Orca 2: Teaching Smal…  <a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>                    50.4%    32.7   2023-11-21   15% ▇▇
-                        <a href="https://arxiv.org/html/2311.11045v2">BIG-Bench Hard</a>                   38.5%    34.8   2023-11-21   14% ▇▇
-                        <a href="https://arxiv.org/html/2311.11045v2">GSM8K</a>                            48.6%    37.0   2023-11-21   11% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">MMLU</a>                             42.8%    31.3   2023-11-21    8% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>                  38.3%    33.2   2023-11-21    6% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>                         69.0%    28.8   2023-11-21    4% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1149.5    36.2   2026-10-02   18% ▇▇
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   14.5%    37.7   2025-08-09   11% ▇
-                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>   89.2%    40.9   2025-08-09    3% ▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>    4.6%    29.7   2025-05-31    3% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>   22.9%    43.6   2025-05-31    2% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>    0.1%    28.2   2025-05-31    2% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>   65.1%    45.0   2025-05-31    0% ▇
+<a name="paper-2311.11045v2"></a>Orca 2: Teaching Smal…  <a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>                    50.4%    32.2   2023-11-21   17% ▇▇
+                        <a href="https://arxiv.org/html/2311.11045v2">BIG-Bench Hard</a>                   38.5%    34.3   2023-11-21   14% ▇▇
+                        <a href="https://arxiv.org/html/2311.11045v2">GSM8K</a>                            48.6%    36.5   2023-11-21   10% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">MMLU</a>                             42.8%    30.7   2023-11-21    8% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>                  38.3%    33.1   2023-11-21    7% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>                         69.0%    28.5   2023-11-21    5% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1149.5    35.7   2026-10-02   19% ▇▇
+<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   14.5%    37.3   2025-08-09   12% ▇
+                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>   89.2%    40.5   2025-08-09    3% ▇
+<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>    4.6%    27.4   2025-05-31    2% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>   22.9%    42.6   2025-05-31    2% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>    0.1%    26.5   2025-05-31    1% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>   65.1%    47.4   2025-05-31    0% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 34.9
+                        weighted average                        = 34.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -39,7 +39,7 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download        size  score
-4-bit fp16  ~26.03GB   34.9
+4-bit fp16  ~26.03GB   34.4
 </pre>
 
 ```sh

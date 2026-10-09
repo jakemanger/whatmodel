@@ -6,7 +6,7 @@
 
 FireRedTeam (Xiaohongshu) · released 2026-08 · 2.12B params · apache-2.0
 
-**score 63.3** ±3.1 · #20 of 100 · from 4 benchmark results across 1 source
+**score 62.8** ±3.2 · #20 of 100 · from 4 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source           test                            score  implies  date        weight
-<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio  <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">Seed-TTS test-zh · speaker si…</a>  80.8%    63.9   2026-08-22   27% ▇▇▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">Seed-TTS test-en · speaker si…</a>  77.2%    66.8   2026-08-22   24% ▇▇▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">Seed-TTS test-en · Whisper la…</a>   1.8%    61.1   2026-08-22   23% ▇▇▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">Seed-TTS test-zh · Paraformer…</a>   0.9%    63.3   2026-08-22   22% ▇▇▇
-prior            pull toward the middle                   49.7                 4% ▇
-                 weighted average                       = 63.3
+<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio  <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">Seed-TTS test-zh · speaker si…</a>  80.8%    63.5   2026-08-22   27% ▇▇▇
+                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">Seed-TTS test-en · Whisper la…</a>   1.8%    60.5   2026-08-22   23% ▇▇▇
+                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">Seed-TTS test-en · speaker si…</a>  77.2%    66.6   2026-08-22   23% ▇▇▇
+                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">Seed-TTS test-zh · Paraformer…</a>   0.9%    62.9   2026-08-22   23% ▇▇▇
+prior            pull toward the middle                   49.8                 4% ▇
+                 weighted average                       = 62.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +32,7 @@ prior            pull toward the middle                   49.7                 4
 
 <pre>
 version                                  needs  score
-bf16 (FireRedTTS3 repo) · nvidia only  ~12.3GB   63.3
+bf16 (FireRedTTS3 repo) · nvidia only  ~12.3GB   62.8
 </pre>
 
 ```sh

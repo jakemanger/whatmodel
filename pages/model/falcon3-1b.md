@@ -6,7 +6,7 @@
 
 TII · released 2024-12 · 1.67B params · falcon-llm
 
-**score 23.1** ±3.5 · #523 of 551 · from 7 benchmark results across 3 sources
+**score 22.2** ±3.7 · #524 of 551 · from 7 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         19.7%    20.9   2025-06-14   25% ▇▇▇
-                        <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  11.1%    31.3   2025-12-16   16% ▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  44.2%    19.5   2025-01-29   34% ▇▇▇▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>   3.4%    16.3   2025-05-31   10% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>   0.0%    16.3   2025-05-31    5% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   0.0%    16.7   2025-05-31    3% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  55.8%    33.8   2025-05-31    2% ▇
-prior                   pull toward the middle                   50.0                 5% ▇
-                        weighted average                       = 23.1
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         19.7%    20.3   2025-06-14   27% ▇▇▇
+                        <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  11.1%    30.5   2025-12-16   16% ▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  44.2%    19.0   2025-01-29   37% ▇▇▇▇
+<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>   3.4%    12.0   2025-05-31    7% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>   0.0%    13.8   2025-05-31    4% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   0.0%    14.8   2025-05-31    2% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  55.8%    -4.5   2025-05-31    0% ▇
+prior                   pull toward the middle                   50.0                 6% ▇
+                        weighted average                       = 22.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,8 +35,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~1.5GB   23.1
-8-bit q8_0    ~2.5GB   23.1
+4-bit q4_k_m  ~1.5GB   22.2
+8-bit q8_0    ~2.5GB   22.2
 </pre>
 
 ```sh

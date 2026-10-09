@@ -6,7 +6,7 @@
 
 UC Berkeley (Brooks, Holynski, Efros) · released 2023-01 · 0.86B params · mit
 
-**score 16.4** ±3.5 · #138 of 139 · from 5 benchmark results across 5 sources
+**score 16.9** ±3.5 · #138 of 139 · from 5 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>         29.2%    13.5   2025-12-01   40% ▇▇▇▇▇
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>      23.8%    14.7   2026-05-13   21% ▇▇▇
-<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided editi…</a>  45.0%    21.6   2026-03-29   18% ▇▇
-<a name="visual-edival"></a>EdiVal-Agent: An Obje…  <a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing ove…</a>  13.0%    10.6   2026-03-17   12% ▇
-<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>   0.3%     0.7   2026-05-29    3% ▇
+<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>         29.2%    14.0   2025-12-01   40% ▇▇▇▇▇
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>      23.8%    15.5   2026-05-13   22% ▇▇▇
+<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided editi…</a>  45.0%    22.0   2026-03-29   18% ▇▇
+<a name="visual-edival"></a>EdiVal-Agent: An Obje…  <a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing ove…</a>  13.0%    11.0   2026-03-17   12% ▇
+<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>   0.3%     1.2   2026-05-29    3% ▇
 prior                   pull toward the middle                   49.9                 5% ▇
-                        weighted average                       = 16.4
+                        weighted average                       = 16.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,7 +33,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version              needs  score
-fp16 · nvidia only  ~2.6GB   16.4
+fp16 · nvidia only  ~2.6GB   16.9
 </pre>
 
 ```sh

@@ -8,15 +8,17 @@ Meta · released 2023-11 · 2.31B params · cc-by-nc-4.0
 
 **score 47.3** ±6.1 · #88 of 128 · from 3 benchmark results across 3 sources
 
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
+
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-turkasr-bench-mit"></a>Turkish ASR Leaderboa…  <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sour…</a>  21.6%    41.7   2026-09-25   37% ▇▇▇▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  38.2%    53.4   2025-01-12   31% ▇▇▇▇
-<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  25.9%    46.6   2026-08-15   18% ▇▇
+<a name="speech-stt-turkasr-bench-mit"></a>Turkish ASR Leaderboa…  <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sour…</a>  21.6%    41.6   2026-09-25   37% ▇▇▇▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  38.2%    53.3   2025-01-12   30% ▇▇▇▇
+<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  25.9%    46.5   2026-08-15   18% ▇▇
 prior                   pull toward the middle                   49.7                15% ▇▇
                         weighted average                       = 47.3
 </pre>

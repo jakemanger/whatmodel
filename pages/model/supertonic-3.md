@@ -6,7 +6,7 @@
 
 Supertone · released 2026-05 · 0.099B params · openrail-m
 
-**score 54.7** ±10.4 · #46 of 100 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.6** ±10.3 · #46 of 100 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source            test                             score  implies  date        weight
-<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena  <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>  1051.4    58.3   2026-09-24   58% ▇▇▇▇▇▇▇
-prior             pull toward the middle                    49.7                42% ▇▇▇▇▇
-                  weighted average                        = 54.7
+<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena  <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>  1051.4    58.2   2026-09-24   58% ▇▇▇▇▇▇▇
+prior             pull toward the middle                    49.8                42% ▇▇▇▇▇
+                  weighted average                        = 54.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,8 +29,8 @@ prior             pull toward the middle                    49.7                
 
 <pre>
 version                                   needs  score
-onnx-fp32 (supertonic Python SDK 1.3.x)  ~0.4GB   54.7
-onnx-fp32 (Supertonic sample code)       ~0.4GB   54.7
+onnx-fp32 (supertonic Python SDK 1.3.x)  ~0.4GB   54.6
+onnx-fp32 (Supertonic sample code)       ~0.4GB   54.6
 </pre>
 
 ```sh

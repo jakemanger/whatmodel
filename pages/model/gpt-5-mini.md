@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-08 · closed weights
 
-**score 65.4** ±0.6 · #93 of 551 · from 43 benchmark results across 15 sources
+**score 65.0** ±0.5 · #95 of 551 · from 50 benchmark results across 19 sources
 
 ## How the score was worked out
 
@@ -14,56 +14,63 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        46.7%    68.7   2026-06-12   17% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>           12.2%    67.4   2026-06-12    5% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     75.0%    62.8   2025-10-30    5% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>               64.7%    64.7   2026-02-01    5% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     97.8%    68.7   2025-10-30    2% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>      5.0%    60.1   2026-08-27    2% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            30.0%    73.4   2026-08-07    2% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         86.7%    67.0   2025-10-30    2% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                21.6%    60.8   2026-08-10    1% ▇
-<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">MMMU Pro (lab)</a>                   67.5%    64.5   2026-03-17    3% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Humanity's Last Exam (lab)</a>       18.3%    61.5   2026-03-17    2% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        46.7%    68.8   2026-06-12   14% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     75.0%    62.6   2025-10-30    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>               64.7%    64.8   2026-02-01    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>           12.2%    67.5   2026-06-12    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         86.7%    66.6   2025-10-30    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     97.8%    68.3   2025-10-30    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>      5.0%    59.8   2026-08-27    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            30.0%    73.7   2026-08-07    1% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                21.6%    60.6   2026-08-10    1% ▇
+<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-for-developers">τ²-bench Telecom (lab)</a>           74.1%    68.4   2025-08-07    3% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">MMMU Pro (lab)</a>                   67.5%    64.5   2026-03-17    2% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Humanity's Last Exam (lab)</a>       18.3%    61.8   2026-03-17    2% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Toolathlon (Tool Decathlon) (…</a>   26.9%    59.1   2026-03-17    2% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Terminal-Bench 2.0 (lab)</a>         38.2%    57.3   2026-03-17    1% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Humanity's Last Exam with too…</a>   31.6%    61.2   2026-03-17    1% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">OSWorld-Verified (lab)</a>           42.0%    59.9   2026-03-17    1% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Terminal-Bench 2.0 (lab)</a>         38.2%    56.6   2026-03-17    1% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">SWE-bench Pro (lab)</a>              45.7%    61.1   2026-03-17    1% ▇
-<a name="card-final-apriel-1-6-15b-thinker"></a>ServiceNow-AI/Apriel-…  <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Aider polyglot (225 exercises…</a>   71.6%    65.9   2026-10-06    6% ▇
-                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Retail</a>                  73.4%    66.6   2026-10-06    2% ▇
-                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified</a>               61.0%    70.4   2026-10-06    1% ▇
-                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Airline</a>                 59.3%    65.6   2026-10-06    1% ▇
-                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Multi-IF (aggregation unspeci…</a>   85.4%    66.0   2026-10-06    1% ▇
-<a name="korean-personal-benchmark-runs"></a>Daekeun Kim Korean LL…  <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero…</a>   60.6%    66.5                 5% ▇
-                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>       82.2%    62.9                 3% ▇
-                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>        84.4%    61.9                 2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1389.7    62.2   2026-10-02    4% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1183.2    61.7   2026-10-02    3% ▇
-<a name="servicenow-browsergym-leaderboard"></a>ServiceNow BrowserGym…  <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/workarena-l2.json">BrowserGym WorkArena-L2 (Agen…</a>   47.7%    68.9   2025-08-07    4% ▇
-                        <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/workarena-l1.json">BrowserGym WorkArena-L1 (Agen…</a>   60.6%    65.6   2025-08-07    2% ▇
-                        <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/miniwob.json">BrowserGym MiniWoB (AgentLab …</a>   71.0%    64.0   2025-08-07    1% ▇
-<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   24.0%    61.9   2026-01-17    2% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   55.5%    63.3   2025-12-16    2% ▇
-<a name="paper-2604.18584v2"></a>MathNet: a Global Mul…  <a href="https://arxiv.org/html/2604.18584v2">MathNet-Solve-Test micro-aver…</a>   57.0%    69.7   2026-07-29    1% ▇
-<a name="paper-2605.09063v3"></a>Soohak: A Mathematici…  <a href="https://arxiv.org/html/2605.09063v3">SOOHAK Challenge (340 problem…</a>   18.8%    74.2   2026-05-19    1% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">SWE-bench Pro (lab)</a>              45.7%    60.7   2026-03-17    1% ▇
+<a name="card-final-apriel-1-6-15b-thinker"></a>ServiceNow-AI/Apriel-…  <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Aider polyglot (225 exercises…</a>   71.6%    65.8   2026-10-06    6% ▇
+                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Retail</a>                  73.4%    66.3   2026-10-06    2% ▇
+                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified</a>               61.0%    70.1   2026-10-06    1% ▇
+                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Airline</a>                 59.3%    65.5   2026-10-06    1% ▇
+                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Multi-IF (aggregation unspeci…</a>   85.4%    65.8   2026-10-06    1% ▇
+<a name="korean-personal-benchmark-runs"></a>Daekeun Kim Korean LL…  <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero…</a>   60.6%    66.4                 5% ▇
+                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>       82.2%    62.8                 2% ▇
+                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>        84.4%    61.8                 2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1389.7    62.0   2026-10-02    3% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1183.2    61.6   2026-10-02    3% ▇
+<a name="servicenow-browsergym-leaderboard"></a>ServiceNow BrowserGym…  <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/workarena-l2.json">BrowserGym WorkArena-L2 (Agen…</a>   47.7%    68.9   2025-08-07    3% ▇
+                        <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/workarena-l1.json">BrowserGym WorkArena-L1 (Agen…</a>   60.6%    65.5   2025-08-07    2% ▇
+                        <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/miniwob.json">BrowserGym MiniWoB (AgentLab …</a>   71.0%    63.9   2025-08-07    1% ▇
+<a name="acl-kcl-2026"></a>Korean Canonical Lega…  <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>                40.3%    61.9   2026-09-25    2% ▇
+                        <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                 40.9%    59.3   2026-09-25    1% ▇
+<a name="card-qwen--qwen3.5-27b"></a>Qwen/Qwen3.5-27B mode…  <a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">τ²-bench aggregate</a>               69.8%    61.6   2026-02-24    1% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/README.md">MATH-Vision</a>                      71.9%    58.3   2026-02-24    1% ▇
+<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   24.0%    61.7   2026-01-17    2% ▇
+<a name="card-qwen--qwen3.5-122b-a10b"></a>Qwen/Qwen3.5-122B-A10…  <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">τ²-bench aggregate</a>               69.8%    59.4   2026-02-24    2% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   55.5%    62.9   2025-12-16    1% ▇
+<a name="paper-2606.28715v2-seataubench"></a>SEATauBench: Progress…  <a href="https://arxiv.org/html/2606.28715v2">τ²-bench Telecom</a>                 71.3%    65.8   2026-09-05    1% ▇
+<a name="paper-2604.18584v2"></a>MathNet: a Global Mul…  <a href="https://arxiv.org/html/2604.18584v2">MathNet-Solve-Test micro-aver…</a>   57.0%    69.6   2026-07-29    1% ▇
+<a name="paper-2605.09063v3"></a>Soohak: A Mathematici…  <a href="https://arxiv.org/html/2605.09063v3">SOOHAK Challenge (340 problem…</a>   18.8%    74.5   2026-05-19    1% ▇
                         <a href="https://arxiv.org/html/2605.09063v3">SOOHAK-Mini (702 problems, Av…</a>   67.1%    71.7   2026-05-19    1% ▇
-<a name="paper-2601.03267v2"></a>OpenAI                  <a href="https://arxiv.org/html/2601.03267v2#S3.T8">SimpleQA (lab)</a>                   22.0%    59.7   2025-08-13    1% ▇
-                        <a href="https://arxiv.org/html/2601.03267v2#S3.SS10">HealthBench Hard (lab)</a>           40.3%    76.6   2025-08-13    0% ▇
-<a name="paper-2601.10611v4-molmo2"></a>Molmo2: Open Weights …  <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-VideoCount accuracy (v…</a>   29.8%    59.8   2026-04-02    0% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Ai2 Molmo2 human preference E…</a>  1076.0    66.7   2026-04-02    0% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-CapTest dense video ca…</a>   56.6%    81.2   2026-04-02    0% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   83.9%    57.4   2025-09-01    1% ▇
+<a name="paper-2601.03267v2"></a>OpenAI                  <a href="https://arxiv.org/html/2601.03267v2#S3.T8">SimpleQA (lab)</a>                   22.0%    59.4   2025-08-13    1% ▇
+                        <a href="https://arxiv.org/html/2601.03267v2#S3.SS10">HealthBench Hard (lab)</a>           40.3%    76.8   2025-08-13    0% ▇
+<a name="paper-2601.10611v4-molmo2"></a>Molmo2: Open Weights …  <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-VideoCount accuracy (v…</a>   29.8%    59.7   2026-04-02    0% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Ai2 Molmo2 human preference E…</a>  1076.0    66.6   2026-04-02    0% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-CapTest dense video ca…</a>   56.6%    81.7   2026-04-02    0% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   83.9%    57.2   2025-09-01    1% ▇
 <a name="amazon-tau2-verified"></a>Amazon AGI              <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 us…</a>   69.8%    63.4   2026-09-25    0% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   96.8%    63.2   2025-10-16    0% ▇
-                        <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   87.1%   -35.5   2026-09-22    0% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   96.8%    62.7   2025-10-16    0% ▇
+                        <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   87.1%   -35.6   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 65.4
+                        weighted average                        = 65.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ServiceNow-AI/Apriel-1.6-15b-Thinker model card ([MIT](../../licenses/cards-final-NOTICE.txt)) · Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ServiceNow BrowserGym leaderboard ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · MathNet: a Global Multimodal Benchmark for Mathematical Reasoning and Retrieval ([CC BY 4.0](../../licenses/paper-2604.18584v2-CC-BY-4.0.txt)) · Soohak: A Mathematician-Curated Benchmark for Evaluating Research-level Math Capabilities of LLMs ([CC BY-SA 4.0](../../licenses/paper-2605.09063v3-CC-BY-SA-4.0.txt)) · Molmo2: Open Weights and Data for Vision-Language Models with Video Understanding and Grounding ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Amazon AGI ([MIT](../../licenses/tau2-verified-MIT.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ServiceNow-AI/Apriel-1.6-15b-Thinker model card ([MIT](../../licenses/cards-final-NOTICE.txt)) · Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ServiceNow BrowserGym leaderboard ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Korean Canonical Legal Benchmark: Toward Knowledge-Independent Evaluation of LLMs’ Legal Reasoning Capabilities ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · Qwen/Qwen3.5-27B model card ([apache-2.0](../../licenses/Qwen--Qwen3.5-27B.txt)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) · Qwen/Qwen3.5-122B-A10B model card ([apache-2.0](../../licenses/Qwen--Qwen3.5-122B-A10B.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · SEATauBench: Progressively Adapting Tool-Agent-User Evaluation Into Low-Resource Southeast Asian Languages ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MathNet: a Global Multimodal Benchmark for Mathematical Reasoning and Retrieval ([CC BY 4.0](../../licenses/paper-2604.18584v2-CC-BY-4.0.txt)) · Soohak: A Mathematician-Curated Benchmark for Evaluating Research-level Math Capabilities of LLMs ([CC BY-SA 4.0](../../licenses/paper-2605.09063v3-CC-BY-SA-4.0.txt)) · Molmo2: Open Weights and Data for Vision-Language Models with Video Understanding and Grounding ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Amazon AGI ([MIT](../../licenses/tau2-verified-MIT.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 

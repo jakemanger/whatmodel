@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-04 · proprietary
 
-**score 84.1** ±1.2 · #3 of 139 · from 13 benchmark results across 11 sources
+**score 84.2** ±1.2 · #3 of 139 · from 13 benchmark results across 11 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,26 +16,26 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1383.0    86.8   2026-09-24   25% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1383.0    86.9   2026-09-24   24% ▇▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1461.3    83.9   2026-09-30    7% ▇
-<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>   86.9%    85.9   2026-09-28   19% ▇▇
+<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>   86.9%    86.0   2026-09-28   19% ▇▇
                         <a href="https://arxiv.org/html/2609.35641v1#S3.F2.fig2">VVRBench-Challenge accuracy (…</a>   10.3%    83.3   2026-09-28   10% ▇
-<a name="visual-infoedit"></a>InfoEdit: Probing Glo…  <a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing …</a>   62.0%    84.7   2026-09-27   19% ▇▇
-<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>   16.3%    78.4   2026-05-29    4% ▇
+<a name="visual-infoedit"></a>InfoEdit: Probing Glo…  <a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing …</a>   62.0%    84.8   2026-09-27   19% ▇▇
+<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>   16.3%    78.6   2026-05-29    4% ▇
 <a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>  1167.3    85.3   2026-10-01    3% ▇
-<a name="genexam-readme-mit"></a>GenExam leaderboard     <a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT…</a>   93.8%    86.3   2026-09-26    2% ▇
-<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>   66.4%    77.4   2026-06-05    2% ▇
 <a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>   78.6%    75.5   2026-06-09    2% ▇
-<a name="visual-chartsync"></a>ChartSync: A Benchmar…  <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Over…</a>   81.8%    72.9   2026-07-11    2% ▇
+<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>   66.4%    77.5   2026-06-05    2% ▇
+<a name="genexam-readme-mit"></a>GenExam leaderboard     <a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT…</a>   93.8%    86.4   2026-09-26    2% ▇
 <a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   64.7%    78.0   2026-05-27    2% ▇
-<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>   99.4%    92.9   2026-10-07    1% ▇
+<a name="visual-chartsync"></a>ChartSync: A Benchmar…  <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Over…</a>   81.8%    73.5   2026-07-11    2% ▇
+<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>   99.4%    92.7   2026-10-07    1% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 84.1
+                        weighted average                        = 84.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · InfoEdit: Probing Global Layout Reasoning in Infographic Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam leaderboard ([MIT](https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/LICENSE)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · InfoEdit: Probing Global Layout Reasoning in Infographic Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt)) · GenExam leaderboard ([MIT](https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/LICENSE)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) · ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

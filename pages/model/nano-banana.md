@@ -6,7 +6,7 @@
 
 Google · released 2025-08 · proprietary
 
-**score 61.8** ±1.3 · #29 of 139 · from 16 benchmark results across 14 sources
+**score 61.2** ±1.2 · #30 of 139 · from 19 benchmark results across 16 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,29 +16,32 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1150.2    62.4   2026-09-24   28% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1293.1    64.7   2026-09-30    8% ▇
-<a name="paper-2604.24023v2-servimage"></a>ServImage: An Image G…  <a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (hu…</a>   29.9%    57.6   2026-06-19   11% ▇
-<a name="genexam-readme-mit"></a>GenExam leaderboard     <a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT…</a>   55.9%    64.4   2026-09-26    9% ▇
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>        89.5%    66.9   2026-07-01    8% ▇
-<a name="visual-infoedit"></a>InfoEdit: Probing Glo…  <a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing …</a>    3.5%    57.3   2026-09-27    7% ▇
-<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>   89.2%    62.3   2026-07-12    6% ▇
-                        <a href="https://arxiv.org/html/2506.02161v3#S4.T3">GenAI-Bench (VQAScore overall)</a>   79.0%    42.7   2026-07-12    1% ▇
-<a name="visual-gebench"></a>GEBench: Benchmarking…  <a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation …</a>   52.1%    63.9   2026-02-10    5% ▇
-<a name="paper-2505.17613v2-mmmg"></a>MMMG: a Comprehensive…  <a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (averag…</a>   65.4%    58.8   2026-09-30    4% ▇
-<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>          78.8%    53.5   2025-12-01    3% ▇
-<a name="visual-edival"></a>EdiVal-Agent: An Obje…  <a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing ove…</a>   56.2%    63.7   2026-03-17    3% ▇
-<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>   11.1%    72.8   2026-05-29    2% ▇
-<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.F2.fig2">VVRBench-Challenge accuracy (…</a>    1.1%    58.0   2026-09-28    2% ▇
-<a name="paper-2603.26174v1-creval"></a>CREval: An Automated …  <a href="https://arxiv.org/html/2603.26174v1">CREval-Bench creative image e…</a>   81.3%    59.6   2026-03-27    2% ▇
-<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>   47.7%    65.9   2026-03-26    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1150.2    62.3   2026-09-24   24% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1293.1    64.7   2026-09-30    7% ▇
+<a name="paper-2604.24023v2-servimage"></a>ServImage: An Image G…  <a href="https://arxiv.org/html/2604.24023v2">ServImage task acceptance (hu…</a>   29.9%    57.2   2026-06-19   11% ▇
+<a name="report-2512.07584v1"></a>Meituan LongCat         <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-CN overall (G_O, …</a>   73.6%    59.5   2025-12-08    5% ▇
+                        <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-EN overall (G_O, …</a>   72.0%    52.7   2025-12-08    4% ▇
+<a name="genexam-readme-mit"></a>GenExam leaderboard     <a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT…</a>   55.9%    64.3   2026-09-26    8% ▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>        89.5%    66.5   2026-07-01    7% ▇
+<a name="visual-infoedit"></a>InfoEdit: Probing Glo…  <a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing …</a>    3.5%    57.1   2026-09-27    7% ▇
+<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>   89.2%    62.2   2026-07-12    5% ▇
+                        <a href="https://arxiv.org/html/2506.02161v3#S4.T3">GenAI-Bench (VQAScore overall)</a>   79.0%    42.8   2026-07-12    1% ▇
+<a name="visual-gebench"></a>GEBench: Benchmarking…  <a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation …</a>   52.1%    64.1   2026-02-10    4% ▇
+<a name="paper-2505.17613v2-mmmg"></a>MMMG: a Comprehensive…  <a href="https://arxiv.org/html/2505.17613v2">MMMG image generation (averag…</a>   65.4%    58.7   2026-09-30    4% ▇
+<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>          78.8%    54.1   2025-12-01    3% ▇
+<a name="visual-edival"></a>EdiVal-Agent: An Obje…  <a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing ove…</a>   56.2%    63.9   2026-03-17    3% ▇
+<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>   11.1%    73.5   2026-05-29    2% ▇
+<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.F2.fig2">VVRBench-Challenge accuracy (…</a>    1.1%    57.7   2026-09-28    2% ▇
+<a name="paper-2603.26174v1-creval"></a>CREval: An Automated …  <a href="https://arxiv.org/html/2603.26174v1">CREval-Bench creative image e…</a>   81.3%    59.3   2026-03-27    2% ▇
+<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>   47.7%    66.8   2026-03-26    1% ▇
+<a name="report-2506.18871v4"></a>BAAI                    <a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 …</a>   78.4%    61.1   2026-04-21    1% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 61.8
+                        weighted average                        = 61.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ServImage: An Image Generation and Editing Benchmark from Real-world Commercial Imaging Services ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam leaderboard ([MIT](https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/LICENSE)) · T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · InfoEdit: Probing Global Layout Reasoning in Infographic Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) · GEBench: Benchmarking Image Generation Models as GUI Environments ([CC-BY-4.0](../../licenses/visual-gebench.txt)) · MMMG: a Comprehensive and Reliable Benchmark for Multitask Multimodal Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · CREval: An Automated Interpretable Evaluation for Creative Image Manipulation under Complex Instructions ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ServImage: An Image Generation and Editing Benchmark from Real-world Commercial Imaging Services ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Meituan LongCat ([CC BY 4.0](../../licenses/report-2512.07584v1.txt)) · GenExam leaderboard ([MIT](https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/LICENSE)) · T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · InfoEdit: Probing Global Layout Reasoning in Infographic Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) · GEBench: Benchmarking Image Generation Models as GUI Environments ([CC-BY-4.0](../../licenses/visual-gebench.txt)) · MMMG: a Comprehensive and Reliable Benchmark for Multitask Multimodal Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · CREval: An Automated Interpretable Evaluation for Creative Image Manipulation under Complex Instructions ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · BAAI ([CC BY 4.0](../../licenses/report-2506.18871v4.txt))</sub>
 
 ## How to run it
 

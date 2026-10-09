@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-01 · 73.4B params · qwen
 
-**score 54.5** ±1.5 · #212 of 551 · from 15 benchmark results across 7 sources
+**score 54.3** ±1.3 · #222 of 551 · from 17 benchmark results across 8 sources
 
 ## How the score was worked out
 
@@ -14,23 +14,25 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                              score  implies  date        weight
-<a name="card2-qwen-qwen2-5-vl-32b-instruct"></a>Qwen2.5-VL-32B-Instru…  <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMMU Pro (lab)</a>                    51.1%    53.4   2025-03-21    8% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMStar (lab)</a>                      70.8%    53.5   2025-03-21    6% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">ScreenSpot-Pro (lab)</a>              43.6%    52.8   2025-03-21    5% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Video-MME (with subtitles) (l…</a>    79.1%    54.5   2025-03-21    5% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Video-MME (without subtitles)…</a>    73.3%    54.9   2025-03-21    5% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">LVBench (lab)</a>                     47.3%    46.6   2025-03-21    5% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">CC-OCR (lab)</a>                      79.8%    59.0   2025-03-21    4% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">DocVQA (lab)</a>                      96.4%    59.6   2025-03-21    4% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">AndroidWorld (lab)</a>                35.0%    49.8   2025-03-21    4% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>   1121.2    54.9   2026-10-02   21% ▇▇
-<a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>  35.3300    57.4   2025-03-16    8% ▇
-<a name="paper-2504.07072v2-kaleidoscope"></a>Kaleidoscope: In-lang…  <a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope (in-language mul…</a>    52.9%    52.9   2025-04-29    8% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>    79.1%    53.4   2025-04-03    7% ▇
-<a name="paper-2508.13680v5-vmmu"></a>VMMU: A Vietnamese Mu…  <a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal u…</a>    51.7%    62.1   2026-09-23    5% ▇
+<a name="card2-qwen-qwen2-5-vl-32b-instruct"></a>Qwen2.5-VL-32B-Instru…  <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMMU Pro (lab)</a>                    51.1%    53.1   2025-03-21    6% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMStar (lab)</a>                      70.8%    53.4   2025-03-21    4% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">ScreenSpot-Pro (lab)</a>              43.6%    51.6   2025-03-21    4% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Video-MME (without subtitles)…</a>    73.3%    54.7   2025-03-21    4% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Video-MME (with subtitles) (l…</a>    79.1%    54.5   2025-03-21    4% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">LVBench (lab)</a>                     47.3%    46.5   2025-03-21    4% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">CC-OCR (lab)</a>                      79.8%    58.9   2025-03-21    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">DocVQA (lab)</a>                      96.4%    59.0   2025-03-21    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">AndroidWorld (lab)</a>                35.0%    49.9   2025-03-21    3% ▇
+<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/html/2502.13923v1#S3.T5">CharXiv (reasoning questions)…</a>    49.7%    51.7   2025-02-19   12% ▇
+                        <a href="https://arxiv.org/html/2502.13923v1#S3.T5">CharXiv descriptive questions…</a>    87.4%    59.4   2025-02-19    6% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>   1121.2    54.9   2026-10-02   15% ▇▇
+<a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>  35.3300    56.9   2025-03-16    8% ▇
+<a name="paper-2504.07072v2-kaleidoscope"></a>Kaleidoscope: In-lang…  <a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope (in-language mul…</a>    52.9%    52.5   2025-04-29    7% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>    79.1%    53.1   2025-04-03    6% ▇
+<a name="paper-2508.13680v5-vmmu"></a>VMMU: A Vietnamese Mu…  <a href="https://arxiv.org/html/2508.13680v5">VMMU (Vietnamese multimodal u…</a>    51.7%    62.0   2026-09-23    4% ▇
 <a name="paper-2505.20740v3-msearth"></a>MSEarth: A Multimodal…  <a href="https://arxiv.org/html/2505.20740v3">MSEarth-Bench Earth-science f…</a>    50.6%    51.6   2026-05-03    3% ▇
 prior                   pull toward the middle                     50.0                 1% ▇
-                        weighted average                         = 54.5
+                        weighted average                         = 54.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -43,8 +45,8 @@ prior                   pull toward the middle                     50.0         
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~44.54GB   54.5
-8-bit q8_0    ~88.58GB   54.5
+4-bit q4_k_m  ~44.54GB   54.3
+8-bit q8_0    ~88.58GB   54.3
 </pre>
 
 ```sh

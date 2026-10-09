@@ -6,7 +6,9 @@
 
 Microsoft · released 2025-02 · 5.57B params · mit
 
-**score 59.9** ±1.8 · #30 of 128 · from 6 benchmark results across 4 sources
+**score 59.8** ±1.8 · #30 of 128 · from 6 benchmark results across 4 sources
+
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -14,14 +16,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        4.4%    61.6   2026-03-26   36% ▇▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        4.4%    61.5   2026-03-26   37% ▇▇▇▇
                         <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.0%    63.6   2026-03-26   13% ▇▇
-<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  36.7%    55.8   2025-11-18   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  25.9%    60.1   2025-11-18   21% ▇▇▇
+<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  25.9%    59.9   2025-11-18   21% ▇▇▇
+                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  36.7%    55.5   2025-11-18   21% ▇▇
 <a name="speech-stt-cl-spanish-asr-apache"></a>Open ASR Leaderboard …  <a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilea…</a>   9.4%    58.2   2025-10-27    6% ▇
 <a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  15.8%    59.4   2026-08-18    1% ▇
 prior                   pull toward the middle                   49.7                 1% ▇
-                        weighted average                       = 59.9
+                        weighted average                       = 59.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +34,7 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version                needs  score
-bf16 · nvidia only  ~13.87GB   59.9
+bf16 · nvidia only  ~13.87GB   59.8
 </pre>
 
 ```sh

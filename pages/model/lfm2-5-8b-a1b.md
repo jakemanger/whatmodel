@@ -6,7 +6,7 @@
 
 Liquid AI · released 2026-05 · 8.47B params (1.5B active) · lfm1.0
 
-**score 58.3** ±2.1 · #172 of 551 · from 9 benchmark results across 1 source
+**score 57.1** ±2.0 · #184 of 551 · from 9 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,17 +14,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card-liquidai-lfm2-5-8b-a1b"></a>LiquidAI/LFM2.5-8B-A1…  <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">AIME 2025 (lab)</a>                 42.5%    51.2   2026-09-25   25% ▇▇▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Telecom (lab)</a>          88.1%    73.3   2026-09-25   12% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">IFBench (aggregation unspecif…</a>  56.5%    59.6   2026-09-25   12% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Retail (lab)</a>           39.8%    55.6   2026-09-25   11% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">BFCL V4 (December 2025 archiv…</a>  48.5%    57.0   2026-09-25   10% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">Multi-IF (aggregation unspeci…</a>  79.9%    62.1   2026-09-25    9% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">MATH-500 (lab)</a>                  88.8%    54.1   2026-09-25    7% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">BFCL v3 (lab)</a>                   64.4%    56.4   2026-09-25    6% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">IFEval (aggregation unspecifi…</a>  91.8%    66.1   2026-09-25    6% ▇
+<a name="card-liquidai-lfm2-5-8b-a1b"></a>LiquidAI/LFM2.5-8B-A1…  <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">AIME 2025 (lab)</a>                 42.5%    51.1   2026-09-25   24% ▇▇▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">MATH-500 (lab)</a>                  88.8%    53.0   2026-09-25   14% ▇▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Telecom (lab)</a>          88.1%    67.9   2026-09-25   13% ▇▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Retail (lab)</a>           39.8%    55.3   2026-09-25   11% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">IFBench (aggregation unspecif…</a>  56.5%    60.2   2026-09-25    9% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">BFCL V4 (December 2025 archiv…</a>  48.5%    56.9   2026-09-25    9% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">Multi-IF (aggregation unspeci…</a>  79.9%    61.5   2026-09-25    8% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">IFEval (aggregation unspecifi…</a>  91.8%    65.2   2026-09-25    6% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">BFCL v3 (lab)</a>                   64.4%    55.8   2026-09-25    5% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 58.3
+                        weighted average                       = 57.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -46,8 +46,8 @@ LiquidAI/LFM2.5-8B-A1…  <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~5.58GB   58.3
-8-bit q8_0    ~10.66GB   58.3
+4-bit q4_k_m   ~5.58GB   57.1
+8-bit q8_0    ~10.66GB   57.1
 </pre>
 
 ```sh

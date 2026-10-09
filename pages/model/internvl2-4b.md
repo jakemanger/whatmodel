@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (OpenGVLab) · released 2024-07 · 4.15B params · mit
 
-**score 40.1** ±1.8 · #398 of 551 · from 19 benchmark results across 4 sources
+**score 41.1** ±1.7 · #389 of 551 · from 19 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,27 +14,27 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card-opengvlab-internvl2-cards"></a>OpenGVLab InternVL2 m…  <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">MMMU (val) (lab)</a>                47.9%    41.2   2025-03-25    6% ▇
-                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">Video-MME (with subtitles) (l…</a>  53.4%    35.3   2025-03-25    6% ▇
-                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">OCRBench (lab)</a>                  78.8%    45.5   2025-03-25    6% ▇
-                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">Video-MME (without subtitles)…</a>  51.4%    37.8   2025-03-25    6% ▇
-                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">DocVQA (lab)</a>                    89.2%    42.1   2025-03-25    6% ▇
-                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">MVBench (lab)</a>                   63.7%    48.0   2025-03-25    6% ▇
-                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">HallusionBench (lab)</a>            41.9%    40.1   2025-03-25    5% ▇
-                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">RealWorldQA (lab)</a>               60.7%    39.0   2025-03-25    5% ▇
-                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">MathVista (testmini) (lab)</a>      58.6%    44.7   2025-03-25    4% ▇
-                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">AI2D test (lab)</a>                 78.9%    32.8   2025-03-25    2% ▇
-                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">TextVQA (lab)</a>                   74.4%    47.3   2025-03-25    1% ▇
-                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">ChartQA (lab)</a>                   81.5%    97.1   2025-03-25    0% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  958.3    37.0   2026-10-02   31% ▇▇▇▇
-<a name="microsoft-phi35-vision-card-benchmarks"></a>Microsoft Phi-3.5-vis…  <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MMMU (val)</a>                      44.2%    41.2   2024-08-20    8% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MathVista (testmini)</a>            53.7%    46.5   2024-08-20    3% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">TextVQA</a>                         66.2%    31.1   2024-08-20    1% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">AI2D test</a>                       77.3%    33.8   2024-08-20    1% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">ChartQA</a>                         78.8%    62.9   2024-08-20    0% ▇
-<a name="paper-2501.16411v2-physbench"></a>PhysBench: Benchmarki…  <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world unde…</a>  39.7%    42.6   2025-01-29    3% ▇
+<a name="card-opengvlab-internvl2-cards"></a>OpenGVLab InternVL2 m…  <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">MMMU (val) (lab)</a>                47.9%    42.6   2025-03-25    7% ▇
+                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">Video-MME (with subtitles) (l…</a>  53.4%    36.0   2025-03-25    6% ▇
+                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">OCRBench (lab)</a>                  78.8%    46.3   2025-03-25    6% ▇
+                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">Video-MME (without subtitles)…</a>  51.4%    38.3   2025-03-25    6% ▇
+                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">DocVQA (lab)</a>                    89.2%    42.2   2025-03-25    6% ▇
+                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">MVBench (lab)</a>                   63.7%    48.7   2025-03-25    5% ▇
+                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">HallusionBench (lab)</a>            41.9%    41.7   2025-03-25    5% ▇
+                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">RealWorldQA (lab)</a>               60.7%    39.8   2025-03-25    4% ▇
+                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">MathVista (testmini) (lab)</a>      58.6%    45.8   2025-03-25    4% ▇
+                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">AI2D test (lab)</a>                 78.9%    35.5   2025-03-25    2% ▇
+                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">TextVQA (lab)</a>                   74.4%    47.2   2025-03-25    1% ▇
+                        <a href="https://huggingface.co/OpenGVLab/InternVL2-4B/blob/6eb21ec278fbdb03b751a3d48d8dfc9724e05608/README.md#evaluation">ChartQA (lab)</a>                   81.5%    59.4   2025-03-25    0% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  958.3    37.2   2026-10-02   27% ▇▇▇
+<a name="microsoft-phi35-vision-card-benchmarks"></a>Microsoft Phi-3.5-vis…  <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MMMU (val)</a>                      44.2%    42.6   2024-08-20    9% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MathVista (testmini)</a>            53.7%    48.2   2024-08-20    3% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">TextVQA</a>                         66.2%    34.5   2024-08-20    2% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">AI2D test</a>                       77.3%    37.6   2024-08-20    1% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">ChartQA</a>                         78.8%    49.6   2024-08-20    0% ▇
+<a name="paper-2501.16411v2-physbench"></a>PhysBench: Benchmarki…  <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world unde…</a>  39.7%    43.8   2025-01-29    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 40.1
+                        weighted average                       = 41.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -45,7 +45,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                      size  score
-16-bit bf16 · nvidia only  ~8.29GB   40.1
+16-bit bf16 · nvidia only  ~8.29GB   41.1
 </pre>
 
 ```sh

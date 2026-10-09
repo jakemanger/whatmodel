@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2026-01 · 9B params · flux-dev-nc
 
-**score 54.1** ±1.6 · #63 of 139 · from 7 benchmark results across 6 sources
+**score 54.0** ±1.7 · #65 of 139 · from 7 benchmark results across 6 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,15 +16,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1070.2    54.0   2026-09-24   47% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1224.7    56.9   2026-09-30   13% ▇▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   87.1%    54.8   2026-08-25   15% ▇▇
-<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>   22.9%    46.9   2026-10-07    8% ▇
-<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>   925.3    55.9   2026-10-01    6% ▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1039.0    60.1   2026-03-30    6% ▇
-<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>    3.5%    45.1   2026-05-29    3% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1070.2    53.8   2026-09-24   45% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1224.7    56.8   2026-09-30   14% ▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   87.1%    55.0   2026-08-25   15% ▇▇
+<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>   22.9%    47.3   2026-10-07    9% ▇
+<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>   925.3    55.8   2026-10-01    7% ▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1039.0    60.7   2026-03-30    6% ▇
+<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>    3.5%    45.3   2026-05-29    3% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 54.1
+                        weighted average                        = 54.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -39,9 +39,9 @@ api (Cloudflare) · $0.015/image · [developers.cloudflare.com](https://develope
 
 <pre>
 version                                   needs  score
-bf16 (cpu offload) · nvidia only        ~22.1GB   54.1
-mlx-qint8 (Flux2CLI, Swift) · mac only  ~11.3GB   54.1
-gguf-q4_0 + Qwen3 8B q4_k_m (sd.cpp)    ~13.7GB   54.1
+bf16 (cpu offload) · nvidia only        ~22.1GB   54.0
+mlx-qint8 (Flux2CLI, Swift) · mac only  ~11.3GB   54.0
+gguf-q4_0 + Qwen3 8B q4_k_m (sd.cpp)    ~13.7GB   54.0
 </pre>
 
 ```sh

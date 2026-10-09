@@ -6,7 +6,7 @@
 
 SWivid (SJTU X-LANCE) · released 2024-10 · 0.3358B params · cc-by-nc-4.0
 
-**score 51.7** ±2.5 · #52 of 100 · from 10 benchmark results across 3 sources
+**score 50.8** ±2.5 · #53 of 100 · from 10 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-f5tts-report-ccby"></a>F5-TTS: A Fairytaler …  <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>     66.0%    52.7   2024-10-09   19% ▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · speaker si…</a>     76.0%    57.5   2024-10-09   11% ▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker si…</a>     67.0%    55.5   2024-10-09   10% ▇
-                        <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>      2.4%    53.7   2024-10-09    9% ▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper la…</a>      1.8%    61.0   2024-10-09    8% ▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · Paraformer…</a>      1.6%    54.1   2024-10-09    5% ▇
-<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  4.10 / 5    44.8   2025-05-11   26% ▇▇▇
-                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  3.33 / 5    44.7   2025-05-11    4% ▇
-<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     89.4%    50.5   2025-05-15    3% ▇
-                        <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     89.6%    49.0   2025-05-15    2% ▇
-prior                   pull toward the middle                      49.7                 2% ▇
-                        weighted average                          = 51.7
+<a name="speech-f5tts-report-ccby"></a>F5-TTS: A Fairytaler …  <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>     66.0%    51.8   2024-10-09   19% ▇▇
+                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · speaker si…</a>     76.0%    56.9   2024-10-09   11% ▇
+                        <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>      2.4%    52.8   2024-10-09    9% ▇
+                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker si…</a>     67.0%    54.7   2024-10-09    9% ▇
+                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper la…</a>      1.8%    60.5   2024-10-09    8% ▇
+                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · Paraformer…</a>      1.6%    53.5   2024-10-09    5% ▇
+<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  4.10 / 5    44.2   2025-05-11   28% ▇▇▇
+                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  3.33 / 5    44.0   2025-05-11    4% ▇
+<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     89.4%    49.7   2025-05-15    3% ▇
+                        <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     89.6%    48.2   2025-05-15    2% ▇
+prior                   pull toward the middle                      49.8                 2% ▇
+                        weighted average                          = 50.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,7 +38,7 @@ prior                   pull toward the middle                      49.7        
 
 <pre>
 version    needs  score
-fp32     ~1.35GB   51.7
+fp32     ~1.35GB   50.8
 </pre>
 
 ```sh

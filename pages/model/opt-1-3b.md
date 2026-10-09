@@ -14,19 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        57.0%    21.7   2023-05-31   15% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            84.5%    20.8   2023-05-31   12% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      59.7%    26.8   2023-05-31    9% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            71.7%    24.2   2023-05-31    8% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  57.9%    23.9   2023-05-31    8% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   23.1%    14.6   2023-05-31    8% ▇
-<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      61.0%    26.4   2023-09-11    8% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        57.0%    19.9   2023-09-11    7% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           59.6%    18.3   2023-09-11    7% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   23.2%    14.4   2023-09-11    6% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       41.5%    21.6   2023-09-11    5% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            69.0%    18.0   2023-09-11    4% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      24.0%    12.8   2023-09-11    2% ▇
+<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        57.0%    21.6   2023-05-31   15% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            84.5%    20.7   2023-05-31   12% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      59.7%    26.7   2023-05-31    9% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            71.7%    24.1   2023-05-31    9% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  57.9%    23.8   2023-05-31    8% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   23.1%    14.4   2023-05-31    7% ▇
+<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      61.0%    26.2   2023-09-11    8% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           59.6%    18.4   2023-09-11    7% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        57.0%    19.6   2023-09-11    7% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   23.2%    14.2   2023-09-11    6% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       41.5%    21.3   2023-09-11    5% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            69.0%    18.1   2023-09-11    4% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      24.0%    12.0   2023-09-11    2% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 21.2
 </pre>

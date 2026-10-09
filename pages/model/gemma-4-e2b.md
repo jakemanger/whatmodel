@@ -6,7 +6,7 @@
 
 Google · released 2026-04 · 5.1B params (2.3B active) · apache-2.0
 
-**score 48.0** ±0.9 · #285 of 551 · from 24 benchmark results across 5 sources
+**score 47.7** ±0.9 · #290 of 551 · from 26 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -14,37 +14,39 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="gemma4-report"></a>Gemma Team              <a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (lab)</a>              43.4%    50.0   2026-07-02   12% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMLU-Pro (lab)</a>                  60.0%    50.9   2026-07-02    7% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMMLU (lab)</a>                     67.4%    48.9   2026-07-02    6% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">InfographicVQA (lab)</a>            63.9%    46.9   2026-07-02    6% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – airline (lab)</a>            31.0%    44.9   2026-07-02    5% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (lab)</a>               52.4%    49.7   2026-07-02    5% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MMMU Pro (lab)</a>                  44.2%    47.5   2026-07-02    5% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFBench (lab)</a>                   38.0%    49.9   2026-07-02    5% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">LiveCodeBench v6 (Feb–May 202…</a>  44.0%    51.8   2026-07-02    4% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MRCR v2 8-needle, 128k (lab)</a>    19.1%    48.3   2026-07-02    3% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MedXPertQA MM (lab)</a>             23.5%    42.6   2026-07-02    3% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Big Bench Extra Hard micro av…</a>  21.9%    46.8   2026-07-02    3% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFEval (lab)</a>                    94.6%    53.0   2026-07-02    3% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">SciCode (lab)</a>                   21.0%    50.8   2026-07-02    3% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>             34.6%    49.0   2026-07-02    2% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – telecom (lab)</a>            19.7%    52.8   2026-07-02    2% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">OmniDocBench 1.5 ↓ (lab)</a>        29.0%    51.7   2026-07-02    2% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Terminal Bench Hard (lab)</a>        3.0%    45.4   2026-07-02    2% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">AIME 2026 (lab)</a>                 37.5%    39.5   2026-07-02    1% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  69.7%    42.5   2026-04-17    5% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  53.6%    43.2   2026-04-17    3% ▇
-<a name="card2-google-gemma-4-31b-it"></a>google/gemma-4-31B-it…  <a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">τ²-bench aggregate (lab)</a>        24.5%    47.7   2026-07-20    5% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  32.7%    49.2   2026-04-08    4% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  50.5%    43.5   2026-09-19    3% ▇
+<a name="gemma4-report"></a>Gemma Team              <a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (lab)</a>              43.4%    49.2   2026-07-02   11% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMLU-Pro (lab)</a>                  60.0%    50.1   2026-07-02    7% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMMLU (lab)</a>                     67.4%    48.5   2026-07-02    6% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">InfographicVQA (lab)</a>            63.9%    46.6   2026-07-02    5% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – airline (lab)</a>            31.0%    44.6   2026-07-02    5% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (lab)</a>               52.4%    49.9   2026-07-02    5% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MMMU Pro (lab)</a>                  44.2%    47.0   2026-07-02    4% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFBench (lab)</a>                   38.0%    49.3   2026-07-02    4% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">LiveCodeBench v6 (Feb–May 202…</a>  44.0%    51.0   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MRCR v2 8-needle, 128k (lab)</a>    19.1%    47.5   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">τ²-bench Telecom (lab)</a>          19.7%    56.8   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MedXPertQA MM (lab)</a>             23.5%    42.0   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">SciCode (lab)</a>                   21.0%    50.2   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFEval (lab)</a>                    94.6%    52.4   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Big Bench Extra Hard micro av…</a>  21.9%    46.1   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>             34.6%    48.3   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">OmniDocBench 1.5 ↓ (lab)</a>        29.0%    51.2   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Terminal-Bench Hard (lab)</a>        3.0%    45.1   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">AIME 2026 (lab)</a>                 37.5%    40.6   2026-07-02    2% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  69.7%    43.8   2026-04-17    7% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  53.6%    44.5   2026-04-17    4% ▇
+<a name="card2-google-gemma-4-31b-it"></a>google/gemma-4-31B-it…  <a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">τ²-bench aggregate (lab)</a>        24.5%    45.6   2026-07-20    3% ▇
+<a name="card2-coherelabs-north-micro-vision-instruct"></a>CohereLabs/North-Micr…  <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CharXiv descriptive questions</a>   75.1%    46.9   2026-08-10    3% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  50.5%    43.0   2026-09-19    3% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  32.7%    49.6   2026-04-08    3% ▇
+<a name="card-liquidai-lfm2-5-8b-a1b"></a>LiquidAI/LFM2.5-8B-A1…  <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Telecom</a>                22.4%    49.9   2026-09-25    2% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 48.0
+                        weighted average                       = 47.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Gemma Team ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · google/gemma-4-31B-it model card ([Apache-2.0](../../licenses/google--gemma-4-31B-it.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Gemma Team ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · google/gemma-4-31B-it model card ([Apache-2.0](../../licenses/google--gemma-4-31B-it.txt)) · CohereLabs/North-Micro-Vision-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · LiquidAI/LFM2.5-8B-A1B model card ([LFM Open License v1.0](../../licenses/cards-gap-NOTICE.txt))</sub>
 
 ## How to run it
 
@@ -54,8 +56,8 @@ api (Amazon Bedrock) · $0.050/M blended · $0.04 in / $0.08 out per 1M tokens �
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~3.56GB   48.0
-4-bit QAT qat  ~3.56GB   48.0
+4-bit q4_k_m   ~3.56GB   47.7
+4-bit QAT qat  ~3.56GB   47.7
 </pre>
 
 ```sh

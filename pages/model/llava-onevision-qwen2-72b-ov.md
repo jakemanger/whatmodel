@@ -6,7 +6,7 @@
 
 LLaVA (lmms-lab) · released 2024-08 · 73.2B params · apache-2.0
 
-**score 42.7** ±2.6 · #358 of 551 · from 3 benchmark results across 3 sources
+**score 43.4** ±2.5 · #347 of 551 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>     978.3    39.2   2026-10-02   63% ▇▇▇▇▇▇▇▇
-<a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>  -12.3300    46.1   2025-03-16   26% ▇▇▇
-<a name="paper-2505.20740v3-msearth"></a>MSEarth: A Multimodal…  <a href="https://arxiv.org/html/2505.20740v3">MSEarth-Bench Earth-science f…</a>     51.1%    55.4   2026-05-03    8% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>     978.3    39.4   2026-10-02   57% ▇▇▇▇▇▇▇
+<a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>  -12.3300    46.6   2025-03-16   31% ▇▇▇▇
+<a name="paper-2505.20740v3-msearth"></a>MSEarth: A Multimodal…  <a href="https://arxiv.org/html/2505.20740v3">MSEarth-Bench Earth-science f…</a>     51.1%    55.0   2026-05-03    9% ▇
 prior                   pull toward the middle                      50.0                 3% ▇
-                        weighted average                          = 42.7
+                        weighted average                          = 43.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                      50.0        
 
 <pre>
 download                       size  score
-4-bit fp16 · nvidia only  ~146.36GB   42.7
+4-bit fp16 · nvidia only  ~146.36GB   43.4
 </pre>
 
 ```sh

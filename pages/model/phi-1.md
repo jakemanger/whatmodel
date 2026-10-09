@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-09 · 1.42B params · mit
 
-**score 14.0** ±4.3 · #538 of 551 · from 3 benchmark results across 2 sources
+**score 13.7** ±4.3 · #539 of 551 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      21.7%    23.0   2024-01-03   29% ▇▇▇▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      13.1%    14.1   2024-01-03   28% ▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  27.5%    -2.4   2024-02-05   35% ▇▇▇▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      21.7%    22.7   2024-01-03   29% ▇▇▇▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      13.1%    13.7   2024-01-03   28% ▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  27.5%    -2.8   2024-02-05   35% ▇▇▇▇
 prior                   pull toward the middle                   50.0                 8% ▇
-                        weighted average                       = 14.0
+                        weighted average                       = 13.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -41,7 +41,7 @@ Textbooks Are All You…  <a href="https://arxiv.org/html/2306.11644v2">MBPP</a>
 
 <pre>
 download       size  score
-4-bit fp16  ~2.84GB   14.0
+4-bit fp16  ~2.84GB   13.7
 </pre>
 
 ```sh

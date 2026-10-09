@@ -6,7 +6,7 @@
 
 Alibaba (Qwen) · released 2026-01 · apache-2.0
 
-**score 47.8** ±6.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.0** ±6.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-carun-tts-bench-apache"></a>carun/tts-bench: inte…  <a href="https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/data/REPORT_DATA.md">carun tts-bench · 56-sentence…</a>   4.1%    47.5   2026-09-10   85% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.7                15% ▇▇
-                        weighted average                       = 47.8
+<a name="speech-carun-tts-bench-apache"></a>carun/tts-bench: inte…  <a href="https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/data/REPORT_DATA.md">carun tts-bench · 56-sentence…</a>   4.1%    47.6   2026-09-10   85% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.8                15% ▇▇
+                        weighted average                       = 48.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

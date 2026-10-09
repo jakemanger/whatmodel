@@ -6,7 +6,7 @@
 
 Microsoft · released 2026-07 · 4B params
 
-**score 69.2** ±19.7 · #1 of 3 · from 9 benchmark results across 1 source
+**score 69.2** ±19.7 · #1 of 3 · from 9 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [CVTG-2K word accuracy](https://whatmodel.sh/image?set=cvtg-2k-word-accuracy%40visual-mage-flow&score=set) comparison set only.
 

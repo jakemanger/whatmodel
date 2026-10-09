@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · 20.43B params · apache-2.0
 
-**score 55.4** ±4.2 · #58 of 139 · from 3 benchmark results across 3 sources
+**score 57.8** ±2.8 · #51 of 139 · from 6 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="visual-hp-edit"></a>HP-Edit: A Human-Pref…  <a href="https://arxiv.org/html/2604.19406v1#S5.T1">RealPref-Bench image editing …</a>   86.7%    58.2   2026-04-21   43% ▇▇▇▇▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1014.0    56.3   2026-03-30   36% ▇▇▇▇
-<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>   32.2%    46.8   2026-03-26   13% ▇▇
-prior                   pull toward the middle                    49.9                 7% ▇
-                        weighted average                        = 55.4
+<a name="report-2512.07584v1"></a>Meituan LongCat         <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-CN overall (G_O, …</a>   73.7%    60.0   2025-12-08   34% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-EN overall (G_O, …</a>   74.8%    56.9   2025-12-08   20% ▇▇
+<a name="visual-hp-edit"></a>HP-Edit: A Human-Pref…  <a href="https://arxiv.org/html/2604.19406v1#S5.T1">RealPref-Bench image editing …</a>   86.7%    59.9   2026-04-21   17% ▇▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1014.0    56.8   2026-03-30   17% ▇▇
+<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>   32.2%    47.1   2026-03-26    5% ▇
+<a name="report-2506.18871v4"></a>BAAI                    <a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 …</a>   76.9%    59.7   2026-04-21    4% ▇
+prior                   pull toward the middle                    49.9                 3% ▇
+                        weighted average                        = 57.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: HP-Edit: A Human-Preference Post-Training Framework for Image Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Meituan LongCat ([CC BY 4.0](../../licenses/report-2512.07584v1.txt)) · HP-Edit: A Human-Preference Post-Training Framework for Image Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · BAAI ([CC BY 4.0](../../licenses/report-2506.18871v4.txt))</sub>
 
 ## How to run it
 
@@ -35,7 +38,7 @@ api (fal.ai) · $0.030/image · [fal.ai](https://fal.ai/models/fal-ai/qwen-image
 
 <pre>
 version                                   needs  score
-gguf-q4_k_s + Qwen2.5-VL q8_0 (sd.cpp)  ~26.2GB   55.4
+gguf-q4_k_s + Qwen2.5-VL q8_0 (sd.cpp)  ~26.2GB   57.8
 </pre>
 
 ```sh

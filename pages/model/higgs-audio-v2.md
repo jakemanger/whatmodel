@@ -6,7 +6,7 @@
 
 Boson AI · released 2025-07 · 5.8B params · boson-higgs-audio-2-community
 
-**score 52.8** ±3.3 · #50 of 100 · from 7 benchmark results across 3 sources
+**score 52.6** ±3.3 · #51 of 100 · from 7 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,15 +16,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>   2.1%    55.7   2026-06-04   37% ▇▇▇▇
-                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>  49.9%    46.1   2026-06-04   11% ▇
-                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>  21.2%    47.0   2026-06-04    8% ▇
+<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>   2.1%    55.4   2026-06-04   36% ▇▇▇▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>  49.9%    45.9   2026-06-04   11% ▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>  21.2%    47.6   2026-06-04    8% ▇
 <a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>  38.9%    57.3   2025-08-10   18% ▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER …</a>  19.4%    38.9   2025-08-10    6% ▇
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  56.0%    55.0   2026-05-24   17% ▇▇
-                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  25.0%  -130.8   2026-05-24    0% ▇
-prior                   pull toward the middle                   49.7                 4% ▇
-                        weighted average                       = 52.8
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER …</a>  19.4%    39.0   2025-08-10    6% ▇
+<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  56.0%    54.4   2026-05-24   17% ▇▇
+                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  25.0%  -112.6   2026-05-24    0% ▇
+prior                   pull toward the middle                   49.8                 4% ▇
+                        weighted average                       = 52.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,8 +35,8 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version                                      needs  score
-bf16 (transformers &gt;=5.3.0) · nvidia on…  ~12.37GB   52.8
-mlx-8bit (mlx-audio) · mac only               ~7GB   52.8
+bf16 (transformers &gt;=5.3.0) · nvidia on…  ~12.37GB   52.6
+mlx-8bit (mlx-audio) · mac only               ~7GB   52.6
 </pre>
 
 ```sh

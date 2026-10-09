@@ -6,7 +6,7 @@
 
 Cohere · released 2026-05 · 218B params (25B active) · apache-2.0
 
-**score 70.3** ±3.1 · #46 of 551 · from 3 benchmark results across 1 source
+**score 61.6** ±1.1 · #139 of 551 · from 20 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,33 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="first-party-cohere-scores"></a>Cohere vendor-reporte…  <a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (lab)</a>          85.0%    74.2   2026-05-20   51% ▇▇▇▇▇▇
-                        <a href="https://cohere.com/blog/command-a-plus">Terminal Bench Hard (lab)</a>       25.0%    71.6   2026-05-20   38% ▇▇▇▇▇
-                        <a href="https://cohere.com/blog/command-a-plus">CharXiv (reasoning questions)…</a>  52.7%    45.6   2026-05-20    7% ▇
-prior                   pull toward the middle                   50.0                 4% ▇
-                        weighted average                       = 70.3
+<a name="paper-2607.20062v2-solar-open-2"></a>Solar Open 2 Technica…  <a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond</a>                    75.6%    61.6   2026-07-24   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro</a>                        79.0%    61.2   2026-07-24    9% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>             25.0%    61.7   2026-07-24    7% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unsp…</a>  86.1%    63.3   2026-07-24    6% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>                       96.0%    69.6   2026-07-24    4% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecif…</a>  73.9%    67.2   2026-07-24    4% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam</a>            11.4%    56.0   2026-07-24    4% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge</a>                  45.8%    61.2   2026-07-24    3% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>             1.6%    49.8   2026-07-24    3% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking</a>                 5.8%    55.2   2026-07-24    3% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>              14.4%    44.1   2026-07-24    2% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>          27.2%    46.2   2026-07-24    2% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026</a>              73.5%    61.3   2026-07-24    2% ▇
+<a name="first-party-cohere-scores"></a>Cohere vendor-reporte…  <a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (lab)</a>          85.0%    66.6   2026-05-20   10% ▇
+                        <a href="https://cohere.com/blog/command-a-plus">AIME 2025 (lab)</a>                 90.0%    66.7   2026-05-20    5% ▇
+                        <a href="https://cohere.com/blog/command-a-plus">Terminal-Bench Hard (lab)</a>       25.0%    68.2   2026-05-20    5% ▇
+                        <a href="https://cohere.com/blog/command-a-plus">CharXiv (reasoning questions)…</a>  52.7%    55.1   2026-05-20    3% ▇
+                        <a href="https://cohere.com/blog/command-a-plus">CharXiv descriptive questions…</a>  88.0%    61.1   2026-05-20    3% ▇
+                        <a href="https://cohere.com/blog/command-a-plus">SciCode (level unspecified) (…</a>  38.0%    59.2   2026-05-20    2% ▇
+                        <a href="https://cohere.com/blog/command-a-plus">IFBench prompt-level (loose) …</a>  74.0%    68.5   2026-05-20    2% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 61.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-
+<sub>Licences: Solar Open 2 Technical Report ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -33,8 +50,8 @@ api (Cohere) · price unknown · [docs.cohere.com](https://docs.cohere.com/docs/
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~131.3GB   70.3
-2-bit iq2_m    ~65.9GB   70.3
+4-bit q4_k_m  ~131.3GB   61.6
+2-bit iq2_m    ~65.9GB   61.6
 </pre>
 
 ```sh

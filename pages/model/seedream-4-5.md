@@ -6,7 +6,7 @@
 
 ByteDance · closed weights
 
-**score 63.1** ±1.3 · #25 of 139 · from 8 benchmark results across 7 sources
+**score 63.1** ±1.3 · #24 of 139 · from 8 benchmark results across 7 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   59.5%    62.2   2026-05-14   36% ▇▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1147.5    62.1   2026-09-24   28% ▇▇▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   59.5%    62.0   2026-05-14   36% ▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1147.5    62.0   2026-09-24   26% ▇▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1301.7    65.7   2026-09-30    8% ▇
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>       64.4%    63.3   2026-05-13   13% ▇▇
-<a name="visual-gebench"></a>GEBench: Benchmarking…  <a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation …</a>   50.0%    61.8   2026-02-10    5% ▇
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>       64.4%    63.7   2026-05-13   14% ▇▇
+<a name="visual-gebench"></a>GEBench: Benchmarking…  <a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation …</a>   50.0%    62.0   2026-02-10    5% ▇
 <a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>  1046.7    70.8   2026-10-01    4% ▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1089.0    66.9   2026-03-30    3% ▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1089.0    67.4   2026-03-30    4% ▇
 <a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   56.8%    66.1   2026-05-27    3% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
                         weighted average                        = 63.1

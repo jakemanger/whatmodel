@@ -6,7 +6,7 @@
 
 Alibaba (Tongyi-MAI) · released 2026-01 · 6B params · apache-2.0
 
-**score 56.4** ±2.0 · #56 of 139 · from 11 benchmark results across 3 sources
+**score 57.2** ±2.0 · #54 of 139 · from 11 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="report-2511.22699v5"></a>Tongyi-MAI              <a href="https://arxiv.org/html/2511.22699v5">GenEval (lab)</a>                   84.0%    55.2   2026-07-06    9% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (lab)</a>       93.5%    55.8   2026-07-06    8% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (lab)</a>       93.6%    54.9   2026-07-06    8% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN) (lab)</a>          53.5%    57.8   2026-07-06    7% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">DPG-Bench (lab)</a>                 88.1%    51.0   2026-07-06    7% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN) (lab)</a>          54.6%    56.9   2026-07-06    7% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy (lab)</a>     86.7%    54.5   2026-07-06    7% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long pro…</a>  83.0%    57.3   2026-07-06    6% ▇
-                        <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short pr…</a>  80.2%    56.5   2026-07-06    6% ▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  88.1%    56.3   2026-08-25   21% ▇▇
-<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>  61.9%    61.9   2026-10-07   13% ▇▇
+<a name="report-2511.22699v5"></a>Tongyi-MAI              <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (lab)</a>       93.5%    58.0   2026-07-06   11% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (lab)</a>       93.6%    56.8   2026-07-06    9% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">GenEval (lab)</a>                   84.0%    55.5   2026-07-06    8% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN) (lab)</a>          53.5%    58.3   2026-07-06    7% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN) (lab)</a>          54.6%    57.5   2026-07-06    7% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy (lab)</a>     86.7%    55.4   2026-07-06    7% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">DPG-Bench (lab)</a>                 88.1%    51.9   2026-07-06    6% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long pro…</a>  83.0%    57.8   2026-07-06    6% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short pr…</a>  80.2%    57.0   2026-07-06    6% ▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  88.1%    56.4   2026-08-25   19% ▇▇
+<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>  61.9%    61.9   2026-10-07   14% ▇▇
 prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 56.4
+                        weighted average                       = 57.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -43,8 +43,8 @@ api (fal.ai) · $0.010/image · [fal.ai](https://fal.ai/models/fal-ai/z-image/ba
 
 <pre>
 version                                   needs  score
-bf16 + Qwen3 4B bf16 (sd.cpp)           ~25.3GB   56.4
-gguf-q4_k_m + Qwen3 4B q4_k_m (sd.cpp)    ~10GB   56.4
+bf16 + Qwen3 4B bf16 (sd.cpp)           ~25.3GB   57.2
+gguf-q4_k_m + Qwen3 4B q4_k_m (sd.cpp)    ~10GB   57.2
 </pre>
 
 ```sh

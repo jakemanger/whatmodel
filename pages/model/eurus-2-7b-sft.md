@@ -6,7 +6,7 @@
 
 PRIME-RL · released 2024-12 · 7.62B params · apache-2.0
 
-**score 26.6** ±3.8 · comparison only: no current run option verified · from 3 benchmark results across 1 source
+**score 33.8** ±2.9 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="first-party-prime-rl-scores"></a>PRIME-RL Eurus-2-7B-P…  <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">AIME 2024 (lab)</a>          3.3%    21.7   2024-12-31   44% ▇▇▇▇▇
-                        <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">MATH-500 (lab)</a>          65.1%    28.2   2024-12-31   31% ▇▇▇▇
-                        <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">Minerva MATH (lab)</a>      32.7%    27.5   2024-12-31   18% ▇▇
-prior                   pull toward the middle           50.0                 6% ▇
-                        weighted average               = 26.6
+<a name="first-party-prime-rl-scores"></a>PRIME-RL Eurus-2-7B-P…  <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">MATH-500 (lab)</a>          65.1%    38.0   2024-12-31   45% ▇▇▇▇▇
+                        <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">AIME 2024 (lab)</a>          3.3%    27.6   2024-12-31   35% ▇▇▇▇
+                        <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">Minerva MATH (lab)</a>      32.7%    31.5   2024-12-31   16% ▇▇
+prior                   pull toward the middle           50.0                 4% ▇
+                        weighted average               = 33.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

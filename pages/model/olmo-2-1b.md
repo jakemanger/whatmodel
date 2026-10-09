@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2025-04 · 1.48B params · apache-2.0
 
-**score 32.6** ±1.4 · #483 of 551 · from 9 benchmark results across 2 sources
+**score 31.7** ±1.4 · #487 of 551 · from 9 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,17 +14,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                     68.3%    39.4   2025-10-08   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                      40.0%    28.9   2025-10-08   23% ▇▇▇
-                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>            35.0%    29.4   2025-10-08   20% ▇▇
-                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>            48.7%    35.3   2025-10-08    9% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (la…</a>  70.1%    41.5   2025-10-08    5% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlle…</a>   9.1%    31.1   2025-10-08    5% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (la…</a>  20.7%    30.9   2025-10-08    4% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                     12.9%    30.6   2025-10-08    3% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  45.0%    22.3   2025-05-01    7% ▇
+<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                     68.3%    38.6   2025-10-08   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                      40.0%    27.5   2025-10-08   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>            35.0%    28.4   2025-10-08   19% ▇▇
+                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>            48.7%    34.6   2025-10-08   10% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlle…</a>   9.1%    30.3   2025-10-08    5% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (la…</a>  70.1%    40.8   2025-10-08    5% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (la…</a>  20.7%    29.7   2025-10-08    5% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                     12.9%    29.7   2025-10-08    3% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  45.0%    21.7   2025-05-01    7% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 32.6
+                        weighted average                       = 31.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -37,7 +37,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                      size  score
-16-bit bf16 · nvidia only  ~4.05GB   32.6
+16-bit bf16 · nvidia only  ~4.05GB   31.7
 </pre>
 
 ```sh

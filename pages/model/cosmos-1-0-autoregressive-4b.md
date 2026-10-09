@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-01 · 4B params · nvidia-open-model
 
-**score 34.5** ±4.5 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 34.5** ±4.5 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## How the score was worked out
 

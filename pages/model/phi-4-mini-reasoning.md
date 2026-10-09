@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-04 · 3.8B params · mit
 
-**score 34.1** ±3.7 · #464 of 551 · from 3 benchmark results across 2 sources
+**score 48.8** ±1.9 · #275 of 551 · from 6 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,27 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  55.7%    31.7   2026-04-17   28% ▇▇▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  41.0%    31.5   2026-04-17   19% ▇▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  21.3%    34.5   2025-04-28   47% ▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 34.1
+<a name="card-microsoft-phi-4-mini-reasoning"></a>microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">GPQA Diamond (lab)</a>              52.0%    51.7   2026-09-25   42% ▇▇▇▇▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">AIME 2024 (lab)</a>                 57.5%    52.8   2026-09-25   27% ▇▇▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">MATH-500 (lab)</a>                  94.6%    56.7   2026-09-25   10% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  21.3%    36.4   2025-04-28   12% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  41.0%    30.9   2026-04-17    4% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  55.7%    24.9   2026-04-17    4% ▇
+prior                   pull toward the middle                   50.0                 2% ▇
+                        weighted average                       = 48.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
-
-<details><summary>Not counted (3)</summary>
-
-<pre>
-source                  test          score  why
-microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">AIME 2024</a>     57.5%  too few models have it yet
-microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">MATH-500</a>      94.6%  too few models have it yet
-microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">GPQA Diamond</a>  52.0%  too few models have it yet
-</pre>
-
-</details>
+<sub>Licences: microsoft/Phi-4-mini-reasoning model card ([MIT](../../licenses/card-microsoft-phi-4-mini-reasoning.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 ## How to run it
 
@@ -44,9 +36,9 @@ api (Microsoft Azure) · $0.13/M blended · $0.075 in / $0.3 out per 1M tokens �
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~2.49GB   34.1
-8-bit q8_0    ~4.08GB   34.1
-4-bit q4_k_m  ~3.15GB   34.1
+4-bit q4_k_m  ~2.49GB   48.8
+8-bit q8_0    ~4.08GB   48.8
+4-bit q4_k_m  ~3.15GB   48.8
 </pre>
 
 ```sh

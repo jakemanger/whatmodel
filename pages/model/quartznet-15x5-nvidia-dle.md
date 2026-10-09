@@ -4,20 +4,30 @@
 
 # QuartzNet 15x5 (NVIDIA DLE, 21.07 recipe)
 
-NVIDIA · released 2021-07
+NVIDIA · released 2021-07 · closed weights
 
-NVIDIA DeepLearningExamples training recipe; exact reported A100 run. Do not equate this training result with a differently trained NeMo/NGC checkpoint. Public code and training recipe; exact scored checkpoint not verified.
+**score 35.0** ±30.4 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
-[Catalogue source](https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md)
+Score within the [LibriSpeech test-clean WER](https://whatmodel.sh/stt?set=librispeech-test-clean-wer%40speech-nvidia-dle-asr&score=set) comparison set only.
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                        result  reported by  source
-LibriSpeech test-clean WER    3.7%  lab          <a href="https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md">NVIDIA QuartzNet committed tr…</a>
-LibriSpeech test-other WER   10.7%  lab          <a href="https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md">NVIDIA QuartzNet committed tr…</a>
+source                  test                            score  implies  weight
+<a name="speech-nvidia-dle-asr"></a>NVIDIA DeepLearningEx…  <a href="https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md">LibriSpeech test-clean WER (l…</a>   3.7%    78.7    17% ▇▇
+                        <a href="https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md">LibriSpeech test-other WER (l…</a>  10.7%    75.8    16% ▇▇
+prior                   pull toward the middle                   50.0    68% ▇▇▇▇▇▇▇▇
+                        weighted average                       = 35.0
 </pre>
 
-<sub>Licences: NVIDIA QuartzNet committed training accuracy ([Apache-2.0](../../licenses/speech-nvidia-quartznet-dle.txt))</sub>
+<sub>~ averaged with other results for the same test</sub>
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/quartznet-15x5-nvidia-dle)
+<sub>Licences: NVIDIA DeepLearningExamples Jasper and QuartzNet READMEs ([Apache-2.0](../../licenses/speech-nvidia-dle-asr.txt))</sub>
+
+## How to run it
+
+no current API or local download verified
+
+[interactive version](https://whatmodel.sh/model/quartznet-15x5-nvidia-dle) · [JSON](https://whatmodel.sh/api?format=json&all=1)

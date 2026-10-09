@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1271.0    69.5   2026-09-25   91% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena        <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>  1063.4    59.9   2026-09-24    5% ▇
-prior                   pull toward the middle                    49.7                 4% ▇
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1271.0    69.4   2026-09-25   91% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena        <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>  1063.4    59.7   2026-09-24    5% ▇
+prior                   pull toward the middle                    49.8                 4% ▇
                         weighted average                        = 68.2
 </pre>
 

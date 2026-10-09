@@ -6,7 +6,7 @@
 
 PromptHero · released 2022-11 · 0.86B params · creativeml-openrail-m
 
-**score 27.8** ±2.2 · #130 of 139 · from 5 benchmark results across 5 sources
+**score 27.9** ±2.2 · #130 of 139 · from 5 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                        score  implies  date        weight
-<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>                              853.0    24.0   2024-06-04   38% ▇▇▇▇▇
-<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  4.8300 mean human alignment score    29.7   2024-10-10   33% ▇▇▇▇
-<a name="visual-imagenhub"></a>ImagenHub: Standardiz…  <a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generat…</a>                              50.0%    29.3   2024-03-10   16% ▇▇
-<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>                              61.7%    28.3   2023-11-07   11% ▇
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>                              27.5%    51.4   2024-02-21    0% ▇
+<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>                              853.0    24.1   2024-06-04   38% ▇▇▇▇▇
+<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  4.8300 mean human alignment score    29.8   2024-10-10   33% ▇▇▇▇
+<a name="visual-imagenhub"></a>ImagenHub: Standardiz…  <a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generat…</a>                              50.0%    29.4   2024-03-10   16% ▇▇
+<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>                              61.7%    28.5   2023-11-07   11% ▇
+<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>                              27.5%    51.2   2024-02-21    0% ▇
 prior                   pull toward the middle                                               49.9                 2% ▇
-                        weighted average                                                   = 27.8
+                        weighted average                                                   = 27.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,8 +33,8 @@ prior                   pull toward the middle                                  
 
 <pre>
 version                needs  score
-fp16 · nvidia only    ~2.6GB   27.8
-q8_0 (sd.cpp --type)  ~2.1GB   27.8
+fp16 · nvidia only    ~2.6GB   27.9
+q8_0 (sd.cpp --type)  ~2.1GB   27.9
 </pre>
 
 ```sh

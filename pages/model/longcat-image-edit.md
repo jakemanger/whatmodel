@@ -6,7 +6,7 @@
 
 Meituan · released 2025-12 · 6.27B params · apache-2.0
 
-**score 52.4** ±2.5 · #68 of 139 · from 5 benchmark results across 5 sources
+**score 55.4** ±2.0 · #59 of 139 · from 7 benchmark results across 6 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,18 +16,20 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>       53.0%    54.9   2026-05-13   51% ▇▇▇▇▇▇
-<a name="visual-chartsync"></a>ChartSync: A Benchmar…  <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Over…</a>   47.3%    49.0   2026-07-11   21% ▇▇▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1001.0    54.6   2026-03-30   13% ▇▇
-<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>    3.6%    45.1   2026-05-29    7% ▇
-<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>   32.2%    46.9   2026-03-26    5% ▇
-prior                   pull toward the middle                    49.9                 3% ▇
-                        weighted average                        = 52.4
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>       53.0%    55.1   2026-05-13   36% ▇▇▇▇
+<a name="report-2512.07584v1"></a>Meituan LongCat         <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-CN overall (G_O, …</a>   76.5%    61.2   2025-12-08   20% ▇▇
+                        <a href="https://arxiv.org/html/2512.07584v1">CEdit-Bench-EN overall (G_O, …</a>   76.7%    59.3   2025-12-08   12% ▇
+<a name="visual-chartsync"></a>ChartSync: A Benchmar…  <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Over…</a>   47.3%    50.0   2026-07-11   13% ▇▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1001.0    55.0   2026-03-30    9% ▇
+<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>    3.6%    46.0   2026-05-29    5% ▇
+<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>   32.2%    47.2   2026-03-26    3% ▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 55.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · Meituan LongCat ([CC BY 4.0](../../licenses/report-2512.07584v1.txt)) · ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 <details><summary>Not counted (2)</summary>
 
@@ -47,7 +49,7 @@ api (fal.ai) · $0.15/image · [fal.ai](https://fal.ai/models/fal-ai/longcat-ima
 
 <pre>
 version                                   needs  score
-bf16 + model CPU offload · nvidia only  ~35.7GB   52.4
+bf16 + model CPU offload · nvidia only  ~35.7GB   55.4
 </pre>
 
 ```sh

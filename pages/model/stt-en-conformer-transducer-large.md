@@ -6,7 +6,9 @@
 
 NVIDIA · released 2022-09 · 0.12B params · cc-by-4.0
 
-**score 48.2** ±3.7 · #82 of 128 · from 3 benchmark results across 2 sources
+**score 48.4** ±3.7 · #82 of 128 · from 3 benchmark results across 2 sources
+
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -14,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  15.4%    45.7   2026-03-26   54% ▇▇▇▇▇▇▇
-<a name="speech-nemo-asr-scores-apache"></a>NVIDIA NeMo docs: ASR…  <a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/conformer_en.csv">LibriSpeech test-other WER (l…</a>   3.7%    50.7   2023-07-22   31% ▇▇▇▇
-                        <a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/conformer_en.csv">LibriSpeech test-clean WER (l…</a>   1.7%    54.2   2023-07-22    9% ▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  15.4%    46.0   2026-03-26   56% ▇▇▇▇▇▇▇
+<a name="speech-nemo-asr-scores-apache"></a>NVIDIA NeMo docs: ASR…  <a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/conformer_en.csv">LibriSpeech test-other WER (l…</a>   3.7%    51.0   2023-07-22   29% ▇▇▇▇
+                        <a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/conformer_en.csv">LibriSpeech test-clean WER (l…</a>   1.7%    54.6   2023-07-22    9% ▇
 prior                   pull toward the middle                   49.7                 5% ▇
-                        weighted average                       = 48.2
+                        weighted average                       = 48.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +31,7 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version               needs  score
-fp32 · nvidia only  ~1.08GB   48.2
+fp32 · nvidia only  ~1.08GB   48.4
 </pre>
 
 ```sh

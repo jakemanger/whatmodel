@@ -6,7 +6,7 @@
 
 Mistral · released 2026-03 · 4B params · cc-by-nc-4.0
 
-**score 73.6** ±3.8 · #1 of 100 · from 4 benchmark results across 1 source
+**score 73.6** ±3.8 · #1 of 100 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -18,9 +18,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source       test                            score  implies  date        weight
 <a name="speech-voxtral-tts-report"></a>Voxtral TTS  <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>  62.8%    79.5   2026-04-06   33% ▇▇▇▇
              <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language spea…</a>  74.3%    80.3   2026-04-06   31% ▇▇▇▇
-             <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER …</a>   1.9%    66.0   2026-04-06   16% ▇▇
+             <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER …</a>   1.9%    66.1   2026-04-06   16% ▇▇
              <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>   1.2%    64.0   2026-04-06   14% ▇▇
-prior        pull toward the middle                   49.7                 6% ▇
+prior        pull toward the middle                   49.8                 6% ▇
              weighted average                       = 73.6
 </pre>
 

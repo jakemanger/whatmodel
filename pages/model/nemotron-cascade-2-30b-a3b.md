@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-03 · 31.6B params (3B active) · nvidia-open-model
 
-**score 64.7** ±1.8 · #101 of 551 · from 10 benchmark results across 2 sources
+**score 62.7** ±1.5 · #126 of 551 · from 13 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,25 +14,28 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="report-2603.19220v2"></a>NVIDIA                 <a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>                 92.4%    66.3   2026-03-22   20% ▇▇
-                       <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Eas…</a>  87.0%    69.6   2026-03-22   10% ▇
-                       <a href="https://arxiv.org/html/2603.19220v2">HMMT February 2025 (lab)</a>        94.6%    69.2   2026-03-22   10% ▇
-                       <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Med…</a>  27.6%    71.2   2026-03-22   10% ▇
-                       <a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>                 90.9%    60.7   2026-03-22   10% ▇
-                       <a href="https://arxiv.org/html/2603.19220v2">Arena-Hard v2 aggregate (lab)</a>   83.5%    70.7   2026-03-22    9% ▇
-                       <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>           79.3%    63.9   2026-03-22    7% ▇
-                       <a href="https://arxiv.org/html/2603.19220v2">CL-bench (lab)</a>                  12.2%    56.1   2026-03-22    5% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  70.8%    51.8   2026-04-17    9% ▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  93.3%    62.7   2026-04-17    8% ▇
-prior                  pull toward the middle                   50.0                 2% ▇
-                       weighted average                       = 64.7
+<a name="report-2603.19220v2"></a>NVIDIA                 <a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>                 92.4%    63.2   2026-03-22   15% ▇▇
+                       <a href="https://arxiv.org/html/2603.19220v2">HMMT February 2025 (lab)</a>        94.6%    67.3   2026-03-22    9% ▇
+                       <a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>                 90.9%    61.0   2026-03-22    9% ▇
+                       <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>           79.3%    63.9   2026-03-22    9% ▇
+                       <a href="https://arxiv.org/html/2603.19220v2">Arena-Hard v2 aggregate (lab)</a>   83.5%    70.5   2026-03-22    7% ▇
+                       <a href="https://arxiv.org/html/2603.19220v2">MultiChallenge (lab)</a>            45.3%    58.2   2026-03-22    6% ▇
+                       <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Eas…</a>  87.0%    70.0   2026-03-22    6% ▇
+                       <a href="https://arxiv.org/html/2603.19220v2">MMLU-ProX (lab)</a>                 72.5%    59.1   2026-03-22    5% ▇
+                       <a href="https://arxiv.org/html/2603.19220v2">SciCode (level unspecified) (…</a>  36.4%    58.3   2026-03-22    5% ▇
+                       <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Med…</a>  27.6%    73.2   2026-03-22    5% ▇
+                       <a href="https://arxiv.org/html/2603.19220v2">CL-bench (lab)</a>                  12.2%    56.9   2026-03-22    4% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  70.8%    53.0   2026-04-17   10% ▇
+                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  93.3%    62.5   2026-04-17    8% ▇
+prior                  pull toward the middle                   50.0                 1% ▇
+                       weighted average                       = 62.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2603.19220v2.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
-<details><summary>Not counted (18)</summary>
+<details><summary>Not counted (15)</summary>
 
 <pre>
 source                  test                            score  why
@@ -51,9 +54,6 @@ nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascad
 nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">τ²-bench aggregate</a>              58.9%  too few models have it yet
 nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">Terminal-Bench 2.0</a>              21.1%  too few models have it yet
 nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">SWE-bench Verified</a>              50.2%  too few models have it yet
-NVIDIA                  <a href="https://arxiv.org/html/2603.19220v2">MMLU-ProX</a>                       72.5%  too few models have it yet
-NVIDIA                  <a href="https://arxiv.org/html/2603.19220v2">MultiChallenge</a>                  45.3%  too few models have it yet
-NVIDIA                  <a href="https://arxiv.org/html/2603.19220v2">SciCode (level unspecified)</a>     36.4%  too few models have it yet
 </pre>
 
 </details>
@@ -64,7 +64,7 @@ NVIDIA                  <a href="https://arxiv.org/html/2603.19220v2">SciCode (l
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~19.46GB   64.7
+4-bit q4_k_m  ~19.46GB   62.7
 </pre>
 
 ```sh

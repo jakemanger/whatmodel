@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 34B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 43.5** ±1.6 · #344 of 551 · from 5 benchmark results across 1 source
+**score 43.3** ±1.7 · #348 of 551 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            64.3%    43.7   2023-11-20   49% ▇▇▇▇▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      53.6%    38.7   2023-11-20   17% ▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     54.0%    42.4   2023-11-20   16% ▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  82.5%    47.8   2023-11-20   11% ▇
-        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  60.6%    48.2   2023-11-20    6% ▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            64.3%    43.5   2023-11-20   49% ▇▇▇▇▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      53.6%    38.4   2023-11-20   16% ▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     54.0%    42.2   2023-11-20   15% ▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  82.5%    47.5   2023-11-20   12% ▇
+        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  60.6%    48.0   2023-11-20    7% ▇
 prior   pull toward the middle                   50.0                 1% ▇
-        weighted average                       = 43.5
+        weighted average                       = 43.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior   pull toward the middle                   50.0                 1% ▇
 
 <pre>
 download         size  score
-16-bit bf16  ~67.49GB   43.5
+16-bit bf16  ~67.49GB   43.3
 </pre>
 
 ```sh
