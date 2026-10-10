@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-04 · 14.7B params · mit
 
-**score 58.4** ±0.9 · #243 of 935 · from 22 benchmark results across 4 sources
+**score 58.4** ±0.9 · #243 of 934 · from 22 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -19,20 +19,20 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2504.21318v1">AIME 2025 (lab)</a>                  63.1%    60.5   2025-04-30    5% ▇
                         <a href="https://arxiv.org/html/2504.21318v1">HMMT February 2025 (lab)</a>         43.8%    55.1   2025-04-30    5% ▇
                         <a href="https://arxiv.org/html/2504.21318v1">MMLU-Pro (lab)</a>                   74.3%    57.5   2025-04-30    4% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">AIME 2024 (lab)</a>                  74.6%    61.7   2025-04-30    4% ▇
+                        <a href="https://arxiv.org/html/2504.21318v1">AIME 2024 (lab)</a>                  74.6%    61.8   2025-04-30    4% ▇
                         <a href="https://arxiv.org/html/2504.21318v1">FlenQA (3K-token subset) (lab)</a>   97.7%    65.7   2025-04-30    2% ▇
                         <a href="https://arxiv.org/html/2504.21318v1">IFEval (aggregation unspecifi…</a>   83.4%    58.9   2025-04-30    1% ▇
                         <a href="https://arxiv.org/html/2504.21318v1">Omni-MATH (lab)</a>                  76.6%    65.3   2025-04-30    1% ▇
 <a name="card-microsoft--phi-4-reasoning"></a>microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">GPQA Diamond (lab)</a>               65.8%    58.8   2025-04-09    7% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">HumanEval+ (lab)</a>                 92.9%    60.6   2025-04-09    6% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">AIME 2024 (lab)</a>                  75.3%    57.8   2025-04-09    6% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">AIME 2025 (lab)</a>                  62.9%    54.9   2025-04-09    5% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">AIME 2024 (lab)</a>                  75.3%    57.9   2025-04-09    6% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">AIME 2025 (lab)</a>                  62.9%    55.0   2025-04-09    5% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">MMLU-Pro (lab)</a>                   74.3%    57.5   2025-04-09    4% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">Arena-Hard (version/judge uns…</a>   73.3%    56.1   2025-04-09    4% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">FlenQA (3K-token subset) (lab)</a>   97.7%    65.7   2025-04-09    2% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">IFEval strict (prompt/instruc…</a>   83.4%    63.2   2025-04-09    2% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">Omni-MATH (lab)</a>                  76.6%    62.1   2025-04-09    1% ▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.4815    55.8   2026-05-02   12% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.4815    55.9   2026-05-02   12% ▇
                         <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   48.1%    55.8   2026-05-02    6% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   48.7%    35.2   2026-04-17    1% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   83.5%    48.3   2026-04-17    1% ▇

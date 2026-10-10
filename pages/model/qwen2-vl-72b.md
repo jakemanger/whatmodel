@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 73.4B params · tongyi-qianwen
 
-**score 53.3** ±1.0 · #349 of 935 · from 29 benchmark results across 6 sources
+**score 53.3** ±1.0 · #349 of 934 · from 29 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -15,10 +15,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                                                      score  implies  date        weight
 <a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/html/2502.13923v1">MMMU (val) (lab)</a>                                          64.5%    52.1   2025-02-19   14% ▇▇
-                        <a href="https://arxiv.org/html/2502.13923v1">MathVista (testmini) (lab)</a>                                70.5%    50.9   2025-02-19   10% ▇
+                        <a href="https://arxiv.org/html/2502.13923v1">MathVista (testmini) (lab)</a>                                70.5%    51.0   2025-02-19   10% ▇
                         <a href="https://arxiv.org/html/2502.13923v1">MMStar (lab)</a>                                              68.3%    52.8   2025-02-19    9% ▇
                         <a href="https://arxiv.org/html/2502.13923v1">MMMU Pro (lab)</a>                                            46.2%    49.9   2025-02-19    7% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (lab)</a>                                         25.9%    47.2   2024-10-03    5% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (lab)</a>                                         25.9%    47.3   2024-10-03    5% ▇
                         <a href="https://arxiv.org/html/2409.12191v2">Video-MME (without subtitles)…</a>                            71.2%    55.4   2024-10-03    5% ▇
                         <a href="https://arxiv.org/html/2502.13923v1">HallusionBench (lab)</a>                                      58.1%    53.3   2025-02-19    4% ▇
                         <a href="https://arxiv.org/html/2409.12191v2">ChartQA (lab)</a>                                             88.3%    57.8   2024-10-03    3% ▇
@@ -27,18 +27,18 @@ source                  test                                                    
                         <a href="https://arxiv.org/html/2409.12191v2">DocVQA (lab)</a>                                              96.5%    60.9   2024-10-03    2% ▇
                         <a href="https://arxiv.org/html/2409.12191v2">Video-MME (with subtitles) (l…</a>                            77.8%    54.6   2024-10-03    2% ▇
                         <a href="https://arxiv.org/html/2409.12191v2">MVBench (lab)</a>                                             73.6%    61.2   2024-10-03    2% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">OCRBench (lab)</a>                                            87.7%    59.0   2024-10-03    1% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">OCRBench (lab)</a>                                            87.7%    59.1   2024-10-03    1% ▇
                         <a href="https://arxiv.org/html/2409.12191v2">TextVQA (lab)</a>                                             85.5%    66.0   2024-10-03    1% ▇
-<a name="card2-qwen-qwen2-5-vl-32b-instruct"></a>Qwen2.5-VL-32B-Instru…  <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMMU Pro (lab)</a>                                            46.2%    51.2   2025-03-21    3% ▇
+<a name="card2-qwen-qwen2-5-vl-32b-instruct"></a>Qwen2.5-VL-32B-Instru…  <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMMU Pro (lab)</a>                                            46.2%    51.3   2025-03-21    3% ▇
                         <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMStar (lab)</a>                                              68.3%    53.3   2025-03-21    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Video-MME (with subtitles) (l…</a>                            77.8%    54.7   2025-03-21    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Video-MME (with subtitles) (l…</a>                            77.8%    54.8   2025-03-21    2% ▇
                         <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Video-MME (without subtitles)…</a>                            71.2%    54.4   2025-03-21    2% ▇
                         <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">DocVQA (lab)</a>                                              96.5%    63.4   2025-03-21    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">CC-OCR (lab)</a>                                              68.7%    43.2   2025-03-21    1% ▇
 <a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  6.5900 MM-MT-Bench score (1-10)    56.3   2024-10-10    3% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                60.3%    55.7   2024-10-10    2% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      68.2%    59.7   2024-10-10    2% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               81.6%    59.6   2024-10-10    2% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               81.6%    59.7   2024-10-10    2% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   66.6%    32.8   2024-10-10    0% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                           1084.8    52.2   2026-10-02    6% ▇
 <a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>                          -9.0000    47.7   2025-03-16    4% ▇

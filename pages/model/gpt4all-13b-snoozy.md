@@ -6,7 +6,7 @@
 
 Nomic AI · released 2023-04 · 13B params · gpl
 
-**score 28.1** ±2.5 · #861 of 935 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 28.2** ±2.5 · #860 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -15,9 +15,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                                                   score  implies  date        weight
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                        1067.6    26.1   2026-10-02   53% ▇▇▇▇▇▇
-<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  5.4100 MT-Bench score (1-10)    29.2   2023-06-19   44% ▇▇▇▇▇
+<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  5.4100 MT-Bench score (1-10)    29.3   2023-06-19   44% ▇▇▇▇▇
 prior                   pull toward the middle                                          50.0                 3% ▇
-                        weighted average                                              = 28.1
+                        weighted average                                              = 28.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle                                  
 
 <pre>
 download        size  score
-4-bit fp32  ~52.06GB   28.1
+4-bit fp32  ~52.06GB   28.2
 </pre>
 
 ```sh

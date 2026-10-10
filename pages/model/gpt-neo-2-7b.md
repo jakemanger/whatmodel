@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-03 · 2.7B params · mit
 
-**score 18.6** ±1.0 · #908 of 935 · from 20 benchmark results across 5 sources
+**score 18.6** ±1.0 · #907 of 934 · from 20 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -28,8 +28,8 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande (lab)</a>                56.5%    15.0   2021-08-06    4% ▇
                         <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  62.2%    19.8   2021-08-06    4% ▇
                         <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA (lab)</a>                      73.0%    18.9   2021-08-06    2% ▇
-<a name="redpajama-2024-original-zero-shot"></a>RedPajama               <a href="https://arxiv.org/html/2411.12372v1">WinoGrande</a>                      57.7%    19.7   2024-11-19    4% ▇
-                        <a href="https://arxiv.org/html/2411.12372v1">HellaSwag</a>                       55.8%    22.4   2024-11-19    3% ▇
+<a name="redpajama-2024-original-zero-shot"></a>RedPajama               <a href="https://arxiv.org/html/2411.12372v1">WinoGrande</a>                      57.7%    19.8   2024-11-19    4% ▇
+                        <a href="https://arxiv.org/html/2411.12372v1">HellaSwag</a>                       55.8%    22.5   2024-11-19    3% ▇
                         <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  62.2%    21.9   2024-11-19    2% ▇
                         <a href="https://arxiv.org/html/2411.12372v1">PIQA</a>                            72.2%    21.8   2024-11-19    1% ▇
 <a name="eleutherai-gpt-neo-2-7b-card"></a>EleutherAI GPT-Neo 2.…  <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA (lab)</a>                    24.7%    15.3   2021-04-12    2% ▇

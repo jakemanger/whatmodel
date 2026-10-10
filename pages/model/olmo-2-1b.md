@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2025-04 · 1.48B params · apache-2.0
 
-**score 32.4** ±1.5 · #821 of 935 · from 9 benchmark results across 2 sources
+**score 32.4** ±1.5 · #820 of 934 · from 9 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                      40.0%    28.3   2025-10-08   24% ▇▇▇
                         <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                     68.3%    39.3   2025-10-08   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>            35.0%    28.9   2025-10-08   18% ▇▇
+                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>            35.0%    29.0   2025-10-08   18% ▇▇
                         <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>            48.7%    34.8   2025-10-08    9% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (la…</a>  70.1%    41.7   2025-10-08    5% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (la…</a>  20.7%    30.7   2025-10-08    5% ▇

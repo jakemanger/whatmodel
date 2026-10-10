@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2024-02 · 1.18B params · apache-2.0
 
-**score 21.5** ±1.5 · #896 of 935 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+**score 21.5** ±1.5 · #895 of 934 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 

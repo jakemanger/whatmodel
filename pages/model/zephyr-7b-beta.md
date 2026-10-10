@@ -6,7 +6,7 @@
 
 Hugging Face · released 2023-10 · 7.24B params · mit
 
-**score 33.2** ±0.7 · #808 of 935 · from 15 benchmark results across 7 sources
+**score 33.2** ±0.7 · #807 of 934 · from 15 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -19,7 +19,7 @@ source                  test                             score  implies  date   
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                            34.7%    29.1   2024-12-26    5% ▇
 <a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                   44.9%    34.6   2023-11-20    5% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>        54.3%    36.5   2023-11-20    3% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                            28.0%    33.0   2023-11-20    2% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                            28.0%    33.1   2023-11-20    2% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                             58.6%    43.0   2023-11-20    2% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>   23.7%    19.1   2023-11-20    1% ▇
 <a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>             16.7%    35.9   2024-10-22    8% ▇

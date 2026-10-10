@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 6.7B params · opt-175b-license-noncommercial
 
-**score 25.4** ±0.8 · #881 of 935 · from 16 benchmark results across 2 sources
+**score 25.4** ±0.8 · #880 of 934 · from 16 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -25,7 +25,7 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">Social IQA</a>                      42.6%    26.1   2024-04-08    2% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">LAMBADA (OpenAI version), las…</a>  67.6%    26.5   2024-04-08    2% ▇
 <a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   30.5%    26.4   2023-05-31    8% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        65.6%    24.3   2023-05-31    7% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        65.6%    24.4   2023-05-31    7% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      65.3%    28.6   2023-05-31    7% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            76.3%    27.9   2023-05-31    4% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            90.1%    24.4   2023-05-31    4% ▇

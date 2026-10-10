@@ -6,7 +6,7 @@
 
 Artigenz · released 2024-04 · 6.74B params · other (deepseek)
 
-**score 49.0** ±0.9 · #462 of 935 · from 3 benchmark results across 1 source
+**score 49.1** ±0.9 · #460 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -18,7 +18,7 @@ source                  test                    score  implies  date        weig
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              72.6%    49.6   2024-12-26   42% ▇▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   69.6%    51.3   2024-12-26    7% ▇
 prior                   pull toward the middle           50.0                 0% ▇
-                        weighted average               = 49.0
+                        weighted average               = 49.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle           50.0                 0%
 
 <pre>
 download         size  score
-16-bit bf16  ~13.48GB   49.0
+16-bit bf16  ~13.48GB   49.1
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-04 · 13.96B params · mit
 
-**score 45.1** ±1.3 · #578 of 935 · from 10 benchmark results across 5 sources
+**score 45.1** ±1.3 · #577 of 934 · from 10 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            30.3%    44.7   2024-10-22   50% ▇▇▇▇▇▇
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    17.6%    46.1   2025-01-31   20% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    27.6%    39.5   2025-01-31   11% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    27.6%    39.6   2025-01-31   11% ▇
 <a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  50.8%    49.7   2025-05-31    3% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>  43.0%    54.8   2025-05-31    3% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  30.2%    48.8   2025-05-31    2% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  76.7%   100.6   2025-05-31    0% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  76.7%   100.7   2025-05-31    0% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  71.7%    47.8   2024-05-21    6% ▇
 <a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                       78.6%    45.8   2025-10-09    3% ▇
                         <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                      46.1%    35.0   2025-10-09    1% ▇

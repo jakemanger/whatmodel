@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-06 · 75.35B params (9.3B active) · openmdw-1.1
 
-**score 64.6** ±1.2 · #154 of 935 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 64.6** ±1.2 · #153 of 934 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="first-party-nvidia-scores"></a>NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">τ²-bench Telecom (lab)</a>          61.5%    63.7   2026-06-24   23% ▇▇▇
+<a name="first-party-nvidia-scores"></a>NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">τ²-bench Telecom (lab)</a>          61.5%    63.8   2026-06-24   23% ▇▇▇
                         <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">GPQA (subset unspecified) (la…</a>  78.6%    64.9   2026-06-24   13% ▇▇
                         <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">Terminal-Bench Hard (lab)</a>       24.0%    66.6   2026-06-24   12% ▇
                         <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">AIME 2025 (lab)</a>                 89.7%    63.9   2026-06-24   10% ▇
                         <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">SWE-bench Verified (lab)</a>        56.9%    64.1   2026-06-24    8% ▇
                         <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">HMMT February 2025 (lab)</a>        93.4%    67.6   2026-06-24    8% ▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">Humanity's Last Exam (lab)</a>      16.5%    64.2   2026-06-24    6% ▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">Humanity's Last Exam (lab)</a>      16.5%    64.3   2026-06-24    6% ▇
                         <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">MMLU-Pro (lab)</a>                  82.4%    64.5   2026-06-24    6% ▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">τ²-bench Retail (lab)</a>           63.2%    63.3   2026-06-24    4% ▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">SciCode subproblems (lab)</a>       40.6%    65.6   2026-06-24    3% ▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">τ²-bench Retail (lab)</a>           63.2%    63.4   2026-06-24    4% ▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">SciCode subproblems (lab)</a>       40.6%    65.7   2026-06-24    3% ▇
                         <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">τ²-bench Airline (lab)</a>          55.8%    65.6   2026-06-24    3% ▇
                         <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">IFBench prompt-level (lab)</a>      71.9%    60.1   2026-06-24    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇

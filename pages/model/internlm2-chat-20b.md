@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (InternLM) · released 2024-01 · 19.86B params · other
 
-**score 41.4** ±1.4 · #674 of 935 · from 4 benchmark results across 4 sources
+**score 41.4** ±1.4 · #674 of 934 · from 4 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                            score  implies  date    
 <a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>  18.8%    40.9   2025-08-09   50% ▇▇▇▇▇▇
 <a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>  24.4%    43.2   2024-11-14   30% ▇▇▇▇
 <a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  43.0%    35.3   2026-08-11   12% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  70.6%    46.8   2024-04-18    7% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  70.6%    46.9   2024-04-18    7% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 41.4
 </pre>

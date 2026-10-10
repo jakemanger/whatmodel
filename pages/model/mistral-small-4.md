@@ -6,7 +6,7 @@
 
 Mistral · released 2026-03 · 119B params (6.5B active) · apache-2.0
 
-**score 59.0** ±1.8 · #232 of 935 · from 9 benchmark results across 3 sources
+**score 59.0** ±1.8 · #231 of 934 · from 9 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card-mistralai-mistral-small-4-119b-2603"></a>mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">GPQA Diamond (lab)</a>              71.2%    63.3   2026-09-25   18% ▇▇
+<a name="card-mistralai-mistral-small-4-119b-2603"></a>mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">GPQA Diamond (lab)</a>              71.2%    63.4   2026-09-25   18% ▇▇
                         <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMLU-Pro (lab)</a>                  78.0%    60.9   2026-09-25   12% ▇
                         <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">LiveCodeBench (version unspec…</a>  63.6%    61.3   2026-09-25   12% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">Arena-Hard (version/judge uns…</a>  58.3%    52.0   2026-09-25   11% ▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">Arena-Hard (version/judge uns…</a>  58.3%    52.1   2026-09-25   11% ▇
                         <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecif…</a>  48.0%    60.6   2026-09-25    9% ▇
                         <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMMU Pro (lab)</a>                  60.0%    61.8   2026-09-25    9% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">COLLIE (constrained text gene…</a>  62.9%    66.1   2026-09-25    6% ▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">COLLIE (constrained text gene…</a>  62.9%    66.2   2026-09-25    6% ▇
 <a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  33.9%    51.6   2026-04-04   14% ▇▇
 <a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard ave…</a>  20.6%    56.6   2026-09-28    7% ▇
 prior                   pull toward the middle                   50.0                 1% ▇

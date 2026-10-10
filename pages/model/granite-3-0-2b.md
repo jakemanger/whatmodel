@@ -6,7 +6,7 @@
 
 IBM · released 2024-10 · 2.63B params · apache-2.0
 
-**score 38.6** ±0.9 · #723 of 935 · from 22 benchmark results across 5 sources
+**score 38.6** ±0.9 · #723 of 934 · from 22 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -22,14 +22,14 @@ source                  test                             score  implies  date   
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">GSM8K (lab)</a>                      59.7%    40.9   2024-11-09    7% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MATH (subset unspecified) (la…</a>   23.7%    36.3   2024-11-09    7% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MMLU-Pro (lab)</a>                   27.9%    38.4   2024-11-09    6% ▇
-                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HellaSwag (lab)</a>                  76.8%    39.6   2024-11-09    4% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HellaSwag (lab)</a>                  76.8%    39.7   2024-11-09    4% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MBPP (lab)</a>                       41.0%    38.2   2024-11-09    4% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">BoolQ (lab)</a>                      84.9%    41.9   2024-11-09    4% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">OpenBookQA (lab)</a>                 43.2%    39.5   2024-11-09    4% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">ARC Challenge (lab)</a>              54.4%    39.2   2024-11-09    4% ▇
-                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">IFEval (aggregation unspecifi…</a>   46.1%    34.0   2024-11-09    3% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">IFEval (aggregation unspecifi…</a>   46.1%    34.1   2024-11-09    3% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">Social IQA (lab)</a>                 66.4%    47.9   2024-11-09    1% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1156.6    36.7   2026-10-02    7% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1156.6    36.8   2026-10-02    7% ▇
 <a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>   14.2%    34.9   2025-05-31    1% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>    1.0%    30.6   2025-05-31    1% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>   20.4%    40.0   2025-05-31    1% ▇

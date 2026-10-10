@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2025-11 · proprietary
 
-**score 65.8** ±4.5 · #142 of 935 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 65.8** ±4.5 · #141 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

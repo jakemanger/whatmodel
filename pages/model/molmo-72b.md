@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-09 · 73.3B params · apache-2.0
 
-**score 49.9** ±1.8 · #437 of 935 · from 17 benchmark results across 4 sources
+**score 49.9** ±1.8 · #436 of 934 · from 17 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                      score  implies  date        weight
-<a name="paper-2601.10611v4-molmo2"></a>Molmo2: Open Weights …  <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MMMU (val) (lab)</a>                                          54.1%    50.1   2026-04-02    9% ▇
+<a name="paper-2601.10611v4-molmo2"></a>Molmo2: Open Weights …  <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MMMU (val) (lab)</a>                                          54.1%    50.2   2026-04-02    9% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MathVista (testmini) (lab)</a>                                58.6%    49.0   2026-04-02    9% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">InfographicVQA (lab)</a>                                      81.9%    53.5   2026-04-02    8% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">CountBench (lab)</a>                                          91.2%    49.8   2026-04-02    7% ▇
@@ -27,9 +27,9 @@ source                  test                                                    
 <a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  3.5100 MM-MT-Bench score (1-10)    32.8   2024-10-10    9% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                52.7%    50.4   2024-10-10    7% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      52.2%    49.2   2024-10-10    6% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               75.2%    51.7   2024-10-10    5% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   75.6%    47.2   2024-10-10    0% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                           1044.9    47.3   2026-10-02   19% ▇▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               75.2%    51.8   2024-10-10    5% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   75.6%    47.3   2024-10-10    0% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                           1044.9    47.4   2026-10-02   19% ▇▇
 <a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>                           1077.0    57.4   2024-09-25    3% ▇
 prior                   pull toward the middle                                             50.0                 1% ▇
                         weighted average                                                 = 49.9

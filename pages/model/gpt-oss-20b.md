@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-08 · 21B params (3.6B active) · apache-2.0
 
-**score 59.1** ±0.6 · #228 of 935 · from 58 benchmark results across 16 sources
+**score 59.1** ±0.6 · #227 of 934 · from 58 benchmark results across 16 sources
 
 ## How the score was worked out
 
@@ -30,32 +30,32 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">MMLU</a>                             81.7%    55.9   2025-08-20    2% ▇
                         <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">MMLU-Pro</a>                         76.2%    57.7   2025-08-20    2% ▇
                         <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">LiveCodeBench v6 (Feb–May 202…</a>   63.8%    62.4   2025-08-20    2% ▇
-                        <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">MMMLU</a>                            77.4%    59.8   2025-08-20    2% ▇
+                        <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">MMMLU</a>                            77.4%    59.9   2025-08-20    2% ▇
                         <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">Humanity's Last Exam</a>             12.7%    65.1   2025-08-20    1% ▇
                         <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">SuperGPQA</a>                        50.1%    58.4   2025-08-20    1% ▇
                         <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">KOR-Bench</a>                        72.3%    63.5   2025-08-20    1% ▇
                         <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">SimpleQA</a>                          6.7%    51.7   2025-08-20    1% ▇
-                        <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">IFEval (aggregation unspecifi…</a>   92.8%    69.3   2025-08-20    1% ▇
+                        <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">IFEval (aggregation unspecifi…</a>   92.8%    69.4   2025-08-20    1% ▇
                         <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">RULER 128k</a>                       78.7%    55.3   2025-08-20    0% ▇
                         <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">BeyondAIME</a>                       69.0%    75.1   2025-08-20    0% ▇
 <a name="report-2508.10925v1"></a>OpenAI                  <a href="https://arxiv.org/html/2508.10925v1">Aider polyglot (225 exercises…</a>   34.2%    59.9   2025-08-08    4% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">GPQA Diamond (lab)</a>               71.5%    59.8   2025-08-08    2% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">AIME 2024 (lab)</a>                  92.1%    62.9   2025-08-08    2% ▇
-                        <a href="https://arxiv.org/html/2508.10925v1">AIME 2025 (lab)</a>                  91.7%    64.9   2025-08-08    2% ▇
-                        <a href="https://arxiv.org/html/2508.10925v1">SWE-bench Verified (lab)</a>         60.7%    63.4   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.10925v1">AIME 2025 (lab)</a>                  91.7%    65.0   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.10925v1">SWE-bench Verified (lab)</a>         60.7%    63.5   2025-08-08    2% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">MMLU (lab)</a>                       85.3%    57.2   2025-08-08    1% ▇
-                        <a href="https://arxiv.org/html/2508.10925v1">Humanity's Last Exam (lab)</a>       10.9%    59.1   2025-08-08    1% ▇
+                        <a href="https://arxiv.org/html/2508.10925v1">Humanity's Last Exam (lab)</a>       10.9%    59.2   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">τ-bench Retail (lab)</a>             54.8%    55.9   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">MMMLU (lab)</a>                      75.7%    58.4   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">SimpleQA (lab)</a>                    6.7%    50.5   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">τ-bench Airline (lab)</a>            38.0%    57.1   2025-08-08    1% ▇
-                        <a href="https://arxiv.org/html/2508.10925v1">Humanity's Last Exam with too…</a>   17.3%    55.5   2025-08-08    1% ▇
+                        <a href="https://arxiv.org/html/2508.10925v1">Humanity's Last Exam with too…</a>   17.3%    55.6   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">HealthBench (lab)</a>                42.5%    62.2   2025-08-08    0% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">HealthBench Hard (lab)</a>           10.8%    47.5   2025-08-08    0% ▇
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     46.0%    53.9   2026-08-06    6% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         50.8%    61.6   2026-08-27    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         50.8%    61.7   2026-08-27    4% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             0.0%    52.2   2026-08-27    0% ▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5198    59.6   2026-05-02    4% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5198    59.7   2026-05-02    4% ▇
                         <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   53.6%    60.7   2026-05-02    2% ▇
 <a name="servicenow-browsergym-leaderboard"></a>ServiceNow BrowserGym…  <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-20b/workarena-l1.json">BrowserGym WorkArena-L1 (Agen…</a>   38.5%    55.1   2025-08-07    2% ▇
                         <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-20b/workarena-l2.json">BrowserGym WorkArena-L2 (Agen…</a>    2.6%    52.4   2025-08-07    1% ▇
@@ -68,7 +68,7 @@ source                  test                             score  implies  date   
 <a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   30.6%    50.2   2026-02-08    1% ▇
 <a name="multiverse-hypernova-60b-2602-card"></a>Multiverse Computing …  <a href="https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2602/blob/382391945c26d1ab65fc8bdc174865067cf80cd1/README.md">Terminal-Bench Hard</a>               9.0%    56.0   2026-08-07    1% ▇
 <a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>    3.1%    50.3   2026-01-17    1% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   45.5%    37.6   2026-09-19    1% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   45.5%    37.7   2026-09-19    1% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   67.7%    48.1   2026-04-17    0% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   72.7%    32.1   2026-04-17    0% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   96.3%    60.4   2025-10-16    0% ▇

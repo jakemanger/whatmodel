@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2025-08 · 36.2B params · apache-2.0
 
-**score 63.0** ±1.0 · #173 of 935 · from 21 benchmark results across 2 sources
+**score 63.1** ±1.0 · #172 of 934 · from 21 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -15,28 +15,28 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="card-bytedance-seed--seed-oss-36b-instruct"></a>ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">GPQA Diamond (lab)</a>              71.4%    60.3   2025-08-20   10% ▇
-                        <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">AIME 2024 (lab)</a>                 91.7%    64.0   2025-08-20    6% ▇
+                        <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">AIME 2024 (lab)</a>                 91.7%    64.1   2025-08-20    6% ▇
                         <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">AIME 2025 (lab)</a>                 84.7%    62.1   2025-08-20    5% ▇
                         <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">MMLU (lab)</a>                      87.4%    61.0   2025-08-20    5% ▇
-                        <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">Humanity's Last Exam (lab)</a>      10.1%    60.1   2025-08-20    5% ▇
+                        <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">Humanity's Last Exam (lab)</a>      10.1%    60.2   2025-08-20    5% ▇
                         <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">MMLU-Pro (lab)</a>                  82.7%    62.5   2025-08-20    5% ▇
                         <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">SWE-bench Verified (lab)</a>        56.0%    68.0   2025-08-20    4% ▇
                         <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">LiveCodeBench v6 (Feb–May 202…</a>  67.4%    63.8   2025-08-20    4% ▇
-                        <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">MMMLU (lab)</a>                     78.4%    59.7   2025-08-20    4% ▇
-                        <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">SuperGPQA (lab)</a>                 55.7%    61.5   2025-08-20    3% ▇
+                        <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">MMMLU (lab)</a>                     78.4%    59.8   2025-08-20    4% ▇
+                        <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">SuperGPQA (lab)</a>                 55.7%    61.6   2025-08-20    3% ▇
                         <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">τ-bench Airline (lab)</a>           46.0%    61.9   2025-08-20    3% ▇
-                        <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">τ-bench Retail (lab)</a>            70.4%    67.1   2025-08-20    3% ▇
-                        <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">SimpleQA (lab)</a>                   9.7%    55.5   2025-08-20    3% ▇
+                        <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">τ-bench Retail (lab)</a>            70.4%    67.2   2025-08-20    3% ▇
+                        <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">SimpleQA (lab)</a>                   9.7%    55.6   2025-08-20    3% ▇
                         <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">KOR-Bench (lab)</a>                 70.6%    60.6   2025-08-20    2% ▇
-                        <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">Multi-SWE-bench (scaffold per…</a>  17.0%    71.0   2025-08-20    2% ▇
+                        <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">Multi-SWE-bench (scaffold per…</a>  17.0%    71.1   2025-08-20    2% ▇
                         <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">IFEval (aggregation unspecifi…</a>  85.8%    55.8   2025-08-20    2% ▇
                         <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">RULER 128k (lab)</a>                94.6%    76.0   2025-08-20    1% ▇
-                        <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">BeyondAIME (lab)</a>                65.0%    71.3   2025-08-20    1% ▇
+                        <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">BeyondAIME (lab)</a>                65.0%    71.4   2025-08-20    1% ▇
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    71.5%    64.0   2026-08-30   17% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        67.5%    64.6   2026-08-28   11% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>           13.0%    66.1   2026-08-28    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        67.5%    64.7   2026-08-28   11% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>           13.0%    66.2   2026-08-28    2% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 63.0
+                        weighted average                       = 63.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -49,8 +49,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download               size  score
-4-bit gguf-q4_k_m  ~22.22GB   63.0
-8-bit gguf-q8_0    ~43.94GB   63.0
+4-bit gguf-q4_k_m  ~22.22GB   63.1
+8-bit gguf-q8_0    ~43.94GB   63.1
 </pre>
 
 ```sh

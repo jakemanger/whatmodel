@@ -6,7 +6,7 @@
 
 Deep Cogito · released 2025-03 · 14.77B params · apache-2.0
 
-**score 60.4** ±6.5 · #211 of 935 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 60.4** ±6.5 · #210 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

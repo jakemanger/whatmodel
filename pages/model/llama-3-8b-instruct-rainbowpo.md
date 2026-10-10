@@ -6,7 +6,7 @@
 
 BraceZHY (RainbowPO) · released 2024-10 · 8.03B params · mit
 
-**score 55.0** ±1.6 · #314 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.0** ±1.6 · #313 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

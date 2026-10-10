@@ -6,7 +6,7 @@
 
 Mistral AI · released 2024-07 · 7.25B params · apache-2.0
 
-**score 42.4** ±1.4 · #654 of 935 · from 4 benchmark results across 4 sources
+**score 42.4** ±1.4 · #653 of 934 · from 4 benchmark results across 4 sources
 
 ## How the score was worked out
 

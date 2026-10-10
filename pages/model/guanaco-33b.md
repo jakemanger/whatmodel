@@ -6,7 +6,7 @@
 
 University of Washington · released 2023-05 · 33B params · llama-1-noncommercial-research
 
-**score 32.3** ±1.7 · #823 of 935 · from 4 benchmark results across 3 sources
+**score 32.3** ±1.7 · #822 of 934 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 

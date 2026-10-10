@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-07 · 13B params · llama2
 
-**score 35.2** ±1.2 · #784 of 935 · from 13 benchmark results across 4 sources
+**score 35.2** ±1.2 · #783 of 934 · from 13 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -18,7 +18,7 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>                    50.4%    31.6   2023-11-21   11% ▇
                         <a href="https://arxiv.org/html/2311.11045v2">GSM8K</a>                            48.6%    36.5   2023-11-21    9% ▇
                         <a href="https://arxiv.org/html/2311.11045v2">MMLU</a>                             42.8%    31.0   2023-11-21    8% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>                  38.3%    33.3   2023-11-21    7% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>                  38.3%    33.4   2023-11-21    7% ▇
                         <a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>                         69.0%    26.5   2023-11-21    3% ▇
 <a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   14.5%    38.3   2025-08-09   24% ▇▇▇
                         <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>   89.2%    40.5   2025-08-09    6% ▇
@@ -26,7 +26,7 @@ source                  test                             score  implies  date   
 <a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>    4.6%    28.3   2025-05-31    2% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>   22.9%    43.5   2025-05-31    1% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>    0.1%    26.9   2025-05-31    1% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>   65.1%    47.8   2025-05-31    0% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>   65.1%    47.9   2025-05-31    0% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 35.2
 </pre>

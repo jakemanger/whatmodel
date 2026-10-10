@@ -6,7 +6,7 @@
 
 OpenAI · released 2022-11 · proprietary
 
-**score 34.0** ±3.6 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 34.1** ±3.6 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                            score  implies  date    
 <a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  50.0%    25.1   2025-08-09   50% ▇▇▇▇▇▇
 <a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>  43.7%    42.3   2024-01-03   44% ▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 34.0
+                        weighted average                       = 34.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

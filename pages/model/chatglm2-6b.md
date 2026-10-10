@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2023-06 · 6B params · chatglm2-6b-license
 
-**score 24.9** ±1.8 · #885 of 935 · from 5 benchmark results across 4 sources
+**score 24.9** ±1.8 · #884 of 934 · from 5 benchmark results across 4 sources
 
 ## How the score was worked out
 

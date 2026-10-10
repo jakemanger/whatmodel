@@ -6,7 +6,7 @@
 
 Amazon · released 2025-04 · closed weights
 
-**score 54.2** ±1.5 · #336 of 935 · from 9 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 54.2** ±1.5 · #335 of 934 · from 9 benchmark results across 2 sources · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -20,9 +20,9 @@ source                  test                            score  implies  date    
                         <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">MMLU (lab)</a>                      87.4%    54.9   2025-04-30    9% ▇
                         <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">CharXiv (reasoning questions)…</a>  48.8%    54.4   2025-04-30    8% ▇
                         <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">CharXiv descriptive questions…</a>  84.6%    58.8   2025-04-30    7% ▇
-                        <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">BigCodeBench (lab)</a>              28.1%    47.5   2025-04-30    6% ▇
+                        <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">BigCodeBench (lab)</a>              28.1%    47.6   2025-04-30    6% ▇
                         <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">BFCL v3 (lab)</a>                   63.7%    55.0   2025-04-30    3% ▇
-<a name="massive-agents-paper"></a>MASSIVE-Agents          <a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero…</a>  34.0%    60.8   2026-09-25   21% ▇▇▇
+<a name="massive-agents-paper"></a>MASSIVE-Agents          <a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero…</a>  34.0%    60.9   2026-09-25   21% ▇▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 54.2
 </pre>

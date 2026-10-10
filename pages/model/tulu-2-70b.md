@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 70B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 45.4** ±1.7 · #565 of 935 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 45.4** ±1.7 · #566 of 934 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            68.4%    45.6   2023-11-20   47% ▇▇▇▇▇▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            68.4%    45.7   2023-11-20   47% ▇▇▇▇▇▇
         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  68.5%    40.5   2023-11-20   16% ▇▇
         <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      67.3%    46.1   2023-11-20   16% ▇▇
         <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     73.0%    49.5   2023-11-20   14% ▇▇

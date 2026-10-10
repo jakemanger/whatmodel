@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 6.74B params · llama2
 
-**score 28.8** ±1.0 · #853 of 935 · from 20 benchmark results across 15 sources
+**score 28.8** ±1.0 · #852 of 934 · from 20 benchmark results across 15 sources
 
 ## How the score was worked out
 
@@ -17,10 +17,10 @@ source                  test                                                   s
 <a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                                         25.6%    19.0   2023-11-20    9% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>                              24.0%    25.7   2023-11-20    7% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                                   46.8%    35.8   2023-11-20    3% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                                                  12.0%    24.7   2023-11-20    3% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                                                  12.0%    24.8   2023-11-20    3% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>                         22.7%    17.7   2023-11-20    2% ▇
 <a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                          5.3%    27.9   2025-08-09    9% ▇
-                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>                         71.4%    33.1   2025-08-09    5% ▇
+                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>                         71.4%    33.2   2025-08-09    5% ▇
 <a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                                   11.6%    30.9   2024-10-22   14% ▇▇
 <a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>               8.2621 WB-Score    28.1   2024-08-01   10% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                        1107.9    30.9   2026-10-02    9% ▇

@@ -6,7 +6,7 @@
 
 PLLuM consortium (CYFRAGOVPL) · released 2025-02 · 8.03B params · llama3.1
 
-**score 45.4** ±3.9 · #569 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 45.5** ±3.9 · #564 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source            test                            score  implies  date        weight
 <a name="speakleash-cptub"></a>SpeakLeash CPTUB  <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  58.4%    45.1   2026-08-11   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior             pull toward the middle                   50.0                 7% ▇
-                  weighted average                       = 45.4
+                  weighted average                       = 45.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior             pull toward the middle                   50.0                 
 
 <pre>
 download         size  score
-16-bit bf16  ~16.06GB   45.4
+16-bit bf16  ~16.06GB   45.5
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Cohere · released 2024-08 · 104B params · cc-by-nc-4.0
 
-**score 47.2** ±1.0 · #512 of 935 · from 17 benchmark results across 7 sources
+**score 47.2** ±1.0 · #514 of 934 · from 17 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="report-2504.00698v2"></a>Cohere                  <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8) (…</a>   77.0%    47.1   2025-04-14    8% ▇
+<a name="report-2504.00698v2"></a>Cohere                  <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8) (…</a>   77.0%    47.2   2025-04-14    8% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>         17.0%    48.8   2025-04-14    6% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                      78.8%    50.1   2025-04-14    5% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Fe…</a>   14.4%    46.0   2025-04-14    4% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>    25.8%    41.9   2025-04-14    4% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>    25.8%    42.0   2025-04-14    4% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises…</a>    2.2%    44.7   2025-04-14    3% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>             52.7%    53.3   2025-04-14    3% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">LongBench v2 (lab)</a>               27.8%    38.8   2025-04-14    2% ▇

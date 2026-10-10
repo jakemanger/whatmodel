@@ -6,7 +6,7 @@
 
 Anthropic · released 2023-07 · proprietary
 
-**score 44.5** ±1.1 · comparison only: no current run option verified · from 8 benchmark results across 5 sources
+**score 44.6** ±1.1 · comparison only: no current run option verified · from 8 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -23,7 +23,7 @@ source                  test                                                   s
 <a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  8.0600 MT-Bench score (1-10)    45.5   2023-07-17    9% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>                         82.6%    17.8   2025-10-16    1% ▇
 prior                   pull toward the middle                                          50.0                 1% ▇
-                        weighted average                                              = 44.5
+                        weighted average                                              = 44.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

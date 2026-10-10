@@ -6,7 +6,7 @@
 
 INF (infly) · released 2024-11 · 7.77B params · other (inf)
 
-**score 51.5** ±0.9 · #394 of 935 · from 4 benchmark results across 1 source
+**score 51.5** ±0.9 · #393 of 934 · from 4 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       81.7%    51.2   2024-12-26   47% ▇▇▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      77.4%    51.7   2024-12-26   41% ▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           71.4%    52.6   2024-12-26    8% ▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           71.4%    52.7   2024-12-26    8% ▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/infly--OpenCoder-8B-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  76.9%    50.5   2024-11-08    4% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 51.5

@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-05 · 8.19B params · mit
 
-**score 57.2** ±1.0 · #268 of 935 · from 16 benchmark results across 4 sources
+**score 57.2** ±1.0 · #267 of 934 · from 16 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -19,7 +19,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2601.02346v1">AIME 2025</a>                       75.8%    59.2   2026-01-05   11% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecifie…</a>  54.3%    59.0   2026-01-05    9% ▇
                         <a href="https://arxiv.org/html/2601.02346v1#S4.T5">Terminal-Bench Hard</a>              1.4%    51.6   2026-01-05    7% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro</a>                        69.1%    56.6   2026-01-05    7% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro</a>                        69.1%    56.7   2026-01-05    7% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unsp…</a>  57.2%    56.8   2026-01-05    7% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">MATH-500</a>                        96.8%    60.7   2026-01-05    6% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam</a>             5.6%    54.8   2026-01-05    5% ▇

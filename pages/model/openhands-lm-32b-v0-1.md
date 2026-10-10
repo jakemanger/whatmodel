@@ -6,7 +6,7 @@
 
 All Hands AI · released 2025-03 · 32.76B params · mit
 
-**score 51.2** ±3.0 · #401 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.3** ±3.0 · #399 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>  10.2%    51.3   2025-04-19   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 4% ▇
-                        weighted average                       = 51.2
+                        weighted average                       = 51.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~65.53GB   51.2
+16-bit bf16  ~65.53GB   51.3
 </pre>
 
 ```sh

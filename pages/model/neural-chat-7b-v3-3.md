@@ -6,7 +6,7 @@
 
 Intel · released 2023-12 · 7.24B params · apache-2.0
 
-**score 46.8** ±4.6 · #525 of 935 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 46.8** ±4.6 · #524 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  67.1%    43.8   2024-02-21   76% ▇▇▇▇▇▇▇▇▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  97.4%    60.5   2025-10-16   15% ▇▇
-prior                   pull toward the middle                   50.0                 9% ▇
+prior                   pull toward the middle                   50.0                10% ▇
                         weighted average                       = 46.8
 </pre>
 

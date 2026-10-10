@@ -59873,53 +59873,6 @@
     ]
   },
   {
-    "id": "qwen-agentworld-35b-a3b",
-    "name": "Qwen-AgentWorld 35B-A3B",
-    "provider": "Alibaba",
-    "category": "llm",
-    "released": "2026-06",
-    "released_source": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B",
-    "open_weights": true,
-    "license": "apache-2.0",
-    "license_source": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md",
-    "params_b": 34.66,
-    "active_b": 3,
-    "params_note": "HF safetensors metadata 34,660,610,688 parameters; 3B active per the maker card.",
-    "api": null,
-    "local": {
-      "variants": [
-        {
-          "quant": "q4_k_xl",
-          "gb": 22.32,
-          "gb_estimated": true,
-          "cmd": "llama-server -hf unsloth/Qwen-AgentWorld-35B-A3B-GGUF:UD-Q4_K_XL",
-          "source": "https://huggingface.co/unsloth/Qwen-AgentWorld-35B-A3B-GGUF/tree/3a305abf5cfd119ee999dfe929c433746edd8d63",
-          "note": "unsloth dynamic quantisation; UD-Q4_K_XL file(s) 22,324,804,864 bytes (@3a305ab, fetched 2026-10-10)."
-        },
-        {
-          "quant": "bf16",
-          "gb": 69.3,
-          "gb_estimated": true,
-          "cmd": "vllm serve Qwen/Qwen-AgentWorld-35B-A3B",
-          "platform": "nvidia",
-          "source": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/tree/60d2b0434a53d2e62a7c00a489586815d94ebffb",
-          "note": "BF16 safetensors (parameter count x 2 bytes, estimated). Card example uses --tensor-parallel-size 4 and --reasoning-parser qwen3."
-        }
-      ]
-    },
-    "model_repo": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B",
-    "identity_note": "Qwen/Qwen-AgentWorld-35B-A3B @60d2b04 (created 2026-06-22, licence apache-2.0). Qwen's language world model (June 2026; Qwen3.5-35B-A3B-Base, 35B total / 3B activated) trained to simulate agentic environments. Rows: its own AgentWorldBench table (new benchmark proposal), with 11 catalogued comparators.",
-    "identity_evidence": [
-      {
-        "source": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md",
-        "reported_label": "Qwen-AgentWorld-35B-A3B"
-      }
-    ],
-    "context_k": 262.144,
-    "context_source": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md",
-    "context_note": "Card: 'Context Length: 262,144 tokens'. Observed 2026-10-10."
-  },
-  {
     "id": "nemotron-labs-3-puzzle-75b-a9b",
     "name": "Nemotron-Labs-3 Puzzle 75B-A9B",
     "provider": "NVIDIA",

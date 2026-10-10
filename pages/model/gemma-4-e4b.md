@@ -6,7 +6,7 @@
 
 Google · released 2026-04 · 8B params (4.5B active) · apache-2.0
 
-**score 52.9** ±0.6 · #364 of 935 · from 66 benchmark results across 10 sources
+**score 52.9** ±0.6 · #364 of 934 · from 66 benchmark results across 10 sources
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card3-openbmb-minicpm5-2b"></a>openbmb/MiniCPM5-2B m…  <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">HMMT February 2026</a>              30.1%    49.8   2026-09-06    4% ▇
+<a name="card3-openbmb-minicpm5-2b"></a>openbmb/MiniCPM5-2B m…  <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">HMMT February 2026</a>              30.1%    49.9   2026-09-06    4% ▇
                         <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2025</a>                       37.1%    48.2   2026-09-06    4% ▇
                         <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2026</a>                       45.0%    48.7   2026-09-06    3% ▇
                         <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench v6 (window unsp…</a>  53.9%    56.7   2026-09-06    2% ▇
@@ -22,9 +22,9 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MMLU-Pro</a>                        68.3%    55.2   2026-09-06    2% ▇
                         <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench Pro 2025Q2 (Eas…</a>  45.8%    56.1   2026-09-06    2% ▇
                         <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MMLU-Redux</a>                      83.7%    56.0   2026-09-06    2% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">OJBench</a>                         19.0%    57.6   2026-09-06    1% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SuperGPQA</a>                       38.7%    54.5   2026-09-06    1% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench Pro 2025Q2 (Med…</a>   1.8%    49.9   2026-09-06    1% ▇
+                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">OJBench</a>                         19.0%    57.7   2026-09-06    1% ▇
+                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SuperGPQA</a>                       38.7%    54.6   2026-09-06    1% ▇
+                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench Pro 2025Q2 (Med…</a>   1.8%    50.0   2026-09-06    1% ▇
                         <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">BFCL V4 (December 2025 archiv…</a>  47.0%    52.6   2026-09-06    1% ▇
                         <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Verified</a>              15.0%    52.7   2026-09-06    1% ▇
                         <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LongBench v2</a>                    42.7%    64.5   2026-09-06    1% ▇
@@ -34,30 +34,30 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">Multi-IF (aggregation unspeci…</a>  45.9%    41.8   2026-09-06    1% ▇
                         <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Pro (split unspecif…</a>   3.3%    48.9   2026-09-06    1% ▇
                         <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">IFEval (aggregation unspecifi…</a>  44.4%    15.1   2026-09-06    0% ▇
-<a name="gemma4-report"></a>Gemma Team              <a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (lab)</a>              58.6%    55.8   2026-07-02    4% ▇
+<a name="gemma4-report"></a>Gemma Team              <a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (lab)</a>              58.6%    55.9   2026-07-02    4% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMLU-Pro (lab)</a>                  69.4%    55.0   2026-07-02    2% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMMLU (lab)</a>                     76.6%    56.2   2026-07-02    2% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – airline (lab)</a>            52.0%    55.1   2026-07-02    2% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MMMU Pro (lab)</a>                  52.6%    52.7   2026-07-02    2% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MedXPertQA MM (lab)</a>             28.7%    49.0   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MedXPertQA MM (lab)</a>             28.7%    49.1   2026-07-02    2% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T6">InfographicVQA (lab)</a>            70.0%    48.9   2026-07-02    2% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">AIME 2026 (lab)</a>                 42.5%    50.3   2026-07-02    2% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (lab)</a>               59.5%    53.6   2026-07-02    2% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">τ²-bench Telecom (lab)</a>          18.4%    53.3   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (lab)</a>               59.5%    53.7   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">τ²-bench Telecom (lab)</a>          18.4%    53.4   2026-07-02    2% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFBench (lab)</a>                   44.0%    51.7   2026-07-02    2% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Terminal-Bench Hard (lab)</a>        8.0%    55.6   2026-07-02    1% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Terminal-Bench Hard (lab)</a>        8.0%    55.7   2026-07-02    1% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MRCR v2 8-needle, 128k (lab)</a>    25.4%    52.3   2026-07-02    1% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Big Bench Extra Hard micro av…</a>  33.1%    53.2   2026-07-02    1% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">LiveCodeBench v6 (Feb–May 202…</a>  52.0%    54.8   2026-07-02    1% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">SciCode (lab)</a>                   24.0%    52.6   2026-07-02    1% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>             67.1%    61.6   2026-07-02    1% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">OmniDocBench 1.5 ↓ (lab)</a>        18.1%    61.3   2026-07-02    1% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">SciCode (lab)</a>                   24.0%    52.7   2026-07-02    1% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>             67.1%    61.7   2026-07-02    1% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">OmniDocBench 1.5 ↓ (lab)</a>        18.1%    61.4   2026-07-02    1% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFEval (lab)</a>                    96.7%    58.9   2026-07-02    1% ▇
 <a name="card3-xhtoken-spark-x2-5-4b"></a>XHToken/Spark-X2.5-4B…  <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">HMMT February 2026</a>              34.2%    51.0   2026-09-15    5% ▇
                         <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">IMO-AnswerBench</a>                 26.9%    48.0   2026-09-15    3% ▇
                         <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">GPQA (subset unspecified)</a>       54.5%    55.9   2026-09-15    2% ▇
                         <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">Humanity's Last Exam</a>             3.9%    50.7   2026-09-15    2% ▇
-                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">SciCode (level unspecified)</a>     27.5%    60.7   2026-09-15    1% ▇
+                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">SciCode (level unspecified)</a>     27.5%    60.8   2026-09-15    1% ▇
                         <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">BFCL V4 (December 2025 archiv…</a>  36.9%    51.5   2026-09-15    1% ▇
                         <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">τ³-bench</a>                        10.1%    44.5   2026-09-15    0% ▇
                         <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">BrowseComp</a>                       8.3%    47.4   2026-09-15    0% ▇
@@ -65,17 +65,17 @@ source                  test                            score  implies  date    
 <a name="card3-jetbrains-mellum2-1-12b-a2-5b-thinking"></a>JetBrains/Mellum2.1-1…  <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">GPQA Diamond</a>                    53.1%    55.0   2026-10-07    4% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">LiveCodeBench v6 (window unsp…</a>  69.4%    57.2   2026-10-07    2% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">HumanEval+</a>                      89.1%    56.8   2026-10-07    2% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">MMLU-Redux</a>                      84.9%    55.7   2026-10-07    2% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">MMLU-Redux</a>                      84.9%    55.8   2026-10-07    2% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">Terminal-Bench 2.1</a>               3.4%    45.9   2026-10-07    1% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Verified</a>              23.0%    53.7   2026-10-07    1% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">BFCL V4 (December 2025 archiv…</a>  52.5%    58.1   2026-10-07    1% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">MBPP+</a>                           70.9%    53.9   2026-10-07    1% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">MBPP+</a>                           70.9%    54.0   2026-10-07    1% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Pro (split unspecif…</a>   4.0%    46.8   2026-10-07    1% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">IFEval (aggregation unspecifi…</a>  90.8%    64.0   2026-10-07    1% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">GSM-Plus</a>                        87.4%    59.2   2026-10-07    0% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  81.5%    51.6   2026-04-17    2% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">GSM-Plus</a>                        87.4%    59.3   2026-10-07    0% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  81.5%    51.7   2026-04-17    2% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  70.0%    55.3   2026-04-17    1% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  39.2%    57.9   2026-04-08    2% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  39.2%    58.0   2026-04-08    2% ▇
 <a name="card2-google-gemma-4-31b-it"></a>google/gemma-4-31B-it…  <a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">τ²-bench aggregate (lab)</a>        42.2%    53.6   2026-07-20    1% ▇
 <a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  59.0%    51.3   2026-09-19    1% ▇
 <a name="paper-2609.00654v1"></a>SciTrue: Reliable Sci…  <a href="https://arxiv.org/html/2609.00654v1">NTCIR SciClaimEval Subtask 1 …</a>  52.6%    58.7   2026-09-01    0% ▇

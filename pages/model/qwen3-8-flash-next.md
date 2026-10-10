@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-08 · 180B params (6B active) · qwen-community-1.0
 
-**score 75.4** ±1.5 · #36 of 935 · from 4 benchmark results across 3 sources
+**score 75.4** ±1.5 · #36 of 934 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                  score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.0073 IPS    75.1   2026-10-02   35% ▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.0073 IPS    75.2   2026-10-02   35% ▇▇▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1637.5    79.8   2026-10-01   32% ▇▇▇▇
-<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/de4b8e4d43b917e7706784d8bb445c9af86a3540/README.md">CharXiv (reasoning questions)…</a>        84.6%    75.7   2026-08-27   20% ▇▇
+<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/de4b8e4d43b917e7706784d8bb445c9af86a3540/README.md">CharXiv (reasoning questions)…</a>        84.6%    75.8   2026-08-27   20% ▇▇
 <a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>        46.9%    65.4   2026-09-22   11% ▇
 prior                   pull toward the middle                         50.0                 1% ▇
                         weighted average                             = 75.4

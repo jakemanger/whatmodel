@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-12 · 228.7B params (10B active) · other
 
-**score 60.2** ±1.8 · comparison only: no current run option verified · from 8 benchmark results across 2 sources
+**score 60.3** ±1.8 · comparison only: no current run option verified · from 8 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card2-stepfun-ai-step-3-5-flash"></a>stepfun-ai/Step-3.5-F…  <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">IMO-AnswerBench</a>                 60.4%    57.7   2026-03-17   23% ▇▇▇
+<a name="card2-stepfun-ai-step-3-5-flash"></a>stepfun-ai/Step-3.5-F…  <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">IMO-AnswerBench</a>                 60.4%    57.8   2026-03-17   23% ▇▇▇
                         <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>                   47.8%    63.4   2026-03-17   18% ▇▇
                         <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT November 2025</a>              74.3%    54.0   2026-03-17   15% ▇▇
                         <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate</a>              86.6%    69.5   2026-03-17   15% ▇▇
                         <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT February 2025</a>              71.0%    51.9   2026-03-17   11% ▇
                         <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">GAIA (no-file subset)</a>           64.3%    60.0   2026-03-17    8% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">ResearchRubrics</a>                 60.2%    69.1   2026-03-17    8% ▇
+                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">ResearchRubrics</a>                 60.2%    69.2   2026-03-17    8% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  88.2%     4.5   2026-09-22    0% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 60.2
+                        weighted average                       = 60.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

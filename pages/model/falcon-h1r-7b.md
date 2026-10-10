@@ -6,7 +6,7 @@
 
 TII · released 2026-01 · 7.59B params · falcon-llm
 
-**score 60.4** ±1.1 · #209 of 935 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 60.5** ±1.1 · #206 of 934 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,20 +14,20 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="report-2601.02346v1"></a>Falcon-H1R: Pushing t…  <a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond (lab)</a>              61.3%    57.2   2026-09-25   16% ▇▇
+<a name="report-2601.02346v1"></a>Falcon-H1R: Pushing t…  <a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond (lab)</a>              61.3%    57.3   2026-09-25   16% ▇▇
                         <a href="https://arxiv.org/html/2601.02346v1">τ²-bench Telecom (lab)</a>          25.4%    56.5   2026-01-05   11% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">AIME 2024 (lab)</a>                 88.1%    62.9   2026-09-25   11% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">AIME 2025 (lab)</a>                 83.1%    62.5   2026-09-25   10% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">AIME 2025 (lab)</a>                 83.1%    62.6   2026-09-25   10% ▇
                         <a href="https://arxiv.org/html/2601.02346v1#S4.T5">Terminal-Bench Hard (lab)</a>        4.9%    62.1   2026-01-05   10% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecifie…</a>  64.9%    62.7   2026-09-25   10% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>      11.1%    63.4   2026-09-25    8% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unsp…</a>  68.6%    61.9   2026-09-25    7% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecifie…</a>  64.9%    62.8   2026-09-25   10% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>      11.1%    63.5   2026-09-25    8% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unsp…</a>  68.6%    62.0   2026-09-25    7% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro (lab)</a>                  72.1%    58.0   2026-09-25    7% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">MATH-500 (lab)</a>                  97.4%    62.8   2026-09-25    5% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecif…</a>  53.4%    61.3   2026-09-25    2% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">SciCode main problems (lab)</a>      3.9%    52.0   2026-09-25    2% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 60.4
+                        weighted average                       = 60.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -40,8 +40,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download              size  score
-4-bit gguf-q4_k_m  ~5.05GB   60.4
-8-bit gguf-q8_0    ~9.61GB   60.4
+4-bit gguf-q4_k_m  ~5.05GB   60.5
+8-bit gguf-q8_0    ~9.61GB   60.5
 </pre>
 
 ```sh

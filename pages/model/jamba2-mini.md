@@ -6,7 +6,7 @@
 
 AI21 Labs · released 2026-01 · 52B params (12B active) · apache-2.0
 
-**score 51.6** ±14.9 · #391 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.6** ±14.9 · #390 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  94.7%   216.9   2026-09-22    1% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  94.7%   217.0   2026-09-22    1% ▇
 prior                   pull toward the middle                   50.0                99% ▇▇▇▇▇▇▇▇▇▇▇▇
                         weighted average                       = 51.6
 </pre>

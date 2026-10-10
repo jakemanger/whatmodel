@@ -6,7 +6,7 @@
 
 IBM · released 2024-12 · 8.17B params · apache-2.0
 
-**score 42.8** ±0.9 · #640 of 935 · from 19 benchmark results across 6 sources
+**score 42.9** ±0.9 · #638 of 934 · from 19 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -21,7 +21,7 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">DROP (lab)</a>                       58.6%    47.2   2025-05-12    6% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MATH-500 (lab)</a>                   48.7%    38.4   2025-05-12    6% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">Arena-Hard (version/judge uns…</a>   37.6%    40.1   2025-05-12    4% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">IFEval (aggregation unspecifi…</a>   73.2%    44.7   2025-05-12    3% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">IFEval (aggregation unspecifi…</a>   73.2%    44.8   2025-05-12    3% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">PopQA (lab)</a>                      28.7%    47.0   2025-05-12    3% ▇
 <a name="card3-ibm-granite-granite-3-1-3b-a800m-instruct"></a>ibm-granite/granite-3…  <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">ARC Challenge (lab)</a>              62.6%    39.9   2025-01-31    9% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">GSM8K (lab)</a>                      73.8%    44.0   2025-01-31    8% ▇
@@ -34,7 +34,7 @@ source                  test                             score  implies  date   
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   27.1%    46.7   2025-12-16    3% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   91.4%    42.5   2025-10-16    1% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 42.8
+                        weighted average                        = 42.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -47,8 +47,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download         size  score
-4-bit q4_k_m   ~5.4GB   42.8
-8-bit q8_0    ~10.3GB   42.8
+4-bit q4_k_m   ~5.4GB   42.9
+8-bit q8_0    ~10.3GB   42.9
 </pre>
 
 ```sh

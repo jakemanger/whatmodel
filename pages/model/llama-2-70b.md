@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 69B params · llama2
 
-**score 40.8** ±0.9 · #687 of 935 · from 21 benchmark results across 5 sources
+**score 40.8** ±0.9 · #686 of 934 · from 21 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -28,8 +28,8 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA</a>                            82.6%    39.0   2024-01-08    1% ▇
 <a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  66.0%    44.8   2023-11-20   12% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       60.1%    38.0   2023-11-20    5% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            64.5%    44.7   2023-11-20    4% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           55.5%    43.1   2023-11-20    4% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            64.5%    44.8   2023-11-20    4% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           55.5%    43.2   2023-11-20    4% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  62.6%    51.3   2023-11-20    1% ▇
 <a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Llama-2-70b-hf_5shots.zip">MMLU-Pro</a>                        36.3%    39.3                11% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  86.0%    51.0   2026-04-17    1% ▇

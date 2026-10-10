@@ -6,7 +6,7 @@
 
 Chujie Zheng (ExPO) · released 2024-05 · 7.74B params · other
 
-**score 43.2** ±1.9 · #636 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 43.2** ±1.9 · #635 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

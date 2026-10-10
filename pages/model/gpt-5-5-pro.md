@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-04 · closed weights
 
-**score 82.2** ±1.1 · #8 of 935 · from 5 benchmark results across 2 sources
+**score 82.2** ±1.1 · #8 of 934 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>          78.0%    82.9   2026-06-12   43% ▇▇▇▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>       87.7%    82.3   2026-06-12   28% ▇▇▇
-<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam (lab)</a>      43.1%    79.4   2026-04-23   13% ▇▇
-                        <a href="https://openai.com/index/introducing-gpt-5-5">BrowseComp (lab)</a>                90.1%    84.9   2026-04-23    8% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam with too…</a>  57.2%    81.4   2026-04-23    7% ▇
+<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam (lab)</a>      43.1%    79.5   2026-04-23   13% ▇▇
+                        <a href="https://openai.com/index/introducing-gpt-5-5">BrowseComp (lab)</a>                90.1%    85.0   2026-04-23    8% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam with too…</a>  57.2%    81.5   2026-04-23    7% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 82.2
 </pre>

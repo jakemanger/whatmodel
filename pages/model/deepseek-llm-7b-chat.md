@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-11 · 7B params · deepseek
 
-**score 34.8** ±1.7 · #788 of 935 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+**score 34.8** ±1.7 · #787 of 934 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 

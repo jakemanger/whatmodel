@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-10 · 0.362B params · apache-2.0
 
-**score 18.5** ±2.7 · #909 of 935 · from 6 benchmark results across 2 sources
+**score 18.5** ±2.7 · #908 of 934 · from 6 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -18,7 +18,7 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">GSM8K (lab)</a>                      7.4%    14.0   2025-09-22   31% ▇▇▇▇
                         <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">HellaSwag (lab)</a>                 52.1%    23.4   2025-09-22   14% ▇▇
                         <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">IFEval (aggregation unspecifi…</a>  41.0%    24.6   2025-09-22    9% ▇
-                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">PIQA (lab)</a>                      70.8%    21.1   2025-09-22    7% ▇
+                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">PIQA (lab)</a>                      70.8%    21.2   2025-09-22    7% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  24.9%     8.5   2026-04-17    3% ▇
 prior                   pull toward the middle                   50.0                 3% ▇
                         weighted average                       = 18.5

@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-12 · proprietary
 
-**score 77.5** ±1.0 · #21 of 935 · from 4 benchmark results across 2 sources
+**score 77.5** ±1.0 · #21 of 934 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 

@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-06 · proprietary
 
-**score 71.0** ±1.6 · #76 of 935 · from 4 benchmark results across 3 sources
+**score 71.0** ±1.6 · #75 of 934 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                            score  implies  date    
 <a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://help.openai.com/en/articles/9624314-model-release-notes">GPQA Diamond (lab)</a>              84.0%    70.7   2025-06-10   37% ▇▇▇▇
                         <a href="https://help.openai.com/en/articles/9624314-model-release-notes">AIME 2024 (lab)</a>                 93.0%    71.7   2025-06-10   18% ▇▇
 <a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>  84.9%    71.7   2025-06-28   44% ▇▇▇▇▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  76.7%  -390.7   2026-09-22    0% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  76.7%  -390.6   2026-09-22    0% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 71.0
 </pre>

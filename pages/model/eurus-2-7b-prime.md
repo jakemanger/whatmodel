@@ -6,7 +6,7 @@
 
 PRIME-RL · released 2024-12 · 7.62B params · apache-2.0
 
-**score 44.8** ±2.2 · #585 of 935 · from 4 benchmark results across 2 sources
+**score 44.8** ±2.2 · #584 of 934 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                    score  implies  date        weig
 <a name="first-party-prime-rl-scores"></a>PRIME-RL Eurus-2-7B-P…  <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">AIME 2024 (lab)</a>         26.7%    46.2   2024-12-31   28% ▇▇▇
                         <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">MATH-500 (lab)</a>          79.2%    44.1   2024-12-31   19% ▇▇
                         <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">Minerva MATH (lab)</a>      38.6%    40.0   2024-12-31   17% ▇▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            33.9%    45.9   2025-01-27   34% ▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            33.9%    45.9   2025-01-27   33% ▇▇▇▇
 prior                   pull toward the middle           50.0                 2% ▇
                         weighted average               = 44.8
 </pre>

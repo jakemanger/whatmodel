@@ -6,7 +6,7 @@
 
 beowolx · released 2023-12 · 7.24B params · mit
 
-**score 38.4** ±0.8 · #733 of 935 · from 3 benchmark results across 1 source
+**score 38.5** ±0.8 · #730 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -15,10 +15,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                    score  implies  date        weight
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               47.6%    38.5   2024-12-26   55% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              42.1%    38.6   2024-12-26   39% ▇▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              42.1%    38.7   2024-12-26   38% ▇▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   46.4%    36.5   2024-12-26    6% ▇
 prior                   pull toward the middle           50.0                 0% ▇
-                        weighted average               = 38.4
+                        weighted average               = 38.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle           50.0                 0%
 
 <pre>
 download         size  score
-16-bit bf16  ~14.48GB   38.4
+16-bit bf16  ~14.48GB   38.5
 </pre>
 
 ```sh

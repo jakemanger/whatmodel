@@ -6,7 +6,7 @@
 
 Upstage · released 2024-09 · 22.14B params · mit
 
-**score 49.6** ±5.1 · #446 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 49.6** ±5.1 · #445 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

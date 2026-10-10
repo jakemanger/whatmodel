@@ -6,7 +6,7 @@
 
 Cohere · released 2025-03 · 111B params · cc-by-nc-4.0
 
-**score 57.0** ±1.1 · #271 of 935 · from 19 benchmark results across 5 sources
+**score 57.0** ±1.1 · #270 of 934 · from 19 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -19,15 +19,15 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Fe…</a>   26.9%    55.2   2025-04-14    8% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">AIME 2024 (lab)</a>                  23.3%    50.1   2025-04-14    8% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8) (…</a>   92.6%    61.9   2025-04-14    6% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">GPQA Diamond (simple-evals) (…</a>   50.8%    59.6   2025-04-14    5% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>    45.4%    55.9   2025-04-14    5% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">GPQA Diamond (simple-evals) (…</a>   50.8%    59.7   2025-04-14    5% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>    45.4%    56.0   2025-04-14    5% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                      86.2%    57.8   2025-04-14    4% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">MMLU-Pro (lab)</a>                   69.6%    57.2   2025-04-14    4% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">LongBench v2 (lab)</a>               43.4%    60.9   2025-04-14    4% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>             59.5%    56.8   2025-04-14    4% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">RULER 128k (lab)</a>                 90.0%    69.9   2025-04-14    2% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">RULER 128k (lab)</a>                 90.0%    70.0   2025-04-14    2% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">MMLU (simple-evals, zero-shot…</a>   85.5%    59.5   2025-04-14    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1353.7    60.3   2026-10-02   10% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1353.7    60.4   2026-10-02   10% ▇
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   46.5%    60.1   2025-12-16    5% ▇
                         <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                          64.4%    61.4   2025-06-14    2% ▇
 <a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   70.0%    61.5   2026-09-19    3% ▇

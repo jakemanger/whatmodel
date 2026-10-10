@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 70B params · MIT; underlying Llama 3.3 licence applies to weights
 
-**score 58.7** ±0.9 · #240 of 935 · from 18 benchmark results across 7 sources
+**score 58.7** ±0.9 · #239 of 934 · from 18 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -23,8 +23,8 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                  94.5%    56.8   2026-09-25    2% ▇
 <a name="report-2504.21318v1"></a>Microsoft               <a href="https://arxiv.org/html/2504.21318v1">GPQA Diamond</a>                    66.2%    60.0   2025-04-30   14% ▇▇
                         <a href="https://arxiv.org/html/2504.21318v1">AIME 2025</a>                       51.5%    56.1   2025-04-30    5% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">AIME 2024</a>                       69.3%    59.5   2025-04-30    3% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">Omni-MATH</a>                       63.4%    49.3   2025-04-30    1% ▇
+                        <a href="https://arxiv.org/html/2504.21318v1">AIME 2024</a>                       69.3%    59.6   2025-04-30    3% ▇
+                        <a href="https://arxiv.org/html/2504.21318v1">Omni-MATH</a>                       63.4%    49.4   2025-04-30    1% ▇
 <a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>  47.3%    53.8   2025-05-31    2% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  28.7%    47.9   2025-05-31    1% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  68.8%    55.3   2025-05-31    1% ▇

@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 6.86B params · apache-2.0
 
-**score 24.4** ±0.7 · #887 of 935 · from 26 benchmark results across 4 sources
+**score 24.4** ±0.7 · #886 of 934 · from 26 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -25,7 +25,7 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">Social IQA</a>                      40.7%    21.8   2024-04-08    2% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">LAMBADA (OpenAI version), las…</a>  67.0%    26.0   2024-04-08    2% ▇
 <a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   44.1%    28.7   2024-06-07    6% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      45.0%    26.7   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      45.0%    26.8   2024-06-07    4% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      62.0%    23.5   2024-06-07    4% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       63.8%    23.0   2024-06-07    3% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            91.1%    24.0   2024-06-07    3% ▇
@@ -39,7 +39,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      75.2%    25.9   2023-05-31    3% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  67.3%    26.6   2023-05-31    2% ▇
 <a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  11.0%    24.4   2024-04-24    2% ▇
-                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  21.7%    22.8   2024-04-24    2% ▇
+                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  21.7%    22.9   2024-04-24    2% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 24.4
 </pre>

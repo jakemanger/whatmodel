@@ -6,7 +6,7 @@
 
 NovaSky (UC Berkeley) · released 2025-01 · 32.76B params · apache-2.0
 
-**score 56.7** ±4.5 · #276 of 935 · from 3 benchmark results across 2 sources
+**score 56.7** ±4.5 · #275 of 934 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  91.0%    64.2   2026-04-17   31% ▇▇▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  91.0%    64.3   2026-04-17   31% ▇▇▇▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  93.8%    62.0   2026-04-17   18% ▇▇
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         52.4%    50.4   2025-06-14   42% ▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 9% ▇

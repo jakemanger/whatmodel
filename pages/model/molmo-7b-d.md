@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-09 · 8.02B params · apache-2.0
 
-**score 40.7** ±1.4 · #691 of 935 · from 21 benchmark results across 5 sources
+**score 40.7** ±1.4 · #690 of 934 · from 21 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -26,7 +26,7 @@ source                  test                                                    
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">CountBench (lab)</a>                                          88.5%    46.4   2026-04-02    6% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MathVista (testmini) (lab)</a>                                51.6%    46.1   2026-04-02    5% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MMMU (val) (lab)</a>                                          45.3%    44.6   2026-04-02    5% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">VQAv2 (val) (lab)</a>                                         85.6%    57.9   2026-04-02    3% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">VQAv2 (val) (lab)</a>                                         85.6%    58.0   2026-04-02    3% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">DocVQA (lab)</a>                                              92.2%    47.1   2026-04-02    3% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">ChartQA (lab)</a>                                             84.1%    52.5   2026-04-02    2% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">RealWorldQA (lab)</a>                                         70.7%    48.1   2026-04-02    2% ▇
@@ -34,7 +34,7 @@ source                  test                                                    
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (lab)</a>                                             81.7%    58.0   2026-04-02    1% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                            993.8    41.2   2026-10-02   13% ▇▇
 <a name="paper-2504.07072v2-kaleidoscope"></a>Kaleidoscope: In-lang…  <a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope (in-language mul…</a>                            32.9%    40.5   2025-04-29    7% ▇
-<a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>                           1056.0    54.6   2024-09-25    2% ▇
+<a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>                           1056.0    54.7   2024-09-25    2% ▇
 prior                   pull toward the middle                                             50.0                 1% ▇
                         weighted average                                                 = 40.7
 </pre>

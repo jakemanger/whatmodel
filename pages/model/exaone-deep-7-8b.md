@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-03 · 7.82B params · exaone
 
-**score 54.8** ±1.5 · #321 of 935 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 54.8** ±1.5 · #321 of 934 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">GPQA Diamond (lab)</a>              62.6%    55.2   2025-03-12   29% ▇▇▇
                         <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">AIME 2025 (lab)</a>                 59.6%    52.2   2025-03-12   27% ▇▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">AIME 2024 (lab)</a>                 70.0%    56.2   2025-03-12   20% ▇▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">AIME 2024 (lab)</a>                 70.0%    56.3   2025-03-12   20% ▇▇
                         <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">MATH-500 (lab)</a>                  94.8%    56.5   2025-03-12   12% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspec…</a>  55.2%    56.0   2025-03-12   11% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspec…</a>  55.2%    56.1   2025-03-12   11% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 54.8
 </pre>

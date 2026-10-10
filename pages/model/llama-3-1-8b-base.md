@@ -6,7 +6,7 @@
 
 Meta · released 2024-07 · 8.03B params · llama3.1
 
-**score 43.2** ±5.1 · #633 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 43.3** ±5.1 · #629 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  48.5%    42.3   2026-09-19   88% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  48.5%    42.4   2026-09-19   88% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                12% ▇
-                        weighted average                       = 43.2
+                        weighted average                       = 43.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~16.06GB   43.2
+16-bit bf16  ~16.06GB   43.3
 </pre>
 
 ```sh

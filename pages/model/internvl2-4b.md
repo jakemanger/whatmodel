@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (OpenGVLab) · released 2024-07 · 4.15B params · mit
 
-**score 41.4** ±1.9 · #673 of 935 · from 19 benchmark results across 4 sources
+**score 41.4** ±1.9 · #673 of 934 · from 19 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -29,9 +29,9 @@ source                  test                            score  implies  date    
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  958.3    36.8   2026-10-02   22% ▇▇▇
 <a name="microsoft-phi35-vision-card-benchmarks"></a>Microsoft Phi-3.5-vis…  <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MMMU (val)</a>                      44.2%    44.5   2024-08-20   10% ▇
                         <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MathVista (testmini)</a>            53.7%    51.1   2024-08-20    5% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">TextVQA</a>                         66.2%    29.5   2024-08-20    2% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">ChartQA</a>                         78.8%    48.5   2024-08-20    1% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">AI2D test</a>                       77.3%    33.7   2024-08-20    1% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">TextVQA</a>                         66.2%    29.6   2024-08-20    2% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">ChartQA</a>                         78.8%    48.6   2024-08-20    1% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">AI2D test</a>                       77.3%    33.8   2024-08-20    1% ▇
 <a name="paper-2501.16411v2-physbench"></a>PhysBench: Benchmarki…  <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world unde…</a>  39.7%    45.0   2025-01-29    4% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
                         weighted average                       = 41.4

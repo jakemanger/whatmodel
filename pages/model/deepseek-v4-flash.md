@@ -6,7 +6,7 @@
 
 DeepSeek · released 2026-07 · 284B params (13B active) · mit
 
-**score 74.1** ±0.6 · #47 of 935 · from 39 benchmark results across 7 sources
+**score 74.2** ±0.6 · #47 of 934 · from 39 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -25,36 +25,36 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 2.1 (lab)</a>         82.7%    74.4   2026-09-10    3% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 4.0 (lab)</a>          7.0%    69.5   2026-09-10    2% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Humanity's Last Exam (lab)</a>       37.8%    75.8   2026-09-10    2% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">NL2Repo (lab)</a>                    54.2%    74.6   2026-09-10    2% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">NL2Repo (lab)</a>                    54.2%    74.7   2026-09-10    2% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">MathArena Apex (pass@1) (lab)</a>    58.6%    75.6   2026-09-10    2% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">SEC-Bench Pro (pass@1) (lab)</a>     30.9%    66.0   2026-09-10    1% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">SEC-Bench Pro (pass@1) (lab)</a>     30.9%    66.1   2026-09-10    1% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Humanity's Last Exam with too…</a>   51.5%    73.1   2026-09-10    1% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">CyberGym (lab)</a>                   76.7%    74.1   2026-09-10    1% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">DeepSWE v1.1 (resolved) (lab)</a>    54.4%    70.8   2026-09-10    1% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">CyberGym (lab)</a>                   76.7%    74.2   2026-09-10    1% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">DeepSWE v1.1 (resolved) (lab)</a>    54.4%    70.9   2026-09-10    1% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Agents' Last Exam (pass@1, of…</a>   25.2%    74.1   2026-09-10    1% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">AutomationBench (DeepSeek V4.…</a>   37.7%    70.2   2026-09-10    1% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">ExploitGym (pass@1) (lab)</a>         1.8%    64.9   2026-09-10    1% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 3.0 (lab)</a>          7.6%    66.6   2026-09-10    1% ▇
-<a name="korean-personal-benchmark-runs"></a>Daekeun Kim Korean LL…  <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">KMMLU-HARD (Daekeun Kim, zero…</a>   74.2%    74.5                 5% ▇
+<a name="korean-personal-benchmark-runs"></a>Daekeun Kim Korean LL…  <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">KMMLU-HARD (Daekeun Kim, zero…</a>   74.2%    74.6                 5% ▇
                         <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">KoBALT-700 (Daekeun Kim)</a>         73.3%    73.1                 2% ▇
-                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">CLIcK Korean (Daekeun Kim)</a>       90.6%    75.1                 2% ▇
-                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">KMMLU-Pro (Daekeun Kim)</a>          79.2%    69.4                 2% ▇
-                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>        91.9%    74.0                 1% ▇
+                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">KMMLU-Pro (Daekeun Kim)</a>          79.2%    69.5                 2% ▇
+                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">CLIcK Korean (Daekeun Kim)</a>       90.6%    75.2                 2% ▇
+                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>        91.9%    74.1                 1% ▇
                         <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">MuSR Korean (Daekeun Kim)</a>        81.2%    78.2                 1% ▇
 <a name="card3-deepseek-ai-deepseek-v4-flash-vision-exp"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Terminal-Bench 2.1 (lab)</a>         82.7%    77.6   2026-08-31    2% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">NL2Repo (lab)</a>                    54.2%    76.6   2026-08-31    1% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">DeepSWE v1.1 (resolved) (lab)</a>    54.4%    73.2   2026-08-31    1% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">CyberGym (lab)</a>                   76.7%    78.6   2026-08-31    1% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Agents' Last Exam (metric/har…</a>   25.2%    71.9   2026-08-31    1% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">AutomationBench (Public) (lab)</a>   25.1%    74.4   2026-08-31    1% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Agents' Last Exam (metric/har…</a>   25.2%    72.0   2026-08-31    1% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">AutomationBench (Public) (lab)</a>   25.1%    74.5   2026-08-31    1% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Toolathlon-Verified (lab)</a>        70.3%    76.5   2026-08-31    1% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1581.0    77.2   2026-10-01    6% ▇
 <a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   77.9%    77.2   2026-09-07    2% ▇
                         <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   91.8%    67.0   2026-09-07    1% ▇
 <a name="card2-deepseek-ai-deepseek-v4-pro-0813"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813/blob/72e1d3230f6c080a530b0a1d46f8eb4602340597/README.md">AutomationBench (Public) (lab)</a>   25.1%    72.8   2026-08-13    1% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813/blob/72e1d3230f6c080a530b0a1d46f8eb4602340597/README.md">Toolathlon-Verified (lab)</a>        70.3%    76.8   2026-08-13    1% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813/blob/72e1d3230f6c080a530b0a1d46f8eb4602340597/README.md">Toolathlon-Verified (lab)</a>        70.3%    76.9   2026-08-13    1% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 74.1
+                        weighted average                        = 74.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -69,8 +69,8 @@ api (Deep Infra) · $0.11/M blended · $0.09 in / $0.18 out per 1M tokens · [de
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~170.9GB   74.1
-2-bit ud-q2_k_xl   ~85.7GB   74.1
+4-bit ud-q4_k_xl  ~170.9GB   74.2
+2-bit ud-q2_k_xl   ~85.7GB   74.2
 </pre>
 
 ```sh

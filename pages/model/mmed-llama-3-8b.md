@@ -6,7 +6,7 @@
 
 SJTU MedLLM (Henrychur) · released 2024-05 · 8.03B params · llama3
 
-**score 36.5** ±5.0 · #766 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.5** ±5.0 · #766 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

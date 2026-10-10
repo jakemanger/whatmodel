@@ -6,7 +6,7 @@
 
 Meta · released 2024-01 · 69B params · llama2
 
-**score 46.4** ±0.6 · #537 of 935 · from 12 benchmark results across 6 sources
+**score 46.5** ±0.6 · #532 of 934 · from 12 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -21,13 +21,13 @@ source                  test                             score  implies  date   
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>   58.9%    47.3   2024-05-07    5% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>   41.1%    46.6   2024-05-07    4% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>   53.0%    49.3   2024-05-07    4% ▇
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                  67.8%    46.8   2024-01-31    7% ▇
+<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                  67.8%    46.9   2024-01-31    7% ▇
                         <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                       62.2%    43.8   2024-01-31    3% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>          48.9%    49.0   2025-04-01    3% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>          48.9%    49.1   2025-04-01    3% ▇
                         <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>          40.5%    50.0   2025-04-01    3% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1119.1    32.2   2026-10-02    3% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 46.4
+                        weighted average                        = 46.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -40,8 +40,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~41.9GB   46.4
-8-bit q8_0    ~83.3GB   46.4
+4-bit q4_k_m  ~41.9GB   46.5
+8-bit q8_0    ~83.3GB   46.5
 </pre>
 
 ```sh

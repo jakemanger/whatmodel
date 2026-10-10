@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-05 · 7.62B params · apache-2.0
 
-**score 49.5** ±1.0 · #448 of 935 · from 15 benchmark results across 2 sources
+**score 49.5** ±1.0 · #447 of 934 · from 15 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -15,14 +15,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="report-2512.13961v2"></a>Olmo 3                  <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard</a>                  77.1%    49.6   2026-09-25   16% ▇▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2024</a>                       67.7%    53.4   2026-09-25   15% ▇▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2024</a>                       67.7%    53.5   2026-09-25   15% ▇▇
                         <a href="https://arxiv.org/html/2512.13961v2">AIME 2025</a>                       57.2%    52.4   2026-09-25   13% ▇▇
                         <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified)</a>       47.6%    52.8   2026-09-25   11% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">MMLU</a>                            77.4%    50.4   2026-09-25    9% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">AGIEval English</a>                 78.6%    51.9   2026-09-25    6% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlled</a>  24.0%    41.0   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">HumanEval+</a>                      87.4%    54.6   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">MBPP+</a>                           61.4%    49.6   2026-09-25    4% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlled</a>  24.0%    41.1   2026-09-25    5% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">HumanEval+</a>                      87.4%    54.7   2026-09-25    5% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">MBPP+</a>                           61.4%    49.7   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic</a>                      34.9%    39.9   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3</a>                68.0%    51.5   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecif…</a>  23.0%    42.1   2026-09-25    3% ▇

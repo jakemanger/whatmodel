@@ -6,7 +6,7 @@
 
 Meta · released 2024-04 · 70.55B params · llama3
 
-**score 47.4** ±2.6 · #506 of 935 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 47.5** ±2.6 · #504 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                            score  implies  date    
 <a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         43.3%    45.4   2025-04-01   73% ▇▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  77.9%    53.2   2024-04-18   24% ▇▇▇
 prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 47.4
+                        weighted average                       = 47.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-16-bit bf16  ~141.11GB   47.4
+16-bit bf16  ~141.11GB   47.5
 </pre>
 
 ```sh

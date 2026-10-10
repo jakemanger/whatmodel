@@ -6,7 +6,7 @@
 
 Cohere · released 2025-08 · 111B params · cc-by-nc-4.0
 
-**score 51.5** ±4.6 · #393 of 935 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 51.5** ±4.6 · #392 of 934 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 

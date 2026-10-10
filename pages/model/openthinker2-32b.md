@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-04 · 32.76B params · apache-2.0
 
-**score 54.7** ±1.4 · #323 of 935 · from 6 benchmark results across 2 sources
+**score 54.7** ±1.4 · #322 of 934 · from 6 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card3-open-thoughts-openthinker2-32b"></a>open-thoughts/OpenThi…  <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (lab)</a>              64.1%    55.6   2025-06-05   24% ▇▇▇
+<a name="card3-open-thoughts-openthinker2-32b"></a>open-thoughts/OpenThi…  <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (lab)</a>              64.1%    55.7   2025-06-05   24% ▇▇▇
                         <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2025 (lab)</a>                 58.7%    58.0   2025-06-05   18% ▇▇
                         <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2024 (lab)</a>                 76.7%    58.6   2025-06-05   17% ▇▇
                         <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">MATH-500 (lab)</a>                  90.8%    56.2   2025-06-05   13% ▇▇

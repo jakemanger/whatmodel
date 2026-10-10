@@ -6,7 +6,7 @@
 
 Tsinghua C3I · released 2024-09 · 8.03B params · llama3
 
-**score 36.2** ±5.0 · #772 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.3** ±5.0 · #771 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  20.2%    34.5   2025-04-28   89% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                11% ▇
-                        weighted average                       = 36.2
+                        weighted average                       = 36.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~16.06GB   36.2
+16-bit bf16  ~16.06GB   36.3
 </pre>
 
 ```sh

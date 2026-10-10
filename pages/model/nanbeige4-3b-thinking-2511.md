@@ -6,7 +6,7 @@
 
 Nanbeige · released 2025-11 · 3.93B params · apache-2.0
 
-**score 54.6** ±3.2 · #324 of 935 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 54.6** ±3.2 · #324 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2023-08 · 7.72B params · other (tongyi-qianwen-license-agreement)
 
-**score 31.9** ±0.9 · #827 of 935 · from 11 benchmark results across 2 sources
+**score 32.0** ±0.9 · #825 of 934 · from 11 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -26,7 +26,7 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">LAMBADA (OpenAI version), las…</a>  65.5%    23.8   2024-04-08    2% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  59.9%    38.1   2024-02-24    3% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 31.9
+                        weighted average                       = 32.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -39,7 +39,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~15.44GB   31.9
+16-bit bf16  ~15.44GB   32.0
 </pre>
 
 ```sh

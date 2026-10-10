@@ -39,7 +39,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                  80.0%    37.3   2023-02-27    2% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                50.4%    31.9   2023-02-27    2% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>                      82.3%    37.9   2023-02-27    1% ▇
-<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  27.3%    35.6   2024-04-24    5% ▇
+<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  27.3%    35.7   2024-04-24    5% ▇
                         <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  48.9%    39.9   2024-04-24    3% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 36.2

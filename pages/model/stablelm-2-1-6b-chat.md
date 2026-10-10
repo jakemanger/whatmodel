@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-04 · 1.64B params · other
 
-**score 31.5** ±5.3 · #832 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.6** ±5.3 · #830 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  50.6%    28.9   2024-04-09   87% ▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                13% ▇▇
-                        weighted average                       = 31.5
+                        weighted average                       = 31.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_0  ~0.983GB   31.5
+4-bit q4_0  ~0.983GB   31.6
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Amazon · released 2024-12 · closed weights
 
-**score 48.9** ±2.2 · #464 of 935 · from 7 benchmark results across 4 sources
+**score 48.9** ±2.2 · #463 of 934 · from 7 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -19,7 +19,7 @@ source                  test                             score  implies  date   
 <a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 …</a>   86.8%    58.5   2025-07-02    8% ▇
                         <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   16.0%    41.3   2025-11-18    7% ▇
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                          55.9%    53.7   2025-06-14   10% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   98.2%    64.3   2025-10-16    3% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   98.2%    64.4   2025-10-16    3% ▇
                         <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   93.9%   190.0   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 2% ▇
                         weighted average                        = 48.9

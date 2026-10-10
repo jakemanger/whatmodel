@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-04 · closed weights
 
-**score 68.5** ±1.8 · #103 of 935 · from 4 benchmark results across 1 source
+**score 68.6** ±1.8 · #100 of 934 · from 4 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -19,7 +19,7 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1230.1    69.9   2026-10-02   19% ▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>  1400.1    62.3   2026-09-13    9% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 68.5
+                        weighted average                        = 68.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

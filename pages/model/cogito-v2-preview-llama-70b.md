@@ -6,7 +6,7 @@
 
 Deep Cogito · released 2025-07 · 70.55B params · llama3.1
 
-**score 61.6** ±6.7 · #197 of 935 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.7** ±6.7 · #195 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                 test                            score  implies  date     
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  91.9%    66.6   2026-04-17   52% ▇▇▇▇▇▇
                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  92.5%    60.8   2026-04-17   28% ▇▇▇
 prior                  pull toward the middle                   50.0                20% ▇▇
-                       weighted average                       = 61.6
+                       weighted average                       = 61.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                  pull toward the middle                   50.0            
 
 <pre>
 download                       size  score
-16-bit bf16 · nvidia only  ~141.1GB   61.6
+16-bit bf16 · nvidia only  ~141.1GB   61.7
 </pre>
 
 ```sh

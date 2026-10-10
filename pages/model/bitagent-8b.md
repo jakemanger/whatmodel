@@ -6,7 +6,7 @@
 
 BitAgent (Bittensor) · released 2025-02 · 8.03B params · apache-2.0
 
-**score 61.8** ±6.4 · #195 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.9** ±6.4 · #193 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                    score  implies  date        weight
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                 67.5%    64.5   2025-06-14   82% ▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle           50.0                18% ▇▇
-                        weighted average               = 61.8
+                        weighted average               = 61.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle           50.0                18%
 
 <pre>
 download        size  score
-4-bit fp16  ~16.06GB   61.8
+4-bit fp16  ~16.06GB   61.9
 </pre>
 
 ```sh

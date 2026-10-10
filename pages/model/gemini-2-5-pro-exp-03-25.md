@@ -6,7 +6,7 @@
 
 Google · released 2025-03 · proprietary
 
-**score 67.9** ±2.3 · comparison only: no current run option verified · from 4 benchmark results across 4 sources
+**score 68.0** ±2.3 · comparison only: no current run option verified · from 4 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -19,7 +19,7 @@ source                  test                            score  implies  date    
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-25/score/data_overall.csv">BFCL v3</a>                         62.9%    59.5   2025-04-25   10% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  98.9%    79.7   2025-10-16    1% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 67.9
+                        weighted average                       = 68.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

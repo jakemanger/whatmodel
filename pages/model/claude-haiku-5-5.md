@@ -6,7 +6,7 @@
 
 Anthropic · released 2026-10 · proprietary
 
-**score 77.5** ±0.7 · #22 of 935 · from 15 benchmark results across 3 sources
+**score 77.5** ±0.7 · #22 of 934 · from 15 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,21 +14,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>           46.3%    77.5   2026-10-07   21% ▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>           46.3%    77.6   2026-10-07   21% ▇▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        75.1%    78.0   2026-10-07   19% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>       47.5%    79.7   2026-10-07    7% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>       47.5%    79.8   2026-10-07    7% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     30.0%    76.0   2026-10-07    7% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     89.6%    72.8   2026-10-09    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     89.6%    72.9   2026-10-09    3% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                23.8%    65.1   2026-10-09    2% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         98.9%    80.3   2026-10-07    1% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         98.9%    80.4   2026-10-07    1% ▇
 <a name="first-party-anthropic-scores"></a>Anthropic system card…  <a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">SWE-bench Pro (split unspecif…</a>   64.8%    75.6   2026-10-07    9% ▇
-                        <a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=115">Terminal-Bench 4.0 (lab)</a>         39.2%    80.2   2026-10-07    6% ▇
+                        <a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=115">Terminal-Bench 4.0 (lab)</a>         39.2%    80.3   2026-10-07    6% ▇
                         <a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">Humanity's Last Exam (lab)</a>       45.9%    77.9   2026-10-07    5% ▇
                         <a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">SWE-bench Multilingual (lab)</a>     83.7%    77.3   2026-10-07    5% ▇
                         <a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=124">Chartography with tools (lab)</a>    86.2%    83.3   2026-10-07    4% ▇
                         <a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=111">Humanity's Last Exam with too…</a>   57.4%    79.0   2026-10-07    3% ▇
                         <a href="https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf#page=134">Global-MMLU (lab)</a>                87.8%    72.7   2026-10-07    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1586.9    77.4   2026-10-08    7% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1586.9    77.5   2026-10-08    7% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
                         weighted average                        = 77.5
 </pre>

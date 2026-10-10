@@ -6,7 +6,7 @@
 
 IBM · released 2024-10 · 3.3B params (0.8B active) · apache-2.0
 
-**score 34.6** ±1.0 · #793 of 935 · from 16 benchmark results across 2 sources
+**score 34.6** ±1.0 · #793 of 934 · from 16 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -29,7 +29,7 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">OpenBookQA (lab)</a>                40.8%    38.3   2024-11-09    4% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">IFEval (aggregation unspecifi…</a>  42.5%    31.8   2024-11-09    3% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">Social IQA (lab)</a>                60.0%    41.0   2024-11-09    1% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  55.8%    32.6   2026-04-17    2% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  55.8%    32.7   2026-04-17    2% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 34.6
 </pre>

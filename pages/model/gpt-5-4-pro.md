@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-03 · proprietary
 
-**score 80.6** ±0.9 · #13 of 935 · from 11 benchmark results across 4 sources
+**score 80.7** ±0.9 · #13 of 934 · from 11 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -23,10 +23,10 @@ source                  test                            score  implies  date    
                         <a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                89.3%    83.9   2026-03-05    6% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with too…</a>  58.7%    82.6   2026-03-05    4% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-4">FrontierScience-Research (lab)</a>  36.7%    81.9   2026-03-05    1% ▇
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  75.8%    85.7   2026-09-11    9% ▇
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  75.8%    85.8   2026-09-11    9% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  91.7%   123.4   2026-09-22    0% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 80.6
+                        weighted average                       = 80.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

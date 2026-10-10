@@ -6,7 +6,7 @@
 
 Together · released 2023-06 · 6.9B params · apache-2.0
 
-**score 27.9** ±0.8 · #864 of 935 · from 19 benchmark results across 2 sources
+**score 27.9** ±0.8 · #863 of 934 · from 19 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -28,7 +28,7 @@ source                  test                            score  implies  date    
 <a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   42.8%    27.0   2024-06-07   10% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      49.4%    29.2   2024-06-07    6% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      64.7%    26.6   2024-06-07    5% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       70.3%    27.8   2024-06-07    3% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       70.3%    27.9   2024-06-07    3% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        68.4%    29.5   2024-06-07    3% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            92.9%    28.1   2024-06-07    3% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           68.6%    25.1   2024-06-07    3% ▇

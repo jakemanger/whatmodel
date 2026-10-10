@@ -6,7 +6,7 @@
 
 Mistral · released 2023-09 · 7.24B params · apache-2.0
 
-**score 32.4** ±1.1 · #819 of 935 · from 7 benchmark results across 6 sources
+**score 32.4** ±1.1 · #818 of 934 · from 7 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -20,7 +20,7 @@ source                  test                             score  implies  date   
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1110.3    31.2   2026-10-02   10% ▇
 <a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   36.5%    31.8   2026-09-19    4% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   59.7%    37.8   2024-05-27    4% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   69.0%    40.7   2026-04-17    2% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   69.0%    40.8   2026-04-17    2% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 32.4
 </pre>

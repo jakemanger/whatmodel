@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-03 · proprietary
 
-**score 53.3** ±5.1 · #350 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.3** ±5.1 · #350 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style c…</a>  1081.0    53.7   2026-08-24   89% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                    50.0                11% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style c…</a>  1081.0    53.7   2026-08-24   88% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                    50.0                12% ▇
                         weighted average                        = 53.3
 </pre>
 

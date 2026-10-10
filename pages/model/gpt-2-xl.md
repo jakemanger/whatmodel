@@ -6,7 +6,7 @@
 
 OpenAI · released 2019-11 · 1.558B params · mit
 
-**score 11.4** ±1.1 · #922 of 935 · from 25 benchmark results across 6 sources
+**score 11.4** ±1.1 · #921 of 934 · from 25 benchmark results across 6 sources
 
 ## How the score was worked out
 

@@ -6,7 +6,7 @@
 
 Meta · released 2024-09 · 88.59B params · llama3.2
 
-**score 50.1** ±1.2 · #429 of 935 · from 12 benchmark results across 6 sources
+**score 50.2** ±1.2 · #426 of 934 · from 12 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                                              39.4%    51.7   2025-01-27   34% ▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                                              39.4%    51.8   2025-01-27   34% ▇▇▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                              41.0%    51.0   2025-01-27   18% ▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>                                   2.6%    46.8   2025-02-25    6% ▇
 <a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  5.5000 MM-MT-Bench score (1-10)    48.2   2024-10-10    4% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                53.7%    51.1   2024-10-10    3% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                53.7%    51.2   2024-10-10    3% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      49.1%    47.1   2024-10-10    3% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               67.0%    41.9   2024-10-10    3% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   33.8%   -13.6   2024-10-10    0% ▇
@@ -27,7 +27,7 @@ source                  test                                                    
 <a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>                            50.5%    59.8   2025-09-29    6% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>                            79.3%    54.6   2025-04-03    5% ▇
 prior                   pull toward the middle                                             50.0                 1% ▇
-                        weighted average                                                 = 50.1
+                        weighted average                                                 = 50.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -40,8 +40,8 @@ prior                   pull toward the middle                                  
 
 <pre>
 download           size  score
-4-bit q4_k_m   ~53.65GB   50.1
-8-bit q8_0    ~106.81GB   50.1
+4-bit q4_k_m   ~53.65GB   50.2
+8-bit q8_0    ~106.81GB   50.2
 </pre>
 
 ```sh

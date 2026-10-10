@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-07 · 32B params · exaone
 
-**score 58.9** ±0.9 · #236 of 935 · from 29 benchmark results across 4 sources
+**score 58.9** ±0.9 · #235 of 934 · from 29 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">GPQA Diamond (lab)</a>              75.4%    60.5   2025-07-11   10% ▇
                         <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">AIME 2025 (lab)</a>                 85.3%    63.1   2025-07-11    8% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">τ²-bench Telecom (lab)</a>          23.7%    52.8   2026-08-03    5% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Pro (lab)</a>                  81.8%    62.6   2025-07-11    4% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">τ²-bench Telecom (lab)</a>          23.7%    52.9   2026-08-03    5% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Pro (lab)</a>                  81.8%    62.7   2025-07-11    4% ▇
                         <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IMO-AnswerBench (lab)</a>           66.1%    61.5   2026-08-03    4% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">HMMT February 2025 (lab)</a>        72.9%    59.6   2025-07-11    4% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">HMMT February 2025 (lab)</a>        72.9%    59.7   2025-07-11    4% ▇
                         <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench v6 (window unsp…</a>  66.7%    58.9   2026-08-03    4% ▇
                         <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench Pro 2025Q2 (Med…</a>   4.8%    53.7   2026-08-03    4% ▇
                         <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">HMMT November 2025 (lab)</a>        78.1%    59.0   2026-08-03    3% ▇
@@ -34,10 +34,10 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">BFCL v3 (lab)</a>                   63.9%    55.9   2025-07-11    1% ▇
 <a name="paper-2601.03286v1-hyperclova-x-32b-think"></a>HyperCLOVA X 32B Think  <a href="https://arxiv.org/html/2601.03286v1">τ²-bench Telecom</a>                26.1%    57.0   2026-01-03    6% ▇
                         <a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard</a>              3.6%    54.8   2026-01-03    5% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail</a>                 59.5%    61.0   2026-01-03    4% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail</a>                 59.5%    61.1   2026-01-03    4% ▇
                         <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline</a>                45.6%    59.4   2026-01-03    2% ▇
                         <a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag</a>                       65.7%    45.3   2026-01-03    2% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU</a>                            89.9%    64.4   2026-01-03    2% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU</a>                            89.9%    64.5   2026-01-03    2% ▇
                         <a href="https://arxiv.org/html/2601.03286v1#S5.T5">PIQA</a>                            75.7%    25.8   2026-01-03    1% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  86.6%    55.4   2026-04-17    4% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  79.7%    62.5   2026-04-17    3% ▇

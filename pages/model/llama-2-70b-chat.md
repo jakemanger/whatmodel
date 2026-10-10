@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 68.98B params · llama2
 
-**score 38.3** ±0.8 · #735 of 935 · from 27 benchmark results across 15 sources
+**score 38.3** ±0.8 · #734 of 934 · from 27 benchmark results across 15 sources
 
 ## How the score was worked out
 
@@ -24,7 +24,7 @@ source                  test                                                   s
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>                              52.1%    35.4   2023-11-20    5% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                                                  59.0%    44.6   2023-11-20    3% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                                   60.9%    43.0   2023-11-20    3% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>                         44.4%    36.4   2023-11-20    1% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>                         44.4%    36.5   2023-11-20    1% ▇
 <a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                         14.7%    38.2   2025-08-09   13% ▇▇
                         <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>                         92.7%    43.3   2025-08-09    2% ▇
 <a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>                         11.6%    37.8   2024-11-14    7% ▇

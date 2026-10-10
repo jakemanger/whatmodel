@@ -6,7 +6,7 @@
 
 Mistral AI · released 2023-09 · 7.24B params · apache-2.0
 
-**score 35.2** ±0.5 · #783 of 935 · from 43 benchmark results across 6 sources
+**score 35.2** ±0.5 · #782 of 934 · from 43 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -27,7 +27,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP (lab)</a>                      50.2%    39.9   2024-01-08    1% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed boo…</a>  23.2%    36.9   2024-01-08    1% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH (lab)</a>                      12.7%    36.7   2024-01-08    1% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy (lab)</a>                  80.5%    39.4   2024-01-08    1% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy (lab)</a>                  80.5%    39.5   2024-01-08    1% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA (lab)</a>                      82.2%    38.8   2024-01-08    1% ▇
 <a name="paper-2404.06395v3"></a>MiniCPM: Unveiling th…  <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                  41.1%    36.9   2024-06-03    3% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>                       27.4%    35.0   2024-06-03    2% ▇
@@ -40,14 +40,14 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2310.06825v1">ARC Challenge (lab)</a>             55.5%    39.6   2023-10-10    2% ▇
                         <a href="https://arxiv.org/html/2310.06825v1">GSM8K (lab)</a>                     52.2%    41.3   2023-10-10    1% ▇
                         <a href="https://arxiv.org/html/2310.06825v1">MATH (lab)</a>                      13.1%    40.7   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">MMLU (lab)</a>                      60.1%    41.6   2023-10-10    1% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">MMLU (lab)</a>                      60.1%    41.7   2023-10-10    1% ▇
                         <a href="https://arxiv.org/html/2310.06825v1">WinoGrande (lab)</a>                75.3%    39.4   2023-10-10    1% ▇
                         <a href="https://arxiv.org/html/2310.06825v1">MBPP (lab)</a>                      47.5%    37.2   2023-10-10    1% ▇
                         <a href="https://arxiv.org/html/2310.06825v1">HellaSwag (lab)</a>                 81.3%    40.9   2023-10-10    1% ▇
                         <a href="https://arxiv.org/html/2310.06825v1">TriviaQA (lab)</a>                  69.9%    41.0   2023-10-10    1% ▇
                         <a href="https://arxiv.org/html/2310.06825v1">Natural Questions (closed boo…</a>  28.8%    39.9   2023-10-10    1% ▇
                         <a href="https://arxiv.org/html/2310.06825v1">ARC Easy (lab)</a>                  80.0%    41.0   2023-10-10    0% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">PIQA (lab)</a>                      83.0%    42.3   2023-10-10    0% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">PIQA (lab)</a>                      83.0%    42.4   2023-10-10    0% ▇
 <a name="paper-gemma-2403.08295v4"></a>Gemma report            <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BIG-Bench Hard</a>                  56.1%    39.3   2024-04-19    2% ▇
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">GSM8K</a>                           35.4%    32.5   2024-04-19    2% ▇
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MBPP</a>                            40.2%    33.5   2024-04-19    1% ▇

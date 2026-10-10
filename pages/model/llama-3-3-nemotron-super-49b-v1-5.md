@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-07 · 49B params · nvidia-open-model
 
-**score 57.5** ±1.4 · #264 of 935 · from 4 benchmark results across 2 sources
+**score 57.5** ±1.4 · #264 of 934 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -15,9 +15,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                             score  implies  date        weight
 <a name="report-2512.13607v2"></a>NVIDIA                  <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Med…</a>    6.1%    57.3   2026-03-27   46% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Eas…</a>   61.9%    57.0   2026-03-27   25% ▇▇▇
+                        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Eas…</a>   61.9%    57.1   2026-03-27   25% ▇▇▇
                         <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–Ma…</a>   68.1%    57.3   2026-03-27   11% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1342.9    59.0   2026-10-02   17% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1342.9    59.1   2026-10-02   17% ▇▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 57.5
 </pre>

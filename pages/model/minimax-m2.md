@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-10 · 230B params (10B active) · modified-mit
 
-**score 63.6** ±1.4 · #168 of 935 · from 5 benchmark results across 3 sources
+**score 63.6** ±1.4 · #167 of 934 · from 5 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -18,7 +18,7 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1343.4    59.1   2026-10-02   17% ▇▇
 <a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5708    64.6   2026-05-02   28% ▇▇▇
                         <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   57.1%    63.7   2026-05-02   14% ▇▇
-<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   30.0%    67.5   2026-01-17   12% ▇
+<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   30.0%    67.6   2026-01-17   12% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 63.6
 </pre>

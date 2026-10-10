@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 3.48B params · apache-2.0
 
-**score 33.1** ±1.3 · #810 of 935 · from 8 benchmark results across 3 sources
+**score 33.1** ±1.3 · #809 of 934 · from 8 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                            score  implies  date    
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  33.1%    35.0   2024-05-07   25% ▇▇▇
                         <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      36.0%    32.8   2024-05-07   15% ▇▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  21.9%    37.5   2024-05-07   13% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                30.6%    30.7   2024-05-07   11% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                30.6%    30.8   2024-05-07   11% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  19.3%    37.5   2024-05-07   10% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                31.4%    30.8   2024-05-07    9% ▇
 <a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         20.2%    28.4   2025-04-01   15% ▇▇

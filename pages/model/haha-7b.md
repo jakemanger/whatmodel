@@ -6,7 +6,7 @@
 
 TeleAI (ZJared) · released 2025-01 · 7.62B params · apache-2.0
 
-**score 54.1** ±6.2 · #339 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.1** ±6.2 · #339 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

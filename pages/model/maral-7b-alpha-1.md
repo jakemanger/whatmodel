@@ -6,7 +6,7 @@
 
 MaralGPT · released 2023-12 · 7.24B params · mit
 
-**score 31.6** ±5.3 · #829 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.6** ±5.3 · #828 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

@@ -6,7 +6,7 @@
 
 Google · released 2024-02 · 8.54B params · gemma
 
-**score 35.0** ±0.5 · #786 of 935 · from 32 benchmark results across 6 sources
+**score 35.1** ±0.5 · #785 of 934 · from 32 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -19,10 +19,10 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           43.4%    34.6   2024-12-26    3% ▇
 <a name="paper-gemma-2403.08295v4"></a>Gemma report            <a href="https://arxiv.org/html/2403.08295v4#S3.T6">ARC Challenge (lab)</a>             53.2%    36.2   2024-04-19    2% ▇
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">HumanEval (lab)</a>                 32.3%    33.6   2024-04-19    2% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BIG-Bench Hard (lab)</a>            55.1%    38.6   2024-04-19    2% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BIG-Bench Hard (lab)</a>            55.1%    38.7   2024-04-19    2% ▇
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">GSM8K (lab)</a>                     46.4%    38.0   2024-04-19    2% ▇
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">OpenBookQA (lab)</a>                52.8%    39.1   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MATH (lab)</a>                      24.3%    41.0   2024-04-19    1% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MATH (lab)</a>                      24.3%    41.1   2024-04-19    1% ▇
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MBPP (lab)</a>                      44.4%    36.3   2024-04-19    1% ▇
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">WinoGrande (lab)</a>                72.3%    36.3   2024-04-19    1% ▇
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MMLU (lab)</a>                      64.3%    43.3   2024-04-19    1% ▇
@@ -47,7 +47,7 @@ source                  test                            score  implies  date    
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  84.9%    50.0   2026-04-17    1% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  33.5%    29.3   2026-04-17    0% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 35.0
+                        weighted average                       = 35.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -60,8 +60,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~5.5GB   35.0
-8-bit q8_0    ~9.1GB   35.0
+4-bit q4_k_m  ~5.5GB   35.1
+8-bit q8_0    ~9.1GB   35.1
 </pre>
 
 ```sh

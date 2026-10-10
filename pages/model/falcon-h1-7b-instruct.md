@@ -6,7 +6,7 @@
 
 TII · released 2025-05 · 7.59B params · other (falcon-llm-license)
 
-**score 47.1** ±2.9 · #516 of 935 · from 3 benchmark results across 2 sources
+**score 47.1** ±2.9 · #515 of 934 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Incep…</a>  35.0%    44.2   2026-04-06   39% ▇▇▇▇▇
                         <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  24.4%    46.7   2025-09-28   29% ▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  75.3%    50.9   2025-07-08   29% ▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  75.3%    51.0   2025-07-08   29% ▇▇▇▇
 prior                   pull toward the middle                   50.0                 4% ▇
                         weighted average                       = 47.1
 </pre>

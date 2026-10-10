@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   46.5%    29.0   2024-06-07   14% ▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      48.6%    28.4   2024-06-07    8% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      48.6%    28.5   2024-06-07    8% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      69.9%    32.2   2024-06-07    7% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       77.6%    33.8   2024-06-07    4% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        70.5%    31.4   2024-06-07    4% ▇
@@ -24,7 +24,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            77.3%    29.5   2024-06-07    2% ▇
 <a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   40.5%    31.9   2023-09-11   11% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      68.0%    29.2   2023-09-11    7% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           73.9%    30.7   2023-09-11    6% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           73.9%    30.8   2023-09-11    6% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      31.4%    31.2   2023-09-11    4% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       57.1%    30.2   2023-09-11    4% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        74.9%    31.7   2023-09-11    4% ▇

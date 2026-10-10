@@ -6,7 +6,7 @@
 
 Together · released 2023-05 · 2.8B params · apache-2.0
 
-**score 27.1** ±2.8 · #869 of 935 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 27.1** ±2.8 · #868 of 934 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 

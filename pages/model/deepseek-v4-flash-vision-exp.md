@@ -6,7 +6,7 @@
 
 DeepSeek · released 2026-08 · 304.6B params · mit
 
-**score 76.3** ±2.3 · #33 of 935 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 76.3** ±2.3 · #33 of 934 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card3-deepseek-ai-deepseek-v4-flash-vision-exp"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Terminal-Bench 2.1 (lab)</a>        83.9%    77.7   2026-08-31   25% ▇▇▇
+<a name="card3-deepseek-ai-deepseek-v4-flash-vision-exp"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Terminal-Bench 2.1 (lab)</a>        83.9%    77.8   2026-08-31   25% ▇▇▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">NL2Repo (lab)</a>                   57.7%    78.0   2026-08-31   18% ▇▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">DeepSWE v1.1 (resolved) (lab)</a>   59.3%    76.2   2026-08-31   13% ▇▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">CyberGym (lab)</a>                  75.3%    76.4   2026-08-31   12% ▇

@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 33.72B params · apache-2.0
 
-**score 41.7** ±1.2 · #665 of 935 · from 7 benchmark results across 2 sources
+**score 41.7** ±1.2 · #665 of 934 · from 7 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  49.1%    42.7   2024-05-07   24% ▇▇▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  34.1%    43.5   2024-05-07   16% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  29.5%    41.2   2024-05-07   15% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  29.5%    41.3   2024-05-07   15% ▇▇
                         <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      47.2%    38.2   2024-05-07   13% ▇▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                43.3%    40.0   2024-05-07   10% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                44.8%    42.2   2024-05-07    8% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                44.8%    42.3   2024-05-07    8% ▇
 <a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         38.5%    42.3   2025-04-01   14% ▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 41.7

@@ -6,7 +6,7 @@
 
 01.AI · released 2024-10 · closed weights
 
-**score 55.5** ±1.3 · #301 of 935 · from 4 benchmark results across 4 sources
+**score 55.5** ±1.3 · #300 of 934 · from 4 benchmark results across 4 sources
 
 ## How the score was worked out
 

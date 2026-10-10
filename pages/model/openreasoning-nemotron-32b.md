@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-07 · 32.76B params · cc-by-4.0
 
-**score 59.4** ±1.5 · #222 of 935 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 59.4** ±1.5 · #222 of 934 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="report-2512.13607v2"></a>NVIDIA  <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Med…</a>   8.3%    59.8   2026-03-27   61% ▇▇▇▇▇▇▇
-        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Eas…</a>  66.2%    58.9   2026-03-27   26% ▇▇▇
+<a name="report-2512.13607v2"></a>NVIDIA  <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Med…</a>   8.3%    59.9   2026-03-27   61% ▇▇▇▇▇▇▇
+        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Eas…</a>  66.2%    59.0   2026-03-27   26% ▇▇▇
         <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–Ma…</a>  70.2%    58.7   2026-03-27   12% ▇
 prior   pull toward the middle                   50.0                 1% ▇
         weighted average                       = 59.4

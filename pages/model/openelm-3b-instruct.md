@@ -6,7 +6,7 @@
 
 Apple · released 2024-04 · 3.04B params · apple-amlr
 
-**score 23.9** ±6.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 23.9** ±7.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

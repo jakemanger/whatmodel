@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-04 · 8.03B params · llama3
 
-**score 46.1** ±4.0 · #547 of 935 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 46.1** ±4.0 · #547 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  69.4%    45.8   2024-05-06   58% ▇▇▇▇▇▇▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>                         46.8%    45.6   2025-04-13   35% ▇▇▇▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>                         46.8%    45.7   2025-04-13   35% ▇▇▇▇
 prior                   pull toward the middle                   50.0                 7% ▇
                         weighted average                       = 46.1
 </pre>

@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-10 · 33.34B params · deepseek
 
-**score 40.8** ±0.6 · #688 of 935 · from 11 benchmark results across 5 sources
+**score 40.8** ±0.6 · #687 of 934 · from 11 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -18,10 +18,10 @@ source                  test                     score  implies  date        wei
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>               44.5%    39.5   2024-12-26   22% ▇▇▇
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                50.6%    40.2   2024-03-28   15% ▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>        36.8%    42.0   2024-03-28    8% ▇
-<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval</a>                54.3%    40.9   2024-02-29    9% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                  40.2%    44.0   2024-02-29    3% ▇
+<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval</a>                54.3%    41.0   2024-02-29    9% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                  40.2%    44.1   2024-02-29    3% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>                     73.2%    43.6   2024-02-29    3% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>                    58.7%    43.3   2024-02-29    2% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>                    58.7%    43.4   2024-02-29    2% ▇
 <a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>  46.6%    48.0   2025-04-01    3% ▇
 <a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>               46.5%    45.4   2024-01-03    1% ▇
                         <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>               48.6%    47.5   2024-01-03    1% ▇

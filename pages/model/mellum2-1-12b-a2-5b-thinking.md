@@ -6,7 +6,7 @@
 
 JetBrains · released 2026-09 · 12.15B params (2.5B active) · apache-2.0
 
-**score 60.7** ±1.5 · #205 of 935 · from 11 benchmark results across 1 source · † every result so far was reported by its maker
+**score 60.8** ±1.5 · #203 of 934 · from 11 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -17,16 +17,16 @@ source                  test                            score  implies  date    
 <a name="card3-jetbrains-mellum2-1-12b-a2-5b-thinking"></a>JetBrains/Mellum2.1-1…  <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">GPQA Diamond (lab)</a>              64.6%    58.5   2026-10-07   27% ▇▇▇
                         <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">Terminal-Bench 2.1 (lab)</a>        17.4%    60.3   2026-10-07   12% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">LiveCodeBench v6 (window unsp…</a>  82.0%    63.6   2026-10-07   11% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">MMLU-Redux (lab)</a>                87.8%    57.5   2026-10-07    9% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Verified (lab)</a>        47.0%    63.9   2026-10-07    9% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Pro (split unspecif…</a>  28.0%    64.8   2026-10-07    8% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">MMLU-Redux (lab)</a>                87.8%    57.6   2026-10-07    9% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Verified (lab)</a>        47.0%    64.0   2026-10-07    9% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Pro (split unspecif…</a>  28.0%    64.9   2026-10-07    8% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">HumanEval+ (lab)</a>                91.5%    57.8   2026-10-07    7% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">BFCL V4 (December 2025 archiv…</a>  62.3%    64.1   2026-10-07    6% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">BFCL V4 (December 2025 archiv…</a>  62.3%    64.2   2026-10-07    6% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">MBPP+ (lab)</a>                     79.4%    60.8   2026-10-07    4% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">IFEval (aggregation unspecifi…</a>  90.6%    64.4   2026-10-07    3% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">IFEval (aggregation unspecifi…</a>  90.6%    64.5   2026-10-07    3% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">GSM-Plus (lab)</a>                  88.3%    60.8   2026-10-07    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 60.7
+                        weighted average                       = 60.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -37,7 +37,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                      size  score
-16-bit bf16 · nvidia only  ~24.3GB   60.7
+16-bit bf16 · nvidia only  ~24.3GB   60.8
 </pre>
 
 ```sh

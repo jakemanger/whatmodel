@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 3B params · bigscience-bloom-rail-1.0
 
-**score 18.9** ±0.9 · #907 of 935 · from 17 benchmark results across 3 sources
+**score 18.9** ±0.9 · #906 of 934 · from 17 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">ARC Challenge</a>                   30.4%    18.9   2024-04-08   17% ▇▇
+<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">ARC Challenge</a>                   30.4%    19.0   2024-04-08   17% ▇▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">SciQ</a>                            89.1%    21.8   2024-04-08    7% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">WinoGrande</a>                      58.5%    19.3   2024-04-08    6% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">BoolQ</a>                           61.7%    18.4   2024-04-08    6% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">ARC Easy</a>                        53.3%    16.2   2024-04-08    6% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">HellaSwag</a>                       54.5%    16.4   2024-04-08    5% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">PIQA</a>                            70.6%    17.0   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">LAMBADA (OpenAI version), las…</a>  51.7%    13.8   2024-04-08    3% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">LAMBADA (OpenAI version), las…</a>  51.7%    13.9   2024-04-08    3% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">Social IQA</a>                      40.2%    20.3   2024-04-08    2% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">OpenBookQA</a>                      21.8%     9.2   2024-04-08    2% ▇
 <a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        59.4%    18.9   2023-05-31    8% ▇

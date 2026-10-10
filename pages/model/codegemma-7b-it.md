@@ -6,7 +6,7 @@
 
 Google · released 2024-03 · 8.54B params · gemma
 
-**score 42.5** ±0.6 · #651 of 935 · from 10 benchmark results across 4 sources
+**score 42.5** ±0.6 · #651 of 934 · from 10 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -21,7 +21,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  38.4%    45.6   2024-05-07    5% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  45.8%    47.4   2024-05-07    4% ▇
 <a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         38.3%    42.2   2025-04-01    4% ▇
-                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>         32.1%    44.0   2025-04-01    4% ▇
+                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>         32.1%    44.1   2025-04-01    4% ▇
 <a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 56.1%    41.6   2024-06-19    5% ▇
                         <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      54.2%    39.0   2024-06-19    2% ▇
 prior                   pull toward the middle                   50.0                 0% ▇

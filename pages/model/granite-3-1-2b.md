@@ -6,7 +6,7 @@
 
 IBM · released 2024-12 · 2.53B params · apache-2.0
 
-**score 36.4** ±0.9 · #769 of 935 · from 18 benchmark results across 5 sources
+**score 36.5** ±0.9 · #765 of 934 · from 18 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -25,7 +25,7 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">PopQA (lab)</a>                      20.5%    39.0   2025-05-12    2% ▇
 <a name="card3-ibm-granite-granite-3-1-3b-a800m-instruct"></a>ibm-granite/granite-3…  <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">GSM8K (lab)</a>                      52.8%    35.7   2025-01-31    9% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">ARC Challenge (lab)</a>              54.6%    37.5   2025-01-31    9% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">WinoGrande (lab)</a>                 67.5%    34.9   2025-01-31    5% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">WinoGrande (lab)</a>                 67.5%    35.0   2025-01-31    5% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">HellaSwag (lab)</a>                  75.1%    36.3   2025-01-31    4% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">MMLU (lab)</a>                       55.3%    39.9   2025-01-31    3% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">IFEval (aggregation unspecifi…</a>   62.9%    38.3   2025-01-31    2% ▇
@@ -33,7 +33,7 @@ source                  test                             score  implies  date   
 <a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   38.9%    32.8   2026-08-11    5% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   84.3%    27.6   2025-10-16    1% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 36.4
+                        weighted average                        = 36.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -46,8 +46,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~2.02GB   36.4
-8-bit q8_0    ~3.54GB   36.4
+4-bit q4_k_m  ~2.02GB   36.5
+8-bit q8_0    ~3.54GB   36.5
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 BigCode · released 2024-02 · 3.03B params · bigcode-openrail-m
 
-**score 33.3** ±0.6 · #807 of 935 · from 17 benchmark results across 5 sources
+**score 33.3** ±0.6 · #806 of 934 · from 17 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -18,16 +18,16 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      27.4%    33.1   2024-12-26   18% ▇▇
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       31.1%    33.7   2024-03-28   13% ▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               20.2%    33.0   2024-03-28    6% ▇
-<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 31.7%    33.4   2024-02-29    8% ▇
+<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 31.7%    33.5   2024-02-29    8% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      57.4%    35.0   2024-02-29    4% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   25.0%    34.9   2024-02-29    3% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                     27.7%    31.9   2024-02-29    2% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-I (lab)</a>                32.7%    32.1   2024-02-29    1% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-O (lab)</a>                34.2%    33.9   2024-02-29    1% ▇
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  31.7%    34.2   2024-05-07    5% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            42.4%    36.3   2024-05-07    3% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            42.4%    36.4   2024-05-07    3% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  13.1%    30.6   2024-05-07    2% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      32.1%    31.9   2024-05-07    2% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      32.1%    32.0   2024-05-07    2% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  11.0%    31.6   2024-05-07    2% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      34.0%    33.2   2024-05-07    2% ▇
 <a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   21.4%    29.4   2025-04-01    3% ▇

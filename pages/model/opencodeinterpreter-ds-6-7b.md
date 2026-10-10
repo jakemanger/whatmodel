@@ -6,7 +6,7 @@
 
 M-A-P · released 2024-02 · 6.74B params · apache-2.0
 
-**score 49.2** ±0.9 · #455 of 935 · from 3 benchmark results across 1 source
+**score 49.2** ±0.9 · #456 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 

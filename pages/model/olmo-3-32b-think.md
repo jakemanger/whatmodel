@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-11 · 32.2B params · apache-2.0
 
-**score 57.7** ±1.0 · #259 of 935 · from 18 benchmark results across 4 sources
+**score 57.7** ±1.0 · #258 of 934 · from 18 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                             score  implies  date        weight
 <a name="report-2512.13961v2"></a>Olmo 3                  <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (la…</a>   58.1%    57.1   2026-09-25   14% ▇▇
                         <a href="https://arxiv.org/html/2512.13961v2">AIME 2025 (lab)</a>                  72.5%    57.1   2026-09-25   10% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2024 (lab)</a>                  76.8%    56.2   2026-09-25   10% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2024 (lab)</a>                  76.8%    56.3   2026-09-25   10% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard (lab)</a>             89.8%    58.1   2026-09-25    9% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">MMLU (lab)</a>                       85.4%    55.8   2026-09-25    6% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlle…</a>   74.2%    62.2   2026-09-25    5% ▇
@@ -25,7 +25,7 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                 76.0%    60.7   2026-09-25    3% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                      31.9%    58.9   2026-09-25    3% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecif…</a>   47.6%    56.1   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3 (lab)</a>           83.5%    60.3   2026-09-25    3% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3 (lab)</a>           83.5%    60.4   2026-09-25    3% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">HumanEval+ (lab)</a>                 91.4%    58.5   2026-09-25    2% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecifi…</a>   89.0%    62.8   2026-09-25    1% ▇
 <a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5021    57.9   2026-05-02   13% ▇▇

@@ -6,7 +6,7 @@
 
 Meta · released 2024-01 · 68.98B params · llama2
 
-**score 43.6** ±1.0 · #623 of 935 · from 4 benchmark results across 2 sources
+**score 43.7** ±1.0 · #619 of 934 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -19,7 +19,7 @@ source                  test                    score  implies  date        weig
 <a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>         57.3%    43.2   2024-01-31   23% ▇▇▇
                         <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>              65.6%    46.0   2024-01-31   10% ▇
 prior                   pull toward the middle           50.0                 0% ▇
-                        weighted average               = 43.6
+                        weighted average               = 43.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,8 +32,8 @@ prior                   pull toward the middle           50.0                 0%
 
 <pre>
 download       size  score
-4-bit q4_k_m  ~41GB   43.6
-8-bit q8_0    ~73GB   43.6
+4-bit q4_k_m  ~41GB   43.7
+8-bit q8_0    ~73GB   43.7
 </pre>
 
 ```sh

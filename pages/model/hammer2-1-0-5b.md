@@ -6,7 +6,7 @@
 
 MadeAgents · released 2024-12 · 0.49B params · cc-by-nc-4.0
 
-**score 43.1** ±4.1 · #638 of 935 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 43.1** ±4.1 · #637 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  21.2%    41.3   2025-12-16   56% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         45.4%    44.3   2025-06-14   37% ▇▇▇▇
+                        <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         45.4%    44.4   2025-06-14   37% ▇▇▇▇
 prior                   pull toward the middle                   50.0                 8% ▇
                         weighted average                       = 43.1
 </pre>

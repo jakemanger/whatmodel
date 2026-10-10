@@ -6,7 +6,7 @@
 
 Phind · released 2023-08 · 34B params · llama2
 
-**score 46.7** ±0.7 · #527 of 935 · from 6 benchmark results across 3 sources
+**score 46.7** ±0.7 · #527 of 934 · from 6 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -15,8 +15,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                    score  implies  date        weight
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               71.3%    46.5   2024-12-26   36% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              67.1%    47.3   2024-12-26   29% ▇▇▇
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               70.7%    47.0   2024-03-28   19% ▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              67.1%    47.4   2024-12-26   29% ▇▇▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               70.7%    47.1   2024-03-28   19% ▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       45.6%    45.9   2024-03-28   13% ▇▇
 <a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              47.2%    45.5   2024-01-03    2% ▇
                         <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              39.7%    39.7   2024-01-03    1% ▇

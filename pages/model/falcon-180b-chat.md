@@ -6,7 +6,7 @@
 
 TII · released 2023-09 · 180B params · falcon-180b-tii-license
 
-**score 39.3** ±2.1 · #713 of 935 · from 3 benchmark results across 2 sources
+**score 39.3** ±2.1 · #713 of 934 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 

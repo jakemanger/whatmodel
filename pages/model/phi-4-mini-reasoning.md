@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-04 · 3.8B params · mit
 
-**score 48.0** ±2.1 · #490 of 935 · from 6 benchmark results across 3 sources
+**score 48.0** ±2.1 · #489 of 934 · from 6 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card-microsoft-phi-4-mini-reasoning"></a>microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">GPQA Diamond (lab)</a>              52.0%    53.3   2026-09-25   30% ▇▇▇▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">AIME 2024 (lab)</a>                 57.5%    53.7   2026-09-25   27% ▇▇▇
+<a name="card-microsoft-phi-4-mini-reasoning"></a>microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">GPQA Diamond (lab)</a>              52.0%    53.4   2026-09-25   30% ▇▇▇▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">AIME 2024 (lab)</a>                 57.5%    53.8   2026-09-25   27% ▇▇▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">MATH-500 (lab)</a>                  94.6%    57.5   2026-09-25    9% ▇
 <a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  21.3%    37.3   2025-04-28   18% ▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  41.0%    36.3   2026-04-17    8% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  41.0%    36.4   2026-04-17    8% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  55.7%    29.2   2026-04-17    6% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
                         weighted average                       = 48.0

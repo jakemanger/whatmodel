@@ -6,7 +6,7 @@
 
 M-A-P · released 2024-02 · apache-2.0
 
-**score 50.1** ±0.9 · #431 of 935 · from 3 benchmark results across 1 source
+**score 50.1** ±0.9 · #431 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                    score  implies  date        weight
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               79.3%    50.0   2024-12-26   50% ▇▇▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              73.8%    50.1   2024-12-26   42% ▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   68.5%    50.5   2024-12-26    8% ▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   68.5%    50.6   2024-12-26    8% ▇
 prior                   pull toward the middle           50.0                 0% ▇
                         weighted average               = 50.1
 </pre>

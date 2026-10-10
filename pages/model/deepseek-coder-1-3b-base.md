@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-10 · 1.3B params · deepseek
 
-**score 32.4** ±0.6 · #820 of 935 · from 12 benchmark results across 5 sources
+**score 32.4** ±0.6 · #819 of 934 · from 12 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -17,10 +17,10 @@ source                  test                     score  implies  date        wei
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                28.7%    32.0   2024-12-26   30% ▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>               25.6%    32.3   2024-12-26   20% ▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                    47.9%    37.6   2024-12-26    4% ▇
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                29.9%    33.2   2024-03-28   15% ▇▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                29.9%    33.3   2024-03-28   15% ▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>        20.3%    33.1   2024-03-28    7% ▇
 <a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval</a>                28.7%    32.3   2024-02-29    9% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>                     55.4%    34.0   2024-02-29    4% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>                     55.4%    34.1   2024-02-29    4% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                  16.2%    28.0   2024-02-29    3% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>                    12.6%    25.1   2024-02-29    2% ▇
 <a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>  22.3%    30.1   2025-04-01    3% ▇

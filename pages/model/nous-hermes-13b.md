@@ -6,7 +6,7 @@
 
 Nous Research · released 2023-06 · gpl
 
-**score 33.6** ±2.2 · #806 of 935 · from 3 benchmark results across 2 sources
+**score 33.6** ±2.2 · #805 of 934 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 

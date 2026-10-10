@@ -6,7 +6,7 @@
 
 TII · released 2023-04 · 1.3B params · apache-2.0
 
-**score 19.9** ±1.8 · #901 of 935 · from 8 benchmark results across 1 source
+**score 19.9** ±1.8 · #900 of 934 · from 8 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                    score  implies  date        weight
 <a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>              60.7%    21.3   2023-09-11   18% ▇▇
                         <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>           28.2%    17.6   2023-09-11   16% ▇▇
-                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                   63.2%    19.1   2023-09-11   16% ▇▇
+                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                   63.2%    19.2   2023-09-11   16% ▇▇
                         <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                63.3%    20.9   2023-09-11   14% ▇▇
                         <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>               46.6%    22.2   2023-09-11   12% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>              40.5%    16.7   2023-09-11    9% ▇

@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-12 · 236B params (23B active) · k-exaone
 
-**score 65.6** ±0.9 · #145 of 935 · from 24 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 65.7** ±0.9 · #143 of 934 · from 24 benchmark results across 2 sources · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -37,9 +37,9 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">τ²-bench Retail (lab)</a>           78.6%    69.8   2026-08-03    2% ▇
                         <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IFBench (aggregation unspecif…</a>  67.3%    68.6   2026-08-03    2% ▇
                         <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">τ²-bench Airline (lab)</a>          60.4%    67.6   2026-08-03    2% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IFEval (aggregation unspecifi…</a>  89.7%    65.0   2026-08-03    1% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IFEval (aggregation unspecifi…</a>  89.7%    65.1   2026-08-03    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 65.6
+                        weighted average                       = 65.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -52,8 +52,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                        size  score
-4-bit q4_k_m               ~143.47GB   65.6
-16-bit bf16 · nvidia only   ~474.2GB   65.6
+4-bit q4_k_m               ~143.47GB   65.7
+16-bit bf16 · nvidia only   ~474.2GB   65.7
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 BioMistral · released 2024-02 · apache-2.0
 
-**score 36.6** ±5.0 · #765 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.6** ±5.0 · #764 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

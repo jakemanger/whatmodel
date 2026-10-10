@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 675B params (41B active) · apache-2.0
 
-**score 62.0** ±1.4 · #188 of 935 · from 13 benchmark results across 5 sources
+**score 62.1** ±1.4 · #186 of 934 · from 13 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,21 +14,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1229.8    61.1   2026-10-01   27% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1229.8    61.2   2026-10-01   27% ▇▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1413.9    67.6   2026-10-02   16% ▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1200.6    66.3   2026-10-02   12% ▇
 <a name="card-mistralai-mistral-small-4-119b-2603"></a>mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">GPQA Diamond (lab)</a>               64.1%    57.2   2026-09-25   10% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMLU-Pro (lab)</a>                   80.9%    62.4   2026-09-25    7% ▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMLU-Pro (lab)</a>                   80.9%    62.5   2026-09-25    7% ▇
                         <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">Arena-Hard (version/judge uns…</a>   66.7%    57.1   2026-09-25    6% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecif…</a>   37.8%    53.1   2026-09-25    6% ▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecif…</a>   37.8%    53.2   2026-09-25    6% ▇
                         <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMMU Pro (lab)</a>                   54.0%    56.2   2026-09-25    6% ▇
-<a name="paper-2609.13916v1-north-small-translate"></a>Cohere                  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>   91.2%    72.7   2026-09-12    4% ▇
-                        <a href="https://arxiv.org/html/2609.13916v1">WMT24++</a>                          78.3%    68.2   2026-09-12    1% ▇
-                        <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, …</a>   81.6%    77.3   2026-09-12    1% ▇
+<a name="paper-2609.13916v1-north-small-translate"></a>Cohere                  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>   91.2%    72.8   2026-09-12    4% ▇
+                        <a href="https://arxiv.org/html/2609.13916v1">WMT24++</a>                          78.3%    68.3   2026-09-12    1% ▇
+                        <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, …</a>   81.6%    77.4   2026-09-12    1% ▇
 <a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard ave…</a>   25.7%    60.4   2026-09-25    5% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   85.5%   -86.0   2026-09-22    0% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   85.5%   -85.9   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 62.0
+                        weighted average                        = 62.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -43,9 +43,9 @@ api (Mistral AI) · $0.75/M blended · $0.5 in / $1.5 out per 1M tokens · [docs
 
 <pre>
 download               size  score
-4-bit ud-q4_k_xl   ~405.5GB   62.0
-2-bit ud-q2_k_xl     ~203GB   62.0
-1-bit ud-iq1_s    ~101.75GB   62.0
+4-bit ud-q4_k_xl   ~405.5GB   62.1
+2-bit ud-q2_k_xl     ~203GB   62.1
+1-bit ud-iq1_s    ~101.75GB   62.1
 </pre>
 
 ```sh

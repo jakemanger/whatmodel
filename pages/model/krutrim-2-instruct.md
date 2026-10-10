@@ -6,7 +6,7 @@
 
 Krutrim (Ola) · released 2025-02 · other (krutrim-community-license-agreement-version-1.0)
 
-**score 55.7** ±4.4 · #296 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.7** ±4.4 · #295 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

@@ -6,7 +6,7 @@
 
 Cognitive Computations · released 2023-12 · apache-2.0
 
-**score 43.9** ±0.8 · #611 of 935 · from 3 benchmark results across 1 source
+**score 43.9** ±0.8 · #612 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                    score  implies  date        weight
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               64.0%    43.9   2024-12-26   53% ▇▇▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              57.3%    43.8   2024-12-26   40% ▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   59.0%    44.2   2024-12-26    7% ▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   59.0%    44.3   2024-12-26    7% ▇
 prior                   pull toward the middle           50.0                 0% ▇
                         weighted average               = 43.9
 </pre>

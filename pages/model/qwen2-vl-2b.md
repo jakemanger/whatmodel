@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 2.21B params · apache-2.0
 
-**score 37.4** ±1.2 · #751 of 935 · from 16 benchmark results across 2 sources
+**score 37.4** ±1.2 · #750 of 934 · from 16 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -18,10 +18,10 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2409.12191v2">MathVista (testmini) (lab)</a>      43.0%    33.4   2024-10-03   16% ▇▇
                         <a href="https://arxiv.org/html/2409.12191v2">MMStar (lab)</a>                    48.0%    35.6   2024-10-03   12% ▇
                         <a href="https://arxiv.org/html/2409.12191v2">MMMU Pro (lab)</a>                  37.6%    45.5   2024-10-03    7% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">Video-MME (without subtitles)…</a>  55.6%    39.1   2024-10-03    7% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">Video-MME (without subtitles)…</a>  55.6%    39.2   2024-10-03    7% ▇
                         <a href="https://arxiv.org/html/2409.12191v2">DocVQA (lab)</a>                    90.1%    35.7   2024-10-03    6% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">ChartQA (lab)</a>                   73.5%    32.5   2024-10-03    6% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">InfographicVQA (lab)</a>            65.5%    41.8   2024-10-03    5% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">ChartQA (lab)</a>                   73.5%    32.6   2024-10-03    6% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">InfographicVQA (lab)</a>            65.5%    41.9   2024-10-03    5% ▇
                         <a href="https://arxiv.org/html/2409.12191v2">HallusionBench (lab)</a>            41.7%    37.8   2024-10-03    5% ▇
                         <a href="https://arxiv.org/html/2409.12191v2">RealWorldQA (lab)</a>               62.9%    40.9   2024-10-03    4% ▇
                         <a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (lab)</a>               12.4%    32.6   2024-10-03    4% ▇

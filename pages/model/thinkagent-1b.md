@@ -6,7 +6,7 @@
 
 ThinkAgents · released 2025-01 · 1.24B params · apache-2.0
 
-**score 25.8** ±6.8 · #879 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 25.9** ±6.8 · #877 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                    score  implies  date        weight
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                 20.8%    19.5   2025-06-14   79% ▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle           50.0                21% ▇▇
-                        weighted average               = 25.8
+                        weighted average               = 25.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle           50.0                21%
 
 <pre>
 download        size  score
-16-bit bf16  ~2.47GB   25.8
+16-bit bf16  ~2.47GB   25.9
 </pre>
 
 ```sh

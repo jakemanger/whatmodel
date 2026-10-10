@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-04 · closed weights
 
-**score 66.2** ±1.2 · #133 of 935 · from 6 benchmark results across 1 source
+**score 66.2** ±1.2 · #132 of 934 · from 6 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -18,8 +18,8 @@ source    test                          score  implies  date        weight
           <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                  83.3%    69.2   2026-08-07   22% ▇▇▇
           <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      84.4%    68.7   2026-08-07   13% ▇▇
           <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>         20.0%    71.6   2026-08-07    5% ▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>  12.0%    64.5   2026-08-27    4% ▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>             15.9%    59.8   2026-08-27    4% ▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>  12.0%    64.6   2026-08-27    4% ▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>             15.9%    59.9   2026-08-27    4% ▇
 prior     pull toward the middle                 50.0                 1% ▇
           weighted average                     = 66.2
 </pre>

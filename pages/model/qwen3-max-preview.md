@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · closed weights
 
-**score 68.7** ±3.3 · #98 of 935 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 68.7** ±3.3 · #97 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

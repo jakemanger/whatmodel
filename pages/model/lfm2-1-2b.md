@@ -6,7 +6,7 @@
 
 Liquid AI · released 2025-07 · 1.17B params · lfm1.0
 
-**score 39.6** ±1.5 · #710 of 935 · from 9 benchmark results across 2 sources
+**score 39.6** ±1.5 · #709 of 934 · from 9 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card3-liquidai-lfm2-1-2b"></a>LiquidAI/LFM2-1.2B mo…  <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">GPQA (subset unspecified) (la…</a>  31.5%    40.4   2026-08-05   22% ▇▇▇
+<a name="card3-liquidai-lfm2-1-2b"></a>LiquidAI/LFM2-1.2B mo…  <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">GPQA (subset unspecified) (la…</a>  31.5%    40.5   2026-08-05   22% ▇▇▇
                         <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">GSM8K (lab)</a>                     58.3%    39.8   2026-08-05   18% ▇▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MMLU (lab)</a>                      55.2%    38.6   2026-08-05   14% ▇▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MMLU (lab)</a>                      55.2%    38.7   2026-08-05   14% ▇▇
                         <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MGSM (lab)</a>                      55.0%    43.0   2026-08-05   13% ▇▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MMMLU (lab)</a>                     46.7%    38.8   2026-08-05   10% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">MMMLU (lab)</a>                     46.7%    38.9   2026-08-05   10% ▇
                         <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">IFBench (aggregation unspecif…</a>  20.7%    37.3   2026-08-05    9% ▇
                         <a href="https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md">IFEval (aggregation unspecifi…</a>  74.9%    43.3   2026-08-05    5% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  63.1%    36.9   2026-04-17    4% ▇

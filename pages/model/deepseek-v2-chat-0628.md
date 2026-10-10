@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-07 · 235.74B params (21B active) · other (deepseek)
 
-**score 53.5** ±1.0 · #346 of 935 · from 6 benchmark results across 3 sources
+**score 53.5** ±1.0 · #345 of 934 · from 6 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -18,8 +18,8 @@ source                  test                                       score  implie
                         <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 probl…</a>             70.5%    53.2                20% ▇▇
                         <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>             22.7%    52.1                16% ▇▇
                         <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>                93.9%    54.1                12% ▇
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>             69.9%    56.3   2024-07-19   15% ▇▇
-<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  53.9943 WB-Score    55.3   2024-08-01    9% ▇
+<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>             69.9%    56.4   2024-07-19   15% ▇▇
+<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  53.9943 WB-Score    55.4   2024-08-01    9% ▇
 prior                   pull toward the middle                              50.0                 0% ▇
                         weighted average                                  = 53.5
 </pre>

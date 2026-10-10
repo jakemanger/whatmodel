@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-02 · 744B params (40B active) · mit
 
-**score 70.0** ±0.6 · #87 of 935 · from 54 benchmark results across 12 sources
+**score 70.0** ±0.6 · #86 of 934 · from 54 benchmark results across 12 sources
 
 ## How the score was worked out
 
@@ -14,22 +14,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="card-zai-org--glm-5.1"></a>zai-org/GLM-5.1 model…  <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">GPQA Diamond (lab)</a>               86.0%    69.9   2026-09-25    3% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">AIME 2026 (lab)</a>                  95.4%    71.4   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">HMMT February 2026 (lab)</a>         82.8%    69.9   2026-09-25    2% ▇
+<a name="card-zai-org--glm-5.1"></a>zai-org/GLM-5.1 model…  <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">GPQA Diamond (lab)</a>               86.0%    70.0   2026-09-25    3% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">AIME 2026 (lab)</a>                  95.4%    71.5   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">HMMT February 2026 (lab)</a>         82.8%    70.0   2026-09-25    2% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">SWE-bench Pro (split unspecif…</a>   55.1%    71.2   2026-09-25    2% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">Terminal-Bench 2.0 (lab)</a>         56.2%    70.1   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">Humanity's Last Exam (lab)</a>       30.5%    71.8   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">NL2Repo (lab)</a>                    35.9%    68.3   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">Humanity's Last Exam (lab)</a>       30.5%    71.9   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">NL2Repo (lab)</a>                    35.9%    68.4   2026-09-25    1% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">BrowseComp (lab)</a>                 62.0%    71.6   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">MCP-Atlas (public set) (lab)</a>     69.2%    70.9   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">MCP-Atlas (public set) (lab)</a>     69.2%    71.0   2026-09-25    1% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">Toolathlon (Tool Decathlon) (…</a>   38.0%    69.8   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">BrowseComp with context manag…</a>   75.9%    69.9   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">BrowseComp with context manag…</a>   75.9%    70.0   2026-09-25    1% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">CyberGym (lab)</a>                   48.3%    60.1   2026-09-25    1% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/README.md">τ³-bench (lab)</a>                   69.2%    75.3   2026-09-25    1% ▇
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>   41.4%    70.9   2026-09-11    4% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 202…</a>   45.8%    67.8   2026-09-11    4% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>   54.3%    67.8   2026-09-11    3% ▇
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>   41.4%    71.0   2026-09-11    4% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 202…</a>   45.8%    67.9   2026-09-11    4% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>   54.3%    67.9   2026-09-11    3% ▇
                         <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>   38.2%    65.4   2026-09-11    2% ▇
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2…</a>   12.1%    70.2   2026-09-11    1% ▇
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv Februar…</a>   11.7%    70.5   2026-09-11    1% ▇
@@ -39,22 +39,22 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2602.15763v2">IMO-AnswerBench (lab)</a>            82.5%    69.4   2026-02-24    2% ▇
                         <a href="https://arxiv.org/html/2602.15763v2">Humanity's Last Exam (lab)</a>       30.5%    72.5   2026-02-24    1% ▇
                         <a href="https://arxiv.org/html/2602.15763v2">LongBench v2 (lab)</a>               64.5%    71.4   2026-02-24    1% ▇
-                        <a href="https://arxiv.org/html/2602.15763v2">HMMT November 2025 (lab)</a>         96.9%    78.6   2026-02-24    1% ▇
+                        <a href="https://arxiv.org/html/2602.15763v2">HMMT November 2025 (lab)</a>         96.9%    78.7   2026-02-24    1% ▇
                         <a href="https://arxiv.org/html/2602.15763v2">BrowseComp (lab)</a>                 62.0%    73.9   2026-02-24    1% ▇
                         <a href="https://arxiv.org/html/2602.15763v2">Humanity's Last Exam with too…</a>   50.4%    74.4   2026-02-24    1% ▇
                         <a href="https://arxiv.org/html/2602.15763v2">Toolathlon (Tool Decathlon) (…</a>   39.2%    73.0   2026-02-24    1% ▇
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>               72.1%    71.0   2026-02-15    6% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     87.8%    72.1   2026-02-12    4% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         80.0%    67.3   2026-02-12    2% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            10.0%    64.8   2026-02-12    2% ▇
-<a name="card2-zai-org-glm-5"></a>zai-org/GLM-5 model c…  <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">MCP-Atlas (public set) (lab)</a>     67.8%    73.0   2026-08-11    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            10.0%    64.9   2026-02-12    2% ▇
+<a name="card2-zai-org-glm-5"></a>zai-org/GLM-5 model c…  <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">MCP-Atlas (public set) (lab)</a>     67.8%    73.1   2026-08-11    2% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">SWE-bench Verified (lab)</a>         77.8%    71.4   2026-08-11    2% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">Terminal-Bench 2.0 (lab)</a>         56.2%    73.4   2026-08-11    2% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">BrowseComp-ZH (lab)</a>              72.7%    73.7   2026-08-11    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">τ²-bench aggregate (lab)</a>         89.7%    73.9   2026-08-11    1% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">τ²-bench aggregate (lab)</a>         89.7%    74.0   2026-08-11    1% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">SWE-bench Multilingual (lab)</a>     73.3%    73.0   2026-08-11    1% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">BrowseComp with context manag…</a>   75.9%    72.1   2026-08-11    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">CyberGym (lab)</a>                   43.2%    64.0   2026-08-11    1% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">CyberGym (lab)</a>                   43.2%    64.1   2026-08-11    1% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1434.0    70.5   2026-10-01    5% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1457.6    72.8   2026-10-02    3% ▇
 <a name="tau2-bench-leaderboard-sierra"></a>τ²/τ³-bench leaderboa…  <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/glm-5-think_sierra_2026-03-02/submission.json">τ³-bench banking_knowledge (v…</a>    9.8%    61.6   2026-02-27    2% ▇

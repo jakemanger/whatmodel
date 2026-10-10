@@ -6,7 +6,7 @@
 
 Kuaishou (Kwaipilot) · released 2026-07 · 35B params (3B active) · apache-2.0
 
-**score 70.3** ±1.6 · #82 of 935 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 70.4** ±1.6 · #81 of 934 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card3-kwaipilot-kat-coder-v2-5-dev"></a>Kwaipilot/KAT-Coder-V…  <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1 (lab)</a>        32.6%    66.7   2026-07-23   29% ▇▇▇
+<a name="card3-kwaipilot-kat-coder-v2-5-dev"></a>Kwaipilot/KAT-Coder-V…  <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1 (lab)</a>        32.6%    66.8   2026-07-23   29% ▇▇▇
                         <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified (lab)</a>        69.4%    71.4   2026-07-23   23% ▇▇▇
                         <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecif…</a>  46.0%    71.2   2026-07-23   23% ▇▇▇
                         <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual (lab)</a>    63.0%    73.4   2026-07-23   13% ▇▇
                         <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SciCode (level unspecified) (…</a>  44.2%    74.3   2026-07-23   12% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 70.3
+                        weighted average                       = 70.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,8 +33,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~21.39GB   70.3
-8-bit q8_0    ~36.91GB   70.3
+4-bit q4_k_m  ~21.39GB   70.4
+8-bit q8_0    ~36.91GB   70.4
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-09 · 236B params (21B active) · deepseek
 
-**score 53.5** ±0.8 · #345 of 935 · from 13 benchmark results across 7 sources
+**score 53.5** ±0.8 · #344 of 934 · from 13 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -25,7 +25,7 @@ source                  test                             score  implies  date   
 <a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   49.0%    57.9   2024-09-17    3% ▇
                         <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-…</a>   83.4%    60.3   2024-09-14    3% ▇
 <a name="opencompass-compassacademic-space-predictions"></a>OpenCompass CompassAc…  <a href="https://huggingface.co/spaces/opencompass/CompassAcademic-Leaderboard-Full-Version/blob/73af091f28193d1e3e232851b940cadbb856556e/data/hf-academic-predictions.json">IFEval prompt-level strict</a>       77.6%    53.6   2025-03-31    3% ▇
-                        <a href="https://huggingface.co/spaces/opencompass/CompassAcademic-Leaderboard-Full-Version/blob/73af091f28193d1e3e232851b940cadbb856556e/data/hf-academic-predictions.json">DROP F1, 3-shot (simple-evals)</a>   81.4%    51.3   2025-03-31    0% ▇
+                        <a href="https://huggingface.co/spaces/opencompass/CompassAcademic-Leaderboard-Full-Version/blob/73af091f28193d1e3e232851b940cadbb856556e/data/hf-academic-predictions.json">DROP F1, 3-shot (simple-evals)</a>   81.4%    51.4   2025-03-31    0% ▇
 <a name="first-party-deepseek-scores"></a>DeepSeek vendor-repor…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2.5-1210/blob/6f134cbe88cb9284a8ce696e8ac8eefd0bc24ede/README.md#1-introduction">MATH-500 (lab)</a>                   74.8%    46.3   2024-12-10    3% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
                         weighted average                        = 53.5

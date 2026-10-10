@@ -6,7 +6,7 @@
 
 TII · released 2024-05 · 11.1B params · falcon-llm
 
-**score 42.6** ±4.2 · #648 of 935 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 42.7** ±4.2 · #645 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                            score  implies  date    
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  64.2%    41.4   2024-05-13   63% ▇▇▇▇▇▇▇▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  73.7%    43.4   2026-04-17   29% ▇▇▇▇
 prior                   pull toward the middle                   50.0                 8% ▇
-                        weighted average                       = 42.6
+                        weighted average                       = 42.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download      size  score
-4-bit q4_0  ~6.4GB   42.6
+4-bit q4_0  ~6.4GB   42.7
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Mistral · released 2026-10 · 1050B params (52B active) · proprietary
 
-**score 71.0** ±1.5 · #77 of 935 · from 4 benchmark results across 2 sources
+**score 71.0** ±1.5 · #76 of 934 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 

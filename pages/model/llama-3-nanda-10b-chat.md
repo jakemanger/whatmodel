@@ -6,7 +6,7 @@
 
 MBZUAI & Inception · released 2024-10 · llama3
 
-**score 43.2** ±4.6 · #635 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 43.2** ±4.6 · #634 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## How the score was worked out
 

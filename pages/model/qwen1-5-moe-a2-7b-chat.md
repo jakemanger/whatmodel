@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-03 · 14.32B params (2.7B active) · tongyi-qianwen
 
-**score 41.1** ±5.0 · #680 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.1** ±5.0 · #679 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

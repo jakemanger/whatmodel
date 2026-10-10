@@ -6,7 +6,7 @@
 
 Inception (G42) · released 2024-08 · 13.46B params · apache-2.0
 
-**score 44.2** ±3.1 · #606 of 935 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 44.2** ±3.1 · #605 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## How the score was worked out
 

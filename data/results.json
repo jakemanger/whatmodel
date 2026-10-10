@@ -247168,16 +247168,6 @@
     "source_id": "card3-qwen-qwen-agentworld-35b-a3b"
   },
   {
-    "model": "qwen-agentworld-35b-a3b",
-    "bench": "agentworldbench-overall",
-    "score": 0.5639,
-    "source": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md",
-    "by": "lab",
-    "date": "2026-06-25",
-    "note": "Qwen-AgentWorld-35B-A3B model card (Apache-2.0, pinned 60d2b04), 'AgentWorldBench (Open-Ended Evaluation)' table, row 'Qwen-AgentWorld-35B-A3B', column 'Overall' = 56.39; divided by 100. Benchmark introduced by the same authors (their own runs). Reasoning settings of the API models are not stated. DeepSeek-V4-Pro row not used (snapshot ambiguous); Qwen-AgentWorld-397B-A17B row not used (no released weights).",
-    "source_id": "card3-qwen-qwen-agentworld-35b-a3b"
-  },
-  {
     "model": "nemotron-labs-3-puzzle-75b-a9b",
     "bench": "mmlu-pro",
     "score": 0.824,

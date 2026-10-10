@@ -6,7 +6,7 @@
 
 LG AI Research · released 2024-12 · 32B params · exaone
 
-**score 54.9** ±3.9 · #318 of 935 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 55.0** ±3.9 · #314 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                            score  implies  date    
 <a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-32B-Instruct/blob/3d27aab477c042df2e174d36eea47b77c8871ef0/README.md#evaluation">Arena-Hard (version/judge uns…</a>  78.6%    56.3   2024-12-01   59% ▇▇▇▇▇▇▇
                         <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-32B-Instruct/blob/3d27aab477c042df2e174d36eea47b77c8871ef0/README.md#evaluation">IFEval (aggregation unspecifi…</a>  81.7%    53.6   2024-12-01   34% ▇▇▇▇
 prior                   pull toward the middle                   50.0                 7% ▇
-                        weighted average                       = 54.9
+                        weighted average                       = 55.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,8 +30,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m     ~19GB   54.9
-4-bit q4_k_m  ~19.34GB   54.9
+4-bit q4_k_m     ~19GB   55.0
+4-bit q4_k_m  ~19.34GB   55.0
 </pre>
 
 ```sh

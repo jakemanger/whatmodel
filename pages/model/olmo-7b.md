@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2024-02 · 6.89B params · apache-2.0
 
-**score 28.6** ±1.2 · #857 of 935 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
+**score 28.6** ±1.2 · #856 of 934 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -26,7 +26,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2402.00838v4">SciQ (lab)</a>                      93.8%    30.6   2024-06-07    6% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">PIQA (lab)</a>                      78.4%    31.8   2024-06-07    4% ▇
                         <a href="https://arxiv.org/html/2402.00838v4#A5.T8">MMLU (lab)</a>                      28.3%    17.7   2024-06-07    3% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: TyDiQA gold passage, …</a>  32.3%    29.9   2024-06-07    1% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: TyDiQA gold passage, …</a>  32.3%    30.0   2024-06-07    1% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 28.6
 </pre>

@@ -6,7 +6,7 @@
 
 UCLA AGI (SPPO) · released 2024-06 · 9.24B params · gemma
 
-**score 55.4** ±1.5 · #304 of 935 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 55.4** ±1.5 · #303 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

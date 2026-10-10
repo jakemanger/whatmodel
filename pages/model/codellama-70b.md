@@ -6,7 +6,7 @@
 
 Meta · released 2024-01 · 68.98B params · llama2
 
-**score 43.1** ±1.1 · #637 of 935 · from 6 benchmark results across 3 sources
+**score 43.1** ±1.1 · #636 of 934 · from 6 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -18,7 +18,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  28.2%    40.5   2024-05-07   13% ▇▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  32.8%    42.5   2024-05-07   13% ▇▇
 <a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                 53.0%    41.7   2024-01-31   29% ▇▇▇
-                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                      62.4%    44.2   2024-01-31   13% ▇▇
+                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                      62.4%    44.3   2024-01-31   13% ▇▇
 <a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         44.3%    46.2   2025-04-01   12% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 43.1

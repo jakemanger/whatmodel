@@ -6,7 +6,7 @@
 
 Nexusflow · released 2024-03 · 7.24B params · apache-2.0
 
-**score 39.7** ±1.2 · #707 of 935 · from 7 benchmark results across 7 sources
+**score 39.7** ±1.2 · #706 of 934 · from 7 benchmark results across 7 sources
 
 ## How the score was worked out
 

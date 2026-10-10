@@ -6,7 +6,7 @@
 
 Amazon · released 2025-11 · closed weights
 
-**score 66.7** ±6.5 · #125 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 66.7** ±6.5 · #126 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## How the score was worked out
 

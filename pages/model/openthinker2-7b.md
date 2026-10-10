@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-04 · 7.62B params · apache-2.0
 
-**score 50.8** ±1.6 · #410 of 935 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 50.8** ±1.6 · #409 of 934 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="card3-open-thoughts-openthinker2-7b"></a>open-thoughts/OpenThi…  <a href="https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md">GPQA Diamond (lab)</a>      49.3%    51.1   2025-06-05   29% ▇▇▇▇
-                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md">AIME 2025 (lab)</a>         33.3%    49.7   2025-06-05   27% ▇▇▇
+<a name="card3-open-thoughts-openthinker2-7b"></a>open-thoughts/OpenThi…  <a href="https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md">GPQA Diamond (lab)</a>      49.3%    51.2   2025-06-05   29% ▇▇▇▇
+                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md">AIME 2025 (lab)</a>         33.3%    49.8   2025-06-05   27% ▇▇▇
                         <a href="https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md">AIME 2024 (lab)</a>         50.0%    50.5   2025-06-05   21% ▇▇▇
                         <a href="https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md">MATH-500 (lab)</a>          88.4%    50.9   2025-06-05   14% ▇▇
-                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md">LiveCodeBench v2 (lab)</a>  55.6%    54.0   2025-06-05    8% ▇
+                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md">LiveCodeBench v2 (lab)</a>  55.6%    54.1   2025-06-05    8% ▇
 prior                   pull toward the middle           50.0                 1% ▇
                         weighted average               = 50.8
 </pre>

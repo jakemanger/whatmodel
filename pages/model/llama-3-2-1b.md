@@ -6,7 +6,7 @@
 
 Meta · released 2024-09 · 1.24B params · llama3.2
 
-**score 29.3** ±0.7 · #850 of 935 · from 58 benchmark results across 18 sources
+**score 29.3** ±0.7 · #849 of 934 · from 58 benchmark results across 18 sources
 
 ## How the score was worked out
 
@@ -25,7 +25,7 @@ source                  test                             score  implies  date   
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MMLU-Pro</a>                         19.5%    30.3   2024-11-09    2% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MBPP</a>                             37.0%    37.8   2024-11-09    2% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">GPQA (subset unspecified)</a>        25.7%    24.8   2024-11-09    2% ▇
-                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">IFEval (aggregation unspecifi…</a>   41.7%    31.7   2024-11-09    1% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">IFEval (aggregation unspecifi…</a>   41.7%    31.8   2024-11-09    1% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">ARC Challenge</a>                    41.4%    33.1   2024-11-09    1% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">OpenBookQA</a>                       34.6%    32.6   2024-11-09    1% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">Social IQA</a>                       35.5%     8.0   2024-11-09    1% ▇
@@ -44,10 +44,10 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2502.02737v1">HellaSwag</a>                        56.1%    25.7   2025-02-04    1% ▇
                         <a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecifi…</a>   53.5%    32.1   2025-02-04    1% ▇
                         <a href="https://arxiv.org/html/2502.02737v1">PIQA</a>                             72.3%    24.5   2025-02-04    1% ▇
-<a name="card-liquidai-lfm2-5-1-2b-thinking"></a>LiquidAI/LFM2.5-1.2B-…  <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GSM8K</a>                            39.0%    29.8   2026-09-25    5% ▇
+<a name="card-liquidai-lfm2-5-1-2b-thinking"></a>LiquidAI/LFM2.5-1.2B-…  <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GSM8K</a>                            39.0%    29.9   2026-09-25    5% ▇
                         <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFEval mean of four measures</a>     52.4%    25.1   2026-09-25    2% ▇
                         <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500</a>                         23.4%    24.2   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MMLU-Pro</a>                         20.8%    28.6   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MMLU-Pro</a>                         20.8%    28.7   2026-09-25    1% ▇
                         <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFBench (aggregation unspecif…</a>   15.9%    32.4   2026-09-25    1% ▇
                         <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025</a>                         0.3%    22.1   2026-09-25    0% ▇
                         <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">BFCL v3</a>                          21.4%    16.6   2026-09-25    0% ▇
@@ -65,7 +65,7 @@ source                  test                             score  implies  date   
 <a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>    5.7%    19.5   2025-05-31    0% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>    0.8%    21.2   2025-05-31    0% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>    0.0%    21.3   2025-05-31    0% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>   76.1%    96.0   2025-05-31    0% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>   76.1%    96.1   2025-05-31    0% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   32.4%    17.3   2026-04-17    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   79.3%    21.1   2025-10-16    1% ▇
 <a name="massive-agents-paper"></a>MASSIVE-Agents          <a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero…</a>    0.2%    21.1   2026-09-25    1% ▇

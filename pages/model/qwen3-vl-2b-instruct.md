@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 2.13B params · apache-2.0
 
-**score 44.0** ±0.7 · #608 of 935 · from 38 benchmark results across 2 sources
+**score 44.0** ±0.7 · #608 of 934 · from 38 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CharXiv descriptive questions…</a>  62.3%    43.4   2025-11-27    8% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Pro (lab)</a>                  49.0%    43.1   2025-11-27    8% ▇
+<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CharXiv descriptive questions…</a>  62.3%    43.5   2025-11-27    8% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Pro (lab)</a>                  49.0%    43.2   2025-11-27    8% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Redux (lab)</a>                66.5%    40.8   2025-11-27    7% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMMU (val) (lab)</a>                53.4%    44.9   2025-11-27    7% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CharXiv (reasoning questions)…</a>  26.8%    43.4   2025-11-27    6% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MathVista (testmini) (lab)</a>      61.3%    45.4   2025-11-27    6% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMStar (lab)</a>                    58.3%    44.7   2025-11-27    5% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">GPQA (subset unspecified) (la…</a>  42.0%    46.3   2025-11-27    4% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">GPQA (subset unspecified) (la…</a>  42.0%    46.4   2025-11-27    4% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=23">AIME 2025 (lab)</a>                 22.2%    42.2   2025-11-27    4% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=23">IFEval (aggregation unspecifi…</a>  68.2%    42.0   2025-11-27    3% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMMU Pro (lab)</a>                  36.5%    43.3   2025-11-27    3% ▇
@@ -32,7 +32,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">LVBench (lab)</a>                   47.4%    47.1   2025-11-27    2% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=23">BFCL v3 (lab)</a>                   55.4%    46.8   2025-11-27    2% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">HallusionBench (lab)</a>            51.4%    47.1   2025-11-27    2% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">ChartQA (lab)</a>                   79.1%    40.4   2025-11-27    2% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">ChartQA (lab)</a>                   79.1%    40.5   2025-11-27    2% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">DocVQA (lab)</a>                    93.3%    45.9   2025-11-27    2% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">RealWorldQA (lab)</a>               63.9%    41.7   2025-11-27    1% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MVBench (lab)</a>                   61.7%    41.8   2025-11-27    1% ▇
@@ -40,16 +40,16 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CC-OCR (lab)</a>                    72.8%    48.7   2025-11-27    1% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">OCRBench (lab)</a>                  85.8%    53.7   2025-11-27    1% ▇
 <a name="card2-coherelabs-north-micro-vision-instruct"></a>CohereLabs/North-Micr…  <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CharXiv descriptive questions</a>   59.5%    38.8   2026-08-10    2% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU</a>                            63.0%    47.0   2026-08-10    2% ▇
+                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU</a>                            63.0%    47.1   2026-08-10    2% ▇
                         <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU-Pro</a>                        42.8%    46.8   2026-08-10    2% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMStar</a>                          50.6%    40.6   2026-08-10    2% ▇
+                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMStar</a>                          50.6%    40.7   2026-08-10    2% ▇
                         <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspeci…</a>  52.3%    47.1   2026-08-10    1% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMBench-EN dev v1.1</a>             74.4%    45.1   2026-08-10    1% ▇
+                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMBench-EN dev v1.1</a>             74.4%    45.2   2026-08-10    1% ▇
                         <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">IFEval (aggregation unspecifi…</a>  73.4%    45.6   2026-08-10    1% ▇
                         <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">HallusionBench</a>                  67.3%    53.7   2026-08-10    1% ▇
                         <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">RealWorldQA</a>                     64.6%    44.8   2026-08-10    0% ▇
                         <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CountBench</a>                      84.8%    49.0   2026-08-10    0% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">OCRBench</a>                        75.1%    38.3   2026-08-10    0% ▇
+                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">OCRBench</a>                        75.1%    38.4   2026-08-10    0% ▇
                         <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">AI2D test</a>                       71.3%    18.2   2026-08-10    0% ▇
                         <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">ChartQA</a>                         69.3%    34.4   2026-08-10    0% ▇
 prior                   pull toward the middle                   50.0                 0% ▇

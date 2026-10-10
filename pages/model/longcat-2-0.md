@@ -6,7 +6,7 @@
 
 Meituan · released 2026-06 · 1600B params (48B active) · mit
 
-**score 73.2** ±2.0 · #58 of 935 · from 6 benchmark results across 1 source · † every result so far was reported by its maker
+**score 73.2** ±2.0 · #58 of 934 · from 6 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card-meituan-longcat--longcat-2.0"></a>meituan-longcat/LongC…  <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">GPQA Diamond (lab)</a>              88.9%    73.2   2026-09-25   33% ▇▇▇▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">FORTE (AGI-Eval) (lab)</a>          73.2%    74.8   2026-09-25   16% ▇▇
+<a name="card-meituan-longcat--longcat-2.0"></a>meituan-longcat/LongC…  <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">GPQA Diamond (lab)</a>              88.9%    73.3   2026-09-25   33% ▇▇▇▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">FORTE (AGI-Eval) (lab)</a>          73.2%    74.9   2026-09-25   16% ▇▇
                         <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">IMO-AnswerBench (lab)</a>           81.8%    74.6   2026-09-25   16% ▇▇
                         <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">RWSearch (lab)</a>                  78.8%    75.4   2026-09-25   15% ▇▇
                         <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">WritingBench (lab)</a>              83.8%    71.9   2026-09-25   14% ▇▇

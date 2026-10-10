@@ -6,7 +6,7 @@
 
 Arcee AI · released 2025-12 · 26.12B params (3B active) · openmdw-1.1
 
-**score 53.0** ±5.5 · #363 of 935 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.1** ±5.5 · #359 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                 test                            score  implies  date     
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  68.7%    50.6   2026-04-17   53% ▇▇▇▇▇▇
                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  91.4%    58.2   2026-04-17   33% ▇▇▇▇
 prior                  pull toward the middle                   50.0                14% ▇▇
-                       weighted average                       = 53.0
+                       weighted average                       = 53.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                  pull toward the middle                   50.0            
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~15.94GB   53.0
+4-bit q4_k_m  ~15.94GB   53.1
 </pre>
 
 ```sh

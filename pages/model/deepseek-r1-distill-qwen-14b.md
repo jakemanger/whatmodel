@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 14.8B params · mit
 
-**score 56.6** ±1.0 · #277 of 935 · from 16 benchmark results across 6 sources
+**score 56.6** ±1.0 · #276 of 934 · from 16 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -14,20 +14,20 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    87.1%    61.7   2025-03-11   23% ▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    87.1%    61.8   2025-03-11   23% ▇▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    44.7%    53.2   2025-03-10   17% ▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        50.6%    62.5   2026-08-28   10% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            1.0%    49.7   2026-08-28    1% ▇
 <a name="card-deepseek-ai--deepseek-r1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>              59.1%    56.3   2026-09-25   16% ▇▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspec…</a>  53.1%    56.9   2026-09-25    9% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                 69.7%    58.0   2026-09-25    4% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                 69.7%    58.1   2026-09-25    4% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                  93.9%    55.9   2026-09-25    4% ▇
 <a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>  53.2%    55.9   2025-05-31    3% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  66.8%    54.8   2025-05-31    2% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  31.3%    49.6   2025-05-31    2% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  72.7%    83.3   2025-05-31    0% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  34.3%    52.5   2025-04-28    5% ▇
-<a name="paper-2505.22113v1-thinkbench"></a>THINK-Bench: Evaluati…  <a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accu…</a>  70.2%    45.0   2025-05-28    3% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  72.7%    83.4   2025-05-31    0% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  34.3%    52.6   2025-04-28    5% ▇
+<a name="paper-2505.22113v1-thinkbench"></a>THINK-Bench: Evaluati…  <a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accu…</a>  70.2%    45.1   2025-05-28    3% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  72.6%    52.4   2026-04-17    2% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  53.8%    13.0   2026-04-17    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇

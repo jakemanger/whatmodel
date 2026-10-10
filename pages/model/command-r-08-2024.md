@@ -6,7 +6,7 @@
 
 Cohere · released 2024-08 · 32.3B params · cc-by-nc-4.0
 
-**score 46.0** ±1.0 · #551 of 935 · from 16 benchmark results across 9 sources
+**score 46.0** ±1.0 · #550 of 934 · from 16 benchmark results across 9 sources
 
 ## How the score was worked out
 
@@ -18,8 +18,8 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>         11.6%    44.6   2025-04-14    6% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                      74.3%    46.0   2025-04-14    5% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Fe…</a>   11.0%    42.5   2025-04-14    4% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>    34.3%    49.0   2025-04-14    4% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>             47.3%    49.5   2025-04-14    3% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>    34.3%    49.1   2025-04-14    4% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>             47.3%    49.6   2025-04-14    3% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises…</a>    1.8%    43.6   2025-04-14    3% ▇
 <a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>             30.8%    45.0   2024-10-22   31% ▇▇▇▇
 <a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>   38.3%    44.1   2024-09-11   16% ▇▇

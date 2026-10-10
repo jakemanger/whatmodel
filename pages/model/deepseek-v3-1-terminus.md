@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-09 · 671B params (37B active) · mit
 
-**score 66.6** ±1.3 · #128 of 935 · from 11 benchmark results across 2 sources
+**score 66.6** ±1.3 · #128 of 934 · from 11 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -18,13 +18,13 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">GPQA Diamond (lab)</a>               80.7%    66.0   2025-09-22   13% ▇▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Verified (lab)</a>         68.4%    67.4   2025-09-22    9% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Humanity's Last Exam (lab)</a>       21.7%    68.9   2025-09-22    7% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">LiveCodeBench (version unspec…</a>   74.9%    67.4   2025-09-22    6% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">LiveCodeBench (version unspec…</a>   74.9%    67.5   2025-09-22    6% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp-ZH (lab)</a>              45.0%    63.2   2025-09-22    6% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">MMLU-Pro (lab)</a>                   85.0%    66.5   2025-09-22    6% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Multilingual (lab)</a>     57.8%    66.3   2025-09-22    6% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Multilingual (lab)</a>     57.8%    66.4   2025-09-22    6% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp (lab)</a>                 38.5%    65.4   2025-09-22    5% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Terminal-Bench (pre-2.0 relea…</a>   36.7%    68.5   2025-09-22    4% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1417.2    67.9   2026-10-02   14% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1417.2    68.0   2026-10-02   14% ▇▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 66.6
 </pre>

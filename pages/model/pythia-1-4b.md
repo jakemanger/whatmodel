@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 1.41B params · apache-2.0
 
-**score 18.9** ±1.6 · #906 of 935 · from 6 benchmark results across 1 source · † every result so far was reported by its maker
+**score 18.9** ±1.6 · #905 of 934 · from 6 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -15,9 +15,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  60.6%    20.0   2023-05-31   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      86.5%    18.4   2023-05-31   18% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      86.5%    18.5   2023-05-31   18% ▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                57.3%    17.6   2023-05-31   17% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             26.0%    14.1   2023-05-31   14% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             26.0%    14.2   2023-05-31   14% ▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      71.1%    18.4   2023-05-31   13% ▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  61.6%    22.1   2023-05-31   12% ▇
 prior                   pull toward the middle                   50.0                 1% ▇

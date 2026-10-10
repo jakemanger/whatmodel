@@ -6,7 +6,7 @@
 
 OpenLM Research · released 2023-07 · apache-2.0
 
-**score 29.5** ±0.9 · #848 of 935 · from 12 benchmark results across 2 sources
+**score 29.5** ±0.9 · #847 of 934 · from 12 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -18,8 +18,8 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">WinoGrande</a>                      65.8%    28.4   2024-04-08   11% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">BoolQ</a>                           71.4%    29.3   2024-04-08    9% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">ARC Easy</a>                        69.7%    31.1   2024-04-08    6% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">HellaSwag</a>                       74.6%    31.2   2024-04-08    5% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">SciQ</a>                            93.8%    32.0   2024-04-08    5% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">HellaSwag</a>                       74.6%    31.3   2024-04-08    5% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">SciQ</a>                            93.8%    32.1   2024-04-08    5% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">OpenBookQA</a>                      30.2%    29.8   2024-04-08    5% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">PIQA</a>                            79.2%    32.7   2024-04-08    4% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">Social IQA</a>                      42.0%    24.9   2024-04-08    3% ▇

@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                       score  implies  date        weight
 <a name="paper-2601.03286v1-hyperclova-x-32b-think"></a>HyperCLOVA X 32B Think  <a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard (lab)</a>   9.9%    64.2   2026-01-03   30% ▇▇▇▇
                         <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Telecom (lab)</a>     65.1%    69.4   2026-01-03   28% ▇▇▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail (lab)</a>      71.6%    68.1   2026-01-03   15% ▇▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline (lab)</a>     58.0%    67.7   2026-01-03   10% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail (lab)</a>      71.6%    68.2   2026-01-03   15% ▇▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline (lab)</a>     58.0%    67.8   2026-01-03   10% ▇
                         <a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag (lab)</a>            57.2%    31.7   2026-01-03    7% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU (lab)</a>                 87.7%    61.6   2026-01-03    6% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU (lab)</a>                 87.7%    61.7   2026-01-03    6% ▇
                         <a href="https://arxiv.org/html/2601.03286v1#S5.T5">PIQA (lab)</a>                 76.7%    24.8   2026-01-03    2% ▇
 prior                   pull toward the middle              50.0                 2% ▇
                         weighted average                  = 63.2

@@ -6,7 +6,7 @@
 
 xDAN-AI · released 2023-12 · 7.24B params · cc-by-4.0
 
-**score 35.7** ±0.8 · #781 of 935 · from 3 benchmark results across 1 source
+**score 35.7** ±0.8 · #780 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 

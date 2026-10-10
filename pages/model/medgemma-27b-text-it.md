@@ -6,7 +6,7 @@
 
 Google · released 2025-05 · 27.01B params · health-ai-developer-foundations
 
-**score 57.1** ±3.5 · #270 of 935 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 57.2** ±3.5 · #269 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -15,9 +15,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  40.5%    59.1   2025-12-07   60% ▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  79.5%    54.8   2025-07-15   35% ▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  79.5%    54.9   2025-07-15   35% ▇▇▇▇
 prior                   pull toward the middle                   50.0                 5% ▇
-                        weighted average                       = 57.1
+                        weighted average                       = 57.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~16.55GB   57.1
+4-bit q4_k_m  ~16.55GB   57.2
 </pre>
 
 ```sh

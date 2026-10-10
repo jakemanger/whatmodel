@@ -6,7 +6,7 @@
 
 Inception (G42) · released 2024-08 · 30.82B params · apache-2.0
 
-**score 45.3** ±3.0 · #571 of 935 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 45.4** ±3.0 · #569 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                            score  implies  date    
 <a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>  28.5%    42.7   2026-04-06   67% ▇▇▇▇▇▇▇▇
                         <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  30.8%    50.6   2025-09-28   29% ▇▇▇▇
 prior                   pull toward the middle                   50.0                 4% ▇
-                        weighted average                       = 45.3
+                        weighted average                       = 45.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit fp32  ~123.27GB   45.3
+4-bit fp32  ~123.27GB   45.4
 </pre>
 
 ```sh

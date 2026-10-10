@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-09 · 1.42B params · mit
 
-**score 33.1** ±0.8 · #809 of 935 · from 18 benchmark results across 2 sources
+**score 33.1** ±0.8 · #808 of 934 · from 18 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -22,9 +22,9 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">HellaSwag</a>                       62.6%    20.7   2024-04-08    3% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">SciQ</a>                            93.2%    30.2   2024-04-08    3% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">PIQA</a>                            76.3%    27.1   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">Social IQA</a>                      55.4%    47.8   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">Social IQA</a>                      55.4%    47.9   2024-04-08    2% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">LAMBADA (OpenAI version), las…</a>  52.7%    10.5   2024-04-08    1% ▇
-<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge (lab)</a>             44.4%    33.9   2023-09-11    9% ▇
+<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge (lab)</a>             44.4%    34.0   2023-09-11    9% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">WinoGrande (lab)</a>                73.4%    34.4   2023-09-11    5% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA (lab)</a>                37.2%    40.0   2023-09-11    4% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">BoolQ (lab)</a>                     75.8%    32.4   2023-09-11    4% ▇

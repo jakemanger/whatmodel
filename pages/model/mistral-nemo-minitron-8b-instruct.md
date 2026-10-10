@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-10 · 8.41B params · nvidia-open-model-license
 
-**score 50.2** ±7.6 · #428 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.2** ±7.6 · #429 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  83.1%    50.2   2026-04-17   74% ▇▇▇▇▇▇▇▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  83.1%    50.3   2026-04-17   74% ▇▇▇▇▇▇▇▇▇
 prior                  pull toward the middle                   50.0                26% ▇▇▇
                        weighted average                       = 50.2
 </pre>

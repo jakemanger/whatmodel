@@ -6,7 +6,7 @@
 
 Cohere · released 2024-12 · 8.03B params · cc-by-nc-4.0
 
-**score 44.2** ±1.3 · #603 of 935 · from 14 benchmark results across 4 sources
+**score 44.2** ±1.3 · #602 of 934 · from 14 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -23,7 +23,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>            42.2%    46.1   2025-04-14    6% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">GPQA Diamond (simple-evals) (…</a>  26.3%    36.3   2025-04-14    5% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises…</a>   2.7%    45.2   2025-04-14    4% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">MMLU (simple-evals, zero-shot…</a>  65.2%    34.8   2025-04-14    3% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">MMLU (simple-evals, zero-shot…</a>  65.2%    34.9   2025-04-14    3% ▇
 <a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>  56.4%    53.5   2026-04-06   12% ▇
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  32.1%    50.9   2025-12-16    6% ▇
                         <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         51.7%    50.0   2025-06-14    4% ▇

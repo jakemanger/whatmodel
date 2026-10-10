@@ -6,7 +6,7 @@
 
 UTTER (EuroLLM) · released 2024-08 · 1.66B params · apache-2.0
 
-**score 22.7** ±3.4 · #893 of 935 · from 3 benchmark results across 3 sources
+**score 22.7** ±3.4 · #892 of 934 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 

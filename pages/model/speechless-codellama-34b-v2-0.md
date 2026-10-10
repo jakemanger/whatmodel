@@ -6,7 +6,7 @@
 
 uukuguy · released 2023-10 · llama2
 
-**score 48.9** ±0.9 · #465 of 935 · from 3 benchmark results across 1 source
+**score 48.9** ±0.9 · #464 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 

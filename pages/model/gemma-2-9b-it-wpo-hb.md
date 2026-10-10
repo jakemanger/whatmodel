@@ -6,7 +6,7 @@
 
 wzhouad (WPO) · released 2024-08 · 9.24B params
 
-**score 65.3** ±1.9 · #148 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 65.3** ±1.9 · #148 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

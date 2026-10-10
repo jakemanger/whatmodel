@@ -6,7 +6,7 @@
 
 Ghost X · released 2024-04 · 7.24B params · other (ghost-7b)
 
-**score 31.6** ±2.5 · #830 of 935 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.6** ±2.5 · #829 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

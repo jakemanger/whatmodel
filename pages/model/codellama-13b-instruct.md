@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 13.02B params · llama2
 
-**score 38.5** ±0.7 · #729 of 935 · from 14 benchmark results across 5 sources
+**score 38.5** ±0.7 · #728 of 934 · from 14 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -26,7 +26,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            43.3%    32.6   2023-11-20    3% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           23.0%    31.4   2023-11-20    3% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  37.8%    31.0   2023-11-20    1% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         29.7%    36.1   2025-04-01    5% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         29.7%    36.2   2025-04-01    5% ▇
                         <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>         28.2%    41.2   2025-04-01    5% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 38.5

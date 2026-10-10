@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-01 · 0.62B params · tongyi-qianwen-research
 
-**score 18.2** ±3.2 · #910 of 935 · from 3 benchmark results across 3 sources
+**score 18.3** ±3.2 · #909 of 934 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -18,7 +18,7 @@ source                  test                            score  implies  date    
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  25.4%     1.5   2024-02-22   19% ▇▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  37.4%    18.8   2026-04-17   10% ▇
 prior                   pull toward the middle                   50.0                 5% ▇
-                        weighted average                       = 18.2
+                        weighted average                       = 18.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_0    ~0.395GB   18.2
-4-bit q4_k_m   ~0.41GB   18.2
+4-bit q4_0    ~0.395GB   18.3
+4-bit q4_k_m   ~0.41GB   18.3
 </pre>
 
 ```sh

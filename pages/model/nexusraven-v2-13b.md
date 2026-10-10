@@ -6,7 +6,7 @@
 
 Nexusflow · released 2023-12 · 13.02B params · other
 
-**score 38.3** ±6.3 · #738 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 38.3** ±6.3 · #737 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

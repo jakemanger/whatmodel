@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-07 · 70.55B params · llama3
 
-**score 48.5** ±1.0 · #476 of 935 · from 14 benchmark results across 2 sources
+**score 48.5** ±1.0 · #476 of 934 · from 14 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -15,17 +15,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="first-party-nous-research-scores"></a>Nous Research vendor-…  <a href="https://arxiv.org/pdf/2408.11857v1">BIG-Bench Hard (lab)</a>            67.8%    47.9   2024-08-15    9% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (la…</a>  37.7%    47.5   2024-08-15    8% ▇
+                        <a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (la…</a>  37.7%    47.6   2024-08-15    8% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (lab)</a>             65.5%    46.1   2024-08-15    8% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">MMLU (lab)</a>                      79.1%    49.8   2024-08-15    6% ▇
+                        <a href="https://arxiv.org/pdf/2408.11857v1">MMLU (lab)</a>                      79.1%    49.9   2024-08-15    6% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (lab)</a>                  47.2%    47.6   2024-08-15    5% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (lab)</a>                83.2%    47.1   2024-08-15    5% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (lab)</a>                49.4%    46.0   2024-08-15    5% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (lab)</a>                     88.0%    47.1   2024-08-15    4% ▇
+                        <a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (lab)</a>                     88.0%    47.2   2024-08-15    4% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (lab)</a>                 88.2%    49.3   2024-08-15    4% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">MuSR (lab)</a>                      50.7%    48.0   2024-08-15    2% ▇
+                        <a href="https://arxiv.org/pdf/2408.11857v1">MuSR (lab)</a>                      50.7%    48.1   2024-08-15    2% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">IFEval (aggregation unspecifi…</a>  81.2%    53.3   2024-08-15    2% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">PIQA (lab)</a>                      84.4%    46.0   2024-08-15    1% ▇
+                        <a href="https://arxiv.org/pdf/2408.11857v1">PIQA (lab)</a>                      84.4%    46.1   2024-08-15    1% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">TruthfulQA MC2 (lab)</a>            63.3%    46.8   2024-08-15    1% ▇
 <a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            40.1%    49.7   2024-10-22   38% ▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 0% ▇

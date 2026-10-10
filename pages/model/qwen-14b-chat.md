@@ -6,7 +6,7 @@
 
 Alibaba · released 2023-09 · 14.2B params · tongyi-qianwen
 
-**score 38.4** ±1.0 · #732 of 935 · from 5 benchmark results across 4 sources
+**score 38.4** ±1.0 · #732 of 934 · from 5 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                        46.3%    38.8   2024-03-28   46% ▇▇▇▇▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                        46.3%    38.9   2024-03-28   46% ▇▇▇▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                32.1%    39.8   2024-03-28   22% ▇▇▇
 <a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   12.4%    36.5   2025-08-09   20% ▇▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1139.3    34.7   2026-10-02    8% ▇

@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 3.09B params · qwen-research
 
-**score 47.7** ±1.2 · #500 of 935 · from 9 benchmark results across 2 sources
+**score 47.7** ±1.2 · #501 of 934 · from 9 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -19,7 +19,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                      73.6%    46.7   2024-11-12   10% ▇
                         <a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                 72.1%    51.7   2024-11-12    8% ▇
                         <a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                     62.4%    46.7   2024-11-12    7% ▇
-                        <a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>   35.8%    48.6   2024-11-12    5% ▇
+                        <a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>   35.8%    48.7   2024-11-12    5% ▇
                         <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                53.2%    47.4   2024-11-12    4% ▇
                         <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                56.0%    51.8   2024-11-12    1% ▇
 <a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  39.1%    44.4   2024-11-04   26% ▇▇▇

@@ -20,13 +20,13 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>             56.0%    34.3   2023-02-27    9% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>                      63.4%    41.8   2023-02-27    6% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>                      37.7%    37.5   2023-02-27    6% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>                77.0%    36.5   2023-02-27    6% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>                77.0%    36.6   2023-02-27    6% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                60.2%    37.7   2023-02-27    6% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>                     85.3%    39.3   2023-02-27    5% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>                 84.2%    39.1   2023-02-27    4% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                52.3%    34.3   2023-02-27    3% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                  78.9%    35.5   2023-02-27    3% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>                      82.8%    38.7   2023-02-27    2% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>                      82.8%    38.8   2023-02-27    2% ▇
 <a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  35.3%    39.7   2024-04-24   11% ▇
                         <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  52.4%    41.8   2024-04-24    6% ▇
 prior                   pull toward the middle                   50.0                 1% ▇

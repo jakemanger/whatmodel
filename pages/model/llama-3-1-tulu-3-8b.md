@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-11 · 8.03B params · llama3.1
 
-**score 44.1** ±0.7 · #607 of 935 · from 26 benchmark results across 4 sources
+**score 44.1** ±0.7 · #606 of 934 · from 26 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -18,15 +18,15 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GSM8K</a>                            84.3%    45.2   2026-09-25    7% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA</a>                       79.8%    44.0   2026-09-25    7% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU</a>                             65.0%    43.4   2026-09-25    7% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard</a>                   55.5%    41.0   2026-09-25    6% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard</a>                   55.5%    41.1   2026-09-25    6% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MGSM</a>                             58.6%    44.4   2026-09-25    6% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU-Pro</a>                         40.9%    41.5   2026-09-25    4% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Multilingual MMLU (Microsoft)</a>    54.5%    43.3   2026-09-25    4% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Multilingual MMLU (Microsoft)</a>    54.5%    43.4   2026-09-25    4% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH</a>                             46.1%    42.5   2026-09-25    3% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande</a>                       65.4%    41.6   2026-09-25    3% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Social IQA</a>                       73.4%    45.2   2026-09-25    2% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">HellaSwag</a>                        80.9%    47.1   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BoolQ</a>                            79.3%    43.6   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BoolQ</a>                            79.3%    43.7   2026-09-25    2% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified)</a>        29.9%    44.7   2026-09-25    1% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">TruthfulQA MC2</a>                   64.1%    42.5   2026-09-25    1% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">PIQA</a>                             78.3%    39.8   2026-09-25    1% ▇

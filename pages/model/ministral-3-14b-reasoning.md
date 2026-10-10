@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 13.9B params · apache-2.0
 
-**score 57.8** ±1.0 · #256 of 935 · from 19 benchmark results across 5 sources
+**score 57.8** ±1.0 · #257 of 934 · from 19 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,17 +14,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="card-mistralai-ministral-3-8b-reasoning-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">GPQA Diamond (lab)</a>               71.2%    58.6   2026-09-25   10% ▇
-                        <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2025 (lab)</a>                  85.0%    59.5   2026-09-25    8% ▇
-                        <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2024 (lab)</a>                  89.8%    60.1   2026-09-25    7% ▇
-                        <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">LiveCodeBench (version unspec…</a>   64.6%    58.8   2026-09-25    4% ▇
 <a name="card-mistralai-ministral-3-3b-reasoning-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">GPQA Diamond (lab)</a>               71.2%    58.6   2026-09-25   10% ▇
                         <a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">AIME 2025 (lab)</a>                  85.0%    59.5   2026-09-25    8% ▇
                         <a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">AIME 2024 (lab)</a>                  89.8%    60.1   2026-09-25    7% ▇
                         <a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">LiveCodeBench (version unspec…</a>   64.6%    58.8   2026-09-25    4% ▇
+<a name="card-mistralai-ministral-3-8b-reasoning-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">GPQA Diamond (lab)</a>               71.2%    58.6   2026-09-25   10% ▇
+                        <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2025 (lab)</a>                  85.0%    59.5   2026-09-25    8% ▇
+                        <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2024 (lab)</a>                  89.8%    60.1   2026-09-25    7% ▇
+                        <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">LiveCodeBench (version unspec…</a>   64.6%    58.8   2026-09-25    4% ▇
 <a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.4807    55.8   2026-05-02   12% ▇
                         <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   48.1%    55.8   2026-05-02    6% ▇
-<a name="card3-jetbrains-mellum2-12b-a2-5b-thinking"></a>JetBrains/Mellum2-12B…  <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">GPQA Diamond</a>                     46.0%    51.9   2026-08-13    4% ▇
+<a name="card3-jetbrains-mellum2-12b-a2-5b-thinking"></a>JetBrains/Mellum2-12B…  <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">GPQA Diamond</a>                     46.0%    52.0   2026-08-13    4% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">MMLU-Redux</a>                       84.4%    56.7   2026-08-13    3% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">LiveCodeBench v6 (window unsp…</a>   42.7%    48.8   2026-08-13    3% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">BFCL V4 (December 2025 archiv…</a>   35.9%    52.0   2026-08-13    2% ▇
@@ -39,7 +39,7 @@ prior                   pull toward the middle                    50.0          
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: mistralai/Ministral-3-8B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · mistralai/Ministral-3-3B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · JetBrains/Mellum2-12B-A2.5B-Thinking model card ([Apache-2.0](https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
+<sub>Licences: mistralai/Ministral-3-3B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · mistralai/Ministral-3-8B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · JetBrains/Mellum2-12B-A2.5B-Thinking model card ([Apache-2.0](https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 <details><summary>Not counted (4)</summary>
 

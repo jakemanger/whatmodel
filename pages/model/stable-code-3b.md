@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-01 · 2.8B params · stability-ai-community
 
-**score 32.7** ±0.6 · #815 of 935 · from 15 benchmark results across 4 sources
+**score 32.7** ±0.6 · #814 of 934 · from 15 benchmark results across 4 sources
 
 ## How the score was worked out
 

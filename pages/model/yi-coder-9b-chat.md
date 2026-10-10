@@ -6,7 +6,7 @@
 
 01.AI · released 2024-08 · 8.83B params · apache-2.0
 
-**score 48.3** ±1.4 · #479 of 935 · from 8 benchmark results across 5 sources
+**score 48.3** ±1.4 · #478 of 934 · from 8 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -20,8 +20,8 @@ source                  test                            score  implies  date    
 <a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   3.9%    38.5   2025-05-31    5% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  33.0%    43.4   2025-05-31    4% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  32.4%    50.3   2025-05-31    3% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  52.1%   -12.0   2025-05-31    0% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  61.9%    39.1   2024-09-21    7% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  52.1%   -12.1   2025-05-31    0% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  61.9%    39.2   2024-09-21    7% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 48.3
 </pre>

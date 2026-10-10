@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 11.3B params · apache-2.0
 
-**score 33.6** ±1.2 · #803 of 935 · from 8 benchmark results across 4 sources
+**score 33.7** ±1.2 · #802 of 934 · from 8 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -20,10 +20,10 @@ source                  test                                              score 
 <a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                                    43.9%    35.3   2024-03-10   23% ▇▇▇
                         <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                              54.5%    38.3   2024-03-10    8% ▇
 <a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>                    20.6%    31.9   2024-04-24   11% ▇
-                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>                    20.9%    23.0   2024-04-24    7% ▇
-<a name="paper-2306.02561v3-llmblender"></a>LLM-Blender: Ensembli…  <a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Ble…</a>  8.8100 mean rank (1-11)  -152.2   2023-06-30    0% ▇
+                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>                    20.9%    23.1   2024-04-24    7% ▇
+<a name="paper-2306.02561v3-llmblender"></a>LLM-Blender: Ensembli…  <a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Ble…</a>  8.8100 mean rank (1-11)  -152.4   2023-06-30    0% ▇
 prior                   pull toward the middle                                     50.0                 1% ▇
-                        weighted average                                         = 33.6
+                        weighted average                                         = 33.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,7 +34,7 @@ prior                   pull toward the middle                                  
 
 <pre>
 download        size  score
-4-bit fp32  ~45.07GB   33.6
+4-bit fp32  ~45.07GB   33.7
 </pre>
 
 ```sh

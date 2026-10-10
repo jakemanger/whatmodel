@@ -22,15 +22,15 @@ source                  test                                                   s
                         <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>                                              3.9%    27.2   2023-02-27    4% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>                                        79.2%    35.1   2023-02-27    4% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>                                             22.0%    28.1   2023-02-27    4% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>                                             46.9%    32.2   2023-02-27    4% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>                                             46.9%    32.3   2023-02-27    4% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                                       56.4%    38.5   2023-02-27    4% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                                         74.8%    32.1   2023-02-27    3% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                                       50.4%    33.2   2023-02-27    2% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                                         74.8%    32.2   2023-02-27    3% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                                       50.4%    33.3   2023-02-27    2% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>                                             80.1%    34.1   2023-02-27    1% ▇
 <a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                                         37.1%    30.3   2024-03-10   11% ▇
                         <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>                                              13.4%    28.2   2024-03-10   10% ▇
                         <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                                   46.2%    33.1   2024-03-10    4% ▇
-<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>                         21.3%    32.9   2024-04-24    5% ▇
+<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>                         21.3%    33.0   2024-04-24    5% ▇
                         <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>                         41.2%    36.3   2024-04-24    4% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                         975.0    15.0   2026-10-08    8% ▇
 <a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  2.6100 MT-Bench score (1-10)    11.4   2023-06-19    6% ▇

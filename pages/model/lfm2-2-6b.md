@@ -6,7 +6,7 @@
 
 Liquid AI · released 2025-09 · 2.57B params · lfm1.0
 
-**score 47.4** ±5.1 · #508 of 935 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.4** ±5.1 · #507 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

@@ -6,7 +6,7 @@
 
 Nexusflow · released 2024-11 · 72.7B params · nexusflow-research
 
-**score 56.3** ±1.4 · #282 of 935 · from 5 benchmark results across 4 sources
+**score 56.4** ±1.4 · #281 of 934 · from 5 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -15,12 +15,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                             score  implies  date        weight
 <a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>   85.0%    59.2   2024-11-14   36% ▇▇▇▇
-<a name="arena-hard-auto-readme-v2"></a>Arena-Hard-Auto v2.0-…  <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts …</a>   16.4%    53.1   2025-05-01   30% ▇▇▇▇
+<a name="arena-hard-auto-readme-v2"></a>Arena-Hard-Auto v2.0-…  <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts …</a>   16.4%    53.2   2025-05-01   30% ▇▇▇▇
                         <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writ…</a>   18.1%    50.7   2025-05-01    5% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1314.1    55.6   2026-10-02   18% ▇▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   41.7%    60.4   2025-04-28   10% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   41.7%    60.5   2025-04-28   10% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 56.3
+                        weighted average                        = 56.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,8 +33,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~44.12GB   56.3
-8-bit q8_0    ~87.74GB   56.3
+4-bit q4_k_m  ~44.12GB   56.4
+8-bit q8_0    ~87.74GB   56.4
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Xiaomi · released 2026-04 · 310B params (15B active) · mit
 
-**score 68.5** ±1.0 · #101 of 935 · from 18 benchmark results across 4 sources
+**score 68.5** ±1.0 · #101 of 934 · from 18 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -16,22 +16,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                             score  implies  date        weight
 <a name="paper-2607.20062v2-solar-open-2"></a>Solar Open 2 Technica…  <a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond</a>                     83.0%    67.8   2026-07-24   15% ▇▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam</a>             24.3%    70.0   2026-07-24    7% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>                        92.3%    64.2   2026-07-24    6% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>                        92.3%    64.3   2026-07-24    6% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro</a>                         84.6%    67.3   2026-07-24    5% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>             13.4%    72.4   2026-07-24    5% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>             13.4%    72.5   2026-07-24    5% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>              41.7%    74.4   2026-07-24    4% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecif…</a>   67.1%    63.1   2026-07-24    4% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecif…</a>   67.1%    63.2   2026-07-24    4% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge</a>                   39.0%    58.5   2026-07-24    3% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unsp…</a>   89.1%    71.4   2026-07-24    3% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>           63.9%    75.0   2026-07-24    3% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026</a>               61.4%    56.6   2026-07-24    3% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking</a>                  8.7%    62.4   2026-07-24    3% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unsp…</a>   89.1%    71.5   2026-07-24    3% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>           63.9%    75.1   2026-07-24    3% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026</a>               61.4%    56.7   2026-07-24    3% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking</a>                  8.7%    62.5   2026-07-24    3% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>               73.0%    73.3   2026-07-24    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1437.6    70.6   2026-10-01   13% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1437.6    70.7   2026-10-01   13% ▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1433.6    69.9   2026-10-02    8% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1233.2    70.3   2026-10-02    6% ▇
 <a name="paper-2606.05405v2"></a>Agents' Last Exam       <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall ful…</a>    8.6%    69.3   2026-06-11    5% ▇
-<a name="first-party-xiaomi-scores"></a>Xiaomi MiMo vendor-re…  <a href="https://mimo.xiaomi.com/mimo-v2-5">CharXiv (reasoning questions)…</a>   81.0%    71.3   2026-04-22    3% ▇
+<a name="first-party-xiaomi-scores"></a>Xiaomi MiMo vendor-re…  <a href="https://mimo.xiaomi.com/mimo-v2-5">CharXiv (reasoning questions)…</a>   81.0%    71.4   2026-04-22    3% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
                         weighted average                        = 68.5
 </pre>

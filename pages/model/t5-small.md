@@ -6,7 +6,7 @@
 
 Google · released 2019-10 · 0.061B params · apache-2.0
 
-**score 47.7** ±10.1 · #498 of 935 · from 3 benchmark results across 1 source
+**score 47.7** ±10.1 · #499 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source  test                            score  implies  date        weight
 <a name="copen-emnlp2022-zero-shot"></a>COPEN   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  40.1%    43.9   2022-12-07   52% ▇▇▇▇▇▇
-        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  53.2%   237.7   2022-12-07    2% ▇
+        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  53.2%   237.8   2022-12-07    2% ▇
         <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>   6.5%  -109.9   2022-12-07    1% ▇
 prior   pull toward the middle                   50.0                45% ▇▇▇▇▇
         weighted average                       = 47.7

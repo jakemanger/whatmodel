@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 7B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 35.2** ±1.8 · #785 of 935 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 35.2** ±1.8 · #784 of 934 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            48.5%    36.5   2023-11-20   40% ▇▇▇▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  36.9%    30.4   2023-11-20   25% ▇▇▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            48.5%    36.6   2023-11-20   40% ▇▇▇▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  36.9%    30.5   2023-11-20   25% ▇▇▇
         <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     34.0%    35.5   2023-11-20   14% ▇▇
         <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      50.4%    36.9   2023-11-20   14% ▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  46.4%    38.2   2023-11-20    5% ▇
+        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  46.4%    38.3   2023-11-20    5% ▇
 prior   pull toward the middle                   50.0                 1% ▇
         weighted average                       = 35.2
 </pre>

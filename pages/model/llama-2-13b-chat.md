@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 13.02B params · llama2
 
-**score 32.8** ±0.9 · #813 of 935 · from 23 benchmark results across 13 sources
+**score 32.8** ±0.9 · #812 of 934 · from 23 benchmark results across 13 sources
 
 ## How the score was worked out
 
@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                                                   score  implies  date        weight
 <a name="paper-2311.11045v2"></a>Orca 2: Teaching Smal…  <a href="https://arxiv.org/html/2311.11045v2">BIG-Bench Hard</a>                                         33.6%    29.8   2023-11-21    7% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>                                          61.2%    38.4   2023-11-21    6% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>                                          61.2%    38.5   2023-11-21    6% ▇
                         <a href="https://arxiv.org/html/2311.11045v2">GSM8K</a>                                                  25.1%    26.6   2023-11-21    5% ▇
                         <a href="https://arxiv.org/html/2311.11045v2">MMLU</a>                                                   49.1%    36.5   2023-11-21    4% ▇
                         <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>                                        38.9%    34.4   2023-11-21    4% ▇
@@ -32,7 +32,7 @@ source                  test                                                   s
 <a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>                         33.0%    33.9   2024-01-03    3% ▇
 <a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>                         20.9%    35.7   2025-06-03    3% ▇
 <a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>                         29.4%    25.3   2026-09-19    3% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>                         58.0%    36.1   2024-04-19    3% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>                         58.0%    36.2   2024-04-19    3% ▇
 <a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>                          2.0%    25.2   2026-04-06    3% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>                         57.6%    33.8   2026-04-17    2% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>                         89.5%    37.7   2025-10-16    1% ▇

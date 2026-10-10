@@ -6,7 +6,7 @@
 
 Abacus.AI · released 2024-09 · 72.71B params · other (tongyi-qianwen)
 
-**score 55.0** ±2.5 · #313 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.0** ±2.5 · #312 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  66.9%    55.1   2024-10-05   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  66.9%    55.2   2024-10-05   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 3% ▇
                         weighted average                       = 55.0
 </pre>

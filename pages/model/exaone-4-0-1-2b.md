@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-07 · 1.28B params · exaone
 
-**score 47.3** ±1.4 · #509 of 935 · from 9 benchmark results across 1 source · † every result so far was reported by its maker
+**score 47.3** ±1.4 · #508 of 934 · from 9 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">AIME 2025 (lab)</a>                 45.2%    48.4   2025-07-11   28% ▇▇▇
                         <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">GPQA Diamond (lab)</a>              52.0%    51.9   2025-07-11   22% ▇▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Pro (lab)</a>                  59.3%    49.7   2025-07-11   14% ▇▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Pro (lab)</a>                  59.3%    49.7   2025-07-11   13% ▇▇
                         <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">HMMT February 2025 (lab)</a>        34.0%    43.3   2025-07-11   11% ▇
                         <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Redux (lab)</a>                71.5%    43.2   2025-07-11    7% ▇
                         <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Retail (lab)</a>            28.1%    42.5   2025-07-11    6% ▇

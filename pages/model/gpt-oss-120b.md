@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-08 · 117B params (5.1B active) · apache-2.0
 
-**score 62.5** ±0.6 · #178 of 935 · from 55 benchmark results across 21 sources
+**score 62.6** ±0.6 · #176 of 934 · from 55 benchmark results across 21 sources
 
 ## How the score was worked out
 
@@ -22,12 +22,12 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2508.10925v1">Humanity's Last Exam (lab)</a>       14.9%    63.1   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">MMLU (lab)</a>                       90.0%    62.5   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">τ-bench Retail (lab)</a>             67.8%    63.7   2025-08-08    1% ▇
-                        <a href="https://arxiv.org/html/2508.10925v1">SimpleQA (lab)</a>                   16.8%    62.4   2025-08-08    1% ▇
-                        <a href="https://arxiv.org/html/2508.10925v1">MMMLU (lab)</a>                      81.3%    63.2   2025-08-08    1% ▇
+                        <a href="https://arxiv.org/html/2508.10925v1">SimpleQA (lab)</a>                   16.8%    62.5   2025-08-08    1% ▇
+                        <a href="https://arxiv.org/html/2508.10925v1">MMMLU (lab)</a>                      81.3%    63.3   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">τ-bench Airline (lab)</a>            49.2%    64.2   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">Humanity's Last Exam with too…</a>   19.0%    56.6   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">HealthBench (lab)</a>                57.6%    77.9   2025-08-08    0% ▇
-                        <a href="https://arxiv.org/html/2508.10925v1">HealthBench Hard (lab)</a>           30.0%    76.9   2025-08-08    0% ▇
+                        <a href="https://arxiv.org/html/2508.10925v1">HealthBench Hard (lab)</a>           30.0%    77.0   2025-08-08    0% ▇
 <a name="primeintellect-intellect3-card-eval"></a>Prime Intellect INTEL…  <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">GPQA Diamond</a>                     70.0%    61.9   2025-11-27    6% ▇
                         <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024</a>                        75.8%    59.0   2025-11-27    4% ▇
                         <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2025</a>                        77.7%    62.5   2025-11-27    3% ▇
@@ -40,37 +40,37 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified</a>               31.0%    60.9   2026-10-06    1% ▇
                         <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Multi-IF (aggregation unspeci…</a>   83.0%    65.7   2026-10-06    1% ▇
                         <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Airline</a>                 45.3%    58.5   2026-10-06    1% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     75.8%    65.6   2025-12-11    6% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         88.9%    68.6   2025-12-11    4% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     75.8%    65.7   2025-12-11    6% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         88.9%    68.7   2025-12-11    4% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            20.0%    75.9   2025-12-11    1% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>      0.0%    57.2   2026-08-27    0% ▇
 <a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>   41.8%    60.9   2025-08-06    9% ▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5771    65.2   2026-05-02    4% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5771    65.3   2026-05-02    4% ▇
                         <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   58.7%    65.1   2026-05-02    2% ▇
 <a name="servicenow-browsergym-leaderboard"></a>ServiceNow BrowserGym…  <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-120b/workarena-l1.json">BrowserGym WorkArena-L1 (Agen…</a>   50.9%    61.9   2025-08-07    2% ▇
-                        <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-120b/workarena-l2.json">BrowserGym WorkArena-L2 (Agen…</a>   11.5%    58.1   2025-08-07    2% ▇
+                        <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-120b/workarena-l2.json">BrowserGym WorkArena-L2 (Agen…</a>   11.5%    58.2   2025-08-07    2% ▇
                         <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-120b/miniwob.json">BrowserGym MiniWoB (AgentLab …</a>   66.4%    61.0   2025-08-07    1% ▇
 <a name="acl-kcl-2026"></a>Korean Canonical Lega…  <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>                31.6%    59.5   2026-09-25    2% ▇
-                        <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                 29.2%    51.6   2026-09-25    1% ▇
+                        <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                 29.2%    51.7   2026-09-25    1% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1351.6    60.1   2026-10-02    3% ▇
 <a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   18.7%    61.4   2026-01-17    2% ▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1167.5    60.5   2026-05-10    2% ▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1167.5    60.6   2026-05-10    2% ▇
 <a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   37.2%    55.8   2025-09-04    2% ▇
 <a name="multiverse-hypernova-60b-2602-card"></a>Multiverse Computing …  <a href="https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2602/blob/382391945c26d1ab65fc8bdc174865067cf80cd1/README.md">Terminal-Bench Hard</a>              22.0%    68.1   2026-08-07    2% ▇
 <a name="report-2601.07022v1"></a>Solar Open Technical …  <a href="https://arxiv.org/html/2601.07022v1">τ²-bench Telecom</a>                 57.7%    65.4   2026-01-11    2% ▇
 <a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   43.2%    55.3   2026-02-12    1% ▇
 <a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   75.0%    69.3   2025-09-20    1% ▇
 <a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   76.4%    57.9   2026-08-11    1% ▇
-<a name="paper-2609.13916v1-north-small-translate"></a>Cohere                  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>   83.8%    65.6   2026-09-12    1% ▇
+<a name="paper-2609.13916v1-north-small-translate"></a>Cohere                  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>   83.8%    65.7   2026-09-12    1% ▇
                         <a href="https://arxiv.org/html/2609.13916v1">WMT24++</a>                          76.6%    63.9   2026-09-12    0% ▇
-                        <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, …</a>   72.3%    60.6   2026-09-12    0% ▇
+                        <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, …</a>   72.3%    60.7   2026-09-12    0% ▇
 <a name="paper-2605.09063v3"></a>Soohak: A Mathematici…  <a href="https://arxiv.org/html/2605.09063v3">SOOHAK-Mini (702 problems, Av…</a>   61.0%    70.6   2026-05-19    0% ▇
-                        <a href="https://arxiv.org/html/2605.09063v3">SOOHAK Challenge (340 problem…</a>   11.3%    67.6   2026-05-19    0% ▇
+                        <a href="https://arxiv.org/html/2605.09063v3">SOOHAK Challenge (340 problem…</a>   11.3%    67.7   2026-05-19    0% ▇
 <a name="paper-2605.08498v1"></a>MathConstraint: Autom…  <a href="https://arxiv.org/html/2605.08498v1">MathConstraint full release, …</a>   39.5%    74.3   2026-05-08    1% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   97.6%    68.3   2025-10-16    0% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   97.6%    68.4   2025-10-16    0% ▇
                         <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   85.8%   -76.1   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 62.5
+                        weighted average                        = 62.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -85,7 +85,7 @@ api (Groq) · $0.26/M blended · $0.15 in / $0.6 out per 1M tokens · [console.g
 
 <pre>
 download        size  score
-MXFP4 mxfp4  ~70.7GB   62.5
+MXFP4 mxfp4  ~70.7GB   62.6
 </pre>
 
 ```sh

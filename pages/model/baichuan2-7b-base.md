@@ -6,7 +6,7 @@
 
 Baichuan · released 2023-08 · other
 
-**score 30.3** ±0.9 · #844 of 935 · from 11 benchmark results across 2 sources
+**score 30.3** ±0.9 · #843 of 934 · from 11 benchmark results across 2 sources
 
 ## How the score was worked out
 

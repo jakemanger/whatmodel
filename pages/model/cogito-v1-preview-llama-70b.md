@@ -6,7 +6,7 @@
 
 Deep Cogito · released 2025-03 · 70.55B params · llama3.1
 
-**score 61.3** ±6.6 · #200 of 935 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.3** ±6.6 · #199 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-02 · 7.72B params · tongyi-qianwen
 
-**score 36.8** ±0.8 · #760 of 935 · from 9 benchmark results across 8 sources
+**score 36.8** ±0.8 · #759 of 934 · from 9 benchmark results across 8 sources
 
 ## How the score was worked out
 

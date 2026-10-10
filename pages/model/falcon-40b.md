@@ -6,7 +6,7 @@
 
 TII · released 2023-05 · 41.8B params · apache-2.0
 
-**score 34.1** ±1.3 · #799 of 935 · from 11 benchmark results across 4 sources
+**score 34.1** ±1.3 · #798 of 934 · from 11 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -20,7 +20,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>                           22.4%    29.9   2024-06-03    9% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                            53.5%    35.4   2024-06-03    9% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">MBPP</a>                            36.5%    32.5   2024-06-03    7% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                          40.3%    35.0   2024-06-03    3% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                          40.3%    35.1   2024-06-03    3% ▇
 <a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  26.6%    35.5   2024-04-24   12% ▇
                         <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  42.3%    36.1   2024-04-24    8% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  60.3%    38.2   2024-02-05    5% ▇

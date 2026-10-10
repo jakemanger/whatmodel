@@ -6,7 +6,7 @@
 
 BAAI · released 2024-07 · 70.55B params · llama3.1
 
-**score 53.0** ±1.6 · #362 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.0** ±1.6 · #363 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

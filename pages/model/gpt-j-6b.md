@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-06 · 6.05B params · apache-2.0
 
-**score 25.1** ±0.7 · #882 of 935 · from 25 benchmark results across 4 sources
+**score 25.1** ±0.7 · #881 of 934 · from 25 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -23,7 +23,7 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">PIQA</a>                            75.6%    26.1   2024-04-08    2% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">OpenBookQA</a>                      29.0%    27.5   2024-04-08    1% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">Social IQA</a>                      41.1%    22.6   2024-04-08    1% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">LAMBADA (OpenAI version), las…</a>  68.2%    27.0   2024-04-08    1% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">LAMBADA (OpenAI version), las…</a>  68.2%    27.1   2024-04-08    1% ▇
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       12.2%    23.6   2024-12-26   20% ▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      11.0%    23.8   2024-12-26   13% ▇▇
 <a name="paper-2204.06745v1"></a>GPT-NeoX-20B: An Open…  <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge (lab)</a>             34.0%    27.0   2022-04-14    5% ▇

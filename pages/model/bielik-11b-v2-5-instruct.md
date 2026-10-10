@@ -6,7 +6,7 @@
 
 SpeakLeash · released 2025-05 · 11.17B params · apache-2.0
 
-**score 52.5** ±4.2 · #374 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 52.6** ±4.2 · #371 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source            test                            score  implies  date        weight
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB  <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  69.5%    52.7   2026-08-11   92% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB  <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  69.5%    52.8   2026-08-11   92% ▇▇▇▇▇▇▇▇▇▇▇
 prior             pull toward the middle                   50.0                 8% ▇
-                  weighted average                       = 52.5
+                  weighted average                       = 52.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior             pull toward the middle                   50.0                 
 
 <pre>
 download        size  score
-4-bit fp16  ~22.34GB   52.5
+4-bit fp16  ~22.34GB   52.6
 </pre>
 
 ```sh

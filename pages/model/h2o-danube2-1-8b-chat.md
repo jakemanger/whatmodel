@@ -6,7 +6,7 @@
 
 H2O.ai · released 2024-04 · 1.83B params · apache-2.0
 
-**score 28.7** ±3.4 · #856 of 935 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 28.7** ±3.4 · #855 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  32.8%    28.6   2026-08-11   63% ▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  47.7%    25.6   2024-04-09   32% ▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  47.7%    25.7   2024-04-09   32% ▇▇▇▇
 prior                   pull toward the middle                   50.0                 5% ▇
                         weighted average                       = 28.7
 </pre>

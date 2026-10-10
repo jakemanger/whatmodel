@@ -6,7 +6,7 @@
 
 Saama AI Labs · released 2024-04 · llama3
 
-**score 27.7** ±5.5 · #866 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 27.7** ±5.5 · #865 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

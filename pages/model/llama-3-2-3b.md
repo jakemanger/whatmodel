@@ -6,7 +6,7 @@
 
 Meta · released 2024-09 · 3.21B params · llama3.2
 
-**score 38.4** ±0.5 · #731 of 935 · from 65 benchmark results across 17 sources
+**score 38.4** ±0.5 · #731 of 934 · from 65 benchmark results across 17 sources
 
 ## How the score was worked out
 
@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                             score  implies  date        weight
 <a name="card-microsoft-phi-4-mini-instruct"></a>microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">ARC Challenge</a>                    76.1%    40.2   2026-09-25    7% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GSM8K</a>                            75.6%    40.6   2026-09-25    5% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GSM8K</a>                            75.6%    40.7   2026-09-25    5% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA</a>                       72.6%    40.0   2026-09-25    4% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU</a>                             61.8%    42.2   2026-09-25    3% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MGSM</a>                             44.6%    38.7   2026-09-25    3% ▇
@@ -25,46 +25,46 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH</a>                             46.7%    43.5   2026-09-25    2% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Social IQA</a>                       68.3%    40.0   2026-09-25    1% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">HellaSwag</a>                        77.2%    44.0   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande</a>                       53.2%    26.5   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande</a>                       53.2%    26.6   2026-09-25    1% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BoolQ</a>                            71.4%    35.7   2026-09-25    1% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">TruthfulQA MC2</a>                   59.2%    37.7   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified)</a>        24.3%    29.5   2026-09-25    0% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified)</a>        24.3%    29.6   2026-09-25    0% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">PIQA</a>                             68.2%    20.6   2026-09-25    0% ▇
 <a name="granite-3-0-paper-github"></a>IBM Granite 3.0 Langu…  <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">BIG-Bench Hard</a>                   43.9%    38.8   2024-11-09    5% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HumanEval</a>                        45.1%    36.3   2024-11-09    3% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">WinoGrande</a>                       70.2%    37.2   2024-11-09    3% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">GPQA (subset unspecified)</a>        29.2%    38.9   2024-11-09    3% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MMLU</a>                             59.7%    40.3   2024-11-09    3% ▇
-                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">GSM8K</a>                            58.5%    40.4   2024-11-09    2% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">GSM8K</a>                            58.5%    40.5   2024-11-09    2% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MATH (subset unspecified)</a>        31.4%    41.2   2024-11-09    2% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MMLU-Pro</a>                         30.1%    40.3   2024-11-09    2% ▇
-                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HellaSwag</a>                        73.5%    36.6   2024-11-09    2% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HellaSwag</a>                        73.5%    36.7   2024-11-09    2% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MBPP</a>                             40.2%    37.7   2024-11-09    1% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">BoolQ</a>                            80.5%    36.6   2024-11-09    1% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">OpenBookQA</a>                       36.0%    33.7   2024-11-09    1% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">ARC Challenge</a>                    30.5%    26.8   2024-11-09    1% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">IFEval (aggregation unspecifi…</a>   51.0%    37.8   2024-11-09    1% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">Social IQA</a>                       58.0%    38.1   2024-11-09    0% ▇
-<a name="report-2511.23404v1"></a>LFM2 Technical Report   <a href="https://arxiv.org/html/2511.23404v1">MATH-500</a>                         41.2%    30.3   2026-09-25    2% ▇
+<a name="report-2511.23404v1"></a>LFM2 Technical Report   <a href="https://arxiv.org/html/2511.23404v1">MATH-500</a>                         41.2%    30.4   2026-09-25    2% ▇
                         <a href="https://arxiv.org/html/2511.23404v1">MMLU</a>                             60.4%    44.4   2026-09-25    2% ▇
                         <a href="https://arxiv.org/html/2511.23404v1">IFEval mean of four measures</a>     71.4%    40.8   2026-09-25    1% ▇
                         <a href="https://arxiv.org/html/2511.23404v1">MMLU-Pro</a>                         22.3%    34.7   2026-09-25    1% ▇
                         <a href="https://arxiv.org/html/2511.23404v1">Multi-IF three-turn average</a>      50.9%    38.2   2026-09-25    1% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">IFBench (aggregation unspecif…</a>   20.8%    43.5   2026-09-25    1% ▇
+                        <a href="https://arxiv.org/html/2511.23404v1">IFBench (aggregation unspecif…</a>   20.8%    43.6   2026-09-25    1% ▇
                         <a href="https://arxiv.org/html/2511.23404v1">MMMLU seven languages (Liquid)</a>   47.9%    41.1   2026-09-25    1% ▇
                         <a href="https://arxiv.org/html/2511.23404v1">MGSM six languages, loose (Li…</a>   61.7%    35.2   2026-09-25    1% ▇
                         <a href="https://arxiv.org/html/2511.23404v1">GPQA Diamond</a>                     30.6%    51.1   2026-09-25    1% ▇
                         <a href="https://arxiv.org/html/2511.23404v1">GSM-Plus</a>                         38.7%     3.7   2026-09-25    0% ▇
                         <a href="https://arxiv.org/html/2511.23404v1">GSM8K loose substring accuracy</a>   75.2%    36.5   2026-09-25    0% ▇
 <a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>   26.3%    39.0   2024-09-30    4% ▇
-<a name="report-2503.01743v2"></a>Microsoft               <a href="https://arxiv.org/html/2503.01743v2">MATH-500</a>                         44.4%    29.2   2025-03-07    1% ▇
+<a name="report-2503.01743v2"></a>Microsoft               <a href="https://arxiv.org/html/2503.01743v2">MATH-500</a>                         44.4%    29.3   2025-03-07    1% ▇
                         <a href="https://arxiv.org/html/2503.01743v2">GPQA Diamond</a>                     25.3%    30.2   2025-03-07    1% ▇
                         <a href="https://arxiv.org/html/2503.01743v2">AIME 2024</a>                         6.7%    33.3   2025-03-07    1% ▇
 <a name="card-microsoft-phi-4-mini-reasoning"></a>microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">AIME 2024</a>                         6.7%    31.5   2026-09-25    1% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">GPQA Diamond</a>                     25.3%    30.1   2026-09-25    1% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">MATH-500</a>                         44.4%    26.9   2026-09-25    1% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1166.7    38.0   2026-10-02    2% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>   19.1%    38.3   2026-04-06    1% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>   19.1%    38.4   2026-04-06    1% ▇
                         <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   15.0%    40.5   2025-09-30    1% ▇
 <a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   40.0%    33.5   2026-08-11    2% ▇
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   21.9%    42.3   2025-12-16    1% ▇
@@ -76,9 +76,9 @@ source                  test                             score  implies  date   
 <a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>    7.6%    31.6   2025-05-31    0% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>    0.4%    30.0   2025-05-31    0% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>   25.9%    46.0   2025-05-31    0% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>   78.8%   109.1   2025-05-31    0% ▇
-<a name="massive-agents-paper"></a>MASSIVE-Agents          <a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero…</a>    4.3%    36.8   2026-09-25    1% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   77.0%    45.2   2026-04-17    0% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>   78.8%   109.3   2025-05-31    0% ▇
+<a name="massive-agents-paper"></a>MASSIVE-Agents          <a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero…</a>    4.3%    36.9   2026-09-25    1% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   77.0%    45.3   2026-04-17    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
                         weighted average                        = 38.4
 </pre>

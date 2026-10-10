@@ -6,7 +6,7 @@
 
 Mistral · released 2024-05 · 7.25B params · apache-2.0
 
-**score 39.1** ±1.1 · #715 of 935 · from 15 benchmark results across 10 sources
+**score 39.2** ±1.1 · #714 of 934 · from 15 benchmark results across 10 sources
 
 ## How the score was worked out
 
@@ -30,7 +30,7 @@ source                  test                            score  implies  date    
 <a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   5.1%    31.5   2025-09-27    3% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  90.5%    40.3   2025-10-16    1% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 39.1
+                        weighted average                       = 39.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -52,8 +52,8 @@ Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GP
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.85GB   39.1
-8-bit q8_0     ~9.2GB   39.1
+4-bit q4_k_m  ~4.85GB   39.2
+8-bit q8_0     ~9.2GB   39.2
 </pre>
 
 ```sh

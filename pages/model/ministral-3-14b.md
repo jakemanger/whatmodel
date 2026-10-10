@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 13.9B params · apache-2.0
 
-**score 55.9** ±1.1 · #291 of 935 · from 16 benchmark results across 6 sources
+**score 55.9** ±1.1 · #290 of 934 · from 16 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                             score  implies  date   
 <a name="card3-jetbrains-mellum2-12b-a2-5b-instruct"></a>JetBrains/Mellum2-12B…  <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">GPQA Diamond</a>                     58.6%    55.3   2026-08-13   18% ▇▇
                         <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">LiveCodeBench v6 (window unsp…</a>   42.4%    53.5   2026-08-13   10% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MMLU-Redux</a>                       85.9%    57.3   2026-08-13    8% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL V4 (December 2025 archiv…</a>   38.8%    51.5   2026-08-13    3% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL V4 (December 2025 archiv…</a>   38.8%    51.6   2026-08-13    3% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MultiPL-E</a>                        71.5%    60.7   2026-08-13    2% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL v3</a>                          52.7%    46.1   2026-08-13    2% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">IFEval (aggregation unspecifi…</a>   67.3%    38.0   2026-08-13    1% ▇
@@ -26,10 +26,10 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   47.6%    55.4   2026-05-02    9% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   92.7%    61.9   2026-04-17    8% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   79.3%    62.1   2026-04-17    5% ▇
-<a name="card-mistralai-ministral-3-14b-instruct-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge uns…</a>   55.1%    52.7   2026-09-25    6% ▇
+<a name="card-mistralai-ministral-3-14b-instruct-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge uns…</a>   55.1%    52.8   2026-09-25    6% ▇
                         <a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">MATH (subset unspecified) (la…</a>   90.4%    58.0   2026-09-25    5% ▇
 <a name="card-mistralai-ministral-3-8b-instruct-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512/blob/5b26027e7b19eeb4b7352e1fed3926375dd2cb4d/README.md">MATH (subset unspecified) (la…</a>   90.4%    58.0   2026-09-25    5% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   80.6%  -244.6   2026-09-22    0% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   80.6%  -244.5   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 55.9
 </pre>

@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-04 · 0.75B params · apache-2.0
 
-**score 34.2** ±1.1 · #797 of 935 · from 18 benchmark results across 8 sources
+**score 34.2** ±1.1 · #796 of 934 · from 18 benchmark results across 8 sources
 
 ## How the score was worked out
 
@@ -17,13 +17,13 @@ source                  test                            score  implies  date    
 <a name="report-2512.13961v2"></a>Olmo 3                  <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard</a>                  41.5%    32.0   2026-09-25   19% ▇▇
                         <a href="https://arxiv.org/html/2512.13961v2">MMLU</a>                            55.8%    39.3   2026-09-25   12% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">AIME 2024</a>                       11.2%    31.3   2026-09-25   12% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2025</a>                       15.2%    36.9   2026-09-25    8% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">HumanEval+</a>                      14.8%    24.0   2026-09-25    8% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2025</a>                       15.2%    37.0   2026-09-25    8% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">HumanEval+</a>                      14.8%    24.1   2026-09-25    8% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3</a>                34.4%    37.3   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified)</a>       27.2%    30.8   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic</a>                      29.8%    39.5   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecifi…</a>  62.3%    36.4   2026-09-25    1% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  23.9%    45.9   2025-12-16    3% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  23.9%    46.0   2025-12-16    3% ▇
                         <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         47.3%    46.9   2025-06-14    3% ▇
 <a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  20.4%    34.8   2025-06-03    4% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  50.3%    28.8   2025-05-01    4% ▇

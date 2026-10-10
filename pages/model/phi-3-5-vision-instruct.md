@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-08 · 4.15B params · mit
 
-**score 37.7** ±1.5 · #746 of 935 · from 21 benchmark results across 5 sources
+**score 37.7** ±1.5 · #745 of 934 · from 21 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -25,7 +25,7 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CountBench</a>                      64.5%    29.8   2026-08-10    2% ▇
                         <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">RealWorldQA</a>                     58.0%    37.0   2026-08-10    2% ▇
                         <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">OCRBench</a>                        64.2%    20.2   2026-08-10    2% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">AI2D test</a>                       79.0%    41.2   2026-08-10    1% ▇
+                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">AI2D test</a>                       79.0%    41.3   2026-08-10    1% ▇
                         <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">ChartQA</a>                         82.1%    51.6   2026-08-10    1% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  919.5    32.1   2026-10-02   15% ▇▇
 <a name="microsoft-phi35-vision-card-benchmarks"></a>Microsoft Phi-3.5-vis…  <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MMMU (val) (lab)</a>                43.0%    44.3   2024-08-20    6% ▇

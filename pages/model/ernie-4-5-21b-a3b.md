@@ -15,9 +15,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="card-ernie-45-posttrained-final"></a>ERNIE 4.5 post-traine…  <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">AIME 2024 (lab)</a>                 27.9%    48.5   2026-09-25    9% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">AIME 2025 (lab)</a>                 19.7%    49.7   2026-09-25    9% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">AIME 2025 (lab)</a>                 19.7%    49.8   2026-09-25    9% ▇
                         <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">BIG-Bench Hard (lab)</a>            83.0%    52.6   2026-09-25    9% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">GSM8K (lab)</a>                     93.3%    55.9   2026-09-25    9% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">GSM8K (lab)</a>                     93.3%    56.0   2026-09-25    9% ▇
                         <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">HumanEval+ (lab)</a>                89.6%    57.4   2026-09-25    8% ▇
                         <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU (lab)</a>                      76.0%    51.2   2026-09-25    7% ▇
                         <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MATH-500 (lab)</a>                  87.2%    49.6   2026-09-25    6% ▇
@@ -26,7 +26,7 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">LiveCodeBench (version unspec…</a>  26.4%    49.7   2026-09-25    5% ▇
                         <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">CMMLU (lab)</a>                     84.8%    57.6   2026-09-25    4% ▇
                         <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">SimpleQA (lab)</a>                  24.2%    57.8   2026-09-25    4% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">Multi-IF (aggregation unspeci…</a>  61.0%    50.8   2026-09-25    4% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">Multi-IF (aggregation unspeci…</a>  61.0%    50.9   2026-09-25    4% ▇
                         <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MBPP+ (lab)</a>                     77.5%    57.0   2026-09-25    3% ▇
                         <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ChineseSimpleQA (lab)</a>           48.9%    46.4   2026-09-25    3% ▇
                         <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">IFEval (aggregation unspecifi…</a>  80.0%    51.7   2026-09-25    3% ▇

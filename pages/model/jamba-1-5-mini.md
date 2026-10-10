@@ -6,7 +6,7 @@
 
 AI21 Labs · released 2024-08 · 52B params (12B active) · jamba-open-model-license
 
-**score 46.1** ±1.3 · #546 of 935 · from 14 benchmark results across 4 sources
+**score 46.1** ±1.3 · #546 of 934 · from 14 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                             score  implies  date        weight
 <a name="paper-2408.12570v1-jamba15"></a>Jamba-1.5: Hybrid Tra…  <a href="https://arxiv.org/html/2408.12570v1#S6.T2">GSM8K (lab)</a>                      75.8%    44.0   2024-08-22   14% ▇▇
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">BIG-Bench Hard (lab)</a>             53.4%    44.3   2024-08-22   13% ▇▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">HumanEval (lab)</a>                  62.8%    45.6   2024-08-22   11% ▇
+                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">HumanEval (lab)</a>                  62.8%    45.7   2024-08-22   11% ▇
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified) (la…</a>   32.3%    45.1   2024-08-22   10% ▇
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU (lab)</a>                       69.7%    45.4   2024-08-22   10% ▇
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU-Pro (lab)</a>                   39.8%    44.5   2024-08-22    8% ▇

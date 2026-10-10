@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 11.8B params · apache-2.0
 
-**score 26.0** ±0.8 · #876 of 935 · from 18 benchmark results across 3 sources
+**score 26.0** ±0.8 · #876 of 934 · from 18 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">ARC Challenge</a>                   35.1%    24.6   2024-04-08   27% ▇▇▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">WinoGrande</a>                      64.0%    26.5   2024-04-08    7% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">BoolQ</a>                           67.3%    25.0   2024-04-08    6% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">BoolQ</a>                           67.3%    25.1   2024-04-08    6% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">ARC Easy</a>                        63.7%    25.7   2024-04-08    5% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">SciQ</a>                            90.2%    23.6   2024-04-08    4% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json">HellaSwag</a>                       67.4%    25.7   2024-04-08    4% ▇

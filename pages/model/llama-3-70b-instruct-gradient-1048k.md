@@ -6,7 +6,7 @@
 
 Gradient AI · released 2024-05 · 70.55B params · llama3
 
-**score 49.2** ±6.3 · #456 of 935 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 49.3** ±6.3 · #452 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -15,9 +15,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                    score  implies  date        weight
 <a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>               80.9%    47.8   2025-10-09   60% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>              72.1%    52.5   2025-10-09   22% ▇▇▇
+                        <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>              72.1%    52.6   2025-10-09   22% ▇▇▇
 prior                   pull toward the middle           50.0                18% ▇▇
-                        weighted average               = 49.2
+                        weighted average               = 49.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle           50.0                18%
 
 <pre>
 download          size  score
-16-bit bf16  ~141.11GB   49.2
+16-bit bf16  ~141.11GB   49.3
 </pre>
 
 ```sh

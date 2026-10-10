@@ -6,7 +6,7 @@
 
 UIUC (ise-uiuc) · released 2023-12 · 6.74B params · llama2
 
-**score 46.7** ±0.8 · #528 of 935 · from 3 benchmark results across 1 source
+**score 46.7** ±0.8 · #528 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 

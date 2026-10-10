@@ -6,7 +6,7 @@
 
 inclusionAI (Ant Group) · released 2025-05 · 16.8B params (2.75B active) · mit
 
-**score 52.0** ±6.2 · #381 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.0** ±6.2 · #380 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                 54.5%    52.4   2025-06-14   83% ▇▇▇▇▇▇▇▇▇▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                 54.5%    52.5   2025-06-14   83% ▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle           50.0                17% ▇▇
                         weighted average               = 52.0
 </pre>

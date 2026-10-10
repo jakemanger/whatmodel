@@ -6,7 +6,7 @@
 
 OpenAI · released 2019-05 · 0.355B params · mit
 
-**score -0.8** ±2.0 · #933 of 935 · from 11 benchmark results across 3 sources
+**score -0.8** ±2.0 · #932 of 934 · from 11 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -19,11 +19,11 @@ source                  test                            score  implies  date    
                         <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">HellaSwag</a>                       32.2%    -0.5   2021-11-01   14% ▇▇
                         <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">CommonsenseQA</a>                   30.9%     0.0   2021-11-01   11% ▇
                         <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Easy</a>                        49.4%     5.0   2021-11-01   10% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                            67.0%     7.3   2021-11-01    9% ▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                            67.0%     7.4   2021-11-01    9% ▇
                         <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Story Cloze Test</a>                63.0%    -0.8   2021-11-01    7% ▇
 <a name="acl-2021-findings-acl-404-prost"></a>PROST                   <a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zer…</a>  26.8%     4.2   2021-08-01   13% ▇▇
-<a name="copen-emnlp2022-zero-shot"></a>COPEN                   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  32.0%     1.2   2022-12-07    1% ▇
-                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>  10.5%    49.8   2022-12-07    0% ▇
+<a name="copen-emnlp2022-zero-shot"></a>COPEN                   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  32.0%     1.3   2022-12-07    1% ▇
+                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>  10.5%    49.7   2022-12-07    0% ▇
                         <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  47.2%   -61.8   2022-12-07    0% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
                         weighted average                       = -0.8

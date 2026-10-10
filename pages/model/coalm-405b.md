@@ -6,7 +6,7 @@
 
 UIUC ConvAI & Oumi (CoALM) · released 2025-02 · 405.85B params · cc-by-nc-4.0
 
-**score 59.2** ±6.3 · #227 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 59.3** ±6.3 · #224 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                 64.1%    61.2   2025-06-14   82% ▇▇▇▇▇▇▇▇▇▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                 64.1%    61.3   2025-06-14   82% ▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle           50.0                18% ▇▇
-                        weighted average               = 59.2
+                        weighted average               = 59.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle           50.0                18%
 
 <pre>
 download          size  score
-16-bit bf16  ~811.71GB   59.2
+16-bit bf16  ~811.71GB   59.3
 </pre>
 
 ```sh

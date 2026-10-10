@@ -6,7 +6,7 @@
 
 jieliu (Storm) · released 2024-04 · 7.24B params · apache-2.0
 
-**score 54.6** ±1.6 · #326 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.6** ±1.6 · #326 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

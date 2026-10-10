@@ -6,7 +6,7 @@
 
 KAIST AI · released 2024-03 · 7.24B params · mit
 
-**score 38.4** ±2.2 · #734 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 38.4** ±2.2 · #733 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

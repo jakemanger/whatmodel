@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 1.54B params · apache-2.0
 
-**score 42.9** ±1.2 · #639 of 935 · from 9 benchmark results across 2 sources
+**score 42.9** ±1.2 · #639 of 934 · from 9 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -19,8 +19,8 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                      69.2%    44.4   2024-11-12   11% ▇
                         <a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                 56.7%    41.3   2024-11-12    8% ▇
                         <a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                     59.4%    45.2   2024-11-12    7% ▇
-                        <a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>   32.5%    46.7   2024-11-12    4% ▇
-                        <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                45.4%    42.0   2024-11-12    3% ▇
+                        <a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>   32.5%    46.8   2024-11-12    4% ▇
+                        <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                45.4%    42.1   2024-11-12    3% ▇
                         <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                37.5%    36.2   2024-11-12    1% ▇
 <a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  31.6%    41.4   2024-11-11   21% ▇▇▇
 prior                   pull toward the middle                   50.0                 1% ▇

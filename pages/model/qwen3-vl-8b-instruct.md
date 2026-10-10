@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 8.77B params · apache-2.0
 
-**score 55.0** ±0.7 · #312 of 935 · from 25 benchmark results across 1 source · † every result so far was reported by its maker
+**score 55.1** ±0.7 · #310 of 934 · from 25 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -21,26 +21,26 @@ source  test                            score  implies  date        weight
         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CharXiv descriptive questions…</a>  83.0%    56.2   2025-11-27    7% ▇
         <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Redux (lab)</a>                84.9%    55.1   2025-11-27    6% ▇
         <a href="https://arxiv.org/pdf/2511.21631v2#page=23">AIME 2025 (lab)</a>                 45.9%    50.0   2025-11-27    6% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MathVista (testmini) (lab)</a>      77.2%    55.9   2025-11-27    6% ▇
+        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MathVista (testmini) (lab)</a>      77.2%    56.0   2025-11-27    6% ▇
         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMStar (lab)</a>                    70.9%    55.0   2025-11-27    5% ▇
         <a href="https://arxiv.org/pdf/2511.21631v2#page=23">LiveCodeBench v6 (window unsp…</a>  39.3%    52.0   2025-11-27    5% ▇
         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMMU Pro (lab)</a>                  55.9%    56.2   2025-11-27    4% ▇
         <a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (lab)</a>                 44.5%    54.5   2025-11-27    4% ▇
         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">AndroidWorld (lab)</a>              47.6%    53.2   2025-11-27    3% ▇
         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">LVBench (lab)</a>                   58.0%    56.7   2025-11-27    3% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">IFEval (aggregation unspecifi…</a>  83.7%    57.1   2025-11-27    3% ▇
+        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">IFEval (aggregation unspecifi…</a>  83.7%    57.2   2025-11-27    3% ▇
         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">Video-MME (without subtitles)…</a>  71.4%    55.5   2025-11-27    3% ▇
         <a href="https://arxiv.org/pdf/2511.21631v2#page=23">BFCL v3 (lab)</a>                   66.3%    56.8   2025-11-27    2% ▇
         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">HallusionBench (lab)</a>            61.1%    56.2   2025-11-27    2% ▇
         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">ChartQA (lab)</a>                   89.6%    60.9   2025-11-27    2% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">RealWorldQA (lab)</a>               71.5%    51.1   2025-11-27    1% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">DocVQA (lab)</a>                    96.1%    59.0   2025-11-27    1% ▇
+        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">RealWorldQA (lab)</a>               71.5%    51.2   2025-11-27    1% ▇
+        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">DocVQA (lab)</a>                    96.1%    59.1   2025-11-27    1% ▇
         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">ScreenSpot-Pro (lab)</a>            54.6%    57.2   2025-11-27    1% ▇
         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MVBench (lab)</a>                   68.7%    52.7   2025-11-27    1% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CC-OCR (lab)</a>                    79.9%    59.9   2025-11-27    1% ▇
+        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CC-OCR (lab)</a>                    79.9%    60.0   2025-11-27    1% ▇
         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">OCRBench (lab)</a>                  89.6%    64.2   2025-11-27    1% ▇
 prior   pull toward the middle                   50.0                 0% ▇
-        weighted average                       = 55.0
+        weighted average                       = 55.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -55,8 +55,8 @@ api (Alibaba Cloud Model Studio) · $0.31/M blended · $0.18 in / $0.7 out per 1
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~6.1GB   55.0
-8-bit q8_0    ~9.8GB   55.0
+4-bit q4_k_m  ~6.1GB   55.1
+8-bit q8_0    ~9.8GB   55.1
 </pre>
 
 ```sh

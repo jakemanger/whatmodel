@@ -6,7 +6,7 @@
 
 Princeton NLP · released 2024-08 · 8.03B params · llama3
 
-**score 48.2** ±4.0 · #486 of 935 · from 3 benchmark results across 2 sources
+**score 48.2** ±4.0 · #486 of 934 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 

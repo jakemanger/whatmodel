@@ -6,7 +6,7 @@
 
 FuseAI · released 2024-11 · 7.62B params
 
-**score 59.5** ±1.6 · #220 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 59.5** ±1.6 · #219 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

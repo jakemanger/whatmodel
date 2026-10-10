@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-03 · 2.41B params · exaone
 
-**score 50.7** ±1.4 · #412 of 935 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 50.7** ±1.4 · #411 of 934 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -18,7 +18,7 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">GPQA Diamond (lab)</a>              54.3%    52.1   2025-03-12   25% ▇▇▇
                         <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">AIME 2024 (lab)</a>                 52.5%    49.8   2025-03-12   20% ▇▇
                         <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">MATH-500 (lab)</a>                  92.3%    52.5   2025-03-12   15% ▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspec…</a>  46.6%    52.4   2025-03-12   11% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspec…</a>  46.6%    52.5   2025-03-12   11% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 50.7
 </pre>

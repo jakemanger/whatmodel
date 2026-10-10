@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 8.8B params · apache-2.0
 
-**score 55.6** ±1.1 · #297 of 935 · from 10 benchmark results across 3 sources
+**score 55.6** ±1.1 · #296 of 934 · from 10 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="card-mistralai-ministral-3-8b-reasoning-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">GPQA Diamond (lab)</a>               66.8%    57.0   2026-09-25   12% ▇
-                        <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2025 (lab)</a>                  78.7%    56.0   2026-09-25   10% ▇
-                        <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2024 (lab)</a>                  86.0%    57.4   2026-09-25   10% ▇
-                        <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">LiveCodeBench (version unspec…</a>   61.6%    57.7   2026-09-25    6% ▇
-<a name="card-mistralai-ministral-3-3b-reasoning-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">GPQA Diamond (lab)</a>               66.8%    57.0   2026-09-25   12% ▇
+<a name="card-mistralai-ministral-3-3b-reasoning-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">GPQA Diamond (lab)</a>               66.8%    57.1   2026-09-25   12% ▇
                         <a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">AIME 2025 (lab)</a>                  78.7%    56.0   2026-09-25   10% ▇
                         <a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">AIME 2024 (lab)</a>                  86.0%    57.4   2026-09-25   10% ▇
                         <a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">LiveCodeBench (version unspec…</a>   61.6%    57.7   2026-09-25    6% ▇
+<a name="card-mistralai-ministral-3-8b-reasoning-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">GPQA Diamond (lab)</a>               66.8%    57.1   2026-09-25   12% ▇
+                        <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2025 (lab)</a>                  78.7%    56.0   2026-09-25   10% ▇
+                        <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2024 (lab)</a>                  86.0%    57.4   2026-09-25   10% ▇
+                        <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">LiveCodeBench (version unspec…</a>   61.6%    57.7   2026-09-25    6% ▇
 <a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.4312    50.9   2026-05-02   15% ▇▇
                         <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   43.1%    51.4   2026-05-02    8% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
@@ -30,7 +30,7 @@ prior                   pull toward the middle                    50.0          
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: mistralai/Ministral-3-8B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · mistralai/Ministral-3-3B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt))</sub>
+<sub>Licences: mistralai/Ministral-3-3B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · mistralai/Ministral-3-8B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 

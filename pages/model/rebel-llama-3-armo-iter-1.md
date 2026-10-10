@@ -6,7 +6,7 @@
 
 Cornell AGI (REBEL) · released 2024-08 · 8.03B params · apache-2.0
 
-**score 54.1** ±1.6 · #341 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.2** ±1.6 · #336 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>  49.3%    54.2   2025-08-09   99% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 54.1
+                        weighted average                       = 54.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~16.06GB   54.1
+16-bit bf16  ~16.06GB   54.2
 </pre>
 
 ```sh

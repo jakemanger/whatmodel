@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-11 · 33.34B params · deepseek
 
-**score 50.0** ±0.6 · #434 of 935 · from 16 benchmark results across 7 sources
+**score 50.0** ±0.6 · #433 of 934 · from 16 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -23,13 +23,13 @@ source                  test                            score  implies  date    
 <a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>         41.8%    50.7   2025-04-01    4% ▇
                         <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         51.1%    50.4   2025-04-01    4% ▇
 <a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>  21.9%    48.2   2024-12-26    7% ▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      46.5%    44.8   2024-01-03    1% ▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      46.5%    44.9   2024-01-03    1% ▇
                         <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      49.9%    48.0   2024-01-03    1% ▇
 <a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   3.2%    38.9   2025-05-31    1% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>   9.0%    35.2   2025-05-31    1% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  32.8%    50.6   2025-05-31    1% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  69.8%    69.4   2025-05-31    0% ▇
-<a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>  17.5%    44.8   2026-08-31    2% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  69.8%    69.5   2025-05-31    0% ▇
+<a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>  17.5%    44.9   2026-08-31    2% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 50.0
 </pre>

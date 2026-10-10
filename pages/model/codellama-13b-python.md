@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 13.02B params · llama2
 
-**score 38.2** ±0.9 · #740 of 935 · from 6 benchmark results across 3 sources
+**score 38.2** ±0.9 · #739 of 934 · from 6 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               42.7%    37.6   2024-03-28   42% ▇▇▇▇▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               42.7%    37.7   2024-03-28   42% ▇▇▇▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       29.4%    38.4   2024-03-28   20% ▇▇
 <a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>         43.3%    38.8   2024-01-31   22% ▇▇▇
                         <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>              49.0%    37.4   2024-01-31   10% ▇

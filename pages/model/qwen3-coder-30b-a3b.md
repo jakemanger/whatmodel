@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · 30.5B params (3.3B active) · apache-2.0
 
-**score 57.5** ±1.2 · #265 of 935 · from 13 benchmark results across 3 sources
+**score 57.6** ±1.2 · #262 of 934 · from 13 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,19 +16,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="card-qwen-qwen3-coder-30b-a3b-instruct"></a>Qwen/Qwen3-Coder-30B-…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">Aider polyglot (225 exercises…</a>  33.3%    58.0   2026-09-25   19% ▇▇
                         <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Verified (lab)</a>        51.6%    60.0   2026-09-25    8% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Retail (lab)</a>            68.7%    61.3   2026-09-25    5% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Multilingual (lab)</a>    34.7%    54.7   2026-09-25    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Retail (lab)</a>            68.7%    61.4   2026-09-25    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Multilingual (lab)</a>    34.7%    54.8   2026-09-25    5% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Airline (lab)</a>           48.0%    61.2   2026-09-25    4% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">BFCL v3 (lab)</a>                   62.2%    54.6   2026-09-25    2% ▇
-<a name="card3-kwaipilot-kat-coder-v2-5-dev"></a>Kwaipilot/KAT-Coder-V…  <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>              31.8%    57.2   2026-07-23   13% ▇▇
+<a name="card3-kwaipilot-kat-coder-v2-5-dev"></a>Kwaipilot/KAT-Coder-V…  <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>              31.8%    57.3   2026-07-23   13% ▇▇
                         <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1</a>              10.1%    53.8   2026-07-23    9% ▇
-                        <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecif…</a>  19.8%    61.4   2026-07-23    7% ▇
+                        <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecif…</a>  19.8%    61.5   2026-07-23    7% ▇
                         <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual</a>          20.7%    51.7   2026-07-23    6% ▇
                         <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SciCode (level unspecified)</a>     18.3%    55.6   2026-07-23    5% ▇
 <a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>  38.5%    59.8   2026-09-07    9% ▇
-                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>  85.0%    57.6   2026-09-07    7% ▇
+                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>  85.0%    57.7   2026-09-07    7% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 57.5
+                        weighted average                       = 57.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -52,8 +52,8 @@ api (Novita AI) · $0.12/M blended · $0.07 in / $0.27 out per 1M tokens · [nov
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~18.8GB   57.5
-8-bit q8_0    ~37.1GB   57.5
+4-bit q4_k_m  ~18.8GB   57.6
+8-bit q8_0    ~37.1GB   57.6
 </pre>
 
 ```sh

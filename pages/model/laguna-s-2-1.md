@@ -6,7 +6,7 @@
 
 Poolside · released 2026-07 · 118B params (8B active) · openmdw-1.1
 
-**score 73.6** ±4.1 · #55 of 935 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 73.7** ±4.1 · #55 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -15,9 +15,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                          score  implies  date        weight
 <a name="first-party-poolside-scores"></a>Poolside vendor-repor…  <a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Multilingual (lab)</a>  78.5%    75.8   2026-07-21   67% ▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Pro (lab)</a>           59.4%    75.0   2026-07-21   26% ▇▇▇
+                        <a href="https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results">SWE-bench Pro (lab)</a>           59.4%    75.1   2026-07-21   26% ▇▇▇
 prior                   pull toward the middle                 50.0                 8% ▇
-                        weighted average                     = 73.6
+                        weighted average                     = 73.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -40,9 +40,9 @@ Poolside vendor-repor…  <a href="https://huggingface.co/poolside/Laguna-S-2.1/
 
 <pre>
 download                        size  score
-4-bit q4_k_m                   ~96GB   73.6
-8-bit q8_0                    ~128GB   73.6
-16-bit bf16 · nvidia only  ~235.13GB   73.6
+4-bit q4_k_m                   ~96GB   73.7
+8-bit q8_0                    ~128GB   73.7
+16-bit bf16 · nvidia only  ~235.13GB   73.7
 </pre>
 
 ```sh

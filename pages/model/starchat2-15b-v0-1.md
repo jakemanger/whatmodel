@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-03 · 15.96B params
 
-**score 48.2** ±0.8 · #484 of 935 · from 3 benchmark results across 1 source
+**score 48.2** ±0.8 · #484 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 

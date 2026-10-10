@@ -6,7 +6,7 @@
 
 Chujie Zheng (ExPO) · released 2024-04 · 7.24B params · apache-2.0
 
-**score 44.3** ±1.6 · #601 of 935 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 44.3** ±1.6 · #600 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

@@ -6,7 +6,7 @@
 
 WizardLM · released 2023-08 · 13B params · llama2
 
-**score 41.9** ±2.4 · #662 of 935 · from 3 benchmark results across 2 sources
+**score 41.9** ±2.4 · #661 of 934 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 

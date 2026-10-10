@@ -18,15 +18,15 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>             47.6%    32.1   2023-02-27    3% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>                     11.0%    22.6   2023-02-27    3% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>                     76.5%    30.2   2023-02-27    3% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>                70.1%    31.1   2023-02-27    3% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>                70.1%    31.2   2023-02-27    3% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>                       2.9%    24.4   2023-02-27    2% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>                 76.1%    32.2   2023-02-27    2% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>                      17.7%    24.6   2023-02-27    2% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>                      35.1%    22.0   2023-02-27    2% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                57.2%    39.4   2023-02-27    2% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                57.2%    39.5   2023-02-27    2% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                  72.8%    29.9   2023-02-27    1% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                48.9%    30.8   2023-02-27    1% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>                      79.8%    33.5   2023-02-27    1% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>                      79.8%    33.6   2023-02-27    1% ▇
 <a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   44.5%    28.0   2024-06-07    8% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      51.2%    30.3   2024-06-07    5% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      70.5%    33.1   2024-06-07    4% ▇
@@ -42,7 +42,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      28.4%    24.9   2023-09-11    2% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        68.2%    24.7   2023-09-11    2% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                      46.6%    28.9   2023-09-11    2% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            77.9%    29.8   2023-09-11    1% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            77.9%    29.9   2023-09-11    1% ▇
 <a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                  30.9%    23.5   2024-03-10    6% ▇
                         <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>                       10.3%    25.7   2024-03-10    6% ▇
                         <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                            35.2%    23.5   2024-03-10    2% ▇

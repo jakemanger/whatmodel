@@ -6,7 +6,7 @@
 
 TinyLlama · released 2023-12 · 1.1B params · apache-2.0
 
-**score 9.6** ±7.9 · #924 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 9.6** ±7.9 · #923 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

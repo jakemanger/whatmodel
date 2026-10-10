@@ -6,7 +6,7 @@
 
 Google · released 2026-06 · 11.9B params · apache-2.0
 
-**score 62.6** ±0.8 · #177 of 935 · from 30 benchmark results across 3 sources
+**score 62.6** ±0.8 · #177 of 934 · from 30 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,35 +14,35 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="gemma4-report"></a>Gemma Team              <a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (lab)</a>              78.8%    63.6   2026-07-02    7% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Terminal-Bench Hard (lab)</a>       18.0%    62.9   2026-07-02    6% ▇
+<a name="gemma4-report"></a>Gemma Team              <a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (lab)</a>              78.8%    63.7   2026-07-02    7% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Terminal-Bench Hard (lab)</a>       18.0%    63.0   2026-07-02    6% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MedXPertQA MM (lab)</a>             48.7%    62.4   2026-07-02    6% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">τ²-bench Telecom (lab)</a>          54.4%    64.8   2026-07-02    5% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMLU-Pro (lab)</a>                  77.2%    58.4   2026-07-02    4% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">τ²-bench Telecom (lab)</a>          54.4%    64.9   2026-07-02    5% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMLU-Pro (lab)</a>                  77.2%    58.5   2026-07-02    4% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MMMU Pro (lab)</a>                  69.1%    63.1   2026-07-02    4% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – airline (lab)</a>            75.0%    66.5   2026-07-02    3% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MRCR v2 8-needle, 128k (lab)</a>    43.4%    61.0   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MRCR v2 8-needle, 128k (lab)</a>    43.4%    61.1   2026-07-02    3% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMMLU (lab)</a>                     83.4%    61.2   2026-07-02    3% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFBench (lab)</a>                   74.0%    67.3   2026-07-02    3% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (lab)</a>               79.7%    65.4   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (lab)</a>               79.7%    65.5   2026-07-02    3% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">AIME 2026 (lab)</a>                 77.5%    63.0   2026-07-02    3% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Big Bench Extra Hard micro av…</a>  53.0%    62.7   2026-07-02    3% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">SciCode (lab)</a>                   38.0%    63.3   2026-07-02    3% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">InfographicVQA (lab)</a>            88.4%    65.3   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Big Bench Extra Hard micro av…</a>  53.0%    62.8   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">SciCode (lab)</a>                   38.0%    63.4   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">InfographicVQA (lab)</a>            88.4%    65.4   2026-07-02    2% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">LiveCodeBench v6 (Feb–May 202…</a>  72.0%    64.9   2026-07-02    2% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T6">OmniDocBench 1.5 ↓ (lab)</a>        16.4%    61.8   2026-07-02    1% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>             77.6%    65.1   2026-07-02    1% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>             77.6%    65.2   2026-07-02    1% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">HLE (lab)</a>                        5.2%    53.6   2026-07-02    1% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFEval (lab)</a>                    97.2%    60.6   2026-07-02    1% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFEval (lab)</a>                    97.2%    60.7   2026-07-02    1% ▇
 <a name="card3-xhtoken-spark-x2-5-4b"></a>XHToken/Spark-X2.5-4B…  <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">HMMT February 2026</a>              65.6%    61.6   2026-09-15   10% ▇
                         <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">Humanity's Last Exam</a>            13.1%    65.0   2026-09-15    7% ▇
                         <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">IMO-AnswerBench</a>                 57.2%    59.6   2026-09-15    6% ▇
                         <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">GPQA (subset unspecified)</a>       72.8%    63.9   2026-09-15    5% ▇
-                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">SciCode (level unspecified)</a>     39.8%    68.0   2026-09-15    2% ▇
+                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">SciCode (level unspecified)</a>     39.8%    68.1   2026-09-15    2% ▇
                         <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">BFCL V4 (December 2025 archiv…</a>  37.4%    50.4   2026-09-15    1% ▇
                         <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">BrowseComp</a>                      10.0%    51.6   2026-09-15    1% ▇
-                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">τ³-bench</a>                        13.3%    50.2   2026-09-15    1% ▇
-                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">IFEval (aggregation unspecifi…</a>  94.8%    75.1   2026-09-15    0% ▇
+                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">τ³-bench</a>                        13.3%    50.3   2026-09-15    1% ▇
+                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">IFEval (aggregation unspecifi…</a>  94.8%    75.2   2026-09-15    0% ▇
 <a name="card2-google-gemma-4-31b-it"></a>google/gemma-4-31B-it…  <a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">τ²-bench aggregate (lab)</a>        69.0%    65.9   2026-07-20    2% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 62.6

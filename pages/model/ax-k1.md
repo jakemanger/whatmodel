@@ -6,7 +6,7 @@
 
 SK Telecom · released 2025-12 · 518.98B params (33B active) · apache-2.0
 
-**score 62.3** ±1.2 · #184 of 935 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 62.3** ±1.2 · #183 of 934 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="paper-2608.30181v1-ax-k2"></a>A.X K2 Technical Repo…  <a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond (lab)</a>              76.4%    63.7   2026-08-31   38% ▇▇▇▇▇
                         <a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite (lab)</a>          77.8%    59.6   2026-08-31   17% ▇▇
-                        <a href="https://arxiv.org/html/2608.30181v1">AIME 2026 (lab)</a>                 91.3%    67.4   2026-08-31   11% ▇
+                        <a href="https://arxiv.org/html/2608.30181v1">AIME 2026 (lab)</a>                 91.3%    67.5   2026-08-31   11% ▇
                         <a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecif…</a>  63.2%    61.6   2026-08-31   10% ▇
                         <a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 202…</a>  74.9%    66.1   2026-08-31    9% ▇
                         <a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam (lab)</a>       8.3%    56.1   2026-08-31    8% ▇

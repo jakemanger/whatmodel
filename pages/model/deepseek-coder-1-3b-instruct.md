@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-10 · 1.35B params · deepseek
 
-**score 42.8** ±0.6 · #642 of 935 · from 14 benchmark results across 6 sources
+**score 42.8** ±0.6 · #641 of 934 · from 14 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -27,7 +27,7 @@ source                  test                            score  implies  date    
 <a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>   0.0%    30.5   2025-05-31    1% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   0.0%    33.3   2025-05-31    1% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  11.7%    31.8   2025-05-31    0% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>   1.9%  -238.1   2025-05-31    0% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>   1.9%  -238.5   2025-05-31    0% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 42.8
 </pre>

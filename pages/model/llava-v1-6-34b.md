@@ -6,7 +6,7 @@
 
 LLaVA · released 2024-01 · 34.8B params · apache-2.0
 
-**score 39.6** ±1.8 · #709 of 935 · from 6 benchmark results across 4 sources
+**score 39.6** ±1.8 · #708 of 934 · from 6 benchmark results across 4 sources
 
 ## How the score was worked out
 

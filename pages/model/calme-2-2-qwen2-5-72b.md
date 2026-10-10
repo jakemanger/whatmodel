@@ -6,7 +6,7 @@
 
 MaziyarPanahi · released 2024-09 · 72.7B params · other (tongyi-qianwen)
 
-**score 57.8** ±4.5 · #258 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 57.9** ±4.5 · #254 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  50.3%    58.6   2025-09-27   91% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 9% ▇
-                        weighted average                       = 57.8
+                        weighted average                       = 57.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~145.4GB   57.8
+16-bit bf16  ~145.4GB   57.9
 </pre>
 
 ```sh

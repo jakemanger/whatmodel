@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 2.78B params · apache-2.0
 
-**score 23.4** ±1.3 · #890 of 935 · from 10 benchmark results across 2 sources
+**score 23.4** ±1.3 · #889 of 934 · from 10 benchmark results across 2 sources
 
 ## How the score was worked out
 
