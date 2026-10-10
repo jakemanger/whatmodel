@@ -6,7 +6,7 @@
 
 Mistral · released 2026-03 · 119B params (6.5B active) · apache-2.0
 
-**score 59.0** ±1.8 · #231 of 934 · from 9 benchmark results across 3 sources
+**score 59.7** ±1.6 · #220 of 934 · from 10 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,22 +14,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card-mistralai-mistral-small-4-119b-2603"></a>mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">GPQA Diamond (lab)</a>              71.2%    63.4   2026-09-25   18% ▇▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMLU-Pro (lab)</a>                  78.0%    60.9   2026-09-25   12% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">LiveCodeBench (version unspec…</a>  63.6%    61.3   2026-09-25   12% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">Arena-Hard (version/judge uns…</a>  58.3%    52.1   2026-09-25   11% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecif…</a>  48.0%    60.6   2026-09-25    9% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMMU Pro (lab)</a>                  60.0%    61.8   2026-09-25    9% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">COLLIE (constrained text gene…</a>  62.9%    66.2   2026-09-25    6% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  33.9%    51.6   2026-04-04   14% ▇▇
-<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard ave…</a>  20.6%    56.6   2026-09-28    7% ▇
+<a name="card-mistralai-mistral-small-4-119b-2603"></a>mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">GPQA Diamond (lab)</a>              71.2%    63.1   2026-09-25   15% ▇▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMLU-Pro (lab)</a>                  78.0%    60.7   2026-09-25   10% ▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">Arena-Hard (version/judge uns…</a>  58.3%    51.8   2026-09-25    9% ▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">LiveCodeBench (version unspec…</a>  63.6%    61.5   2026-09-25    9% ▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecif…</a>  48.0%    60.6   2026-09-25    8% ▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMMU Pro (lab)</a>                  60.0%    61.7   2026-09-25    8% ▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">COLLIE (constrained text gene…</a>  62.9%    66.1   2026-09-25    5% ▇
+<a name="paper-2605.17281v2-contractbench"></a>ContractBench: Can LL…  <a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (3…</a>  42.4%    63.2   2026-09-27   18% ▇▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  33.9%    51.5   2026-04-04   12% ▇
+<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard ave…</a>  20.6%    56.6   2026-09-28    6% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 59.0
+                        weighted average                       = 59.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: mistralai/Mistral-Small-4-119B-2603 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>
+<sub>Licences: mistralai/Mistral-Small-4-119B-2603 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · ContractBench: Can LLM Agents Preserve Observation Contracts? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>
 
 <details><summary>Not counted (1)</summary>
 
@@ -48,8 +49,8 @@ api (Mistral) · $0.26/M blended · $0.15 in / $0.6 out per 1M tokens · [docs.m
 
 <pre>
 download             size  score
-4-bit ud-q4_k_m   ~71.9GB   59.0
-2-bit ud-q2_k_xl  ~36.2GB   59.0
+4-bit ud-q4_k_m   ~71.9GB   59.7
+2-bit ud-q2_k_xl  ~36.2GB   59.7
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Meta · released 2026-04 · closed weights
 
-**score 74.9** ±1.9 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
+**score 75.0** ±1.9 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1489.3    76.6   2026-10-02   30% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1293.6    77.6   2026-10-02   22% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1489.3    76.6   2026-10-02   31% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1293.6    77.6   2026-10-02   23% ▇▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>  1467.3    76.0   2026-09-13   10% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     89.8%    73.8   2026-04-08   28% ▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         88.9%    68.9   2026-04-08    8% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     89.8%    73.8   2026-04-08   27% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         88.9%    69.0   2026-04-08    7% ▇
 prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 74.9
+                        weighted average                        = 75.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -6,7 +6,7 @@
 
 Project Baize · released 2023-05 · cc-by-nc-4.0
 
-**score 31.4** ±2.5 · #833 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.4** ±2.5 · #835 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   7.0%    30.6   2025-08-09   69% ▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  67.0%    31.8   2025-08-09   28% ▇▇▇
+<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   7.0%    30.5   2025-08-09   69% ▇▇▇▇▇▇▇▇
+                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  67.0%    31.9   2025-08-09   28% ▇▇▇
 prior                   pull toward the middle                   50.0                 3% ▇
                         weighted average                       = 31.4
 </pre>

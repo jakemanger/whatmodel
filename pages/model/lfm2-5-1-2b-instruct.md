@@ -6,7 +6,7 @@
 
 Liquid AI · released 2026-01 · 1.17B params · lfm1.0
 
-**score 43.4** ±1.7 · #626 of 934 · from 10 benchmark results across 2 sources
+**score 43.3** ±1.7 · #633 of 934 · from 10 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,18 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card-liquidai-lfm2-5-1-2b-thinking"></a>LiquidAI/LFM2.5-1.2B-…  <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GSM8K (lab)</a>                     64.5%    37.4   2026-08-05   24% ▇▇▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MMLU-Pro (lab)</a>                  44.4%    45.8   2026-08-05   12% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025 (lab)</a>                 14.0%    41.6   2026-08-05   12% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GPQA Diamond (lab)</a>              38.9%    52.2   2026-08-05   11% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500 (lab)</a>                  63.2%    41.1   2026-08-05   10% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFBench (aggregation unspecif…</a>  47.3%    54.0   2026-08-05   10% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFEval mean of four measures …</a>  86.2%    49.8   2026-08-05    8% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">BFCL v3 (lab)</a>                   49.1%    43.9   2026-08-05    3% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  32.5%    31.5   2026-04-17    5% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  61.2%    35.3   2026-04-17    5% ▇
+<a name="card-liquidai-lfm2-5-1-2b-thinking"></a>LiquidAI/LFM2.5-1.2B-…  <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GSM8K (lab)</a>                     64.5%    37.4   2026-08-05   25% ▇▇▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MMLU-Pro (lab)</a>                  44.4%    45.7   2026-08-05   12% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025 (lab)</a>                 14.0%    41.4   2026-08-05   12% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GPQA Diamond (lab)</a>              38.9%    52.0   2026-08-05   11% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFBench (aggregation unspecif…</a>  47.3%    53.8   2026-08-05   10% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500 (lab)</a>                  63.2%    40.8   2026-08-05    9% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFEval mean of four measures …</a>  86.2%    49.7   2026-08-05    8% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">BFCL v3 (lab)</a>                   49.1%    43.8   2026-08-05    3% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  32.5%    31.2   2026-04-17    6% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  61.2%    34.3   2026-04-17    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 43.4
+                        weighted average                       = 43.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,7 +38,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~0.73GB   43.4
+4-bit q4_k_m  ~0.73GB   43.3
 </pre>
 
 ```sh

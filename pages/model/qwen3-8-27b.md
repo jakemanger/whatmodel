@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-08 · 27.3B params · apache-2.0
 
-**score 73.4** ±0.8 · #56 of 934 · from 28 benchmark results across 5 sources
+**score 73.7** ±0.8 · #53 of 934 · from 31 benchmark results across 8 sources
 
 ## How the score was worked out
 
@@ -17,38 +17,41 @@ source                  test                                  score  implies  da
 <a name="card-qwen--qwen3.8-27b"></a>Qwen/Qwen3.8-27B mode…  <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">GPQA Diamond (lab)</a>                    89.2%    70.9   2026-08-14    5% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">Terminal-Bench 2.1 (lab)</a>              73.0%    74.7   2026-08-14    4% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">LiveCodeBench v6 (window unsp…</a>        90.3%    73.7   2026-08-14    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">Humanity's Last Exam (lab)</a>            30.8%    71.7   2026-08-14    3% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">SWE-bench Pro public set, Qwe…</a>        61.7%    74.9   2026-08-14    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">OSWorld-Verified (lab)</a>                84.3%    80.6   2026-08-14    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">Humanity's Last Exam (lab)</a>            30.8%    71.8   2026-08-14    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">OSWorld-Verified (lab)</a>                84.3%    80.7   2026-08-14    2% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">NL2Repo (lab)</a>                         42.3%    72.3   2026-08-14    2% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">IFBench (aggregation unspecif…</a>        79.5%    74.2   2026-08-14    2% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">CharXiv (reasoning questions)…</a>        83.7%    73.1   2026-08-14    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">OmniDocBench 1.5 overall (hig…</a>        91.1%    72.1   2026-08-14    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">WebArena-Verified (lab)</a>               64.8%    78.1   2026-08-14    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">OmniDocBench 1.5 overall (hig…</a>        91.1%    72.2   2026-08-14    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">WebArena-Verified (lab)</a>               64.8%    78.2   2026-08-14    2% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">ERQA (lab)</a>                            65.5%    68.4   2026-08-14    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">AndroidWorld (lab)</a>                    81.9%    80.1   2026-08-14    1% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">RealWorldQA (lab)</a>                     85.9%    74.1   2026-08-14    1% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">RealWorldQA (lab)</a>                     85.9%    74.0   2026-08-14    0% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.0166 IPS    74.4   2026-10-02   11% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1591.2    77.7   2026-10-01   10% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                       1437.7    70.4   2026-10-02    6% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>       1242.8    71.4   2026-10-02    4% ▇
 <a name="first-party-qwen-scores"></a>Qwen                    <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">CharXiv (reasoning questions)…</a>        83.7%    75.0   2026-09-18    7% ▇
-                        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">GPQA Diamond (lab)</a>                    89.2%    71.9   2026-09-18    7% ▇
-                        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">Humanity's Last Exam (lab)</a>            30.8%    71.9   2026-09-18    4% ▇
-                        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">LiveCodeBench v6 (window unsp…</a>        90.3%    78.0   2026-09-18    3% ▇
-                        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Multilingual (lab)</a>          73.8%    71.9   2026-09-18    3% ▇
-                        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Pro public set, Qwe…</a>        61.7%    75.0   2026-09-18    3% ▇
-                        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">IFBench (aggregation unspecif…</a>        79.5%    73.2   2026-09-18    3% ▇
-                        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (lab)</a>         42.2%    69.5   2026-09-18    1% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>        46.6%    65.2   2026-08-18    4% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>        76.0%    67.7   2026-09-19    2% ▇
+                        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">GPQA Diamond (lab)</a>                    89.2%    72.0   2026-09-18    6% ▇
+                        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">Humanity's Last Exam (lab)</a>            30.8%    72.0   2026-09-18    3% ▇
+                        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">LiveCodeBench v6 (window unsp…</a>        90.3%    78.1   2026-09-18    3% ▇
+                        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Multilingual (lab)</a>          73.8%    72.0   2026-09-18    3% ▇
+                        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Pro public set, Qwe…</a>        61.7%    75.1   2026-09-18    3% ▇
+                        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">IFBench (aggregation unspecif…</a>        79.5%    73.3   2026-09-18    2% ▇
+                        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (lab)</a>         42.2%    69.6   2026-09-18    1% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>        46.6%    64.9   2026-08-18    4% ▇
+<a name="paper-2608.19741v4-thinkingbox"></a>One Success Isn't Rel…  <a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507…</a>        51.7%    78.9   2026-10-01    3% ▇
+<a name="paper-2609.05141v2-scidocbench"></a>SciDocBench: A Workfl…  <a href="https://arxiv.org/html/2609.05141v2">SciDocBench scientific-docume…</a>        52.9%    74.3   2026-09-28    2% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>        76.0%    67.4   2026-09-19    1% ▇
+<a name="paper-2605.07492v2-puredocbench"></a>How Far Is Document P…  <a href="https://arxiv.org/html/2605.07492v2">PureDocBench document parsing…</a>        77.6%    98.2   2026-09-27    0% ▇
 prior                   pull toward the middle                         50.0                 0% ▇
-                        weighted average                             = 73.4
+                        weighted average                             = 73.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Qwen/Qwen3.8-27B model card ([apache-2.0](../../licenses/Qwen--Qwen3.8-27B.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Qwen/Qwen3.8-27B model card ([apache-2.0](../../licenses/Qwen--Qwen3.8-27B.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · One Success Isn't Reliability: Thinkingbox ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SciDocBench: A Workflow-Centered Benchmark and Data Pipeline for Scientific Document Understanding ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · How Far Is Document Parsing from Solved? PureDocBench: A Source-Traceable Benchmark across Clean ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -58,8 +61,8 @@ api (Groq) · $1.60/M blended · $0.8 in / $4 out per 1M tokens · [console.groq
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~16.88GB   73.4
-8-bit q8_0    ~33.26GB   73.4
+4-bit q4_k_m  ~16.88GB   73.7
+8-bit q8_0    ~33.26GB   73.7
 </pre>
 
 ```sh

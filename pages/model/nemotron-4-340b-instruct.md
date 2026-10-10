@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-06 · 340B params · nvidia-open-model-license
 
-**score 51.6** ±2.1 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
+**score 51.7** ±2.3 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                       score  implies  date        weight
-<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  47.6725 WB-Score    51.6   2024-08-01   44% ▇▇▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                            1277.1    51.2   2026-10-02   39% ▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             77.8%    53.3   2024-06-30   15% ▇▇
+<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  47.6725 WB-Score    51.8   2024-08-01   44% ▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                            1277.1    51.2   2026-10-02   44% ▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             77.8%    54.1   2024-06-30    9% ▇
 prior                   pull toward the middle                              50.0                 2% ▇
-                        weighted average                                  = 51.6
+                        weighted average                                  = 51.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

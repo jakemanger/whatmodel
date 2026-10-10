@@ -15,38 +15,38 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/pdf/2511.21631v2#page=16">CharXiv (reasoning questions)…</a>  65.2%    63.0   2025-11-27    8% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">τ²-bench Telecom (lab)</a>          46.9%    64.7   2025-11-27    7% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">GPQA (subset unspecified) (la…</a>  73.1%    61.1   2025-11-27    7% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">MMMU (val) (lab)</a>                78.1%    62.0   2025-11-27    6% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">GPQA (subset unspecified) (la…</a>  73.1%    61.0   2025-11-27    7% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">τ²-bench Telecom (lab)</a>          46.9%    64.6   2025-11-27    7% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">MMMU (val) (lab)</a>                78.1%    62.0   2025-11-27    7% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Pro (lab)</a>                  82.1%    61.6   2025-11-27    6% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=16">MMStar (lab)</a>                    79.4%    62.9   2025-11-27    4% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=16">CharXiv descriptive questions…</a>  90.2%    63.6   2025-11-27    4% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">MathVista (testmini) (lab)</a>      85.9%    63.8   2025-11-27    4% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=23">LiveCodeBench v6 (window unsp…</a>  65.6%    63.0   2025-11-27    4% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (lab)</a>                 59.0%    63.3   2025-11-27    4% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">MathVista (testmini) (lab)</a>      85.9%    63.7   2025-11-27    4% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=16">MMMU Pro (lab)</a>                  68.1%    63.8   2025-11-27    4% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Redux (lab)</a>                91.9%    63.8   2025-11-27    4% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">AIME 2025 (lab)</a>                 83.7%    64.3   2025-11-27    4% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">AIME 2025 (lab)</a>                 83.7%    64.4   2025-11-27    4% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=16">LVBench (lab)</a>                   62.6%    60.3   2025-11-27    3% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=16">AndroidWorld (lab)</a>              63.7%    65.0   2025-11-27    3% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">Video-MME (without subtitles)…</a>  77.3%    62.2   2025-11-27    2% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">IFEval (aggregation unspecifi…</a>  87.8%    62.9   2025-11-27    2% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">HallusionBench (lab)</a>            67.4%    62.6   2025-11-27    2% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">Video-MME (without subtitles)…</a>  77.3%    62.3   2025-11-27    2% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">IFEval (aggregation unspecifi…</a>  87.8%    62.7   2025-11-27    2% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">HallusionBench (lab)</a>            67.4%    62.7   2025-11-27    2% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=23">BFCL v3 (lab)</a>                   71.7%    62.3   2025-11-27    2% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=16">RealWorldQA (lab)</a>               78.4%    61.6   2025-11-27    1% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=16">ChartQA (lab)</a>                   89.0%    59.4   2025-11-27    1% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=16">ScreenSpot-Pro (lab)</a>            57.1%    58.9   2025-11-27    1% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=16">MVBench (lab)</a>                   73.2%    60.1   2025-11-27    1% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">DocVQA (lab)</a>                    96.1%    58.9   2025-11-27    1% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">DocVQA (lab)</a>                    96.1%    59.0   2025-11-27    1% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=16">CC-OCR (lab)</a>                    79.6%    59.1   2025-11-27    1% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=16">OCRBench (lab)</a>                  85.5%    52.1   2025-11-27    0% ▇
-<a name="paper-2601.03286v1-hyperclova-x-32b-think"></a>HyperCLOVA X 32B Think  <a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard</a>              6.9%    60.2   2026-01-03    4% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Telecom</a>                33.3%    59.1   2026-01-03    4% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail</a>                 57.0%    58.8   2026-01-03    2% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline</a>                54.4%    65.3   2026-01-03    1% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag</a>                       62.1%    39.0   2026-01-03    1% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU</a>                            71.5%    43.4   2026-01-03    1% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">PIQA</a>                            88.0%    58.4   2026-01-03    0% ▇
+<a name="paper-2601.03286v1-hyperclova-x-32b-think"></a>HyperCLOVA X 32B Think  <a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard</a>              6.9%    58.7   2026-01-03    3% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Telecom</a>                33.3%    58.2   2026-01-03    3% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail</a>                 57.0%    58.0   2026-01-03    2% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag</a>                       62.1%    41.3   2026-01-03    1% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline</a>                54.4%    64.7   2026-01-03    1% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU</a>                            71.5%    42.2   2026-01-03    1% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">PIQA</a>                            88.0%    58.6   2026-01-03    0% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 61.9
 </pre>

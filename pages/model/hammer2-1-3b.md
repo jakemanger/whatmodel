@@ -6,7 +6,7 @@
 
 MadeAgents · released 2024-12 · 3.09B params · other (qwen-research)
 
-**score 51.4** ±3.9 · #395 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.4** ±3.9 · #396 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  29.7%    48.6   2025-12-16   61% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         59.6%    57.0   2025-06-14   32% ▇▇▇▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  29.7%    48.5   2025-12-16   61% ▇▇▇▇▇▇▇
+                        <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         59.6%    56.9   2025-06-14   33% ▇▇▇▇
 prior                   pull toward the middle                   50.0                 7% ▇
                         weighted average                       = 51.4
 </pre>

@@ -14,37 +14,37 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="report-2606.15007v1"></a>NVIDIA                  <a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified) (la…</a>   87.0%    70.3   2026-06-12    8% ▇
+<a name="report-2606.15007v1"></a>NVIDIA                  <a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified) (la…</a>   87.0%    70.4   2026-06-12    8% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified (lab)</a>         70.7%    69.1   2026-06-12    6% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro (lab)</a>                   86.8%    71.0   2026-06-12    5% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam (lab)</a>       26.7%    69.2   2026-06-12    4% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro (lab)</a>                   86.8%    71.0   2026-06-12    4% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual (lab)</a>     67.7%    67.5   2026-06-12    4% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1 (lab)</a>         56.4%    70.8   2026-06-12    4% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual (lab)</a>     67.7%    67.5   2026-06-12    4% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">LiveCodeBench v6 (window unsp…</a>   89.0%    73.2   2026-06-12    3% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">SciCode subproblems (lab)</a>        44.6%    69.2   2026-06-12    3% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX (lab)</a>                  83.0%    69.5   2026-06-12    3% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench (lab)</a>            88.6%    73.1   2026-06-12    3% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">LongBench v2 (lab)</a>               61.9%    70.7   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">BrowseComp (lab)</a>                 44.4%    66.4   2026-06-12    2% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench (lab)</a>            88.6%    73.2   2026-06-12    2% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">BrowseComp (lab)</a>                 44.4%    66.3   2026-06-12    2% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam with too…</a>   37.4%    65.5   2026-06-12    2% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose) …</a>   81.7%    74.5   2026-06-12    2% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">MultiChallenge (lab)</a>             63.8%    72.8   2026-06-12    2% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">τ³-bench (lab)</a>                   70.9%    72.4   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">CritPt (lab)</a>                      3.1%    63.7   2026-06-12    1% ▇
-<a name="paper-2608.30181v1-ax-k2"></a>A.X K2 Technical Repo…  <a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond</a>                     86.7%    68.8   2026-08-31    8% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite</a>                 90.9%    72.1   2026-08-31    4% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam</a>             26.6%    69.7   2026-08-31    4% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">CritPt (lab)</a>                      3.1%    63.6   2026-06-12    1% ▇
+<a name="paper-2608.30181v1-ax-k2"></a>A.X K2 Technical Repo…  <a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond</a>                     86.7%    68.9   2026-08-31    8% ▇
+                        <a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite</a>                 90.9%    72.2   2026-08-31    4% ▇
+                        <a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam</a>             26.6%    69.8   2026-08-31    4% ▇
                         <a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecif…</a>   81.4%    73.8   2026-08-31    3% ▇
                         <a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 202…</a>   76.4%    66.0   2026-08-31    2% ▇
                         <a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified)</a>      39.9%    67.6   2026-08-31    2% ▇
                         <a href="https://arxiv.org/html/2608.30181v1">AIME 2026</a>                        85.4%    58.4   2026-08-31    2% ▇
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     85.4%    70.7   2026-08-10    6% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         86.7%    69.9   2026-08-10    3% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     20.0%    72.3   2026-08-27    3% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            12.0%    65.8   2026-08-10    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         86.7%    70.0   2026-08-10    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            12.0%    65.7   2026-08-10    2% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1426.2    69.0   2026-10-02    4% ▇
-<a name="paper-2609.13916v1-north-small-translate"></a>Cohere                  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>   84.8%    66.2   2026-09-12    1% ▇
-                        <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, …</a>   67.1%    49.1   2026-09-12    0% ▇
+<a name="paper-2609.13916v1-north-small-translate"></a>Cohere                  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>   84.8%    66.0   2026-09-12    1% ▇
+                        <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, …</a>   67.1%    48.3   2026-09-12    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
                         weighted average                        = 69.6
 </pre>

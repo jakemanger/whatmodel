@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-05 · 7.39B params · mit
 
-**score 43.3** ±1.8 · #627 of 934 · from 3 benchmark results across 3 sources
+**score 43.2** ±1.9 · #635 of 934 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>   29.8%    44.7   2024-11-14   59% ▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1171.0    38.5   2026-10-02   28% ▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   70.8%    47.0   2024-05-21   12% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 43.3
+<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>   29.8%    44.8   2024-11-14   61% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1171.0    38.5   2026-10-02   30% ▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   70.8%    48.7   2024-05-21    7% ▇
+prior                   pull toward the middle                    50.0                 2% ▇
+                        weighted average                        = 43.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download                       size  score
-16-bit bf16 · nvidia only  ~14.78GB   43.3
+16-bit bf16 · nvidia only  ~14.78GB   43.2
 </pre>
 
 ```sh

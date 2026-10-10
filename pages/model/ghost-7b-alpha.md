@@ -6,7 +6,7 @@
 
 Ghost X · released 2024-04 · 7.24B params · other (ghost-7b)
 
-**score 31.6** ±2.5 · #829 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.6** ±2.4 · #829 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   6.9%    30.4   2025-08-09   70% ▇▇▇▇▇▇▇▇
+<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   6.9%    30.3   2025-08-09   70% ▇▇▇▇▇▇▇▇
                         <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  70.4%    33.0   2025-08-09   28% ▇▇▇
 prior                   pull toward the middle                   50.0                 3% ▇
                         weighted average                       = 31.6

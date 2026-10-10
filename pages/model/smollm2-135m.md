@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-10 · 0.135B params · apache-2.0
 
-**score 19.1** ±8.2 · #903 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 20.0** ±8.7 · #902 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  24.8%     5.8   2026-04-17   70% ▇▇▇▇▇▇▇▇
-prior                  pull toward the middle                   50.0                30% ▇▇▇▇
-                       weighted average                       = 19.1
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  24.8%     4.8   2026-04-17   66% ▇▇▇▇▇▇▇▇
+prior                  pull toward the middle                   50.0                34% ▇▇▇▇
+                       weighted average                       = 20.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                  pull toward the middle                   50.0            
 
 <pre>
 download        size  score
-4-bit fp16  ~0.271GB   19.1
+4-bit fp16  ~0.271GB   20.0
 </pre>
 
 ```sh

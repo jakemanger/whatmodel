@@ -6,7 +6,7 @@
 
 UIUC (ise-uiuc) · released 2023-12 · 6.74B params · llama2
 
-**score 46.7** ±0.8 · #528 of 934 · from 3 benchmark results across 1 source
+**score 46.8** ±0.8 · #521 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               70.7%    46.3   2024-12-26   51% ▇▇▇▇▇▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               70.7%    46.3   2024-12-26   52% ▇▇▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              67.7%    47.6   2024-12-26   41% ▇▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   60.1%    44.9   2024-12-26    7% ▇
 prior                   pull toward the middle           50.0                 0% ▇
-                        weighted average               = 46.7
+                        weighted average               = 46.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle           50.0                 0%
 
 <pre>
 download        size  score
-4-bit fp32  ~26.95GB   46.7
+4-bit fp32  ~26.95GB   46.8
 </pre>
 
 ```sh

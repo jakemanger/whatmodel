@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-07 · llama2
 
-**score 34.1** ±2.3 · #799 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 34.1** ±2.2 · #799 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>    14.5%    33.7   2024-10-22   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>    14.5%    33.8   2024-10-22   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle           50.0                 2% ▇
                         weighted average               = 34.1
 </pre>

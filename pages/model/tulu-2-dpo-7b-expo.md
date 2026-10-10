@@ -6,7 +6,7 @@
 
 Chujie Zheng (ExPO) · released 2024-04 · 6.74B params · other (ai2-impact-license-low-risk)
 
-**score 36.1** ±2.4 · #773 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.1** ±2.4 · #776 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>  11.7%    35.7   2025-08-09   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>  11.7%    35.8   2025-08-09   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 3% ▇
                         weighted average                       = 36.1
 </pre>

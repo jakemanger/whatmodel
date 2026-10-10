@@ -6,7 +6,7 @@
 
 Meta · released 2024-09 · 10.7B params · llama3.2
 
-**score 42.7** ±1.7 · #643 of 934 · from 11 benchmark results across 4 sources
+**score 42.6** ±1.8 · #647 of 934 · from 11 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,24 +14,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                      score  implies  date        weight
-<a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>                                                      68.5%    46.1   2024-10-10   19% ▇▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  4.7900 MM-MT-Bench score (1-10)    43.5   2024-10-10    9% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval</a>                                                 62.8%    47.5   2024-10-10    8% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified)</a>                                 48.3%    47.9   2024-10-10    7% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               67.1%    43.3   2024-10-10    6% ▇
+<a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>                                                      68.5%    46.2   2024-10-10   20% ▇▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  4.7900 MM-MT-Bench score (1-10)    43.6   2024-10-10    9% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval</a>                                                 62.8%    47.7   2024-10-10    8% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified)</a>                                 48.3%    48.1   2024-10-10    8% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               67.1%    43.4   2024-10-10    6% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                23.0%    25.0   2024-10-10    6% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      24.3%    28.4   2024-10-10    5% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   14.8%   -29.2   2024-10-10    0% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                            992.7    41.0   2026-10-02   19% ▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>                            71.0%    47.1   2024-12-05   11% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>                            24.4%    47.2   2025-09-29    8% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      24.3%    28.5   2024-10-10    6% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   14.8%   -28.0   2024-10-10    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                            992.7    41.1   2026-10-02   20% ▇▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>                            24.4%    47.2   2025-09-29    9% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>                            71.0%    48.8   2024-12-05    6% ▇
 prior                   pull toward the middle                                             50.0                 1% ▇
-                        weighted average                                                 = 42.7
+                        weighted average                                                 = 42.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Pixtral 12B ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Pixtral 12B ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -39,8 +39,8 @@ prior                   pull toward the middle                                  
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~6.92GB   42.7
-8-bit q8_0    ~13.34GB   42.7
+4-bit q4_k_m   ~6.92GB   42.6
+8-bit q8_0    ~13.34GB   42.6
 </pre>
 
 ```sh

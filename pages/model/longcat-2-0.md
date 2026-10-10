@@ -6,7 +6,7 @@
 
 Meituan · released 2026-06 · 1600B params (48B active) · mit
 
-**score 73.2** ±2.0 · #58 of 934 · from 6 benchmark results across 1 source · † every result so far was reported by its maker
+**score 72.6** ±2.0 · #62 of 934 · from 7 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,19 +14,20 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card-meituan-longcat--longcat-2.0"></a>meituan-longcat/LongC…  <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">GPQA Diamond (lab)</a>              88.9%    73.3   2026-09-25   33% ▇▇▇▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">FORTE (AGI-Eval) (lab)</a>          73.2%    74.9   2026-09-25   16% ▇▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">IMO-AnswerBench (lab)</a>           81.8%    74.6   2026-09-25   16% ▇▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">RWSearch (lab)</a>                  78.8%    75.4   2026-09-25   15% ▇▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">WritingBench (lab)</a>              83.8%    71.9   2026-09-25   14% ▇▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">IFEval (aggregation unspecifi…</a>  90.0%    69.1   2026-09-25    5% ▇
+<a name="card-meituan-longcat--longcat-2.0"></a>meituan-longcat/LongC…  <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">GPQA Diamond (lab)</a>              88.9%    73.2   2026-09-25   29% ▇▇▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">FORTE (AGI-Eval) (lab)</a>          73.2%    74.8   2026-09-25   14% ▇▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">IMO-AnswerBench (lab)</a>           81.8%    74.6   2026-09-25   14% ▇▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">RWSearch (lab)</a>                  78.8%    75.4   2026-09-25   13% ▇▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">WritingBench (lab)</a>              83.8%    71.9   2026-09-25   13% ▇▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">IFEval (aggregation unspecifi…</a>  90.0%    69.2   2026-09-25    5% ▇
+<a name="paper-2609.31632v1-eegagentbench"></a>EEGAgentBench: Benchm…  <a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench overall (tool-b…</a>  44.5%    67.9   2026-09-10   10% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 73.2
+                        weighted average                       = 72.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: meituan-longcat/LongCat-2.0 model card ([mit](../../licenses/meituan-longcat--LongCat-2.0.txt))</sub>
+<sub>Licences: meituan-longcat/LongCat-2.0 model card ([mit](../../licenses/meituan-longcat--LongCat-2.0.txt)) · EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 <details><summary>Not counted (4)</summary>
 
@@ -48,7 +49,7 @@ api (LongCat API Platform (Meituan)) · $1.30/M blended · $0.75 in / $2.95 out 
 
 <pre>
 download                       size  score
-4-bit fp8 · nvidia only  ~2051.18GB   73.2
+4-bit fp8 · nvidia only  ~2051.18GB   72.6
 </pre>
 
 ```sh

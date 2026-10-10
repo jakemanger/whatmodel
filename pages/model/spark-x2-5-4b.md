@@ -6,7 +6,7 @@
 
 iFLYTEK (SparkLLM) · released 2026-08 · 4.11B params · apache-2.0
 
-**score 66.2** ±1.1 · #133 of 934 · from 17 benchmark results across 1 source · † every result so far was reported by its maker
+**score 66.0** ±1.1 · #134 of 934 · from 17 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,25 +14,25 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card3-xhtoken-spark-x2-5-4b"></a>XHToken/Spark-X2.5-4B…  <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">Humanity's Last Exam (lab)</a>      12.3%    63.4   2026-09-15   15% ▇▇
-                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">HMMT February 2026 (lab)</a>        81.2%    68.5   2026-09-15   14% ▇▇
-                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">IMO-AnswerBench (lab)</a>           74.2%    67.2   2026-09-15    9% ▇
-                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">GPQA (subset unspecified) (la…</a>  67.4%    60.1   2026-09-15    8% ▇
-                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">SWE-bench Verified (lab)</a>        41.6%    61.2   2026-09-15    8% ▇
+<a name="card3-xhtoken-spark-x2-5-4b"></a>XHToken/Spark-X2.5-4B…  <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">Humanity's Last Exam (lab)</a>      12.3%    63.2   2026-09-15   15% ▇▇
+                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">HMMT February 2026 (lab)</a>        81.2%    68.4   2026-09-15   14% ▇▇
+                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">IMO-AnswerBench (lab)</a>           74.2%    67.2   2026-09-15    8% ▇
+                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">GPQA (subset unspecified) (la…</a>  67.4%    59.9   2026-09-15    8% ▇
+                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">SWE-bench Verified (lab)</a>        41.6%    61.0   2026-09-15    8% ▇
                         <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">SWE-bench Pro (split unspecif…</a>  44.4%    71.5   2026-09-15    7% ▇
-                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">AIME 2026 (lab)</a>                 90.7%    67.9   2026-09-15    6% ▇
-                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">MCP-Atlas (public set) (lab)</a>    54.6%    69.3   2026-09-15    5% ▇
+                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">AIME 2026 (lab)</a>                 90.7%    67.8   2026-09-15    6% ▇
+                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">MCP-Atlas (public set) (lab)</a>    54.6%    69.2   2026-09-15    6% ▇
                         <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">SWE-bench Multilingual (lab)</a>    53.3%    69.4   2026-09-15    5% ▇
-                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">MCPMark (lab)</a>                   14.2%    63.0   2026-09-15    5% ▇
-                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">SciCode (level unspecified) (…</a>  34.7%    63.7   2026-09-15    3% ▇
-                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">τ²-bench aggregate (lab)</a>        75.1%    63.0   2026-09-15    3% ▇
-                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">IFBench (aggregation unspecif…</a>  75.0%    69.4   2026-09-15    3% ▇
+                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">MCPMark (lab)</a>                   14.2%    62.9   2026-09-15    5% ▇
+                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">τ²-bench aggregate (lab)</a>        75.1%    62.5   2026-09-15    4% ▇
+                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">SciCode (level unspecified) (…</a>  34.7%    63.5   2026-09-15    3% ▇
+                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">IFBench (aggregation unspecif…</a>  75.0%    69.2   2026-09-15    3% ▇
                         <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">BrowseComp (lab)</a>                40.9%    72.1   2026-09-15    3% ▇
                         <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">τ³-bench (lab)</a>                  30.4%    66.9   2026-09-15    2% ▇
-                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">BFCL V4 (December 2025 archiv…</a>  65.1%    70.7   2026-09-15    2% ▇
-                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">IFEval (aggregation unspecifi…</a>  93.0%    73.7   2026-09-15    0% ▇
+                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">BFCL V4 (December 2025 archiv…</a>  65.1%    70.5   2026-09-15    2% ▇
+                        <a href="https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md">IFEval (aggregation unspecifi…</a>  93.0%    73.4   2026-09-15    0% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 66.2
+                        weighted average                       = 66.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -45,8 +45,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-16-bit bf16   ~8.2GB   66.2
-4-bit q4_k_m  ~2.6GB   66.2
+16-bit bf16   ~8.2GB   66.0
+4-bit q4_k_m  ~2.6GB   66.0
 </pre>
 
 ```sh

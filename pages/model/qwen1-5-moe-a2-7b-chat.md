@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-03 · 14.32B params (2.7B active) · tongyi-qianwen
 
-**score 41.1** ±5.0 · #679 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.0** ±6.5 · #613 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  62.6%    40.0   2024-04-12   89% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                11% ▇
-                        weighted average                       = 41.1
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  62.6%    42.6   2024-04-12   81% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                19% ▇▇
+                        weighted average                       = 44.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                       size  score
-16-bit bf16 · nvidia only  ~28.63GB   41.1
+16-bit bf16 · nvidia only  ~28.63GB   44.0
 </pre>
 
 ```sh

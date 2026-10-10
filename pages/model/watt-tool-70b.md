@@ -6,7 +6,7 @@
 
 Watt AI · released 2024-12 · 70.55B params · apache-2.0
 
-**score 66.8** ±6.6 · #123 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 66.8** ±6.6 · #122 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

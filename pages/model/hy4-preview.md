@@ -6,7 +6,7 @@
 
 Tencent · released 2026-08 · 770B params (49B active) · apache-2.0
 
-**score 79.3** ±1.2 · #15 of 934 · from 15 benchmark results across 2 sources
+**score 79.2** ±1.2 · #15 of 934 · from 15 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -15,22 +15,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                                 score  implies  date        weight
 <a name="card2-tencent-hy4-preview"></a>Tencent Hy4 preview m…  <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">SWE-bench Pro (split unspecif…</a>       65.7%    76.8   2026-08-28    7% ▇
-                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">GPQA Diamond (lab)</a>                   92.3%    74.2   2026-08-28    7% ▇
+                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">GPQA Diamond (lab)</a>                   92.3%    74.1   2026-08-28    7% ▇
                         <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">Terminal-Bench 2.1 (lab)</a>             85.4%    81.9   2026-08-28    6% ▇
-                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">Humanity's Last Exam (lab)</a>           43.4%    78.5   2026-08-28    6% ▇
-                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">APEX-Agents (pass@1) (lab)</a>           37.1%    81.5   2026-08-28    6% ▇
-                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">NL2Repo (lab)</a>                        58.9%    80.2   2026-08-28    4% ▇
+                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">APEX-Agents (pass@1) (lab)</a>           37.1%    81.4   2026-08-28    6% ▇
+                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">Humanity's Last Exam (lab)</a>           43.4%    78.4   2026-08-28    5% ▇
+                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">NL2Repo (lab)</a>                        58.9%    80.0   2026-08-28    5% ▇
                         <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">SWE-bench Multilingual (lab)</a>         82.9%    79.6   2026-08-28    4% ▇
-                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">MCP-Atlas (public set) (lab)</a>         83.7%    81.5   2026-08-28    4% ▇
+                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">MCP-Atlas (public set) (lab)</a>         83.7%    81.4   2026-08-28    4% ▇
                         <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">Humanity's Last Exam with too…</a>       55.4%    77.1   2026-08-28    3% ▇
-                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">SkillsBench 79-task text-only…</a>       62.9%    79.8   2026-08-28    3% ▇
-                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">WideSearch (lab)</a>                     83.9%    81.5   2026-08-28    3% ▇
-                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">MathArena Apex (pass@1) (lab)</a>        74.2%    88.9   2026-08-28    3% ▇
-                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">SuperChem (lab)</a>                      66.4%    81.5   2026-08-28    3% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  0.0395 IPS    79.1   2026-10-02   21% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1633.2    79.6   2026-10-01   19% ▇▇
+                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">SkillsBench 79-task text-only…</a>       62.9%    79.7   2026-08-28    3% ▇
+                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">WideSearch (lab)</a>                     83.9%    81.4   2026-08-28    3% ▇
+                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">MathArena Apex (pass@1) (lab)</a>        74.2%    89.0   2026-08-28    3% ▇
+                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">SuperChem (lab)</a>                      66.4%    81.5   2026-08-28    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  0.0395 IPS    79.1   2026-10-02   22% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1633.2    79.6   2026-10-01   20% ▇▇
 prior                   pull toward the middle                        50.0                 1% ▇
-                        weighted average                            = 79.3
+                        weighted average                            = 79.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -45,8 +45,8 @@ api (Tencent Cloud TokenHub) · $1.25/M blended · $0.834 in / $2.501 out per 1M
 
 <pre>
 download                         size  score
-4-bit fp8 · nvidia only     ~813.77GB   79.3
-16-bit bf16 · nvidia only  ~1559.98GB   79.3
+4-bit fp8 · nvidia only     ~813.77GB   79.2
+16-bit bf16 · nvidia only  ~1559.98GB   79.2
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 6.7B params · opt-175b-license-noncommercial
 
-**score 25.4** ±0.8 · #880 of 934 · from 16 benchmark results across 2 sources
+**score 24.6** ±0.8 · #886 of 934 · from 17 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,29 +14,30 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">ARC Challenge</a>                   34.8%    24.3   2024-04-08   28% ▇▇▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">WinoGrande</a>                      65.4%    28.2   2024-04-08    8% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">BoolQ</a>                           66.0%    23.6   2024-04-08    7% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">ARC Easy</a>                        60.1%    22.4   2024-04-08    5% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">SciQ</a>                            90.1%    23.5   2024-04-08    5% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">HellaSwag</a>                       67.2%    25.6   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">PIQA</a>                            76.3%    27.5   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">OpenBookQA</a>                      27.6%    23.2   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">Social IQA</a>                      42.6%    26.1   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">LAMBADA (OpenAI version), las…</a>  67.6%    26.5   2024-04-08    2% ▇
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   30.5%    26.4   2023-05-31    8% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        65.6%    24.4   2023-05-31    7% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      65.3%    28.6   2023-05-31    7% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            76.3%    27.9   2023-05-31    4% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            90.1%    24.4   2023-05-31    4% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  67.7%    27.0   2023-05-31    3% ▇
+<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">ARC Challenge</a>                   34.8%    23.8   2024-04-08   27% ▇▇▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">WinoGrande</a>                      65.4%    27.7   2024-04-08    8% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">BoolQ</a>                           66.0%    23.1   2024-04-08    7% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">ARC Easy</a>                        60.1%    21.9   2024-04-08    5% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">SciQ</a>                            90.1%    22.9   2024-04-08    5% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">HellaSwag</a>                       67.2%    25.0   2024-04-08    4% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">PIQA</a>                            76.3%    27.0   2024-04-08    3% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">OpenBookQA</a>                      27.6%    22.6   2024-04-08    3% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">Social IQA</a>                      42.6%    25.6   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json">LAMBADA (OpenAI version), las…</a>  67.6%    26.1   2024-04-08    2% ▇
+<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   30.5%    25.4   2023-05-31    8% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        65.6%    23.3   2023-05-31    7% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      65.3%    27.6   2023-05-31    7% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            76.3%    26.9   2023-05-31    4% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            90.1%    23.3   2023-05-31    4% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  67.7%    26.0   2023-05-31    3% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  28.6%     9.8   2024-02-05    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 25.4
+                        weighted average                       = 24.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt))</sub>
+<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -44,7 +45,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp16  ~13.32GB   25.4
+4-bit fp16  ~13.32GB   24.6
 </pre>
 
 ```sh

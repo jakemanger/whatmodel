@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                 20.8%    19.5   2025-06-14   79% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle           50.0                21% ▇▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                 20.8%    19.5   2025-06-14   79% ▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle           50.0                21% ▇▇▇
                         weighted average               = 25.9
 </pre>
 

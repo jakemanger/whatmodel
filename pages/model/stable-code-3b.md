@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-01 · 2.8B params · stability-ai-community
 
-**score 32.7** ±0.6 · #814 of 934 · from 15 benchmark results across 4 sources
+**score 32.7** ±0.6 · #816 of 934 · from 15 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -24,11 +24,11 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                         22.7%    33.2   2024-02-29    3% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>                           39.7%    37.2   2024-02-29    2% ▇
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  27.8%    32.0   2024-05-07    5% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            34.8%    32.1   2024-05-07    3% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  12.3%    29.8   2024-05-07    2% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      33.5%    33.1   2024-05-07    2% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            34.8%    32.2   2024-05-07    3% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  12.3%    29.9   2024-05-07    2% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      33.5%    33.2   2024-05-07    2% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  10.5%    31.2   2024-05-07    2% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      32.1%    31.4   2024-05-07    2% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      32.1%    31.6   2024-05-07    2% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 32.7
 </pre>

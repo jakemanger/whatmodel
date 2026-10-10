@@ -6,7 +6,7 @@
 
 Arcee AI · released 2025-07 · 4.62B params · apache-2.0
 
-**score 49.2** ±5.2 · #458 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.5** ±5.4 · #482 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  60.2%    46.3   2026-04-17   51% ▇▇▇▇▇▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  86.5%    52.9   2026-04-17   36% ▇▇▇▇
-prior                  pull toward the middle                   50.0                12% ▇
-                       weighted average                       = 49.2
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  60.2%    45.7   2026-04-17   58% ▇▇▇▇▇▇▇
+                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  86.5%    53.4   2026-04-17   29% ▇▇▇▇
+prior                  pull toward the middle                   50.0                13% ▇▇
+                       weighted average                       = 48.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                  pull toward the middle                   50.0            
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~2.92GB   49.2
+4-bit q4_k_m  ~2.92GB   48.5
 </pre>
 
 ```sh

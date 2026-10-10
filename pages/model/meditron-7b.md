@@ -6,7 +6,7 @@
 
 EPFL LLM · released 2023-11 · 6.74B params · llama2
 
-**score 19.5** ±6.1 · #902 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 17.6** ±5.6 · #910 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,20 +14,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   9.5%    13.4   2025-04-28   83% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                17% ▇▇
-                        weighted average                       = 19.5
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   9.5%    13.6   2025-04-28   69% ▇▇▇▇▇▇▇▇
+<a name="paper-2606.08071v1-surgiq"></a>SurgiQ: A Large-Scale…  <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-sho…</a>  27.1%     6.8   2026-06-06   17% ▇▇
+prior                   pull toward the middle                   50.0                14% ▇▇
+                        weighted average                       = 17.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
+<sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 download         size  score
-16-bit bf16  ~13.48GB   19.5
+16-bit bf16  ~13.48GB   17.6
 </pre>
 
 ```sh

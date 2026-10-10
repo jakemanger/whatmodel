@@ -6,7 +6,7 @@
 
 INF (infly) · released 2024-11 · 7.77B params · other (inf)
 
-**score 51.5** ±0.9 · #393 of 934 · from 4 benchmark results across 1 source
+**score 51.3** ±0.9 · #399 of 934 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,23 +14,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       81.7%    51.2   2024-12-26   47% ▇▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      77.4%    51.7   2024-12-26   41% ▇▇▇▇▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       81.7%    51.3   2024-12-26   47% ▇▇▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      77.4%    51.8   2024-12-26   40% ▇▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           71.4%    52.7   2024-12-26    8% ▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/infly--OpenCoder-8B-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  76.9%    50.5   2024-11-08    4% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  46.2%    15.6   2026-04-17    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 51.5
+                        weighted average                       = 51.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt))</sub>
+<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 ## How to run it
 
 <pre>
 download         size  score
-16-bit bf16  ~15.54GB   51.5
+16-bit bf16  ~15.54GB   51.3
 </pre>
 
 ```sh

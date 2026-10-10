@@ -6,7 +6,7 @@
 
 EleutherAI · released 2022-02 · 20.55B params · apache-2.0
 
-**score 28.8** ±0.8 · #853 of 934 · from 19 benchmark results across 2 sources
+**score 28.2** ±0.8 · #861 of 934 · from 20 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,32 +14,33 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">ARC Challenge</a>                   40.8%    28.9   2024-04-08   31% ▇▇▇▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">WinoGrande</a>                      66.1%    28.8   2024-04-08    8% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">BoolQ</a>                           69.5%    27.3   2024-04-08    6% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">ARC Easy</a>                        68.7%    30.2   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">HellaSwag</a>                       71.4%    28.7   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">SciQ</a>                            93.1%    30.2   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">OpenBookQA</a>                      29.8%    29.0   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">PIQA</a>                            77.4%    29.4   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">Social IQA</a>                      42.0%    24.8   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">LAMBADA (OpenAI version), las…</a>  72.0%    30.4   2024-04-08    2% ▇
-<a name="paper-2204.06745v1"></a>GPT-NeoX-20B: An Open…  <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge (lab)</a>             38.0%    30.4   2022-04-14    9% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">WinoGrande (lab)</a>                66.1%    28.9   2022-04-14    5% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA (lab)</a>                29.0%    26.9   2022-04-14    4% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">TriviaQA (lab)</a>                  25.9%    27.6   2022-04-14    4% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">HellaSwag (lab)</a>                 53.5%    26.9   2022-04-14    4% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">ARC Easy (lab)</a>                  72.3%    30.0   2022-04-14    2% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">SciQ (lab)</a>                      92.8%    28.3   2022-04-14    2% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">LAMBADA (OpenAI version), las…</a>  72.0%    28.5   2022-04-14    2% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">PIQA (lab)</a>                      77.9%    29.8   2022-04-14    1% ▇
+<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">ARC Challenge</a>                   40.8%    28.4   2024-04-08   31% ▇▇▇▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">WinoGrande</a>                      66.1%    28.3   2024-04-08    8% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">BoolQ</a>                           69.5%    26.8   2024-04-08    6% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">ARC Easy</a>                        68.7%    29.7   2024-04-08    5% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">HellaSwag</a>                       71.4%    28.1   2024-04-08    4% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">SciQ</a>                            93.1%    29.7   2024-04-08    4% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">OpenBookQA</a>                      29.8%    28.5   2024-04-08    3% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">PIQA</a>                            77.4%    28.9   2024-04-08    3% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">Social IQA</a>                      42.0%    24.2   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">LAMBADA (OpenAI version), las…</a>  72.0%    30.0   2024-04-08    2% ▇
+<a name="paper-2204.06745v1"></a>GPT-NeoX-20B: An Open…  <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge (lab)</a>             38.0%    30.0   2022-04-14    8% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">WinoGrande (lab)</a>                66.1%    28.5   2022-04-14    5% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA (lab)</a>                29.0%    26.5   2022-04-14    4% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">TriviaQA (lab)</a>                  25.9%    27.2   2022-04-14    4% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">HellaSwag (lab)</a>                 53.5%    26.5   2022-04-14    4% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">ARC Easy (lab)</a>                  72.3%    29.6   2022-04-14    2% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">SciQ (lab)</a>                      92.8%    27.7   2022-04-14    2% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">LAMBADA (OpenAI version), las…</a>  72.0%    28.0   2022-04-14    2% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">PIQA (lab)</a>                      77.9%    29.4   2022-04-14    1% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  28.3%    12.6   2024-02-05    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 28.8
+                        weighted average                       = 28.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · GPT-NeoX-20B: An Open-Source Autoregressive Language Model ([CC BY 4.0](../../licenses/paper-2204.06745v1-CC-BY-4.0.txt))</sub>
+<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · GPT-NeoX-20B: An Open-Source Autoregressive Language Model ([CC BY 4.0](../../licenses/paper-2204.06745v1-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -47,7 +48,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp16  ~41.29GB   28.8
+4-bit fp16  ~41.29GB   28.2
 </pre>
 
 ```sh

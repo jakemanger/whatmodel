@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-08 · 106B params (12B active) · mit
 
-**score 60.9** ±1.7 · #202 of 934 · from 11 benchmark results across 3 sources
+**score 61.4** ±1.6 · #197 of 934 · from 12 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,24 +14,25 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="glm-v-github-bench-image"></a>Z.ai GLM-V GitHub rep…  <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">CharXiv (reasoning questions)…</a>   58.4%    59.4   2025-12-08    9% ▇
-                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU (val) (lab)</a>                 75.4%    62.2   2025-12-08    8% ▇
-                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU Pro (lab)</a>                   65.2%    62.0   2025-12-08    7% ▇
-                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMStar (lab)</a>                     75.3%    60.2   2025-12-08    6% ▇
-                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">LVBench (lab)</a>                    53.8%    52.9   2025-12-08    5% ▇
-                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">AndroidWorld (lab)</a>               57.0%    61.4   2025-12-08    5% ▇
+<a name="glm-v-github-bench-image"></a>Z.ai GLM-V GitHub rep…  <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">CharXiv (reasoning questions)…</a>   58.4%    59.6   2025-12-08    8% ▇
+                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU (val) (lab)</a>                 75.4%    62.4   2025-12-08    7% ▇
+                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU Pro (lab)</a>                   65.2%    62.1   2025-12-08    7% ▇
+                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMStar (lab)</a>                     75.3%    60.3   2025-12-08    5% ▇
+                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">LVBench (lab)</a>                    53.8%    53.1   2025-12-08    5% ▇
+                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">AndroidWorld (lab)</a>               57.0%    61.5   2025-12-08    4% ▇
                         <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">OCRBench (lab)</a>                   86.5%    59.0   2025-12-08    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1352.4    60.2   2026-10-02   23% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1152.7    60.5   2026-10-02   17% ▇▇
-<a name="card-final-apriel-1-6-15b-thinker"></a>ServiceNow-AI/Apriel-…  <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv (reasoning questions)</a>    63.0%    65.3   2025-12-22   10% ▇
-                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv descriptive questions</a>    90.8%    67.2   2025-12-22    6% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1352.4    60.2   2026-10-02   21% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1152.7    60.5   2026-10-02   15% ▇▇
+<a name="card-final-apriel-1-6-15b-thinker"></a>ServiceNow-AI/Apriel-…  <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv (reasoning questions)</a>    63.0%    65.3   2025-12-22    9% ▇
+                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">CharXiv descriptive questions</a>    90.8%    67.3   2025-12-22    6% ▇
+<a name="paper-2606.01348v3-chartarena"></a>ChartArena: Benchmark…  <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (Eng…</a>   43.8%    64.1   2026-07-05   11% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 60.9
+                        weighted average                        = 61.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Z.ai GLM-V GitHub repository benchmark image ([Apache-2.0](https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/LICENSE)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ServiceNow-AI/Apriel-1.6-15b-Thinker model card ([MIT](../../licenses/cards-final-NOTICE.txt))</sub>
+<sub>Licences: Z.ai GLM-V GitHub repository benchmark image ([Apache-2.0](https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/LICENSE)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ServiceNow-AI/Apriel-1.6-15b-Thinker model card ([MIT](../../licenses/cards-final-NOTICE.txt)) · ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -41,7 +42,7 @@ api (Z.ai) · $0.90/M blended · $0.6 in / $1.8 out per 1M tokens · [docs.z.ai]
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~64.63GB   60.9
+4-bit q4_k_m  ~64.63GB   61.4
 </pre>
 
 ```sh

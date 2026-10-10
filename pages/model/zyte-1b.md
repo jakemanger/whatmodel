@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                2.4%     9.9   2024-12-26   42% ▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>               1.8%     7.6   2024-12-26   29% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                    7.5%     1.7   2024-12-26   26% ▇▇▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                2.4%     9.7   2024-12-26   42% ▇▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>               1.8%     7.5   2024-12-26   29% ▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                    7.5%     1.6   2024-12-26   26% ▇▇▇
 prior                   pull toward the middle           50.0                 3% ▇
                         weighted average                = 8.0
 </pre>

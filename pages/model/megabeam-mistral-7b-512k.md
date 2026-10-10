@@ -6,7 +6,7 @@
 
 AWS (aws-prototyping) · released 2024-07 · 7.24B params · apache-2.0
 
-**score 45.5** ±3.9 · #563 of 934 · from 3 benchmark results across 2 sources
+**score 48.9** ±4.5 · #465 of 934 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,22 +14,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  62.6%    40.0   2024-10-07   56% ▇▇▇▇▇▇▇
-<a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                       83.7%    50.5   2025-10-09   28% ▇▇▇
-                        <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                      83.7%    60.1   2025-10-09    9% ▇
-prior                   pull toward the middle                   50.0                 7% ▇
-                        weighted average                       = 45.5
+<a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                       83.7%    51.2   2025-10-09   37% ▇▇▇▇
+                        <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                      83.7%    60.1   2025-10-09   14% ▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  62.6%    42.4   2024-10-07   39% ▇▇▇▇▇
+prior                   pull toward the middle                   50.0                 9% ▇
+                        weighted average                       = 48.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · NVIDIA RULER repository README results table ([Apache-2.0](https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/LICENSE))</sub>
+<sub>Licences: NVIDIA RULER repository README results table ([Apache-2.0](https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
 download         size  score
-16-bit bf16  ~14.48GB   45.5
+16-bit bf16  ~14.48GB   48.9
 </pre>
 
 ```sh

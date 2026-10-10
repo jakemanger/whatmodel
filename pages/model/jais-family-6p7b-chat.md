@@ -6,7 +6,7 @@
 
 Inception (G42) · released 2024-08 · 7.14B params · apache-2.0
 
-**score 42.0** ±3.3 · #659 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 42.0** ±3.3 · #661 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>  22.5%    40.1   2026-04-06   67% ▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  21.3%    45.1   2025-09-29   28% ▇▇▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>  22.5%    40.1   2026-04-06   66% ▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  21.3%    45.0   2025-09-29   29% ▇▇▇▇
 prior                   pull toward the middle                   50.0                 5% ▇
                         weighted average                       = 42.0
 </pre>

@@ -6,7 +6,7 @@
 
 Nous Research · released 2023-06 · gpl
 
-**score 33.6** ±2.2 · #805 of 934 · from 3 benchmark results across 2 sources
+**score 33.9** ±2.2 · #804 of 934 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   9.7%    33.8   2025-08-09   64% ▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  65.5%    31.1   2025-08-09   19% ▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  55.7%    33.9   2024-02-27   15% ▇▇
+<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   9.7%    33.8   2025-08-09   70% ▇▇▇▇▇▇▇▇
+                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  65.5%    31.1   2025-08-09   20% ▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  55.7%    37.4   2024-02-27    8% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 33.6
+                        weighted average                       = 33.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~26.03GB   33.6
+16-bit bf16  ~26.03GB   33.9
 </pre>
 
 ```sh

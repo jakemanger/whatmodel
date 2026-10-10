@@ -6,7 +6,7 @@
 
 Google · released 2026-09 · closed weights
 
-**score 77.2** ±0.6 · #24 of 934 · from 30 benchmark results across 8 sources
+**score 77.2** ±0.6 · #25 of 934 · from 33 benchmark results across 11 sources
 
 ## How the score was worked out
 
@@ -14,43 +14,46 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                 score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               22.0%    73.7   2026-09-02   15% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            68.4%    76.3   2026-09-02   14% ▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               22.0%    73.7   2026-09-02   13% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            68.4%    76.3   2026-09-02   12% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           31.7%    75.0   2026-09-10    5% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         47.0%    81.0   2026-09-02    5% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                61.0%    84.6   2026-09-02    3% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         95.4%    79.7   2026-09-02    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                61.0%    84.7   2026-09-02    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         95.4%    79.8   2026-09-02    2% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    69.7%    85.2   2026-09-02    1% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             98.9%    80.2   2026-09-02    0% ▇
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026…</a>       67.4%    76.6   2026-09-07    7% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 202…</a>       64.2%    78.5   2026-09-11    7% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             98.9%    80.3   2026-09-02    0% ▇
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026…</a>       67.4%    76.7   2026-09-07    7% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 202…</a>       64.2%    78.5   2026-09-11    6% ▇
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet">MathArena BrokenArXiv April 2…</a>       33.6%    75.9   2026-09-11    3% ▇
                         <a href="https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet">MathArena ArXivMath May 2026 …</a>       58.3%    74.1   2026-09-11    2% ▇
                         <a href="https://huggingface.co/datasets/MathArena/arxivlean-0626_outputs/blob/4221f7241f21cf4d39a80b934b7ea76d53ba29ed/data/train-00000-of-00001.parquet">MathArena ArXivLean June 2026…</a>       19.6%    77.1   2026-09-11    2% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0826_outputs/blob/64731d80cf7dd2a83d842c4deb9739c81d129efa/data/train-00000-of-00001.parquet">MathArena ArXivMath August 20…</a>       40.4%    72.1   2026-09-15    1% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0826_outputs/blob/7da551be2a80d7721bd6ee77ef14c8894fdef686/data/train-00000-of-00001.parquet">MathArena BrokenArXiv August …</a>       27.4%    66.7   2026-09-15    1% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0826_outputs/blob/64731d80cf7dd2a83d842c4deb9739c81d129efa/data/train-00000-of-00001.parquet">MathArena ArXivMath August 20…</a>       40.4%    72.2   2026-09-15    1% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0826_outputs/blob/7da551be2a80d7721bd6ee77ef14c8894fdef686/data/train-00000-of-00001.parquet">MathArena BrokenArXiv August …</a>       27.4%    66.8   2026-09-15    1% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  0.0297 IPS    78.3   2026-10-02    5% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1582.7    77.3   2026-10-01    5% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1494.8    77.3   2026-10-02    3% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1494.8    77.2   2026-10-02    3% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>      1290.3    77.2   2026-10-02    2% ▇
 <a name="first-party-google-scores"></a>Google DeepMind Gemin…  <a href="https://deepmind.google/models/model-cards/gemini-3-8-flash/#evaluation">CharXiv (reasoning questions)…</a>       86.2%    77.2   2026-09-02    3% ▇
-                        <a href="https://deepmind.google/models/model-cards/gemini-3-8-flash/#evaluation">Terminal-Bench 2.1 (lab)</a>             89.4%    81.7   2026-09-02    2% ▇
+                        <a href="https://deepmind.google/models/model-cards/gemini-3-8-flash/#evaluation">Terminal-Bench 2.1 (lab)</a>             89.4%    81.6   2026-09-02    2% ▇
                         <a href="https://deepmind.google/models/model-cards/gemini-3-8-flash/#evaluation">DeepSWE v1.1 (resolved) (lab)</a>        73.7%    82.6   2026-09-02    1% ▇
-                        <a href="https://deepmind.google/models/model-cards/gemini-3-8-flash/#evaluation">LVBench (lab)</a>                        87.1%    80.0   2026-09-02    1% ▇
-<a name="google-cloud-gemini-guides"></a>Google Cloud develope…  <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new">SWE-bench Pro (split unspecif…</a>       61.6%    76.3   2026-10-06    2% ▇
+                        <a href="https://deepmind.google/models/model-cards/gemini-3-8-flash/#evaluation">LVBench (lab)</a>                        87.1%    79.8   2026-09-02    1% ▇
+<a name="google-cloud-gemini-guides"></a>Google Cloud develope…  <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new">SWE-bench Pro (split unspecif…</a>       61.6%    76.2   2026-10-06    2% ▇
                         <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new">Terminal-Bench 2.1 (lab)</a>             90.8%    83.9   2026-10-06    1% ▇
-                        <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new">τ³-bench Banking (lab)</a>               38.1%    84.3   2026-10-06    1% ▇
+                        <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new">τ³-bench Banking (lab)</a>               38.1%    84.1   2026-10-06    1% ▇
 <a name="terminal-bench-leaderboard-submissions"></a>Terminal-Bench 4.0 of…  <a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-01-gemini-gemini-3-8-flash-high-mini-swe-agent.json">Terminal-Bench 4.0</a>                   19.1%    75.0   2026-09-01    3% ▇
+<a name="paper-2609.38335v1-e2e-swe"></a>E2E-SWE: Benchmarking…  <a href="https://arxiv.org/html/2609.38335v1">E2E-SWE (build a working code…</a>       36.7%    75.2   2026-09-29    2% ▇
 <a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>       84.6%    81.4   2026-09-07    2% ▇
                         <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>       96.5%    81.4   2026-09-07    1% ▇
+<a name="paper-2610.04432v2-video2world"></a>Video2World: Benchmar…  <a href="https://arxiv.org/html/2610.04432v2">Video2World V2WScore (coding …</a>       30.1%    77.4   2026-10-07    1% ▇
 <a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard ave…</a>       63.5%    82.3   2026-09-07    1% ▇
+<a name="paper-2609.38480v2-klinikebench"></a>KlinikeBench: Evaluat…  <a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (3…</a>       18.9%    79.4   2026-10-06    1% ▇
 prior                   pull toward the middle                        50.0                 0% ▇
                         weighted average                            = 77.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Google Cloud developer's guides to Gemini 3.8 Flash and 3.7 Flash ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench 4.0 official leaderboard submissions ([Apache-2.0](../../licenses/terminal-bench-leaderboard-submissions-Apache-2.0.txt)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Google Cloud developer's guides to Gemini 3.8 Flash and 3.7 Flash ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench 4.0 official leaderboard submissions ([Apache-2.0](../../licenses/terminal-bench-leaderboard-submissions-Apache-2.0.txt)) · E2E-SWE: Benchmarking LLMs on Building Working Codebases from Scratch ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt)) · KlinikeBench: Evaluating Language Models Beyond Diagnostic Accuracy ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

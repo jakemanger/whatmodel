@@ -6,7 +6,7 @@
 
 Katanemo · released 2025-06 · 3.09B params · other (katanemo-research)
 
-**score 52.4** ±4.7 · #376 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.3** ±4.7 · #378 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  35.4%    52.6   2025-12-16   90% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                10% ▇
-                        weighted average                       = 52.4
+                        weighted average                       = 52.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-16-bit bf16  ~6.17GB   52.4
+16-bit bf16  ~6.17GB   52.3
 </pre>
 
 ```sh

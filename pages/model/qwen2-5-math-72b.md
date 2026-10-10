@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 72.71B params · qwen
 
-**score 54.6** ±2.3 · #328 of 934 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 54.6** ±2.3 · #323 of 934 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source  test                            score  implies  date        weight
 <a name="first-party-qwen-scores"></a>Qwen    <a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>              44.1%    53.2   2024-09-18   53% ▇▇▇▇▇▇
-        <a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                     95.9%    55.6   2024-09-18   26% ▇▇▇
+        <a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                     95.9%    55.5   2024-09-18   26% ▇▇▇
         <a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (la…</a>  85.9%    57.7   2024-09-18   19% ▇▇
 prior   pull toward the middle                   50.0                 2% ▇
         weighted average                       = 54.6

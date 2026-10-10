@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            24.5%    41.3   2024-10-22   54% ▇▇▇▇▇▇
-<a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_mathstral-7B_5shots.zip">MMLU-Pro</a>                        42.0%    42.6                30% ▇▇▇▇
-<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   9.0%    44.7                11% ▇
-<a name="first-party-mistral-scores"></a>Mistral AI vendor-rep…  <a href="https://huggingface.co/mistralai/Mathstral-7B-v0.1/blob/ec3a48484ef241dfe03282edcb0f25e564923823/README.md#evaluation">MATH (subset unspecified) (la…</a>  56.6%    47.1   2024-07-16    5% ▇
+<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            24.5%    41.3   2024-10-22   55% ▇▇▇▇▇▇▇
+<a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_mathstral-7B_5shots.zip">MMLU-Pro</a>                        42.0%    42.6                29% ▇▇▇▇
+<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   9.0%    44.8                11% ▇
+<a name="first-party-mistral-scores"></a>Mistral AI vendor-rep…  <a href="https://huggingface.co/mistralai/Mathstral-7B-v0.1/blob/ec3a48484ef241dfe03282edcb0f25e564923823/README.md#evaluation">MATH (subset unspecified) (la…</a>  56.6%    47.1   2024-07-16    4% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 42.4
 </pre>

@@ -6,7 +6,7 @@
 
 Meta · released 2024-04 · 70.55B params · llama3
 
-**score 47.5** ±2.6 · #504 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 46.3** ±2.4 · #544 of 934 · from 4 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,21 +14,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         43.3%    45.4   2025-04-01   73% ▇▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  77.9%    53.2   2024-04-18   24% ▇▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         43.3%    45.6   2025-04-01   54% ▇▇▇▇▇▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  46.1%    41.7   2024-06-20   26% ▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  77.9%    54.0   2024-04-18   11% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  91.8%    57.1   2026-04-17    6% ▇
 prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 47.5
+                        weighted average                       = 46.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 ## How to run it
 
 <pre>
 download          size  score
-16-bit bf16  ~141.11GB   47.5
+16-bit bf16  ~141.11GB   46.3
 </pre>
 
 ```sh

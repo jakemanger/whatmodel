@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 34B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 43.8** ±1.7 · #618 of 934 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 43.8** ±1.7 · #619 of 934 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            64.3%    43.8   2023-11-20   46% ▇▇▇▇▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  82.5%    47.2   2023-11-20   18% ▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      53.6%    38.5   2023-11-20   15% ▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     54.0%    42.5   2023-11-20   14% ▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  60.6%    49.6   2023-11-20    5% ▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            64.3%    43.9   2023-11-20   47% ▇▇▇▇▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  82.5%    47.4   2023-11-20   17% ▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      53.6%    38.6   2023-11-20   15% ▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     54.0%    42.6   2023-11-20   15% ▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  60.6%    49.8   2023-11-20    5% ▇
 prior   pull toward the middle                   50.0                 1% ▇
         weighted average                       = 43.8
 </pre>

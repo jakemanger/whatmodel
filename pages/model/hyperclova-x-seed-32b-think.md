@@ -6,28 +6,29 @@
 
 NAVER Cloud · released 2025-12 · 33.31B params · hyperclovax
 
-**score 63.2** ±1.9 · comparison only: no current run option verified · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 60.3** ±2.0 · comparison only: no current run option verified · from 8 benchmark results across 2 sources · † every result so far was reported by its maker
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                       score  implies  date        weight
-<a name="paper-2601.03286v1-hyperclova-x-32b-think"></a>HyperCLOVA X 32B Think  <a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard (lab)</a>   9.9%    64.2   2026-01-03   30% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Telecom (lab)</a>     65.1%    69.4   2026-01-03   28% ▇▇▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail (lab)</a>      71.6%    68.2   2026-01-03   15% ▇▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline (lab)</a>     58.0%    67.8   2026-01-03   10% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag (lab)</a>            57.2%    31.7   2026-01-03    7% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU (lab)</a>                 87.7%    61.7   2026-01-03    6% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">PIQA (lab)</a>                 76.7%    24.8   2026-01-03    2% ▇
-prior                   pull toward the middle              50.0                 2% ▇
-                        weighted average                  = 63.2
+source                  test                            score  implies  date        weight
+<a name="paper-2601.03286v1-hyperclova-x-32b-think"></a>HyperCLOVA X 32B Think  <a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard (lab)</a>        9.9%    64.0   2026-01-03   23% ▇▇▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Telecom (lab)</a>          65.1%    69.5   2026-01-03   20% ▇▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail (lab)</a>           71.6%    67.9   2026-01-03   14% ▇▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag (lab)</a>                 57.2%    37.2   2026-01-03   10% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline (lab)</a>          58.0%    67.7   2026-01-03   10% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU (lab)</a>                      87.7%    61.4   2026-01-03    6% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">PIQA (lab)</a>                      76.7%    27.4   2026-01-03    3% ▇
+<a name="paper-2606.02404v1-k-browsecomp"></a>K-BrowseComp: A Web B…  <a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean…</a>   2.3%    51.8   2026-06-01   13% ▇▇
+prior                   pull toward the middle                   50.0                 2% ▇
+                        weighted average                       = 60.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: HyperCLOVA X 32B Think ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: HyperCLOVA X 32B Think ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

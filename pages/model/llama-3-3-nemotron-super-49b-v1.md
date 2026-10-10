@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-03 · 49.9B params · nvidia-open-model-license
 
-**score 58.5** ±1.6 · #241 of 934 · from 7 benchmark results across 2 sources
+**score 58.4** ±1.6 · #240 of 934 · from 7 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="report-2505.00949v5"></a>NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>               66.7%    58.2   2025-09-09   19% ▇▇
-                        <a href="https://arxiv.org/html/2505.00949v5">AIME 2025 (lab)</a>                  60.0%    56.0   2025-09-09   17% ▇▇
-                        <a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (lab)</a>                  67.5%    55.7   2025-09-09   16% ▇▇
-                        <a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>                   96.6%    62.4   2025-09-09   12% ▇
-                        <a href="https://arxiv.org/html/2505.00949v5">Arena-Hard (version/judge uns…</a>   88.3%    65.4   2025-09-09    9% ▇
-                        <a href="https://arxiv.org/html/2505.00949v5">IFEval (aggregation unspecifi…</a>   89.2%    63.5   2025-09-09    5% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1327.8    57.3   2026-10-02   21% ▇▇▇
+<a name="report-2505.00949v5"></a>NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>               66.7%    58.0   2025-09-09   19% ▇▇
+                        <a href="https://arxiv.org/html/2505.00949v5">AIME 2025 (lab)</a>                  60.0%    55.8   2025-09-09   17% ▇▇
+                        <a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (lab)</a>                  67.5%    55.4   2025-09-09   16% ▇▇
+                        <a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>                   96.6%    62.7   2025-09-09   11% ▇
+                        <a href="https://arxiv.org/html/2505.00949v5">Arena-Hard (version/judge uns…</a>   88.3%    65.2   2025-09-09    9% ▇
+                        <a href="https://arxiv.org/html/2505.00949v5">IFEval (aggregation unspecifi…</a>   89.2%    63.2   2025-09-09    5% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1327.8    57.2   2026-10-02   22% ▇▇▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 58.5
+                        weighted average                        = 58.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -43,8 +43,8 @@ NVIDIA  <a href="https://arxiv.org/html/2505.00949v5">LiveCodeBench 2024-08 to 2
 
 <pre>
 download              size  score
-4-bit q4_k_m      ~30.22GB   58.5
-2-bit ud-q2_k_xl  ~19.31GB   58.5
+4-bit q4_k_m      ~30.22GB   58.4
+2-bit ud-q2_k_xl  ~19.31GB   58.4
 </pre>
 
 ```sh

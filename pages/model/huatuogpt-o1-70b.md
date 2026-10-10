@@ -6,7 +6,7 @@
 
 FreedomIntelligence (CUHK-SZ) · released 2024-12 · 70.55B params · apache-2.0
 
-**score 51.9** ±4.4 · #382 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.3** ±3.7 · #335 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,20 +14,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  33.9%    52.1   2025-07-22   91% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 9% ▇
-                        weighted average                       = 51.9
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  33.9%    52.1   2025-07-22   69% ▇▇▇▇▇▇▇▇
+<a name="paper-2606.08071v1-surgiq"></a>SurgiQ: A Large-Scale…  <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-sho…</a>  65.5%    61.3   2026-06-06   25% ▇▇▇
+prior                   pull toward the middle                   50.0                 6% ▇
+                        weighted average                       = 54.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
+<sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 download          size  score
-16-bit bf16  ~141.11GB   51.9
+16-bit bf16  ~141.11GB   54.3
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-07 · closed weights
 
-**score 67.1** ±1.2 · #121 of 934 · from 5 benchmark results across 1 source
+**score 67.1** ±1.2 · #118 of 934 · from 5 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -15,8 +15,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source    test                          score  implies  date        weight
 <a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>     19.3%    65.4   2026-08-29   56% ▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                  82.3%    68.9   2026-08-07   21% ▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      86.7%    69.5   2026-08-07   12% ▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                  82.3%    68.9   2026-08-07   22% ▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      86.7%    69.5   2026-08-07   11% ▇
           <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>         23.0%    73.4   2026-08-07    5% ▇
           <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>  15.0%    68.4   2026-08-28    5% ▇
 prior     pull toward the middle                 50.0                 1% ▇

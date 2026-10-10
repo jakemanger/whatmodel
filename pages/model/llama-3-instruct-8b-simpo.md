@@ -6,7 +6,7 @@
 
 Princeton NLP · released 2024-05 · 8.03B params
 
-**score 50.6** ±1.4 · #414 of 934 · from 3 benchmark results across 3 sources
+**score 51.2** ±1.4 · #403 of 934 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                       score  implies  date        weight
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>             44.6%    52.5   2025-08-09   74% ▇▇▇▇▇▇▇▇▇
-<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  37.0497 WB-Score    45.1   2024-08-01   19% ▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             68.3%    44.6   2024-05-29    7% ▇
+<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>             44.6%    52.7   2025-08-09   78% ▇▇▇▇▇▇▇▇▇
+<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  37.0497 WB-Score    45.2   2024-08-01   17% ▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             68.3%    46.6   2024-05-29    4% ▇
 prior                   pull toward the middle                              50.0                 1% ▇
-                        weighted average                                  = 50.6
+                        weighted average                                  = 51.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                              50.0
 
 <pre>
 download         size  score
-16-bit bf16  ~16.06GB   50.6
+16-bit bf16  ~16.06GB   51.2
 </pre>
 
 ```sh

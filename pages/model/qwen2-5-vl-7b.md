@@ -6,41 +6,42 @@
 
 Alibaba · released 2025-01 · 8.29B params · apache-2.0
 
-**score 50.0** ±1.1 · #434 of 934 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
+**score 49.9** ±1.0 · #437 of 934 · from 14 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source  test                            score  implies  date        weight
-<a name="first-party-qwen-scores"></a>Qwen    <a href="https://arxiv.org/html/2502.13923v1">CharXiv (reasoning questions)…</a>  42.5%    52.0   2025-02-19   18% ▇▇
-        <a href="https://arxiv.org/html/2502.13923v1">MMMU (val) (lab)</a>                58.6%    48.2   2025-02-19   16% ▇▇
-        <a href="https://arxiv.org/html/2502.13923v1">CharXiv descriptive questions…</a>  73.9%    49.8   2025-02-19   16% ▇▇
-        <a href="https://arxiv.org/html/2502.13923v1">MathVista (testmini) (lab)</a>      68.2%    49.6   2025-02-19   13% ▇▇
-        <a href="https://arxiv.org/html/2502.13923v1">MMStar (lab)</a>                    63.9%    49.2   2025-02-19   11% ▇
-        <a href="https://arxiv.org/html/2502.13923v1">MMMU Pro (lab)</a>                  38.3%    44.7   2025-02-19    8% ▇
-        <a href="https://arxiv.org/html/2502.13923v1">HallusionBench (lab)</a>            52.9%    48.2   2025-02-19    4% ▇
-        <a href="https://arxiv.org/html/2502.13923v1">ChartQA (lab)</a>                   87.3%    55.5   2025-02-19    4% ▇
-        <a href="https://arxiv.org/html/2502.13923v1">DocVQA (lab)</a>                    95.7%    56.4   2025-02-19    3% ▇
-        <a href="https://arxiv.org/html/2502.13923v1">RealWorldQA (lab)</a>               68.5%    47.3   2025-02-19    3% ▇
-        <a href="https://arxiv.org/html/2502.13923v1">CC-OCR (lab)</a>                    77.8%    56.4   2025-02-19    2% ▇
-        <a href="https://arxiv.org/html/2502.13923v1">OCRBench (lab)</a>                  86.4%    55.6   2025-02-19    1% ▇
-        <a href="https://arxiv.org/html/2502.13923v1">TextVQA (lab)</a>                   84.9%    64.1   2025-02-19    1% ▇
-prior   pull toward the middle                   50.0                 0% ▇
-        weighted average                       = 50.0
+source                  test                            score  implies  date        weight
+<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/html/2502.13923v1">CharXiv (reasoning questions)…</a>  42.5%    52.0   2025-02-19   17% ▇▇
+                        <a href="https://arxiv.org/html/2502.13923v1">MMMU (val) (lab)</a>                58.6%    48.3   2025-02-19   16% ▇▇
+                        <a href="https://arxiv.org/html/2502.13923v1">CharXiv descriptive questions…</a>  73.9%    49.9   2025-02-19   16% ▇▇
+                        <a href="https://arxiv.org/html/2502.13923v1">MathVista (testmini) (lab)</a>      68.2%    49.7   2025-02-19   12% ▇
+                        <a href="https://arxiv.org/html/2502.13923v1">MMStar (lab)</a>                    63.9%    49.2   2025-02-19   10% ▇
+                        <a href="https://arxiv.org/html/2502.13923v1">MMMU Pro (lab)</a>                  38.3%    44.8   2025-02-19    8% ▇
+                        <a href="https://arxiv.org/html/2502.13923v1">HallusionBench (lab)</a>            52.9%    48.3   2025-02-19    4% ▇
+                        <a href="https://arxiv.org/html/2502.13923v1">ChartQA (lab)</a>                   87.3%    55.5   2025-02-19    3% ▇
+                        <a href="https://arxiv.org/html/2502.13923v1">DocVQA (lab)</a>                    95.7%    56.4   2025-02-19    3% ▇
+                        <a href="https://arxiv.org/html/2502.13923v1">RealWorldQA (lab)</a>               68.5%    47.4   2025-02-19    3% ▇
+                        <a href="https://arxiv.org/html/2502.13923v1">CC-OCR (lab)</a>                    77.8%    56.4   2025-02-19    2% ▇
+                        <a href="https://arxiv.org/html/2502.13923v1">OCRBench (lab)</a>                  86.4%    55.6   2025-02-19    1% ▇
+                        <a href="https://arxiv.org/html/2502.13923v1">TextVQA (lab)</a>                   84.9%    64.2   2025-02-19    1% ▇
+<a name="paper-2606.01348v3-chartarena"></a>ChartArena: Benchmark…  <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (Eng…</a>  23.3%    46.9   2026-07-05    4% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 49.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-
+<sub>Licences: ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 download        size  score
-4-bit q4_k_m    ~6GB   50.0
-8-bit q8_0    ~9.4GB   50.0
+4-bit q4_k_m    ~6GB   49.9
+8-bit q8_0    ~9.4GB   49.9
 </pre>
 
 ```sh

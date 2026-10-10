@@ -6,7 +6,7 @@
 
 ajibawa-2023 · released 2024-02 · 6.74B params · other
 
-**score 44.3** ±0.8 · #599 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.4** ±0.8 · #596 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                    score  implies  date        weig
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               64.6%    44.1   2024-12-26   56% ▇▇▇▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              59.7%    44.7   2024-12-26   43% ▇▇▇▇▇
 prior                   pull toward the middle           50.0                 0% ▇
-                        weighted average               = 44.3
+                        weighted average               = 44.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle           50.0                 0%
 
 <pre>
 download         size  score
-16-bit bf16  ~13.48GB   44.3
+16-bit bf16  ~13.48GB   44.4
 </pre>
 
 ```sh

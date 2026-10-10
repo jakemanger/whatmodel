@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-09 · closed weights
 
-**score 67.7** ±4.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 67.7** ±4.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>  75.0%    69.8   2025-11-22   89% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                11% ▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>  75.0%    69.7   2025-11-22   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                10% ▇
                         weighted average                       = 67.7
 </pre>
 

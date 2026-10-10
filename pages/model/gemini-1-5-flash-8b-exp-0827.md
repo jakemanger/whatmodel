@@ -6,7 +6,7 @@
 
 Google · released 2024-08 · proprietary
 
-**score 46.9** ±1.4 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 47.0** ±1.4 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            37.0%    48.2   2024-10-22   66% ▇▇▇▇▇▇▇▇
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  38.3%    44.1   2024-08-27   33% ▇▇▇▇
+<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            37.0%    48.3   2024-10-22   67% ▇▇▇▇▇▇▇▇
+<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  38.3%    44.2   2024-08-27   33% ▇▇▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 46.9
+                        weighted average                       = 47.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

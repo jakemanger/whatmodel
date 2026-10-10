@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  38.3%    44.1   2024-09-24   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  38.3%    44.2   2024-09-24   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 3% ▇
                         weighted average                       = 44.3
 </pre>

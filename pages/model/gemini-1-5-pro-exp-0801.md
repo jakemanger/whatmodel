@@ -6,7 +6,7 @@
 
 Google · released 2024-08 · proprietary
 
-**score 55.1** ±0.9 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
+**score 55.2** ±0.9 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 q…</a>  85.5%    56.2                25% ▇▇▇
+<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 q…</a>  85.5%    56.3                25% ▇▇▇
                         <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 probl…</a>  74.9%    55.0                17% ▇▇
-                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>  25.2%    53.1                16% ▇▇
-                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>     95.0%    55.6                 9% ▇
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            52.2%    55.4   2024-10-22   32% ▇▇▇▇
+                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>  25.2%    53.2                16% ▇▇
+                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>     95.0%    55.7                 9% ▇
+<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            52.2%    55.5   2024-10-22   33% ▇▇▇▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 55.1
+                        weighted average                       = 55.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

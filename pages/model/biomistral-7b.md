@@ -6,7 +6,7 @@
 
 BioMistral · released 2024-02 · apache-2.0
 
-**score 36.6** ±5.0 · #764 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.5** ±3.4 · #752 of 934 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,20 +14,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  20.4%    34.9   2025-04-28   89% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                11% ▇
-                        weighted average                       = 36.6
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  20.4%    35.2   2025-04-28   43% ▇▇▇▇▇
+<a name="paper-2606.12250v1-polish-medical-exams"></a>Reassessing High-Perf…  <a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, b…</a>  30.6%    35.4   2026-06-10   38% ▇▇▇▇▇
+<a name="paper-2606.08071v1-surgiq"></a>SurgiQ: A Large-Scale…  <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-sho…</a>  47.1%    45.4   2026-06-06   15% ▇▇
+prior                   pull toward the middle                   50.0                 5% ▇
+                        weighted average                       = 37.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
+<sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Reassessing High-Performing LLMs on Polish Medical Exams: True Competence or Bias-Driven Performance? ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 download         size  score
-16-bit bf16  ~14.48GB   36.6
+16-bit bf16  ~14.48GB   37.5
 </pre>
 
 ```sh

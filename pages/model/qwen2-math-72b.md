@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 72.71B params · tongyi-qianwen
 
-**score 49.5** ±1.3 · #448 of 934 · from 4 benchmark results across 2 sources
+**score 49.5** ±1.3 · #452 of 934 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            34.2%    46.8   2024-10-22   61% ▇▇▇▇▇▇▇
-<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>              40.1%    51.9   2024-09-18   17% ▇▇
+<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            34.2%    46.9   2024-10-22   62% ▇▇▇▇▇▇▇
+<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>              40.1%    51.9   2024-09-18   16% ▇▇
                         <a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                     96.7%    55.4   2024-09-18   14% ▇▇
                         <a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (la…</a>  84.0%    55.8   2024-09-18    8% ▇
 prior                   pull toward the middle                   50.0                 1% ▇

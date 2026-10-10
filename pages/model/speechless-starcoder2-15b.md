@@ -6,7 +6,7 @@
 
 uukuguy · released 2024-03 · 15.96B params · bigcode-openrail-m
 
-**score 45.4** ±0.8 · #568 of 934 · from 3 benchmark results across 1 source
+**score 45.4** ±0.8 · #570 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                    score  implies  date        weight
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               67.1%    45.0   2024-12-26   52% ▇▇▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              62.8%    45.8   2024-12-26   41% ▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   62.4%    46.4   2024-12-26    7% ▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   62.4%    46.5   2024-12-26    7% ▇
 prior                   pull toward the middle           50.0                 0% ▇
                         weighted average               = 45.4
 </pre>

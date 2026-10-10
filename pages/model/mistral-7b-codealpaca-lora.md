@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               48.2%    38.7   2024-12-26   58% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              42.1%    38.6   2024-12-26   41% ▇▇▇▇▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               48.2%    38.7   2024-12-26   59% ▇▇▇▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              42.1%    38.7   2024-12-26   41% ▇▇▇▇▇
 prior                   pull toward the middle           50.0                 0% ▇
                         weighted average               = 38.7
 </pre>

@@ -6,7 +6,7 @@
 
 Mistral · released 2025-01 · proprietary
 
-**score 51.7** ±2.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.8** ±2.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>  11.1%    51.8   2025-01-13   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 4% ▇
-                        weighted average                       = 51.7
+                        weighted average                       = 51.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

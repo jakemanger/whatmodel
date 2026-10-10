@@ -6,7 +6,7 @@
 
 Magpie-Align · released 2024-06 · 8.03B params · llama3
 
-**score 46.7** ±3.1 · #529 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.9** ±3.3 · #517 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                       score  implies  date        weight
-<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  39.2902 WB-Score    46.6   2024-08-01   96% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                              50.0                 4% ▇
-                        weighted average                                  = 46.7
+<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  39.2902 WB-Score    46.7   2024-08-01   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                              50.0                 5% ▇
+                        weighted average                                  = 46.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                              50.0
 
 <pre>
 download         size  score
-16-bit bf16  ~16.06GB   46.7
+16-bit bf16  ~16.06GB   46.9
 </pre>
 
 ```sh

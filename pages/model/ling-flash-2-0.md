@@ -6,7 +6,7 @@
 
 inclusionAI (Ant Group) · released 2025-09 · 100B params (6.1B active) · mit
 
-**score 59.1** ±2.1 · #229 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 59.1** ±2.1 · #228 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5174    59.4   2026-05-02   60% ▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1343.8    59.2   2026-10-02   38% ▇▇▇▇▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5174    59.3   2026-05-02   62% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1343.8    59.2   2026-10-02   36% ▇▇▇▇
 prior                   pull toward the middle                    50.0                 2% ▇
                         weighted average                        = 59.1
 </pre>

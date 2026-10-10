@@ -6,31 +6,32 @@
 
 Stability AI · released 2023-09 · 2.8B params · cc-by-sa-4.0
 
-**score 29.8** ±1.0 · #845 of 934 · from 10 benchmark results across 1 source · † every result so far was reported by its maker
+**score 29.2** ±0.9 · #849 of 934 · from 11 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source        test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI  <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">ARC Challenge (lab)</a>             40.0%    28.3   2024-04-08   48% ▇▇▇▇▇▇
-              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">WinoGrande (lab)</a>                66.5%    29.2   2024-04-08   12% ▇
-              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">BoolQ (lab)</a>                     75.6%    33.7   2024-04-08    9% ▇
-              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">ARC Easy (lab)</a>                  67.7%    29.3   2024-04-08    6% ▇
-              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">HellaSwag (lab)</a>                 73.9%    30.7   2024-04-08    5% ▇
-              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">OpenBookQA (lab)</a>                31.4%    32.3   2024-04-08    5% ▇
-              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">SciQ (lab)</a>                      94.8%    34.7   2024-04-08    5% ▇
-              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">PIQA (lab)</a>                      79.2%    32.8   2024-04-08    4% ▇
-              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">Social IQA (lab)</a>                41.9%    24.8   2024-04-08    3% ▇
-              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">LAMBADA (OpenAI version), las…</a>  70.6%    29.1   2024-04-08    2% ▇
-prior         pull toward the middle                   50.0                 0% ▇
-              weighted average                       = 29.8
+source                  test                            score  implies  date        weight
+<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">ARC Challenge (lab)</a>             40.0%    27.9   2024-04-08   47% ▇▇▇▇▇▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">WinoGrande (lab)</a>                66.5%    28.7   2024-04-08   11% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">BoolQ (lab)</a>                     75.6%    33.2   2024-04-08    9% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">ARC Easy (lab)</a>                  67.7%    28.7   2024-04-08    6% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">HellaSwag (lab)</a>                 73.9%    30.0   2024-04-08    5% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">OpenBookQA (lab)</a>                31.4%    31.7   2024-04-08    5% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">SciQ (lab)</a>                      94.8%    34.2   2024-04-08    5% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">PIQA (lab)</a>                      79.2%    32.2   2024-04-08    4% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">Social IQA (lab)</a>                41.9%    24.3   2024-04-08    3% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">LAMBADA (OpenAI version), las…</a>  70.6%    28.7   2024-04-08    2% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  39.8%    21.2   2024-02-05    1% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 29.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt))</sub>
+<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -38,7 +39,7 @@ prior         pull toward the middle                   50.0                 0% �
 
 <pre>
 download        size  score
-16-bit bf16  ~5.59GB   29.8
+16-bit bf16  ~5.59GB   29.2
 </pre>
 
 ```sh

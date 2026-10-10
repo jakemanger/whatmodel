@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-08 · 70B params · llama2
 
-**score 41.7** ±1.1 · #664 of 934 · from 13 benchmark results across 5 sources
+**score 41.7** ±1.1 · #666 of 934 · from 13 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,19 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="paper-2311.11045v2"></a>Orca 2: Teaching Smal…  <a href="https://arxiv.org/html/2311.11045v2">BIG-Bench Hard</a>                   51.1%    42.2   2023-11-21   15% ▇▇
-                        <a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>                    71.9%    41.8   2023-11-21    9% ▇
+<a name="paper-2311.11045v2"></a>Orca 2: Teaching Smal…  <a href="https://arxiv.org/html/2311.11045v2">BIG-Bench Hard</a>                   51.1%    42.3   2023-11-21   15% ▇▇
+                        <a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>                    71.9%    41.9   2023-11-21    9% ▇
                         <a href="https://arxiv.org/html/2311.11045v2">GSM8K</a>                            73.2%    45.9   2023-11-21    7% ▇
                         <a href="https://arxiv.org/html/2311.11045v2">MMLU</a>                             55.0%    38.4   2023-11-21    7% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>                  48.7%    38.4   2023-11-21    6% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>                         80.7%    39.9   2023-11-21    2% ▇
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   17.6%    40.2   2025-08-09   32% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>                  48.7%    38.5   2023-11-21    6% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>                         80.7%    39.7   2023-11-21    2% ▇
+<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   17.6%    40.3   2025-08-09   33% ▇▇▇▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1184.7    40.1   2026-10-02   11% ▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>   49.0%    50.0   2025-05-31    2% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   19.2%    44.0   2025-05-31    2% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>   30.9%    50.2   2025-05-31    1% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>   78.6%   108.9   2025-05-31    0% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   71.1%    47.3   2024-05-22    5% ▇
+<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>   49.0%    49.8   2025-05-31    3% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   19.2%    44.1   2025-05-31    2% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>   30.9%    49.9   2025-05-31    2% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>   78.6%    83.1   2025-05-31    0% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   71.1%    49.0   2024-05-22    2% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 41.7
 </pre>

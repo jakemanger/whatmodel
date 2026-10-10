@@ -6,7 +6,7 @@
 
 01.AI · released 2024-05 · 6.06B params · apache-2.0
 
-**score 36.4** ±2.8 · #769 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 37.5** ±2.9 · #751 of 934 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -15,14 +15,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         27.4%    34.4   2025-04-01   70% ▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  62.4%    39.9   2024-05-16   27% ▇▇▇
-prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 36.4
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  62.4%    42.6   2024-05-16   15% ▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  77.4%    45.4   2026-04-17   11% ▇
+prior                   pull toward the middle                   50.0                 4% ▇
+                        weighted average                       = 37.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 ## How to run it
 
@@ -30,7 +31,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~12.12GB   36.4
+16-bit bf16  ~12.12GB   37.5
 </pre>
 
 ```sh

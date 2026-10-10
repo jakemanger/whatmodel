@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-12 · 8.19B params · nvidia-open-model-license
 
-**score 57.9** ±1.5 · #251 of 934 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 57.7** ±1.5 · #255 of 934 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="report-2512.13607v2"></a>NVIDIA  <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Med…</a>   6.1%    57.3   2026-03-27   57% ▇▇▇▇▇▇▇
-        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Eas…</a>  64.8%    58.4   2026-03-27   29% ▇▇▇
-        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–Ma…</a>  71.4%    59.8   2026-03-27   13% ▇▇
+<a name="report-2512.13607v2"></a>NVIDIA  <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Med…</a>   6.1%    57.1   2026-03-27   57% ▇▇▇▇▇▇▇
+        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Eas…</a>  64.8%    58.3   2026-03-27   29% ▇▇▇
+        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–Ma…</a>  71.4%    59.7   2026-03-27   13% ▇▇
 prior   pull toward the middle                   50.0                 1% ▇
-        weighted average                       = 57.9
+        weighted average                       = 57.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,8 +29,8 @@ prior   pull toward the middle                   50.0                 1% ▇
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~5.03GB   57.9
-8-bit q8_0    ~8.71GB   57.9
+4-bit q4_k_m  ~5.03GB   57.7
+8-bit q8_0    ~8.71GB   57.7
 </pre>
 
 ```sh

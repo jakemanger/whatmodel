@@ -6,7 +6,7 @@
 
 UCSC VLAA · released 2025-04 · 8.03B params · apache-2.0
 
-**score 33.6** ±5.2 · #804 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 33.7** ±5.0 · #805 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  18.2%    31.3   2025-07-22   88% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                12% ▇
-                        weighted average                       = 33.6
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  18.2%    31.7   2025-07-22   89% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                11% ▇
+                        weighted average                       = 33.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~16.06GB   33.6
+16-bit bf16  ~16.06GB   33.7
 </pre>
 
 ```sh

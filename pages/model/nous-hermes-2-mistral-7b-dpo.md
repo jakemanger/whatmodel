@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-02 · 7.24B params · apache-2.0
 
-**score 44.3** ±5.0 · #601 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.5** ±6.5 · #537 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  66.8%    43.6   2024-02-27   89% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                11% ▇
-                        weighted average                       = 44.3
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  66.8%    45.6   2024-02-27   81% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                19% ▇▇
+                        weighted average                       = 46.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.37GB   44.3
+4-bit q4_k_m  ~4.37GB   46.5
 </pre>
 
 ```sh

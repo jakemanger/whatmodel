@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-09 · 357B params (32B active) · mit
 
-**score 65.7** ±1.0 · #142 of 934 · from 23 benchmark results across 6 sources
+**score 65.6** ±1.0 · #142 of 934 · from 23 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -14,31 +14,31 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="card2-zai-org-glm-4-7"></a>zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">GPQA Diamond (lab)</a>               81.0%    66.0   2026-01-29    7% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">AIME 2025 (lab)</a>                  93.9%    68.9   2026-01-29    7% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">SWE-bench Verified (lab)</a>         68.0%    67.1   2026-01-29    5% ▇
+<a name="card2-zai-org-glm-4-7"></a>zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">GPQA Diamond (lab)</a>               81.0%    65.9   2026-01-29    7% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">AIME 2025 (lab)</a>                  93.9%    68.8   2026-01-29    7% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">SWE-bench Verified (lab)</a>         68.0%    67.0   2026-01-29    5% ▇
                         <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">IMO-AnswerBench (lab)</a>            73.5%    64.6   2026-01-29    5% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">LiveCodeBench v6 (window unsp…</a>   82.8%    67.7   2026-01-29    4% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">HMMT February 2025 (lab)</a>         89.2%    63.3   2026-01-29    4% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">Terminal-Bench 2.0 (lab)</a>         24.5%    60.4   2026-01-29    4% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">MMLU-Pro (lab)</a>                   83.2%    66.4   2026-01-29    4% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">Humanity's Last Exam (lab)</a>       17.2%    64.5   2026-01-29    4% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">BrowseComp-ZH (lab)</a>              49.5%    63.1   2026-01-29    3% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">HMMT November 2025 (lab)</a>         87.7%    64.7   2026-01-29    3% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">τ²-bench aggregate (lab)</a>         75.2%    63.2   2026-01-29    3% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">LiveCodeBench v6 (window unsp…</a>   82.8%    67.6   2026-01-29    4% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">Terminal-Bench 2.0 (lab)</a>         24.5%    60.3   2026-01-29    4% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">BrowseComp-ZH (lab)</a>              49.5%    63.3   2026-01-29    4% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">τ²-bench aggregate (lab)</a>         75.2%    63.1   2026-01-29    4% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">HMMT February 2025 (lab)</a>         89.2%    63.4   2026-01-29    4% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">MMLU-Pro (lab)</a>                   83.2%    66.3   2026-01-29    4% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">Humanity's Last Exam (lab)</a>       17.2%    64.4   2026-01-29    3% ▇
                         <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">SWE-bench Multilingual (lab)</a>     53.8%    63.2   2026-01-29    3% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">BrowseComp (lab)</a>                 45.1%    65.7   2026-01-29    3% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">BrowseComp with context manag…</a>   57.5%    59.7   2026-01-29    2% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">Humanity's Last Exam with too…</a>   30.4%    62.5   2026-01-29    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1339.4    66.2   2026-10-01   13% ▇▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">BrowseComp (lab)</a>                 45.1%    65.6   2026-01-29    3% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">HMMT November 2025 (lab)</a>         87.7%    64.8   2026-01-29    3% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">BrowseComp with context manag…</a>   57.5%    59.6   2026-01-29    2% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">Humanity's Last Exam with too…</a>   30.4%    62.4   2026-01-29    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1339.4    66.1   2026-10-01   14% ▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1424.1    68.8   2026-10-02    8% ▇
-<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   24.5%    64.5   2026-01-17    6% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   72.4%    76.9   2025-12-16    4% ▇
-<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   57.8%    61.2   2025-11-19    4% ▇
+<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   24.5%    64.4   2026-01-17    6% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   72.4%    76.8   2025-12-16    4% ▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   57.8%    61.1   2025-11-19    4% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   95.7%    55.4   2025-10-16    0% ▇
-                        <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   90.5%    81.2   2026-09-22    0% ▇
+                        <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   90.5%    81.1   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 65.7
+                        weighted average                        = 65.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -66,9 +66,9 @@ api (Z.AI) · $1.00/M blended · $0.6 in / $2.2 out per 1M tokens · [docs.z.ai]
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~214.7GB   65.7
-2-bit ud-q2_k_xl  ~107.6GB   65.7
-1-bit ud-iq1_s    ~54.05GB   65.7
+4-bit ud-q4_k_xl  ~214.7GB   65.6
+2-bit ud-q2_k_xl  ~107.6GB   65.6
+1-bit ud-iq1_s    ~54.05GB   65.6
 </pre>
 
 ```sh

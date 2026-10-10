@@ -6,7 +6,7 @@
 
 LM Provers · released 2026-02 · 4.02B params · apache-2.0
 
-**score 57.7** ±2.2 · #259 of 934 · from 3 benchmark results across 1 source
+**score 57.4** ±2.3 · #265 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>  37.0%    59.6   2026-09-11   39% ▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  14.1%    56.1   2026-09-11   35% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>  26.5%    57.7   2026-09-11   24% ▇▇▇
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>  37.0%    59.3   2026-09-11   39% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  14.1%    55.8   2026-09-11   35% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>  26.5%    57.3   2026-09-11   24% ▇▇▇
 prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 57.7
+                        weighted average                       = 57.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                      size  score
-16-bit bf16 · nvidia only  ~8.04GB   57.7
+16-bit bf16 · nvidia only  ~8.04GB   57.4
 </pre>
 
 ```sh

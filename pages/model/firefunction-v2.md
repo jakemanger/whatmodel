@@ -6,7 +6,7 @@
 
 Fireworks AI · released 2024-06 · 70.55B params · llama3
 
-**score 50.4** ±6.2 · #422 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.4** ±6.2 · #418 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

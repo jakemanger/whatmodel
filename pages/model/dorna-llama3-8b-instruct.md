@@ -6,7 +6,7 @@
 
 Part AI · released 2024-06 · 8.03B params · llama3
 
-**score 42.1** ±5.1 · #658 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.1** ±5.0 · #657 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  47.0%    41.1   2026-09-19   88% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                12% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  47.0%    41.1   2026-09-19   89% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                11% ▇
                         weighted average                       = 42.1
 </pre>
 

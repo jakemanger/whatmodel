@@ -6,7 +6,7 @@
 
 MosaicML · released 2023-05 · 6.7B params · apache-2.0
 
-**score 29.8** ±0.9 · comparison only: no current run option verified · from 19 benchmark results across 4 sources
+**score 29.7** ±0.7 · comparison only: no current run option verified · from 30 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,32 +14,43 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   46.5%    29.0   2024-06-07   14% ▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      48.6%    28.5   2024-06-07    8% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      69.9%    32.2   2024-06-07    7% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       77.6%    33.8   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        70.5%    31.4   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           74.2%    31.1   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            93.7%    30.3   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            77.3%    29.5   2024-06-07    2% ▇
-<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   40.5%    31.9   2023-09-11   11% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      68.0%    29.2   2023-09-11    7% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           73.9%    30.8   2023-09-11    6% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      31.4%    31.2   2023-09-11    4% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       57.1%    30.2   2023-09-11    4% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        74.9%    31.7   2023-09-11    4% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                      45.1%    26.2   2023-09-11    4% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            78.9%    31.7   2023-09-11    2% ▇
-<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>   3.5%    19.2   2024-04-24    5% ▇
-                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  30.4%    29.0   2024-04-24    4% ▇
-<a name="paper-2410.14897v1-gencopa"></a>From Test-Taking to T…  <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                            65.6%    12.7   2024-10-18    0% ▇
+<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">ARC Challenge</a>                   41.9%    29.1   2024-04-08   24% ▇▇▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">WinoGrande</a>                      68.0%    30.2   2024-04-08    6% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">BoolQ</a>                           73.9%    31.4   2024-04-08    5% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">ARC Easy</a>                        70.0%    30.9   2024-04-08    3% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">OpenBookQA</a>                      31.4%    31.6   2024-04-08    3% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">HellaSwag</a>                       76.2%    31.9   2024-04-08    3% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">SciQ</a>                            93.7%    31.3   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">PIQA</a>                            78.9%    31.6   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">Social IQA</a>                      45.1%    30.4   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">LAMBADA (OpenAI version), las…</a>  68.6%    26.8   2024-04-08    1% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json">TruthfulQA MC2</a>                  33.5%    19.1   2024-04-08    0% ▇
+<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   46.5%    28.6   2024-06-07    7% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      48.6%    28.1   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      69.9%    31.7   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       77.6%    33.3   2024-06-07    2% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        70.5%    30.9   2024-06-07    2% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           74.2%    30.6   2024-06-07    2% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            93.7%    29.7   2024-06-07    2% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            77.3%    29.0   2024-06-07    1% ▇
+<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   40.5%    31.4   2023-09-11    6% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      68.0%    28.7   2023-09-11    3% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           73.9%    30.3   2023-09-11    3% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      31.4%    30.7   2023-09-11    2% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       57.1%    29.8   2023-09-11    2% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        74.9%    31.2   2023-09-11    2% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                      45.1%    25.7   2023-09-11    2% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            78.9%    31.3   2023-09-11    1% ▇
+<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>   3.5%    18.8   2024-04-24    3% ▇
+                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  30.4%    28.6   2024-04-24    2% ▇
+<a name="paper-2410.14897v1-gencopa"></a>From Test-Taking to T…  <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                            65.6%    13.1   2024-10-18    0% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 29.8
+                        weighted average                       = 29.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · OLMo: Accelerating the Science of Language Models ([CC BY 4.0](../../licenses/paper-2402.00838v4-CC-BY-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

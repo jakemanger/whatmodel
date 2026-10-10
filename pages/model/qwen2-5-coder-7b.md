@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 7.62B params · apache-2.0
 
-**score 51.6** ±1.1 · #389 of 934 · from 15 benchmark results across 5 sources
+**score 51.8** ±1.1 · #385 of 934 · from 15 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,23 +14,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/html/2409.12186v3">HumanEval (lab)</a>                 88.4%    51.9   2024-11-12   12% ▇
-                        <a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (lab)</a>                84.1%    51.4   2024-11-12   10% ▇
+<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/html/2409.12186v3">HumanEval (lab)</a>                 88.4%    52.0   2024-11-12   12% ▇
+                        <a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (lab)</a>                84.1%    51.5   2024-11-12   10% ▇
                         <a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                      83.5%    54.3   2024-11-12    7% ▇
                         <a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                 76.5%    55.0   2024-11-12    5% ▇
-                        <a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                     71.7%    53.5   2024-11-12    5% ▇
-                        <a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>   41.0%    52.1   2024-11-12    4% ▇
-                        <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                65.8%    56.7   2024-11-12    3% ▇
-                        <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                65.9%    60.1   2024-11-12    1% ▇
-<a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>  26.2%    50.3   2024-12-26   23% ▇▇▇
+                        <a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                     71.7%    53.6   2024-11-12    5% ▇
+                        <a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>   41.0%    52.2   2024-11-12    4% ▇
+                        <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                65.8%    56.5   2024-11-12    3% ▇
+                        <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                65.9%    59.5   2024-11-12    1% ▇
+<a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>  26.2%    50.4   2024-12-26   23% ▇▇▇
 <a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  57.9%    51.6   2024-10-16   19% ▇▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>  10.7%    42.0   2025-05-31    3% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  55.2%    50.8   2025-05-31    2% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  41.0%    56.7   2025-05-31    2% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  78.6%   110.4   2025-05-31    0% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  71.7%    47.6   2024-10-13    4% ▇
+<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>  10.7%    42.2   2025-05-31    3% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  55.2%    50.5   2025-05-31    3% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  41.0%    55.9   2025-05-31    2% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  78.6%    84.7   2025-05-31    0% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  71.7%    49.3   2024-10-13    2% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 51.6
+                        weighted average                       = 51.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -43,8 +43,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~5.07GB   51.6
-8-bit q8_0    ~9.64GB   51.6
+4-bit q4_k_m  ~5.07GB   51.8
+8-bit q8_0    ~9.64GB   51.8
 </pre>
 
 ```sh

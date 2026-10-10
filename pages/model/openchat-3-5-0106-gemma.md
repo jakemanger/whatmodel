@@ -6,7 +6,7 @@
 
 OpenChat · released 2024-03 · 8.54B params · other (gemma-terms-of-use)
 
-**score 45.1** ±3.2 · #578 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 45.8** ±2.7 · #557 of 934 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  54.7%    42.7   2026-08-11   60% ▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  72.7%    48.6   2024-05-17   36% ▇▇▇▇
-prior                   pull toward the middle                   50.0                 4% ▇
-                        weighted average                       = 45.1
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  54.7%    42.6   2026-08-11   47% ▇▇▇▇▇▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  58.6%    47.7   2024-06-19   35% ▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  72.7%    50.0   2024-05-17   15% ▇▇
+prior                   pull toward the middle                   50.0                 3% ▇
+                        weighted average                       = 45.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -30,7 +31,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~17.08GB   45.1
+16-bit bf16  ~17.08GB   45.8
 </pre>
 
 ```sh

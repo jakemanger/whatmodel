@@ -6,7 +6,7 @@
 
 Mistral · released 2024-02 · proprietary
 
-**score 44.8** ±1.4 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+**score 44.9** ±1.4 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>     32.2%    45.7   2024-10-22   58% ▇▇▇▇▇▇▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>  39.0%    42.6   2025-04-01   19% ▇▇
-                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>  31.8%    43.7   2025-04-01   19% ▇▇
+<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>     32.2%    45.8   2024-10-22   60% ▇▇▇▇▇▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>  31.8%    43.8   2025-04-01   18% ▇▇
+                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>  39.0%    42.8   2025-04-01   17% ▇▇
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>                  46.3%    45.2   2025-04-13    4% ▇
 prior                   pull toward the middle            50.0                 1% ▇
-                        weighted average                = 44.8
+                        weighted average                = 44.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

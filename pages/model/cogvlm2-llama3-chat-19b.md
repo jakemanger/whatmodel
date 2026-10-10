@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-05 · 19.5B params · cogvlm2
 
-**score 43.2** ±2.8 · #632 of 934 · from 5 benchmark results across 3 sources
+**score 43.2** ±2.8 · #634 of 934 · from 5 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -15,10 +15,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                              score  implies  date        weight
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>    963.7    37.5   2026-10-02   49% ▇▇▇▇▇▇
-<a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>  -8.5000    48.7   2025-03-16   32% ▇▇▇▇
-<a name="first-party-zai-cogvlm2-scores"></a>Zhipu AI                <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">ChartQA (lab)</a>                     81.0%    50.4   2024-09-03    7% ▇
-                        <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">OCRBench (lab)</a>                    75.6%    36.9   2024-09-03    5% ▇
-                        <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">TextVQA (lab)</a>                     84.2%    64.3   2024-09-03    3% ▇
+<a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>  -8.5000    48.8   2025-03-16   32% ▇▇▇▇
+<a name="first-party-zai-cogvlm2-scores"></a>Zhipu AI                <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">ChartQA (lab)</a>                     81.0%    50.5   2024-09-03    7% ▇
+                        <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">OCRBench (lab)</a>                    75.6%    37.0   2024-09-03    5% ▇
+                        <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">TextVQA (lab)</a>                     84.2%    64.4   2024-09-03    3% ▇
 prior                   pull toward the middle                     50.0                 4% ▇
                         weighted average                         = 43.2
 </pre>

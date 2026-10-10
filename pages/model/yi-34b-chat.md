@@ -6,7 +6,7 @@
 
 01.AI · released 2023-11 · 34.39B params · apache-2.0
 
-**score 43.6** ±1.2 · #622 of 934 · from 7 benchmark results across 6 sources
+**score 43.7** ±1.2 · #621 of 934 · from 7 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   27.2%    45.4   2025-08-09   38% ▇▇▇▇▇
-                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>   94.1%    46.3   2025-08-09    2% ▇
+<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   27.2%    45.6   2025-08-09   40% ▇▇▇▇▇
+                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>   94.1%    46.4   2025-08-09    2% ▇
 <a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>   23.1%    42.7   2024-11-14   24% ▇▇▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                      5.1%    40.5   2025-01-27   14% ▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1183.7    40.0   2026-10-02   11% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                      5.1%    40.5   2025-01-27   13% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1183.7    40.0   2026-10-02   12% ▇
 <a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>   51.0%    46.3   2024-01-03    5% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   70.8%    47.0   2024-02-27    5% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   70.8%    48.7   2024-02-27    3% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 43.6
+                        weighted average                        = 43.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -44,8 +44,8 @@ Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GP
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~21.13GB   43.6
-8-bit q8_0    ~41.77GB   43.6
+4-bit q4_k_m  ~21.13GB   43.7
+8-bit q8_0    ~41.77GB   43.7
 </pre>
 
 ```sh

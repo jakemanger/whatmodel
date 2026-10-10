@@ -6,7 +6,7 @@
 
 M-A-P · released 2024-02 · apache-2.0
 
-**score 50.1** ±0.9 · #431 of 934 · from 3 benchmark results across 1 source
+**score 50.1** ±0.9 · #430 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 

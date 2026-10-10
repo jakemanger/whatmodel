@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-02 · 3.84B params · mit
 
-**score 43.8** ±0.7 · #614 of 934 · from 39 benchmark results across 10 sources
+**score 43.7** ±0.7 · #620 of 934 · from 39 benchmark results across 10 sources
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card-microsoft-phi-4-mini-instruct"></a>microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">ARC Challenge (lab)</a>             83.7%    44.3   2026-09-25    9% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GSM8K (lab)</a>                     88.6%    48.0   2026-09-25    6% ▇
+<a name="card-microsoft-phi-4-mini-instruct"></a>microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">ARC Challenge (lab)</a>             83.7%    44.2   2026-09-25    9% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GSM8K (lab)</a>                     88.6%    48.0   2026-09-25    7% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA (lab)</a>                79.2%    43.6   2026-09-25    6% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU (lab)</a>                      67.3%    44.8   2026-09-25    6% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard (lab)</a>            70.4%    48.4   2026-09-25    6% ▇
@@ -23,43 +23,43 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU-Pro (lab)</a>                  52.8%    48.3   2026-09-25    4% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Multilingual MMLU (Microsoft)…</a>  49.3%    40.1   2026-09-25    3% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH (lab)</a>                      64.0%    50.7   2026-09-25    3% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande (lab)</a>                67.0%    43.4   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande (lab)</a>                67.0%    43.3   2026-09-25    2% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Social IQA (lab)</a>                72.5%    44.2   2026-09-25    2% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">HellaSwag (lab)</a>                 69.1%    36.2   2026-09-25    2% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BoolQ (lab)</a>                     81.2%    45.8   2026-09-25    2% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">TruthfulQA MC2 (lab)</a>            66.4%    45.1   2026-09-25    1% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified) (la…</a>  25.2%    34.7   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">PIQA (lab)</a>                      77.6%    38.4   2026-09-25    1% ▇
-<a name="report-2503.01743v2"></a>Microsoft               <a href="https://arxiv.org/html/2503.01743v2">GPQA Diamond (lab)</a>              36.9%    45.0   2025-03-07    3% ▇
-                        <a href="https://arxiv.org/html/2503.01743v2">HumanEval (lab)</a>                 74.4%    46.3   2025-03-07    3% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">PIQA (lab)</a>                      77.6%    38.3   2026-09-25    1% ▇
+<a name="report-2503.01743v2"></a>Microsoft               <a href="https://arxiv.org/html/2503.01743v2">HumanEval (lab)</a>                 74.4%    46.3   2025-03-07    3% ▇
+                        <a href="https://arxiv.org/html/2503.01743v2">GPQA Diamond (lab)</a>              36.9%    43.7   2025-03-07    3% ▇
                         <a href="https://arxiv.org/html/2503.01743v2">HumanEval+ (lab)</a>                68.3%    45.4   2025-03-07    3% ▇
-                        <a href="https://arxiv.org/html/2503.01743v2">AIME 2024 (lab)</a>                 10.0%    36.5   2025-03-07    2% ▇
-                        <a href="https://arxiv.org/html/2503.01743v2">MATH-500 (lab)</a>                  71.8%    43.1   2025-03-07    2% ▇
+                        <a href="https://arxiv.org/html/2503.01743v2">AIME 2024 (lab)</a>                 10.0%    35.4   2025-03-07    2% ▇
                         <a href="https://arxiv.org/html/2503.01743v2">MBPP (lab)</a>                      65.3%    43.6   2025-03-07    1% ▇
+                        <a href="https://arxiv.org/html/2503.01743v2">MATH-500 (lab)</a>                  71.8%    41.7   2025-03-07    1% ▇
                         <a href="https://arxiv.org/html/2503.01743v2">MBPP+ (lab)</a>                     63.8%    45.8   2025-03-07    1% ▇
-                        <a href="https://arxiv.org/html/2503.01743v2">BigCodeBench (Complete) (lab)</a>   43.0%    45.2   2025-03-07    1% ▇
-                        <a href="https://arxiv.org/html/2503.01743v2">BFCL (version not stated) (la…</a>  70.3%    38.2   2025-03-07    1% ▇
-                        <a href="https://arxiv.org/html/2503.01743v2">BigCodeBench (Instruct) (lab)</a>   33.8%    50.0   2025-03-07    1% ▇
-                        <a href="https://arxiv.org/html/2503.01743v2">IFEval (aggregation unspecifi…</a>  70.1%    45.8   2025-03-07    1% ▇
+                        <a href="https://arxiv.org/html/2503.01743v2">BigCodeBench (Complete) (lab)</a>   43.0%    45.3   2025-03-07    1% ▇
+                        <a href="https://arxiv.org/html/2503.01743v2">BFCL (version not stated) (la…</a>  70.3%    38.0   2025-03-07    1% ▇
+                        <a href="https://arxiv.org/html/2503.01743v2">IFEval (aggregation unspecifi…</a>  70.1%    46.0   2025-03-07    1% ▇
+                        <a href="https://arxiv.org/html/2503.01743v2">BigCodeBench (Instruct) (lab)</a>   33.8%    50.1   2025-03-07    1% ▇
 <a name="korean-personal-benchmark-runs"></a>Daekeun Kim Korean LL…  <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>      42.8%    42.2                 6% ▇
-                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>       44.5%    40.5                 5% ▇
+                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>       44.5%    40.5                 6% ▇
                         <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero…</a>  25.3%    37.9                 1% ▇
 <a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  43.4%    35.5   2026-08-11    3% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  24.5%    40.8   2025-04-28    2% ▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  50.8%    44.0   2025-03-03    2% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  24.5%    41.0   2025-04-28    2% ▇
 <a name="acl-kcl-2026"></a>Korean Canonical Lega…  <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>                6.0%    36.8   2026-09-25    1% ▇
-                        <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                22.0%    34.2   2026-09-25    0% ▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  50.8%    43.6   2025-03-03    2% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  66.5%    43.3   2025-05-01    2% ▇
+                        <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                22.0%    34.4   2026-09-25    1% ▇
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         28.2%    28.9   2025-06-14    1% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  66.5%    45.5   2025-05-01    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  96.6%    56.5   2025-10-16    0% ▇
-                        <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  76.5%  -365.8   2026-09-22    0% ▇
+                        <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  76.5%  -365.9   2026-09-22    0% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 43.8
+                        weighted average                       = 43.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: microsoft/Phi-4-mini-instruct model card ([MIT](../../licenses/card-microsoft-phi-4-mini-instruct.txt)) · Microsoft ([CC BY 4.0](../../licenses/report-2503.01743v2.txt)) · Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Korean Canonical Legal Benchmark: Toward Knowledge-Independent Evaluation of LLMs’ Legal Reasoning Capabilities ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: microsoft/Phi-4-mini-instruct model card ([MIT](../../licenses/card-microsoft-phi-4-mini-instruct.txt)) · Microsoft ([CC BY 4.0](../../licenses/report-2503.01743v2.txt)) · Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Korean Canonical Legal Benchmark: Toward Knowledge-Independent Evaluation of LLMs’ Legal Reasoning Capabilities ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
@@ -69,8 +69,8 @@ api (Microsoft Azure) · $0.13/M blended · $0.075 in / $0.3 out per 1M tokens �
 
 <pre>
 download         size  score
-4-bit q4_k_m   ~2.8GB   43.8
-8-bit q8_0    ~5.11GB   43.8
+4-bit q4_k_m   ~2.8GB   43.7
+8-bit q8_0    ~5.11GB   43.7
 </pre>
 
 ```sh

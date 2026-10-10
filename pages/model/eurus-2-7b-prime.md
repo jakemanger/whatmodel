@@ -6,7 +6,7 @@
 
 PRIME-RL · released 2024-12 · 7.62B params · apache-2.0
 
-**score 44.8** ±2.2 · #584 of 934 · from 4 benchmark results across 2 sources
+**score 44.4** ±2.3 · #593 of 934 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="first-party-prime-rl-scores"></a>PRIME-RL Eurus-2-7B-P…  <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">AIME 2024 (lab)</a>         26.7%    46.2   2024-12-31   28% ▇▇▇
-                        <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">MATH-500 (lab)</a>          79.2%    44.1   2024-12-31   19% ▇▇
-                        <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">Minerva MATH (lab)</a>      38.6%    40.0   2024-12-31   17% ▇▇
+<a name="first-party-prime-rl-scores"></a>PRIME-RL Eurus-2-7B-P…  <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">AIME 2024 (lab)</a>         26.7%    45.5   2024-12-31   29% ▇▇▇
+                        <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">MATH-500 (lab)</a>          79.2%    43.6   2024-12-31   18% ▇▇
+                        <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">Minerva MATH (lab)</a>      38.6%    39.6   2024-12-31   17% ▇▇
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            33.9%    45.9   2025-01-27   33% ▇▇▇▇
 prior                   pull toward the middle           50.0                 2% ▇
-                        weighted average               = 44.8
+                        weighted average               = 44.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +32,7 @@ prior                   pull toward the middle           50.0                 2%
 
 <pre>
 download                      size  score
-4-bit fp32 · nvidia only  ~37.08GB   44.8
+4-bit fp32 · nvidia only  ~37.08GB   44.4
 </pre>
 
 ```sh

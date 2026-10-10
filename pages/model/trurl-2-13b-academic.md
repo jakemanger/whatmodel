@@ -6,28 +6,29 @@
 
 Voicelab · released 2023-09
 
-**score 38.3** ±3.9 · #735 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 35.8** ±3.0 · #779 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source            test                            score  implies  date        weight
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB  <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  46.2%    37.4   2026-08-11   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior             pull toward the middle                   50.0                 7% ▇
-                  weighted average                       = 38.3
+source                  test                            score  implies  date        weight
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  46.2%    37.5   2026-08-11   58% ▇▇▇▇▇▇▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  25.9%    31.7   2024-06-20   38% ▇▇▇▇▇
+prior                   pull toward the middle                   50.0                 4% ▇
+                        weighted average                       = 35.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt))</sub>
+<sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
 download         size  score
-16-bit bf16  ~26.03GB   38.3
+16-bit bf16  ~26.03GB   35.8
 </pre>
 
 ```sh

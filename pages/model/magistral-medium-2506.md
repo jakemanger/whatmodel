@@ -6,7 +6,7 @@
 
 Mistral · released 2025-06 · closed weights
 
-**score 55.8** ±1.3 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
+**score 55.7** ±1.3 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="card2-mistralai-magistral-small-2509"></a>mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>                  65.0%    55.7   2026-02-23   27% ▇▇▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (lab)</a>               70.8%    57.7   2026-02-23   24% ▇▇▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>                  73.6%    55.4   2026-02-23   22% ▇▇▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unsp…</a>   59.4%    55.5   2026-02-23    8% ▇
+<a name="card2-mistralai-magistral-small-2509"></a>mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>                  65.0%    55.5   2026-02-23   27% ▇▇▇
+                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (lab)</a>               70.8%    57.5   2026-02-23   24% ▇▇▇
+                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>                  73.6%    55.2   2026-02-23   21% ▇▇▇
+                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unsp…</a>   59.4%    55.4   2026-02-23    8% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1304.8    54.5   2026-10-02   15% ▇▇
-<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   32.0%    54.1   2025-11-18    3% ▇
+<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   32.0%    54.0   2025-11-18    3% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 55.8
+                        weighted average                        = 55.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

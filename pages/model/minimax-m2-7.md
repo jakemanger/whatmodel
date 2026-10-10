@@ -6,7 +6,7 @@
 
 MiniMax · released 2026-03 · 230B params (10B active) · minimax-non-commercial
 
-**score 67.9** ±0.7 · #107 of 934 · from 27 benchmark results across 6 sources
+**score 67.9** ±0.7 · #106 of 934 · from 28 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -16,19 +16,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                             score  implies  date        weight
 <a name="report-2606.15007v1"></a>NVIDIA                  <a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified)</a>        86.6%    70.2   2026-06-12    9% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified</a>               75.3%    71.5   2026-06-12    7% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro</a>                         81.9%    66.3   2026-06-12    5% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual</a>           71.8%    70.4   2026-06-12    5% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam</a>             23.1%    67.2   2026-06-12    4% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1</a>               55.5%    70.6   2026-06-12    4% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">LiveCodeBench v6 (window unsp…</a>   77.2%    63.4   2026-06-12    3% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench</a>                  68.3%    58.6   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro</a>                         81.9%    66.4   2026-06-12    5% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual</a>           71.8%    70.4   2026-06-12    4% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam</a>             23.1%    67.1   2026-06-12    4% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1</a>               55.5%    70.7   2026-06-12    4% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">LiveCodeBench v6 (window unsp…</a>   77.2%    63.3   2026-06-12    3% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX</a>                        78.4%    64.6   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench</a>                  68.3%    58.4   2026-06-12    3% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">SciCode subproblems</a>              38.3%    65.2   2026-06-12    3% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">BrowseComp</a>                       54.1%    71.9   2026-06-12    2% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose)</a>     74.6%    68.4   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">τ³-bench</a>                         66.1%    68.4   2026-06-12    2% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">τ³-bench</a>                         66.1%    68.3   2026-06-12    2% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">MultiChallenge</a>                   42.5%    59.1   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">CritPt</a>                            0.6%    57.2   2026-06-12    1% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">CritPt</a>                            0.6%    57.1   2026-06-12    1% ▇
 <a name="paper-2608.30181v1-ax-k2"></a>A.X K2 Technical Repo…  <a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond</a>                     87.4%    69.6   2026-08-31   10% ▇
                         <a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite</a>                 87.3%    67.9   2026-08-31    5% ▇
                         <a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam</a>             28.1%    71.1   2026-08-31    4% ▇
@@ -36,10 +36,11 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 202…</a>   69.8%    61.2   2026-08-31    3% ▇
                         <a href="https://arxiv.org/html/2608.30181v1">AIME 2026</a>                        88.8%    64.2   2026-08-31    2% ▇
                         <a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified)</a>      47.0%    72.7   2026-08-31    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1397.0    68.8   2026-10-01    7% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1397.0    68.8   2026-10-01    8% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1415.0    67.7   2026-10-02    4% ▇
+<a name="paper-2605.10912v1-wildclawbench"></a>WildClawBench: A Benc…  <a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                    33.8%    67.9   2026-05-11    2% ▇
 <a name="card3-qwen-qwen-agentworld-35b-a3b"></a>Qwen/Qwen-AgentWorld-…  <a href="https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md">AgentWorldBench (open-ended, …</a>   46.1%    67.0   2026-06-25    2% ▇
-<a name="paper-2605.22535v1"></a>TerminalWorld: Benchm…  <a href="https://arxiv.org/html/2605.22535v1">TerminalWorld-Verified (200 t…</a>   49.0%    68.4   2026-05-21    1% ▇
+<a name="paper-2605.22535v1"></a>TerminalWorld: Benchm…  <a href="https://arxiv.org/html/2605.22535v1">TerminalWorld-Verified (200 t…</a>   49.0%    68.5   2026-05-21    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   87.1%   -34.1   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
                         weighted average                        = 67.9
@@ -47,7 +48,7 @@ prior                   pull toward the middle                    50.0          
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2606.15007v1.txt)) · A.X K2 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Qwen/Qwen-AgentWorld-35B-A3B model card ([Apache-2.0](https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md)) · TerminalWorld: Benchmarking Agents on Real-World Terminal Tasks ([CC BY 4.0](../../licenses/paper-2605.22535v1-CC-BY-4.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2606.15007v1.txt)) · A.X K2 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WildClawBench: A Benchmark for Real-World ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Qwen/Qwen-AgentWorld-35B-A3B model card ([Apache-2.0](https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md)) · TerminalWorld: Benchmarking Agents on Real-World Terminal Tasks ([CC BY 4.0](../../licenses/paper-2605.22535v1-CC-BY-4.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 

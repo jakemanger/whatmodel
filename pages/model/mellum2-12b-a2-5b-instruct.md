@@ -6,7 +6,7 @@
 
 JetBrains · released 2026-05 · 12.15B params (2.5B active) · apache-2.0
 
-**score 50.5** ±1.7 · #420 of 934 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+**score 50.4** ±1.7 · #420 of 934 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card3-jetbrains-mellum2-12b-a2-5b-instruct"></a>JetBrains/Mellum2-12B…  <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">GPQA Diamond (lab)</a>              40.9%    47.1   2026-08-13   36% ▇▇▇▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MMLU-Redux (lab)</a>                78.1%    50.2   2026-08-13   20% ▇▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">LiveCodeBench v6 (window unsp…</a>  37.2%    52.1   2026-08-13   20% ▇▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL V4 (December 2025 archiv…</a>  44.2%    56.7   2026-08-13    7% ▇
+<a name="card3-jetbrains-mellum2-12b-a2-5b-instruct"></a>JetBrains/Mellum2-12B…  <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">GPQA Diamond (lab)</a>              40.9%    46.9   2026-08-13   35% ▇▇▇▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MMLU-Redux (lab)</a>                78.1%    50.0   2026-08-13   21% ▇▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">LiveCodeBench v6 (window unsp…</a>  37.2%    51.9   2026-08-13   20% ▇▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL V4 (December 2025 archiv…</a>  44.2%    56.6   2026-08-13    7% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MultiPL-E (lab)</a>                 67.1%    58.0   2026-08-13    5% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">IFEval (aggregation unspecifi…</a>  75.8%    49.9   2026-08-13    4% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL v3 (lab)</a>                   66.3%    60.7   2026-08-13    4% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">GSM-Plus (lab)</a>                  80.5%    46.8   2026-08-13    4% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL v3 (lab)</a>                   66.3%    60.6   2026-08-13    4% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">GSM-Plus (lab)</a>                  80.5%    46.6   2026-08-13    4% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 50.5
+                        weighted average                       = 50.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,7 +36,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                      size  score
-16-bit bf16 · nvidia only  ~24.3GB   50.5
+16-bit bf16 · nvidia only  ~24.3GB   50.4
 </pre>
 
 ```sh

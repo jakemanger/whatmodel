@@ -6,7 +6,7 @@
 
 Xiaomi · released 2026-03 · closed weights
 
-**score 70.5** ±2.1 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 70.6** ±1.9 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                        score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1432.8    70.4   2026-10-01   62% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>             1447.9    71.6   2026-10-02   36% ▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1432.8    70.4   2026-10-01   52% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>             1447.9    71.6   2026-10-02   30% ▇▇▇▇
+<a name="paper-2605.10912v1-wildclawbench"></a>WildClawBench: A Benc…  <a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>               40.2%    71.4   2026-05-11   17% ▇▇
 prior                   pull toward the middle               50.0                 2% ▇
-                        weighted average                   = 70.5
+                        weighted average                   = 70.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WildClawBench: A Benchmark for Real-World ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

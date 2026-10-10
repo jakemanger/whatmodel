@@ -6,7 +6,7 @@
 
 KAIST AI · released 2024-03 · 7.24B params · mit
 
-**score 38.4** ±2.2 · #733 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 38.5** ±2.2 · #731 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>  14.7%    38.2   2025-08-09   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>  14.7%    38.3   2025-08-09   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 38.4
+                        weighted average                       = 38.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~14.48GB   38.4
+16-bit bf16  ~14.48GB   38.5
 </pre>
 
 ```sh

@@ -15,27 +15,27 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="first-party-deepseek-scores"></a>DeepSeek vendor-repor…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">HumanEval (lab)</a>                 57.3%    40.0   2024-06-25    9% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">BIG-Bench Hard (lab)</a>            48.1%    37.7   2024-06-25    8% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">GSM8K (lab)</a>                     72.0%    40.4   2024-06-25    7% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MMLU (lab)</a>                      55.7%    38.6   2024-06-25    6% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MATH (lab)</a>                      27.9%    44.1   2024-06-25    5% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">C-Eval (lab)</a>                    60.1%    43.6   2024-06-25    4% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">BIG-Bench Hard (lab)</a>            48.1%    37.7   2024-06-25    9% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">GSM8K (lab)</a>                     72.0%    40.3   2024-06-25    8% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MMLU (lab)</a>                      55.7%    38.5   2024-06-25    6% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MATH (lab)</a>                      27.9%    44.0   2024-06-25    5% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">C-Eval (lab)</a>                    60.1%    43.5   2024-06-25    4% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MBPP (lab)</a>                      45.8%    36.5   2024-06-25    4% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">CMMLU (lab)</a>                     62.5%    42.7   2024-06-25    4% ▇
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            17.7%    36.6   2024-10-22   32% ▇▇▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">CMMLU (lab)</a>                     62.5%    42.6   2024-06-25    4% ▇
+<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            17.7%    36.6   2024-10-22   33% ▇▇▇▇
 <a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>   3.6%    32.4   2024-12-26   10% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  63.3%    40.7   2024-05-17    5% ▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  20.5%    38.0   2025-05-31    2% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  15.0%    34.0   2025-05-31    1% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   6.9%    35.3   2025-05-31    1% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  76.8%   100.3   2025-05-31    0% ▇
+<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  20.5%    38.3   2025-05-31    2% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  15.0%    34.7   2025-05-31    2% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   6.9%    35.6   2025-05-31    2% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  76.8%    77.8   2025-05-31    0% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  63.3%    43.4   2024-05-17    2% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 38.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 

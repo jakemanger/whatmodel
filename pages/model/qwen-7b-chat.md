@@ -6,7 +6,7 @@
 
 Alibaba · released 2023-08 · 7.72B params · other (tongyi-qianwen-license-agreement)
 
-**score 32.0** ±0.9 · #825 of 934 · from 11 benchmark results across 2 sources
+**score 31.5** ±0.9 · #832 of 934 · from 11 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,19 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">ARC Challenge</a>                   46.7%    32.2   2024-04-08   50% ▇▇▇▇▇▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">WinoGrande</a>                      68.6%    31.2   2024-04-08   11% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">BoolQ</a>                           71.7%    29.5   2024-04-08    8% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">ARC Easy</a>                        64.5%    26.0   2024-04-08    6% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">OpenBookQA</a>                      35.6%    39.0   2024-04-08    5% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">HellaSwag</a>                       85.0%    39.9   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">SciQ</a>                            90.7%    23.1   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">PIQA</a>                            78.7%    31.8   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">Social IQA</a>                      47.0%    34.1   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">LAMBADA (OpenAI version), las…</a>  65.5%    23.8   2024-04-08    2% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  59.9%    38.1   2024-02-24    3% ▇
+<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">ARC Challenge</a>                   46.7%    31.9   2024-04-08   50% ▇▇▇▇▇▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">WinoGrande</a>                      68.6%    30.7   2024-04-08   11% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">BoolQ</a>                           71.7%    29.0   2024-04-08    9% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">ARC Easy</a>                        64.5%    25.4   2024-04-08    6% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">OpenBookQA</a>                      35.6%    38.4   2024-04-08    6% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">HellaSwag</a>                       85.0%    39.2   2024-04-08    4% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">SciQ</a>                            90.7%    22.5   2024-04-08    4% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">PIQA</a>                            78.7%    31.2   2024-04-08    4% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">Social IQA</a>                      47.0%    33.7   2024-04-08    3% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">LAMBADA (OpenAI version), las…</a>  65.5%    23.4   2024-04-08    2% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  59.9%    42.0   2024-02-24    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 32.0
+                        weighted average                       = 31.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -39,7 +39,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~15.44GB   32.0
+16-bit bf16  ~15.44GB   31.5
 </pre>
 
 ```sh

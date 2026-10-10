@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 7B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 34.6** ±1.4 · #791 of 934 · from 7 benchmark results across 2 sources
+**score 35.0** ±1.4 · #789 of 934 · from 8 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,26 +14,27 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            45.5%    34.8   2023-11-20   25% ▇▇▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  40.0%    31.5   2023-11-20   16% ▇▇
-                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     34.5%    35.7   2023-11-20    9% ▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            45.5%    34.9   2023-11-20   24% ▇▇▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  40.0%    31.5   2023-11-20   14% ▇▇
+                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     34.5%    35.8   2023-11-20    9% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      50.7%    37.2   2023-11-20    9% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  44.5%    36.7   2023-11-20    3% ▇
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   9.2%    33.3   2025-08-09   30% ▇▇▇▇
-                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  84.2%    38.3   2025-08-09    8% ▇
+<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   9.2%    33.4   2025-08-09   30% ▇▇▇▇
+                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  84.2%    38.4   2025-08-09    7% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  63.9%    44.5   2024-03-05    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 34.6
+                        weighted average                       = 35.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
 download         size  score
-16-bit bf16  ~13.48GB   34.6
+16-bit bf16  ~13.48GB   35.0
 </pre>
 
 ```sh

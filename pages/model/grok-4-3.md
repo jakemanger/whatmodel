@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-04 · closed weights
 
-**score 70.6** ±0.9 · #79 of 934 · from 11 benchmark results across 3 sources
+**score 70.5** ±0.9 · #79 of 934 · from 13 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,24 +14,26 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        42.8%    71.0   2026-06-17   38% ▇▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>           14.6%    71.6   2026-06-17   15% ▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        42.8%    71.0   2026-06-17   35% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>           14.6%    71.5   2026-06-17   14% ▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     88.8%    72.8   2026-06-17    9% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            25.0%    73.0   2026-06-17    4% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         93.3%    72.8   2026-06-17    4% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                33.2%    69.1   2026-08-27    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         93.3%    72.9   2026-06-17    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                33.2%    69.1   2026-08-27    3% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1356.6    66.9   2026-10-01   11% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1441.4    70.9   2026-10-02    6% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1242.9    71.5   2026-10-02    5% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1441.4    70.8   2026-10-02    6% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1242.9    71.4   2026-10-02    5% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style c…</a>  1193.2    72.9   2026-08-24    3% ▇
-<a name="paper-2606.05405v2"></a>Agents' Last Exam       <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall ful…</a>    4.3%    63.0   2026-06-11    4% ▇
+<a name="paper-2606.05405v2"></a>Agents' Last Exam       <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall ful…</a>    4.3%    62.9   2026-06-11    5% ▇
+<a name="paper-2608.19741v4-thinkingbox"></a>One Success Isn't Rel…  <a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507…</a>   14.4%    62.4   2026-10-01    3% ▇
+<a name="paper-2609.38480v2-klinikebench"></a>KlinikeBench: Evaluat…  <a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (3…</a>   21.3%    85.5   2026-10-06    1% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 70.6
+                        weighted average                        = 70.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Agents' Last Exam ([CC BY 4.0](../../licenses/paper-2606.05405v2-CC-BY-4.0.txt))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Agents' Last Exam ([CC BY 4.0](../../licenses/paper-2606.05405v2-CC-BY-4.0.txt)) · One Success Isn't Reliability: Thinkingbox ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · KlinikeBench: Evaluating Language Models Beyond Diagnostic Accuracy ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 33.72B params · apache-2.0
 
-**score 45.6** ±1.2 · #559 of 934 · from 11 benchmark results across 4 sources
+**score 45.8** ±1.2 · #556 of 934 · from 11 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,19 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  54.8%    45.3   2024-05-07   23% ▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  41.9%    47.0   2024-05-07   17% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  50.2%    48.4   2024-05-07   17% ▇▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         43.8%    45.8   2025-04-01   15% ▇▇
-                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>         35.8%    46.7   2025-04-01   15% ▇▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  19.3%    38.5   2025-05-31    3% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>  20.7%    44.5   2025-05-31    3% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  35.4%    53.2   2025-05-31    2% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  72.3%    80.7   2025-05-31    0% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  34.1%    32.7   2026-04-17    3% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  51.5%    27.8   2026-04-17    2% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  54.8%    45.4   2024-05-07   23% ▇▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  41.9%    47.1   2024-05-07   17% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  50.2%    48.5   2024-05-07   17% ▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>         35.8%    46.7   2025-04-01   15% ▇▇
+                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         43.8%    46.0   2025-04-01   14% ▇▇
+<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  19.3%    38.8   2025-05-31    3% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>  20.7%    44.6   2025-05-31    3% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  35.4%    52.7   2025-05-31    2% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  72.3%    66.5   2025-05-31    0% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  34.1%    32.4   2026-04-17    3% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  51.5%    26.2   2026-04-17    2% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 45.6
+                        weighted average                       = 45.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -37,8 +37,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~21.38GB   45.6
-4-bit q4_0       ~19GB   45.6
+4-bit q4_k_m  ~21.38GB   45.8
+4-bit q4_0       ~19GB   45.8
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (InternLM) · released 2024-07 · 1.89B params · other
 
-**score 25.6** ±5.8 · #879 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.0** ±7.2 · #826 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  44.3%    21.4   2024-08-09   85% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                15% ▇▇
-                        weighted average                       = 25.6
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  44.3%    26.6   2024-08-09   77% ▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                23% ▇▇▇
+                        weighted average                       = 32.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download      size  score
-4-bit q4_0  ~1.1GB   25.6
+4-bit q4_0  ~1.1GB   32.0
 </pre>
 
 ```sh

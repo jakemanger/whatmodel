@@ -6,7 +6,7 @@
 
 Phronetic AI · released 2025-06 · 0.6B params · apache-2.0
 
-**score 43.2** ±5.2 · #633 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 43.2** ±5.2 · #636 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

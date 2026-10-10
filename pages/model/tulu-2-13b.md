@@ -6,32 +6,33 @@
 
 Allen Institute for AI · released 2023-11 · 13B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 37.7** ±1.7 · #746 of 934 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 38.1** ±1.7 · #742 of 934 · from 6 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source  test                            score  implies  date        weight
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            49.5%    37.0   2023-11-20   42% ▇▇▇▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  49.0%    34.4   2023-11-20   23% ▇▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     46.0%    39.9   2023-11-20   14% ▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      55.4%    39.8   2023-11-20   14% ▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  53.2%    43.7   2023-11-20    5% ▇
-prior   pull toward the middle                   50.0                 1% ▇
-        weighted average                       = 37.7
+source                  test                            score  implies  date        weight
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            49.5%    37.0   2023-11-20   41% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  49.0%    34.4   2023-11-20   20% ▇▇
+                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     46.0%    40.0   2023-11-20   14% ▇▇
+                        <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      55.4%    39.8   2023-11-20   14% ▇▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  53.2%    43.8   2023-11-20    5% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  63.5%    43.5   2024-05-22    5% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 38.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt))</sub>
+<sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
 download         size  score
-16-bit bf16  ~26.03GB   37.7
+16-bit bf16  ~26.03GB   38.1
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2023-10 · 6.24B params · chatglm3-6b-license
 
-**score 28.6** ±2.6 · #857 of 934 · from 3 benchmark results across 3 sources
+**score 28.3** ±2.8 · #859 of 934 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,22 +14,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1056.5    24.8   2026-10-02   60% ▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   56.0%    34.7   2024-02-19   20% ▇▇
-<a name="paper-2406.12793v2-chatglm"></a>ChatGLM: A Family of …  <a href="https://arxiv.org/html/2406.12793v2#S3.T7">BFCL (version not stated) (la…</a>   57.9%    31.1   2024-07-30   18% ▇▇
-prior                   pull toward the middle                    50.0                 3% ▇
-                        weighted average                        = 28.6
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1056.5    24.8   2026-10-02   67% ▇▇▇▇▇▇▇▇
+<a name="paper-2406.12793v2-chatglm"></a>ChatGLM: A Family of …  <a href="https://arxiv.org/html/2406.12793v2#S3.T7">BFCL (version not stated) (la…</a>   57.9%    30.8   2024-07-30   19% ▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   56.0%    39.4   2024-02-19   10% ▇
+prior                   pull toward the middle                    50.0                 4% ▇
+                        weighted average                        = 28.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · ChatGLM: A Family of Large Language Models from GLM-130B to GLM-4 All Tools ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ChatGLM: A Family of Large Language Models from GLM-130B to GLM-4 All Tools ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
 download                      size  score
-4-bit fp16 · nvidia only  ~12.49GB   28.6
+4-bit fp16 · nvidia only  ~12.49GB   28.3
 </pre>
 
 ```sh

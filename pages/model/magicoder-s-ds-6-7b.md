@@ -6,7 +6,7 @@
 
 UIUC (ise-uiuc) · released 2023-12 · 6.74B params · deepseek
 
-**score 48.6** ±0.7 · #471 of 934 · from 10 benchmark results across 4 sources
+**score 48.6** ±0.7 · #474 of 934 · from 10 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       76.8%    48.8   2024-12-26   29% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      71.3%    49.0   2024-12-26   24% ▇▇▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       76.8%    48.9   2024-12-26   30% ▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      71.3%    49.1   2024-12-26   24% ▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           69.0%    50.9   2024-12-26    4% ▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/ise-uiuc--Magicoder-S-DS-6.7B_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  69.8%    46.3   2024-10-19    3% ▇
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval (lab)</a>                 76.8%    49.6   2024-03-28   16% ▇▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval (lab)</a>                 76.8%    49.6   2024-03-28   15% ▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall) (lab)</a>         50.0%    47.8   2024-03-28   12% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>   36.0%    46.7   2025-04-01    5% ▇
-                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   47.5%    48.1   2025-04-01    5% ▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      41.7%    41.6   2024-01-03    1% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>   36.0%    46.8   2025-04-01    5% ▇
+                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   47.5%    48.3   2025-04-01    4% ▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      41.7%    41.7   2024-01-03    2% ▇
                         <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      44.4%    43.6   2024-01-03    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 48.6

@@ -6,7 +6,7 @@
 
 Mistral · released 2026-10 · 1050B params (52B active) · proprietary
 
-**score 71.0** ±1.5 · #76 of 934 · from 4 benchmark results across 2 sources
+**score 71.1** ±1.5 · #73 of 934 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                  score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.0656 IPS    70.2   2026-10-08   37% ▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.0656 IPS    70.3   2026-10-08   38% ▇▇▇▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1541.3    75.4   2026-10-08   34% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                       1429.3    69.4   2026-10-08   20% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                       1429.3    69.4   2026-10-08   19% ▇▇
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                     20.0%    62.9   2026-10-09    8% ▇
 prior                   pull toward the middle                         50.0                 1% ▇
-                        weighted average                             = 71.0
+                        weighted average                             = 71.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

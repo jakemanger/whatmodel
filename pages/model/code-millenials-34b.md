@@ -6,7 +6,7 @@
 
 Bud Ecosystem · released 2024-01 · 33.75B params · llama2
 
-**score 48.2** ±0.8 · #485 of 934 · from 3 benchmark results across 1 source
+**score 48.3** ±0.9 · #485 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -18,7 +18,7 @@ source                  test                    score  implies  date        weig
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              70.7%    48.8   2024-12-26   42% ▇▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   64.6%    47.9   2024-12-26    7% ▇
 prior                   pull toward the middle           50.0                 0% ▇
-                        weighted average               = 48.2
+                        weighted average               = 48.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle           50.0                 0%
 
 <pre>
 download        size  score
-4-bit fp16  ~67.49GB   48.2
+4-bit fp16  ~67.49GB   48.3
 </pre>
 
 ```sh

@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  985.4    40.1   2026-10-02   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  985.4    40.2   2026-10-02   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 7% ▇
                         weighted average                       = 40.8
 </pre>

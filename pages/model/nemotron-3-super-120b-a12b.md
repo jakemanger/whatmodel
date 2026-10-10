@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-03 · 120.6B params (12.7B active) · nvidia-open-model
 
-**score 65.4** ±0.8 · #145 of 934 · from 24 benchmark results across 4 sources
+**score 65.3** ±0.9 · #145 of 934 · from 24 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,32 +14,32 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="first-party-nvidia-scores"></a>NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md#benchmarks">τ²-bench Telecom (lab)</a>           64.4%    64.6   2026-08-25   11% ▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">GPQA (subset unspecified) (la…</a>   80.5%    66.0   2026-06-24    6% ▇
-                        <a href="https://arxiv.org/html/2604.12374v1#S3.T5">Terminal-Bench Hard (lab)</a>        25.8%    67.5   2026-04-14    6% ▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">AIME 2025 (lab)</a>                  92.2%    66.5   2026-06-24    5% ▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">SWE-bench Verified (lab)</a>         59.5%    65.2   2026-06-24    4% ▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">HMMT February 2025 (lab)</a>         94.2%    68.8   2026-06-24    4% ▇
+<a name="first-party-nvidia-scores"></a>NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md#benchmarks">τ²-bench Telecom (lab)</a>           64.4%    64.5   2026-08-25   10% ▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">GPQA (subset unspecified) (la…</a>   80.5%    65.9   2026-06-24    6% ▇
+                        <a href="https://arxiv.org/html/2604.12374v1#S3.T5">Terminal-Bench Hard (lab)</a>        25.8%    67.3   2026-04-14    6% ▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">AIME 2025 (lab)</a>                  92.2%    66.4   2026-06-24    5% ▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">SWE-bench Verified (lab)</a>         59.5%    65.1   2026-06-24    4% ▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">HMMT February 2025 (lab)</a>         94.2%    69.2   2026-06-24    3% ▇
                         <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">Humanity's Last Exam (lab)</a>       18.5%    66.0   2026-06-24    3% ▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">MMLU-Pro (lab)</a>                   83.8%    65.8   2026-06-24    3% ▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">τ²-bench Retail (lab)</a>            64.3%    63.9   2026-06-24    2% ▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">MMLU-Pro (lab)</a>                   83.8%    65.7   2026-06-24    3% ▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">τ²-bench Retail (lab)</a>            64.3%    63.8   2026-06-24    2% ▇
                         <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">SciCode subproblems (lab)</a>        42.3%    66.8   2026-06-24    2% ▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">τ²-bench Airline (lab)</a>           56.9%    66.3   2026-06-24    2% ▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">IFBench prompt-level (lab)</a>       73.4%    61.6   2026-06-24    1% ▇
-<a name="report-2603.19220v2"></a>NVIDIA                  <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Med…</a>   23.2%    67.7   2026-03-22    6% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>                  90.2%    63.2   2026-03-22    5% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>            77.2%    64.9   2026-03-22    4% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>                  89.8%    62.6   2026-03-22    4% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Eas…</a>   81.7%    68.1   2026-03-22    3% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">SciCode (level unspecified) (…</a>   42.1%    67.4   2026-03-22    2% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">MultiChallenge (lab)</a>             55.2%    68.0   2026-03-22    2% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">MMLU-ProX (lab)</a>                  79.4%    68.6   2026-03-22    2% ▇
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>   30.5%    66.1   2026-09-11    8% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>   48.9%    65.4   2026-09-11    6% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>   33.8%    62.7   2026-09-11    4% ▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">τ²-bench Airline (lab)</a>           56.9%    66.2   2026-06-24    1% ▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks">IFBench prompt-level (lab)</a>       73.4%    61.5   2026-06-24    1% ▇
+<a name="report-2603.19220v2"></a>NVIDIA                  <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Med…</a>   23.2%    67.6   2026-03-22    6% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>                  90.2%    63.0   2026-03-22    5% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>            77.2%    64.8   2026-03-22    4% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>                  89.8%    62.5   2026-03-22    4% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Eas…</a>   81.7%    67.9   2026-03-22    3% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">MultiChallenge (lab)</a>             55.2%    67.9   2026-03-22    2% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">SciCode (level unspecified) (…</a>   42.1%    67.3   2026-03-22    2% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">MMLU-ProX (lab)</a>                  79.4%    68.4   2026-03-22    2% ▇
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>   30.5%    65.9   2026-09-11    8% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>   48.9%    65.2   2026-09-11    6% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>   33.8%    62.5   2026-09-11    4% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1360.5    61.2   2026-10-02    6% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 65.4
+                        weighted average                        = 65.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -78,7 +78,7 @@ api (Amazon Bedrock) · $0.28/M blended · $0.15 in / $0.65 out per 1M tokens ·
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~72.86GB   65.4
+4-bit q4_k_m  ~72.86GB   65.3
 </pre>
 
 ```sh

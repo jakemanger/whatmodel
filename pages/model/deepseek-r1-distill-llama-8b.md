@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 8.03B params · mit
 
-**score 49.2** ±1.1 · #454 of 934 · from 17 benchmark results across 6 sources
+**score 47.3** ±1.2 · #505 of 934 · from 18 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -14,30 +14,31 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card-deepseek-ai--deepseek-r1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>              49.0%    52.9   2026-09-25   15% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspec…</a>  39.6%    51.3   2026-09-25   11% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                  89.1%    49.8   2026-09-25    8% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                 50.4%    52.0   2026-09-25    6% ▇
-<a name="report-2503.01743v2"></a>Microsoft               <a href="https://arxiv.org/html/2503.01743v2">GPQA Diamond</a>                    47.3%    51.2   2025-03-07   12% ▇
-                        <a href="https://arxiv.org/html/2503.01743v2">AIME 2024</a>                       43.3%    51.1   2025-03-07    8% ▇
-                        <a href="https://arxiv.org/html/2503.01743v2">MATH-500</a>                        86.9%    52.9   2025-03-07    4% ▇
-<a name="card-microsoft-phi-4-mini-reasoning"></a>microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">GPQA Diamond</a>                    47.3%    49.8   2026-09-25    9% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">AIME 2024</a>                       43.3%    47.7   2026-09-25    8% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">MATH-500</a>                        86.9%    51.2   2026-09-25    2% ▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   0.6%    37.6   2025-05-31    3% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>   6.8%    34.5   2025-05-31    3% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>   4.9%    28.5   2025-05-31    2% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>   0.4%  -250.7   2025-05-31    0% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  28.5%    45.9   2025-04-28    6% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  53.7%    42.9   2026-04-17    2% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  78.3%    46.4   2026-04-17    2% ▇
+<a name="card-deepseek-ai--deepseek-r1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>              49.0%    52.7   2026-09-25   11% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspec…</a>  39.6%    50.2   2026-09-25   11% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                  89.1%    48.5   2026-09-25    7% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                 50.4%    51.1   2026-09-25    5% ▇
+<a name="report-2503.01743v2"></a>Microsoft               <a href="https://arxiv.org/html/2503.01743v2">GPQA Diamond</a>                    47.3%    50.6   2025-03-07   11% ▇
+                        <a href="https://arxiv.org/html/2503.01743v2">AIME 2024</a>                       43.3%    50.3   2025-03-07    7% ▇
+                        <a href="https://arxiv.org/html/2503.01743v2">MATH-500</a>                        86.9%    52.2   2025-03-07    3% ▇
+<a name="card-microsoft-phi-4-mini-reasoning"></a>microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">GPQA Diamond</a>                    47.3%    48.9   2026-09-25   10% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">AIME 2024</a>                       43.3%    46.7   2026-09-25    8% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">MATH-500</a>                        86.9%    50.5   2026-09-25    2% ▇
+<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   0.6%    37.0   2025-05-31    4% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>   6.8%    35.0   2025-05-31    4% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>   4.9%    28.9   2025-05-31    2% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>   0.4%  -130.8   2025-05-31    0% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  28.5%    45.9   2025-04-28    7% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  53.7%    42.4   2026-04-17    3% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  78.3%    46.6   2026-04-17    2% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  42.4%    27.4   2025-01-29    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 49.2
+                        weighted average                       = 47.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: deepseek-ai/DeepSeek-R1 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1.txt)) · Microsoft ([CC BY 4.0](../../licenses/report-2503.01743v2.txt)) · microsoft/Phi-4-mini-reasoning model card ([MIT](../../licenses/card-microsoft-phi-4-mini-reasoning.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
+<sub>Licences: deepseek-ai/DeepSeek-R1 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1.txt)) · Microsoft ([CC BY 4.0](../../licenses/report-2503.01743v2.txt)) · microsoft/Phi-4-mini-reasoning model card ([MIT](../../licenses/card-microsoft-phi-4-mini-reasoning.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -45,8 +46,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~5.32GB   49.2
-8-bit q8_0    ~10.14GB   49.2
+4-bit q4_k_m   ~5.32GB   47.3
+8-bit q8_0    ~10.14GB   47.3
 </pre>
 
 ```sh

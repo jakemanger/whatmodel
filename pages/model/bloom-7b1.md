@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 7.07B params · bigscience-bloom-rail-1.0
 
-**score 21.9** ±1.0 · #893 of 934 · from 14 benchmark results across 4 sources
+**score 21.2** ±1.0 · #895 of 934 · from 15 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,27 +14,28 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">ARC Challenge</a>                   33.5%    23.1   2024-04-08   26% ▇▇▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">WinoGrande</a>                      64.6%    28.1   2024-04-08    9% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">BoolQ</a>                           62.8%    19.9   2024-04-08    8% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">SciQ</a>                            90.1%    23.7   2024-04-08    7% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">ARC Easy</a>                        57.4%    20.0   2024-04-08    7% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">HellaSwag</a>                       62.3%    22.1   2024-04-08    6% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">PIQA</a>                            72.7%    21.0   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">LAMBADA (OpenAI version), las…</a>  57.6%    18.3   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">Social IQA</a>                      42.1%    25.3   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">OpenBookQA</a>                      25.2%    12.9   2024-04-08    2% ▇
-<a name="paper-2211.05100v4"></a>BLOOM: A 176B-Paramet…  <a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>                  7.7%    21.0   2023-06-27   18% ▇▇
-<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  18.1%    19.9   2024-04-24    3% ▇
-                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>   3.2%    14.5   2024-04-24    3% ▇
-<a name="paper-2410.14897v1-gencopa"></a>From Test-Taking to T…  <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                            53.2%    -2.4   2024-10-18    0% ▇
+<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">ARC Challenge</a>                   33.5%    22.6   2024-04-08   26% ▇▇▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">WinoGrande</a>                      64.6%    27.7   2024-04-08    9% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">BoolQ</a>                           62.8%    19.3   2024-04-08    8% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">SciQ</a>                            90.1%    23.1   2024-04-08    7% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">ARC Easy</a>                        57.4%    19.4   2024-04-08    7% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">HellaSwag</a>                       62.3%    21.5   2024-04-08    6% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">PIQA</a>                            72.7%    20.4   2024-04-08    4% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">LAMBADA (OpenAI version), las…</a>  57.6%    17.8   2024-04-08    3% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">OpenBookQA</a>                      25.2%    12.2   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">Social IQA</a>                      42.1%    24.8   2024-04-08    2% ▇
+<a name="paper-2211.05100v4"></a>BLOOM: A 176B-Paramet…  <a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>                  7.7%    20.2   2023-06-27   18% ▇▇
+<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  18.1%    19.3   2024-04-24    3% ▇
+                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>   3.2%    13.7   2024-04-24    3% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  28.9%     6.9   2024-02-05    1% ▇
+<a name="paper-2410.14897v1-gencopa"></a>From Test-Taking to T…  <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                            53.2%    -1.6   2024-10-18    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 21.9
+                        weighted average                       = 21.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · BLOOM: A 176B-Parameter Open-Access Multilingual Language Model ([CC BY 4.0](../../licenses/paper-2211.05100v4-CC-BY-4.0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · BLOOM: A 176B-Parameter Open-Access Multilingual Language Model ([CC BY 4.0](../../licenses/paper-2211.05100v4-CC-BY-4.0.txt)) · Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -42,7 +43,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp16  ~14.14GB   21.9
+4-bit fp16  ~14.14GB   21.2
 </pre>
 
 ```sh

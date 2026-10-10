@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-02 · 72.29B params · tongyi-qianwen
 
-**score 45.4** ±0.5 · #565 of 934 · from 18 benchmark results across 14 sources
+**score 45.4** ±0.5 · #569 of 934 · from 18 benchmark results across 14 sources
 
 ## How the score was worked out
 
@@ -14,24 +14,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                       score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                                  68.3%    45.4   2024-12-26   21% ▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                                 59.1%    44.4   2024-12-26   16% ▇▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                                  68.3%    45.4   2024-12-26   21% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                                 59.1%    44.5   2024-12-26   16% ▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                                      61.6%    45.9   2024-12-26    3% ▇
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                                  67.1%    45.7   2024-03-28   11% ▇
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                          42.0%    44.3   2024-03-28    7% ▇
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                       29.3%    44.1   2024-10-22    8% ▇
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>             36.6%    49.8   2025-08-09    8% ▇
-<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>             36.1%    46.3   2024-11-14    5% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>              39.8%    43.2   2025-04-01    3% ▇
-                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>              32.6%    44.3   2025-04-01    3% ▇
-<a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Qwen1.5-72B-Chat_5shots.zip">MMLU-Pro</a>                                   47.1%    45.2                 4% ▇
-<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  39.9277 WB-Score    47.0   2024-08-01    2% ▇
+<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                       29.3%    44.2   2024-10-22    8% ▇
+<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>             36.6%    50.0   2025-08-09    8% ▇
+<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>             36.1%    46.4   2024-11-14    5% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>              32.6%    44.4   2025-04-01    3% ▇
+                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>              39.8%    43.3   2025-04-01    2% ▇
+<a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Qwen1.5-72B-Chat_5shots.zip">MMLU-Pro</a>                                   47.1%    45.3                 4% ▇
+<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  39.9277 WB-Score    47.1   2024-08-01    2% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                            1233.5    46.0   2026-10-02    2% ▇
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                               28.8%    40.9   2025-01-27    2% ▇
 <a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>             14.1%    37.4   2026-04-06    2% ▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>             63.2%    48.3   2026-08-11    2% ▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>             68.0%    52.1   2024-06-20    1% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             74.3%    50.0   2024-02-18    1% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>             63.2%    48.2   2026-08-11    2% ▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>             68.0%    52.2   2024-06-20    1% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             74.3%    51.3   2024-02-18    0% ▇
 prior                   pull toward the middle                              50.0                 0% ▇
                         weighted average                                  = 45.4
 </pre>

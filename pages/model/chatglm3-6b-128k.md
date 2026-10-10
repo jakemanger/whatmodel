@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-01
 
-**score 30.3** ±3.9 · #842 of 934 · from 3 benchmark results across 2 sources
+**score 33.3** ±4.3 · #809 of 934 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                       56.0%    30.0   2025-10-09   38% ▇▇▇▇▇
-                        <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                      42.0%    33.3   2025-10-09    9% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  49.0%    27.1   2024-04-05   46% ▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 7% ▇
-                        weighted average                       = 30.3
+<a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                       56.0%    31.3   2025-10-09   50% ▇▇▇▇▇▇
+                        <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                      42.0%    35.0   2025-10-09   13% ▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  49.0%    31.2   2024-04-05   28% ▇▇▇
+prior                   pull toward the middle                   50.0                 8% ▇
+                        weighted average                       = 33.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp16  ~12.49GB   30.3
+4-bit fp16  ~12.49GB   33.3
 </pre>
 
 ```sh

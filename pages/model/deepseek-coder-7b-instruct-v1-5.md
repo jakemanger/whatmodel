@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-01 · 6.91B params · deepseek
 
-**score 47.7** ±0.7 · #500 of 934 · from 9 benchmark results across 3 sources
+**score 47.7** ±0.7 · #496 of 934 · from 9 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -15,14 +15,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       75.6%    48.3   2024-12-26   34% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      71.3%    49.0   2024-12-26   28% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      71.3%    49.1   2024-12-26   28% ▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           62.2%    46.3   2024-12-26    5% ▇
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       68.9%    46.3   2024-03-28   18% ▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               48.8%    47.3   2024-03-28   13% ▇▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   4.6%    38.4   2025-05-31    1% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  11.4%    36.0   2025-05-31    1% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  36.3%    53.6   2025-05-31    1% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  58.1%    15.6   2025-05-31    0% ▇
+<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   4.6%    38.8   2025-05-31    1% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  11.4%    36.5   2025-05-31    1% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  36.3%    53.1   2025-05-31    1% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  58.1%    27.6   2025-05-31    0% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 47.7
 </pre>

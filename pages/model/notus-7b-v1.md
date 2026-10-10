@@ -6,7 +6,7 @@
 
 Argilla · released 2023-11 · 7.24B params · mit
 
-**score 42.8** ±5.0 · #642 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 45.3** ±6.5 · #574 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  64.8%    41.9   2024-02-27   89% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                11% ▇
-                        weighted average                       = 42.8
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  64.8%    44.2   2024-02-27   81% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                19% ▇▇
+                        weighted average                       = 45.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download      size  score
-4-bit q4_0  ~4.1GB   42.8
+4-bit q4_0  ~4.1GB   45.3
 </pre>
 
 ```sh

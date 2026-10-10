@@ -6,7 +6,7 @@
 
 LLaVA · released 2024-01 · 34.8B params · apache-2.0
 
-**score 39.6** ±1.8 · #708 of 934 · from 6 benchmark results across 4 sources
+**score 39.7** ±1.8 · #705 of 934 · from 6 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="charxiv-readme-apache"></a>CharXiv leaderboard     <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>      51.0%    39.8   2024-07-23   41% ▇▇▇▇▇
-                        <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>      22.5%    42.1   2024-07-23   13% ▇▇
+<a name="charxiv-readme-apache"></a>CharXiv leaderboard     <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>      51.0%    39.9   2024-07-23   41% ▇▇▇▇▇
+                        <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>      22.5%    42.2   2024-07-23   13% ▇▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>     964.4    37.6   2026-10-02   21% ▇▇
-<a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>  -67.5000    34.6   2025-03-16   14% ▇▇
+<a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>  -67.5000    34.7   2025-03-16   14% ▇▇
 <a name="llava-model-zoo-apache"></a>LLaVA repository mode…  <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">MMMU (val) (lab)</a>                   51.1%    46.6   2024-01-30    9% ▇
                         <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">TextVQA (lab)</a>                      69.5%    33.8   2024-01-30    1% ▇
 prior                   pull toward the middle                      50.0                 1% ▇
-                        weighted average                          = 39.6
+                        weighted average                          = 39.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,8 +34,8 @@ prior                   pull toward the middle                      50.0        
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~21.38GB   39.6
-8-bit q8_0    ~42.26GB   39.6
+4-bit q4_k_m  ~21.38GB   39.7
+8-bit q8_0    ~42.26GB   39.7
 </pre>
 
 ```sh

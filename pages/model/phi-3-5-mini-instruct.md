@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-08 · 3.82B params · mit
 
-**score 43.3** ±0.5 · #628 of 934 · from 38 benchmark results across 10 sources
+**score 43.3** ±0.5 · #630 of 934 · from 38 benchmark results across 10 sources
 
 ## How the score was worked out
 
@@ -17,41 +17,41 @@ source                  test                            score  implies  date    
 <a name="card-microsoft-phi-4-mini-instruct"></a>microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">ARC Challenge (lab)</a>             84.6%    44.9   2026-09-25    6% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GSM8K (lab)</a>                     76.9%    40.6   2026-09-25    4% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA (lab)</a>                81.2%    45.0   2026-09-25    4% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU (lab)</a>                      65.5%    43.8   2026-09-25    4% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard (lab)</a>            63.1%    44.9   2026-09-25    3% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU (lab)</a>                      65.5%    43.7   2026-09-25    4% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard (lab)</a>            63.1%    44.9   2026-09-25    4% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MGSM (lab)</a>                      49.6%    40.4   2026-09-25    3% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU-Pro (lab)</a>                  47.4%    45.3   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU-Pro (lab)</a>                  47.4%    45.2   2026-09-25    2% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Multilingual MMLU (Microsoft)…</a>  51.8%    41.7   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH (lab)</a>                      49.8%    44.3   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH (lab)</a>                      49.8%    44.2   2026-09-25    2% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande (lab)</a>                72.2%    49.1   2026-09-25    1% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Social IQA (lab)</a>                75.1%    47.2   2026-09-25    1% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">HellaSwag (lab)</a>                 72.2%    39.2   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BoolQ (lab)</a>                     77.7%    42.0   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BoolQ (lab)</a>                     77.7%    41.9   2026-09-25    1% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">TruthfulQA MC2 (lab)</a>            65.2%    43.8   2026-09-25    1% ▇
                         <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified) (la…</a>  26.6%    37.5   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">PIQA (lab)</a>                      78.2%    39.7   2026-09-25    0% ▇
-<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 q…</a>  67.7%    44.3                13% ▇▇
-                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>     82.0%    45.2                10% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">PIQA (lab)</a>                      78.2%    39.6   2026-09-25    0% ▇
+<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 q…</a>  67.7%    44.4                13% ▇▇
+                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>     82.0%    45.3                10% ▇
                         <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 probl…</a>  42.1%    43.8                 8% ▇
                         <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 p…</a>  18.7%    44.4                 2% ▇
                         <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   6.4%    42.0                 2% ▇
 <a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            28.3%    43.6   2024-10-22    9% ▇
-<a name="korean-personal-benchmark-runs"></a>Daekeun Kim Korean LL…  <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>      43.0%    42.3                 4% ▇
-                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>       44.2%    40.4                 3% ▇
+<a name="korean-personal-benchmark-runs"></a>Daekeun Kim Korean LL…  <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>      43.0%    42.4                 4% ▇
+                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>       44.2%    40.4                 4% ▇
                         <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero…</a>  24.0%    36.3                 0% ▇
-<a name="report-2503.01743v2"></a>Microsoft               <a href="https://arxiv.org/html/2503.01743v2">HumanEval (lab)</a>                 70.1%    43.9   2025-03-07    2% ▇
-                        <a href="https://arxiv.org/html/2503.01743v2">HumanEval+ (lab)</a>                62.8%    42.4   2025-03-07    2% ▇
-                        <a href="https://arxiv.org/html/2503.01743v2">MBPP (lab)</a>                      70.0%    47.3   2025-03-07    1% ▇
+<a name="report-2503.01743v2"></a>Microsoft               <a href="https://arxiv.org/html/2503.01743v2">HumanEval (lab)</a>                 70.1%    43.8   2025-03-07    2% ▇
+                        <a href="https://arxiv.org/html/2503.01743v2">HumanEval+ (lab)</a>                62.8%    42.3   2025-03-07    2% ▇
+                        <a href="https://arxiv.org/html/2503.01743v2">MBPP (lab)</a>                      70.0%    47.2   2025-03-07    1% ▇
                         <a href="https://arxiv.org/html/2503.01743v2">MBPP+ (lab)</a>                     63.8%    45.9   2025-03-07    1% ▇
-                        <a href="https://arxiv.org/html/2503.01743v2">BigCodeBench (Complete) (lab)</a>   40.4%    42.9   2025-03-07    1% ▇
-                        <a href="https://arxiv.org/html/2503.01743v2">BFCL (version not stated) (la…</a>  66.1%    33.1   2025-03-07    0% ▇
-                        <a href="https://arxiv.org/html/2503.01743v2">IFEval (aggregation unspecifi…</a>  50.6%    28.0   2025-03-07    0% ▇
-                        <a href="https://arxiv.org/html/2503.01743v2">BigCodeBench (Instruct) (lab)</a>   14.3%    30.6   2025-03-07    0% ▇
+                        <a href="https://arxiv.org/html/2503.01743v2">BigCodeBench (Complete) (lab)</a>   40.4%    43.0   2025-03-07    1% ▇
+                        <a href="https://arxiv.org/html/2503.01743v2">BFCL (version not stated) (la…</a>  66.1%    32.8   2025-03-07    0% ▇
+                        <a href="https://arxiv.org/html/2503.01743v2">IFEval (aggregation unspecifi…</a>  50.6%    28.4   2025-03-07    0% ▇
+                        <a href="https://arxiv.org/html/2503.01743v2">BigCodeBench (Instruct) (lab)</a>   14.3%    30.5   2025-03-07    0% ▇
 <a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  40.2%    33.5   2026-08-11    2% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  25.4%    41.9   2025-04-28    1% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  66.8%    43.6   2024-12-03    1% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  95.9%    54.5   2025-10-16    0% ▇
-<a name="libra-leaderboard"></a>ai-forever LIBRA lead…  <a href="https://huggingface.co/spaces/ai-forever/LIBRA-Leaderboard/blob/f5b4b2a59131f86a74af400036ff31b0aae74794/results/microsoft_Phi-3.5-mini-instruct.json">LIBRA Mini (Russian long cont…</a>  28.3%    30.7   2026-06-08    0% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  25.4%    42.1   2025-04-28    1% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  66.8%    45.7   2024-12-03    1% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  95.9%    54.4   2025-10-16    0% ▇
+<a name="libra-leaderboard"></a>ai-forever LIBRA lead…  <a href="https://huggingface.co/spaces/ai-forever/LIBRA-Leaderboard/blob/f5b4b2a59131f86a74af400036ff31b0aae74794/results/microsoft_Phi-3.5-mini-instruct.json">LIBRA Mini (Russian long cont…</a>  28.3%    30.5   2026-06-08    0% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 43.3
 </pre>

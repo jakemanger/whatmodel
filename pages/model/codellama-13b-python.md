@@ -18,8 +18,8 @@ source                  test                    score  implies  date        weig
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       29.4%    38.4   2024-03-28   20% ▇▇
 <a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>         43.3%    38.8   2024-01-31   22% ▇▇▇
                         <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>              49.0%    37.4   2024-01-31   10% ▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>        39.7%    40.6   2024-01-03    3% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>        39.8%    40.0   2024-01-03    3% ▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>        39.7%    40.7   2024-01-03    3% ▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>        39.8%    40.2   2024-01-03    3% ▇
 prior                   pull toward the middle           50.0                 0% ▇
                         weighted average               = 38.2
 </pre>

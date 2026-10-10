@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-12 · 671B params (37B active) · deepseek
 
-**score 59.4** ±0.6 · #220 of 934 · from 44 benchmark results across 16 sources
+**score 59.5** ±0.6 · #222 of 934 · from 44 benchmark results across 16 sources
 
 ## How the score was worked out
 
@@ -14,52 +14,52 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="card-deepseek-ai--deepseek-r1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>               59.1%    55.9   2026-09-25    5% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">Aider polyglot (225 exercises…</a>   49.6%    62.7   2026-09-25    4% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>   85.5%    59.6   2026-09-25    3% ▇
+<a name="card-deepseek-ai--deepseek-r1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">Aider polyglot (225 exercises…</a>   49.6%    62.7   2026-09-25    4% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>               59.1%    55.0   2026-09-25    4% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>   85.5%    59.6   2026-09-25    4% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">SWE-bench Verified (lab)</a>         42.0%    59.9   2026-09-25    2% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">DROP (lab)</a>                       91.6%    65.2   2026-09-25    2% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MMLU (lab)</a>                       88.5%    60.3   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AlpacaEval 2 length-controlle…</a>   70.0%    57.3   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MMLU-Pro (lab)</a>                   75.9%    59.3   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">C-Eval (lab)</a>                     86.5%    59.4   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                  39.2%    44.3   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MMLU-Redux (lab)</a>                 89.1%    59.2   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">SimpleQA (lab)</a>                   24.9%    63.1   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                   90.2%    45.9   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">ChineseSimpleQA (lab)</a>            68.0%    61.1   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AlpacaEval 2 length-controlle…</a>   70.0%    57.4   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MMLU-Pro (lab)</a>                   75.9%    59.2   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">C-Eval (lab)</a>                     86.5%    59.3   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MMLU-Redux (lab)</a>                 89.1%    59.1   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">SimpleQA (lab)</a>                   24.9%    63.0   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                  39.2%    42.1   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">ChineseSimpleQA (lab)</a>            68.0%    61.0   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                   90.2%    43.4   2026-09-25    1% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">FRAMES (lab)</a>                     73.3%    56.0   2026-09-25    1% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">IFEval prompt-level strict (l…</a>   86.1%    62.7   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">CNMO 2024 (lab)</a>                  43.2%    41.0   2026-09-25    0% ▇
-<a name="report-2504.00698v2"></a>Cohere                  <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises…</a>   51.6%    66.4   2025-04-14    5% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified</a>               45.8%    61.5   2025-04-14    4% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Fe…</a>   33.5%    59.2   2025-04-14    2% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct)</a>          48.6%    58.0   2025-04-14    2% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8)</a>      92.2%    61.7   2025-04-14    1% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+</a>                            90.0%    63.3   2025-04-14    1% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev)</a>                   53.1%    51.6   2025-04-14    1% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     64.9%    56.6   2025-01-27    6% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     56.5%    58.1   2025-01-27    6% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         15.8%    54.8   2025-02-25    4% ▇
-<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>   48.4%    62.6   2024-12-25    8% ▇
-<a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>   48.9%    59.2   2024-12-26    8% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">CNMO 2024 (lab)</a>                  43.2%    40.9   2026-09-25    0% ▇
+<a name="report-2504.00698v2"></a>Cohere                  <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises…</a>   51.6%    66.5   2025-04-14    5% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified</a>               45.8%    61.6   2025-04-14    4% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Fe…</a>   33.5%    59.3   2025-04-14    3% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct)</a>          48.6%    58.1   2025-04-14    2% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8)</a>      92.2%    61.8   2025-04-14    1% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+</a>                            90.0%    63.4   2025-04-14    1% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev)</a>                   53.1%    51.7   2025-04-14    1% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     56.5%    58.1   2025-01-27    6% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     64.9%    56.6   2025-01-27    6% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         15.8%    54.7   2025-02-25    3% ▇
+<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>   48.4%    62.6   2024-12-25    9% ▇
+<a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>   48.9%    59.3   2024-12-26    8% ▇
 <a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   42.1%    58.5                 7% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1358.4    60.9   2026-10-02    3% ▇
-<a name="acl-kcl-2026"></a>Korean Canonical Lega…  <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>                34.3%    61.2   2026-09-25    2% ▇
+<a name="acl-kcl-2026"></a>Korean Canonical Lega…  <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>                34.3%    61.1   2026-09-25    2% ▇
                         <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                 37.3%    58.0   2026-09-25    1% ▇
-<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   58.5%    61.8   2024-12-28    1% ▇
-                        <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-…</a>   87.2%    62.9   2024-12-28    1% ▇
-<a name="scicode-readme-leaderboard"></a>SciCode leaderboard     <a href="https://github.com/scicode-bench/SciCode/blob/e3158ea011d4235245a547460d3688d7ccbf9900/README.md">SciCode main problems (offici…</a>    3.1%    58.5   2025-02-01    2% ▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   80.5%    61.9   2026-08-11    1% ▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   58.5%    61.8   2024-12-28    2% ▇
+                        <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-…</a>   87.2%    63.0   2024-12-28    1% ▇
+<a name="scicode-readme-leaderboard"></a>SciCode leaderboard     <a href="https://github.com/scicode-bench/SciCode/blob/e3158ea011d4235245a547460d3688d7ccbf9900/README.md">SciCode main problems (offici…</a>    3.1%    58.6   2025-02-01    2% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   80.5%    61.7   2026-08-11    2% ▇
 <a name="opencompass-compassacademic-space-predictions"></a>OpenCompass CompassAc…  <a href="https://huggingface.co/spaces/opencompass/CompassAcademic-Leaderboard-Full-Version/blob/73af091f28193d1e3e232851b940cadbb856556e/data/hf-academic-predictions.json">IFEval prompt-level strict</a>       85.8%    62.8   2025-03-31    1% ▇
-                        <a href="https://huggingface.co/spaces/opencompass/CompassAcademic-Leaderboard-Full-Version/blob/73af091f28193d1e3e232851b940cadbb856556e/data/hf-academic-predictions.json">DROP F1, 3-shot (simple-evals)</a>   92.1%    82.5   2025-03-31    0% ▇
-<a name="card2-deepseek-ai-deepseek-v3-0324"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3-0324/blob/e9b33add76883f293d6bf61f6bd89b497e80e335/README.md">LiveCodeBench (version unspec…</a>   39.2%    53.8   2025-03-27    1% ▇
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/deepseek-chat-v3_openai_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>   88.6%    60.0   2024-12-26    1% ▇
+                        <a href="https://huggingface.co/spaces/opencompass/CompassAcademic-Leaderboard-Full-Version/blob/73af091f28193d1e3e232851b940cadbb856556e/data/hf-academic-predictions.json">DROP F1, 3-shot (simple-evals)</a>   92.1%    82.3   2025-03-31    0% ▇
+<a name="card2-deepseek-ai-deepseek-v3-0324"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3-0324/blob/e9b33add76883f293d6bf61f6bd89b497e80e335/README.md">LiveCodeBench (version unspec…</a>   39.2%    53.2   2025-03-27    1% ▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/deepseek-chat-v3_openai_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>   88.6%    60.1   2024-12-26    1% ▇
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-25/score/data_overall.csv">BFCL v3</a>                          57.6%    55.1   2025-04-25    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   96.1%    59.3   2025-10-16    0% ▇
                         <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   93.9%   193.7   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 59.4
+                        weighted average                        = 59.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -83,7 +83,7 @@ api (Deep Infra) · $0.46/M blended · $0.32 in / $0.89 out per 1M tokens · [de
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~403.1GB   59.4
+4-bit q4_k_m  ~403.1GB   59.5
 </pre>
 
 ```sh

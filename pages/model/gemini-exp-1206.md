@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>  38.2%    60.2   2024-12-22   69% ▇▇▇▇▇▇▇▇
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  80.5%    61.8   2024-12-08   30% ▇▇▇▇
+<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>  38.2%    60.1   2024-12-22   69% ▇▇▇▇▇▇▇▇
+<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  80.5%    61.9   2024-12-08   30% ▇▇▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 60.5
 </pre>

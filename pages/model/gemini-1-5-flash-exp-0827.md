@@ -6,7 +6,7 @@
 
 Google · released 2024-08 · proprietary
 
-**score 53.2** ±0.8 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
+**score 53.3** ±0.8 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 q…</a>  82.1%    53.4                23% ▇▇▇
-                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 probl…</a>  74.5%    54.8                16% ▇▇
+<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 q…</a>  82.1%    53.5                23% ▇▇▇
+                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 probl…</a>  74.5%    54.9                16% ▇▇
                         <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>  25.0%    53.0                12% ▇
-                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 p…</a>  54.5%    56.1                10% ▇
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            46.9%    52.9   2024-10-22   27% ▇▇▇
+                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 p…</a>  54.5%    56.2                10% ▇
+<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            46.9%    53.0   2024-10-22   27% ▇▇▇
 <a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  52.6%    49.4   2024-08-27   12% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 53.2
+                        weighted average                       = 53.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

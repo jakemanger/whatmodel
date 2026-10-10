@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-11 · 7.3B params · apache-2.0
 
-**score 57.2** ±3.8 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 57.1** ±3.8 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card2-allenai-olmo-3-7b-think"></a>allenai/Olmo-3-7B-Thi…  <a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation) (…</a>  40.5%    55.0   2026-06-25   50% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified) (la…</a>  92.4%    60.8   2026-06-25   44% ▇▇▇▇▇
+<a name="card2-allenai-olmo-3-7b-think"></a>allenai/Olmo-3-7B-Thi…  <a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation) (…</a>  40.5%    54.9   2026-06-25   50% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified) (la…</a>  92.4%    60.7   2026-06-25   44% ▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 57.2
+                        weighted average                       = 57.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

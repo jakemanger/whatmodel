@@ -6,7 +6,7 @@
 
 ajibawa-2023 · released 2023-12 · cc-by-nc-nd-4.0
 
-**score 41.0** ±0.8 · #683 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.0** ±0.8 · #681 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               54.9%    40.8   2024-12-26   58% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              49.4%    41.1   2024-12-26   42% ▇▇▇▇▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               54.9%    40.9   2024-12-26   58% ▇▇▇▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              49.4%    41.2   2024-12-26   42% ▇▇▇▇▇
 prior                   pull toward the middle           50.0                 0% ▇
                         weighted average               = 41.0
 </pre>

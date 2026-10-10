@@ -6,7 +6,7 @@
 
 Cohere · released 2025-02 · 8.03B params · cc-by-nc-4.0
 
-**score 48.7** ±4.9 · #470 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.6** ±4.8 · #477 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  27.9%    48.5   2026-02-23   89% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                11% ▇
-                        weighted average                       = 48.7
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  27.9%    48.5   2026-02-23   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                10% ▇
+                        weighted average                       = 48.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~5.1GB   48.7
+4-bit q4_k_m  ~5.1GB   48.6
 </pre>
 
 ```sh

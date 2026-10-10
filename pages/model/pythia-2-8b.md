@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 2.78B params · apache-2.0
 
-**score 23.4** ±1.3 · #889 of 934 · from 10 benchmark results across 2 sources
+**score 22.1** ±1.3 · #892 of 934 · from 11 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,23 +14,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  64.4%    23.3   2023-05-31   18% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             29.5%    24.8   2023-05-31   17% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                59.4%    21.0   2023-05-31   15% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      88.2%    20.9   2023-05-31   11% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      73.9%    23.5   2023-05-31   10% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  64.7%    24.5   2023-05-31    8% ▇
-<a name="redpajama-2024-original-zero-shot"></a>RedPajama               <a href="https://arxiv.org/html/2411.12372v1">WinoGrande</a>                      60.1%    23.1   2024-11-19    9% ▇
-                        <a href="https://arxiv.org/html/2411.12372v1">HellaSwag</a>                       59.3%    24.3   2024-11-19    6% ▇
-                        <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  64.7%    23.3   2024-11-19    3% ▇
-                        <a href="https://arxiv.org/html/2411.12372v1">PIQA</a>                            74.0%    24.8   2024-11-19    2% ▇
+<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  64.4%    22.3   2023-05-31   18% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             29.5%    23.8   2023-05-31   16% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                59.4%    20.0   2023-05-31   15% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      88.2%    19.9   2023-05-31   11% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      73.9%    22.5   2023-05-31   10% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  64.7%    23.5   2023-05-31    8% ▇
+<a name="redpajama-2024-original-zero-shot"></a>RedPajama               <a href="https://arxiv.org/html/2411.12372v1">WinoGrande</a>                      60.1%    22.1   2024-11-19    9% ▇
+                        <a href="https://arxiv.org/html/2411.12372v1">HellaSwag</a>                       59.3%    23.5   2024-11-19    6% ▇
+                        <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  64.7%    22.4   2024-11-19    3% ▇
+                        <a href="https://arxiv.org/html/2411.12372v1">PIQA</a>                            74.0%    24.1   2024-11-19    2% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  24.0%     7.8   2024-02-11    2% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 23.4
+                        weighted average                       = 22.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · RedPajama ([CC BY 4.0](../../licenses/redpajama-2024-original-zero-shot-CC-BY-4.0.txt))</sub>
+<sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · RedPajama ([CC BY 4.0](../../licenses/redpajama-2024-original-zero-shot-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -38,7 +39,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp16  ~5.68GB   23.4
+4-bit fp16  ~5.68GB   22.1
 </pre>
 
 ```sh

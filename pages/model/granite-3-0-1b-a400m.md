@@ -6,7 +6,7 @@
 
 IBM · released 2024-10 · 1.3B params (0.4B active) · apache-2.0
 
-**score 27.0** ±1.2 · #870 of 934 · from 16 benchmark results across 2 sources
+**score 27.0** ±1.2 · #868 of 934 · from 16 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,22 +14,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="granite-3-0-paper-github"></a>IBM Granite 3.0 Langu…  <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">WinoGrande (lab)</a>                61.2%    27.9   2024-11-09   10% ▇
-                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HumanEval (lab)</a>                 30.2%    32.7   2024-11-09   10% ▇
+<a name="granite-3-0-paper-github"></a>IBM Granite 3.0 Langu…  <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HumanEval (lab)</a>                 30.2%    32.6   2024-11-09   10% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">WinoGrande (lab)</a>                61.2%    27.8   2024-11-09   10% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">BIG-Bench Hard (lab)</a>            31.8%    28.2   2024-11-09   10% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">GSM8K (lab)</a>                     26.3%    28.6   2024-11-09    9% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HellaSwag (lab)</a>                 65.6%    31.6   2024-11-09    9% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MMLU (lab)</a>                      32.0%    20.3   2024-11-09    9% ▇
-                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">BoolQ (lab)</a>                     70.1%    26.6   2024-11-09    8% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">BoolQ (lab)</a>                     70.1%    26.4   2024-11-09    7% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MATH (subset unspecified) (la…</a>  10.9%    26.2   2024-11-09    7% ▇
-                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MBPP (lab)</a>                      15.4%    22.1   2024-11-09    5% ▇
-                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MMLU-Pro (lab)</a>                  12.2%    18.2   2024-11-09    5% ▇
-                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">IFEval (aggregation unspecifi…</a>  32.4%    24.5   2024-11-09    4% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MBPP (lab)</a>                      15.4%    22.1   2024-11-09    6% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MMLU-Pro (lab)</a>                  12.2%    18.1   2024-11-09    5% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">IFEval (aggregation unspecifi…</a>  32.4%    24.8   2024-11-09    4% ▇
                         <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">GPQA (subset unspecified) (la…</a>  23.1%    18.4   2024-11-09    4% ▇
-                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">ARC Challenge (lab)</a>             41.2%    34.2   2024-11-09    3% ▇
-                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">OpenBookQA (lab)</a>                38.4%    40.4   2024-11-09    3% ▇
-                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">Social IQA (lab)</a>                47.5%    25.1   2024-11-09    2% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  34.8%    18.3   2026-04-17    2% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">ARC Challenge (lab)</a>             41.2%    33.9   2024-11-09    3% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">OpenBookQA (lab)</a>                38.4%    40.3   2024-11-09    3% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">Social IQA (lab)</a>                47.5%    24.8   2024-11-09    1% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  34.8%    16.4   2026-04-17    2% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 27.0
 </pre>

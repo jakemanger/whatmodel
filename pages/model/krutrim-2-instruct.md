@@ -6,7 +6,7 @@
 
 Krutrim (Ola) · released 2025-02 · other (krutrim-community-license-agreement-version-1.0)
 
-**score 55.7** ±4.4 · #295 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.2** ±4.6 · #307 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Incep…</a>  59.6%    56.2   2026-04-06   91% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Incep…</a>  59.6%    55.7   2026-04-06   91% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 9% ▇
-                        weighted average                       = 55.7
+                        weighted average                       = 55.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~48.99GB   55.7
+16-bit bf16  ~48.99GB   55.2
 </pre>
 
 ```sh

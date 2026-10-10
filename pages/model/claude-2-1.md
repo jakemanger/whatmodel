@@ -6,7 +6,7 @@
 
 Anthropic · released 2023-11 · proprietary
 
-**score 44.9** ±0.8 · comparison only: no current run option verified · from 8 benchmark results across 5 sources
+**score 45.0** ±0.9 · comparison only: no current run option verified · from 8 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -15,15 +15,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                                                   score  implies  date        weight
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                                              66.5%    45.5   2024-03-28   31% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                                      46.2%    46.2   2024-03-28   20% ▇▇
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                         25.3%    44.4   2025-08-09   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                                      46.2%    46.3   2024-03-28   20% ▇▇
+<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                         25.3%    44.5   2025-08-09   22% ▇▇▇
                         <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>                         87.1%    39.2   2025-08-09    1% ▇
-<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>                         22.8%    42.7   2024-11-14   15% ▇▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                           33.0%    45.0   2025-01-27    5% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>                                1.9%    43.5   2025-03-07    1% ▇
+<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>                         22.8%    42.7   2024-11-14   14% ▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                           33.0%    44.9   2025-01-27    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>                                1.9%    43.3   2025-03-07    1% ▇
 <a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  8.1800 MT-Bench score (1-10)    46.3   2023-12-06    5% ▇
 prior                   pull toward the middle                                          50.0                 0% ▇
-                        weighted average                                              = 44.9
+                        weighted average                                              = 45.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

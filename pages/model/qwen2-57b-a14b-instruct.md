@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-06 · 57.41B params (14B active) · apache-2.0
 
-**score 50.2** ±3.7 · #428 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 48.9** ±3.1 · #466 of 934 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  75.5%    51.1   2024-06-08   48% ▇▇▇▇▇▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  56.5%    49.2   2026-09-19   46% ▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 50.2
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  57.6%    47.2   2024-06-20   43% ▇▇▇▇▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  56.5%    49.2   2026-09-19   34% ▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  75.5%    52.2   2024-06-08   19% ▇▇
+prior                   pull toward the middle                   50.0                 4% ▇
+                        weighted average                       = 48.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -30,7 +31,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-16-bit bf16  ~114.82GB   50.2
+16-bit bf16  ~114.82GB   48.9
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 33.74B params · llama2
 
-**score 41.0** ±0.9 · #681 of 934 · from 6 benchmark results across 3 sources
+**score 41.0** ±0.9 · #680 of 934 · from 6 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -17,9 +17,9 @@ source                  test                    score  implies  date        weig
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               52.4%    40.8   2024-03-28   41% ▇▇▇▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       32.2%    39.8   2024-03-28   22% ▇▇▇
 <a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>         53.7%    42.2   2024-01-31   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>              56.2%    41.0   2024-01-31    9% ▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>        43.9%    43.4   2024-01-03    3% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>        41.4%    41.3   2024-01-03    3% ▇
+                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>              56.2%    41.0   2024-01-31   10% ▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>        43.9%    43.5   2024-01-03    3% ▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>        41.4%    41.4   2024-01-03    3% ▇
 prior                   pull toward the middle           50.0                 0% ▇
                         weighted average               = 41.0
 </pre>

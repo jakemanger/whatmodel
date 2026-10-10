@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 675B params (41B active) · apache-2.0
 
-**score 62.1** ±1.4 · #186 of 934 · from 13 benchmark results across 5 sources
+**score 61.6** ±1.3 · #194 of 934 · from 15 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -14,26 +14,28 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1229.8    61.2   2026-10-01   27% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1413.9    67.6   2026-10-02   16% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1200.6    66.3   2026-10-02   12% ▇
-<a name="card-mistralai-mistral-small-4-119b-2603"></a>mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">GPQA Diamond (lab)</a>               64.1%    57.2   2026-09-25   10% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMLU-Pro (lab)</a>                   80.9%    62.5   2026-09-25    7% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">Arena-Hard (version/judge uns…</a>   66.7%    57.1   2026-09-25    6% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecif…</a>   37.8%    53.2   2026-09-25    6% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMMU Pro (lab)</a>                   54.0%    56.2   2026-09-25    6% ▇
-<a name="paper-2609.13916v1-north-small-translate"></a>Cohere                  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>   91.2%    72.8   2026-09-12    4% ▇
-                        <a href="https://arxiv.org/html/2609.13916v1">WMT24++</a>                          78.3%    68.3   2026-09-12    1% ▇
-                        <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, …</a>   81.6%    77.4   2026-09-12    1% ▇
-<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard ave…</a>   25.7%    60.4   2026-09-25    5% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   85.5%   -85.9   2026-09-22    0% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1229.8    61.1   2026-10-01   25% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1413.9    67.6   2026-10-02   14% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1200.6    66.3   2026-10-02   10% ▇
+<a name="card-mistralai-mistral-small-4-119b-2603"></a>mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">GPQA Diamond (lab)</a>               64.1%    57.5   2026-09-25   10% ▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMLU-Pro (lab)</a>                   80.9%    62.7   2026-09-25    6% ▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">Arena-Hard (version/judge uns…</a>   66.7%    57.4   2026-09-25    5% ▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecif…</a>   37.8%    53.4   2026-09-25    5% ▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMMU Pro (lab)</a>                   54.0%    56.4   2026-09-25    5% ▇
+<a name="paper-2609.13916v1-north-small-translate"></a>Cohere                  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>   91.2%    72.7   2026-09-12    3% ▇
+                        <a href="https://arxiv.org/html/2609.13916v1">WMT24++</a>                          78.3%    68.2   2026-09-12    1% ▇
+                        <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, …</a>   81.6%    77.6   2026-09-12    1% ▇
+<a name="paper-2610.04118v1-longsocialbench"></a>LongSocialBench: Do L…  <a href="https://arxiv.org/html/2610.04118v1">LongSocialBench (full-context…</a>   42.0%    60.4   2026-10-02    5% ▇
+<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard ave…</a>   25.7%    60.4   2026-09-25    4% ▇
+<a name="paper-2608.19741v4-thinkingbox"></a>One Success Isn't Rel…  <a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507…</a>    4.7%    53.5   2026-10-01    4% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   85.5%   -85.8   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 62.1
+                        weighted average                        = 61.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · mistralai/Mistral-Small-4-119B-2603 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Cohere ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · mistralai/Mistral-Small-4-119B-2603 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Cohere ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LongSocialBench: Do Long-Context LLMs Understand Online Discussion Threads? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt)) · One Success Isn't Reliability: Thinkingbox ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
@@ -43,9 +45,9 @@ api (Mistral AI) · $0.75/M blended · $0.5 in / $1.5 out per 1M tokens · [docs
 
 <pre>
 download               size  score
-4-bit ud-q4_k_xl   ~405.5GB   62.1
-2-bit ud-q2_k_xl     ~203GB   62.1
-1-bit ud-iq1_s    ~101.75GB   62.1
+4-bit ud-q4_k_xl   ~405.5GB   61.6
+2-bit ud-q2_k_xl     ~203GB   61.6
+1-bit ud-iq1_s    ~101.75GB   61.6
 </pre>
 
 ```sh

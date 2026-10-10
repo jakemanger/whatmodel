@@ -6,7 +6,7 @@
 
 OpenAI · released 2020-06 · proprietary
 
-**score 33.7** ±1.1 · comparison only: no current run option verified · from 13 benchmark results across 2 sources
+**score 33.3** ±1.1 · comparison only: no current run option verified · from 13 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,21 +14,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2204.06745v1"></a>GPT-NeoX-20B: An Open…  <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge</a>                   43.5%    33.5   2022-04-14   23% ▇▇▇
-                        <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                      33.6%    35.5   2022-04-14   12% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">WinoGrande</a>                      69.9%    32.3   2022-04-14   11% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                        40.9%    36.5   2022-04-14   10% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">HellaSwag</a>                       59.2%    30.9   2022-04-14    8% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">ARC Easy</a>                        76.2%    33.7   2022-04-14    4% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">LAMBADA (OpenAI version), las…</a>  75.2%    31.3   2022-04-14    3% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">SciQ</a>                            94.9%    34.5   2022-04-14    3% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">PIQA</a>                            79.1%    31.6   2022-04-14    2% ▇
-<a name="eleutherai-gpt-j-6b-card"></a>EleutherAI GPT-J-6B m…  <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande</a>                      72.0%    33.5   2021-08-06    9% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                       78.0%    35.5   2021-08-06    8% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  75.0%    30.4   2021-08-06    4% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                            80.0%    31.2   2021-08-06    3% ▇
+<a name="paper-2204.06745v1"></a>GPT-NeoX-20B: An Open…  <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge</a>                   43.5%    33.1   2022-04-14   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                      33.6%    35.0   2022-04-14   12% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">WinoGrande</a>                      69.9%    31.9   2022-04-14   11% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                        40.9%    36.2   2022-04-14    9% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">HellaSwag</a>                       59.2%    30.5   2022-04-14    8% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">ARC Easy</a>                        76.2%    33.3   2022-04-14    4% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">LAMBADA (OpenAI version), las…</a>  75.2%    30.8   2022-04-14    3% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">SciQ</a>                            94.9%    34.0   2022-04-14    3% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">PIQA</a>                            79.1%    31.2   2022-04-14    2% ▇
+<a name="eleutherai-gpt-j-6b-card"></a>EleutherAI GPT-J-6B m…  <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande</a>                      72.0%    33.1   2021-08-06    9% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                       78.0%    35.0   2021-08-06    8% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  75.0%    30.0   2021-08-06    4% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                            80.0%    30.8   2021-08-06    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 33.7
+                        weighted average                       = 33.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

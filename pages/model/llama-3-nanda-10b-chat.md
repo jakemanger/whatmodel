@@ -6,7 +6,7 @@
 
 MBZUAI & Inception · released 2024-10 · llama3
 
-**score 43.2** ±4.6 · #634 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 42.4** ±4.7 · #654 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Incep…</a>  31.7%    42.5   2026-04-06   91% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 9% ▇
-                        weighted average                       = 43.2
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Incep…</a>  31.7%    41.6   2026-04-06   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                10% ▇
+                        weighted average                       = 42.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~39.94GB   43.2
+16-bit bf16  ~39.94GB   42.4
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 OpenAccess AI Collective · released 2023-06 · apache-2.0
 
-**score 35.0** ±2.3 · #786 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 35.0** ±2.2 · #790 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>  11.5%    35.5   2025-08-09   79% ▇▇▇▇▇▇▇▇▇
+<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>  11.5%    35.6   2025-08-09   79% ▇▇▇▇▇▇▇▇▇
                         <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  66.0%    31.0   2025-08-09   19% ▇▇
 prior                   pull toward the middle                   50.0                 2% ▇
                         weighted average                       = 35.0

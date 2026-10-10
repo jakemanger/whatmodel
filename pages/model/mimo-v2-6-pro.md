@@ -14,19 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                 score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  0.0352 IPS    78.8   2026-10-08   20% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  0.0352 IPS    78.8   2026-10-08   21% ▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1618.4    78.9   2026-10-01   18% ▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1480.1    75.5   2026-10-02   11% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>      1245.2    71.7   2026-10-02    8% ▇
-<a name="first-party-xiaomi"></a>Xiaomi MiMo official …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Terminal-Bench 4.0 (lab)</a>             34.9%    80.3   2026-09-21   14% ▇▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Terminal-Bench 2.1 (lab)</a>             89.9%    82.1   2026-09-21    6% ▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">SEC-Bench Pro (pass@1) (lab)</a>         66.3%    85.7   2026-09-21    4% ▇
+<a name="first-party-xiaomi"></a>Xiaomi MiMo official …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Terminal-Bench 4.0 (lab)</a>             34.9%    80.4   2026-09-21   14% ▇▇
+                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Terminal-Bench 2.1 (lab)</a>             89.9%    82.3   2026-09-21    6% ▇
+                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">SEC-Bench Pro (pass@1) (lab)</a>         66.3%    85.9   2026-09-21    4% ▇
                         <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">OSWorld-Verified (lab)</a>               82.0%    79.4   2026-09-21    4% ▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">AutomationBench v1.0.6 (lab)</a>         53.1%    81.2   2026-09-21    4% ▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">ExploitGym (pass@1) (lab)</a>            17.8%    89.2   2026-09-21    4% ▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Agents' Last Exam (metric/har…</a>       31.6%    78.4   2026-09-21    3% ▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Toolathlon-Verified (lab)</a>            76.9%    84.1   2026-09-21    2% ▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">DeepSWE v1.1 (resolved) (lab)</a>        71.9%    85.2   2026-09-21    2% ▇
+                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">AutomationBench v1.0.6 (lab)</a>         53.1%    81.4   2026-09-21    4% ▇
+                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">ExploitGym (pass@1) (lab)</a>            17.8%    89.5   2026-09-21    4% ▇
+                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Agents' Last Exam (metric/har…</a>       31.6%    78.5   2026-09-21    3% ▇
+                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Toolathlon-Verified (lab)</a>            76.9%    84.3   2026-09-21    2% ▇
+                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">DeepSWE v1.1 (resolved) (lab)</a>        71.9%    85.3   2026-09-21    2% ▇
 prior                   pull toward the middle                        50.0                 1% ▇
                         weighted average                            = 79.2
 </pre>

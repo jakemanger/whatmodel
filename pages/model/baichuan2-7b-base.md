@@ -6,7 +6,7 @@
 
 Baichuan · released 2023-08 · other
 
-**score 30.3** ±0.9 · #843 of 934 · from 11 benchmark results across 2 sources
+**score 30.0** ±0.9 · #845 of 934 · from 11 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,19 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">ARC Challenge</a>                   43.2%    30.3   2024-04-08   48% ▇▇▇▇▇▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">WinoGrande</a>                      67.6%    30.2   2024-04-08   11% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">BoolQ</a>                           73.1%    31.0   2024-04-08    9% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">ARC Easy</a>                        72.8%    34.1   2024-04-08    6% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">OpenBookQA</a>                      30.4%    30.2   2024-04-08    5% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">HellaSwag</a>                       72.3%    29.3   2024-04-08    5% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">SciQ</a>                            94.6%    34.3   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">PIQA</a>                            76.2%    27.0   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">Social IQA</a>                      41.8%    24.6   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">LAMBADA (OpenAI version), las…</a>  71.0%    29.4   2024-04-08    2% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  46.8%    24.9   2024-02-05    3% ▇
+<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">ARC Challenge</a>                   43.2%    29.9   2024-04-08   48% ▇▇▇▇▇▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">WinoGrande</a>                      67.6%    29.7   2024-04-08   11% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">BoolQ</a>                           73.1%    30.5   2024-04-08    9% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">ARC Easy</a>                        72.8%    33.6   2024-04-08    6% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">OpenBookQA</a>                      30.4%    29.7   2024-04-08    5% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">HellaSwag</a>                       72.3%    28.7   2024-04-08    5% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">SciQ</a>                            94.6%    33.8   2024-04-08    5% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">PIQA</a>                            76.2%    26.4   2024-04-08    4% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">Social IQA</a>                      41.8%    24.1   2024-04-08    3% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json">LAMBADA (OpenAI version), las…</a>  71.0%    29.0   2024-04-08    2% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  46.8%    28.9   2024-02-05    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 30.3
+                        weighted average                       = 30.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -37,7 +37,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~15.01GB   30.3
+16-bit bf16  ~15.01GB   30.0
 </pre>
 
 ```sh

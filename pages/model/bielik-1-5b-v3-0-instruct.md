@@ -6,28 +6,30 @@
 
 SpeakLeash · released 2025-04 · 1.6B params · apache-2.0
 
-**score 38.9** ±3.9 · #718 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 39.6** ±3.2 · #707 of 934 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source            test                            score  implies  date        weight
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB  <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  47.3%    38.1   2026-08-11   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior             pull toward the middle                   50.0                 7% ▇
-                  weighted average                       = 38.9
+source                 test                            score  implies  date        weight
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB       <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  47.3%    38.1   2026-08-11   65% ▇▇▇▇▇▇▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  50.6%    40.8   2026-04-17   18% ▇▇
+                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  71.8%    41.9   2026-04-17   13% ▇▇
+prior                  pull toward the middle                   50.0                 5% ▇
+                       weighted average                       = 39.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt))</sub>
+<sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 ## How to run it
 
 <pre>
 download        size  score
-16-bit bf16  ~3.19GB   38.9
+16-bit bf16  ~3.19GB   39.6
 </pre>
 
 ```sh

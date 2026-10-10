@@ -6,7 +6,7 @@
 
 QCRI · released 2025-06 · 8.78B params · apache-2.0
 
-**score 42.6** ±5.6 · #649 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.5** ±5.6 · #652 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  16.2%    41.3   2025-09-30   86% ▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                14% ▇▇
-                        weighted average                       = 42.6
+                        weighted average                       = 42.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                      size  score
-16-bit bf16 · nvidia only  ~17.6GB   42.6
+16-bit bf16 · nvidia only  ~17.6GB   42.5
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Inception · proprietary
 
-**score 58.5** ±2.1 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 58.5** ±2.0 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 

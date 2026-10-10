@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-03 · 2.7B params · mit
 
-**score 18.6** ±1.0 · #907 of 934 · from 20 benchmark results across 5 sources
+**score 18.1** ±1.0 · #907 of 934 · from 21 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -14,33 +14,34 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                        7.9%    19.7   2024-12-26   24% ▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                       6.7%    19.1   2024-12-26   16% ▇▇
-<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      57.7%    16.6   2023-09-11    5% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           61.8%    17.3   2023-09-11    5% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   27.4%    15.5   2023-09-11    4% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        61.1%    18.9   2023-09-11    4% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       42.7%    18.4   2023-09-11    4% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                      40.0%    15.4   2023-09-11    3% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            72.9%    21.0   2023-09-11    2% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      23.2%     8.7   2023-09-11    2% ▇
-<a name="eleutherai-gpt-j-6b-card"></a>EleutherAI GPT-J-6B m…  <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag (lab)</a>                 55.8%    18.9   2021-08-06    6% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande (lab)</a>                56.5%    15.0   2021-08-06    4% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  62.2%    19.8   2021-08-06    4% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA (lab)</a>                      73.0%    18.9   2021-08-06    2% ▇
-<a name="redpajama-2024-original-zero-shot"></a>RedPajama               <a href="https://arxiv.org/html/2411.12372v1">WinoGrande</a>                      57.7%    19.8   2024-11-19    4% ▇
-                        <a href="https://arxiv.org/html/2411.12372v1">HellaSwag</a>                       55.8%    22.5   2024-11-19    3% ▇
-                        <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  62.2%    21.9   2024-11-19    2% ▇
-                        <a href="https://arxiv.org/html/2411.12372v1">PIQA</a>                            72.2%    21.8   2024-11-19    1% ▇
-<a name="eleutherai-gpt-neo-2-7b-card"></a>EleutherAI GPT-Neo 2.…  <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA (lab)</a>                    24.7%    15.3   2021-04-12    2% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">PubMedQA (lab)</a>                  57.5%    14.9   2021-04-12    2% ▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                        7.9%    19.7   2024-12-26   23% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                       6.7%    19.1   2024-12-26   15% ▇▇
+<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      57.7%    16.1   2023-09-11    5% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           61.8%    16.8   2023-09-11    5% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   27.4%    14.9   2023-09-11    4% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        61.1%    18.4   2023-09-11    4% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       42.7%    18.0   2023-09-11    4% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                      40.0%    14.8   2023-09-11    3% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            72.9%    20.5   2023-09-11    2% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      23.2%     8.2   2023-09-11    2% ▇
+<a name="eleutherai-gpt-j-6b-card"></a>EleutherAI GPT-J-6B m…  <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag (lab)</a>                 55.8%    18.3   2021-08-06    7% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande (lab)</a>                56.5%    14.4   2021-08-06    5% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  62.2%    19.2   2021-08-06    4% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA (lab)</a>                      73.0%    18.3   2021-08-06    2% ▇
+<a name="redpajama-2024-original-zero-shot"></a>RedPajama               <a href="https://arxiv.org/html/2411.12372v1">WinoGrande</a>                      57.7%    18.5   2024-11-19    4% ▇
+                        <a href="https://arxiv.org/html/2411.12372v1">HellaSwag</a>                       55.8%    21.4   2024-11-19    3% ▇
+                        <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  62.2%    20.9   2024-11-19    2% ▇
+                        <a href="https://arxiv.org/html/2411.12372v1">PIQA</a>                            72.2%    21.0   2024-11-19    1% ▇
+<a name="eleutherai-gpt-neo-2-7b-card"></a>EleutherAI GPT-Neo 2.…  <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA (lab)</a>                    24.7%    14.7   2021-04-12    2% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">PubMedQA (lab)</a>                  57.5%    14.2   2021-04-12    2% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  28.0%     4.3   2024-02-05    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 18.6
+                        weighted average                       = 18.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · RedPajama ([CC BY 4.0](../../licenses/redpajama-2024-original-zero-shot-CC-BY-4.0.txt)) · EleutherAI GPT-Neo 2.7B model card ([MIT](../../licenses/eleutherai-gpt-neo-2-7b-card-MIT.txt))</sub>
+<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · EleutherAI GPT-J-6B model card ([Apache-2.0](../../licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt)) · RedPajama ([CC BY 4.0](../../licenses/redpajama-2024-original-zero-shot-CC-BY-4.0.txt)) · EleutherAI GPT-Neo 2.7B model card ([MIT](../../licenses/eleutherai-gpt-neo-2-7b-card-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -48,7 +49,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp32  ~10.67GB   18.6
+4-bit fp32  ~10.67GB   18.1
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 0.077B params · apache-2.0
 
-**score 14.1** ±3.2 · #916 of 934 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 14.0** ±3.2 · #915 of 934 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2210.11416v5"></a>Scaling Instruction-F…  <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>              28.7%     9.6   2022-12-06   39% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>    29.1%    17.6   2022-12-06   38% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>               0.2%     7.1   2022-12-06   18% ▇▇
+<a name="paper-2210.11416v5"></a>Scaling Instruction-F…  <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>              28.7%     9.5   2022-12-06   39% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>    29.1%    17.6   2022-12-06   39% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>               0.2%     7.0   2022-12-06   18% ▇▇
 prior                   pull toward the middle           50.0                 5% ▇
-                        weighted average               = 14.1
+                        weighted average               = 14.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle           50.0                 5%
 
 <pre>
 download       size  score
-4-bit fp32  ~0.31GB   14.1
+4-bit fp32  ~0.31GB   14.0
 </pre>
 
 ```sh

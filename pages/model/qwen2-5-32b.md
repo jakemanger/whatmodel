@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 32.8B params · apache-2.0
 
-**score 54.9** ±0.6 · #315 of 934 · from 32 benchmark results across 15 sources
+**score 55.0** ±0.6 · #312 of 934 · from 33 benchmark results across 16 sources
 
 ## How the score was worked out
 
@@ -14,45 +14,46 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 q…</a>   83.7%    54.6                12% ▇
-                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 probl…</a>   69.9%    52.8                 8% ▇
-                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   26.1%    53.4                 8% ▇
-                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 p…</a>   59.5%    57.5                 6% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     56.1%    55.0   2025-01-30   10% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     46.1%    53.7   2025-01-30    6% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          7.4%    51.3   2025-02-25    3% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             0.0%    48.1   2026-08-30    0% ▇
-<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                             84.7%    55.4   2025-10-08    4% ▇
+<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 q…</a>   83.7%    54.7                12% ▇
+                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 probl…</a>   69.9%    52.9                 8% ▇
+                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   26.1%    53.5                 7% ▇
+                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 p…</a>   59.5%    57.6                 5% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     56.1%    55.1   2025-01-30    9% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     46.1%    53.6   2025-01-30    6% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          7.4%    51.2   2025-02-25    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             0.0%    48.2   2026-08-30    0% ▇
+<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                             84.7%    55.5   2025-10-08    4% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                   82.3%    54.0   2025-10-08    4% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>   39.1%    48.5   2025-10-08    2% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                   70.6%    56.2   2025-10-08    1% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                            87.5%    47.2   2025-10-08    1% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>        77.9%    59.0   2025-10-08    1% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                            26.1%    45.5   2025-10-08    1% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                   70.6%    56.4   2025-10-08    1% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                            87.5%    47.3   2025-10-08    1% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>        77.9%    59.1   2025-10-08    1% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                            26.1%    45.6   2025-10-08    1% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>        82.4%    53.0   2025-10-08    1% ▇
-<a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>   40.1%    56.1   2024-12-26    9% ▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5003    57.9   2026-05-02    5% ▇
-                        <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   50.0%    57.6   2026-05-02    3% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>   60.4%    53.7   2026-04-06    3% ▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   67.6%    60.6   2025-05-31    1% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>   89.5%    63.5   2025-05-31    1% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>   45.0%    59.3   2025-05-31    1% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>   71.0%    75.3   2025-05-31    0% ▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   75.0%    57.0   2026-08-11    2% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   39.9%    58.6   2025-09-04    2% ▇
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--Qwen2.5-32B-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>   87.6%    58.6   2024-10-19    2% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   62.8%    54.7   2026-09-19    1% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   80.2%    55.7   2024-09-18    1% ▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>   71.2%    54.0   2025-03-02    1% ▇
+<a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>   40.1%    56.2   2024-12-26    9% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5003    57.7   2026-05-02    6% ▇
+                        <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   50.0%    57.4   2026-05-02    3% ▇
+<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   67.6%    60.0   2025-05-31    1% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>   89.5%    62.8   2025-05-31    1% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>   45.0%    58.4   2025-05-31    1% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>   71.0%    63.4   2025-05-31    0% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>   60.4%    53.8   2026-04-06    3% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   39.9%    58.5   2025-09-04    2% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   75.0%    56.8   2026-08-11    2% ▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--Qwen2.5-32B-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>   87.6%    58.7   2024-10-19    2% ▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>   71.2%    54.1   2025-03-02    1% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   62.8%    54.6   2026-09-19    1% ▇
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-25/score/data_overall.csv">BFCL v3</a>                          62.8%    59.9   2025-04-25    1% ▇
+<a name="paper-2606.08071v1-surgiq"></a>SurgiQ: A Large-Scale…  <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-sho…</a>   64.9%    60.7   2026-06-06    1% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   80.2%    56.2   2024-09-18    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   97.0%    62.9   2025-10-16    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 54.9
+                        weighted average                        = 55.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
@@ -60,8 +61,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~20.18GB   54.9
-8-bit q8_0    ~39.86GB   54.9
+4-bit q4_k_m  ~20.18GB   55.0
+8-bit q8_0    ~39.86GB   55.0
 </pre>
 
 ```sh

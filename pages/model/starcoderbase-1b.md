@@ -6,7 +6,7 @@
 
 BigCode · released 2023-07 · 1.14B params · bigcode-openrail-m
 
-**score 25.1** ±1.1 · #882 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 25.1** ±1.1 · #883 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               14.6%    25.2   2024-12-26   60% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              12.2%    24.7   2024-12-26   39% ▇▇▇▇▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               14.6%    25.1   2024-12-26   60% ▇▇▇▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              12.2%    24.6   2024-12-26   39% ▇▇▇▇▇
 prior                   pull toward the middle           50.0                 1% ▇
                         weighted average               = 25.1
 </pre>

@@ -6,7 +6,7 @@
 
 JetBrains · released 2026-05 · 12.15B params (2.5B active) · apache-2.0
 
-**score 54.6** ±1.3 · #327 of 934 · from 18 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 54.4** ±1.3 · #332 of 934 · from 18 benchmark results across 2 sources · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,26 +14,26 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card3-jetbrains-mellum2-1-12b-a2-5b-thinking"></a>JetBrains/Mellum2.1-1…  <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">GPQA Diamond (lab)</a>              51.0%    53.4   2026-10-07   19% ▇▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">LiveCodeBench v6 (window unsp…</a>  69.4%    56.8   2026-10-07    9% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">HumanEval+ (lab)</a>                90.9%    58.3   2026-10-07    8% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">MMLU-Redux (lab)</a>                86.0%    56.7   2026-10-07    8% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">Terminal-Bench 2.1 (lab)</a>         0.6%    43.3   2026-10-07    6% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Verified (lab)</a>         2.0%    41.7   2026-10-07    5% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">BFCL V4 (December 2025 archiv…</a>  49.6%    55.5   2026-10-07    4% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Pro (split unspecif…</a>   0.0%    43.7   2026-10-07    4% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">MBPP+ (lab)</a>                     75.4%    57.7   2026-10-07    3% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">IFEval (aggregation unspecifi…</a>  79.5%    47.0   2026-10-07    3% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">GSM-Plus (lab)</a>                  87.1%    58.4   2026-10-07    2% ▇
-<a name="card3-jetbrains-mellum2-12b-a2-5b-thinking"></a>JetBrains/Mellum2-12B…  <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">MMLU-Redux (lab)</a>                86.2%    59.2   2026-08-13    7% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">GPQA Diamond (lab)</a>              57.6%    58.2   2026-08-13    7% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">LiveCodeBench v6 (window unsp…</a>  69.9%    62.6   2026-08-13    5% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">BFCL V4 (December 2025 archiv…</a>  45.6%    60.3   2026-08-13    4% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">GSM-Plus (lab)</a>                  87.0%    57.9   2026-08-13    2% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">BFCL v3 (lab)</a>                   69.4%    62.3   2026-08-13    2% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">IFEval (aggregation unspecifi…</a>  76.5%    50.3   2026-08-13    1% ▇
+<a name="card3-jetbrains-mellum2-1-12b-a2-5b-thinking"></a>JetBrains/Mellum2.1-1…  <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">GPQA Diamond (lab)</a>              51.0%    53.2   2026-10-07   18% ▇▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">LiveCodeBench v6 (window unsp…</a>  69.4%    56.6   2026-10-07    9% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">HumanEval+ (lab)</a>                90.9%    58.2   2026-10-07    8% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">MMLU-Redux (lab)</a>                86.0%    56.5   2026-10-07    8% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">Terminal-Bench 2.1 (lab)</a>         0.6%    43.1   2026-10-07    6% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Verified (lab)</a>         2.0%    41.6   2026-10-07    5% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">BFCL V4 (December 2025 archiv…</a>  49.6%    55.3   2026-10-07    4% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">SWE-bench Pro (split unspecif…</a>   0.0%    43.4   2026-10-07    4% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">MBPP+ (lab)</a>                     75.4%    57.6   2026-10-07    3% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">IFEval (aggregation unspecifi…</a>  79.5%    46.9   2026-10-07    3% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md">GSM-Plus (lab)</a>                  87.1%    58.2   2026-10-07    2% ▇
+<a name="card3-jetbrains-mellum2-12b-a2-5b-thinking"></a>JetBrains/Mellum2-12B…  <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">MMLU-Redux (lab)</a>                86.2%    59.0   2026-08-13    7% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">GPQA Diamond (lab)</a>              57.6%    58.0   2026-08-13    6% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">LiveCodeBench v6 (window unsp…</a>  69.9%    62.5   2026-08-13    5% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">BFCL V4 (December 2025 archiv…</a>  45.6%    60.1   2026-08-13    4% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">GSM-Plus (lab)</a>                  87.0%    57.7   2026-08-13    2% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">BFCL v3 (lab)</a>                   69.4%    62.1   2026-08-13    2% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md">IFEval (aggregation unspecifi…</a>  76.5%    50.4   2026-08-13    1% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 54.6
+                        weighted average                       = 54.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -46,7 +46,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                      size  score
-16-bit bf16 · nvidia only  ~24.3GB   54.6
+16-bit bf16 · nvidia only  ~24.3GB   54.4
 </pre>
 
 ```sh

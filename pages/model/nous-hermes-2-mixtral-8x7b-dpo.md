@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-01 · 46.7B params (12.9B active) · apache-2.0
 
-**score 40.6** ±2.1 · #693 of 934 · from 3 benchmark results across 3 sources
+**score 40.5** ±2.3 · #693 of 934 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                       score  implies  date        weight
-<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  30.7114 WB-Score    41.5   2024-08-01   43% ▇▇▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                            1164.3    37.7   2026-10-02   38% ▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             67.2%    44.0   2024-02-27   16% ▇▇
+<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  30.7114 WB-Score    41.5   2024-08-01   44% ▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                            1164.3    37.7   2026-10-02   44% ▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             67.2%    46.2   2024-02-27   10% ▇
 prior                   pull toward the middle                              50.0                 2% ▇
-                        weighted average                                  = 40.6
+                        weighted average                                  = 40.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior                   pull toward the middle                              50.0
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~28.52GB   40.6
-8-bit q8_0    ~56.54GB   40.6
+4-bit q4_k_m  ~28.52GB   40.5
+8-bit q8_0    ~56.54GB   40.5
 </pre>
 
 ```sh

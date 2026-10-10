@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       46.3%    38.1   2024-12-26   26% ▇▇▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       46.3%    38.1   2024-12-26   27% ▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      37.8%    37.1   2024-12-26   19% ▇▇
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       45.1%    38.4   2024-03-28   13% ▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               29.0%    38.2   2024-03-28    7% ▇
@@ -22,15 +22,15 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      66.2%    39.5   2024-02-29    3% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   33.8%    40.3   2024-02-29    3% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                     65.1%    46.0   2024-02-29    2% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-I (lab)</a>                48.1%    44.5   2024-02-29    1% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-O (lab)</a>                47.1%    45.9   2024-02-29    0% ▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  44.4%    40.6   2024-05-07    5% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-I (lab)</a>                48.1%    44.3   2024-02-29    1% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-O (lab)</a>                47.1%    45.6   2024-02-29    0% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  44.4%    40.6   2024-05-07    4% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  17.0%    34.1   2024-05-07    3% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            51.2%    40.6   2024-05-07    2% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  21.9%    38.1   2024-05-07    2% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      47.4%    43.2   2024-05-07    2% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      46.7%    44.2   2024-05-07    1% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   38.3%    42.4   2025-04-01    3% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      47.4%    43.1   2024-05-07    2% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      46.7%    43.8   2024-05-07    2% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   38.3%    42.5   2025-04-01    2% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 38.7
 </pre>

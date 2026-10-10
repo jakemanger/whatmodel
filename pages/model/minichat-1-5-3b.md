@@ -6,7 +6,7 @@
 
 GeneZC · released 2023-11 · 3.02B params · apache-2.0
 
-**score 33.1** ±2.4 · #810 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 33.1** ±2.4 · #812 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -15,8 +15,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   7.7%    31.6   2025-08-09   74% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  78.5%    35.9   2025-08-09   24% ▇▇▇
-prior                   pull toward the middle                   50.0                 3% ▇
+                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  78.5%    36.0   2025-08-09   24% ▇▇▇
+prior                   pull toward the middle                   50.0                 2% ▇
                         weighted average                       = 33.1
 </pre>
 

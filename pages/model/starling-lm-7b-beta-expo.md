@@ -6,7 +6,7 @@
 
 Chujie Zheng (ExPO) · released 2024-04 · 7.24B params · apache-2.0
 
-**score 44.3** ±1.6 · #600 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 44.5** ±1.6 · #590 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                       score  implies  date        weight
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>             26.4%    45.0   2025-08-09   75% ▇▇▇▇▇▇▇▇▇
-<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  31.5594 WB-Score    41.9   2024-08-01   24% ▇▇▇
+<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>             26.4%    45.1   2025-08-09   77% ▇▇▇▇▇▇▇▇▇
+<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  31.5594 WB-Score    42.0   2024-08-01   22% ▇▇▇
 prior                   pull toward the middle                              50.0                 1% ▇
-                        weighted average                                  = 44.3
+                        weighted average                                  = 44.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle                              50.0
 
 <pre>
 download         size  score
-16-bit bf16  ~14.48GB   44.3
+16-bit bf16  ~14.48GB   44.5
 </pre>
 
 ```sh

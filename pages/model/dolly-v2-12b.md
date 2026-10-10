@@ -6,7 +6,7 @@
 
 Databricks · released 2023-04 · 12B params · mit
 
-**score 17.8** ±2.1 · comparison only: no current run option verified · from 5 benchmark results across 4 sources
+**score 17.7** ±2.1 · comparison only: no current run option verified · from 5 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -15,12 +15,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                                                   score  implies  date        weight
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                         982.4    15.9   2026-10-02   38% ▇▇▇▇▇
-<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  3.2800 MT-Bench score (1-10)    16.1   2023-06-19   32% ▇▇▇▇
-<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>                                               7.9%    26.6   2024-03-10   18% ▇▇
-                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                                   25.7%     7.7   2024-03-10   10% ▇
-<a name="paper-2306.02561v3-llmblender"></a>LLM-Blender: Ensembli…  <a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Ble…</a>       6.9000 mean rank (1-11)    13.3   2023-06-30    0% ▇
+<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  3.2800 MT-Bench score (1-10)    16.0   2023-06-19   32% ▇▇▇▇
+<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>                                               7.9%    26.3   2024-03-10   19% ▇▇
+                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                                   25.7%     7.6   2024-03-10   10% ▇
+<a name="paper-2306.02561v3-llmblender"></a>LLM-Blender: Ensembli…  <a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Ble…</a>       6.9000 mean rank (1-11)    13.2   2023-06-30    0% ▇
 prior                   pull toward the middle                                          50.0                 2% ▇
-                        weighted average                                              = 17.8
+                        weighted average                                              = 17.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

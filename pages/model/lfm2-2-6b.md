@@ -6,7 +6,7 @@
 
 Liquid AI · released 2025-09 · 2.57B params · lfm1.0
 
-**score 47.4** ±5.1 · #507 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.3** ±5.3 · #510 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  64.5%    48.5   2026-04-17   50% ▇▇▇▇▇▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  76.3%    45.0   2026-04-17   38% ▇▇▇▇▇
-prior                  pull toward the middle                   50.0                12% ▇
-                       weighted average                       = 47.4
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  64.5%    48.0   2026-04-17   57% ▇▇▇▇▇▇▇
+                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  76.3%    45.0   2026-04-17   30% ▇▇▇▇
+prior                  pull toward the middle                   50.0                13% ▇▇
+                       weighted average                       = 47.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                  pull toward the middle                   50.0            
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~1.56GB   47.4
+4-bit q4_k_m  ~1.56GB   47.3
 </pre>
 
 ```sh

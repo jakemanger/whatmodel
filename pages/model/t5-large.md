@@ -6,7 +6,7 @@
 
 Google · released 2019-10 · 0.738B params · apache-2.0
 
-**score 52.1** ±9.9 · #379 of 934 · from 3 benchmark results across 1 source
+**score 49.4** ±9.0 · #453 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,16 +14,25 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="copen-emnlp2022-zero-shot"></a>COPEN   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  42.6%    53.1   2022-12-07   53% ▇▇▇▇▇▇
-        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  49.8%   -18.7   2022-12-07    2% ▇
-        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>  14.0%   165.7   2022-12-07    1% ▇
-prior   pull toward the middle                   50.0                44% ▇▇▇▇▇
-        weighted average                       = 52.1
+<a name="copen-emnlp2022-zero-shot"></a>COPEN   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  42.6%    48.2   2022-12-07   60% ▇▇▇▇▇▇▇
+        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>  14.0%   133.7   2022-12-07    2% ▇
+        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  49.8%   -17.2   2022-12-07    2% ▇
+prior   pull toward the middle                   50.0                37% ▇▇▇▇
+        weighted average                       = 49.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt))</sub>
+
+<details><summary>Not counted (1)</summary>
+
+<pre>
+source                  test                            score  why
+Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  14.8%  failed run: Failed run: average 14.76 vs the leaderboard's random baseline 32.64; the original T5 encoder-decoder checkpoint does not follow the few-shot generative answer format (every task near or below chance), so this is not a measurement of ability.
+</pre>
+
+</details>
 
 ## How to run it
 
@@ -31,7 +40,7 @@ prior   pull toward the middle                   50.0                44% ▇▇�
 
 <pre>
 download       size  score
-4-bit fp32  ~2.95GB   52.1
+4-bit fp32  ~2.95GB   49.4
 </pre>
 
 ```sh

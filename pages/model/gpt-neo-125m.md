@@ -6,24 +6,25 @@
 
 EleutherAI · released 2021-03 · 0.125B params · mit
 
-**score 19.0** ±11.3 · #904 of 934 · from 3 benchmark results across 1 source
+**score 9.1** ±9.1 · #923 of 934 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source  test                            score  implies  date        weight
-<a name="copen-emnlp2022-zero-shot"></a>COPEN   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  28.8%   -18.9   2022-12-07   40% ▇▇▇▇▇
-        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>   7.9%   -64.9   2022-12-07    2% ▇
-        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  47.6%   -44.4   2022-12-07    1% ▇
-prior   pull toward the middle                   50.0                57% ▇▇▇▇▇▇▇
-        weighted average                       = 19.0
+source                  test                            score  implies  date        weight
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  25.6%    -4.0   2024-02-05   32% ▇▇▇▇
+<a name="copen-emnlp2022-zero-shot"></a>COPEN                   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  28.8%   -23.0   2022-12-07   29% ▇▇▇▇
+                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>   7.9%   -52.7   2022-12-07    2% ▇
+                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  47.6%   -48.9   2022-12-07    1% ▇
+prior                   pull toward the middle                   50.0                37% ▇▇▇▇
+                        weighted average                        = 9.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt))</sub>
+<sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
@@ -31,7 +32,7 @@ prior   pull toward the middle                   50.0                57% ▇▇�
 
 <pre>
 download       size  score
-4-bit fp32  ~0.53GB   19.0
+4-bit fp32  ~0.53GB    9.1
 </pre>
 
 ```sh

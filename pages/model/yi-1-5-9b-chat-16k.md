@@ -6,7 +6,7 @@
 
 01.AI · released 2024-05 · 8.83B params · apache-2.0
 
-**score 45.7** ±3.5 · #555 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 46.6** ±3.8 · #533 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  28.8%    46.2   2025-04-28   51% ▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  67.8%    44.5   2024-05-20   43% ▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 5% ▇
-                        weighted average                       = 45.7
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  28.8%    46.3   2025-04-28   66% ▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  67.8%    46.5   2024-05-20   28% ▇▇▇
+prior                   pull toward the middle                   50.0                 6% ▇
+                        weighted average                       = 46.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~17.66GB   45.7
+16-bit bf16  ~17.66GB   46.6
 </pre>
 
 ```sh

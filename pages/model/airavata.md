@@ -6,7 +6,7 @@
 
 AI4Bharat · released 2024-01 · 6.87B params · llama2
 
-**score 29.5** ±6.0 · #846 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 28.6** ±6.2 · #856 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Incep…</a>   9.6%    25.5   2026-04-06   84% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                16% ▇▇
-                        weighted average                       = 29.5
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Incep…</a>   9.6%    24.2   2026-04-06   83% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                17% ▇▇
+                        weighted average                       = 28.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~13.74GB   29.5
+16-bit bf16  ~13.74GB   28.6
 </pre>
 
 ```sh

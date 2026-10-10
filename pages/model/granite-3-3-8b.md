@@ -6,7 +6,7 @@
 
 IBM · released 2025-04 · 8.17B params · apache-2.0
 
-**score 45.5** ±1.3 · #562 of 934 · from 10 benchmark results across 2 sources
+**score 45.9** ±1.3 · #554 of 934 · from 11 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -15,22 +15,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="card2-ibm-granite-granite-3-3-8b-instruct"></a>ibm-granite/granite-3…  <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">AIME 2024 (lab)</a>                  8.1%    48.3   2025-05-12   18% ▇▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">BIG-Bench Hard (lab)</a>            69.1%    41.8   2025-05-12   15% ▇▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">GSM8K (lab)</a>                     80.9%    43.4   2025-05-12   15% ▇▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MMLU (lab)</a>                      65.5%    42.6   2025-05-12   13% ▇▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">DROP (lab)</a>                      59.4%    47.0   2025-05-12   10% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MATH-500 (lab)</a>                  69.0%    47.9   2025-05-12   10% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">Arena-Hard (version/judge uns…</a>  57.6%    50.6   2025-05-12    7% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">GSM8K (lab)</a>                     80.9%    43.3   2025-05-12   14% ▇▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">BIG-Bench Hard (lab)</a>            69.1%    41.7   2025-05-12   14% ▇▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MMLU (lab)</a>                      65.5%    42.5   2025-05-12   12% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">DROP (lab)</a>                      59.4%    47.0   2025-05-12   11% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MATH-500 (lab)</a>                  69.0%    48.0   2025-05-12    9% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">Arena-Hard (version/judge uns…</a>  57.6%    50.5   2025-05-12    8% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">PopQA (lab)</a>                     26.2%    43.8   2025-05-12    5% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">IFEval (aggregation unspecifi…</a>  74.8%    46.0   2025-05-12    5% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  89.4%    44.9   2026-09-22    0% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">IFEval (aggregation unspecifi…</a>  74.8%    45.9   2025-05-12    5% ▇
+<a name="paper-2605.08614v1-diagnosticiq"></a>DiagnosticIQ: A Bench…  <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maint…</a>  59.5%    61.6   2026-05-09    3% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  89.4%    44.8   2026-09-22    0% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 45.5
+                        weighted average                       = 45.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: ibm-granite/granite-3.3-8b-instruct model card ([Apache-2.0](../../licenses/ibm-granite--granite-3.3-8b-instruct.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: ibm-granite/granite-3.3-8b-instruct model card ([Apache-2.0](../../licenses/ibm-granite--granite-3.3-8b-instruct.txt)) · DiagnosticIQ: A Benchmark for LLM-Based Industrial Maintenance Action Recommendation from Symbolic Rules ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
@@ -38,7 +39,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~5.4GB   45.5
+4-bit q4_k_m  ~5.4GB   45.9
 </pre>
 
 ```sh

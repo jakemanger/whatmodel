@@ -6,7 +6,7 @@
 
 Google · released 2026-03 · closed weights
 
-**score 67.3** ±0.9 · #115 of 934 · from 10 benchmark results across 5 sources
+**score 67.1** ±0.9 · #116 of 934 · from 11 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -14,23 +14,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        27.7%    67.7   2026-08-30   36% ▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     81.8%    68.7   2026-08-06   13% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         80.0%    67.7   2026-08-06    7% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            20.0%    71.0   2026-08-06    3% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        27.7%    67.6   2026-08-30   33% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     81.8%    68.6   2026-08-06   13% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         80.0%    67.7   2026-08-06    6% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            20.0%    71.1   2026-08-06    3% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1255.7    62.3   2026-10-01   13% ▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1432.7    69.8   2026-10-02    8% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1234.6    70.5   2026-10-02    6% ▇
 <a name="first-party-google-scores"></a>Google DeepMind Gemin…  <a href="https://deepmind.google/models/model-cards/gemini-3-1-flash-lite/#evaluation">CharXiv (reasoning questions)…</a>   73.2%    67.3   2026-03-03   12% ▇
-<a name="paper-2605.08498v1"></a>MathConstraint: Autom…  <a href="https://arxiv.org/html/2605.08498v1">MathConstraint full release, …</a>   24.9%    62.9   2026-05-08    2% ▇
+<a name="paper-2606.02404v1-k-browsecomp"></a>K-BrowseComp: A Web B…  <a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean…</a>   11.3%    62.6   2026-06-01    4% ▇
+<a name="paper-2605.08498v1"></a>MathConstraint: Autom…  <a href="https://arxiv.org/html/2605.08498v1">MathConstraint full release, …</a>   24.9%    62.8   2026-05-08    2% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   91.8%   125.2   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 67.3
+                        weighted average                        = 67.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathConstraint: Automated Generation of Verified Combinatorial Reasoning Instances for LLMs ([CC BY 4.0](../../licenses/paper-2605.08498v1-CC-BY-4.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathConstraint: Automated Generation of Verified Combinatorial Reasoning Instances for LLMs ([CC BY 4.0](../../licenses/paper-2605.08498v1-CC-BY-4.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 

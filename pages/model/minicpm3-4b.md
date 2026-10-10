@@ -6,7 +6,7 @@
 
 OpenBMB · released 2024-09 · minicpm-model-license
 
-**score 46.8** ±4.0 · #521 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.8** ±4.0 · #520 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

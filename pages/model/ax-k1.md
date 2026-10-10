@@ -17,10 +17,10 @@ source                  test                            score  implies  date    
 <a name="paper-2608.30181v1-ax-k2"></a>A.X K2 Technical Repo…  <a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond (lab)</a>              76.4%    63.7   2026-08-31   38% ▇▇▇▇▇
                         <a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite (lab)</a>          77.8%    59.6   2026-08-31   17% ▇▇
                         <a href="https://arxiv.org/html/2608.30181v1">AIME 2026 (lab)</a>                 91.3%    67.5   2026-08-31   11% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecif…</a>  63.2%    61.6   2026-08-31   10% ▇
+                        <a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecif…</a>  63.2%    61.7   2026-08-31   11% ▇
                         <a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 202…</a>  74.9%    66.1   2026-08-31    9% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam (lab)</a>       8.3%    56.1   2026-08-31    8% ▇
-                        <a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified) (…</a>  24.1%    57.1   2026-08-31    6% ▇
+                        <a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam (lab)</a>       8.3%    56.0   2026-08-31    8% ▇
+                        <a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified) (…</a>  24.1%    57.0   2026-08-31    6% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 62.3
 </pre>

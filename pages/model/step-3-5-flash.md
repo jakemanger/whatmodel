@@ -6,7 +6,7 @@
 
 StepFun · released 2026-02 · 196B params (11B active) · apache-2.0
 
-**score 69.0** ±0.9 · #94 of 934 · from 21 benchmark results across 3 sources
+**score 68.4** ±0.9 · #102 of 934 · from 23 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,34 +14,36 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 202…</a>   33.8%    67.1   2026-09-11   17% ▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>   32.8%    67.1   2026-09-11   10% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 202…</a>   43.3%    66.7   2026-09-11    9% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>   60.3%    71.0   2026-09-11    7% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>   41.9%    67.8   2026-09-11    5% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet">MathArena BrokenArXiv April 2…</a>   13.9%    69.2   2026-09-11    4% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2…</a>    7.1%    66.5   2026-09-11    2% ▇
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 202…</a>   33.8%    67.1   2026-09-11   15% ▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>   32.8%    67.0   2026-09-11    9% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 202…</a>   43.3%    66.7   2026-09-11    8% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>   60.3%    70.9   2026-09-11    7% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>   41.9%    67.7   2026-09-11    4% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet">MathArena BrokenArXiv April 2…</a>   13.9%    69.2   2026-09-11    3% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2…</a>    7.1%    66.3   2026-09-11    2% ▇
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv Februar…</a>   11.3%    70.4   2026-09-11    2% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivlean-0326_outputs/blob/47c34bc76c06596e0010c5c15a93c23ca9f082ed/data/train-00000-of-00001.parquet">MathArena ArXivLean March 202…</a>    0.0%    56.9   2026-09-11    2% ▇
-<a name="card2-stepfun-ai-step-3-5-flash"></a>stepfun-ai/Step-3.5-F…  <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">AIME 2025 (lab)</a>                  97.3%    73.4   2026-03-17    5% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH (lab)</a>              66.9%    71.6   2026-03-17    5% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">IMO-AnswerBench (lab)</a>            85.4%    71.2   2026-03-17    4% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">Terminal-Bench 2.0 (lab)</a>         51.0%    71.8   2026-03-17    4% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">LiveCodeBench v6 (window unsp…</a>   86.4%    70.4   2026-03-17    3% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp (lab)</a>                 51.6%    70.2   2026-03-17    3% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate (lab)</a>         88.2%    71.5   2026-03-17    3% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT November 2025 (lab)</a>         94.0%    74.6   2026-03-17    3% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">ResearchRubrics (lab)</a>            65.3%    72.5   2026-03-17    2% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">GAIA (no-file subset) (lab)</a>      84.5%    77.4   2026-03-17    2% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT February 2025 (lab)</a>         98.4%    77.9   2026-03-17    2% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivlean-0326_outputs/blob/47c34bc76c06596e0010c5c15a93c23ca9f082ed/data/train-00000-of-00001.parquet">MathArena ArXivLean March 202…</a>    0.0%    56.6   2026-09-11    2% ▇
+<a name="card2-stepfun-ai-step-3-5-flash"></a>stepfun-ai/Step-3.5-F…  <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH (lab)</a>              66.9%    72.0   2026-03-17    5% ▇
+                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">AIME 2025 (lab)</a>                  97.3%    73.2   2026-03-17    5% ▇
+                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate (lab)</a>         88.2%    71.4   2026-03-17    3% ▇
+                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">LiveCodeBench v6 (window unsp…</a>   86.4%    70.2   2026-03-17    3% ▇
+                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">Terminal-Bench 2.0 (lab)</a>         51.0%    71.7   2026-03-17    3% ▇
+                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">IMO-AnswerBench (lab)</a>            85.4%    72.3   2026-03-17    3% ▇
+                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">ResearchRubrics (lab)</a>            65.3%    72.2   2026-03-17    3% ▇
+                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp (lab)</a>                 51.6%    70.1   2026-03-17    2% ▇
+                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">GAIA (no-file subset) (lab)</a>      84.5%    77.3   2026-03-17    2% ▇
+                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT November 2025 (lab)</a>         94.0%    75.5   2026-03-17    2% ▇
+                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT February 2025 (lab)</a>         98.4%    78.3   2026-03-17    1% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1393.3    65.1   2026-10-02    7% ▇
+<a name="paper-2606.05104v2-kina"></a>Knowledge Index of No…  <a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah…</a>   29.1%    61.2   2026-06-04    5% ▇
+<a name="paper-2605.10912v1-wildclawbench"></a>WildClawBench: A Benc…  <a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                    26.7%    63.7   2026-05-11    4% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 69.0
+                        weighted average                        = 68.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · stepfun-ai/Step-3.5-Flash model card ([Apache-2.0](../../licenses/stepfun-ai--Step-3.5-Flash.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · stepfun-ai/Step-3.5-Flash model card ([Apache-2.0](../../licenses/stepfun-ai--Step-3.5-Flash.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Knowledge Index of Noah's Ark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WildClawBench: A Benchmark for Real-World ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 <details><summary>Not counted (5)</summary>
 
@@ -64,7 +66,7 @@ api (StepFun) · $0.15/M blended · $0.1 in / $0.3 out per 1M tokens · [platfor
 
 <pre>
 download        size  score
-4-bit q4_k  ~118.1GB   69.0
+4-bit q4_k  ~118.1GB   68.4
 </pre>
 
 ```sh

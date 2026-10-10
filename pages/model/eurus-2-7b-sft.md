@@ -6,7 +6,7 @@
 
 PRIME-RL · released 2024-12 · 7.62B params · apache-2.0
 
-**score 36.0** ±2.9 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 35.2** ±2.9 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="first-party-prime-rl-scores"></a>PRIME-RL Eurus-2-7B-P…  <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">MATH-500 (lab)</a>          65.1%    38.0   2024-12-31   39% ▇▇▇▇▇
-                        <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">AIME 2024 (lab)</a>          3.3%    29.1   2024-12-31   33% ▇▇▇▇
-                        <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">Minerva MATH (lab)</a>      32.7%    40.2   2024-12-31   25% ▇▇▇
+<a name="first-party-prime-rl-scores"></a>PRIME-RL Eurus-2-7B-P…  <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">MATH-500 (lab)</a>          65.1%    36.9   2024-12-31   37% ▇▇▇▇
+                        <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">AIME 2024 (lab)</a>          3.3%    28.1   2024-12-31   34% ▇▇▇▇
+                        <a href="https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation">Minerva MATH (lab)</a>      32.7%    40.0   2024-12-31   25% ▇▇▇
 prior                   pull toward the middle           50.0                 4% ▇
-                        weighted average               = 36.0
+                        weighted average               = 35.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 2.91B params · apache-2.0
 
-**score 21.0** ±1.1 · #897 of 934 · from 12 benchmark results across 2 sources
+**score 20.7** ±1.1 · #898 of 934 · from 12 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,20 +14,20 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">ARC Challenge</a>                   32.9%    22.5   2024-04-08   32% ▇▇▇▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">WinoGrande</a>                      58.2%    19.0   2024-04-08   11% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">BoolQ</a>                           64.1%    21.5   2024-04-08   10% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">SciQ</a>                            88.2%    20.3   2024-04-08   10% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">ARC Easy</a>                        59.1%    21.6   2024-04-08    9% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">HellaSwag</a>                       59.4%    20.0   2024-04-08    7% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">PIQA</a>                            74.1%    23.6   2024-04-08    6% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">LAMBADA (OpenAI version), las…</a>  65.1%    24.5   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">Social IQA</a>                      40.9%    22.3   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">OpenBookQA</a>                      23.8%    11.2   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">TruthfulQA MC2</a>                  35.6%    21.1   2024-04-08    1% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  24.7%     3.7   2024-02-05    3% ▇
+<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">ARC Challenge</a>                   32.9%    21.9   2024-04-08   33% ▇▇▇▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">WinoGrande</a>                      58.2%    18.4   2024-04-08   11% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">BoolQ</a>                           64.1%    20.9   2024-04-08   11% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">SciQ</a>                            88.2%    19.6   2024-04-08   10% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">ARC Easy</a>                        59.1%    21.0   2024-04-08    9% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">HellaSwag</a>                       59.4%    19.4   2024-04-08    8% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">PIQA</a>                            74.1%    23.0   2024-04-08    6% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">LAMBADA (OpenAI version), las…</a>  65.1%    24.1   2024-04-08    4% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">Social IQA</a>                      40.9%    21.7   2024-04-08    3% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">OpenBookQA</a>                      23.8%    11.0   2024-04-08    3% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json">TruthfulQA MC2</a>                  35.6%    21.6   2024-04-08    1% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  24.7%     6.5   2024-02-05    1% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 21.0
+                        weighted average                       = 20.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -40,7 +40,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp16  ~5.68GB   21.0
+4-bit fp16  ~5.68GB   20.7
 </pre>
 
 ```sh

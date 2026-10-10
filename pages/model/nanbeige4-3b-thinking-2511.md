@@ -6,7 +6,7 @@
 
 Nanbeige · released 2025-11 · 3.93B params · apache-2.0
 
-**score 54.6** ±3.2 · #324 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 54.5** ±3.2 · #326 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1014.3    47.6   2026-05-10   53% ▇▇▇▇▇▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1014.3    47.5   2026-05-10   53% ▇▇▇▇▇▇
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   51.4%    63.6   2025-12-16   43% ▇▇▇▇▇
 prior                   pull toward the middle                    50.0                 4% ▇
-                        weighted average                        = 54.6
+                        weighted average                        = 54.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download        size  score
-16-bit bf16  ~7.87GB   54.6
+16-bit bf16  ~7.87GB   54.5
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Mistral · released 2025-03 · 24.01B params · apache-2.0
 
-**score 53.9** ±0.9 · #341 of 934 · from 26 benchmark results across 11 sources
+**score 54.1** ±0.9 · #338 of 934 · from 27 benchmark results across 12 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     46.8%    53.2   2025-03-18   20% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     41.9%    51.7   2026-08-30   12% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          3.9%    49.7   2026-08-30    6% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     46.8%    53.2   2025-03-18   19% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     41.9%    51.6   2026-08-30   12% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          3.9%    49.7   2026-08-30    5% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             1.0%    47.2   2026-08-30    1% ▇
-<a name="card2-mistralai-mistral-small-3-2-24b-instruct-2506"></a>mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">GPQA Diamond (lab)</a>               46.0%    54.2   2025-12-22    6% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">MMLU (lab)</a>                       80.6%    54.5   2025-12-22    4% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">MMLU-Pro (lab)</a>                   66.8%    54.9   2025-12-22    3% ▇
+<a name="card2-mistralai-mistral-small-3-2-24b-instruct-2506"></a>mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">GPQA Diamond (lab)</a>               46.0%    54.0   2025-12-22    6% ▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">MMLU (lab)</a>                       80.6%    54.4   2025-12-22    4% ▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">MMLU-Pro (lab)</a>                   66.8%    54.8   2025-12-22    3% ▇
                         <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">MATH (subset unspecified) (la…</a>   69.3%    52.4   2025-12-22    3% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">Arena-Hard v2 aggregate (lab)</a>    19.6%    45.1   2025-12-22    3% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">SimpleQA (lab)</a>                   10.4%    53.3   2025-12-22    3% ▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">SimpleQA (lab)</a>                   10.4%    53.2   2025-12-22    3% ▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">Arena-Hard v2 aggregate (lab)</a>    19.6%    45.0   2025-12-22    3% ▇
                         <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">MMMU (val) (lab)</a>                 64.0%    55.5   2025-12-22    2% ▇
                         <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">DocVQA (lab)</a>                     94.1%    53.6   2025-12-22    1% ▇
                         <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">ChartQA (lab)</a>                    86.2%    58.7   2025-12-22    1% ▇
@@ -32,21 +32,22 @@ source                  test                             score  implies  date   
 <a name="first-party-mistral-scores"></a>Mistral AI vendor-rep…  <a href="https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/README.md#vision">MathVista (testmini) (lab)</a>       68.9%    54.2   2025-03-17    2% ▇
                         <a href="https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/README.md#vision">MMMU (val) (lab)</a>                 64.0%    54.6   2025-03-17    2% ▇
                         <a href="https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/README.md#vision">ChartQA (lab)</a>                    86.2%    58.3   2025-03-17    1% ▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1055.9    51.2   2026-05-10    4% ▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   78.0%    59.2   2026-08-11    4% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   39.7%    58.5   2025-04-28    4% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   93.1%    64.6   2026-04-17    1% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   94.4%    61.5   2026-04-17    1% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   78.0%    59.1   2026-08-11    4% ▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1055.9    51.1   2026-05-10    4% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   39.7%    58.4   2025-04-28    4% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   93.1%    64.1   2026-04-17    1% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   94.4%    62.6   2026-04-17    1% ▇
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                          57.7%    55.3   2025-06-14    2% ▇
-<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 …</a>   91.2%    64.9   2025-07-02    1% ▇
+<a name="paper-2605.08614v1-diagnosticiq"></a>DiagnosticIQ: A Bench…  <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maint…</a>   61.2%    62.4   2026-05-09    1% ▇
+<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 …</a>   91.2%    65.0   2025-07-02    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   94.4%    51.6   2025-10-16    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 53.9
+                        weighted average                        = 54.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · mistralai/Mistral-Small-3.2-24B-Instruct-2506 model card ([Apache-2.0](../../licenses/mistralai--Mistral-Small-3.2-24B-Instruct-2506.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · mistralai/Mistral-Small-3.2-24B-Instruct-2506 model card ([Apache-2.0](../../licenses/mistralai--Mistral-Small-3.2-24B-Instruct-2506.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · DiagnosticIQ: A Benchmark for LLM-Based Industrial Maintenance Action Recommendation from Symbolic Rules ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 <details><summary>Not counted (4)</summary>
 
@@ -66,8 +67,8 @@ mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Smal
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~14.91GB   53.9
-8-bit q8_0    ~29.31GB   53.9
+4-bit q4_k_m  ~14.91GB   54.1
+8-bit q8_0    ~29.31GB   54.1
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-10 · 6.74B params · deepseek
 
-**score 39.0** ±0.6 · #717 of 934 · from 12 benchmark results across 5 sources
+**score 39.0** ±0.6 · #716 of 934 · from 12 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -23,9 +23,9 @@ source                  test                     score  implies  date        wei
                         <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>                     70.2%    41.8   2024-02-29    3% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                  28.9%    37.2   2024-02-29    3% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>                    41.9%    37.2   2024-02-29    2% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>  41.8%    44.8   2025-04-01    3% ▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>               41.9%    42.1   2024-01-03    1% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>               43.5%    43.2   2024-01-03    1% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>  41.8%    45.0   2025-04-01    3% ▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>               41.9%    42.2   2024-01-03    1% ▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>               43.5%    43.3   2024-01-03    1% ▇
 prior                   pull toward the middle            50.0                 0% ▇
                         weighted average                = 39.0
 </pre>

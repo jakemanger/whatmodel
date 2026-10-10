@@ -6,7 +6,7 @@
 
 Deep Cogito · released 2025-07 · 70.55B params · llama3.1
 
-**score 61.7** ±6.7 · #195 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.7** ±6.9 · #193 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  91.9%    66.6   2026-04-17   52% ▇▇▇▇▇▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  92.5%    60.8   2026-04-17   28% ▇▇▇
-prior                  pull toward the middle                   50.0                20% ▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  91.9%    66.1   2026-04-17   55% ▇▇▇▇▇▇▇
+                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  92.5%    62.1   2026-04-17   23% ▇▇▇
+prior                  pull toward the middle                   50.0                21% ▇▇▇
                        weighted average                       = 61.7
 </pre>
 

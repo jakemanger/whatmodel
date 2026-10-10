@@ -6,7 +6,7 @@
 
 Mistral · released 2024-09 · 12.4B params · apache-2.0
 
-**score 48.3** ±1.9 · #477 of 934 · from 10 benchmark results across 3 sources
+**score 48.8** ±1.8 · #469 of 934 · from 11 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,29 +14,30 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                      score  implies  date        weight
-<a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU (lab)</a>                                                69.2%    45.1   2024-10-10   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  6.0500 MM-MT-Bench score (1-10)    52.6   2024-10-10   10% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified) (la…</a>                            48.1%    46.6   2024-10-10    9% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval (lab)</a>                                           72.0%    50.4   2024-10-10    9% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val) (lab)</a>                                          52.0%    50.1   2024-10-10    8% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini) (lab)</a>                                58.3%    53.6   2024-10-10    7% ▇
+<a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU (lab)</a>                                                69.2%    45.0   2024-10-10   18% ▇▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  6.0500 MM-MT-Bench score (1-10)    52.7   2024-10-10    9% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified) (la…</a>                            48.1%    46.6   2024-10-10    8% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval (lab)</a>                                           72.0%    50.5   2024-10-10    7% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val) (lab)</a>                                          52.0%    50.1   2024-10-10    7% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini) (lab)</a>                                58.3%    53.7   2024-10-10    7% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val) (lab)</a>                                         78.6%    55.8   2024-10-10    6% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA (lab)</a>                                             81.8%    56.0   2024-10-10    1% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                           1025.2    45.0   2026-10-02   23% ▇▇▇
-<a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>                           1016.0    46.3   2024-09-25    4% ▇
-prior                   pull toward the middle                                             50.0                 2% ▇
-                        weighted average                                                 = 48.3
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA (lab)</a>                                             81.8%    56.3   2024-10-10    0% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                           1025.2    45.0   2026-10-02   20% ▇▇
+<a name="paper-2608.10408v1-viseditbench"></a>VisEditBench: Can Vis…  <a href="https://arxiv.org/html/2608.10408v1">VisEditBench strict pass rate…</a>                            35.3%    51.3   2026-08-11   13% ▇▇
+<a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>                           1016.0    46.3   2024-09-25    3% ▇
+prior                   pull toward the middle                                             50.0                 1% ▇
+                        weighted average                                                 = 48.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Pixtral 12B ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Ai2 Molmo-72B-0924 model card: Human Preference Elo Rating column ([Apache-2.0](https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md))</sub>
+<sub>Licences: Pixtral 12B ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · VisEditBench: Can Vision-Language Models Edit Visualization Code from Multimodal Feedback? ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Ai2 Molmo-72B-0924 model card: Human Preference Elo Rating column ([Apache-2.0](https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md))</sub>
 
 ## How to run it
 
 <pre>
 download                       size  score
-16-bit bf16 · nvidia only  ~25.37GB   48.3
+16-bit bf16 · nvidia only  ~25.37GB   48.8
 </pre>
 
 ```sh

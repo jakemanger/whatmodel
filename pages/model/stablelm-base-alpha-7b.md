@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-04 · 7.9B params · cc-by-sa-4.0
 
-**score 10.0** ±1.2 · #922 of 934 · from 15 benchmark results across 3 sources
+**score 9.4** ±1.2 · #922 of 934 · from 16 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,28 +14,29 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">SciQ (lab)</a>                      80.1%     9.6   2024-04-08   17% ▇▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">ARC Challenge (lab)</a>             27.0%    10.9   2024-04-08   11% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">ARC Easy (lab)</a>                  44.9%     7.6   2024-04-08    9% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">BoolQ (lab)</a>                     60.1%    17.3   2024-04-08    7% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">HellaSwag (lab)</a>                 41.2%     5.4   2024-04-08    7% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">WinoGrande (lab)</a>                50.1%    -1.9   2024-04-08    6% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">PIQA (lab)</a>                      66.8%     9.7   2024-04-08    6% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">LAMBADA (OpenAI version), las…</a>  55.1%    17.0   2024-04-08    5% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">Social IQA (lab)</a>                39.5%    20.2   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">OpenBookQA (lab)</a>                21.4%     0.6   2024-04-08    1% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">TruthfulQA MC2 (lab)</a>            40.0%    28.6   2024-04-08    1% ▇
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                        2.4%     9.7   2024-12-26   14% ▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                       2.4%    10.0   2024-12-26    9% ▇
-<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>                        1.8%    11.5   2024-03-10    2% ▇
-                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                            26.2%     3.7   2024-03-10    2% ▇
+<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">SciQ (lab)</a>                      80.1%     8.9   2024-04-08   17% ▇▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">ARC Challenge (lab)</a>             27.0%    10.2   2024-04-08   11% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">ARC Easy (lab)</a>                  44.9%     7.0   2024-04-08    9% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">HellaSwag (lab)</a>                 41.2%     4.8   2024-04-08    7% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">BoolQ (lab)</a>                     60.1%    16.6   2024-04-08    7% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">WinoGrande (lab)</a>                50.1%    -2.6   2024-04-08    6% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">PIQA (lab)</a>                      66.8%     9.1   2024-04-08    6% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">LAMBADA (OpenAI version), las…</a>  55.1%    16.5   2024-04-08    5% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">Social IQA (lab)</a>                39.5%    19.5   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">OpenBookQA (lab)</a>                21.4%     0.0   2024-04-08    1% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json">TruthfulQA MC2 (lab)</a>            40.0%    29.5   2024-04-08    1% ▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                        2.4%     9.6   2024-12-26   13% ▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                       2.4%     9.9   2024-12-26    9% ▇
+<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>                        1.8%    11.4   2024-03-10    2% ▇
+                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                            26.2%     3.3   2024-03-10    2% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  25.4%    -3.7   2024-02-05    1% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 10.0
+                        weighted average                        = 9.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE))</sub>
+<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -43,7 +44,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp32  ~31.74GB   10.0
+4-bit fp32  ~31.74GB    9.4
 </pre>
 
 ```sh

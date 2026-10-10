@@ -15,16 +15,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       73.2%    47.3   2024-12-26   32% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      66.5%    47.1   2024-12-26   25% ▇▇▇
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>  18.1%    41.2   2025-08-09   13% ▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      66.5%    47.2   2024-12-26   25% ▇▇▇
+<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>  18.1%    41.3   2025-08-09   13% ▇▇
                         <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  89.4%    41.1   2025-08-09    1% ▇
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  66.1%    44.5   2023-11-20    6% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       88.4%    50.6   2023-11-20    2% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            67.9%    46.4   2023-11-20    2% ▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  66.1%    44.6   2023-11-20    6% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            67.9%    46.5   2023-11-20    2% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       88.4%    50.7   2023-11-20    2% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           76.0%    50.8   2023-11-20    2% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  51.9%    42.3   2023-11-20    1% ▇
-<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>  18.1%    41.6   2024-11-14    9% ▇
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  57.9%    51.7   2023-11-06    7% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  51.9%    42.4   2023-11-20    1% ▇
+<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>  18.1%    41.7   2024-11-14    8% ▇
+<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  57.9%    51.8   2023-11-06    7% ▇
 <a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>  47.6%    43.7   2024-01-03    2% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 46.1

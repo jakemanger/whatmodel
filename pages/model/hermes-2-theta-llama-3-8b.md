@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-05 · 8.03B params · apache-2.0
 
-**score 42.6** ±2.7 · #647 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 43.5** ±2.5 · #624 of 934 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                       score  implies  date        weight
-<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  29.6352 WB-Score    40.8   2024-08-01   70% ▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             70.0%    46.3   2024-05-27   26% ▇▇▇
+<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  29.6352 WB-Score    40.8   2024-08-01   55% ▇▇▇▇▇▇▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>             54.9%    46.0   2024-06-19   30% ▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             70.0%    48.1   2024-05-27   12% ▇
 prior                   pull toward the middle                              50.0                 3% ▇
-                        weighted average                                  = 42.6
+                        weighted average                                  = 43.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -30,7 +31,7 @@ prior                   pull toward the middle                              50.0
 
 <pre>
 download         size  score
-16-bit bf16  ~16.06GB   42.6
+16-bit bf16  ~16.06GB   43.5
 </pre>
 
 ```sh

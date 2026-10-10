@@ -14,30 +14,30 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="card2-tencent-hy3"></a>tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">GPQA Diamond (lab)</a>               87.2%    70.6   2026-07-20    7% ▇
-                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">SWE-bench Pro (split unspecif…</a>   46.0%    70.1   2026-07-20    6% ▇
+<a name="card2-tencent-hy3"></a>tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">GPQA Diamond (lab)</a>               87.2%    70.5   2026-07-20    7% ▇
+                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">SWE-bench Pro (split unspecif…</a>   46.0%    70.0   2026-07-20    6% ▇
                         <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">IMO-AnswerBench (lab)</a>            84.3%    70.2   2026-07-20    6% ▇
                         <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">SWE-bench Verified (lab)</a>         74.4%    71.4   2026-07-20    5% ▇
                         <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">Terminal-Bench 2.1 (lab)</a>         58.0%    68.3   2026-07-20    5% ▇
                         <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">USAMO 2026 (lab)</a>                 37.3%    60.8   2026-07-20    4% ▇
-                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">SWE-bench Multilingual (lab)</a>     68.3%    70.4   2026-07-20    4% ▇
-                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">Humanity's Last Exam (lab)</a>       30.0%    72.0   2026-07-20    4% ▇
-                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">APEX-Agents (pass@1) (lab)</a>       12.4%    66.2   2026-07-20    4% ▇
-                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">MCP-Atlas (public set) (lab)</a>     66.1%    68.8   2026-07-20    3% ▇
-                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">NL2Repo (lab)</a>                    35.3%    68.8   2026-07-20    3% ▇
-                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">Toolathlon (Tool Decathlon) (…</a>   32.1%    65.8   2026-07-20    2% ▇
-                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">Humanity's Last Exam with too…</a>   35.4%    65.5   2026-07-20    2% ▇
-                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">DeepSearchQA (lab)</a>               82.8%    71.6   2026-07-20    2% ▇
-                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">BrowseComp with context manag…</a>   67.1%    63.3   2026-07-20    2% ▇
+                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">SWE-bench Multilingual (lab)</a>     68.3%    70.3   2026-07-20    4% ▇
+                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">Humanity's Last Exam (lab)</a>       30.0%    71.9   2026-07-20    4% ▇
+                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">APEX-Agents (pass@1) (lab)</a>       12.4%    66.1   2026-07-20    4% ▇
+                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">NL2Repo (lab)</a>                    35.3%    68.9   2026-07-20    3% ▇
+                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">MCP-Atlas (public set) (lab)</a>     66.1%    68.7   2026-07-20    3% ▇
+                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">Toolathlon (Tool Decathlon) (…</a>   32.1%    65.7   2026-07-20    2% ▇
+                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">Humanity's Last Exam with too…</a>   35.4%    65.4   2026-07-20    2% ▇
+                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">DeepSearchQA (lab)</a>               82.8%    71.5   2026-07-20    2% ▇
                         <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">WideSearch (lab)</a>                 67.8%    69.4   2026-07-20    2% ▇
+                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">BrowseComp with context manag…</a>   67.1%    63.2   2026-07-20    2% ▇
                         <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">MathArena Apex (pass@1) (lab)</a>    12.6%    54.8   2026-07-20    2% ▇
                         <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">Claw-Eval Pass^3 (lab)</a>           55.0%    68.8   2026-07-20    2% ▇
-                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">SuperChem (lab)</a>                  47.0%    69.2   2026-07-20    2% ▇
-                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">SkillsBench 79-task text-only…</a>   29.1%    59.5   2026-07-20    2% ▇
+                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">SuperChem (lab)</a>                  47.0%    69.1   2026-07-20    2% ▇
+                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">SkillsBench 79-task text-only…</a>   29.1%    59.4   2026-07-20    2% ▇
                         <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">FrontierScience-Research (lab)</a>   19.0%    69.2   2026-07-20    2% ▇
-                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">CL-bench (lab)</a>                   22.8%    74.6   2026-07-20    1% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1355.7    66.9   2026-10-01   15% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1408.8    67.0   2026-10-02    9% ▇
+                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">CL-bench (lab)</a>                   22.8%    74.5   2026-07-20    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1355.7    66.9   2026-10-01   16% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1408.8    66.9   2026-10-02    9% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
                         weighted average                        = 67.8
 </pre>

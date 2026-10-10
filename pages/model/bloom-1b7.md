@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 1.72B params · bigscience-bloom-rail-1.0
 
-**score 15.0** ±1.5 · #914 of 934 · from 7 benchmark results across 2 sources
+**score 13.9** ±1.5 · #916 of 934 · from 8 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,20 +14,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        56.2%    16.1   2023-05-31   20% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            85.1%    16.5   2023-05-31   17% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      57.2%    17.7   2023-05-31   11% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            68.6%    13.7   2023-05-31   11% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  46.2%    10.1   2023-05-31   11% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   23.8%     6.8   2023-05-31    8% ▇
-<a name="paper-2211.05100v4"></a>BLOOM: A 176B-Paramet…  <a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>                  4.0%    15.7   2023-06-27   22% ▇▇▇
+<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        56.2%    15.0   2023-05-31   20% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            85.1%    15.5   2023-05-31   17% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      57.2%    16.7   2023-05-31   11% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            68.6%    12.6   2023-05-31   11% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  46.2%     9.0   2023-05-31   10% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   23.8%     5.5   2023-05-31    7% ▇
+<a name="paper-2211.05100v4"></a>BLOOM: A 176B-Paramet…  <a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>                  4.0%    15.0   2023-06-27   21% ▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  28.6%     0.5   2024-02-05    1% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 15.0
+                        weighted average                       = 13.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · BLOOM: A 176B-Parameter Open-Access Multilingual Language Model ([CC BY 4.0](../../licenses/paper-2211.05100v4-CC-BY-4.0.txt))</sub>
+<sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · BLOOM: A 176B-Parameter Open-Access Multilingual Language Model ([CC BY 4.0](../../licenses/paper-2211.05100v4-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -35,7 +36,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp16  ~3.44GB   15.0
+4-bit fp16  ~3.44GB   13.9
 </pre>
 
 ```sh

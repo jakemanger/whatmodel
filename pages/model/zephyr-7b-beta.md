@@ -6,7 +6,7 @@
 
 Hugging Face · released 2023-10 · 7.24B params · mit
 
-**score 33.2** ±0.7 · #807 of 934 · from 15 benchmark results across 7 sources
+**score 33.1** ±0.7 · #811 of 934 · from 15 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -17,20 +17,20 @@ source                  test                             score  implies  date   
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                        30.0%    32.5   2024-12-26   35% ▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                       23.2%    31.3   2024-12-26   23% ▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                            34.7%    29.1   2024-12-26    5% ▇
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                   44.9%    34.6   2023-11-20    5% ▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                   44.9%    34.7   2023-11-20    5% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>        54.3%    36.5   2023-11-20    3% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                            28.0%    33.1   2023-11-20    2% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                             58.6%    43.0   2023-11-20    2% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>   23.7%    19.1   2023-11-20    1% ▇
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>             16.7%    35.9   2024-10-22    8% ▇
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   13.2%    37.7   2025-08-09    6% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                            28.0%    33.2   2023-11-20    2% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                             58.6%    43.2   2023-11-20    2% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>   23.7%    18.9   2023-11-20    1% ▇
+<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>             16.7%    36.0   2024-10-22    8% ▇
+<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   13.2%    37.8   2025-08-09    6% ▇
                         <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>   90.6%    40.3   2025-08-09    2% ▇
 <a name="card2-openchat-openchat-3-5"></a>OpenChat 3.5 model ca…  <a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">HumanEval</a>                        22.0%    30.5   2023-10-30    3% ▇
-                        <a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">MMLU</a>                             39.8%    27.8   2023-10-30    2% ▇
+                        <a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">MMLU</a>                             39.8%    27.7   2023-10-30    2% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1130.8    33.7   2026-10-02    4% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   64.5%    42.3   2024-02-21    1% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   64.5%    45.7   2024-02-21    1% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 33.2
+                        weighted average                        = 33.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -51,8 +51,8 @@ OpenChat 3.5 model ca…  <a href="https://huggingface.co/openchat/openchat_3.5/
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.84GB   33.2
-8-bit q8_0    ~9.19GB   33.2
+4-bit q4_k_m  ~4.84GB   33.1
+8-bit q8_0    ~9.19GB   33.1
 </pre>
 
 ```sh

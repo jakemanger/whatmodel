@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 0.783B params · apache-2.0
 
-**score 26.9** ±1.9 · #871 of 934 · from 4 benchmark results across 2 sources
+**score 26.9** ±1.9 · #869 of 934 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2210.11416v5"></a>Scaling Instruction-F…  <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>            37.5%    28.6   2022-12-06   44% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                      45.1%    28.9   2022-12-06   30% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>                       0.7%    18.7   2022-12-06   19% ▇▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  81.7%    25.1   2025-10-16    5% ▇
+<a name="paper-2210.11416v5"></a>Scaling Instruction-F…  <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>            37.5%    28.5   2022-12-06   44% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                      45.1%    28.8   2022-12-06   30% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>                       0.7%    18.6   2022-12-06   19% ▇▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  81.7%    25.2   2025-10-16    5% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
                         weighted average                       = 26.9
 </pre>

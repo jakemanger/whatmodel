@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 2.21B params · apache-2.0
 
-**score 37.4** ±1.2 · #750 of 934 · from 16 benchmark results across 2 sources
+**score 37.5** ±1.2 · #753 of 934 · from 16 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,24 +14,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/html/2409.12191v2">MMMU (val) (lab)</a>                41.1%    35.4   2024-10-03   16% ▇▇
-                        <a href="https://arxiv.org/html/2409.12191v2">MathVista (testmini) (lab)</a>      43.0%    33.4   2024-10-03   16% ▇▇
-                        <a href="https://arxiv.org/html/2409.12191v2">MMStar (lab)</a>                    48.0%    35.6   2024-10-03   12% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">MMMU Pro (lab)</a>                  37.6%    45.5   2024-10-03    7% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">Video-MME (without subtitles)…</a>  55.6%    39.2   2024-10-03    7% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">DocVQA (lab)</a>                    90.1%    35.7   2024-10-03    6% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">ChartQA (lab)</a>                   73.5%    32.6   2024-10-03    6% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">InfographicVQA (lab)</a>            65.5%    41.9   2024-10-03    5% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">HallusionBench (lab)</a>            41.7%    37.8   2024-10-03    5% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">RealWorldQA (lab)</a>               62.9%    40.9   2024-10-03    4% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (lab)</a>               12.4%    32.6   2024-10-03    4% ▇
+<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/html/2409.12191v2">MMMU (val) (lab)</a>                41.1%    35.5   2024-10-03   16% ▇▇
+                        <a href="https://arxiv.org/html/2409.12191v2">MathVista (testmini) (lab)</a>      43.0%    33.5   2024-10-03   16% ▇▇
+                        <a href="https://arxiv.org/html/2409.12191v2">MMStar (lab)</a>                    48.0%    35.7   2024-10-03   12% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">MMMU Pro (lab)</a>                  37.6%    45.6   2024-10-03    7% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">Video-MME (without subtitles)…</a>  55.6%    39.3   2024-10-03    7% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">DocVQA (lab)</a>                    90.1%    35.8   2024-10-03    6% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">ChartQA (lab)</a>                   73.5%    32.7   2024-10-03    6% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">InfographicVQA (lab)</a>            65.5%    41.8   2024-10-03    5% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">HallusionBench (lab)</a>            41.7%    37.9   2024-10-03    5% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">RealWorldQA (lab)</a>               62.9%    41.0   2024-10-03    4% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (lab)</a>               12.4%    32.7   2024-10-03    4% ▇
                         <a href="https://arxiv.org/html/2409.12191v2">Video-MME (with subtitles) (l…</a>  60.4%    39.5   2024-10-03    4% ▇
-                        <a href="https://arxiv.org/html/2409.12191v2">MVBench (lab)</a>                   63.2%    44.8   2024-10-03    3% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">MVBench (lab)</a>                   63.2%    44.9   2024-10-03    3% ▇
                         <a href="https://arxiv.org/html/2409.12191v2">OCRBench (lab)</a>                  80.9%    43.5   2024-10-03    2% ▇
                         <a href="https://arxiv.org/html/2409.12191v2">TextVQA (lab)</a>                   79.7%    50.3   2024-10-03    1% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  91.7%    42.7   2025-10-16    1% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  91.7%    42.8   2025-10-16    1% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 37.4
+                        weighted average                       = 37.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -44,7 +44,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~1.7GB   37.4
+4-bit q4_k_m  ~1.7GB   37.5
 </pre>
 
 ```sh

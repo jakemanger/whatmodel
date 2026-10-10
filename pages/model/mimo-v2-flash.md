@@ -6,7 +6,7 @@
 
 Xiaomi · released 2025-12 · 309.8B params (15B active) · mit
 
-**score 66.3** ±1.3 · comparison only: no current run option verified · from 11 benchmark results across 2 sources
+**score 66.2** ±1.2 · comparison only: no current run option verified · from 12 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,24 +14,25 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="card2-stepfun-ai-step-3-5-flash"></a>stepfun-ai/Step-3.5-F…  <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">AIME 2025</a>                        95.1%    69.1   2026-03-17   12% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">IMO-AnswerBench</a>                  80.9%    68.4   2026-03-17   10% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>                    51.2%    63.5   2026-03-17    9% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">LiveCodeBench v6 (window unsp…</a>   81.6%    66.5   2026-03-17    8% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT November 2025</a>               91.0%    70.3   2026-03-17    6% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate</a>               84.1%    67.8   2026-03-17    6% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT February 2025</a>               95.4%    73.1   2026-03-17    4% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">ResearchRubrics</a>                  54.3%    62.9   2026-03-17    4% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">GAIA (no-file subset)</a>            78.2%    71.3   2026-03-17    4% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1292.5    64.0   2026-10-08   24% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1386.3    64.3   2026-10-08   14% ▇▇
+<a name="card2-stepfun-ai-step-3-5-flash"></a>stepfun-ai/Step-3.5-F…  <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">AIME 2025</a>                        95.1%    68.7   2026-03-17   10% ▇
+                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>                    51.2%    64.4   2026-03-17   10% ▇
+                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate</a>               84.1%    68.0   2026-03-17    8% ▇
+                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">LiveCodeBench v6 (window unsp…</a>   81.6%    66.1   2026-03-17    7% ▇
+                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">IMO-AnswerBench</a>                  80.9%    69.5   2026-03-17    7% ▇
+                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">ResearchRubrics</a>                  54.3%    63.9   2026-03-17    5% ▇
+                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">GAIA (no-file subset)</a>            78.2%    71.6   2026-03-17    4% ▇
+                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT November 2025</a>               91.0%    71.2   2026-03-17    3% ▇
+                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">HMMT February 2025</a>               95.4%    73.8   2026-03-17    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1292.5    64.0   2026-10-08   23% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1386.3    64.2   2026-10-08   13% ▇▇
+<a name="paper-2605.10912v1-wildclawbench"></a>WildClawBench: A Benc…  <a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                    30.8%    66.2   2026-05-11    7% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 66.3
+                        weighted average                        = 66.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: stepfun-ai/Step-3.5-Flash model card ([Apache-2.0](../../licenses/stepfun-ai--Step-3.5-Flash.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: stepfun-ai/Step-3.5-Flash model card ([Apache-2.0](../../licenses/stepfun-ai--Step-3.5-Flash.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WildClawBench: A Benchmark for Real-World ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

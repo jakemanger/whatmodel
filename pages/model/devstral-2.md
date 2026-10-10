@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 123B params · modified-mit
 
-**score 62.4** ±1.7 · #182 of 934 · from 5 benchmark results across 3 sources
+**score 62.3** ±1.7 · #182 of 934 · from 5 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1196.1    59.6   2026-10-01   42% ▇▇▇▇▇
-<a name="card-mistralai-devstral-small-2-24b-instruct-2512"></a>mistralai/Devstral-Sm…  <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>         72.2%    66.0   2026-09-25   16% ▇▇
-                        <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (lab)</a>         32.6%    64.5   2026-09-25   13% ▇▇
-                        <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>     61.3%    65.9   2026-09-25   10% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1196.1    59.6   2026-10-01   43% ▇▇▇▇▇
+<a name="card-mistralai-devstral-small-2-24b-instruct-2512"></a>mistralai/Devstral-Sm…  <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>         72.2%    65.8   2026-09-25   16% ▇▇
+                        <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (lab)</a>         32.6%    64.4   2026-09-25   12% ▇
+                        <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>     61.3%    65.8   2026-09-25   10% ▇
 <a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>   43.0%    63.3   2026-08-31   18% ▇▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 62.4
+                        weighted average                        = 62.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,8 +33,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~74.3GB   62.4
-8-bit q8_0    ~148.1GB   62.4
+4-bit q4_k_m   ~74.3GB   62.3
+8-bit q8_0    ~148.1GB   62.3
 </pre>
 
 ```sh

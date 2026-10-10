@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       60.4%    42.6   2024-12-26   37% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      51.8%    41.9   2024-12-26   28% ▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           56.9%    42.9   2024-12-26    4% ▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       60.4%    42.7   2024-12-26   37% ▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      51.8%    42.0   2024-12-26   28% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           56.9%    43.0   2024-12-26    4% ▇
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  41.6%    39.1   2024-05-07    7% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  38.4%    45.6   2024-05-07    5% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  38.4%    45.7   2024-05-07    5% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  45.8%    47.4   2024-05-07    4% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         38.3%    42.2   2025-04-01    4% ▇
-                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>         32.1%    44.1   2025-04-01    4% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>         32.1%    44.1   2025-04-01    4% ▇
+                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         38.3%    42.3   2025-04-01    4% ▇
 <a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 56.1%    41.6   2024-06-19    5% ▇
                         <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      54.2%    39.0   2024-06-19    2% ▇
 prior                   pull toward the middle                   50.0                 0% ▇

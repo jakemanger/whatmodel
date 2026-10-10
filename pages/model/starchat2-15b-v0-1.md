@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-03 · 15.96B params
 
-**score 48.2** ±0.8 · #484 of 934 · from 3 benchmark results across 1 source
+**score 48.2** ±0.9 · #486 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               73.8%    47.5   2024-12-26   51% ▇▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              71.3%    49.0   2024-12-26   42% ▇▇▇▇▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               73.8%    47.6   2024-12-26   51% ▇▇▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              71.3%    49.1   2024-12-26   42% ▇▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   64.6%    47.9   2024-12-26    7% ▇
 prior                   pull toward the middle           50.0                 0% ▇
                         weighted average               = 48.2

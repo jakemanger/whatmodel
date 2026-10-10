@@ -6,7 +6,7 @@
 
 OpenAI · released 2019-02 · 0.124B params · mit
 
-**score -8.7** ±2.4 · #934 of 934 · from 11 benchmark results across 3 sources
+**score -9.1** ±2.4 · #934 of 934 · from 12 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,24 +14,25 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="acl-2021-emnlp-main-564"></a>Surface Form Competit…  <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">OpenBookQA</a>                      16.4%   -11.6   2021-11-01   26% ▇▇▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">HellaSwag</a>                       28.6%   -10.5   2021-11-01   12% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Easy</a>                        42.9%    -2.0   2021-11-01   11% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">CommonsenseQA</a>                   25.5%   -12.2   2021-11-01   11% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                            61.0%    -2.2   2021-11-01    9% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Challenge</a>                   20.1%   -16.2   2021-11-01    9% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Story Cloze Test</a>                60.0%    -6.8   2021-11-01    8% ▇
-<a name="acl-2021-findings-acl-404-prost"></a>PROST                   <a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zer…</a>  23.6%   -19.4   2021-08-01    9% ▇
-<a name="copen-emnlp2022-zero-shot"></a>COPEN                   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  31.1%    -8.0   2022-12-07    1% ▇
-                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>   7.9%   -70.2   2022-12-07    0% ▇
-                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  51.5%   216.9   2022-12-07    0% ▇
+<a name="acl-2021-emnlp-main-564"></a>Surface Form Competit…  <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">OpenBookQA</a>                      16.4%   -11.9   2021-11-01   26% ▇▇▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">HellaSwag</a>                       28.6%   -10.9   2021-11-01   12% ▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">CommonsenseQA</a>                   25.5%   -12.6   2021-11-01   11% ▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Easy</a>                        42.9%    -2.6   2021-11-01   11% ▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                            61.0%    -2.1   2021-11-01   10% ▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Challenge</a>                   20.1%   -16.8   2021-11-01    9% ▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Story Cloze Test</a>                60.0%    -7.3   2021-11-01    8% ▇
+<a name="acl-2021-findings-acl-404-prost"></a>PROST                   <a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zer…</a>  23.6%   -19.8   2021-08-01    9% ▇
+<a name="copen-emnlp2022-zero-shot"></a>COPEN                   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  31.1%    -7.8   2022-12-07    1% ▇
+                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>   7.9%   -55.8   2022-12-07    0% ▇
+                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  51.5%   202.5   2022-12-07    0% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  23.3%   -21.6   2024-02-05    1% ▇
 prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = -8.7
+                        weighted average                       = -9.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Surface Form Competition ([CC BY 4.0](../../licenses/acl-2021-emnlp-main-564-CC-BY-4.0.txt)) · PROST ([CC BY 4.0](../../licenses/_cc-by-4.0-legalcode.txt)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt))</sub>
+<sub>Licences: Surface Form Competition ([CC BY 4.0](../../licenses/acl-2021-emnlp-main-564-CC-BY-4.0.txt)) · PROST ([CC BY 4.0](../../licenses/_cc-by-4.0-legalcode.txt)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -39,7 +40,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp32  ~0.55GB   -8.7
+4-bit fp32  ~0.55GB   -9.1
 </pre>
 
 ```sh

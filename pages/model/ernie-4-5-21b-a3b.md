@@ -6,7 +6,7 @@
 
 Baidu · released 2025-06 · 21B params (3B active) · apache-2.0
 
-**score 53.1** ±1.2 · comparison only: no current run option verified · from 19 benchmark results across 2 sources
+**score 52.5** ±1.2 · comparison only: no current run option verified · from 20 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,32 +14,33 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card-ernie-45-posttrained-final"></a>ERNIE 4.5 post-traine…  <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">AIME 2024 (lab)</a>                 27.9%    48.5   2026-09-25    9% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">AIME 2025 (lab)</a>                 19.7%    49.8   2026-09-25    9% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">BIG-Bench Hard (lab)</a>            83.0%    52.6   2026-09-25    9% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">GSM8K (lab)</a>                     93.3%    56.0   2026-09-25    9% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">HumanEval+ (lab)</a>                89.6%    57.4   2026-09-25    8% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU (lab)</a>                      76.0%    51.2   2026-09-25    7% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MATH-500 (lab)</a>                  87.2%    49.6   2026-09-25    6% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">C-Eval (lab)</a>                    85.4%    57.7   2026-09-25    6% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU-Pro (lab)</a>                  66.0%    54.0   2026-09-25    6% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">LiveCodeBench (version unspec…</a>  26.4%    49.7   2026-09-25    5% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">CMMLU (lab)</a>                     84.8%    57.6   2026-09-25    4% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">SimpleQA (lab)</a>                  24.2%    57.8   2026-09-25    4% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">Multi-IF (aggregation unspeci…</a>  61.0%    50.9   2026-09-25    4% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MBPP+ (lab)</a>                     77.5%    57.0   2026-09-25    3% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ChineseSimpleQA (lab)</a>           48.9%    46.4   2026-09-25    3% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">IFEval (aggregation unspecifi…</a>  80.0%    51.7   2026-09-25    3% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MuSR (lab)</a>                      67.7%    60.5   2026-09-25    2% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  83.0%    58.6   2026-04-17    2% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  83.7%    50.6   2026-04-17    2% ▇
+<a name="card-ernie-45-posttrained-final"></a>ERNIE 4.5 post-traine…  <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">AIME 2024 (lab)</a>                 27.9%    47.8   2026-09-25    9% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">BIG-Bench Hard (lab)</a>            83.0%    52.4   2026-09-25    9% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">AIME 2025 (lab)</a>                 19.7%    49.4   2026-09-25    9% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">GSM8K (lab)</a>                     93.3%    55.8   2026-09-25    8% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">HumanEval+ (lab)</a>                89.6%    57.2   2026-09-25    7% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU (lab)</a>                      76.0%    51.1   2026-09-25    7% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">C-Eval (lab)</a>                    85.4%    57.5   2026-09-25    5% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU-Pro (lab)</a>                  66.0%    53.8   2026-09-25    5% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MATH-500 (lab)</a>                  87.2%    49.0   2026-09-25    5% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">LiveCodeBench (version unspec…</a>  26.4%    48.6   2026-09-25    5% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">CMMLU (lab)</a>                     84.8%    57.4   2026-09-25    4% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">SimpleQA (lab)</a>                  24.2%    57.5   2026-09-25    4% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">Multi-IF (aggregation unspeci…</a>  61.0%    50.6   2026-09-25    4% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ChineseSimpleQA (lab)</a>           48.9%    46.3   2026-09-25    3% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MBPP+ (lab)</a>                     77.5%    56.9   2026-09-25    3% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">IFEval (aggregation unspecifi…</a>  80.0%    51.6   2026-09-25    3% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MuSR (lab)</a>                      67.7%    60.4   2026-09-25    2% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  83.0%    57.9   2026-04-17    3% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  83.7%    51.1   2026-04-17    1% ▇
+<a name="paper-2609.31632v1-eegagentbench"></a>EEGAgentBench: Benchm…  <a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench overall (tool-b…</a>  22.8%    43.1   2026-09-10    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 53.1
+                        weighted average                       = 52.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: ERNIE 4.5 post-trained 300B-A47B benchmark chart ([Apache-2.0](../../licenses/cards-final-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
+<sub>Licences: ERNIE 4.5 post-trained 300B-A47B benchmark chart ([Apache-2.0](../../licenses/cards-final-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 <details><summary>Not counted (1)</summary>
 

@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-12 · 31.6B params (3.6B active) · nvidia-open-model
 
-**score 58.2** ±0.9 · #245 of 934 · from 20 benchmark results across 8 sources
+**score 57.9** ±0.9 · #248 of 934 · from 20 benchmark results across 8 sources
 
 ## How the score was worked out
 
@@ -14,28 +14,28 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="report-2603.19220v2"></a>NVIDIA                  <a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>                  89.1%    64.0   2026-03-22    9% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>                  89.9%    64.5   2026-03-22    7% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>            70.4%    62.8   2026-03-22    7% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">HMMT February 2025 (lab)</a>         84.6%    60.1   2026-03-22    5% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Eas…</a>   54.5%    52.7   2026-03-22    4% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Med…</a>    3.5%    52.9   2026-03-22    4% ▇
+<a name="report-2603.19220v2"></a>NVIDIA                  <a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>                  89.1%    63.9   2026-03-22    9% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>                  89.9%    64.4   2026-03-22    7% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>            70.4%    62.7   2026-03-22    6% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Eas…</a>   54.5%    52.5   2026-03-22    4% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">HMMT February 2025 (lab)</a>         84.6%    60.0   2026-03-22    4% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Med…</a>    3.5%    52.7   2026-03-22    4% ▇
                         <a href="https://arxiv.org/html/2603.19220v2">MMLU-ProX (lab)</a>                  59.5%    52.7   2026-03-22    2% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">MultiChallenge (lab)</a>             38.5%    57.9   2026-03-22    2% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">SciCode (level unspecified) (…</a>   33.3%    62.6   2026-03-22    2% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">CL-bench (lab)</a>                   12.0%    61.7   2026-03-22    1% ▇
-<a name="first-party-nvidia-scores"></a>NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md#reasoning-benchmark-evaluations">τ²-bench Telecom (lab)</a>           42.2%    58.9   2026-08-24   13% ▇▇
-                        <a href="https://arxiv.org/html/2512.20848v1#S3.T3">Terminal-Bench Hard (lab)</a>         8.5%    55.4   2025-12-23    5% ▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5114    58.9   2026-05-02   11% ▇
-                        <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   51.1%    58.5   2026-05-02    6% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   93.0%    62.9   2026-04-17    4% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   69.2%    54.3   2026-04-17    3% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">MultiChallenge (lab)</a>             38.5%    57.8   2026-03-22    2% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">SciCode (level unspecified) (…</a>   33.3%    62.5   2026-03-22    2% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">CL-bench (lab)</a>                   12.0%    61.6   2026-03-22    1% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5114    58.7   2026-05-02   12% ▇
+                        <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   51.1%    58.3   2026-05-02    6% ▇
+<a name="first-party-nvidia-scores"></a>NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md#reasoning-benchmark-evaluations">τ²-bench Telecom (lab)</a>           42.2%    58.7   2026-08-24   12% ▇
+                        <a href="https://arxiv.org/html/2512.20848v1#S3.T3">Terminal-Bench Hard (lab)</a>         8.5%    55.1   2025-12-23    5% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   93.0%    62.6   2026-04-17    4% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   69.2%    54.1   2026-04-17    3% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1313.5    55.5   2026-10-02    7% ▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   64.9%    48.2   2026-08-11    4% ▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>   45.8%    35.8   2026-03-26    2% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   90.4%    77.6   2026-09-22    0% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   64.9%    48.1   2026-08-11    4% ▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>   45.8%    36.8   2026-03-26    3% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   90.4%    77.5   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 58.2
+                        weighted average                        = 57.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -72,8 +72,8 @@ api (Deep Infra) · $0.088/M blended · $0.05 in / $0.2 out per 1M tokens · [de
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~19.46GB   58.2
-8-bit q8_0    ~38.42GB   58.2
+4-bit q4_k_m  ~19.46GB   57.9
+8-bit q8_0    ~38.42GB   57.9
 </pre>
 
 ```sh

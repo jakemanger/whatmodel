@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-05 · 4.15B params · mit
 
-**score 41.3** ±1.8 · #676 of 934 · from 9 benchmark results across 4 sources
+**score 41.4** ±1.8 · #674 of 934 · from 9 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,17 +14,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="charxiv-readme-apache"></a>CharXiv leaderboard     <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>   60.5%    44.5   2024-07-23   41% ▇▇▇▇▇
+<a name="charxiv-readme-apache"></a>CharXiv leaderboard     <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv descriptive questions</a>   60.5%    44.6   2024-07-23   41% ▇▇▇▇▇
                         <a href="https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md">CharXiv (reasoning questions)</a>   31.6%    48.7   2024-07-23   14% ▇▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  881.1    27.4   2026-10-02   21% ▇▇
-<a name="paper-2404.14219v3-phi3"></a>Phi-3 Technical Report  <a href="https://arxiv.org/html/2404.14219v3#S7">MMMU (val) (lab)</a>                40.4%    42.2   2024-05-23   10% ▇
-                        <a href="https://arxiv.org/html/2404.14219v3#S7">MathVista (testmini) (lab)</a>      44.5%    45.8   2024-05-23    6% ▇
-                        <a href="https://arxiv.org/html/2404.14219v3#S7">ChartQA (lab)</a>                   81.4%    52.3   2024-05-23    1% ▇
+<a name="paper-2404.14219v3-phi3"></a>Phi-3 Technical Report  <a href="https://arxiv.org/html/2404.14219v3#S7">MMMU (val) (lab)</a>                40.4%    42.3   2024-05-23   10% ▇
+                        <a href="https://arxiv.org/html/2404.14219v3#S7">MathVista (testmini) (lab)</a>      44.5%    46.0   2024-05-23    6% ▇
+                        <a href="https://arxiv.org/html/2404.14219v3#S7">ChartQA (lab)</a>                   81.4%    52.4   2024-05-23    1% ▇
                         <a href="https://arxiv.org/html/2404.14219v3#S7">TextVQA (lab)</a>                   70.9%    39.1   2024-05-23    1% ▇
-                        <a href="https://arxiv.org/html/2404.14219v3#S7">AI2D test (lab)</a>                 76.7%    31.8   2024-05-23    1% ▇
+                        <a href="https://arxiv.org/html/2404.14219v3#S7">AI2D test (lab)</a>                 76.7%    32.0   2024-05-23    1% ▇
 <a name="paper-2501.16411v2-physbench"></a>PhysBench: Benchmarki…  <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world unde…</a>  38.4%    41.8   2025-01-29    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 41.3
+                        weighted average                       = 41.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,7 +35,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                      size  score
-16-bit bf16 · nvidia only  ~8.29GB   41.3
+16-bit bf16 · nvidia only  ~8.29GB   41.4
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-06 · 7.62B params · apache-2.0
 
-**score 44.0** ±0.6 · #607 of 934 · from 22 benchmark results across 10 sources
+**score 44.0** ±0.6 · #608 of 934 · from 22 benchmark results across 10 sources
 
 ## How the score was worked out
 
@@ -15,34 +15,34 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 q…</a>  66.9%    43.9                17% ▇▇
-                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>     80.1%    44.4                14% ▇▇
+                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>     80.1%    44.4                13% ▇▇
                         <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 probl…</a>  37.9%    42.4                11% ▇
                         <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 p…</a>  23.9%    46.9                 3% ▇
                         <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   8.4%    43.9                 3% ▇
-<a name="internlm-github-model-cards"></a>InternLM GitHub repos…  <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GSM8K</a>                           82.9%    46.1   2024-07-03    4% ▇
-                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">BIG-Bench Hard</a>                  65.0%    45.9   2024-07-03    3% ▇
-                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU</a>                            70.8%    46.0   2024-07-03    3% ▇
-                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MATH (subset unspecified)</a>       48.6%    45.2   2024-07-03    2% ▇
-                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GPQA (subset unspecified)</a>       38.4%    51.0   2024-07-03    2% ▇
-                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">CMMLU</a>                           80.9%    56.0   2024-07-03    1% ▇
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            26.6%    42.6   2024-10-22   12% ▇
-<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                     85.7%    43.9   2024-09-18    5% ▇
+<a name="internlm-github-model-cards"></a>InternLM GitHub repos…  <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GSM8K</a>                           82.9%    46.2   2024-07-03    4% ▇
+                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">BIG-Bench Hard</a>                  65.0%    46.0   2024-07-03    3% ▇
+                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU</a>                            70.8%    46.1   2024-07-03    3% ▇
+                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MATH (subset unspecified)</a>       48.6%    45.3   2024-07-03    2% ▇
+                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GPQA (subset unspecified)</a>       38.4%    51.1   2024-07-03    2% ▇
+                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">CMMLU</a>                           80.9%    56.1   2024-07-03    1% ▇
+<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            26.6%    42.6   2024-10-22   13% ▇▇
+<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                     85.7%    43.8   2024-09-18    5% ▇
                         <a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>              19.5%    40.6   2024-09-18    3% ▇
-                        <a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (la…</a>  52.9%    38.5   2024-09-18    2% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   40.7%    43.8   2025-04-01    4% ▇
-                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>   28.0%    40.9   2025-04-01    4% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>  38.1%    46.4   2026-04-06    3% ▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  53.7%    45.0   2024-06-19    2% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  72.1%    48.1   2024-06-06    1% ▇
+                        <a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (la…</a>  52.9%    38.4   2024-09-18    2% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>   28.0%    40.9   2025-04-01    4% ▇
+                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   40.7%    43.9   2025-04-01    4% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>  38.1%    46.5   2026-04-06    3% ▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  53.7%    45.4   2024-06-19    2% ▇
 <a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  50.0%    43.6   2026-09-19    1% ▇
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>                         41.3%    40.7   2025-04-13    1% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  72.1%    49.7   2024-06-06    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 44.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · InternLM GitHub repository model cards ([Apache-2.0](https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/LICENSE)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
+<sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · InternLM GitHub repository model cards ([Apache-2.0](https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/LICENSE)) · LiveBench model judgments ([Apache-2.0 (stated in the LiveBench datasheet)](https://www.apache.org/licenses/LICENSE-2.0)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 

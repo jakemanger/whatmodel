@@ -6,7 +6,7 @@
 
 BigCode · released 2024-04 · 15.96B params · bigcode-openrail-m
 
-**score 45.4** ±0.8 · #567 of 934 · from 5 benchmark results across 2 sources
+**score 45.5** ±0.8 · #566 of 934 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -17,10 +17,10 @@ source                  test                           score  implies  date     
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                      67.7%    45.2   2024-12-26   46% ▇▇▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                     60.4%    44.9   2024-12-26   36% ▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                          65.1%    48.2   2024-12-26    6% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>  43.7%    45.7   2025-04-01    6% ▇
-                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>  36.7%    47.3   2025-04-01    6% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>  36.7%    47.4   2025-04-01    6% ▇
+                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>  43.7%    45.9   2025-04-01    5% ▇
 prior                   pull toward the middle                  50.0                 0% ▇
-                        weighted average                      = 45.4
+                        weighted average                      = 45.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,8 +33,8 @@ prior                   pull toward the middle                  50.0            
 
 <pre>
 download         size  score
-16-bit bf16  ~31.92GB   45.4
-4-bit q4_0     ~9.1GB   45.4
+16-bit bf16  ~31.92GB   45.5
+4-bit q4_0     ~9.1GB   45.5
 </pre>
 
 ```sh

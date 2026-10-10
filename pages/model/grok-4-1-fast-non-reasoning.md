@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2025-11 · proprietary
 
-**score 65.8** ±4.5 · #141 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 65.7** ±4.5 · #141 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                            score  implies  date    
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  58.3%    67.6   2025-12-16   91% ▇▇▇▇▇▇▇▇▇▇▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  82.2%  -198.8   2026-09-22    0% ▇
 prior                   pull toward the middle                   50.0                 9% ▇
-                        weighted average                       = 65.8
+                        weighted average                       = 65.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

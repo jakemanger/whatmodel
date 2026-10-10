@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-03 · 32.2B params · apache-2.0
 
-**score 49.6** ±1.2 · #442 of 934 · from 14 benchmark results across 5 sources
+**score 49.7** ±1.3 · #443 of 934 · from 14 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,34 +14,34 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>             70.6%    47.8   2025-10-08   18% ▇▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                       77.3%    50.2   2025-10-08   18% ▇▇
+<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>             70.6%    47.9   2025-10-08   19% ▇▇
+                        <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                       77.3%    50.2   2025-10-08   19% ▇▇
                         <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlle…</a>   42.8%    50.3   2025-10-08    9% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                      87.6%    49.3   2025-10-08    7% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>             73.2%    58.9   2025-10-08    6% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (la…</a>   49.7%    44.9   2025-10-08    5% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                      37.5%    54.8   2025-10-08    4% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                      87.6%    49.4   2025-10-08    7% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>             73.2%    59.1   2025-10-08    6% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (la…</a>   49.7%    45.0   2025-10-08    5% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                      37.5%    54.9   2025-10-08    4% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (la…</a>   85.6%    56.3   2025-10-08    3% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1251.6    48.1   2026-10-02   13% ▇▇
-<a name="card2-allenai-olmo-3-1-32b-think"></a>allenai/Olmo-3.1-32B-…  <a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">OMEGA (math generalisation) (…</a>    9.8%    38.1   2026-01-05    3% ▇
-                        <a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">MATH (subset unspecified) (la…</a>   49.2%    36.3   2026-01-05    2% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   74.8%    50.5   2025-05-01    5% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   80.6%    56.9   2026-04-17    3% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   90.8%    56.6   2026-04-17    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1251.6    48.1   2026-10-02   14% ▇▇
+<a name="card2-allenai-olmo-3-1-32b-think"></a>allenai/Olmo-3.1-32B-…  <a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">OMEGA (math generalisation) (…</a>    9.8%    37.9   2026-01-05    3% ▇
+                        <a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">MATH (subset unspecified) (la…</a>   49.2%    36.2   2026-01-05    2% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   80.6%    56.3   2026-04-17    3% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   90.8%    57.4   2026-04-17    2% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   74.8%    51.7   2025-05-01    3% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 49.6
+                        weighted average                        = 49.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · allenai/Olmo-3.1-32B-Think model card ([Apache-2.0](../../licenses/allenai--Olmo-3.1-32B-Think.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
+<sub>Licences: 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · allenai/Olmo-3.1-32B-Think model card ([Apache-2.0](../../licenses/allenai--Olmo-3.1-32B-Think.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
 download          size  score
-4-bit q4_k_s  ~18.42GB   49.6
-8-bit q8_0    ~34.26GB   49.6
+4-bit q4_k_s  ~18.42GB   49.7
+8-bit q8_0    ~34.26GB   49.7
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Xiaomi · released 2026-04 · 1023B params (42B active) · mit
 
-**score 67.7** ±1.2 · #110 of 934 · from 11 benchmark results across 2 sources
+**score 68.2** ±1.1 · #104 of 934 · from 14 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,24 +14,27 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                  score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.0752 IPS    69.4   2026-10-02   25% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1477.6    72.5   2026-10-01   22% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                       1467.5    74.0   2026-10-02   13% ▇▇
-<a name="first-party-xiaomi"></a>Xiaomi MiMo official …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Terminal-Bench 2.1 (lab)</a>              65.2%    67.0   2026-09-21   12% ▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Terminal-Bench 4.0 (lab)</a>               1.5%    61.6   2026-09-21    8% ▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">SEC-Bench Pro (pass@1) (lab)</a>          17.7%    60.5   2026-09-21    5% ▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">AutomationBench v1.0.6 (lab)</a>          16.0%    59.8   2026-09-21    4% ▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Agents' Last Exam (metric/har…</a>        13.2%    61.2   2026-09-21    3% ▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Toolathlon-Verified (lab)</a>             49.1%    60.5   2026-09-21    3% ▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">ExploitGym (pass@1) (lab)</a>              0.2%    57.2   2026-09-21    2% ▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">DeepSWE v1.1 (resolved) (lab)</a>         19.0%    51.5   2026-09-21    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.0752 IPS    69.5   2026-10-02   21% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1477.6    72.5   2026-10-01   19% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                       1467.5    74.0   2026-10-02   11% ▇
+<a name="first-party-xiaomi"></a>Xiaomi MiMo official …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Terminal-Bench 2.1 (lab)</a>              65.2%    67.0   2026-09-21    9% ▇
+                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Terminal-Bench 4.0 (lab)</a>               1.5%    61.9   2026-09-21    7% ▇
+                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">SEC-Bench Pro (pass@1) (lab)</a>          17.7%    60.7   2026-09-21    4% ▇
+                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">AutomationBench v1.0.6 (lab)</a>          16.0%    59.9   2026-09-21    3% ▇
+                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Agents' Last Exam (metric/har…</a>        13.2%    61.4   2026-09-21    3% ▇
+                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Toolathlon-Verified (lab)</a>             49.1%    60.4   2026-09-21    2% ▇
+                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">ExploitGym (pass@1) (lab)</a>              0.2%    57.5   2026-09-21    2% ▇
+                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">DeepSWE v1.1 (resolved) (lab)</a>         19.0%    51.4   2026-09-21    2% ▇
+<a name="paper-2609.21562v2-gamelogicbench"></a>GameLogicBench: Evalu…  <a href="https://arxiv.org/html/2609.21562v2">GameLogicBench solve rate (72…</a>        16.7%    65.5   2026-09-21    7% ▇
+<a name="paper-2605.10912v1-wildclawbench"></a>WildClawBench: A Benc…  <a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                         43.0%    73.3   2026-05-11    6% ▇
+<a name="paper-2609.31632v1-eegagentbench"></a>EEGAgentBench: Benchm…  <a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench overall (tool-b…</a>        49.1%    73.0   2026-09-10    3% ▇
 prior                   pull toward the middle                         50.0                 1% ▇
-                        weighted average                             = 67.7
+                        weighted average                             = 68.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WildClawBench: A Benchmark for Real-World ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 <details><summary>Not counted (7)</summary>
 
@@ -56,9 +59,9 @@ api (Novita AI) · $0.65/M blended · $0.522 in / $1.044 out per 1M tokens · [n
 
 <pre>
 download               size  score
-4-bit ud-q4_k_xl   ~614.3GB   67.7
-2-bit ud-q2_k_xl   ~307.4GB   67.7
-1-bit ud-iq1_m    ~153.95GB   67.7
+4-bit ud-q4_k_xl   ~614.3GB   68.2
+2-bit ud-q2_k_xl   ~307.4GB   68.2
+1-bit ud-iq1_m    ~153.95GB   68.2
 </pre>
 
 ```sh

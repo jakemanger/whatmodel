@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-12 · 236B params (23B active) · k-exaone
 
-**score 65.7** ±0.9 · #143 of 934 · from 24 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 65.3** ±0.9 · #146 of 934 · from 25 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,37 +14,38 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card3-lgai-exaone-k-exaone-2-0-750b-a37b"></a>LGAI-EXAONE/K-EXAONE-…  <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">AIME 2026 (lab)</a>                 92.2%    67.5   2026-07-29    9% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">HMMT February 2026 (lab)</a>        80.7%    68.0   2026-07-29    8% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">GPQA Diamond (lab)</a>              79.1%    65.4   2026-07-29    7% ▇
+<a name="card3-lgai-exaone-k-exaone-2-0-750b-a37b"></a>LGAI-EXAONE/K-EXAONE-…  <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">AIME 2026 (lab)</a>                 92.2%    67.4   2026-07-29    8% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">HMMT February 2026 (lab)</a>        80.7%    68.0   2026-07-29    7% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">GPQA Diamond (lab)</a>              79.1%    65.2   2026-07-29    7% ▇
                         <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">SWE-bench Verified (lab)</a>        49.4%    60.8   2026-07-29    5% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">IMO-AnswerBench (lab)</a>           76.3%    66.2   2026-07-29    5% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">MMLU-Pro (lab)</a>                  83.8%    67.2   2026-07-29    4% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">Terminal-Bench 2.1 (lab)</a>        30.3%    59.8   2026-07-29    4% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">Humanity's Last Exam (lab)</a>      13.6%    62.9   2026-07-29    3% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">IFBench (aggregation unspecif…</a>  67.3%    65.1   2026-07-29    3% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">IFEval (aggregation unspecifi…</a>  89.7%    63.3   2026-07-29    3% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">τ³-bench Banking (lab)</a>          14.2%    67.8   2026-07-29    2% ▇
-<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">GPQA Diamond (lab)</a>              79.1%    61.0   2026-08-03    8% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">τ²-bench Telecom (lab)</a>          73.5%    69.3   2026-08-03    6% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">AIME 2025 (lab)</a>                 92.8%    68.9   2026-08-03    5% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench Pro 2025Q2 (Med…</a>  25.9%    71.1   2026-08-03    5% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IMO-AnswerBench (lab)</a>           76.3%    64.8   2026-08-03    4% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">Humanity's Last Exam (lab)</a>      13.6%    62.2   2026-08-03    4% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">MMLU-Pro (lab)</a>                  83.8%    63.2   2026-08-03    3% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench v6 (window unsp…</a>  80.7%    66.5   2026-08-03    3% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">HMMT November 2025 (lab)</a>        86.8%    65.8   2026-08-03    3% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">τ²-bench Retail (lab)</a>           78.6%    69.8   2026-08-03    2% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IFBench (aggregation unspecif…</a>  67.3%    68.6   2026-08-03    2% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">IMO-AnswerBench (lab)</a>           76.3%    66.1   2026-07-29    4% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">MMLU-Pro (lab)</a>                  83.8%    67.1   2026-07-29    4% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">Terminal-Bench 2.1 (lab)</a>        30.3%    59.7   2026-07-29    4% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">Humanity's Last Exam (lab)</a>      13.6%    62.7   2026-07-29    3% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">IFEval (aggregation unspecifi…</a>  89.7%    63.2   2026-07-29    3% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">IFBench (aggregation unspecif…</a>  67.3%    65.0   2026-07-29    3% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">τ³-bench Banking (lab)</a>          14.2%    67.7   2026-07-29    2% ▇
+<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">GPQA Diamond (lab)</a>              79.1%    60.7   2026-08-03    7% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">τ²-bench Telecom (lab)</a>          73.5%    69.2   2026-08-03    5% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">AIME 2025 (lab)</a>                 92.8%    68.7   2026-08-03    5% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench Pro 2025Q2 (Med…</a>  25.9%    70.9   2026-08-03    5% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IMO-AnswerBench (lab)</a>           76.3%    64.6   2026-08-03    4% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">Humanity's Last Exam (lab)</a>      13.6%    62.0   2026-08-03    4% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">MMLU-Pro (lab)</a>                  83.8%    62.9   2026-08-03    3% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">LiveCodeBench v6 (window unsp…</a>  80.7%    66.2   2026-08-03    3% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">HMMT November 2025 (lab)</a>        86.8%    66.0   2026-08-03    2% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">τ²-bench Retail (lab)</a>           78.6%    69.9   2026-08-03    2% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IFBench (aggregation unspecif…</a>  67.3%    68.4   2026-08-03    2% ▇
                         <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">τ²-bench Airline (lab)</a>          60.4%    67.6   2026-08-03    2% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IFEval (aggregation unspecifi…</a>  89.7%    65.1   2026-08-03    1% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results">IFEval (aggregation unspecifi…</a>  89.7%    64.6   2026-08-03    1% ▇
+<a name="paper-2606.02404v1-k-browsecomp"></a>K-BrowseComp: A Web B…  <a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean…</a>  10.3%    61.5   2026-06-01    4% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 65.7
+                        weighted average                       = 65.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LGAI-EXAONE/K-EXAONE-2.0-750B-A37B model card ([Apache-2.0](https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/LICENSE))</sub>
+<sub>Licences: LGAI-EXAONE/K-EXAONE-2.0-750B-A37B model card ([Apache-2.0](https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/LICENSE)) · K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -52,8 +53,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                        size  score
-4-bit q4_k_m               ~143.47GB   65.7
-16-bit bf16 · nvidia only   ~474.2GB   65.7
+4-bit q4_k_m               ~143.47GB   65.3
+16-bit bf16 · nvidia only   ~474.2GB   65.3
 </pre>
 
 ```sh

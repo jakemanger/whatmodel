@@ -6,7 +6,7 @@
 
 IBM · released 2025-09 · 3.19B params · apache-2.0
 
-**score 46.8** ±0.9 · #526 of 934 · from 24 benchmark results across 3 sources
+**score 46.7** ±0.9 · #531 of 934 · from 24 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,32 +14,32 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card2-ibm-granite-granite-4-0-h-small"></a>ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">HumanEval (lab)</a>                 81.0%    47.7   2025-11-03   10% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">HumanEval+ (lab)</a>                75.0%    47.8   2025-11-03    9% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BIG-Bench Hard (lab)</a>            69.4%    46.9   2025-11-03    7% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GSM8K (lab)</a>                     81.3%    46.1   2025-11-03    7% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GPQA (subset unspecified) (la…</a>  32.1%    45.6   2025-11-03    6% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMLU (lab)</a>                      67.4%    46.4   2025-11-03    6% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">DeepMind Mathematics (lab)</a>      43.8%    45.2   2025-11-03    5% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">Minerva MATH (lab)</a>              66.4%    49.0   2025-11-03    5% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMLU-Pro (lab)</a>                  43.5%    45.7   2025-11-03    5% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">INCLUDE (lab)</a>                   50.5%    45.7   2025-11-03    5% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GSM-Symbolic (lab)</a>              77.5%    45.6   2025-11-03    4% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MBPP (lab)</a>                      73.0%    46.3   2025-11-03    4% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMMLU (lab)</a>                     55.2%    44.4   2025-11-03    4% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BigCodeBench (lab)</a>              37.9%    47.9   2025-11-03    3% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MultiPL-E (lab)</a>                 49.5%    45.0   2025-11-03    3% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MBPP+ (lab)</a>                     64.0%    46.3   2025-11-03    3% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">IFEval instruction-level stri…</a>  86.9%    48.5   2025-11-03    3% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">IFEval prompt-level strict (l…</a>  81.7%    52.1   2025-11-03    2% ▇
+<a name="card2-ibm-granite-granite-4-0-h-small"></a>ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">HumanEval (lab)</a>                 81.0%    47.6   2025-11-03   10% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">HumanEval+ (lab)</a>                75.0%    47.6   2025-11-03    9% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BIG-Bench Hard (lab)</a>            69.4%    46.8   2025-11-03    7% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GSM8K (lab)</a>                     81.3%    46.0   2025-11-03    7% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GPQA (subset unspecified) (la…</a>  32.1%    45.5   2025-11-03    6% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMLU (lab)</a>                      67.4%    46.3   2025-11-03    6% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">DeepMind Mathematics (lab)</a>      43.8%    45.1   2025-11-03    5% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">Minerva MATH (lab)</a>              66.4%    48.9   2025-11-03    5% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">INCLUDE (lab)</a>                   50.5%    45.6   2025-11-03    5% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMLU-Pro (lab)</a>                  43.5%    45.5   2025-11-03    5% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GSM-Symbolic (lab)</a>              77.5%    45.5   2025-11-03    4% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MBPP (lab)</a>                      73.0%    46.2   2025-11-03    4% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMMLU (lab)</a>                     55.2%    44.3   2025-11-03    4% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BigCodeBench (lab)</a>              37.9%    47.8   2025-11-03    3% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MultiPL-E (lab)</a>                 49.5%    44.9   2025-11-03    3% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MBPP+ (lab)</a>                     64.0%    46.2   2025-11-03    3% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">IFEval instruction-level stri…</a>  86.9%    48.4   2025-11-03    3% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">IFEval prompt-level strict (l…</a>  81.7%    52.0   2025-11-03    2% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MGSM, 5 languages (en, es, fr…</a>  44.5%    49.6   2025-11-03    2% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">CRUXEval-O (lab)</a>                41.3%    44.2   2025-11-03    2% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BFCL v3 (lab)</a>                   57.6%    48.1   2025-11-03    1% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  67.7%    50.2   2026-04-17    2% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  81.6%    48.9   2026-04-17    1% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">CRUXEval-O (lab)</a>                41.3%    44.3   2025-11-03    2% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BFCL v3 (lab)</a>                   57.6%    48.0   2025-11-03    1% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  67.7%    49.6   2026-04-17    2% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  81.6%    49.2   2026-04-17    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  91.6%    42.7   2025-10-16    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 46.8
+                        weighted average                       = 46.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -52,8 +52,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m   ~1.9GB   46.8
-4-bit q4_k_m  ~1.94GB   46.8
+4-bit q4_k_m   ~1.9GB   46.7
+4-bit q4_k_m  ~1.94GB   46.7
 </pre>
 
 ```sh

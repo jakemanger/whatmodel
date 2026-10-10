@@ -6,7 +6,7 @@
 
 IBM · released 2024-12 · 1.3B params (0.4B active) · apache-2.0
 
-**score 29.0** ±1.8 · #851 of 934 · from 6 benchmark results across 1 source · † every result so far was reported by its maker
+**score 28.9** ±1.8 · #853 of 934 · from 6 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card3-ibm-granite-granite-3-1-3b-a800m-instruct"></a>ibm-granite/granite-3…  <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">GSM8K (lab)</a>                     33.9%    29.2   2025-01-31   30% ▇▇▇▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">ARC Challenge (lab)</a>             42.7%    31.9   2025-01-31   23% ▇▇▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">WinoGrande (lab)</a>                62.4%    29.9   2025-01-31   15% ▇▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">HellaSwag (lab)</a>                 66.0%    29.6   2025-01-31   14% ▇▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">IFEval (aggregation unspecifi…</a>  46.9%    26.5   2025-01-31    8% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">MMLU (lab)</a>                      26.1%    15.9   2025-01-31    8% ▇
+<a name="card3-ibm-granite-granite-3-1-3b-a800m-instruct"></a>ibm-granite/granite-3…  <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">GSM8K (lab)</a>                     33.9%    29.1   2025-01-31   30% ▇▇▇▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">ARC Challenge (lab)</a>             42.7%    31.7   2025-01-31   23% ▇▇▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">WinoGrande (lab)</a>                62.4%    29.7   2025-01-31   15% ▇▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">HellaSwag (lab)</a>                 66.0%    29.5   2025-01-31   15% ▇▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">IFEval (aggregation unspecifi…</a>  46.9%    26.7   2025-01-31    9% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md">MMLU (lab)</a>                      26.1%    15.8   2025-01-31    8% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 29.0
+                        weighted average                       = 28.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,7 +34,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download      size  score
-8-bit q8_0  ~1.4GB   29.0
+8-bit q8_0  ~1.4GB   28.9
 </pre>
 
 ```sh

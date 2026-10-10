@@ -6,25 +6,26 @@
 
 Together · released 2023-05 · 2.8B params · apache-2.0
 
-**score 27.1** ±2.8 · #868 of 934 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 25.2** ±2.7 · #881 of 934 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source     test                            score  implies  date        weight
-<a name="redpajama-2024-original-zero-shot"></a>RedPajama  <a href="https://arxiv.org/html/2411.12372v1">WinoGrande (lab)</a>                63.2%    27.1   2024-11-19   44% ▇▇▇▇▇
-           <a href="https://arxiv.org/html/2411.12372v1">HellaSwag (lab)</a>                 63.2%    26.8   2024-11-19   28% ▇▇▇
-           <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  65.4%    23.1   2024-11-19   14% ▇▇
-           <a href="https://arxiv.org/html/2411.12372v1">PIQA (lab)</a>                      74.7%    25.6   2024-11-19   11% ▇
-prior      pull toward the middle                   50.0                 4% ▇
-           weighted average                       = 27.1
+source                  test                            score  implies  date        weight
+<a name="redpajama-2024-original-zero-shot"></a>RedPajama               <a href="https://arxiv.org/html/2411.12372v1">WinoGrande (lab)</a>                63.2%    26.5   2024-11-19   39% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2411.12372v1">HellaSwag (lab)</a>                 63.2%    26.2   2024-11-19   26% ▇▇▇
+                        <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  65.4%    22.4   2024-11-19   13% ▇▇
+                        <a href="https://arxiv.org/html/2411.12372v1">PIQA (lab)</a>                      74.7%    25.1   2024-11-19   10% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  29.7%    10.3   2024-02-05    8% ▇
+prior                   pull toward the middle                   50.0                 3% ▇
+                        weighted average                       = 25.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: RedPajama ([CC BY 4.0](../../licenses/redpajama-2024-original-zero-shot-CC-BY-4.0.txt))</sub>
+<sub>Licences: RedPajama ([CC BY 4.0](../../licenses/redpajama-2024-original-zero-shot-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -32,7 +33,7 @@ prior      pull toward the middle                   50.0                 4% ▇
 
 <pre>
 download       size  score
-4-bit fp16  ~5.69GB   27.1
+4-bit fp16  ~5.69GB   25.2
 </pre>
 
 ```sh

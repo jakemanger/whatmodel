@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-12 · 106B params · mit
 
-**score 61.8** ±1.8 · #194 of 934 · from 9 benchmark results across 2 sources
+**score 62.3** ±1.7 · #181 of 934 · from 10 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,22 +14,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="glm-v-github-bench-image"></a>Z.ai GLM-V GitHub rep…  <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">CharXiv (reasoning questions)…</a>   63.2%    62.5   2025-12-08   11% ▇
-                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU (val) (lab)</a>                 76.0%    62.5   2025-12-08   10% ▇
-                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU Pro (lab)</a>                   66.0%    62.4   2025-12-08    9% ▇
-                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMStar (lab)</a>                     75.9%    60.7   2025-12-08    7% ▇
-                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">LVBench (lab)</a>                    59.5%    59.0   2025-12-08    6% ▇
-                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">AndroidWorld (lab)</a>               57.0%    61.1   2025-12-08    6% ▇
+<a name="glm-v-github-bench-image"></a>Z.ai GLM-V GitHub rep…  <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">CharXiv (reasoning questions)…</a>   63.2%    62.6   2025-12-08   10% ▇
+                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU (val) (lab)</a>                 76.0%    62.6   2025-12-08    9% ▇
+                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU Pro (lab)</a>                   66.0%    62.5   2025-12-08    8% ▇
+                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMStar (lab)</a>                     75.9%    60.8   2025-12-08    6% ▇
+                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">LVBench (lab)</a>                    59.5%    59.1   2025-12-08    6% ▇
+                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">AndroidWorld (lab)</a>               57.0%    61.2   2025-12-08    5% ▇
                         <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">OCRBench (lab)</a>                   86.5%    58.9   2025-12-08    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1378.7    63.4   2026-10-02   28% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1161.5    61.6   2026-10-02   20% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1378.7    63.3   2026-10-02   26% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1161.5    61.5   2026-10-02   19% ▇▇
+<a name="paper-2609.05141v2-scidocbench"></a>SciDocBench: A Workfl…  <a href="https://arxiv.org/html/2609.05141v2">SciDocBench scientific-docume…</a>   42.4%    65.9   2026-09-28    9% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 61.8
+                        weighted average                        = 62.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Z.ai GLM-V GitHub repository benchmark image ([Apache-2.0](https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/LICENSE)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Z.ai GLM-V GitHub repository benchmark image ([Apache-2.0](https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/LICENSE)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SciDocBench: A Workflow-Centered Benchmark and Data Pipeline for Scientific Document Understanding ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -39,8 +40,8 @@ api (Z.ai) · $0.45/M blended · $0.3 in / $0.9 out per 1M tokens · [docs.z.ai]
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~67.22GB   61.8
-2-bit ud-q2_k_xl  ~47.55GB   61.8
+4-bit ud-q4_k_xl  ~67.22GB   62.3
+2-bit ud-q2_k_xl  ~47.55GB   62.3
 </pre>
 
 ```sh

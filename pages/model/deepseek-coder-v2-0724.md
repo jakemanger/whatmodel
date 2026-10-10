@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-09 · 235.74B params (21B active) · other (deepseek-license)
 
-**score 52.8** ±1.0 · #368 of 934 · from 6 benchmark results across 3 sources
+**score 52.9** ±1.0 · #368 of 934 · from 6 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 q…</a>  80.2%    52.0                31% ▇▇▇▇
-                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 probl…</a>  69.5%    52.8                22% ▇▇▇
-                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>  20.5%    51.2                16% ▇▇
+<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 q…</a>  80.2%    52.1                31% ▇▇▇▇
+                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 probl…</a>  69.5%    52.9                22% ▇▇▇
+                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>  20.5%    51.3                16% ▇▇
                         <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>     91.5%    51.4                13% ▇▇
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  72.9%    57.5   2024-07-24   15% ▇▇
+<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  72.9%    57.6   2024-07-24   16% ▇▇
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>                         54.8%    52.7   2025-04-13    2% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 52.8
+                        weighted average                       = 52.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +32,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-16-bit bf16  ~471.49GB   52.8
+16-bit bf16  ~471.49GB   52.9
 </pre>
 
 ```sh

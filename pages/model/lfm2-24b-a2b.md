@@ -6,7 +6,7 @@
 
 Liquid AI · released 2026-02 · 23.8B params (2.3B active) · lfm1.0
 
-**score 51.1** ±1.2 · #405 of 934 · from 11 benchmark results across 1 source
+**score 50.9** ±1.2 · #410 of 934 · from 11 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,19 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="report-marco-moe-260425578v1"></a>Marco-MoE: Open Multi…  <a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                    39.7%    51.8   2026-09-25   18% ▇▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                            74.9%    50.1   2026-09-25   14% ▇▇
-                        <a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                           87.2%    51.0   2026-09-25   14% ▇▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                        57.6%    51.5   2026-09-25   11% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>          43.3%    50.6   2026-09-25    8% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>       83.9%    53.0   2026-09-25    7% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>   57.0%    50.2   2026-09-25    6% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>     29.3%    50.1   2026-09-25    6% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>        62.3%    52.2   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>         67.8%    49.1   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecif…</a>  49.0%    52.0   2026-09-25    5% ▇
+<a name="report-marco-moe-260425578v1"></a>Marco-MoE: Open Multi…  <a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                    39.7%    51.7   2026-09-25   18% ▇▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                            74.9%    49.9   2026-09-25   14% ▇▇
+                        <a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                           87.2%    50.9   2026-09-25   14% ▇▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                        57.6%    51.4   2026-09-25   11% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>          43.3%    50.4   2026-09-25    9% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>       83.9%    52.8   2026-09-25    7% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>   57.0%    50.1   2026-09-25    6% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>     29.3%    50.0   2026-09-25    6% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>        62.3%    52.1   2026-09-25    5% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>         67.8%    49.0   2026-09-25    5% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecif…</a>  49.0%    51.9   2026-09-25    5% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 51.1
+                        weighted average                       = 50.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -39,8 +39,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~14.78GB   51.1
-8-bit q8_0    ~29.06GB   51.1
+4-bit q4_k_m  ~14.78GB   50.9
+8-bit q8_0    ~29.06GB   50.9
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Princeton NLP · released 2024-07 · 8.03B params
 
-**score 38.0** ±1.0 · #742 of 934 · from 4 benchmark results across 3 sources
+**score 37.9** ±1.0 · #745 of 934 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                       score  implies  date        weight
-<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>                57.5%    36.5                46% ▇▇▇▇▇▇
-                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 q…</a>             55.2%    37.4                41% ▇▇▇▇▇
-<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  37.1554 WB-Score    45.5   2024-08-01    9% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             68.4%    45.2   2024-08-10    3% ▇
+<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>                57.5%    36.5                47% ▇▇▇▇▇▇
+                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 q…</a>             55.2%    37.4                43% ▇▇▇▇▇
+<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  37.1554 WB-Score    45.6   2024-08-01    9% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             68.4%    47.5   2024-08-10    2% ▇
 prior                   pull toward the middle                              50.0                 0% ▇
-                        weighted average                                  = 38.0
+                        weighted average                                  = 37.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                              50.0
 
 <pre>
 download         size  score
-16-bit bf16  ~16.06GB   38.0
+16-bit bf16  ~16.06GB   37.9
 </pre>
 
 ```sh

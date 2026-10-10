@@ -6,7 +6,7 @@
 
 Inception (G42) · released 2024-08 · 13.34B params · apache-2.0
 
-**score 45.2** ±3.6 · #576 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 45.3** ±3.7 · #573 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>  34.4%    44.9   2026-04-06   94% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>  34.4%    45.0   2026-04-06   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 45.2
+                        weighted average                       = 45.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp32  ~53.37GB   45.2
+4-bit fp32  ~53.37GB   45.3
 </pre>
 
 ```sh

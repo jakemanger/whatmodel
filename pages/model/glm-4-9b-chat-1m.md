@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-06 · 9.48B params · other (glm-4)
 
-**score 52.0** ±4.2 · #381 of 934 · from 3 benchmark results across 2 sources
+**score 53.6** ±4.8 · #347 of 934 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  74.1%    49.9   2024-06-05   59% ▇▇▇▇▇▇▇
-<a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                       86.7%    54.3   2025-10-09   24% ▇▇▇
-                        <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                      83.1%    61.1   2025-10-09    9% ▇
-prior                   pull toward the middle                   50.0                 8% ▇
-                        weighted average                       = 52.0
+<a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                       86.7%    54.6   2025-10-09   34% ▇▇▇▇
+                        <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                      83.1%    60.7   2025-10-09   14% ▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  74.1%    51.1   2024-06-05   41% ▇▇▇▇▇
+prior                   pull toward the middle                   50.0                10% ▇
+                        weighted average                       = 53.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · NVIDIA RULER repository README results table ([Apache-2.0](https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/LICENSE))</sub>
+<sub>Licences: NVIDIA RULER repository README results table ([Apache-2.0](https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -31,7 +31,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~18.97GB   52.0
+16-bit bf16  ~18.97GB   53.6
 </pre>
 
 ```sh

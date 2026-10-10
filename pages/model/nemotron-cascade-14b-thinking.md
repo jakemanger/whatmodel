@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-12 · 14.77B params · nvidia-open-model-license
 
-**score 60.5** ±1.0 · #207 of 934 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
+**score 60.4** ±1.0 · #208 of 934 · from 12 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,20 +14,20 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="report-2512.13607v2"></a>NVIDIA  <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Med…</a>  10.5%    62.1   2026-03-27   32% ▇▇▇▇
-        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Eas…</a>  68.9%    60.2   2026-03-27   12% ▇
-        <a href="https://arxiv.org/html/2512.13607v2">GPQA Diamond (lab)</a>              69.6%    59.2   2026-03-27   10% ▇
-        <a href="https://arxiv.org/html/2512.13607v2">AIME 2025 (lab)</a>                 83.3%    61.3   2026-03-27    9% ▇
+<a name="report-2512.13607v2"></a>NVIDIA  <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Med…</a>  10.5%    61.9   2026-03-27   32% ▇▇▇▇
+        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Eas…</a>  68.9%    60.1   2026-03-27   12% ▇
+        <a href="https://arxiv.org/html/2512.13607v2">GPQA Diamond (lab)</a>              69.6%    59.1   2026-03-27   10% ▇
+        <a href="https://arxiv.org/html/2512.13607v2">AIME 2025 (lab)</a>                 83.3%    61.2   2026-03-27    9% ▇
         <a href="https://arxiv.org/html/2512.13607v2">AIME 2024 (lab)</a>                 89.7%    61.4   2026-03-27    8% ▇
-        <a href="https://arxiv.org/html/2512.13607v2">SWE-bench Verified (lab)</a>        43.1%    59.9   2026-03-27    6% ▇
-        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–Ma…</a>  74.6%    62.2   2026-03-27    5% ▇
-        <a href="https://arxiv.org/html/2512.13607v2">MMLU (lab)</a>                      85.1%    57.8   2026-03-27    5% ▇
-        <a href="https://arxiv.org/html/2512.13607v2">MMLU-Pro (lab)</a>                  77.0%    59.4   2026-03-27    5% ▇
-        <a href="https://arxiv.org/html/2512.13607v2">IFBench (aggregation unspecif…</a>  41.7%    55.9   2026-03-27    4% ▇
-        <a href="https://arxiv.org/html/2512.13607v2">IFEval prompt-level strict (l…</a>  81.9%    52.8   2026-03-27    2% ▇
-        <a href="https://arxiv.org/html/2512.13607v2">BFCL v3 (lab)</a>                   67.5%    59.1   2026-03-27    1% ▇
+        <a href="https://arxiv.org/html/2512.13607v2">SWE-bench Verified (lab)</a>        43.1%    59.8   2026-03-27    6% ▇
+        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–Ma…</a>  74.6%    62.1   2026-03-27    5% ▇
+        <a href="https://arxiv.org/html/2512.13607v2">MMLU (lab)</a>                      85.1%    57.7   2026-03-27    5% ▇
+        <a href="https://arxiv.org/html/2512.13607v2">MMLU-Pro (lab)</a>                  77.0%    59.3   2026-03-27    5% ▇
+        <a href="https://arxiv.org/html/2512.13607v2">IFBench (aggregation unspecif…</a>  41.7%    55.8   2026-03-27    4% ▇
+        <a href="https://arxiv.org/html/2512.13607v2">IFEval prompt-level strict (l…</a>  81.9%    52.7   2026-03-27    2% ▇
+        <a href="https://arxiv.org/html/2512.13607v2">BFCL v3 (lab)</a>                   67.5%    59.0   2026-03-27    1% ▇
 prior   pull toward the middle                   50.0                 0% ▇
-        weighted average                       = 60.5
+        weighted average                       = 60.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,8 +38,8 @@ prior   pull toward the middle                   50.0                 0% ▇
 
 <pre>
 download         size  score
-4-bit q4_k_m     ~9GB   60.5
-8-bit q8_0    ~15.7GB   60.5
+4-bit q4_k_m     ~9GB   60.4
+8-bit q8_0    ~15.7GB   60.4
 </pre>
 
 ```sh

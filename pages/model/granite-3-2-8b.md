@@ -6,7 +6,7 @@
 
 IBM · released 2025-02 · 8.17B params · apache-2.0
 
-**score 43.8** ±1.2 · #617 of 934 · from 11 benchmark results across 3 sources
+**score 43.8** ±1.2 · #618 of 934 · from 11 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -15,11 +15,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="card2-ibm-granite-granite-3-3-8b-instruct"></a>ibm-granite/granite-3…  <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">GSM8K (lab)</a>                     81.7%    44.2   2025-05-12   16% ▇▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">AIME 2024 (lab)</a>                  2.4%    38.4   2025-05-12   15% ▇▇
                         <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">BIG-Bench Hard (lab)</a>            71.9%    43.7   2025-05-12   15% ▇▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">AIME 2024 (lab)</a>                  2.4%    38.5   2025-05-12   15% ▇▇
                         <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MMLU (lab)</a>                      66.8%    43.7   2025-05-12   12% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">DROP (lab)</a>                      58.3%    46.9   2025-05-12   10% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MATH-500 (lab)</a>                  52.8%    40.2   2025-05-12    9% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MATH-500 (lab)</a>                  52.8%    39.9   2025-05-12    9% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">Arena-Hard (version/judge uns…</a>  55.3%    49.6   2025-05-12    7% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">IFEval (aggregation unspecifi…</a>  74.3%    45.7   2025-05-12    5% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">PopQA (lab)</a>                     28.0%    46.1   2025-05-12    5% ▇

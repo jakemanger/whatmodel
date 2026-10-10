@@ -6,7 +6,7 @@
 
 Apple · released 2024-04 · 3.04B params · apple-amlr
 
-**score 23.9** ±7.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 23.9** ±6.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  75.2%    16.7   2025-10-16   78% ▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                22% ▇▇▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  75.2%    16.8   2025-10-16   79% ▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                21% ▇▇▇
                         weighted average                       = 23.9
 </pre>
 

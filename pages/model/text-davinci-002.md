@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>  39.4%    38.3   2024-01-03   89% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>  39.4%    38.4   2024-01-03   89% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                11% ▇
                         weighted average                       = 39.6
 </pre>

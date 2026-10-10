@@ -6,7 +6,7 @@
 
 Google · released 2026-01 · 28.84B params · gemma
 
-**score 65.7** ±10.3 · #144 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 65.6** ±10.4 · #144 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2601.09012v2-translategemma"></a>TranslateGemma Techni…  <a href="https://arxiv.org/pdf/2601.09012v2">WMT24++ (lab)</a>           84.4%    80.1   2026-01-15   52% ▇▇▇▇▇▇
-prior                   pull toward the middle           50.0                48% ▇▇▇▇▇▇
-                        weighted average               = 65.7
+<a name="paper-2601.09012v2-translategemma"></a>TranslateGemma Techni…  <a href="https://arxiv.org/pdf/2601.09012v2">WMT24++ (lab)</a>           84.4%    80.4   2026-01-15   51% ▇▇▇▇▇▇
+prior                   pull toward the middle           50.0                49% ▇▇▇▇▇▇
+                        weighted average               = 65.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle           50.0                48%
 
 <pre>
 download       size  score
-4-bit q4_k_m  ~17GB   65.7
+4-bit q4_k_m  ~17GB   65.6
 </pre>
 
 ```sh

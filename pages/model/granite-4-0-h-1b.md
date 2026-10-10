@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 1.46B params · apache-2.0
 
-**score 40.6** ±0.8 · #695 of 934 · from 29 benchmark results across 2 sources
+**score 40.5** ±0.8 · #696 of 934 · from 29 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,37 +14,37 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card3-ibm-granite-granite-4-0-h-1b"></a>ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BIG-Bench Hard (lab)</a>            59.7%    42.0   2025-10-23    8% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GPQA (subset unspecified) (la…</a>  29.7%    40.3   2025-10-23    7% ▇
+<a name="card3-ibm-granite-granite-4-0-h-1b"></a>ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BIG-Bench Hard (lab)</a>            59.7%    41.9   2025-10-23    8% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GPQA (subset unspecified) (la…</a>  29.7%    40.2   2025-10-23    7% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">HumanEval (lab)</a>                 73.0%    40.1   2025-10-23    7% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">HumanEval+ (lab)</a>                68.0%    39.7   2025-10-23    6% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GSM8K (lab)</a>                     69.8%    39.3   2025-10-23    6% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMLU (lab)</a>                      59.7%    41.8   2025-10-23    6% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">DeepMind Mathematics (lab)</a>      35.0%    42.5   2025-10-23    4% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">INCLUDE (lab)</a>                   43.4%    43.9   2025-10-23    4% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMLU-Pro (lab)</a>                  32.9%    41.3   2025-10-23    4% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BigCodeBench (lab)</a>              29.1%    43.1   2025-10-23    3% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GSM-Symbolic (lab)</a>              65.7%    41.5   2025-10-23    3% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GSM8K (lab)</a>                     69.8%    39.2   2025-10-23    6% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMLU (lab)</a>                      59.7%    41.7   2025-10-23    6% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">DeepMind Mathematics (lab)</a>      35.0%    42.4   2025-10-23    4% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">INCLUDE (lab)</a>                   43.4%    43.8   2025-10-23    4% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMLU-Pro (lab)</a>                  32.9%    41.2   2025-10-23    4% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BigCodeBench (lab)</a>              29.1%    43.0   2025-10-23    3% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">GSM-Symbolic (lab)</a>              65.7%    41.4   2025-10-23    3% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">Minerva MATH (lab)</a>              49.4%    46.3   2025-10-23    3% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MultiPL-E (lab)</a>                 36.1%    40.1   2025-10-23    3% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MBPP (lab)</a>                      69.0%    41.5   2025-10-23    3% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMMLU (lab)</a>                     49.4%    45.1   2025-10-23    2% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MGSM, 5 languages (en, es, fr…</a>  27.5%    34.9   2025-10-23    2% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MBPP+ (lab)</a>                     60.0%    41.6   2025-10-23    2% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">IFEval prompt-level strict (l…</a>  74.7%    45.0   2025-10-23    2% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">IFEval instruction-level stri…</a>  82.4%    41.6   2025-10-23    2% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">CRUXEval-O (lab)</a>                36.0%    38.4   2025-10-23    1% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BFCL v3 (lab)</a>                   50.2%    39.8   2025-10-23    1% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MBPP (lab)</a>                      69.0%    41.4   2025-10-23    3% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMMLU (lab)</a>                     49.4%    45.0   2025-10-23    2% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MGSM, 5 languages (en, es, fr…</a>  27.5%    34.8   2025-10-23    2% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MBPP+ (lab)</a>                     60.0%    41.5   2025-10-23    2% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">IFEval prompt-level strict (l…</a>  74.7%    44.9   2025-10-23    2% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">IFEval instruction-level stri…</a>  82.4%    41.5   2025-10-23    2% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">CRUXEval-O (lab)</a>                36.0%    38.4   2025-10-23    2% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BFCL v3 (lab)</a>                   50.2%    39.7   2025-10-23    1% ▇
 <a name="card-liquidai-lfm2-5-1-2b-thinking"></a>LiquidAI/LFM2.5-1.2B-…  <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GSM8K</a>                           69.6%    40.7   2026-08-05    7% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MMLU-Pro</a>                        27.6%    35.1   2026-08-05    3% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500</a>                        47.2%    33.9   2026-08-05    3% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025</a>                        1.0%    31.6   2026-08-05    2% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFBench (aggregation unspecif…</a>  24.9%    39.0   2026-08-05    2% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFEval mean of four measures</a>    80.1%    44.1   2026-08-05    2% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GPQA Diamond</a>                    24.3%    32.0   2026-08-05    2% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">BFCL v3</a>                         50.7%    45.7   2026-08-05    1% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MMLU-Pro</a>                        27.6%    35.0   2026-08-05    3% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500</a>                        47.2%    33.1   2026-08-05    2% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025</a>                        1.0%    31.4   2026-08-05    2% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFBench (aggregation unspecif…</a>  24.9%    38.9   2026-08-05    2% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFEval mean of four measures</a>    80.1%    44.0   2026-08-05    2% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GPQA Diamond</a>                    24.3%    31.9   2026-08-05    2% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">BFCL v3</a>                         50.7%    45.6   2026-08-05    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 40.6
+                        weighted average                       = 40.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -57,8 +57,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-8-bit q8_0    ~1.6GB   40.6
-4-bit q4_k_m  ~0.9GB   40.6
+8-bit q8_0    ~1.6GB   40.5
+4-bit q4_k_m  ~0.9GB   40.5
 </pre>
 
 ```sh

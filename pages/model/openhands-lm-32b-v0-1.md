@@ -6,7 +6,7 @@
 
 All Hands AI · released 2025-03 · 32.76B params · mit
 
-**score 51.3** ±3.0 · #399 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.3** ±3.0 · #400 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

@@ -6,7 +6,7 @@
 
 MeetKai · released 2024-08 · 70.55B params · mit
 
-**score 57.9** ±6.3 · #253 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 57.8** ±6.3 · #251 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                    score  implies  date        weight
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                 62.3%    59.5   2025-06-14   82% ▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle           50.0                18% ▇▇
-                        weighted average               = 57.9
+                        weighted average               = 57.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle           50.0                18%
 
 <pre>
 download          size  score
-16-bit bf16  ~141.11GB   57.9
+16-bit bf16  ~141.11GB   57.8
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 SILMA AI · released 2024-08 · 9.24B params · gemma
 
-**score 42.3** ±3.3 · #656 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.2** ±3.3 · #656 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>  34.2%    45.1   2026-04-06   67% ▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   6.7%    34.4   2025-10-01   28% ▇▇▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>  34.2%    45.2   2026-04-06   66% ▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   6.7%    34.3   2025-10-01   29% ▇▇▇▇
 prior                   pull toward the middle                   50.0                 5% ▇
-                        weighted average                       = 42.3
+                        weighted average                       = 42.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~18.48GB   42.3
+16-bit bf16  ~18.48GB   42.2
 </pre>
 
 ```sh

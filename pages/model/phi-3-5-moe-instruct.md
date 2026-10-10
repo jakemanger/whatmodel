@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-08 · 41.87B params (6.6B active) · mit
 
-**score 48.0** ±1.2 · #490 of 934 · from 6 benchmark results across 4 sources
+**score 48.1** ±1.2 · #488 of 934 · from 6 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            35.2%    47.2   2024-10-22   53% ▇▇▇▇▇▇
+<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>            35.2%    47.3   2024-10-22   52% ▇▇▇▇▇▇
 <a name="korean-personal-benchmark-runs"></a>Daekeun Kim Korean LL…  <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>      56.4%    49.4                19% ▇▇
                         <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>       61.8%    49.7                17% ▇▇
                         <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero…</a>  25.3%    41.7                 3% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  29.5%    47.1   2025-04-28    7% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  29.5%    47.2   2025-04-28    7% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  97.5%    61.5   2025-10-16    1% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 48.0
+                        weighted average                       = 48.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,7 +34,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                        size  score
-16-bit bf16 · nvidia only  ~100.99GB   48.0
+16-bit bf16 · nvidia only  ~100.99GB   48.1
 </pre>
 
 ```sh

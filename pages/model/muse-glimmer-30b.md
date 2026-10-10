@@ -14,24 +14,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="speed-meta-muse-glimmer-30b"></a>meta-models/Muse-Glim…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SWE-bench Pro (split unspecif…</a>   51.2%    71.2   2026-08-11   11% ▇
-                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SWE-bench Verified (lab)</a>         76.0%    71.4   2026-08-11    7% ▇
-                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">OSWorld-Verified (lab)</a>           65.9%    69.1   2026-08-11    5% ▇
-                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">CharXiv (reasoning questions)…</a>   78.8%    69.9   2026-08-11    4% ▇
-                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">MCP-Atlas (public set) (lab)</a>     75.5%    76.6   2026-08-11    4% ▇
-                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">OmniDocBench 1.5 overall (hig…</a>   75.8%    61.9   2026-08-11    4% ▇
-                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">IFBench (aggregation unspecif…</a>   77.0%    72.5   2026-08-11    4% ▇
-                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">DeepSearchQA (lab)</a>               74.6%    70.6   2026-08-11    4% ▇
-                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">Gaia2 (lab)</a>                      43.3%    71.5   2026-08-11    3% ▇
-                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">WildClawBench (lab)</a>              47.6%    72.7   2026-08-11    3% ▇
-                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SkillsBench (with skills) (la…</a>   44.3%    71.2   2026-08-11    3% ▇
-                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">ScreenSpot-Pro (lab)</a>             75.4%    72.4   2026-08-11    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1354.8    66.9   2026-10-01   20% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1425.0    68.9   2026-10-02   12% ▇
-<a name="card-qwen--qwen3.8-27b"></a>Qwen/Qwen3.8-27B mode…  <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">SWE-bench Pro public set, Qwe…</a>   51.2%    69.1   2026-08-14    5% ▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   88.3%    71.5   2026-08-11    4% ▇
+<a name="speed-meta-muse-glimmer-30b"></a>meta-models/Muse-Glim…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SWE-bench Pro (split unspecif…</a>   51.2%    71.1   2026-08-11   10% ▇
+                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SWE-bench Verified (lab)</a>         76.0%    71.2   2026-08-11    7% ▇
+                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">OSWorld-Verified (lab)</a>           65.9%    68.9   2026-08-11    5% ▇
+                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">WildClawBench (lab)</a>              47.6%    72.8   2026-08-11    5% ▇
+                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">CharXiv (reasoning questions)…</a>   78.8%    69.7   2026-08-11    4% ▇
+                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">MCP-Atlas (public set) (lab)</a>     75.5%    76.5   2026-08-11    4% ▇
+                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">IFBench (aggregation unspecif…</a>   77.0%    72.4   2026-08-11    4% ▇
+                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">OmniDocBench 1.5 overall (hig…</a>   75.8%    61.7   2026-08-11    4% ▇
+                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">DeepSearchQA (lab)</a>               74.6%    70.5   2026-08-11    4% ▇
+                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">Gaia2 (lab)</a>                      43.3%    71.3   2026-08-11    3% ▇
+                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SkillsBench (with skills) (la…</a>   44.3%    71.0   2026-08-11    3% ▇
+                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">ScreenSpot-Pro (lab)</a>             75.4%    72.2   2026-08-11    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1354.8    66.8   2026-10-01   20% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1425.0    68.9   2026-10-02   11% ▇
+<a name="card-qwen--qwen3.8-27b"></a>Qwen/Qwen3.8-27B mode…  <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">SWE-bench Pro public set, Qwe…</a>   51.2%    69.2   2026-08-14    5% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   88.3%    71.2   2026-08-11    4% ▇
 <a name="paper-2609.13916v1-north-small-translate"></a>Cohere                  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>   90.1%    73.3   2026-09-12    2% ▇
-                        <a href="https://arxiv.org/html/2609.13916v1">WMT24++</a>                          77.7%    66.2   2026-09-12    1% ▇
+                        <a href="https://arxiv.org/html/2609.13916v1">WMT24++</a>                          77.7%    66.1   2026-09-12    1% ▇
                         <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, …</a>   78.2%    71.2   2026-09-12    1% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 69.6

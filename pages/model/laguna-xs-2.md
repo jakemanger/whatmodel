@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                           score  implies  date        weight
-<a name="first-party-poolside-scores"></a>Poolside vendor-repor…  <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Verified (lab)</a>       69.9%    67.0   2026-06-20   12% ▇
-                        <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Multilingual (lab)</a>   57.7%    63.9   2026-06-20   11% ▇
-                        <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">Terminal-Bench 2.0 (lab)</a>       35.7%    64.7   2026-06-20   10% ▇
-                        <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Pro (lab)</a>            46.3%    63.8   2026-06-20    3% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1301.9    64.5   2026-10-01   32% ▇▇▇▇
-<a name="report-2605.27605v1"></a>Poolside                <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       69.9%    66.8   2026-05-26   12% ▇
-                        <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       35.7%    63.7   2026-05-26   10% ▇
-                        <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   57.7%    65.2   2026-05-26    8% ▇
+<a name="first-party-poolside-scores"></a>Poolside vendor-repor…  <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Verified (lab)</a>       69.9%    66.9   2026-06-20   12% ▇
+                        <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Multilingual (lab)</a>   57.7%    63.8   2026-06-20   10% ▇
+                        <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">Terminal-Bench 2.0 (lab)</a>       35.7%    64.6   2026-06-20   10% ▇
+                        <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Pro (lab)</a>            46.3%    63.7   2026-06-20    3% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1301.9    64.4   2026-10-01   33% ▇▇▇▇
+<a name="report-2605.27605v1"></a>Poolside                <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       69.9%    66.7   2026-05-26   12% ▇
+                        <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       35.7%    63.6   2026-05-26   10% ▇
+                        <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   57.7%    65.1   2026-05-26    8% ▇
 prior                   pull toward the middle                  50.0                 1% ▇
                         weighted average                      = 64.8
 </pre>

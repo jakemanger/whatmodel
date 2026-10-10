@@ -6,7 +6,7 @@
 
 DeepSeek · released 2026-08 · 304.6B params · mit
 
-**score 76.3** ±2.3 · #33 of 934 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 75.7** ±2.3 · #35 of 934 · from 8 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,20 +14,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card3-deepseek-ai-deepseek-v4-flash-vision-exp"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Terminal-Bench 2.1 (lab)</a>        83.9%    77.8   2026-08-31   25% ▇▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">NL2Repo (lab)</a>                   57.7%    78.0   2026-08-31   18% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">DeepSWE v1.1 (resolved) (lab)</a>   59.3%    76.2   2026-08-31   13% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">CyberGym (lab)</a>                  75.3%    76.4   2026-08-31   12% ▇
+<a name="card3-deepseek-ai-deepseek-v4-flash-vision-exp"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Terminal-Bench 2.1 (lab)</a>        83.9%    77.7   2026-08-31   25% ▇▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">NL2Repo (lab)</a>                   57.7%    77.9   2026-08-31   18% ▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">DeepSWE v1.1 (resolved) (lab)</a>   59.3%    76.3   2026-08-31   13% ▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">CyberGym (lab)</a>                  75.3%    76.3   2026-08-31   12% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Agents' Last Exam (metric/har…</a>  27.3%    73.4   2026-08-31   11% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">AutomationBench (Public) (lab)</a>  25.7%    74.0   2026-08-31   10% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Toolathlon-Verified (lab)</a>       75.9%    81.9   2026-08-31    9% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Toolathlon-Verified (lab)</a>       75.9%    82.0   2026-08-31    8% ▇
+<a name="paper-2605.07492v2-puredocbench"></a>How Far Is Document P…  <a href="https://arxiv.org/html/2605.07492v2">PureDocBench document parsing…</a>  50.1%     6.6   2026-09-27    1% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 76.3
+                        weighted average                       = 75.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: deepseek-ai/DeepSeek-V4-Flash-Vision-Exp model card ([MIT](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md))</sub>
+<sub>Licences: deepseek-ai/DeepSeek-V4-Flash-Vision-Exp model card ([MIT](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md)) · How Far Is Document Parsing from Solved? PureDocBench: A Source-Traceable Benchmark across Clean ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -35,9 +36,9 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                      size  score
-4-bit ud-q4_k_xl         ~156.03GB   76.3
-2-bit ud-q2_k_xl          ~97.76GB   76.3
-4-bit fp8 · nvidia only  ~167.82GB   76.3
+4-bit ud-q4_k_xl         ~156.03GB   75.7
+2-bit ud-q2_k_xl          ~97.76GB   75.7
+4-bit fp8 · nvidia only  ~167.82GB   75.7
 </pre>
 
 ```sh

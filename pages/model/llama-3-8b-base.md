@@ -6,7 +6,7 @@
 
 Meta · released 2024-04 · 8.03B params · llama3
 
-**score 34.5** ±0.8 · #794 of 934 · from 5 benchmark results across 3 sources
+**score 34.6** ±0.8 · #793 of 934 · from 6 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -15,23 +15,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       33.5%    33.8   2024-12-26   52% ▇▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      29.3%    33.9   2024-12-26   35% ▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      29.3%    33.9   2024-12-26   34% ▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           51.6%    39.8   2024-12-26    6% ▇
 <a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         28.8%    35.5   2025-04-01    5% ▇
 <a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  47.6%    41.9   2026-09-19    2% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  82.3%    48.7   2026-04-17    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 34.5
+                        weighted average                       = 34.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · BigCodeBench paper ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 ## How to run it
 
 <pre>
 download         size  score
-16-bit bf16  ~16.06GB   34.5
+16-bit bf16  ~16.06GB   34.6
 </pre>
 
 ```sh

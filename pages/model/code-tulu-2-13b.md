@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 13B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 39.5** ±1.7 · #710 of 934 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 39.5** ±1.7 · #709 of 934 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            52.8%    38.6   2023-11-20   44% ▇▇▇▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  76.2%    44.1   2023-11-20   21% ▇▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      45.9%    34.2   2023-11-20   15% ▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     41.0%    38.0   2023-11-20   14% ▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  55.7%    45.7   2023-11-20    5% ▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            52.8%    38.7   2023-11-20   44% ▇▇▇▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  76.2%    44.2   2023-11-20   20% ▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     41.0%    38.1   2023-11-20   15% ▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      45.9%    34.3   2023-11-20   15% ▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  55.7%    45.8   2023-11-20    5% ▇
 prior   pull toward the middle                   50.0                 1% ▇
         weighted average                       = 39.5
 </pre>

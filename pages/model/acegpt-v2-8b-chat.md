@@ -6,7 +6,7 @@
 
 FreedomIntelligence (CUHK-SZ) · released 2024-06 · 8.03B params · apache-2.0
 
-**score 51.8** ±4.7 · #385 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.8** ±4.6 · #387 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  35.0%    52.0   2025-09-30   90% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                10% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  35.0%    52.0   2025-09-30   91% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                 9% ▇
                         weighted average                       = 51.8
 </pre>
 

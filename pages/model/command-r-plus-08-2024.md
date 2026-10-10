@@ -6,7 +6,7 @@
 
 Cohere · released 2024-08 · 104B params · cc-by-nc-4.0
 
-**score 47.2** ±1.0 · #514 of 934 · from 17 benchmark results across 7 sources
+**score 47.3** ±1.0 · #507 of 934 · from 17 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -15,24 +15,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                             score  implies  date        weight
 <a name="report-2504.00698v2"></a>Cohere                  <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8) (…</a>   77.0%    47.2   2025-04-14    8% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>         17.0%    48.8   2025-04-14    6% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>         17.0%    49.0   2025-04-14    6% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                      78.8%    50.1   2025-04-14    5% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Fe…</a>   14.4%    46.0   2025-04-14    4% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Fe…</a>   14.4%    46.2   2025-04-14    4% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>    25.8%    42.0   2025-04-14    4% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises…</a>    2.2%    44.7   2025-04-14    3% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>             52.7%    53.3   2025-04-14    3% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises…</a>    2.2%    44.8   2025-04-14    3% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>             52.7%    53.4   2025-04-14    3% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">LongBench v2 (lab)</a>               27.8%    38.8   2025-04-14    2% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">RULER 128k (lab)</a>                 64.6%    46.1   2025-04-14    2% ▇
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>             34.5%    46.9   2024-10-22   32% ▇▇▇▇
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>   38.3%    44.1   2024-09-11   16% ▇▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">RULER 128k (lab)</a>                 64.6%    46.4   2025-04-14    2% ▇
+<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>             34.5%    47.0   2024-10-22   32% ▇▇▇▇
+<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>   38.3%    44.2   2024-09-11   16% ▇▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1276.3    51.1   2026-10-02    8% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   63.0%    54.8   2026-09-19    3% ▇
-<a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                        85.4%    52.3   2025-10-09    2% ▇
-                        <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                       64.6%    47.3   2025-10-09    1% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   63.0%    54.7   2026-09-19    3% ▇
+<a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                        85.4%    52.6   2025-10-09    2% ▇
+                        <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                       64.6%    47.8   2025-10-09    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   94.6%    52.0   2025-10-16    1% ▇
                         <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   93.1%   163.7   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 47.2
+                        weighted average                        = 47.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -47,8 +47,8 @@ api (Cohere) · $4.38/M blended · $2.5 in / $10 out per 1M tokens · [docs.cohe
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~62.9GB   47.2
-8-bit q8_0    ~125.3GB   47.2
+4-bit q4_k_m   ~62.9GB   47.3
+8-bit q8_0    ~125.3GB   47.3
 </pre>
 
 ```sh

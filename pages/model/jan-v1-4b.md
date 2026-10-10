@@ -6,7 +6,7 @@
 
 Jan (Menlo Research) · released 2025-08 · 4.02B params · apache-2.0
 
-**score 50.8** ±5.1 · #408 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.7** ±6.6 · #392 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  75.2%    50.9   2025-08-30   88% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                12% ▇
-                        weighted average                       = 50.8
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  75.2%    52.1   2025-08-30   80% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                20% ▇▇
+                        weighted average                       = 51.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~2.5GB   50.8
+4-bit q4_k_m  ~2.5GB   51.7
 </pre>
 
 ```sh

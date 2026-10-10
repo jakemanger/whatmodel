@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="first-party-qwen-scores"></a>Qwen    <a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                     84.2%    42.4   2024-09-18   46% ▇▇▇▇▇
+<a name="first-party-qwen-scores"></a>Qwen    <a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                     84.2%    42.4   2024-09-18   46% ▇▇▇▇▇▇
         <a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>              29.4%    46.7   2024-09-18   32% ▇▇▇▇
         <a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (la…</a>  69.4%    47.2   2024-09-18   20% ▇▇
 prior   pull toward the middle                   50.0                 2% ▇

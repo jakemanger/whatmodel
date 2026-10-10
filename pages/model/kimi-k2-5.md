@@ -6,7 +6,7 @@
 
 Moonshot AI · released 2026-01 · 1000B params (32B active) · modified-mit
 
-**score 70.1** ±0.8 · #85 of 934 · from 29 benchmark results across 14 sources
+**score 70.0** ±0.7 · #85 of 934 · from 35 benchmark results across 20 sources
 
 ## How the score was worked out
 
@@ -14,42 +14,48 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>               73.8%    71.8   2026-02-17   11% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     87.6%    72.0   2026-02-02    7% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         92.2%    72.2   2026-02-02    3% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            12.0%    66.0   2026-01-28    3% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>               73.8%    71.7   2026-02-17   10% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     87.6%    72.0   2026-02-02    6% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            12.0%    65.9   2026-01-28    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         92.2%    72.2   2026-02-02    2% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                34.3%    69.6   2026-08-27    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1435.8    70.6   2026-10-01    9% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1450.1    71.9   2026-10-02    5% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1252.2    72.6   2026-10-02    4% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>  1436.0    69.7   2026-09-13    2% ▇
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>   62.5%    72.1   2026-09-11    5% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>   41.9%    67.7   2026-09-11    4% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv Februar…</a>    2.8%    64.0   2026-09-11    2% ▇
-<a name="arcprize-model-baseline-outputs"></a>ARC Prize Foundation …  <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/kimi-k2.5">ARC-AGI-1 public evaluation s…</a>   73.1%    70.6   2026-06-04    6% ▇
-                        <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/kimi-k2.5">ARC-AGI-2 public evaluation s…</a>   12.1%    67.5   2026-06-04    3% ▇
-<a name="card2-stepfun-ai-step-3-5-flash"></a>stepfun-ai/Step-3.5-F…  <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>                    62.3%    68.7   2026-03-17    3% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1435.8    70.6   2026-10-01    8% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1450.1    71.9   2026-10-02    4% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1252.2    72.6   2026-10-02    3% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>  1436.0    69.7   2026-09-13    1% ▇
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>   62.5%    72.0   2026-09-11    4% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>   41.9%    67.6   2026-09-11    3% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv Februar…</a>    2.8%    63.8   2026-09-11    1% ▇
+<a name="card2-stepfun-ai-step-3-5-flash"></a>stepfun-ai/Step-3.5-F…  <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">BrowseComp-ZH</a>                    62.3%    69.1   2026-03-17    3% ▇
                         <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">τ²-bench aggregate</a>               85.4%    68.6   2026-03-17    2% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">ResearchRubrics</a>                  59.5%    66.9   2026-03-17    1% ▇
-                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">GAIA (no-file subset)</a>            75.9%    68.6   2026-03-17    1% ▇
-<a name="card-qwen--qwen3.5-397b-a17b"></a>Qwen/Qwen3.5-397B-A17…  <a href="https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md">τ²-bench aggregate</a>               77.0%    63.9   2026-09-25    3% ▇
+                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">ResearchRubrics</a>                  59.5%    67.3   2026-03-17    2% ▇
+                        <a href="https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/README.md">GAIA (no-file subset)</a>            75.9%    69.0   2026-03-17    1% ▇
+<a name="arcprize-model-baseline-outputs"></a>ARC Prize Foundation …  <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/kimi-k2.5">ARC-AGI-1 public evaluation s…</a>   73.1%    70.5   2026-06-04    6% ▇
+                        <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/kimi-k2.5">ARC-AGI-2 public evaluation s…</a>   12.1%    67.4   2026-06-04    2% ▇
+<a name="card-qwen--qwen3.5-397b-a17b"></a>Qwen/Qwen3.5-397B-A17…  <a href="https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md">τ²-bench aggregate</a>               77.0%    64.3   2026-09-25    3% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/README.md">MATH-Vision</a>                      84.2%    72.3   2026-09-25    2% ▇
-<a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>   40.2%    61.0   2026-08-31    4% ▇
-<a name="card2-zai-org-glm-5"></a>zai-org/GLM-5 model c…  <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">MCP-Atlas (public set)</a>           63.8%    70.6   2026-08-11    4% ▇
+<a name="paper-2606.05104v2-kina"></a>Knowledge Index of No…  <a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah…</a>   40.2%    71.6   2026-06-04    3% ▇
+<a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>   40.2%    61.0   2026-08-31    3% ▇
+<a name="card2-zai-org-glm-5"></a>zai-org/GLM-5 model c…  <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">MCP-Atlas (public set)</a>           63.8%    70.6   2026-08-11    3% ▇
 <a name="report-2602.15763v2"></a>GLM-5 Team              <a href="https://arxiv.org/html/2602.15763v2">MCP-Atlas (public set)</a>           63.8%    70.5   2026-02-24    3% ▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1303.5    72.1   2026-05-10    3% ▇
-<a name="first-party-moonshot-scores"></a>Moonshot AI vendor-re…  <a href="https://huggingface.co/moonshotai/Kimi-K2.5/blob/4d01dfe0332d63057c186e0b262165819efb6611/README.md">CharXiv (reasoning questions)…</a>   77.5%    70.7   2026-04-30    3% ▇
-<a name="paper-2605.09063v3"></a>Soohak: A Mathematici…  <a href="https://arxiv.org/html/2605.09063v3">SOOHAK Challenge (340 problem…</a>   13.9%    70.1   2026-05-19    1% ▇
-                        <a href="https://arxiv.org/html/2605.09063v3">SOOHAK-Mini (702 problems, Av…</a>   66.1%    74.0   2026-05-19    1% ▇
-<a name="paper-2606.28715v2-seataubench"></a>SEATauBench: Progress…  <a href="https://arxiv.org/html/2606.28715v2">τ²-bench Telecom</a>                 99.7%    80.7   2026-09-05    2% ▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1303.5    72.0   2026-05-10    3% ▇
+<a name="paper-2606.01348v3-chartarena"></a>ChartArena: Benchmark…  <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (Eng…</a>   54.8%    72.1   2026-07-05    3% ▇
+<a name="paper-2605.10912v1-wildclawbench"></a>WildClawBench: A Benc…  <a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                    30.8%    66.1   2026-05-11    3% ▇
+<a name="first-party-moonshot-scores"></a>Moonshot AI vendor-re…  <a href="https://huggingface.co/moonshotai/Kimi-K2.5/blob/4d01dfe0332d63057c186e0b262165819efb6611/README.md">CharXiv (reasoning questions)…</a>   77.5%    70.8   2026-04-30    2% ▇
+<a name="paper-2605.08366v1-swe-atlas"></a>SWE Atlas: Benchmarki…  <a href="https://arxiv.org/html/2605.08366v1">SWE Atlas (Codebase Q&amp;A, Test…</a>   19.1%    66.6   2026-05-08    2% ▇
+<a name="paper-2605.09063v3"></a>Soohak: A Mathematici…  <a href="https://arxiv.org/html/2605.09063v3">SOOHAK Challenge (340 problem…</a>   13.9%    70.0   2026-05-19    1% ▇
+                        <a href="https://arxiv.org/html/2605.09063v3">SOOHAK-Mini (702 problems, Av…</a>   66.1%    74.1   2026-05-19    1% ▇
+<a name="paper-2609.05141v2-scidocbench"></a>SciDocBench: A Workfl…  <a href="https://arxiv.org/html/2609.05141v2">SciDocBench scientific-docume…</a>   50.4%    72.4   2026-09-28    2% ▇
+<a name="paper-2606.28715v2-seataubench"></a>SEATauBench: Progress…  <a href="https://arxiv.org/html/2606.28715v2">τ²-bench Telecom</a>                 99.7%    80.9   2026-09-05    2% ▇
+<a name="paper-2608.12262v1-diagram-mmu"></a>Diagram-MMU: A Multi-…  <a href="https://arxiv.org/html/2608.12262v1">Diagram-MMU diagram question …</a>   79.7%    71.0   2026-08-12    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   85.8%   -79.1   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 70.1
+                        weighted average                        = 70.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt)) · stepfun-ai/Step-3.5-Flash model card ([Apache-2.0](../../licenses/stepfun-ai--Step-3.5-Flash.txt)) · Qwen/Qwen3.5-397B-A17B model card ([apache-2.0](../../licenses/Qwen--Qwen3.5-397B-A17B.txt)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt)) · zai-org/GLM-5 model card ([MIT](../../licenses/zai-org--GLM-5.txt)) · GLM-5 Team ([CC BY 4.0](../../licenses/report-2602.15763v2.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Soohak: A Mathematician-Curated Benchmark for Evaluating Research-level Math Capabilities of LLMs ([CC BY-SA 4.0](../../licenses/paper-2605.09063v3-CC-BY-SA-4.0.txt)) · SEATauBench: Progressively Adapting Tool-Agent-User Evaluation Into Low-Resource Southeast Asian Languages ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · stepfun-ai/Step-3.5-Flash model card ([Apache-2.0](../../licenses/stepfun-ai--Step-3.5-Flash.txt)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt)) · Qwen/Qwen3.5-397B-A17B model card ([apache-2.0](../../licenses/Qwen--Qwen3.5-397B-A17B.txt)) · Knowledge Index of Noah's Ark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt)) · zai-org/GLM-5 model card ([MIT](../../licenses/zai-org--GLM-5.txt)) · GLM-5 Team ([CC BY 4.0](../../licenses/report-2602.15763v2.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WildClawBench: A Benchmark for Real-World ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SWE Atlas: Benchmarking Coding Agents Beyond Issue Resolution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Soohak: A Mathematician-Curated Benchmark for Evaluating Research-level Math Capabilities of LLMs ([CC BY-SA 4.0](../../licenses/paper-2605.09063v3-CC-BY-SA-4.0.txt)) · SciDocBench: A Workflow-Centered Benchmark and Data Pipeline for Scientific Document Understanding ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SEATauBench: Progressively Adapting Tool-Agent-User Evaluation Into Low-Resource Southeast Asian Languages ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Diagram-MMU: A Multi-Modal Benchmark for Scientific Diagrams ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
@@ -59,9 +65,9 @@ api (Amazon Bedrock) · $1.20/M blended · $0.6 in / $3 out per 1M tokens · [do
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~600.5GB   70.1
-2-bit ud-q2_k_xl  ~300.5GB   70.1
-1-bit ud-iq1_s    ~150.5GB   70.1
+4-bit ud-q4_k_xl  ~600.5GB   70.0
+2-bit ud-q2_k_xl  ~300.5GB   70.0
+1-bit ud-iq1_s    ~150.5GB   70.0
 </pre>
 
 ```sh

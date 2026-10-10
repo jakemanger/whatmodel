@@ -6,7 +6,7 @@
 
 Swiss AI · released 2025-08 · 8.05B params · apache-2.0
 
-**score 45.6** ±4.4 · #561 of 934 · from 3 benchmark results across 2 sources
+**score 45.2** ±4.6 · #579 of 934 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  58.1%    45.2   2026-04-17   37% ▇▇▇▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  80.3%    48.0   2026-04-17   30% ▇▇▇▇
-<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard ave…</a>   7.7%    41.7   2026-09-22   24% ▇▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  58.1%    44.7   2026-04-17   41% ▇▇▇▇▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  80.3%    48.1   2026-04-17   24% ▇▇▇
+<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard ave…</a>   7.7%    41.6   2026-09-22   26% ▇▇▇
 prior                   pull toward the middle                   50.0                 9% ▇
-                        weighted average                       = 45.6
+                        weighted average                       = 45.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                       size  score
-16-bit bf16 · nvidia only  ~16.11GB   45.6
-4-bit mlx-4bit · mac only   ~4.53GB   45.6
+16-bit bf16 · nvidia only  ~16.11GB   45.2
+4-bit mlx-4bit · mac only   ~4.53GB   45.2
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Upstage · released 2026-08 · closed weights
 
-**score 64.5** ±1.6 · #154 of 934 · from 3 benchmark results across 1 source
+**score 64.6** ±1.6 · #153 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                  score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.1590 IPS    62.2   2026-10-02   40% ▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.1590 IPS    62.4   2026-10-02   41% ▇▇▇▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1370.2    67.6   2026-10-01   37% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                       1386.2    64.3   2026-10-02   22% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                       1386.2    64.2   2026-10-02   21% ▇▇▇
 prior                   pull toward the middle                         50.0                 1% ▇
-                        weighted average                             = 64.5
+                        weighted average                             = 64.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

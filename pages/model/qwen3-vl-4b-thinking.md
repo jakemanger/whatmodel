@@ -6,46 +6,48 @@
 
 Alibaba · released 2025-10 · 4.44B params · apache-2.0
 
-**score 56.2** ±0.8 · #285 of 934 · from 25 benchmark results across 1 source · † every result so far was reported by its maker
+**score 56.2** ±0.7 · #281 of 934 · from 27 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source  test                            score  implies  date        weight
-<a name="first-party-qwen-scores"></a>Qwen    <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CharXiv (reasoning questions)…</a>  50.3%    55.5   2025-11-27    9% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=24">GPQA (subset unspecified) (la…</a>  64.1%    57.1   2025-11-27    8% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMMU (val) (lab)</a>                70.8%    56.5   2025-11-27    8% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=24">MMLU-Pro (lab)</a>                  73.6%    55.9   2025-11-27    8% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CharXiv descriptive questions…</a>  83.9%    57.0   2025-11-27    6% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=24">MMLU-Redux (lab)</a>                86.0%    56.2   2025-11-27    6% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=24">AIME 2025 (lab)</a>                 74.5%    60.1   2025-11-27    6% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MathVista (testmini) (lab)</a>      79.5%    57.8   2025-11-27    6% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMStar (lab)</a>                    73.2%    57.1   2025-11-27    5% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=24">LiveCodeBench v6 (window unsp…</a>  51.3%    57.1   2025-11-27    5% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMMU Pro (lab)</a>                  57.0%    56.8   2025-11-27    4% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=24">SuperGPQA (lab)</a>                 46.8%    55.9   2025-11-27    4% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">AndroidWorld (lab)</a>              52.0%    56.5   2025-11-27    3% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">LVBench (lab)</a>                   53.5%    52.3   2025-11-27    3% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">Video-MME (without subtitles)…</a>  68.9%    52.5   2025-11-27    3% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=24">IFEval (aggregation unspecifi…</a>  82.6%    55.7   2025-11-27    3% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=24">BFCL v3 (lab)</a>                   67.3%    57.8   2025-11-27    2% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">HallusionBench (lab)</a>            64.1%    59.3   2025-11-27    2% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">ChartQA (lab)</a>                   88.8%    59.1   2025-11-27    2% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">RealWorldQA (lab)</a>               73.2%    53.6   2025-11-27    1% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">DocVQA (lab)</a>                    94.2%    48.1   2025-11-27    1% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">ScreenSpot-Pro (lab)</a>            49.2%    52.4   2025-11-27    1% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MVBench (lab)</a>                   69.3%    53.7   2025-11-27    1% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CC-OCR (lab)</a>                    73.8%    49.2   2025-11-27    1% ▇
-        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">OCRBench (lab)</a>                  80.8%    40.4   2025-11-27    1% ▇
-prior   pull toward the middle                   50.0                 0% ▇
-        weighted average                       = 56.2
+source                  test                            score  implies  date        weight
+<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CharXiv (reasoning questions)…</a>  50.3%    55.6   2025-11-27    9% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=24">GPQA (subset unspecified) (la…</a>  64.1%    57.0   2025-11-27    8% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMMU (val) (lab)</a>                70.8%    56.5   2025-11-27    8% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=24">MMLU-Pro (lab)</a>                  73.6%    55.9   2025-11-27    7% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CharXiv descriptive questions…</a>  83.9%    57.0   2025-11-27    6% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=24">MMLU-Redux (lab)</a>                86.0%    56.2   2025-11-27    5% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MathVista (testmini) (lab)</a>      79.5%    57.8   2025-11-27    5% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=24">AIME 2025 (lab)</a>                 74.5%    60.1   2025-11-27    5% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMStar (lab)</a>                    73.2%    57.1   2025-11-27    5% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=24">LiveCodeBench v6 (window unsp…</a>  51.3%    57.1   2025-11-27    5% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MMMU Pro (lab)</a>                  57.0%    56.9   2025-11-27    4% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=24">SuperGPQA (lab)</a>                 46.8%    55.9   2025-11-27    4% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">AndroidWorld (lab)</a>              52.0%    56.5   2025-11-27    3% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">LVBench (lab)</a>                   53.5%    52.4   2025-11-27    3% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=24">IFEval (aggregation unspecifi…</a>  82.6%    55.7   2025-11-27    3% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">Video-MME (without subtitles)…</a>  68.9%    52.5   2025-11-27    3% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=24">BFCL v3 (lab)</a>                   67.3%    57.8   2025-11-27    2% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">HallusionBench (lab)</a>            64.1%    59.3   2025-11-27    2% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">ChartQA (lab)</a>                   88.8%    59.1   2025-11-27    1% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">RealWorldQA (lab)</a>               73.2%    53.7   2025-11-27    1% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">DocVQA (lab)</a>                    94.2%    48.2   2025-11-27    1% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">ScreenSpot-Pro (lab)</a>            49.2%    52.5   2025-11-27    1% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MVBench (lab)</a>                   69.3%    53.7   2025-11-27    1% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CC-OCR (lab)</a>                    73.8%    49.2   2025-11-27    1% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">OCRBench (lab)</a>                  80.8%    40.4   2025-11-27    0% ▇
+<a name="paper-2606.01348v3-chartarena"></a>ChartArena: Benchmark…  <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (Eng…</a>  34.7%    57.1   2026-07-05    2% ▇
+<a name="paper-2608.17895v1-bear-bench"></a>BEAR-Bench: A Bilingu…  <a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench (bilingual RU/EN e…</a>  34.5%    56.6   2026-08-18    2% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 56.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-
+<sub>Licences: ChartArena: Benchmarking Chart Parsing across Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BEAR-Bench: A Bilingual Enterprise and Academic Reasoning Benchmark for Multimodal Models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

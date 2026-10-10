@@ -6,7 +6,7 @@
 
 Tencent · released 2025-09 · closed weights
 
-**score 63.0** ±2.6 · #173 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 63.0** ±2.6 · #172 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

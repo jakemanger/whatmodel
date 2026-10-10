@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 6.74B params · llama2
 
-**score 36.8** ±1.0 · #761 of 934 · from 6 benchmark results across 3 sources
+**score 36.8** ±1.0 · #762 of 934 · from 6 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -18,8 +18,8 @@ source                  test                    score  implies  date        weig
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       25.6%    36.3   2024-03-28   20% ▇▇
 <a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>         38.4%    37.1   2024-01-31   22% ▇▇▇
                         <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>              47.6%    36.8   2024-01-31   10% ▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>        37.3%    38.8   2024-01-03    3% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>        35.9%    36.7   2024-01-03    3% ▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>        37.3%    39.0   2024-01-03    3% ▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>        35.9%    37.0   2024-01-03    3% ▇
 prior                   pull toward the middle           50.0                 0% ▇
                         weighted average               = 36.8
 </pre>
