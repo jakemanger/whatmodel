@@ -13078,6 +13078,13 @@
           "cmd": "vllm serve poolside/Laguna-XS.2 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice",
           "platform": "nvidia",
           "source": "https://huggingface.co/poolside/Laguna-XS.2/tree/a397bde04501591d0ac3d74a5d9d0a4ec298ffb8"
+        },
+        {
+          "quant": "q4_k_m",
+          "gb": 23,
+          "cmd": "ollama run laguna-xs.2:latest",
+          "source": "https://ollama.com/library/laguna-xs.2/tags",
+          "gb_estimated": true
         }
       ]
     },
@@ -36239,6 +36246,13 @@
           "cmd": "llama-server -hf ibm-granite/granite-20b-code-instruct-8k-GGUF:Q4_K_M",
           "source": "https://huggingface.co/ibm-granite/granite-20b-code-instruct-8k-GGUF/tree/6e9f892709473675166a5f71d9c07e14d65d67ca",
           "note": "Official IBM GGUF repo for this model (IBM publishes only Q4_K_M here). gb is the download size from the Hugging Face API file listing of ibm-granite/granite-20b-code-instruct-8k-GGUF@6e9f892 (fetched 2026-10-07): 1 file (granite-20b-code-instruct.Q4_K_M.gguf) 12.82 GB. `-hf ibm-granite/granite-20b-code-instruct-8k-GGUF:Q4_K_M` resolves to granite-20b-code-instruct.Q4_K_M.gguf (HF manifest)."
+        },
+        {
+          "quant": "q4_0",
+          "gb": 12,
+          "cmd": "ollama run granite-code:20b",
+          "source": "https://ollama.com/library/granite-code/tags",
+          "gb_estimated": true
         }
       ]
     },
@@ -36309,6 +36323,13 @@
           "cmd": "llama-server -hf ibm-granite/granite-34b-code-instruct-8k-GGUF:Q4_K_M",
           "source": "https://huggingface.co/ibm-granite/granite-34b-code-instruct-8k-GGUF/tree/4e7bb6bc0b242b2cb32f296765fa5b78cf8c827c",
           "note": "Official IBM GGUF repo for this model (IBM publishes only Q4_K_M here). gb is the download size from the Hugging Face API file listing of ibm-granite/granite-34b-code-instruct-8k-GGUF@4e7bb6b (fetched 2026-10-07): 1 file (granite-34b-code-instruct.Q4_K_M.gguf) 21.38 GB. `-hf ibm-granite/granite-34b-code-instruct-8k-GGUF:Q4_K_M` resolves to granite-34b-code-instruct.Q4_K_M.gguf (HF manifest)."
+        },
+        {
+          "quant": "q4_0",
+          "gb": 19,
+          "cmd": "ollama run granite-code:34b",
+          "source": "https://ollama.com/library/granite-code/tags",
+          "gb_estimated": true
         }
       ]
     },
@@ -36671,6 +36692,13 @@
           "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoder', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
           "source": "https://huggingface.co/bigcode/starcoder/tree/827cd7721231872c152e3faef5cae1b22964ed58",
           "note": "gb is the size of the 7 safetensors weight files transformers downloads from bigcode/starcoder@827cd77 (Hugging Face API file listing, fetched 2026-10-07); quant from safetensors metadata F32 15,819,446,272, which torch_dtype='auto' keeps. The repo is gated: accept its terms on Hugging Face and log in (hf auth login) before the first run."
+        },
+        {
+          "quant": "q4_0",
+          "gb": 9,
+          "cmd": "ollama run starcoder:15b",
+          "source": "https://ollama.com/library/starcoder/tags",
+          "gb_estimated": true
         }
       ]
     },
@@ -36905,6 +36933,13 @@
           "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoderbase-3b', torch_dtype='auto', device_map='auto')('def print_hello_world():', max_new_tokens=40)[0]['generated_text'])\"",
           "source": "https://huggingface.co/bigcode/starcoderbase-3b/tree/e1c5ef4ebb97afa0db09ec3e520f0487ca350bbe",
           "note": "gb is the size of the 2 .bin weight files transformers downloads from bigcode/starcoderbase-3b@e1c5ef4 (Hugging Face API file listing, fetched 2026-10-07: 12,173,389,764 bytes). quant fp32: the gated repo's config is not readable anonymously and the .bin has no safetensors metadata; the size is about 4 bytes per parameter for the catalogue's 3B, so this is derived, not read. The repo is gated: accept the BigCode OpenRAIL-M agreement on Hugging Face and log in (hf auth login) before the first run. Its config names GPTBigCodeForCausalLM (Hugging Face API), a built-in transformers architecture."
+        },
+        {
+          "quant": "q4_0",
+          "gb": 1.8,
+          "cmd": "ollama run starcoder:3b",
+          "source": "https://ollama.com/library/starcoder/tags",
+          "gb_estimated": true
         }
       ]
     },
@@ -36944,6 +36979,13 @@
           "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoderbase-7b', torch_dtype='auto', device_map='auto')('def print_hello_world():', max_new_tokens=40)[0]['generated_text'])\"",
           "source": "https://huggingface.co/bigcode/starcoderbase-7b/tree/94e20e98e189b1d6dccd56e932667bd85cc7c393",
           "note": "gb is the size of the 4 safetensors weight files transformers downloads from bigcode/starcoderbase-7b@94e20e9 (Hugging Face API file listing, fetched 2026-10-07); quant from safetensors metadata F32 7,528,589,824, which torch_dtype='auto' keeps. The repo is gated: accept its terms on Hugging Face and log in (hf auth login) before the first run. No GGUF from the accepted publishers and no ollama tag that names this checkpoint (ollama's starcoder page does not say which StarCoder release its tags package)."
+        },
+        {
+          "quant": "q4_0",
+          "gb": 4.3,
+          "cmd": "ollama run starcoder:7b",
+          "source": "https://ollama.com/library/starcoder/tags",
+          "gb_estimated": true
         }
       ]
     },
@@ -41381,7 +41423,17 @@
     "params_b": 3,
     "active_b": 3,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 2.1,
+          "cmd": "ollama run granite4.1:3b",
+          "source": "https://ollama.com/library/granite4.1/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
     "identity_note": "Comparison-only, proposed so the granite-4-1-8b card runs count. The pinned granite-4.1-8b card (@1504002) prints one Evaluation Results table with '3B Dense', '8B Dense' and '30B Dense' columns for the Granite 4.1 family. Weights: https://huggingface.co/ibm-granite/granite-4.1-3b (sha c0650403e44e78ec0262dab1c90914c65b196c4e, created 2026-04-06, apache-2.0, 3,402,836,480 params in safetensors metadata). Dense, so active = total.",
     "identity_evidence": [
       {
@@ -41405,7 +41457,17 @@
     "params_b": 30,
     "active_b": 30,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 17,
+          "cmd": "ollama run granite4.1:30b",
+          "source": "https://ollama.com/library/granite4.1/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
     "identity_note": "Comparison-only, proposed so the granite-4-1-8b card runs count. The pinned granite-4.1-8b card (@1504002) prints one Evaluation Results table with '3B Dense', '8B Dense' and '30B Dense' columns for the Granite 4.1 family. Weights: https://huggingface.co/ibm-granite/granite-4.1-30b (sha 4fae6278f7132abf5e971f9de49ebbad09c54cce, created 2026-04-06, apache-2.0, 28,865,728,512 params in safetensors metadata). Dense, so active = total.",
     "identity_evidence": [
       {
@@ -41477,7 +41539,17 @@
     "params_b": 13.35,
     "active_b": 13.35,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 8,
+          "cmd": "ollama run llava:13b",
+          "source": "https://ollama.com/library/llava/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
     "identity_note": "Comparison-only, proposed so the LLaVA model-zoo runs of llava-v1-6-34b count. The pinned MODEL_ZOO.md (@c121f04) lists both own LLaVA-1.6 checkpoints in one table: liuhaotian/llava-v1.6-34b (catalogued) and liuhaotian/llava-v1.6-vicuna-13b. Weights: https://huggingface.co/liuhaotian/llava-v1.6-vicuna-13b (sha 22422b4c3a3ef1ba52aca074cc9021216877ce5d, created 2024-01-31, 13,350,844,416 params in safetensors metadata; Vicuna-13B base, so usage follows the Llama 2 licence per the model zoo note).",
     "identity_evidence": [
       {
@@ -41547,7 +41619,17 @@
     "params_b": 7,
     "active_b": 7,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 4,
+          "cmd": "ollama run deepseek-llm:7b",
+          "source": "https://ollama.com/library/deepseek-llm/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
     "identity_note": "Comparison-only, proposed so the DeepSeek-V2-Lite-Chat card runs count. The pinned DeepSeek-V2-Lite-Chat card (@8586474) prints DeepSeek's own chat models side by side: 'DeepSeek 7B Chat (SFT)', 'DeepSeekMoE 16B Chat (SFT)' and 'DeepSeek-V2-Lite 16B Chat (SFT)' (catalogue deepseek-v2-lite-chat). Weights: https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat (sha afbda8b347ec881666061fa67447046fc5164ec8, created 2023-11-29, DeepSeek model licence); same family as the catalogued deepseek-llm-67b-chat.",
     "identity_evidence": [
       {
@@ -41745,7 +41827,17 @@
     "params_b": 14.7,
     "active_b": 14.7,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 11,
+          "cmd": "ollama run phi4-reasoning:plus",
+          "source": "https://ollama.com/library/phi4-reasoning/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
     "model_repo": "https://huggingface.co/microsoft/Phi-4-reasoning-plus",
     "identity_note": "Comparison-only, proposed so the Phi-4-reasoning card's 'Model Quality' runs count. The pinned Phi-4-reasoning card (@1de18ec) evaluates two own checkpoints side by side: 'Phi-4-reasoning' (catalogue phi-4-reasoning) and 'Phi-4-reasoning-plus' (additional outcome-based RL on top of Phi-4-reasoning). Weights: https://huggingface.co/microsoft/Phi-4-reasoning-plus (HF API sha 69baf8528e1bcf05f475034d9e5dd32875ed125f, created 2025-04-17, licence mit, 14,659,507,200 parameters in safetensors metadata). Distinct from phi-4-reasoning; do not merge.",
     "identity_evidence": [
@@ -49953,6 +50045,13 @@
           "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoder2-15b-instruct-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
           "source": "https://huggingface.co/bigcode/starcoder2-15b-instruct-v0.1/tree/ffb8dd9776ba9a66d655ecd962e882f3013e9f7c",
           "note": "gb is the size of the 7 safetensors weight file(s) transformers downloads from bigcode/starcoder2-15b-instruct-v0.1@ffb8dd9 (Hugging Face API file listing, fetched 2026-10-10); quant from safetensors metadata dtype BF16, which torch_dtype='auto' keeps."
+        },
+        {
+          "quant": "q4_0",
+          "gb": 9.1,
+          "cmd": "ollama run starcoder2:15b-instruct",
+          "source": "https://ollama.com/library/starcoder2/tags",
+          "gb_estimated": true
         }
       ]
     },
@@ -49995,6 +50094,13 @@
           "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoderbase-1b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
           "source": "https://huggingface.co/bigcode/starcoderbase-1b/tree/182f0165fdf8da9c9935901eec65c94337f01c11",
           "note": "gb is the size of the 1 safetensors weight file(s) transformers downloads from bigcode/starcoderbase-1b@182f016 (Hugging Face API file listing, fetched 2026-10-10); quant from safetensors metadata dtype F32, which torch_dtype='auto' keeps. Gated repo: accept the licence on Hugging Face and log in (hf auth login) before running."
+        },
+        {
+          "quant": "q4_0",
+          "gb": 0.726,
+          "cmd": "ollama run starcoder:1b",
+          "source": "https://ollama.com/library/starcoder/tags",
+          "gb_estimated": true
         }
       ]
     },
