@@ -72,7 +72,17 @@
       "chartography-with-tools",
       "widesearch",
       "rwsearch",
-      "deepsearchqa"
+      "deepsearchqa",
+      "swe-atlas-mini-swe-agent",
+      "contractbench-sr",
+      "k-browsecomp-verified",
+      "t1-bench-pass-hat-3",
+      "thinkingbox-bench-pass1",
+      "gamelogicbench-claude-code",
+      "eegagentbench-overall",
+      "e2e-swe-pass1",
+      "klinikebench-strict-pass1",
+      "video2world-v2wscore-opencode"
     ]
   },
   {
@@ -144,7 +154,11 @@
       "codereviewqa-ctr-invariant-accuracy",
       "codereviewqa-clh-invariant-accuracy",
       "codereviewqa-sih-invariant-accuracy",
-      "livecodebench-v2"
+      "livecodebench-v2",
+      "swe-atlas-mini-swe-agent",
+      "viseditbench-pass",
+      "gamelogicbench-claude-code",
+      "e2e-swe-pass1"
     ]
   },
   {
@@ -292,7 +306,14 @@
       "vmmu-mean",
       "kaleidoscope-overall",
       "vhelm-mmmu-val-em",
-      "vhelm-mathvista-testmini-em"
+      "vhelm-mathvista-testmini-em",
+      "puredocbench-avg3",
+      "chartarena-en-map",
+      "viseditbench-pass",
+      "diagram-mmu-dqa",
+      "bear-bench-overall",
+      "scidocbench-overall",
+      "spacecast-bench-overall"
     ]
   },
   {
@@ -310,7 +331,8 @@
       "rwsearch",
       "seal-0",
       "deepsearchqa",
-      "hle-with-tools"
+      "hle-with-tools",
+      "k-browsecomp-verified"
     ]
   },
   {

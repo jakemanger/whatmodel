@@ -1,0 +1,279 @@
+{
+  "license": "CC BY-SA 4.0",
+  "note": "Results adapted from CC BY-SA 4.0 sources; this subset is distributed under the same licence. Each source lists its attribution and changes.",
+  "sources": [
+    {
+      "id": "paper-2606.12250v1-polish-medical-exams",
+      "name": "Reassessing High-Performing LLMs on Polish Medical Exams: True Competence or Bias-Driven Performance? (arXiv:2606.12250v1)",
+      "kind": "paper",
+      "match": [
+        "arxiv.org/html/2606.12250v1",
+        "arxiv.org/abs/2606.12250v1"
+      ],
+      "exact": true,
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "terms_url": "https://arxiv.org/abs/2606.12250v1",
+      "quote": "arXiv abs page for 2606.12250v1 links http://creativecommons.org/licenses/by-sa/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY-SA 4.0'. Abstract: 'We evaluate 21 LLMs and show that evaluation design strongly affects results.' Sec. 6: 'the LLMs are evaluated on the unmodified exam sets, comparing two evaluation techniques: the technique reproduced from the Polish Medical Exams benchmark Grzybowski et al. (2025) and the introduced one that changes the instruction to minimize bias and utilizes constrained generation.' Sec. 6.1 names the checkpoints (Bielik-11B-v3-Instruct, Bielik-4.5B-v3.0-Instruct, PLLuM-12B-instruct, Llama-PLLuM-70B-instruct, Qwen3.5 9B/35B/122B, Llama3.3-70B, Gemma3 12B/27B, BioMistral-7B, Llama3-OpenBioLLM-70B, MedGemma 4B/27B ...). Appendix: 'the generation of the answers was done with a temperature equal to 0, constrained generation (when applicable) was limited to answers A, B, C, D, E' using vLLM/Transformers on the authors' A100 cluster. The authors made none of the evaluated models.",
+      "attribution": "Antoni Lasik, Jakub Pokrywka, Łukasz Grzybowski, Jeremi Ignacy Kaczmarek, Gabriela Korzańska, Janusz Świeczkowski-Feiz, Oskar Pastuszek, Paulina Hoffman, Jakub Tomasz Dąbrowski, Wojciech Kusa, 'Reassessing High-Performing LLMs on Polish Medical Exams: True Competence or Bias-Driven Performance?', arXiv:2606.12250v1 (2026), CC BY-SA 4.0. Changes: selected cells of Table 4 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+      "scope": "Table 4 'Avg OM' column (accuracy under the authors' bias-mitigated protocol, averaged over the LEK, LDEK, PES, PESDL, PESF, LEK-EN and LDEK-EN exams). 'Avg PM' (replicated earlier protocol) and the open-ended/modified-question tables are not used. Not imported: PLLuM-12B-NC-Inst/Chat (2412 vs 2507 release not stated), LLaMA3-8B (base vs Instruct not stated), MedGemma-27B (text vs multimodal), MediPhi, BioMistral-7B-DARE, Meditron3-70B (not catalogued).",
+      "verdict": "allowed",
+      "checked": "2026-10-10",
+      "evidence_url": "https://arxiv.org/abs/2606.12250v1",
+      "icon": "arxiv.org"
+    },
+    {
+      "id": "paper-2610.04432v2-video2world",
+      "name": "Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos (arXiv:2610.04432v2)",
+      "kind": "paper",
+      "match": [
+        "arxiv.org/html/2610.04432v2",
+        "arxiv.org/abs/2610.04432v2"
+      ],
+      "exact": true,
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "terms_url": "https://arxiv.org/abs/2610.04432v2",
+      "quote": "arXiv abs page for 2610.04432v2 links http://creativecommons.org/licenses/by-sa/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY-SA 4.0'. Sec. 4.1: 'We evaluate 9 coding-agent models on 222 instances, covering 189 video clips and 39 task families. Seven models run through OpenCode, while GPT-6 Astra and Fable-5.1 use Codex CLI and Claude Code, respectively. We evaluate each configuration as a complete agent system ... Each model makes one autonomous construction attempt per instance ... within a 180-minute wall-clock limit. The submission retained by the prescribed stopping rule is frozen for evaluation, without human correction or selection based on hidden scores.' Table A7 gives the exact model identifiers (OpenCode 1.18.29, openrouter/ prefix) and provider routes. Authors (Aether AI, UCSD) made none of the evaluated models.",
+      "attribution": "Jinzhou Tang, Zijun Zhang, Jing Yang, Yuchen Yan, Kun Zhou, Lingjun Mao, Ruobing Han, Jinglin Cao, Wenpeng Xu, Lukun He, Minghao Fu, Fan Feng, Biwei Huang (Aether AI, UC San Diego), 'Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos', arXiv:2610.04432v2 (2026), CC BY-SA 4.0. Changes: selected cells of Table 2 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+      "scope": "Table 2 'V2WScore' column for the seven configurations that share the OpenCode 1.18.29 scaffold (Table A7). GPT-6 Astra (Codex CLI, 'Ultra') and Fable-5.1 (Claude Code, 'Max') use different scaffolds and are not imported, to keep one harness per run; the human-assisted reference row is not a model. Component columns not used.",
+      "verdict": "allowed",
+      "checked": "2026-10-10",
+      "evidence_url": "https://arxiv.org/abs/2610.04432v2",
+      "icon": "arxiv.org"
+    }
+  ],
+  "benchmarks": [
+    {
+      "id": "polish-medical-exams-om",
+      "name": "Polish medical board exams, bias-mitigated MCQ protocol (7-exam average)",
+      "kind": "acc",
+      "category": "llm",
+      "url": "https://arxiv.org/html/2606.12250v1",
+      "description": "Polish Medical Exams re-evaluation (arXiv:2606.12250v1, CC BY-SA 4.0): five-option (A-E) multiple-choice questions from Polish medical and dental final exams (LEK, LDEK), specialist board exams (PES, PESDL, PESF) and English versions of LEK/LDEK. 'OM' protocol: neutral instruction without a sample answer letter, constrained generation to the option letters, temperature 0. Score = mean accuracy over the seven exams (Table 4 'Avg OM'); chance 20%.",
+      "chance": 0.2
+    },
+    {
+      "id": "video2world-v2wscore-opencode",
+      "name": "Video2World V2WScore (coding agents reconstruct interactive simulated worlds from videos, OpenCode scaffold)",
+      "kind": "acc",
+      "category": "llm",
+      "url": "https://arxiv.org/html/2610.04432v2",
+      "description": "Video2World (arXiv:2610.04432v2, CC BY-SA 4.0): 222 instances (189 embodied manipulation video clips, 39 task families); a coding agent must build an executable physics-simulated scene and robot behaviour that reproduce the video. V2WScore (0-100) combines build rate, task success/progress, geometric fidelity and dynamic fidelity, macro-averaged over task families (Table 2), stored /100. One autonomous attempt per instance, 180-minute limit, OpenCode 1.18.29 scaffold for every imported row (other scaffolds excluded).",
+      "chance": 0
+    }
+  ],
+  "models": [],
+  "results": [
+    {
+      "model": "bielik-11b-v3-0-instruct",
+      "bench": "polish-medical-exams-om",
+      "score": 0.558,
+      "source": "https://arxiv.org/html/2606.12250v1",
+      "by": "independent",
+      "date": "2026-06-10",
+      "note": "Polish Medical Exams (bias-mitigated) (arXiv:2606.12250v1, CC BY-SA 4.0) Table 4 (average performance under the bias-mitigated methodology OM vs the previous protocol PM), row 'Bielik-11B', Avg OM = 55.8% (Sec. 6.1: Bielik-11B-v3-Instruct); stored /100. Authors' own run: bias-mitigated instruction, constrained generation to A-E, temperature 0, vLLM/Transformers on the authors' A100 cluster; mean over seven exams.",
+      "source_id": "paper-2606.12250v1-polish-medical-exams"
+    },
+    {
+      "model": "bielik-4-5b-v3-0-instruct",
+      "bench": "polish-medical-exams-om",
+      "score": 0.378,
+      "source": "https://arxiv.org/html/2606.12250v1",
+      "by": "independent",
+      "date": "2026-06-10",
+      "note": "Polish Medical Exams (bias-mitigated) (arXiv:2606.12250v1, CC BY-SA 4.0) Table 4 (average performance under the bias-mitigated methodology OM vs the previous protocol PM), row 'Bielik-4.5B', Avg OM = 37.8% (Sec. 6.1: Bielik-4.5B-v3.0-Instruct); stored /100. Authors' own run: bias-mitigated instruction, constrained generation to A-E, temperature 0, vLLM/Transformers on the authors' A100 cluster; mean over seven exams.",
+      "source_id": "paper-2606.12250v1-polish-medical-exams"
+    },
+    {
+      "model": "llama-pllum-70b-instruct-2412",
+      "bench": "polish-medical-exams-om",
+      "score": 0.571,
+      "source": "https://arxiv.org/html/2606.12250v1",
+      "by": "independent",
+      "date": "2026-06-10",
+      "note": "Polish Medical Exams (bias-mitigated) (arXiv:2606.12250v1, CC BY-SA 4.0) Table 4 (average performance under the bias-mitigated methodology OM vs the previous protocol PM), row 'PLLuM-70B-Inst', Avg OM = 57.1% (Sec. 6.1: Llama-PLLuM-70B-instruct (only catalogued release, 2412)); stored /100. Authors' own run: bias-mitigated instruction, constrained generation to A-E, temperature 0, vLLM/Transformers on the authors' A100 cluster; mean over seven exams.",
+      "source_id": "paper-2606.12250v1-polish-medical-exams"
+    },
+    {
+      "model": "pllum-12b-instruct-2412",
+      "bench": "polish-medical-exams-om",
+      "score": 0.359,
+      "source": "https://arxiv.org/html/2606.12250v1",
+      "by": "independent",
+      "date": "2026-06-10",
+      "note": "Polish Medical Exams (bias-mitigated) (arXiv:2606.12250v1, CC BY-SA 4.0) Table 4 (average performance under the bias-mitigated methodology OM vs the previous protocol PM), row 'PLLuM-12B-Inst', Avg OM = 35.9% (PLLuM-12B-instruct (only catalogued release, 2412)); stored /100. Authors' own run: bias-mitigated instruction, constrained generation to A-E, temperature 0, vLLM/Transformers on the authors' A100 cluster; mean over seven exams.",
+      "source_id": "paper-2606.12250v1-polish-medical-exams"
+    },
+    {
+      "model": "pllum-12b-chat-2412",
+      "bench": "polish-medical-exams-om",
+      "score": 0.295,
+      "source": "https://arxiv.org/html/2606.12250v1",
+      "by": "independent",
+      "date": "2026-06-10",
+      "note": "Polish Medical Exams (bias-mitigated) (arXiv:2606.12250v1, CC BY-SA 4.0) Table 4 (average performance under the bias-mitigated methodology OM vs the previous protocol PM), row 'PLLuM-12B-Chat', Avg OM = 29.5% (PLLuM-12B-chat (only catalogued release, 2412)); stored /100. Authors' own run: bias-mitigated instruction, constrained generation to A-E, temperature 0, vLLM/Transformers on the authors' A100 cluster; mean over seven exams.",
+      "source_id": "paper-2606.12250v1-polish-medical-exams"
+    },
+    {
+      "model": "qwen3-5-122b-a10b",
+      "bench": "polish-medical-exams-om",
+      "score": 0.751,
+      "source": "https://arxiv.org/html/2606.12250v1",
+      "by": "independent",
+      "date": "2026-06-10",
+      "note": "Polish Medical Exams (bias-mitigated) (arXiv:2606.12250v1, CC BY-SA 4.0) Table 4 (average performance under the bias-mitigated methodology OM vs the previous protocol PM), row 'Qwen3.5-122B-A10B', Avg OM = 75.1%; stored /100. Authors' own run: bias-mitigated instruction, constrained generation to A-E, temperature 0, vLLM/Transformers on the authors' A100 cluster; mean over seven exams.",
+      "source_id": "paper-2606.12250v1-polish-medical-exams"
+    },
+    {
+      "model": "qwen3-5-35b-a3b",
+      "bench": "polish-medical-exams-om",
+      "score": 0.722,
+      "source": "https://arxiv.org/html/2606.12250v1",
+      "by": "independent",
+      "date": "2026-06-10",
+      "note": "Polish Medical Exams (bias-mitigated) (arXiv:2606.12250v1, CC BY-SA 4.0) Table 4 (average performance under the bias-mitigated methodology OM vs the previous protocol PM), row 'Qwen3.5-35B-A3B', Avg OM = 72.2%; stored /100. Authors' own run: bias-mitigated instruction, constrained generation to A-E, temperature 0, vLLM/Transformers on the authors' A100 cluster; mean over seven exams.",
+      "source_id": "paper-2606.12250v1-polish-medical-exams"
+    },
+    {
+      "model": "qwen3-5-9b",
+      "bench": "polish-medical-exams-om",
+      "score": 0.631,
+      "source": "https://arxiv.org/html/2606.12250v1",
+      "by": "independent",
+      "date": "2026-06-10",
+      "note": "Polish Medical Exams (bias-mitigated) (arXiv:2606.12250v1, CC BY-SA 4.0) Table 4 (average performance under the bias-mitigated methodology OM vs the previous protocol PM), row 'Qwen3.5-9B', Avg OM = 63.1%; stored /100. Authors' own run: bias-mitigated instruction, constrained generation to A-E, temperature 0, vLLM/Transformers on the authors' A100 cluster; mean over seven exams.",
+      "source_id": "paper-2606.12250v1-polish-medical-exams"
+    },
+    {
+      "model": "llama-3-3-70b",
+      "bench": "polish-medical-exams-om",
+      "score": 0.658,
+      "source": "https://arxiv.org/html/2606.12250v1",
+      "by": "independent",
+      "date": "2026-06-10",
+      "note": "Polish Medical Exams (bias-mitigated) (arXiv:2606.12250v1, CC BY-SA 4.0) Table 4 (average performance under the bias-mitigated methodology OM vs the previous protocol PM), row 'LLaMA3.3-70B', Avg OM = 65.8% (meta-llama/Llama-3.3-70B-Instruct); stored /100. Authors' own run: bias-mitigated instruction, constrained generation to A-E, temperature 0, vLLM/Transformers on the authors' A100 cluster; mean over seven exams.",
+      "source_id": "paper-2606.12250v1-polish-medical-exams"
+    },
+    {
+      "model": "gemma-3-27b",
+      "bench": "polish-medical-exams-om",
+      "score": 0.592,
+      "source": "https://arxiv.org/html/2606.12250v1",
+      "by": "independent",
+      "date": "2026-06-10",
+      "note": "Polish Medical Exams (bias-mitigated) (arXiv:2606.12250v1, CC BY-SA 4.0) Table 4 (average performance under the bias-mitigated methodology OM vs the previous protocol PM), row 'Gemma-3-27B', Avg OM = 59.2%; stored /100. Authors' own run: bias-mitigated instruction, constrained generation to A-E, temperature 0, vLLM/Transformers on the authors' A100 cluster; mean over seven exams.",
+      "source_id": "paper-2606.12250v1-polish-medical-exams"
+    },
+    {
+      "model": "gemma-3-12b",
+      "bench": "polish-medical-exams-om",
+      "score": 0.533,
+      "source": "https://arxiv.org/html/2606.12250v1",
+      "by": "independent",
+      "date": "2026-06-10",
+      "note": "Polish Medical Exams (bias-mitigated) (arXiv:2606.12250v1, CC BY-SA 4.0) Table 4 (average performance under the bias-mitigated methodology OM vs the previous protocol PM), row 'Gemma-3-12B', Avg OM = 53.3%; stored /100. Authors' own run: bias-mitigated instruction, constrained generation to A-E, temperature 0, vLLM/Transformers on the authors' A100 cluster; mean over seven exams.",
+      "source_id": "paper-2606.12250v1-polish-medical-exams"
+    },
+    {
+      "model": "medgemma-4b-it",
+      "bench": "polish-medical-exams-om",
+      "score": 0.434,
+      "source": "https://arxiv.org/html/2606.12250v1",
+      "by": "independent",
+      "date": "2026-06-10",
+      "note": "Polish Medical Exams (bias-mitigated) (arXiv:2606.12250v1, CC BY-SA 4.0) Table 4 (average performance under the bias-mitigated methodology OM vs the previous protocol PM), row 'MedGemma-4B', Avg OM = 43.4%; stored /100. Authors' own run: bias-mitigated instruction, constrained generation to A-E, temperature 0, vLLM/Transformers on the authors' A100 cluster; mean over seven exams.",
+      "source_id": "paper-2606.12250v1-polish-medical-exams"
+    },
+    {
+      "model": "biomistral-7b",
+      "bench": "polish-medical-exams-om",
+      "score": 0.306,
+      "source": "https://arxiv.org/html/2606.12250v1",
+      "by": "independent",
+      "date": "2026-06-10",
+      "note": "Polish Medical Exams (bias-mitigated) (arXiv:2606.12250v1, CC BY-SA 4.0) Table 4 (average performance under the bias-mitigated methodology OM vs the previous protocol PM), row 'BioMistral-7B', Avg OM = 30.6%; stored /100. Authors' own run: bias-mitigated instruction, constrained generation to A-E, temperature 0, vLLM/Transformers on the authors' A100 cluster; mean over seven exams.",
+      "source_id": "paper-2606.12250v1-polish-medical-exams"
+    },
+    {
+      "model": "llama3-openbiollm-70b",
+      "bench": "polish-medical-exams-om",
+      "score": 0.572,
+      "source": "https://arxiv.org/html/2606.12250v1",
+      "by": "independent",
+      "date": "2026-06-10",
+      "note": "Polish Medical Exams (bias-mitigated) (arXiv:2606.12250v1, CC BY-SA 4.0) Table 4 (average performance under the bias-mitigated methodology OM vs the previous protocol PM), row 'OpenBioLLM-70B', Avg OM = 57.2% (aaditya/Llama3-OpenBioLLM-70B); stored /100. Authors' own run: bias-mitigated instruction, constrained generation to A-E, temperature 0, vLLM/Transformers on the authors' A100 cluster; mean over seven exams.",
+      "source_id": "paper-2606.12250v1-polish-medical-exams"
+    },
+    {
+      "model": "claude-opus-5",
+      "bench": "video2world-v2wscore-opencode",
+      "score": 0.4156,
+      "source": "https://arxiv.org/html/2610.04432v2",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "Video2World (arXiv:2610.04432v2, CC BY-SA 4.0) Table 2 (overall performance on Video2World), row 'Claude Opus5', V2WScore (0-100) = 41.56 (Table A7: anthropic/claude-opus-5 via Anthropic); stored /100. Authors' own run: OpenCode 1.18.29 scaffold, one autonomous attempt per instance, 180-minute wall-clock limit, model identifier and provider route per Table A7 (reasoning effort unspecified unless noted).",
+      "source_id": "paper-2610.04432v2-video2world"
+    },
+    {
+      "model": "kimi-k3",
+      "bench": "video2world-v2wscore-opencode",
+      "score": 0.3319,
+      "source": "https://arxiv.org/html/2610.04432v2",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "Video2World (arXiv:2610.04432v2, CC BY-SA 4.0) Table 2 (overall performance on Video2World), row 'Kimi K3', V2WScore (0-100) = 33.19 (Table A7: moonshotai/kimi-k3, provider moonshotai/mxfp4); stored /100. Authors' own run: OpenCode 1.18.29 scaffold, one autonomous attempt per instance, 180-minute wall-clock limit, model identifier and provider route per Table A7 (reasoning effort unspecified unless noted).",
+      "source_id": "paper-2610.04432v2-video2world"
+    },
+    {
+      "model": "gpt-5-6-sol",
+      "bench": "video2world-v2wscore-opencode",
+      "score": 0.31,
+      "source": "https://arxiv.org/html/2610.04432v2",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "Video2World (arXiv:2610.04432v2, CC BY-SA 4.0) Table 2 (overall performance on Video2World), row 'GPT-5.6 Sol', V2WScore (0-100) = 31.0 (Table A7: openai/gpt-5.6-sol via OpenAI); stored /100. Authors' own run: OpenCode 1.18.29 scaffold, one autonomous attempt per instance, 180-minute wall-clock limit, model identifier and provider route per Table A7 (reasoning effort unspecified unless noted).",
+      "source_id": "paper-2610.04432v2-video2world"
+    },
+    {
+      "model": "deepseek-v4-1-flash",
+      "bench": "video2world-v2wscore-opencode",
+      "score": 0.3054,
+      "source": "https://arxiv.org/html/2610.04432v2",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "Video2World (arXiv:2610.04432v2, CC BY-SA 4.0) Table 2 (overall performance on Video2World), row 'DeepSeek-V4.1 Flash', V2WScore (0-100) = 30.54 (Table A7: deepseek/deepseek-v4.1-flash, provider novita/fp8); stored /100. Authors' own run: OpenCode 1.18.29 scaffold, one autonomous attempt per instance, 180-minute wall-clock limit, model identifier and provider route per Table A7 (reasoning effort unspecified unless noted).",
+      "source_id": "paper-2610.04432v2-video2world"
+    },
+    {
+      "model": "gemini-3-8-flash",
+      "bench": "video2world-v2wscore-opencode",
+      "score": 0.3011,
+      "source": "https://arxiv.org/html/2610.04432v2",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "Video2World (arXiv:2610.04432v2, CC BY-SA 4.0) Table 2 (overall performance on Video2World), row 'Gemini-3.8 Flash', V2WScore (0-100) = 30.11 (Table A7: google/gemini-3.8-flash via Google Vertex, effort High); stored /100. Authors' own run: OpenCode 1.18.29 scaffold, one autonomous attempt per instance, 180-minute wall-clock limit, model identifier and provider route per Table A7 (reasoning effort unspecified unless noted).",
+      "source_id": "paper-2610.04432v2-video2world"
+    },
+    {
+      "model": "qwen3-8-max-0902",
+      "bench": "video2world-v2wscore-opencode",
+      "score": 0.2655,
+      "source": "https://arxiv.org/html/2610.04432v2",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "Video2World (arXiv:2610.04432v2, CC BY-SA 4.0) Table 2 (overall performance on Video2World), row 'Qwen-3.8 Max-0902', V2WScore (0-100) = 26.55 (Table A7: qwen/qwen3.8-max-0902 via Alibaba); stored /100. Authors' own run: OpenCode 1.18.29 scaffold, one autonomous attempt per instance, 180-minute wall-clock limit, model identifier and provider route per Table A7 (reasoning effort unspecified unless noted).",
+      "source_id": "paper-2610.04432v2-video2world"
+    },
+    {
+      "model": "glm-5-3-flash",
+      "bench": "video2world-v2wscore-opencode",
+      "score": 0.2569,
+      "source": "https://arxiv.org/html/2610.04432v2",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "Video2World (arXiv:2610.04432v2, CC BY-SA 4.0) Table 2 (overall performance on Video2World), row 'GLM-5.3 Flash', V2WScore (0-100) = 25.69 (Table A7: z-ai/glm-5.3-flash, provider novita/fp8); stored /100. Authors' own run: OpenCode 1.18.29 scaffold, one autonomous attempt per instance, 180-minute wall-clock limit, model identifier and provider route per Table A7 (reasoning effort unspecified unless noted).",
+      "source_id": "paper-2610.04432v2-video2world"
+    }
+  ]
+}

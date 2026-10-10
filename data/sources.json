@@ -15494,5 +15494,465 @@
     "verdict": "allowed",
     "checked": "2026-10-10",
     "icon": "huggingface.co"
+  },
+  {
+    "id": "paper-2605.07492v2-puredocbench",
+    "name": "How Far Is Document Parsing from Solved? PureDocBench: A Source-Traceable Benchmark across Clean, Degraded, and Real-World Settings (arXiv:2605.07492v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2605.07492v2",
+      "arxiv.org/abs/2605.07492v2"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2605.07492v2",
+    "quote": "arXiv abs page for 2605.07492v2 links http://creativecommons.org/licenses/by/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY 4.0'. Abstract: 'We evaluate 58 models, including pipeline-based parsers, end-to-end parsers, and general vision-language models.' Sec. 3.1 'Models (58). We prioritize recent releases and compare 13 pipeline / multi-stage specialists, 19 end-to-end specialists, and 26 general-purpose VLMs (Table 2) ... General VLMs span the Qwen and MiniCPM families alongside Claude Opus 5, Gemini 3.6 Flash, GLM-5.3-Flash, GPT-5.6 Sol, and Kimi K2.6.' Intro: 'We release document images, sources, annotations, generation and evaluation tools, and available model predictions for reproducible evaluation.' The benchmark is new in this paper, so every score is the authors' own run. Authors (CAS and universities) made none of the evaluated general VLMs. Checkpoint links (e.g. Qwen3-VL-8B -> Qwen/Qwen3-VL-8B-Instruct) from the authors' repo README at github.com/zhihengli-casia/PureDocBench commit 154f576b9ef9aabd2460b4276432d81bf5a268c8.",
+    "attribution": "Zhiheng Li, Zongyang Ma, Jiaxian Chen et al. (UCAS / CASIA, NWPU, JLU, USTC, PKU, HelloGroup, ShanghaiTech), 'How Far Is Document Parsing from Solved? PureDocBench: A Source-Traceable Benchmark across Clean, Degraded, and Real-World Settings', arXiv:2605.07492v2 (2026), CC BY 4.0. Changes: selected cells of Table 2 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 2 (three-track parsing accuracy, 58 models), final 'Overall' column (mean of the Clean/Digital/Real track Overalls, Avg3) for the 'General-purpose VLMs' block (21 catalogued models). Pipeline and end-to-end OCR specialists, MiniCPM-V-4.5/4.6 and Step3-VL are not catalogued. Per-track and component columns not used (correlated slices).",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2605.07492v2",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2605.08366v1-swe-atlas",
+    "name": "SWE Atlas: Benchmarking Coding Agents Beyond Issue Resolution (arXiv:2605.08366v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2605.08366v1",
+      "arxiv.org/abs/2605.08366v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2605.08366v1",
+    "quote": "arXiv abs page for 2605.08366v1 links http://creativecommons.org/licenses/by/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY 4.0'. Sec. 3: 'We run a number of frontier coding models as well as the top open models on the SWE Atlas benchmark suite. We use the Harbor Framework to run reproducible inference and evaluations ... In addition, we use mini-SWE-agent, which uses just the bash command as a tool for the agent, as a minimal harness to evaluate some models under a common scaffold.' Table 1: 'Resolution rates on SWE Atlas, averaged over 3 trials. Pass@1 is the mean per-trial pass rate.' Table 8 gives thinking settings (GPT-5.4 and Opus 4.7 xHigh; Opus/Sonnet 4.6 and Gemini 3.1 Pro High; open models default/High). Authors (Scale AI) made none of the models.",
+    "attribution": "Mohit Raghavendra, Soham Dan, Miguel Romero Calvo et al. (Scale AI), 'SWE Atlas: Benchmarking Coding Agents Beyond Issue Resolution', arXiv:2605.08366v1 (2026), CC BY 4.0. Changes: selected cells of Table 1 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 1 'Pass@1' column for the mini-SWE-Agent block (one common scaffold). Native-scaffold rows (Codex, Claude Code, Gemini CLI) are a different harness and not imported. 'Gemini 3 Flash' row not imported (Table 8 calls it 'Gemini 3.1 Flash'; identity ambiguous). Per-workflow columns not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2605.08366v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2605.08614v1-diagnosticiq",
+    "name": "DiagnosticIQ: A Benchmark for LLM-Based Industrial Maintenance Action Recommendation from Symbolic Rules (arXiv:2605.08614v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2605.08614v1",
+      "arxiv.org/abs/2605.08614v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2605.08614v1",
+    "quote": "arXiv abs page for 2605.08614v1 links http://creativecommons.org/licenses/by/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY 4.0'. Sec. 1: 'We benchmark 29 LLMs across 9 families and 4 embedding baselines on DiagnosticIQ and five targeted variants.' Sec. 4: 'We evaluate models via direct zero-shot prompting ... we report both standard accuracy and macro-averaged accuracy' (macro over asset classes). Appendix A.16.2: 'For LLM inference we explicitly specify temperature = 0 and maximum tokens = 4096. All other parameters are left at their defaults.' Core DiagnosticIQ questions have 4 options (Pro: 10). IBM authors made the Granite models (rows marked by: lab); all other rows are independent.",
+    "attribution": "Devin Yasith De Silva, Dhaval Patel, Christodoulos Constantinides, Shuxin Lin, Nianjun Zhou, Paul J Adams, Sal Rosato, Nicolas Constantinides, Deborah L. McGuinness, Jayant Kalagnanam (IBM, Rensselaer Polytechnic Institute), 'DiagnosticIQ: A Benchmark for LLM-Based Industrial Maintenance Action Recommendation from Symbolic Rules', arXiv:2605.08614v1 (2026), CC BY 4.0. Changes: selected cells of Table 2 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 2 (leaderboard), 'Macro % D.IQ' column (core 4-option set, 6,690 questions). Not imported: deepseek-v3, mistral-large and gemini-1.5-pro (no snapshot given; several catalogued), gpt-oss-120b (30.38 macro on the 4-option core set but 32.79 on the 10-option Pro set: consistent with an answer-format failure), and the embedding-only baselines.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2605.08614v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2605.10912v1-wildclawbench",
+    "name": "WildClawBench: A Benchmark for Real-World, Long-Horizon Agent Evaluation (arXiv:2605.10912v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2605.10912v1",
+      "arxiv.org/abs/2605.10912v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2605.10912v1",
+    "quote": "arXiv abs page for 2605.10912v1 links http://creativecommons.org/licenses/by/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY 4.0'. Sec. 4: 'Models and Harnesses. We evaluate 19 frontier models on WildClawBench under four harnesses: OpenClaw (the default), Claude Code, Codex, and Hermes Agent. All models are shipped through a unified OpenRouter endpoint, and each harness ships as a dedicated Docker image with pinned OS, Python toolchain, and pre-installed binaries.' Table 2 caption: 'Main results on WildClawBench under the OpenClaw harness ... The Overall column is a task-count-weighted average of the Multimodal (26 tasks) and Pure Text (34 tasks) columns.' WildClawBench is introduced in this paper, so the scores are the authors' runs; Shanghai AI Lab's own models are not in Table 2.",
+    "attribution": "Shuangrui Ding, Xuanlang Dai, Long Xing et al. (Shanghai AI Laboratory, CUHK, Fudan, USTC, SJTU, Tsinghua, Shanghai Innovation Institute, ZJU, NTU), 'WildClawBench: A Benchmark for Real-World, Long-Horizon Agent Evaluation', arXiv:2605.10912v1 (2026), CC BY 4.0. Changes: selected cells of Table 2 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 2 (main results under the OpenClaw harness), 'Overall Score' column (60 tasks). Other harnesses and the Multimodal/Pure-Text split columns not used. Reuses the existing 'wildclawbench' benchmark id (this paper defines the benchmark). GLM 5 Turbo not catalogued.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2605.10912v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2605.17281v2-contractbench",
+    "name": "ContractBench: Can LLM Agents Preserve Observation Contracts? (arXiv:2605.17281v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2605.17281v2",
+      "arxiv.org/abs/2605.17281v2"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2605.17281v2",
+    "quote": "arXiv abs page for 2605.17281v2 links http://creativecommons.org/licenses/by/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY 4.0'. Sec. 4: 'We evaluate 38 model variants across 15 families ... Each model is run on the full 33-task ContractBench suite at k=3 rollouts per task (n=99 episodes per model), with temperature 0, a task-describing system prompt, and a 600-second per-episode wall-clock timeout.' App.: 'ContractBench evaluation runs against two backend types: external LLM APIs (proprietary frontier models and many open-source models hosted by inference providers) and a local vLLM server (for the smaller open-source variants we hosted ourselves).' Table 9 pins every model identifier. Authors (UC Davis / USC / HKU) built none of the evaluated models.",
+    "attribution": "Jicheng Wang, Yifeng He, Zili Wang, Hanwen Xing, Arkaprava De, Hao Chen, 'ContractBench: Can LLM Agents Preserve Observation Contracts?', arXiv:2605.17281v2 (2026), CC BY 4.0. Changes: selected cells of Table 10 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 10 master leaderboard, SR% column, frontier-proprietary and open-source-SOTA blocks (24 catalogued models; identifiers from Table 9). The 'Sub-cliff' block (all rows 0.0%, mostly Base checkpoints with no chat template/tool-call format, plus DeepSeek-R1 via Together and Qwen2.5 Instruct via Featherless) is not imported: an all-zero tool-calling row cannot be told apart from a tool-format failure.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2605.17281v2",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2606.01348v3-chartarena",
+    "name": "ChartArena: Benchmarking Chart Parsing across Languages, Scenarios, and Formats (arXiv:2606.01348v3)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2606.01348v3",
+      "arxiv.org/abs/2606.01348v3"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2606.01348v3",
+    "quote": "arXiv abs page for 2606.01348v3 links http://creativecommons.org/licenses/by/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY 4.0'. Sec. 5.1: 'We evaluate 26 representative models across three categories: (a) General-purpose MLLMs (16 models) ... (Qwen2.5-VL, InternVL3.5, Qwen3-VL, GLM-4.5V, Qwen3.5-35B-A3B, Kimi K2.5) and proprietary models (GPT-4o, GPT-5, Gemini 2.5/3.1 Pro, Seed-1.8/2.0, MiMo-V2-Omni) ... Each model is run in its native output format, and outputs are normalized before scoring ... for general-purpose MLLMs we adopt a unified prompting template carefully tuned for chart parsing. All models are evaluated under identical inference settings.' Table C.3 gives 'additional results across various model groups and parameter scales' under the same protocol. ChartArena is new in this paper, so all scores are the authors' runs. The only Tencent model in the tables (HunyuanOCR) is not catalogued, so all imported rows are independent.",
+    "attribution": "Shangpin Peng, Gengluo Li, Xingyu Wan, Chengquan Zhang, Hao Feng, Binghong Wu, Huawen Shen, Weinong Wang, Ziyi Cai, Zhuotao Tian, Han Hu, Can Ma, Yu Zhou (Tencent LLM Department, SLAI, HKUST, CAS IIE, Nankai), 'ChartArena: Benchmarking Chart Parsing across Languages, Scenarios, and Formats', arXiv:2606.01348v3 (2026), CC BY 4.0. Changes: selected cells of Tables 2 and C.3 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 2 (main results) and Table C.3 (additional results, same protocol), English 'Average' column (mAP_high averaged over the eight chart families and three visual scenarios). The Chinese (ZH) average is not imported (one headline per model). GPT-4o (no snapshot), InternVL3.5, Seed-1.8/2.0, MiniCPM-V 4.5, document-parsing and chart-expert models are not catalogued or ambiguous; Molmo-7B-D/72B rows (1.6/2.1 mAP, near zero on every chart type) not imported as likely output-format failures.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2606.01348v3",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2606.02404v1-k-browsecomp",
+    "name": "K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts (arXiv:2606.02404v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2606.02404v1",
+      "arxiv.org/abs/2606.02404v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2606.02404v1",
+    "quote": "arXiv abs page for 2606.02404v1 links http://creativecommons.org/licenses/by/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY 4.0'. Sec. 5: 'We evaluate proprietary models and open-weight models on K-BrowseComp-Verified. The proprietary baselines include GPT-5.5, GPT-5.4-mini, and Gemini-3.1-Flash-Lite. The open-weight baselines include DeepSeek-V4-Pro, GLM-5.1, Qwen3.6-35B-A3B, and Gemma-4-31B-it. We also evaluate Korean open-weight models, including K-EXAONE-236B-A23B, A.X-4.0, HyperCLOVAX-SEED-Think-32B, and Kanana-2-30B-A3B-Thinking-2601.' Evaluation protocol: 'We build our browsing-agent evaluation on the search_evals framework ... deep-research agent and ... Perplexity Search as the search backend ... a budget of 10 search calls per question ... Each model is evaluated once on each of the 300 questions in the verified subset. We use GPT-5.4-mini to extract the final answer ... We report the single-run accuracy, which corresponds to pass@1.' One co-author affiliation is NAVER Cloud AI, so the HyperCLOVA X SEED row is by: lab; all others independent.",
+    "attribution": "Nahyun Lee, Dongkeun Yoon, Guijin Son et al. (Chung-Ang University, KAIST, Seoul National University, OnelineAI, NAVER Cloud AI, Carnegie Mellon University), 'K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts', arXiv:2606.02404v1 (2026), CC BY 4.0. Changes: selected cells of Table 2 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 2 'Verified subset Pass@1 Acc.' column (300 human-verified questions). Synthetic-subset column not used. Not imported: A.X-4.0 (not catalogued) and Kanana-2-30B-A3B-Thinking-2601 (not catalogued; 0.00).",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2606.02404v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2606.05104v2-kina",
+    "name": "Knowledge Index of Noah's Ark (arXiv:2606.05104v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2606.05104v2",
+      "arxiv.org/abs/2606.05104v2"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2606.05104v2",
+    "quote": "arXiv abs page for 2606.05104v2 links http://creativecommons.org/licenses/by/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY 4.0'. Sec. 5: 'We evaluate 42 models from 13 AI labs on KINA, spanning closed-source flagship APIs, open-source dense and Mixture-of-Experts (MoE) checkpoints, and reasoning models. The full model list is in Appendix F.1. All results are reported as avg@4 accuracy at default temperature, with 32K maximum new tokens and a reasoning budget of 16K (or \"Medium\"); prompts are in Appendix F.2.' Authors' affiliations (2077AI, M-A-P community, universities) did not make any evaluated model.",
+    "attribution": "Sheng Jin, Minghao Liu, Yunze Xiao et al. (2077AI, M-A-P, CMU, Brown, Waseda, UTokyo, MIT, Arizona, Northwestern, Duke-NUS), 'Knowledge Index of Noah's Ark', arXiv:2606.05104v2 (2026), CC BY 4.0. Changes: selected cells of Table 3 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 3 (full leaderboard of 42 models), ALL column only (per-discipline columns are correlated slices); identities from Table 13 (Appendix F.1). Doubao-Seed-2.0-Pro/Lite-260215 not catalogued. Tool-use (web search) Table 6 not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2606.05104v2",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2606.08071v1-surgiq",
+    "name": "SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models (arXiv:2606.08071v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2606.08071v1",
+      "arxiv.org/abs/2606.08071v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2606.08071v1",
+    "quote": "arXiv abs page for 2606.08071v1 links http://creativecommons.org/licenses/by/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY 4.0'. Sec. 4: 'We evaluate SurgiQ in a zero-shot multiple-choice setting using a diverse set of open-weight large language models, including general-purpose, biomedical, and reasoning-oriented architectures.' Sec. 4.2: 'We evaluate all models under a unified zero-shot multiple-choice setting ... For open-weight models, predictions are computed from next-token log-probabilities over the answer options ... answer choices are randomly shuffled once during dataset construction and the resulting order is kept fixed across all evaluations ... the evaluation procedure is fully deterministic.' Table A6 lists the Hugging Face repositories. Authors (MBZUAI) made none of the imported models (MBZUAI's K2-Think-V2 and MedMO rows are not catalogued and not imported).",
+    "attribution": "Ayah Al-Naji, Edoardo Fazzari, Saif Alkindi, Hamdan Alhadhrami, Preslav Nakov, Cesare Stefanini (MBZUAI), 'SurgiQ: A Large-Scale Multi-Domain Benchmark for Evaluating Surgical Understanding in Large Language Models', arXiv:2606.08071v1 (2026), CC BY 4.0. Changes: selected cells of Table 4 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 4 'Avg.' column (micro-accuracy over all SurgiQ items after duplicate filtering) for catalogued instruction/chat checkpoints and the two Meditron base models; repositories per Table A6. Not imported: Qwen2.5-32B/72B base rows, MedGemma-27B-IT (text vs multimodal repo not stated), TxGemma, Meerkat, MedMO, K2-Think-V2, OpenBioLLM, Med42 (not catalogued).",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2606.08071v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2606.11070v1-t1-bench",
+    "name": "T1-Bench: Benchmarking Multi-Scenario Agents in Real-World Domains (arXiv:2606.11070v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2606.11070v1",
+      "arxiv.org/abs/2606.11070v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2606.11070v1",
+    "quote": "arXiv abs page for 2606.11070v1 links http://creativecommons.org/licenses/by/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY 4.0'. Sec. 3.1: 'We evaluate six open-weight models, including GPT-OSS 20B, GPT-OSS 120B, Gemma4-26B-A4B-it, Gemma4-31B-it, Gemma4-E2B-it, and Gemma4-E4B-it. In addition, we include six proprietary models: Claude Haiku 4.5, Claude Sonnet 4.5, Claude Opus 4.6, GPT-5.4-Nano, GPT-5.4-Mini, and GPT-5.4. For consistency across evaluation and simulation settings, all user and judge agents are instantiated using Gemma4-26B-A4B-it.' Sec. 3.2: a conversation passes only with perfect tool recall, perfect parameter recall and exact match of all tool outputs; 'For all experiments, we set K=3.' Appendix Table 6 gives per-model sampling and reasoning effort (temperature 1.0). Authors (Capital One) made none of the models.",
+    "attribution": "Genta Indra Winata, Amartya Chakraborty, Yuzhen Lin et al. (AI Foundations, Capital One), 'T1-Bench: Benchmarking Multi-Scenario Agents in Real-World Domains', arXiv:2606.11070v1 (2026), CC BY 4.0. Changes: selected cells of Table 2 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 2 (overall results averaged over all domains), 'Pass^k' column (K=3: probability that all three sampled trials pass). Pass@k, tool/parameter accuracy and LLM-judge columns not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2606.11070v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2606.12250v1-polish-medical-exams",
+    "name": "Reassessing High-Performing LLMs on Polish Medical Exams: True Competence or Bias-Driven Performance? (arXiv:2606.12250v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2606.12250v1",
+      "arxiv.org/abs/2606.12250v1"
+    ],
+    "exact": true,
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "terms_url": "https://arxiv.org/abs/2606.12250v1",
+    "quote": "arXiv abs page for 2606.12250v1 links http://creativecommons.org/licenses/by-sa/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY-SA 4.0'. Abstract: 'We evaluate 21 LLMs and show that evaluation design strongly affects results.' Sec. 6: 'the LLMs are evaluated on the unmodified exam sets, comparing two evaluation techniques: the technique reproduced from the Polish Medical Exams benchmark Grzybowski et al. (2025) and the introduced one that changes the instruction to minimize bias and utilizes constrained generation.' Sec. 6.1 names the checkpoints (Bielik-11B-v3-Instruct, Bielik-4.5B-v3.0-Instruct, PLLuM-12B-instruct, Llama-PLLuM-70B-instruct, Qwen3.5 9B/35B/122B, Llama3.3-70B, Gemma3 12B/27B, BioMistral-7B, Llama3-OpenBioLLM-70B, MedGemma 4B/27B ...). Appendix: 'the generation of the answers was done with a temperature equal to 0, constrained generation (when applicable) was limited to answers A, B, C, D, E' using vLLM/Transformers on the authors' A100 cluster. The authors made none of the evaluated models.",
+    "attribution": "Antoni Lasik, Jakub Pokrywka, Łukasz Grzybowski, Jeremi Ignacy Kaczmarek, Gabriela Korzańska, Janusz Świeczkowski-Feiz, Oskar Pastuszek, Paulina Hoffman, Jakub Tomasz Dąbrowski, Wojciech Kusa, 'Reassessing High-Performing LLMs on Polish Medical Exams: True Competence or Bias-Driven Performance?', arXiv:2606.12250v1 (2026), CC BY-SA 4.0. Changes: selected cells of Table 4 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 4 'Avg OM' column (accuracy under the authors' bias-mitigated protocol, averaged over the LEK, LDEK, PES, PESDL, PESF, LEK-EN and LDEK-EN exams). 'Avg PM' (replicated earlier protocol) and the open-ended/modified-question tables are not used. Not imported: PLLuM-12B-NC-Inst/Chat (2412 vs 2507 release not stated), LLaMA3-8B (base vs Instruct not stated), MedGemma-27B (text vs multimodal), MediPhi, BioMistral-7B-DARE, Meditron3-70B (not catalogued).",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2606.12250v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2608.10408v1-viseditbench",
+    "name": "VisEditBench: Can Vision-Language Models Edit Visualization Code from Multimodal Feedback? (arXiv:2608.10408v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2608.10408v1",
+      "arxiv.org/abs/2608.10408v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2608.10408v1",
+    "quote": "arXiv abs page for 2608.10408v1 links http://creativecommons.org/licenses/by/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY 4.0'. Sec. 1: 'We evaluate 20 state-of-the-art VLMs on VisEditBench in a zero-shot setting using executability, task accuracy, readability and clarity, visual quality, visual similarity, and final pass rate.' Sec. 4: 'We use a fixed decoding configuration for all models to support reproducibility.' Table 10: 'image detail = high, temperature = 0.2, top-p = 1.0, maximum output tokens = 4096 ... GPT-4o is used as the default evaluator; for GPT-4o outputs, Gemini 2.5 Pro is used to avoid self-evaluation bias.' Strict pass: executable AND task accuracy >= 4.5 AND readability >= 4.0 AND visual quality >= 4.0 AND visual similarity >= 90. Authors (York University et al.) made none of the evaluated models.",
+    "attribution": "Mizanur Rahman, Arshia Azimlu, Shadikur Rahman, Md Tahmid Rahman Laskar, Amran Bhuiyan, Shafiq Joty, Enamul Hoque Prince (York University et al.), 'VisEditBench: Can Vision-Language Models Edit Visualization Code from Multimodal Feedback?', arXiv:2608.10408v1 (2026), CC BY 4.0. Changes: selected cells of Table 2 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 2 'Overall' pass-rate column for catalogued models with unambiguous identity. Not imported: GPT-4o (no snapshot), Qwen3-VL-2B/4B/8B/30B-A3B/32B (Instruct vs Thinking not stated), InternVL-3.5 (not catalogued), and Gemini-3.0-Flash (17.06%: only 46.02% of its outputs executed vs 82-96% for every other model, Table 3, consistent with the 4,096-token output cap rather than editing ability).",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2608.10408v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2608.12262v1-diagram-mmu",
+    "name": "Diagram-MMU: A Multi-Modal Benchmark for Scientific Diagrams (arXiv:2608.12262v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2608.12262v1",
+      "arxiv.org/abs/2608.12262v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2608.12262v1",
+    "quote": "arXiv abs page for 2608.12262v1 links http://creativecommons.org/licenses/by/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY 4.0'. Sec. 4: 'We evaluate 12 closed-source and open-source MLLMs on Diagram-MMU.' Table D.1 'Generation configurations of evaluated models' (API or vLLM, temperature 1.0, max 16,384 output tokens for the imported models; GPT-5.2 reasoning_effort = medium). DQA scoring: 'we evaluate diagram question answering using accuracy. We use Qwen3-Next-80B-A3B-Instruct to extract the answer and assign binary scores' (judge agreement with human majority 97.5%, Table C.2). The paper is new, so all scores are the authors' runs; Baidu co-authors, but no Baidu model is evaluated.",
+    "attribution": "Weihao Bo, Shan Zhang, Yanpeng Sun, Jie Liu, Yongke Yao, Jinhao Du, Wei He, Kai Zou, Zechao Li, Jingdong Wang (NJUST, Baidu, Adelaide, SUTD, Southeast U., ECNU, Oxford, NetMind.ai), 'Diagram-MMU: A Multi-Modal Benchmark for Scientific Diagrams', arXiv:2608.12262v1 (2026), CC BY 4.0. Changes: selected cells of Table 5 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 5 (main results on foundational capability, full dataset), 'DQA Acc.' column only (the D2C parsing/editing columns are code-similarity metrics). Not imported: Qwen3-VL-235B-A22B and Qwen3-VL-8B (Instruct vs Thinking not stated), Seed-2.0 Pro, InternVL3-38B, TikZero+ (not catalogued). The agentic settings (Tables 6-7) use a 300-diagram mini split and are not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2608.12262v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2608.17895v1-bear-bench",
+    "name": "BEAR-Bench: A Bilingual Enterprise and Academic Reasoning Benchmark for Multimodal Models (arXiv:2608.17895v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2608.17895v1",
+      "arxiv.org/abs/2608.17895v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2608.17895v1",
+    "quote": "arXiv abs page for 2608.17895v1 links http://creativecommons.org/licenses/by/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY 4.0'. Sec. 5.1: 'We evaluate a diverse set of MLLMs on BEAR-Bench, covering both open-weight models (Qwen3.5-0.8B/4B/9B/27B, Qwen3-VL-2B/8B-Instruct, Qwen3-VL-4B-Thinking, and Gemma-4-31B-it) and proprietary systems (Qwen3.5-397B-A17B, Qwen 3.6 Plus, Gemini 2.5/3.1 Pro/Flash, and Claude Sonnet/Opus 4.6). The open-weight models were run locally on an internal GPU server equipped with NVIDIA H100 and NVIDIA L40 accelerators; the proprietary ones were queried via the OpenRouter API. Inference protocol. All models were evaluated zero-shot under a fixed protocol ... a uniform decoding temperature of 0.6.' Scoring: GPT-4o LLM-as-a-judge binary semantic-equivalence verdict (validated against a 200-verdict human audit). No evaluated model is from the authors' organisations.",
+    "attribution": "Liubov Chubarova, Alexandra Kuleshova, Daniil Volkov, Kirill Sultanov, Alexey Zaytsev (Yandex, Applied AI Institute), 'BEAR-Bench: A Bilingual Enterprise and Academic Reasoning Benchmark for Multimodal Models', arXiv:2608.17895v1 (2026), CC BY 4.0. Changes: selected cells of Table 2 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 2 (BEAR-Bench leaderboard), 'Overall' column (n=1000). Subset columns not used. 'Gemini 3.1 Flash' row not imported (no Google model of that exact name; ambiguous between Gemini 3 Flash and Gemini 3.1 Flash-Lite).",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2608.17895v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2608.19741v4-thinkingbox",
+    "name": "One Success Isn't Reliability: Thinkingbox, a Sandbox and Benchmark for Agents in Stateful Business Workflows (arXiv:2608.19741v4)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2608.19741v4",
+      "arxiv.org/abs/2608.19741v4"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2608.19741v4",
+    "quote": "arXiv abs page for 2608.19741v4 links http://creativecommons.org/licenses/by/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY 4.0'. Sec. 5: 'We evaluate a diverse set of proprietary frontier models and open-weight agentic models ... Each model is evaluated in the same Thinkingbox sandbox with the same system prompts, tool definitions, simulated-user behavior, and task-specific executable checks ... we run each model on each task for N independent trials ... A trial is counted as correct only when all executable checks for the task pass.' Appendix: API models 'are accessed through Azure-hosted API deployments' (temperature 1.0, reasoning_effort medium, Table 9); Qwen models served locally with vLLM (Table 10); simulated user and response judge are a fixed GPT-5.4-mini. Microsoft co-authors made none of the evaluated models.",
+    "attribution": "Zhuochun Li, Youngmin Ko, Ali Keramati, Tuhin Kundu et al. (Microsoft, University of Pittsburgh, Northwestern, UC Irvine, Columbia), 'One Success Isn't Reliability: Thinkingbox, a Sandbox and Benchmark for Agents in Stateful Business Workflows', arXiv:2608.19741v4 (2026), CC BY 4.0. Changes: selected cells of Table 15 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 15 'pass@1' column (micro-averaged over 507 tasks x N=20 trials; equals the Table 4 'Average' for the models in both tables) for the base models; the authors' RL fine-tuned Qwen variants are not catalogued checkpoints. Not imported: DeepSeek-V4-Pro (Azure deployment; April preview vs 0813 release not stated) and MiniMax-M2.5 (0.19%, 0/20 passes on 504 of 507 tasks: indistinguishable from a serving/format failure).",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2608.19741v4",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2609.05141v2-scidocbench",
+    "name": "SciDocBench: A Workflow-Centered Benchmark and Data Pipeline for Scientific Document Understanding (arXiv:2609.05141v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2609.05141v2",
+      "arxiv.org/abs/2609.05141v2"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2609.05141v2",
+    "quote": "arXiv abs page for 2609.05141v2 links http://creativecommons.org/licenses/by/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY 4.0'. Sec. 5: 'We evaluate 13 proprietary and open multimodal models on all 496 matched SciDocBench instances, reporting overall, capability-group, and setting-level scores.' Appendix F.1: 'The leaderboard evaluates 13 proprietary and open multimodal models on the same 124 underlying questions under the four settings ... yielding 496 instances per model. The input contains only the question and its source materials; reference answers, task labels, and evaluator metadata are withheld. Overall scores average all instances ... Failed or unusable responses receive zero.' Scoring: deterministic rules (57 questions), a rubric-based semantic LLM judge (66; audited against humans, Table 16) and execution (1). Shanghai AI Lab co-authors' models (InternVL) are not in the leaderboard.",
+    "attribution": "Shenxi Wu, Yuhong Liu, Haosong Zhang et al. (CUHK, Shanghai AI Laboratory, NYU, Fudan, SJTU, HIT, JD Explore Academy, CPII), 'SciDocBench: A Workflow-Centered Benchmark and Data Pipeline for Scientific Document Understanding', arXiv:2609.05141v2 (2026), CC BY 4.0. Changes: selected cells of Table 2 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 2 (SciDocBench leaderboard), 'Overall' column (all 496 instances). Setting and capability columns not used. Qwen3.8-Max not imported (undated 'Qwen3.8-Max' accessed 2026-09-04, after the 0902 snapshot; catalogue keeps the undated release and the 0902 snapshot apart).",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2609.05141v2",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2609.21562v2-gamelogicbench",
+    "name": "GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions (arXiv:2609.21562v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2609.21562v2",
+      "arxiv.org/abs/2609.21562v2"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2609.21562v2",
+    "quote": "arXiv abs page for 2609.21562v2 links http://creativecommons.org/licenses/by/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY 4.0'. Sec. 4: 'We evaluate twenty configurations, each pairing a model with one of three scaffolds: Claude Code 2.1.177, Codex 0.144.1, or OpenCode 1.17.18. Both solving and judging use Godot 4.4. All solve sessions use effort=high and a 3,600-second time limit.' Table 3 caption: 'Solve rates per tier, one sample per configuration, all runs with egress sealed.' Appendix A: 'For each DeepSeek line, the undated name denotes the original April 2026 release and the dated suffix denotes a newer snapshot.' Table 6 lists the API model ids and release dates. Authors (Nanjing University et al.) made none of the models.",
+    "attribution": "Xinyu Che, Yunfei Ge, Shihao Li, Yanchen Liu, Hang Yan, Xinping Lei, Yanghai Wang, Zixuan Dong, Yifan Yao, Qianqian Xie, Letian Zhu, Jiaheng Liu (Nanjing University et al.), 'GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions', arXiv:2609.21562v2 (2026), CC BY 4.0. Changes: selected cells of Table 3 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 3 'Solve rate (%) Average' column for the twelve configurations run with the Claude Code 2.1.177 scaffold (one harness per run). Codex and OpenCode scaffold-ablation rows not imported. Per-tier columns not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2609.21562v2",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2609.31632v1-eegagentbench",
+    "name": "EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis (arXiv:2609.31632v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2609.31632v1",
+      "arxiv.org/abs/2609.31632v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2609.31632v1",
+    "quote": "arXiv abs page for 2609.31632v1 links http://creativecommons.org/licenses/by/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY 4.0'. Sec. 4.1: 'We evaluate 29 LLMs from 15 model families on EEGAgentBench ... Each model is evaluated independently on all 1,072 instances across the six tasks. For T1, models answer EEG knowledge questions directly. For T2-T6, every model has access to the same set of 10 EEG analysis tools and may iteratively invoke them before submitting a final answer ... results are reported from a single run for each model-instance pair ... The Overall score is the equally weighted mean of T1 accuracy, Macro-F1 for T2-T4 and T6, and Event-F1 for T5.' Each model uses its own context window (Sec. 6.5). Authors (ICT, CAS) made none of the models.",
+    "attribution": "Huyu Wu, Weining Weng, Yuchen Liu, Yiqiang Chen, Yang Gu (Institute of Computing Technology, Chinese Academy of Sciences), 'EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis', arXiv:2609.31632v1 (2026), CC BY 4.0. Changes: selected cells of Table 2 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 2 (main results), 'Overall' column. Per-task columns not used. Not imported: DeepSeek-V4-Pro and DeepSeek-V4-Flash (no release/snapshot stated; the Flash price in Table 6 is not DeepSeek's list price, so the served version is unclear) and ERNIE-4.5-VL-424B (not catalogued).",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2609.31632v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2609.38335v1-e2e-swe",
+    "name": "E2E-SWE: Benchmarking LLMs on Building Working Codebases from Scratch (arXiv:2609.38335v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2609.38335v1",
+      "arxiv.org/abs/2609.38335v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2609.38335v1",
+    "quote": "arXiv abs page for 2609.38335v1 links http://creativecommons.org/licenses/by/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY 4.0'. Sec. 3.1: 'We evaluate thirteen frontier models across six model families: Claude, GPT, Muse Spark, Gemini, Kimi, and GLM. We select the strongest reasoning-effort setting that runs reliably within the 128K per-request output-token limit ... We run each model four times independently over the full corpus and report the average.' Agent scaffold: 'All models are evaluated with a simple ReAct agent, similar to mini-SWE-agent ... Each rollout has a 4-hour wall-clock budget.' Metric: 'pass@1: the fraction of tasks fully resolved by a single rollout, where resolution requires the generated repository to pass every hidden test.' Authors are Meta employees, so the Muse Spark 1.3 row is by: lab; all others independent.",
+    "attribution": "Hantian Ding, Chloe Bi, Jiacheng Zhu, John Yang, Matt Deitke, Pengcheng Yin, Zijian Wang, Rui Hou (Meta Superintelligence Labs), 'E2E-SWE: Benchmarking LLMs on Building Working Codebases from Scratch', arXiv:2609.38335v1 (2026), CC BY 4.0. Changes: selected cells of Table 2 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 2 'Pass@1' column for all 13 models (one shared ReAct scaffold, 4 runs averaged). NL2Repo-Bench appendix results not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2609.38335v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2609.38480v2-klinikebench",
+    "name": "KlinikeBench: Evaluating Language Models Beyond Diagnostic Accuracy (arXiv:2609.38480v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2609.38480v2",
+      "arxiv.org/abs/2609.38480v2"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2609.38480v2",
+    "quote": "arXiv abs page for 2609.38480v2 links http://creativecommons.org/licenses/by/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY 4.0'. Sec. 3.1: 'We integrate KlinikeBench into Harbor ... The evaluated model uses the ReAct-style Terminus-2 harness to question the patient, execute tools through the clinic command interface, and record a diagnosis ... each model receives the same tasks and tool interface, with one rollout per model-task pair.' Sec. 3.2: 'We evaluate 31 models from seven families: Claude, GPT, Gemini, Grok, DeepSeek, Kimi, and GLM (Table 7). Medium reasoning effort is used across all models.' GPT-5.4-mini is the patient simulator and must-ask judge. No author affiliation made an evaluated model.",
+    "attribution": "Xueting Fang, Zehui Li, Yang Yang, Camilla Giovino, Shubh K. Patel, Shailly Prajapati, Vallijah Subasri, Caihua Shan (Zhejiang U., Imperial College London, Nanchang U., U. Toronto, UHN, Microsoft), 'KlinikeBench: Evaluating Language Models Beyond Diagnostic Accuracy', arXiv:2609.38480v2 (2026), CC BY 4.0. Changes: selected cells of Table 7 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 7 (results for 31 models on 333 tasks), 'Strict pass@1' column only (Diagnosis/Tools/Must-ask are components of the same gate). GPT-4o (no snapshot given; three catalogued snapshots) and DeepSeek-v4-pro/flash (preview vs final release not stated) not imported.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2609.38480v2",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2610.04118v1-longsocialbench",
+    "name": "LongSocialBench: Do Long-Context LLMs Understand Online Discussion Threads? (arXiv:2610.04118v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2610.04118v1",
+      "arxiv.org/abs/2610.04118v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2610.04118v1",
+    "quote": "arXiv abs page for 2610.04118v1 links http://creativecommons.org/licenses/by/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY 4.0'. Sec. 4: 'We evaluate 18 contemporary LLMs spanning closed-source frontier and strong open-weight systems ... Closed-source models include Claude Opus 4.7, Claude Sonnet 4.6, 4.5, and 4, GPT-5, and Gemini 2.5 Pro. Open-weight models include Mistral Large 3, Llama 4 Scout and Maverick, Llama 3.1 and 3.2, Qwen3-Next and Qwen3-32B, GLM-5, DeepSeek-R1, Gemma 3, and OpenAI's gpt-oss models.' Metrics: 'responses are deterministically parsed to an A-D choice and scored by exact match. Accuracy is computed over successfully parsed responses only ... Benchmark-level results report micro accuracy.' Appendix Table 11 lists the models (open weights from Hugging Face) and context caps. Authors (UIUC, Semantic Code Lab) made none of the models.",
+    "attribution": "Xinyi Liu, Rinat Khaziev, Dilek Hakkani-Tür, Tarek F. Abdelzaher (University of Illinois Urbana-Champaign, Semantic Code Lab), 'LongSocialBench: Do Long-Context LLMs Understand Online Discussion Threads?', arXiv:2610.04118v1 (2026), CC BY 4.0. Changes: selected cells of Table 13 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 13 (per-model accuracy on three representative workflows), 'Full' column = full-context prompting micro accuracy on the 1,462 released items. CoT/LLM-as-retriever/Best/C-mac columns not used. Qwen3-Next-80B not imported (Instruct vs Thinking not stated).",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2610.04118v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2610.04432v2-video2world",
+    "name": "Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos (arXiv:2610.04432v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2610.04432v2",
+      "arxiv.org/abs/2610.04432v2"
+    ],
+    "exact": true,
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "terms_url": "https://arxiv.org/abs/2610.04432v2",
+    "quote": "arXiv abs page for 2610.04432v2 links http://creativecommons.org/licenses/by-sa/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY-SA 4.0'. Sec. 4.1: 'We evaluate 9 coding-agent models on 222 instances, covering 189 video clips and 39 task families. Seven models run through OpenCode, while GPT-6 Astra and Fable-5.1 use Codex CLI and Claude Code, respectively. We evaluate each configuration as a complete agent system ... Each model makes one autonomous construction attempt per instance ... within a 180-minute wall-clock limit. The submission retained by the prescribed stopping rule is frozen for evaluation, without human correction or selection based on hidden scores.' Table A7 gives the exact model identifiers (OpenCode 1.18.29, openrouter/ prefix) and provider routes. Authors (Aether AI, UCSD) made none of the evaluated models.",
+    "attribution": "Jinzhou Tang, Zijun Zhang, Jing Yang, Yuchen Yan, Kun Zhou, Lingjun Mao, Ruobing Han, Jinglin Cao, Wenpeng Xu, Lukun He, Minghao Fu, Fan Feng, Biwei Huang (Aether AI, UC San Diego), 'Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos', arXiv:2610.04432v2 (2026), CC BY-SA 4.0. Changes: selected cells of Table 2 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 2 'V2WScore' column for the seven configurations that share the OpenCode 1.18.29 scaffold (Table A7). GPT-6 Astra (Codex CLI, 'Ultra') and Fable-5.1 (Claude Code, 'Max') use different scaffolds and are not imported, to keep one harness per run; the human-assisted reference row is not a model. Component columns not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2610.04432v2",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2610.12402v1-spacecast-bench",
+    "name": "SpaceCast-Bench: Evaluating Predictive Spatial Reasoning in Vision-Language Models (arXiv:2610.12402v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2610.12402v1",
+      "arxiv.org/abs/2610.12402v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2610.12402v1",
+    "quote": "arXiv abs page for 2610.12402v1 links http://creativecommons.org/licenses/by/4.0/ as the licence of this version (checked 2026-10-10); the HTML version header states 'License: CC BY 4.0'. Sec. 4.1: 'We evaluate 21 models in 3 groups: 9 proprietary models, 6 general-purpose open-weight models, and 6 spatially specialized models. The proprietary set includes Claude Sonnet 4.6 and Claude Sonnet 5; Gemini 3.5 Flash and Gemini 3 Flash; GPT-5.4 and GPT-5.6-Luna; Doubao 2.0 Pro; and Qwen3.6-Flash and Qwen3.7-Plus. The general-purpose open-weight set comprises InternVL3.5-8B, Qwen3-VL-4B, and Qwen3.5 models at 2B, 4B, 9B, and 27B ... All models are evaluated with a chain-of-thought prompt and deterministic decoding.' Metric: 'the overall score, defined as the unweighted macro-average of per-task accuracy across all 16 task types.' Authors (Zhejiang University) made none of the evaluated models.",
+    "attribution": "Hongxing Li, Jinyue Su, Dingming Li, Wenqi Zhang, Weiming Lu, Jun Xiao, Yueting Zhuang, Yongliang Shen (Zhejiang University), 'SpaceCast-Bench: Evaluating Predictive Spatial Reasoning in Vision-Language Models', arXiv:2610.12402v1 (2026), CC BY 4.0. Changes: selected cells of Table 1 transcribed into JSON; percentages divided by 100; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "Table 1 'Overall' column (macro-average accuracy over 16 task types) for catalogued proprietary and open-weight models. Not imported: Qwen3-VL-4B (Instruct vs Thinking not stated), Doubao 2.0 Pro and InternVL3.5-8B (not catalogued), spatial-specialist models; Human/Random rows are references.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2610.12402v1",
+    "icon": "arxiv.org"
   }
 ]
