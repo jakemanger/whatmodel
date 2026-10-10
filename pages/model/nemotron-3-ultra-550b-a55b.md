@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-06 · 550B params (55B active) · openmdw
 
-**score 66.5** ±0.8 · #78 of 551 · from 22 benchmark results across 3 sources
+**score 66.2** ±0.8 · #89 of 598 · from 24 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,35 +14,37 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="report-2606.15007v1"></a>NVIDIA                  <a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified) (la…</a>   87.0%    67.1   2026-06-12    8% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified (lab)</a>         70.7%    65.6   2026-06-12    7% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro (lab)</a>                   86.8%    67.6   2026-06-12    7% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual (lab)</a>     67.7%    63.9   2026-06-12    5% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam (lab)</a>       26.7%    65.6   2026-06-12    5% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1 (lab)</a>         56.4%    66.7   2026-06-12    4% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">SciCode subproblems (lab)</a>        44.6%    65.9   2026-06-12    4% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">τ³-bench (lab)</a>                   70.9%    67.3   2026-06-12    4% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX (lab)</a>                  83.0%    66.2   2026-06-12    3% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">BrowseComp (lab)</a>                 44.4%    62.8   2026-06-12    3% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose) …</a>   81.7%    71.1   2026-06-12    3% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">MultiChallenge (lab)</a>             63.8%    69.6   2026-06-12    3% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">LongBench v2 (lab)</a>               61.9%    67.5   2026-06-12    3% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">LiveCodeBench v6 (window unsp…</a>   89.0%    70.5   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam with too…</a>   37.4%    61.3   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench (lab)</a>            88.6%    70.9   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">CritPt (lab)</a>                      3.1%    60.5   2026-06-12    2% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     85.4%    67.4   2026-08-10   11% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         86.7%    66.9   2026-08-10    6% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     20.0%    68.7   2026-08-27    5% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            12.0%    63.0   2026-08-10    4% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1426.2    66.0   2026-10-02    8% ▇
+<a name="report-2606.15007v1"></a>NVIDIA                  <a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified) (la…</a>   87.0%    66.8   2026-06-12    9% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified (lab)</a>         70.7%    65.6   2026-06-12    8% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro (lab)</a>                   86.8%    67.5   2026-06-12    6% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam (lab)</a>       26.7%    65.6   2026-06-12    6% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual (lab)</a>     67.7%    63.8   2026-06-12    5% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">LiveCodeBench v6 (window unsp…</a>   89.0%    69.3   2026-06-12    5% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1 (lab)</a>         56.4%    67.0   2026-06-12    5% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">τ³-bench (lab)</a>                   70.9%    67.2   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">SciCode subproblems (lab)</a>        44.6%    65.7   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX (lab)</a>                  83.0%    66.0   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">LongBench v2 (lab)</a>               61.9%    67.2   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam with too…</a>   37.4%    62.1   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose) …</a>   81.7%    70.9   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">BrowseComp (lab)</a>                 44.4%    62.4   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">MultiChallenge (lab)</a>             63.8%    69.3   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench (lab)</a>            88.6%    71.0   2026-06-12    1% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">CritPt (lab)</a>                      3.1%    60.0   2026-06-12    1% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     85.4%    67.2   2026-08-10   10% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         86.7%    66.6   2026-08-10    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     20.0%    68.6   2026-08-27    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            12.0%    62.7   2026-08-10    4% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1426.2    65.8   2026-10-02    7% ▇
+<a name="paper-2609.13916v1-north-small-translate"></a>Cohere                  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>   84.8%    63.5   2026-09-12    1% ▇
+                        <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, …</a>   67.1%    49.2   2026-09-12    1% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 66.5
+                        weighted average                        = 66.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2606.15007v1.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2606.15007v1.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Cohere ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -52,9 +54,9 @@ api (Together AI) · $1.35/M blended · $0.6 in / $3.6 out per 1M tokens · [doc
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~330.5GB   66.5
-2-bit ud-q2_k_xl  ~165.5GB   66.5
-1-bit ud-iq1_m       ~83GB   66.5
+4-bit ud-q4_k_xl  ~330.5GB   66.2
+2-bit ud-q2_k_xl  ~165.5GB   66.2
+1-bit ud-iq1_m       ~83GB   66.2
 </pre>
 
 ```sh

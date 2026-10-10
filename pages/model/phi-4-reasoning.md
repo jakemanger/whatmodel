@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-04 · 14.7B params · mit
 
-**score 56.9** ±0.9 · #186 of 551 · from 22 benchmark results across 4 sources
+**score 56.4** ±0.9 · #208 of 598 · from 22 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,30 +14,30 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="report-2504.21318v1"></a>Microsoft               <a href="https://arxiv.org/html/2504.21318v1">GPQA Diamond (lab)</a>               67.1%    58.8   2025-04-30   18% ▇▇
-                        <a href="https://arxiv.org/html/2504.21318v1">HumanEval+ (lab)</a>                 92.9%    58.6   2025-04-30    7% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">HMMT February 2025 (lab)</a>         43.8%    53.7   2025-04-30    4% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">AIME 2025 (lab)</a>                  63.1%    58.3   2025-04-30    4% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">MMLU-Pro (lab)</a>                   74.3%    55.5   2025-04-30    4% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">AIME 2024 (lab)</a>                  74.6%    60.1   2025-04-30    4% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">FlenQA (3K-token subset) (lab)</a>   97.7%    64.3   2025-04-30    2% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">IFEval (aggregation unspecifi…</a>   83.4%    57.3   2025-04-30    1% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">Omni-MATH (lab)</a>                  76.6%    63.5   2025-04-30    1% ▇
-<a name="card-microsoft--phi-4-reasoning"></a>microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">GPQA Diamond (lab)</a>               65.8%    57.1   2025-04-09    8% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">HumanEval+ (lab)</a>                 92.9%    58.6   2025-04-09    7% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">AIME 2024 (lab)</a>                  75.3%    56.2   2025-04-09    6% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">AIME 2025 (lab)</a>                  62.9%    52.5   2025-04-09    4% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">MMLU-Pro (lab)</a>                   74.3%    55.5   2025-04-09    4% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">Arena-Hard (version/judge uns…</a>   73.3%    54.7   2025-04-09    4% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">FlenQA (3K-token subset) (lab)</a>   97.7%    64.3   2025-04-09    2% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">IFEval strict (prompt/instruc…</a>   83.4%    61.7   2025-04-09    2% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">Omni-MATH (lab)</a>                  76.6%    59.7   2025-04-09    1% ▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.4815    54.4   2026-05-02   11% ▇
-                        <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   48.1%    54.3   2026-05-02    6% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   48.7%    31.9   2026-04-17    1% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   83.5%    48.1   2026-04-17    1% ▇
+<a name="report-2504.21318v1"></a>Microsoft               <a href="https://arxiv.org/html/2504.21318v1">GPQA Diamond (lab)</a>               67.1%    58.2   2025-04-30   18% ▇▇
+                        <a href="https://arxiv.org/html/2504.21318v1">HumanEval+ (lab)</a>                 92.9%    58.3   2025-04-30    7% ▇
+                        <a href="https://arxiv.org/html/2504.21318v1">AIME 2025 (lab)</a>                  63.1%    58.1   2025-04-30    5% ▇
+                        <a href="https://arxiv.org/html/2504.21318v1">HMMT February 2025 (lab)</a>         43.8%    52.8   2025-04-30    4% ▇
+                        <a href="https://arxiv.org/html/2504.21318v1">AIME 2024 (lab)</a>                  74.6%    59.4   2025-04-30    4% ▇
+                        <a href="https://arxiv.org/html/2504.21318v1">MMLU-Pro (lab)</a>                   74.3%    55.2   2025-04-30    4% ▇
+                        <a href="https://arxiv.org/html/2504.21318v1">FlenQA (3K-token subset) (lab)</a>   97.7%    63.7   2025-04-30    2% ▇
+                        <a href="https://arxiv.org/html/2504.21318v1">IFEval (aggregation unspecifi…</a>   83.4%    56.7   2025-04-30    1% ▇
+                        <a href="https://arxiv.org/html/2504.21318v1">Omni-MATH (lab)</a>                  76.6%    62.8   2025-04-30    1% ▇
+<a name="card-microsoft--phi-4-reasoning"></a>microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">GPQA Diamond (lab)</a>               65.8%    56.6   2025-04-09    7% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">HumanEval+ (lab)</a>                 92.9%    58.3   2025-04-09    7% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">AIME 2024 (lab)</a>                  75.3%    55.6   2025-04-09    6% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">AIME 2025 (lab)</a>                  62.9%    52.7   2025-04-09    5% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">Arena-Hard (version/judge uns…</a>   73.3%    54.2   2025-04-09    4% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">MMLU-Pro (lab)</a>                   74.3%    55.2   2025-04-09    4% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">FlenQA (3K-token subset) (lab)</a>   97.7%    63.7   2025-04-09    2% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">IFEval strict (prompt/instruc…</a>   83.4%    61.2   2025-04-09    2% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">Omni-MATH (lab)</a>                  76.6%    59.4   2025-04-09    1% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.4815    53.9   2026-05-02   10% ▇
+                        <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   48.1%    53.8   2026-05-02    6% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   48.7%    31.1   2026-04-17    1% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   83.5%    47.5   2026-04-17    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 56.9
+                        weighted average                        = 56.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -62,8 +62,8 @@ api (Microsoft Azure) · $0.22/M blended · $0.125 in / $0.5 out per 1M tokens �
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~9.32GB   56.9
-8-bit q8_0    ~18.14GB   56.9
+4-bit q4_k_m   ~9.32GB   56.4
+8-bit q8_0    ~18.14GB   56.4
 </pre>
 
 ```sh

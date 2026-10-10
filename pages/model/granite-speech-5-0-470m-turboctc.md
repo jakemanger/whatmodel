@@ -6,7 +6,7 @@
 
 IBM · released 2026-08 · 0.47B params · apache-2.0
 
-**score 63.3** ±4.2 · #12 of 128 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 62.0** ±3.8 · #18 of 160 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                        score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-5.0-470m-turboctc.json">LibriSpeech test-clean WER</a>   1.3%    66.6   2026-09-15   64% ▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-5.0-470m-turboctc.json">FLEURS English test WER</a>      4.6%    59.2   2026-09-15   29% ▇▇▇▇
-prior                   pull toward the middle               49.7                 7% ▇
-                        weighted average                   = 63.3
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-5.0-470m-turboctc.json">LibriSpeech test-clean WER</a>   1.3%    64.7   2026-09-15   68% ▇▇▇▇▇▇▇▇
+                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-5.0-470m-turboctc.json">FLEURS English test WER</a>      4.6%    57.6   2026-09-15   26% ▇▇▇
+prior                   pull toward the middle               49.8                 6% ▇
+                        weighted average                   = 62.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -39,7 +39,7 @@ Design of the IBM Gra…  <a href="https://arxiv.org/html/2609.20104v1">Granite 
 
 <pre>
 version            needs  score
-bf16 · mac only  ~1.63GB   63.3
+bf16 · mac only  ~1.63GB   62.0
 </pre>
 
 ```sh

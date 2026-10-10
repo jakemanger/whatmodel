@@ -6,7 +6,7 @@
 
 MiniMax · released 2026-02 · proprietary
 
-**score 64.8** ±2.1 · #14 of 100 · from 6 benchmark results across 3 sources
+**score 64.0** ±1.9 · #10 of 109 · from 8 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -15,15 +15,17 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>           7.4%    63.9   2026-07-27   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>   4.9%    67.0   2026-07-27   21% ▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>           7.4%    68.3   2026-07-27   12% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added la…</a>   2.8%    71.0   2026-07-27    8% ▇
-<a name="speech-cn-news-tts-ccby"></a>CN-NewsTTS Bench v0.1   <a href="https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv">CN-NewsTTS v0.1 · strict pron…</a>  54.8%    62.8   2026-06-22   26% ▇▇▇
-<a name="speech-voicefirst-indic-ccby"></a>Preferences of a Voic…  <a href="https://arxiv.org/html/2604.21481v2">Voice-First Nation · 10 India…</a>  993.9    61.0   2026-04-23   10% ▇
-prior                   pull toward the middle                   49.8                 2% ▇
-                        weighted average                       = 64.8
+source                  test                               score  implies  date        weight
+<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>              7.4%    64.5   2026-07-27   17% ▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · DNSMOS (pr…</a>  3.80 / 5    62.5   2026-07-27   14% ▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>              7.4%    66.9   2026-07-27   13% ▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>      4.9%    68.2   2026-07-27   12% ▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added la…</a>      2.8%    69.9   2026-07-27    9% ▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · speaker si…</a>     72.1%    64.5   2026-07-27    7% ▇
+<a name="speech-cn-news-tts-ccby"></a>CN-NewsTTS Bench v0.1   <a href="https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv">CN-NewsTTS v0.1 · strict pron…</a>     54.8%    60.8   2026-06-22   21% ▇▇
+<a name="speech-voicefirst-indic-ccby"></a>Preferences of a Voic…  <a href="https://arxiv.org/html/2604.21481v2">Voice-First Nation · 10 India…</a>     993.9    56.6   2026-04-23    6% ▇
+prior                   pull toward the middle                      49.6                 1% ▇
+                        weighted average                          = 64.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

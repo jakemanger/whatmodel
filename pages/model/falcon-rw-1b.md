@@ -6,7 +6,7 @@
 
 TII · released 2023-04 · 1.3B params · apache-2.0
 
-**score 23.8** ±1.6 · #519 of 551 · from 8 benchmark results across 1 source
+**score 22.3** ±1.6 · #566 of 598 · from 8 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>              60.7%    25.1   2023-09-11   19% ▇▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>           28.2%    22.3   2023-09-11   18% ▇▇
-                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                   63.2%    22.9   2023-09-11   16% ▇▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                63.3%    24.8   2023-09-11   14% ▇▇
-                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>               46.6%    25.9   2023-09-11   12% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                    74.7%    27.6   2023-09-11    8% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>              40.5%    19.8   2023-09-11    7% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>              24.4%    14.4   2023-09-11    6% ▇
+<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>              60.7%    23.6   2023-09-11   19% ▇▇
+                        <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>           28.2%    20.7   2023-09-11   18% ▇▇
+                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                   63.2%    21.5   2023-09-11   16% ▇▇
+                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                63.3%    23.3   2023-09-11   14% ▇▇
+                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>               46.6%    24.5   2023-09-11   12% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                    74.7%    26.3   2023-09-11    8% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>              40.5%    18.5   2023-09-11    8% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>              24.4%    12.9   2023-09-11    6% ▇
 prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 23.8
+                        weighted average               = 22.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,7 +36,7 @@ prior                   pull toward the middle           50.0                 1%
 
 <pre>
 download        size  score
-16-bit bf16  ~2.62GB   23.8
+16-bit bf16  ~2.62GB   22.3
 </pre>
 
 ```sh

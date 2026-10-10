@@ -6,7 +6,7 @@
 
 Fixie.ai (Ultravox) · released 2025-06 · mit
 
-**score 50.1** ±4.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.4** ±5.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.5%    50.1   2026-03-26   91% ▇▇▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle                   49.7                 9% ▇
-                      weighted average                       = 50.1
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.5%    48.3   2026-03-26   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior                 pull toward the middle                   49.8                10% ▇
+                      weighted average                       = 48.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

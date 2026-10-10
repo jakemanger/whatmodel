@@ -6,7 +6,7 @@
 
 Mistral · released 2026-02 · proprietary
 
-**score 60.0** ±3.1 · #27 of 128 · from 5 benchmark results across 2 sources
+**score 59.2** ±2.8 · #38 of 160 · from 6 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -15,19 +15,20 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                test                            score  implies  date        weight
-<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   7.3%    58.9   2026-02-11   23% ▇▇▇
-                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   7.1%    58.5   2026-02-11   22% ▇▇▇
-                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · Common Voice…</a>   8.1%    64.2   2026-02-11   20% ▇▇
-                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-la…</a>   5.9%    61.2   2026-02-11   19% ▇▇
-<a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1  <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   5.2%    59.0   2026-07-05   12% ▇
-prior                 pull toward the middle                   49.7                 4% ▇
-                      weighted average                       = 60.0
+source                 test                            score  implies  date        weight
+<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime       <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   7.3%    57.1   2026-02-11   18% ▇▇
+                       <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · Common Voice…</a>   8.1%    62.4   2026-02-11   17% ▇▇
+                       <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   7.1%    56.7   2026-02-11   17% ▇▇
+                       <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-la…</a>   5.9%    59.5   2026-02-11   16% ▇▇
+<a name="speech-stt-dutch-asr-tvosch-apache"></a>Dutch ASR Leaderboard  <a href="https://huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/results/voxtral-mini-2602.json">Dutch ASR Leaderboard · avera…</a>   8.2%    62.3   2026-05-12   20% ▇▇
+<a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1   <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   5.2%    58.3   2026-07-05   10% ▇
+prior                  pull toward the middle                   49.8                 3% ▇
+                       weighted average                       = 59.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Voxtral Realtime ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · koedesk STT Bench v1 ([CC BY 4.0](../../licenses/speech-stt-koedesk-ccby.txt))</sub>
+<sub>Licences: Voxtral Realtime ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Dutch ASR Leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · koedesk STT Bench v1 ([CC BY 4.0](../../licenses/speech-stt-koedesk-ccby.txt))</sub>
 
 ## How to run it
 

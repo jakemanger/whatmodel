@@ -6,7 +6,7 @@
 
 Microsoft · released 2026-03 · 8.33B params · mit
 
-**score 53.4** ±4.8 · #66 of 128 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.2** ±3.7 · #91 of 160 · from 6 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -15,21 +15,26 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.8%    53.7   2026-03-26   91% ▇▇▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle                   49.7                 9% ▇
-                      weighted average                       = 53.4
+source                  test                            score  implies  date        weight
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.8%    51.8   2026-03-26   48% ▇▇▇▇▇▇
+<a name="card3-microsoft-vibevoice-asr-bitnet"></a>microsoft/VibeVoice-A…  <a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">VoxPopuli English test WER (l…</a>   4.9%    52.6   2026-07-24   15% ▇▇
+                        <a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">LibriSpeech test-other WER (l…</a>   5.8%    48.8   2026-07-24   15% ▇▇
+                        <a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">FLEURS Mandarin test error ra…</a>   7.9%    49.6   2026-07-24    8% ▇
+                        <a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">LibriSpeech test-clean WER (l…</a>   2.2%    49.7   2026-07-24    5% ▇
+                        <a href="https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md">FLEURS English test WER (lab)</a>    4.7%    53.1   2026-07-24    4% ▇
+prior                   pull toward the middle                   49.8                 5% ▇
+                        weighted average                       = 51.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
+<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · microsoft/VibeVoice-ASR-BitNet model card ([MIT](https://opensource.org/licenses/MIT))</sub>
 
 ## How to run it
 
 <pre>
 version                needs  score
-bf16 · nvidia only  ~20.49GB   53.4
+bf16 · nvidia only  ~20.49GB   51.2
 </pre>
 
 ```sh

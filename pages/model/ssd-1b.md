@@ -6,7 +6,7 @@
 
 Segmind · released 2023-10 · 1.3B params · apache-2.0
 
-**score 36.0** ±3.5 · #113 of 139 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 35.9** ±3.5 · #117 of 143 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  2.93 / 5    35.3   2024-12-25   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  2.93 / 5    35.2   2024-12-25   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                      49.9                 5% ▇
-                        weighted average                          = 36.0
+                        weighted average                          = 35.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,9 +29,9 @@ prior                   pull toward the middle                      49.9        
 
 <pre>
 version                needs  score
-fp16 · nvidia only    ~3.6GB   36.0
-fp16 (sd.cpp)         ~5.9GB   36.0
-q8_0 (sd.cpp --type)  ~3.3GB   36.0
+fp16 · nvidia only    ~3.6GB   35.9
+fp16 (sd.cpp)         ~5.9GB   35.9
+q8_0 (sd.cpp --type)  ~3.3GB   35.9
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 IBM · released 2025-06 · 3.01B params · apache-2.0
 
-**score 61.7** ±2.4 · #21 of 128 · from 3 benchmark results across 2 sources
+**score 59.9** ±2.5 · #32 of 160 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench  <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  25.5%    60.0   2025-11-18   38% ▇▇▇▇▇
-                       <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  20.7%    62.9   2025-11-18   37% ▇▇▇▇
-<a name="open-asr"></a>Open ASR Leaderboard   <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.0%    63.7   2026-03-26   23% ▇▇▇
-prior                  pull toward the middle                   49.7                 2% ▇
-                       weighted average                       = 61.7
+<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench  <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  25.5%    58.2   2025-11-18   41% ▇▇▇▇▇
+                       <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  20.7%    61.4   2025-11-18   35% ▇▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard   <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.0%    61.7   2026-03-26   22% ▇▇▇
+prior                  pull toward the middle                   49.8                 2% ▇
+                       weighted average                       = 59.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                  pull toward the middle                   49.7            
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~7.72GB   61.7
+bf16 · nvidia only  ~7.72GB   59.9
 </pre>
 
 ```sh

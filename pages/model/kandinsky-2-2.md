@@ -6,7 +6,7 @@
 
 AI Forever · released 2023-07 · 1.22B params · apache-2.0
 
-**score 36.5** ±4.6 · #111 of 139 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 36.4** ±4.6 · #115 of 143 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source         test                            score  implies  date        weight
-<a name="kandinsky3-original-human-comparison"></a>Kandinsky 3.0  <a href="https://arxiv.org/html/2312.03511v2">Human text alignment · wins a…</a>  32.0%    32.1   2023-12-11   46% ▇▇▇▇▇▇
-               <a href="https://arxiv.org/html/2312.03511v2">Human visual quality · wins a…</a>  48.0%    38.4   2023-12-11   45% ▇▇▇▇▇
+<a name="kandinsky3-original-human-comparison"></a>Kandinsky 3.0  <a href="https://arxiv.org/html/2312.03511v2">Human text alignment · wins a…</a>  32.0%    31.9   2023-12-11   46% ▇▇▇▇▇▇
+               <a href="https://arxiv.org/html/2312.03511v2">Human visual quality · wins a…</a>  48.0%    38.3   2023-12-11   45% ▇▇▇▇▇
 prior          pull toward the middle                   49.9                 9% ▇
-               weighted average                       = 36.5
+               weighted average                       = 36.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior          pull toward the middle                   49.9                 9% 
 
 <pre>
 version             needs  score
-fp16 · nvidia only  ~12GB   36.5
+fp16 · nvidia only  ~12GB   36.4
 </pre>
 
 ```sh

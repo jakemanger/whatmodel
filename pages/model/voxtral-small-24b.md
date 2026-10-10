@@ -6,7 +6,7 @@
 
 Mistral · released 2025-07 · 24.3B params · apache-2.0
 
-**score 62.3** ±1.5 · #16 of 128 · from 16 benchmark results across 5 sources
+**score 60.6** ±1.4 · #29 of 160 · from 18 benchmark results across 7 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,29 +16,31 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="report-2507.13264v1"></a>Mistral AI              <a href="https://arxiv.org/html/2507.13264v1">GigaSpeech test WER (lab)</a>       10.3%    61.4   2025-07-17    7% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">SPGISpeech test WER (lab)</a>        1.9%    65.3   2025-07-17    6% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">SwitchBoard WER (lab)</a>           11.1%    62.1   2025-07-17    6% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">CHiME-4 WER (lab)</a>                9.6%    60.9   2025-07-17    6% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">Earnings-21 10-minute long-fo…</a>   9.6%    59.4   2025-07-17    5% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">Earnings-22 10-minute long-fo…</a>  12.5%    58.8   2025-07-17    5% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">VoxPopuli English test WER (l…</a>   6.6%    61.9   2025-07-17    5% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-other WER (l…</a>   3.1%    62.7   2025-07-17    5% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-clean WER (l…</a>   1.5%    63.1   2025-07-17    1% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">FLEURS English test WER (lab)</a>    3.4%    62.3   2025-07-17    1% ▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        3.7%    64.0   2026-03-26   27% ▇▇▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.6%    59.9   2026-03-26    9% ▇
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-small-24b-2507.json">LibriSpeech test-clean WER</a>       1.6%    62.7   2026-09-15    8% ▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-small-24b-2507.json">FLEURS English test WER</a>          3.5%    67.5   2026-09-15    4% ▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  34.5%    58.0   2025-09-22    2% ▇
-<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  13.9%    66.8   2026-08-18    1% ▇
-prior                   pull toward the middle                   49.7                 1% ▇
-                        weighted average                       = 62.3
+<a name="report-2507.13264v1"></a>Mistral AI              <a href="https://arxiv.org/html/2507.13264v1">SPGISpeech test WER (lab)</a>        1.9%    63.5   2025-07-17    6% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">SwitchBoard WER (lab)</a>           11.1%    60.4   2025-07-17    5% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">CHiME-4 WER (lab)</a>                9.6%    59.1   2025-07-17    5% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">GigaSpeech test WER (lab)</a>       10.3%    59.8   2025-07-17    5% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">Earnings-21 10-minute long-fo…</a>   9.6%    57.6   2025-07-17    5% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">Earnings-22 10-minute long-fo…</a>  12.5%    57.0   2025-07-17    5% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">VoxPopuli English test WER (l…</a>   6.6%    59.8   2025-07-17    4% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-other WER (l…</a>   3.1%    60.9   2025-07-17    4% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-clean WER (l…</a>   1.5%    61.5   2025-07-17    1% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">FLEURS English test WER (lab)</a>    3.4%    60.9   2025-07-17    1% ▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        3.7%    62.2   2026-03-26   24% ▇▇▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.6%    57.9   2026-03-26    7% ▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-small-24b-2507.json">LibriSpeech test-clean WER</a>       1.6%    60.7   2026-09-15   10% ▇
+                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-small-24b-2507.json">FLEURS English test WER</a>          3.5%    66.4   2026-09-15    4% ▇
+<a name="speech-stt-cose-e-ccby"></a>CoSE-E: A Benchmark f…  <a href="https://arxiv.org/html/2609.35645v1">CoSE-E enterprise code-switch…</a>   6.2%    60.6   2026-09-28    7% ▇
+<a name="speech-stt-danish-asr-ryeai-mit"></a>Danish Speech-to-Text…  <a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean…</a>  20.8%    61.4   2026-06-25    3% ▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  34.5%    55.7   2025-09-22    2% ▇
+<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  13.9%    64.6   2026-08-18    1% ▇
+prior                   pull toward the middle                   49.8                 1% ▇
+                        weighted average                       = 60.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Mistral AI ([CC BY 4.0](../../licenses/report-2507.13264v1.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt)) · Dysarthric ASR with clinical context on the Speech Accessibility Project ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt))</sub>
+<sub>Licences: Mistral AI ([CC BY 4.0](../../licenses/report-2507.13264v1.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · CoSE-E: A Benchmark for Code-switched Speech Evaluation in Enterprise Settings ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Danish Speech-to-Text Leaderboard ([MIT](https://github.com/Rye-A1/danish-asr-leaderboard/blob/f4a0ddc2d6703c43130788507a89231a44f32d1d/LICENSE)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt)) · Dysarthric ASR with clinical context on the Speech Accessibility Project ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt))</sub>
 
 ## How to run it
 
@@ -48,7 +50,7 @@ api (Mistral AI) · $0.0040/audio min · [docs.mistral.ai](https://docs.mistral.
 
 <pre>
 version                needs  score
-bf16 · nvidia only  ~58.82GB   62.3
+bf16 · nvidia only  ~58.82GB   60.6
 </pre>
 
 ```sh

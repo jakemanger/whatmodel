@@ -6,7 +6,7 @@
 
 Efficient-Speech (LiteASR) · released 2025-02 · 1.35B params · apache-2.0
 
-**score 57.0** ±3.0 · #46 of 128 · from 4 benchmark results across 2 sources
+**score 55.4** ±3.0 · #66 of 160 · from 4 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="speech-stt-liteasr-report-ccby"></a>LiteASR               <a href="https://arxiv.org/html/2502.20583v2">Multilingual LibriSpeech Fren…</a>   6.8%    58.5   2025-02-27   24% ▇▇▇
-                      <a href="https://arxiv.org/html/2502.20583v2">LiteASR paper · ESB 8-set ave…</a>  10.2%    55.9   2025-02-27   21% ▇▇▇
-                      <a href="https://arxiv.org/html/2502.20583v2">Multilingual LibriSpeech Germ…</a>   7.7%    61.4   2025-02-27   16% ▇▇
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.4%    55.4   2026-03-26   36% ▇▇▇▇
-prior                 pull toward the middle                   49.7                 4% ▇
-                      weighted average                       = 57.0
+<a name="speech-stt-liteasr-report-ccby"></a>LiteASR               <a href="https://arxiv.org/html/2502.20583v2">Multilingual LibriSpeech Fren…</a>   6.8%    56.8   2025-02-27   24% ▇▇▇
+                      <a href="https://arxiv.org/html/2502.20583v2">LiteASR paper · ESB 8-set ave…</a>  10.2%    54.2   2025-02-27   23% ▇▇▇
+                      <a href="https://arxiv.org/html/2502.20583v2">Multilingual LibriSpeech Germ…</a>   7.7%    59.7   2025-02-27   17% ▇▇
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.4%    53.5   2026-03-26   33% ▇▇▇▇
+prior                 pull toward the middle                   49.8                 4% ▇
+                      weighted average                       = 55.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +32,7 @@ prior                 pull toward the middle                   49.7             
 
 <pre>
 version               needs  score
-fp16 · nvidia only  ~3.74GB   57.0
+fp16 · nvidia only  ~3.74GB   55.4
 </pre>
 
 ```sh

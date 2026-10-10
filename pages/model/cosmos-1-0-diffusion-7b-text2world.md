@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-01 · 7B params · nvidia-open-model
 
-**score 46.2** ±3.1 · #54 of 87 · from 3 benchmark results across 2 sources
+**score 46.0** ±3.1 · #60 of 92 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>   24.1%    44.1   2026-01-30   52% ▇▇▇▇▇▇
-<a name="paper-2501.03575v3-cosmos"></a>Cosmos World Foundati…  <a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: camera…</a>   62.6%    47.5   2025-07-09   42% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: Sampso…</a>  0.3550    66.7   2025-07-09    2% ▇
+<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>   24.1%    43.9   2026-01-30   52% ▇▇▇▇▇▇
+<a name="paper-2501.03575v3-cosmos"></a>Cosmos World Foundati…  <a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: camera…</a>   62.6%    47.3   2025-07-09   42% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: Sampso…</a>  0.3550    66.6   2025-07-09    2% ▇
 prior                   pull toward the middle                    49.9                 4% ▇
-                        weighted average                        = 46.2
+                        weighted average                        = 46.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                    49.9          
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~29.8GB   46.2
+bf16 · nvidia only  ~29.8GB   46.0
 </pre>
 
 ```sh

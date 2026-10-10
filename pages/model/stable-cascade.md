@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-02 · 5.1B params · stable-cascade-nc-community
 
-**score 38.6** ±3.5 · #106 of 139 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 38.5** ±3.5 · #109 of 143 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>  1057.0    38.0   2024-06-04   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>  1057.0    37.9   2024-06-04   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                    49.9                 5% ▇
-                        weighted average                        = 38.6
+                        weighted average                        = 38.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                    49.9          
 
 <pre>
 version                                     needs  score
-bf16 prior + fp16 decoder, model CPU of…  ~12.7GB   38.6
+bf16 prior + fp16 decoder, model CPU of…  ~12.7GB   38.5
 </pre>
 
 ```sh

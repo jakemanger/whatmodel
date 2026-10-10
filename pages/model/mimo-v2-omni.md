@@ -6,7 +6,7 @@
 
 Xiaomi · released 2026-03 · closed weights
 
-**score 65.9** ±2.0 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 65.6** ±2.1 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1431.0    66.5   2026-10-02   49% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1216.1    65.2   2026-10-02   36% ▇▇▇▇
-<a name="first-party-xiaomi-scores"></a>Xiaomi MiMo vendor-re…  <a href="https://mimo.xiaomi.com/mimo-v2-omni">CharXiv (reasoning questions)…</a>   80.1%    67.6   2026-03-18   13% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1431.0    66.3   2026-10-02   48% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1216.1    64.9   2026-10-02   34% ▇▇▇▇
+<a name="first-party-xiaomi-scores"></a>Xiaomi MiMo vendor-re…  <a href="https://mimo.xiaomi.com/mimo-v2-omni">CharXiv (reasoning questions)…</a>   80.1%    67.0   2026-03-18   16% ▇▇
 prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 65.9
+                        weighted average                        = 65.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

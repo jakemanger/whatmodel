@@ -6,7 +6,7 @@
 
 Midjourney · released 2023-12 · proprietary
 
-**score 44.8** ±6.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.7** ±6.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="visual-kolors-readme"></a>Kwai-Kolors/Kolors re…  <a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall s…</a>  3.58 / 5    43.5   2024-11-13   81% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-kolors-readme"></a>Kwai-Kolors/Kolors re…  <a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall s…</a>  3.58 / 5    43.4   2024-11-13   81% ▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                      49.9                19% ▇▇
-                        weighted average                          = 44.8
+                        weighted average                          = 44.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

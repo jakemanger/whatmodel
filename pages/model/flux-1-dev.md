@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2024-08 · 12B params · flux-dev-nc
 
-**score 43.3** ±1.4 · #91 of 139 · from 11 benchmark results across 11 sources
+**score 43.1** ±1.3 · #93 of 143 · from 11 benchmark results across 11 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                              score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>             969.4    43.2   2026-09-24   29% ▇▇▇▇
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>         54.9%    41.1   2026-07-01   16% ▇▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>    76.2%    42.5   2026-08-25   14% ▇▇
-<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>    72.6%    42.8   2026-07-12   12% ▇
-<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>     3.9%    43.3   2026-09-28    8% ▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>    50.0%    41.7   2026-06-02    7% ▇
-<a name="genexam-readme-mit"></a>GenExam leaderboard     <a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT…</a>    17.6%    49.3   2026-09-26    4% ▇
-<a name="paper-2506.10963v2-mmmg-kg"></a>MMMG: A Massive         <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generati…</a>    19.1%    44.6   2025-06-13    4% ▇
-<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>    18.2%    44.3   2026-10-07    4% ▇
-<a name="visual-knowledge-visualization"></a>Knowledge Visualizati…  <a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (…</a>    33.9%    64.6   2026-04-24    1% ▇
-<a name="hpsv3-readme-mit"></a>HPSv3 repository READ…  <a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchm…</a>  10.4300    57.4   2025-12-05    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>             969.4    43.1   2026-09-24   30% ▇▇▇▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>         54.9%    41.0   2026-07-01   16% ▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>    76.2%    42.3   2026-08-25   14% ▇▇
+<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>    72.6%    42.7   2026-07-12   12% ▇
+<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>     3.9%    43.1   2026-09-28    8% ▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>    50.0%    41.6   2026-06-02    6% ▇
+<a name="genexam-readme-mit"></a>GenExam leaderboard     <a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT…</a>    17.6%    49.1   2026-09-26    4% ▇
+<a name="paper-2506.10963v2-mmmg-kg"></a>MMMG: A Massive         <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generati…</a>    19.1%    44.5   2025-06-13    4% ▇
+<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>    18.2%    44.2   2026-10-07    4% ▇
+<a name="visual-knowledge-visualization"></a>Knowledge Visualizati…  <a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (…</a>    33.9%    64.3   2026-04-24    1% ▇
+<a name="hpsv3-readme-mit"></a>HPSv3 repository READ…  <a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchm…</a>  10.4300    57.2   2025-12-05    1% ▇
 prior                   pull toward the middle                     49.9                 1% ▇
-                        weighted average                         = 43.3
+                        weighted average                         = 43.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -43,14 +43,14 @@ api (Replicate) · $0.025/image · [replicate.com](https://replicate.com/black-f
 
 <pre>
 version                                  needs  score
-bf16 · nvidia only                     ~29.3GB   43.3
-fp8 (layerwise casting) · nvidia only   ~7.7GB   43.3
-bnb-8bit · nvidia only                 ~14.9GB   43.3
-nf4 (bnb-4bit) · nvidia only            ~7.7GB   43.3
-gguf-q8_0                              ~28.4GB   43.3
-gguf-q4_0                              ~21.3GB   43.3
-mlx-4bit · mac only                     ~7.7GB   43.3
-bf16 · mac only                        ~29.3GB   43.3
+bf16 · nvidia only                     ~29.3GB   43.1
+fp8 (layerwise casting) · nvidia only   ~7.7GB   43.1
+bnb-8bit · nvidia only                 ~14.9GB   43.1
+nf4 (bnb-4bit) · nvidia only            ~7.7GB   43.1
+gguf-q8_0                              ~28.4GB   43.1
+gguf-q4_0                              ~21.3GB   43.1
+mlx-4bit · mac only                     ~7.7GB   43.1
+bf16 · mac only                        ~29.3GB   43.1
 </pre>
 
 ```sh

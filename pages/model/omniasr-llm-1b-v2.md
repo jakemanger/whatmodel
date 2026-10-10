@@ -6,7 +6,7 @@
 
 Meta · released 2025-12 · 2.28B params · apache-2.0
 
-**score 56.7** ±2.9 · #49 of 128 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.1** ±2.9 · #70 of 160 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -15,21 +15,22 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                test                       score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>   6.1%    56.9   2026-03-26   97% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle              49.7                 3% ▇
-                      weighted average                  = 56.7
+source                  test                            score  implies  date        weight
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        6.1%    55.0   2026-03-26   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-iberian-bench-ccby"></a>Benchmarking Automati…  <a href="https://arxiv.org/html/2609.36920v1">Iberian ASR benchmark · 7-lan…</a>  16.6%    69.3   2026-09-29    2% ▇
+prior                   pull toward the middle                   49.8                 3% ▇
+                        weighted average                       = 55.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
+<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Benchmarking Automatic Speech Recognition Tools for Iberian Languages ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 version    needs  score
-bf16     ~5.97GB   56.7
+bf16     ~5.97GB   55.1
 </pre>
 
 ```sh

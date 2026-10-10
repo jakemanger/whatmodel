@@ -6,7 +6,7 @@
 
 Poolside · released 2026-04 · 225B params (23B active) · apache-2.0
 
-**score 64.0** ±1.8 · #111 of 551 · from 4 benchmark results across 2 sources
+**score 63.8** ±1.8 · #120 of 598 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                           score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1348.1    63.7   2026-10-01   58% ▇▇▇▇▇▇▇
-<a name="report-2605.27605v1"></a>Poolside                <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       74.6%    65.2   2026-05-26   17% ▇▇
-                        <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       45.8%    65.3   2026-05-26   13% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1348.1    63.4   2026-10-01   54% ▇▇▇▇▇▇
+<a name="report-2605.27605v1"></a>Poolside                <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       74.6%    65.0   2026-05-26   20% ▇▇
+                        <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       45.8%    65.2   2026-05-26   14% ▇▇
                         <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   63.1%    64.2   2026-05-26   11% ▇
 prior                   pull toward the middle                  50.0                 1% ▇
-                        weighted average                      = 64.0
+                        weighted average                      = 63.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -43,9 +43,9 @@ api (Poolside) · price unknown · [huggingface.co](https://huggingface.co/pools
 
 <pre>
 download                        size  score
-16-bit bf16 · nvidia only   ~451.6GB   64.0
-4-bit fp8 · nvidia only    ~229.08GB   64.0
-4-bit nvfp4 · nvidia only  ~139.29GB   64.0
+16-bit bf16 · nvidia only   ~451.6GB   63.8
+4-bit fp8 · nvidia only    ~229.08GB   63.8
+4-bit nvfp4 · nvidia only  ~139.29GB   63.8
 </pre>
 
 ```sh

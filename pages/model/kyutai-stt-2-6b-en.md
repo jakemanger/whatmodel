@@ -6,7 +6,7 @@
 
 Kyutai · released 2025-06 · 2.6B params · cc-by-4.0
 
-**score 58.6** ±3.3 · #38 of 128 · from 3 benchmark results across 2 sources
+**score 56.9** ±3.5 · #52 of 160 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   8.1%    57.1   2026-02-11   27% ▇▇▇
-                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   7.7%    57.3   2026-02-11   25% ▇▇▇
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.4%    61.2   2026-03-26   44% ▇▇▇▇▇
-prior                 pull toward the middle                   49.7                 4% ▇
-                      weighted average                       = 58.6
+<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   8.1%    55.6   2026-02-11   27% ▇▇▇
+                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   7.7%    55.8   2026-02-11   26% ▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.4%    59.3   2026-03-26   43% ▇▇▇▇▇
+prior                 pull toward the middle                   49.8                 5% ▇
+                      weighted average                       = 56.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior                 pull toward the middle                   49.7             
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~6.74GB   58.6
-bf16 · mac only     ~6.74GB   58.6
+bf16 · nvidia only  ~6.74GB   56.9
+bf16 · mac only     ~6.74GB   56.9
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-04 · 253B params · nvidia-open-model
 
-**score 58.6** ±1.4 · #165 of 551 · from 9 benchmark results across 4 sources
+**score 58.4** ±1.4 · #181 of 598 · from 9 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,17 +14,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="report-2505.00949v5"></a>NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>               76.0%    60.1   2025-09-09   17% ▇▇
-                        <a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (lab)</a>                  80.8%    61.0   2025-09-09   12% ▇
-                        <a href="https://arxiv.org/html/2505.00949v5">AIME 2025 (lab)</a>                  72.5%    59.5   2025-09-09   11% ▇
-                        <a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>                   97.0%    60.2   2025-09-09    9% ▇
+<a name="report-2505.00949v5"></a>NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>               76.0%    59.9   2025-09-09   17% ▇▇
+                        <a href="https://arxiv.org/html/2505.00949v5">AIME 2025 (lab)</a>                  72.5%    59.0   2025-09-09   14% ▇▇
+                        <a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (lab)</a>                  80.8%    60.4   2025-09-09   13% ▇▇
+                        <a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>                   97.0%    59.2   2025-09-09   11% ▇
                         <a href="https://arxiv.org/html/2505.00949v5">Arena-Hard (version/judge uns…</a>   87.0%    60.3   2025-09-09    7% ▇
-                        <a href="https://arxiv.org/html/2505.00949v5">IFEval (aggregation unspecifi…</a>   88.9%    60.3   2025-09-09    3% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1347.6    57.4   2026-10-02   22% ▇▇▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1139.8    56.1   2026-05-10   12% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                          56.7%    51.4   2025-06-14    5% ▇
+                        <a href="https://arxiv.org/html/2505.00949v5">IFEval (aggregation unspecifi…</a>   88.9%    59.7   2025-09-09    4% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1347.6    57.0   2026-10-02   20% ▇▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1139.8    55.5   2026-05-10   11% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                          56.7%    52.9   2025-06-14    3% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 58.6
+                        weighted average                        = 58.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -48,8 +48,8 @@ NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">LiveCodeBe
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~152.3GB   58.6
-2-bit ud-q2_k_xl   ~76.4GB   58.6
+4-bit ud-q4_k_xl  ~152.3GB   58.4
+2-bit ud-q2_k_xl   ~76.4GB   58.4
 </pre>
 
 ```sh

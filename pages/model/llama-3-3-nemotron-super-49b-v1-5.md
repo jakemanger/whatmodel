@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-07 · 49B params · nvidia-open-model
 
-**score 55.7** ±2.4 · #198 of 551 · from 3 benchmark results across 2 sources
+**score 55.4** ±1.4 · #220 of 598 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1342.9    56.9   2026-10-02   66% ▇▇▇▇▇▇▇▇
-<a name="report-2512.13607v2"></a>NVIDIA                  <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Eas…</a>   61.9%    54.2   2026-03-27   16% ▇▇
-                        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Med…</a>    6.1%    52.9   2026-03-27   15% ▇▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 55.7
+<a name="report-2512.13607v2"></a>NVIDIA                  <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Med…</a>    6.1%    55.2   2026-03-27   43% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Eas…</a>   61.9%    54.9   2026-03-27   24% ▇▇▇
+                        <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench v6 (Aug 2024–Ma…</a>   68.1%    55.2   2026-03-27   11% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1342.9    56.5   2026-10-02   21% ▇▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 55.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · NVIDIA ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: NVIDIA ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -31,8 +32,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download             size  score
-4-bit ud-q4_k_xl  ~29.9GB   55.7
-2-bit ud-q2_k_xl  ~15.2GB   55.7
+4-bit ud-q4_k_xl  ~29.9GB   55.4
+2-bit ud-q2_k_xl  ~15.2GB   55.4
 </pre>
 
 ```sh

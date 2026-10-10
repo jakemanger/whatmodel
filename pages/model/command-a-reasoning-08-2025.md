@@ -6,7 +6,7 @@
 
 Cohere
 
-**score 52.0** ±2.0 · comparison only: no current run option verified · from 6 benchmark results across 2 sources
+**score 52.2** ±2.0 · comparison only: no current run option verified · from 6 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="first-party-cohere-scores"></a>Cohere vendor-reporte…  <a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (lab)</a>          37.0%    51.5   2026-05-20   36% ▇▇▇▇
-                        <a href="https://cohere.com/blog/command-a-plus">AIME 2025 (lab)</a>                 57.0%    49.1   2026-05-20   22% ▇▇▇
-                        <a href="https://cohere.com/blog/command-a-plus">Terminal-Bench Hard (lab)</a>        3.0%    45.3   2026-05-20   11% ▇
-                        <a href="https://cohere.com/blog/command-a-plus">SciCode (level unspecified) (…</a>  30.0%    54.9   2026-05-20    7% ▇
-                        <a href="https://cohere.com/blog/command-a-plus">IFBench prompt-level (loose) …</a>  36.0%    40.5   2026-05-20    6% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  57.1%    64.8   2025-12-16   16% ▇▇
+<a name="first-party-cohere-scores"></a>Cohere vendor-reporte…  <a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (lab)</a>          37.0%    51.3   2026-05-20   30% ▇▇▇▇
+                        <a href="https://cohere.com/blog/command-a-plus">AIME 2025 (lab)</a>                 57.0%    49.9   2026-05-20   26% ▇▇▇
+                        <a href="https://cohere.com/blog/command-a-plus">Terminal-Bench Hard (lab)</a>        3.0%    45.9   2026-05-20   12% ▇
+                        <a href="https://cohere.com/blog/command-a-plus">SciCode (level unspecified) (…</a>  30.0%    57.0   2026-05-20    8% ▇
+                        <a href="https://cohere.com/blog/command-a-plus">IFBench prompt-level (loose) …</a>  36.0%    40.6   2026-05-20    6% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  57.1%    64.1   2025-12-16   17% ▇▇
 prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 52.0
+                        weighted average                       = 52.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

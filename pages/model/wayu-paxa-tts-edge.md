@@ -6,7 +6,7 @@
 
 Wayu Research / Paxa Labs · released 2026-08 · 0.082B params · cc-by-nc-4.0
 
-**score 63.2** ±4.0 · #19 of 100 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 62.6** ±4.0 · #19 of 109 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-wayu-thai-tts-ccby"></a>Building and Evaluati…  <a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · 1,531-it…</a>  68.2%    60.7   2026-09-03   36% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · 500-utte…</a>   3.7%    67.9   2026-09-03   29% ▇▇▇
-                        <a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · English …</a>   1.1%    64.3   2026-09-03   29% ▇▇▇
-prior                   pull toward the middle                   49.8                 6% ▇
-                        weighted average                       = 63.2
+<a name="speech-wayu-thai-tts-ccby"></a>Building and Evaluati…  <a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · 1,531-it…</a>  68.2%    60.1   2026-09-03   35% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · English …</a>   1.1%    63.6   2026-09-03   30% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · 500-utte…</a>   3.7%    67.2   2026-09-03   29% ▇▇▇
+prior                   pull toward the middle                   49.6                 6% ▇
+                        weighted average                       = 62.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 version                    needs  score
-fp32 (wayu-tts package)  ~0.33GB   63.2
+fp32 (wayu-tts package)  ~0.33GB   62.6
 </pre>
 
 ```sh

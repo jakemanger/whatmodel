@@ -6,7 +6,7 @@
 
 Kuaishou (Kwaipilot) · released 2025-10 · closed weights
 
-**score 59.6** ±2.3 · #157 of 551 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 59.2** ±2.4 · #174 of 598 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                        score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1255.3    59.9   2026-10-01   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle               50.0                 2% ▇
-                        weighted average                   = 59.6
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1255.3    59.4   2026-10-01   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle               50.0                 3% ▇
+                        weighted average                   = 59.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

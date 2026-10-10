@@ -6,7 +6,7 @@
 
 Hugging Face (Distil-Whisper) · released 2023-12 · 0.17B params · mit
 
-**score 49.6** ±4.1 · #80 of 128 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 47.8** ±4.2 · #110 of 160 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.6%    49.9   2026-03-26   66% ▇▇▇▇▇▇▇▇
-<a name="speech-distil-whisper-readme-mit"></a>huggingface/distil-wh…  <a href="https://github.com/huggingface/distil-whisper/blob/a66f5c85be1e32c504e8ed68df7802d2b96db4c0/README.md">Distil-Whisper · 4-set out-of…</a>  12.1%    48.8   2024-03-21   28% ▇▇▇
-prior                   pull toward the middle                   49.7                 6% ▇
-                        weighted average                       = 49.6
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.6%    48.1   2026-03-26   64% ▇▇▇▇▇▇▇▇
+<a name="speech-distil-whisper-readme-mit"></a>huggingface/distil-wh…  <a href="https://github.com/huggingface/distil-whisper/blob/a66f5c85be1e32c504e8ed68df7802d2b96db4c0/README.md">Distil-Whisper · 4-set out-of…</a>  12.1%    46.9   2024-03-21   29% ▇▇▇▇
+prior                   pull toward the middle                   49.8                 7% ▇
+                        weighted average                       = 47.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version    needs  score
-fp16     ~0.91GB   49.6
+fp16     ~0.91GB   47.8
 </pre>
 
 ```sh

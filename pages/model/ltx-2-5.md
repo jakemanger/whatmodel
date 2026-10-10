@@ -6,7 +6,7 @@
 
 Lightricks · released 2026-08 · 22B params · ltx-2.x-community
 
-**score 68.3** ±5.2 · #16 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.8** ±6.1 · #42 of 92 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,14 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-datapoint-video-bench"></a>Datapoint Video Bench…  <a href="https://huggingface.co/datasets/datapointai/text-to-video-human-preferences-326k/blob/49295b5d625c04480c92c33a2b4c502bf571110b/README.md#leaderboard">Datapoint Video Bench (overal…</a>  978.4    70.7   2026-09-28   89% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                11% ▇
-                        weighted average                       = 68.3
+<a name="visual-kandinsky6-report"></a>Kandinsky 6.0 Video: …  <a href="https://arxiv.org/html/2610.05608v1#S7.T11">VABench T2AV micro Visual QA</a>    61.7%    42.5   2026-10-04   49% ▇▇▇▇▇▇
+<a name="visual-datapoint-video-bench"></a>Datapoint Video Bench…  <a href="https://huggingface.co/datasets/datapointai/text-to-video-human-preferences-326k/blob/49295b5d625c04480c92c33a2b4c502bf571110b/README.md#leaderboard">Datapoint Video Bench (overal…</a>  978.4    68.4   2026-09-28   35% ▇▇▇▇
+prior                   pull toward the middle                   49.9                16% ▇▇
+                        weighted average                       = 52.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Datapoint Video Bench leaderboard ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Kandinsky 6.0 Video: Foundation Models for Synchronized Video and Audio Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Datapoint Video Bench leaderboard ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -31,9 +32,9 @@ api (Lightricks (LTX API)) · $0.12/sec · [docs.ltx.io](https://docs.ltx.io/pri
 
 <pre>
 version                                     needs  score
-fp8 · nvidia only                         ~13.7GB   68.3
-q8 · mac only                             ~26.9GB   68.3
-gguf-q8_0 22B dev + Gemma 4 12B q8_0 (s…  ~47.7GB   68.3
+fp8 · nvidia only                         ~13.7GB   52.8
+q8 · mac only                             ~26.9GB   52.8
+gguf-q8_0 22B dev + Gemma 4 12B q8_0 (s…  ~47.7GB   52.8
 </pre>
 
 ```sh

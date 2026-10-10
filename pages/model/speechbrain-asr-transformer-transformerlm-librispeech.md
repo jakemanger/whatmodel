@@ -6,7 +6,7 @@
 
 SpeechBrain · released 2022-03 · apache-2.0
 
-**score 40.1** ±7.4 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 39.4** ±7.3 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="first-party-speechbrain-asr-cards"></a>SpeechBrain Hugging F…  <a href="https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech/blob/bcf56f762f37877912578f8800bc2a4f5171e5e5/README.md">LibriSpeech test-other WER (l…</a>   5.5%    37.4   2024-02-19   59% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech/blob/bcf56f762f37877912578f8800bc2a4f5171e5e5/README.md">LibriSpeech test-clean WER (l…</a>   2.3%    37.5   2024-02-19   19% ▇▇
-prior                   pull toward the middle                   49.7                22% ▇▇▇
-                        weighted average                       = 40.1
+<a name="first-party-speechbrain-asr-cards"></a>SpeechBrain Hugging F…  <a href="https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech/blob/bcf56f762f37877912578f8800bc2a4f5171e5e5/README.md">LibriSpeech test-other WER (l…</a>   5.5%    36.4   2024-02-19   61% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/speechbrain/asr-transformer-transformerlm-librispeech/blob/bcf56f762f37877912578f8800bc2a4f5171e5e5/README.md">LibriSpeech test-clean WER (l…</a>   2.3%    37.3   2024-02-19   18% ▇▇
+prior                   pull toward the middle                   49.8                21% ▇▇▇
+                        weighted average                       = 39.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

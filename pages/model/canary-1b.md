@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-02 · 1B params · cc-by-nc-4.0
 
-**score 60.5** ±3.2 · #25 of 128 · from 5 benchmark results across 3 sources
+**score 58.9** ±3.0 · #39 of 160 · from 5 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b.json">LibriSpeech test-clean WER</a>       1.6%    62.9   2026-09-15   36% ▇▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b.json">FLEURS English test WER</a>          4.4%    60.5   2026-09-15   16% ▇▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.5%    60.6   2026-03-26   39% ▇▇▇▇▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  10.2%    47.5   2024-12-09    2% ▇
-                        <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       1.7%    50.4   2024-12-09    2% ▇
-prior                   pull toward the middle                   49.7                 4% ▇
-                        weighted average                       = 60.5
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b.json">LibriSpeech test-clean WER</a>       1.6%    60.9   2026-09-15   43% ▇▇▇▇▇
+                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b.json">FLEURS English test WER</a>          4.4%    58.9   2026-09-15   17% ▇▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.5%    58.6   2026-03-26   32% ▇▇▇▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  10.2%    44.6   2024-12-09    2% ▇
+                        <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       1.7%    49.2   2024-12-09    2% ▇
+prior                   pull toward the middle                   49.8                 4% ▇
+                        weighted average                       = 58.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,7 +33,7 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version              needs  score
-fp32 · nvidia only  ~5.3GB   60.5
+fp32 · nvidia only  ~5.3GB   58.9
 </pre>
 
 ```sh

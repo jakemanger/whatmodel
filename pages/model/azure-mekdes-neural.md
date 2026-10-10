@@ -6,7 +6,7 @@
 
 Microsoft · released 2021-10 · closed weights
 
-**score 50.3** ±15.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 64.9** ±9.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-amharic-addis-bysa"></a>Addis AI Amharic TTS …  <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (…</a>   4.1%   305.8   2026-08-12    0% ▇
-prior                   pull toward the middle                   49.8               100% ▇▇▇▇▇▇▇▇▇▇▇▇
-                        weighted average                       = 50.3
+<a name="speech-amharic-addis-bysa"></a>Addis AI Amharic TTS …  <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (…</a>   4.1%    72.2   2026-08-12   68% ▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.6                32% ▇▇▇▇
+                        weighted average                       = 64.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

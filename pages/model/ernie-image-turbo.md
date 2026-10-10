@@ -6,7 +6,7 @@
 
 Baidu · released 2026-04 · 8B params · apache-2.0
 
-**score 59.7** ±3.0 · #39 of 139 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 59.5** ±3.0 · #40 of 143 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                       score  implies  date        weight
-<a name="visual-ernie-image"></a>ERNIE-Image model rep…  <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (EN) (lab)</a>  96.0%    61.5   2026-09-25   26% ▇▇▇
-                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (CN) (lab)</a>  96.8%    65.3   2026-09-25   20% ▇▇
-                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">GenEval (lab)</a>              86.7%    57.7   2026-09-25   19% ▇▇
-                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (CN) (lab)</a>     50.6%    57.1   2026-09-25   16% ▇▇
-                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (EN) (lab)</a>     53.4%    57.2   2026-09-25   16% ▇▇
+<a name="visual-ernie-image"></a>ERNIE-Image model rep…  <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (EN) (lab)</a>  96.0%    61.4   2026-09-25   25% ▇▇▇
+                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (CN) (lab)</a>  96.8%    65.1   2026-09-25   20% ▇▇
+                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">GenEval (lab)</a>              86.7%    57.5   2026-09-25   19% ▇▇
+                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (CN) (lab)</a>     50.6%    56.9   2026-09-25   16% ▇▇
+                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (EN) (lab)</a>     53.4%    57.0   2026-09-25   16% ▇▇
 prior                   pull toward the middle              49.9                 4% ▇
-                        weighted average                  = 59.7
+                        weighted average                  = 59.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -37,9 +37,9 @@ api (fal.ai) · $0.010/image · [fal.ai](https://fal.ai/models/fal-ai/ernie-imag
 
 <pre>
 version                                   needs  score
-bf16 · nvidia only                      ~19.7GB   59.7
-bf16 + Ministral 3B (sd.cpp)            ~29.4GB   59.7
-gguf-ud-q4_k_m + Ministral 3B (sd.cpp)  ~17.1GB   59.7
+bf16 · nvidia only                      ~19.7GB   59.5
+bf16 + Ministral 3B (sd.cpp)            ~29.4GB   59.5
+gguf-ud-q4_k_m + Ministral 3B (sd.cpp)  ~17.1GB   59.5
 </pre>
 
 ```sh

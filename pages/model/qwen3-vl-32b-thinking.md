@@ -6,17 +6,49 @@
 
 Alibaba · released 2025-10 · 33.4B params · apache-2.0
 
-**score 57.1** ±4.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 59.6** ±0.7 · comparison only: no current run option verified · from 33 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="paper-2601.03286v1-hyperclova-x-32b-think"></a>HyperCLOVA X 32B Think  <a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard</a>      6.9%    57.8   2026-01-03   92% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle           50.0                 8% ▇
-                        weighted average               = 57.1
+source                  test                            score  implies  date        weight
+<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/pdf/2511.21631v2#page=16">CharXiv (reasoning questions)…</a>  65.2%    60.3   2025-11-27    8% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">τ²-bench Telecom (lab)</a>          46.9%    62.0   2025-11-27    7% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">GPQA (subset unspecified) (la…</a>  73.1%    59.0   2025-11-27    6% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">MMMU Pro (lab)</a>                  68.1%    60.9   2025-11-27    6% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Pro (lab)</a>                  82.1%    59.4   2025-11-27    5% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">MMMU (val) (lab)</a>                78.1%    59.9   2025-11-27    5% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">LiveCodeBench v6 (window unsp…</a>  65.6%    60.1   2025-11-27    5% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">MMLU-Redux (lab)</a>                91.9%    61.2   2025-11-27    4% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">CharXiv descriptive questions…</a>  90.2%    61.1   2025-11-27    4% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">SuperGPQA (lab)</a>                 59.0%    60.9   2025-11-27    4% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">AIME 2025 (lab)</a>                 83.7%    61.8   2025-11-27    4% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">MMStar (lab)</a>                    79.4%    60.8   2025-11-27    3% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">MathVista (testmini) (lab)</a>      85.9%    62.5   2025-11-27    3% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">LVBench (lab)</a>                   62.6%    58.0   2025-11-27    3% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">AndroidWorld (lab)</a>              63.7%    62.5   2025-11-27    3% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">Video-MME (without subtitles)…</a>  77.3%    59.8   2025-11-27    2% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">IFEval (aggregation unspecifi…</a>  87.8%    60.3   2025-11-27    2% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">MVBench (lab)</a>                   73.2%    57.8   2025-11-27    2% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=23">BFCL v3 (lab)</a>                   71.7%    60.4   2025-11-27    2% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">HallusionBench (lab)</a>            67.4%    60.2   2025-11-27    2% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">RealWorldQA (lab)</a>               78.4%    58.9   2025-11-27    1% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">ScreenSpot-Pro (lab)</a>            57.1%    56.6   2025-11-27    1% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">DocVQA (lab)</a>                    96.1%    57.7   2025-11-27    1% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">CC-OCR (lab)</a>                    79.6%    56.8   2025-11-27    1% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">ChartQA (lab)</a>                   89.0%    59.1   2025-11-27    1% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=16">OCRBench (lab)</a>                  85.5%    51.0   2025-11-27    1% ▇
+<a name="paper-2601.03286v1-hyperclova-x-32b-think"></a>HyperCLOVA X 32B Think  <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Telecom</a>                33.3%    56.5   2026-01-03    4% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard</a>              6.9%    57.6   2026-01-03    4% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail</a>                 57.0%    56.1   2026-01-03    2% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline</a>                54.4%    62.4   2026-01-03    2% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag</a>                       62.1%    40.3   2026-01-03    1% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU</a>                            71.5%    42.1   2026-01-03    1% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">PIQA</a>                            88.0%    57.1   2026-01-03    0% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 59.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

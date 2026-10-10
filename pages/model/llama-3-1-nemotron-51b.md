@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-09 · 51.5B params · nvidia-open-model-license
 
-**score 50.1** ±1.6 · #265 of 551 · from 6 benchmark results across 2 sources
+**score 49.5** ±1.6 · #299 of 598 · from 6 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="paper-2411.19146v5-puzzle"></a>Puzzle: Distillation-…  <a href="https://arxiv.org/html/2411.19146v5">ARC Challenge (lab)</a>      69.2%    48.7   2025-06-03   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2411.19146v5">GSM8K (lab)</a>              91.4%    51.9   2025-06-03   16% ▇▇
-                        <a href="https://arxiv.org/html/2411.19146v5">MMLU (lab)</a>               80.2%    50.8   2025-06-03   12% ▇
-                        <a href="https://arxiv.org/html/2411.19146v5">WinoGrande (lab)</a>         84.5%    49.1   2025-06-03   11% ▇
+<a name="paper-2411.19146v5-puzzle"></a>Puzzle: Distillation-…  <a href="https://arxiv.org/html/2411.19146v5">ARC Challenge (lab)</a>      69.2%    47.8   2025-06-03   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2411.19146v5">GSM8K (lab)</a>              91.4%    51.4   2025-06-03   17% ▇▇
+                        <a href="https://arxiv.org/html/2411.19146v5">MMLU (lab)</a>               80.2%    50.5   2025-06-03   12% ▇
+                        <a href="https://arxiv.org/html/2411.19146v5">WinoGrande (lab)</a>         84.5%    48.2   2025-06-03   12% ▇
                         <a href="https://arxiv.org/html/2411.19146v5">HellaSwag (lab)</a>          85.6%    48.1   2025-06-03    8% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1286.6    50.7   2026-10-02   30% ▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1286.6    50.2   2026-10-02   28% ▇▇▇
 prior                   pull toward the middle            50.0                 1% ▇
-                        weighted average                = 50.1
+                        weighted average                = 49.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,8 +32,8 @@ prior                   pull toward the middle            50.0                 1
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~31.04GB   50.1
-8-bit q8_0    ~54.73GB   50.1
+4-bit q4_k_m  ~31.04GB   49.5
+8-bit q8_0    ~54.73GB   49.5
 </pre>
 
 ```sh

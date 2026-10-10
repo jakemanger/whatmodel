@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-11 · 2.57B params · sai-nc-community
 
-**score 33.7** ±2.1 · #120 of 139 · from 4 benchmark results across 4 sources
+**score 33.6** ±2.1 · #124 of 143 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                  score  implies  date        weight
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>     3.15 / 5    39.0   2024-12-25   32% ▇▇▇▇
-<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>        935.0    29.5   2024-06-04   32% ▇▇▇▇
-<a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>        35.0%    32.4   2024-08-26   24% ▇▇▇
-<a name="visual-sdxl-lightning"></a>SDXL-Lightning: Progr…  <a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image)…</a>  23.7100 FID    30.2   2024-03-02    9% ▇
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>     3.15 / 5    38.9   2024-12-25   32% ▇▇▇▇
+<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>        935.0    29.4   2024-06-04   32% ▇▇▇▇
+<a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>        35.0%    32.3   2024-08-26   24% ▇▇▇
+<a name="visual-sdxl-lightning"></a>SDXL-Lightning: Progr…  <a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image)…</a>  23.7100 FID    30.1   2024-03-02    9% ▇
 prior                   pull toward the middle                         49.9                 2% ▇
-                        weighted average                             = 33.7
+                        weighted average                             = 33.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,9 +32,9 @@ prior                   pull toward the middle                         49.9     
 
 <pre>
 version                needs  score
-fp16 · nvidia only    ~8.9GB   33.7
-fp16 (sd.cpp)         ~8.8GB   33.7
-q8_0 (sd.cpp --type)  ~4.9GB   33.7
+fp16 · nvidia only    ~8.9GB   33.6
+fp16 (sd.cpp)         ~8.8GB   33.6
+q8_0 (sd.cpp --type)  ~4.9GB   33.6
 </pre>
 
 ```sh

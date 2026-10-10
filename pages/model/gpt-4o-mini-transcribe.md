@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-03 · proprietary
 
-**score 57.2** ±1.8 · #44 of 128 · from 14 benchmark results across 2 sources
+**score 55.7** ±1.8 · #64 of 160 · from 16 benchmark results across 4 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -15,28 +15,30 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source            test                            score  implies  date        weight
-<a name="report-2507.13264v1"></a>Mistral AI        <a href="https://arxiv.org/html/2507.13264v1">GigaSpeech test WER</a>             14.8%    56.1   2025-07-17   10% ▇
-                  <a href="https://arxiv.org/html/2507.13264v1">SPGISpeech test WER</a>              4.5%    52.4   2025-07-17    9% ▇
-                  <a href="https://arxiv.org/html/2507.13264v1">SwitchBoard WER</a>                 17.3%    54.9   2025-07-17    9% ▇
-                  <a href="https://arxiv.org/html/2507.13264v1">CHiME-4 WER</a>                     11.3%    59.3   2025-07-17    8% ▇
-                  <a href="https://arxiv.org/html/2507.13264v1">Earnings-21 10-minute long-fo…</a>  10.1%    60.0   2025-07-17    8% ▇
-                  <a href="https://arxiv.org/html/2507.13264v1">Earnings-22 10-minute long-fo…</a>  12.3%    61.0   2025-07-17    7% ▇
-                  <a href="https://arxiv.org/html/2507.13264v1">VoxPopuli English test WER</a>       7.3%    61.3   2025-07-17    7% ▇
-                  <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-other WER</a>       4.7%    55.7   2025-07-17    7% ▇
-                  <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-clean WER</a>       1.9%    57.0   2025-07-17    2% ▇
-                  <a href="https://arxiv.org/html/2507.13264v1">FLEURS English test WER</a>          3.2%    65.7   2025-07-17    2% ▇
-<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime  <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   7.9%    58.0   2026-02-11    8% ▇
-                  <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   8.0%    57.1   2026-02-11    8% ▇
-                  <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · Common Voice…</a>  12.8%    55.4   2026-02-11    7% ▇
-                  <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-la…</a>   8.0%    56.1   2026-02-11    7% ▇
-prior             pull toward the middle                   49.7                 1% ▇
-                  weighted average                       = 57.2
+source                  test                            score  implies  date        weight
+<a name="report-2507.13264v1"></a>Mistral AI              <a href="https://arxiv.org/html/2507.13264v1">SPGISpeech test WER</a>              4.5%    50.5   2025-07-17    8% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">SwitchBoard WER</a>                 17.3%    53.0   2025-07-17    8% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">CHiME-4 WER</a>                     11.3%    57.4   2025-07-17    8% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">GigaSpeech test WER</a>             14.8%    53.5   2025-07-17    7% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">Earnings-21 10-minute long-fo…</a>  10.1%    58.2   2025-07-17    7% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">Earnings-22 10-minute long-fo…</a>  12.3%    59.1   2025-07-17    7% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">VoxPopuli English test WER</a>       7.3%    59.2   2025-07-17    7% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-other WER</a>       4.7%    54.0   2025-07-17    6% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-clean WER</a>       1.9%    55.1   2025-07-17    2% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">FLEURS English test WER</a>          3.2%    64.3   2025-07-17    2% ▇
+<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime        <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   7.9%    56.5   2026-02-11    7% ▇
+                        <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · Common Voice…</a>  12.8%    54.0   2026-02-11    7% ▇
+                        <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   8.0%    55.5   2026-02-11    7% ▇
+                        <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-la…</a>   8.0%    54.6   2026-02-11    6% ▇
+<a name="speech-stt-mu-bench-ccby"></a>mu-bench: A Multiling…  <a href="https://arxiv.org/html/2609.32082v1">mu-bench voice-agent caller u…</a>  27.2%    56.3   2026-09-25    5% ▇
+<a name="speech-stt-danish-asr-ryeai-mit"></a>Danish Speech-to-Text…  <a href="https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet">Danish ASR Leaderboard · mean…</a>  22.2%    59.8   2026-10-04    5% ▇
+prior                   pull toward the middle                   49.8                 1% ▇
+                        weighted average                       = 55.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Mistral AI ([CC BY 4.0](../../licenses/report-2507.13264v1.txt)) · Voxtral Realtime ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Mistral AI ([CC BY 4.0](../../licenses/report-2507.13264v1.txt)) · Voxtral Realtime ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · mu-bench: A Multilingual Utterance Transcription Benchmark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Danish Speech-to-Text Leaderboard ([MIT](https://github.com/Rye-A1/danish-asr-leaderboard/blob/f4a0ddc2d6703c43130788507a89231a44f32d1d/LICENSE))</sub>
 
 ## How to run it
 

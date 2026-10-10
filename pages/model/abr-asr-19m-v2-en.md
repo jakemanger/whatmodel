@@ -6,7 +6,7 @@
 
 Applied Brain Research · released 2025-11 · 0.019B params · applied-brain-research-open-license
 
-**score 42.2** ±4.8 · #103 of 128 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 40.8** ±5.0 · #134 of 160 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  10.6%    41.5   2026-03-26   91% ▇▇▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle                   49.7                 9% ▇
-                      weighted average                       = 42.2
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  10.6%    39.8   2026-03-26   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior                 pull toward the middle                   49.8                10% ▇
+                      weighted average                       = 40.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                 pull toward the middle                   49.7             
 
 <pre>
 version                                     needs  score
-fp32 TorchScript (transformers remote c…  ~0.08GB   42.2
+fp32 TorchScript (transformers remote c…  ~0.08GB   40.8
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 xAI · released 2026-09 · proprietary
 
-**score 68.0** ±5.1 · #2 of 128 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 70.2** ±3.3 · #2 of 160 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-pipecat-bsd2"></a>Pipecat STT Benchmark…  <a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · poole…</a>   0.8%    70.0   2026-10-01   90% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.7                10% ▇
-                        weighted average                       = 68.0
+<a name="speech-stt-pipecat-bsd2"></a>Pipecat STT Benchmark…  <a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · poole…</a>   0.8%    71.0   2026-10-01   96% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.8                 4% ▇
+                        weighted average                       = 70.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

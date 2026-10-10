@@ -6,7 +6,7 @@
 
 ASAPP Research (Justin Lovelace et al.) · released 2023-10
 
-**score 30.4** ±5.5 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 28.4** ±5.7 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-ditto-tts-report-ccby"></a>DiTTo-TTS: Diffusion …  <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>  50.3%    29.7   2025-02-17   51% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>   4.1%    25.1   2025-02-17   37% ▇▇▇▇
-prior                   pull toward the middle                   49.8                12% ▇
-                        weighted average                       = 30.4
+<a name="speech-ditto-tts-report-ccby"></a>DiTTo-TTS: Diffusion …  <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>  50.3%    27.4   2025-02-17   50% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>   4.1%    22.7   2025-02-17   37% ▇▇▇▇
+prior                   pull toward the middle                   49.6                12% ▇
+                        weighted average                       = 28.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

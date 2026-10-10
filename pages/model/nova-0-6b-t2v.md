@@ -6,7 +6,7 @@
 
 BAAI · released 2024-12 · 0.6B params · apache-2.0
 
-**score 30.0** ±3.1 · #78 of 87 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 29.4** ±3.2 · #83 of 92 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>  41.2%    28.3   2025-05-17   60% ▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>  47.2%    30.6   2025-05-17   36% ▇▇▇▇
+<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>  41.2%    27.7   2025-05-17   61% ▇▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>  47.2%    30.0   2025-05-17   35% ▇▇▇▇
 prior                   pull toward the middle                   49.9                 4% ▇
-                        weighted average                       = 30.0
+                        weighted average                       = 29.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version              needs  score
-fp16 · nvidia only  ~9.3GB   30.0
+fp16 · nvidia only  ~9.3GB   29.4
 </pre>
 
 ```sh

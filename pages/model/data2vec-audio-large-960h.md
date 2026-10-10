@@ -6,7 +6,7 @@
 
 Meta · released 2022-04 · 0.31B params · apache-2.0
 
-**score 13.0** ±3.4 · #123 of 128 · from 3 benchmark results across 2 sources
+**score 12.3** ±3.5 · #154 of 160 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="first-party-meta-asr-cards"></a>Meta                  <a href="https://huggingface.co/facebook/data2vec-audio-large-960h/blob/27aba26eed532b86dcd0f17284a0307de4b51f39/README.md#evaluation">LibriSpeech test-other WER (l…</a>   4.1%    11.6   2022-06-06   37% ▇▇▇▇
-                      <a href="https://huggingface.co/facebook/data2vec-audio-large-960h/blob/27aba26eed532b86dcd0f17284a0307de4b51f39/README.md#evaluation">LibriSpeech test-clean WER (l…</a>   1.9%    14.4   2022-06-06   14% ▇▇
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  23.2%    10.1   2026-03-26   45% ▇▇▇▇▇
-prior                 pull toward the middle                   49.7                 4% ▇
-                      weighted average                       = 13.0
+<a name="first-party-meta-asr-cards"></a>Meta                  <a href="https://huggingface.co/facebook/data2vec-audio-large-960h/blob/27aba26eed532b86dcd0f17284a0307de4b51f39/README.md#evaluation">LibriSpeech test-other WER (l…</a>   4.1%    11.0   2022-06-06   39% ▇▇▇▇▇
+                      <a href="https://huggingface.co/facebook/data2vec-audio-large-960h/blob/27aba26eed532b86dcd0f17284a0307de4b51f39/README.md#evaluation">LibriSpeech test-clean WER (l…</a>   1.9%    14.1   2022-06-06   13% ▇▇
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  23.2%     8.8   2026-03-26   42% ▇▇▇▇▇
+prior                 pull toward the middle                   49.8                 5% ▇
+                      weighted average                       = 12.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                 pull toward the middle                   49.7             
 
 <pre>
 version    needs  score
-fp32     ~1.99GB   13.0
+fp32     ~1.99GB   12.3
 </pre>
 
 ```sh

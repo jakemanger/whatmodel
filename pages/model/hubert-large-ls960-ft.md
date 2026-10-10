@@ -6,7 +6,7 @@
 
 Meta · released 2021-06 · 0.32B params · apache-2.0
 
-**score 15.5** ±4.1 · #121 of 128 · from 4 benchmark results across 3 sources
+**score 15.0** ±4.3 · #151 of 160 · from 4 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  22.7%    11.0   2026-03-26   66% ▇▇▇▇▇▇▇▇
-<a name="first-party-meta-asr-cards"></a>Meta                  <a href="https://huggingface.co/facebook/hubert-large-ls960-ft/blob/ece5fabbf034c1073acae96d5401b25be96709d8/README.md#evaluation">LibriSpeech test-clean WER (l…</a>   1.9%    13.9   2022-05-24   20% ▇▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench   <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  14.7%    19.5   2024-12-09    4% ▇
-                      <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       2.1%    47.0   2024-12-09    3% ▇
-prior                 pull toward the middle                   49.7                 7% ▇
-                      weighted average                       = 15.5
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  22.7%     9.7   2026-03-26   64% ▇▇▇▇▇▇▇▇
+<a name="first-party-meta-asr-cards"></a>Meta                  <a href="https://huggingface.co/facebook/hubert-large-ls960-ft/blob/ece5fabbf034c1073acae96d5401b25be96709d8/README.md#evaluation">LibriSpeech test-clean WER (l…</a>   1.9%    13.6   2022-05-24   20% ▇▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench   <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  14.7%    17.7   2024-12-09    5% ▇
+                      <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       2.1%    45.6   2024-12-09    4% ▇
+prior                 pull toward the middle                   49.8                 7% ▇
+                      weighted average                       = 15.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +32,7 @@ prior                 pull toward the middle                   49.7             
 
 <pre>
 version    needs  score
-fp32     ~2.04GB   15.5
+fp32     ~2.04GB   15.0
 </pre>
 
 ```sh

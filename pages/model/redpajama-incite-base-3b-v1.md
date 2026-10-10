@@ -6,7 +6,7 @@
 
 Together · released 2023-05 · 2.8B params · apache-2.0
 
-**score 29.6** ±2.6 · #499 of 551 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 28.5** ±2.6 · #545 of 598 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source     test                            score  implies  date        weight
-<a name="redpajama-2024-original-zero-shot"></a>RedPajama  <a href="https://arxiv.org/html/2411.12372v1">WinoGrande (lab)</a>                63.2%    30.0   2024-11-19   44% ▇▇▇▇▇
-           <a href="https://arxiv.org/html/2411.12372v1">HellaSwag (lab)</a>                 63.2%    29.1   2024-11-19   27% ▇▇▇
-           <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  65.4%    26.7   2024-11-19   15% ▇▇
-           <a href="https://arxiv.org/html/2411.12372v1">PIQA (lab)</a>                      74.7%    28.0   2024-11-19   12% ▇
+<a name="redpajama-2024-original-zero-shot"></a>RedPajama  <a href="https://arxiv.org/html/2411.12372v1">WinoGrande (lab)</a>                63.2%    28.6   2024-11-19   44% ▇▇▇▇▇
+           <a href="https://arxiv.org/html/2411.12372v1">HellaSwag (lab)</a>                 63.2%    28.3   2024-11-19   26% ▇▇▇
+           <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  65.4%    25.2   2024-11-19   15% ▇▇
+           <a href="https://arxiv.org/html/2411.12372v1">PIQA (lab)</a>                      74.7%    27.1   2024-11-19   12% ▇
 prior      pull toward the middle                   50.0                 3% ▇
-           weighted average                       = 29.6
+           weighted average                       = 28.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +32,7 @@ prior      pull toward the middle                   50.0                 3% ▇
 
 <pre>
 download       size  score
-4-bit fp16  ~5.69GB   29.6
+4-bit fp16  ~5.69GB   28.5
 </pre>
 
 ```sh

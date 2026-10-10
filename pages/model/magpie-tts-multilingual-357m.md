@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-07 · 0.364B params · nvidia-open-model-license
 
-**score 41.3** ±6.2 · #71 of 100 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.2** ±6.2 · #84 of 109 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-carun-tts-bench-apache"></a>carun/tts-bench: inte…  <a href="https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/data/REPORT_DATA.md">carun tts-bench · 56-sentence…</a>   7.0%    39.8   2026-09-10   85% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.8                15% ▇▇
-                        weighted average                       = 41.3
+<a name="speech-carun-tts-bench-apache"></a>carun/tts-bench: inte…  <a href="https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/data/REPORT_DATA.md">carun tts-bench · 56-sentence…</a>   7.0%    35.0   2026-09-10   85% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.6                15% ▇▇
+                        weighted average                       = 37.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -63,7 +63,7 @@ NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multil
 
 <pre>
 version                              needs  score
-f16-gguf (NVIDIA NeMo-Speech.cpp)  ~0.65GB   41.3
+f16-gguf (NVIDIA NeMo-Speech.cpp)  ~0.65GB   37.2
 </pre>
 
 ```sh

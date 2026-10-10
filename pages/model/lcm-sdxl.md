@@ -6,7 +6,7 @@
 
 latent-consistency · released 2023-11 · 2.57B params · openrail++
 
-**score 34.1** ±2.4 · #119 of 139 · from 3 benchmark results across 3 sources
+**score 34.0** ±2.4 · #122 of 143 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                        score  implies  date        weight
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>                           2.77 / 5    32.9   2024-12-25   46% ▇▇▇▇▇
-<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  5.1800 mean human alignment score    34.6   2024-10-10   39% ▇▇▇▇▇
-<a name="visual-sdxl-lightning"></a>SDXL-Lightning: Progr…  <a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image)…</a>                        21.8500 FID    34.0   2024-03-02   13% ▇▇
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>                           2.77 / 5    32.8   2024-12-25   45% ▇▇▇▇▇
+<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  5.1800 mean human alignment score    34.5   2024-10-10   39% ▇▇▇▇▇
+<a name="visual-sdxl-lightning"></a>SDXL-Lightning: Progr…  <a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image)…</a>                        21.8500 FID    33.9   2024-03-02   13% ▇▇
 prior                   pull toward the middle                                               49.9                 3% ▇
-                        weighted average                                                   = 34.1
+                        weighted average                                                   = 34.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle                                  
 
 <pre>
 version              needs  score
-fp16 · nvidia only  ~8.9GB   34.1
+fp16 · nvidia only  ~8.9GB   34.0
 </pre>
 
 ```sh

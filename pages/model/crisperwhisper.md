@@ -6,7 +6,7 @@
 
 Nyra Health · released 2024-08 · 1.61B params · cc-by-nc-4.0
 
-**score 49.2** ±2.4 · #81 of 128 · from 3 benchmark results across 2 sources
+**score 47.3** ±2.5 · #111 of 160 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench  <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  66.2%    45.8   2025-11-18   38% ▇▇▇▇▇
-                       <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  79.3%    46.3   2025-11-18   37% ▇▇▇▇
-<a name="open-asr"></a>Open ASR Leaderboard   <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.7%    59.7   2026-03-26   23% ▇▇▇
-prior                  pull toward the middle                   49.7                 2% ▇
-                       weighted average                       = 49.2
+<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench  <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  66.2%    44.1   2025-11-18   41% ▇▇▇▇▇
+                       <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  79.3%    44.3   2025-11-18   35% ▇▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard   <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.7%    57.8   2026-03-26   22% ▇▇▇
+prior                  pull toward the middle                   49.8                 2% ▇
+                       weighted average                       = 47.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                  pull toward the middle                   49.7            
 
 <pre>
 version    needs  score
-fp16     ~4.36GB   49.2
+fp16     ~4.36GB   47.3
 </pre>
 
 ```sh

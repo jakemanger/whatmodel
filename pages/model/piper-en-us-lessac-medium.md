@@ -6,7 +6,7 @@
 
 Open Home Foundation (Piper) · released 2023-06 · mit
 
-**score 49.2** ±5.1 · #57 of 100 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.5** ±5.1 · #75 of 109 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-paradee-report-ccby"></a>Paradee: Distilling K…  <a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison …</a>  4.36 / 5    52.7   2026-10-05   56% ▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison …</a>      8.8%    43.2   2026-10-05   34% ▇▇▇▇
-prior                   pull toward the middle                      49.8                10% ▇
-                        weighted average                          = 49.2
+<a name="speech-paradee-report-ccby"></a>Paradee: Distilling K…  <a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison …</a>  4.36 / 5    47.6   2026-10-05   56% ▇▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison …</a>      8.8%    38.0   2026-10-05   34% ▇▇▇▇
+prior                   pull toward the middle                      49.6                10% ▇
+                        weighted average                          = 44.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                      49.8        
 
 <pre>
 version                        needs  score
-onnx-fp32 (piper-tts 1.8.0)  ~0.06GB   49.2
+onnx-fp32 (piper-tts 1.8.0)  ~0.06GB   44.5
 </pre>
 
 ```sh

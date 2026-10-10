@@ -6,7 +6,7 @@
 
 Hugging Face (Parler-TTS) · released 2024-08 · 0.88B params · apache-2.0
 
-**score 39.5** ±6.2 · #74 of 100 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.3** ±6.9 · #79 of 109 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-versa-toolkit-ccby"></a>VERSA toolkit paper: …  <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>  3.83 / 5    36.9   2025-03-27   83% ▇▇▇▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>      4.7%    64.2   2025-03-27    2% ▇
-prior                   pull toward the middle                      49.8                15% ▇▇
-                        weighted average                          = 39.5
+<a name="speech-versa-toolkit-ccby"></a>VERSA toolkit paper: …  <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>  3.83 / 5    38.6   2025-03-27   79% ▇▇▇▇▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>      4.7%    72.2   2025-03-27    2% ▇
+prior                   pull toward the middle                      49.6                19% ▇▇
+                        weighted average                          = 41.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                      49.8        
 
 <pre>
 version              needs  score
-fp32 (parler-tts)  ~3.51GB   39.5
+fp32 (parler-tts)  ~3.51GB   41.3
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 xAI · released 2026-04 · proprietary
 
-**score 68.2** ±3.1 · #5 of 100 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 63.8** ±3.2 · #14 of 109 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1271.0    69.4   2026-09-25   91% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena        <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>  1063.4    59.7   2026-09-24    5% ▇
-prior                   pull toward the middle                    49.8                 4% ▇
-                        weighted average                        = 68.2
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1271.0    64.8   2026-09-25   89% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena        <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>  1063.4    58.5   2026-09-24    7% ▇
+prior                   pull toward the middle                    49.6                 4% ▇
+                        weighted average                        = 63.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

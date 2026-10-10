@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2024-08 · 12B params · apache-2.0
 
-**score 40.6** ±2.3 · #99 of 139 · from 4 benchmark results across 4 sources
+**score 40.5** ±2.3 · #103 of 143 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       57.6%    42.9   2026-07-01   47% ▇▇▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  40.0%    35.2   2026-06-02   19% ▇▇
-<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>   2.9%    40.8   2026-09-28   17% ▇▇
-<a name="visual-rapid-face"></a>Rapidata/Face_Generat…  <a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generatio…</a>  885.1    38.6   2025-09-03   16% ▇▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       57.6%    42.8   2026-07-01   47% ▇▇▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  40.0%    35.1   2026-06-02   19% ▇▇
+<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>   2.9%    40.6   2026-09-28   16% ▇▇
+<a name="visual-rapid-face"></a>Rapidata/Face_Generat…  <a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generatio…</a>  885.1    38.5   2025-09-03   16% ▇▇
 prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 40.6
+                        weighted average                       = 40.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -45,10 +45,10 @@ api (Replicate) · $0.0030/image · [replicate.com](https://replicate.com/black-
 
 <pre>
 version                needs  score
-bf16 · nvidia only   ~29.3GB   40.6
-gguf-q8_0            ~28.3GB   40.6
-mlx-4bit · mac only   ~7.7GB   40.6
-bf16 · mac only      ~29.3GB   40.6
+bf16 · nvidia only   ~29.3GB   40.5
+gguf-q8_0            ~28.3GB   40.5
+mlx-4bit · mac only   ~7.7GB   40.5
+bf16 · mac only      ~29.3GB   40.5
 </pre>
 
 ```sh

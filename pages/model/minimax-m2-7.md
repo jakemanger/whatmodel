@@ -6,7 +6,7 @@
 
 MiniMax · released 2026-03 · 230B params (10B active) · minimax-non-commercial
 
-**score 64.3** ±0.9 · #104 of 551 · from 19 benchmark results across 4 sources
+**score 64.2** ±0.9 · #112 of 598 · from 19 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,27 +14,27 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="report-2606.15007v1"></a>NVIDIA                  <a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified)</a>        86.6%    66.9   2026-06-12   10% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified</a>               75.3%    68.1   2026-06-12    9% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro</a>                         81.9%    63.4   2026-06-12    9% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual</a>           71.8%    66.9   2026-06-12    7% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam</a>             23.1%    63.3   2026-06-12    5% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX</a>                        78.4%    61.4   2026-06-12    4% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">τ³-bench</a>                         66.1%    63.8   2026-06-12    4% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1</a>               55.5%    66.5   2026-06-12    4% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">SciCode subproblems</a>              38.3%    61.9   2026-06-12    4% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose)</a>     74.6%    65.0   2026-06-12    4% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">BrowseComp</a>                       54.1%    68.6   2026-06-12    4% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">MultiChallenge</a>                   42.5%    56.1   2026-06-12    3% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">LiveCodeBench v6 (window unsp…</a>   77.2%    57.5   2026-06-12    3% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench</a>                  68.3%    50.9   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">CritPt</a>                            0.6%    53.9   2026-06-12    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1397.0    65.8   2026-10-01   14% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1415.0    64.8   2026-10-02    9% ▇
-<a name="paper-2605.22535v1"></a>TerminalWorld: Benchm…  <a href="https://arxiv.org/html/2605.22535v1">TerminalWorld-Verified (200 t…</a>   49.0%    64.9   2026-05-21    2% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   87.1%   -35.4   2026-09-22    0% ▇
+<a name="report-2606.15007v1"></a>NVIDIA                  <a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified)</a>        86.6%    66.7   2026-06-12   12% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified</a>               75.3%    67.9   2026-06-12   10% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro</a>                         81.9%    63.0   2026-06-12    8% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">LiveCodeBench v6 (window unsp…</a>   77.2%    60.7   2026-06-12    6% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual</a>           71.8%    66.8   2026-06-12    6% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam</a>             23.1%    63.6   2026-06-12    6% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1</a>               55.5%    66.9   2026-06-12    5% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX</a>                        78.4%    61.3   2026-06-12    4% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">τ³-bench</a>                         66.1%    63.7   2026-06-12    4% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">SciCode subproblems</a>              38.3%    61.7   2026-06-12    4% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose)</a>     74.6%    64.8   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">BrowseComp</a>                       54.1%    68.2   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">MultiChallenge</a>                   42.5%    55.8   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench</a>                  68.3%    50.6   2026-06-12    2% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">CritPt</a>                            0.6%    53.3   2026-06-12    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1397.0    65.5   2026-10-01   12% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1415.0    64.5   2026-10-02    8% ▇
+<a name="paper-2605.22535v1"></a>TerminalWorld: Benchm…  <a href="https://arxiv.org/html/2605.22535v1">TerminalWorld-Verified (200 t…</a>   49.0%    64.7   2026-05-21    1% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   87.1%   -36.2   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 64.3
+                        weighted average                        = 64.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -49,8 +49,8 @@ api (MiniMax) · $0.52/M blended · $0.3 in / $1.2 out per 1M tokens · [platfor
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~138.5GB   64.3
-2-bit ud-q2_k_xl   ~69.5GB   64.3
+4-bit ud-q4_k_xl  ~138.5GB   64.2
+2-bit ud-q2_k_xl   ~69.5GB   64.2
 </pre>
 
 ```sh

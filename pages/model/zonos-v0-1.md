@@ -6,7 +6,7 @@
 
 Zyphra · released 2025-02 · 1.6B params · apache-2.0
 
-**score 39.1** ±5.1 · #75 of 100 · from 7 benchmark results across 3 sources
+**score 35.9** ±5.0 · #88 of 109 · from 7 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,15 +16,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     14.1%    33.9   2025-08-10   27% ▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       19.1%    40.8   2025-08-10   13% ▇▇
-<a name="speech-balacoon-baselines-apache"></a>balacoon speech_gen_b…  <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/zonos/daps_celeb/metrics.yaml">balacoon zero-shot TTS · DAPS…</a>     67.5%    45.2   2025-02-18   13% ▇▇
-                        <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/zonos/vctk/metrics.yaml">balacoon zero-shot TTS · VCTK…</a>     77.5%    58.4   2025-02-18   11% ▇
-                        <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/zonos/vctk/metrics.yaml">balacoon zero-shot TTS · VCTK…</a>      1.3%    37.3   2025-02-18    5% ▇
-                        <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/zonos/daps_celeb/metrics.yaml">balacoon zero-shot TTS · DAPS…</a>      7.5%    20.8   2025-02-18    5% ▇
-<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  3.39 / 5    28.5   2025-05-29   16% ▇▇
-prior                   pull toward the middle                      49.8                10% ▇
-                        weighted average                          = 39.1
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     14.1%    31.3   2025-08-10   34% ▇▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       19.1%    37.7   2025-08-10   14% ▇▇
+<a name="speech-balacoon-baselines-apache"></a>balacoon speech_gen_b…  <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/zonos/daps_celeb/metrics.yaml">balacoon zero-shot TTS · DAPS…</a>     67.5%    44.2   2025-02-18    9% ▇
+                        <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/zonos/vctk/metrics.yaml">balacoon zero-shot TTS · VCTK…</a>     77.5%    59.6   2025-02-18    7% ▇
+                        <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/zonos/daps_celeb/metrics.yaml">balacoon zero-shot TTS · DAPS…</a>      7.5%    17.7   2025-02-18    4% ▇
+                        <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/zonos/vctk/metrics.yaml">balacoon zero-shot TTS · VCTK…</a>      1.3%    35.2   2025-02-18    4% ▇
+<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  3.39 / 5    26.5   2025-05-29   18% ▇▇
+prior                   pull toward the middle                      49.6                10% ▇
+                        weighted average                          = 35.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -37,7 +37,7 @@ api  · price unknown · [zyphra.com](https://zyphra.com)
 
 <pre>
 version    needs  score
-bf16     ~4.34GB   39.1
+bf16     ~4.34GB   35.9
 </pre>
 
 ```sh
