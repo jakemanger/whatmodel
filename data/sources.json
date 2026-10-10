@@ -1158,7 +1158,8 @@
       "github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/nvidia--Llama-3.1-Nemotron-70B-Instruct-HF_vllm_temp_1.0_evalperf_results.brief.json",
       "github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/o1-mini-2024-09-12_openai_temp_1.0_evalperf_results.brief.json",
       "github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json",
-      "github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/ise-uiuc--Magicoder-S-DS-6.7B_vllm_temp_1.0_evalperf_results.brief.json"
+      "github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/ise-uiuc--Magicoder-S-DS-6.7B_vllm_temp_1.0_evalperf_results.brief.json",
+      "github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/infly--OpenCoder-8B-Instruct_vllm_temp_1.0_evalperf_results.brief.json"
     ],
     "exact": true,
     "license": "Apache-2.0",
@@ -3508,7 +3509,8 @@
       "docs.mistral.ai/models/model-cards/magistral-medium-1-2-25-09",
       "docs.mistral.ai/models/model-cards/magistral-medium-1-1-25-07",
       "docs.mistral.ai/models/model-cards/magistral-small-1-1-25-07",
-      "docs.mistral.ai/models/mistral-large-4"
+      "docs.mistral.ai/models/mistral-large-4",
+      "huggingface.co/mistralai/Mixtral-8x22B-v0.1/blob/e1cd34ff1747406fb2277635ed25242803009bc2/config.json"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
@@ -3696,13 +3698,15 @@
       "docs.z.ai/guides/vlm/glm-5v-turbo.md",
       "huggingface.co/zai-org/GLM-4.5V/blob/ed47433b37111465ec527affaaddceff371bca04/README.md",
       "huggingface.co/zai-org/GLM-4.6V/blob/4e2d47eb0b41c5280d8294b17cef9e94fdcfff46/README.md",
-      "huggingface.co/zai-org/glm-4-9b-chat/blob/bd8234fe5e0c09c48637a92abb0c797cb5fa0e73/README.md"
+      "huggingface.co/zai-org/glm-4-9b-chat/blob/bd8234fe5e0c09c48637a92abb0c797cb5fa0e73/README.md",
+      "huggingface.co/zai-org/chatglm3-6b-128k/blob/6381a643d74e3e6a1763580bb643e488dd278b98/config.json",
+      "huggingface.co/zai-org/glm-4-9b-chat-1m/blob/f8579ac096986e44ba24a5060d2fb79bedb56ef3/config.json"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://docs.z.ai/guides/overview/pricing",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "exact": true,
     "icon": "z.ai",
     "attribution": "Z.ai official pricing/docs, observed 2026-09-25",
@@ -3789,13 +3793,17 @@
       "huggingface.co/tiiuae/falcon-180B-chat/blob/6882299beda36df40e683c4478edfcc94f2cde5f/README.md",
       "huggingface.co/tiiuae/falcon-40b/blob/05ab2ee8d6b593bdbab17d728de5c028a7a94d83/README.md",
       "huggingface.co/tiiuae/falcon-7b/blob/ec89142b67d748a1865ea4451372db8313ada0d8/README.md",
-      "huggingface.co/tiiuae/falcon-rw-1b/blob/e4b9872bb803165eb22f0a867d4e6a64d34fce19/README.md"
+      "huggingface.co/tiiuae/falcon-rw-1b/blob/e4b9872bb803165eb22f0a867d4e6a64d34fce19/README.md",
+      "huggingface.co/tiiuae/Falcon-H1-1.5B-Instruct/blob/80ebc50d7799a440b96c93bb6686a3924a09b0cb/config.json",
+      "huggingface.co/tiiuae/Falcon-H1-34B-Instruct/blob/6e6890e26cba1f58b1e6ee70d654ddf054f9fce8/config.json",
+      "huggingface.co/tiiuae/Falcon-H1-3B-Instruct/blob/01087ec4c132d7f186908716b3530ea187f062a1/config.json",
+      "huggingface.co/tiiuae/Falcon-H1-7B-Instruct/blob/41e72f27effbab80cd45b6e884688452253a3686/config.json"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/blob/a6f74bf181389908efd6970878d7ee2b42f5d417/config.json",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "exact": true,
     "icon": "tii.ae",
     "attribution": "Technology Innovation Institute official pricing/docs, observed 2026-09-25",
@@ -8063,13 +8071,15 @@
       "huggingface.co/stabilityai/stable-code-3b/blob/5cee3fa2905e7a03c4a1b0bc02f39da7ceaa6cb5/README.md",
       "huggingface.co/stabilityai/stablelm-3b-4e1t/blob/fa4a6a92fca83c3b4223a3c9bf792887090ebfba/README.md",
       "huggingface.co/stabilityai/stablelm-base-alpha-3b/blob/819657db42861818efac86e8ca60f673fa912ef8/README.md",
-      "huggingface.co/stabilityai/stablelm-base-alpha-7b/blob/1d43a3b40d7d708d8084d07dfae0c4e9fd95c04f/README.md"
+      "huggingface.co/stabilityai/stablelm-base-alpha-7b/blob/1d43a3b40d7d708d8084d07dfae0c4e9fd95c04f/README.md",
+      "huggingface.co/stabilityai/stablelm-base-alpha-3b-v2/blob/997d95943eee0697ba9e9cd2b981b9fad6962d9e/config.json",
+      "huggingface.co/stabilityai/stablelm-base-alpha-7b-v2/blob/6d176503c1496b3c96a2bceb76a7d37695582618/config.json"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://platform.stability.ai/pricing",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "exact": true,
     "icon": "stability.ai",
     "attribution": "Stability AI official pricing/docs, observed 2026-09-26",
@@ -10913,7 +10923,14 @@
       "platform.lingyiwanwu.com/docs",
       "huggingface.co/01-ai/Yi-1.5-34B-Chat/blob/fa4ffba162f20948bf77c2a30eca952bf0812b7f/config.json",
       "huggingface.co/01-ai/Yi-1.5-6B-Chat/blob/771924d1c83d67527d665913415d7086f11ea9c0/config.json",
-      "huggingface.co/01-ai/Yi-1.5-9B-Chat/blob/1a0fc698cf883c4f5c325f026ca79f0ebd9955a5/config.json"
+      "huggingface.co/01-ai/Yi-1.5-9B-Chat/blob/1a0fc698cf883c4f5c325f026ca79f0ebd9955a5/config.json",
+      "huggingface.co/01-ai/Yi-1.5-34B-Chat-16K/blob/ff74452e11f0f749ab872dc19b1dd3813c25c4d8/config.json",
+      "huggingface.co/01-ai/Yi-1.5-34B/blob/58a29f6dca2a4eda38821c086c29c1906114aabb/config.json",
+      "huggingface.co/01-ai/Yi-1.5-6B/blob/157a3d77ab5a8a8f079510eaa25169b547481f06/config.json",
+      "huggingface.co/01-ai/Yi-1.5-9B-Chat-16K/blob/2f8753bed95bd4fede3fd64f8305428620b4b212/config.json",
+      "huggingface.co/01-ai/Yi-1.5-9B/blob/80d5471b1eae28beae33e06eadbd4b48e74d4ce1/config.json",
+      "huggingface.co/01-ai/Yi-34B-200K/blob/e0ae1afac6b69f604556efd441ab4befafb2a835/config.json",
+      "huggingface.co/01-ai/Yi-6B-Chat/blob/2dbf63b0cb7bc493c0243502c6e6111a36e3a093/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -10921,7 +10938,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "01.AI official model cards and API documentation, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-07"
+    "checked": "2026-10-09"
   },
   {
     "id": "first-party-ai2",
@@ -10969,7 +10986,8 @@
     "match": [
       "huggingface.co/bigcode/starcoder2-15b/blob/46d44742909c03ac8cee08eb03fdebce02e193ec/README.md",
       "huggingface.co/bigcode/starcoder2-3b/blob/733247c55e3f73af49ce8e9c7949bf14af205928/README.md",
-      "huggingface.co/bigcode/starcoder2-7b/blob/bb9afde76d7945da5745592525db122d4d729eb1/README.md"
+      "huggingface.co/bigcode/starcoder2-7b/blob/bb9afde76d7945da5745592525db122d4d729eb1/README.md",
+      "huggingface.co/bigcode/starcoder2-15b-instruct-v0.1/blob/ffb8dd9776ba9a66d655ecd962e882f3013e9f7c/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -10977,7 +10995,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "BigCode official model cards, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-06"
+    "checked": "2026-10-09"
   },
   {
     "id": "first-party-bigscience",
@@ -11039,7 +11057,8 @@
       "huggingface.co/EleutherAI/gpt-neox-20b/blob/c292233c833e336628618a88a648727eb3dff0a7/README.md",
       "huggingface.co/EleutherAI/gpt-neo-125m/blob/21def0189f5705e2521767faed922f1f15e7d7db/config.json",
       "huggingface.co/EleutherAI/gpt-neo-1.3B/blob/dbe59a7f4a88d01d1ba9798d78dbe3fe038792c8/config.json",
-      "huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/config.json"
+      "huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/config.json",
+      "huggingface.co/EleutherAI/pythia-2.8b-deduped/blob/7d977fed8c4ce9649816af8cd5fe36a639cbe5b2/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -11047,7 +11066,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "EleutherAI official model cards and technical reports, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-07"
+    "checked": "2026-10-09"
   },
   {
     "id": "first-party-google-models",
@@ -11074,7 +11093,8 @@
     "kind": "first-party",
     "match": [
       "arxiv.org/abs/2502.02737v1",
-      "huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/config.json"
+      "huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/config.json",
+      "huggingface.co/HuggingFaceH4/starchat2-15b-v0.1/blob/837a7b6ac3df5f91de138e3592258f93c80d93d3/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -11082,7 +11102,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "Hugging Face (SmolLM) official technical report, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-07"
+    "checked": "2026-10-09"
   },
   {
     "id": "first-party-lmsys",
@@ -11090,7 +11110,9 @@
     "kind": "first-party",
     "match": [
       "github.com/lm-sys/FastChat/blob/587d5cfa1609a43d192cedb8441cac3c17db105d/README.md",
-      "huggingface.co/lmsys/vicuna-33b-v1.3/blob/ef8d6becf883fb3ce52e3706885f761819477ab4/config.json"
+      "huggingface.co/lmsys/vicuna-33b-v1.3/blob/ef8d6becf883fb3ce52e3706885f761819477ab4/config.json",
+      "huggingface.co/lmsys/vicuna-13b-v1.3/blob/6566e9cb1787585d1147dcf4f9bc48f29e1328d2/config.json",
+      "huggingface.co/lmsys/vicuna-7b-v1.3/blob/236eeeab96f0dc2e463f2bebb7bb49809279c6d6/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -11098,7 +11120,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "LMSYS official FastChat repository documentation, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-07"
+    "checked": "2026-10-09"
   },
   {
     "id": "first-party-microsoft",
@@ -11111,7 +11133,8 @@
       "huggingface.co/microsoft/Phi-3-medium-4k-instruct/blob/48d87cd5e0523b430d77e93becd3655cd6897230/README.md",
       "huggingface.co/microsoft/Phi-3.5-MoE-instruct/blob/43688451b462a3351d8580625ebe1931adb3986d/README.md",
       "huggingface.co/microsoft/Phi-3.5-mini-instruct/blob/2fe192450127e6a83f7441aef6e3ca586c338b77/README.md",
-      "huggingface.co/microsoft/phi-2/blob/810d367871c1d460086d9f82db8696f2e0a0fcd0/README.md"
+      "huggingface.co/microsoft/phi-2/blob/810d367871c1d460086d9f82db8696f2e0a0fcd0/README.md",
+      "huggingface.co/microsoft/Orca-2-13b/blob/2539ff53e6baa4cc603774ad5a2d646f4041ea4e/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -11119,7 +11142,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "Microsoft official model cards and technical reports, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-06"
+    "checked": "2026-10-09"
   },
   {
     "id": "first-party-nous-research",
@@ -11129,7 +11152,11 @@
       "arxiv.org/abs/2408.11857v1",
       "huggingface.co/NousResearch/Hermes-3-Llama-3.2-3B/blob/7f1a6bec8cdce6551014fd5bbeb4cd8c0f1fbeab/config.json",
       "huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-70B/blob/8948247fa83f3f970ad24b3394d5656507642922/config.json",
-      "huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO/blob/286ae6737d048ad1d965c2e830864df02db50f2f/config.json"
+      "huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO/blob/286ae6737d048ad1d965c2e830864df02db50f2f/config.json",
+      "huggingface.co/NousResearch/Hermes-2-Pro-Llama-3-8B/blob/f798274b30e7d2d4797c369edcc0cc7473b6e6f2/config.json",
+      "huggingface.co/NousResearch/Hermes-2-Pro-Mistral-7B/blob/24dbda51d986efa05201eec7a093ac91fc5519cf/config.json",
+      "huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-8B/blob/57a73110702e7b05ba3f39fef36297454c680725/config.json",
+      "huggingface.co/NousResearch/Nous-Hermes-13b/blob/24e8c03148ffd1f3e469744dfc24ad2ad82848f8/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -11137,7 +11164,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "Nous Research official technical reports, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-07"
+    "checked": "2026-10-09"
   },
   {
     "id": "first-party-nvidia",
@@ -11160,7 +11187,8 @@
     "kind": "first-party",
     "match": [
       "huggingface.co/openchat/openchat-3.5-0106/blob/ff058fda49726ecf4ea53dc1635f917cdb8ba36b/README.md",
-      "huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md"
+      "huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md",
+      "huggingface.co/openchat/openchat-3.5-0106-gemma/blob/5316738a9049ab32e3b9a49eb0e9dfb49de8a725/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -11168,7 +11196,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "OpenChat official model cards, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-06"
+    "checked": "2026-10-09"
   },
   {
     "id": "first-party-qwen",
@@ -11207,7 +11235,11 @@
       "huggingface.co/Qwen/Qwen3-VL-4B-Instruct/blob/ebb281ec70b05090aa6165b016eac8ec08e71b17/README.md",
       "huggingface.co/Qwen/Qwen3-VL-4B-Thinking/blob/1de27d8c51f12e819435303b9e84c4e25ba8401e/README.md",
       "huggingface.co/Qwen/Qwen3-VL-2B-Instruct/blob/89644892e4d85e24eaac8bacfd4f463576704203/README.md",
-      "huggingface.co/Qwen/Qwen3-VL-2B-Thinking/blob/33e0ad94c327808ebc7d3bbc97e78e600f1eeecd/README.md"
+      "huggingface.co/Qwen/Qwen3-VL-2B-Thinking/blob/33e0ad94c327808ebc7d3bbc97e78e600f1eeecd/README.md",
+      "huggingface.co/Qwen/CodeQwen1.5-7B/blob/5ce5a1554e50a9e3bb236de7c0b8a2a1746186e4/config.json",
+      "huggingface.co/Qwen/Qwen-7B-Chat/blob/93a65d34827a3cc269b727e67004743b723e2f83/config.json",
+      "huggingface.co/Qwen/Qwen-7B/blob/ef3c5c9c57b252f3149c1408daf4d649ec8b6c85/config.json",
+      "huggingface.co/Qwen/Qwen2-57B-A14B-Instruct/blob/50896d66b39f1425d63720541a66c7df13e053c0/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -11215,7 +11247,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "Qwen (Alibaba) official model cards and technical reports, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-10"
+    "checked": "2026-10-09"
   },
   {
     "id": "first-party-streamlake",
@@ -11437,7 +11469,15 @@
       "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json",
       "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json",
       "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json",
-      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json"
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI-pythia-2.8b-deduped.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/baichuan-inc_Baichuan2-7B-Base.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_3b_v2.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b-v2.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json"
     ],
     "exact": true,
     "kind": "dataset",
@@ -11445,7 +11485,7 @@
     "terms_url": "https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/LICENSE",
     "license_url": "/licenses/stablelm-original-eval-json-Apache-2.0.txt",
     "verdict": "allowed",
-    "checked": "2026-10-06",
+    "checked": "2026-10-09",
     "quote": "Repository root Apache License 2.0 grants reproduction, derivative works and distribution. Scope is the committed evals/*.json output data, not the separately licensed model weights or a hosted leaderboard. README states these evaluations were performed with lm-evaluation-harness and links these full run outputs.",
     "attribution": "Stability AI and the StableLM contributors. Original zero-shot evaluation JSONs, revision 93eea082c49c61e64da1a0e1092fe82cc74b46d3. Selected accuracy/mc2 fields retained as fractions; exact model config and task version recorded. No endorsement.",
     "icon": "github.com"
