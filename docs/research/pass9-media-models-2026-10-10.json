@@ -1,0 +1,2604 @@
+{
+ "about": "Pass 9 (2026-10-10), more image, video, TTS and STT models. Candidates only; nothing in data/ was edited. Method: (1) every table of the 110 already-allowed image/video ledger documents (pinned arXiv HTML, HF/GitHub READMEs) was re-extracted and each row label that is not a catalogue model was listed; models that appear in the authors' own runs with an unambiguous public checkpoint or API id were added with their cells (most rows had been withheld only because the model was not catalogued). (2) 295 further openly licensed cs.CV papers (2026-05..10, generation + evaluation keywords, not scanned by pass 8) were downloaded and table-scanned; three new benchmark papers were used (MultiTextEdit, What-If World, CRONOS). (3) Hugging Face TTS model cards created since 2026-06-15 with open licences were scanned for comparison tables with catalogue names: two Apache-2.0 cards run Freya-TR-Eval (Turkish) themselves, which scores Eleven v4 / v4 Turbo, Gemini 3.8 Flash TTS / Flash-Lite TTS and Coqui GlowTTS Turkish (the last three previously unscored). (4) Every pinned speech ledger source was compared with its current HEAD. Validated with apply-pass2.mjs + npm run import + node scripts/check.ts --validate-only on a scratch copy of the 2026-10-10 working tree (1,432 models): +45 models, +99 results, +4 benchmarks, 5 new ledger entries and 1 add_match; every new model ends in the main comparison set of its category.",
+ "models": [
+  {
+   "id": "cosmos-predict2-5-2b",
+   "name": "Cosmos-Predict2.5-2B",
+   "provider": "NVIDIA",
+   "category": "video",
+   "released": "2025-10",
+   "released_source": "https://github.com/nvidia-cosmos/cosmos-predict2.5/blob/a2c298b0a3df3778b973fe65e9e58877b292d8a7/README.md",
+   "open_weights": true,
+   "license": "nvidia-open-model-license",
+   "license_source": "https://huggingface.co/nvidia/Cosmos-Predict2.5-2B/tree/85f8ae7bfe8f5525c8d103429524dcf12f98bf7b",
+   "params_b": 2,
+   "params_note": "2B as named by NVIDIA (the size in the model name); the HF repo is gated (automatic approval), so no safetensors count was read. Text encoder and tokenizer not included.",
+   "model_repo": "https://huggingface.co/nvidia/Cosmos-Predict2.5-2B",
+   "identity_note": "NVIDIA Cosmos-Predict2.5 2B world foundation model (one checkpoint covering Text2World / Image2World / Video2World), released 6 Oct 2025 (cosmos-predict2.5 README news). HF repo nvidia/Cosmos-Predict2.5-2B pinned 85f8ae7 (gated, automatic approval; licence 'other' = NVIDIA Open Model License). PAI-Bench Table 12 pins the checkpoint as Version 'base/post-trained' (the repo's base/post-trained folder) at 93 frames, 16 fps, 1280x704; PhyGround Appendix lists 'Cosmos-Predict2.5-2B' (93 frames, 16 fps, 1280x704, 36 steps) as its 'Cosmos-2B' row; the Cosmos 3 report (NVIDIA) runs it as 'Cosmos-Predict2.5-2B' on Cosmos HUE. Comparison-only: no local command was verified in this pass (the official route is the cosmos-predict2.5 repo or the diffusers Cosmos2_5_PredictBasePipeline). Distinct from cosmos3-nano / cosmos3-super and the older cosmos-1-0-* entries. Not mapped: Rapidata 'Cosmos Predict 2.5' rows (size not stated).",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2512.01989v1",
+     "reported_label": "Cosmos-Predict2.5-2B [4] (Table 12 Version: base/post-trained; 93 frames, 16 FPS, 1280x704)"
+    },
+    {
+     "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+     "reported_label": "Cosmos-Predict2.5-2B (Open-sourced)"
+    },
+    {
+     "source": "https://arxiv.org/html/2605.10806v1#S4.T2",
+     "reported_label": "Cosmos-2B; Appendix generation table 'Cosmos-Predict2.5-2B'"
+    },
+    {
+     "source": "https://github.com/nvidia-cosmos/cosmos-predict2.5/blob/a2c298b0a3df3778b973fe65e9e58877b292d8a7/README.md",
+     "reported_label": "[October 6, 2025] We released Cosmos-Predict2.5 ..."
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "cosmos-predict2-5-14b",
+   "name": "Cosmos-Predict2.5-14B",
+   "provider": "NVIDIA",
+   "category": "video",
+   "released": "2025-12",
+   "released_source": "https://github.com/nvidia-cosmos/cosmos-predict2.5/blob/a2c298b0a3df3778b973fe65e9e58877b292d8a7/README.md",
+   "open_weights": true,
+   "license": "nvidia-open-model-license",
+   "license_source": "https://huggingface.co/nvidia/Cosmos-Predict2.5-14B/blob/18839bf38537b31f191f2ec834a4d9181ee09ca2/README.md",
+   "params_b": 14,
+   "params_note": "14B as named by NVIDIA (model name). Text encoder and tokenizer not included.",
+   "model_repo": "https://huggingface.co/nvidia/Cosmos-Predict2.5-14B",
+   "identity_note": "NVIDIA Cosmos-Predict2.5 14B base model, released 5 Dec 2025 (cosmos-predict2.5 README: 'Released Cosmos-Predict2.5-14B base models'); HF nvidia/Cosmos-Predict2.5-14B pinned 18839bf (NVIDIA Open Model License per card). PhyGround's 'Cosmos-14B' row is listed in its Appendix generation table as 'Cosmos-Predict2.5-14B' (93 frames, 16 fps, 1280x704); the Cosmos 3 report (NVIDIA) runs 'Cosmos-Predict2.5-14B' on Cosmos HUE. Comparison-only: no local command verified in this pass.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+     "reported_label": "Cosmos-Predict2.5-14B (Open-sourced)"
+    },
+    {
+     "source": "https://arxiv.org/html/2605.10806v1#S4.T2",
+     "reported_label": "Cosmos-14B; Appendix generation table 'Cosmos-Predict2.5-14B'"
+    },
+    {
+     "source": "https://huggingface.co/nvidia/Cosmos-Predict2.5-14B/blob/18839bf38537b31f191f2ec834a4d9181ee09ca2/README.md",
+     "reported_label": "nvidia/Cosmos-Predict2.5-14B model card"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "cosmos-predict2-2b-video2world",
+   "name": "Cosmos-Predict2-2B-Video2World",
+   "provider": "NVIDIA",
+   "category": "video",
+   "released": "2025-06",
+   "released_source": "https://github.com/nvidia-cosmos/cosmos-predict2/blob/661da4774b0ca41d082a0ecbeb47550bcf07e03f/README.md",
+   "open_weights": true,
+   "license": "nvidia-open-model-license",
+   "license_source": "https://huggingface.co/nvidia/Cosmos-Predict2-2B-Video2World/tree/f50c09f5d8ab133a90cac3f4886a6471e9ba3f18",
+   "params_b": 2,
+   "params_note": "2B as named by NVIDIA (model name); repo gated (automatic approval), safetensors not read.",
+   "model_repo": "https://huggingface.co/nvidia/Cosmos-Predict2-2B-Video2World",
+   "identity_note": "NVIDIA Cosmos-Predict2 2B Video2World (image/video-conditioned) checkpoint, weights released 11 Jun 2025 (cosmos-predict2 README: 'We released post-training and inference code, along with model weights'); HF nvidia/Cosmos-Predict2-2B-Video2World pinned f50c09f (gated, automatic approval). PAI-Bench-G is image-conditioned generation and its Table 12 lists 'Cosmos-Predict2-2B' at 93 frames, 16 fps, 1280x704 (the Video2World default output), so the row maps to the Video2World checkpoint, not the separate Text2Image repo. Comparison-only: no local command verified in this pass.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2512.01989v1",
+     "reported_label": "Cosmos-Predict2-2B [4] (Table 12: 93 frames, 16 FPS, 1280x704)"
+    },
+    {
+     "source": "https://github.com/nvidia-cosmos/cosmos-predict2/blob/661da4774b0ca41d082a0ecbeb47550bcf07e03f/README.md",
+     "reported_label": "2025-06-11: We released post-training and inference code, along with model weights."
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "cosmos-predict2-14b-video2world",
+   "name": "Cosmos-Predict2-14B-Video2World",
+   "provider": "NVIDIA",
+   "category": "video",
+   "released": "2025-06",
+   "released_source": "https://github.com/nvidia-cosmos/cosmos-predict2/blob/661da4774b0ca41d082a0ecbeb47550bcf07e03f/README.md",
+   "open_weights": true,
+   "license": "nvidia-open-model-license",
+   "license_source": "https://huggingface.co/nvidia/Cosmos-Predict2-14B-Video2World/tree/03b03a377fede782647afac998f674d9f358e319",
+   "params_b": 14,
+   "params_note": "14B as named by NVIDIA (model name); repo gated (automatic approval), safetensors not read.",
+   "model_repo": "https://huggingface.co/nvidia/Cosmos-Predict2-14B-Video2World",
+   "identity_note": "NVIDIA Cosmos-Predict2 14B Video2World (image/video-conditioned) checkpoint, weights released 11 Jun 2025 (cosmos-predict2 README: 'We released post-training and inference code, along with model weights'); HF nvidia/Cosmos-Predict2-14B-Video2World pinned 03b03a3 (gated, automatic approval). PAI-Bench-G is image-conditioned generation and its Table 12 lists 'Cosmos-Predict2-14B' at 93 frames, 16 fps, 1280x704 (the Video2World default output), so the row maps to the Video2World checkpoint, not the separate Text2Image repo. Comparison-only: no local command verified in this pass.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2512.01989v1",
+     "reported_label": "Cosmos-Predict2-14B [4] (Table 12: 93 frames, 16 FPS, 1280x704)"
+    },
+    {
+     "source": "https://github.com/nvidia-cosmos/cosmos-predict2/blob/661da4774b0ca41d082a0ecbeb47550bcf07e03f/README.md",
+     "reported_label": "2025-06-11: We released post-training and inference code, along with model weights."
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "magi-1-24b",
+   "name": "MAGI-1 24B",
+   "provider": "Sand AI",
+   "category": "video",
+   "released": "2025-04",
+   "released_source": "https://huggingface.co/sand-ai/MAGI-1/blob/ca8bdfb28b1d88a29ec2a3ea423029f801a891bd/README.md",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "license_source": "https://huggingface.co/sand-ai/MAGI-1/blob/ca8bdfb28b1d88a29ec2a3ea423029f801a891bd/README.md",
+   "params_b": 24,
+   "params_note": "24B as named by Sand AI (model table 'MAGI-1-24B'); T5 text encoder and VAE separate.",
+   "model_repo": "https://huggingface.co/sand-ai/MAGI-1",
+   "identity_note": "Sand AI's MAGI-1 autoregressive video model, 24B base checkpoint (repo folder ckpt/magi/24B_base; README model table row 'MAGI-1-24B'), released 21 Apr 2025. Pinned sand-ai/MAGI-1@ca8bdfb. PAI-Bench (Dec 2025) lists 'MAGI-1-24B' at 120 frames, 24 fps, 1280x720. The repo also holds a 24B distill, an fp8 distill and, uploaded in June 2026, MAGI-1.1 24B weights; the Dec-2025 PAI-Bench row predates 1.1, so it is mapped here. The WROP (Sep 2026) 'MAGI-1 24B' row is NOT mapped because it could be the 1.1 upload (held). Comparison-only: no single-command local route verified (official route needs 8xH100 or 8xRTX 4090 per README).",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2512.01989v1",
+     "reported_label": "MAGI-1-24B [75] (Table 12: 120 frames, 24 FPS, 1280x720)"
+    },
+    {
+     "source": "https://huggingface.co/sand-ai/MAGI-1/blob/ca8bdfb28b1d88a29ec2a3ea423029f801a891bd/README.md",
+     "reported_label": "| MAGI-1-24B | ckpt/magi/24B_base | H100/H800 x 8 |; 'Apr 21, 2025: MAGI-1 is here'"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "magi-1-4-5b",
+   "name": "MAGI-1 4.5B",
+   "provider": "Sand AI",
+   "category": "video",
+   "released": "2025-04",
+   "released_source": "https://huggingface.co/sand-ai/MAGI-1/blob/ca8bdfb28b1d88a29ec2a3ea423029f801a891bd/README.md",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "license_source": "https://huggingface.co/sand-ai/MAGI-1/blob/ca8bdfb28b1d88a29ec2a3ea423029f801a891bd/README.md",
+   "params_b": 4.5,
+   "params_note": "4.5B as named by Sand AI (model table 'MAGI-1-4.5B').",
+   "model_repo": "https://huggingface.co/sand-ai/MAGI-1",
+   "identity_note": "Sand AI's MAGI-1 4.5B base checkpoint (ckpt/magi/4.5B_base; README row 'MAGI-1-4.5B'), released 30 Apr 2025; a 4.5B distill followed on 26 May 2025. PAI-Bench Table 12 lists 'MAGI-1-4.5B' at 720x720 (the README's default resolution for the 4.5B config), mapped to the base checkpoint named in the README table. Pinned sand-ai/MAGI-1@ca8bdfb. Comparison-only (README: runs on one RTX 4090; no single command verified).",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2512.01989v1",
+     "reported_label": "MAGI-1-4.5B [75] (Table 12: 120 frames, 24 FPS, 720x720)"
+    },
+    {
+     "source": "https://huggingface.co/sand-ai/MAGI-1/blob/ca8bdfb28b1d88a29ec2a3ea423029f801a891bd/README.md",
+     "reported_label": "| MAGI-1-4.5B | ckpt/magi/4.5B_base | RTX 4090 x 1 |; 'Apr 30, 2025: MAGI-1 4.5B model has been released'"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "wan-2-1-i2v-14b-720p",
+   "name": "Wan2.1-I2V-14B-720P",
+   "provider": "Alibaba",
+   "category": "video",
+   "released": "2025-02",
+   "released_source": "https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-720P/blob/8823af45fcc58a8aa999a54b04be9abc7d2aac98/README.md",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "license_source": "https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-720P/blob/8823af45fcc58a8aa999a54b04be9abc7d2aac98/README.md",
+   "params_b": 14,
+   "params_note": "14B as named by Alibaba (model name); text and image encoders and VAE separate.",
+   "model_repo": "https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-720P",
+   "identity_note": "Alibaba Wan2.1 image-to-video 14B checkpoint at 720P (Wan-AI/Wan2.1-I2V-14B-720P, pinned 8823af4), released 25 Feb 2025 with Wan2.1. PAI-Bench Table 12 gives the version 'Wan2.1-I2V-14B-720P' (81 frames, 16 fps, 1280x720). Distinct from the catalogued T2V wan-2-1-14b and the API-only wan-2-1-i2v-plus / -turbo. Comparison-only: local route not verified in this pass.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2512.01989v1",
+     "reported_label": "Wan2.1-I2V-14B [79] (Table 12 Version: Wan2.1-I2V-14B-720P)"
+    },
+    {
+     "source": "https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-720P/blob/8823af45fcc58a8aa999a54b04be9abc7d2aac98/README.md",
+     "reported_label": "Feb 25, 2025: We've released the inference code and weights of Wan2.1."
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "dynamicrafter-1024",
+   "name": "DynamiCrafter (1024)",
+   "provider": "CUHK / Tencent AI Lab (DynamiCrafter)",
+   "category": "video",
+   "released": "2024-02",
+   "released_source": "https://huggingface.co/api/models/Doubiiu/DynamiCrafter_1024",
+   "open_weights": true,
+   "model_repo": "https://huggingface.co/Doubiiu/DynamiCrafter_1024",
+   "identity_note": "DynamiCrafter image-animation model (Xing et al., ECCV 2024), 1024x576 checkpoint Doubiiu/DynamiCrafter_1024 (pinned 73398ed; repo created 2024-02-03 per the HF API). PAI-Bench Table 12 gives the version 'DynamiCrafter_1024' (16 frames, 8 fps, 1024x576). The card states no licence in its metadata, so licence is left unset. Not mapped: MechVerse's 'DynamiCrafter' (resolution/checkpoint not stated). Comparison-only.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2512.01989v1",
+     "reported_label": "DynamicCrafter [93] (Table 12 Version: DynamiCrafter_1024; 16 frames, 8 FPS, 1024x576)"
+    },
+    {
+     "source": "https://huggingface.co/Doubiiu/DynamiCrafter_1024/blob/73398ed78fa307316f355fdbbdc823564057f375/README.md",
+     "reported_label": "Doubiiu/DynamiCrafter_1024 model card"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "wan-2-1-vace-14b",
+   "name": "Wan2.1-VACE-14B",
+   "provider": "Alibaba",
+   "category": "video",
+   "released": "2025-05",
+   "released_source": "https://huggingface.co/api/models/Wan-AI/Wan2.1-VACE-14B",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "license_source": "https://huggingface.co/Wan-AI/Wan2.1-VACE-14B/blob/539c162b1387eac9dc4c20bd3f74671309e76a4c/README.md",
+   "params_b": 14,
+   "params_note": "14B as named by Alibaba (model name, Wan2.1 14B backbone); VACE context blocks, text encoder and VAE not counted separately.",
+   "model_repo": "https://huggingface.co/Wan-AI/Wan2.1-VACE-14B",
+   "identity_note": "Alibaba's VACE all-in-one video creation/editing model on Wan2.1 14B (Wan-AI/Wan2.1-VACE-14B, pinned 539c162; repo created 2025-05-13). WROP Table 1 lists 'Wan-VACE 14B', open weights, run locally on multiple GPUs as an edit/transfer (repaint) generator at 832x480, 16 fps, 57 frames. There is one 14B VACE release on Wan2.1 (the 1.3B is separate). Comparison-only: local route not verified in this pass.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2609.28654v1#S5.T2",
+     "reported_label": "Wan-VACE 14B (Table 1: Local, multi-GPU; Edit / transfer (repaint); 832x480 / 16 / 57)"
+    },
+    {
+     "source": "https://huggingface.co/Wan-AI/Wan2.1-VACE-14B/blob/539c162b1387eac9dc4c20bd3f74671309e76a4c/README.md",
+     "reported_label": "Wan2.1-VACE-14B model card"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "hy-omniweaving",
+   "name": "HY-OmniWeaving",
+   "provider": "Tencent",
+   "category": "video",
+   "released": "2026-03",
+   "released_source": "https://huggingface.co/tencent/HY-OmniWeaving/blob/ddb4e6debe169398701dcc39b175f6a3c1a7538e/License.txt",
+   "open_weights": true,
+   "license": "tencent-hy-community",
+   "license_source": "https://huggingface.co/tencent/HY-OmniWeaving/blob/ddb4e6debe169398701dcc39b175f6a3c1a7538e/License.txt",
+   "params_b": 8.3,
+   "params_b_source": "https://arxiv.org/html/2608.05485v1#S3.T2",
+   "params_note": "8.3B as printed in the VideoArgus Table 2 #P column (same backbone size as HunyuanVideo-1.5).",
+   "model_repo": "https://huggingface.co/tencent/HY-OmniWeaving",
+   "identity_note": "Tencent Hunyuan's OmniWeaving unified video generation/editing model on HunyuanVideo-1.5 (tencent/HY-OmniWeaving, pinned ddb4e6d; code released 3 Apr 2026, paper arXiv 2603.24458). Single public checkpoint. Rows: VideoArgus 'OmniWeaving' (8.3B), PhyGround 'OmniWeaving' (848x480, 81 frames, 16 fps, 50 steps), WROP 'HY-OmniWeaving' (open-weight, local). Licence: License.txt 'TENCENT HY COMMUNITY LICENSE AGREEMENT', 'Tencent HY-OmniWeaving Release Date: March 31, 2026'. Comparison-only: local route not verified.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2608.05485v1#S3.T2",
+     "reported_label": "OmniWeaving | 8.3B"
+    },
+    {
+     "source": "https://arxiv.org/html/2605.10806v1#S4.T2",
+     "reported_label": "OmniWeaving"
+    },
+    {
+     "source": "https://arxiv.org/html/2609.28654v1#S5.T2",
+     "reported_label": "HY-OmniWeaving (Open-weight, Local, multi-GPU)"
+    },
+    {
+     "source": "https://huggingface.co/tencent/HY-OmniWeaving/blob/ddb4e6debe169398701dcc39b175f6a3c1a7538e/README.md",
+     "reported_label": "April 3, 2026: We release the code"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "stepvideo-t2v",
+   "name": "Step-Video-T2V",
+   "provider": "StepFun",
+   "category": "video",
+   "released": "2025-02",
+   "released_source": "https://huggingface.co/stepfun-ai/stepvideo-t2v/blob/7a2b639ca2685350e87a4df7e4026285309f7fb6/README.md",
+   "open_weights": true,
+   "license": "mit",
+   "license_source": "https://huggingface.co/stepfun-ai/stepvideo-t2v/blob/7a2b639ca2685350e87a4df7e4026285309f7fb6/README.md",
+   "params_b": 30,
+   "params_b_source": "https://huggingface.co/stepfun-ai/stepvideo-t2v/blob/7a2b639ca2685350e87a4df7e4026285309f7fb6/README.md",
+   "params_note": "30B as stated by StepFun ('a state-of-the-art text-to-video pre-trained model with 30 billion parameters'); VideoArgus prints 29B.",
+   "model_repo": "https://huggingface.co/stepfun-ai/stepvideo-t2v",
+   "identity_note": "StepFun Step-Video-T2V (stepfun-ai/stepvideo-t2v, pinned 7a2b639). VideoArgus cites 'Step-Video [27, 14]' (the Step-Video-T2V and Step-Video-TI2V reports) with #P 29B; its T2V leaderboard row is mapped to the Step-Video-T2V checkpoint, the only StepFun model for that input mode (the -Turbo T2V distillation is a separate repo and is not assumed). Comparison-only: local route not verified (multi-GPU).",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2608.05485v1#S3.T2",
+     "reported_label": "Step-Video | 29B (T2V leaderboard)"
+    },
+    {
+     "source": "https://huggingface.co/stepfun-ai/stepvideo-t2v/blob/7a2b639ca2685350e87a4df7e4026285309f7fb6/README.md",
+     "reported_label": "release note in model card"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "stepvideo-ti2v",
+   "name": "Step-Video-TI2V",
+   "provider": "StepFun",
+   "category": "video",
+   "released": "2025-03",
+   "released_source": "https://huggingface.co/stepfun-ai/stepvideo-ti2v/blob/3d7471a88c57ddc1387b2eae46cd003dafbc8c5b/README.md",
+   "open_weights": true,
+   "license": "mit",
+   "license_source": "https://huggingface.co/stepfun-ai/stepvideo-ti2v/blob/3d7471a88c57ddc1387b2eae46cd003dafbc8c5b/README.md",
+   "model_repo": "https://huggingface.co/stepfun-ai/stepvideo-ti2v",
+   "identity_note": "StepFun Step-Video-TI2V (stepfun-ai/stepvideo-ti2v, pinned 3d7471a). VideoArgus cites 'Step-Video [27, 14]' (the Step-Video-T2V and Step-Video-TI2V reports) with #P 29B; its TI2V leaderboard row is mapped to the Step-Video-TI2V checkpoint, the only StepFun model for that input mode (the -Turbo T2V distillation is a separate repo and is not assumed). Comparison-only: local route not verified (multi-GPU).",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2608.05485v1#S3.T2",
+     "reported_label": "Step-Video | 29B (TI2V leaderboard)"
+    },
+    {
+     "source": "https://huggingface.co/stepfun-ai/stepvideo-ti2v/blob/3d7471a88c57ddc1387b2eae46cd003dafbc8c5b/README.md",
+     "reported_label": "release note in model card"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "univideo",
+   "name": "UniVideo",
+   "provider": "Kuaishou (Kling AI)",
+   "category": "video",
+   "released": "2026-01",
+   "released_source": "https://huggingface.co/KlingTeam/UniVideo/blob/c84ceb49b87c05e3ba50333f32b4ec6ca2aec35e/README.md",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "license_source": "https://huggingface.co/KlingTeam/UniVideo/blob/c84ceb49b87c05e3ba50333f32b4ec6ca2aec35e/README.md",
+   "params_b": 13,
+   "params_b_source": "https://arxiv.org/html/2608.05485v1#S3.T2",
+   "params_note": "13B as printed in VideoArgus Table 2 #P column.",
+   "model_repo": "https://huggingface.co/KlingTeam/UniVideo",
+   "identity_note": "Kling Team's UniVideo unified video understanding/generation/editing model (arXiv 2510.08377; code and model released 7 Jan 2026 per the card; KlingTeam/UniVideo pinned c84ceb4). WorldReasonBench lists 'UniVideo' among open-source generators (TI2V). Single public checkpoint. Comparison-only.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2605.10434v1#S4.T4",
+     "reported_label": "UniVideo (Human Elo 665)"
+    },
+    {
+     "source": "https://huggingface.co/KlingTeam/UniVideo/blob/c84ceb49b87c05e3ba50333f32b4ec6ca2aec35e/README.md",
+     "reported_label": "[2026-01-07]: Released Code and Model"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "minimax-h3-max",
+   "name": "MiniMax H3 Max",
+   "provider": "MiniMax",
+   "category": "video",
+   "released": "2026-09",
+   "open_weights": false,
+   "license": "proprietary",
+   "api": {
+    "url": "https://platform.minimax.io/docs/guides/pricing-paygo.md",
+    "provider": "MiniMax",
+    "price": 0.08,
+    "unit": "video-second",
+    "price_source": "https://platform.minimax.io/docs/guides/pricing-paygo.md",
+    "price_note": "USD per generated second at 768P on MiniMax's pay-as-you-go Video Generation pricing: 'MiniMax-H3-Max | 768P | Billed per second | $0.08 / second' (480P $0.05/s; input images: first 2 free then $0.074 each; input video billed separately). Product: MiniMax Video Generation API. API model: MiniMax-H3-Max. Settings: 768P, text or first/last-frame image input. Price basis: published list rate. Currency: USD. MiniMax official pricing doc, observed 2026-10-10."
+   },
+   "identity_note": "MiniMax's MiniMax-H3-Max video model (API model name listed on MiniMax's own pay-as-you-go pricing doc next to MiniMax-H3; third-party coverage says it launched on 2 Sep 2026 as a fal.ai-post-trained fast variant of H3). No open weights (the catalogued minimax-h3 is the open MiniMaxAI/MiniMax-H3). Rapidata lists 'MiniMax H3 Max' (relative camera, commercial I2V via public API, default settings) and 'minimax-h3-max' (I2V realism), separately from 'MiniMax H3'. released month from the third-party launch reports, not a first-party page.",
+   "identity_evidence": [
+    {
+     "source": "https://platform.minimax.io/docs/guides/pricing-paygo.md",
+     "reported_label": "MiniMax-H3-Max | 480P $0.05 / second; 768P $0.08 / second",
+     "note": "observed 2026-10-10"
+    },
+    {
+     "source": "https://huggingface.co/datasets/Rapidata/relative-camera-movement-human-preference-900k/blob/e03ac787593bada12ac6b088d3d35da4716517c7/README.md#overall-ranking-elo-on-the-alignment-leaderboard",
+     "reported_label": "| 4 | MiniMax H3 Max | MiniMax | commercial image-to-video | 1271.6 |"
+    },
+    {
+     "source": "https://huggingface.co/datasets/Rapidata/image-to-video-realism/blob/d7abf89e71cb45fff0b08d70df389026cb78024f/README.md#overall-ranking",
+     "reported_label": "| 9 | minimax-h3-max | 1194.15 |"
+    }
+   ],
+   "local": null
+  },
+  {
+   "id": "magicbrush",
+   "name": "MagicBrush (InstructPix2Pix fine-tune, jul7)",
+   "provider": "Ohio State University (OSU NLP)",
+   "category": "image",
+   "released": "2023-07",
+   "released_source": "https://huggingface.co/api/models/vinesmsuic/magicbrush-jul7",
+   "open_weights": true,
+   "license": "creativeml-openrail-m",
+   "license_source": "https://huggingface.co/vinesmsuic/magicbrush-jul7/blob/d75a9f18439f67dbdc0ab113036f491ce2256c53/README.md",
+   "model_repo": "https://huggingface.co/vinesmsuic/magicbrush-jul7",
+   "identity_note": "MagicBrush (Zhang et al., NeurIPS 2023 Datasets & Benchmarks): InstructPix2Pix fine-tuned on the MagicBrush dataset. EdiVal Appendix pins 'Magicbrush: same settings as IP2P; model weights from https://huggingface.co/vinesmsuic/magicbrush-jul7' (pinned d75a9f1, created 2023-07-08; card licence creativeml-openrail-m). Only the EdiVal row is mapped; Edit-Compass, UnicBench, WEAVE and ImagenHub print 'MagicBrush' without naming the checkpoint (the same uploader also has magicbrush-paper), so those rows are held. Comparison-only: no local command verified.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2509.13399v3#S3.T3",
+     "reported_label": "†MagicBrush (date column 23.06.16); Appendix: model weights from https://huggingface.co/vinesmsuic/magicbrush-jul7"
+    },
+    {
+     "source": "https://huggingface.co/vinesmsuic/magicbrush-jul7/blob/d75a9f18439f67dbdc0ab113036f491ce2256c53/README.md",
+     "reported_label": "magicbrush-jul7 model card"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "anyedit",
+   "name": "AnyEdit (AnySD)",
+   "provider": "Zhejiang University / NUS (AnyEdit)",
+   "category": "image",
+   "released": "2025-02",
+   "released_source": "https://huggingface.co/api/models/WeiChow/AnySD",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "license_source": "https://huggingface.co/WeiChow/AnySD/blob/cafe016d1720e66cfda8096ca2eac25ea7b4d0c5/README.md",
+   "model_repo": "https://huggingface.co/WeiChow/AnySD",
+   "identity_note": "AnyEdit (Yu et al., CVPR 2025) released as the AnySD editing model (WeiChow/AnySD, pinned cafe016, created 2025-02-20, Apache-2.0); the card notes the public model was retrained on the cleaned AnyEdit data, so its numbers differ slightly from the paper. EdiVal pins 'AnyEdit: repository at https://github.com/weichow23/AnySD/tree/9e7d36e... with edit_type set to general'. Edit-Compass ('AnyEdit Yu et al. (2025)') and WEAVE ('AnyEdit [86] 1B') name the same single public release. WEAVE's first author Wei Chow is an AnyEdit author, so the WEAVE row is by: lab. Comparison-only.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2509.13399v3#S3.T3",
+     "reported_label": "†AnyEdit (date column 24.11.24); Appendix: repository github.com/weichow23/AnySD@9e7d36e"
+    },
+    {
+     "source": "https://arxiv.org/html/2605.13062v1#S4.T3",
+     "reported_label": "AnyEdit Yu et al. (2025)"
+    },
+    {
+     "source": "https://arxiv.org/html/2511.11434v1#S4.T2",
+     "reported_label": "AnyEdit [86] | 1B"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "ultraedit-sd3",
+   "name": "UltraEdit (SD3, with mask)",
+   "provider": "Peking University / BIGAI (UltraEdit)",
+   "category": "image",
+   "released": "2024-06",
+   "released_source": "https://huggingface.co/api/models/BleachNick/SD3_UltraEdit_w_mask",
+   "open_weights": true,
+   "model_repo": "https://huggingface.co/BleachNick/SD3_UltraEdit_w_mask",
+   "identity_note": "UltraEdit (Zhao et al., NeurIPS 2024 D&B) SD3-based editing checkpoint BleachNick/SD3_UltraEdit_w_mask (pinned e5beecb, created 2024-06-30). EdiVal: 'UltraEdit: settings from https://github.com/HaozheZhao/UltraEdit; we apply a black mask since no explicit mask is provided', i.e. the mask-conditioned SD3 checkpoint used mask-free (the repo README's free-form recipe). Licence: the card says 'More Information Needed', so licence is left unset. WEAVE 'UltraEdit(SD3)' and Edit-Compass 'UltraEdit' do not say which SD3 checkpoint (w_mask vs freeform) and are held. Comparison-only.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2509.13399v3#S3.T3",
+     "reported_label": "†UltraEdit (date column 24.07.07); Appendix: settings from github.com/HaozheZhao/UltraEdit, black mask"
+    },
+    {
+     "source": "https://huggingface.co/BleachNick/SD3_UltraEdit_w_mask/blob/e5beecb69a3ef1399718be2f99b61730b8bf0346/README.md",
+     "reported_label": "SD3_UltraEdit_w_mask card"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "ovis-u1-3b",
+   "name": "Ovis-U1-3B",
+   "provider": "Alibaba (AIDC-AI)",
+   "category": "image",
+   "released": "2025-06",
+   "released_source": "https://huggingface.co/api/models/AIDC-AI/Ovis-U1-3B",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "license_source": "https://huggingface.co/AIDC-AI/Ovis-U1-3B/blob/cbc005ddff7376a20bc98a89136d088e0f7e1623/README.md",
+   "params_b": 3,
+   "params_note": "3B as named by the maker (Ovis-U1-3B).",
+   "model_repo": "https://huggingface.co/AIDC-AI/Ovis-U1-3B",
+   "identity_note": "Alibaba AIDC-AI's Ovis-U1 unified understanding/generation/editing model, 3B (AIDC-AI/Ovis-U1-3B, pinned cbc005d, Apache-2.0). WEAVE 'Ovis-U1 [67] 3B' and ViGoR 'Ovis-U1-3B (Wang et al., 2025a)' both name the single public release. Distinct from the catalogued ovis-image-7b. Comparison-only.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2511.11434v1#S4.T2",
+     "reported_label": "Ovis-U1 [67] | 3B"
+    },
+    {
+     "source": "https://arxiv.org/html/2603.25823v1#S3.T3",
+     "reported_label": "Ovis-U1-3B (Wang et al., 2025a)"
+    },
+    {
+     "source": "https://huggingface.co/AIDC-AI/Ovis-U1-3B/blob/cbc005ddff7376a20bc98a89136d088e0f7e1623/README.md",
+     "reported_label": "Ovis-U1-3B card, Apache-2.0"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "skywork-unipic-1-5b",
+   "name": "Skywork UniPic 1.5B",
+   "provider": "Skywork AI",
+   "category": "image",
+   "released": "2025-07",
+   "released_source": "https://huggingface.co/api/models/Skywork/Skywork-UniPic-1.5B",
+   "open_weights": true,
+   "license": "mit",
+   "license_source": "https://huggingface.co/Skywork/Skywork-UniPic-1.5B/blob/09991eabdf1cdcfa2209deeb890d8bcffbd80584/README.md",
+   "params_b": 1.5,
+   "params_note": "1.5B as named by the maker.",
+   "model_repo": "https://huggingface.co/Skywork/Skywork-UniPic-1.5B",
+   "identity_note": "Skywork UniPic (v1) 1.5B autoregressive unified model (Skywork/Skywork-UniPic-1.5B, pinned 09991ea, MIT). WEAVE lists 'UniPic [68] 1.5B', the only UniPic v1 release. Comparison-only.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2511.11434v1#S4.T2",
+     "reported_label": "UniPic [68] | 1.5B"
+    },
+    {
+     "source": "https://huggingface.co/Skywork/Skywork-UniPic-1.5B/blob/09991eabdf1cdcfa2209deeb890d8bcffbd80584/README.md",
+     "reported_label": "Skywork-UniPic-1.5B card, MIT"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "unipic2-sd3-5m-kontext-2b",
+   "name": "UniPic2-SD3.5M-Kontext-2B",
+   "provider": "Skywork AI",
+   "category": "image",
+   "released": "2025-08",
+   "released_source": "https://huggingface.co/api/models/Skywork/UniPic2-SD3.5M-Kontext-2B",
+   "open_weights": true,
+   "license": "mit",
+   "license_source": "https://huggingface.co/Skywork/UniPic2-SD3.5M-Kontext-2B/blob/c64315f7f41eeeb1d564924171f82a2367cbbba0/README.md",
+   "params_b": 2,
+   "params_note": "2B as named by the maker.",
+   "model_repo": "https://huggingface.co/Skywork/UniPic2-SD3.5M-Kontext-2B",
+   "identity_note": "Skywork UniPic 2.0 editing/generation model on SD3.5-Medium with Kontext-style conditioning, 2B (Skywork/UniPic2-SD3.5M-Kontext-2B, pinned c64315f, MIT). WEAVE 'UniPic2-SD3.5M [73] 2B'. A separate -GRPO-2B repo exists; WEAVE's label has no GRPO suffix, so the base release is mapped. Comparison-only.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2511.11434v1#S4.T2",
+     "reported_label": "UniPic2-SD3.5M [73] | 2B"
+    },
+    {
+     "source": "https://huggingface.co/Skywork/UniPic2-SD3.5M-Kontext-2B/blob/c64315f7f41eeeb1d564924171f82a2367cbbba0/README.md",
+     "reported_label": "UniPic2-SD3.5M-Kontext-2B card, MIT"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "unipic2-metaquery-9b",
+   "name": "UniPic2-Metaquery-9B",
+   "provider": "Skywork AI",
+   "category": "image",
+   "released": "2025-08",
+   "released_source": "https://huggingface.co/api/models/Skywork/UniPic2-Metaquery-9B",
+   "open_weights": true,
+   "license": "mit",
+   "license_source": "https://huggingface.co/Skywork/UniPic2-Metaquery-9B/blob/37a2f17d28578b89d38aebd79515ba5610e75cad/README.md",
+   "params_b": 9,
+   "params_note": "9B as named by the maker.",
+   "model_repo": "https://huggingface.co/Skywork/UniPic2-Metaquery-9B",
+   "identity_note": "Skywork UniPic 2.0 MetaQuery-style unified model, 9B (Skywork/UniPic2-Metaquery-9B, pinned 37a2f17, MIT). WEAVE 'UniPic2-Metaquery [73] 9B'; ViGoR 'UniPic2-M-9B (Wei et al., 2025)'. -GRPO and -Flash variants are separate repos and are not assumed. Comparison-only.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2511.11434v1#S4.T2",
+     "reported_label": "UniPic2-Metaquery [73] | 9B"
+    },
+    {
+     "source": "https://arxiv.org/html/2603.25823v1#S3.T3",
+     "reported_label": "UniPic2-M-9B (Wei et al., 2025)"
+    },
+    {
+     "source": "https://huggingface.co/Skywork/UniPic2-Metaquery-9B/blob/37a2f17d28578b89d38aebd79515ba5610e75cad/README.md",
+     "reported_label": "UniPic2-Metaquery-9B card, MIT"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "nextstep-1-large-edit",
+   "name": "NextStep-1-Large-Edit",
+   "provider": "StepFun",
+   "category": "image",
+   "released": "2025-08",
+   "released_source": "https://huggingface.co/api/models/stepfun-ai/NextStep-1-Large-Edit",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "license_source": "https://huggingface.co/stepfun-ai/NextStep-1-Large-Edit/blob/bac0d9ff590906759a41292124c3b7fe6979b689/README.md",
+   "model_repo": "https://huggingface.co/stepfun-ai/NextStep-1-Large-Edit",
+   "identity_note": "StepFun NextStep-1 autoregressive image model, editing checkpoint (stepfun-ai/NextStep-1-Large-Edit, pinned bac0d9f, Apache-2.0). Edit-Compass ('Nextstep-V1 Han et al. (2025a)'), UnicBench ('NextStep-1 [34]') and WEAVE ('NextStep-1-Large [66] 15B') evaluate NextStep-1 on image-editing benchmarks; NextStep-1-Large-Edit is the only public NextStep-1 checkpoint fine-tuned for instruction editing (NextStep-1-Large and NextStep-1.1 are text-to-image), so the rows are mapped to it; flagged for the owner in held_for_owner. Comparison-only.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2605.13062v1#S4.T3",
+     "reported_label": "Nextstep-V1 Han et al. (2025a)"
+    },
+    {
+     "source": "https://arxiv.org/html/2512.02790v1#S6.T4",
+     "reported_label": "NextStep-1 [34]"
+    },
+    {
+     "source": "https://arxiv.org/html/2511.11434v1#S4.T2",
+     "reported_label": "NextStep-1-Large [66] | 15B"
+    },
+    {
+     "source": "https://huggingface.co/stepfun-ai/NextStep-1-Large-Edit/blob/bac0d9ff590906759a41292124c3b7fe6979b689/README.md",
+     "reported_label": "NextStep-1-Large-Edit card"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "deepgen-1-0",
+   "name": "DeepGen 1.0",
+   "provider": "DeepGen Team",
+   "category": "image",
+   "released": "2026-02",
+   "released_source": "https://huggingface.co/api/models/deepgenteam/DeepGen-1.0",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "license_source": "https://huggingface.co/deepgenteam/DeepGen-1.0/blob/b746f077c0b1b3128cd075cfa886edc4ea222827/README.md",
+   "model_repo": "https://huggingface.co/deepgenteam/DeepGen-1.0",
+   "identity_note": "DeepGen 1.0 unified image generation and editing model (Wang et al., 2026; deepgenteam/DeepGen-1.0, pinned b746f07, Apache-2.0; the card says it ships pre-training, SFT and RL checkpoints, the RL one being the release model). Rows: Edit-Compass 'DeepGen 1.0', ChartSync 'DeepGen-1.0' (guidance 4.0, 50 steps per its Table 7), WISE v4 Table 11 'DeepGen1.0'. Comparison-only.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2605.13062v1#S4.T3",
+     "reported_label": "DeepGen 1.0 Wang et al. (2026a)"
+    },
+    {
+     "source": "https://arxiv.org/html/2607.10301v1#S4.T2",
+     "reported_label": "DeepGen-1.0 Wang et al. (2026); Table 7: guidance 4.0, 50 steps"
+    },
+    {
+     "source": "https://arxiv.org/html/2503.07265v4#A10.T11",
+     "reported_label": "DeepGen1.0 (Wang et al., 2026)"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "unipic3",
+   "name": "UniPic 3",
+   "provider": "Skywork AI",
+   "category": "image",
+   "released": "2026-01",
+   "released_source": "https://huggingface.co/api/models/Skywork/Unipic3",
+   "open_weights": true,
+   "license": "mit",
+   "license_source": "https://huggingface.co/Skywork/Unipic3/blob/c1f8544efa4cfcb0e1f937c51053d477c8171a57/README.md",
+   "model_repo": "https://huggingface.co/Skywork/Unipic3",
+   "identity_note": "Skywork UniPic 3 (Wei et al., 2026; Skywork/Unipic3, pinned c1f8544, MIT). Edit-Compass 'Unipic3'. The -DMD and -Consistency-Model distillations are separate repos and are not assumed. Comparison-only.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2605.13062v1#S4.T3",
+     "reported_label": "Unipic3 Wei et al. (2026)"
+    },
+    {
+     "source": "https://huggingface.co/Skywork/Unipic3/blob/c1f8544efa4cfcb0e1f937c51053d477c8171a57/README.md",
+     "reported_label": "Unipic3 card, MIT"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "joyai-image-edit",
+   "name": "JoyAI-Image-Edit",
+   "provider": "JD (JoyAI)",
+   "category": "image",
+   "released": "2026-03",
+   "released_source": "https://huggingface.co/api/models/jdopensource/JoyAI-Image-Edit",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "license_source": "https://huggingface.co/jdopensource/JoyAI-Image-Edit/blob/20af57b100ab1f71b73daab5e96d293d8bf8ab5f/README.md",
+   "model_repo": "https://huggingface.co/jdopensource/JoyAI-Image-Edit",
+   "identity_note": "JD Joy Future Academy's JoyAI-Image-Edit (jdopensource/JoyAI-Image-Edit, pinned 20af57b, Apache-2.0; created 2026-03-31). Edit-Compass 'JoyAI-Image-Edit Joy Future Academy (2026)'. The later JoyAI-Image-Edit-Plus is a different model and is not assumed. Comparison-only.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2605.13062v1#S4.T3",
+     "reported_label": "JoyAI-Image-Edit Joy Future Academy (2026)"
+    },
+    {
+     "source": "https://huggingface.co/jdopensource/JoyAI-Image-Edit/blob/20af57b100ab1f71b73daab5e96d293d8bf8ab5f/README.md",
+     "reported_label": "JoyAI-Image-Edit card"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "flux-2-klein-base-9b",
+   "name": "FLUX.2 [klein] Base 9B",
+   "provider": "Black Forest Labs",
+   "category": "image",
+   "released": "2026-01",
+   "released_source": "https://huggingface.co/api/models/black-forest-labs/FLUX.2-klein-base-9B",
+   "open_weights": true,
+   "license": "flux-dev-nc",
+   "license_source": "https://huggingface.co/api/models/black-forest-labs/FLUX.2-klein-base-9B",
+   "params_b": 9,
+   "params_note": "9B as named by Black Forest Labs.",
+   "model_repo": "https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B",
+   "identity_note": "Black Forest Labs FLUX.2 [klein] 9B undistilled base checkpoint (black-forest-labs/FLUX.2-klein-base-9B, pinned 3277332; gated with automatic approval; HF licence metadata 'flux-non-commercial-license'). Separate from the catalogued distilled flux-2-klein-9b. ChartSync Table 7 lists 'FLUX.2-Klein-Base-9B' (guidance 4.0, 50 steps); InfoEdit links https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B (its 0.0% average success rate is not imported). Comparison-only.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2607.10301v1#S4.T2",
+     "reported_label": "FLUX.2-Klein-Base-9B Labs (2025); Table 7 guidance 4.0, 50 steps"
+    },
+    {
+     "source": "https://huggingface.co/api/models/black-forest-labs/FLUX.2-klein-base-9B",
+     "reported_label": "license_name: flux-non-commercial-license; created 2026-01-14"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "firered-image-edit-1-0",
+   "name": "FireRed-Image-Edit-1.0",
+   "provider": "FireRedTeam (Xiaohongshu)",
+   "category": "image",
+   "released": "2026-02",
+   "released_source": "https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.0/blob/0aea9d520c801c9f4b691cc92f736a7a8628e6a2/README.md",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "license_source": "https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.0/blob/0aea9d520c801c9f4b691cc92f736a7a8628e6a2/README.md",
+   "model_repo": "https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.0",
+   "identity_note": "Xiaohongshu FireRedTeam's FireRed-Image-Edit-1.0 (FireRedTeam/FireRed-Image-Edit-1.0, pinned 0aea9d5, Apache-2.0). ChartSync evaluates both 1.0 and 1.1 by name (Table 7: guidance 4.0, 40 steps). Lightning and ComfyUI repackagings are separate and not assumed. Comparison-only.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2607.10301v1#S4.T2",
+     "reported_label": "FireRed-Image-Edit-1.0 Team et al. (2026); Table 7 guidance 4.0, 40 steps"
+    },
+    {
+     "source": "https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.0/blob/0aea9d520c801c9f4b691cc92f736a7a8628e6a2/README.md",
+     "reported_label": "2026.02.14: We released FireRed-Image-Edit-1.0 model weights."
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "firered-image-edit-1-1",
+   "name": "FireRed-Image-Edit-1.1",
+   "provider": "FireRedTeam (Xiaohongshu)",
+   "category": "image",
+   "released": "2026-03",
+   "released_source": "https://huggingface.co/api/models/FireRedTeam/FireRed-Image-Edit-1.1",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "license_source": "https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.1/blob/3bc3f2a12722fd9883eb6357500de191d56baaf5/README.md",
+   "model_repo": "https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.1",
+   "identity_note": "Xiaohongshu FireRedTeam's FireRed-Image-Edit-1.1 (FireRedTeam/FireRed-Image-Edit-1.1, pinned 3bc3f2a, Apache-2.0). ChartSync evaluates both 1.0 and 1.1 by name (Table 7: guidance 4.0, 40 steps). Lightning and ComfyUI repackagings are separate and not assumed. Comparison-only.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2607.10301v1#S4.T2",
+     "reported_label": "FireRed-Image-Edit-1.1 Team et al. (2026); Table 7 guidance 4.0, 40 steps"
+    },
+    {
+     "source": "https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.1/blob/3bc3f2a12722fd9883eb6357500de191d56baaf5/README.md",
+     "reported_label": "FireRed-Image-Edit-1.1 card"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "hidream-e1-1",
+   "name": "HiDream-E1.1",
+   "provider": "HiDream",
+   "category": "image",
+   "released": "2025-07",
+   "released_source": "https://huggingface.co/api/models/HiDream-ai/HiDream-E1-1",
+   "open_weights": true,
+   "license": "mit",
+   "license_source": "https://huggingface.co/HiDream-ai/HiDream-E1-1/blob/a7cc57091a5716187d58919238cdcf41402dbc31/README.md",
+   "model_repo": "https://huggingface.co/HiDream-ai/HiDream-E1-1",
+   "identity_note": "HiDream's E1.1 instruction-editing model (HiDream-ai/HiDream-E1-1, pinned a7cc570, MIT; created 2025-07-16), successor of HiDream-E1-Full. ViGoR names 'HiDream-E1.1 (Cai et al., 2025)'. Edit-Compass's unversioned 'HiDream-E1' is not mapped (E1-Full vs E1.1). Comparison-only.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2603.25823v1#S3.T3",
+     "reported_label": "HiDream-E1.1 (Cai et al., 2025)"
+    },
+    {
+     "source": "https://huggingface.co/HiDream-ai/HiDream-E1-1/blob/a7cc57091a5716187d58919238cdcf41402dbc31/README.md",
+     "reported_label": "HiDream-E1-1 card, MIT"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "cogview4-6b",
+   "name": "CogView4-6B",
+   "provider": "Z.ai",
+   "category": "image",
+   "released": "2025-03",
+   "released_source": "https://huggingface.co/api/models/zai-org/CogView4-6B",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "license_source": "https://huggingface.co/zai-org/CogView4-6B/blob/63a52b7f6dace7033380cd6da14d0915eab3e6b5/README.md",
+   "params_b": 6,
+   "params_note": "6B as named by the maker (CogView4-6B DiT); GLM-4-9B text encoder separate.",
+   "model_repo": "https://huggingface.co/zai-org/CogView4-6B",
+   "identity_note": "Zhipu/Z.ai CogView4 text-to-image model, 6B DiT (zai-org/CogView4-6B, pinned 63a52b7, Apache-2.0; the only CogView4 release). MMMG Table 2 'CogView-4' (1024 px, DM) and the HPSv3 README benchmark 'CogView4'. Comparison-only.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2506.10963v2",
+     "reported_label": "CogView-4 | 1024 | DM"
+    },
+    {
+     "source": "https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md",
+     "reported_label": "CogView4 (Image Generation Benchmark of HPSv3)"
+    },
+    {
+     "source": "https://huggingface.co/zai-org/CogView4-6B/blob/63a52b7f6dace7033380cd6da14d0915eab3e6b5/README.md",
+     "reported_label": "CogView4-6B card"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "janusflow-1-3b",
+   "name": "JanusFlow-1.3B",
+   "provider": "DeepSeek",
+   "category": "image",
+   "released": "2024-11",
+   "released_source": "https://huggingface.co/api/models/deepseek-ai/JanusFlow-1.3B",
+   "open_weights": true,
+   "license": "deepseek",
+   "license_source": "https://huggingface.co/deepseek-ai/JanusFlow-1.3B/blob/ba759449ee790649850a00d39caddb0acf1c9132/README.md",
+   "params_b": 1.3,
+   "params_note": "1.3B as named by DeepSeek.",
+   "model_repo": "https://huggingface.co/deepseek-ai/JanusFlow-1.3B",
+   "identity_note": "DeepSeek JanusFlow-1.3B unified autoregressive + rectified-flow model (deepseek-ai/JanusFlow-1.3B, pinned ba75944; card: code under MIT, 'The use of JanusFlow models is subject to DeepSeek Model License'). MMMG Table 2 'JanusFlow-1.3B' (384 px). Comparison-only.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2506.10963v2",
+     "reported_label": "JanusFlow-1.3B | 384 | AR"
+    },
+    {
+     "source": "https://huggingface.co/deepseek-ai/JanusFlow-1.3B/blob/ba759449ee790649850a00d39caddb0acf1c9132/README.md",
+     "reported_label": "JanusFlow-1.3B card"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "infinity-8b",
+   "name": "Infinity-8B",
+   "provider": "ByteDance (FoundationVision)",
+   "category": "image",
+   "released": "2025-02",
+   "released_source": "https://github.com/FoundationVision/Infinity/blob/9f9fcd1de7ead377ddf1106db1249a35f3a59143/README.md",
+   "open_weights": true,
+   "license": "mit",
+   "license_source": "https://huggingface.co/FoundationVision/Infinity/blob/e7108923249fb3c836ebfbc3f4b4d318d6131293/README.md",
+   "params_b": 8,
+   "params_note": "8B as named by the maker.",
+   "model_repo": "https://huggingface.co/FoundationVision/Infinity",
+   "identity_note": "ByteDance FoundationVision's Infinity bitwise autoregressive text-to-image model, 8B 1024px weights (FoundationVision/Infinity, folder infinity_8b_weights; pinned e710892, MIT; GitHub news 'Feb 18, 2025: Infinity-8B Weights & Code is released!'). MMMG Table 2 lists 'Infinity' at 1024 px and its later analysis names the same model 'Infinity-8B'; the repo's other 8B folder is a 512x512 middle-stage model (Jun 2025), so the 1024 px row is the main 8B release. Not mapped: ImagenWorld, WISE Table 11 and HPSv3 'Infinity' rows (2B vs 8B not stated). Comparison-only.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2506.10963v2",
+     "reported_label": "Infinity | 1024 | AR; Sec. 5: 'notably Infinity-8B'"
+    },
+    {
+     "source": "https://github.com/FoundationVision/Infinity/blob/9f9fcd1de7ead377ddf1106db1249a35f3a59143/README.md",
+     "reported_label": "Feb 18, 2025: Infinity-8B Weights & Code is released!"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "imagen-4-fast",
+   "name": "Imagen 4 Fast",
+   "provider": "Google",
+   "category": "image",
+   "released": "2025-08",
+   "released_source": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/imagen/4-0-fast-generate-001",
+   "open_weights": false,
+   "license": "proprietary",
+   "api": {
+    "url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/imagen/4-0-fast-generate-001",
+    "provider": "Google Cloud",
+    "price": 0.02,
+    "unit": "image",
+    "price_source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+    "price_note": "USD per generated image: Google Cloud generative AI pricing lists 'Imagen 4 Fast | Image generation | Text prompt | Image | $0.02' (Imagen 4 $0.04, Ultra $0.06). Product: Google Cloud Agent Platform (Vertex AI) image generation. API model: imagen-4.0-fast-generate-001. Settings: one image from a text prompt. Price basis: published list rate. Currency: USD. Official pricing page, observed 2026-10-10. Caveat: the Vertex model page lists a discontinuation date of June 30, 2026 for this model id while the pricing page still lists it."
+   },
+   "identity_note": "Google's Imagen 4 Fast, model id imagen-4.0-fast-generate-001 (GA 14 Aug 2025 per the Vertex AI model page). Rapidata's 6M text-to-image dataset lists 'Imagen 4 Fast' (Google) separately from 'Imagen 4' and 'Imagen 4 Ultra' (both catalogued); the Face Generation Benchmark uses the Replicate id 'google/imagen-4-fast'. Distinct from imagen-4 and imagen-4-ultra.",
+   "identity_evidence": [
+    {
+     "source": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/imagen/4-0-fast-generate-001",
+     "reported_label": "Model ID imagen-4.0-fast-generate-001; GA; release date August 14, 2025; discontinuation date June 30, 2026",
+     "note": "observed 2026-10-10"
+    },
+    {
+     "source": "https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards",
+     "reported_label": "| 32 | Imagen 4 Fast | Google | 930.2 |"
+    },
+    {
+     "source": "https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard",
+     "reported_label": "| 4 | google/imagen-4-fast | 3205 | 6180 | 1027.690000 |"
+    }
+   ],
+   "local": null
+  },
+  {
+   "id": "minimax-image-01",
+   "name": "MiniMax image-01",
+   "provider": "MiniMax",
+   "category": "image",
+   "open_weights": false,
+   "license": "proprietary",
+   "api": {
+    "url": "https://platform.minimax.io/docs/guides/pricing-paygo.md",
+    "provider": "MiniMax",
+    "price": 0.0035,
+    "unit": "image",
+    "price_source": "https://platform.minimax.io/docs/guides/pricing-paygo.md",
+    "price_note": "USD per generated image: MiniMax pay-as-you-go pricing, Image section, 'image-01 | $0.0035 per image'. Product: MiniMax Image Generation API. API model: image-01. Settings: one image. Price basis: published list rate. Currency: USD. Official MiniMax pricing doc, observed 2026-10-10."
+   },
+   "identity_note": "MiniMax's text-to-image API model image-01 (listed by that id on MiniMax's own pay-as-you-go pricing doc). Rapidata's Face Generation Benchmark uses the Replicate id 'minimax/image-01'. Release month not taken (no first-party date checked).",
+   "identity_evidence": [
+    {
+     "source": "https://platform.minimax.io/docs/guides/pricing-paygo.md",
+     "reported_label": "Image | image-01 | $0.0035 per image",
+     "note": "observed 2026-10-10"
+    },
+    {
+     "source": "https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard",
+     "reported_label": "| 3 | minimax/image-01 | 2726 | 5125 | 1051.620000 |"
+    }
+   ],
+   "local": null
+  },
+  {
+   "id": "boogu-image-0-1-base",
+   "name": "Boogu-Image-0.1 Base",
+   "provider": "Boogu project",
+   "category": "image",
+   "released": "2026-06",
+   "released_source": "https://huggingface.co/api/models/Boogu/Boogu-Image-0.1-Base",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "license_source": "https://huggingface.co/Boogu/Boogu-Image-0.1-Base/blob/334ad7e5c6343d33308b306127e047b133e86926/README.md",
+   "model_repo": "https://huggingface.co/Boogu/Boogu-Image-0.1-Base",
+   "identity_note": "Boogu project's Boogu-Image-0.1 Base text-to-image model (Boogu/Boogu-Image-0.1-Base, pinned 334ad7e, Apache-2.0; card: 'a research project only, and not an official model release'; technical report arXiv 2607.13125, authors unrelated to UltraText). UltraText Table 5 lists 'Boogu-Image-0.1-Base' among open-weight models. Not mapped: 'Boogu-Image-0.1-Turbo' (a hotfix revision of the Turbo weights was published on 2026-06-25 alongside the original, and the benchmark does not say which). Comparison-only.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2610.09823v1",
+     "reported_label": "Boogu-Image-0.1-Base (Table 5, open-weight models)"
+    },
+    {
+     "source": "https://huggingface.co/Boogu/Boogu-Image-0.1-Base/blob/334ad7e5c6343d33308b306127e047b133e86926/README.md",
+     "reported_label": "Boogu-Image-0.1 ... Base, Turbo, Edit, and Edit-Turbo; Apache-2.0"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "hidream-o1-image-dev",
+   "name": "HiDream-O1-Image-Dev",
+   "provider": "HiDream",
+   "category": "image",
+   "released": "2026-05",
+   "released_source": "https://huggingface.co/HiDream-ai/HiDream-O1-Image-Dev/blob/c0bada0e15c54a9f96a6d1ecc35575b32bc21544/README.md",
+   "open_weights": true,
+   "license": "mit",
+   "license_source": "https://huggingface.co/HiDream-ai/HiDream-O1-Image-Dev/blob/c0bada0e15c54a9f96a6d1ecc35575b32bc21544/README.md",
+   "params_b": 8,
+   "params_note": "8B as stated by HiDream for HiDream-O1-Image.",
+   "model_repo": "https://huggingface.co/HiDream-ai/HiDream-O1-Image-Dev",
+   "identity_note": "HiDream's distilled Dev variant of HiDream-O1-Image (8B; 28 inference steps per the card's model table), HiDream-ai/HiDream-O1-Image-Dev pinned c0bada0, MIT, open-sourced 8 May 2026 together with the undistilled model (catalogued as hidream-o1-image). The later HiDream-O1-Image-Dev-2604 (14 May 2026) is a separate repo and is not assumed. UltraText Table 5 lists 'HiDream-O1-Image-Dev' separately from 'HiDream-O1-Image'. Comparison-only.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2610.09823v1",
+     "reported_label": "HiDream-O1-Image-Dev (Table 5, open-weight models)"
+    },
+    {
+     "source": "https://huggingface.co/HiDream-ai/HiDream-O1-Image-Dev/blob/c0bada0e15c54a9f96a6d1ecc35575b32bc21544/README.md",
+     "reported_label": "May 8, 2026: We've open-sourced HiDream-O1-Image (8B), including both the undistilled and distilled Dev variants"
+    }
+   ],
+   "api": null,
+   "local": null
+  },
+  {
+   "id": "elevenlabs-v4",
+   "name": "Eleven v4",
+   "provider": "ElevenLabs",
+   "category": "tts",
+   "released": "2026-09",
+   "released_source": "https://elevenlabs.io/docs/changelog",
+   "open_weights": false,
+   "license": "proprietary",
+   "api": {
+    "url": "https://elevenlabs.io/pricing/api",
+    "provider": "ElevenLabs",
+    "price": 80,
+    "unit": "1M-chars",
+    "price_source": "https://elevenlabs.io/pricing/api",
+    "price_note": "USD per 1M input characters: ElevenLabs lists Eleven v4 Text to Speech at $0.08 per 1K characters (x1000), shown struck through with a launch promotion of $0.022 per 1K characters ('72% off until Oct 12'); the list rate is recorded. Product: ElevenAPI text to speech. API model: eleven_v4. Price basis: published list rate, per-1K to per-1M scaling only. Exclusions: subscription fees, taxes, the temporary promotion. Currency: USD. ElevenLabs official API pricing page, observed 2026-10-10."
+   },
+   "identity_note": "ElevenLabs Eleven v4, API model_id 'eleven_v4' (flagship), released 28 Sep 2026 per ElevenLabs' changelog ('Eleven v4 and Eleven v4 Turbo are now available'). The EMA Lightning card ran 'ElevenLabs v4' itself with the default voice (George) and default settings. Distinct from elevenlabs-v3 and elevenlabs-v3-conversational.",
+   "identity_evidence": [
+    {
+     "source": "https://elevenlabs.io/docs/overview/models",
+     "reported_label": "Eleven v4: model_id \"eleven_v4\"",
+     "note": "observed 2026-10-10"
+    },
+    {
+     "source": "https://elevenlabs.io/docs/changelog",
+     "reported_label": "September 28, 2026: Eleven v4 and Eleven v4 Turbo are now available.",
+     "note": "observed 2026-10-10"
+    },
+    {
+     "source": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks",
+     "reported_label": "| ElevenLabs v4 |"
+    }
+   ],
+   "local": null
+  },
+  {
+   "id": "elevenlabs-v4-turbo",
+   "name": "Eleven v4 Turbo",
+   "provider": "ElevenLabs",
+   "category": "tts",
+   "released": "2026-09",
+   "released_source": "https://elevenlabs.io/docs/changelog",
+   "open_weights": false,
+   "license": "proprietary",
+   "api": {
+    "url": "https://elevenlabs.io/pricing/api",
+    "provider": "ElevenLabs",
+    "price": 40,
+    "unit": "1M-chars",
+    "price_source": "https://elevenlabs.io/pricing/api",
+    "price_note": "USD per 1M input characters: ElevenLabs lists Eleven v4 Turbo Text to Speech at $0.04 per 1K characters (x1000), shown struck through with a launch promotion of $0.011 per 1K characters ('72% off until Oct 12'); the list rate is recorded. Product: ElevenAPI text to speech. API model: eleven_v4_turbo. Price basis: published list rate, per-1K to per-1M scaling only. Exclusions: subscription fees, taxes, the temporary promotion. Currency: USD. ElevenLabs official API pricing page, observed 2026-10-10."
+   },
+   "identity_note": "ElevenLabs Eleven v4 Turbo, API model_id 'eleven_v4_turbo' (real-time variant), released 28 Sep 2026 per ElevenLabs' changelog ('Eleven v4 and Eleven v4 Turbo are now available'). The EMA Lightning card ran 'ElevenLabs v4 Turbo' itself with the default voice (George) and default settings. Distinct from elevenlabs-v3 and elevenlabs-v3-conversational.",
+   "identity_evidence": [
+    {
+     "source": "https://elevenlabs.io/docs/overview/models",
+     "reported_label": "Eleven v4 Turbo: model_id \"eleven_v4_turbo\"",
+     "note": "observed 2026-10-10"
+    },
+    {
+     "source": "https://elevenlabs.io/docs/changelog",
+     "reported_label": "September 28, 2026: Eleven v4 and Eleven v4 Turbo are now available.",
+     "note": "observed 2026-10-10"
+    },
+    {
+     "source": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks",
+     "reported_label": "| ElevenLabs v4 Turbo |"
+    }
+   ],
+   "local": null
+  },
+  {
+   "id": "ema-lightning",
+   "name": "EMA Lightning",
+   "provider": "EMA Lightning (canberkkkkkk)",
+   "category": "tts",
+   "released": "2026-10",
+   "released_source": "https://huggingface.co/api/models/canberkkkkkk/ema-lightning",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "license_source": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md",
+   "params_b": 0.0086,
+   "params_note": "8.6M total (5.6M DiT + 3M vocoder) as stated on the card.",
+   "model_repo": "https://huggingface.co/canberkkkkkk/ema-lightning",
+   "local": {
+    "variants": [
+     {
+      "quant": "fp32 (PyTorch)",
+      "gb": 0.04,
+      "gb_estimated": true,
+      "platform": "any",
+      "cmd": "pip install ema-lightning && python -c \"from ema_lightning import EMA; EMA().say('Merhaba, size nasıl yardımcı olabilirim?', path='merhaba.wav')\"",
+      "source": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md",
+      "note": "Quickstart from the pinned card ('pip install ema-lightning'; EMA() downloads ema.pt and decoder.pt and uses the GPU if there is one; say(text, path=...) writes a WAV), joined into one line. gb: the card says the model is 'about 34 MB'; runtime memory is higher (card: 0.28 GB GPU at batch 1). Command not executed."
+     }
+    ]
+   },
+   "identity_note": "EMA Lightning Turkish TTS (5.6M-parameter DiT acoustic model + 3M vocoder; canberkkkkkk/ema-lightning, pinned 7a6ba1a, Apache-2.0; pip package ema-lightning). The Antalia re-run's harness/systems/run_ema.py runs the same Hugging Face release (card text: 'EMA Lightning 1.0.1').",
+   "identity_evidence": [
+    {
+     "source": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks",
+     "reported_label": "EMA Lightning (compiled) / (plain PyTorch) | 5.6M DiT + 3M decoder"
+    },
+    {
+     "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+     "reported_label": "EMA Lightning (plain PyTorch) | 8.6M"
+    }
+   ],
+   "api": null
+  },
+  {
+   "id": "trendyol-tts",
+   "name": "Trendyol-TTS",
+   "provider": "Trendyol",
+   "category": "tts",
+   "released": "2026-06",
+   "released_source": "https://huggingface.co/api/models/Trendyol/Trendyol-TTS",
+   "open_weights": true,
+   "license": "mit",
+   "license_source": "https://huggingface.co/Trendyol/Trendyol-TTS/blob/66a80184b286390800ee7c1a95228cc839cd59ef/README.md",
+   "params_b": 2.38,
+   "params_note": "2.38B as printed in both evaluators' tables (HF safetensors metadata reports 2.29B for the repo's safetensors).",
+   "model_repo": "https://huggingface.co/Trendyol/Trendyol-TTS",
+   "local": null,
+   "identity_note": "Trendyol's Turkish TTS research model built on openbmb/VoxCPM2 (merged LoRA checkpoint step_0002000; Trendyol/Trendyol-TTS, pinned 66a8018, MIT). The Antalia re-run harness loads VoxCPM.from_pretrained(hf_model_id='Trendyol/Trendyol-TTS') with cfg 2.0 and 16 inference steps; the EMA card lists 'Trendyol-TTS 2.38B'.",
+   "identity_evidence": [
+    {
+     "source": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks",
+     "reported_label": "Trendyol-TTS | 2.38B"
+    },
+    {
+     "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+     "reported_label": "Trendyol-TTS (cfg 2.0, 16 steps) | 2.38B"
+    },
+    {
+     "source": "https://huggingface.co/datasets/PatientdeskAI/freya-tr-eval-rerun/tree/d5edf412810ec2b20beb5cd56c4bd3c350d7b0e3/harness",
+     "reported_label": "run_trendyol.py: VoxCPM.from_pretrained(hf_model_id=\"Trendyol/Trendyol-TTS\")"
+    }
+   ],
+   "api": null
+  },
+  {
+   "id": "antalia-2-mini",
+   "name": "Antalia-2 Mini",
+   "provider": "Patientdesk.ai",
+   "category": "tts",
+   "released": "2026-10",
+   "released_source": "https://huggingface.co/api/models/cloud0day3/antalia-mini",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "license_source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md",
+   "params_b": 0.0076,
+   "params_note": "7.62M as stated on the card (acoustic 3.69M + vocoder 3.93M).",
+   "model_repo": "https://huggingface.co/cloud0day3/antalia-mini",
+   "local": null,
+   "identity_note": "Patientdesk.ai's Antalia-2 Mini Turkish TTS (7.62M parameters: 3.69M acoustic + 3.93M vocoder; cloud0day3/antalia-mini, pinned 1e8166a, Apache-2.0; card version 1.0.0, pip package antalia-mini). The re-run table on its own card is by its makers (by: lab).",
+   "identity_evidence": [
+    {
+     "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+     "reported_label": "Antalia-2 Mini | 7.62M"
+    }
+   ],
+   "api": null
+  },
+  {
+   "id": "antalia-1",
+   "name": "Antalia 1",
+   "provider": "Patientdesk.ai",
+   "category": "tts",
+   "released": "2026-09",
+   "released_source": "https://huggingface.co/api/models/cloud0day3/antalia-1",
+   "open_weights": true,
+   "license": "openrail",
+   "license_source": "https://huggingface.co/cloud0day3/antalia-1/blob/eaec2aad2da8c0db5fc359734470874dae82c603/README.md",
+   "params_b": 0.305,
+   "params_note": "305M as printed in both tables.",
+   "model_repo": "https://huggingface.co/cloud0day3/antalia-1",
+   "local": null,
+   "identity_note": "Patientdesk.ai's Antalia 1 open-weights Turkish TTS (305M; cloud0day3/antalia-1, pinned eaec2aa, card licence openrail). EMA's card footnote: '\"Antalia 1\" by Sezgin Saygili, Emre Kaplaner, Oncel Ozgul and Fikri San Koktas (Patientdesk.ai): huggingface.co/cloud0day3/antalia-1. Three of its takes failed inside its own code and count as silence.' The Antalia re-run uses the release recipe (inference-recipe.json) per harness/systems/run_antalia.py.",
+   "identity_evidence": [
+    {
+     "source": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks",
+     "reported_label": "Antalia 1 ‡ | 305M"
+    },
+    {
+     "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+     "reported_label": "Antalia-1 (open weights, release recipe) | 305M"
+    }
+   ],
+   "api": null
+  },
+  {
+   "id": "freyatts-small",
+   "name": "FreyaTTS-small",
+   "provider": "Freya Voice",
+   "category": "tts",
+   "released": "2026-07",
+   "released_source": "https://huggingface.co/api/models/freyavoice/freya-tts",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "license_source": "https://huggingface.co/freyavoice/freya-tts/blob/d124e07493615208f58bdd21d432736849ee4230/README.md",
+   "params_b": 0.183,
+   "params_note": "183M as printed in the re-run table (HF safetensors metadata 183,198,145).",
+   "model_repo": "https://huggingface.co/freyavoice/freya-tts",
+   "local": null,
+   "identity_note": "Freya Voice's FreyaTTS-small Turkish TTS (183M; freyavoice/freya-tts, pinned d124e07, Apache-2.0; card: 'FreyaTTS-small (this model) is our compact, Apache-2.0, self-hostable model'). The Antalia re-run uses its defaults (32 steps, fixed voice seed) per harness/systems/run_freya.py.",
+   "identity_evidence": [
+    {
+     "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+     "reported_label": "FreyaTTS-small (default voice) | 183M"
+    },
+    {
+     "source": "https://huggingface.co/freyavoice/freya-tts/blob/d124e07493615208f58bdd21d432736849ee4230/README.md",
+     "reported_label": "FreyaTTS-small (this model)"
+    }
+   ],
+   "api": null
+  },
+  {
+   "id": "mms-tts-tur",
+   "name": "MMS TTS Turkish",
+   "provider": "Meta",
+   "category": "tts",
+   "released": "2023-09",
+   "released_source": "https://huggingface.co/api/models/facebook/mms-tts-tur",
+   "open_weights": true,
+   "license": "cc-by-nc-4.0",
+   "license_source": "https://huggingface.co/facebook/mms-tts-tur/blob/7e364479c307f06733ca865b0a5269e0209cf82d/README.md",
+   "params_b": 0.036,
+   "params_note": "36M as printed (HF safetensors metadata 36,285,552).",
+   "model_repo": "https://huggingface.co/facebook/mms-tts-tur",
+   "local": {
+    "variants": [
+     {
+      "quant": "fp32 (transformers VitsModel)",
+      "gb": 0.15,
+      "gb_estimated": true,
+      "platform": "any",
+      "cmd": "uv run --python 3.11 --with transformers --with torch --with scipy python -c \"from transformers import VitsModel, AutoTokenizer; import torch, scipy; model = VitsModel.from_pretrained('facebook/mms-tts-tur'); tokenizer = AutoTokenizer.from_pretrained('facebook/mms-tts-tur'); inputs = tokenizer('Merhaba, nasılsınız?', return_tensors='pt'); torch.set_grad_enabled(False); output = model(**inputs).waveform; scipy.io.wavfile.write('out.wav', rate=model.config.sampling_rate, data=output.squeeze().numpy())\"",
+      "source": "https://huggingface.co/facebook/mms-tts-tur/blob/7e364479c307f06733ca865b0a5269e0209cf82d/README.md",
+      "note": "transformers VitsModel usage from the pinned model card (same snippet as the catalogued mms-tts-amh entry, with the Turkish repo and text). gb: model.safetensors is 145,231,352 bytes (repo tree at the pinned revision); runtime memory is higher. Command not executed."
+     }
+    ]
+   },
+   "identity_note": "Meta's Massively Multilingual Speech VITS checkpoint for Turkish, facebook/mms-tts-tur (pinned 7e36447, CC BY-NC 4.0). The Antalia re-run loads VitsModel.from_pretrained('facebook/mms-tts-tur') (harness/systems/run_mms.py).",
+   "identity_evidence": [
+    {
+     "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+     "reported_label": "MMS-TTS (tur) | 36M"
+    },
+    {
+     "source": "https://huggingface.co/datasets/PatientdeskAI/freya-tr-eval-rerun/tree/d5edf412810ec2b20beb5cd56c4bd3c350d7b0e3/harness",
+     "reported_label": "run_mms.py: VitsModel.from_pretrained(\"facebook/mms-tts-tur\")"
+    }
+   ],
+   "api": null
+  },
+  {
+   "id": "piper-tr-tr-dfki-medium",
+   "name": "Piper (tr_TR dfki medium)",
+   "provider": "Open Home Foundation (Piper)",
+   "category": "tts",
+   "released": "2023-06",
+   "released_source": "https://huggingface.co/rhasspy/piper-voices/tree/c10ece1aade47bb51c153c893d14e5bf8e5b7117/tr/tr_TR/dfki/medium",
+   "open_weights": true,
+   "license": "mit",
+   "license_source": "https://huggingface.co/rhasspy/piper-voices/blob/c10ece1aade47bb51c153c893d14e5bf8e5b7117/README.md",
+   "model_repo": "https://huggingface.co/rhasspy/piper-voices",
+   "local": {
+    "variants": [
+     {
+      "quant": "onnx-fp32 (piper-tts)",
+      "gb": 0.06,
+      "gb_estimated": true,
+      "platform": "any",
+      "cmd": "pip install piper-tts && python3 -m piper.download_voices tr_TR-dfki-medium && python3 -m piper -m tr_TR-dfki-medium -f test.wav -- 'Merhaba, nasılsınız?'",
+      "source": "https://github.com/OHF-Voice/piper1-gpl/blob/efffbfb226bfb511ebbcf55d0cecd8b35a89743d/docs/CLI.md",
+      "note": "Same documented CLI.md steps as the catalogued piper-en-us-lessac-medium entry (install, download voice, run) with the tr_TR-dfki-medium voice. gb is the voice file (tr_TR-dfki-medium.onnx, 63,201,294 bytes at rhasspy/piper-voices@c10ece1); runtime memory is higher. Command not executed."
+     }
+    ]
+   },
+   "identity_note": "Piper voice tr_TR-dfki-medium from rhasspy/piper-voices (tr/tr_TR/dfki/medium/tr_TR-dfki-medium.onnx, 63,201,294 bytes at c10ece1), run with piper-tts. The Antalia re-run loads piper/tr_TR-dfki-medium.onnx on CPU (harness/systems/run_piper.py). Other Piper voices (e.g. the catalogued en_US lessac medium) are separate checkpoints.",
+   "identity_evidence": [
+    {
+     "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+     "reported_label": "Piper (tr_TR dfki medium, CPU) | 16M"
+    },
+    {
+     "source": "https://huggingface.co/datasets/PatientdeskAI/freya-tr-eval-rerun/tree/d5edf412810ec2b20beb5cd56c4bd3c350d7b0e3/harness",
+     "reported_label": "run_piper.py: Piper tr_TR-dfki-medium (piper-tts)"
+    }
+   ],
+   "api": null
+  }
+ ],
+ "results": [
+  {
+   "model": "cosmos-predict2-5-2b",
+   "bench": "pai-bench-g-overall",
+   "score": 0.814,
+   "source": "https://arxiv.org/html/2512.01989v1",
+   "source_id": "paper-2512.01989v1-paibench",
+   "by": "independent",
+   "date": "2025-12-01",
+   "note": "PAI-Bench (arXiv 2512.01989v1, Georgia Tech / CMU, CC BY 4.0) Table 3 'Evaluation results of 15 VGMs on PAI-Bench-G', row 'Cosmos-Predict2.5-2B [4]', column 'Overall' = 81.4 (stored /100): mean of Domain Score and Quality Score; image-conditioned generation. Checkpoint per Table 12. Table 12 Version 'base/post-trained'; NVIDIA model, independent evaluators."
+  },
+  {
+   "model": "cosmos-predict2-5-2b",
+   "bench": "pai-bench-g-human-elo",
+   "score": 1008.1,
+   "source": "https://arxiv.org/html/2512.01989v1",
+   "source_id": "paper-2512.01989v1-paibench",
+   "by": "independent",
+   "date": "2025-12-01",
+   "note": "PAI-Bench (arXiv 2512.01989v1, Georgia Tech / CMU, CC BY 4.0) Appendix Table 8 'Human-study (ELO) vs. MLLM evaluation on PAI-Bench-G', row 'Cosmos-Predict2.5-2B [4]', column 'ELO Scores / Overall' = 1008.1. Arena-style human pairwise study on identical captions. Table 12 Version 'base/post-trained'; NVIDIA model, independent evaluators."
+  },
+  {
+   "model": "magi-1-24b",
+   "bench": "pai-bench-g-overall",
+   "score": 0.794,
+   "source": "https://arxiv.org/html/2512.01989v1",
+   "source_id": "paper-2512.01989v1-paibench",
+   "by": "independent",
+   "date": "2025-12-01",
+   "note": "PAI-Bench (arXiv 2512.01989v1, Georgia Tech / CMU, CC BY 4.0) Table 3 'Evaluation results of 15 VGMs on PAI-Bench-G', row 'MAGI-1-24B [75]', column 'Overall' = 79.4 (stored /100): mean of Domain Score and Quality Score; image-conditioned generation. Checkpoint per Table 12."
+  },
+  {
+   "model": "magi-1-24b",
+   "bench": "pai-bench-g-human-elo",
+   "score": 988.9,
+   "source": "https://arxiv.org/html/2512.01989v1",
+   "source_id": "paper-2512.01989v1-paibench",
+   "by": "independent",
+   "date": "2025-12-01",
+   "note": "PAI-Bench (arXiv 2512.01989v1, Georgia Tech / CMU, CC BY 4.0) Appendix Table 8 'Human-study (ELO) vs. MLLM evaluation on PAI-Bench-G', row 'MAGI-1-24B [75]', column 'ELO Scores / Overall' = 988.9. Arena-style human pairwise study on identical captions."
+  },
+  {
+   "model": "magi-1-4-5b",
+   "bench": "pai-bench-g-overall",
+   "score": 0.775,
+   "source": "https://arxiv.org/html/2512.01989v1",
+   "source_id": "paper-2512.01989v1-paibench",
+   "by": "independent",
+   "date": "2025-12-01",
+   "note": "PAI-Bench (arXiv 2512.01989v1, Georgia Tech / CMU, CC BY 4.0) Table 3 'Evaluation results of 15 VGMs on PAI-Bench-G', row 'MAGI-1-4.5B [75]', column 'Overall' = 77.5 (stored /100): mean of Domain Score and Quality Score; image-conditioned generation. Checkpoint per Table 12."
+  },
+  {
+   "model": "cosmos-predict2-2b-video2world",
+   "bench": "pai-bench-g-overall",
+   "score": 0.797,
+   "source": "https://arxiv.org/html/2512.01989v1",
+   "source_id": "paper-2512.01989v1-paibench",
+   "by": "independent",
+   "date": "2025-12-01",
+   "note": "PAI-Bench (arXiv 2512.01989v1, Georgia Tech / CMU, CC BY 4.0) Table 3 'Evaluation results of 15 VGMs on PAI-Bench-G', row 'Cosmos-Predict2-2B [4]', column 'Overall' = 79.7 (stored /100): mean of Domain Score and Quality Score; image-conditioned generation. Checkpoint per Table 12."
+  },
+  {
+   "model": "cosmos-predict2-14b-video2world",
+   "bench": "pai-bench-g-overall",
+   "score": 0.8,
+   "source": "https://arxiv.org/html/2512.01989v1",
+   "source_id": "paper-2512.01989v1-paibench",
+   "by": "independent",
+   "date": "2025-12-01",
+   "note": "PAI-Bench (arXiv 2512.01989v1, Georgia Tech / CMU, CC BY 4.0) Table 3 'Evaluation results of 15 VGMs on PAI-Bench-G', row 'Cosmos-Predict2-14B [4]', column 'Overall' = 80.0 (stored /100): mean of Domain Score and Quality Score; image-conditioned generation. Checkpoint per Table 12."
+  },
+  {
+   "model": "wan-2-1-i2v-14b-720p",
+   "bench": "pai-bench-g-overall",
+   "score": 0.808,
+   "source": "https://arxiv.org/html/2512.01989v1",
+   "source_id": "paper-2512.01989v1-paibench",
+   "by": "independent",
+   "date": "2025-12-01",
+   "note": "PAI-Bench (arXiv 2512.01989v1, Georgia Tech / CMU, CC BY 4.0) Table 3 'Evaluation results of 15 VGMs on PAI-Bench-G', row 'Wan2.1-I2V-14B [79]', column 'Overall' = 80.8 (stored /100): mean of Domain Score and Quality Score; image-conditioned generation. Checkpoint per Table 12. Table 12 Version 'Wan2.1-I2V-14B-720P'."
+  },
+  {
+   "model": "wan-2-1-i2v-14b-720p",
+   "bench": "pai-bench-g-human-elo",
+   "score": 976.0,
+   "source": "https://arxiv.org/html/2512.01989v1",
+   "source_id": "paper-2512.01989v1-paibench",
+   "by": "independent",
+   "date": "2025-12-01",
+   "note": "PAI-Bench (arXiv 2512.01989v1, Georgia Tech / CMU, CC BY 4.0) Appendix Table 8 'Human-study (ELO) vs. MLLM evaluation on PAI-Bench-G', row 'Wan2.1-I2V-14B [79]', column 'ELO Scores / Overall' = 976.0. Arena-style human pairwise study on identical captions. Table 12 Version 'Wan2.1-I2V-14B-720P'."
+  },
+  {
+   "model": "dynamicrafter-1024",
+   "bench": "pai-bench-g-overall",
+   "score": 0.683,
+   "source": "https://arxiv.org/html/2512.01989v1",
+   "source_id": "paper-2512.01989v1-paibench",
+   "by": "independent",
+   "date": "2025-12-01",
+   "note": "PAI-Bench (arXiv 2512.01989v1, Georgia Tech / CMU, CC BY 4.0) Table 3 'Evaluation results of 15 VGMs on PAI-Bench-G', row 'DynamicCrafter [93]', column 'Overall' = 68.3 (stored /100): mean of Domain Score and Quality Score; image-conditioned generation. Checkpoint per Table 12. Table 12 Version 'DynamiCrafter_1024'."
+  },
+  {
+   "model": "dynamicrafter-1024",
+   "bench": "pai-bench-g-human-elo",
+   "score": 734.9,
+   "source": "https://arxiv.org/html/2512.01989v1",
+   "source_id": "paper-2512.01989v1-paibench",
+   "by": "independent",
+   "date": "2025-12-01",
+   "note": "PAI-Bench (arXiv 2512.01989v1, Georgia Tech / CMU, CC BY 4.0) Appendix Table 8 'Human-study (ELO) vs. MLLM evaluation on PAI-Bench-G', row 'DynamicCrafter [93]', column 'ELO Scores / Overall' = 734.9. Arena-style human pairwise study on identical captions. Table 12 Version 'DynamiCrafter_1024'."
+  },
+  {
+   "model": "cosmos-predict2-5-14b",
+   "bench": "cosmos-hue-t2v-human",
+   "score": 0.821,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+   "source_id": "visual-cosmos3-report",
+   "by": "lab",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Cosmos-Predict2.5-14B' (Open-sourced), column 'Cosmos HUE / Text-to-Video' = 82.1 -> 82.1/100. Same human-annotated atomic Yes/No verification run as the imported Cosmos3/Wan/HunyuanVideo/Veo/Seedance cells; NVIDIA evaluating its own earlier model, so by: lab."
+  },
+  {
+   "model": "cosmos-predict2-5-14b",
+   "bench": "cosmos-hue-i2v-human",
+   "score": 0.83,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+   "source_id": "visual-cosmos3-report",
+   "by": "lab",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Cosmos-Predict2.5-14B' (Open-sourced), column 'Cosmos HUE / Image-to-Video' = 83.0 -> 83.0/100. Same human-annotated atomic Yes/No verification run as the imported Cosmos3/Wan/HunyuanVideo/Veo/Seedance cells; NVIDIA evaluating its own earlier model, so by: lab."
+  },
+  {
+   "model": "cosmos-predict2-5-2b",
+   "bench": "cosmos-hue-t2v-human",
+   "score": 0.818,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+   "source_id": "visual-cosmos3-report",
+   "by": "lab",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Cosmos-Predict2.5-2B' (Open-sourced), column 'Cosmos HUE / Text-to-Video' = 81.8 -> 81.8/100. Same human-annotated atomic Yes/No verification run as the imported Cosmos3/Wan/HunyuanVideo/Veo/Seedance cells; NVIDIA evaluating its own earlier model, so by: lab."
+  },
+  {
+   "model": "cosmos-predict2-5-2b",
+   "bench": "cosmos-hue-i2v-human",
+   "score": 0.826,
+   "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+   "source_id": "visual-cosmos3-report",
+   "by": "lab",
+   "date": "2026-06-23",
+   "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Cosmos-Predict2.5-2B' (Open-sourced), column 'Cosmos HUE / Image-to-Video' = 82.6 -> 82.6/100. Same human-annotated atomic Yes/No verification run as the imported Cosmos3/Wan/HunyuanVideo/Veo/Seedance cells; NVIDIA evaluating its own earlier model, so by: lab."
+  },
+  {
+   "model": "hy-omniweaving",
+   "bench": "phyground-human-overall",
+   "score": 0.62,
+   "source": "https://arxiv.org/html/2605.10806v1#S4.T2",
+   "source_id": "visual-phyground",
+   "by": "independent",
+   "date": "2026-05-11",
+   "note": "'OmniWeaving'; Table 2 PhyGround human Overall 3.10 on 1-5 -> 3.10/5 (352-annotator post-QC pool, TI2V). Appendix generation-settings table names the checkpoint (OmniWeaving, 848x480, 81 frames, CFG 6, 50 steps)."
+  },
+  {
+   "model": "cosmos-predict2-5-14b",
+   "bench": "phyground-human-overall",
+   "score": 0.582,
+   "source": "https://arxiv.org/html/2605.10806v1#S4.T2",
+   "source_id": "visual-phyground",
+   "by": "independent",
+   "date": "2026-05-11",
+   "note": "'Cosmos-14B'; Table 2 PhyGround human Overall 2.91 on 1-5 -> 2.91/5 (352-annotator post-QC pool, TI2V). Appendix generation-settings table names the checkpoint (Cosmos-Predict2.5-14B)."
+  },
+  {
+   "model": "cosmos-predict2-5-2b",
+   "bench": "phyground-human-overall",
+   "score": 0.516,
+   "source": "https://arxiv.org/html/2605.10806v1#S4.T2",
+   "source_id": "visual-phyground",
+   "by": "independent",
+   "date": "2026-05-11",
+   "note": "'Cosmos-2B'; Table 2 PhyGround human Overall 2.58 on 1-5 -> 2.58/5 (352-annotator post-QC pool, TI2V). Appendix generation-settings table names the checkpoint (Cosmos-Predict2.5-2B)."
+  },
+  {
+   "model": "wan-2-1-vace-14b",
+   "bench": "wrop-object-permanence-human-elo",
+   "score": 1506.7,
+   "source": "https://arxiv.org/html/2609.28654v1#S5.T2",
+   "source_id": "visual-wrop-object-permanence",
+   "by": "independent",
+   "date": "2026-09-23",
+   "note": "'Wan-VACE 14B'; Table 2 human Bradley-Terry Elo 1506.7 (95% CI [1429.9, 1590.8], 52 games); open weights run locally (Table 1: edit/transfer interface class). Row previously withheld only because the model was not catalogued."
+  },
+  {
+   "model": "hy-omniweaving",
+   "bench": "wrop-object-permanence-human-elo",
+   "score": 1268.5,
+   "source": "https://arxiv.org/html/2609.28654v1#S5.T2",
+   "source_id": "visual-wrop-object-permanence",
+   "by": "independent",
+   "date": "2026-09-23",
+   "note": "'HY-OmniWeaving'; Table 2 human Bradley-Terry Elo 1268.5 (95% CI [1159.4, 1344.2], 50 games); open weights run locally (Table 1: edit/transfer interface class). Row previously withheld only because the model was not catalogued."
+  },
+  {
+   "model": "hy-omniweaving",
+   "bench": "videoargus-t2v",
+   "score": 0.84,
+   "source": "https://arxiv.org/html/2608.05485v1#S3.T2",
+   "source_id": "visual-videoargus",
+   "by": "independent",
+   "date": "2026-08-06",
+   "note": "'OmniWeaving | 8.3B (T2V)' in the T2V leaderboard; Table 2 VideoArgus score 8.40/10 -> /10; open-source model evaluated by the VideoArgus authors (Sec. 5: 'We also evaluate a broad set of open-source models')."
+  },
+  {
+   "model": "hy-omniweaving",
+   "bench": "videoargus-ti2v",
+   "score": 0.799,
+   "source": "https://arxiv.org/html/2608.05485v1#S3.T2",
+   "source_id": "visual-videoargus",
+   "by": "independent",
+   "date": "2026-08-06",
+   "note": "'OmniWeaving | 8.3B (TI2V)' in the TI2V leaderboard; Table 2 VideoArgus score 7.99/10 -> /10; open-source model evaluated by the VideoArgus authors (Sec. 5: 'We also evaluate a broad set of open-source models')."
+  },
+  {
+   "model": "stepvideo-t2v",
+   "bench": "videoargus-t2v",
+   "score": 0.777,
+   "source": "https://arxiv.org/html/2608.05485v1#S3.T2",
+   "source_id": "visual-videoargus",
+   "by": "independent",
+   "date": "2026-08-06",
+   "note": "'Step-Video | 29B (T2V)' in the T2V leaderboard; Table 2 VideoArgus score 7.77/10 -> /10; open-source model evaluated by the VideoArgus authors (Sec. 5: 'We also evaluate a broad set of open-source models')."
+  },
+  {
+   "model": "stepvideo-ti2v",
+   "bench": "videoargus-ti2v",
+   "score": 0.711,
+   "source": "https://arxiv.org/html/2608.05485v1#S3.T2",
+   "source_id": "visual-videoargus",
+   "by": "independent",
+   "date": "2026-08-06",
+   "note": "'Step-Video | 29B (TI2V)' in the TI2V leaderboard; Table 2 VideoArgus score 7.11/10 -> /10; open-source model evaluated by the VideoArgus authors (Sec. 5: 'We also evaluate a broad set of open-source models')."
+  },
+  {
+   "model": "univideo",
+   "bench": "worldreasonbench-human-elo",
+   "score": 665,
+   "source": "https://arxiv.org/html/2605.10434v1#S4.T4",
+   "source_id": "video-worldreasonbench",
+   "by": "independent",
+   "date": "2026-05-11",
+   "note": "UniVideo; Table 4 (S4.T4) Human Elo 665 (human rank 10 of 11); expert Bradley-Terry/Davidson fit over WorldRewardBench preference pairs; TI2V (initial image + instruction); open-source generator run by the authors."
+  },
+  {
+   "model": "minimax-h3-max",
+   "bench": "rapidata-relative-camera-i2v",
+   "score": 1271.6,
+   "source": "https://huggingface.co/datasets/Rapidata/relative-camera-movement-human-preference-900k/blob/e03ac787593bada12ac6b088d3d35da4716517c7/README.md#overall-ranking-elo-on-the-alignment-leaderboard",
+   "source_id": "visual-rapid-relative-camera",
+   "by": "independent",
+   "date": "2026-09-29",
+   "note": "MiniMax H3 Max (MiniMax, commercial image-to-video); Alignment-leaderboard ELO 1271.6 (rank 4 of 15); public API endpoint, default settings, I2V."
+  },
+  {
+   "model": "minimax-h3-max",
+   "bench": "rapidata-i2v-realism-overall",
+   "score": 1194.15,
+   "source": "https://huggingface.co/datasets/Rapidata/image-to-video-realism/blob/d7abf89e71cb45fff0b08d70df389026cb78024f/README.md#overall-ranking",
+   "source_id": "visual-rapid-i2v-realism",
+   "by": "independent",
+   "date": "2026-10-01",
+   "note": "minimax-h3-max; Overall ranking ELO 1194.15 (rank 9); Rapidata I2V realism & visual quality; listed separately from minimax-h3 (1324.98)."
+  },
+  {
+   "model": "magicbrush",
+   "bench": "edival-o-turn3",
+   "score": 0.1941,
+   "source": "https://arxiv.org/html/2509.13399v3#S3.T3",
+   "source_id": "visual-edival",
+   "by": "independent",
+   "date": "2026-03-17",
+   "note": "'†MagicBrush' († = open-sourced model); Table 3 EdiVal-O at turn 3 19.41 -> /100 (same table and column as the imported rows); weights vinesmsuic/magicbrush-jul7 per Appendix."
+  },
+  {
+   "model": "anyedit",
+   "bench": "edival-o-turn3",
+   "score": 0.225,
+   "source": "https://arxiv.org/html/2509.13399v3#S3.T3",
+   "source_id": "visual-edival",
+   "by": "independent",
+   "date": "2026-03-17",
+   "note": "'†AnyEdit' († = open-sourced model); Table 3 EdiVal-O at turn 3 22.50 -> /100 (same table and column as the imported rows); AnySD repository @9e7d36e, edit_type=general per Appendix."
+  },
+  {
+   "model": "ultraedit-sd3",
+   "bench": "edival-o-turn3",
+   "score": 0.2289,
+   "source": "https://arxiv.org/html/2509.13399v3#S3.T3",
+   "source_id": "visual-edival",
+   "by": "independent",
+   "date": "2026-03-17",
+   "note": "'†UltraEdit' († = open-sourced model); Table 3 EdiVal-O at turn 3 22.89 -> /100 (same table and column as the imported rows); UltraEdit settings with a black mask per Appendix."
+  },
+  {
+   "model": "anyedit",
+   "bench": "edit-compass-en-overall",
+   "score": 0.262,
+   "source": "https://arxiv.org/html/2605.13062v1#S4.T3",
+   "source_id": "visual-edit-compass",
+   "by": "independent",
+   "date": "2026-05-13",
+   "note": "'AnyEdit Yu et al. (2025)'; S4.T3 English-instruction Overall (AVG) 1.31 on the 1-5 Gemini-3.1-Pro judge scale, stored as 1.31/5. Open model; default settings not further specified."
+  },
+  {
+   "model": "nextstep-1-large-edit",
+   "bench": "edit-compass-en-overall",
+   "score": 0.29,
+   "source": "https://arxiv.org/html/2605.13062v1#S4.T3",
+   "source_id": "visual-edit-compass",
+   "by": "independent",
+   "date": "2026-05-13",
+   "note": "'Nextstep-V1 Han et al. (2025a)'; S4.T3 English-instruction Overall (AVG) 1.45 on the 1-5 Gemini-3.1-Pro judge scale, stored as 1.45/5. Open model; default settings not further specified."
+  },
+  {
+   "model": "deepgen-1-0",
+   "bench": "edit-compass-en-overall",
+   "score": 0.382,
+   "source": "https://arxiv.org/html/2605.13062v1#S4.T3",
+   "source_id": "visual-edit-compass",
+   "by": "independent",
+   "date": "2026-05-13",
+   "note": "'DeepGen 1.0 Wang et al. (2026a)'; S4.T3 English-instruction Overall (AVG) 1.91 on the 1-5 Gemini-3.1-Pro judge scale, stored as 1.91/5. Open model; default settings not further specified."
+  },
+  {
+   "model": "unipic3",
+   "bench": "edit-compass-en-overall",
+   "score": 0.47,
+   "source": "https://arxiv.org/html/2605.13062v1#S4.T3",
+   "source_id": "visual-edit-compass",
+   "by": "independent",
+   "date": "2026-05-13",
+   "note": "'Unipic3 Wei et al. (2026)'; S4.T3 English-instruction Overall (AVG) 2.35 on the 1-5 Gemini-3.1-Pro judge scale, stored as 2.35/5. Open model; default settings not further specified."
+  },
+  {
+   "model": "joyai-image-edit",
+   "bench": "edit-compass-en-overall",
+   "score": 0.536,
+   "source": "https://arxiv.org/html/2605.13062v1#S4.T3",
+   "source_id": "visual-edit-compass",
+   "by": "independent",
+   "date": "2026-05-13",
+   "note": "'JoyAI-Image-Edit Joy Future Academy (2026)'; S4.T3 English-instruction Overall (AVG) 2.68 on the 1-5 Gemini-3.1-Pro judge scale, stored as 2.68/5. Open model; default settings not further specified."
+  },
+  {
+   "model": "anyedit",
+   "bench": "weavebench-avg",
+   "score": 0.472,
+   "source": "https://arxiv.org/html/2511.11434v1#S4.T2",
+   "source_id": "visual-weavebench",
+   "by": "lab",
+   "date": "2025-11-14",
+   "note": "'AnyEdit [86] (1B)'; Table 2 WEAVEBench Avg 0.472 (0-1). WEAVE's first author (Wei Chow) is an AnyEdit/AnySD author, so by: lab."
+  },
+  {
+   "model": "omnigen-v1",
+   "bench": "weavebench-avg",
+   "score": 0.404,
+   "source": "https://arxiv.org/html/2511.11434v1#S4.T2",
+   "source_id": "visual-weavebench",
+   "by": "independent",
+   "date": "2025-11-14",
+   "note": "'OminiGen [80] (4B)'; Table 2 WEAVEBench Avg 0.404 (0-1). 'OminiGen' is the table's spelling of OmniGen (v1), 4B."
+  },
+  {
+   "model": "ovis-u1-3b",
+   "bench": "weavebench-avg",
+   "score": 0.422,
+   "source": "https://arxiv.org/html/2511.11434v1#S4.T2",
+   "source_id": "visual-weavebench",
+   "by": "independent",
+   "date": "2025-11-14",
+   "note": "'Ovis-U1 [67] (3B)'; Table 2 WEAVEBench Avg 0.422 (0-1). "
+  },
+  {
+   "model": "skywork-unipic-1-5b",
+   "bench": "weavebench-avg",
+   "score": 0.511,
+   "source": "https://arxiv.org/html/2511.11434v1#S4.T2",
+   "source_id": "visual-weavebench",
+   "by": "independent",
+   "date": "2025-11-14",
+   "note": "'UniPic [68] (1.5B)'; Table 2 WEAVEBench Avg 0.511 (0-1). "
+  },
+  {
+   "model": "unipic2-sd3-5m-kontext-2b",
+   "bench": "weavebench-avg",
+   "score": 0.568,
+   "source": "https://arxiv.org/html/2511.11434v1#S4.T2",
+   "source_id": "visual-weavebench",
+   "by": "independent",
+   "date": "2025-11-14",
+   "note": "'UniPic2-SD3.5M [73] (2B)'; Table 2 WEAVEBench Avg 0.568 (0-1). "
+  },
+  {
+   "model": "unipic2-metaquery-9b",
+   "bench": "weavebench-avg",
+   "score": 0.582,
+   "source": "https://arxiv.org/html/2511.11434v1#S4.T2",
+   "source_id": "visual-weavebench",
+   "by": "independent",
+   "date": "2025-11-14",
+   "note": "'UniPic2-Metaquery [73] (9B)'; Table 2 WEAVEBench Avg 0.582 (0-1). "
+  },
+  {
+   "model": "nextstep-1-large-edit",
+   "bench": "weavebench-avg",
+   "score": 0.534,
+   "source": "https://arxiv.org/html/2511.11434v1#S4.T2",
+   "source_id": "visual-weavebench",
+   "by": "independent",
+   "date": "2025-11-14",
+   "note": "'NextStep-1-Large [66] (15B)'; Table 2 WEAVEBench Avg 0.534 (0-1). "
+  },
+  {
+   "model": "nextstep-1-large-edit",
+   "bench": "unicbench-en-overall",
+   "score": 0.64076,
+   "source": "https://arxiv.org/html/2512.02790v1#S6.T4",
+   "source_id": "visual-unicbench",
+   "by": "independent",
+   "date": "2025-12-01",
+   "note": "NextStep-1 [34]; S6.T4 Overall-EN 6.4076 on the 0-10 gpt-4.1-2025-04-14 judge scale, stored as 6.4076/10. Open-source model; settings not tabulated."
+  },
+  {
+   "model": "ovis-u1-3b",
+   "bench": "vigor-bench-result-avg-image",
+   "score": 0.243,
+   "source": "https://arxiv.org/html/2603.25823v1#S3.T3",
+   "source_id": "visual-vigor-bench",
+   "by": "independent",
+   "date": "2026-03-26",
+   "note": "'Ovis-U1-3B (Wang et al., 2025a)'; Table 3 Result Metric Avg 24.3% -> /100. Without-CoT block (same column as the imported image-model rows)."
+  },
+  {
+   "model": "unipic2-metaquery-9b",
+   "bench": "vigor-bench-result-avg-image",
+   "score": 0.08,
+   "source": "https://arxiv.org/html/2603.25823v1#S3.T3",
+   "source_id": "visual-vigor-bench",
+   "by": "independent",
+   "date": "2026-03-26",
+   "note": "'UniPic2-M-9B (Wei et al., 2025)'; Table 3 Result Metric Avg 8.0% -> /100. Without-CoT block (same column as the imported image-model rows)."
+  },
+  {
+   "model": "hidream-e1-1",
+   "bench": "vigor-bench-result-avg-image",
+   "score": 0.017,
+   "source": "https://arxiv.org/html/2603.25823v1#S3.T3",
+   "source_id": "visual-vigor-bench",
+   "by": "independent",
+   "date": "2026-03-26",
+   "note": "'HiDream-E1.1 (Cai et al., 2025)'; Table 3 Result Metric Avg 1.7% -> /100. Without-CoT block (same column as the imported image-model rows)."
+  },
+  {
+   "model": "deepgen-1-0",
+   "bench": "chartsync-overall",
+   "score": 0.2361,
+   "source": "https://arxiv.org/html/2607.10301v1#S4.T2",
+   "source_id": "visual-chartsync",
+   "by": "independent",
+   "date": "2026-07-11",
+   "note": "'DeepGen-1.0 Wang et al. (2026)'; Table 2 ChartSync Overall 23.61 -> 23.61/100; open-source model, inference configuration per Table 7 (S-A3.T7)."
+  },
+  {
+   "model": "flux-2-klein-base-9b",
+   "bench": "chartsync-overall",
+   "score": 0.5062,
+   "source": "https://arxiv.org/html/2607.10301v1#S4.T2",
+   "source_id": "visual-chartsync",
+   "by": "independent",
+   "date": "2026-07-11",
+   "note": "'FLUX.2-Klein-Base-9B Labs (2025)'; Table 2 ChartSync Overall 50.62 -> 50.62/100; open-source model, inference configuration per Table 7 (S-A3.T7)."
+  },
+  {
+   "model": "firered-image-edit-1-0",
+   "bench": "chartsync-overall",
+   "score": 0.5161,
+   "source": "https://arxiv.org/html/2607.10301v1#S4.T2",
+   "source_id": "visual-chartsync",
+   "by": "independent",
+   "date": "2026-07-11",
+   "note": "'FireRed-Image-Edit-1.0 Team et al. (2026)'; Table 2 ChartSync Overall 51.61 -> 51.61/100; open-source model, inference configuration per Table 7 (S-A3.T7)."
+  },
+  {
+   "model": "firered-image-edit-1-1",
+   "bench": "chartsync-overall",
+   "score": 0.5622,
+   "source": "https://arxiv.org/html/2607.10301v1#S4.T2",
+   "source_id": "visual-chartsync",
+   "by": "independent",
+   "date": "2026-07-11",
+   "note": "'FireRed-Image-Edit-1.1 Team et al. (2026)'; Table 2 ChartSync Overall 56.22 -> 56.22/100; open-source model, inference configuration per Table 7 (S-A3.T7)."
+  },
+  {
+   "model": "deepgen-1-0",
+   "bench": "wise-wiscore-overall",
+   "score": 0.73,
+   "source": "https://arxiv.org/html/2503.07265v4#A10.T11",
+   "source_id": "visual-wise",
+   "by": "independent",
+   "date": "2026-06-02",
+   "note": "'DeepGen1.0 (Wang et al., 2026)'; WISE v4 Appendix Table 11 (A10.T11) 'Additional evaluation of recent AR and AR+Diffusion models', WiScore 0.73. Sec. 4: 'we additionally evaluate recent autoregressive and AR+Diffusion models in Table 11' (the WISE authors' own supplementary run with the same WiScore metric). Adapted row licensed CC-BY-SA-4.0 (WISE v4 is CC BY-SA 4.0), like the other WISE rows."
+  },
+  {
+   "model": "longcat-image",
+   "bench": "wise-wiscore-overall",
+   "score": 0.65,
+   "source": "https://arxiv.org/html/2503.07265v4#A10.T11",
+   "source_id": "visual-wise",
+   "by": "independent",
+   "date": "2026-06-02",
+   "note": "'LongCat-Image (Team et al., 2025)'; WISE v4 Appendix Table 11 (A10.T11) 'Additional evaluation of recent AR and AR+Diffusion models', WiScore 0.65. Sec. 4: 'we additionally evaluate recent autoregressive and AR+Diffusion models in Table 11' (the WISE authors' own supplementary run with the same WiScore metric). Adapted row licensed CC-BY-SA-4.0 (WISE v4 is CC BY-SA 4.0), like the other WISE rows."
+  },
+  {
+   "model": "hunyuanimage-3-0",
+   "bench": "wise-wiscore-overall",
+   "score": 0.57,
+   "source": "https://arxiv.org/html/2503.07265v4#A10.T11",
+   "source_id": "visual-wise",
+   "by": "independent",
+   "date": "2026-06-02",
+   "note": "'Hunyuan-Image 3.0 (Cao et al., 2025)'; WISE v4 Appendix Table 11 (A10.T11) 'Additional evaluation of recent AR and AR+Diffusion models', WiScore 0.57. Sec. 4: 'we additionally evaluate recent autoregressive and AR+Diffusion models in Table 11' (the WISE authors' own supplementary run with the same WiScore metric). Adapted row licensed CC-BY-SA-4.0 (WISE v4 is CC BY-SA 4.0), like the other WISE rows."
+  },
+  {
+   "model": "janusflow-1-3b",
+   "bench": "mmmg-kg-score-avg",
+   "score": 0.0977,
+   "source": "https://arxiv.org/html/2506.10963v2",
+   "source_id": "paper-2506.10963v2-mmmg-kg",
+   "by": "independent",
+   "date": "2025-06-13",
+   "note": "MMMG (arXiv 2506.10963v2, CC BY-SA 4.0) Table 2, row 'JanusFlow-1.3B', column 'Avg' = 9.77 (MMMG-Score x100, stored /100); same table and protocol as the imported rows."
+  },
+  {
+   "model": "cogview4-6b",
+   "bench": "mmmg-kg-score-avg",
+   "score": 0.131,
+   "source": "https://arxiv.org/html/2506.10963v2",
+   "source_id": "paper-2506.10963v2-mmmg-kg",
+   "by": "independent",
+   "date": "2025-06-13",
+   "note": "MMMG (arXiv 2506.10963v2, CC BY-SA 4.0) Table 2, row 'CogView-4', column 'Avg' = 13.10 (MMMG-Score x100, stored /100); same table and protocol as the imported rows."
+  },
+  {
+   "model": "infinity-8b",
+   "bench": "mmmg-kg-score-avg",
+   "score": 0.1918,
+   "source": "https://arxiv.org/html/2506.10963v2",
+   "source_id": "paper-2506.10963v2-mmmg-kg",
+   "by": "independent",
+   "date": "2025-06-13",
+   "note": "MMMG (arXiv 2506.10963v2, CC BY-SA 4.0) Table 2, row 'Infinity', column 'Avg' = 19.18 (MMMG-Score x100, stored /100); same table and protocol as the imported rows. Mapped to Infinity-8B: Table 2 lists 1024 px and Sec. 5 names it 'Infinity-8B'."
+  },
+  {
+   "model": "cogview4-6b",
+   "bench": "hpsv3-benchmark",
+   "score": 9.61,
+   "source": "https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md",
+   "source_id": "hpsv3-readme-mit",
+   "by": "independent",
+   "date": "2025-12-05",
+   "note": "HPSv3 repository README (MizzenAI/HPSv3 @bd0c5fc, MIT), 'Image Generation Benchmark of HPSv3' table, row 'CogView4', column 'Overall' = 9.61 (raw HPSv3 score; same table as the imported rows)."
+  },
+  {
+   "model": "imagen-4-fast",
+   "bench": "rapidata-benchai-image-overall",
+   "score": 930.2,
+   "source": "https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards",
+   "source_id": "visual-rapid-benchai-image",
+   "by": "independent",
+   "date": "2026-10-01",
+   "note": "'Imagen 4 Fast' (Google); Overall ELO 930.2 (rank 32; Alignment 893, Preference 946, Coherence 953, Text coherence 914). 1,514 prompts, human pairwise votes; same table as the imported rows."
+  },
+  {
+   "model": "imagen-4-fast",
+   "bench": "rapidata-face-alignment",
+   "score": 1027.69,
+   "source": "https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard",
+   "source_id": "visual-rapid-face",
+   "by": "independent",
+   "date": "2025-09-03",
+   "note": "'google/imagen-4-fast' (Replicate model id); leaderboard score 1027.690000 (3205 wins / 6180 matches). Face-description alignment, human pairwise votes."
+  },
+  {
+   "model": "minimax-image-01",
+   "bench": "rapidata-face-alignment",
+   "score": 1051.62,
+   "source": "https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard",
+   "source_id": "visual-rapid-face",
+   "by": "independent",
+   "date": "2025-09-03",
+   "note": "'minimax/image-01' (Replicate model id); leaderboard score 1051.620000 (2726 wins / 5125 matches). Face-description alignment, human pairwise votes."
+  },
+  {
+   "model": "boogu-image-0-1-base",
+   "bench": "ultratext-bench-composite",
+   "score": 0.7789,
+   "source": "https://arxiv.org/html/2610.09823v1",
+   "source_id": "paper-2610.09823v1-ultratext",
+   "by": "independent",
+   "date": "2026-10-07",
+   "note": "UltraText Bench (arXiv 2610.09823v1, 7 Oct 2026) Table 5 leaderboard, row 'Boogu-Image-0.1-Base', column 'Composite' = 77.89 (0-100 VLM rating; stored /100); same table and protocol as the imported rows; open-weight model run by the UltraText authors (Westlake University et al.), who did not build it."
+  },
+  {
+   "model": "hidream-o1-image-dev",
+   "bench": "ultratext-bench-composite",
+   "score": 0.4044,
+   "source": "https://arxiv.org/html/2610.09823v1",
+   "source_id": "paper-2610.09823v1-ultratext",
+   "by": "independent",
+   "date": "2026-10-07",
+   "note": "UltraText Bench (arXiv 2610.09823v1, 7 Oct 2026) Table 5 leaderboard, row 'HiDream-O1-Image-Dev', column 'Composite' = 40.44 (0-100 VLM rating; stored /100); same table and protocol as the imported rows; open-weight model run by the UltraText authors (Westlake University et al.), who did not build it."
+  },
+  {
+   "model": "ema-lightning",
+   "bench": "freya-tr-eval-wer",
+   "score": 0.0092,
+   "source": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks",
+   "source_id": "card3-canberkkkkkk-ema-lightning",
+   "by": "lab",
+   "date": "2026-10-06",
+   "note": "'EMA Lightning (compiled)'; WER 0.92% -> 0.92/100 on Freya-TR-Eval (495 sentences, 3 seeds/takes, 8 kHz band, Whisper large-v3 beam 5, Freya normalisation). EMA Lightning card, 'Our runs' (row without †). The card's own model; compiled and plain PyTorch rows print the same WER."
+  },
+  {
+   "model": "trendyol-tts",
+   "bench": "freya-tr-eval-wer",
+   "score": 0.0098,
+   "source": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks",
+   "source_id": "card3-canberkkkkkk-ema-lightning",
+   "by": "independent",
+   "date": "2026-10-06",
+   "note": "'Trendyol-TTS'; WER 0.98% -> 0.98/100 on Freya-TR-Eval (495 sentences, 3 seeds/takes, 8 kHz band, Whisper large-v3 beam 5, Freya normalisation). EMA Lightning card, 'Our runs' (row without †)."
+  },
+  {
+   "model": "gemini-3-8-flash-lite-tts",
+   "bench": "freya-tr-eval-wer",
+   "score": 0.0131,
+   "source": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks",
+   "source_id": "card3-canberkkkkkk-ema-lightning",
+   "by": "independent",
+   "date": "2026-10-06",
+   "note": "'Gemini 3.8 Flash-Lite'; WER 1.31% -> 1.31/100 on Freya-TR-Eval (495 sentences, 3 seeds/takes, 8 kHz band, Whisper large-v3 beam 5, Freya normalisation). EMA Lightning card, 'Our runs' (row without †). Gemini voice Kore."
+  },
+  {
+   "model": "gemini-3-8-flash-tts",
+   "bench": "freya-tr-eval-wer",
+   "score": 0.0135,
+   "source": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks",
+   "source_id": "card3-canberkkkkkk-ema-lightning",
+   "by": "independent",
+   "date": "2026-10-06",
+   "note": "'Gemini 3.8 Flash'; WER 1.35% -> 1.35/100 on Freya-TR-Eval (495 sentences, 3 seeds/takes, 8 kHz band, Whisper large-v3 beam 5, Freya normalisation). EMA Lightning card, 'Our runs' (row without †). Gemini voice Kore."
+  },
+  {
+   "model": "elevenlabs-v4",
+   "bench": "freya-tr-eval-wer",
+   "score": 0.0143,
+   "source": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks",
+   "source_id": "card3-canberkkkkkk-ema-lightning",
+   "by": "independent",
+   "date": "2026-10-06",
+   "note": "'ElevenLabs v4'; WER 1.43% -> 1.43/100 on Freya-TR-Eval (495 sentences, 3 seeds/takes, 8 kHz band, Whisper large-v3 beam 5, Freya normalisation). EMA Lightning card, 'Our runs' (row without †). Default voice George, default settings."
+  },
+  {
+   "model": "elevenlabs-v4-turbo",
+   "bench": "freya-tr-eval-wer",
+   "score": 0.0154,
+   "source": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks",
+   "source_id": "card3-canberkkkkkk-ema-lightning",
+   "by": "independent",
+   "date": "2026-10-06",
+   "note": "'ElevenLabs v4 Turbo'; WER 1.54% -> 1.54/100 on Freya-TR-Eval (495 sentences, 3 seeds/takes, 8 kHz band, Whisper large-v3 beam 5, Freya normalisation). EMA Lightning card, 'Our runs' (row without †). Default voice George, default settings."
+  },
+  {
+   "model": "antalia-1",
+   "bench": "freya-tr-eval-wer",
+   "score": 0.0688,
+   "source": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks",
+   "source_id": "card3-canberkkkkkk-ema-lightning",
+   "by": "independent",
+   "date": "2026-10-06",
+   "note": "'Antalia 1 ‡'; WER 6.88% -> 6.88/100 on Freya-TR-Eval (495 sentences, 3 seeds/takes, 8 kHz band, Whisper large-v3 beam 5, Freya normalisation). EMA Lightning card, 'Our runs' (row without †). Card note: three of its takes failed inside its own code and count as silence."
+  },
+  {
+   "model": "ema-lightning",
+   "bench": "freya-tr-eval-wer",
+   "score": 0.0104,
+   "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+   "source_id": "card3-cloud0day3-antalia-mini",
+   "by": "independent",
+   "date": "2026-10-09",
+   "note": "'EMA Lightning (plain PyTorch)'; WER 1.04% -> 1.04/100 on Freya-TR-Eval (495 sentences, 3 seeds/takes, 8 kHz band, Whisper large-v3 beam 5, Freya normalisation). Antalia-2 Mini card, 'On the public benchmark page' re-run table (Patientdesk.ai harness, EMA Lightning's eval.py, NVIDIA L4; checkpoints per PatientdeskAI/freya-tr-eval-rerun@d5edf41)."
+  },
+  {
+   "model": "antalia-2-mini",
+   "bench": "freya-tr-eval-wer",
+   "score": 0.0105,
+   "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+   "source_id": "card3-cloud0day3-antalia-mini",
+   "by": "lab",
+   "date": "2026-10-09",
+   "note": "'Antalia-2 Mini'; WER 1.05% -> 1.05/100 on Freya-TR-Eval (495 sentences, 3 seeds/takes, 8 kHz band, Whisper large-v3 beam 5, Freya normalisation). Antalia-2 Mini card, 'On the public benchmark page' re-run table (Patientdesk.ai harness, EMA Lightning's eval.py, NVIDIA L4; checkpoints per PatientdeskAI/freya-tr-eval-rerun@d5edf41). The card's own model."
+  },
+  {
+   "model": "trendyol-tts",
+   "bench": "freya-tr-eval-wer",
+   "score": 0.0116,
+   "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+   "source_id": "card3-cloud0day3-antalia-mini",
+   "by": "independent",
+   "date": "2026-10-09",
+   "note": "'Trendyol-TTS (cfg 2.0, 16 steps)'; WER 1.16% -> 1.16/100 on Freya-TR-Eval (495 sentences, 3 seeds/takes, 8 kHz band, Whisper large-v3 beam 5, Freya normalisation). Antalia-2 Mini card, 'On the public benchmark page' re-run table (Patientdesk.ai harness, EMA Lightning's eval.py, NVIDIA L4; checkpoints per PatientdeskAI/freya-tr-eval-rerun@d5edf41)."
+  },
+  {
+   "model": "gemini-3-8-flash-tts",
+   "bench": "freya-tr-eval-wer",
+   "score": 0.0123,
+   "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+   "source_id": "card3-cloud0day3-antalia-mini",
+   "by": "independent",
+   "date": "2026-10-09",
+   "note": "'Gemini 3.8 Flash TTS (voice Kore)'; WER 1.23% -> 1.23/100 on Freya-TR-Eval (495 sentences, 3 seeds/takes, 8 kHz band, Whisper large-v3 beam 5, Freya normalisation). Antalia-2 Mini card, 'On the public benchmark page' re-run table (Patientdesk.ai harness, EMA Lightning's eval.py, NVIDIA L4; checkpoints per PatientdeskAI/freya-tr-eval-rerun@d5edf41). Vertex AI gemini-3.8-flash-tts per harness/synth_api.py."
+  },
+  {
+   "model": "gemini-3-8-flash-lite-tts",
+   "bench": "freya-tr-eval-wer",
+   "score": 0.0134,
+   "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+   "source_id": "card3-cloud0day3-antalia-mini",
+   "by": "independent",
+   "date": "2026-10-09",
+   "note": "'Gemini 3.8 Flash-Lite TTS (voice Kore)'; WER 1.34% -> 1.34/100 on Freya-TR-Eval (495 sentences, 3 seeds/takes, 8 kHz band, Whisper large-v3 beam 5, Freya normalisation). Antalia-2 Mini card, 'On the public benchmark page' re-run table (Patientdesk.ai harness, EMA Lightning's eval.py, NVIDIA L4; checkpoints per PatientdeskAI/freya-tr-eval-rerun@d5edf41). Vertex AI gemini-3.8-flash-lite-tts per harness/synth_api.py."
+  },
+  {
+   "model": "piper-tr-tr-dfki-medium",
+   "bench": "freya-tr-eval-wer",
+   "score": 0.0341,
+   "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+   "source_id": "card3-cloud0day3-antalia-mini",
+   "by": "independent",
+   "date": "2026-10-09",
+   "note": "'Piper (tr_TR dfki medium, CPU)'; WER 3.41% -> 3.41/100 on Freya-TR-Eval (495 sentences, 3 seeds/takes, 8 kHz band, Whisper large-v3 beam 5, Freya normalisation). Antalia-2 Mini card, 'On the public benchmark page' re-run table (Patientdesk.ai harness, EMA Lightning's eval.py, NVIDIA L4; checkpoints per PatientdeskAI/freya-tr-eval-rerun@d5edf41)."
+  },
+  {
+   "model": "xtts-v2",
+   "bench": "freya-tr-eval-wer",
+   "score": 0.0367,
+   "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+   "source_id": "card3-cloud0day3-antalia-mini",
+   "by": "independent",
+   "date": "2026-10-09",
+   "note": "'XTTS-v2 (Anka male reference)'; WER 3.67% -> 3.67/100 on Freya-TR-Eval (495 sentences, 3 seeds/takes, 8 kHz band, Whisper large-v3 beam 5, Freya normalisation). Antalia-2 Mini card, 'On the public benchmark page' re-run table (Patientdesk.ai harness, EMA Lightning's eval.py, NVIDIA L4; checkpoints per PatientdeskAI/freya-tr-eval-rerun@d5edf41). coqui-tts tts_models/multilingual/multi-dataset/xtts_v2, language tr, cloning the Anka male reference clip (run_xtts.py)."
+  },
+  {
+   "model": "antalia-1",
+   "bench": "freya-tr-eval-wer",
+   "score": 0.0628,
+   "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+   "source_id": "card3-cloud0day3-antalia-mini",
+   "by": "lab",
+   "date": "2026-10-09",
+   "note": "'Antalia-1 (open weights, release recipe)'; WER 6.28% -> 6.28/100 on Freya-TR-Eval (495 sentences, 3 seeds/takes, 8 kHz band, Whisper large-v3 beam 5, Freya normalisation). Antalia-2 Mini card, 'On the public benchmark page' re-run table (Patientdesk.ai harness, EMA Lightning's eval.py, NVIDIA L4; checkpoints per PatientdeskAI/freya-tr-eval-rerun@d5edf41). Patientdesk.ai's own earlier model."
+  },
+  {
+   "model": "mms-tts-tur",
+   "bench": "freya-tr-eval-wer",
+   "score": 0.0638,
+   "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+   "source_id": "card3-cloud0day3-antalia-mini",
+   "by": "independent",
+   "date": "2026-10-09",
+   "note": "'MMS-TTS (tur)'; WER 6.38% -> 6.38/100 on Freya-TR-Eval (495 sentences, 3 seeds/takes, 8 kHz band, Whisper large-v3 beam 5, Freya normalisation). Antalia-2 Mini card, 'On the public benchmark page' re-run table (Patientdesk.ai harness, EMA Lightning's eval.py, NVIDIA L4; checkpoints per PatientdeskAI/freya-tr-eval-rerun@d5edf41)."
+  },
+  {
+   "model": "coqui-tr-common-voice-glow-tts",
+   "bench": "freya-tr-eval-wer",
+   "score": 0.1093,
+   "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+   "source_id": "card3-cloud0day3-antalia-mini",
+   "by": "independent",
+   "date": "2026-10-09",
+   "note": "'Coqui GlowTTS (tr common-voice, lowercased input)'; WER 10.93% -> 10.93/100 on Freya-TR-Eval (495 sentences, 3 seeds/takes, 8 kHz band, Whisper large-v3 beam 5, Freya normalisation). Antalia-2 Mini card, 'On the public benchmark page' re-run table (Patientdesk.ai harness, EMA Lightning's eval.py, NVIDIA L4; checkpoints per PatientdeskAI/freya-tr-eval-rerun@d5edf41). coqui-tts tts_models/tr/common-voice/glow-tts with Turkish lowercasing of the input (run_glow.py)."
+  },
+  {
+   "model": "freyatts-small",
+   "bench": "freya-tr-eval-wer",
+   "score": 0.1202,
+   "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+   "source_id": "card3-cloud0day3-antalia-mini",
+   "by": "independent",
+   "date": "2026-10-09",
+   "note": "'FreyaTTS-small (default voice)'; WER 12.02% -> 12.02/100 on Freya-TR-Eval (495 sentences, 3 seeds/takes, 8 kHz band, Whisper large-v3 beam 5, Freya normalisation). Antalia-2 Mini card, 'On the public benchmark page' re-run table (Patientdesk.ai harness, EMA Lightning's eval.py, NVIDIA L4; checkpoints per PatientdeskAI/freya-tr-eval-rerun@d5edf41)."
+  },
+  {
+   "model": "nano-banana-2",
+   "bench": "multitextedit-semavg",
+   "score": 0.8012,
+   "source": "https://arxiv.org/html/2605.08163v2#S5.T3",
+   "source_id": "visual-multitextedit-ccby",
+   "by": "independent",
+   "date": "2026-05-18",
+   "note": "'Nano Banana 2'; Table 3 (S5.T3) SemAvg 4.006 on the 0-5 LVM-judge scale (mean of IF, TA, VC, LP, LSF over 3,600 instances in 12 languages), stored as 4.006/5. Run by the MultiTextEdit authors with the official pipeline and highest-quality recommended settings. Proprietary, official API, highest-quality options."
+  },
+  {
+   "model": "gpt-image-1-5",
+   "bench": "multitextedit-semavg",
+   "score": 0.7154,
+   "source": "https://arxiv.org/html/2605.08163v2#S5.T3",
+   "source_id": "visual-multitextedit-ccby",
+   "by": "independent",
+   "date": "2026-05-18",
+   "note": "'GPT-image-1.5'; Table 3 (S5.T3) SemAvg 3.577 on the 0-5 LVM-judge scale (mean of IF, TA, VC, LP, LSF over 3,600 instances in 12 languages), stored as 3.577/5. Run by the MultiTextEdit authors with the official pipeline and highest-quality recommended settings. Proprietary, official API, highest-quality options (OpenAI ref: GPT-image-1.5, Dec 16 2025)."
+  },
+  {
+   "model": "qwen-image-edit-2511",
+   "bench": "multitextedit-semavg",
+   "score": 0.6428,
+   "source": "https://arxiv.org/html/2605.08163v2#S5.T3",
+   "source_id": "visual-multitextedit-ccby",
+   "by": "independent",
+   "date": "2026-05-18",
+   "note": "'Qwen-Image-Edit-2511'; Table 3 (S5.T3) SemAvg 3.214 on the 0-5 LVM-judge scale (mean of IF, TA, VC, LP, LSF over 3,600 instances in 12 languages), stored as 3.214/5. Run by the MultiTextEdit authors with the official pipeline and highest-quality recommended settings."
+  },
+  {
+   "model": "firered-image-edit-1-1",
+   "bench": "multitextedit-semavg",
+   "score": 0.6408,
+   "source": "https://arxiv.org/html/2605.08163v2#S5.T3",
+   "source_id": "visual-multitextedit-ccby",
+   "by": "independent",
+   "date": "2026-05-18",
+   "note": "'FireRed-Image-Edit-1.1'; Table 3 (S5.T3) SemAvg 3.204 on the 0-5 LVM-judge scale (mean of IF, TA, VC, LP, LSF over 3,600 instances in 12 languages), stored as 3.204/5. Run by the MultiTextEdit authors with the official pipeline and highest-quality recommended settings."
+  },
+  {
+   "model": "flux-1-kontext-dev",
+   "bench": "multitextedit-semavg",
+   "score": 0.4802,
+   "source": "https://arxiv.org/html/2605.08163v2#S5.T3",
+   "source_id": "visual-multitextedit-ccby",
+   "by": "independent",
+   "date": "2026-05-18",
+   "note": "'FLUX.1-Kontext-dev'; Table 3 (S5.T3) SemAvg 2.401 on the 0-5 LVM-judge scale (mean of IF, TA, VC, LP, LSF over 3,600 instances in 12 languages), stored as 2.401/5. Run by the MultiTextEdit authors with the official pipeline and highest-quality recommended settings."
+  },
+  {
+   "model": "bagel",
+   "bench": "multitextedit-semavg",
+   "score": 0.4358,
+   "source": "https://arxiv.org/html/2605.08163v2#S5.T3",
+   "source_id": "visual-multitextedit-ccby",
+   "by": "independent",
+   "date": "2026-05-18",
+   "note": "'Bagel-thinking'; Table 3 (S5.T3) SemAvg 2.179 on the 0-5 LVM-judge scale (mean of IF, TA, VC, LP, LSF over 3,600 instances in 12 languages), stored as 2.179/5. Run by the MultiTextEdit authors with the official pipeline and highest-quality recommended settings. Thinking-enabled setting (highest reasoning setting; the non-thinking 'Bagel' row prints 2.424), matching the Bagel-Think choice on Edit-Compass."
+  },
+  {
+   "model": "qwen-image-edit",
+   "bench": "multitextedit-semavg",
+   "score": 0.411,
+   "source": "https://arxiv.org/html/2605.08163v2#S5.T3",
+   "source_id": "visual-multitextedit-ccby",
+   "by": "independent",
+   "date": "2026-05-18",
+   "note": "'Qwen-Image-Edit'; Table 3 (S5.T3) SemAvg 2.055 on the 0-5 LVM-judge scale (mean of IF, TA, VC, LP, LSF over 3,600 instances in 12 languages), stored as 2.055/5. Run by the MultiTextEdit authors with the official pipeline and highest-quality recommended settings."
+  },
+  {
+   "model": "omnigen2",
+   "bench": "multitextedit-semavg",
+   "score": 0.3468,
+   "source": "https://arxiv.org/html/2605.08163v2#S5.T3",
+   "source_id": "visual-multitextedit-ccby",
+   "by": "independent",
+   "date": "2026-05-18",
+   "note": "'OmniGen2'; Table 3 (S5.T3) SemAvg 1.734 on the 0-5 LVM-judge scale (mean of IF, TA, VC, LP, LSF over 3,600 instances in 12 languages), stored as 1.734/5. Run by the MultiTextEdit authors with the official pipeline and highest-quality recommended settings."
+  },
+  {
+   "model": "instructpix2pix",
+   "bench": "multitextedit-semavg",
+   "score": 0.238,
+   "source": "https://arxiv.org/html/2605.08163v2#S5.T3",
+   "source_id": "visual-multitextedit-ccby",
+   "by": "independent",
+   "date": "2026-05-18",
+   "note": "'InstructPix2Pix'; Table 3 (S5.T3) SemAvg 1.190 on the 0-5 LVM-judge scale (mean of IF, TA, VC, LP, LSF over 3,600 instances in 12 languages), stored as 1.190/5. Run by the MultiTextEdit authors with the official pipeline and highest-quality recommended settings."
+  },
+  {
+   "model": "grok-imagine-video",
+   "bench": "whatif-world-apeo-pavg",
+   "score": 0.517,
+   "source": "https://arxiv.org/html/2605.27589v1#S4.T2",
+   "source_id": "visual-whatif-world-ccby",
+   "by": "independent",
+   "date": "2026-05-26",
+   "note": "'Grok Imagine ∗'; Table 2 (S4.T2) APEO paired average pAvg 51.7% -> /100 (primary paired metric; Gemini 3.1 Pro judge; 319 scenes, two videos per instance from the same initial frame). Cited as xAI 'Grok imagine' (2025); paper dated May 2026, before Grok Imagine Video 1.5 (June 2026)."
+  },
+  {
+   "model": "veo-3-1",
+   "bench": "whatif-world-apeo-pavg",
+   "score": 0.509,
+   "source": "https://arxiv.org/html/2605.27589v1#S4.T2",
+   "source_id": "visual-whatif-world-ccby",
+   "by": "independent",
+   "date": "2026-05-26",
+   "note": "'Veo 3.1 ∗'; Table 2 (S4.T2) APEO paired average pAvg 50.9% -> /100 (primary paired metric; Gemini 3.1 Pro judge; 319 scenes, two videos per instance from the same initial frame). Cited as the Veo 3.1 technical report; tier not stated."
+  },
+  {
+   "model": "seedance-2-0",
+   "bench": "whatif-world-apeo-pavg",
+   "score": 0.418,
+   "source": "https://arxiv.org/html/2605.27589v1#S4.T2",
+   "source_id": "visual-whatif-world-ccby",
+   "by": "independent",
+   "date": "2026-05-26",
+   "note": "'Seedance 2.0 ∗'; Table 2 (S4.T2) APEO paired average pAvg 41.8% -> /100 (primary paired metric; Gemini 3.1 Pro judge; 319 scenes, two videos per instance from the same initial frame). Cited as the Seedance 2.0 report (arXiv 2604.14148)."
+  },
+  {
+   "model": "seedance-1-5-pro",
+   "bench": "whatif-world-apeo-pavg",
+   "score": 0.324,
+   "source": "https://arxiv.org/html/2605.27589v1#S4.T2",
+   "source_id": "visual-whatif-world-ccby",
+   "by": "independent",
+   "date": "2026-05-26",
+   "note": "'Seedance 1.5 ∗'; Table 2 (S4.T2) APEO paired average pAvg 32.4% -> /100 (primary paired metric; Gemini 3.1 Pro judge; 319 scenes, two videos per instance from the same initial frame). Cited as 'Seedance 1.5 pro: a native audio-visual joint generation foundation model' (arXiv 2512.13507)."
+  },
+  {
+   "model": "wan-2-2-5b",
+   "bench": "whatif-world-apeo-pavg",
+   "score": 0.284,
+   "source": "https://arxiv.org/html/2605.27589v1#S4.T2",
+   "source_id": "visual-whatif-world-ccby",
+   "by": "independent",
+   "date": "2026-05-26",
+   "note": "'Wan2.2-5B'; Table 2 (S4.T2) APEO paired average pAvg 28.4% -> /100 (primary paired metric; Gemini 3.1 Pro judge; 319 scenes, two videos per instance from the same initial frame). Open weights, public default inference configuration (TI2V-5B is the only 5B Wan2.2 checkpoint)."
+  },
+  {
+   "model": "hunyuanvideo-1-5-i2v",
+   "bench": "whatif-world-apeo-pavg",
+   "score": 0.27,
+   "source": "https://arxiv.org/html/2605.27589v1#S4.T2",
+   "source_id": "visual-whatif-world-ccby",
+   "by": "independent",
+   "date": "2026-05-26",
+   "note": "'HunyuanVideo1.5-8.3B'; Table 2 (S4.T2) APEO paired average pAvg 27.0% -> /100 (primary paired metric; Gemini 3.1 Pro judge; 319 scenes, two videos per instance from the same initial frame). Open weights, default configuration; every model is conditioned on a real initial frame, so the image-to-video HunyuanVideo-1.5 checkpoint is mapped."
+  },
+  {
+   "model": "cosmos-predict2-5-2b",
+   "bench": "cronos-i2v-success-rate",
+   "score": 0.12,
+   "source": "https://arxiv.org/html/2605.23699v1#S4.T1",
+   "source_id": "visual-cronos-ccby",
+   "by": "independent",
+   "date": "2026-05-22",
+   "note": "'Cosmos2.5-2B' (I2V block); Table 1 (S4.T1) Success Rate 0.12 (fraction of videos passing every calibrated per-video metric; averaged over all videos). Cosmos2.5 cited as NVIDIA's 'World simulation with video foundation models for physical AI' (arXiv 2511.00062), i.e. Cosmos-Predict2.5; 'the two available model sizes 2B and 14B'."
+  },
+  {
+   "model": "cosmos-predict2-5-14b",
+   "bench": "cronos-i2v-success-rate",
+   "score": 0.08,
+   "source": "https://arxiv.org/html/2605.23699v1#S4.T1",
+   "source_id": "visual-cronos-ccby",
+   "by": "independent",
+   "date": "2026-05-22",
+   "note": "'Cosmos2.5-14B' (I2V block); Table 1 (S4.T1) Success Rate 0.08 (fraction of videos passing every calibrated per-video metric; averaged over all videos). Cosmos-Predict2.5 14B (see 2B row)."
+  },
+  {
+   "model": "magi-1-4-5b",
+   "bench": "cronos-i2v-success-rate",
+   "score": 0.02,
+   "source": "https://arxiv.org/html/2605.23699v1#S4.T1",
+   "source_id": "visual-cronos-ccby",
+   "by": "independent",
+   "date": "2026-05-22",
+   "note": "'MAGI-1-4.5B' (I2V block); Table 1 (S4.T1) Success Rate 0.02 (fraction of videos passing every calibrated per-video metric; averaged over all videos). MAGI-1 [45] 4.5B (base checkpoint as named in Sand AI's model table)."
+  },
+  {
+   "model": "wan-2-2-i2v-a14b",
+   "bench": "cronos-i2v-success-rate",
+   "score": 0.2,
+   "source": "https://arxiv.org/html/2605.23699v1#S4.T1",
+   "source_id": "visual-cronos-ccby",
+   "by": "independent",
+   "date": "2026-05-22",
+   "note": "'Wan2.2-14B' (I2V block); Table 1 (S4.T1) Success Rate 0.20 (fraction of videos passing every calibrated per-video metric; averaged over all videos). Wan2.2 14B in the I2V setting, i.e. the Wan2.2-I2V-A14B checkpoint."
+  }
+ ],
+ "benchmarks": [
+  {
+   "id": "freya-tr-eval-wer",
+   "name": "Freya-TR-Eval Turkish TTS intelligibility (WER, faster-whisper large-v3, 8 kHz band)",
+   "category": "tts",
+   "kind": "err",
+   "url": "https://huggingface.co/datasets/freyavoice/freya-tr-eval",
+   "metric": "word_error_rate",
+   "setup": "Freya-TR-Eval (freyavoice/freya-tr-eval, CC BY 4.0): 495 raw Turkish sentences (everyday text with numbers, dates, money, abbreviations). Each system speaks every sentence (3 seeds or takes, default/fixed voice); clips are band-limited to 8 kHz and back to 16 kHz, transcribed by Whisper large-v3 (faster-whisper, beam 5, language tr), reference and hypothesis get Freya's Turkish normalisation, and corpus WER is computed over the whole set with jiwer; the score is the mean over the 3 seeds, as printed. Two evaluator runs: the EMA Lightning card ('Our runs', RTX 4090) and Patientdesk.ai's independent re-run (EMA Lightning's published eval.py, NVIDIA L4) printed on the Antalia-2 Mini card.",
+   "score_unit": "error ratio (printed WER % / 100)",
+   "caveats": [
+    "Single-language (Turkish) intelligibility only; says nothing about naturalness or voice cloning.",
+    "Automatic ASR-judged metric with one ASR model; both evaluators also build Turkish TTS models (their own rows are by: lab).",
+    "Cloud APIs run with default voices (ElevenLabs 'George', Gemini 'Kore'); cloning systems use the Anka male reference clip.",
+    "Coqui GlowTTS input is lowercased the Turkish way first (the front end that model needs)."
+   ],
+   "suggested_tasks": []
+  },
+  {
+   "id": "multitextedit-semavg",
+   "name": "MultiTextEdit cross-lingual text-in-image editing (SemAvg, LVM judge)",
+   "category": "image",
+   "kind": "acc",
+   "url": "https://arxiv.org/html/2605.08163v2",
+   "metric": "semantic_average_0_5",
+   "setup": "MultiTextEdit (Harbin Institute of Technology, arXiv:2605.08163v2, CC BY 4.0): 3,600 text-in-image editing instances across 12 typologically diverse languages/scripts (insertion, replacement, deletion of rendered text), each with a human-annotated reference image. An LVM judge scores instruction following, text accuracy, visual consistency, layout preservation and language/script fidelity on 0-5 (two-stage protocol for script fidelity; human agreement QWK 0.76 on 240 samples). SemAvg = mean of the five dimensions over all instances, as printed in Table 3; stored as SemAvg/5. The authors ran every system themselves with the provider's official pipeline and highest-quality recommended settings (open models on 8xA800; proprietary via official APIs).",
+   "score_unit": "fraction of the 0-5 judge scale (printed SemAvg / 5)",
+   "caveats": [
+    "Judge model not named in the text; scores are LVM-judged, validated against one native speaker per language.",
+    "Thinking-enabled variants are listed as separate settings; for BAGEL the thinking row is used (highest reasoning setting), as on Edit-Compass.",
+    "Step1X-Edit rows not imported: the paper does not say which Step1X-Edit version (the thinking variant implies v1.2)."
+   ],
+   "suggested_tasks": [
+    "image-to-image"
+   ]
+  },
+  {
+   "id": "whatif-world-apeo-pavg",
+   "name": "What-If World causal-intervention video generation (APEO paired average, Gemini 3.1 Pro judge)",
+   "category": "video",
+   "kind": "acc",
+   "url": "https://arxiv.org/html/2605.27589v1",
+   "metric": "pass_rate",
+   "setup": "What-If World (UCLA / University of Tennessee, arXiv:2605.27589v1, CC BY 4.0): 319 driving (nuScenes) and robot-manipulation (DROID) scenes; from one real initial frame each model generates two videos for a minimally different prompt pair (an intervention on one causal variable: force, timing, friction, material, obstacle, alignment). Gemini 3.1 Pro judges Adherence, Physics, Environment and Outcome on the pair; pAvg (the paper's primary paired metric) is the mean paired pass rate, as printed in Table 2; stored /100. Open models run by the authors with their public default inference settings on RTX A6000s; closed models via hosted APIs (kie.ai).",
+   "score_unit": "fraction (printed pass rate % / 100)",
+   "caveats": [
+    "Closed models accessed through the kie.ai reseller; vendor tiers not stated.",
+    "Not imported: CogVideoX1.5-5B (T2V vs I2V checkpoint not stated), 'Cosmos-Predict2-2B' (the table names Predict2 but the citation is the Cosmos-Predict2.5 report), 'Kling 3.0' (cited as the Kling-Omni report, so Kling 3.0 vs Kling 3.0 Omni is unclear)."
+   ],
+   "suggested_tasks": [
+    "image-to-video"
+   ]
+  },
+  {
+   "id": "cronos-i2v-success-rate",
+   "name": "CRONOS counterfactual rigid-body physics (I2V success rate)",
+   "category": "video",
+   "kind": "acc",
+   "url": "https://arxiv.org/html/2605.23699v1",
+   "metric": "success_rate",
+   "setup": "CRONOS (University of Freiburg / MPI Informatics / CISPA, arXiv:2605.23699v1, CC BY 4.0): synthetic rigid-body scenes (falls, collisions) with controlled counterfactual interventions; each model continues the scene from the first frame (I2V). Per-video metrics (background stability, motion similarity to the simulator ground truth, appearance and 3D-shape stability, physical plausibility) are thresholded with human-calibrated cut-offs; a video counts as a success only if every metric passes. Score = fraction of successful videos averaged over all videos, as printed in Table 1 (I2V block). All models run by the authors with open weights.",
+   "score_unit": "fraction (printed success rate)",
+   "caveats": [
+    "Success rates are near the floor for weaker models (0.01-0.02), so the test separates mainly the top models.",
+    "Only the I2V block is used; the V2V block (five conditioning frames, Cosmos and MAGI-1 only) is a different setting.",
+    "CogVideoX1.5-5B row not imported (the catalogue has no CogVideoX1.5 I2V checkpoint entry)."
+   ],
+   "suggested_tasks": [
+    "image-to-video"
+   ]
+  }
+ ],
+ "ledger": [
+  {
+   "action": "new",
+   "id": "card3-canberkkkkkk-ema-lightning",
+   "name": "EMA Lightning model card (canberkkkkkk/ema-lightning), Benchmarks: Freya-TR-Eval",
+   "kind": "first-party",
+   "match": [
+    "huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md"
+   ],
+   "exact": true,
+   "license": "Apache-2.0",
+   "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "terms_url": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md",
+   "quote": "README front matter at the pinned revision: 'license: apache-2.0'; card text: 'A 5.6M-parameter DiT acoustic model and a 3M-parameter vocoder ... Apache 2.0.' Benchmarks section: 'Our runs (every row without †): all 495 sentences, 3 seeds or takes, raw text in, an 8 kHz band, Whisper large-v3 with beam 5, and Freya's text normalisation. ElevenLabs uses its default voice (George) with default settings. Gemini uses the voice Kore.' and '† marks numbers as reported on the Anka TTS model card.'",
+   "attribution": "EMA Lightning model card by canberkkkkkk (Hugging Face), Apache-2.0. Changes: WER % divided by 100; only rows without † used.",
+   "scope": "Benchmarks table (Freya-TR-Eval, all 495 sentences): WER of the rows without † (EMA Lightning, Trendyol-TTS, Gemini 3.8 Flash-Lite, Gemini 3.8 Flash, ElevenLabs v4, ElevenLabs v4 Turbo, Antalia 1). † rows (copied from the Anka TTS card) not used.",
+   "verdict": "allowed",
+   "checked": "2026-10-10",
+   "icon": "huggingface.co"
+  },
+  {
+   "action": "new",
+   "id": "card3-cloud0day3-antalia-mini",
+   "name": "Antalia-2 Mini model card (cloud0day3/antalia-mini), public Freya-TR-Eval re-run table",
+   "kind": "first-party",
+   "match": [
+    "huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md"
+   ],
+   "exact": true,
+   "license": "Apache-2.0",
+   "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "terms_url": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md",
+   "quote": "README front matter at the pinned revision: 'license: apache-2.0'. 'We also keep an independent re-run of Freya-TR-Eval for every Turkish system we could run, at speech.patientdesk.ai/benchmarks (scripts and per-clip transcripts: PatientdeskAI/freya-tr-eval-rerun). It uses EMA Lightning's published eval.py for scoring, 3 seeded takes per system, and one NVIDIA L4 for speed'. The scripts dataset PatientdeskAI/freya-tr-eval-rerun (license: apache-2.0, pinned d5edf41) names each system's exact checkpoint (harness/systems/run_*.py, synth_api.py).",
+   "attribution": "Antalia-2 Mini model card by Sezgin Saygili, Emre Kaplaner, Oncel Ozgul and Fikri San Koktas (Patientdesk.ai), Apache-2.0. Changes: WER % divided by 100.",
+   "scope": "'On the public benchmark page' table (15 systems): WER column for systems with a pinned catalogue identity. Not used: Anka TTS, Alania-1/2 (no public checkpoint pinned), Chatterbox Multilingual (pip package version not pinned), and the card's first table (Antalia-2 Mini vs EMA vs VoxCPM2 teacher, a separate harness).",
+   "verdict": "allowed",
+   "checked": "2026-10-10",
+   "icon": "huggingface.co"
+  },
+  {
+   "action": "add_match",
+   "id": "first-party-elevenlabs",
+   "add_match": [
+    "elevenlabs.io/docs/overview/models",
+    "elevenlabs.io/docs/changelog"
+   ],
+   "note": "ElevenLabs' own model docs (model_id strings eleven_v4, eleven_v4_turbo) and changelog (2026-09-28 'Eleven v4 and Eleven v4 Turbo are now available'), observed 2026-10-10; identity/release facts only. Prices still come from elevenlabs.io/pricing/api (already matched). Also observed there: Eleven v3 Conversational now lists $0.04 per 1K characters (the catalogue price_note says $0.05, observed 2026-09-25)."
+  },
+  {
+   "action": "new",
+   "id": "visual-multitextedit-ccby",
+   "name": "MultiTextEdit: Benchmarking Cross-Lingual Degradation in Text-in-Image Editing (arXiv:2605.08163v2), Table 3",
+   "kind": "paper",
+   "match": [
+    "arxiv.org/html/2605.08163v2"
+   ],
+   "exact": true,
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "terms_url": "https://arxiv.org/abs/2605.08163v2",
+   "quote": "arXiv abs page for 2605.08163 (v2, 18 May 2026) links http://creativecommons.org/licenses/by/4.0/; HTML header 'License: CC BY 4.0'. Sec. 5: 'We evaluate a diverse set of open-source and proprietary image editing systems on MultiTextEdit. All open-source model inference and the automatic evaluation pipeline are conducted on eight NVIDIA A800 GPUs. For each evaluated system, we follow the official inference pipeline and adopt the highest-quality inference settings recommended by the provider ... For proprietary systems, we access their official APIs'. Authors (Harbin Institute of Technology) built none of the evaluated systems.",
+   "attribution": "Liwei Cheng, Shibo Feng, Lunjie Zhou, Yixuan Guan, Dayan Guan, 'MultiTextEdit: Benchmarking Cross-Lingual Degradation in Text-in-Image Editing', arXiv:2605.08163v2 (2026), CC BY 4.0. Changes: SemAvg divided by 5. No endorsement.",
+   "scope": "Table 3 SemAvg column for nine catalogue editing systems (Step1X-Edit rows not used; Bagel-thinking used for BAGEL).",
+   "verdict": "allowed",
+   "checked": "2026-10-10",
+   "evidence_url": "https://arxiv.org/abs/2605.08163v2",
+   "icon": "arxiv.org"
+  },
+  {
+   "action": "new",
+   "id": "visual-whatif-world-ccby",
+   "name": "What-If World: A Causal Benchmark for General World Models in Embodied Scenarios (arXiv:2605.27589v1), Table 2",
+   "kind": "paper",
+   "match": [
+    "arxiv.org/html/2605.27589v1"
+   ],
+   "exact": true,
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "terms_url": "https://arxiv.org/abs/2605.27589v1",
+   "quote": "arXiv abs page for 2605.27589v1 links http://creativecommons.org/licenses/by/4.0/; HTML header 'License: CC BY 4.0'. Sec. 4: 'We evaluate nine video generation models spanning both open-source and closed-source tiers ... All models receive the same initial frame x0 and prompt pair'; App. A.2: 'For every open-source model we used the publicly released default inference configuration' and 'The five closed-source generation models ... were accessed through hosted APIs via kie.ai, and each pair was scored by Gemini 3.1 Pro as a VLM judge'. Authors (UCLA, University of Tennessee) built none of the evaluated models.",
+   "attribution": "Kunlin Cai, Rui Song, Jinghuai Zhang, Kaiyuan Zhang, Pranav Bodapati, Alicia Yu, Fnu Suya, Mohammad Rostami, Jiaqi Ma, Yuan Tian, 'What-If World: A Causal Benchmark for General World Models in Embodied Scenarios', arXiv:2605.27589v1 (2026), CC BY 4.0. Changes: pAvg divided by 100. No endorsement.",
+   "scope": "Table 2 pAvg column for six catalogue video models (CogVideoX1.5, Cosmos-Predict2 and Kling 3.0 rows not used; see benchmark caveats).",
+   "verdict": "allowed",
+   "checked": "2026-10-10",
+   "evidence_url": "https://arxiv.org/abs/2605.27589v1",
+   "icon": "arxiv.org"
+  },
+  {
+   "action": "new",
+   "id": "visual-cronos-ccby",
+   "name": "CRONOS: Benchmarking Counterfactual Physical Consistency in Video Models (arXiv:2605.23699v1), Table 1",
+   "kind": "paper",
+   "match": [
+    "arxiv.org/html/2605.23699v1"
+   ],
+   "exact": true,
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "terms_url": "https://arxiv.org/abs/2605.23699v1",
+   "quote": "arXiv abs page for 2605.23699v1 links http://creativecommons.org/licenses/by/4.0/; HTML header 'License: CC BY 4.0'. Sec. 4.1: 'Our evaluation includes several state-of-the-art open-source video generation models: Cosmos2.5 [1], CogVideoX1.5 [50], MAGI-1 [45], and Wan2.2 [49]. For Cosmos, we evaluate the two available model sizes 2B and 14B ... All models are evaluated in the I2V setting using the first frame.' Authors (Freiburg, MPI Informatics, CISPA) built none of the evaluated models.",
+   "attribution": "León Begiristain, Olaf Dünkel, Adam Kortylewski, 'CRONOS: Benchmarking Counterfactual Physical Consistency in Video Models', arXiv:2605.23699v1 (2026), CC BY 4.0. No endorsement.",
+   "scope": "Table 1 I2V 'Success Rate' column for Cosmos2.5-2B, Cosmos2.5-14B, MAGI-1-4.5B and Wan2.2-14B (CogVideoX1.5-5B and the V2V block not used).",
+   "verdict": "allowed",
+   "checked": "2026-10-10",
+   "evidence_url": "https://arxiv.org/abs/2605.23699v1",
+   "icon": "arxiv.org"
+  }
+ ],
+ "gaps": [
+  {
+   "model": "Yume 1.5 (stdstu123/Yume-5B-720P, Shanghai AI Laboratory)",
+   "category": "video",
+   "why": "Identity is clean (Apache-2.0, Yume-1.5 card) and Rapidata rates it in three datasets, but every rating is below the importer's Elo plausibility floor of 500 (relative camera 184.3, I2V realism 143.746, physics with-reference 251), so check.ts rejects the rows. Not proposed."
+  },
+  {
+   "model": "Rapidata world models: Sana WM, Alaya World, Dream X World, 'Cosmos Predict 2.5', 'Cosmos 2.5'",
+   "category": "video",
+   "why": "Checkpoint not stated (SANA-WM bidirectional vs chunk-causal; AlayaWorld v1 vs v1.1; DreamX-World-5B vs -Cam; Cosmos size not given), the camera-movement runs used 'camera-controlled builds', and several ratings fall below 500. Not proposed."
+  },
+  {
+   "model": "InternVL-U (Tian et al., 2026), UniReason1.0, UniWorld-V2, LongCat-Next, NextFlow",
+   "category": "image",
+   "why": "Rated in Edit-Compass / ChartSync / GEBench / WISE Table 11, but no public checkpoint with a pinned identity was found on Hugging Face in this pass (UniWorld-V2 is released as LoRA/finetunes of other editors). Not proposed."
+  },
+  {
+   "model": "VAREdit-8B (HiDream-ai/VAREdit)",
+   "category": "image",
+   "why": "WEAVE Table 2 Avg 0.603, but the repo holds two 8B checkpoints (8B-512.pth and 8B-1024.pth) and WEAVE does not say which. Not proposed."
+  },
+  {
+   "model": "SANA-Video 2B (Efficient-Large-Model)",
+   "category": "video",
+   "why": "VideoArgus T2V 7.54 / TI2V 5.89, but 480p (Oct 2025) and 720p (Mar 2026) 2B checkpoints both exist and the paper names neither. Not proposed."
+  },
+  {
+   "model": "LTX-Video 2B / 13B (Lightricks/LTX-Video)",
+   "category": "video",
+   "why": "PAI-Bench, VideoArgus and MechVerse rows name only the size; the repo holds many 0.9.x versions (0.9.7/0.9.8 dev and distilled for 13B). Not mapped."
+  },
+  {
+   "model": "Imagen 4 Fast discontinuation",
+   "category": "image",
+   "why": "Added with api (Google Cloud pricing page still lists $0.02/image on 2026-10-10), but the Vertex AI model page lists a discontinuation date of 30 Jun 2026 for imagen-4.0-fast-generate-001; if the owner treats it as retired, set api to null (it still anchors two Rapidata runs)."
+  },
+  {
+   "model": "Anka TTS v0.1, Alania-1 / Alania-2 (Patientdesk production API), Chatterbox Multilingual (pip chatterbox-tts)",
+   "category": "tts",
+   "why": "Rated in the Freya-TR-Eval re-run but without a pinned public checkpoint (Anka loads 'anka-tts/v0.1' through its own pip package; Alania are private APIs; the Chatterbox multilingual weights depend on the unpinned pip version). Not proposed."
+  },
+  {
+   "model": "Pocket TTS (Kyutai), Kitten TTS Mini 0.8, KittenTTS 2, Chatterbox Turbo, Dia 1.6B 0626, Breeze TTS 2, Cartesia Sonic 3.6, Eleven v3 Conversational, MiniMax Speech 2.6 HD, Hume Octave 2, Azure HD 2.5, Polly Generative, Smallest Lightning v3.1 Pro",
+   "category": "tts",
+   "why": "Still no allowed result. Checked: Pocket TTS card is gated and its CALM paper (arXiv 2509.06926) is CC BY-NC-SA; Chatterbox-Flash (arXiv 2605.30748, compares Chatterbox Turbo) has the arXiv non-exclusive licence; carun/tts-bench, Rime alpha bench, EmergentTTS and the Vapi/Arabic arenas are unchanged; TTS Arena V2 still has no data licence; HF TTS cards since 2026-06-15 (Paradee, Audio8-TTS-Preview, ZeroTTS, KugelAudio) either have no own-run statement or no catalogue comparators for these models."
+  },
+  {
+   "model": "MAI-Voice-2, IndexTTS-2.5, Gepard 1.1",
+   "category": "tts",
+   "why": "Unchanged from pass 8: no allowed result on a benchmark id (Gepard 1.1's card table still reports 1.0)."
+  },
+  {
+   "model": "MAI-Transcribe-2, Gladia Solaria-3",
+   "category": "stt",
+   "why": "No allowed result. Pipecat (HEAD 94f5672), verli (bfb5142), OpenBench (e13108070b), koedesk and Picovoice (aea7914, already pinned) are at their pinned commits; the Persian Triple Threat board only rates OpenRouter-gateway runs of these vendors, which the benchmark's setup excludes."
+  }
+ ],
+ "checked": [
+  {
+   "source": "110 allowed image/video ledger documents (arXiv HTML pins, HF/GitHub README pins; scratchpad p9-media/ledger)",
+   "outcome": "All tables re-extracted; per-table lists of non-catalogue row labels reviewed. Used: PAI-Bench Table 3 + App. Table 8 (7 new video models), Cosmos 3 report Table 14 HUE (Cosmos-Predict2.5 2B/14B, NVIDIA = lab), PhyGround Table 2, WROP Table 2, VideoArgus Table 2, WorldReasonBench Table 4, Rapidata relative-camera / I2V-realism (MiniMax H3 Max) and 6M / Face (Imagen 4 Fast, MiniMax image-01), EdiVal Table 3 (+App. M.5 checkpoints), Edit-Compass Table 3 (EN), WEAVE Table 2, UnicBench Table 4, ViGoR Table 3, ChartSync Table 2 (+Table 7 settings), WISE v4 App. Table 11 (also adds LongCat-Image and HunyuanImage 3.0 rows), MMMG Table 2, HPSv3 README benchmark, UltraText Table 5."
+  },
+  {
+   "source": "295 openly licensed cs.CV papers (cv_lic.json, created >= 2026-05-15, generation + evaluation keywords, excluding the 1,185 pass-8 fork-B downloads)",
+   "outcome": "Tables scanned for >= 4 catalogue models. New benchmarks: MultiTextEdit (arXiv 2605.08163v2), What-If World (2605.27589v1), CRONOS (2605.23699v1). Not used: LongAV-Compass (2605.26244, diagnostics only, no overall), WBench (2605.25874, world models mostly uncatalogued), Tuna-2 / SRUM (compiled GenEval/DPG tables), Skyra and AIGDoc (detection datasets), CogOmniControl and Aurora (method papers; baselines' versions unclear), WorldArena 2.0 (no overall score), BeyondMasks (object-removal methods)."
+  },
+  {
+   "source": "https://huggingface.co/canberkkkkkk/ema-lightning (@7a6ba1a) and https://huggingface.co/cloud0day3/antalia-mini (@1e8166a), Apache-2.0",
+   "outcome": "Two independent Freya-TR-Eval runs (EMA's 'Our runs' rows; Patientdesk.ai's 15-system re-run with scripts in PatientdeskAI/freya-tr-eval-rerun@d5edf41). New benchmark freya-tr-eval-wer; 18 rows; scores gemini-3-8-flash-tts, gemini-3-8-flash-lite-tts and coqui-tr-common-voice-glow-tts for the first time and adds Eleven v4 / v4 Turbo."
+  },
+  {
+   "source": "Hugging Face text-to-speech models created since 2026-06-15 with open licences (hfscan-tts.json)",
+   "outcome": "~30 cards with >= 2 catalogue names in tables reviewed; only the EMA Lightning and Antalia-2 Mini cards had own-run multi-model tables. Paradee's table is already imported via its CC BY paper."
+  },
+  {
+   "source": "Pinned speech ledger sources vs HEAD (53 entries)",
+   "outcome": "Moved: open_asr_leaderboard (60e2e3b, script-only changes; scripts/data CSVs unchanged), transcribe.cpp (c63b18e, adds only silero-vad), raven.eval (3a42a94, adds primeline on fhnw-all-dialects with n=2875 vs n=50 for the Grok rows, so no comparable run), Persian Triple Threat (6f5bf49, adds a community Nemotron fine-tune only), Arabic TTS Arena (fb0c64f, no new models), Bangla riverborn (leaderboard.csv byte-identical). No rows proposed from these."
+  },
+  {
+   "source": "https://elevenlabs.io/docs/overview/models, /docs/changelog, /pricing/api (observed 2026-10-10)",
+   "outcome": "eleven_v4 and eleven_v4_turbo, launched 2026-09-28; list $0.08 and $0.04 per 1K characters (72% launch discount until Oct 12). Also: Eleven v3 Conversational now lists $0.04 per 1K (catalogue says $0.05, observed 2026-09-25)."
+  },
+  {
+   "source": "https://platform.minimax.io/docs/guides/pricing-paygo.md (observed 2026-10-10)",
+   "outcome": "MiniMax-H3-Max $0.05/s 480P, $0.08/s 768P; image-01 $0.0035 per image."
+  },
+  {
+   "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing and the Vertex AI Imagen 4 Fast model page (observed 2026-10-10)",
+   "outcome": "Imagen 4 Fast $0.02/image; model id imagen-4.0-fast-generate-001, GA 2025-08-14, listed discontinuation date 2026-06-30 (see gaps)."
+  }
+ ],
+ "held_for_owner": [
+  {
+   "item": "NextStep-1 mapping",
+   "detail": "Edit-Compass 'Nextstep-V1', UnicBench 'NextStep-1 [34]' and WEAVE 'NextStep-1-Large [66] 15B' are mapped to stepfun-ai/NextStep-1-Large-Edit because all three are editing benchmarks and that is the only public NextStep-1 checkpoint fine-tuned for editing. Drop the three rows if the owner prefers an explicit checkpoint name."
+  },
+  {
+   "item": "Rows that need a checkpoint decision",
+   "detail": "MagicBrush in Edit-Compass (1.33/5), UnicBench (2.3407/10) and WEAVE GEdit (not a benchmark id): unversioned (magicbrush-jul7 vs magicbrush-paper). UltraEdit in Edit-Compass (1.28/5) and WEAVE (0.522, 'UltraEdit(SD3)'): w_mask vs freeform SD3 checkpoint. HiDream-E1 in Edit-Compass (1.76/5): E1-Full vs E1.1. Boogu-Image-0.1-Turbo in UltraText (67.79): original vs 2026-06-25 hotfix weights. EMU3.5 in Edit-Compass (2.66/5): Emu3.5 vs Emu3.5-Image."
+  },
+  {
+   "item": "MAGI-1 24B in WROP (1248.0)",
+   "detail": "Sand AI uploaded MAGI-1.1 24B weights to the same repo in June 2026; WROP (Sep 2026) does not say 1.0 or 1.1, so the row is not mapped to magi-1-24b."
+  },
+  {
+   "item": "Kling v3 Omni (VideoArgus T2V 8.61, TI2V 8.41)",
+   "detail": "Kling 3.0 Omni = Kling O3; the catalogue has only kling-o3-pro and the paper gives no tier. Map to kling-o3-pro if the owner accepts the Pro default."
+  },
+  {
+   "item": "Freya-TR-Eval evaluators build Turkish TTS",
+   "detail": "Both Freya-TR-Eval runs come from authors of competing Turkish TTS models (EMA Lightning; Patientdesk.ai's Antalia/Alania); their own rows are by: lab and the scoring follows the same published eval.py. The benchmark measures Turkish intelligibility only."
+  },
+  {
+   "item": "Maker logos",
+   "detail": "New providers without a logo: Sand AI, CUHK / Tencent AI Lab (DynamiCrafter), Ohio State University (OSU NLP), Zhejiang University / NUS (AnyEdit), Peking University / BIGAI (UltraEdit), Skywork AI, DeepGen Team, JD (JoyAI), ByteDance (FoundationVision), Boogu project, EMA Lightning (canberkkkkkk), Trendyol, Patientdesk.ai, Freya Voice. check.ts only warns."
+  },
+  {
+   "item": "Eleven v3 Conversational price",
+   "detail": "ElevenLabs' API pricing page now shows $0.04 per 1K characters for v3 Conversational (catalogue price_note: $0.05, observed 2026-09-25). Not changed here."
+  }
+ ]
+}

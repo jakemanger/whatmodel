@@ -391,7 +391,8 @@
       "servimage-task-acceptance",
       "cedit-bench-en-overall",
       "cedit-bench-cn-overall",
-      "omnicontext-average"
+      "omnicontext-average",
+      "multitextedit-semavg"
     ]
   },
   {
@@ -454,7 +455,9 @@
       "worldreasonbench-human-elo",
       "pai-bench-g-overall",
       "pai-bench-g-human-elo",
-      "cosmos-hue-i2v-human"
+      "cosmos-hue-i2v-human",
+      "whatif-world-apeo-pavg",
+      "cronos-i2v-success-rate"
     ]
   },
   {

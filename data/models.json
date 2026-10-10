@@ -46762,5 +46762,1303 @@
         "reported_label": "NVILA-15B (link https://huggingface.co/Efficient-Large-Model/NVILA-15B)"
       }
     ]
+  },
+  {
+    "id": "cosmos-predict2-5-2b",
+    "name": "Cosmos-Predict2.5-2B",
+    "provider": "NVIDIA",
+    "category": "video",
+    "released": "2025-10",
+    "released_source": "https://github.com/nvidia-cosmos/cosmos-predict2.5/blob/a2c298b0a3df3778b973fe65e9e58877b292d8a7/README.md",
+    "open_weights": true,
+    "license": "nvidia-open-model-license",
+    "license_source": "https://huggingface.co/nvidia/Cosmos-Predict2.5-2B/tree/85f8ae7bfe8f5525c8d103429524dcf12f98bf7b",
+    "params_b": 2,
+    "params_note": "2B as named by NVIDIA (the size in the model name); the HF repo is gated (automatic approval), so no safetensors count was read. Text encoder and tokenizer not included.",
+    "model_repo": "https://huggingface.co/nvidia/Cosmos-Predict2.5-2B",
+    "identity_note": "NVIDIA Cosmos-Predict2.5 2B world foundation model (one checkpoint covering Text2World / Image2World / Video2World), released 6 Oct 2025 (cosmos-predict2.5 README news). HF repo nvidia/Cosmos-Predict2.5-2B pinned 85f8ae7 (gated, automatic approval; licence 'other' = NVIDIA Open Model License). PAI-Bench Table 12 pins the checkpoint as Version 'base/post-trained' (the repo's base/post-trained folder) at 93 frames, 16 fps, 1280x704; PhyGround Appendix lists 'Cosmos-Predict2.5-2B' (93 frames, 16 fps, 1280x704, 36 steps) as its 'Cosmos-2B' row; the Cosmos 3 report (NVIDIA) runs it as 'Cosmos-Predict2.5-2B' on Cosmos HUE. Comparison-only: no local command was verified in this pass (the official route is the cosmos-predict2.5 repo or the diffusers Cosmos2_5_PredictBasePipeline). Distinct from cosmos3-nano / cosmos3-super and the older cosmos-1-0-* entries. Not mapped: Rapidata 'Cosmos Predict 2.5' rows (size not stated).",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2512.01989v1",
+        "reported_label": "Cosmos-Predict2.5-2B [4] (Table 12 Version: base/post-trained; 93 frames, 16 FPS, 1280x704)"
+      },
+      {
+        "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+        "reported_label": "Cosmos-Predict2.5-2B (Open-sourced)"
+      },
+      {
+        "source": "https://arxiv.org/html/2605.10806v1#S4.T2",
+        "reported_label": "Cosmos-2B; Appendix generation table 'Cosmos-Predict2.5-2B'"
+      },
+      {
+        "source": "https://github.com/nvidia-cosmos/cosmos-predict2.5/blob/a2c298b0a3df3778b973fe65e9e58877b292d8a7/README.md",
+        "reported_label": "[October 6, 2025] We released Cosmos-Predict2.5 ..."
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "cosmos-predict2-5-14b",
+    "name": "Cosmos-Predict2.5-14B",
+    "provider": "NVIDIA",
+    "category": "video",
+    "released": "2025-12",
+    "released_source": "https://github.com/nvidia-cosmos/cosmos-predict2.5/blob/a2c298b0a3df3778b973fe65e9e58877b292d8a7/README.md",
+    "open_weights": true,
+    "license": "nvidia-open-model-license",
+    "license_source": "https://huggingface.co/nvidia/Cosmos-Predict2.5-14B/blob/18839bf38537b31f191f2ec834a4d9181ee09ca2/README.md",
+    "params_b": 14,
+    "params_note": "14B as named by NVIDIA (model name). Text encoder and tokenizer not included.",
+    "model_repo": "https://huggingface.co/nvidia/Cosmos-Predict2.5-14B",
+    "identity_note": "NVIDIA Cosmos-Predict2.5 14B base model, released 5 Dec 2025 (cosmos-predict2.5 README: 'Released Cosmos-Predict2.5-14B base models'); HF nvidia/Cosmos-Predict2.5-14B pinned 18839bf (NVIDIA Open Model License per card). PhyGround's 'Cosmos-14B' row is listed in its Appendix generation table as 'Cosmos-Predict2.5-14B' (93 frames, 16 fps, 1280x704); the Cosmos 3 report (NVIDIA) runs 'Cosmos-Predict2.5-14B' on Cosmos HUE. Comparison-only: no local command verified in this pass.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+        "reported_label": "Cosmos-Predict2.5-14B (Open-sourced)"
+      },
+      {
+        "source": "https://arxiv.org/html/2605.10806v1#S4.T2",
+        "reported_label": "Cosmos-14B; Appendix generation table 'Cosmos-Predict2.5-14B'"
+      },
+      {
+        "source": "https://huggingface.co/nvidia/Cosmos-Predict2.5-14B/blob/18839bf38537b31f191f2ec834a4d9181ee09ca2/README.md",
+        "reported_label": "nvidia/Cosmos-Predict2.5-14B model card"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "cosmos-predict2-2b-video2world",
+    "name": "Cosmos-Predict2-2B-Video2World",
+    "provider": "NVIDIA",
+    "category": "video",
+    "released": "2025-06",
+    "released_source": "https://github.com/nvidia-cosmos/cosmos-predict2/blob/661da4774b0ca41d082a0ecbeb47550bcf07e03f/README.md",
+    "open_weights": true,
+    "license": "nvidia-open-model-license",
+    "license_source": "https://huggingface.co/nvidia/Cosmos-Predict2-2B-Video2World/tree/f50c09f5d8ab133a90cac3f4886a6471e9ba3f18",
+    "params_b": 2,
+    "params_note": "2B as named by NVIDIA (model name); repo gated (automatic approval), safetensors not read.",
+    "model_repo": "https://huggingface.co/nvidia/Cosmos-Predict2-2B-Video2World",
+    "identity_note": "NVIDIA Cosmos-Predict2 2B Video2World (image/video-conditioned) checkpoint, weights released 11 Jun 2025 (cosmos-predict2 README: 'We released post-training and inference code, along with model weights'); HF nvidia/Cosmos-Predict2-2B-Video2World pinned f50c09f (gated, automatic approval). PAI-Bench-G is image-conditioned generation and its Table 12 lists 'Cosmos-Predict2-2B' at 93 frames, 16 fps, 1280x704 (the Video2World default output), so the row maps to the Video2World checkpoint, not the separate Text2Image repo. Comparison-only: no local command verified in this pass.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2512.01989v1",
+        "reported_label": "Cosmos-Predict2-2B [4] (Table 12: 93 frames, 16 FPS, 1280x704)"
+      },
+      {
+        "source": "https://github.com/nvidia-cosmos/cosmos-predict2/blob/661da4774b0ca41d082a0ecbeb47550bcf07e03f/README.md",
+        "reported_label": "2025-06-11: We released post-training and inference code, along with model weights."
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "cosmos-predict2-14b-video2world",
+    "name": "Cosmos-Predict2-14B-Video2World",
+    "provider": "NVIDIA",
+    "category": "video",
+    "released": "2025-06",
+    "released_source": "https://github.com/nvidia-cosmos/cosmos-predict2/blob/661da4774b0ca41d082a0ecbeb47550bcf07e03f/README.md",
+    "open_weights": true,
+    "license": "nvidia-open-model-license",
+    "license_source": "https://huggingface.co/nvidia/Cosmos-Predict2-14B-Video2World/tree/03b03a377fede782647afac998f674d9f358e319",
+    "params_b": 14,
+    "params_note": "14B as named by NVIDIA (model name); repo gated (automatic approval), safetensors not read.",
+    "model_repo": "https://huggingface.co/nvidia/Cosmos-Predict2-14B-Video2World",
+    "identity_note": "NVIDIA Cosmos-Predict2 14B Video2World (image/video-conditioned) checkpoint, weights released 11 Jun 2025 (cosmos-predict2 README: 'We released post-training and inference code, along with model weights'); HF nvidia/Cosmos-Predict2-14B-Video2World pinned 03b03a3 (gated, automatic approval). PAI-Bench-G is image-conditioned generation and its Table 12 lists 'Cosmos-Predict2-14B' at 93 frames, 16 fps, 1280x704 (the Video2World default output), so the row maps to the Video2World checkpoint, not the separate Text2Image repo. Comparison-only: no local command verified in this pass.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2512.01989v1",
+        "reported_label": "Cosmos-Predict2-14B [4] (Table 12: 93 frames, 16 FPS, 1280x704)"
+      },
+      {
+        "source": "https://github.com/nvidia-cosmos/cosmos-predict2/blob/661da4774b0ca41d082a0ecbeb47550bcf07e03f/README.md",
+        "reported_label": "2025-06-11: We released post-training and inference code, along with model weights."
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "magi-1-24b",
+    "name": "MAGI-1 24B",
+    "provider": "Sand AI",
+    "category": "video",
+    "released": "2025-04",
+    "released_source": "https://huggingface.co/sand-ai/MAGI-1/blob/ca8bdfb28b1d88a29ec2a3ea423029f801a891bd/README.md",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/sand-ai/MAGI-1/blob/ca8bdfb28b1d88a29ec2a3ea423029f801a891bd/README.md",
+    "params_b": 24,
+    "params_note": "24B as named by Sand AI (model table 'MAGI-1-24B'); T5 text encoder and VAE separate.",
+    "model_repo": "https://huggingface.co/sand-ai/MAGI-1",
+    "identity_note": "Sand AI's MAGI-1 autoregressive video model, 24B base checkpoint (repo folder ckpt/magi/24B_base; README model table row 'MAGI-1-24B'), released 21 Apr 2025. Pinned sand-ai/MAGI-1@ca8bdfb. PAI-Bench (Dec 2025) lists 'MAGI-1-24B' at 120 frames, 24 fps, 1280x720. The repo also holds a 24B distill, an fp8 distill and, uploaded in June 2026, MAGI-1.1 24B weights; the Dec-2025 PAI-Bench row predates 1.1, so it is mapped here. The WROP (Sep 2026) 'MAGI-1 24B' row is NOT mapped because it could be the 1.1 upload (held). Comparison-only: no single-command local route verified (official route needs 8xH100 or 8xRTX 4090 per README).",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2512.01989v1",
+        "reported_label": "MAGI-1-24B [75] (Table 12: 120 frames, 24 FPS, 1280x720)"
+      },
+      {
+        "source": "https://huggingface.co/sand-ai/MAGI-1/blob/ca8bdfb28b1d88a29ec2a3ea423029f801a891bd/README.md",
+        "reported_label": "| MAGI-1-24B | ckpt/magi/24B_base | H100/H800 x 8 |; 'Apr 21, 2025: MAGI-1 is here'"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "magi-1-4-5b",
+    "name": "MAGI-1 4.5B",
+    "provider": "Sand AI",
+    "category": "video",
+    "released": "2025-04",
+    "released_source": "https://huggingface.co/sand-ai/MAGI-1/blob/ca8bdfb28b1d88a29ec2a3ea423029f801a891bd/README.md",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/sand-ai/MAGI-1/blob/ca8bdfb28b1d88a29ec2a3ea423029f801a891bd/README.md",
+    "params_b": 4.5,
+    "params_note": "4.5B as named by Sand AI (model table 'MAGI-1-4.5B').",
+    "model_repo": "https://huggingface.co/sand-ai/MAGI-1",
+    "identity_note": "Sand AI's MAGI-1 4.5B base checkpoint (ckpt/magi/4.5B_base; README row 'MAGI-1-4.5B'), released 30 Apr 2025; a 4.5B distill followed on 26 May 2025. PAI-Bench Table 12 lists 'MAGI-1-4.5B' at 720x720 (the README's default resolution for the 4.5B config), mapped to the base checkpoint named in the README table. Pinned sand-ai/MAGI-1@ca8bdfb. Comparison-only (README: runs on one RTX 4090; no single command verified).",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2512.01989v1",
+        "reported_label": "MAGI-1-4.5B [75] (Table 12: 120 frames, 24 FPS, 720x720)"
+      },
+      {
+        "source": "https://huggingface.co/sand-ai/MAGI-1/blob/ca8bdfb28b1d88a29ec2a3ea423029f801a891bd/README.md",
+        "reported_label": "| MAGI-1-4.5B | ckpt/magi/4.5B_base | RTX 4090 x 1 |; 'Apr 30, 2025: MAGI-1 4.5B model has been released'"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "wan-2-1-i2v-14b-720p",
+    "name": "Wan2.1-I2V-14B-720P",
+    "provider": "Alibaba",
+    "category": "video",
+    "released": "2025-02",
+    "released_source": "https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-720P/blob/8823af45fcc58a8aa999a54b04be9abc7d2aac98/README.md",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-720P/blob/8823af45fcc58a8aa999a54b04be9abc7d2aac98/README.md",
+    "params_b": 14,
+    "params_note": "14B as named by Alibaba (model name); text and image encoders and VAE separate.",
+    "model_repo": "https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-720P",
+    "identity_note": "Alibaba Wan2.1 image-to-video 14B checkpoint at 720P (Wan-AI/Wan2.1-I2V-14B-720P, pinned 8823af4), released 25 Feb 2025 with Wan2.1. PAI-Bench Table 12 gives the version 'Wan2.1-I2V-14B-720P' (81 frames, 16 fps, 1280x720). Distinct from the catalogued T2V wan-2-1-14b and the API-only wan-2-1-i2v-plus / -turbo. Comparison-only: local route not verified in this pass.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2512.01989v1",
+        "reported_label": "Wan2.1-I2V-14B [79] (Table 12 Version: Wan2.1-I2V-14B-720P)"
+      },
+      {
+        "source": "https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-720P/blob/8823af45fcc58a8aa999a54b04be9abc7d2aac98/README.md",
+        "reported_label": "Feb 25, 2025: We've released the inference code and weights of Wan2.1."
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "dynamicrafter-1024",
+    "name": "DynamiCrafter (1024)",
+    "provider": "CUHK / Tencent AI Lab (DynamiCrafter)",
+    "category": "video",
+    "released": "2024-02",
+    "released_source": "https://huggingface.co/api/models/Doubiiu/DynamiCrafter_1024",
+    "open_weights": true,
+    "model_repo": "https://huggingface.co/Doubiiu/DynamiCrafter_1024",
+    "identity_note": "DynamiCrafter image-animation model (Xing et al., ECCV 2024), 1024x576 checkpoint Doubiiu/DynamiCrafter_1024 (pinned 73398ed; repo created 2024-02-03 per the HF API). PAI-Bench Table 12 gives the version 'DynamiCrafter_1024' (16 frames, 8 fps, 1024x576). The card states no licence in its metadata, so licence is left unset. Not mapped: MechVerse's 'DynamiCrafter' (resolution/checkpoint not stated). Comparison-only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2512.01989v1",
+        "reported_label": "DynamicCrafter [93] (Table 12 Version: DynamiCrafter_1024; 16 frames, 8 FPS, 1024x576)"
+      },
+      {
+        "source": "https://huggingface.co/Doubiiu/DynamiCrafter_1024/blob/73398ed78fa307316f355fdbbdc823564057f375/README.md",
+        "reported_label": "Doubiiu/DynamiCrafter_1024 model card"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "wan-2-1-vace-14b",
+    "name": "Wan2.1-VACE-14B",
+    "provider": "Alibaba",
+    "category": "video",
+    "released": "2025-05",
+    "released_source": "https://huggingface.co/api/models/Wan-AI/Wan2.1-VACE-14B",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Wan-AI/Wan2.1-VACE-14B/blob/539c162b1387eac9dc4c20bd3f74671309e76a4c/README.md",
+    "params_b": 14,
+    "params_note": "14B as named by Alibaba (model name, Wan2.1 14B backbone); VACE context blocks, text encoder and VAE not counted separately.",
+    "model_repo": "https://huggingface.co/Wan-AI/Wan2.1-VACE-14B",
+    "identity_note": "Alibaba's VACE all-in-one video creation/editing model on Wan2.1 14B (Wan-AI/Wan2.1-VACE-14B, pinned 539c162; repo created 2025-05-13). WROP Table 1 lists 'Wan-VACE 14B', open weights, run locally on multiple GPUs as an edit/transfer (repaint) generator at 832x480, 16 fps, 57 frames. There is one 14B VACE release on Wan2.1 (the 1.3B is separate). Comparison-only: local route not verified in this pass.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2609.28654v1#S5.T2",
+        "reported_label": "Wan-VACE 14B (Table 1: Local, multi-GPU; Edit / transfer (repaint); 832x480 / 16 / 57)"
+      },
+      {
+        "source": "https://huggingface.co/Wan-AI/Wan2.1-VACE-14B/blob/539c162b1387eac9dc4c20bd3f74671309e76a4c/README.md",
+        "reported_label": "Wan2.1-VACE-14B model card"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "hy-omniweaving",
+    "name": "HY-OmniWeaving",
+    "provider": "Tencent",
+    "category": "video",
+    "released": "2026-03",
+    "released_source": "https://huggingface.co/tencent/HY-OmniWeaving/blob/ddb4e6debe169398701dcc39b175f6a3c1a7538e/License.txt",
+    "open_weights": true,
+    "license": "tencent-hy-community",
+    "license_source": "https://huggingface.co/tencent/HY-OmniWeaving/blob/ddb4e6debe169398701dcc39b175f6a3c1a7538e/License.txt",
+    "params_b": 8.3,
+    "params_b_source": "https://arxiv.org/html/2608.05485v1#S3.T2",
+    "params_note": "8.3B as printed in the VideoArgus Table 2 #P column (same backbone size as HunyuanVideo-1.5).",
+    "model_repo": "https://huggingface.co/tencent/HY-OmniWeaving",
+    "identity_note": "Tencent Hunyuan's OmniWeaving unified video generation/editing model on HunyuanVideo-1.5 (tencent/HY-OmniWeaving, pinned ddb4e6d; code released 3 Apr 2026, paper arXiv 2603.24458). Single public checkpoint. Rows: VideoArgus 'OmniWeaving' (8.3B), PhyGround 'OmniWeaving' (848x480, 81 frames, 16 fps, 50 steps), WROP 'HY-OmniWeaving' (open-weight, local). Licence: License.txt 'TENCENT HY COMMUNITY LICENSE AGREEMENT', 'Tencent HY-OmniWeaving Release Date: March 31, 2026'. Comparison-only: local route not verified.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2608.05485v1#S3.T2",
+        "reported_label": "OmniWeaving | 8.3B"
+      },
+      {
+        "source": "https://arxiv.org/html/2605.10806v1#S4.T2",
+        "reported_label": "OmniWeaving"
+      },
+      {
+        "source": "https://arxiv.org/html/2609.28654v1#S5.T2",
+        "reported_label": "HY-OmniWeaving (Open-weight, Local, multi-GPU)"
+      },
+      {
+        "source": "https://huggingface.co/tencent/HY-OmniWeaving/blob/ddb4e6debe169398701dcc39b175f6a3c1a7538e/README.md",
+        "reported_label": "April 3, 2026: We release the code"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "stepvideo-t2v",
+    "name": "Step-Video-T2V",
+    "provider": "StepFun",
+    "category": "video",
+    "released": "2025-02",
+    "released_source": "https://huggingface.co/stepfun-ai/stepvideo-t2v/blob/7a2b639ca2685350e87a4df7e4026285309f7fb6/README.md",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/stepfun-ai/stepvideo-t2v/blob/7a2b639ca2685350e87a4df7e4026285309f7fb6/README.md",
+    "params_b": 30,
+    "params_b_source": "https://huggingface.co/stepfun-ai/stepvideo-t2v/blob/7a2b639ca2685350e87a4df7e4026285309f7fb6/README.md",
+    "params_note": "30B as stated by StepFun ('a state-of-the-art text-to-video pre-trained model with 30 billion parameters'); VideoArgus prints 29B.",
+    "model_repo": "https://huggingface.co/stepfun-ai/stepvideo-t2v",
+    "identity_note": "StepFun Step-Video-T2V (stepfun-ai/stepvideo-t2v, pinned 7a2b639). VideoArgus cites 'Step-Video [27, 14]' (the Step-Video-T2V and Step-Video-TI2V reports) with #P 29B; its T2V leaderboard row is mapped to the Step-Video-T2V checkpoint, the only StepFun model for that input mode (the -Turbo T2V distillation is a separate repo and is not assumed). Comparison-only: local route not verified (multi-GPU).",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2608.05485v1#S3.T2",
+        "reported_label": "Step-Video | 29B (T2V leaderboard)"
+      },
+      {
+        "source": "https://huggingface.co/stepfun-ai/stepvideo-t2v/blob/7a2b639ca2685350e87a4df7e4026285309f7fb6/README.md",
+        "reported_label": "release note in model card"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "stepvideo-ti2v",
+    "name": "Step-Video-TI2V",
+    "provider": "StepFun",
+    "category": "video",
+    "released": "2025-03",
+    "released_source": "https://huggingface.co/stepfun-ai/stepvideo-ti2v/blob/3d7471a88c57ddc1387b2eae46cd003dafbc8c5b/README.md",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/stepfun-ai/stepvideo-ti2v/blob/3d7471a88c57ddc1387b2eae46cd003dafbc8c5b/README.md",
+    "model_repo": "https://huggingface.co/stepfun-ai/stepvideo-ti2v",
+    "identity_note": "StepFun Step-Video-TI2V (stepfun-ai/stepvideo-ti2v, pinned 3d7471a). VideoArgus cites 'Step-Video [27, 14]' (the Step-Video-T2V and Step-Video-TI2V reports) with #P 29B; its TI2V leaderboard row is mapped to the Step-Video-TI2V checkpoint, the only StepFun model for that input mode (the -Turbo T2V distillation is a separate repo and is not assumed). Comparison-only: local route not verified (multi-GPU).",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2608.05485v1#S3.T2",
+        "reported_label": "Step-Video | 29B (TI2V leaderboard)"
+      },
+      {
+        "source": "https://huggingface.co/stepfun-ai/stepvideo-ti2v/blob/3d7471a88c57ddc1387b2eae46cd003dafbc8c5b/README.md",
+        "reported_label": "release note in model card"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "univideo",
+    "name": "UniVideo",
+    "provider": "Kuaishou (Kling AI)",
+    "category": "video",
+    "released": "2026-01",
+    "released_source": "https://huggingface.co/KlingTeam/UniVideo/blob/c84ceb49b87c05e3ba50333f32b4ec6ca2aec35e/README.md",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/KlingTeam/UniVideo/blob/c84ceb49b87c05e3ba50333f32b4ec6ca2aec35e/README.md",
+    "params_b": 13,
+    "params_b_source": "https://arxiv.org/html/2608.05485v1#S3.T2",
+    "params_note": "13B as printed in VideoArgus Table 2 #P column.",
+    "model_repo": "https://huggingface.co/KlingTeam/UniVideo",
+    "identity_note": "Kling Team's UniVideo unified video understanding/generation/editing model (arXiv 2510.08377; code and model released 7 Jan 2026 per the card; KlingTeam/UniVideo pinned c84ceb4). WorldReasonBench lists 'UniVideo' among open-source generators (TI2V). Single public checkpoint. Comparison-only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2605.10434v1#S4.T4",
+        "reported_label": "UniVideo (Human Elo 665)"
+      },
+      {
+        "source": "https://huggingface.co/KlingTeam/UniVideo/blob/c84ceb49b87c05e3ba50333f32b4ec6ca2aec35e/README.md",
+        "reported_label": "[2026-01-07]: Released Code and Model"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "minimax-h3-max",
+    "name": "MiniMax H3 Max",
+    "provider": "MiniMax",
+    "category": "video",
+    "released": "2026-09",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://platform.minimax.io/docs/guides/pricing-paygo.md",
+      "provider": "MiniMax",
+      "price": 0.08,
+      "unit": "video-second",
+      "price_source": "https://platform.minimax.io/docs/guides/pricing-paygo.md",
+      "price_note": "USD per generated second at 768P on MiniMax's pay-as-you-go Video Generation pricing: 'MiniMax-H3-Max | 768P | Billed per second | $0.08 / second' (480P $0.05/s; input images: first 2 free then $0.074 each; input video billed separately). Product: MiniMax Video Generation API. API model: MiniMax-H3-Max. Settings: 768P, text or first/last-frame image input. Price basis: published list rate. Currency: USD. MiniMax official pricing doc, observed 2026-10-10."
+    },
+    "identity_note": "MiniMax's MiniMax-H3-Max video model (API model name listed on MiniMax's own pay-as-you-go pricing doc next to MiniMax-H3; third-party coverage says it launched on 2 Sep 2026 as a fal.ai-post-trained fast variant of H3). No open weights (the catalogued minimax-h3 is the open MiniMaxAI/MiniMax-H3). Rapidata lists 'MiniMax H3 Max' (relative camera, commercial I2V via public API, default settings) and 'minimax-h3-max' (I2V realism), separately from 'MiniMax H3'. released month from the third-party launch reports, not a first-party page.",
+    "identity_evidence": [
+      {
+        "source": "https://platform.minimax.io/docs/guides/pricing-paygo.md",
+        "reported_label": "MiniMax-H3-Max | 480P $0.05 / second; 768P $0.08 / second",
+        "note": "observed 2026-10-10"
+      },
+      {
+        "source": "https://huggingface.co/datasets/Rapidata/relative-camera-movement-human-preference-900k/blob/e03ac787593bada12ac6b088d3d35da4716517c7/README.md#overall-ranking-elo-on-the-alignment-leaderboard",
+        "reported_label": "| 4 | MiniMax H3 Max | MiniMax | commercial image-to-video | 1271.6 |"
+      },
+      {
+        "source": "https://huggingface.co/datasets/Rapidata/image-to-video-realism/blob/d7abf89e71cb45fff0b08d70df389026cb78024f/README.md#overall-ranking",
+        "reported_label": "| 9 | minimax-h3-max | 1194.15 |"
+      }
+    ],
+    "local": null
+  },
+  {
+    "id": "magicbrush",
+    "name": "MagicBrush (InstructPix2Pix fine-tune, jul7)",
+    "provider": "Ohio State University (OSU NLP)",
+    "category": "image",
+    "released": "2023-07",
+    "released_source": "https://huggingface.co/api/models/vinesmsuic/magicbrush-jul7",
+    "open_weights": true,
+    "license": "creativeml-openrail-m",
+    "license_source": "https://huggingface.co/vinesmsuic/magicbrush-jul7/blob/d75a9f18439f67dbdc0ab113036f491ce2256c53/README.md",
+    "model_repo": "https://huggingface.co/vinesmsuic/magicbrush-jul7",
+    "identity_note": "MagicBrush (Zhang et al., NeurIPS 2023 Datasets & Benchmarks): InstructPix2Pix fine-tuned on the MagicBrush dataset. EdiVal Appendix pins 'Magicbrush: same settings as IP2P; model weights from https://huggingface.co/vinesmsuic/magicbrush-jul7' (pinned d75a9f1, created 2023-07-08; card licence creativeml-openrail-m). Only the EdiVal row is mapped; Edit-Compass, UnicBench, WEAVE and ImagenHub print 'MagicBrush' without naming the checkpoint (the same uploader also has magicbrush-paper), so those rows are held. Comparison-only: no local command verified.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2509.13399v3#S3.T3",
+        "reported_label": "†MagicBrush (date column 23.06.16); Appendix: model weights from https://huggingface.co/vinesmsuic/magicbrush-jul7"
+      },
+      {
+        "source": "https://huggingface.co/vinesmsuic/magicbrush-jul7/blob/d75a9f18439f67dbdc0ab113036f491ce2256c53/README.md",
+        "reported_label": "magicbrush-jul7 model card"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "anyedit",
+    "name": "AnyEdit (AnySD)",
+    "provider": "Zhejiang University / NUS (AnyEdit)",
+    "category": "image",
+    "released": "2025-02",
+    "released_source": "https://huggingface.co/api/models/WeiChow/AnySD",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/WeiChow/AnySD/blob/cafe016d1720e66cfda8096ca2eac25ea7b4d0c5/README.md",
+    "model_repo": "https://huggingface.co/WeiChow/AnySD",
+    "identity_note": "AnyEdit (Yu et al., CVPR 2025) released as the AnySD editing model (WeiChow/AnySD, pinned cafe016, created 2025-02-20, Apache-2.0); the card notes the public model was retrained on the cleaned AnyEdit data, so its numbers differ slightly from the paper. EdiVal pins 'AnyEdit: repository at https://github.com/weichow23/AnySD/tree/9e7d36e... with edit_type set to general'. Edit-Compass ('AnyEdit Yu et al. (2025)') and WEAVE ('AnyEdit [86] 1B') name the same single public release. WEAVE's first author Wei Chow is an AnyEdit author, so the WEAVE row is by: lab. Comparison-only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2509.13399v3#S3.T3",
+        "reported_label": "†AnyEdit (date column 24.11.24); Appendix: repository github.com/weichow23/AnySD@9e7d36e"
+      },
+      {
+        "source": "https://arxiv.org/html/2605.13062v1#S4.T3",
+        "reported_label": "AnyEdit Yu et al. (2025)"
+      },
+      {
+        "source": "https://arxiv.org/html/2511.11434v1#S4.T2",
+        "reported_label": "AnyEdit [86] | 1B"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "ultraedit-sd3",
+    "name": "UltraEdit (SD3, with mask)",
+    "provider": "Peking University / BIGAI (UltraEdit)",
+    "category": "image",
+    "released": "2024-06",
+    "released_source": "https://huggingface.co/api/models/BleachNick/SD3_UltraEdit_w_mask",
+    "open_weights": true,
+    "model_repo": "https://huggingface.co/BleachNick/SD3_UltraEdit_w_mask",
+    "identity_note": "UltraEdit (Zhao et al., NeurIPS 2024 D&B) SD3-based editing checkpoint BleachNick/SD3_UltraEdit_w_mask (pinned e5beecb, created 2024-06-30). EdiVal: 'UltraEdit: settings from https://github.com/HaozheZhao/UltraEdit; we apply a black mask since no explicit mask is provided', i.e. the mask-conditioned SD3 checkpoint used mask-free (the repo README's free-form recipe). Licence: the card says 'More Information Needed', so licence is left unset. WEAVE 'UltraEdit(SD3)' and Edit-Compass 'UltraEdit' do not say which SD3 checkpoint (w_mask vs freeform) and are held. Comparison-only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2509.13399v3#S3.T3",
+        "reported_label": "†UltraEdit (date column 24.07.07); Appendix: settings from github.com/HaozheZhao/UltraEdit, black mask"
+      },
+      {
+        "source": "https://huggingface.co/BleachNick/SD3_UltraEdit_w_mask/blob/e5beecb69a3ef1399718be2f99b61730b8bf0346/README.md",
+        "reported_label": "SD3_UltraEdit_w_mask card"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "ovis-u1-3b",
+    "name": "Ovis-U1-3B",
+    "provider": "Alibaba (AIDC-AI)",
+    "category": "image",
+    "released": "2025-06",
+    "released_source": "https://huggingface.co/api/models/AIDC-AI/Ovis-U1-3B",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/AIDC-AI/Ovis-U1-3B/blob/cbc005ddff7376a20bc98a89136d088e0f7e1623/README.md",
+    "params_b": 3,
+    "params_note": "3B as named by the maker (Ovis-U1-3B).",
+    "model_repo": "https://huggingface.co/AIDC-AI/Ovis-U1-3B",
+    "identity_note": "Alibaba AIDC-AI's Ovis-U1 unified understanding/generation/editing model, 3B (AIDC-AI/Ovis-U1-3B, pinned cbc005d, Apache-2.0). WEAVE 'Ovis-U1 [67] 3B' and ViGoR 'Ovis-U1-3B (Wang et al., 2025a)' both name the single public release. Distinct from the catalogued ovis-image-7b. Comparison-only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2511.11434v1#S4.T2",
+        "reported_label": "Ovis-U1 [67] | 3B"
+      },
+      {
+        "source": "https://arxiv.org/html/2603.25823v1#S3.T3",
+        "reported_label": "Ovis-U1-3B (Wang et al., 2025a)"
+      },
+      {
+        "source": "https://huggingface.co/AIDC-AI/Ovis-U1-3B/blob/cbc005ddff7376a20bc98a89136d088e0f7e1623/README.md",
+        "reported_label": "Ovis-U1-3B card, Apache-2.0"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "skywork-unipic-1-5b",
+    "name": "Skywork UniPic 1.5B",
+    "provider": "Skywork AI",
+    "category": "image",
+    "released": "2025-07",
+    "released_source": "https://huggingface.co/api/models/Skywork/Skywork-UniPic-1.5B",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/Skywork/Skywork-UniPic-1.5B/blob/09991eabdf1cdcfa2209deeb890d8bcffbd80584/README.md",
+    "params_b": 1.5,
+    "params_note": "1.5B as named by the maker.",
+    "model_repo": "https://huggingface.co/Skywork/Skywork-UniPic-1.5B",
+    "identity_note": "Skywork UniPic (v1) 1.5B autoregressive unified model (Skywork/Skywork-UniPic-1.5B, pinned 09991ea, MIT). WEAVE lists 'UniPic [68] 1.5B', the only UniPic v1 release. Comparison-only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2511.11434v1#S4.T2",
+        "reported_label": "UniPic [68] | 1.5B"
+      },
+      {
+        "source": "https://huggingface.co/Skywork/Skywork-UniPic-1.5B/blob/09991eabdf1cdcfa2209deeb890d8bcffbd80584/README.md",
+        "reported_label": "Skywork-UniPic-1.5B card, MIT"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "unipic2-sd3-5m-kontext-2b",
+    "name": "UniPic2-SD3.5M-Kontext-2B",
+    "provider": "Skywork AI",
+    "category": "image",
+    "released": "2025-08",
+    "released_source": "https://huggingface.co/api/models/Skywork/UniPic2-SD3.5M-Kontext-2B",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/Skywork/UniPic2-SD3.5M-Kontext-2B/blob/c64315f7f41eeeb1d564924171f82a2367cbbba0/README.md",
+    "params_b": 2,
+    "params_note": "2B as named by the maker.",
+    "model_repo": "https://huggingface.co/Skywork/UniPic2-SD3.5M-Kontext-2B",
+    "identity_note": "Skywork UniPic 2.0 editing/generation model on SD3.5-Medium with Kontext-style conditioning, 2B (Skywork/UniPic2-SD3.5M-Kontext-2B, pinned c64315f, MIT). WEAVE 'UniPic2-SD3.5M [73] 2B'. A separate -GRPO-2B repo exists; WEAVE's label has no GRPO suffix, so the base release is mapped. Comparison-only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2511.11434v1#S4.T2",
+        "reported_label": "UniPic2-SD3.5M [73] | 2B"
+      },
+      {
+        "source": "https://huggingface.co/Skywork/UniPic2-SD3.5M-Kontext-2B/blob/c64315f7f41eeeb1d564924171f82a2367cbbba0/README.md",
+        "reported_label": "UniPic2-SD3.5M-Kontext-2B card, MIT"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "unipic2-metaquery-9b",
+    "name": "UniPic2-Metaquery-9B",
+    "provider": "Skywork AI",
+    "category": "image",
+    "released": "2025-08",
+    "released_source": "https://huggingface.co/api/models/Skywork/UniPic2-Metaquery-9B",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/Skywork/UniPic2-Metaquery-9B/blob/37a2f17d28578b89d38aebd79515ba5610e75cad/README.md",
+    "params_b": 9,
+    "params_note": "9B as named by the maker.",
+    "model_repo": "https://huggingface.co/Skywork/UniPic2-Metaquery-9B",
+    "identity_note": "Skywork UniPic 2.0 MetaQuery-style unified model, 9B (Skywork/UniPic2-Metaquery-9B, pinned 37a2f17, MIT). WEAVE 'UniPic2-Metaquery [73] 9B'; ViGoR 'UniPic2-M-9B (Wei et al., 2025)'. -GRPO and -Flash variants are separate repos and are not assumed. Comparison-only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2511.11434v1#S4.T2",
+        "reported_label": "UniPic2-Metaquery [73] | 9B"
+      },
+      {
+        "source": "https://arxiv.org/html/2603.25823v1#S3.T3",
+        "reported_label": "UniPic2-M-9B (Wei et al., 2025)"
+      },
+      {
+        "source": "https://huggingface.co/Skywork/UniPic2-Metaquery-9B/blob/37a2f17d28578b89d38aebd79515ba5610e75cad/README.md",
+        "reported_label": "UniPic2-Metaquery-9B card, MIT"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "nextstep-1-large-edit",
+    "name": "NextStep-1-Large-Edit",
+    "provider": "StepFun",
+    "category": "image",
+    "released": "2025-08",
+    "released_source": "https://huggingface.co/api/models/stepfun-ai/NextStep-1-Large-Edit",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/stepfun-ai/NextStep-1-Large-Edit/blob/bac0d9ff590906759a41292124c3b7fe6979b689/README.md",
+    "model_repo": "https://huggingface.co/stepfun-ai/NextStep-1-Large-Edit",
+    "identity_note": "StepFun NextStep-1 autoregressive image model, editing checkpoint (stepfun-ai/NextStep-1-Large-Edit, pinned bac0d9f, Apache-2.0). Edit-Compass ('Nextstep-V1 Han et al. (2025a)'), UnicBench ('NextStep-1 [34]') and WEAVE ('NextStep-1-Large [66] 15B') evaluate NextStep-1 on image-editing benchmarks; NextStep-1-Large-Edit is the only public NextStep-1 checkpoint fine-tuned for instruction editing (NextStep-1-Large and NextStep-1.1 are text-to-image), so the rows are mapped to it; flagged for the owner in held_for_owner. Comparison-only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2605.13062v1#S4.T3",
+        "reported_label": "Nextstep-V1 Han et al. (2025a)"
+      },
+      {
+        "source": "https://arxiv.org/html/2512.02790v1#S6.T4",
+        "reported_label": "NextStep-1 [34]"
+      },
+      {
+        "source": "https://arxiv.org/html/2511.11434v1#S4.T2",
+        "reported_label": "NextStep-1-Large [66] | 15B"
+      },
+      {
+        "source": "https://huggingface.co/stepfun-ai/NextStep-1-Large-Edit/blob/bac0d9ff590906759a41292124c3b7fe6979b689/README.md",
+        "reported_label": "NextStep-1-Large-Edit card"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "deepgen-1-0",
+    "name": "DeepGen 1.0",
+    "provider": "DeepGen Team",
+    "category": "image",
+    "released": "2026-02",
+    "released_source": "https://huggingface.co/api/models/deepgenteam/DeepGen-1.0",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/deepgenteam/DeepGen-1.0/blob/b746f077c0b1b3128cd075cfa886edc4ea222827/README.md",
+    "model_repo": "https://huggingface.co/deepgenteam/DeepGen-1.0",
+    "identity_note": "DeepGen 1.0 unified image generation and editing model (Wang et al., 2026; deepgenteam/DeepGen-1.0, pinned b746f07, Apache-2.0; the card says it ships pre-training, SFT and RL checkpoints, the RL one being the release model). Rows: Edit-Compass 'DeepGen 1.0', ChartSync 'DeepGen-1.0' (guidance 4.0, 50 steps per its Table 7), WISE v4 Table 11 'DeepGen1.0'. Comparison-only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2605.13062v1#S4.T3",
+        "reported_label": "DeepGen 1.0 Wang et al. (2026a)"
+      },
+      {
+        "source": "https://arxiv.org/html/2607.10301v1#S4.T2",
+        "reported_label": "DeepGen-1.0 Wang et al. (2026); Table 7: guidance 4.0, 50 steps"
+      },
+      {
+        "source": "https://arxiv.org/html/2503.07265v4#A10.T11",
+        "reported_label": "DeepGen1.0 (Wang et al., 2026)"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "unipic3",
+    "name": "UniPic 3",
+    "provider": "Skywork AI",
+    "category": "image",
+    "released": "2026-01",
+    "released_source": "https://huggingface.co/api/models/Skywork/Unipic3",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/Skywork/Unipic3/blob/c1f8544efa4cfcb0e1f937c51053d477c8171a57/README.md",
+    "model_repo": "https://huggingface.co/Skywork/Unipic3",
+    "identity_note": "Skywork UniPic 3 (Wei et al., 2026; Skywork/Unipic3, pinned c1f8544, MIT). Edit-Compass 'Unipic3'. The -DMD and -Consistency-Model distillations are separate repos and are not assumed. Comparison-only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2605.13062v1#S4.T3",
+        "reported_label": "Unipic3 Wei et al. (2026)"
+      },
+      {
+        "source": "https://huggingface.co/Skywork/Unipic3/blob/c1f8544efa4cfcb0e1f937c51053d477c8171a57/README.md",
+        "reported_label": "Unipic3 card, MIT"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "joyai-image-edit",
+    "name": "JoyAI-Image-Edit",
+    "provider": "JD (JoyAI)",
+    "category": "image",
+    "released": "2026-03",
+    "released_source": "https://huggingface.co/api/models/jdopensource/JoyAI-Image-Edit",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/jdopensource/JoyAI-Image-Edit/blob/20af57b100ab1f71b73daab5e96d293d8bf8ab5f/README.md",
+    "model_repo": "https://huggingface.co/jdopensource/JoyAI-Image-Edit",
+    "identity_note": "JD Joy Future Academy's JoyAI-Image-Edit (jdopensource/JoyAI-Image-Edit, pinned 20af57b, Apache-2.0; created 2026-03-31). Edit-Compass 'JoyAI-Image-Edit Joy Future Academy (2026)'. The later JoyAI-Image-Edit-Plus is a different model and is not assumed. Comparison-only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2605.13062v1#S4.T3",
+        "reported_label": "JoyAI-Image-Edit Joy Future Academy (2026)"
+      },
+      {
+        "source": "https://huggingface.co/jdopensource/JoyAI-Image-Edit/blob/20af57b100ab1f71b73daab5e96d293d8bf8ab5f/README.md",
+        "reported_label": "JoyAI-Image-Edit card"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "flux-2-klein-base-9b",
+    "name": "FLUX.2 [klein] Base 9B",
+    "provider": "Black Forest Labs",
+    "category": "image",
+    "released": "2026-01",
+    "released_source": "https://huggingface.co/api/models/black-forest-labs/FLUX.2-klein-base-9B",
+    "open_weights": true,
+    "license": "flux-dev-nc",
+    "license_source": "https://huggingface.co/api/models/black-forest-labs/FLUX.2-klein-base-9B",
+    "params_b": 9,
+    "params_note": "9B as named by Black Forest Labs.",
+    "model_repo": "https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B",
+    "identity_note": "Black Forest Labs FLUX.2 [klein] 9B undistilled base checkpoint (black-forest-labs/FLUX.2-klein-base-9B, pinned 3277332; gated with automatic approval; HF licence metadata 'flux-non-commercial-license'). Separate from the catalogued distilled flux-2-klein-9b. ChartSync Table 7 lists 'FLUX.2-Klein-Base-9B' (guidance 4.0, 50 steps); InfoEdit links https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B (its 0.0% average success rate is not imported). Comparison-only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2607.10301v1#S4.T2",
+        "reported_label": "FLUX.2-Klein-Base-9B Labs (2025); Table 7 guidance 4.0, 50 steps"
+      },
+      {
+        "source": "https://huggingface.co/api/models/black-forest-labs/FLUX.2-klein-base-9B",
+        "reported_label": "license_name: flux-non-commercial-license; created 2026-01-14"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "firered-image-edit-1-0",
+    "name": "FireRed-Image-Edit-1.0",
+    "provider": "FireRedTeam (Xiaohongshu)",
+    "category": "image",
+    "released": "2026-02",
+    "released_source": "https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.0/blob/0aea9d520c801c9f4b691cc92f736a7a8628e6a2/README.md",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.0/blob/0aea9d520c801c9f4b691cc92f736a7a8628e6a2/README.md",
+    "model_repo": "https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.0",
+    "identity_note": "Xiaohongshu FireRedTeam's FireRed-Image-Edit-1.0 (FireRedTeam/FireRed-Image-Edit-1.0, pinned 0aea9d5, Apache-2.0). ChartSync evaluates both 1.0 and 1.1 by name (Table 7: guidance 4.0, 40 steps). Lightning and ComfyUI repackagings are separate and not assumed. Comparison-only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2607.10301v1#S4.T2",
+        "reported_label": "FireRed-Image-Edit-1.0 Team et al. (2026); Table 7 guidance 4.0, 40 steps"
+      },
+      {
+        "source": "https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.0/blob/0aea9d520c801c9f4b691cc92f736a7a8628e6a2/README.md",
+        "reported_label": "2026.02.14: We released FireRed-Image-Edit-1.0 model weights."
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "firered-image-edit-1-1",
+    "name": "FireRed-Image-Edit-1.1",
+    "provider": "FireRedTeam (Xiaohongshu)",
+    "category": "image",
+    "released": "2026-03",
+    "released_source": "https://huggingface.co/api/models/FireRedTeam/FireRed-Image-Edit-1.1",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.1/blob/3bc3f2a12722fd9883eb6357500de191d56baaf5/README.md",
+    "model_repo": "https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.1",
+    "identity_note": "Xiaohongshu FireRedTeam's FireRed-Image-Edit-1.1 (FireRedTeam/FireRed-Image-Edit-1.1, pinned 3bc3f2a, Apache-2.0). ChartSync evaluates both 1.0 and 1.1 by name (Table 7: guidance 4.0, 40 steps). Lightning and ComfyUI repackagings are separate and not assumed. Comparison-only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2607.10301v1#S4.T2",
+        "reported_label": "FireRed-Image-Edit-1.1 Team et al. (2026); Table 7 guidance 4.0, 40 steps"
+      },
+      {
+        "source": "https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.1/blob/3bc3f2a12722fd9883eb6357500de191d56baaf5/README.md",
+        "reported_label": "FireRed-Image-Edit-1.1 card"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "hidream-e1-1",
+    "name": "HiDream-E1.1",
+    "provider": "HiDream",
+    "category": "image",
+    "released": "2025-07",
+    "released_source": "https://huggingface.co/api/models/HiDream-ai/HiDream-E1-1",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/HiDream-ai/HiDream-E1-1/blob/a7cc57091a5716187d58919238cdcf41402dbc31/README.md",
+    "model_repo": "https://huggingface.co/HiDream-ai/HiDream-E1-1",
+    "identity_note": "HiDream's E1.1 instruction-editing model (HiDream-ai/HiDream-E1-1, pinned a7cc570, MIT; created 2025-07-16), successor of HiDream-E1-Full. ViGoR names 'HiDream-E1.1 (Cai et al., 2025)'. Edit-Compass's unversioned 'HiDream-E1' is not mapped (E1-Full vs E1.1). Comparison-only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2603.25823v1#S3.T3",
+        "reported_label": "HiDream-E1.1 (Cai et al., 2025)"
+      },
+      {
+        "source": "https://huggingface.co/HiDream-ai/HiDream-E1-1/blob/a7cc57091a5716187d58919238cdcf41402dbc31/README.md",
+        "reported_label": "HiDream-E1-1 card, MIT"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "cogview4-6b",
+    "name": "CogView4-6B",
+    "provider": "Z.ai",
+    "category": "image",
+    "released": "2025-03",
+    "released_source": "https://huggingface.co/api/models/zai-org/CogView4-6B",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/zai-org/CogView4-6B/blob/63a52b7f6dace7033380cd6da14d0915eab3e6b5/README.md",
+    "params_b": 6,
+    "params_note": "6B as named by the maker (CogView4-6B DiT); GLM-4-9B text encoder separate.",
+    "model_repo": "https://huggingface.co/zai-org/CogView4-6B",
+    "identity_note": "Zhipu/Z.ai CogView4 text-to-image model, 6B DiT (zai-org/CogView4-6B, pinned 63a52b7, Apache-2.0; the only CogView4 release). MMMG Table 2 'CogView-4' (1024 px, DM) and the HPSv3 README benchmark 'CogView4'. Comparison-only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2506.10963v2",
+        "reported_label": "CogView-4 | 1024 | DM"
+      },
+      {
+        "source": "https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md",
+        "reported_label": "CogView4 (Image Generation Benchmark of HPSv3)"
+      },
+      {
+        "source": "https://huggingface.co/zai-org/CogView4-6B/blob/63a52b7f6dace7033380cd6da14d0915eab3e6b5/README.md",
+        "reported_label": "CogView4-6B card"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "janusflow-1-3b",
+    "name": "JanusFlow-1.3B",
+    "provider": "DeepSeek",
+    "category": "image",
+    "released": "2024-11",
+    "released_source": "https://huggingface.co/api/models/deepseek-ai/JanusFlow-1.3B",
+    "open_weights": true,
+    "license": "deepseek",
+    "license_source": "https://huggingface.co/deepseek-ai/JanusFlow-1.3B/blob/ba759449ee790649850a00d39caddb0acf1c9132/README.md",
+    "params_b": 1.3,
+    "params_note": "1.3B as named by DeepSeek.",
+    "model_repo": "https://huggingface.co/deepseek-ai/JanusFlow-1.3B",
+    "identity_note": "DeepSeek JanusFlow-1.3B unified autoregressive + rectified-flow model (deepseek-ai/JanusFlow-1.3B, pinned ba75944; card: code under MIT, 'The use of JanusFlow models is subject to DeepSeek Model License'). MMMG Table 2 'JanusFlow-1.3B' (384 px). Comparison-only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2506.10963v2",
+        "reported_label": "JanusFlow-1.3B | 384 | AR"
+      },
+      {
+        "source": "https://huggingface.co/deepseek-ai/JanusFlow-1.3B/blob/ba759449ee790649850a00d39caddb0acf1c9132/README.md",
+        "reported_label": "JanusFlow-1.3B card"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "infinity-8b",
+    "name": "Infinity-8B",
+    "provider": "ByteDance (FoundationVision)",
+    "category": "image",
+    "released": "2025-02",
+    "released_source": "https://github.com/FoundationVision/Infinity/blob/9f9fcd1de7ead377ddf1106db1249a35f3a59143/README.md",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/FoundationVision/Infinity/blob/e7108923249fb3c836ebfbc3f4b4d318d6131293/README.md",
+    "params_b": 8,
+    "params_note": "8B as named by the maker.",
+    "model_repo": "https://huggingface.co/FoundationVision/Infinity",
+    "identity_note": "ByteDance FoundationVision's Infinity bitwise autoregressive text-to-image model, 8B 1024px weights (FoundationVision/Infinity, folder infinity_8b_weights; pinned e710892, MIT; GitHub news 'Feb 18, 2025: Infinity-8B Weights & Code is released!'). MMMG Table 2 lists 'Infinity' at 1024 px and its later analysis names the same model 'Infinity-8B'; the repo's other 8B folder is a 512x512 middle-stage model (Jun 2025), so the 1024 px row is the main 8B release. Not mapped: ImagenWorld, WISE Table 11 and HPSv3 'Infinity' rows (2B vs 8B not stated). Comparison-only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2506.10963v2",
+        "reported_label": "Infinity | 1024 | AR; Sec. 5: 'notably Infinity-8B'"
+      },
+      {
+        "source": "https://github.com/FoundationVision/Infinity/blob/9f9fcd1de7ead377ddf1106db1249a35f3a59143/README.md",
+        "reported_label": "Feb 18, 2025: Infinity-8B Weights & Code is released!"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "imagen-4-fast",
+    "name": "Imagen 4 Fast",
+    "provider": "Google",
+    "category": "image",
+    "released": "2025-08",
+    "released_source": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/imagen/4-0-fast-generate-001",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "identity_note": "Google's Imagen 4 Fast, model id imagen-4.0-fast-generate-001 (GA 14 Aug 2025 per the Vertex AI model page). Rapidata's 6M text-to-image dataset lists 'Imagen 4 Fast' (Google) separately from 'Imagen 4' and 'Imagen 4 Ultra' (both catalogued); the Face Generation Benchmark uses the Replicate id 'google/imagen-4-fast'. Distinct from imagen-4 and imagen-4-ultra. Retired: Google's own model page lists a discontinuation date of 30 Jun 2026 (pricing page still showed $0.02 on 2026-10-10), so no current run option is listed.",
+    "identity_evidence": [
+      {
+        "source": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/imagen/4-0-fast-generate-001",
+        "reported_label": "Model ID imagen-4.0-fast-generate-001; GA; release date August 14, 2025; discontinuation date June 30, 2026",
+        "note": "observed 2026-10-10"
+      },
+      {
+        "source": "https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards",
+        "reported_label": "| 32 | Imagen 4 Fast | Google | 930.2 |"
+      },
+      {
+        "source": "https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard",
+        "reported_label": "| 4 | google/imagen-4-fast | 3205 | 6180 | 1027.690000 |"
+      }
+    ],
+    "local": null
+  },
+  {
+    "id": "minimax-image-01",
+    "name": "MiniMax image-01",
+    "provider": "MiniMax",
+    "category": "image",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://platform.minimax.io/docs/guides/pricing-paygo.md",
+      "provider": "MiniMax",
+      "price": 0.0035,
+      "unit": "image",
+      "price_source": "https://platform.minimax.io/docs/guides/pricing-paygo.md",
+      "price_note": "USD per generated image: MiniMax pay-as-you-go pricing, Image section, 'image-01 | $0.0035 per image'. Product: MiniMax Image Generation API. API model: image-01. Settings: one image. Price basis: published list rate. Currency: USD. Official MiniMax pricing doc, observed 2026-10-10."
+    },
+    "identity_note": "MiniMax's text-to-image API model image-01 (listed by that id on MiniMax's own pay-as-you-go pricing doc). Rapidata's Face Generation Benchmark uses the Replicate id 'minimax/image-01'. Release month not taken (no first-party date checked).",
+    "identity_evidence": [
+      {
+        "source": "https://platform.minimax.io/docs/guides/pricing-paygo.md",
+        "reported_label": "Image | image-01 | $0.0035 per image",
+        "note": "observed 2026-10-10"
+      },
+      {
+        "source": "https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard",
+        "reported_label": "| 3 | minimax/image-01 | 2726 | 5125 | 1051.620000 |"
+      }
+    ],
+    "local": null
+  },
+  {
+    "id": "boogu-image-0-1-base",
+    "name": "Boogu-Image-0.1 Base",
+    "provider": "Boogu project",
+    "category": "image",
+    "released": "2026-06",
+    "released_source": "https://huggingface.co/api/models/Boogu/Boogu-Image-0.1-Base",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Boogu/Boogu-Image-0.1-Base/blob/334ad7e5c6343d33308b306127e047b133e86926/README.md",
+    "model_repo": "https://huggingface.co/Boogu/Boogu-Image-0.1-Base",
+    "identity_note": "Boogu project's Boogu-Image-0.1 Base text-to-image model (Boogu/Boogu-Image-0.1-Base, pinned 334ad7e, Apache-2.0; card: 'a research project only, and not an official model release'; technical report arXiv 2607.13125, authors unrelated to UltraText). UltraText Table 5 lists 'Boogu-Image-0.1-Base' among open-weight models. Not mapped: 'Boogu-Image-0.1-Turbo' (a hotfix revision of the Turbo weights was published on 2026-06-25 alongside the original, and the benchmark does not say which). Comparison-only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2610.09823v1",
+        "reported_label": "Boogu-Image-0.1-Base (Table 5, open-weight models)"
+      },
+      {
+        "source": "https://huggingface.co/Boogu/Boogu-Image-0.1-Base/blob/334ad7e5c6343d33308b306127e047b133e86926/README.md",
+        "reported_label": "Boogu-Image-0.1 ... Base, Turbo, Edit, and Edit-Turbo; Apache-2.0"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "hidream-o1-image-dev",
+    "name": "HiDream-O1-Image-Dev",
+    "provider": "HiDream",
+    "category": "image",
+    "released": "2026-05",
+    "released_source": "https://huggingface.co/HiDream-ai/HiDream-O1-Image-Dev/blob/c0bada0e15c54a9f96a6d1ecc35575b32bc21544/README.md",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/HiDream-ai/HiDream-O1-Image-Dev/blob/c0bada0e15c54a9f96a6d1ecc35575b32bc21544/README.md",
+    "params_b": 8,
+    "params_note": "8B as stated by HiDream for HiDream-O1-Image.",
+    "model_repo": "https://huggingface.co/HiDream-ai/HiDream-O1-Image-Dev",
+    "identity_note": "HiDream's distilled Dev variant of HiDream-O1-Image (8B; 28 inference steps per the card's model table), HiDream-ai/HiDream-O1-Image-Dev pinned c0bada0, MIT, open-sourced 8 May 2026 together with the undistilled model (catalogued as hidream-o1-image). The later HiDream-O1-Image-Dev-2604 (14 May 2026) is a separate repo and is not assumed. UltraText Table 5 lists 'HiDream-O1-Image-Dev' separately from 'HiDream-O1-Image'. Comparison-only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2610.09823v1",
+        "reported_label": "HiDream-O1-Image-Dev (Table 5, open-weight models)"
+      },
+      {
+        "source": "https://huggingface.co/HiDream-ai/HiDream-O1-Image-Dev/blob/c0bada0e15c54a9f96a6d1ecc35575b32bc21544/README.md",
+        "reported_label": "May 8, 2026: We've open-sourced HiDream-O1-Image (8B), including both the undistilled and distilled Dev variants"
+      }
+    ],
+    "api": null,
+    "local": null
+  },
+  {
+    "id": "elevenlabs-v4",
+    "name": "Eleven v4",
+    "provider": "ElevenLabs",
+    "category": "tts",
+    "released": "2026-09",
+    "released_source": "https://elevenlabs.io/docs/changelog",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://elevenlabs.io/pricing/api",
+      "provider": "ElevenLabs",
+      "price": 80,
+      "unit": "1M-chars",
+      "price_source": "https://elevenlabs.io/pricing/api",
+      "price_note": "USD per 1M input characters: ElevenLabs lists Eleven v4 Text to Speech at $0.08 per 1K characters (x1000), shown struck through with a launch promotion of $0.022 per 1K characters ('72% off until Oct 12'); the list rate is recorded. Product: ElevenAPI text to speech. API model: eleven_v4. Price basis: published list rate, per-1K to per-1M scaling only. Exclusions: subscription fees, taxes, the temporary promotion. Currency: USD. ElevenLabs official API pricing page, observed 2026-10-10."
+    },
+    "identity_note": "ElevenLabs Eleven v4, API model_id 'eleven_v4' (flagship), released 28 Sep 2026 per ElevenLabs' changelog ('Eleven v4 and Eleven v4 Turbo are now available'). The EMA Lightning card ran 'ElevenLabs v4' itself with the default voice (George) and default settings. Distinct from elevenlabs-v3 and elevenlabs-v3-conversational.",
+    "identity_evidence": [
+      {
+        "source": "https://elevenlabs.io/docs/overview/models",
+        "reported_label": "Eleven v4: model_id \"eleven_v4\"",
+        "note": "observed 2026-10-10"
+      },
+      {
+        "source": "https://elevenlabs.io/docs/changelog",
+        "reported_label": "September 28, 2026: Eleven v4 and Eleven v4 Turbo are now available.",
+        "note": "observed 2026-10-10"
+      },
+      {
+        "source": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks",
+        "reported_label": "| ElevenLabs v4 |"
+      }
+    ],
+    "local": null
+  },
+  {
+    "id": "elevenlabs-v4-turbo",
+    "name": "Eleven v4 Turbo",
+    "provider": "ElevenLabs",
+    "category": "tts",
+    "released": "2026-09",
+    "released_source": "https://elevenlabs.io/docs/changelog",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://elevenlabs.io/pricing/api",
+      "provider": "ElevenLabs",
+      "price": 40,
+      "unit": "1M-chars",
+      "price_source": "https://elevenlabs.io/pricing/api",
+      "price_note": "USD per 1M input characters: ElevenLabs lists Eleven v4 Turbo Text to Speech at $0.04 per 1K characters (x1000), shown struck through with a launch promotion of $0.011 per 1K characters ('72% off until Oct 12'); the list rate is recorded. Product: ElevenAPI text to speech. API model: eleven_v4_turbo. Price basis: published list rate, per-1K to per-1M scaling only. Exclusions: subscription fees, taxes, the temporary promotion. Currency: USD. ElevenLabs official API pricing page, observed 2026-10-10."
+    },
+    "identity_note": "ElevenLabs Eleven v4 Turbo, API model_id 'eleven_v4_turbo' (real-time variant), released 28 Sep 2026 per ElevenLabs' changelog ('Eleven v4 and Eleven v4 Turbo are now available'). The EMA Lightning card ran 'ElevenLabs v4 Turbo' itself with the default voice (George) and default settings. Distinct from elevenlabs-v3 and elevenlabs-v3-conversational.",
+    "identity_evidence": [
+      {
+        "source": "https://elevenlabs.io/docs/overview/models",
+        "reported_label": "Eleven v4 Turbo: model_id \"eleven_v4_turbo\"",
+        "note": "observed 2026-10-10"
+      },
+      {
+        "source": "https://elevenlabs.io/docs/changelog",
+        "reported_label": "September 28, 2026: Eleven v4 and Eleven v4 Turbo are now available.",
+        "note": "observed 2026-10-10"
+      },
+      {
+        "source": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks",
+        "reported_label": "| ElevenLabs v4 Turbo |"
+      }
+    ],
+    "local": null
+  },
+  {
+    "id": "ema-lightning",
+    "name": "EMA Lightning",
+    "provider": "EMA Lightning (canberkkkkkk)",
+    "category": "tts",
+    "released": "2026-10",
+    "released_source": "https://huggingface.co/api/models/canberkkkkkk/ema-lightning",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md",
+    "params_b": 0.0086,
+    "params_note": "8.6M total (5.6M DiT + 3M vocoder) as stated on the card.",
+    "model_repo": "https://huggingface.co/canberkkkkkk/ema-lightning",
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (PyTorch)",
+          "gb": 0.04,
+          "gb_estimated": true,
+          "platform": "any",
+          "cmd": "pip install ema-lightning && python -c \"from ema_lightning import EMA; EMA().say('Merhaba, size nasıl yardımcı olabilirim?', path='merhaba.wav')\"",
+          "source": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md",
+          "note": "Quickstart from the pinned card ('pip install ema-lightning'; EMA() downloads ema.pt and decoder.pt and uses the GPU if there is one; say(text, path=...) writes a WAV), joined into one line. gb: the card says the model is 'about 34 MB'; runtime memory is higher (card: 0.28 GB GPU at batch 1). Command not executed."
+        }
+      ]
+    },
+    "identity_note": "EMA Lightning Turkish TTS (5.6M-parameter DiT acoustic model + 3M vocoder; canberkkkkkk/ema-lightning, pinned 7a6ba1a, Apache-2.0; pip package ema-lightning). The Antalia re-run's harness/systems/run_ema.py runs the same Hugging Face release (card text: 'EMA Lightning 1.0.1').",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks",
+        "reported_label": "EMA Lightning (compiled) / (plain PyTorch) | 5.6M DiT + 3M decoder"
+      },
+      {
+        "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+        "reported_label": "EMA Lightning (plain PyTorch) | 8.6M"
+      }
+    ],
+    "api": null
+  },
+  {
+    "id": "trendyol-tts",
+    "name": "Trendyol-TTS",
+    "provider": "Trendyol",
+    "category": "tts",
+    "released": "2026-06",
+    "released_source": "https://huggingface.co/api/models/Trendyol/Trendyol-TTS",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/Trendyol/Trendyol-TTS/blob/66a80184b286390800ee7c1a95228cc839cd59ef/README.md",
+    "params_b": 2.38,
+    "params_note": "2.38B as printed in both evaluators' tables (HF safetensors metadata reports 2.29B for the repo's safetensors).",
+    "model_repo": "https://huggingface.co/Trendyol/Trendyol-TTS",
+    "local": null,
+    "identity_note": "Trendyol's Turkish TTS research model built on openbmb/VoxCPM2 (merged LoRA checkpoint step_0002000; Trendyol/Trendyol-TTS, pinned 66a8018, MIT). The Antalia re-run harness loads VoxCPM.from_pretrained(hf_model_id='Trendyol/Trendyol-TTS') with cfg 2.0 and 16 inference steps; the EMA card lists 'Trendyol-TTS 2.38B'.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks",
+        "reported_label": "Trendyol-TTS | 2.38B"
+      },
+      {
+        "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+        "reported_label": "Trendyol-TTS (cfg 2.0, 16 steps) | 2.38B"
+      },
+      {
+        "source": "https://huggingface.co/datasets/PatientdeskAI/freya-tr-eval-rerun/tree/d5edf412810ec2b20beb5cd56c4bd3c350d7b0e3/harness",
+        "reported_label": "run_trendyol.py: VoxCPM.from_pretrained(hf_model_id=\"Trendyol/Trendyol-TTS\")"
+      }
+    ],
+    "api": null
+  },
+  {
+    "id": "antalia-2-mini",
+    "name": "Antalia-2 Mini",
+    "provider": "Patientdesk.ai",
+    "category": "tts",
+    "released": "2026-10",
+    "released_source": "https://huggingface.co/api/models/cloud0day3/antalia-mini",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md",
+    "params_b": 0.0076,
+    "params_note": "7.62M as stated on the card (acoustic 3.69M + vocoder 3.93M).",
+    "model_repo": "https://huggingface.co/cloud0day3/antalia-mini",
+    "local": null,
+    "identity_note": "Patientdesk.ai's Antalia-2 Mini Turkish TTS (7.62M parameters: 3.69M acoustic + 3.93M vocoder; cloud0day3/antalia-mini, pinned 1e8166a, Apache-2.0; card version 1.0.0, pip package antalia-mini). The re-run table on its own card is by its makers (by: lab).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+        "reported_label": "Antalia-2 Mini | 7.62M"
+      }
+    ],
+    "api": null
+  },
+  {
+    "id": "antalia-1",
+    "name": "Antalia 1",
+    "provider": "Patientdesk.ai",
+    "category": "tts",
+    "released": "2026-09",
+    "released_source": "https://huggingface.co/api/models/cloud0day3/antalia-1",
+    "open_weights": true,
+    "license": "openrail",
+    "license_source": "https://huggingface.co/cloud0day3/antalia-1/blob/eaec2aad2da8c0db5fc359734470874dae82c603/README.md",
+    "params_b": 0.305,
+    "params_note": "305M as printed in both tables.",
+    "model_repo": "https://huggingface.co/cloud0day3/antalia-1",
+    "local": null,
+    "identity_note": "Patientdesk.ai's Antalia 1 open-weights Turkish TTS (305M; cloud0day3/antalia-1, pinned eaec2aa, card licence openrail). EMA's card footnote: '\"Antalia 1\" by Sezgin Saygili, Emre Kaplaner, Oncel Ozgul and Fikri San Koktas (Patientdesk.ai): huggingface.co/cloud0day3/antalia-1. Three of its takes failed inside its own code and count as silence.' The Antalia re-run uses the release recipe (inference-recipe.json) per harness/systems/run_antalia.py.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks",
+        "reported_label": "Antalia 1 ‡ | 305M"
+      },
+      {
+        "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+        "reported_label": "Antalia-1 (open weights, release recipe) | 305M"
+      }
+    ],
+    "api": null
+  },
+  {
+    "id": "freyatts-small",
+    "name": "FreyaTTS-small",
+    "provider": "Freya Voice",
+    "category": "tts",
+    "released": "2026-07",
+    "released_source": "https://huggingface.co/api/models/freyavoice/freya-tts",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/freyavoice/freya-tts/blob/d124e07493615208f58bdd21d432736849ee4230/README.md",
+    "params_b": 0.183,
+    "params_note": "183M as printed in the re-run table (HF safetensors metadata 183,198,145).",
+    "model_repo": "https://huggingface.co/freyavoice/freya-tts",
+    "local": null,
+    "identity_note": "Freya Voice's FreyaTTS-small Turkish TTS (183M; freyavoice/freya-tts, pinned d124e07, Apache-2.0; card: 'FreyaTTS-small (this model) is our compact, Apache-2.0, self-hostable model'). The Antalia re-run uses its defaults (32 steps, fixed voice seed) per harness/systems/run_freya.py.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+        "reported_label": "FreyaTTS-small (default voice) | 183M"
+      },
+      {
+        "source": "https://huggingface.co/freyavoice/freya-tts/blob/d124e07493615208f58bdd21d432736849ee4230/README.md",
+        "reported_label": "FreyaTTS-small (this model)"
+      }
+    ],
+    "api": null
+  },
+  {
+    "id": "mms-tts-tur",
+    "name": "MMS TTS Turkish",
+    "provider": "Meta",
+    "category": "tts",
+    "released": "2023-09",
+    "released_source": "https://huggingface.co/api/models/facebook/mms-tts-tur",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "license_source": "https://huggingface.co/facebook/mms-tts-tur/blob/7e364479c307f06733ca865b0a5269e0209cf82d/README.md",
+    "params_b": 0.036,
+    "params_note": "36M as printed (HF safetensors metadata 36,285,552).",
+    "model_repo": "https://huggingface.co/facebook/mms-tts-tur",
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (transformers VitsModel)",
+          "gb": 0.15,
+          "gb_estimated": true,
+          "platform": "any",
+          "cmd": "uv run --python 3.11 --with transformers --with torch --with scipy python -c \"from transformers import VitsModel, AutoTokenizer; import torch, scipy; model = VitsModel.from_pretrained('facebook/mms-tts-tur'); tokenizer = AutoTokenizer.from_pretrained('facebook/mms-tts-tur'); inputs = tokenizer('Merhaba, nasılsınız?', return_tensors='pt'); torch.set_grad_enabled(False); output = model(**inputs).waveform; scipy.io.wavfile.write('out.wav', rate=model.config.sampling_rate, data=output.squeeze().numpy())\"",
+          "source": "https://huggingface.co/facebook/mms-tts-tur/blob/7e364479c307f06733ca865b0a5269e0209cf82d/README.md",
+          "note": "transformers VitsModel usage from the pinned model card (same snippet as the catalogued mms-tts-amh entry, with the Turkish repo and text). gb: model.safetensors is 145,231,352 bytes (repo tree at the pinned revision); runtime memory is higher. Command not executed."
+        }
+      ]
+    },
+    "identity_note": "Meta's Massively Multilingual Speech VITS checkpoint for Turkish, facebook/mms-tts-tur (pinned 7e36447, CC BY-NC 4.0). The Antalia re-run loads VitsModel.from_pretrained('facebook/mms-tts-tur') (harness/systems/run_mms.py).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+        "reported_label": "MMS-TTS (tur) | 36M"
+      },
+      {
+        "source": "https://huggingface.co/datasets/PatientdeskAI/freya-tr-eval-rerun/tree/d5edf412810ec2b20beb5cd56c4bd3c350d7b0e3/harness",
+        "reported_label": "run_mms.py: VitsModel.from_pretrained(\"facebook/mms-tts-tur\")"
+      }
+    ],
+    "api": null
+  },
+  {
+    "id": "piper-tr-tr-dfki-medium",
+    "name": "Piper (tr_TR dfki medium)",
+    "provider": "Open Home Foundation (Piper)",
+    "category": "tts",
+    "released": "2023-06",
+    "released_source": "https://huggingface.co/rhasspy/piper-voices/tree/c10ece1aade47bb51c153c893d14e5bf8e5b7117/tr/tr_TR/dfki/medium",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/rhasspy/piper-voices/blob/c10ece1aade47bb51c153c893d14e5bf8e5b7117/README.md",
+    "model_repo": "https://huggingface.co/rhasspy/piper-voices",
+    "local": {
+      "variants": [
+        {
+          "quant": "onnx-fp32 (piper-tts)",
+          "gb": 0.06,
+          "gb_estimated": true,
+          "platform": "any",
+          "cmd": "pip install piper-tts && python3 -m piper.download_voices tr_TR-dfki-medium && python3 -m piper -m tr_TR-dfki-medium -f test.wav -- 'Merhaba, nasılsınız?'",
+          "source": "https://github.com/OHF-Voice/piper1-gpl/blob/efffbfb226bfb511ebbcf55d0cecd8b35a89743d/docs/CLI.md",
+          "note": "Same documented CLI.md steps as the catalogued piper-en-us-lessac-medium entry (install, download voice, run) with the tr_TR-dfki-medium voice. gb is the voice file (tr_TR-dfki-medium.onnx, 63,201,294 bytes at rhasspy/piper-voices@c10ece1); runtime memory is higher. Command not executed."
+        }
+      ]
+    },
+    "identity_note": "Piper voice tr_TR-dfki-medium from rhasspy/piper-voices (tr/tr_TR/dfki/medium/tr_TR-dfki-medium.onnx, 63,201,294 bytes at c10ece1), run with piper-tts. The Antalia re-run loads piper/tr_TR-dfki-medium.onnx on CPU (harness/systems/run_piper.py). Other Piper voices (e.g. the catalogued en_US lessac medium) are separate checkpoints.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page",
+        "reported_label": "Piper (tr_TR dfki medium, CPU) | 16M"
+      },
+      {
+        "source": "https://huggingface.co/datasets/PatientdeskAI/freya-tr-eval-rerun/tree/d5edf412810ec2b20beb5cd56c4bd3c350d7b0e3/harness",
+        "reported_label": "run_piper.py: Piper tr_TR-dfki-medium (piper-tts)"
+      }
+    ],
+    "api": null
   }
 ]

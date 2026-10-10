@@ -3240,13 +3240,15 @@
     "id": "first-party-elevenlabs",
     "name": "ElevenLabs official pricing and model documentation",
     "match": [
-      "elevenlabs.io/pricing/api"
+      "elevenlabs.io/pricing/api",
+      "elevenlabs.io/docs/overview/models",
+      "elevenlabs.io/docs/changelog"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://elevenlabs.io/pricing/api",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "exact": true,
     "icon": "elevenlabs.io",
     "attribution": "ElevenLabs official pricing/docs, observed 2026-09-25",
@@ -14946,5 +14948,98 @@
     "attribution": "AI21 Labs official docs, observed 2026-10-10",
     "verdict": "allowed",
     "checked": "2026-10-10"
+  },
+  {
+    "id": "card3-canberkkkkkk-ema-lightning",
+    "name": "EMA Lightning model card (canberkkkkkk/ema-lightning), Benchmarks: Freya-TR-Eval",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md",
+    "quote": "README front matter at the pinned revision: 'license: apache-2.0'; card text: 'A 5.6M-parameter DiT acoustic model and a 3M-parameter vocoder ... Apache 2.0.' Benchmarks section: 'Our runs (every row without †): all 495 sentences, 3 seeds or takes, raw text in, an 8 kHz band, Whisper large-v3 with beam 5, and Freya's text normalisation. ElevenLabs uses its default voice (George) with default settings. Gemini uses the voice Kore.' and '† marks numbers as reported on the Anka TTS model card.'",
+    "attribution": "EMA Lightning model card by canberkkkkkk (Hugging Face), Apache-2.0. Changes: WER % divided by 100; only rows without † used.",
+    "scope": "Benchmarks table (Freya-TR-Eval, all 495 sentences): WER of the rows without † (EMA Lightning, Trendyol-TTS, Gemini 3.8 Flash-Lite, Gemini 3.8 Flash, ElevenLabs v4, ElevenLabs v4 Turbo, Antalia 1). † rows (copied from the Anka TTS card) not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card3-cloud0day3-antalia-mini",
+    "name": "Antalia-2 Mini model card (cloud0day3/antalia-mini), public Freya-TR-Eval re-run table",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md",
+    "quote": "README front matter at the pinned revision: 'license: apache-2.0'. 'We also keep an independent re-run of Freya-TR-Eval for every Turkish system we could run, at speech.patientdesk.ai/benchmarks (scripts and per-clip transcripts: PatientdeskAI/freya-tr-eval-rerun). It uses EMA Lightning's published eval.py for scoring, 3 seeded takes per system, and one NVIDIA L4 for speed'. The scripts dataset PatientdeskAI/freya-tr-eval-rerun (license: apache-2.0, pinned d5edf41) names each system's exact checkpoint (harness/systems/run_*.py, synth_api.py).",
+    "attribution": "Antalia-2 Mini model card by Sezgin Saygili, Emre Kaplaner, Oncel Ozgul and Fikri San Koktas (Patientdesk.ai), Apache-2.0. Changes: WER % divided by 100.",
+    "scope": "'On the public benchmark page' table (15 systems): WER column for systems with a pinned catalogue identity. Not used: Anka TTS, Alania-1/2 (no public checkpoint pinned), Chatterbox Multilingual (pip package version not pinned), and the card's first table (Antalia-2 Mini vs EMA vs VoxCPM2 teacher, a separate harness).",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "visual-multitextedit-ccby",
+    "name": "MultiTextEdit: Benchmarking Cross-Lingual Degradation in Text-in-Image Editing (arXiv:2605.08163v2), Table 3",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2605.08163v2"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2605.08163v2",
+    "quote": "arXiv abs page for 2605.08163 (v2, 18 May 2026) links http://creativecommons.org/licenses/by/4.0/; HTML header 'License: CC BY 4.0'. Sec. 5: 'We evaluate a diverse set of open-source and proprietary image editing systems on MultiTextEdit. All open-source model inference and the automatic evaluation pipeline are conducted on eight NVIDIA A800 GPUs. For each evaluated system, we follow the official inference pipeline and adopt the highest-quality inference settings recommended by the provider ... For proprietary systems, we access their official APIs'. Authors (Harbin Institute of Technology) built none of the evaluated systems.",
+    "attribution": "Liwei Cheng, Shibo Feng, Lunjie Zhou, Yixuan Guan, Dayan Guan, 'MultiTextEdit: Benchmarking Cross-Lingual Degradation in Text-in-Image Editing', arXiv:2605.08163v2 (2026), CC BY 4.0. Changes: SemAvg divided by 5. No endorsement.",
+    "scope": "Table 3 SemAvg column for nine catalogue editing systems (Step1X-Edit rows not used; Bagel-thinking used for BAGEL).",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2605.08163v2",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "visual-whatif-world-ccby",
+    "name": "What-If World: A Causal Benchmark for General World Models in Embodied Scenarios (arXiv:2605.27589v1), Table 2",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2605.27589v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2605.27589v1",
+    "quote": "arXiv abs page for 2605.27589v1 links http://creativecommons.org/licenses/by/4.0/; HTML header 'License: CC BY 4.0'. Sec. 4: 'We evaluate nine video generation models spanning both open-source and closed-source tiers ... All models receive the same initial frame x0 and prompt pair'; App. A.2: 'For every open-source model we used the publicly released default inference configuration' and 'The five closed-source generation models ... were accessed through hosted APIs via kie.ai, and each pair was scored by Gemini 3.1 Pro as a VLM judge'. Authors (UCLA, University of Tennessee) built none of the evaluated models.",
+    "attribution": "Kunlin Cai, Rui Song, Jinghuai Zhang, Kaiyuan Zhang, Pranav Bodapati, Alicia Yu, Fnu Suya, Mohammad Rostami, Jiaqi Ma, Yuan Tian, 'What-If World: A Causal Benchmark for General World Models in Embodied Scenarios', arXiv:2605.27589v1 (2026), CC BY 4.0. Changes: pAvg divided by 100. No endorsement.",
+    "scope": "Table 2 pAvg column for six catalogue video models (CogVideoX1.5, Cosmos-Predict2 and Kling 3.0 rows not used; see benchmark caveats).",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2605.27589v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "visual-cronos-ccby",
+    "name": "CRONOS: Benchmarking Counterfactual Physical Consistency in Video Models (arXiv:2605.23699v1), Table 1",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2605.23699v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2605.23699v1",
+    "quote": "arXiv abs page for 2605.23699v1 links http://creativecommons.org/licenses/by/4.0/; HTML header 'License: CC BY 4.0'. Sec. 4.1: 'Our evaluation includes several state-of-the-art open-source video generation models: Cosmos2.5 [1], CogVideoX1.5 [50], MAGI-1 [45], and Wan2.2 [49]. For Cosmos, we evaluate the two available model sizes 2B and 14B ... All models are evaluated in the I2V setting using the first frame.' Authors (Freiburg, MPI Informatics, CISPA) built none of the evaluated models.",
+    "attribution": "León Begiristain, Olaf Dünkel, Adam Kortylewski, 'CRONOS: Benchmarking Counterfactual Physical Consistency in Video Models', arXiv:2605.23699v1 (2026), CC BY 4.0. No endorsement.",
+    "scope": "Table 1 I2V 'Success Rate' column for Cosmos2.5-2B, Cosmos2.5-14B, MAGI-1-4.5B and Wan2.2-14B (CogVideoX1.5-5B and the V2V block not used).",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "evidence_url": "https://arxiv.org/abs/2605.23699v1",
+    "icon": "arxiv.org"
   }
 ]
