@@ -44782,5 +44782,1790 @@
         "reported_label": "ai21labs/jamba-mini-1.7-2025-07"
       }
     ]
+  },
+  {
+    "id": "glm-tts",
+    "name": "GLM-TTS",
+    "provider": "Z.ai",
+    "category": "tts",
+    "released": "2025-12",
+    "released_source": "https://huggingface.co/api/models/zai-org/GLM-TTS",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/zai-org/GLM-TTS/blob/b3feb691fa4cf590eec4418f6275f95220e58844/README.md",
+    "params_b": 1.55,
+    "params_b_source": "https://huggingface.co/zai-org/GLM-TTS/blob/b3feb691fa4cf590eec4418f6275f95220e58844/llm/model.safetensors.index.json",
+    "params_note": "Stage-1 LLM only: OUR COUNT from the safetensors headers of llm/model-00001-of-00002 and -00002 at the pinned revision (1,552,009,216 F32 parameters; LlamaForCausalLM, 28 layers, hidden 2048). The flow-matching model (flow/flow.pt), speech tokenizer and vocoder are not included; the card states no parameter count. Observed 2026-10-09.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (official GLM-TTS repo)",
+          "gb": 8.89,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/zai-org/GLM-TTS.git && cd GLM-TTS && pip install -r requirements.txt && pip install -U huggingface_hub && huggingface-cli download zai-org/GLM-TTS --local-dir ckpt && python glmtts_inference.py --data=example_zh --exp_name=_test --use_cache",
+          "platform": "nvidia",
+          "source": "https://github.com/zai-org/GLM-TTS/blob/4b944f4be7b6c55454751715081f4dc83992897a/README.md",
+          "gb_source": "https://huggingface.co/zai-org/GLM-TTS/tree/b3feb691fa4cf590eec4418f6275f95220e58844",
+          "note": "Official zai-org/GLM-TTS repo. Command: the README's GPU 'Environment Setup' (clone, pip install -r requirements.txt; optional RL dependencies omitted), 'Download Pre-trained Models' Option 1 (huggingface-cli download zai-org/GLM-TTS --local-dir ckpt) and 'Command Line Inference' block (commented --phoneme flag dropped), chained with &&. Synthesises the bundled examples/example_zh.jsonl prompts into outputs/. Platform evidence: glmtts_inference.py 'DEVICE = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")' (CPU fallback exists; README documents GPU and Ascend NPU setups only). gb is the sum of the weight files the command downloads (llm 6.21 GB F32; speech_tokenizer 1.63 GB; flow.pt 0.90 GB; hift.pt 0.08 GB; vocos2d 0.06 GB; tokenizer 0.01 GB); runtime memory is higher. Python 3.10-3.12 per README."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/zai-org/GLM-TTS",
+    "identity_note": "zai-org/GLM-TTS @ b3feb691fa4cf590eec4418f6275f95220e58844 (created 2025-12-10, MIT): the released base checkpoint (LLM + flow-matching + vocoder, zero-shot voice cloning, zh/en). The README lists 'Model Weights Optimized via Reinforcement Learning' as coming soon, so this is GLM-TTS (Base), not GLM-TTS_RL. Results: OpenBMB UltraEval-Audio replication/GLM-TTS.md (registry config glmtts, ckpt_dir zai-org/GLM-TTS, use_phoneme False). Code repo licence Apache-2.0; weights MIT per the HF card.",
+    "identity_sources": [
+      "https://huggingface.co/zai-org/GLM-TTS/tree/b3feb691fa4cf590eec4418f6275f95220e58844",
+      "https://github.com/zai-org/GLM-TTS/blob/4b944f4be7b6c55454751715081f4dc83992897a/README.md",
+      "https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/registry/model/glmtts.yaml"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md",
+        "reported_label": "glmtts ([zai-org/GLM-TTS](https://github.com/zai-org/GLM-TTS))"
+      },
+      {
+        "source": "https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/registry/model/glmtts.yaml",
+        "reported_label": "glmtts: ckpt_dir: zai-org/GLM-TTS, use_phoneme: False"
+      }
+    ]
+  },
+  {
+    "id": "fasih-tts-v1",
+    "name": "Fasih-TTS-V1",
+    "provider": "NightPrince (Yahya Elnawasany)",
+    "category": "tts",
+    "released": "2026-07",
+    "released_source": "https://huggingface.co/api/models/NightPrince/Fasih-TTS-V1",
+    "open_weights": true,
+    "license": "coqui-public-model-license",
+    "license_source": "https://huggingface.co/NightPrince/Fasih-TTS-V1/blob/348f715a4fe52fd4dd39240f420ace2ea29150a3/README.md",
+    "params_b": 0.467,
+    "params_b_source": "https://huggingface.co/NightPrince/Fasih-TTS-V1/blob/348f715a4fe52fd4dd39240f420ace2ea29150a3/README.md",
+    "params_note": "Card: 'Fasih has 466.9M parameters' (GPT 441.0M fine-tuned + HiFi-GAN decoder 25.9M).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (coqui-tts 0.27.5)",
+          "gb": 1.88,
+          "gb_estimated": true,
+          "cmd": "pip install \"coqui-tts==0.27.5\" torch torchaudio torchcodec && python -c \"import torch, soundfile as sf; from huggingface_hub import snapshot_download; from TTS.tts.configs.xtts_config import XttsConfig; from TTS.tts.models.xtts import Xtts; path = snapshot_download('NightPrince/Fasih-TTS-V1'); config = XttsConfig(); config.load_json(f'{path}/config.json'); model = Xtts.init_from_config(config); model.load_checkpoint(config, checkpoint_path=f'{path}/model.pth', vocab_path=f'{path}/vocab.json', use_deepspeed=False); model.cuda().eval(); lat = torch.load(f'{path}/speaker_latents.pt', map_location='cuda'); out = model.inference('السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ', 'ar', lat['gpt_cond_latent'], lat['speaker_embedding'], temperature=0.65, repetition_penalty=2.0, enable_text_splitting=False); sf.write('fasih.wav', out['wav'], 24000)\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/NightPrince/Fasih-TTS-V1/blob/348f715a4fe52fd4dd39240f420ace2ea29150a3/README.md",
+          "gb_source": "https://huggingface.co/NightPrince/Fasih-TTS-V1/tree/348f715a4fe52fd4dd39240f420ace2ea29150a3",
+          "note": "Card 'Quick start': pip install \"coqui-tts==0.27.5\" (plus torch, torchaudio and torchcodec, which coqui-tts 0.27.5 does not declare as hard dependencies on PyPI; the catalogue's xtts-v2 command installs the same set) and the Python snippet as a python -c one-liner (verbatim apart from joining lines); the final soundfile write (soundfile is a coqui-tts dependency) is added because the card leaves out['wav'] in memory ('out[\"wav\"] → 24 kHz mono waveform'). Platform evidence: the snippet calls model.cuda() and loads the latents with map_location='cuda'. gb is the sum of the weight files the command loads (model.pth 1.87 GB FP32 inference-only weights; speakers_xtts.pth 0.01 GB; speaker_latents.pt <0.01 GB); runtime memory is higher; snapshot_download also pulls ~2 MB of card images/audio. For correct case endings feed diacritized MSA or use the GitHub front-end (card)."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/NightPrince/Fasih-TTS-V1",
+    "identity_note": "NightPrince/Fasih-TTS-V1 @ 348f715a4fe52fd4dd39240f420ace2ea29150a3 (created 2026-07-07): single-speaker Modern Standard Arabic TTS, fine-tuned from coqui/XTTS-v2 (GPT only), voice shipped as precomputed latents; weights under the Coqui Public Model License (non-commercial). model.pth was slimmed to inference-only weights on 2026-10-02; the card states all 963 tensors and the generated audio are bit-identical to the original. Arena identity: Arabic TTS Arena model_id fasih_tts_v1, model_url https://huggingface.co/NightPrince/Fasih-TTS-V1 (wrapper models/fasih_tts_v1.py loads this repo). Distinct from xtts-v2 (base).",
+    "identity_sources": [
+      "https://huggingface.co/NightPrince/Fasih-TTS-V1/tree/348f715a4fe52fd4dd39240f420ace2ea29150a3",
+      "https://github.com/Navid-Gen-AI/arabic-tts-arena/blob/392f283343da24725884922e558f3bcbbf8a6bc0/models/fasih_tts_v1.py"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json",
+        "reported_label": "fasih_tts_v1 'Fasih TTS V1' (model_url https://huggingface.co/NightPrince/Fasih-TTS-V1)"
+      }
+    ]
+  },
+  {
+    "id": "silma-tts-v1",
+    "name": "SILMA TTS v1",
+    "provider": "SILMA AI",
+    "category": "tts",
+    "released": "2026-03",
+    "released_source": "https://huggingface.co/api/models/silma-ai/silma-tts",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/silma-ai/silma-tts/blob/226dd7a65cadf51f9a6dbe3953fc89003b3844d5/README.md",
+    "params_b": 0.15,
+    "params_b_source": "https://huggingface.co/silma-ai/silma-tts/blob/226dd7a65cadf51f9a6dbe3953fc89003b3844d5/README.md",
+    "params_note": "Card: 'a high-performance, 150M-parameter bilingual (Arabic/English) TTS model'.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 checkpoint (silma-tts 1.0.5)",
+          "gb": 2.65,
+          "gb_estimated": true,
+          "cmd": "pip install silma-tts && python -c \"from silma_tts.api import SilmaTTS; silma_tts = SilmaTTS(); silma_tts.infer(ref_file='ref.wav', ref_text=None, gen_text='أنا نموذج جديد من سلمى لتحويل النص إلى كلام.', file_wave='generated_audio.wav', seed=None, speed=1)\"",
+          "platform": "any",
+          "source": "https://huggingface.co/silma-ai/silma-tts/blob/226dd7a65cadf51f9a6dbe3953fc89003b3844d5/README.md",
+          "gb_source": "https://huggingface.co/silma-ai/silma-tts/tree/226dd7a65cadf51f9a6dbe3953fc89003b3844d5",
+          "note": "Card 'Using pip' (pip install silma-tts; PyPI silma-tts 1.0.5, MIT code, Python >=3.10) and 'Inference using Python' snippet as a python -c one-liner; ref.wav is the user's reference clip (<8 s), ref_text=None ('can also be left None - will be transcribed on the fly'), shorter gen_text, timing lines dropped. Needs ffmpeg (card). Platform evidence: silma_tts/api.py auto-selects 'cuda' / 'xpu' / 'mps' / 'cpu' (https://github.com/SILMA-AI/silma-tts/blob/96ec4beedb0766fcbddbf8b49b696c4049574ed6/src/silma_tts/api.py). gb: the package downloads hf://silma-ai/silma-tts/model.pt (2.60 GB file) and vocab.txt, plus a Vocos vocoder (~0.05 GB); runtime memory is higher. The model.pt download is unpinned (HF main)."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/silma-ai/silma-tts",
+    "identity_note": "silma-ai/silma-tts @ 226dd7a65cadf51f9a6dbe3953fc89003b3844d5 (created 2026-03-13, Apache-2.0 weights): SILMA TTS v1, 150M-parameter F5-TTS-architecture model pretrained from scratch, Arabic (MSA) + English, zero-shot cloning. Arena identity: Arabic TTS Arena model_id silma_tts_v1_small 'SILMA TTS v1 Small' (model_url https://huggingface.co/silma-ai/silma-tts; wrapper uses the silma-tts pip package). Distinct from SILMA's commercial 'SILMA TTS v1 Large' (retired in the arena) and 'SILMA TTS v2 MSA'.",
+    "identity_sources": [
+      "https://huggingface.co/silma-ai/silma-tts/tree/226dd7a65cadf51f9a6dbe3953fc89003b3844d5",
+      "https://github.com/Navid-Gen-AI/arabic-tts-arena/blob/392f283343da24725884922e558f3bcbbf8a6bc0/models/silma_tts_v1_small.py"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json",
+        "reported_label": "silma_tts_v1_small 'SILMA TTS v1 Small' (model_url https://huggingface.co/silma-ai/silma-tts)"
+      }
+    ]
+  },
+  {
+    "id": "nabra-82m-v0-1",
+    "name": "Nabra-82M v0.1",
+    "provider": "oddadmix",
+    "category": "tts",
+    "released": "2026-07",
+    "released_source": "https://huggingface.co/api/models/oddadmix/Nabra-82M-v0.1",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/oddadmix/Nabra-82M-v0.1/blob/adf6abf35c46db5f2b08803b5067a12c759b1ee1/README.md",
+    "params_b": 0.082,
+    "params_b_source": "https://huggingface.co/oddadmix/Nabra-82M-v0.1/blob/adf6abf35c46db5f2b08803b5067a12c759b1ee1/README.md",
+    "params_note": "Card: 'an 82M-parameter neural text-to-speech model' (Model Details: Parameters ~82M).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (Kokoro KModel, Oddadmix/kokoro fork)",
+          "gb": 0.33,
+          "gb_estimated": true,
+          "cmd": "pip install \"kokoro @ git+https://github.com/Oddadmix/kokoro.git@main\" torch soundfile huggingface_hub misaki camel-tools && camel_data -i disambig-mle-calima-msa-r13 && wget https://gist.githubusercontent.com/Oddadmix/dc699f7942a9516ce29d4842c7aed756/raw/827b541c892a862f9ef3b44006a6e27b100d1bdd/arabic_g2p.py && python -c \"import numpy as np, torch, soundfile as sf; from huggingface_hub import hf_hub_download; from arabic_g2p import ArabicG2P, EXTRA_SYMBOLS, clean_phonemes, normalize_text; from kokoro import KModel, KPipeline; from kokoro import pipeline as kpipeline_mod; R = 'oddadmix/Nabra-82M-v0.1'; kmodel = KModel(repo_id=R, config=hf_hub_download(R, 'config.json'), model=hf_hub_download(R, 'kokoro_arabic.pth'), disable_complex=True).eval(); kmodel.vocab.update(EXTRA_SYMBOLS); kpipeline_mod.LANG_CODES.setdefault('ar', 'ar'); pipeline = KPipeline(lang_code='ar', repo_id=R, model=kmodel); _orig_g2p = pipeline.g2p; pipeline.g2p = lambda t: (clean_phonemes(_orig_g2p(t)[0]), _orig_g2p(t)[1]); voice = torch.load(hf_hub_download(R, 'af_msa.pt'), map_location='cpu', weights_only=True); text_norm, _ = normalize_text('مرحبا بك في نبرة'); diac = ArabicG2P(diacritize=True).diacritize(text_norm); sf.write('nabra.wav', np.concatenate([a.detach().cpu().numpy() for _, _, a in pipeline(diac, voice=voice, speed=1.0)]).astype(np.float32), 24000)\"",
+          "platform": "any",
+          "source": "https://huggingface.co/oddadmix/Nabra-82M-v0.1/blob/adf6abf35c46db5f2b08803b5067a12c759b1ee1/README.md",
+          "gb_source": "https://huggingface.co/oddadmix/Nabra-82M-v0.1/tree/adf6abf35c46db5f2b08803b5067a12c759b1ee1",
+          "note": "Card 'Usage': the two pip lines merged, the camel_data and wget steps, and the Python snippet as a python -c one-liner. Changes: list_repo_files lookup replaced by the repo's actual file names (kokoro_arabic.pth, af_msa.pt), which is what the card's next(...) picks; loops inlined. Platform evidence: card 'Real-time factor < 1 on CPU for typical sentences'; voice loaded with map_location='cpu'. gb is the sum of the weight files the command loads (kokoro_arabic.pth 0.33 GB; af_msa.pt <0.01 GB); runtime memory is higher. Phonemisation uses espeak-ng (card G2P pipeline), which may need a system install. The pip install of the Kokoro fork is unpinned (@main); the arena pins commit df50e07df746aec0bd7a6f237752d7109ace0b3d."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/oddadmix/Nabra-82M-v0.1",
+    "identity_note": "oddadmix/Nabra-82M-v0.1 @ adf6abf35c46db5f2b08803b5067a12c759b1ee1 (created 2026-07-01, Apache-2.0): Kokoro-82M fine-tuned for Modern Standard Arabic, single female voice af_msa, needs diacritized input. Arena identity: Arabic TTS Arena model_id nabra_82m 'Nabra 82M'; the arena wrapper models/nabra_82m.py pins MODEL_REPO oddadmix/Nabra-82M-v0.1 at MODEL_REVISION adf6abf35c46db5f2b08803b5067a12c759b1ee1 (the same revision). Distinct from kokoro-82m (English base) and the MLX conversion oddadmix/Nabra-82M-MLX.",
+    "identity_sources": [
+      "https://huggingface.co/oddadmix/Nabra-82M-v0.1/tree/adf6abf35c46db5f2b08803b5067a12c759b1ee1",
+      "https://github.com/Navid-Gen-AI/arabic-tts-arena/blob/392f283343da24725884922e558f3bcbbf8a6bc0/models/nabra_82m.py"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json",
+        "reported_label": "nabra_82m 'Nabra 82M' (model_url https://huggingface.co/oddadmix/Nabra-82M-v0.1)"
+      }
+    ]
+  },
+  {
+    "id": "parakeet-ultra",
+    "name": "Parakeet Ultra",
+    "provider": "Moondream",
+    "category": "stt",
+    "released": "2026-09",
+    "released_source": "https://huggingface.co/api/models/moondream/parakeet-ultra",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "params_b": 0.627,
+    "params_b_source": "https://huggingface.co/moondream/parakeet-ultra/tree/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b",
+    "params_note": "Hugging Face safetensors metadata total 627,270,663 (current main 73175eb); transcribe.cpp catalog counts 627,265,543 for the converted port.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q8_0-gguf (transcribe.cpp)",
+          "gb": 0.74,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/parakeet-ultra-gguf parakeet-ultra-Q8_0.gguf --local-dir models/parakeet-ultra && build/bin/transcribe-cli -m models/parakeet-ultra/parakeet-ultra-Q8_0.gguf audio.wav",
+          "platform": "any",
+          "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/README.md",
+          "gb_source": "https://huggingface.co/handy-computer/parakeet-ultra-gguf/tree/39eeb55181f0d354fd934f06e92fd8d5037fed8e",
+          "note": "transcribe.cpp (MIT, ggml; Metal on Apple Silicon by default, CPU elsewhere, CUDA/Vulkan/HIP via cmake flags per README 'Build'). Command: README 'Build' (cmake -B build && cmake --build build) and 'Usage' (build/bin/transcribe-cli -m <gguf> <wav>) chained with &&, plus an hf download of the parakeet-ultra-Q8_0.gguf file listed in catalog/parakeet-ultra.json downloads (published_repo handy-computer/parakeet-ultra-gguf, 740,363,168 bytes at 39eeb55). gb is that file's size; runtime memory is higher. Input must be 16 kHz mono WAV (README). Needs git, cmake, a C++17 compiler and the hf CLI."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/moondream/parakeet-ultra",
+    "identity_note": "Moondream's post-trained moondream/parakeet-ultra (card: 'A post-trained version of parakeet-tdt-0.6b-v3. Same architecture, same tokenizer, same 0.6B parameters in full precision'; 25 European languages). Distinct from NVIDIA parakeet-tdt-0-6b-v3 (catalogued) and from its ternary sibling moondream/parakeet-redux. Repo created 2026-09-22; first and only commit 73175eb (2026-09-23), the upstream_commit the transcribe.cpp port records.",
+    "identity_sources": [
+      "https://huggingface.co/moondream/parakeet-ultra/tree/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b",
+      "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-ultra.json"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-ultra.json",
+        "reported_label": "variant 'parakeet-ultra', display_name 'Parakeet Ultra', upstream_repo moondream/parakeet-ultra, upstream_commit 73175eb"
+      }
+    ]
+  },
+  {
+    "id": "orukeet",
+    "name": "Orukeet",
+    "provider": "Oruk AI",
+    "category": "stt",
+    "released": "2026-09",
+    "released_source": "https://huggingface.co/api/models/oruk/orukeet",
+    "open_weights": true,
+    "license": "cc-by-sa-4.0",
+    "params_b": 0.627,
+    "params_b_source": "https://huggingface.co/oruk/orukeet/tree/b59c13a733fce5cf193230d0fa317ee7f145a108",
+    "params_note": "Hugging Face safetensors metadata total 627,057,286 (current main b59c13a); transcribe.cpp catalog counts 627,052,166 for the converted port.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q8_0-gguf (transcribe.cpp)",
+          "gb": 0.74,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/orukeet-gguf orukeet-Q8_0.gguf --local-dir models/orukeet && build/bin/transcribe-cli -m models/orukeet/orukeet-Q8_0.gguf audio.wav",
+          "platform": "any",
+          "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/README.md",
+          "gb_source": "https://huggingface.co/handy-computer/orukeet-gguf/tree/ab8536716c3aa03d49c4c36c0dae6a3da71210b8",
+          "note": "transcribe.cpp (MIT, ggml; Metal on Apple Silicon by default, CPU elsewhere, CUDA/Vulkan/HIP via cmake flags per README 'Build'). Command: README 'Build' (cmake -B build && cmake --build build) and 'Usage' (build/bin/transcribe-cli -m <gguf> <wav>) chained with &&, plus an hf download of the orukeet-Q8_0.gguf file listed in catalog/orukeet.json downloads (published_repo handy-computer/orukeet-gguf, 739,508,704 bytes at ab85367). gb is that file's size; runtime memory is higher. Input must be 16 kHz mono WAV (README). Needs git, cmake, a C++17 compiler and the hf CLI."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/oruk/orukeet",
+    "identity_note": "oruk/orukeet: 25-language recogniser fine-tuned from nvidia/parakeet-tdt-0.6b-v3 (card front matter base_model nvidia/parakeet-tdt-0.6b-v3, base_model_relation finetune; 'replaces half of the encoder's temporal depthwise filters with 12,288 fitted, frozen Gabor kernels'). Card: 'NeMo, ONNX INT8, native Q8 and native F16 all derive from the same r3 release checkpoint (031c8ddab484)'. Measured port pins upstream commit b59c13a (2026-09-24, current main). Repo created 2026-09-09.",
+    "identity_sources": [
+      "https://huggingface.co/oruk/orukeet/tree/b59c13a733fce5cf193230d0fa317ee7f145a108",
+      "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/orukeet.json"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/orukeet.json",
+        "reported_label": "variant 'orukeet', display_name 'Orukeet', upstream_repo oruk/orukeet, upstream_commit b59c13a"
+      }
+    ]
+  },
+  {
+    "id": "parakeet-unified-en-0-6b",
+    "name": "Parakeet Unified EN 0.6B",
+    "provider": "NVIDIA",
+    "category": "stt",
+    "released": "2026-04",
+    "released_source": "https://huggingface.co/api/models/nvidia/parakeet-unified-en-0.6b",
+    "open_weights": true,
+    "license": "nvidia-open-model-license",
+    "params_b": 0.618,
+    "params_b_source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-unified-en-0.6b.json",
+    "params_note": "transcribe.cpp catalog 'params' 618,309,121 for its converted port of nvidia/parakeet-unified-en-0.6b@d4ac992 (no safetensors index on the Hugging Face repo).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q8_0-gguf (transcribe.cpp)",
+          "gb": 0.73,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/parakeet-unified-en-0.6b-gguf parakeet-unified-en-0.6b-Q8_0.gguf --local-dir models/parakeet-unified-en-0.6b && build/bin/transcribe-cli -m models/parakeet-unified-en-0.6b/parakeet-unified-en-0.6b-Q8_0.gguf audio.wav",
+          "platform": "any",
+          "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/README.md",
+          "gb_source": "https://huggingface.co/handy-computer/parakeet-unified-en-0.6b-gguf/tree/d5249700b2382bf5c5024c2421d101b8db54a629",
+          "note": "transcribe.cpp (MIT, ggml; Metal on Apple Silicon by default, CPU elsewhere, CUDA/Vulkan/HIP via cmake flags per README 'Build'). Command: README 'Build' (cmake -B build && cmake --build build) and 'Usage' (build/bin/transcribe-cli -m <gguf> <wav>) chained with &&, plus an hf download of the parakeet-unified-en-0.6b-Q8_0.gguf file listed in catalog/parakeet-unified-en-0.6b.json downloads (published_repo handy-computer/parakeet-unified-en-0.6b-gguf, 731,357,568 bytes at d524970). gb is that file's size; runtime memory is higher. Input must be 16 kHz mono WAV (README). Needs git, cmake, a C++17 compiler and the hf CLI."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/nvidia/parakeet-unified-en-0.6b",
+    "identity_note": "nvidia/parakeet-unified-en-0.6b: English FastConformer RNN-T model for both offline and streaming inference (card: 'combining both offline and streaming inference (with a minimum latency of 160ms) in one model'; 'Parameters: 600M'). Not the cache-aware nemotron-speech-streaming-en-0.6b or parakeet-tdt-0.6b-v2. transcribe.cpp port of upstream commit d4ac992 (2026-04-22); the only later commit fe53cd8 (2026-06-09) edits README.md. Repo created 2026-04-07.",
+    "identity_sources": [
+      "https://huggingface.co/nvidia/parakeet-unified-en-0.6b/tree/d4ac9928f3bf238223ff0779c06b8149bf8ac4e1",
+      "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-unified-en-0.6b.json"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-unified-en-0.6b.json",
+        "reported_label": "variant 'parakeet-unified-en-0.6b', display_name 'Parakeet Unified EN 0.6B', upstream_repo nvidia/parakeet-unified-en-0.6b, upstream_commit d4ac992"
+      }
+    ]
+  },
+  {
+    "id": "nemotron-speech-streaming-en-0-6b",
+    "name": "Nemotron Speech Streaming EN 0.6B",
+    "provider": "NVIDIA",
+    "category": "stt",
+    "released": "2026-03",
+    "released_source": "https://huggingface.co/api/models/nvidia/nemotron-speech-streaming-en-0.6b",
+    "open_weights": true,
+    "license": "nvidia-open-model-license",
+    "params_b": 0.618,
+    "params_b_source": "https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b/tree/ebe59e5a817142986528bbbee5dba8db7b38ed50",
+    "params_note": "Hugging Face safetensors metadata total 618,084,865 (current main ebe59e5); transcribe.cpp catalog counts 618,079,745 for the converted port.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q8_0-gguf (transcribe.cpp)",
+          "gb": 0.73,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/nemotron-speech-streaming-en-0.6b-gguf nemotron-speech-streaming-en-0.6b-Q8_0.gguf --local-dir models/nemotron-speech-streaming-en-0.6b && build/bin/transcribe-cli -m models/nemotron-speech-streaming-en-0.6b/nemotron-speech-streaming-en-0.6b-Q8_0.gguf audio.wav",
+          "platform": "any",
+          "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/README.md",
+          "gb_source": "https://huggingface.co/handy-computer/nemotron-speech-streaming-en-0.6b-gguf/tree/9789e0ebf77277911272f0d9a35e1646b5aa6004",
+          "note": "transcribe.cpp (MIT, ggml; Metal on Apple Silicon by default, CPU elsewhere, CUDA/Vulkan/HIP via cmake flags per README 'Build'). Command: README 'Build' (cmake -B build && cmake --build build) and 'Usage' (build/bin/transcribe-cli -m <gguf> <wav>) chained with &&, plus an hf download of the nemotron-speech-streaming-en-0.6b-Q8_0.gguf file listed in catalog/nemotron-speech-streaming-en-0.6b.json downloads (published_repo handy-computer/nemotron-speech-streaming-en-0.6b-gguf, 729,650,176 bytes at 9789e0e). gb is that file's size; runtime memory is higher. Input must be 16 kHz mono WAV (README). Needs git, cmake, a C++17 compiler and the hf CLI."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b",
+    "identity_note": "nvidia/nemotron-speech-streaming-en-0.6b main-branch checkpoint (card: 'March 12, 2026: nemotron-asr-streaming was released with updated checkpoint (trained on larger corpora). For the older checkpoint released in January 2026, please refer to the nemotron-speech-streaming-jan2026 branch'). English cache-aware FastConformer-RNNT, 600M per card. transcribe.cpp port of main at ef3bf40 (2026-05-03); later commits add Transformers support, a link and a NeMo-Speech.cpp GGUF, not new weights per their titles. Not the multilingual nemotron-3-5-asr-streaming-0-6b (catalogued). released = March 2026 checkpoint update; repo created 2025-12-17.",
+    "identity_sources": [
+      "https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b/tree/ef3bf40c90df5cd2de55cc07e06681e03d8e6ee4",
+      "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/nemotron-speech-streaming-en-0.6b.json"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/nemotron-speech-streaming-en-0.6b.json",
+        "reported_label": "variant 'nemotron-speech-streaming-en-0.6b', display_name 'nemotron-speech-streaming-en-0.6b', upstream_repo nvidia/nemotron-speech-streaming-en-0.6b, upstream_commit ef3bf40"
+      }
+    ]
+  },
+  {
+    "id": "multitalker-parakeet-streaming-0-6b-v1",
+    "name": "Multitalker Parakeet Streaming 0.6B v1",
+    "provider": "NVIDIA",
+    "category": "stt",
+    "released": "2025-10",
+    "released_source": "https://huggingface.co/api/models/nvidia/multitalker-parakeet-streaming-0.6b-v1",
+    "open_weights": true,
+    "license": "nvidia-open-model-license",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q8_0-gguf (transcribe.cpp)",
+          "gb": 0.87,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/multitalker-parakeet-streaming-0.6b-v1-gguf bundle/multitalker-parakeet-streaming-0.6b-v1-Q8_0.gguf --local-dir models/multitalker-parakeet-streaming-0.6b-v1 && build/bin/transcribe-cli -m models/multitalker-parakeet-streaming-0.6b-v1/bundle/multitalker-parakeet-streaming-0.6b-v1-Q8_0.gguf audio.wav",
+          "platform": "any",
+          "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/README.md",
+          "gb_source": "https://huggingface.co/handy-computer/multitalker-parakeet-streaming-0.6b-v1-gguf/tree/a9a7208d8f205b5816770a6f7fb83afc81a7691b",
+          "note": "transcribe.cpp (MIT, ggml; Metal on Apple Silicon by default, CPU elsewhere, CUDA/Vulkan/HIP via cmake flags per README 'Build'). Command: README 'Build' (cmake -B build && cmake --build build) and 'Usage' (build/bin/transcribe-cli -m <gguf> <wav>) chained with &&, plus an hf download of the bundle/multitalker-parakeet-streaming-0.6b-v1-Q8_0.gguf file listed in catalog/multitalker-parakeet-streaming-0.6b-v1.json downloads (published_repo handy-computer/multitalker-parakeet-streaming-0.6b-v1-gguf, 873,443,456 bytes at a9a7208). gb is that file's size; runtime memory is higher. Input must be 16 kHz mono WAV (README). Needs git, cmake, a C++17 compiler and the hf CLI."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/nvidia/multitalker-parakeet-streaming-0.6b-v1",
+    "identity_note": "nvidia/multitalker-parakeet-streaming-0.6b-v1: streaming multi-speaker ASR built on Nemotron-Speech-Streaming with speaker kernels driven by diarization outputs (card). transcribe.cpp ships it as a bundle GGUF with the Sortformer diarizer; the catalog's params 739,989,513 count that bundle, so params_b is left out. Measured port pins upstream commit 8749fc7 (2026-01-28, current main). Repo created 2025-10-15.",
+    "identity_sources": [
+      "https://huggingface.co/nvidia/multitalker-parakeet-streaming-0.6b-v1/tree/8749fc71fd6e2d88ef230159bbf2aea69b524ee1",
+      "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/multitalker-parakeet-streaming-0.6b-v1.json"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/multitalker-parakeet-streaming-0.6b-v1.json",
+        "reported_label": "variant 'multitalker-parakeet-streaming-0.6b-v1', display_name 'multitalker-parakeet-streaming-0.6b-v1', upstream_repo nvidia/multitalker-parakeet-streaming-0.6b-v1, upstream_commit 8749fc7"
+      }
+    ]
+  },
+  {
+    "id": "parakeet-tdt-ctc-1-1b",
+    "name": "Parakeet TDT-CTC 1.1B",
+    "provider": "NVIDIA",
+    "category": "stt",
+    "released": "2024-05",
+    "released_source": "https://huggingface.co/api/models/nvidia/parakeet-tdt_ctc-1.1b",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "params_b": 1.071,
+    "params_b_source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-tdt_ctc-1.1b.json",
+    "params_note": "transcribe.cpp catalog 'params' 1,070,516,870 for its converted port of nvidia/parakeet-tdt_ctc-1.1b@675e786 (no safetensors index on the Hugging Face repo).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q8_0-gguf (transcribe.cpp)",
+          "gb": 1.27,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/parakeet-tdt_ctc-1.1b-gguf parakeet-tdt_ctc-1.1b-Q8_0.gguf --local-dir models/parakeet-tdt_ctc-1.1b && build/bin/transcribe-cli -m models/parakeet-tdt_ctc-1.1b/parakeet-tdt_ctc-1.1b-Q8_0.gguf audio.wav",
+          "platform": "any",
+          "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/README.md",
+          "gb_source": "https://huggingface.co/handy-computer/parakeet-tdt_ctc-1.1b-gguf/tree/7c7c26cdbe4f92d319176f83b5131cb15863b8a1",
+          "note": "transcribe.cpp (MIT, ggml; Metal on Apple Silicon by default, CPU elsewhere, CUDA/Vulkan/HIP via cmake flags per README 'Build'). Command: README 'Build' (cmake -B build && cmake --build build) and 'Usage' (build/bin/transcribe-cli -m <gguf> <wav>) chained with &&, plus an hf download of the parakeet-tdt_ctc-1.1b-Q8_0.gguf file listed in catalog/parakeet-tdt_ctc-1.1b.json downloads (published_repo handy-computer/parakeet-tdt_ctc-1.1b-gguf, 1,267,288,320 bytes at 7c7c26c). gb is that file's size; runtime memory is higher. Input must be 16 kHz mono WAV (README). Needs git, cmake, a C++17 compiler and the hf CLI."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/nvidia/parakeet-tdt_ctc-1.1b",
+    "identity_note": "nvidia/parakeet-tdt_ctc-1.1b ('Parakeet TDT-CTC 1.1B PnC(en)', hybrid FastConformer TDT-CTC XXL, English with punctuation and capitalisation; jointly developed by NVIDIA NeMo and Suno.ai per card). Distinct from parakeet-tdt-1-1b and parakeet-tdt-ctc-110m (catalogued). transcribe.cpp port pins upstream 675e786 (2025-02-18, current main); repo created 2024-05-07.",
+    "identity_sources": [
+      "https://huggingface.co/nvidia/parakeet-tdt_ctc-1.1b/tree/675e78684c83ae21e2a8fb042726b66d91b9ba3d",
+      "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-tdt_ctc-1.1b.json"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-tdt_ctc-1.1b.json",
+        "reported_label": "variant 'parakeet-tdt_ctc-1.1b', display_name 'parakeet-tdt_ctc-1.1b', upstream_repo nvidia/parakeet-tdt_ctc-1.1b, upstream_commit 675e786"
+      }
+    ]
+  },
+  {
+    "id": "granite-speech-4-1-2b-nar",
+    "name": "Granite Speech 4.1 2B NAR",
+    "provider": "IBM",
+    "category": "stt",
+    "released": "2026-03",
+    "released_source": "https://huggingface.co/api/models/ibm-granite/granite-speech-4.1-2b-nar",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 2.255,
+    "params_b_source": "https://huggingface.co/ibm-granite/granite-speech-4.1-2b-nar/tree/a1e3416e25ce29ab3852778e54fa8b3bd59c4bf2",
+    "params_note": "Hugging Face safetensors metadata total 2,254,635,356 (current main a1e3416); transcribe.cpp catalog counts 2,254,656,316 for the converted port.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q8_0-gguf (transcribe.cpp)",
+          "gb": 2.5,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/granite-speech-4.1-2b-nar-gguf granite-speech-4.1-2b-nar-Q8_0.gguf --local-dir models/granite-speech-4.1-2b-nar && build/bin/transcribe-cli -m models/granite-speech-4.1-2b-nar/granite-speech-4.1-2b-nar-Q8_0.gguf audio.wav",
+          "platform": "any",
+          "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/README.md",
+          "gb_source": "https://huggingface.co/handy-computer/granite-speech-4.1-2b-nar-gguf/tree/c186f8d7ed6c67b947b90fd8ed9587be971766fa",
+          "note": "transcribe.cpp (MIT, ggml; Metal on Apple Silicon by default, CPU elsewhere, CUDA/Vulkan/HIP via cmake flags per README 'Build'). Command: README 'Build' (cmake -B build && cmake --build build) and 'Usage' (build/bin/transcribe-cli -m <gguf> <wav>) chained with &&, plus an hf download of the granite-speech-4.1-2b-nar-Q8_0.gguf file listed in catalog/granite-speech-4.1-2b-nar.json downloads (published_repo handy-computer/granite-speech-4.1-2b-nar-gguf, 2,498,105,472 bytes at c186f8d). gb is that file's size; runtime memory is higher. Input must be 16 kHz mono WAV (README). Needs git, cmake, a C++17 compiler and the hf CLI."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/ibm-granite/granite-speech-4.1-2b-nar",
+    "identity_note": "ibm-granite/granite-speech-4.1-2b-nar: non-autoregressive sibling of granite-speech-4-1-2b (card: 'formulates ASR as conditional transcript editing', NLE architecture, arXiv:2603.08397). Not the autoregressive granite-speech-4-1-2b (catalogued) or the -plus model. transcribe.cpp port pins upstream 99a4df9 (2026-05-21); only later commit a1e3416 edits README.md. Repo created 2026-03-10.",
+    "identity_sources": [
+      "https://huggingface.co/ibm-granite/granite-speech-4.1-2b-nar/tree/99a4df9007ac5682f9daa093fb7008ff606e9a5d",
+      "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/granite-speech-4.1-2b-nar.json"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/granite-speech-4.1-2b-nar.json",
+        "reported_label": "variant 'granite-speech-4.1-2b-nar', display_name 'granite-speech-4.1-2b-nar', upstream_repo ibm-granite/granite-speech-4.1-2b-nar, upstream_commit 99a4df9"
+      }
+    ]
+  },
+  {
+    "id": "granite-speech-4-1-2b-plus",
+    "name": "Granite Speech 4.1 2B Plus",
+    "provider": "IBM",
+    "category": "stt",
+    "released": "2026-04",
+    "released_source": "https://huggingface.co/api/models/ibm-granite/granite-speech-4.1-2b-plus",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 2.112,
+    "params_b_source": "https://huggingface.co/ibm-granite/granite-speech-4.1-2b-plus/tree/1454e6e1e33845ca9280ff65f52cf1141ba6e6e2",
+    "params_note": "Hugging Face safetensors metadata total 2,111,812,956 (current main 1454e6e); transcribe.cpp catalog counts 2,111,899,452 for the converted port.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q8_0-gguf (transcribe.cpp)",
+          "gb": 2.35,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/granite-speech-4.1-2b-plus-gguf granite-speech-4.1-2b-plus-Q8_0.gguf --local-dir models/granite-speech-4.1-2b-plus && build/bin/transcribe-cli -m models/granite-speech-4.1-2b-plus/granite-speech-4.1-2b-plus-Q8_0.gguf audio.wav",
+          "platform": "any",
+          "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/README.md",
+          "gb_source": "https://huggingface.co/handy-computer/granite-speech-4.1-2b-plus-gguf/tree/c6bbb513acff2c98c76087e8d1376d1d096fe2d6",
+          "note": "transcribe.cpp (MIT, ggml; Metal on Apple Silicon by default, CPU elsewhere, CUDA/Vulkan/HIP via cmake flags per README 'Build'). Command: README 'Build' (cmake -B build && cmake --build build) and 'Usage' (build/bin/transcribe-cli -m <gguf> <wav>) chained with &&, plus an hf download of the granite-speech-4.1-2b-plus-Q8_0.gguf file listed in catalog/granite-speech-4.1-2b-plus.json downloads (published_repo handy-computer/granite-speech-4.1-2b-plus-gguf, 2,345,973,280 bytes at c6bbb51). gb is that file's size; runtime memory is higher. Input must be 16 kHz mono WAV (README). Needs git, cmake, a C++17 compiler and the hf CLI."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/ibm-granite/granite-speech-4.1-2b-plus",
+    "identity_note": "ibm-granite/granite-speech-4.1-2b-plus: granite-speech-4.1-2b with speaker-attributed ASR and word timestamps (card: 'has similar capabilities to the Granite-Speech-4.1-2B model. The plus model adds two new community-requested rich transcription features'). transcribe.cpp port pins upstream edd3bf5 (2026-04-29); later commits 56cc51b (README) and 1454e6e (model.sig) do not change weights per their titles. Repo created 2026-04-16.",
+    "identity_sources": [
+      "https://huggingface.co/ibm-granite/granite-speech-4.1-2b-plus/tree/edd3bf54fbb06d8e263aa0c1939321d67b073f86",
+      "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/granite-speech-4.1-2b-plus.json"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/granite-speech-4.1-2b-plus.json",
+        "reported_label": "variant 'granite-speech-4.1-2b-plus', display_name 'granite-speech-4.1-2b-plus', upstream_repo ibm-granite/granite-speech-4.1-2b-plus, upstream_commit edd3bf5"
+      }
+    ]
+  },
+  {
+    "id": "granite-speech-5-0-470m-turboctc-nc",
+    "name": "Granite Speech 5.0 470M TurboCTC NC",
+    "provider": "IBM",
+    "category": "stt",
+    "released": "2026-08",
+    "released_source": "https://huggingface.co/api/models/ibm-granite/granite-speech-5.0-470m-turboctc-nc",
+    "open_weights": true,
+    "license": "cc-by-nc-sa-4.0",
+    "params_b": 0.473,
+    "params_b_source": "https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc-nc/tree/af0a8e8663defc902944ebdae0d29a5219be11a3",
+    "params_note": "Hugging Face safetensors metadata total 472,993,792 (current main af0a8e8); transcribe.cpp catalog counts 473,014,752 for the converted port.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q8_0-gguf (transcribe.cpp)",
+          "gb": 0.51,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/granite-speech-5.0-470m-turboctc-nc-gguf granite-speech-5.0-470m-turboctc-nc-Q8_0.gguf --local-dir models/granite-speech-5.0-470m-turboctc-nc && build/bin/transcribe-cli -m models/granite-speech-5.0-470m-turboctc-nc/granite-speech-5.0-470m-turboctc-nc-Q8_0.gguf audio.wav",
+          "platform": "any",
+          "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/README.md",
+          "gb_source": "https://huggingface.co/handy-computer/granite-speech-5.0-470m-turboctc-nc-gguf/tree/fb8091e2c1e50ef67d3e795ee9f84d703343d7c5",
+          "note": "transcribe.cpp (MIT, ggml; Metal on Apple Silicon by default, CPU elsewhere, CUDA/Vulkan/HIP via cmake flags per README 'Build'). Command: README 'Build' (cmake -B build && cmake --build build) and 'Usage' (build/bin/transcribe-cli -m <gguf> <wav>) chained with &&, plus an hf download of the granite-speech-5.0-470m-turboctc-nc-Q8_0.gguf file listed in catalog/granite-speech-5.0-470m-turboctc-nc.json downloads (published_repo handy-computer/granite-speech-5.0-470m-turboctc-nc-gguf, 505,885,856 bytes at fb8091e). gb is that file's size; runtime memory is higher. Input must be 16 kHz mono WAV (README). Needs git, cmake, a C++17 compiler and the hf CLI."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc-nc",
+    "identity_note": "ibm-granite/granite-speech-5.0-470m-turboctc-nc: research/non-commercial English CTC model (card disclaimer: 'intended for research and non-commercial use-only. See Granite Speech 5.0 Turbo CTC if interested in commercial use'; 'compact 470 million parameter English ASR model'). Different weights from the Apache-2.0 granite-speech-5-0-470m-turboctc (catalogued; transcribe.cpp scores them separately, 1.29% vs 1.34% LibriSpeech). Port pins upstream 0eb7b4f (2026-08-26); later commit af0a8e8 only adds results to the card. Repo created 2026-08-17.",
+    "identity_sources": [
+      "https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc-nc/tree/0eb7b4fe726a294815dc45d342860465b5af68ef",
+      "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/granite-speech-5.0-470m-turboctc-nc.json"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/granite-speech-5.0-470m-turboctc-nc.json",
+        "reported_label": "variant 'granite-speech-5.0-470m-turboctc-nc', display_name 'Granite Speech 5.0 470M TurboCTC NC', upstream_repo ibm-granite/granite-speech-5.0-470m-turboctc-nc, upstream_commit 0eb7b4f"
+      }
+    ]
+  },
+  {
+    "id": "moss-transcribe-diarize",
+    "name": "MOSS-Transcribe-Diarize 0.9B",
+    "provider": "OpenMOSS",
+    "category": "stt",
+    "released": "2026-07",
+    "released_source": "https://huggingface.co/api/models/OpenMOSS-Team/MOSS-Transcribe-Diarize",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.909,
+    "params_b_source": "https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize/tree/704aa4a9c304e8520be88901e0d1960158ef5b15",
+    "params_note": "Hugging Face safetensors metadata total 908,513,280 (current main 704aa4a); transcribe.cpp catalog counts 908,529,760 for the converted port.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q8_0-gguf (transcribe.cpp)",
+          "gb": 0.99,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/MOSS-Transcribe-Diarize-gguf MOSS-Transcribe-Diarize-Q8_0.gguf --local-dir models/moss-transcribe-diarize && build/bin/transcribe-cli --diarize -m models/moss-transcribe-diarize/MOSS-Transcribe-Diarize-Q8_0.gguf audio.wav",
+          "platform": "any",
+          "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/README.md",
+          "gb_source": "https://huggingface.co/handy-computer/MOSS-Transcribe-Diarize-gguf/tree/535085b2707309ceaa9802ae3078da03b8d2f244",
+          "note": "transcribe.cpp (MIT, ggml; Metal on Apple Silicon by default, CPU elsewhere, CUDA/Vulkan/HIP via cmake flags per README 'Build'). Command: README 'Build' (cmake -B build && cmake --build build) and 'Usage' (build/bin/transcribe-cli -m <gguf> <wav>) chained with &&, plus an hf download of the MOSS-Transcribe-Diarize-Q8_0.gguf file listed in catalog/moss-transcribe-diarize.json downloads (published_repo handy-computer/MOSS-Transcribe-Diarize-gguf, 986,900,160 bytes at 535085b); flags --diarize as in the per-model doc's quick start. gb is that file's size; runtime memory is higher. Input must be 16 kHz mono WAV (README). Needs git, cmake, a C++17 compiler and the hf CLI."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize",
+    "identity_note": "OpenMOSS-Team/MOSS-Transcribe-Diarize ('MOSS-Transcribe-Diarize 0.9B is an end-to-end audio understanding model for long-form multi-speaker transcription, diarization, timestamps'; card news '2026-07-09: Released MOSS-Transcribe-Diarize 0.9B'). transcribe.cpp port pins upstream d7231bb (2026-07-09); later commits change README, serving docs and a FlashAttention declaration, not weights per their titles. Repo created 2026-05-19.",
+    "identity_sources": [
+      "https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize/tree/d7231bbae2587a4af278735eb765b318c4f64edd",
+      "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/moss-transcribe-diarize.json"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/moss-transcribe-diarize.json",
+        "reported_label": "variant 'moss-transcribe-diarize', display_name 'moss-transcribe-diarize', upstream_repo OpenMOSS-Team/MOSS-Transcribe-Diarize, upstream_commit d7231bb"
+      }
+    ]
+  },
+  {
+    "id": "fun-asr-nano-2512",
+    "name": "Fun-ASR-Nano-2512",
+    "provider": "Alibaba (FunAudioLLM)",
+    "category": "stt",
+    "released": "2025-12",
+    "released_source": "https://huggingface.co/api/models/FunAudioLLM/Fun-ASR-Nano-2512",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.83,
+    "params_b_source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/fun-asr-nano-2512.json",
+    "params_note": "transcribe.cpp catalog 'params' 829,791,840 for its converted port of FunAudioLLM/Fun-ASR-Nano-2512@a7088d6 (no safetensors index on the Hugging Face repo).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q8_0-gguf (transcribe.cpp)",
+          "gb": 0.89,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/Fun-ASR-Nano-2512-gguf Fun-ASR-Nano-2512-Q8_0.gguf --local-dir models/fun-asr-nano-2512 && build/bin/transcribe-cli -m models/fun-asr-nano-2512/Fun-ASR-Nano-2512-Q8_0.gguf audio.wav",
+          "platform": "any",
+          "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/README.md",
+          "gb_source": "https://huggingface.co/handy-computer/Fun-ASR-Nano-2512-gguf/tree/1b60240dda8f895d14b5d5d59a90d1509e27f662",
+          "note": "transcribe.cpp (MIT, ggml; Metal on Apple Silicon by default, CPU elsewhere, CUDA/Vulkan/HIP via cmake flags per README 'Build'). Command: README 'Build' (cmake -B build && cmake --build build) and 'Usage' (build/bin/transcribe-cli -m <gguf> <wav>) chained with &&, plus an hf download of the Fun-ASR-Nano-2512-Q8_0.gguf file listed in catalog/fun-asr-nano-2512.json downloads (published_repo handy-computer/Fun-ASR-Nano-2512-gguf, 891,270,912 bytes at 1b60240). gb is that file's size; runtime memory is higher. Input must be 16 kHz mono WAV (README). Needs git, cmake, a C++17 compiler and the hf CLI."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512",
+    "identity_note": "FunAudioLLM/Fun-ASR-Nano-2512 (Tongyi Lab end-to-end ASR; card: Chinese, English and Japanese; 'Model Size 0.8B'). Open-weights nano model, distinct from the hosted fun-asr-flash (catalogued) and from Fun-ASR-MLT-Nano-2512. transcribe.cpp port pins upstream a7088d6 (2025-12-23); later commits are card/docs edits per their titles. Licence: card front matter apache-2.0 (added 2026-05-25).",
+    "identity_sources": [
+      "https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512/tree/a7088d620f755dcdca575b63db184c3ad55b2865",
+      "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/fun-asr-nano-2512.json"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/fun-asr-nano-2512.json",
+        "reported_label": "variant 'fun-asr-nano-2512', display_name 'fun-asr-nano-2512', upstream_repo FunAudioLLM/Fun-ASR-Nano-2512, upstream_commit a7088d6"
+      }
+    ]
+  },
+  {
+    "id": "fun-asr-mlt-nano-2512",
+    "name": "Fun-ASR-MLT-Nano-2512",
+    "provider": "Alibaba (FunAudioLLM)",
+    "category": "stt",
+    "released": "2025-12",
+    "released_source": "https://huggingface.co/api/models/FunAudioLLM/Fun-ASR-MLT-Nano-2512",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.83,
+    "params_b_source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/fun-asr-mlt-nano-2512.json",
+    "params_note": "transcribe.cpp catalog 'params' 829,791,840 for its converted port of FunAudioLLM/Fun-ASR-MLT-Nano-2512@cf67a93 (no safetensors index on the Hugging Face repo).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q8_0-gguf (transcribe.cpp)",
+          "gb": 0.89,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/Fun-ASR-MLT-Nano-2512-gguf Fun-ASR-MLT-Nano-2512-Q8_0.gguf --local-dir models/fun-asr-mlt-nano-2512 && build/bin/transcribe-cli -m models/fun-asr-mlt-nano-2512/Fun-ASR-MLT-Nano-2512-Q8_0.gguf audio.wav",
+          "platform": "any",
+          "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/README.md",
+          "gb_source": "https://huggingface.co/handy-computer/Fun-ASR-MLT-Nano-2512-gguf/tree/364640227abd3f786d139ac43b8ac1a98673989d",
+          "note": "transcribe.cpp (MIT, ggml; Metal on Apple Silicon by default, CPU elsewhere, CUDA/Vulkan/HIP via cmake flags per README 'Build'). Command: README 'Build' (cmake -B build && cmake --build build) and 'Usage' (build/bin/transcribe-cli -m <gguf> <wav>) chained with &&, plus an hf download of the Fun-ASR-MLT-Nano-2512-Q8_0.gguf file listed in catalog/fun-asr-mlt-nano-2512.json downloads (published_repo handy-computer/Fun-ASR-MLT-Nano-2512-gguf, 891,271,232 bytes at 3646402). gb is that file's size; runtime memory is higher. Input must be 16 kHz mono WAV (README). Needs git, cmake, a C++17 compiler and the hf CLI."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/FunAudioLLM/Fun-ASR-MLT-Nano-2512",
+    "identity_note": "FunAudioLLM/Fun-ASR-MLT-Nano-2512: multilingual (MLT) variant of Fun-ASR-Nano-2512 (card model table 'Fun-ASR-MLT-Nano'). Distinct weights from fun-asr-nano-2512 (transcribe.cpp scores both). Port pins upstream cf67a93 (2025-12-23); later commits edit the card/install floor. Licence: card front matter apache-2.0.",
+    "identity_sources": [
+      "https://huggingface.co/FunAudioLLM/Fun-ASR-MLT-Nano-2512/tree/cf67a938bf2829959d08fdfb84e186eff02a67ff",
+      "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/fun-asr-mlt-nano-2512.json"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/fun-asr-mlt-nano-2512.json",
+        "reported_label": "variant 'fun-asr-mlt-nano-2512', display_name 'fun-asr-mlt-nano-2512', upstream_repo FunAudioLLM/Fun-ASR-MLT-Nano-2512, upstream_commit cf67a93"
+      }
+    ]
+  },
+  {
+    "id": "sensevoice-small",
+    "name": "SenseVoice Small",
+    "provider": "Alibaba (FunAudioLLM)",
+    "category": "stt",
+    "released": "2024-07",
+    "released_source": "https://huggingface.co/api/models/FunAudioLLM/SenseVoiceSmall",
+    "open_weights": true,
+    "license": "funasr-model-license",
+    "params_b": 0.234,
+    "params_b_source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/sensevoice-small.json",
+    "params_note": "transcribe.cpp catalog 'params' 234,000,287 for its converted port of FunAudioLLM/SenseVoiceSmall@3eb3b4e (no safetensors index on the Hugging Face repo).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q8_0-gguf (transcribe.cpp)",
+          "gb": 0.25,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/SenseVoiceSmall-gguf SenseVoiceSmall-Q8_0.gguf --local-dir models/sensevoice-small && build/bin/transcribe-cli --language en -m models/sensevoice-small/SenseVoiceSmall-Q8_0.gguf audio.wav",
+          "platform": "any",
+          "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/README.md",
+          "gb_source": "https://huggingface.co/handy-computer/SenseVoiceSmall-gguf/tree/3d0e44ad1ba285d09e7c86d6cc07604385082bb4",
+          "note": "transcribe.cpp (MIT, ggml; Metal on Apple Silicon by default, CPU elsewhere, CUDA/Vulkan/HIP via cmake flags per README 'Build'). Command: README 'Build' (cmake -B build && cmake --build build) and 'Usage' (build/bin/transcribe-cli -m <gguf> <wav>) chained with &&, plus an hf download of the SenseVoiceSmall-Q8_0.gguf file listed in catalog/sensevoice-small.json downloads (published_repo handy-computer/SenseVoiceSmall-gguf, 252,684,608 bytes at 3d0e44a); flags --language en as in the per-model doc's quick start. gb is that file's size; runtime memory is higher. Input must be 16 kHz mono WAV (README). Needs git, cmake, a C++17 compiler and the hf CLI."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/FunAudioLLM/SenseVoiceSmall",
+    "identity_note": "FunAudioLLM/SenseVoiceSmall (SenseVoice speech foundation model: ASR, language ID, emotion and audio-event detection; card). transcribe.cpp port pins upstream 3eb3b4e (2024-07-31); later commits are card edits. Licence: card 'license: other, license_name: model-license' linking FunASR MODEL_LICENSE.",
+    "identity_sources": [
+      "https://huggingface.co/FunAudioLLM/SenseVoiceSmall/tree/3eb3b4eeffc2f2dde6051b853983753db33e35c3",
+      "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/sensevoice-small.json"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/sensevoice-small.json",
+        "reported_label": "variant 'sensevoice-small', display_name 'sensevoice-small', upstream_repo FunAudioLLM/SenseVoiceSmall, upstream_commit 3eb3b4e"
+      }
+    ]
+  },
+  {
+    "id": "breeze-asr-25",
+    "name": "Breeze ASR 25",
+    "provider": "MediaTek Research",
+    "category": "stt",
+    "released": "2025-06",
+    "released_source": "https://huggingface.co/api/models/MediaTek-Research/Breeze-ASR-25",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.543,
+    "params_b_source": "https://huggingface.co/MediaTek-Research/Breeze-ASR-25/tree/cffe7ccb404d025296a00758d0a33468bec3a9d0",
+    "params_note": "Hugging Face safetensors metadata total 1,543,304,960 (current main cffe7cc); transcribe.cpp catalog counts 1,543,321,440 for the converted port.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q8_0-gguf (transcribe.cpp)",
+          "gb": 1.67,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/Breeze-ASR-25-gguf Breeze-ASR-25-Q8_0.gguf --local-dir models/breeze-asr-25 && build/bin/transcribe-cli -m models/breeze-asr-25/Breeze-ASR-25-Q8_0.gguf audio.wav",
+          "platform": "any",
+          "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/README.md",
+          "gb_source": "https://huggingface.co/handy-computer/Breeze-ASR-25-gguf/tree/6b7a53cea9265a2cf2b19e37b3ceadeb2927d3ba",
+          "note": "transcribe.cpp (MIT, ggml; Metal on Apple Silicon by default, CPU elsewhere, CUDA/Vulkan/HIP via cmake flags per README 'Build'). Command: README 'Build' (cmake -B build && cmake --build build) and 'Usage' (build/bin/transcribe-cli -m <gguf> <wav>) chained with &&, plus an hf download of the Breeze-ASR-25-Q8_0.gguf file listed in catalog/breeze-asr-25.json downloads (published_repo handy-computer/Breeze-ASR-25-gguf, 1,667,964,224 bytes at 6b7a53c). gb is that file's size; runtime memory is higher. Input must be 16 kHz mono WAV (README). Needs git, cmake, a C++17 compiler and the hf CLI."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/MediaTek-Research/Breeze-ASR-25",
+    "identity_note": "MediaTek-Research/Breeze-ASR-25, fine-tuned from Whisper-large-v2 for Taiwanese Mandarin and Mandarin-English code-switching (card front matter base_model openai/whisper-large-v2). Not whisper-large-v2 (catalogued). transcribe.cpp port pins upstream cffe7cc (2025-07-08, current main); repo created 2025-06-06.",
+    "identity_sources": [
+      "https://huggingface.co/MediaTek-Research/Breeze-ASR-25/tree/cffe7ccb404d025296a00758d0a33468bec3a9d0",
+      "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/breeze-asr-25.json"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/breeze-asr-25.json",
+        "reported_label": "variant 'breeze-asr-25', display_name 'breeze-asr-25', upstream_repo MediaTek-Research/Breeze-ASR-25, upstream_commit cffe7cc"
+      }
+    ]
+  },
+  {
+    "id": "medasr",
+    "name": "MedASR",
+    "provider": "Google",
+    "category": "stt",
+    "released": "2025-12",
+    "released_source": "https://huggingface.co/api/models/google/medasr",
+    "open_weights": true,
+    "license": "health-ai-developer-foundations",
+    "params_b": 0.105,
+    "params_b_source": "https://huggingface.co/google/medasr/tree/ae1e4845b4b07479735d93e1e591e566435b7104",
+    "params_note": "Hugging Face safetensors metadata total 105,282,816 (current main ae1e484); transcribe.cpp catalog counts 105,316,112 for the converted port.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q8_0-gguf (transcribe.cpp)",
+          "gb": 0.13,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/medasr-gguf medasr-Q8_0.gguf --local-dir models/medasr && build/bin/transcribe-cli --language en -m models/medasr/medasr-Q8_0.gguf audio.wav",
+          "platform": "any",
+          "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/README.md",
+          "gb_source": "https://huggingface.co/handy-computer/medasr-gguf/tree/4d7958fe23a9b8046951497f44d4aa67a9883cd3",
+          "note": "transcribe.cpp (MIT, ggml; Metal on Apple Silicon by default, CPU elsewhere, CUDA/Vulkan/HIP via cmake flags per README 'Build'). Command: README 'Build' (cmake -B build && cmake --build build) and 'Usage' (build/bin/transcribe-cli -m <gguf> <wav>) chained with &&, plus an hf download of the medasr-Q8_0.gguf file listed in catalog/medasr.json downloads (published_repo handy-computer/medasr-gguf, 127,712,448 bytes at 4d7958f); flags --language en as in the per-model doc's quick start. gb is that file's size; runtime memory is higher. Input must be 16 kHz mono WAV (README). Needs git, cmake, a C++17 compiler and the hf CLI."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/google/medasr",
+    "identity_note": "google/medasr (Health AI Developer Foundations; gated with automatic approval) - an English medical-dictation ASR model; its general-domain LibriSpeech/FLEURS WER is much higher than general models (domain mismatch, not a failed run: 0 empty hypotheses). transcribe.cpp port pins upstream ae1e484 (current main). Repo created 2025-12-18.",
+    "identity_sources": [
+      "https://huggingface.co/google/medasr",
+      "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/medasr.json"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/medasr.json",
+        "reported_label": "variant 'medasr', display_name 'medasr', upstream_repo google/medasr, upstream_commit ae1e484"
+      }
+    ]
+  },
+  {
+    "id": "parakeet-primeline",
+    "name": "Parakeet primeline (German)",
+    "provider": "primeLine",
+    "category": "stt",
+    "released": "2025-12",
+    "released_source": "https://huggingface.co/api/models/primeline/parakeet-primeline",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "params_b": 0.627,
+    "params_b_source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-primeline.json",
+    "params_note": "transcribe.cpp catalog 'params' 627,052,166 for its converted port of primeline/parakeet-primeline@3f1a9bc (no safetensors index on the Hugging Face repo).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q8_0-gguf (transcribe.cpp)",
+          "gb": 0.74,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/handy-computer/transcribe.cpp.git && cd transcribe.cpp && cmake -B build && cmake --build build && hf download handy-computer/parakeet-primeline-gguf parakeet-primeline-Q8_0.gguf --local-dir models/parakeet-primeline && build/bin/transcribe-cli -m models/parakeet-primeline/parakeet-primeline-Q8_0.gguf audio.wav",
+          "platform": "any",
+          "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/README.md",
+          "gb_source": "https://huggingface.co/handy-computer/parakeet-primeline-gguf/tree/7c63545b352e5d410ccc1ea1eb49aa751e65780b",
+          "note": "transcribe.cpp (MIT, ggml; Metal on Apple Silicon by default, CPU elsewhere, CUDA/Vulkan/HIP via cmake flags per README 'Build'). Command: README 'Build' (cmake -B build && cmake --build build) and 'Usage' (build/bin/transcribe-cli -m <gguf> <wav>) chained with &&, plus an hf download of the parakeet-primeline-Q8_0.gguf file listed in catalog/parakeet-primeline.json downloads (published_repo handy-computer/parakeet-primeline-gguf, 739,508,640 bytes at 7c63545). gb is that file's size; runtime memory is higher. Input must be 16 kHz mono WAV (README). Needs git, cmake, a C++17 compiler and the hf CLI."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/primeline/parakeet-primeline",
+    "identity_note": "primeline/parakeet-primeline: German-optimised fine-tune of nvidia/parakeet-tdt-0.6b-v3 (card: 'based on the NVIDIA parakeet-tdt-0.6b-v3 architecture', 'specifically optimized for high-precision German transcription', 600M). transcribe.cpp port pins upstream 3f1a9bc (2026-04-24, current main; checkpoint file 2_95_WER.nemo). Repo created 2025-12-10. Also run by raven.eval (Tuda-De, MLS, CV19) - different sets, not imported.",
+    "identity_sources": [
+      "https://huggingface.co/primeline/parakeet-primeline/tree/3f1a9bcb611dfeda53fe74fe5f1a3d5701e8023e",
+      "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-primeline.json"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-primeline.json",
+        "reported_label": "variant 'parakeet-primeline', display_name 'parakeet-primeline', upstream_repo primeline/parakeet-primeline, upstream_commit 3f1a9bc"
+      }
+    ]
+  },
+  {
+    "id": "fish-audio-transcribe-1",
+    "name": "Fish Audio Transcribe 1",
+    "provider": "Fish Audio",
+    "category": "stt",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://docs.fish.audio/api-reference/endpoint/openapi-v1/speech-to-text",
+      "provider": "Fish Audio",
+      "price": 0.006,
+      "unit": "audio-minute",
+      "price_source": "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+      "price_note": "USD per input audio minute: Fish Audio's Pricing & Rate Limits page, 'Automatic Speech Recognition (ASR) Models' table, lists `transcribe-1` at $0.36 / audio hour (÷60); `transcribe-1-pro` costs the same. Product: Fish Audio Speech to Text API (POST /v1/asr). API model: transcribe-1 (served when the model header is missing). Price basis: published pay-as-you-go list rate. Currency: USD. Fish Audio official docs, observed 2026-10-09."
+    },
+    "local": null,
+    "identity_note": "Fish Audio's speech-to-text model transcribe-1 on POST https://api.fish.audio/v1/asr. Fish docs: 'transcribe-1 | General transcription of short recordings. Used when the model header is missing or not an exact match'; the newer transcribe-1-pro (changelog 'Transcribe 1 Pro', September 18, 2026) is a separate model. verli ran it in July 2026 without a model header, i.e. transcribe-1. First-party release month not found, so released is left out. Closed weights.",
+    "identity_sources": [
+      "https://docs.fish.audio/api-reference/endpoint/openapi-v1/speech-to-text",
+      "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://docs.fish.audio/api-reference/endpoint/openapi-v1/speech-to-text",
+        "reported_label": "transcribe-1 — General transcription of short recordings. Used when the model header is missing or not an exact match."
+      },
+      {
+        "source": "https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json",
+        "reported_label": "engine 'fish-audio-asr' (registry model 'transcribe-1')"
+      }
+    ]
+  },
+  {
+    "id": "inworld-stt-1",
+    "name": "Inworld STT-1",
+    "provider": "Inworld",
+    "category": "stt",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://docs.inworld.ai/stt/overview",
+      "provider": "Inworld",
+      "price": 0.0025,
+      "unit": "audio-minute",
+      "price_source": "https://inworld.ai/pricing",
+      "price_note": "USD per input audio minute: Inworld's pricing page lists 'STT 1 $0.15/hr' on the On-Demand plan (÷60); paid plans list $0.10/hr after plan discounts. Product: Inworld Speech-to-Text API (sync /stt/v1/transcribe and WebSocket streaming). API model: inworld/inworld-stt-1. Settings: On-Demand plan. Price basis: published list rate. Exclusions: monthly plan fees and plan discounts. Currency: USD. Inworld official pricing page, observed 2026-10-09."
+    },
+    "local": null,
+    "identity_note": "Inworld's speech-to-text model, API modelId inworld/inworld-stt-1 (Inworld STT overview: 'Use synchronous transcription for complete audio files, and bidirectional WebSocket streaming for live audio. Both run the inworld/inworld-stt-1 model.'; 30 languages, Voice Profile signals). verli ran exactly modelId 'inworld/inworld-stt-1' in July 2026. First-party release month not found, so released is left out. Closed weights.",
+    "identity_sources": [
+      "https://docs.inworld.ai/stt/overview",
+      "https://inworld.ai/pricing"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://docs.inworld.ai/stt/overview",
+        "reported_label": "Both run the inworld/inworld-stt-1 model."
+      },
+      {
+        "source": "https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json",
+        "reported_label": "engine 'inworld-stt-1' (registry model 'inworld/inworld-stt-1')"
+      }
+    ]
+  },
+  {
+    "id": "longcat-audiodit-3-5b",
+    "name": "LongCat-AudioDiT-3.5B",
+    "provider": "Meituan",
+    "category": "tts",
+    "released": "2026-03",
+    "released_source": "https://huggingface.co/api/models/meituan-longcat/LongCat-AudioDiT-3.5B",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md",
+    "params_b": 3.5,
+    "params_b_source": "https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md",
+    "params_note": "Maker's size label 'LongCat-AudioDiT-3.5B' (diffusion backbone). HF safetensors header total 3,833,985,217 F32 parameters for the single model.safetensors, which also holds the Wav-VAE and UMT5-base text encoder.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 weights (official LongCat-AudioDiT repo, transformers>=5.3)",
+          "gb": 15.34,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/meituan-longcat/LongCat-AudioDiT.git && cd LongCat-AudioDiT && pip install -r requirements.txt && python inference.py --text \"Today is a sunny day, let's go for a walk in the park.\" --output_audio output.wav --model_dir meituan-longcat/LongCat-AudioDiT-3.5B",
+          "platform": "any",
+          "source": "https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md",
+          "gb_source": "https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/tree/5d3e6dc007872d756c3a69b44951598d7d9bdf6d",
+          "note": "Card 'CLI Inference' block (pip install -r requirements.txt; python inference.py --text ... --output_audio output.wav --model_dir ...) run from the official GitHub repo (inference.py and requirements.txt at commit 12c76b5), with --model_dir set to this checkpoint; clone step and && chaining added. Platform evidence: inference.py line 45 'device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")' (CPU works, slowly). gb is the size of model.safetensors (the only weight file); runtime memory is higher and the UMT5 tokenizer (ArthurZ/umt5-base) is fetched on first run. Add --prompt_text/--prompt_audio for voice cloning."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B",
+    "identity_note": "Meituan LongCat team's diffusion TTS in the waveform latent space, exact checkpoint meituan-longcat/LongCat-AudioDiT-3.5B @ 5d3e6dc007872d756c3a69b44951598d7d9bdf6d (MIT; created 2026-03-30). The 3.5B row of the LongCat-AudioDiT Seed-benchmark table (card and arXiv:2603.29339v1 Table 1). Distinct from the LongCat LLMs and LongCat-Audio-Codec.",
+    "identity_sources": [
+      "https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/tree/5d3e6dc007872d756c3a69b44951598d7d9bdf6d",
+      "https://arxiv.org/html/2603.29339v1"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md",
+        "reported_label": "LongCat-AudioDiT-3.5B"
+      },
+      {
+        "source": "https://arxiv.org/html/2603.29339v1",
+        "reported_label": "LongCat-AudioDiT-3.5B"
+      },
+      {
+        "source": "https://arxiv.org/html/2607.23938v1",
+        "reported_label": "LongCat-AudioDiT-3.5B [35] (ref. 35 = arXiv 2603.29339)"
+      }
+    ]
+  },
+  {
+    "id": "longcat-audiodit-1b",
+    "name": "LongCat-AudioDiT-1B",
+    "provider": "Meituan",
+    "category": "tts",
+    "released": "2026-03",
+    "released_source": "https://huggingface.co/api/models/meituan-longcat/LongCat-AudioDiT-1B",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/meituan-longcat/LongCat-AudioDiT-1B/blob/4f4c19434f2e3b991998d0ead6ab2cd056d947b7/README.md",
+    "params_b": 1,
+    "params_b_source": "https://huggingface.co/meituan-longcat/LongCat-AudioDiT-1B/blob/4f4c19434f2e3b991998d0ead6ab2cd056d947b7/README.md",
+    "params_note": "Maker's size label 'LongCat-AudioDiT-1B' (diffusion backbone). HF safetensors header total 1,419,923,649 F32 parameters for the single model.safetensors, which also holds the Wav-VAE and UMT5-base text encoder.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 weights (official LongCat-AudioDiT repo, transformers>=5.3)",
+          "gb": 5.68,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/meituan-longcat/LongCat-AudioDiT.git && cd LongCat-AudioDiT && pip install -r requirements.txt && python inference.py --text \"Today is a sunny day, let's go for a walk in the park.\" --output_audio output.wav --model_dir meituan-longcat/LongCat-AudioDiT-1B",
+          "platform": "any",
+          "source": "https://huggingface.co/meituan-longcat/LongCat-AudioDiT-1B/blob/4f4c19434f2e3b991998d0ead6ab2cd056d947b7/README.md",
+          "gb_source": "https://huggingface.co/meituan-longcat/LongCat-AudioDiT-1B/tree/4f4c19434f2e3b991998d0ead6ab2cd056d947b7",
+          "note": "Card 'CLI Inference' block (pip install -r requirements.txt; python inference.py --text ... --output_audio output.wav --model_dir ...) run from the official GitHub repo (inference.py and requirements.txt at commit 12c76b5), with --model_dir set to this checkpoint; clone step and && chaining added. Platform evidence: inference.py line 45 'device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")' (CPU works, slowly). gb is the size of model.safetensors (the only weight file); runtime memory is higher and the UMT5 tokenizer (ArthurZ/umt5-base) is fetched on first run. Add --prompt_text/--prompt_audio for voice cloning."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/meituan-longcat/LongCat-AudioDiT-1B",
+    "identity_note": "Meituan LongCat team's diffusion TTS in the waveform latent space, exact checkpoint meituan-longcat/LongCat-AudioDiT-1B @ 4f4c19434f2e3b991998d0ead6ab2cd056d947b7 (MIT; created 2026-03-30). The 1B row of the LongCat-AudioDiT Seed-benchmark table (card and arXiv:2603.29339v1 Table 1). Distinct from the LongCat LLMs and LongCat-Audio-Codec.",
+    "identity_sources": [
+      "https://huggingface.co/meituan-longcat/LongCat-AudioDiT-1B/tree/4f4c19434f2e3b991998d0ead6ab2cd056d947b7",
+      "https://arxiv.org/html/2603.29339v1"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md",
+        "reported_label": "LongCat-AudioDiT-1B"
+      },
+      {
+        "source": "https://arxiv.org/html/2603.29339v1",
+        "reported_label": "LongCat-AudioDiT-1B"
+      }
+    ]
+  },
+  {
+    "id": "vibevoice-asr-streaming-7b",
+    "name": "VibeVoice-ASR-Streaming-7B",
+    "provider": "Microsoft",
+    "category": "stt",
+    "released": "2026-09",
+    "released_source": "https://huggingface.co/api/models/microsoft/VibeVoice-ASR-Streaming-7B",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B/blob/60d858b518b4e19d404af3737f848fc185b30177/README.md",
+    "params_b": 8.67,
+    "params_b_source": "https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B/tree/60d858b518b4e19d404af3737f848fc185b30177",
+    "params_note": "HF safetensors metadata total 8,674,021,857 (BF16), incl. the frozen acoustic/semantic tokenizer encoders; the maker's '7B' refers to the Qwen2.5-7B backbone.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16 (official VibeVoice repo)",
+          "gb": 17.36,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/microsoft/VibeVoice.git && cd VibeVoice && pip install -e . && python demo/vibevoice_asr_streaming_inference_from_file.py --model_path microsoft/VibeVoice-ASR-Streaming-7B --audio_files audio.wav",
+          "platform": "nvidia",
+          "source": "https://github.com/microsoft/VibeVoice/blob/16fb2cb1217c9934a886e1948ffb06120caa2df5/docs/vibevoice-asr-streaming.md",
+          "gb_source": "https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B/tree/60d858b518b4e19d404af3737f848fc185b30177",
+          "note": "docs/vibevoice-asr-streaming.md 'Install from github' (git clone; cd VibeVoice; pip install -e .) chained with 'Usage 2: Inference from files directly' with the HF repo id as --model_path (load_frame_config() and from_pretrained accept 'a local checkpoint directory or a HF repo id'). Needs ffmpeg (doc step 3). Platform evidence: doc 'We recommend using NVIDIA Deep Learning Container'; script defaults to cuda and loads bf16 only on cuda (float32 on cpu/mps). gb is the sum of the 8 safetensors shards (17.36 GB bf16); runtime memory is higher."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B",
+    "identity_note": "Exact checkpoint microsoft/VibeVoice-ASR-Streaming-7B @ 60d858b (MIT, created 2026-09-02): the released 22-frame (2.9 s) chunk, 4-frame lookahead configuration ('We release 1.5B and 7B model weights for the 22-frame (2.9-second) chunk configuration', arXiv:2609.02812v2). Distinct from the non-streaming VibeVoice-ASR / vibevoice-asr-hf and the 1.5B streaming model.",
+    "identity_sources": [
+      "https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B/tree/60d858b518b4e19d404af3737f848fc185b30177",
+      "https://arxiv.org/html/2609.02812v2"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2609.02812v2",
+        "reported_label": "VibeVoice-ASR-Streaming -7B (22 frm)"
+      }
+    ]
+  },
+  {
+    "id": "vibevoice-asr-bitnet",
+    "name": "VibeVoice-ASR-BitNet",
+    "provider": "Microsoft",
+    "category": "stt",
+    "released": "2026-07",
+    "released_source": "https://huggingface.co/api/models/microsoft/VibeVoice-ASR-BitNet",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md",
+    "params_b": 2.81,
+    "params_b_source": "https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/tree/66e78021ab8f5f06133d1ab421ba4d348bda97c9",
+    "params_note": "HF safetensors metadata: 2,814,116,321 F32 parameters in the original (pre-quantization) safetensors; VibeASR.cpp README: the Qwen2.5-7B LM of VibeVoice-ASR is replaced with Qwen2.5-1.5B. The released GGUF pair is I8_S (VAE tokenizer) + I2_S/Q6_K (LM).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "I8_S VAE + I2_S LM (Q6_K embeddings) GGUF, VibeASR.cpp",
+          "gb": 1.7,
+          "gb_estimated": true,
+          "cmd": "git clone --recursive https://github.com/microsoft/VibeASR.cpp.git && cd VibeASR.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && pip install huggingface_hub && huggingface-cli download microsoft/VibeVoice-ASR-BitNet vibeasr-vae-encoder-i8_s.gguf vibeasr-lm-i2_s-embed-q6_k.gguf --local-dir models/vibeasr && ./build/bin/asr_infer --vae-model models/vibeasr/vibeasr-vae-encoder-i8_s.gguf --lm-model models/vibeasr/vibeasr-lm-i2_s-embed-q6_k.gguf --audio input.wav -t 4",
+          "platform": "any",
+          "source": "https://github.com/microsoft/VibeASR.cpp/blob/c4334009c88060f86cdbbd684b62662f710b6c20/README.md",
+          "gb_source": "https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/tree/66e78021ab8f5f06133d1ab421ba4d348bda97c9",
+          "note": "VibeASR.cpp README 'Manual Build' (clone --recursive, cmake configure/build) + 'CLI Inference' chained with &&; the download is narrowed to the two ready-to-use GGUF files (the README's whole-repo download also pulls 11.3 GB of original safetensors) and '-j$(nproc)' shortened to '-j'. Platform evidence: README 'real-time multilingual speech recognition on CPU', benchmarks on x86 AVX2 and Apple M4 (ARM NEON). gb = vibeasr-vae-encoder-i8_s.gguf 0.70 GB + vibeasr-lm-i2_s-embed-q6_k.gguf 0.99 GB; runtime memory is higher. Windows needs GCC/Clang (MinGW)."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/microsoft/VibeVoice-ASR-BitNet",
+    "identity_note": "Exact release microsoft/VibeVoice-ASR-BitNet @ 66e7802 (MIT, created 2026-07-24): 'a compressed variant of VibeVoice-ASR' for CPU inference with a Qwen2.5-1.5B LM (VibeASR.cpp README). Not the 7B VibeVoice-ASR (vibevoice-asr-hf) and not the streaming models.",
+    "identity_sources": [
+      "https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/tree/66e78021ab8f5f06133d1ab421ba4d348bda97c9",
+      "https://arxiv.org/html/2607.21075v2"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md",
+        "reported_label": "VibeVoice-ASR-BitNet"
+      },
+      {
+        "source": "https://arxiv.org/html/2607.21075v2",
+        "reported_label": "VibeVoice-ASR-BitNet ∗ (This work)"
+      }
+    ]
+  },
+  {
+    "id": "gepard-1-0",
+    "name": "Gepard 1.0",
+    "provider": "nineninesix.ai",
+    "category": "tts",
+    "released": "2026-06",
+    "released_source": "https://huggingface.co/api/models/nineninesix/gepard-1.0",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md",
+    "params_b": 0.556,
+    "params_b_source": "https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md",
+    "params_note": "Card: 'Parameters: ≈ 555.7M (backbone + audio interface + voice-cloning compressor)'; Qwen3.5-based 14-layer backbone ≈500M. NVIDIA NeMo NanoCodec (separate, NVIDIA Open Model License) not included.",
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/nineninesix/gepard-1.0",
+    "identity_note": "Comparison-only for now: exact checkpoint nineninesix/gepard-1.0 @ 440c3a2 (Apache-2.0, created 2026-06-22; stop_head weights updated 2026-08-06, other parameters unchanged per card). The card's and arXiv:2609.04222v1 §6.3 table row 'Gepard 1.0 (Ours)'. Distinct from gepard-1.1 (2026-09-05). The official inference stack (github.com/nineninesix-ai/gepard-inference) is a CUDA server + client ('make serve' in one terminal, 'make generate' in another), so no single copy-paste command was added; a hosted API exists at nineninesix.ai but no price was verified.",
+    "identity_sources": [
+      "https://huggingface.co/nineninesix/gepard-1.0/tree/440c3a27797e98673c8e56f0569a86c09ea5de34",
+      "https://arxiv.org/pdf/2609.04222v1"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md",
+        "reported_label": "Gepard 1.0 (Ours)"
+      },
+      {
+        "source": "https://arxiv.org/pdf/2609.04222v1",
+        "reported_label": "Gepard (Ours)"
+      }
+    ]
+  },
+  {
+    "id": "dots-tts-mf",
+    "name": "dots.tts MF 2B (MeanFlow, NFE 4)",
+    "provider": "dots.tts",
+    "category": "tts",
+    "released": "2026-06",
+    "released_source": "https://huggingface.co/api/models/dots-studio/dots.tts-mf",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/dots-studio/dots.tts-mf/blob/c28105adc8228143392b4e346994ff613ee48a06/README.md",
+    "params_b": 2,
+    "params_b_source": "https://arxiv.org/html/2606.07080v2",
+    "params_note": "Maker's rounded '2B' system figure (Table 2 Params column); HF safetensors metadata total 2,199,404,546 (BF16).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16 (dots.tts package CLI)",
+          "gb": 5.16,
+          "gb_estimated": true,
+          "cmd": "pip install dots.tts && dots.tts --model-name-or-path dots-studio/dots.tts-mf --text \"Hello, this is a zero-shot voice cloning demonstration.\" --prompt-audio /path/to/reference.wav --prompt-text \"The exact transcript of the reference audio.\" --num-steps 4 --output clone.wav",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/dots-studio/dots.tts-mf/blob/c28105adc8228143392b4e346994ff613ee48a06/README.md",
+          "gb_source": "https://huggingface.co/dots-studio/dots.tts-mf/tree/c28105adc8228143392b4e346994ff613ee48a06",
+          "note": "Card 'CLI' block (NFE = 4, the recommended setting; --guidance-scale is a no-op on this checkpoint) joined onto one line, with the PyPI install used by the catalogued dots-tts-soar entry (the card installs from git+https://github.com/studio-dots-ai/dots.tts.git with constraints). Platform as dots-tts-soar (bf16 default; runtime rejects half precision on CPU). gb is the sum of model.safetensors 4.40 GB + vocoder.safetensors 0.72 GB + speaker_encoder.safetensors 0.03 GB + tokenizer 0.01 GB; runtime memory is higher. Needs a reference clip plus transcript."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/dots-studio/dots.tts-mf",
+    "identity_note": "Exact checkpoint dots-studio/dots.tts-mf @ c28105a (Apache-2.0, created 2026-06-04): 'the CFG-aware MeanFlow distillation of dots.tts-soar', recommended at NFE = 4; the report's 'MF, NFE=4' rows are this checkpoint at its recommended setting (card prints the identical rows). Not dots.tts-soar, dots.tts-base or the later dots.tts-mf-2steps / -1step repos (2026-08-10).",
+    "identity_sources": [
+      "https://huggingface.co/dots-studio/dots.tts-mf/tree/c28105adc8228143392b4e346994ff613ee48a06",
+      "https://arxiv.org/html/2606.07080v2"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2606.07080v2",
+        "reported_label": "– MF, NFE=4 (Table 2); dots.tts (MF, NFE=4) (Table 4)"
+      },
+      {
+        "source": "https://huggingface.co/dots-studio/dots.tts-mf/blob/c28105adc8228143392b4e346994ff613ee48a06/README.md",
+        "reported_label": "dots.tts-mf, NFE 4"
+      }
+    ]
+  },
+  {
+    "id": "lemas-tts-multilingual-grl",
+    "name": "LEMAS-TTS (w/o prosody, multilingual_grl)",
+    "provider": "LEMAS Project",
+    "category": "tts",
+    "released": "2026-01",
+    "released_source": "https://huggingface.co/api/models/LEMAS-Project/LEMAS-TTS",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "license_source": "https://huggingface.co/LEMAS-Project/LEMAS-TTS/blob/386ba356c1885091bfd92105fcabbaa3075d9480/README.md",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "official checkpoint (LEMAS-TTS repo, F5-TTS-based)",
+          "gb": 1.4,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/LEMAS-Project/LEMAS-TTS.git && cd LEMAS-TTS && pip install -r requirements.txt && hf download LEMAS-Project/LEMAS-TTS --include \"pretrained_models/*\" --local-dir . && PYTHONPATH=$PWD python -m lemas_tts.scripts.tts_multilingual --model multilingual_grl --ckpt_file pretrained_models/ckpts/multilingual_grl/multilingual_grl.safetensors --vocab_file pretrained_models/data/multilingual_grl/vocab.txt --frontend phone --use_ema --ref_audio pretrained_models/demos/lemas_tts_test/es.wav --ref_text \"Te voy a dar un tip que le copié a John Rockefeller, uno de los empresarios más picudos de la historia. \" --text \"I want to give you a tip I copied from John Rockefeller.\" --output_wave out.wav --nfe_step 64 --cfg_strength 5.0 --sway_sampling_coef 3.0 --ref_ratio 1.0 --separate_langs --speed 1.0 --seed -1",
+          "platform": "any",
+          "source": "https://github.com/LEMAS-Project/LEMAS-TTS/blob/305f7e31a874140d141987909a062e57f2807321/README.md",
+          "gb_source": "https://huggingface.co/LEMAS-Project/LEMAS-TTS/tree/386ba356c1885091bfd92105fcabbaa3075d9480",
+          "note": "GitHub README steps 1.1/1.3/1.4 (clone; pip install -r requirements.txt; download pretrained_models/ from the HF repo next to lemas_tts/) and the 'Example 1' invocation of lemas_tts/scripts/tts_multilingual.sh with --model multilingual_grl, the demo Spanish reference clip shipped in the HF repo, and an English target text; PYTHONPATH as the README's 'export PYTHONPATH'. Platform evidence: tts_multilingual.py '# Build TTS (prefer CUDA, fall back to CPU if incompatible)'; README: install PyTorch 'according to your device (CUDA / ROCm / CPU / MPS)'. requirements.txt pins a cu121 extra index. gb = multilingual_grl.safetensors 1.40 GB incl. vocos-mel-24khz 0.05 GB; the --include download fetches all of pretrained_models/ (2.9 GB incl. the other variant and UVR5 denoiser); runtime memory is higher."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/LEMAS-Project/LEMAS-TTS",
+    "identity_note": "LEMAS-Project/LEMAS-TTS @ 386ba35 (cc-by-4.0, created 2026-01-01) ships two TTS checkpoints; this entry is pretrained_models/ckpts/multilingual_grl/multilingual_grl.safetensors = the report's 'LEMAS-TTS w/o prosody' row (arXiv:2601.04233v1 Table 4; 'We therefore release both variants'). Mapping evidence: tts_multilingual.py 'if model_name.endswith(\"grl\"): use_prosody_encoder = False' and speech_edit_multilingual.sh '# Main example: multilingual_grl, no prosody encoder' vs the multilingual_prosody example with --enable_prosody_encoder. Proposed so the lone OpenAudio-S1-Mini lemas-eval-9lang-wer run counts (3 models).",
+    "identity_sources": [
+      "https://huggingface.co/LEMAS-Project/LEMAS-TTS/tree/386ba356c1885091bfd92105fcabbaa3075d9480",
+      "https://arxiv.org/html/2601.04233v1",
+      "https://github.com/LEMAS-Project/LEMAS-TTS/blob/305f7e31a874140d141987909a062e57f2807321/lemas_tts/scripts/tts_multilingual.py",
+      "https://github.com/LEMAS-Project/LEMAS-TTS/blob/305f7e31a874140d141987909a062e57f2807321/lemas_tts/scripts/speech_edit_multilingual.sh"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2601.04233v1",
+        "reported_label": "LEMAS-TTS w/o prosody"
+      }
+    ]
+  },
+  {
+    "id": "lemas-tts-multilingual-prosody",
+    "name": "LEMAS-TTS (w/ prosody, multilingual_prosody)",
+    "provider": "LEMAS Project",
+    "category": "tts",
+    "released": "2026-01",
+    "released_source": "https://huggingface.co/api/models/LEMAS-Project/LEMAS-TTS",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "license_source": "https://huggingface.co/LEMAS-Project/LEMAS-TTS/blob/386ba356c1885091bfd92105fcabbaa3075d9480/README.md",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "official checkpoint (LEMAS-TTS repo, F5-TTS-based)",
+          "gb": 1.45,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/LEMAS-Project/LEMAS-TTS.git && cd LEMAS-TTS && pip install -r requirements.txt && hf download LEMAS-Project/LEMAS-TTS --include \"pretrained_models/*\" --local-dir . && PYTHONPATH=$PWD python -m lemas_tts.scripts.tts_multilingual --model multilingual_prosody --ckpt_file pretrained_models/ckpts/multilingual_prosody/multilingual_prosody.safetensors --vocab_file pretrained_models/data/multilingual_prosody/vocab.txt --frontend phone --use_ema --enable_prosody_encoder --ref_audio pretrained_models/demos/lemas_tts_test/es.wav --ref_text \"Te voy a dar un tip que le copié a John Rockefeller, uno de los empresarios más picudos de la historia. \" --text \"I want to give you a tip I copied from John Rockefeller.\" --output_wave out.wav --nfe_step 64 --cfg_strength 5.0 --sway_sampling_coef 3.0 --ref_ratio 1.0 --separate_langs --speed 1.0 --seed -1",
+          "platform": "any",
+          "source": "https://github.com/LEMAS-Project/LEMAS-TTS/blob/305f7e31a874140d141987909a062e57f2807321/README.md",
+          "gb_source": "https://huggingface.co/LEMAS-Project/LEMAS-TTS/tree/386ba356c1885091bfd92105fcabbaa3075d9480",
+          "note": "GitHub README steps 1.1/1.3/1.4 (clone; pip install -r requirements.txt; download pretrained_models/ from the HF repo next to lemas_tts/) and the 'Example 1' invocation of lemas_tts/scripts/tts_multilingual.sh with --model multilingual_prosody plus --enable_prosody_encoder (flag of tts_multilingual.py; the prosody example in speech_edit_multilingual.sh enables the encoder), the demo Spanish reference clip shipped in the HF repo, and an English target text; PYTHONPATH as the README's 'export PYTHONPATH'. Platform evidence: tts_multilingual.py '# Build TTS (prefer CUDA, fall back to CPU if incompatible)'; README: install PyTorch 'according to your device (CUDA / ROCm / CPU / MPS)'. requirements.txt pins a cu121 extra index. gb = multilingual_prosody.safetensors 1.45 GB incl. vocos-mel-24khz 0.05 GB and prosody_encoder_UnitY2.pt 0.01 GB; the --include download fetches all of pretrained_models/ (2.9 GB incl. the other variant and UVR5 denoiser); runtime memory is higher."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/LEMAS-Project/LEMAS-TTS",
+    "identity_note": "LEMAS-Project/LEMAS-TTS @ 386ba35 (cc-by-4.0, created 2026-01-01) ships two TTS checkpoints; this entry is pretrained_models/ckpts/multilingual_prosody/multilingual_prosody.safetensors = the report's 'LEMAS-TTS w/ prosody' row (arXiv:2601.04233v1 Table 4; 'We therefore release both variants'). Mapping evidence: tts_multilingual.py 'if model_name.endswith(\"grl\"): use_prosody_encoder = False' and speech_edit_multilingual.sh '# Main example: multilingual_grl, no prosody encoder' vs the multilingual_prosody example with --enable_prosody_encoder. Proposed so the lone OpenAudio-S1-Mini lemas-eval-9lang-wer run counts (3 models).",
+    "identity_sources": [
+      "https://huggingface.co/LEMAS-Project/LEMAS-TTS/tree/386ba356c1885091bfd92105fcabbaa3075d9480",
+      "https://arxiv.org/html/2601.04233v1",
+      "https://github.com/LEMAS-Project/LEMAS-TTS/blob/305f7e31a874140d141987909a062e57f2807321/lemas_tts/scripts/tts_multilingual.py",
+      "https://github.com/LEMAS-Project/LEMAS-TTS/blob/305f7e31a874140d141987909a062e57f2807321/lemas_tts/scripts/speech_edit_multilingual.sh"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2601.04233v1",
+        "reported_label": "LEMAS-TTS w/ prosody"
+      }
+    ]
+  },
+  {
+    "id": "muse-voice-transcribe-1-0",
+    "name": "Muse Voice Transcribe 1.0",
+    "provider": "Meta",
+    "category": "stt",
+    "released": "2026-09",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://developer.meta.com/ai/models/muse-voice-transcribe",
+      "provider": "Meta",
+      "price": 0.003,
+      "unit": "audio-minute",
+      "price_source": "https://developer.meta.com/ai/models/muse-voice-transcribe",
+      "price_note": "USD per input audio minute: Meta's model page pricing table lists muse-voice-transcribe-1.0 at $3.00 per 1,000 min / $0.18 per hour (÷1000). Product: Meta Model API speech-to-text (streaming wss://api.meta.ai/v1/asr/realtime and file https://api.meta.ai/v1/asr/transcribe). API model: muse-voice-transcribe-1.0. Price basis: published list rate. Currency: USD. Meta official model page, observed 2026-10-09."
+    },
+    "local": null,
+    "identity_note": "Meta Superintelligence Labs' streaming ASR + diarization + endpointing model on the Meta Model API, exact API model string muse-voice-transcribe-1.0 (Meta pricing table). Launched 2026-09-01 per Meta's developer blog (dated Sep 3, 2026: 'This week, Meta launched ... Muse Voice Transcribe, on Meta Model API'). Closed weights. Pipecat benchmarked exactly model='muse-voice-transcribe-1.0' (MetaSTTService) on 2026-09-11.",
+    "identity_sources": [
+      "https://developer.meta.com/ai/models/muse-voice-transcribe",
+      "https://developer.meta.com/ai/resources/blog/meet-muse-voice-transcribe-streaming-speech-to-text"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://developer.meta.com/ai/models/muse-voice-transcribe",
+        "reported_label": "muse-voice-transcribe-1.0 — $3.00 / 1,000 min, $0.18 / hour"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md",
+        "reported_label": "Meta | muse-voice-transcribe-1.0"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/src/stt_benchmark/services.py",
+        "reported_label": "create_meta(): MetaSTTService model=\"muse-voice-transcribe-1.0\", language=EN"
+      }
+    ]
+  },
+  {
+    "id": "assemblyai-universal-3-6-pro-realtime",
+    "name": "Universal-3.6 Pro Realtime",
+    "provider": "AssemblyAI",
+    "category": "stt",
+    "released": "2026-09",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://www.assemblyai.com/blog/universal-3-6-pro-realtime",
+      "provider": "AssemblyAI",
+      "price": 0.0075,
+      "unit": "audio-minute",
+      "price_source": "https://www.assemblyai.com/pricing",
+      "price_note": "USD per input audio minute: AssemblyAI pricing page, Realtime Speech-to-Text API, 'Universal-3.6 Pro Realtime New ... $0.45 /hr' pay as you go (÷60). Product: AssemblyAI Realtime (streaming) STT API. API model: universal-3-6-pro. Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: add-ons (keyterms, diarization etc.), Voice Agent API ($4.50/hr). Currency: USD. AssemblyAI official pricing page, observed 2026-10-09."
+    },
+    "local": null,
+    "identity_note": "AssemblyAI's realtime/streaming model, API string universal-3-6-pro (blog 29 September 2026: 'available as universal-3-6-pro'; 32 languages). Realtime-only per the pricing page (listed under Realtime Speech-to-Text API); distinct from the async catalogue model assemblyai-universal-3-5-pro. Pipecat added its universal-3-6-pro results on 2026-09-17 (commit c6b7d83), service contributed by AssemblyAI staff (PR #39 from dlange-aai) — the run itself was merged and published by the Pipecat maintainers.",
+    "identity_sources": [
+      "https://www.assemblyai.com/blog/universal-3-6-pro-realtime",
+      "https://www.assemblyai.com/pricing"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://www.assemblyai.com/blog/universal-3-6-pro-realtime",
+        "reported_label": "universal-3-6-pro (Universal-3.6 Pro Realtime), 29 September 2026"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md",
+        "reported_label": "AssemblyAI | universal-3-6-pro"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/src/stt_benchmark/services.py",
+        "reported_label": "create_assemblyai_universal_3_6_pro(): model=\"universal-3-6-pro\", language_codes=[EN]"
+      }
+    ]
+  },
+  {
+    "id": "assemblyai-universal-streaming-english",
+    "name": "Universal-Streaming (English)",
+    "provider": "AssemblyAI",
+    "category": "stt",
+    "released": "2025-06",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://www.assemblyai.com/blog/introducing-universal-streaming",
+      "provider": "AssemblyAI",
+      "price": 0.0025,
+      "unit": "audio-minute",
+      "price_source": "https://www.assemblyai.com/pricing",
+      "price_note": "USD per input audio minute: AssemblyAI pricing page, Realtime Speech-to-Text API, 'Universal-Streaming ... High-quality realtime model for English only transcription ... $0.15 /hr' (÷60), billed on session duration. Product: AssemblyAI Realtime STT API. API model: universal-streaming-english. Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: add-ons. Currency: USD. AssemblyAI official pricing page, observed 2026-10-09."
+    },
+    "local": null,
+    "identity_note": "AssemblyAI Universal-Streaming, English-only realtime model (API speech_model universal-streaming-english); introduced 2 June 2025 (AssemblyAI blog 'Introducing Universal-Streaming'). Hosted alias: the vendor may have updated weights since launch; the Pipecat run dates from the repository's first results (by 2026-06-04, commit 9e24957 shows the row with the same TTFS figures) and was re-scored on 2026-10-01.",
+    "identity_sources": [
+      "https://www.assemblyai.com/blog/introducing-universal-streaming",
+      "https://www.assemblyai.com/pricing"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://www.assemblyai.com/blog/introducing-universal-streaming",
+        "reported_label": "Introducing Universal-Streaming, 2 June 2025, $0.15/hr"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md",
+        "reported_label": "AssemblyAI | universal-streaming-english"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/src/stt_benchmark/services.py",
+        "reported_label": "create_assemblyai(): model=\"universal-streaming-english\""
+      }
+    ]
+  },
+  {
+    "id": "cartesia-ink-2",
+    "name": "Ink-2",
+    "provider": "Cartesia",
+    "category": "stt",
+    "released": "2026-05",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://docs.cartesia.ai/build-with-cartesia/stt-models",
+      "provider": "Cartesia",
+      "price": 0.0065,
+      "unit": "audio-minute",
+      "price_source": "https://cartesia.ai/pricing",
+      "price_note": "USD per input audio minute: Cartesia's pricing page FAQ states 'Ink speech-to-text: One hour of audio is only $0.39 on the Scale plan. 3 credits equals 1 second of audio.' ($0.39/hr ÷ 60); the plan table lists Ink-2 as the STT model. Product: Cartesia Ink STT API (streaming). API model: ink-2. Settings: Scale plan ($299/month, 8M credits). Price basis: vendor-stated hourly cost on the Scale plan. Exclusions: plan fee, other plans' credit rates. Currency: USD. Cartesia official pricing page, observed 2026-10-09."
+    },
+    "local": null,
+    "identity_note": "Cartesia's streaming STT model, API id ink-2. Introduced May 2026 English-only (Cartesia changelog, May 2026: 'Ink-2, our state-of-the-art streaming STT model ... It currently supports only English'); the alias was updated with a multilingual release on September 17, 2026 (docs model table: ink-2, release date September 17, 2026; changelog September 2026 'Ink-2 is now multilingual'). The Pipecat row was produced from the May English version (data added 2026-05-28, commit 5c1c6f6; TTFS figures unchanged at 9e24957 and 94f5672), run with language EN.",
+    "identity_sources": [
+      "https://docs.cartesia.ai/changelog",
+      "https://docs.cartesia.ai/build-with-cartesia/stt-models"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://docs.cartesia.ai/changelog",
+        "reported_label": "May 2026: Ink-2, our state-of-the-art streaming STT model"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md",
+        "reported_label": "Cartesia | ink-2"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/src/stt_benchmark/services.py",
+        "reported_label": "create_cartesia_ink2(): CartesiaSTTService model=\"ink-2\", language=EN"
+      }
+    ]
+  },
+  {
+    "id": "cartesia-ink-whisper",
+    "name": "Ink-Whisper",
+    "provider": "Cartesia",
+    "category": "stt",
+    "released": "2025-06",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://docs.cartesia.ai/build-with-cartesia/stt-models/older-models",
+      "provider": "Cartesia"
+    },
+    "local": null,
+    "identity_note": "Cartesia's earlier streaming STT model, API id ink-whisper (dated snapshot ink-whisper-2025-06-04, release date June 4, 2025, status Stable, per Cartesia's Older Models page). Cartesia describes it as delivering 'higher accuracy and lower latency than baseline Whisper'; architecture and size not stated. No per-model price is published separately from Ink-2's credit rate, so no price is recorded.",
+    "identity_sources": [
+      "https://docs.cartesia.ai/build-with-cartesia/stt-models/older-models"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://docs.cartesia.ai/build-with-cartesia/stt-models/older-models",
+        "reported_label": "ink-whisper-2025-06-04 — June 4, 2025 — Stable"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md",
+        "reported_label": "Cartesia | ink-whisper"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/src/stt_benchmark/services.py",
+        "reported_label": "create_cartesia(): CartesiaSTTService model=\"ink-whisper\", language=EN"
+      }
+    ]
+  },
+  {
+    "id": "elevenlabs-scribe-v2-realtime",
+    "name": "Scribe v2 Realtime",
+    "provider": "ElevenLabs",
+    "category": "stt",
+    "released": "2025-11",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://elevenlabs.io/docs/overview/models",
+      "provider": "ElevenLabs",
+      "price": 0.0065,
+      "unit": "audio-minute",
+      "price_source": "https://elevenlabs.io/pricing/api",
+      "price_note": "USD per input audio minute: ElevenLabs API pricing lists 'Scribe v2 Realtime Speech to Text $0.39 Price per hour' (÷60), same rate on every tier shown. Product: ElevenAPI realtime speech to text. API model: scribe_v2_realtime. Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: keyterm prompting ($0.08/hr) and transcript editing add-ons, subscription fees. Currency: USD. ElevenLabs official API pricing page, observed 2026-10-09."
+    },
+    "local": null,
+    "identity_note": "ElevenLabs' streaming STT model, API model_id scribe_v2_realtime (models docs), announced in the ElevenLabs blog 'Introducing Scribe v2 Realtime' published Nov 11, 2025. Distinct from the batch model elevenlabs-scribe-v2 (scribe_v2).",
+    "identity_sources": [
+      "https://elevenlabs.io/blog/introducing-scribe-v2-realtime",
+      "https://elevenlabs.io/docs/overview/models"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://elevenlabs.io/blog/introducing-scribe-v2-realtime",
+        "reported_label": "Introducing Scribe v2 Realtime (Published Nov 11, 2025)"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md",
+        "reported_label": "ElevenLabs | scribe_v2_realtime"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/src/stt_benchmark/services.py",
+        "reported_label": "create_elevenlabs(): ElevenLabsRealtimeSTTService model=\"scribe_v2_realtime\", language=EN"
+      }
+    ]
+  },
+  {
+    "id": "gemini-3-5-transcribe-live",
+    "name": "Gemini 3.5 Transcribe Live",
+    "provider": "Google",
+    "category": "stt",
+    "released": "2026-08",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "provider": "Google",
+      "price": 0.009,
+      "unit": "audio-minute",
+      "price_source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "price_note": "Provider-published estimated cost per audio minute: Google lists gemini-3.5-transcribe-live (paid tier) at $3.50/1M audio input tokens or $0.005/min and $21.00/1M text output tokens or $0.004/min, 'for an effective blended rate of ~$0.009 per min for Live Transcribe'; underlying billing is per token. Product: Gemini Developer API (Live API). API model: gemini-3.5-transcribe-live. Settings: Standard paid tier. Price basis: vendor-published per-minute estimate (25 audio tokens/s, 175 text tokens/min). Exclusions: free tier. Currency: USD. Google Gemini API pricing page (CC BY 4.0), observed 2026-10-09."
+    },
+    "local": null,
+    "identity_note": "Google's low-latency real-time STT model for bidirectional streaming over WebSockets, API model gemini-3.5-transcribe-live. Released GA on August 26, 2026 together with gemini-3.5-transcribe (Gemini API changelog). Distinct from the catalogue's batch model gemini-3-5-transcribe.",
+    "identity_sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog",
+      "https://ai.google.dev/gemini-api/docs/pricing"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://ai.google.dev/gemini-api/docs/changelog",
+        "reported_label": "August 26, 2026: Gemini 3.5 Transcribe Live (gemini-3.5-transcribe-live)"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md",
+        "reported_label": "Google | gemini-3.5-transcribe-live"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/src/stt_benchmark/services.py",
+        "reported_label": "create_google_gemini_3_5_transcribe_live(): GeminiSTTService model=\"gemini-3.5-transcribe-live\", languages=[EN_US]"
+      }
+    ]
+  },
+  {
+    "id": "gpt-realtime-whisper",
+    "name": "GPT-Realtime-Whisper",
+    "provider": "OpenAI",
+    "category": "stt",
+    "released": "2026-05",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://developers.openai.com/api/docs/models/gpt-realtime-whisper",
+      "provider": "OpenAI",
+      "price": 0.017,
+      "unit": "audio-minute",
+      "price_source": "https://developers.openai.com/api/docs/pricing",
+      "price_note": "USD per input audio minute: OpenAI pricing, Transcription models table, 'gpt-realtime-whisper | Live transcription | $0.017 / minute'; the model page states it 'is priced by audio duration rather than text tokens'. Product: Realtime API transcription. API model: gpt-realtime-whisper. Price basis: published per-minute rate. Currency: USD. OpenAI official pricing docs, observed 2026-10-09."
+    },
+    "local": null,
+    "identity_note": "OpenAI streaming speech-to-text model, API alias/snapshot gpt-realtime-whisper (model page snapshot list shows only gpt-realtime-whisper; 'Sep 30, 2024 knowledge cutoff'). Released May 7, 2026 with GPT-Realtime-2 (OpenAI API changelog: 'GPT-Realtime-Whisper for streaming speech-to-text'). Closed weights; not the open Whisper checkpoints. Distinct from gpt-live-transcribe (2026-07-29), which Pipecat configured but has not published.",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/models/gpt-realtime-whisper",
+      "https://developers.openai.com/api/docs/changelog"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://developers.openai.com/api/docs/changelog",
+        "reported_label": "May 7 [2026]: Released GPT-Realtime-2 ... and GPT-Realtime-Whisper for streaming speech-to-text"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md",
+        "reported_label": "OpenAI | gpt-realtime-whisper"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/src/stt_benchmark/services.py",
+        "reported_label": "create_openai_gpt_realtime_whisper(): OpenAIRealtimeSTTService model=\"gpt-realtime-whisper\", language=EN"
+      }
+    ]
+  },
+  {
+    "id": "soniox-v5-realtime",
+    "name": "Soniox v5 Real-Time",
+    "provider": "Soniox",
+    "category": "stt",
+    "released": "2026-06",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://soniox.com/docs/stt/models",
+      "provider": "Soniox",
+      "price": 0.002,
+      "unit": "audio-minute",
+      "price_source": "https://soniox.com/pricing",
+      "price_note": "USD per input audio minute: Soniox bills tokens but itself publishes Speech-to-Text at '$0.12/hour for real-time (streaming)' (pricing page; the comparison widget lists 'stt-rt-v5 ... $0.12/hr'), ÷60. Product: Soniox Real-Time STT API. API model: stt-rt-v5. Settings: real-time streaming. Price basis: vendor-published hourly equivalent, per-hour to per-minute scaling only. Exclusions: async ($0.10/hr), translation/custom token usage. Currency: USD. Soniox official pricing page, observed 2026-10-09."
+    },
+    "local": null,
+    "identity_note": "Soniox real-time model stt-rt-v5, released June 16, 2026, replacing stt-rt-v4 (Soniox models changelog). Distinct from the catalogue's async model soniox-v5-async (stt-async-v5, June 11, 2026).",
+    "identity_sources": [
+      "https://soniox.com/docs/stt/models"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://soniox.com/docs/stt/models",
+        "reported_label": "June 16, 2026 — New models: stt-rt-v5 — Replaces: stt-rt-v4"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md",
+        "reported_label": "Soniox | stt-rt-v5"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/src/stt_benchmark/services.py",
+        "reported_label": "create_soniox_stt_rt_v5(): SonioxSTTService model=\"stt-rt-v5\", language_hints=[EN], language_hints_strict=True"
+      }
+    ]
+  },
+  {
+    "id": "soniox-v4-realtime",
+    "name": "Soniox v4 Real-Time",
+    "provider": "Soniox",
+    "category": "stt",
+    "released": "2026-02",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only (API retired). Soniox real-time model stt-rt-v4, released February 5, 2026 (Soniox models changelog: 'New models: stt-rt-v4 — Replaces: stt-rt-v3'); 'The stt-rt-v4 model will be removed on June 30, 2026. After June 30, 2026, requests using stt-rt-v4 will automatically route to stt-rt-v5'. Kept because its Pipecat row (run before the retirement) anchors the run.",
+    "identity_sources": [
+      "https://soniox.com/docs/stt/models",
+      "https://soniox.com/blog/2026-02-05-soniox-v4-real-time"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://soniox.com/docs/stt/models",
+        "reported_label": "February 5, 2026 — New models: stt-rt-v4; removed June 30, 2026"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md",
+        "reported_label": "Soniox | stt-rt-v4"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/src/stt_benchmark/services.py",
+        "reported_label": "create_soniox(): SonioxSTTService model=\"stt-rt-v4\", language_hints=[EN], language_hints_strict=True"
+      }
+    ]
+  },
+  {
+    "id": "speechmatics-linden-1",
+    "name": "Linden 1 (Agent STT)",
+    "provider": "Speechmatics",
+    "category": "stt",
+    "released": "2026-09",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://www.speechmatics.com/company/articles-and-news/meet-agent-stt-powered-by-linden-1-fast-accurate-speech-recognition",
+      "provider": "Speechmatics",
+      "price": 0.005,
+      "unit": "audio-minute",
+      "price_source": "https://www.speechmatics.com/pricing",
+      "price_note": "USD per input audio minute: Speechmatics pricing page model data for 'Linden 1' (Voice agents, 'Only available as a Real-time model') gives realtime baseHourly 0.3, i.e. $0.30/hr (÷60); the launch article states 'Launch pricing is $0.30 per hour'. Product: Speechmatics Agent STT (wss /v2/agent). API model: linden-1. Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: volume and model-training discounts (down to $0.16/hr). Currency: USD. Speechmatics official pricing page, observed 2026-10-09."
+    },
+    "local": null,
+    "identity_note": "Speechmatics' voice-agent real-time model Linden 1, served by Agent STT (WebSocket /v2/agent, model linden-1); public launch article dated Sep 17, 2026 (selectable on LiveKit Inference since August 2026 per the article). Distinct from the catalogue's speechmatics-enhanced (Enhanced operating point).",
+    "identity_sources": [
+      "https://www.speechmatics.com/company/articles-and-news/meet-agent-stt-powered-by-linden-1-fast-accurate-speech-recognition",
+      "https://www.speechmatics.com/pricing"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://www.speechmatics.com/company/articles-and-news/meet-agent-stt-powered-by-linden-1-fast-accurate-speech-recognition",
+        "reported_label": "Agent STT, powered by Linden 1 (Sep 17, 2026): 'open a WebSocket at /v2/agent and set the model to linden-1'"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md",
+        "reported_label": "Speechmatics | linden-1"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/src/stt_benchmark/services.py",
+        "reported_label": "create_speechmatics_agent_stt(): SpeechmaticsSTTService base_url wss://us.rt.speechmatics.com/v2/agent (comment: 'Speechmatics Agent STT (/v2/agent, model linden-1)')"
+      }
+    ]
+  },
+  {
+    "id": "smallest-pulse",
+    "name": "Pulse (STT)",
+    "provider": "Smallest.ai",
+    "category": "stt",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://docs.smallest.ai/waves/model-cards/speech-to-text/pulse.md",
+      "provider": "Smallest.ai",
+      "price": 0.004,
+      "unit": "audio-minute",
+      "price_source": "https://docs.smallest.ai/waves/model-cards/speech-to-text/pulse.md",
+      "price_note": "USD per input audio minute: Smallest AI's Pulse model card, Model Overview 'Pricing (Standard Plan) | Realtime: $0.004/min · Batch: $0.003/min'; realtime rate used (Pipecat ran the WebSocket). Note: the 2026-05-28 changelog listed Pulse streaming at $0.006/min; the current model card is used. Product: Smallest AI Waves STT (unified /waves/v1/stt/, ?model=pulse). API model: pulse. Settings: Standard plan, realtime. Price basis: published list rate. Currency: USD. Smallest AI official model card, observed 2026-10-09."
+    },
+    "local": null,
+    "identity_note": "Smallest AI's multilingual streaming/batch STT model, API model pulse (unified endpoint ?model=pulse per the 2026-05-28 changelog). First-party release month not found (the model predates the Pipecat run of 2026-05-14), so released is left out. Not Pulse Pro (English batch, ?model=pulse-pro) and not Pulse 2.0 (English streaming with turn detection).",
+    "identity_sources": [
+      "https://docs.smallest.ai/waves/model-cards/speech-to-text/pulse.md",
+      "https://docs.smallest.ai/waves/changelog/pulse-stt/2026/5/28"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://docs.smallest.ai/waves/changelog/pulse-stt/2026/5/28",
+        "reported_label": "?model=pulse: multilingual (17 streaming + 26 pre-recorded languages), HTTP + WebSocket streaming"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md",
+        "reported_label": "Smallest AI | pulse"
+      },
+      {
+        "source": "https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/src/stt_benchmark/services.py",
+        "reported_label": "create_smallest(): SmallestSTTService model=\"pulse\", language=EN"
+      }
+    ]
+  },
+  {
+    "id": "grok-voice-transcribe-1-0",
+    "name": "Grok Voice Transcribe 1.0",
+    "provider": "xAI",
+    "category": "stt",
+    "released": "2026-04",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only (retired). xAI's first Speech to Text model, API slug grok-voice-transcribe-1.0. xAI release notes: April 2026 'Speech to Text is available ... generally available ... 25 languages with batch and streaming modes'; September 2026 'grok-voice-transcribe-2.0 is now available. Use grok-voice-transcribe-1.0 or grok-voice-transcribe-2.0'; October 2026 'grok-voice-transcribe-1.0 is deprecated and reaches end of life on October 2, 2026. All requests to that slug are routed to grok-voice-transcribe-2.0'. released = month the STT API (whose only model then was 1.0) went GA; the April note itself names no slug. Kept for its independent results run before end of life: verliapp/stt-benchmark @bfb5142 engine 'grok-stt' (xAI /v1/stt with no model field, runs 2026-07-16..18, when grok-voice-transcribe-1.0 was the only xAI STT model; 2.0 arrived in September 2026). raven.eval BENCHMARKS.md @f9f621e also has 'xai/grok-voice-transcribe-1.0' rows, not added because raven-de-read4-wer would still have fewer than 3 models. Successor: grok-voice-transcribe-2.",
+    "identity_sources": [
+      "https://docs.x.ai/developers/release-notes",
+      "https://github.com/PhilflowIO/raven.eval/blob/f9f621e23b0e83e29aa18e8ffcd4656805c68145/BENCHMARKS.md",
+      "https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://docs.x.ai/developers/release-notes",
+        "reported_label": "grok-voice-transcribe-1.0 end of life (October 2, 2026); routed to grok-voice-transcribe-2.0"
+      },
+      {
+        "source": "https://github.com/PhilflowIO/raven.eval/blob/f9f621e23b0e83e29aa18e8ffcd4656805c68145/BENCHMARKS.md",
+        "reported_label": "xai/grok-voice-transcribe-1.0 (run 2026-09-18; avemio-german-mixed-test, fleurs, mls-de, voxpopuli-de, spc-test, fhnw-all-dialects)"
+      },
+      {
+        "source": "https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/src/cloud_adapters.py",
+        "reported_label": "grok(): 'xAI Grok Speech-to-Text (dedicated STT API, model grok-stt)', POST https://api.x.ai/v1/stt, no model field; README 'cloud runs 2026-07-16 to 2026-07-18'"
+      },
+      {
+        "source": "https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json",
+        "reported_label": "engine 'grok-stt' (adapter posts to https://api.x.ai/v1/stt without a model field; README: cloud runs 2026-07-16..18)"
+      }
+    ]
+  },
+  {
+    "id": "parakeet-redux",
+    "name": "Parakeet Redux",
+    "provider": "Moondream",
+    "category": "stt",
+    "released": "2026-09",
+    "released_source": "https://huggingface.co/api/models/moondream/parakeet-redux",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ternary 1.58-bit (Photon)",
+          "gb": 0.18,
+          "cmd": "pip install \"moondream>=2.4.0\" && python -c \"import moondream as md; speech_cm = md.photon('moondream/parakeet-redux', device='cpu'); speech = speech_cm.__enter__(); print(speech.transcribe(audio='speech.wav')['text']); speech_cm.__exit__(None, None, None)\"",
+          "platform": "any",
+          "source": "https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md",
+          "gb_source": "https://huggingface.co/moondream/parakeet-redux/tree/2bf128600aac4b16946f7ed8372e56117fe5e23b",
+          "note": "Moondream Photon runtime (pip package moondream, card: '# pip install moondream (2.4.0 or later)'; 'device: \"cpu\", \"mps\" or \"cuda\"'; AVX-512 VNNI on x86, NEON on ARM, Metal on Apple GPUs). Command: the card's Usage snippet (with md.photon(...) as speech: speech.transcribe(audio='speech.wav')) as a one-liner. gb is model.safetensors (177,774,490 bytes) at the pinned revision; tokenizer.json and ternary.json add about 1.2 MB; runtime memory is higher."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/moondream/parakeet-redux",
+    "identity_note": "moondream/parakeet-redux @2bf1286 (created 2026-09-18, CC BY 4.0): 'A 1.58-bit version of parakeet-tdt-0.6b-v3. Same architecture, same tokenizer, but every encoder weight is -1, 0 or +1. It fits in 178 MB'. Distinct from its full-precision sibling moondream/parakeet-ultra (post-trained, same 0.6B parameters) and from NVIDIA's parakeet-tdt-0-6b-v3. No parameter count is stated for the ternary release (HF safetensors metadata 148,923,399 counts packed U8 bytes, not weights), so params_b is left out.",
+    "identity_sources": [
+      "https://huggingface.co/moondream/parakeet-redux/tree/2bf128600aac4b16946f7ed8372e56117fe5e23b"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md",
+        "reported_label": "Moondream Parakeet Redux — A 1.58-bit version of parakeet-tdt-0.6b-v3"
+      }
+    ]
+  },
+  {
+    "id": "gigaam-multilingual-ctc",
+    "name": "GigaAM Multilingual (CTC 220M)",
+    "provider": "Sber",
+    "category": "stt",
+    "released": "2026-07",
+    "released_source": "https://huggingface.co/api/models/ai-sage/GigaAM-Multilingual",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 0.22,
+    "params_b_source": "https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md",
+    "params_note": "Card: 'a family of Conformer-based foundation models (220M / 600M parameters)'; 'ctc' variant.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (transformers remote code)",
+          "gb": 0.88,
+          "cmd": "pip install \"transformers>=5\" torch torchaudio hydra-core omegaconf && python -c \"from transformers import AutoModel; model = AutoModel.from_pretrained('ai-sage/GigaAM-Multilingual', revision='ctc', trust_remote_code=True); print(model.transcribe('example.wav'))\"",
+          "platform": "any",
+          "source": "https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md",
+          "gb_source": "https://huggingface.co/ai-sage/GigaAM-Multilingual/tree/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8",
+          "note": "Card 'Usage' snippet (AutoModel.from_pretrained(..., revision=<variant>, trust_remote_code=True); model.transcribe('example.wav')) as a one-liner, with the card's recommended packages (torch/torchaudio 2.10, transformers 5, hydra-core, omegaconf). gb is pytorch_model.bin at the branch head; runtime memory is higher."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/ai-sage/GigaAM-Multilingual",
+    "identity_note": "ai-sage/GigaAM-Multilingual branch 'ctc' @2f8a571 (SaluteDevices/Sber GigaAM team; MIT; repo created 2026-07-14): 220M Conformer ASR model with a character-wise CTC decoder fine-tuned on 50K hours (Russian, Kazakh, Kyrgyz, Uzbek best; 'moderate quality on English'). Distinct from the ssl/large_ssl encoders on other branches of the same repo and from the earlier Russian-only GigaAM v2/v3 releases.",
+    "identity_sources": [
+      "https://huggingface.co/ai-sage/GigaAM-Multilingual/tree/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8",
+      "https://huggingface.co/api/models/ai-sage/GigaAM-Multilingual/refs"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md",
+        "reported_label": "column 'GigaAM Multilingual'; variant 'ctc' (main = ctc)"
+      }
+    ]
+  },
+  {
+    "id": "gigaam-multilingual-large-ctc",
+    "name": "GigaAM Multilingual Large (CTC 600M)",
+    "provider": "Sber",
+    "category": "stt",
+    "released": "2026-07",
+    "released_source": "https://huggingface.co/api/models/ai-sage/GigaAM-Multilingual",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 0.6,
+    "params_b_source": "https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md",
+    "params_note": "Card: 'a family of Conformer-based foundation models (220M / 600M parameters)'; 'large_ctc' variant.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (transformers remote code)",
+          "gb": 2.34,
+          "cmd": "pip install \"transformers>=5\" torch torchaudio hydra-core omegaconf && python -c \"from transformers import AutoModel; model = AutoModel.from_pretrained('ai-sage/GigaAM-Multilingual', revision='large_ctc', trust_remote_code=True); print(model.transcribe('example.wav'))\"",
+          "platform": "any",
+          "source": "https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md",
+          "gb_source": "https://huggingface.co/ai-sage/GigaAM-Multilingual/tree/3905cd51c3ed4e88c8edf33f3302969ba480a327",
+          "note": "Card 'Usage' snippet (AutoModel.from_pretrained(..., revision=<variant>, trust_remote_code=True); model.transcribe('example.wav')) as a one-liner, with the card's recommended packages (torch/torchaudio 2.10, transformers 5, hydra-core, omegaconf). gb is pytorch_model.bin at the branch head; runtime memory is higher."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/ai-sage/GigaAM-Multilingual",
+    "identity_note": "ai-sage/GigaAM-Multilingual branch 'large_ctc' @3905cd5 (SaluteDevices/Sber GigaAM team; MIT; repo created 2026-07-14): 600M Conformer ASR model with a character-wise CTC decoder fine-tuned on 50K hours (Russian, Kazakh, Kyrgyz, Uzbek best; 'moderate quality on English'). Distinct from the ssl/large_ssl encoders on other branches of the same repo and from the earlier Russian-only GigaAM v2/v3 releases.",
+    "identity_sources": [
+      "https://huggingface.co/ai-sage/GigaAM-Multilingual/tree/3905cd51c3ed4e88c8edf33f3302969ba480a327",
+      "https://huggingface.co/api/models/ai-sage/GigaAM-Multilingual/refs"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md",
+        "reported_label": "column 'GigaAM Multilingual Large'; variant 'large_ctc'"
+      }
+    ]
   }
 ]

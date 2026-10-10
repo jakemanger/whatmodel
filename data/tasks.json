@@ -489,7 +489,8 @@
       "seed-tts-en-human-smos",
       "zstts-daps-flores-en-cer",
       "seed-tts-zh-eres2net-sim",
-      "seed-tts-en-eres2net-sim"
+      "seed-tts-en-eres2net-sim",
+      "minimax-ml21-ultraeval-macro-err"
     ]
   },
   {
@@ -512,7 +513,10 @@
     "benchmarks": [
       "open-asr-multilingual-wer",
       "voxtral-rt-2026-fleurs13",
-      "voxtral-rt-2026-mcv12"
+      "voxtral-rt-2026-mcv12",
+      "cose-e-eu4-mean-wer",
+      "iberian-asr-7lang-macro-wer",
+      "mu-bench-batch-uer"
     ]
   }
 ]

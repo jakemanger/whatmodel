@@ -3019,13 +3019,14 @@
       "huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct/blob/50fd307e57011801c7833c87efa1984ddf2db42f/README.md",
       "huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct/blob/8afb486c1db24fe5011ec46dfbe5b5dccdb575c2/README.md",
       "huggingface.co/codellama/CodeLlama-70b-Instruct-hf/blob/397cae981dffaf5d5c9c90e89a0a75a850528b70/README.md",
-      "huggingface.co/codellama/CodeLlama-70b-Python-hf/blob/e037619532ec8449a01ecd5b253d065ac81637b6/README.md"
+      "huggingface.co/codellama/CodeLlama-70b-Python-hf/blob/e037619532ec8449a01ecd5b253d065ac81637b6/README.md",
+      "developer.meta.com/ai/models/muse-voice-transcribe"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://dev.meta.ai/docs/pricing-rate-limits",
     "verdict": "allowed",
-    "checked": "2026-10-07",
+    "checked": "2026-10-09",
     "exact": true,
     "icon": "meta.ai",
     "attribution": "Meta official pricing/docs, observed 2026-09-25",
@@ -3282,13 +3283,14 @@
     "id": "first-party-smallest",
     "name": "Smallest.ai official pricing and model documentation",
     "match": [
-      "smallest.ai/pricing/models"
+      "smallest.ai/pricing/models",
+      "docs.smallest.ai/waves/model-cards/speech-to-text/pulse.md"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://smallest.ai/pricing/models",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "exact": true,
     "icon": "smallest.ai",
     "attribution": "Smallest.ai official pricing/docs, observed 2026-09-25",
@@ -3802,7 +3804,7 @@
     "license_url": "/licenses/speech-qwen-audio3-tts-report.txt",
     "attribution": "Bajian Xiang et al. (Alibaba Token Foundry); Qwen-Audio-3.0-TTS: Freely Controllable and Highly Robust Speech Synthesis with Multi-Stage Training Paradigm; arXiv:2607.23938v1. CC BY 4.0. Changes: selected own-run CV3-Eval and SEED-TTS-Eval cells, percent/100, derived equal-language means (marked). No endorsement.",
     "quote": "arXiv abstract page for 2607.23938v1 links the licence 'http://creativecommons.org/licenses/by/4.0/' (CC BY 4.0) for this version; the HTML header states 'License: CC BY 4.0'. Applies to the report's text and tables; not a claim about model weights. The report's quoted Artificial Analysis Elo is excluded.",
-    "scope": " Extended 2026-10-09: Table 3 ERes2Net SIM (in parentheses) for the authors' own model and the cells marked † ('ERes2Net SIM scores were computed by us using the publicly released models'); unmarked parenthesised values not used."
+    "scope": "Extended 2026-10-09: Table 3 ERes2Net SIM (in parentheses) for the authors' own model and the cells marked † ('ERes2Net SIM scores were computed by us using the publicly released models'); unmarked parenthesised values not used. Pass 8 (2026-10-09): adds the LongCat-AudioDiT-3.5B row (Table 3 † ERes2Net SIM, Table 5 hard-zh/hard-en error) and Table 5 hard-en ERes2Net SIM and DNSMOS for all catalogued systems (bench ids cv3-eval-hard-en-eres2net-sim, cv3-eval-hard-en-dnsmos). No new URL; match unchanged."
   },
   {
     "verdict": "allowed",
@@ -9732,7 +9734,23 @@
       "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-tiny.en.json",
       "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-tiny.json",
       "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-arabic-07-2026.json",
-      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/nemotron-3.5-asr-streaming-0.6b.json"
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/nemotron-3.5-asr-streaming-0.6b.json",
+      "github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-ultra.json",
+      "github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/orukeet.json",
+      "github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-unified-en-0.6b.json",
+      "github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/nemotron-speech-streaming-en-0.6b.json",
+      "github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/multitalker-parakeet-streaming-0.6b-v1.json",
+      "github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-tdt_ctc-1.1b.json",
+      "github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/granite-speech-4.1-2b-nar.json",
+      "github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/granite-speech-4.1-2b-plus.json",
+      "github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/granite-speech-5.0-470m-turboctc-nc.json",
+      "github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/moss-transcribe-diarize.json",
+      "github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/fun-asr-nano-2512.json",
+      "github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/fun-asr-mlt-nano-2512.json",
+      "github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/sensevoice-small.json",
+      "github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/breeze-asr-25.json",
+      "github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/medasr.json",
+      "github.com/handy-computer/transcribe.cpp/blob/18947cf405f957195dd457db4e34c1cff9e88889/catalog/parakeet-primeline.json"
     ],
     "exact": true,
     "name": "transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports",
@@ -9740,7 +9758,7 @@
     "license": "MIT",
     "terms_url": "https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/LICENSE",
     "verdict": "allowed",
-    "checked": "2026-09-28",
+    "checked": "2026-10-09",
     "license_url": "/licenses/speech-stt-transcribecpp-mit.txt",
     "attribution": "transcribe.cpp, Copyright (c) 2026 The transcribe.cpp authors, MIT (https://github.com/handy-computer/transcribe.cpp). LibriSpeech test-clean corpus WER of the F32 / native-BF16 / F16 tier transcribed by script from the committed catalog/*.json at c1fee50, percent divided by 100; retain the MIT notice. No endorsement.",
     "icon": "github.com",
@@ -10283,7 +10301,8 @@
   {
     "id": "speech-rvcbench-ccby",
     "match": [
-      "arxiv.org/html/2602.00443v2"
+      "arxiv.org/html/2602.00443v2",
+      "arxiv.org/html/2602.00443v3"
     ],
     "exact": true,
     "name": "RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models (arXiv:2602.00443v2)",
@@ -10291,7 +10310,7 @@
     "license": "CC BY 4.0",
     "terms_url": "https://arxiv.org/abs/2602.00443v2",
     "verdict": "allowed",
-    "checked": "2026-09-28",
+    "checked": "2026-10-09",
     "license_url": "/licenses/speech-rvcbench-ccby.txt",
     "attribution": "Ruinan Jin, Xinting Liao, Hanlin Yu, Deval Pandya, Xiaoxiao Li; 'RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models'; arXiv:2602.00443v2, CC BY 4.0. Changes: selected LibriTTS clean-condition SIM and WER cells from Table 13 for eleven systems; SIM kept as raw cosine, WER kept as printed fraction. No endorsement.",
     "icon": "arxiv.org",
@@ -10401,7 +10420,8 @@
       "github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/fishaudio-s2-pro.md",
       "github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md",
       "github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md",
-      "github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/MGM-Omni.md"
+      "github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/MGM-Omni.md",
+      "github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/GLM-TTS.md"
     ],
     "exact": true,
     "name": "UltraEval-Audio (OpenBMB) · TTS replication results",
@@ -10409,7 +10429,7 @@
     "license": "Apache-2.0",
     "terms_url": "https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/LICENSE",
     "verdict": "allowed",
-    "checked": "2026-09-28",
+    "checked": "2026-10-09",
     "license_url": "/licenses/speech-ultraeval-audio-apache.txt",
     "attribution": "UltraEval-Audio by OpenBMB, Apache License 2.0. Selected reproduced Seed-TTS-Eval test-en WER / test-zh CER values from replication/*.md, percent divided by 100; official values in parentheses not used. No endorsement.",
     "icon": "github.com",
@@ -13953,7 +13973,7 @@
     "terms_url": "https://qwen.ai/blog?id=qwen3.8",
     "quote": "Owner rule (b), approved 2026-10-07: a vendor's own published score for its own model, from its announcement, model card, tech report or docs, may be recorded by hand one figure at a time with the exact URL, date and printed settings; other labs' cells excluded; rows labelled by: 'lab'; removed if the vendor objects. The qwen.ai posts show no licence or terms statement; arXiv 2502.13923v1 and 2511.21631v2 carry arXiv's non-exclusive distribution licence (http://arxiv.org/licenses/nonexclusive-distrib/1.0/, checked on the abs pages); the Qwen3.8-Flash-Next card is under the 'Qwen Community License 1.0' (Model-as-a-Service / AI Work Assistant commercial restriction). No open-licence claim is made.",
     "attribution": "Qwen Team (Alibaba), vendor-reported results for Qwen's own models from qwen.ai launch posts, the Qwen2.5-VL and Qwen3-VL technical reports and the pinned Qwen3.8-Flash-Next card; individual figures hand-recorded 2026-10-09; percentages converted to fractions. Lab-reported, not independent. No endorsement.",
-    "scope": "CharXiv (RQ) without code interpreter and CharXiv (DQ) cells for Qwen's own models only. With-CI cells, other labs' columns, and figures that merely repeat a value already counted in another Qwen card run are not used. The matcher ignores query strings, so 'qwen.ai/blog' covers every qwen.ai/blog?id=... post (all Qwen own posts). qwen.ai/blog is client-rendered; content is served by https://qwen.ai/api/v2/article/?language=en-US&path=<id>&type=qwen_ai.",
+    "scope": "CharXiv (RQ) without code interpreter and CharXiv (DQ) cells for Qwen's own models only. With-CI cells, other labs' columns, and figures that merely repeat a value already counted in another Qwen card run are not used. The matcher ignores query strings, so 'qwen.ai/blog' covers every qwen.ai/blog?id=... post (all Qwen own posts). qwen.ai/blog is client-rendered; content is served by https://qwen.ai/api/v2/article/?language=en-US&path=<id>&type=qwen_ai. Extended 2026-10-09 (pass 8, group E): Qwen3-VL Technical Report arXiv 2511.21631v2 (already in match as arxiv.org/pdf/2511.21631v2) — Qwen's own Qwen3-VL and Qwen3 columns of Tables 2-4 (vision: MMMU, MMMU-Pro, MathVista mini, RealWorldQA, MMStar, HallusionBench, DocVQA test, ChartQA test, OCRBench, CC-OCR, CharXiv DQ/RQ, MVBench, Video-MME w/o sub, LVBench, ScreenSpot Pro, AndroidWorld) and Tables 5-10 (text: MMLU-Pro, MMLU-Redux, GPQA, SuperGPQA, AIME-25, LiveCodeBench v6, IFEval, BFCL-v3, TAU2-Telecom), hand-recorded one figure at a time; hybrid Qwen3 checkpoints only in their thinking columns; figures already counted in another Qwen card run are skipped; Gemini/GPT/Claude/DeepSeek/o3 columns not used. No new URL prefix needed.",
     "icon": "qwenlm.github.io",
     "verdict": "allowed",
     "checked": "2026-10-09"
@@ -14007,7 +14027,7 @@
     "terms_url": "https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md",
     "quote": "README front-matter at the pinned revision declares 'license: apache-2.0' (HF API cardData.license 'apache-2.0', repo not gated); card text: 'North Micro Vision Instruct is a 2.4B-parameter open-weight vision-language model with native-resolution image support, released under the Apache 2.0 license.' No separate LICENSE file in the repo (files: README.md, config/tokenizer/preprocessor JSONs, chat_template.jinja, model.safetensors). Benchmark text: 'We ran vision-language and text-only evaluations with VLMEvalKit, capping generation at 1,024 tokens'.",
     "attribution": "Cohere (Team Cohere / Cohere Labs). CohereLabs/North-Micro-Vision-Instruct model card, revision fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40. Source: https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md. Licence: Apache-2.0. Changes: selected CharXiv (DQ) cells transcribed into JSON; benchmark names clarified. No endorsement.",
-    "scope": "Benchmark Results table, row CharXiv_DQ only (this pass): Cohere's own VLMEvalKit runs of North-Micro-Vision-Instruct and seven comparison models (Ministral-3-3B-Instruct, LFM2.5-VL-1.6B, Phi-3.5-vision-instruct, Gemma-4-E2B-it, Qwen3-VL-2B-Instruct, Qwen3.5-2B-Instruct, SmolVLM2.2B). Linked HF blog post used only for methodology wording, not numbers.",
+    "scope": "Benchmark Results table, row CharXiv_DQ only (this pass): Cohere's own VLMEvalKit runs of North-Micro-Vision-Instruct and seven comparison models (Ministral-3-3B-Instruct, LFM2.5-VL-1.6B, Phi-3.5-vision-instruct, Gemma-4-E2B-it, Qwen3-VL-2B-Instruct, Qwen3.5-2B-Instruct, SmolVLM2.2B). Linked HF blog post used only for methodology wording, not numbers. Extended 2026-10-09 (pass 8, group E): also rows MMBench_DEV_EN_V11, MMStar, RealWorldQA, ChartQA_Test, OCRBench, AI2D_TEST, CountBench, HallusionBench, MMLU_test, MMLU-Pro_test, Multi-If and IFEval for the catalogued comparison columns (Ministral-3-3B-Instruct, Phi-3.5-vision-instruct, Gemma-4-E2B-it, Qwen3.5-2B-Instruct) and the proposed qwen3-vl-2b-instruct; same VLMEvalKit statement. Rows not mapped: GQA, MTL-MMBench, MMMB, BLINK, DocVQA_VAL/InfoVQA_VAL (val split; docvqa id is test), OCRBench_v2, MMMU_DEV_VAL (dev+val, not the val-only mmmu id), RefCOCO.",
     "verdict": "allowed",
     "checked": "2026-10-09"
   },
@@ -14119,7 +14139,7 @@
     "terms_url": "https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/LICENSE",
     "quote": "Pinned repo front matter 'license: mit'; LICENSE at the same revision: 'MIT License Copyright (c) 2025 Meituan. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including ... to use, copy, modify, merge, publish, distribute ...'. The README is a documentation file of the repository.",
     "attribution": "Meituan LongCat Team, LongCat-Flash-Chat model card (@f0b8e8d), MIT. Selected τ²-Bench (telecom) cells measured by Meituan; percentages converted to fractions. No endorsement.",
-    "scope": "Evaluation Results table, row 'τ²-Bench (telecom) (avg@4)'. Card note: 'Values marked with * are sourced from other public reports' — no telecom cell is starred, so all seven are Meituan's runs. Card note: 'DeepSeek-V3.1, Qwen3-235B-A22B, Gemini2.5-Flash, and Claude4-Sonnet are evaluated under their non-thinking mode.'",
+    "scope": "Evaluation Results table, row 'τ²-Bench (telecom) (avg@4)'. Card note: 'Values marked with * are sourced from other public reports' — no telecom cell is starred, so all seven are Meituan's runs. Card note: 'DeepSeek-V3.1, Qwen3-235B-A22B, Gemini2.5-Flash, and Claude4-Sonnet are evaluated under their non-thinking mode.' Pass 8 (C): scope extended from the τ² telecom row to all unstarred cells of the Evaluation Results table on rows with existing ids, including the LongCat-Flash own column (proposed longcat-flash-chat).",
     "verdict": "allowed",
     "checked": "2026-10-09",
     "icon": "huggingface.co"
@@ -14137,7 +14157,7 @@
     "terms_url": "https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/LICENSE",
     "quote": "Pinned repo front matter 'license: mit' (MIT License, Copyright (c) 2025 Meituan; grant covers 'associated documentation files'). The README is a documentation file of the repository.",
     "attribution": "Meituan LongCat Team, LongCat-Flash-Thinking model card (@7c9aad1), MIT. Selected τ²-Bench-Telecom cells measured by Meituan; percentages converted to fractions. No endorsement.",
-    "scope": "Evaluation Results table, row 'τ²-Bench-Telecom (Mean@4)'. Card note: 'Values marked with * are sourced from other public reports' — the GPT-5-Thinking cell (96.7*) is starred and NOT used.",
+    "scope": "Evaluation Results table, row 'τ²-Bench-Telecom (Mean@4)'. Card note: 'Values marked with * are sourced from other public reports' — the GPT-5-Thinking cell (96.7*) is starred and NOT used. Pass 8 (C): scope extended to all unstarred cells on rows with existing ids, including the LongCat-Flash-Thinking own column; GPT-5-Thinking column excluded (effort unstated).",
     "verdict": "allowed",
     "checked": "2026-10-09",
     "icon": "huggingface.co"
@@ -14497,7 +14517,7 @@
     "terms_url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md",
     "quote": "README front-matter at the pinned revision declares 'license: apache-2.0'. Note 1 under the benchmark table: 'All metrics presented in the table are reproduced in-house: we download the public model checkpoints, deploy them via vLLM or SGLang, and evaluate under a unified standardized pipeline. No officially reported results of the respective models are directly adopted in this table.' So every column is Kwaipilot's own measurement.",
     "attribution": "Kwaipilot (Kuaishou). Kwaipilot/KAT-Coder-V2.5-Dev model card. Source: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md. Licence: Apache-2.0. Changes: selected numerical cells transcribed into JSON; percentages divided by 100; Terminal-Bench 2.1 per-harness (Terminus-2) values used. No endorsement.",
-    "scope": "Benchmark performance table: KAT-Coder-V2.5-Dev (by: lab) and catalogued comparator columns Qwen3.5-27B, Qwen3.6-35B-A3B, Gemma 4 31B, Qwen3.5-35B-A3B, Gemma 4 26B-A4B, Qwen3-Coder-30B-A3B (by: independent, authors' in-house runs). Ornith-1.0-35B not catalogued. PinchBench and KAT-Code-Bench (internal) have no id.",
+    "scope": "Benchmark performance table: KAT-Coder-V2.5-Dev (by: lab) and catalogued comparator columns Qwen3.5-27B, Qwen3.6-35B-A3B, Gemma 4 31B, Qwen3.5-35B-A3B, Gemma 4 26B-A4B, Qwen3-Coder-30B-A3B (by: independent, authors' in-house runs). Ornith-1.0-35B not catalogued. PinchBench and KAT-Code-Bench (internal) have no id. Pass 8 (C): the 'Ornith-1.0-35B' column (in-house run, card note 1) is now also used for the proposed ornith-1-0-35b (by: independent).",
     "verdict": "allowed",
     "checked": "2026-10-09",
     "icon": "huggingface.co"
@@ -14627,5 +14647,187 @@
     "checked": "2026-10-09",
     "icon": "huggingface.co",
     "evidence_url": "https://arxiv.org/html/2608.04505v1"
+  },
+  {
+    "id": "speech-stt-cose-e-ccby",
+    "name": "CoSE-E: A Benchmark for Code-switched Speech Evaluation in Enterprise Settings (arXiv:2609.35645v1), Table 2",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2609.35645v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2609.35645v1",
+    "quote": "arXiv abs page for 2609.35645v1 links http://creativecommons.org/licenses/by/4.0/ (arXiv OAI metadata license: http://creativecommons.org/licenses/by/4.0/). §4: 'We evaluate eight frontier models covering both proprietary and open-weight across five language pairs ... all models use native auto-language detection without explicit language parameter'; Appendix C.3 Table 8 'ASR systems and decoding parameters. All models were run with no language-ID passed.' Authors are from ServiceNow AI Research and Qualcomm Technologies (no evaluated ASR system is theirs).",
+    "attribution": "Shama Gupta, Hoang H. Nguyen, Chelsea Huang, Lindsay Devon Brin, Fanny Riols et al., 'CoSE-E: A Benchmark for Code-switched Speech Evaluation in Enterprise Settings', arXiv:2609.35645v1 (2026), CC BY 4.0. Changes: Table 2 European-pair WER cells averaged per model. No endorsement.",
+    "scope": "Table 2 WER cells for the four European pairs of six catalogue STT systems (Whisper row stored invalid). SWER/AER, ZH/EN and the Gemini/Qwen3-Omni rows not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "evidence_url": "https://arxiv.org/abs/2609.35645v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "speech-stt-iberian-bench-ccby",
+    "name": "Benchmarking Automatic Speech Recognition Tools for Iberian Languages (arXiv:2609.36920v1), Table 3",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2609.36920v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2609.36920v1",
+    "quote": "arXiv OAI metadata and abs page for 2609.36920v1: license http://creativecommons.org/licenses/by/4.0/. Abstract: 'We benchmark eleven systems, ten open-weight models and one commercial API, across five Iberian languages ... with German and Turkish as controls.' §2.4: 'All models run on a single NVIDIA GeForce RTX 3090 (24 GB VRAM) ... For models with configurable delay (e.g., Voxtral-Mini-4B-Realtime), we use the default setting.' Authors from Telefónica Innovación Digital and Universidad Autónoma de Madrid; none of the evaluated systems is theirs.",
+    "attribution": "Fernando López, Pablo Gómez, David Solans, Paulo Villegas, Jordi Luque, 'Benchmarking Automatic Speech Recognition Tools for Iberian Languages', arXiv:2609.36920v1 (2026), CC BY 4.0. Table 3 macro WER, % divided by 100. No endorsement.",
+    "scope": "Table 3 macro-WER column for all eleven systems (all catalogued). RTF, error-type rates and per-language/per-sex figures not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "evidence_url": "https://arxiv.org/abs/2609.36920v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "speech-stt-mu-bench-ccby",
+    "name": "mu-bench: A Multilingual Utterance Transcription Benchmark (arXiv:2609.32082v1), Table 5",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2609.32082v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2609.32082v1",
+    "quote": "arXiv OAI metadata for 2609.32082v1: license http://creativecommons.org/licenses/by/4.0/. §4.1: 'We tested six commercial APIs through their batch endpoints and three through their streaming endpoints (Table 5) ... the locale is passed as a language hint, and all other parameters are left at their defaults.' Authors from UC Berkeley and Sierra AI (a voice-agent company, not an ASR vendor). The public leaderboard at research.sierra.ai/mubench is not used; only the paper's Table 5.",
+    "attribution": "Andrea Li, Soham Ray et al., 'mu-bench: A Multilingual Utterance Transcription Benchmark', arXiv:2609.32082v1 (2026), CC BY 4.0. Table 5 batch 'all' UER, % divided by 100. No endorsement.",
+    "scope": "Table 5 batch-mode 'all' UER for Google Chirp-3, ElevenLabs Scribe v2, OpenAI GPT-4o Mini Transcribe and Deepgram Nova-3. Streaming rows, Azure Speech and xAI Grok STT rows not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "evidence_url": "https://arxiv.org/abs/2609.32082v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "first-party-inworld",
+    "name": "Inworld official pricing page",
+    "match": [
+      "inworld.ai/pricing"
+    ],
+    "kind": "first-party",
+    "license": "Factual list price (not licensed content)",
+    "terms_url": "https://inworld.ai/pricing",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "exact": true,
+    "icon": "inworld.ai",
+    "attribution": "Inworld official pricing page, observed 2026-10-09",
+    "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped."
+  },
+  {
+    "id": "card3-meituan-longcat-longcat-audiodit-3-5b",
+    "name": "meituan-longcat/LongCat-AudioDiT-3.5B model card (Seed benchmark table)",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/LICENSE",
+    "terms_url": "https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md",
+    "quote": "README front matter at the pinned revision: 'license: mit'; section 'License Agreement': 'This repository, including both the model weights and the source code, is released under the MIT License.' Repository LICENSE file (1,064 bytes) at the same revision. Only the two LongCat-AudioDiT rows (1B, 3.5B) of the 'Experimental Results on Seed Benchmark' table are used; the evaluation setup is from the same authors' arXiv:2603.29339v1 §5.1 (CC BY-SA 4.0, used for setup/identity only). Comparator rows not used: the paper says 'The results of other methods are taken from the original paper or, if open-sourced, evaluated by us', without marking which.",
+    "attribution": "Meituan LongCat Team. meituan-longcat/LongCat-AudioDiT-3.5B model card, https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md, MIT. Changes: own-model cells transcribed, percentages divided by 100. No endorsement.",
+    "scope": "Seed-TTS test-zh CER / test-en WER / WavLM SIM for LongCat-AudioDiT-1B and -3.5B (same-lab rows).",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "speech-vibevoice-asr-streaming-report-ccby",
+    "name": "VibeVoice-ASR-Streaming Technical Report (arXiv:2609.02812v2), Table 3 single-speaker recognition",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2609.02812v2"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2609.02812v2",
+    "quote": "arXiv abstract page for 2609.02812v2 links http://creativecommons.org/licenses/by/4.0/. Table 3 note: 'All rows are our own measurements under a single normalization. X-ASR is evaluated in its chunk-1920ms streaming configuration, Voxtral-Mini-4B-Realtime at transcription_delay_ms=2400 (2.4 s), its longest configurable delay, and Nemotron-3.5-ASR at att_context_size=[56,13] (1.12 s), in each case the released setting closest to our chunk sizes'.",
+    "attribution": "Microsoft Research, 'VibeVoice-ASR-Streaming Technical Report', arXiv:2609.02812v2 (2026), CC BY 4.0. Table 3 WER cells, % / 100. No endorsement.",
+    "scope": "Table 3 LibriSpeech test-clean/test-other and GigaSpeech WER for the authors' released 22-frame 7B model and their own runs of Nemotron-3.5-ASR 0.6B and Voxtral-Mini-4B-Realtime. Meeting/MLC tables (no matching benchmark ids) and API rows not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "card3-microsoft-vibevoice-asr-bitnet",
+    "name": "microsoft/VibeVoice-ASR-BitNet model card (Accuracy table)",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://opensource.org/licenses/MIT",
+    "terms_url": "https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md",
+    "quote": "README front matter at the pinned revision: 'license: mit'; '## License: This project is licensed under the MIT License.' The same table is printed in arXiv:2607.21075v2 Table 4 (CC BY 4.0), whose caption identifies the comparators (Parakeet-TDT-0.6B-v2, Whisper Large-v3, SenseVoice-small, FunASR-Nano) without saying who ran them; those columns are not used.",
+    "attribution": "Microsoft Research. microsoft/VibeVoice-ASR-BitNet model card, https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md, MIT. Changes: same-lab WER cells transcribed, % / 100. No endorsement.",
+    "scope": "VibeVoice-ASR-7B and VibeVoice-ASR-BitNet columns: FLEURS en/zh, LibriSpeech clean/other, VoxPopuli.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card3-nineninesix-gepard-1-0",
+    "name": "nineninesix/gepard-1.0 model card (Seed-TTS-eval benchmark table)",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://opensource.org/licenses/Apache-2.0",
+    "terms_url": "https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md",
+    "quote": "README front matter at the pinned revision: 'license: apache-2.0'; Model Details: 'License: Apache 2.0 (the codec has NVIDIA Open Model License Agreement)'. Benchmarks: 'Measured on the public Seed-TTS-eval — 1088 paired prompts, identical UUIDs and texts across every model.' The accompanying report arXiv:2609.04222v1 (CC BY 4.0) §6.3 prints the same table and states the six baselines were 'our own runs on identical inputs, not a compilation of third-party numbers'.",
+    "attribution": "nineninesix.ai (Denis Pavlov, Ulanbek Abdurazakov, Nursultan Bakashov). nineninesix/gepard-1.0 model card, Apache-2.0; GEPARD technical report arXiv:2609.04222v1, CC BY 4.0. Changes: WER, SIM, UTMOS cells transcribed; UTMOS stored (x-1)/4. No endorsement.",
+    "scope": "Seed-TTS test-en WER (Whisper, size unstated), WavLM SIM and UTMOS for Gepard 1.0 and the authors' own runs of VoxCPM2, Fish-S2 (s2-pro) and OmniVoice. Qwen3-TTS, Chatterbox (size/variant not identified) and Echo-TTS (not catalogued) not used; NISQA columns have no benchmark id; Appendix C non-cloning runs not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card3-moondream-parakeet-cards",
+    "name": "Moondream parakeet-ultra and parakeet-redux model cards (Benchmarks sections)",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md",
+      "huggingface.co/moondream/parakeet-redux/blob/2bf128600aac4b16946f7ed8372e56117fe5e23b/README.md"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://huggingface.co/moondream/parakeet-ultra/blob/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b/README.md",
+    "quote": "Both cards' front matter at the pinned revisions: 'license: cc-by-4.0'. Benchmarks: 'Word error rate in percent, lower is better ... Both models are scored on the same files with the Open ASR Leaderboard's own pipeline as of September 2026 (its normalizers and compound-merging alignment, with the FLEURS references prepared as the leaderboard's text column is). parakeet-ultra [parakeet-redux] runs in Photon on an NVIDIA GPU, the original in NeMo in bf16.' The parakeet-tdt-0.6b-v3 column is Moondream's own run and is identical in both cards.",
+    "attribution": "Moondream (moondream.ai). moondream/parakeet-ultra and moondream/parakeet-redux model cards, CC BY 4.0. Changes: 'average' WER cells of the Open ASR (7 sets), FLEURS (25 languages) and TED-LIUM long-form tables, percent divided by 100. No endorsement.",
+    "scope": "Pooled as one maker's evaluation (same stated pipeline, same parakeet-tdt-0.6b-v3 reference column). Own models by: lab; NVIDIA parakeet-tdt-0.6b-v3 column by: independent, taken once (from the parakeet-ultra card). Per-set and per-language cells, the AA-WER-style business-speech set and the MUSAN noise conditions are not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card3-ai-sage-gigaam-multilingual",
+    "name": "ai-sage/GigaAM-Multilingual model card (Model Performance table)",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://opensource.org/licenses/MIT",
+    "terms_url": "https://huggingface.co/ai-sage/GigaAM-Multilingual/blob/2f8a57144e6ec3adfd32fe0484d9ea9913305bc8/README.md",
+    "quote": "README front matter at the pinned revision: 'license: mit'. 'Model Performance: Word Error Rate (%) on Common Voice (CV), FLEURS, and internal in-the-wild test sets. Utterances longer than 30 s and references containing digits are excluded; references/hypotheses are normalized (lowercasing, punctuation removal, numerals→words); greedy decoding.'",
+    "attribution": "SaluteDevices / Sber GigaAM team. ai-sage/GigaAM-Multilingual model card, MIT. Changes: English CV and FLEURS cells of the two released CTC variants, percent divided by 100. No endorsement.",
+    "scope": "Own-model columns GigaAM Multilingual (ctc) and GigaAM Multilingual Large (large_ctc), English rows only (no benchmark ids exist for the Russian/Kazakh/Kyrgyz/Uzbek or internal sets). Comparator columns (Omnilingual 1B LLM, SeamlessM4T large v2, Whisper large v3) not used: the card does not say the authors ran them (held for owner).",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "huggingface.co"
   }
 ]
