@@ -132728,32 +132728,32 @@
   {
     "model": "deepseek-v4-pro-preview",
     "bench": "lmarena-text",
-    "score": 1457.8,
+    "score": 1455,
     "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet",
     "source_id": "lmarena-dataset",
     "by": "independent",
     "date": "2026-10-02",
-    "note": "text_style_control, category overall, split latest; exact entry 'deepseek-v4-pro'; 57,478 votes; published 95% interval 1453.9–1461.7. Refreshed from pinned October dataset; replaces the older snapshot for this model/task."
+    "note": "text_style_control, category overall, split latest; exact entry 'deepseek-v4-pro-high-preview' (the renamed '-thinking' entry, highest reasoning effort; corrected 2026-10-10 from the non-thinking 'deepseek-v4-pro' entry); 54,767 votes; published 95% interval 1451.0–1458.9. Pinned October dataset revision 46919c4."
   },
   {
     "model": "deepseek-v4-pro-preview",
     "bench": "lmarena-webdev",
-    "score": 1446,
+    "score": 1463.4,
     "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet",
     "source_id": "lmarena-dataset",
     "by": "independent",
     "date": "2026-10-01",
-    "note": "webdev, category overall, split latest; exact entry 'deepseek-v4-pro'; 14,042 votes; published 95% interval 1439.7–1452.3. Refreshed from pinned October dataset; replaces the older snapshot for this model/task."
+    "note": "webdev, category overall, split latest; exact entry 'deepseek-v4-pro-high-preview' (the renamed '-thinking' entry, highest reasoning effort; corrected 2026-10-10 from the non-thinking 'deepseek-v4-pro' entry); 13,229 votes; published 95% interval 1457.1–1469.7. Pinned October dataset revision 46919c4."
   },
   {
     "model": "deepseek-v4-flash-preview",
     "bench": "lmarena-text",
-    "score": 1436,
+    "score": 1438.4,
     "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet",
     "source_id": "lmarena-dataset",
     "by": "independent",
     "date": "2026-10-02",
-    "note": "text_style_control, category overall, split latest; exact entry 'deepseek-v4-flash'; 51,850 votes; published 95% interval 1432.0–1440.1. Refreshed from pinned October dataset; replaces the older snapshot for this model/task."
+    "note": "text_style_control, category overall, split latest; exact entry 'deepseek-v4-flash-high-preview' (the renamed '-thinking' entry, highest reasoning effort; corrected 2026-10-10 from the non-thinking 'deepseek-v4-flash' entry); 51,648 votes; published 95% interval 1434.3–1442.5. Pinned October dataset revision 46919c4."
   },
   {
     "model": "deepseek-v4-flash-preview",
@@ -235461,5 +235461,125 @@
     "date": "2024-10-22",
     "note": "LiveBench model judgments (HF livebench/model_judgment @5896e3b, committed 2024-10-22), model 'qwen2.5-72b-instruct'. Release 2024-08-31 question set (1,000 questions: livebench_release_date in {2024-06-24, 2024-07-26, 2024-08-31} and not removed by 2024-08-31; release/removal dates from the question datasets livebench/<category> pinned at their 2024-10-22 revisions): judgments for all 1,000 questions, no duplicates. Score computed by whatmodel.sh exactly as LiveBench's show_livebench_result.py (LiveBench/LiveBench @24364d6) does: mean per-question score per task → mean of task means per category → mean of the six categories = 52.89. Category means: math 52.4, coding 56.6, reasoning 46.0, language 38.1, instruction_following 75.5, data_analysis 48.8. Answers generated and scored by the LiveBench team ('We will evaluate your model!', README). Identity: Qwen/Qwen2.5-72B-Instruct; answers generated 2024-09-20.",
     "source_id": "livebench-model-judgment-apache"
+  },
+  {
+    "model": "mimo-v2-flash",
+    "bench": "lmarena-text",
+    "score": 1386.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-10-08",
+    "note": "text_style_control, category overall, split latest (leaderboard_publish_date 2026-10-08); exact entry 'mimo-v2-flash (thinking)'; 11,143 votes; published 95% interval 1380.2–1392.5. Thinking mode, the highest effort Arena lists for MiMo-V2-Flash (the 'mimo-v2-flash (non-thinking)' entry, 1391.6, is the same weights in non-thinking mode and is not duplicated). Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08').",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mimo-v2-flash",
+    "bench": "lmarena-webdev",
+    "score": 1292.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-10-08",
+    "note": "webdev, category overall, split latest (leaderboard_publish_date 2026-10-08); exact entry 'mimo-v2-flash (thinking)'; 1,687 votes; published 95% interval 1276.0–1308.9. Thinking mode, the highest effort Arena lists for MiMo-V2-Flash (the non-thinking entry, 1330.2, is not duplicated). Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08').",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "llama-13b",
+    "bench": "lmarena-text",
+    "score": 975,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-10-08",
+    "note": "text_style_control, category overall, split latest (leaderboard_publish_date 2026-10-08); exact entry 'llama-13b'; 2,391 votes; published 95% interval 959.4–990.7. Arena's leaderboard table (arena-leaderboard Space @6f2eeeb, leaderboard_table_20250804.csv) labels this key 'LLaMA-13B' (Meta, Non-commercial) linking arXiv 2302.13971, i.e. the original LLaMA v1 13B. Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08').",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "dbrx-instruct",
+    "bench": "lmarena-text",
+    "score": 1195.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-10-08",
+    "note": "text_style_control, category overall, split latest (leaderboard_publish_date 2026-10-08); exact entry 'dbrx-instruct-preview'; 32,191 votes; published 95% interval 1189.4–1201.6. Arena's leaderboard table (arena-leaderboard Space @6f2eeeb, leaderboard_table_20250804.csv) labels this key 'DBRX-Instruct-Preview' (Databricks, 'DBRX LICENSE') linking Databricks' 'Introducing DBRX' post; DBRX Instruct is the only DBRX instruct checkpoint Databricks released. Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08').",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-haiku-5-5",
+    "bench": "lmarena-webdev",
+    "score": 1586.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-10-08",
+    "note": "webdev, category overall, split latest (leaderboard_publish_date 2026-10-08); exact entry 'claude-haiku-5.5-high'; 978 votes; published 95% interval 1567.3–1606.5. Only Claude Haiku 5.5 entry in this snapshot (effort 'high'); first published 2026-10-08, so only 978 votes and a wide interval. Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08').",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mimo-v2-6-pro",
+    "bench": "arena-agent-ips-202610",
+    "score": 0.03524172926571822,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-10-08",
+    "note": "agent latest overall (leaderboard_publish_date 2026-10-08); exact entry 'MiMo V2.6 Pro'; highest available reasoning effort for this model in this task (the only entry for it). Aggregate IPS net improvement, not Elo; 95% CI [0.016064735465072696, 0.054418723066363736]; 11,376 sessions, 988,415 observations. Same aggregate as the existing October 2 rows (October 1, 2026 signal definitions; the 50 entries common to both snapshots moved by a median 0.003 IPS). Lower effort and the five constituent signals are not duplicated. Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08').",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mimo-v2-6-flash",
+    "bench": "arena-agent-ips-202610",
+    "score": 0.0035286050197275384,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-10-08",
+    "note": "agent latest overall (leaderboard_publish_date 2026-10-08); exact entry 'MiMo V2.6 Flash'; highest available reasoning effort for this model in this task (the only entry for it). Aggregate IPS net improvement, not Elo; 95% CI [-0.011206337254353358, 0.018263547293808434]; 16,864 sessions, 1,796,644 observations. Same aggregate as the existing October 2 rows (October 1, 2026 signal definitions; the 50 entries common to both snapshots moved by a median 0.003 IPS). Lower effort and the five constituent signals are not duplicated. Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08').",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mistral-large-4",
+    "bench": "lmarena-text",
+    "score": 1429.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-10-08",
+    "note": "text_style_control, category overall, split latest (leaderboard_publish_date 2026-10-08); exact entry 'mistral-large-4'; 4,179 votes; published 95% interval 1420.0–1438.5. Only Mistral Large 4 entry; first published 2026-10-08 (single publish so far). Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08').",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mistral-large-4",
+    "bench": "lmarena-webdev",
+    "score": 1541.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-10-08",
+    "note": "webdev, category overall, split latest (leaderboard_publish_date 2026-10-08); exact entry 'mistral-large-4'; 1,478 votes; published 95% interval 1524.9–1557.8. Only Mistral Large 4 entry; first published 2026-10-08 (single publish so far). Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08').",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mistral-large-4",
+    "bench": "arena-agent-ips-202610",
+    "score": -0.06560145031424472,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-10-08",
+    "note": "agent latest overall (leaderboard_publish_date 2026-10-08); exact entry 'mistral-large-4'; highest available reasoning effort for this model in this task (the only entry for it). Aggregate IPS net improvement, not Elo; 95% CI [-0.09508835660601413, -0.03611454402247531]; 5,078 sessions, 271,865 observations. Same aggregate as the existing October 2 rows (October 1, 2026 signal definitions; the 50 entries common to both snapshots moved by a median 0.003 IPS). Lower effort and the five constituent signals are not duplicated. Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08').",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-4o-search-preview",
+    "bench": "lmarena-search",
+    "score": 1081,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/search_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-08-24",
+    "note": "search_style_control, category overall, split latest (leaderboard_publish_date 2026-08-24); exact entry 'api-gpt-4o-search'; 3,411 votes; published 95% interval 1069.6–1092.4. Search system entry (organization openai). Mapped to OpenAI's GPT-4o Search Preview model; Arena's open Search Arena dataset (lmarena-ai/search-arena-24k) names the same system 'gpt-4o-search-preview' (default and '-high' search_context_size settings), and this leaderboard does not say which search_context_size the current entry uses. Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08').",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "nvila-15b",
+    "bench": "lmarena-vision",
+    "score": 985.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-10-02",
+    "note": "vision_style_control, category overall, split latest (leaderboard_publish_date 2026-10-02); exact entry 'nvila-internal-15b-v1'; 1,077 votes; published 95% interval 965.3–1005.5. Arena's leaderboard table (arena-leaderboard Space @6f2eeeb, leaderboard_table_20250804.csv) labels this key 'NVILA-15B' (NVIDIA) linking huggingface.co/Efficient-Large-Model/NVILA-15B. Small sample: 1,077 votes. Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08').",
+    "source_id": "lmarena-dataset"
   }
 ]

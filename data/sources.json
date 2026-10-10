@@ -27,7 +27,12 @@
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/image_to_video/latest-00000-of-00001.parquet",
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
-      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/webdev/latest-00000-of-00001.parquet"
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/webdev/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/search_style_control/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/vision_style_control/latest-00000-of-00001.parquet"
     ],
     "name": "LMArena leaderboard dataset",
     "kind": "dataset",
@@ -3500,13 +3505,14 @@
       "huggingface.co/mistralai/Mistral-Small-Instruct-2409/blob/4600506f6b13c7ef89e61a54263f4c9bf483de30/README.md",
       "docs.mistral.ai/models/model-cards/magistral-medium-1-2-25-09",
       "docs.mistral.ai/models/model-cards/magistral-medium-1-1-25-07",
-      "docs.mistral.ai/models/model-cards/magistral-small-1-1-25-07"
+      "docs.mistral.ai/models/model-cards/magistral-small-1-1-25-07",
+      "docs.mistral.ai/models/mistral-large-4"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://mistral.ai/pricing/api",
     "verdict": "allowed",
-    "checked": "2026-10-10",
+    "checked": "2026-10-09",
     "exact": true,
     "icon": "mistral.ai",
     "attribution": "Mistral AI official pricing/docs, observed 2026-09-25",
@@ -7244,7 +7250,8 @@
       "cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
       "developers.openai.com/api/docs/models/gpt-6.1-sol",
       "developers.openai.com/api/docs/pricing",
-      "developers.openai.com/api/docs/models/chatgpt-image-latest"
+      "developers.openai.com/api/docs/models/chatgpt-image-latest",
+      "developers.openai.com/api/docs/models/gpt-4o-search-preview"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",

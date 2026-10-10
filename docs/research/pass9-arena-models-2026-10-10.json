@@ -1,0 +1,863 @@
+{
+ "about": "Pass 9 (2026-10-10): every LMArena leaderboard-dataset entry (lmarena-ai/leaderboard-dataset, CC BY 4.0, ledger lmarena-dataset) not yet mapped to a catalogue model. Downloaded the latest split of all 22 configs at main revision 088c607919d1d0d3385409070657f4623e414872 (= main on 2026-10-10) and the full split of the 11 imported configs. Config -> benchmark mapping used by existing rows: text_style_control -> lmarena-text, vision_style_control -> lmarena-vision, webdev -> lmarena-webdev, document_style_control -> lmarena-document, search_style_control -> lmarena-search, text_to_image -> lmarena-image, image_edit -> lmarena-image-edit, text_to_video -> lmarena-video, image_to_video -> lmarena-video-i2v, video_edit -> lmarena-video-edit, agent -> arena-agent-ips-202610; category 'overall', split 'latest', one row per catalogue model per benchmark at its highest available effort; Elo rounded to 1 decimal, agent IPS kept at full precision. Of the 1,091 overall entries in those 11 configs, 971 are already recorded under their exact label; 120 entry×config pairs (71 distinct names) were not. Earlier passes had already mapped the legacy snapshots (gpt-4-0314/0613, claude-3*, gemini-1.5-*-001, llama-2, mixtral, yi, qwen1.5, vicuna, palm-2, RWKV, …), so the remainder is mostly lower-effort/harness/resolution variants of catalogued models. Result: 3 new models (mistral-large-4, gpt-4o-search-preview, nvila-15b) and 12 rows (5 for new models, 7 for 6 catalogued models that lacked them); 6 unresolved entries in gaps; 8 owner items.",
+ "models": [
+  {
+   "id": "mistral-large-4",
+   "name": "Mistral Large 4 (public preview)",
+   "provider": "Mistral",
+   "category": "llm",
+   "released": "2026-10",
+   "released_source": "https://docs.mistral.ai/models/mistral-large-4",
+   "open_weights": false,
+   "license": "proprietary",
+   "params_b": 1050,
+   "active_b": 52,
+   "params_b_source": "https://docs.mistral.ai/models/mistral-large-4",
+   "params_note": "Mistral's model page: '52B active parameters and 1.05T total parameters, and a 1.6B vision encoder'. Observed 2026-10-10.",
+   "api": {
+    "url": "https://docs.mistral.ai/models/mistral-large-4",
+    "provider": "Mistral AI",
+    "price_in": 1.36,
+    "price_out": 4.18,
+    "price_source": "https://docs.mistral.ai/models/mistral-large-4",
+    "price_note": "Observed 2026-10-10 on Mistral's own Mistral Large 4 model page (Price, USD): original (list) price $1.36 input / $4.18 output per million tokens; cached input $0.14. The page also shows a sale price of $0.68 input / $0.07 cached / $2.09 output, which is not used here. API names mistral-large-4 and mistral-large-4-0, version 26.10, status 'Public Preview'."
+   },
+   "local": null,
+   "context_k": 1000,
+   "context_source": "https://docs.mistral.ai/models/mistral-large-4",
+   "context_note": "Mistral's model page: Context '1M'. Observed 2026-10-10.",
+   "identity_note": "Mistral AI's Mistral Large 4, API model 'mistral-large-4' (alias 'mistral-large-4-0'), version 26.10, launched 6 October 2026 as a 'Public Preview' that anyone can call on Mistral's API ('You can try the preview API today on Mistral Studio'). Mistral describes it as open-weight, but the weights are not out yet: the model page's Weights link (huggingface.co/mistralai/Mistral-Large-4-1T-A52B) says 'Coming soon', the repository returns HTTP 401, and the announcement says 'Weights drop end of this month'. It is therefore recorded as open_weights false with no local variant and licence 'proprietary' for now; switch both when the weights and their licence are published. Arena entry 'mistral-large-4' (organization mistral, licence 'Proprietary') first appears in the 2026-10-08 text, webdev and agent snapshots, after the public API launch. A new model, not Mistral Large 3 (mistral-large-2512).",
+   "identity_sources": [
+    "https://docs.mistral.ai/models/mistral-large-4",
+    "https://mistral.ai/news/mistral-large-4"
+   ],
+   "identity_evidence": [
+    {
+     "source": "https://docs.mistral.ai/models/mistral-large-4",
+     "reported_label": "mistral-large-4"
+    },
+    {
+     "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet",
+     "reported_label": "mistral-large-4"
+    }
+   ]
+  },
+  {
+   "id": "gpt-4o-search-preview",
+   "name": "GPT-4o Search Preview (2025-03-11)",
+   "provider": "OpenAI",
+   "category": "llm",
+   "released": "2025-03",
+   "released_source": "https://developers.openai.com/api/docs/models/gpt-4o-search-preview",
+   "open_weights": false,
+   "license": "proprietary",
+   "api": {
+    "url": "https://developers.openai.com/api/docs/models/gpt-4o-search-preview",
+    "provider": "OpenAI",
+    "price_in": 2.5,
+    "price_out": 10,
+    "price_source": "https://developers.openai.com/api/docs/models/gpt-4o-search-preview",
+    "price_note": "Observed 2026-10-10 on OpenAI's own GPT-4o Search Preview model page (Text tokens): input $2.5, output $10 per 1M tokens. Web search calls carry an extra per-call fee, which is not included (the page refers to the pricing page). Chat Completions only."
+   },
+   "local": null,
+   "context_k": 128,
+   "context_source": "https://developers.openai.com/api/docs/models/gpt-4o-search-preview",
+   "context_note": "OpenAI model page: '128,000 context window', '16,384 max output tokens'. Observed 2026-10-10.",
+   "identity_note": "OpenAI API model gpt-4o-search-preview, the GPT-4o model trained to run web searches in Chat Completions. It has one snapshot, gpt-4o-search-preview-2025-03-11, which is the default the alias points to. Arena search entry 'api-gpt-4o-search' (organization openai, first published 2025-08-07). LMArena's open Search Arena battle dataset names this OpenAI system 'gpt-4o-search-preview', with '-high' and '-high-loc' variants that differ only in search_context_size or location. The Search Arena paper (arXiv 2506.05334v1, Table A1) lists 'api-gpt-4o-search-preview' as base model gpt-4o with the default config. OpenAI has no other GPT-4o search model on the API. The search_context_size behind the current leaderboard entry is not stated. Not the plain gpt-4o snapshots (gpt-4o-2024-08-06 / -11-20) and not gpt-4o-mini-search-preview.",
+   "identity_sources": [
+    "https://developers.openai.com/api/docs/models/gpt-4o-search-preview",
+    "https://arxiv.org/abs/2506.05334v1",
+    "https://huggingface.co/datasets/lmarena-ai/search-arena-24k/tree/fac8dcf86146c8773ef020095c5694c9b2bc98d7"
+   ],
+   "identity_evidence": [
+    {
+     "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/search_style_control/latest-00000-of-00001.parquet",
+     "reported_label": "api-gpt-4o-search"
+    },
+    {
+     "source": "https://arxiv.org/abs/2506.05334v1",
+     "reported_label": "api-gpt-4o-search-preview (Table A1: base model gpt-4o, default config)"
+    },
+    {
+     "source": "https://developers.openai.com/api/docs/models/gpt-4o-search-preview",
+     "reported_label": "gpt-4o-search-preview (default snapshot gpt-4o-search-preview-2025-03-11)"
+    }
+   ]
+  },
+  {
+   "id": "nvila-15b",
+   "name": "NVILA-15B",
+   "provider": "NVIDIA",
+   "category": "llm",
+   "released": "2024-12",
+   "open_weights": true,
+   "license": "cc-by-nc-4.0",
+   "license_source": "https://huggingface.co/Efficient-Large-Model/NVILA-15B/blob/e621f628ee5c160c4444e4a29e395bb60dd30b78/README.md",
+   "model_repo": "https://huggingface.co/Efficient-Large-Model/NVILA-15B",
+   "api": null,
+   "local": null,
+   "identity_note": "Comparison-only. NVIDIA / MIT Han Lab NVILA-15B vision-language model (arXiv 2412.04468; card: 'NVILA was trained in Nov 2024'), in repo Efficient-Large-Model/NVILA-15B @e621f62 (created 2024-12-04). The card's YAML licence is cc-by-nc-4.0, but its License section says the weights are CC-BY-NC-SA-4.0; both are non-commercial. Arena vision entry 'nvila-internal-15b-v1' (organization nvidia, first published 2024-12-22). Arena's own leaderboard table (arena-leaderboard Space @6f2eeeb, leaderboard_table_20250804.csv) displays that key as 'NVILA-15B' and links this repo. The key's 'internal ... v1' suggests NVIDIA served the model to Arena from its own endpoint. No run option is listed: the card gives no copy-paste command (it points to the NVLabs/VILA code), and NVIDIA offers no hosted API for it. Parameters are not stated beyond the name. Distinct from the catalogued VILA-U 7B.",
+   "identity_sources": [
+    "https://huggingface.co/Efficient-Large-Model/NVILA-15B/blob/e621f628ee5c160c4444e4a29e395bb60dd30b78/README.md",
+    "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv"
+   ],
+   "identity_evidence": [
+    {
+     "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/vision_style_control/latest-00000-of-00001.parquet",
+     "reported_label": "nvila-internal-15b-v1"
+    },
+    {
+     "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
+     "reported_label": "NVILA-15B (link https://huggingface.co/Efficient-Large-Model/NVILA-15B)"
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "model": "mimo-v2-flash",
+   "bench": "lmarena-text",
+   "score": 1386.3,
+   "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet",
+   "source_id": "lmarena-dataset",
+   "by": "independent",
+   "date": "2026-10-08",
+   "note": "text_style_control, category overall, split latest (leaderboard_publish_date 2026-10-08); exact entry 'mimo-v2-flash (thinking)'; 11,143 votes; published 95% interval 1380.2–1392.5. Thinking mode, the highest effort Arena lists for MiMo-V2-Flash (the 'mimo-v2-flash (non-thinking)' entry, 1391.6, is the same weights in non-thinking mode and is not duplicated). Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08')."
+  },
+  {
+   "model": "mimo-v2-flash",
+   "bench": "lmarena-webdev",
+   "score": 1292.5,
+   "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet",
+   "source_id": "lmarena-dataset",
+   "by": "independent",
+   "date": "2026-10-08",
+   "note": "webdev, category overall, split latest (leaderboard_publish_date 2026-10-08); exact entry 'mimo-v2-flash (thinking)'; 1,687 votes; published 95% interval 1276.0–1308.9. Thinking mode, the highest effort Arena lists for MiMo-V2-Flash (the non-thinking entry, 1330.2, is not duplicated). Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08')."
+  },
+  {
+   "model": "llama-13b",
+   "bench": "lmarena-text",
+   "score": 975,
+   "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet",
+   "source_id": "lmarena-dataset",
+   "by": "independent",
+   "date": "2026-10-08",
+   "note": "text_style_control, category overall, split latest (leaderboard_publish_date 2026-10-08); exact entry 'llama-13b'; 2,391 votes; published 95% interval 959.4–990.7. Arena's leaderboard table (arena-leaderboard Space @6f2eeeb, leaderboard_table_20250804.csv) labels this key 'LLaMA-13B' (Meta, Non-commercial) linking arXiv 2302.13971, i.e. the original LLaMA v1 13B. Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08')."
+  },
+  {
+   "model": "dbrx-instruct",
+   "bench": "lmarena-text",
+   "score": 1195.5,
+   "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet",
+   "source_id": "lmarena-dataset",
+   "by": "independent",
+   "date": "2026-10-08",
+   "note": "text_style_control, category overall, split latest (leaderboard_publish_date 2026-10-08); exact entry 'dbrx-instruct-preview'; 32,191 votes; published 95% interval 1189.4–1201.6. Arena's leaderboard table (arena-leaderboard Space @6f2eeeb, leaderboard_table_20250804.csv) labels this key 'DBRX-Instruct-Preview' (Databricks, 'DBRX LICENSE') linking Databricks' 'Introducing DBRX' post; DBRX Instruct is the only DBRX instruct checkpoint Databricks released. Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08')."
+  },
+  {
+   "model": "claude-haiku-5-5",
+   "bench": "lmarena-webdev",
+   "score": 1586.9,
+   "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet",
+   "source_id": "lmarena-dataset",
+   "by": "independent",
+   "date": "2026-10-08",
+   "note": "webdev, category overall, split latest (leaderboard_publish_date 2026-10-08); exact entry 'claude-haiku-5.5-high'; 978 votes; published 95% interval 1567.3–1606.5. Only Claude Haiku 5.5 entry in this snapshot (effort 'high'); first published 2026-10-08, so only 978 votes and a wide interval. Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08')."
+  },
+  {
+   "model": "mimo-v2-6-pro",
+   "bench": "arena-agent-ips-202610",
+   "score": 0.03524172926571822,
+   "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet",
+   "source_id": "lmarena-dataset",
+   "by": "independent",
+   "date": "2026-10-08",
+   "note": "agent latest overall (leaderboard_publish_date 2026-10-08); exact entry 'MiMo V2.6 Pro'; highest available reasoning effort for this model in this task (the only entry for it). Aggregate IPS net improvement, not Elo; 95% CI [0.016064735465072696, 0.054418723066363736]; 11,376 sessions, 988,415 observations. Same aggregate as the existing October 2 rows (October 1, 2026 signal definitions; the 50 entries common to both snapshots moved by a median 0.003 IPS). Lower effort and the five constituent signals are not duplicated. Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08')."
+  },
+  {
+   "model": "mimo-v2-6-flash",
+   "bench": "arena-agent-ips-202610",
+   "score": 0.0035286050197275384,
+   "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet",
+   "source_id": "lmarena-dataset",
+   "by": "independent",
+   "date": "2026-10-08",
+   "note": "agent latest overall (leaderboard_publish_date 2026-10-08); exact entry 'MiMo V2.6 Flash'; highest available reasoning effort for this model in this task (the only entry for it). Aggregate IPS net improvement, not Elo; 95% CI [-0.011206337254353358, 0.018263547293808434]; 16,864 sessions, 1,796,644 observations. Same aggregate as the existing October 2 rows (October 1, 2026 signal definitions; the 50 entries common to both snapshots moved by a median 0.003 IPS). Lower effort and the five constituent signals are not duplicated. Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08')."
+  },
+  {
+   "model": "mistral-large-4",
+   "bench": "lmarena-text",
+   "score": 1429.3,
+   "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet",
+   "source_id": "lmarena-dataset",
+   "by": "independent",
+   "date": "2026-10-08",
+   "note": "text_style_control, category overall, split latest (leaderboard_publish_date 2026-10-08); exact entry 'mistral-large-4'; 4,179 votes; published 95% interval 1420.0–1438.5. Only Mistral Large 4 entry; first published 2026-10-08 (single publish so far). Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08')."
+  },
+  {
+   "model": "mistral-large-4",
+   "bench": "lmarena-webdev",
+   "score": 1541.3,
+   "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet",
+   "source_id": "lmarena-dataset",
+   "by": "independent",
+   "date": "2026-10-08",
+   "note": "webdev, category overall, split latest (leaderboard_publish_date 2026-10-08); exact entry 'mistral-large-4'; 1,478 votes; published 95% interval 1524.9–1557.8. Only Mistral Large 4 entry; first published 2026-10-08 (single publish so far). Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08')."
+  },
+  {
+   "model": "mistral-large-4",
+   "bench": "arena-agent-ips-202610",
+   "score": -0.06560145031424472,
+   "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet",
+   "source_id": "lmarena-dataset",
+   "by": "independent",
+   "date": "2026-10-08",
+   "note": "agent latest overall (leaderboard_publish_date 2026-10-08); exact entry 'mistral-large-4'; highest available reasoning effort for this model in this task (the only entry for it). Aggregate IPS net improvement, not Elo; 95% CI [-0.09508835660601413, -0.03611454402247531]; 5,078 sessions, 271,865 observations. Same aggregate as the existing October 2 rows (October 1, 2026 signal definitions; the 50 entries common to both snapshots moved by a median 0.003 IPS). Lower effort and the five constituent signals are not duplicated. Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08')."
+  },
+  {
+   "model": "gpt-4o-search-preview",
+   "bench": "lmarena-search",
+   "score": 1081,
+   "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/search_style_control/latest-00000-of-00001.parquet",
+   "source_id": "lmarena-dataset",
+   "by": "independent",
+   "date": "2026-08-24",
+   "note": "search_style_control, category overall, split latest (leaderboard_publish_date 2026-08-24); exact entry 'api-gpt-4o-search'; 3,411 votes; published 95% interval 1069.6–1092.4. Search system entry (organization openai). Mapped to OpenAI's GPT-4o Search Preview model; Arena's open Search Arena dataset (lmarena-ai/search-arena-24k) names the same system 'gpt-4o-search-preview' (default and '-high' search_context_size settings), and this leaderboard does not say which search_context_size the current entry uses. Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08')."
+  },
+  {
+   "model": "nvila-15b",
+   "bench": "lmarena-vision",
+   "score": 985.4,
+   "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/vision_style_control/latest-00000-of-00001.parquet",
+   "source_id": "lmarena-dataset",
+   "by": "independent",
+   "date": "2026-10-02",
+   "note": "vision_style_control, category overall, split latest (leaderboard_publish_date 2026-10-02); exact entry 'nvila-internal-15b-v1'; 1,077 votes; published 95% interval 965.3–1005.5. Arena's leaderboard table (arena-leaderboard Space @6f2eeeb, leaderboard_table_20250804.csv) labels this key 'NVILA-15B' (NVIDIA) linking huggingface.co/Efficient-Large-Model/NVILA-15B. Small sample: 1,077 votes. Pinned to dataset revision 088c6079 (main on 2026-10-10; commit 'Update agent_tool_hallucination for 2026-10-08')."
+  }
+ ],
+ "benchmarks": [],
+ "ledger": [
+  {
+   "action": "add_match",
+   "id": "lmarena-dataset",
+   "add_match": [
+    "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet",
+    "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/webdev/latest-00000-of-00001.parquet",
+    "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/agent/latest-00000-of-00001.parquet",
+    "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/search_style_control/latest-00000-of-00001.parquet",
+    "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/vision_style_control/latest-00000-of-00001.parquet"
+   ],
+   "reason": "Newly mapped entries are pinned to the dataset's current main revision 088c6079 (2026-10-09 03:06 UTC; same files as main on 2026-10-10; LFS sha256 text_style_control e8190c6b…, webdev d601bf67…, agent fecade26…, search_style_control 5118cea1…, vision_style_control 649d63e1…). text_to_image and image_edit at this revision are already in match. Licence unchanged (dataset card front matter 'license: cc-by-4.0' at this revision). Ratings of the 413 text entries common to 46919c46 and 088c6079 differ by a median of 0.06 points (max 6.4), so the new rows sit on the same scale as the existing October rows."
+  },
+  {
+   "action": "add_match",
+   "id": "first-party-mistral",
+   "add_match": [
+    "docs.mistral.ai/models/mistral-large-4"
+   ],
+   "reason": "Mistral's own Mistral Large 4 model page (list price, context window, parameter counts, release date) for the proposed mistral-large-4 entry."
+  },
+  {
+   "action": "add_match",
+   "id": "first-party-openai",
+   "add_match": [
+    "developers.openai.com/api/docs/models/gpt-4o-search-preview"
+   ],
+   "reason": "OpenAI's own GPT-4o Search Preview model page (price and context) for the proposed gpt-4o-search-preview entry."
+  }
+ ],
+ "gaps": [
+  {
+   "model": "grok-4.20-beta1",
+   "source": "lmarena-dataset @088c6079",
+   "why": "Grok 4.20 Beta 1, the limited Grok-app beta from February 2026 (first Arena publish 2026-02-19). No API id or dated snapshot; distinct from the catalogued grok-4-20 (API grok-4.20-beta-0309-reasoning) and from the 0309 multi-agent entry."
+  },
+  {
+   "model": "gemini-advanced-0514",
+   "source": "lmarena-dataset @088c6079",
+   "why": "Arena table label 'Gemini Advanced App (2024-05-14)'. This is the consumer app, not an API checkpoint."
+  },
+  {
+   "model": "diffbot-small-xl",
+   "source": "lmarena-dataset @088c6079",
+   "why": "Diffbot's search LLM, a fine-tune of Llama-3.3-70B. HF diffbot has four unversioned candidates (Llama-3.3-Diffbot-Small-XL-2412, -2504, Diffbot-Small-XL-2505, -2508). The Arena entry has no version (first publish 2025-08-21, so 2508 is possible), and its 'Apache 2.0' licence disagrees with the HF tag llama3.3."
+  },
+  {
+   "model": "gpt-5.3-codex (codex-harness)",
+   "source": "lmarena-dataset @088c6079",
+   "why": "two distinct webdev entries share this exact label (1408.6 with 2,643 votes; 1371.4 with 3,656 votes; both present since 2026-03), most likely two effort settings. We cannot tell which is the higher effort, so catalogued gpt-5-3-codex gets no row."
+  },
+  {
+   "model": "grok-imagine-image-quality (20260519)",
+   "source": "lmarena-dataset @088c6079",
+   "why": "an xAI image 'quality' variant dated 2026-05-19 (renamed from 'grok-imagine-image-quality' on 2026-05-21). Not verified as an xAI API model id or setting, and not the catalogued grok-imagine-image / -pro / -2 entries."
+  },
+  {
+   "model": "grok-imagine-video-1.5-agent",
+   "source": "lmarena-dataset @088c6079",
+   "why": "agentic product mode of Grok Imagine Video 1.5 (T2V only; 1,218 votes); not an API model. The catalogued grok-imagine-video-1-5 has only an i2v row (1.5-720p)."
+  },
+  {
+   "model": "configs not imported",
+   "source": "lmarena-dataset @088c6079",
+   "why": "text, vision, search and document (the non-style-controlled twins) hold the same model_name sets as their _style_control configs (checked: no extra names). text_factuality, search_factuality and the five agent_* signal configs have no benchmark ids by design, so they were not imported."
+  }
+ ],
+ "checked": [
+  {
+   "entry": "claude-opus-4-6",
+   "configs": "text_style_control 1497.7 (84,095 votes); vision_style_control 1294.4 (26,869 votes); webdev 1537.2 (20,694 votes); document_style_control 1493.9 (41,260 votes)",
+   "catalogue_model": "claude-opus-4-6",
+   "recorded_instead": "claude-opus-4-6-high 1504.7; claude-opus-4-6-high 1299.4; claude-opus-4-6-high 1545.9; claude-opus-4-6-high 1495.3",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "claude-opus-4-7",
+   "configs": "text_style_control 1494 (66,315 votes); vision_style_control 1298.1 (23,169 votes); webdev 1555.2 (18,297 votes); document_style_control 1494.2 (22,192 votes)",
+   "catalogue_model": "claude-opus-4-7",
+   "recorded_instead": "claude-opus-4-7-high 1501.3; claude-opus-4-7-high 1297.7; claude-opus-4-7-high 1557.3; claude-opus-4-7-high 1493",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "claude-opus-5-high",
+   "configs": "text_style_control 1490.1 (62,934 votes); webdev 1656.9 (22,340 votes)",
+   "catalogue_model": "claude-opus-5",
+   "recorded_instead": "claude-opus-5-max 1489.5; claude-opus-5-max 1695",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "gpt-5.5",
+   "configs": "text_style_control 1476.7 (71,047 votes); vision_style_control 1286.5 (27,223 votes); document_style_control 1482.8 (21,279 votes)",
+   "catalogue_model": "gpt-5-5",
+   "recorded_instead": "gpt-5.5-high 1481.4; gpt-5.5-high 1281; gpt-5.5-high 1480.2",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "gemini-3.5-flash-medium",
+   "configs": "text_style_control 1475.9 (47,339 votes); vision_style_control 1284.4 (12,467 votes); webdev 1491.1 (12,181 votes); document_style_control 1460.6 (6,500 votes)",
+   "catalogue_model": "gemini-3-5-flash",
+   "recorded_instead": "gemini-3.5-flash-high 1477.4; gemini-3.5-flash-high 1284.1; gemini-3.5-flash-high 1499; gemini-3.5-flash-high 1453.4",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "grok-4.20-beta1",
+   "configs": "text_style_control 1474.6 (27,928 votes); search_style_control 1197.3 (53,921 votes)",
+   "catalogue_model": "",
+   "recorded_instead": "",
+   "outcome": "GAP: Grok 4.20 Beta 1, the limited Grok-app beta from February 2026 (first Arena publish 2026-02-19). No API id or dated snapshot; distinct from the catalogued grok-4-20 (API grok-4.20-beta-0309-reasoning) and from the 0309 multi-agent entry."
+  },
+  {
+   "entry": "claude-opus-4-8",
+   "configs": "text_style_control 1474.3 (65,259 votes); vision_style_control 1279.4 (18,857 votes); webdev 1535.8 (17,435 votes); document_style_control 1475.4 (12,128 votes)",
+   "catalogue_model": "claude-opus-4-8",
+   "recorded_instead": "claude-opus-4-8-high 1481.5; claude-opus-4-8-high 1286.4; claude-opus-4-8-high 1555.5; claude-opus-4-8-high 1485.9",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "claude-opus-4-5-20251101",
+   "configs": "text_style_control 1469.8 (72,952 votes); webdev 1469 (13,426 votes)",
+   "catalogue_model": "claude-opus-4-5",
+   "recorded_instead": "claude-opus-4-5-20251101-high-32k 1473.6; claude-opus-4-5-20251101-high-32k 1493.3",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "gpt-5.4",
+   "configs": "text_style_control 1464.7 (67,932 votes); vision_style_control 1278.7 (22,828 votes); webdev 1400.2 (3,734 votes)",
+   "catalogue_model": "gpt-5-4",
+   "recorded_instead": "gpt-5.4-high 1475.2; gpt-5.4-high 1283.8; gpt-5.4-high (codex-harness) 1464.9",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "grok-4.1",
+   "configs": "text_style_control 1459 (68,682 votes)",
+   "catalogue_model": "grok-4-1",
+   "recorded_instead": "grok-4.1-thinking 1465.2",
+   "outcome": "Skipped: catalogued grok-4-1's identity_note lists this entry as the non-reasoning mode; grok-4.1-thinking is recorded."
+  },
+  {
+   "entry": "gemini-3-flash (thinking-minimal)",
+   "configs": "text_style_control 1458.4 (91,105 votes); vision_style_control 1259.8 (37,184 votes); webdev 1384.6 (22,176 votes)",
+   "catalogue_model": "gemini-3-flash-preview",
+   "recorded_instead": "gemini-3-flash 1472.7; gemini-3-flash 1272.9; gemini-3-flash 1438.9",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "claude-sonnet-4-5-20250929",
+   "configs": "text_style_control 1455.2 (82,735 votes); webdev 1384.5 (15,723 votes)",
+   "catalogue_model": "claude-sonnet-4-5",
+   "recorded_instead": "claude-sonnet-4-5-20250929-high-32k 1456.6; claude-sonnet-4-5-20250929-high-32k 1393",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "deepseek-v4-pro-high-preview",
+   "configs": "text_style_control 1454.8 (54,976 votes); webdev 1463.8 (13,194 votes)",
+   "catalogue_model": "deepseek-v4-pro-preview",
+   "recorded_instead": "deepseek-v4-pro 1457.8; deepseek-v4-pro 1446",
+   "outcome": "Not added: maps to catalogued deepseek-v4-pro-preview (its identity_note already lists this entry). The existing text and webdev rows use the non-thinking 'deepseek-v4-pro' entry; see held_for_owner."
+  },
+  {
+   "entry": "claude-opus-4-1-20250805",
+   "configs": "text_style_control 1448 (77,252 votes)",
+   "catalogue_model": "claude-opus-4-1-20250805",
+   "recorded_instead": "claude-opus-4-1-20250805-thinking-16k 1449.8",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "deepseek-v4-flash-high-preview",
+   "configs": "text_style_control 1438.6 (51,859 votes)",
+   "catalogue_model": "deepseek-v4-flash-preview",
+   "recorded_instead": "deepseek-v4-flash 1436",
+   "outcome": "Not added (text): maps to catalogued deepseek-v4-flash-preview, whose text row uses the non-thinking 'deepseek-v4-flash' entry while its webdev row uses this one; see held_for_owner."
+  },
+  {
+   "entry": "gpt-5.1",
+   "configs": "text_style_control 1438.5 (44,441 votes); vision_style_control 1239.7 (10,795 votes); webdev 1341.6 (10,716 votes)",
+   "catalogue_model": "gpt-5-1",
+   "recorded_instead": "gpt-5.1-high 1455.8; gpt-5.1-high 1251.4; gpt-5.1-medium 1394.8",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "gpt-5.2",
+   "configs": "text_style_control 1435.5 (83,928 votes); vision_style_control 1228.7 (20,134 votes); document_style_control 1425.4 (28,212 votes)",
+   "catalogue_model": "gpt-5-2",
+   "recorded_instead": "gpt-5.2-high 1437.3; gpt-5.2-high 1242.8; gpt-5.2-high 1423.2",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "kimi-k2.5-instant",
+   "configs": "text_style_control 1430.4 (8,378 votes); vision_style_control 1236.9 (4,108 votes); webdev 1404.2 (3,269 votes)",
+   "catalogue_model": "kimi-k2-5",
+   "recorded_instead": "kimi-k2.5-thinking 1450.1; kimi-k2.5-thinking 1252.2; kimi-k2.5-thinking 1435.8",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "mistral-large-4",
+   "configs": "text_style_control 1429.3 (4,179 votes); webdev 1541.3 (1,478 votes); agent -0.0656 (5,078 sessions)",
+   "catalogue_model": "mistral-large-4",
+   "recorded_instead": "",
+   "outcome": "NEW MODEL proposed (mistral-large-4) with text, webdev and agent rows."
+  },
+  {
+   "entry": "deepseek-v3.2",
+   "configs": "text_style_control 1424.8 (48,114 votes); webdev 1325.2 (9,386 votes)",
+   "catalogue_model": "deepseek-v3-2",
+   "recorded_instead": "deepseek-v3.2-thinking 1422.7; deepseek-v3.2-thinking 1361.7",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "deepseek-v3.2-exp",
+   "configs": "text_style_control 1421.4 (11,999 votes)",
+   "catalogue_model": "deepseek-v3-2-exp",
+   "recorded_instead": "deepseek-v3.2-exp-thinking 1424.9",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "grok-4-fast-chat",
+   "configs": "text_style_control 1418.7 (6,343 votes)",
+   "catalogue_model": "grok-4-fast",
+   "recorded_instead": "grok-4-fast-reasoning 1404.9",
+   "outcome": "Skipped: catalogued grok-4-fast's identity_note lists this entry; it is the same weights in non-reasoning mode, and grok-4-fast-reasoning is recorded."
+  },
+  {
+   "entry": "deepseek-v3.1",
+   "configs": "text_style_control 1417.2 (14,610 votes)",
+   "catalogue_model": "deepseek-v3-1",
+   "recorded_instead": "deepseek-v3.1-thinking 1415.9",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "deepseek-v3.1-terminus",
+   "configs": "text_style_control 1414.8 (3,609 votes)",
+   "catalogue_model": "deepseek-v3-1-terminus",
+   "recorded_instead": "deepseek-v3.1-terminus-thinking 1417.2",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "claude-opus-4-20250514",
+   "configs": "text_style_control 1414.1 (43,055 votes); vision_style_control 1188.5 (2,177 votes)",
+   "catalogue_model": "claude-opus-4-20250514",
+   "recorded_instead": "claude-opus-4-20250514-thinking-16k 1426.1; claude-opus-4-20250514-thinking-16k 1207.4",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "qwen3-235b-a22b-no-thinking",
+   "configs": "text_style_control 1402.2 (37,497 votes)",
+   "catalogue_model": "qwen3-235b-a22b",
+   "recorded_instead": "qwen3-235b-a22b 1375.2",
+   "outcome": "Skipped: the non-thinking mode of the hybrid catalogued qwen3-235b-a22b; the default (thinking) entry is recorded."
+  },
+  {
+   "entry": "mimo-v2-flash (non-thinking)",
+   "configs": "text_style_control 1391.6 (48,117 votes); webdev 1330.2 (5,693 votes)",
+   "catalogue_model": "mimo-v2-flash",
+   "recorded_instead": "",
+   "outcome": "Skipped: same weights as mimo-v2-flash in non-thinking mode; the thinking entry is recorded instead (highest effort)."
+  },
+  {
+   "entry": "claude-sonnet-4-20250514",
+   "configs": "text_style_control 1390.9 (39,172 votes); vision_style_control 1188.3 (1,807 votes)",
+   "catalogue_model": "claude-sonnet-4-20250514",
+   "recorded_instead": "claude-sonnet-4-20250514-thinking-32k 1401.6; claude-sonnet-4-20250514-thinking-32k 1206.2",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "mimo-v2-flash (thinking)",
+   "configs": "text_style_control 1386.3 (11,143 votes); webdev 1292.5 (1,687 votes)",
+   "catalogue_model": "mimo-v2-flash",
+   "recorded_instead": "",
+   "outcome": "ROW ADDED for catalogued mimo-v2-flash (it had no Arena rows); thinking = highest effort."
+  },
+  {
+   "entry": "minimax-m2.1-preview",
+   "configs": "text_style_control 1384.6 (17,248 votes); webdev 1384.4 (7,645 votes)",
+   "catalogue_model": "",
+   "recorded_instead": "",
+   "outcome": "HELD (see held_for_owner): probably catalogued minimax-m2-1, but labelled preview."
+  },
+  {
+   "entry": "claude-3-7-sonnet-20250219",
+   "configs": "text_style_control 1372.4 (42,573 votes); vision_style_control 1175.2 (4,519 votes)",
+   "catalogue_model": "claude-3-7-sonnet-20250219",
+   "recorded_instead": "claude-3-7-sonnet-20250219-thinking-32k 1388.3; claude-3-7-sonnet-20250219-thinking-32k 1192.8",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "grok-3-mini-beta",
+   "configs": "text_style_control 1358.2 (20,937 votes)",
+   "catalogue_model": "grok-3-mini-beta",
+   "recorded_instead": "grok-3-mini-high 1363.5",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "o3-mini",
+   "configs": "text_style_control 1348 (56,750 votes)",
+   "catalogue_model": "o3-mini",
+   "recorded_instead": "o3-mini-high 1363.6",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "gemini-advanced-0514",
+   "configs": "text_style_control 1335.9 (50,148 votes)",
+   "catalogue_model": "",
+   "recorded_instead": "",
+   "outcome": "GAP: Arena table label 'Gemini Advanced App (2024-05-14)'. This is the consumer app, not an API checkpoint."
+  },
+  {
+   "entry": "llama-3.1-405b-instruct-fp8",
+   "configs": "text_style_control 1333.6 (59,656 votes)",
+   "catalogue_model": "llama-3-1-405b",
+   "recorded_instead": "llama-3.1-405b-instruct-bf16 1335.4",
+   "outcome": "Skipped: Meta's FP8 serving of catalogued llama-3-1-405b; the bf16 entry is recorded."
+  },
+  {
+   "entry": "reka-flash-21b-20240226-online",
+   "configs": "text_style_control 1233.5 (15,450 votes)",
+   "catalogue_model": "reka-flash-21b-20240226",
+   "recorded_instead": "reka-flash-21b-20240226 1226.7",
+   "outcome": "Skipped: catalogued reka-flash-21b-20240226's identity_note lists this entry as the online (web search) variant; the plain entry is recorded."
+  },
+  {
+   "entry": "gemini-pro",
+   "configs": "text_style_control 1223.6 (6,390 votes)",
+   "catalogue_model": "gemini-1-0-pro-001",
+   "recorded_instead": "gemini-pro-dev-api 1236.8",
+   "outcome": "Skipped: Arena table label 'Gemini Pro', the Vertex-served gemini-pro alias. The same model (catalogued gemini-1-0-pro-001) is recorded through 'gemini-pro-dev-api'."
+  },
+  {
+   "entry": "dbrx-instruct-preview",
+   "configs": "text_style_control 1195.5 (32,191 votes)",
+   "catalogue_model": "dbrx-instruct",
+   "recorded_instead": "",
+   "outcome": "ROW ADDED for catalogued dbrx-instruct (no Arena row before); Arena table label 'DBRX-Instruct-Preview', licence 'DBRX LICENSE', link to Databricks' DBRX announcement. 'Preview' flagged in held_for_owner."
+  },
+  {
+   "entry": "llama-13b",
+   "configs": "text_style_control 975 (2,391 votes)",
+   "catalogue_model": "llama-13b",
+   "recorded_instead": "",
+   "outcome": "ROW ADDED for catalogued llama-13b (no Arena row before); Arena table label 'LLaMA-13B' linking arXiv 2302.13971."
+  },
+  {
+   "entry": "nvila-internal-15b-v1",
+   "configs": "vision_style_control 985.4 (1,077 votes)",
+   "catalogue_model": "nvila-15b",
+   "recorded_instead": "",
+   "outcome": "NEW MODEL proposed (nvila-15b, comparison-only) with a vision row; Arena's own leaderboard table labels the key 'NVILA-15B' and links the HF repo."
+  },
+  {
+   "entry": "claude-sonnet-5.5-high",
+   "configs": "webdev 1714.9 (3,984 votes)",
+   "catalogue_model": "claude-sonnet-5-5",
+   "recorded_instead": "claude-sonnet-5.5-xhigh 1786.3",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "muse-spark-1.3 (xHigh)",
+   "configs": "webdev 1625.9 (7,123 votes)",
+   "catalogue_model": "muse-spark-1-3",
+   "recorded_instead": "muse-spark-1.3-max 1656.6",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "claude-haiku-5.5-high",
+   "configs": "webdev 1586.9 (978 votes)",
+   "catalogue_model": "claude-haiku-5-5",
+   "recorded_instead": "",
+   "outcome": "ROW ADDED for catalogued claude-haiku-5-5 (first Arena row; new in the 2026-10-08 webdev publish)."
+  },
+  {
+   "entry": "gpt-5.5-high (codex-harness)",
+   "configs": "webdev 1487.4 (18,002 votes)",
+   "catalogue_model": "gpt-5-5",
+   "recorded_instead": "gpt-5.5-xhigh (codex-harness) 1512.3",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "gpt-5.5 (codex-harness)",
+   "configs": "webdev 1455.8 (15,911 votes)",
+   "catalogue_model": "gpt-5-5",
+   "recorded_instead": "gpt-5.5-xhigh (codex-harness) 1512.3",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "gpt-5.4-medium (codex-harness)",
+   "configs": "webdev 1444.4 (1,376 votes)",
+   "catalogue_model": "gpt-5-4",
+   "recorded_instead": "gpt-5.4-high (codex-harness) 1464.9",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "gpt-5.3-codex (codex-harness)",
+   "configs": "webdev 1408.6 (2,643 votes); webdev 1371.4 (3,656 votes)",
+   "catalogue_model": "",
+   "recorded_instead": "",
+   "outcome": "GAP: two distinct webdev entries share this exact label (1408.6 with 2,643 votes; 1371.4 with 3,656 votes; both present since 2026-03), most likely two effort settings. We cannot tell which is the higher effort, so catalogued gpt-5-3-codex gets no row."
+  },
+  {
+   "entry": "gpt-5.2-search-non-reasoning",
+   "configs": "search_style_control 1136.8 (75,658 votes)",
+   "catalogue_model": "gpt-5-2",
+   "recorded_instead": "gpt-5.2-search 1161.5",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "api-gpt-4o-search",
+   "configs": "search_style_control 1081 (3,411 votes)",
+   "catalogue_model": "gpt-4o-search-preview",
+   "recorded_instead": "",
+   "outcome": "NEW MODEL proposed (gpt-4o-search-preview) with a search row; mapping evidence in identity_note, owner check in held_for_owner."
+  },
+  {
+   "entry": "diffbot-small-xl",
+   "configs": "search_style_control 1062 (6,388 votes)",
+   "catalogue_model": "",
+   "recorded_instead": "",
+   "outcome": "GAP: Diffbot's search LLM, a fine-tune of Llama-3.3-70B. HF diffbot has four unversioned candidates (Llama-3.3-Diffbot-Small-XL-2412, -2504, Diffbot-Small-XL-2505, -2508). The Arena entry has no version (first publish 2025-08-21, so 2508 is possible), and its 'Apache 2.0' licence disagrees with the HF tag llama3.3."
+  },
+  {
+   "entry": "grok-imagine-image-2.0 (canvas)",
+   "configs": "text_to_image 1333.5 (3,113 votes); image_edit 1439.1 (11,589 votes)",
+   "catalogue_model": "grok-imagine-image-2",
+   "recorded_instead": "grok-imagine-image-2.0 (low) 1300.8; grok-imagine-image-2.0 (low) 1426.9",
+   "outcome": "Skipped: the Canvas product mode of grok-imagine-image-2 (catalogued; the API-quality entry is recorded)."
+  },
+  {
+   "entry": "grok-imagine-image-2.0 (20260801)",
+   "configs": "text_to_image 1294.2 (14,483 votes); image_edit 1424.5 (50,427 votes)",
+   "catalogue_model": "grok-imagine-image-2",
+   "recorded_instead": "grok-imagine-image-2.0 (low) 1300.8; grok-imagine-image-2.0 (low) 1426.9",
+   "outcome": "Not added: catalogued grok-imagine-image-2 already has rows from the '(low)' entry in revision 46919c46, and that entry is gone from the latest files; see held_for_owner."
+  },
+  {
+   "entry": "gemini-3-pro-image-2k (nano-banana-pro)",
+   "configs": "text_to_image 1247.9 (175,734 votes); image_edit 1390 (651,674 votes)",
+   "catalogue_model": "nano-banana-pro",
+   "recorded_instead": "gemini-3-pro-image-preview (nano-banana-pro) 1234.1; gemini-3-pro-image-preview (nano-banana-pro) 1385.9",
+   "outcome": "Skipped: 2K-resolution variant of catalogued nano-banana-pro (the preview entry is recorded)."
+  },
+  {
+   "entry": "Cosmos3-Super-Text2Image (Agentic)",
+   "configs": "text_to_image 1165.5 (10,805 votes)",
+   "catalogue_model": "cosmos3-super-text2image",
+   "recorded_instead": "Cosmos3-Super-Text2Image 1151.8",
+   "outcome": "Skipped: agentic (prompt-rewriting) mode of catalogued cosmos3-super-text2image; the plain entry is recorded."
+  },
+  {
+   "entry": "seedream-4-fal",
+   "configs": "text_to_image 1116.6 (11,841 votes); image_edit 1209.7 (152,113 votes)",
+   "catalogue_model": "seedream-4-0",
+   "recorded_instead": "seedream-4-2k 1140; seedream-4-2k 1270.1",
+   "outcome": "Skipped: fal-hosted variant of catalogued seedream-4-0 ('seedream-4-2k' recorded)."
+  },
+  {
+   "entry": "seedream-4-high-res-fal",
+   "configs": "text_to_image 1113.4 (182,685 votes); image_edit 1217 (1,229,850 votes)",
+   "catalogue_model": "seedream-4-0",
+   "recorded_instead": "seedream-4-2k 1140; seedream-4-2k 1270.1",
+   "outcome": "Skipped: fal-hosted high-resolution variant of catalogued seedream-4-0 ('seedream-4-2k' recorded)."
+  },
+  {
+   "entry": "qwen-image-prompt-extend",
+   "configs": "text_to_image 1060.3 (716,773 votes)",
+   "catalogue_model": "qwen-image",
+   "recorded_instead": "qwen-image 1056.8",
+   "outcome": "Skipped: catalogued qwen-image with Qwen's prompt-extension option; plain 'qwen-image' recorded."
+  },
+  {
+   "entry": "grok-imagine-image-quality (20260519)",
+   "configs": "image_edit 1391.2 (38,195 votes)",
+   "catalogue_model": "",
+   "recorded_instead": "",
+   "outcome": "GAP: an xAI image 'quality' variant dated 2026-05-19 (renamed from 'grok-imagine-image-quality' on 2026-05-21). Not verified as an xAI API model id or setting, and not the catalogued grok-imagine-image / -pro / -2 entries."
+  },
+  {
+   "entry": "step1x-edit",
+   "configs": "image_edit 998.3 (155,418 votes)",
+   "catalogue_model": "",
+   "recorded_instead": "",
+   "outcome": "HELD (see held_for_owner): probably catalogued step1x-edit-v1-0, but the repo also holds v1.1."
+  },
+  {
+   "entry": "grok-imagine-video-1.5-agent",
+   "configs": "text_to_video 1492.3 (1,218 votes)",
+   "catalogue_model": "grok-imagine-video-1-5",
+   "recorded_instead": "",
+   "outcome": "GAP: agentic product mode of Grok Imagine Video 1.5 (T2V only; 1,218 votes); not an API model. The catalogued grok-imagine-video-1-5 has only an i2v row (1.5-720p)."
+  },
+  {
+   "entry": "veo-3.1-audio-1080p",
+   "configs": "text_to_video 1362.2 (25,076 votes); image_to_video 1390.2 (53,089 votes)",
+   "catalogue_model": "veo-3-1",
+   "recorded_instead": "veo-3.1-audio 1364.2; veo-3.1-audio 1398.1",
+   "outcome": "Skipped: 1080p variant of catalogued veo-3-1 ('veo-3.1-audio' recorded)."
+  },
+  {
+   "entry": "veo-3.1-fast-audio-1080p",
+   "configs": "text_to_video 1357.9 (25,870 votes); image_to_video 1371.6 (54,380 votes)",
+   "catalogue_model": "veo-3-1-fast",
+   "recorded_instead": "veo-3.1-fast-audio 1361.9; veo-3.1-fast-audio 1385.1",
+   "outcome": "Skipped: 1080p variant of catalogued veo-3-1-fast ('veo-3.1-fast-audio' recorded)."
+  },
+  {
+   "entry": "veo-3",
+   "configs": "text_to_video 1253.7 (15,005 votes); image_to_video 1258 (26,081 votes)",
+   "catalogue_model": "veo-3",
+   "recorded_instead": "veo-3-audio 1340.2; veo-3-audio 1331.5",
+   "outcome": "Skipped: no-audio mode of catalogued veo-3 ('veo-3-audio' recorded)."
+  },
+  {
+   "entry": "veo-3-fast",
+   "configs": "text_to_video 1248.2 (15,283 votes); image_to_video 1257.4 (26,272 votes)",
+   "catalogue_model": "veo-3-fast",
+   "recorded_instead": "veo-3-fast-audio 1347.9; veo-3-fast-audio 1326",
+   "outcome": "Skipped: no-audio mode of catalogued veo-3-fast ('veo-3-fast-audio' recorded)."
+  },
+  {
+   "entry": "hailuo-02-pro",
+   "configs": "text_to_video 1198.5 (9,399 votes); image_to_video 1228.6 (21,743 votes)",
+   "catalogue_model": "hailuo-02",
+   "recorded_instead": "hailuo-02-standard 1181.1; hailuo-02-standard 1223.7",
+   "outcome": "Skipped: 1080p tier of catalogued hailuo-02 ('hailuo-02-standard' recorded)."
+  },
+  {
+   "entry": "grok-imagine-video-480p",
+   "configs": "image_to_video 1384.9 (19,429 votes)",
+   "catalogue_model": "grok-imagine-video",
+   "recorded_instead": "grok-imagine-video-720p 1415.3",
+   "outcome": "Skipped: 480p variant of catalogued grok-imagine-video ('grok-imagine-video-720p' recorded)."
+  },
+  {
+   "entry": "hailuo-02-fast",
+   "configs": "image_to_video 1193.9 (22,519 votes)",
+   "catalogue_model": "hailuo-02",
+   "recorded_instead": "hailuo-02-standard 1223.7",
+   "outcome": "Skipped: fast/low-resolution tier of catalogued hailuo-02 ('hailuo-02-standard' recorded)."
+  },
+  {
+   "entry": "Claude Opus 5 (High)",
+   "configs": "agent 0.0795 (27,553 sessions)",
+   "catalogue_model": "claude-opus-5",
+   "recorded_instead": "Claude Opus 5 (Max) 0.07923513870898408",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "MiMo V2.6 Pro",
+   "configs": "agent 0.0352 (11,376 sessions)",
+   "catalogue_model": "mimo-v2-6-pro",
+   "recorded_instead": "",
+   "outcome": "ROW ADDED for catalogued mimo-v2-6-pro (agent; new in the 2026-10-08 publish)."
+  },
+  {
+   "entry": "GPT 5.5",
+   "configs": "agent 0.0093 (82,671 sessions)",
+   "catalogue_model": "gpt-5-5",
+   "recorded_instead": "GPT 5.5 (xHigh) 0.04154253554559495",
+   "outcome": "Skipped: lower reasoning effort / default-mode or harness variant of a catalogued model; that model's highest-effort entry in this config is already recorded (one row per model per run)."
+  },
+  {
+   "entry": "MiMo V2.6 Flash",
+   "configs": "agent 0.0035 (16,864 sessions)",
+   "catalogue_model": "mimo-v2-6-flash",
+   "recorded_instead": "",
+   "outcome": "ROW ADDED for catalogued mimo-v2-6-flash (agent; the entry was already in the Oct 2 snapshot but the model was catalogued after the agent import)."
+  }
+ ],
+ "held_for_owner": [
+  {
+   "item": "step1x-edit -> step1x-edit-v1-0 (lmarena-image-edit)",
+   "proposed_row": {
+    "model": "step1x-edit-v1-0",
+    "bench": "lmarena-image-edit",
+    "score": 998.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+    "source_id": "lmarena-dataset",
+    "by": "independent",
+    "date": "2026-10-06",
+    "note": "image_edit, category overall, split latest (leaderboard_publish_date 2026-10-06); exact entry 'step1x-edit'; 155,418 votes; published 95% interval 993.8–1002.7. Pinned to dataset revision 088c6079."
+   },
+   "reason": "Arena's leaderboard table (arena-leaderboard Space @6f2eeeb) labels the key 'Step1X-Edit' (StepFun, Apache 2.0) and links stepfun-ai/Step1X-Edit. The entry was already on the first image_edit publish (2025-06-24, 2,373 votes), when only v1.0 (step1x-edit-i1258.safetensors) existed. v1.1 was added to the same repo on 2025-07-09, and most of the 155k votes came after that. Arena normally adds a new entry for a new version, but nothing confirms it never swapped checkpoints, so this is not in results. Add the row if v1.0 is accepted."
+  },
+  {
+   "item": "minimax-m2.1-preview -> minimax-m2-1 (lmarena-text, lmarena-webdev)",
+   "proposed_rows": [
+    {
+     "model": "minimax-m2-1",
+     "bench": "lmarena-text",
+     "score": 1384.6,
+     "note": "text_style_control …; exact entry 'minimax-m2.1-preview'; 17,248 votes; published 95% interval 1379.5–1389.8 (publish 2026-10-08)"
+    },
+    {
+     "model": "minimax-m2-1",
+     "bench": "lmarena-webdev",
+     "score": 1384.4,
+     "note": "webdev …; exact entry 'minimax-m2.1-preview'; 7,645 votes; published 95% interval 1374.9–1393.9 (publish 2026-10-08)"
+    }
+   ],
+   "reason": "Arena has never published an unsuffixed 'minimax-m2.1'. The preview entry first appears on 2025-12-29 (webdev) and 2025-12-30 (text), after MiniMax published MiniMaxAI/MiniMax-M2.1 (HF repo created 2025-12-20; catalogue minimax-m2-1, which has no Arena rows). The Arena licence column says 'MIT' (HF says modified-mit). No maker or Arena statement ties the preview label to the released checkpoint, so per the brief's 'labelled previews' rule it is held. These would be the first Arena rows for minimax-m2-1."
+  },
+  {
+   "item": "Existing DeepSeek V4 preview rows use the non-thinking entries",
+   "reason": "deepseek-v4-pro-preview's text and webdev rows and deepseek-v4-flash-preview's text row cite 'deepseek-v4-pro' / 'deepseek-v4-flash'. Both entries have been published since 2026-04-23 alongside '-thinking' entries. The '-thinking' entries vanished after 2026-07-30, and on 2026-08-02 '-high-preview' entries appeared with matching vote counts (pro 44,669 → 46,859, flash 46,445 → 48,387), so they are the renamed thinking entries. The highest-effort values in the latest snapshot are: pro text 1454.8 (54,976 votes), pro webdev 1463.8 (13,194 votes), flash text 1438.6 (51,859 votes). deepseek-v4-flash-preview's webdev row already uses its '-high-preview' entry. Replacing these would be an edit of existing rows, so it is left to the owner. Also worth checking: 'deepseek-v4-pro' kept collecting votes after DeepSeek moved the deepseek-v4-pro API id to the 0813 weights on 2026-08-13."
+  },
+  {
+   "item": "grok-imagine-image-2 rows cite an entry no longer in the latest files",
+   "reason": "Both rows (lmarena-image 1300.8, lmarena-image-edit 1426.9) cite 'grok-imagine-image-2.0 (low)' at 46919c46. That entry was last published 2026-09-24 (t2i) and 2026-09-30 (edit), and the latest files instead hold 'grok-imagine-image-2.0 (20260801)' (t2i 1294.2 / 14,483 votes; edit 1424.5 / 50,427 votes) and '(canvas)'. The ledger attribution allows keeping rows whose entry has left the snapshot. Repoint them only if '(20260801)' is confirmed as the same API setting the catalogue prices (quality=low, 1K)."
+  },
+  {
+   "item": "mistral-large-4 price, preview status and weights",
+   "reason": "Mistral's model page shows an original price of $1.36/$4.18 (input/output per M tokens) and a sale price of $0.68/$2.09. The entry records the original list price, as pass 8's draft did. Status is 'Public Preview', but the API is open to everyone, so no availability:'preview' is set; pass 8's draft proposed availability 'preview' with https://mistral.ai/news/mistral-large-4. Set it if the owner prefers that. Weights are due 'end of this month', so flip open_weights/licence and add local variants then."
+  },
+  {
+   "item": "api-gpt-4o-search -> gpt-4o-search-preview",
+   "reason": "The Arena key differs from the model id that LMArena's own Search Arena 24k dataset uses ('gpt-4o-search-preview', plus '-high' and '-high-loc' search_context_size variants). The current leaderboard entry (3,411 votes, first publish 2025-08-07) does not say which setting it uses. All variants are the same OpenAI model, so the mapping is to the model, not a setting. If the owner prefers search entries to map only to models that already exist, as 'gpt-5.5-search' maps to gpt-5-5, drop this model and row."
+  },
+  {
+   "item": "nvila-internal-15b-v1 -> nvila-15b",
+   "reason": "Arena's table displays the key as 'NVILA-15B' and links the public repo, but the key itself says 'internal … v1' (NVIDIA-hosted, first publish 2024-12-22, 18 days after the repo was created). Accept only if the Arena display mapping is enough. Comparison-only, with one vision row in a 145-model run."
+  },
+  {
+   "item": "dbrx-instruct-preview -> dbrx-instruct",
+   "reason": "Included in results. Arena labels it 'DBRX-Instruct-Preview' with the DBRX licence and links Databricks' DBRX launch post. Databricks released a single DBRX Instruct checkpoint, so the 'Preview' suffix is taken as Arena's naming at launch (March 2024). Drop the row if the owner reads 'Preview' as a different checkpoint."
+  }
+ ]
+}

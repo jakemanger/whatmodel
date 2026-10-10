@@ -46651,5 +46651,116 @@
         "reported_label": "column 'GigaAM Multilingual Large'; variant 'large_ctc'"
       }
     ]
+  },
+  {
+    "id": "mistral-large-4",
+    "name": "Mistral Large 4 (public preview)",
+    "provider": "Mistral",
+    "category": "llm",
+    "released": "2026-10",
+    "released_source": "https://docs.mistral.ai/models/mistral-large-4",
+    "open_weights": false,
+    "license": "proprietary",
+    "params_b": 1050,
+    "active_b": 52,
+    "params_b_source": "https://docs.mistral.ai/models/mistral-large-4",
+    "params_note": "Mistral's model page: '52B active parameters and 1.05T total parameters, and a 1.6B vision encoder'. Observed 2026-10-10.",
+    "api": {
+      "url": "https://docs.mistral.ai/models/mistral-large-4",
+      "provider": "Mistral AI",
+      "price_in": 1.36,
+      "price_out": 4.18,
+      "price_source": "https://docs.mistral.ai/models/mistral-large-4",
+      "price_note": "Observed 2026-10-10 on Mistral's own Mistral Large 4 model page (Price, USD): original (list) price $1.36 input / $4.18 output per million tokens; cached input $0.14. The page also shows a sale price of $0.68 input / $0.07 cached / $2.09 output, which is not used here. API names mistral-large-4 and mistral-large-4-0, version 26.10, status 'Public Preview'."
+    },
+    "local": null,
+    "context_k": 1000,
+    "context_source": "https://docs.mistral.ai/models/mistral-large-4",
+    "context_note": "Mistral's model page: Context '1M'. Observed 2026-10-10.",
+    "identity_note": "Mistral AI's Mistral Large 4, API model 'mistral-large-4' (alias 'mistral-large-4-0'), version 26.10, launched 6 October 2026 as a 'Public Preview' that anyone can call on Mistral's API ('You can try the preview API today on Mistral Studio'). Mistral describes it as open-weight, but the weights are not out yet: the model page's Weights link (huggingface.co/mistralai/Mistral-Large-4-1T-A52B) says 'Coming soon', the repository returns HTTP 401, and the announcement says 'Weights drop end of this month'. It is therefore recorded as open_weights false with no local variant and licence 'proprietary' for now; switch both when the weights and their licence are published. Arena entry 'mistral-large-4' (organization mistral, licence 'Proprietary') first appears in the 2026-10-08 text, webdev and agent snapshots, after the public API launch. A new model, not Mistral Large 3 (mistral-large-2512).",
+    "identity_sources": [
+      "https://docs.mistral.ai/models/mistral-large-4",
+      "https://mistral.ai/news/mistral-large-4"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://docs.mistral.ai/models/mistral-large-4",
+        "reported_label": "mistral-large-4"
+      },
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet",
+        "reported_label": "mistral-large-4"
+      }
+    ]
+  },
+  {
+    "id": "gpt-4o-search-preview",
+    "name": "GPT-4o Search Preview (2025-03-11)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2025-03",
+    "released_source": "https://developers.openai.com/api/docs/models/gpt-4o-search-preview",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://developers.openai.com/api/docs/models/gpt-4o-search-preview",
+      "provider": "OpenAI",
+      "price_in": 2.5,
+      "price_out": 10,
+      "price_source": "https://developers.openai.com/api/docs/models/gpt-4o-search-preview",
+      "price_note": "Observed 2026-10-10 on OpenAI's own GPT-4o Search Preview model page (Text tokens): input $2.5, output $10 per 1M tokens. Web search calls carry an extra per-call fee, which is not included (the page refers to the pricing page). Chat Completions only."
+    },
+    "local": null,
+    "context_k": 128,
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-4o-search-preview",
+    "context_note": "OpenAI model page: '128,000 context window', '16,384 max output tokens'. Observed 2026-10-10.",
+    "identity_note": "OpenAI API model gpt-4o-search-preview, the GPT-4o model trained to run web searches in Chat Completions. It has one snapshot, gpt-4o-search-preview-2025-03-11, which is the default the alias points to. Arena search entry 'api-gpt-4o-search' (organization openai, first published 2025-08-07). LMArena's open Search Arena battle dataset names this OpenAI system 'gpt-4o-search-preview', with '-high' and '-high-loc' variants that differ only in search_context_size or location. The Search Arena paper (arXiv 2506.05334v1, Table A1) lists 'api-gpt-4o-search-preview' as base model gpt-4o with the default config. OpenAI has no other GPT-4o search model on the API. The search_context_size behind the current leaderboard entry is not stated. Not the plain gpt-4o snapshots (gpt-4o-2024-08-06 / -11-20) and not gpt-4o-mini-search-preview.",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/models/gpt-4o-search-preview",
+      "https://arxiv.org/abs/2506.05334v1",
+      "https://huggingface.co/datasets/lmarena-ai/search-arena-24k/tree/fac8dcf86146c8773ef020095c5694c9b2bc98d7"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/search_style_control/latest-00000-of-00001.parquet",
+        "reported_label": "api-gpt-4o-search"
+      },
+      {
+        "source": "https://arxiv.org/abs/2506.05334v1",
+        "reported_label": "api-gpt-4o-search-preview (Table A1: base model gpt-4o, default config)"
+      },
+      {
+        "source": "https://developers.openai.com/api/docs/models/gpt-4o-search-preview",
+        "reported_label": "gpt-4o-search-preview (default snapshot gpt-4o-search-preview-2025-03-11)"
+      }
+    ]
+  },
+  {
+    "id": "nvila-15b",
+    "name": "NVILA-15B",
+    "provider": "NVIDIA",
+    "category": "llm",
+    "released": "2024-12",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "license_source": "https://huggingface.co/Efficient-Large-Model/NVILA-15B/blob/e621f628ee5c160c4444e4a29e395bb60dd30b78/README.md",
+    "model_repo": "https://huggingface.co/Efficient-Large-Model/NVILA-15B",
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only. NVIDIA / MIT Han Lab NVILA-15B vision-language model (arXiv 2412.04468; card: 'NVILA was trained in Nov 2024'), in repo Efficient-Large-Model/NVILA-15B @e621f62 (created 2024-12-04). The card's YAML licence is cc-by-nc-4.0, but its License section says the weights are CC-BY-NC-SA-4.0; both are non-commercial. Arena vision entry 'nvila-internal-15b-v1' (organization nvidia, first published 2024-12-22). Arena's own leaderboard table (arena-leaderboard Space @6f2eeeb, leaderboard_table_20250804.csv) displays that key as 'NVILA-15B' and links this repo. The key's 'internal ... v1' suggests NVIDIA served the model to Arena from its own endpoint. No run option is listed: the card gives no copy-paste command (it points to the NVLabs/VILA code), and NVIDIA offers no hosted API for it. Parameters are not stated beyond the name. Distinct from the catalogued VILA-U 7B.",
+    "identity_sources": [
+      "https://huggingface.co/Efficient-Large-Model/NVILA-15B/blob/e621f628ee5c160c4444e4a29e395bb60dd30b78/README.md",
+      "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/vision_style_control/latest-00000-of-00001.parquet",
+        "reported_label": "nvila-internal-15b-v1"
+      },
+      {
+        "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
+        "reported_label": "NVILA-15B (link https://huggingface.co/Efficient-Large-Model/NVILA-15B)"
+      }
+    ]
   }
 ]
