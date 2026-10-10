@@ -143,7 +143,8 @@
       "codereviewqa-acr-exact-match",
       "codereviewqa-ctr-invariant-accuracy",
       "codereviewqa-clh-invariant-accuracy",
-      "codereviewqa-sih-invariant-accuracy"
+      "codereviewqa-sih-invariant-accuracy",
+      "livecodebench-v2"
     ]
   },
   {

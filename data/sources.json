@@ -3736,13 +3736,18 @@
       "huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md",
       "huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md",
       "huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md",
-      "huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md"
+      "huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md",
+      "huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct/blob/553ea250b9a5317231459279d5847d6cf955b9aa/README.md",
+      "huggingface.co/LGAI-EXAONE/EXAONE-3.5-32B-Instruct/blob/3d27aab477c042df2e174d36eea47b77c8871ef0/README.md",
+      "huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B/blob/69d80cdf4784e2c182854d83e9b2d02494626a3e/README.md",
+      "huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B/blob/8a120673fc7309b55be2175a2e61f9a0839e4f61/README.md",
+      "huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md",
     "verdict": "allowed",
-    "checked": "2026-10-10",
+    "checked": "2026-10-09",
     "exact": true,
     "icon": "lgresearch.ai",
     "attribution": "LG AI Research official pricing/docs, observed 2026-09-25",
@@ -3753,13 +3758,14 @@
     "name": "Liquid AI official pricing and model documentation",
     "match": [
       "huggingface.co/LiquidAI/LFM2-24B-A2B/blob/a3bbacd91a678b97712f0e323e52f8c24ba29542/README.md",
-      "huggingface.co/LiquidAI/LFM2.5-2.6B/blob/654f9463ce32b05d0429d76fe1f580b27d4c1ac0/README.md"
+      "huggingface.co/LiquidAI/LFM2.5-2.6B/blob/654f9463ce32b05d0429d76fe1f580b27d4c1ac0/README.md",
+      "huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/blob/0f604ada3f766f9f257460c4c9f0b5d6f69d431b/README.md"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://huggingface.co/LiquidAI/LFM2-24B-A2B/blob/a3bbacd91a678b97712f0e323e52f8c24ba29542/README.md",
     "verdict": "allowed",
-    "checked": "2026-10-10",
+    "checked": "2026-10-09",
     "exact": true,
     "icon": "liquid.ai",
     "attribution": "Liquid AI official pricing/docs, observed 2026-09-25",
@@ -3797,7 +3803,8 @@
       "huggingface.co/tiiuae/Falcon-H1-1.5B-Instruct/blob/80ebc50d7799a440b96c93bb6686a3924a09b0cb/config.json",
       "huggingface.co/tiiuae/Falcon-H1-34B-Instruct/blob/6e6890e26cba1f58b1e6ee70d654ddf054f9fce8/config.json",
       "huggingface.co/tiiuae/Falcon-H1-3B-Instruct/blob/01087ec4c132d7f186908716b3530ea187f062a1/config.json",
-      "huggingface.co/tiiuae/Falcon-H1-7B-Instruct/blob/41e72f27effbab80cd45b6e884688452253a3686/config.json"
+      "huggingface.co/tiiuae/Falcon-H1-7B-Instruct/blob/41e72f27effbab80cd45b6e884688452253a3686/config.json",
+      "huggingface.co/tiiuae/falcon-11B/blob/a4ab868d7e8d53844009657bf7e755933ccccf8f/config.json"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
@@ -7179,13 +7186,15 @@
       "huggingface.co/ibm-granite/granite-4.0-1b/blob/6a7381ba1f54d684ff508d991aeb7dc580157103/README.md",
       "huggingface.co/ibm-granite/granite-4.0-350m/blob/bd8a1497065c0d6ba1ef19af6b0d2b14bacf71c2/README.md",
       "ibm.com/docs/SSLSRPV_2.1.x/wsj/analyze-data/fm-models-ibm.html",
-      "huggingface.co/ibm-granite/granite-3.2-2b-instruct/blob/641593c3b25bec0b1efe9f0f7d7a67f7243f86a3/config.json"
+      "huggingface.co/ibm-granite/granite-3.2-2b-instruct/blob/641593c3b25bec0b1efe9f0f7d7a67f7243f86a3/config.json",
+      "huggingface.co/ibm-granite/granite-3.0-3b-a800m-instruct/blob/51ced9b4d6ecb3a6671e2e52c937bc12a4a470a5/README.md",
+      "huggingface.co/ibm-granite/granite-3.0-1b-a400m-instruct/blob/ffec3c35bdfd97a06f0b4cd5fcc92cd9b1584445/README.md"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md",
     "verdict": "allowed",
-    "checked": "2026-10-07",
+    "checked": "2026-10-09",
     "exact": true,
     "icon": "ibm.com",
     "attribution": "IBM official pricing/docs, observed 2026-09-25",
@@ -8073,7 +8082,11 @@
       "huggingface.co/stabilityai/stablelm-base-alpha-3b/blob/819657db42861818efac86e8ca60f673fa912ef8/README.md",
       "huggingface.co/stabilityai/stablelm-base-alpha-7b/blob/1d43a3b40d7d708d8084d07dfae0c4e9fd95c04f/README.md",
       "huggingface.co/stabilityai/stablelm-base-alpha-3b-v2/blob/997d95943eee0697ba9e9cd2b981b9fad6962d9e/config.json",
-      "huggingface.co/stabilityai/stablelm-base-alpha-7b-v2/blob/6d176503c1496b3c96a2bceb76a7d37695582618/config.json"
+      "huggingface.co/stabilityai/stablelm-base-alpha-7b-v2/blob/6d176503c1496b3c96a2bceb76a7d37695582618/config.json",
+      "huggingface.co/stabilityai/stablelm-2-1_6b-chat/blob/f3fe67057c2789ae1bb1fe42b038da99840d4f13/config.json",
+      "huggingface.co/stabilityai/stablelm-2-zephyr-1_6b/blob/2f275b1127d59fc31e4f7c7426d528768ada9ea4/config.json",
+      "huggingface.co/stabilityai/stablelm-2-12b-chat/blob/b6b62cd451b84e848514c00fafa66d9ead9297c5/config.json",
+      "huggingface.co/stabilityai/stablelm-zephyr-3b/blob/fe1fd5e36ccb8cb2cb1dc225ab6d2962692b9837/config.json"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
@@ -10969,7 +10982,9 @@
     "kind": "first-party",
     "match": [
       "huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md",
-      "docs.arcee.ai/get-started/pricing.md"
+      "docs.arcee.ai/get-started/pricing.md",
+      "huggingface.co/arcee-ai/AFM-4.5B/blob/e84d19711eca5817c1608cb344d931bf05c966dd/config.json",
+      "huggingface.co/arcee-ai/Trinity-Mini/blob/cdb81e8130815fec299cccc8f8700004b8366e1e/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -10977,7 +10992,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "Arcee AI official model cards, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-07"
+    "checked": "2026-10-09"
   },
   {
     "id": "first-party-bigcode",
@@ -11038,7 +11053,11 @@
     "kind": "first-party",
     "match": [
       "huggingface.co/deepcogito/cogito-v1-preview-llama-3B/blob/5a0ad6f39500e9af65e727f15d5554352933ed65/README.md",
-      "huggingface.co/deepcogito/cogito-v1-preview-llama-8B/blob/64c42369b3f322fbffb277bfff146551dd2823cc/README.md"
+      "huggingface.co/deepcogito/cogito-v1-preview-llama-8B/blob/64c42369b3f322fbffb277bfff146551dd2823cc/README.md",
+      "huggingface.co/deepcogito/cogito-v1-preview-qwen-14B/blob/b5a6c9ab8fc8e5bc786ae88f66af479096367566/README.md",
+      "huggingface.co/deepcogito/cogito-v1-preview-qwen-32B/blob/118e6e43c46a51667f544dae9cbe4027f59eb697/README.md",
+      "huggingface.co/deepcogito/cogito-v1-preview-llama-70B/blob/1d624e2293b5b35f9cfd2349f8e02c7ebf32ca83/README.md",
+      "huggingface.co/deepcogito/cogito-v2-preview-llama-70B/blob/1e1d12e8eaebd6084a8dcf45ecdeaa2f4b8879ce/README.md"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -11046,7 +11065,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "Deep Cogito official model cards, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-06"
+    "checked": "2026-10-09"
   },
   {
     "id": "first-party-eleutherai",
@@ -11094,7 +11113,9 @@
     "match": [
       "arxiv.org/abs/2502.02737v1",
       "huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/config.json",
-      "huggingface.co/HuggingFaceH4/starchat2-15b-v0.1/blob/837a7b6ac3df5f91de138e3592258f93c80d93d3/config.json"
+      "huggingface.co/HuggingFaceH4/starchat2-15b-v0.1/blob/837a7b6ac3df5f91de138e3592258f93c80d93d3/config.json",
+      "huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/config.json",
+      "huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/blob/12fd25f77366fa6b3b4b768ec3050bf629380bac/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -11156,7 +11177,12 @@
       "huggingface.co/NousResearch/Hermes-2-Pro-Llama-3-8B/blob/f798274b30e7d2d4797c369edcc0cc7473b6e6f2/config.json",
       "huggingface.co/NousResearch/Hermes-2-Pro-Mistral-7B/blob/24dbda51d986efa05201eec7a093ac91fc5519cf/config.json",
       "huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-8B/blob/57a73110702e7b05ba3f39fef36297454c680725/config.json",
-      "huggingface.co/NousResearch/Nous-Hermes-13b/blob/24e8c03148ffd1f3e469744dfc24ad2ad82848f8/config.json"
+      "huggingface.co/NousResearch/Nous-Hermes-13b/blob/24e8c03148ffd1f3e469744dfc24ad2ad82848f8/config.json",
+      "huggingface.co/NousResearch/Nous-Hermes-2-SOLAR-10.7B/blob/14c1fbe2f71acdcd58247b30d5439bd572d52386/config.json",
+      "huggingface.co/NousResearch/Nous-Hermes-2-Yi-34B/blob/fcb0a8847e76aea14aba9aa44009d4418ad7c18f/config.json",
+      "huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO/blob/ebec0a691037d38955727d6949798429a63929dd/config.json",
+      "huggingface.co/NousResearch/Hermes-3-Llama-3.1-70B/blob/1fc86da0ce9cdb14cd775ad270bc7d1b4bf70ede/config.json",
+      "huggingface.co/NousResearch/Hermes-3-Llama-3.1-405B/blob/b9fe8ede1f5075f171b2c0a235e20ae4aba33767/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -11171,7 +11197,8 @@
     "name": "NVIDIA official model cards",
     "kind": "first-party",
     "match": [
-      "huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF/blob/031d4042f36adc1a52cca51b331d25cbe3cf1022/README.md"
+      "huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF/blob/031d4042f36adc1a52cca51b331d25cbe3cf1022/README.md",
+      "huggingface.co/nvidia/Mistral-NeMo-Minitron-8B-Instruct/blob/64261e01bfabab557842e5803a7ea96cc09489a5/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -11179,7 +11206,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "NVIDIA official model cards, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-06"
+    "checked": "2026-10-09"
   },
   {
     "id": "first-party-openchat",
@@ -11239,7 +11266,19 @@
       "huggingface.co/Qwen/CodeQwen1.5-7B/blob/5ce5a1554e50a9e3bb236de7c0b8a2a1746186e4/config.json",
       "huggingface.co/Qwen/Qwen-7B-Chat/blob/93a65d34827a3cc269b727e67004743b723e2f83/config.json",
       "huggingface.co/Qwen/Qwen-7B/blob/ef3c5c9c57b252f3149c1408daf4d649ec8b6c85/config.json",
-      "huggingface.co/Qwen/Qwen2-57B-A14B-Instruct/blob/50896d66b39f1425d63720541a66c7df13e053c0/config.json"
+      "huggingface.co/Qwen/Qwen2-57B-A14B-Instruct/blob/50896d66b39f1425d63720541a66c7df13e053c0/config.json",
+      "huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct/blob/ea3f2471cf1b1f0db85067f1ef93848e38e88c25/README.md",
+      "huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct/blob/488639f1ff808d1d3d0ba301aef8c11461451ec5/README.md",
+      "huggingface.co/Qwen/Qwen2-VL-2B-Instruct/blob/895c3a49bc3fa70a340399125c650a463535e71c/config.json",
+      "huggingface.co/Qwen/Qwen1.5-0.5B-Chat/blob/4d14e384a4b037942bb3f3016665157c8bcb70ea/README.md",
+      "huggingface.co/Qwen/Qwen1.5-1.8B-Chat/blob/e482ee3f73c375a627a16fdf66fd0c8279743ca6/README.md",
+      "huggingface.co/Qwen/Qwen1.5-MoE-A2.7B-Chat/blob/ec052fda178e241c7c443468d2fa1db6618996be/config.json",
+      "huggingface.co/Qwen/Qwen2-Math-1.5B-Instruct/blob/19bd485b6474f7263545b4d5a1c29d78bcbf3a4f/config.json",
+      "huggingface.co/Qwen/Qwen2-Math-7B-Instruct/blob/26843d37d3b00ee4a14263b161f312c2738660f9/config.json",
+      "huggingface.co/Qwen/Qwen2-Math-72B-Instruct/blob/5c267882f3377bcfc35882f8609098a894eeeaa8/config.json",
+      "huggingface.co/Qwen/Qwen2.5-Math-1.5B-Instruct/blob/aafeb0fc6f22cbf0eaeed126eff8be45b0360a35/config.json",
+      "huggingface.co/Qwen/Qwen2.5-Math-7B-Instruct/blob/ef9926d75ab1d54532f6a30dd5e760355eb9aa4d/config.json",
+      "huggingface.co/Qwen/Qwen2.5-Math-72B-Instruct/blob/8fcf92b1eac8eca48c3d49778ad3dd1b394c9a17/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -12121,7 +12160,10 @@
       "huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance",
       "huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results",
       "huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation",
-      "huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results"
+      "huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md#evaluation-results",
+      "huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct/blob/553ea250b9a5317231459279d5847d6cf955b9aa/README.md#evaluation",
+      "huggingface.co/LGAI-EXAONE/EXAONE-3.5-32B-Instruct/blob/3d27aab477c042df2e174d36eea47b77c8871ef0/README.md#evaluation",
+      "huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation"
     ],
     "kind": "first-party",
     "license": "Factual vendor-reported score (not licensed content)",
@@ -12195,7 +12237,8 @@
       "arxiv.org/html/2512.20848v1#S3.T3",
       "arxiv.org/html/2604.12374v1#S3.T5",
       "huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md#reasoning-benchmark-evaluations",
-      "huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md#benchmarks"
+      "huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/README.md#benchmarks",
+      "huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks"
     ],
     "kind": "first-party",
     "license": "Factual vendor-reported score (not licensed content)",
@@ -12847,7 +12890,8 @@
     "kind": "first-party",
     "match": [
       "huggingface.co/Nexusflow/Athene-V2-Chat/blob/493f1bbd561a5a7e3d27c4081d4ee47508bf6831/config.json",
-      "huggingface.co/Nexusflow/Starling-LM-7B-beta/blob/39a4d501472dfede947ca5f4c5af0c1896d0361b/config.json"
+      "huggingface.co/Nexusflow/Starling-LM-7B-beta/blob/39a4d501472dfede947ca5f4c5af0c1896d0361b/config.json",
+      "huggingface.co/Nexusflow/NexusRaven-V2-13B/blob/a6b84dc52f4c8f2cd61637f840066f376c629271/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -12855,7 +12899,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "Nexusflow official model cards and configuration, observed 2026-10-07",
     "verdict": "allowed",
-    "checked": "2026-10-07"
+    "checked": "2026-10-09"
   },
   {
     "id": "first-party-upstage",
@@ -12863,7 +12907,8 @@
     "kind": "first-party",
     "match": [
       "huggingface.co/upstage/SOLAR-10.7B-Instruct-v1.0/blob/090d405e6fe7b4c7b0b999a67f5c6dee0514a7ad/config.json",
-      "huggingface.co/upstage/Solar-Open2-250B/blob/9190fbe63a2ad8e17fc766ccceb36de7c66f004b/README.md"
+      "huggingface.co/upstage/Solar-Open2-250B/blob/9190fbe63a2ad8e17fc766ccceb36de7c66f004b/README.md",
+      "huggingface.co/upstage/solar-pro-preview-instruct/blob/dd4bcf7006df9b1ce3f87711e702e4063832aae3/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -12871,14 +12916,15 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "Upstage official model cards and configuration, observed 2026-10-07",
     "verdict": "allowed",
-    "checked": "2026-10-10"
+    "checked": "2026-10-09"
   },
   {
     "id": "first-party-internlm",
     "name": "InternLM (Shanghai AI Lab) official model cards and configuration",
     "kind": "first-party",
     "match": [
-      "huggingface.co/internlm/internlm2_5-20b-chat/blob/13741228cfb01d3a69c8f83169a105de77286b8a/config.json"
+      "huggingface.co/internlm/internlm2_5-20b-chat/blob/13741228cfb01d3a69c8f83169a105de77286b8a/config.json",
+      "huggingface.co/internlm/internlm2_5-1_8b-chat/blob/57dcbc5455bf050d27a80f0ebd7808387caa714d/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -12886,7 +12932,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "InternLM (Shanghai AI Lab) official model cards and configuration, observed 2026-10-07",
     "verdict": "allowed",
-    "checked": "2026-10-07"
+    "checked": "2026-10-09"
   },
   {
     "id": "first-party-llava",
@@ -12941,7 +12987,10 @@
     "kind": "first-party",
     "match": [
       "huggingface.co/open-thoughts/OpenThinker3-7B/blob/864fb9aefbb91f257c4911e4b9f85a6986f8eab2/config.json",
-      "huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/config.json"
+      "huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/config.json",
+      "huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/config.json",
+      "huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/config.json",
+      "huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -12949,7 +12998,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "Open Thoughts official model cards and configuration, observed 2026-10-07",
     "verdict": "allowed",
-    "checked": "2026-10-10"
+    "checked": "2026-10-09"
   },
   {
     "id": "acl-2021-findings-acl-404-prost",
@@ -14035,7 +14084,10 @@
       "qwen.ai/blog",
       "arxiv.org/html/2502.13923v1",
       "arxiv.org/pdf/2511.21631v2",
-      "huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/de4b8e4d43b917e7706784d8bb445c9af86a3540/README.md"
+      "huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/de4b8e4d43b917e7706784d8bb445c9af86a3540/README.md",
+      "arxiv.org/html/2409.12186v3",
+      "arxiv.org/html/2409.12191v2",
+      "arxiv.org/html/2409.12122v1"
     ],
     "exact": true,
     "license": "Factual vendor-reported score (not licensed content)",
@@ -15081,5 +15133,366 @@
     "checked": "2026-10-10",
     "evidence_url": "https://arxiv.org/abs/2605.23699v1",
     "icon": "arxiv.org"
+  },
+  {
+    "id": "first-party-utter-project",
+    "name": "UTTER / EuroLLM official model cards (Hugging Face)",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/utter-project/EuroLLM-1.7B-Instruct/blob/a25c7fa65fc2a644e6270b8940dbe295b51da681/README.md",
+      "huggingface.co/utter-project/EuroLLM-9B-Instruct/blob/f7ae2bc3bcbb538c0b93fa6cfbf388d9898b1ace/README.md",
+      "huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/blob/8c6ed5c8d18527d9daed994f645032b86c53f0bb/README.md"
+    ],
+    "exact": true,
+    "license": "Factual first-party specification (not licensed content)",
+    "terms_url": "https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct/blob/a25c7fa65fc2a644e6270b8940dbe295b51da681/README.md",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "huggingface.co",
+    "attribution": "UTTER project (EuroLLM) model cards on Hugging Face, observed 2026-10-10",
+    "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. (Cards are Apache-2.0; only the sequence length is used.)"
+  },
+  {
+    "id": "first-party-swiss-ai",
+    "name": "Swiss AI (Apertus) official model cards (Hugging Face)",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/swiss-ai/Apertus-8B-Instruct-2509/blob/b946d40447b2b597999b9c86d44bee0b452c919f/README.md",
+      "huggingface.co/swiss-ai/Apertus-70B-Instruct-2509/blob/0f2767662a013c0fb631079cea883155252bc3b6/README.md",
+      "huggingface.co/swiss-ai/Apertus-v1.5-8B/blob/a411d838600baf0e3635a3daf66fb7c55fc97bb6/README.md",
+      "huggingface.co/swiss-ai/Apertus-v1.5-70B/blob/59e744e313e967811aefabde3732609b64201acc/README.md"
+    ],
+    "exact": true,
+    "license": "Factual first-party specification (not licensed content)",
+    "terms_url": "https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509/blob/b946d40447b2b597999b9c86d44bee0b452c919f/README.md",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "huggingface.co",
+    "attribution": "Swiss AI Initiative Apertus model cards on Hugging Face, observed 2026-10-10",
+    "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. (Cards are Apache-2.0; only the context length is used.)"
+  },
+  {
+    "id": "card3-ibm-granite-granite-4-0-h-1b",
+    "name": "ibm-granite/granite-4.0-h-1b model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md",
+    "terms_url": "https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md",
+    "quote": "README front-matter at the pinned revision declares 'license: apache-2.0' (repo tag license:apache-2.0); same Apache-2.0 grant as the other ibm-granite cards in the ledger (card2-ibm-granite-*). Own-lab cells only: the Evaluation Results table prints only IBM's Granite 4.0 Nano models (350M, H 350M, 1B, H 1B).",
+    "attribution": "ibm-granite. ibm-granite/granite-4.0-h-1b model card. Source: https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100. No endorsement.",
+    "scope": "Evaluation Results table (Granite 4.0 Nano family columns) and the architecture table (sequence length).",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card3-ibm-granite-granite-3-1-3b-a800m-instruct",
+    "name": "ibm-granite/granite-3.1-3b-a800m-instruct model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md",
+    "terms_url": "https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md",
+    "quote": "README front-matter at the pinned revision declares 'license: apache-2.0' and the card says 'License: Apache 2.0'. Own-lab cells only: both Evaluation Results tables list only IBM's Granite-3.1 instruct models (8B, 2B, 3B-A800M, 1B-A400M).",
+    "attribution": "ibm-granite. ibm-granite/granite-3.1-3b-a800m-instruct model card. Source: https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100. No endorsement.",
+    "scope": "Open LLM Leaderboard V1 table (ARC-Challenge, HellaSwag, MMLU, WinoGrande, GSM8K) and the V2 table's IFEval column; architecture table (sequence length).",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card3-google-diffusiongemma-26b-a4b-it",
+    "name": "google/diffusiongemma-26B-A4B-it model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md",
+    "terms_url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md",
+    "quote": "README front matter at the pinned revision declares 'license: apache-2.0'. Own-lab cells only: the Benchmark Results table prints Google's DiffusionGemma 26B A4B and Gemma 4 26B A4B (both Google models; 'Evaluation results marked in the table are for instruction-tuned models').",
+    "attribution": "google. google/diffusiongemma-26B-A4B-it model card. Source: https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md. Licence: Apache-2.0. Changes: selected numerical cells transcribed into JSON; percentages divided by 100. No endorsement.",
+    "scope": "Benchmark Results table (both Google columns).",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card3-xhtoken-spark-x2-5-4b",
+    "name": "XHToken/Spark-X2.5-4B model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md",
+    "terms_url": "https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md",
+    "quote": "README front matter at the pinned revision declares 'license: apache-2.0'. Evaluation statement: 'We evaluate our models and compare them with leading on-device models of similar size' and the table note '* denotes reported results from publicly-released model cards / papers' (so unstarred comparator cells are the authors' own runs; starred cells are not used). 'All evaluations are conducted in thinking mode.'",
+    "attribution": "XHToken. XHToken/Spark-X2.5-4B model card. Source: https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md. Licence: Apache-2.0. Changes: selected numerical cells transcribed into JSON; percentages divided by 100. No endorsement.",
+    "scope": "Benchmark table: Spark-X2.5-4B/1.7B and the unstarred cells of the Qwen3.5 and Gemma 4 comparator columns.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card3-ai-sage-gigachat3-5-432b-a28b-reasoning",
+    "name": "ai-sage/GigaChat3.5-432B-A28B-Reasoning model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md",
+    "terms_url": "https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md",
+    "quote": "README front matter at the pinned revision declares 'license: mit'. The Benchmark scores table prints GigaChat 3.5 Ultra Instruct, GigaChat 3.5 Ultra Reasoning and DeepSeek V4 Flash Preview Reasoning; the notes give one methodology for all columns (judges, scorers, mini-swe-agent with a three-hour timeout, 'Benchmarks without a methodology-defined system prompt were evaluated with an empty system prompt') and the token-count table compares the two models' own generations, i.e. Sber ran the DeepSeek column.",
+    "attribution": "ai-sage. ai-sage/GigaChat3.5-432B-A28B-Reasoning model card. Source: https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md. Licence: MIT. Changes: selected numerical cells transcribed into JSON; percentages divided by 100. No endorsement.",
+    "scope": "Benchmark scores table, all three columns (DeepSeek column flagged for owner review).",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "paper-2608.30181v1-ax-k2",
+    "name": "A.X K2 Technical Report (SK Telecom), arXiv 2608.30181v1",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2608.30181v1",
+      "arxiv.org/abs/2608.30181v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2608.30181v1",
+    "quote": "arXiv abs page for 2608.30181v1 links http://creativecommons.org/licenses/by/4.0/ (checked 2026-10-10). Section 5.1: 'We evaluate A.X K2—alongside its predecessor A.X K1 and leading open-weight baselines—on representative public benchmarks ... Unless otherwise noted, all models are evaluated in thinking mode ... Benchmarks marked with an asterisk (*) are evaluated by Artificial Analysis.' Table 6 caption: 'For benchmarks marked with *, the scores of the other open-weight models are taken from Artificial Analysis.' Only unstarred rows are used.",
+    "attribution": "SK Telecom A.X team, A.X K2 Technical Report, arXiv 2608.30181v1 (CC BY 4.0). Changes: selected cells of Tables 6 and 20 transcribed into JSON; percentages divided by 100. No endorsement.",
+    "scope": "Table 6 unstarred rows (AIME26, LiveCodeBench v6 Feb-May 2025, SciCode, HLE, GPQA Diamond, IFBench) and Table 20 Global-MMLU-Lite average; A.X K2, A.X K1 (lab) and the open-weight baselines (independent; DeepSeek-V4 Flash column not used: snapshot ambiguous).",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "first-party-skt",
+    "name": "SK Telecom (A.X) official model cards (Hugging Face)",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/skt/A.X-K2/blob/2287ca456927eed33b899c404c0b2ffaf17aa09f/README.md"
+    ],
+    "exact": true,
+    "license": "Factual first-party specification (not licensed content)",
+    "terms_url": "https://huggingface.co/skt/A.X-K2/blob/2287ca456927eed33b899c404c0b2ffaf17aa09f/README.md",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "huggingface.co",
+    "attribution": "SK Telecom A.X model cards on Hugging Face, observed 2026-10-10",
+    "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped."
+  },
+  {
+    "id": "card3-qwen-qwen-agentworld-35b-a3b",
+    "name": "Qwen/Qwen-AgentWorld-35B-A3B model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md",
+    "terms_url": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md",
+    "quote": "README front matter at the pinned revision declares 'license: apache-2.0'. AgentWorldBench is introduced by the same authors in this release ('Five-dimensional rubric mean per domain, normalized to 0-100 scale'), so every row of the table is the Qwen team's own evaluation; there is no other published source for these numbers.",
+    "attribution": "Qwen. Qwen/Qwen-AgentWorld-35B-A3B model card. Source: https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md. Licence: Apache-2.0. Changes: selected numerical cells transcribed into JSON; percentages divided by 100. No endorsement.",
+    "scope": "AgentWorldBench (Open-Ended Evaluation) Overall column for catalogue models.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card3-jetbrains-mellum2-12b-a2-5b-instruct",
+    "name": "JetBrains/Mellum2-12B-A2.5B-Instruct model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md",
+    "terms_url": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md",
+    "quote": "README front matter at the pinned revision declares 'license: apache-2.0'. Evaluation statement: 'Post-training evaluation for the instruct (no-thinking) variants ... All values self-reported by JetBrains.' (JetBrains' own runs of every column).",
+    "attribution": "JetBrains. JetBrains/Mellum2-12B-A2.5B-Instruct model card. Source: https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md. Licence: Apache-2.0. Changes: selected numerical cells transcribed into JSON; percentages divided by 100. No endorsement.",
+    "scope": "Post-training evaluation table: Mellum2 column and catalogued comparator columns.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card3-jetbrains-mellum2-12b-a2-5b-thinking",
+    "name": "JetBrains/Mellum2-12B-A2.5B-Thinking model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md",
+    "terms_url": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md",
+    "quote": "README front matter at the pinned revision declares 'license: apache-2.0'. Evaluation statement: 'Post-training evaluation for the thinking/reasoning variants ... All values self-reported by JetBrains.' (JetBrains' own runs of every column).",
+    "attribution": "JetBrains. JetBrains/Mellum2-12B-A2.5B-Thinking model card. Source: https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md. Licence: Apache-2.0. Changes: selected numerical cells transcribed into JSON; percentages divided by 100. No endorsement.",
+    "scope": "Post-training evaluation table: Mellum2 column and catalogued comparator columns.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card3-jetbrains-mellum2-1-12b-a2-5b-thinking",
+    "name": "JetBrains/Mellum2.1-12B-A2.5B-Thinking model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md",
+    "terms_url": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md",
+    "quote": "README front matter at the pinned revision declares 'license: apache-2.0'. Evaluation statement: 'All models were evaluated by JetBrains with the same pipeline in thinking mode. All values are self-reported by JetBrains.' ('Mellum2 Thinking was re-evaluated with this pipeline').",
+    "attribution": "JetBrains. JetBrains/Mellum2.1-12B-A2.5B-Thinking model card. Source: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md. Licence: Apache-2.0. Changes: selected numerical cells transcribed into JSON; percentages divided by 100. No endorsement.",
+    "scope": "Evaluation table: Mellum2.1 Thinking, Mellum2 Thinking (lab) and the Gemma 4 E4B / Qwen3.5 9B columns (independent).",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "paper-2601.09012v2-translategemma",
+    "name": "TranslateGemma Technical Report (Google), arXiv 2601.09012v2",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/pdf/2601.09012v2",
+      "arxiv.org/abs/2601.09012v2"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2601.09012v2",
+    "quote": "arXiv abs page for 2601.09012v2 links http://creativecommons.org/licenses/by/4.0/ (checked 2026-10-10). Table 1 compares Google's own TranslateGemma and baseline Gemma 3 models (27B/12B/4B), evaluated by the authors ('We evaluate TranslateGemma using MetricX 24 and Comet22').",
+    "attribution": "Google Translate Research Team, TranslateGemma Technical Report, arXiv 2601.09012v2 (CC BY 4.0). Changes: Table 1 Comet22 cells transcribed into JSON; divided by 100. No endorsement.",
+    "scope": "Table 1 Comet22 (C22) column for TranslateGemma and Gemma 3 at 4B, 12B and 27B. MetricX (lower-is-better) not recorded: no matching benchmark id.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "card3-open-thoughts-openthinker2-7b",
+    "name": "open-thoughts/OpenThinker2-7B model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md",
+    "quote": "README front matter at the pinned revision declares 'license: apache-2.0' (same as the ledger's card3-open-thoughts-openthinker2-32b). Evaluation statement: 'The numbers reported in the table below are evaluated with our open-source tool Evalchemy.' (covers every row of the table, so comparator rows are the authors' own runs).",
+    "attribution": "Open Thoughts team. open-thoughts/OpenThinker2-7B model card. Source: https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md. Licence: Apache-2.0. Changes: selected numerical cells (own models and comparators evaluated by the authors with Evalchemy) transcribed into JSON; percentages divided by 100. No endorsement.",
+    "scope": "Results table cells for catalogue models only.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card3-open-thoughts-openthinker-7b",
+    "name": "open-thoughts/OpenThinker-7B model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/README.md",
+    "quote": "README front matter at the pinned revision declares 'license: apache-2.0' (same as the ledger's card3-open-thoughts-openthinker2-32b). Evaluation statement: 'The numbers reported in the table below are evaluated with our open-source tool Evalchemy.' (covers every row of the table, so comparator rows are the authors' own runs).",
+    "attribution": "Open Thoughts team. open-thoughts/OpenThinker-7B model card. Source: https://huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/README.md. Licence: Apache-2.0. Changes: selected numerical cells (own models and comparators evaluated by the authors with Evalchemy) transcribed into JSON; percentages divided by 100. No endorsement.",
+    "scope": "Results table cells for catalogue models only.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card3-open-thoughts-openthinker-32b",
+    "name": "open-thoughts/OpenThinker-32B model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md",
+    "quote": "README front matter at the pinned revision declares 'license: apache-2.0' (same as the ledger's card3-open-thoughts-openthinker2-32b). Evaluation statement: 'The numbers reported in the table below are evaluated with our open-source tool Evalchemy.' (covers every row of the table, so comparator rows are the authors' own runs).",
+    "attribution": "Open Thoughts team. open-thoughts/OpenThinker-32B model card. Source: https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md. Licence: Apache-2.0. Changes: selected numerical cells (own models and comparators evaluated by the authors with Evalchemy) transcribed into JSON; percentages divided by 100. No endorsement.",
+    "scope": "Results table cells for catalogue models only.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "first-party-nous-research-scores",
+    "name": "Nous Research vendor-reported scores for its own Hermes models (Hermes 3 Technical Report)",
+    "kind": "first-party",
+    "match": [
+      "arxiv.org/pdf/2408.11857v1",
+      "arxiv.org/abs/2408.11857v1"
+    ],
+    "exact": true,
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://arxiv.org/abs/2408.11857v1",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "arxiv.org",
+    "attribution": "Nous Research, Hermes 3 Technical Report (arXiv 2408.11857v1); Hermes 3 8B/70B/405B cells of Table 5 hand-recorded 2026-10-10; percentages converted to fractions. Lab-reported. No endorsement.",
+    "quote": "Owner rule (b), approved 2026-10-07: a vendor's own published score for its own model may be recorded by hand one figure at a time with exact URL, date and printed settings; other labs' cells excluded; rows labelled by: 'lab'. arXiv licence for v1 is the non-exclusive distribution licence (abs page, checked 2026-10-10), so the Llama 3.1 Instruct comparator columns of Table 5 are not used."
+  },
+  {
+    "id": "card3-huggingfacetb-smollm2-360m-instruct",
+    "name": "HuggingFaceTB/SmolLM2-360M-Instruct model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md",
+    "quote": "README front matter at the pinned revision declares 'license: apache-2.0'. Evaluation statement: 'All evaluations are zero-shot unless stated otherwise, and we use lighteval to run them.' (covers every column, including the Qwen2.5-0.5B-Instruct comparator).",
+    "attribution": "Hugging Face TB. HuggingFaceTB/SmolLM2-360M-Instruct model card. Source: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md. Licence: Apache-2.0. Changes: selected cells transcribed into JSON; percentages divided by 100. No endorsement.",
+    "scope": "Instruction-model table: IFEval (average prompt/inst), HellaSwag, PIQA, BBH 3-shot, GSM8K 5-shot for SmolLM2-360M-Instruct and Qwen2.5-0.5B-Instruct.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card3-liquidai-lfm2-1-2b",
+    "name": "LiquidAI/LFM2-1.2B model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md"
+    ],
+    "exact": true,
+    "license": "LFM Open License v1.0",
+    "license_url": "https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/LICENSE",
+    "terms_url": "https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/LICENSE",
+    "quote": "Same licence and treatment as the ledger's card-liquidai-lfm2-5-1-2b-thinking: the card front matter links the LFM Open License v1.0 (license_name lfm1.0), which covers documentation and grants reproduction, adaptation, display and distribution subject to its terms (Section 5 commercial revenue / Legal Entity conditions apply to recipients). Own-model cells only.",
+    "conditions": "LFM Open License v1.0 includes commercial revenue and Legal Entity conditions. Downstream users must assess their own eligibility; this compilation does not remove these restrictions.",
+    "attribution": "Liquid AI. LiquidAI/LFM2-1.2B model card. Source: https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md. Licensed under LFM Open License v1.0. Modified for whatmodel.sh: selected own-model cells, percentages to fractions. No endorsement.",
+    "scope": "'Automated benchmarks' table: LFM2-350M / 700M / 1.2B rows (MMLU, GPQA, IFEval, IFBench, GSM8K, MGSM, MMMLU) and the model-property table (context length).",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "huggingface.co"
   }
 ]

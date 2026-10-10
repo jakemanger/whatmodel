@@ -57461,5 +57461,3829 @@
         "reported_label": "codex-mini-latest"
       }
     ]
+  },
+  {
+    "id": "eurollm-1-7b-instruct",
+    "name": "EuroLLM 1.7B Instruct",
+    "provider": "UTTER (EuroLLM)",
+    "category": "llm",
+    "released": "2024-08",
+    "released_source": "https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct/blob/a25c7fa65fc2a644e6270b8940dbe295b51da681/README.md",
+    "params_b": 1.66,
+    "active_b": 1.66,
+    "params_note": "HF safetensors metadata 1,656,850,432 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 1.05,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf mradermacher/EuroLLM-1.7B-Instruct-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/mradermacher/EuroLLM-1.7B-Instruct-GGUF/tree/2951f08f66429c934c8b01a94347161362430808",
+          "note": "EuroLLM-1.7B-Instruct.Q4_K_M.gguf 1,045,157,088 bytes (HF API listing @2951f08, fetched 2026-10-10). mradermacher static quantisation of the maker checkpoint."
+        },
+        {
+          "quant": "bf16",
+          "gb": 3.31,
+          "gb_estimated": true,
+          "cmd": "vllm serve utter-project/EuroLLM-1.7B-Instruct",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct/tree/a25c7fa65fc2a644e6270b8940dbe295b51da681",
+          "note": "BF16 safetensors, 1 file(s) totalling 3,313,726,248 bytes (HF API listing @a25c7fa, fetched 2026-10-10)."
+        }
+      ]
+    },
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct/blob/a25c7fa65fc2a644e6270b8940dbe295b51da681/README.md",
+    "context_note": "Card hyper-parameter table: 'Sequence Length 4,096'. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/utter-project/EuroLLM-1.7B-Instruct",
+    "identity_note": "utter-project/EuroLLM-1.7B-Instruct @a25c7fa (created 2024-08-06, apache-2.0). UTTER/EuroLLM project (Unbabel, IST Lisbon, Edinburgh and partners) 1.7B instruction model covering the 24 EU languages. Independent rows: EuroEval English, Open PT-LLM, SpeakLeash CPTUB.",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "utter-project/EuroLLM-1.7B-Instruct"
+      },
+      {
+        "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+        "reported_label": "utter-project/EuroLLM-1.7B-Instruct [bfloat16]"
+      },
+      {
+        "source": "https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json",
+        "reported_label": "utter-project/EuroLLM-1.7B-Instruct"
+      }
+    ]
+  },
+  {
+    "id": "eurollm-9b-instruct",
+    "name": "EuroLLM 9B Instruct",
+    "provider": "UTTER (EuroLLM)",
+    "category": "llm",
+    "released": "2024-11",
+    "released_source": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct/blob/f7ae2bc3bcbb538c0b93fa6cfbf388d9898b1ace/README.md",
+    "params_b": 9.15,
+    "active_b": 9.15,
+    "params_note": "HF safetensors metadata 9,152,319,488 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 5.58,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf bartowski/EuroLLM-9B-Instruct-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/bartowski/EuroLLM-9B-Instruct-GGUF/tree/55e5590cc457e42ed197c34c5b10403472b05d54",
+          "note": "EuroLLM-9B-Instruct-Q4_K_M.gguf 5,582,838,496 bytes (HF API listing @55e5590, fetched 2026-10-10). bartowski quantisation of the maker checkpoint."
+        },
+        {
+          "quant": "bf16",
+          "gb": 18.3,
+          "gb_estimated": true,
+          "cmd": "vllm serve utter-project/EuroLLM-9B-Instruct",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct/tree/f7ae2bc3bcbb538c0b93fa6cfbf388d9898b1ace",
+          "note": "BF16 safetensors, 4 file(s) totalling 18,304,683,360 bytes (HF API listing @f7ae2bc, fetched 2026-10-10). Repo is gated (automatic approval)."
+        }
+      ]
+    },
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct/blob/f7ae2bc3bcbb538c0b93fa6cfbf388d9898b1ace/README.md",
+    "context_note": "Card hyper-parameter table: 'Sequence Length 4,096' (card visible on the gated repo page). Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct",
+    "identity_note": "utter-project/EuroLLM-9B-Instruct @f7ae2bc (created 2024-11-22, apache-2.0, gated: auto-approved access). EuroLLM 9B instruction model (Nov 2024 release, not the 2512 refresh). Independent rows: EuroEval English, Open PT-LLM, SpeakLeash CPTUB and Polish EQ-Bench.",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "utter-project/EuroLLM-9B-Instruct"
+      },
+      {
+        "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+        "reported_label": "utter-project/EuroLLM-9B-Instruct"
+      },
+      {
+        "source": "https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json",
+        "reported_label": "utter-project/EuroLLM-9B-Instruct"
+      }
+    ]
+  },
+  {
+    "id": "eurollm-22b-instruct-2512",
+    "name": "EuroLLM 22B Instruct (2512)",
+    "provider": "UTTER (EuroLLM)",
+    "category": "llm",
+    "released": "2025-12",
+    "released_source": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/blob/8c6ed5c8d18527d9daed994f645032b86c53f0bb/README.md",
+    "params_b": 22.64,
+    "active_b": 22.64,
+    "params_note": "HF safetensors metadata 22,637,328,384 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 45.27,
+          "gb_estimated": true,
+          "cmd": "vllm serve utter-project/EuroLLM-22B-Instruct-2512",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/tree/8c6ed5c8d18527d9daed994f645032b86c53f0bb",
+          "note": "BF16 safetensors, 10 file(s) totalling 45,274,713,864 bytes (HF API listing @8c6ed5c, fetched 2026-10-10)."
+        }
+      ]
+    },
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/blob/8c6ed5c8d18527d9daed994f645032b86c53f0bb/README.md",
+    "context_note": "Card hyper-parameter table: 'Sequence Length 32,768'. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
+    "identity_note": "utter-project/EuroLLM-22B-Instruct-2512 @8c6ed5c (created 2025-12-05, apache-2.0). EuroLLM 22B instruction model, December 2025 release (distinct from the earlier 22B-Instruct-Preview). Independent rows: EuroEval English (both datasets).",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "utter-project/EuroLLM-22B-Instruct-2512"
+      }
+    ]
+  },
+  {
+    "id": "apertus-8b-instruct-2509",
+    "name": "Apertus 8B Instruct (2509)",
+    "provider": "Swiss AI",
+    "category": "llm",
+    "released": "2025-08",
+    "released_source": "https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509/blob/b946d40447b2b597999b9c86d44bee0b452c919f/README.md",
+    "params_b": 8.05,
+    "active_b": 8.05,
+    "params_note": "HF safetensors metadata 8,053,338,176 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 16.11,
+          "gb_estimated": true,
+          "cmd": "vllm serve swiss-ai/Apertus-8B-Instruct-2509",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509/tree/b946d40447b2b597999b9c86d44bee0b452c919f",
+          "note": "BF16 safetensors, 4 file(s) totalling 16,106,726,816 bytes (HF API listing @b946d40, fetched 2026-10-10). Apertus architecture is supported in upstream vLLM."
+        },
+        {
+          "quant": "mlx-4bit",
+          "gb": 4.53,
+          "gb_estimated": true,
+          "cmd": "uvx --from mlx-lm mlx_lm.chat --model mlx-community/Apertus-8B-Instruct-2509-4bit",
+          "platform": "mac",
+          "source": "https://huggingface.co/mlx-community/Apertus-8B-Instruct-2509-4bit/tree/c5e6ae2e52c4149f36cb8e47b7ab1489ef885fed",
+          "note": "mlx-community 4-bit conversion of the maker checkpoint; model.safetensors 4,530,491,710 bytes (@c5e6ae2, fetched 2026-10-10)."
+        }
+      ]
+    },
+    "context_k": 65.536,
+    "context_source": "https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509/blob/b946d40447b2b597999b9c86d44bee0b452c919f/README.md",
+    "context_note": "Card: 'Apertus by default supports a context length up to 65,536 tokens' (config max_position_embeddings 65536). Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509",
+    "identity_note": "swiss-ai/Apertus-8B-Instruct-2509 @b946d40 (created 2025-08-13, apache-2.0). Swiss AI (EPFL, ETH Zurich, CSCS) Apertus 1.0 8B instruct model, September 2025. Independent rows: EuroEval English and Miðeind Icelandic leaderboard.",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "swiss-ai/Apertus-8B-Instruct-2509"
+      },
+      {
+        "source": "https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json",
+        "reported_label": "Apertus 8B Instruct (2509)"
+      }
+    ]
+  },
+  {
+    "id": "apertus-70b-instruct-2509",
+    "name": "Apertus 70B Instruct (2509)",
+    "provider": "Swiss AI",
+    "category": "llm",
+    "released": "2025-09",
+    "released_source": "https://huggingface.co/swiss-ai/Apertus-70B-Instruct-2509",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/swiss-ai/Apertus-70B-Instruct-2509/blob/0f2767662a013c0fb631079cea883155252bc3b6/README.md",
+    "params_b": 70.6,
+    "active_b": 70.6,
+    "params_note": "HF safetensors metadata 70,599,864,480 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 141.2,
+          "gb_estimated": true,
+          "cmd": "vllm serve swiss-ai/Apertus-70B-Instruct-2509",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/swiss-ai/Apertus-70B-Instruct-2509/tree/0f2767662a013c0fb631079cea883155252bc3b6",
+          "note": "BF16 safetensors, 30 file(s) totalling 141,199,854,344 bytes (HF API listing @0f27676, fetched 2026-10-10). Multi-GPU (add --tensor-parallel-size)."
+        }
+      ]
+    },
+    "context_k": 65.536,
+    "context_source": "https://huggingface.co/swiss-ai/Apertus-70B-Instruct-2509/blob/0f2767662a013c0fb631079cea883155252bc3b6/README.md",
+    "context_note": "Card: 'Apertus by default supports a context length up to 65,536 tokens' (config max_position_embeddings 65536). Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/swiss-ai/Apertus-70B-Instruct-2509",
+    "identity_note": "swiss-ai/Apertus-70B-Instruct-2509 @0f27676 (created 2025-09-01, apache-2.0). Swiss AI Apertus 1.0 70B instruct model, September 2025. Independent rows: EuroEval English (both datasets).",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "swiss-ai/Apertus-70B-Instruct-2509"
+      }
+    ]
+  },
+  {
+    "id": "apertus-1-5-8b",
+    "name": "Apertus 1.5 8B",
+    "provider": "Swiss AI",
+    "category": "llm",
+    "released": "2026-07",
+    "released_source": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B/blob/a411d838600baf0e3635a3daf66fb7c55fc97bb6/README.md",
+    "params_b": 8.9,
+    "active_b": 8.9,
+    "params_note": "HF safetensors metadata 8,903,547,555 parameters (includes the image/audio encoders).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 17.8,
+          "gb_estimated": true,
+          "cmd": "vllm serve swiss-ai/Apertus-v1.5-8B --chat-template-content-format string --max-model-len 262144 --reasoning-parser apertus --default-chat-template-kwargs.enable_thinking true",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B/blob/a411d838600baf0e3635a3daf66fb7c55fc97bb6/README.md",
+          "note": "Maker card command for thinking mode (the setting the Miðeind run used). Card: Apertus 1.5 currently needs Swiss AI's modified vLLM ('docker pull ghcr.io/swiss-ai/vllm_apertus_1.5_release:latest-amd64' or -arm64) until upstream support lands; repo is gated (access form). Size = parameters x 2 bytes (BF16), estimated."
+        }
+      ]
+    },
+    "context_k": 262.144,
+    "context_source": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B/blob/a411d838600baf0e3635a3daf66fb7c55fc97bb6/README.md",
+    "context_note": "Card: 'Apertus 1.5 by default supports a context length up to 262,144 tokens' (card visible on the gated repo page). Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
+    "identity_note": "swiss-ai/Apertus-v1.5-8B @a411d83 (created 2026-07-24, apache-2.0, gated: access form). Swiss AI Apertus 1.5 8B (July 2026): continued pretraining of Apertus 1.0 with image and audio input and an optional thinking mode. Card has no score tables yet ('The technical report ... will be published in the coming weeks'). Independent row: Miðeind Icelandic leaderboard (thinking on).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json",
+        "reported_label": "Apertus 1.5 8B"
+      },
+      {
+        "source": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B/blob/a411d838600baf0e3635a3daf66fb7c55fc97bb6/README.md",
+        "reported_label": "Apertus 1.5"
+      }
+    ]
+  },
+  {
+    "id": "apertus-1-5-70b",
+    "name": "Apertus 1.5 70B",
+    "provider": "Swiss AI",
+    "category": "llm",
+    "released": "2026-07",
+    "released_source": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B/blob/59e744e313e967811aefabde3732609b64201acc/README.md",
+    "params_b": 72.01,
+    "active_b": 72.01,
+    "params_note": "HF safetensors metadata 72,005,819,139 parameters (includes the image/audio encoders).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 144,
+          "gb_estimated": true,
+          "cmd": "vllm serve swiss-ai/Apertus-v1.5-70B --chat-template-content-format string --tensor-parallel-size 4 --max-model-len 262144 --reasoning-parser apertus --default-chat-template-kwargs.enable_thinking true",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B/blob/59e744e313e967811aefabde3732609b64201acc/README.md",
+          "note": "Maker card command for thinking mode (the setting the Miðeind run used). Card: Apertus 1.5 currently needs Swiss AI's modified vLLM ('docker pull ghcr.io/swiss-ai/vllm_apertus_1.5_release:latest-amd64' or -arm64) until upstream support lands; repo is gated (access form). Size = parameters x 2 bytes (BF16), estimated."
+        }
+      ]
+    },
+    "context_k": 262.144,
+    "context_source": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B/blob/59e744e313e967811aefabde3732609b64201acc/README.md",
+    "context_note": "Card: 'Apertus 1.5 by default supports a context length up to 262,144 tokens' (card visible on the gated repo page). Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
+    "identity_note": "swiss-ai/Apertus-v1.5-70B @59e744e (created 2026-07-24, apache-2.0, gated: access form). Swiss AI Apertus 1.5 70B (July 2026): continued pretraining of Apertus 1.0 with image and audio input and an optional thinking mode. Card has no score tables yet ('The technical report ... will be published in the coming weeks'). Independent row: Miðeind Icelandic leaderboard (thinking on).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json",
+        "reported_label": "Apertus 1.5 70B"
+      },
+      {
+        "source": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B/blob/59e744e313e967811aefabde3732609b64201acc/README.md",
+        "reported_label": "Apertus 1.5"
+      }
+    ]
+  },
+  {
+    "id": "granite-4-0-h-micro",
+    "name": "Granite 4.0 H Micro 3B",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2025-09",
+    "released_source": "https://huggingface.co/ibm-granite/granite-4.0-h-micro",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/ibm-granite/granite-4.0-h-micro/blob/d5f01a3ea75f088947be3aae039f4ad52837dfde/README.md",
+    "params_b": 3.19,
+    "active_b": 3.19,
+    "params_note": "HF safetensors metadata of ibm-granite/granite-4.0-h-micro @d5f01a3",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 1.9,
+          "gb_estimated": true,
+          "cmd": "ollama run granite4:micro-h",
+          "source": "https://ollama.com/library/granite4/tags",
+          "note": "ollama tag granite4:micro-h (digest 076afb3855dc; arch granitehybrid, 3.19B parameters, Q4_K_M): 1.9GB as printed (rounded), 1M context window, Text input; fetched 2026-10-10. Alias granite4:3b-h (same digest)."
+        },
+        {
+          "quant": "q4_k_m",
+          "gb": 1.94,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf ibm-granite/granite-4.0-h-micro-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/ibm-granite/granite-4.0-h-micro-GGUF/tree/dc1dd2585fac18a78001c677d33ef8a7bbb7eb68",
+          "note": "IBM's own GGUF repo; granite-4.0-h-micro-Q4_K_M.gguf 1,942,564,512 bytes (HF API listing @dc1dd25, fetched 2026-10-10)."
+        }
+      ]
+    },
+    "context_k": 131.072,
+    "context_source": "https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md",
+    "context_note": "Granite 4.0 model-card architecture table (h-small card, also printed in the h-micro card): 'Sequence length 128K' for H Micro Dense. ollama lists a 1M context window. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/ibm-granite/granite-4.0-h-micro",
+    "identity_note": "IBM Granite-4.0-H-Micro (ibm-granite/granite-4.0-h-micro @d5f01a3, created 2025-09-16, apache-2.0, 3,191,396,096 params): hybrid Mamba-2/attention dense 3B instruct model; distinct from the catalogued transformer-only granite-4-0-micro (ollama granite4:micro). Lab rows from the h-small card table's 'H Micro Dense' column; independent EuroEval and Vectara rows.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md",
+        "reported_label": "H Micro Dense"
+      },
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "ibm-granite/granite-4.0-h-micro"
+      },
+      {
+        "source": "https://ollama.com/library/granite4/tags",
+        "reported_label": "granite4:micro-h"
+      }
+    ]
+  },
+  {
+    "id": "granite-4-0-h-tiny",
+    "name": "Granite 4.0 H Tiny (7B-A1B)",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2025-09",
+    "released_source": "https://huggingface.co/ibm-granite/granite-4.0-h-tiny",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/ibm-granite/granite-4.0-h-tiny/blob/791e0d3d28c86e106c9b6e0b4cecdee0375b6124/README.md",
+    "params_b": 6.94,
+    "active_b": 1,
+    "params_note": "HF safetensors metadata of ibm-granite/granite-4.0-h-tiny @791e0d3; active parameters from the maker card architecture table.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 4.2,
+          "gb_estimated": true,
+          "cmd": "ollama run granite4:tiny-h",
+          "source": "https://ollama.com/library/granite4/tags",
+          "note": "ollama tag granite4:tiny-h (digest 566b725534ea; arch granitehybrid, 6.94B parameters, Q4_K_M): 4.2GB as printed (rounded), 1M context window, Text input; fetched 2026-10-10. Alias granite4:7b-a1b-h (same digest)."
+        },
+        {
+          "quant": "q4_k_m",
+          "gb": 4.23,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf ibm-granite/granite-4.0-h-tiny-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/tree/08d5a8a9741dd5c1a95d2d39e25253226aa1464e",
+          "note": "IBM's own GGUF repo; granite-4.0-h-tiny-Q4_K_M.gguf 4,230,976,352 bytes (@08d5a8a, fetched 2026-10-10)."
+        }
+      ]
+    },
+    "context_k": 131.072,
+    "context_source": "https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md",
+    "context_note": "Granite 4.0 model-card architecture table (h-small card): 'Sequence length 128K' for H Tiny MoE. ollama lists a 1M context window. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/ibm-granite/granite-4.0-h-tiny",
+    "identity_note": "IBM Granite-4.0-H-Tiny (ibm-granite/granite-4.0-h-tiny @791e0d3, created 2025-09-16, apache-2.0, 6,939,037,248 params; card architecture table '# Parameters 7B', '# Active parameters 1B'): hybrid Mamba-2 MoE instruct model. Lab rows from the h-small card's 'H Tiny MoE' column; independent EuroEval and Vectara rows.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md",
+        "reported_label": "H Tiny MoE"
+      },
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "ibm-granite/granite-4.0-h-tiny"
+      },
+      {
+        "source": "https://ollama.com/library/granite4/tags",
+        "reported_label": "granite4:tiny-h"
+      }
+    ]
+  },
+  {
+    "id": "granite-4-0-h-1b",
+    "name": "Granite 4.0 H 1B",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2025-10",
+    "released_source": "https://huggingface.co/ibm-granite/granite-4.0-h-1b",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md",
+    "params_b": 1.46,
+    "active_b": 1.46,
+    "params_note": "HF safetensors metadata of ibm-granite/granite-4.0-h-1b @d18cca4",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q8_0",
+          "gb": 1.6,
+          "gb_estimated": true,
+          "cmd": "ollama run granite4:1b-h",
+          "source": "https://ollama.com/library/granite4/tags",
+          "note": "ollama tag granite4:1b-h (digest 7761ae79cab9; arch granitehybrid, 1.46B parameters, Q8_0): 1.6GB as printed (rounded), 1M context window, Text input; fetched 2026-10-10."
+        },
+        {
+          "quant": "q4_k_m",
+          "gb": 0.9,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf ibm-granite/granite-4.0-h-1b-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/ibm-granite/granite-4.0-h-1b-GGUF/tree/c2cb1972f511add21f3bae244990b8ff3a3ffb23",
+          "note": "IBM's own GGUF repo; Q4_K_M file 901,162,208 bytes (@c2cb197, fetched 2026-10-10)."
+        }
+      ]
+    },
+    "context_k": 131.072,
+    "context_source": "https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md",
+    "context_note": "Granite 4.0 Nano card architecture table (h-1b card): 'Sequence length 128K' for H 1B Dense. ollama lists a 1M context window. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/ibm-granite/granite-4.0-h-1b",
+    "identity_note": "IBM granite-4.0-h-1b (ibm-granite/granite-4.0-h-1b @d18cca4, created 2025-10-07, apache-2.0, 1,461,538,368 params): hybrid Mamba-2 dense instruct model of the Granite 4.0 Nano family (Oct 2025); distinct from the transformer-only granite-4.0-1b already catalogued. Lab rows from the h-1b card's 'H 1B Dense' column, in 4-model runs with the catalogued granite-4-0-1b / granite-4-0-350m columns.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md",
+        "reported_label": "H 1B Dense"
+      },
+      {
+        "source": "https://ollama.com/library/granite4/tags",
+        "reported_label": "granite4:1b-h"
+      }
+    ]
+  },
+  {
+    "id": "granite-4-0-h-350m",
+    "name": "Granite 4.0 H 350M",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2025-10",
+    "released_source": "https://huggingface.co/ibm-granite/granite-4.0-h-350m",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/ibm-granite/granite-4.0-h-350m/blob/3b17b717b8f2f5d305b0a92c1491e239aeda19c8/README.md",
+    "params_b": 0.34,
+    "active_b": 0.34,
+    "params_note": "HF safetensors metadata of ibm-granite/granite-4.0-h-350m @3b17b71",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q8_0",
+          "gb": 0.366,
+          "gb_estimated": true,
+          "cmd": "ollama run granite4:350m-h",
+          "source": "https://ollama.com/library/granite4/tags",
+          "note": "ollama tag granite4:350m-h (digest 7145075ed3d6; arch granitehybrid, 340M parameters, Q8_0): 366MB as printed (rounded), 1M context window, Text input; fetched 2026-10-10."
+        },
+        {
+          "quant": "q4_k_m",
+          "gb": 0.22,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf ibm-granite/granite-4.0-h-350m-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/ibm-granite/granite-4.0-h-350m-GGUF/tree/a864f823cce6e6048b5752e2816fe7a23987d790",
+          "note": "IBM's own GGUF repo; Q4_K_M file 222,662,560 bytes (@a864f82, fetched 2026-10-10)."
+        }
+      ]
+    },
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md",
+    "context_note": "Granite 4.0 Nano card architecture table (h-1b card): 'Sequence length 32K' for H 350M Dense. ollama lists a 1M context window. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/ibm-granite/granite-4.0-h-350m",
+    "identity_note": "IBM granite-4.0-h-350m (ibm-granite/granite-4.0-h-350m @3b17b71, created 2025-10-07, apache-2.0, 340,332,224 params): hybrid Mamba-2 dense instruct model of the Granite 4.0 Nano family (Oct 2025); distinct from the transformer-only granite-4.0-350m already catalogued. Lab rows from the h-1b card's 'H 350M Dense' column, in 4-model runs with the catalogued granite-4-0-1b / granite-4-0-350m columns.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md",
+        "reported_label": "H 350M Dense"
+      },
+      {
+        "source": "https://ollama.com/library/granite4/tags",
+        "reported_label": "granite4:350m-h"
+      }
+    ]
+  },
+  {
+    "id": "granite-3-1-3b-a800m",
+    "name": "Granite 3.1 3B-A800M Instruct",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2024-12",
+    "released_source": "https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md",
+    "params_b": 3.3,
+    "active_b": 0.8,
+    "params_note": "Card architecture table '# Parameters 3.3B' / '# Active parameters 800M' (HF safetensors metadata 3,298,793,472).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 2,
+          "gb_estimated": true,
+          "cmd": "ollama run granite3.1-moe:3b",
+          "source": "https://ollama.com/library/granite3.1-moe/tags",
+          "note": "ollama tag granite3.1-moe:3b (digest b43d80d7fca7; arch granitemoe, 3.3B parameters, Q4_K_M): 2.0GB as printed (rounded), 128K context window, Text input; fetched 2026-10-10. Library description: Granite 3.1 MoE long-context instruct models."
+        }
+      ]
+    },
+    "context_k": 131.072,
+    "context_source": "https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md",
+    "context_note": "Card architecture table: 'Sequence length 128K' for the 3B MoE. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct",
+    "identity_note": "IBM Granite-3.1-3B-A800M-Instruct (ibm-granite/granite-3.1-3b-a800m-instruct @a027806, created 2024-12-06, apache-2.0, 3,298,793,472 params; card: '# Parameters 3.3B', '# Active parameters 800M'). Lab rows from its own card tables with the catalogued Granite 3.1 8B/2B instruct siblings.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md",
+        "reported_label": "Granite-3.1-3B-A800M-Instruct"
+      },
+      {
+        "source": "https://ollama.com/library/granite3.1-moe/tags",
+        "reported_label": "granite3.1-moe:3b"
+      }
+    ]
+  },
+  {
+    "id": "granite-3-1-1b-a400m",
+    "name": "Granite 3.1 1B-A400M Instruct",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2024-12",
+    "released_source": "https://huggingface.co/ibm-granite/granite-3.1-1b-a400m-instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/ibm-granite/granite-3.1-1b-a400m-instruct/blob/0da7a48b0276d500ce5922fd2b33944091fc6c09/README.md",
+    "params_b": 1.3,
+    "active_b": 0.4,
+    "params_note": "Card architecture table '# Parameters 1.3B' / '# Active parameters 400M' (HF safetensors metadata 1,334,628,352).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q8_0",
+          "gb": 1.4,
+          "gb_estimated": true,
+          "cmd": "ollama run granite3.1-moe:1b",
+          "source": "https://ollama.com/library/granite3.1-moe/tags",
+          "note": "ollama tag granite3.1-moe:1b (digest 3269ce3e31ea; arch granitemoe, 1.33B parameters, Q8_0): 1.4GB as printed (rounded), 128K context window, Text input; fetched 2026-10-10."
+        }
+      ]
+    },
+    "context_k": 131.072,
+    "context_source": "https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md",
+    "context_note": "Card architecture table (3b-a800m card, same table in the 1b card): 'Sequence length 128K' for the 1B MoE. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/ibm-granite/granite-3.1-1b-a400m-instruct",
+    "identity_note": "IBM Granite-3.1-1B-A400M-Instruct (ibm-granite/granite-3.1-1b-a400m-instruct @0da7a48, created 2024-12-06, apache-2.0, 1,334,628,352 params; card: '# Parameters 1.3B', '# Active parameters 400M'). Lab rows from the Granite 3.1 MoE card tables with the catalogued 8B/2B siblings.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct/blob/a02780686e08a03fe0d2679a293b5c74a90efa89/README.md",
+        "reported_label": "Granite-3.1-1B-A400M-Instruct"
+      },
+      {
+        "source": "https://ollama.com/library/granite3.1-moe/tags",
+        "reported_label": "granite3.1-moe:1b"
+      }
+    ]
+  },
+  {
+    "id": "granite-3-0-3b-a800m",
+    "name": "Granite 3.0 3B-A800M Instruct",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2024-10",
+    "released_source": "https://huggingface.co/ibm-granite/granite-3.0-3b-a800m-instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/ibm-granite/granite-3.0-3b-a800m-instruct/blob/51ced9b4d6ecb3a6671e2e52c937bc12a4a470a5/README.md",
+    "params_b": 3.3,
+    "active_b": 0.8,
+    "params_note": "Card architecture table '# Parameters 3.3B' / '# Active Parameters 800M' (HF safetensors metadata 3,374,295,552).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 2.1,
+          "gb_estimated": true,
+          "cmd": "ollama run granite3-moe:3b",
+          "source": "https://ollama.com/library/granite3-moe/tags",
+          "note": "ollama tag granite3-moe:3b (digest 157f538ae66e; arch granitemoe, 3.37B parameters, Q4_K_M): 2.1GB as printed (rounded), 4K context window, Text input; fetched 2026-10-10."
+        }
+      ]
+    },
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/ibm-granite/granite-3.0-3b-a800m-instruct/blob/51ced9b4d6ecb3a6671e2e52c937bc12a4a470a5/README.md",
+    "context_note": "Card architecture table: 'Sequence Length 4096'. ollama lists 4K. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/ibm-granite/granite-3.0-3b-a800m-instruct",
+    "identity_note": "IBM granite-3.0-3b-a800m-instruct (ibm-granite/granite-3.0-3b-a800m-instruct @51ced9b, created 2024-10-03, apache-2.0, 3,374,295,552 params; card '# Parameters 3.3B', '# Active Parameters 800M'). Lab rows from the Granite 3.0 paper Table 11 (MoE instruction models, IBM's harness, with the catalogued Llama-3.2 1B column) joining the existing Table-10 runs of that source; independent EuroEval rows.",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf",
+        "reported_label": "Granite-3.0 (800M active / 3B total)"
+      },
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "ibm-granite/granite-3.0-3b-a800m-instruct"
+      },
+      {
+        "source": "https://ollama.com/library/granite3-moe/tags",
+        "reported_label": "granite3-moe:3b"
+      }
+    ]
+  },
+  {
+    "id": "granite-3-0-1b-a400m",
+    "name": "Granite 3.0 1B-A400M Instruct",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2024-10",
+    "released_source": "https://huggingface.co/ibm-granite/granite-3.0-1b-a400m-instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/ibm-granite/granite-3.0-1b-a400m-instruct/blob/ffec3c35bdfd97a06f0b4cd5fcc92cd9b1584445/README.md",
+    "params_b": 1.3,
+    "active_b": 0.4,
+    "params_note": "Card architecture table '# Parameters 1.3B' / '# Active Parameters 400M' (HF safetensors metadata 1,334,628,352).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 0.822,
+          "gb_estimated": true,
+          "cmd": "ollama run granite3-moe:1b",
+          "source": "https://ollama.com/library/granite3-moe/tags",
+          "note": "ollama tag granite3-moe:1b (digest d84e1e38ee39; arch granitemoe, 1.33B parameters, Q4_K_M): 822MB as printed (rounded), 4K context window, Text input; fetched 2026-10-10."
+        }
+      ]
+    },
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/ibm-granite/granite-3.0-1b-a400m-instruct/blob/ffec3c35bdfd97a06f0b4cd5fcc92cd9b1584445/README.md",
+    "context_note": "Card architecture table: 'Sequence Length 4096'. ollama lists 4K. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/ibm-granite/granite-3.0-1b-a400m-instruct",
+    "identity_note": "IBM granite-3.0-1b-a400m-instruct (ibm-granite/granite-3.0-1b-a400m-instruct @ffec3c3, created 2024-10-03, apache-2.0, 1,334,628,352 params; card '# Parameters 1.3B', '# Active Parameters 400M'). Lab rows from the Granite 3.0 paper Table 11 (MoE instruction models, IBM's harness, with the catalogued Llama-3.2 1B column) joining the existing Table-10 runs of that source; independent EuroEval rows.",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf",
+        "reported_label": "Granite-3.0 (400M active / 1B total)"
+      },
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "ibm-granite/granite-3.0-1b-a400m-instruct"
+      },
+      {
+        "source": "https://ollama.com/library/granite3-moe/tags",
+        "reported_label": "granite3-moe:1b"
+      }
+    ]
+  },
+  {
+    "id": "exaone-3-5-7-8b",
+    "name": "EXAONE 3.5 7.8B Instruct",
+    "provider": "LG AI Research",
+    "category": "llm",
+    "released": "2024-12",
+    "released_source": "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "open_weights": true,
+    "license": "exaone",
+    "license_source": "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct/blob/553ea250b9a5317231459279d5847d6cf955b9aa/README.md",
+    "params_b": 7.82,
+    "active_b": 7.82,
+    "params_note": "HF safetensors metadata 7,818,448,896 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 4.8,
+          "gb_estimated": true,
+          "cmd": "ollama run exaone3.5:7.8b",
+          "source": "https://ollama.com/library/exaone3.5/tags",
+          "note": "ollama tag exaone3.5:7.8b (digest c7c4e3d1ca22; arch exaone, 7.82B parameters, Q4_K_M): 4.8GB as printed (rounded), 32K context window, Text input; fetched 2026-10-10."
+        },
+        {
+          "quant": "q4_k_m",
+          "gb": 4.77,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct-GGUF/tree/c618bf67338171760c72c3f109f2900cb7d79855",
+          "note": "LG AI Research's own GGUF repo; EXAONE-3.5-7.8B-Instruct-Q4_K_M.gguf 4,770,649,728 bytes (@c618bf6, fetched 2026-10-10)."
+        }
+      ]
+    },
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct/blob/553ea250b9a5317231459279d5847d6cf955b9aa/README.md",
+    "context_note": "Model card: 'Context Length: 32,768 tokens'. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "identity_note": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct @553ea25 (created 2024-12-01, EXAONE AI Model License (non-commercial terms)). EXAONE 3.5 bilingual (English/Korean) instruct model, sibling of the catalogued EXAONE 3.5 2.4B. Lab rows only: rule-(b) rows pooled in first-party-lgai-scores (IFEval and Arena-Hard runs with the catalogued EXAONE models).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct/blob/553ea250b9a5317231459279d5847d6cf955b9aa/README.md#evaluation",
+        "reported_label": "EXAONE 3.5 7.8B"
+      },
+      {
+        "source": "https://ollama.com/library/exaone3.5/tags",
+        "reported_label": "exaone3.5:7.8b"
+      }
+    ]
+  },
+  {
+    "id": "exaone-3-5-32b",
+    "name": "EXAONE 3.5 32B Instruct",
+    "provider": "LG AI Research",
+    "category": "llm",
+    "released": "2024-12",
+    "released_source": "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-32B-Instruct",
+    "open_weights": true,
+    "license": "exaone",
+    "license_source": "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-32B-Instruct/blob/3d27aab477c042df2e174d36eea47b77c8871ef0/README.md",
+    "params_b": 32,
+    "active_b": 32,
+    "params_note": "HF safetensors metadata 32,003,200,000 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 19,
+          "gb_estimated": true,
+          "cmd": "ollama run exaone3.5:32b",
+          "source": "https://ollama.com/library/exaone3.5/tags",
+          "note": "ollama tag exaone3.5:32b (digest f2f69abac3da; arch exaone, 32B parameters, Q4_K_M): 19GB as printed (rounded), 32K context window, Text input; fetched 2026-10-10."
+        },
+        {
+          "quant": "q4_k_m",
+          "gb": 19.34,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf LGAI-EXAONE/EXAONE-3.5-32B-Instruct-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-32B-Instruct-GGUF/tree/ab7a6e0ead00c8e79e5603cfd314d69a212e483d",
+          "note": "LG AI Research's own GGUF repo; EXAONE-3.5-32B-Instruct-Q4_K_M.gguf 19,343,747,520 bytes (@ab7a6e0, fetched 2026-10-10)."
+        }
+      ]
+    },
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-32B-Instruct/blob/3d27aab477c042df2e174d36eea47b77c8871ef0/README.md",
+    "context_note": "Model card: 'Context Length: 32,768 tokens'. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-32B-Instruct",
+    "identity_note": "LGAI-EXAONE/EXAONE-3.5-32B-Instruct @3d27aab (created 2024-12-01, EXAONE AI Model License (non-commercial terms)). EXAONE 3.5 bilingual instruct model, largest of the 3.5 family. Lab rows only: rule-(b) rows pooled in first-party-lgai-scores (IFEval and Arena-Hard runs with the catalogued EXAONE models).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-32B-Instruct/blob/3d27aab477c042df2e174d36eea47b77c8871ef0/README.md#evaluation",
+        "reported_label": "EXAONE 3.5 32B"
+      },
+      {
+        "source": "https://ollama.com/library/exaone3.5/tags",
+        "reported_label": "exaone3.5:32b"
+      }
+    ]
+  },
+  {
+    "id": "exaone-deep-2-4b",
+    "name": "EXAONE Deep 2.4B",
+    "provider": "LG AI Research",
+    "category": "llm",
+    "released": "2025-03",
+    "released_source": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B",
+    "open_weights": true,
+    "license": "exaone",
+    "license_source": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B/blob/69d80cdf4784e2c182854d83e9b2d02494626a3e/README.md",
+    "params_b": 2.41,
+    "active_b": 2.41,
+    "params_note": "HF safetensors metadata 2,405,327,360 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 1.6,
+          "gb_estimated": true,
+          "cmd": "ollama run exaone-deep:2.4b",
+          "source": "https://ollama.com/library/exaone-deep/tags",
+          "note": "ollama tag exaone-deep:2.4b (digest 37d6b495c16c; arch exaone, 2.67B parameters, Q4_K_M): 1.6GB as printed (rounded), 32K context window, Text input; fetched 2026-10-10."
+        },
+        {
+          "quant": "q4_k_m",
+          "gb": 1.64,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf LGAI-EXAONE/EXAONE-Deep-2.4B-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B-GGUF/tree/2deb04415c53af469e95704b76df5f9298f99083",
+          "note": "LG AI Research's own GGUF repo; EXAONE-Deep-2.4B-Q4_K_M.gguf 1,644,918,400 bytes (@2deb044, fetched 2026-10-10)."
+        }
+      ]
+    },
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B/blob/69d80cdf4784e2c182854d83e9b2d02494626a3e/README.md",
+    "context_note": "Model card: 'Context Length: 32,768 tokens'. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B",
+    "identity_note": "LGAI-EXAONE/EXAONE-Deep-2.4B @69d80cd (created 2025-03-12, EXAONE AI Model License (non-commercial terms)). EXAONE Deep reasoning model (Mar 2025), trained from EXAONE 3.5. Lab rows only: rule-(b) rows from the EXAONE Deep card table (all three sizes), pooled with first-party-lgai-scores GPQA Diamond / AIME 2025 runs of the catalogued EXAONE 4.x models.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation",
+        "reported_label": "EXAONE Deep 2.4B"
+      },
+      {
+        "source": "https://ollama.com/library/exaone-deep/tags",
+        "reported_label": "exaone-deep:2.4b"
+      }
+    ]
+  },
+  {
+    "id": "exaone-deep-7-8b",
+    "name": "EXAONE Deep 7.8B",
+    "provider": "LG AI Research",
+    "category": "llm",
+    "released": "2025-03",
+    "released_source": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B",
+    "open_weights": true,
+    "license": "exaone",
+    "license_source": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B/blob/8a120673fc7309b55be2175a2e61f9a0839e4f61/README.md",
+    "params_b": 7.82,
+    "active_b": 7.82,
+    "params_note": "HF safetensors metadata 7,818,448,896 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 4.8,
+          "gb_estimated": true,
+          "cmd": "ollama run exaone-deep:7.8b",
+          "source": "https://ollama.com/library/exaone-deep/tags",
+          "note": "ollama tag exaone-deep:7.8b (digest 106afe416a9e; arch exaone, 7.82B parameters, Q4_K_M): 4.8GB as printed (rounded), 32K context window, Text input; fetched 2026-10-10."
+        },
+        {
+          "quant": "q4_k_m",
+          "gb": 4.77,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf LGAI-EXAONE/EXAONE-Deep-7.8B-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B-GGUF/tree/b317545742931021fc291324c30cefb649e3dcad",
+          "note": "LG AI Research's own GGUF repo; EXAONE-Deep-7.8B-Q4_K_M.gguf 4,770,649,856 bytes (@b317545, fetched 2026-10-10)."
+        }
+      ]
+    },
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B/blob/8a120673fc7309b55be2175a2e61f9a0839e4f61/README.md",
+    "context_note": "Model card: 'Context Length: 32,768 tokens'. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B",
+    "identity_note": "LGAI-EXAONE/EXAONE-Deep-7.8B @8a12067 (created 2025-03-12, EXAONE AI Model License (non-commercial terms)). EXAONE Deep reasoning model (Mar 2025). Lab rows only: rule-(b) rows from the EXAONE Deep card table (all three sizes), pooled with first-party-lgai-scores GPQA Diamond / AIME 2025 runs of the catalogued EXAONE 4.x models.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation",
+        "reported_label": "EXAONE Deep 7.8B"
+      },
+      {
+        "source": "https://ollama.com/library/exaone-deep/tags",
+        "reported_label": "exaone-deep:7.8b"
+      }
+    ]
+  },
+  {
+    "id": "exaone-deep-32b",
+    "name": "EXAONE Deep 32B",
+    "provider": "LG AI Research",
+    "category": "llm",
+    "released": "2025-03",
+    "released_source": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B",
+    "open_weights": true,
+    "license": "exaone",
+    "license_source": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md",
+    "params_b": 32,
+    "active_b": 32,
+    "params_note": "HF safetensors metadata 32,003,200,000 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 19,
+          "gb_estimated": true,
+          "cmd": "ollama run exaone-deep:32b",
+          "source": "https://ollama.com/library/exaone-deep/tags",
+          "note": "ollama tag exaone-deep:32b (digest a9422f9a5071; arch exaone, 32B parameters, Q4_K_M): 19GB as printed (rounded), 32K context window, Text input; fetched 2026-10-10."
+        },
+        {
+          "quant": "q4_k_m",
+          "gb": 19.34,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf LGAI-EXAONE/EXAONE-Deep-32B-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B-GGUF/tree/4ba3a5454685aa7fda2b77c62c810879c084d78c",
+          "note": "LG AI Research's own GGUF repo; EXAONE-Deep-32B-Q4_K_M.gguf 19,343,747,648 bytes (@4ba3a54, fetched 2026-10-10)."
+        }
+      ]
+    },
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md",
+    "context_note": "Model card: 'Context Length: 32,768 tokens'. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B",
+    "identity_note": "LGAI-EXAONE/EXAONE-Deep-32B @4e9a4c2 (created 2025-03-12, EXAONE AI Model License (non-commercial terms)). EXAONE Deep reasoning model (Mar 2025). Lab rows only: rule-(b) rows from the EXAONE Deep card table (all three sizes), pooled with first-party-lgai-scores GPQA Diamond / AIME 2025 runs of the catalogued EXAONE 4.x models.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation",
+        "reported_label": "EXAONE Deep 32B"
+      },
+      {
+        "source": "https://ollama.com/library/exaone-deep/tags",
+        "reported_label": "exaone-deep:32b"
+      }
+    ]
+  },
+  {
+    "id": "falcon-7b-instruct",
+    "name": "Falcon 7B Instruct",
+    "provider": "TII",
+    "category": "llm",
+    "released": "2023-04",
+    "released_source": "https://huggingface.co/tiiuae/falcon-7b-instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/tiiuae/falcon-7b-instruct/blob/8782b5c5d8c9290412416618f36a133653e85285/README.md",
+    "params_b": 7.22,
+    "active_b": 7.22,
+    "params_note": "HF safetensors metadata 7,217,189,760 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 4.2,
+          "gb_estimated": true,
+          "cmd": "ollama run falcon:7b",
+          "source": "https://ollama.com/library/falcon/tags",
+          "note": "ollama tag falcon:7b (digest 4280f7257e73; arch falcon, 7.22B parameters, Q4_0): 4.2GB as printed (rounded), 2K context window, Text input; fetched 2026-10-10. Same digest as falcon:7b-instruct and falcon:instruct (the library default is the instruct build)."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/tiiuae/falcon-7b-instruct",
+    "identity_note": "tiiuae/falcon-7b-instruct @8782b5c (created 2023-04-25, licence apache-2.0). TII's 2023 instruct fine-tune of Falcon-7B (catalogued base falcon-7b). Independent rows: AlpacaEval 1.0 and 2.0 and Vectara HHEM (2025 set).",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+        "reported_label": "falcon-7b-instruct"
+      },
+      {
+        "source": "https://ollama.com/library/falcon/tags",
+        "reported_label": "falcon:7b-instruct"
+      }
+    ]
+  },
+  {
+    "id": "falcon-40b-instruct",
+    "name": "Falcon 40B Instruct",
+    "provider": "TII",
+    "category": "llm",
+    "released": "2023-05",
+    "released_source": "https://huggingface.co/tiiuae/falcon-40b-instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/tiiuae/falcon-40b-instruct/blob/ecb78d97ac356d098e79f0db222c9ce7c5d9ee5f/README.md",
+    "params_b": 41.8,
+    "active_b": 41.8,
+    "params_note": "No safetensors metadata (pytorch .bin weights); ~41.8B per the ollama tag page ('parameters 41.8B').",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 24,
+          "gb_estimated": true,
+          "cmd": "ollama run falcon:40b",
+          "source": "https://ollama.com/library/falcon/tags",
+          "note": "ollama tag falcon:40b (digest bc9368437a24; arch falcon, 41.8B parameters, Q4_0): 24GB as printed (rounded), 2K context window, Text input; fetched 2026-10-10. Same digest as falcon:40b-instruct."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/tiiuae/falcon-40b-instruct",
+    "identity_note": "tiiuae/falcon-40b-instruct @ecb78d9 (created 2023-05-25, licence apache-2.0). TII's 2023 instruct fine-tune of Falcon-40B (catalogued base falcon-40b). Independent rows: AlpacaEval 1.0 and 2.0 and LMSYS MT-Bench.",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+        "reported_label": "falcon-40b-instruct"
+      },
+      {
+        "source": "https://ollama.com/library/falcon/tags",
+        "reported_label": "falcon:40b-instruct"
+      }
+    ]
+  },
+  {
+    "id": "falcon2-11b",
+    "name": "Falcon2 11B (base)",
+    "provider": "TII",
+    "category": "llm",
+    "released": "2024-05",
+    "released_source": "https://huggingface.co/tiiuae/falcon-11B",
+    "open_weights": true,
+    "license": "falcon-llm",
+    "license_source": "https://huggingface.co/tiiuae/falcon-11B/blob/a4ab868d7e8d53844009657bf7e755933ccccf8f/README.md",
+    "params_b": 11.1,
+    "active_b": 11.1,
+    "params_note": "HF safetensors metadata 11,102,822,400 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 6.4,
+          "gb_estimated": true,
+          "cmd": "ollama run falcon2:11b",
+          "source": "https://ollama.com/library/falcon2/tags",
+          "note": "ollama tag falcon2:11b (digest d8c09dbc67c3; arch falcon, 11.1B parameters, Q4_0): 6.4GB as printed (rounded), 2K context window, Text input; fetched 2026-10-10. Library: 'Falcon2 is an 11B parameters causal decoder-only model built by TII and trained over 5T tokens' (pretrained, no chat tuning)."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/tiiuae/falcon-11B",
+    "identity_note": "tiiuae/falcon-11B @a4ab868 (created 2024-05-09, licence falcon-llm). TII Falcon2 11B pretrained model (May 2024; Falcon 2 licence, HF tag 'unknown'). Independent rows: EuroEval English (life_in_the_uk) and Open PT-LLM.",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "tiiuae/falcon-11B"
+      },
+      {
+        "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+        "reported_label": "tiiuae/falcon-11B"
+      }
+    ],
+    "context_k": 8.192,
+    "context_source": "https://huggingface.co/tiiuae/falcon-11B/blob/a4ab868d7e8d53844009657bf7e755933ccccf8f/config.json",
+    "context_note": "config.json max_position_embeddings 8192 (card: context extended from 2048 to 8192 during training). Observed 2026-10-10."
+  },
+  {
+    "id": "medgemma-4b-it",
+    "name": "MedGemma 4B IT",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2025-05",
+    "released_source": "https://huggingface.co/google/medgemma-4b-it",
+    "open_weights": true,
+    "license": "health-ai-developer-foundations",
+    "license_source": "https://huggingface.co/google/medgemma-4b-it/blob/290cda5eeccbee130f987c4ad74a59ae6f196408/README.md",
+    "params_b": 4.3,
+    "active_b": 4.3,
+    "params_note": "HF safetensors metadata 4,300,079,472 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 3.3,
+          "gb_estimated": true,
+          "cmd": "ollama run medgemma:4b",
+          "source": "https://ollama.com/library/medgemma/tags",
+          "note": "ollama tag medgemma:4b (digest 9fe4e9a6c9bd; arch gemma3, 4.3B parameters, Q4_K_M): 3.3GB as printed (rounded), 128K context window, Text, Image input; fetched 2026-10-10. Same digest as medgemma:4b-it-q4_K_M."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/google/medgemma-4b-it",
+    "identity_note": "google/medgemma-4b-it @290cda5 (created 2025-05-19, licence health-ai-developer-foundations). Google MedGemma (image-text-to-text; SigLIP medical image encoder.) built on Gemma 3; gated under the Health AI Developer Foundations terms. Independent rows: BRIDGE clinical zero-shot (87 tasks) and Open PT-LLM.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json",
+        "reported_label": "medgemma-4b-it"
+      },
+      {
+        "source": "https://ollama.com/library/medgemma/tags",
+        "reported_label": "medgemma:4b"
+      }
+    ]
+  },
+  {
+    "id": "medgemma-27b-it",
+    "name": "MedGemma 27B IT (multimodal)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2025-07",
+    "released_source": "https://huggingface.co/google/medgemma-27b-it",
+    "open_weights": true,
+    "license": "health-ai-developer-foundations",
+    "license_source": "https://huggingface.co/google/medgemma-27b-it/blob/2d3e00ea38b50018bf5dd3aa1009457cd2d5a48f/README.md",
+    "params_b": 28.84,
+    "active_b": 28.84,
+    "params_note": "HF safetensors metadata 28,842,036,848 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 17,
+          "gb_estimated": true,
+          "cmd": "ollama run medgemma:27b",
+          "source": "https://ollama.com/library/medgemma/tags",
+          "note": "ollama tag medgemma:27b (digest 58238ae38f99; arch gemma3, 27.4B parameters, Q4_K_M): 17GB as printed (rounded), 128K context window, Text, Image input; fetched 2026-10-10. Same digest as medgemma:27b-it-q4_K_M."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/google/medgemma-27b-it",
+    "identity_note": "google/medgemma-27b-it @2d3e00e (created 2025-07-09, licence health-ai-developer-foundations). Google MedGemma (multimodal 27B variant (July 2025).) built on Gemma 3; gated under the Health AI Developer Foundations terms. Independent rows: BRIDGE clinical zero-shot (87 tasks) and Open PT-LLM.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json",
+        "reported_label": "medgemma-27b-it"
+      },
+      {
+        "source": "https://ollama.com/library/medgemma/tags",
+        "reported_label": "medgemma:27b"
+      }
+    ]
+  },
+  {
+    "id": "medgemma-27b-text-it",
+    "name": "MedGemma 27B Text IT",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2025-05",
+    "released_source": "https://huggingface.co/google/medgemma-27b-text-it",
+    "open_weights": true,
+    "license": "health-ai-developer-foundations",
+    "license_source": "https://huggingface.co/google/medgemma-27b-text-it/blob/5b667cf2ddcf064085bc90952edb35a0edbfb79c/README.md",
+    "params_b": 27.01,
+    "active_b": 27.01,
+    "params_note": "HF safetensors metadata 27,009,002,240 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 16.55,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf unsloth/medgemma-27b-text-it-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/unsloth/medgemma-27b-text-it-GGUF/tree/334fbf6811c963d223f6ac107a459347353f068d",
+          "note": "medgemma-27b-text-it-Q4_K_M.gguf 16,546,405,376 bytes (HF API listing @334fbf6, fetched 2026-10-10). unsloth quantisation of the maker checkpoint."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/google/medgemma-27b-text-it",
+    "identity_note": "google/medgemma-27b-text-it @5b667cf (created 2025-05-19, licence health-ai-developer-foundations). Google MedGemma 27B text-only instruction model (May 2025), Gemma 3 based; gated under the Health AI Developer Foundations terms. No ollama library tag (ollama ships the multimodal 27B). Independent rows: BRIDGE and Open PT-LLM.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json",
+        "reported_label": "medgemma-27b-text-it"
+      },
+      {
+        "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+        "reported_label": "google/medgemma-27b-text-it"
+      }
+    ]
+  },
+  {
+    "id": "nexusraven-v2-13b",
+    "name": "NexusRaven V2 13B",
+    "provider": "Nexusflow",
+    "category": "llm",
+    "released": "2023-12",
+    "released_source": "https://huggingface.co/Nexusflow/NexusRaven-V2-13B",
+    "open_weights": true,
+    "license": "other",
+    "license_source": "https://huggingface.co/Nexusflow/NexusRaven-V2-13B/blob/a6b84dc52f4c8f2cd61637f840066f376c629271/README.md",
+    "params_b": 13.02,
+    "active_b": 13.02,
+    "params_note": "HF safetensors metadata 13,016,110,080 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 7.4,
+          "gb_estimated": true,
+          "cmd": "ollama run nexusraven:13b",
+          "source": "https://ollama.com/library/nexusraven/tags",
+          "note": "ollama tag nexusraven:13b (digest 483a8282af74; arch llama, 13B parameters, Q4_0): 7.4GB as printed (rounded), 16K context window, Text input; fetched 2026-10-10. Library: 'Nexus Raven is a 13B instruction tuned model for function calling tasks'."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/Nexusflow/NexusRaven-V2-13B",
+    "identity_note": "Nexusflow/NexusRaven-V2-13B @a6b84dc (created 2023-12-04, licence other). Nexusflow's function-calling model (Dec 2023, CodeLlama-13B base). Independent row: BFCL v3 (2025-06-14 snapshot).",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv",
+        "reported_label": "Nexusflow-Raven-v2 (FC)"
+      },
+      {
+        "source": "https://ollama.com/library/nexusraven/tags",
+        "reported_label": "nexusraven:13b"
+      }
+    ],
+    "context_k": 16.384,
+    "context_source": "https://huggingface.co/Nexusflow/NexusRaven-V2-13B/blob/a6b84dc52f4c8f2cd61637f840066f376c629271/config.json",
+    "context_note": "config.json max_position_embeddings 16384. Observed 2026-10-10."
+  },
+  {
+    "id": "firefunction-v2",
+    "name": "FireFunction v2 (70B)",
+    "provider": "Fireworks AI",
+    "category": "llm",
+    "released": "2024-06",
+    "released_source": "https://huggingface.co/fireworks-ai/llama-3-firefunction-v2",
+    "open_weights": true,
+    "license": "llama3",
+    "license_source": "https://huggingface.co/fireworks-ai/llama-3-firefunction-v2/blob/7954e120254ced10ac26a2dd346679d7328fa9ae/README.md",
+    "params_b": 70.55,
+    "active_b": 70.55,
+    "params_note": "HF safetensors metadata 70,553,706,496 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 40,
+          "gb_estimated": true,
+          "cmd": "ollama run firefunction-v2:70b",
+          "source": "https://ollama.com/library/firefunction-v2/tags",
+          "note": "ollama tag firefunction-v2:70b (digest b1ed6b22fb67; arch llama, 70.6B parameters, Q4_0): 40GB as printed (rounded), 8K context window, Text input; fetched 2026-10-10. Library: 'An open weights function calling model based on Llama 3'."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/fireworks-ai/llama-3-firefunction-v2",
+    "identity_note": "fireworks-ai/llama-3-firefunction-v2 @7954e12 (created 2024-06-05, licence llama3). Fireworks AI function-calling fine-tune of Llama 3 70B (June 2024). Independent row: BFCL v3 (2025-06-14 snapshot).",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv",
+        "reported_label": "FireFunction-v2 (FC)"
+      },
+      {
+        "source": "https://ollama.com/library/firefunction-v2/tags",
+        "reported_label": "firefunction-v2:70b"
+      }
+    ]
+  },
+  {
+    "id": "sky-t1-32b-preview",
+    "name": "Sky-T1 32B Preview",
+    "provider": "NovaSky (UC Berkeley)",
+    "category": "llm",
+    "released": "2025-01",
+    "released_source": "https://huggingface.co/NovaSky-AI/Sky-T1-32B-Preview",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/NovaSky-AI/Sky-T1-32B-Preview/blob/1e3f4c62a30c7ce70f4b3a3b952895d866943551/README.md",
+    "params_b": 32.76,
+    "active_b": 32.76,
+    "params_note": "HF safetensors metadata 32,763,876,352 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 19.85,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf bartowski/Sky-T1-32B-Preview-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/bartowski/Sky-T1-32B-Preview-GGUF/tree/4e54d0a46412fce56f2dc0a561c999a0378b1244",
+          "note": "Sky-T1-32B-Preview-Q4_K_M.gguf 19,851,336,928 bytes (HF API listing @4e54d0a, fetched 2026-10-10). bartowski quantisation of the maker checkpoint."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/NovaSky-AI/Sky-T1-32B-Preview",
+    "identity_note": "NovaSky-AI/Sky-T1-32B-Preview @1e3f4c6 (created 2025-01-07, licence apache-2.0). UC Berkeley NovaSky reasoning model (Jan 2025, Qwen2.5-32B-Instruct base). Independent rows: BFCL v3 (Prompt) and EuroEval English.",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv",
+        "reported_label": "Sky-T1-32B-Preview (Prompt)"
+      },
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "NovaSky-AI/Sky-T1-32B-Preview"
+      }
+    ]
+  },
+  {
+    "id": "reka-flash-3",
+    "name": "Reka Flash 3 (21B)",
+    "provider": "Reka AI",
+    "category": "llm",
+    "released": "2025-03",
+    "released_source": "https://huggingface.co/RekaAI/reka-flash-3",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/RekaAI/reka-flash-3/blob/8d251ecb02eca9f0f4aa052b29ef922628d2806f/README.md",
+    "params_b": 20.91,
+    "active_b": 20.91,
+    "params_note": "HF safetensors metadata 20,905,482,240 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 13.61,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf bartowski/RekaAI_reka-flash-3-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/bartowski/RekaAI_reka-flash-3-GGUF/tree/02951df8711b30e85faaa672a4ec4c3c3c6c0e37",
+          "note": "RekaAI_reka-flash-3-Q4_K_M.gguf 13,610,362,624 bytes (HF API listing @02951df, fetched 2026-10-10). bartowski quantisation of the maker checkpoint."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/RekaAI/reka-flash-3",
+    "identity_note": "RekaAI/reka-flash-3 @8d251ec (created 2025-03-11, licence apache-2.0). Reka AI 21B reasoning model released with open weights (Mar 2025). Independent rows: EuroEval English (both datasets).",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "RekaAI/reka-flash-3"
+      }
+    ]
+  },
+  {
+    "id": "reka-flash-3-1",
+    "name": "Reka Flash 3.1 (21B)",
+    "provider": "Reka AI",
+    "category": "llm",
+    "released": "2025-05",
+    "released_source": "https://huggingface.co/RekaAI/reka-flash-3.1",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/RekaAI/reka-flash-3.1/blob/dcf8d6ee3219ca177b519cab47777d42864b54bd/README.md",
+    "params_b": 20.91,
+    "active_b": 20.91,
+    "params_note": "HF safetensors metadata 20,905,482,240 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 13.61,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf bartowski/RekaAI_reka-flash-3.1-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/bartowski/RekaAI_reka-flash-3.1-GGUF/tree/763a6913e3e9851b58a8a019f3b50f2f2c559b07",
+          "note": "RekaAI_reka-flash-3.1-Q4_K_M.gguf 13,610,362,720 bytes (HF API listing @763a691, fetched 2026-10-10). bartowski quantisation of the maker checkpoint."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/RekaAI/reka-flash-3.1",
+    "identity_note": "RekaAI/reka-flash-3.1 @dcf8d6e (created 2025-05-28, licence apache-2.0). Reka AI 21B reasoning model, May 2025 update of Reka Flash 3. Independent rows: EuroEval English (both datasets).",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "RekaAI/reka-flash-3.1"
+      }
+    ]
+  },
+  {
+    "id": "afm-4-5b",
+    "name": "AFM-4.5B",
+    "provider": "Arcee AI",
+    "category": "llm",
+    "released": "2025-07",
+    "released_source": "https://huggingface.co/arcee-ai/AFM-4.5B",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/arcee-ai/AFM-4.5B/blob/e84d19711eca5817c1608cb344d931bf05c966dd/README.md",
+    "params_b": 4.62,
+    "active_b": 4.62,
+    "params_note": "HF safetensors metadata 4,619,189,760 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 2.92,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf arcee-ai/AFM-4.5B-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/arcee-ai/AFM-4.5B-GGUF/tree/741fded55739927f94be7934a174c2bcfc751969",
+          "note": "AFM-4.5B-Q4_K_M.gguf 2,916,301,824 bytes (HF API listing @741fded, fetched 2026-10-10). Arcee AI's own GGUF repo."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/arcee-ai/AFM-4.5B",
+    "identity_note": "arcee-ai/AFM-4.5B @e84d197 (created 2025-07-29, licence apache-2.0). Arcee Foundation Model 4.5B instruct (July 2025). Independent rows: EuroEval English (both datasets).",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "arcee-ai/AFM-4.5B"
+      }
+    ],
+    "context_k": 65.536,
+    "context_source": "https://huggingface.co/arcee-ai/AFM-4.5B/blob/e84d19711eca5817c1608cb344d931bf05c966dd/config.json",
+    "context_note": "config.json max_position_embeddings 65536. Observed 2026-10-10."
+  },
+  {
+    "id": "trinity-mini",
+    "name": "Trinity Mini (26B-A3B)",
+    "provider": "Arcee AI",
+    "category": "llm",
+    "released": "2025-12",
+    "released_source": "https://huggingface.co/arcee-ai/Trinity-Mini",
+    "open_weights": true,
+    "license": "openmdw-1.1",
+    "license_source": "https://huggingface.co/arcee-ai/Trinity-Mini/blob/cdb81e8130815fec299cccc8f8700004b8366e1e/README.md",
+    "params_b": 26.12,
+    "active_b": 3,
+    "params_note": "HF safetensors metadata 26,123,974,400 parameters; ~3B active is the maker's description (Trinity Mini 26B-A3B).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 15.94,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf arcee-ai/Trinity-Mini-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/arcee-ai/Trinity-Mini-GGUF/tree/a11737ef4b6f89d958d3f6ab670a9aa26e4b8ad7",
+          "note": "Trinity-Mini-Q4_K_M.gguf 15,935,808,352 bytes (HF API listing @a11737e, fetched 2026-10-10). Arcee AI's own GGUF repo."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/arcee-ai/Trinity-Mini",
+    "identity_note": "arcee-ai/Trinity-Mini @cdb81e8 (created 2025-12-01, licence openmdw-1.1). Arcee AI Trinity Mini MoE reasoning model (Dec 2025; 26B total, ~3B active per the card), sibling of the catalogued Trinity Large models. Independent rows: EuroEval English test split (the separate '(val)' entry is not used).",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "arcee-ai/Trinity-Mini"
+      }
+    ],
+    "context_k": 131.072,
+    "context_source": "https://huggingface.co/arcee-ai/Trinity-Mini/blob/cdb81e8130815fec299cccc8f8700004b8366e1e/config.json",
+    "context_note": "config.json max_position_embeddings 131072. Observed 2026-10-10."
+  },
+  {
+    "id": "mistral-nemo-minitron-8b-instruct",
+    "name": "Mistral-NeMo-Minitron 8B Instruct",
+    "provider": "NVIDIA",
+    "category": "llm",
+    "released": "2024-10",
+    "released_source": "https://huggingface.co/nvidia/Mistral-NeMo-Minitron-8B-Instruct",
+    "open_weights": true,
+    "license": "nvidia-open-model-license",
+    "license_source": "https://huggingface.co/nvidia/Mistral-NeMo-Minitron-8B-Instruct/blob/64261e01bfabab557842e5803a7ea96cc09489a5/README.md",
+    "params_b": 8.41,
+    "active_b": 8.41,
+    "params_note": "HF safetensors metadata 8,414,105,600 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 5.15,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf bartowski/Mistral-NeMo-Minitron-8B-Instruct-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/bartowski/Mistral-NeMo-Minitron-8B-Instruct-GGUF/tree/a3127ffc25645dca6c85a592bb2f833224fc0c53",
+          "note": "Mistral-NeMo-Minitron-8B-Instruct-Q4_K_M.gguf 5,145,298,624 bytes (HF API listing @a3127ff, fetched 2026-10-10). bartowski quantisation of the maker checkpoint."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/nvidia/Mistral-NeMo-Minitron-8B-Instruct",
+    "identity_note": "nvidia/Mistral-NeMo-Minitron-8B-Instruct @64261e0 (created 2024-10-02, licence nvidia-open-model-license). NVIDIA pruned/distilled 8B instruct model from Mistral NeMo 12B (Oct 2024). Independent rows: EuroEval English (life_in_the_uk).",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "nvidia/mistral-nemo-minitron-8b-instruct"
+      }
+    ],
+    "context_k": 8.192,
+    "context_source": "https://huggingface.co/nvidia/Mistral-NeMo-Minitron-8B-Instruct/blob/64261e01bfabab557842e5803a7ea96cc09489a5/config.json",
+    "context_note": "config.json max_position_embeddings 8192. Observed 2026-10-10."
+  },
+  {
+    "id": "stablelm-2-1-6b-chat",
+    "name": "Stable LM 2 1.6B Chat",
+    "provider": "Stability AI",
+    "category": "llm",
+    "released": "2024-04",
+    "released_source": "https://huggingface.co/stabilityai/stablelm-2-1_6b-chat",
+    "open_weights": true,
+    "license": "other",
+    "license_source": "https://huggingface.co/stabilityai/stablelm-2-1_6b-chat/blob/f3fe67057c2789ae1bb1fe42b038da99840d4f13/README.md",
+    "params_b": 1.64,
+    "active_b": 1.64,
+    "params_note": "HF safetensors metadata 1,644,515,328 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 0.983,
+          "gb_estimated": true,
+          "cmd": "ollama run stablelm2:1.6b",
+          "source": "https://ollama.com/library/stablelm2/tags",
+          "note": "ollama tag stablelm2:1.6b (digest 714a6116cffa; arch stablelm, 1.64B parameters, Q4_0): 983MB as printed (rounded), 4K context window, Text input; fetched 2026-10-10. Same digest as stablelm2:1.6b-chat-q4_0 (library default)."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/stabilityai/stablelm-2-1_6b-chat",
+    "identity_note": "stabilityai/stablelm-2-1_6b-chat @f3fe670 (created 2024-04-08, licence other). Independent row: Open PT-LLM (Portuguese) leaderboard average.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+        "reported_label": "stabilityai/stablelm-2-1_6b-chat"
+      },
+      {
+        "source": "https://ollama.com/library/stablelm2/tags",
+        "reported_label": "stablelm2:1.6b"
+      }
+    ],
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/stabilityai/stablelm-2-1_6b-chat/blob/f3fe67057c2789ae1bb1fe42b038da99840d4f13/config.json",
+    "context_note": "config.json max_position_embeddings 4096. Observed 2026-10-10."
+  },
+  {
+    "id": "stablelm-2-zephyr-1-6b",
+    "name": "Stable LM 2 Zephyr 1.6B",
+    "provider": "Stability AI",
+    "category": "llm",
+    "released": "2024-01",
+    "released_source": "https://huggingface.co/stabilityai/stablelm-2-zephyr-1_6b",
+    "open_weights": true,
+    "license": "other",
+    "license_source": "https://huggingface.co/stabilityai/stablelm-2-zephyr-1_6b/blob/2f275b1127d59fc31e4f7c7426d528768ada9ea4/README.md",
+    "params_b": 1.64,
+    "active_b": 1.64,
+    "params_note": "HF safetensors metadata 1,644,515,328 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 0.983,
+          "gb_estimated": true,
+          "cmd": "ollama run stablelm2:zephyr",
+          "source": "https://ollama.com/library/stablelm2/tags",
+          "note": "ollama tag stablelm2:zephyr (digest 1b81980a10e6; arch stablelm, 1.64B parameters, Q4_0): 983MB as printed (rounded), 4K context window, Text input; fetched 2026-10-10. Same digest as stablelm2:1.6b-zephyr-q4_0."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/stabilityai/stablelm-2-zephyr-1_6b",
+    "identity_note": "stabilityai/stablelm-2-zephyr-1_6b @2f275b1 (created 2024-01-19, licence other). Independent row: Open PT-LLM (Portuguese) leaderboard average.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+        "reported_label": "stabilityai/stablelm-2-zephyr-1_6b"
+      },
+      {
+        "source": "https://ollama.com/library/stablelm2/tags",
+        "reported_label": "stablelm2:zephyr"
+      }
+    ],
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/stabilityai/stablelm-2-zephyr-1_6b/blob/2f275b1127d59fc31e4f7c7426d528768ada9ea4/config.json",
+    "context_note": "config.json max_position_embeddings 4096. Observed 2026-10-10."
+  },
+  {
+    "id": "stablelm-2-12b-chat",
+    "name": "Stable LM 2 12B Chat",
+    "provider": "Stability AI",
+    "category": "llm",
+    "released": "2024-04",
+    "released_source": "https://huggingface.co/stabilityai/stablelm-2-12b-chat",
+    "open_weights": true,
+    "license": "other",
+    "license_source": "https://huggingface.co/stabilityai/stablelm-2-12b-chat/blob/b6b62cd451b84e848514c00fafa66d9ead9297c5/README.md",
+    "params_b": 12.14,
+    "active_b": 12.14,
+    "params_note": "HF safetensors metadata 12,143,185,920 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 7,
+          "gb_estimated": true,
+          "cmd": "ollama run stablelm2:12b",
+          "source": "https://ollama.com/library/stablelm2/tags",
+          "note": "ollama tag stablelm2:12b (digest 34b434945650; arch stablelm, 12.1B parameters, Q4_0): 7.0GB as printed (rounded), 4K context window, Text input; fetched 2026-10-10. Same digest as stablelm2:12b-chat-q4_0."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/stabilityai/stablelm-2-12b-chat",
+    "identity_note": "stabilityai/stablelm-2-12b-chat @b6b62cd (created 2024-04-04, licence other). Independent row: Open PT-LLM (Portuguese) leaderboard average.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+        "reported_label": "stabilityai/stablelm-2-12b-chat"
+      },
+      {
+        "source": "https://ollama.com/library/stablelm2/tags",
+        "reported_label": "stablelm2:12b"
+      }
+    ],
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/stabilityai/stablelm-2-12b-chat/blob/b6b62cd451b84e848514c00fafa66d9ead9297c5/config.json",
+    "context_note": "config.json max_position_embeddings 4096. Observed 2026-10-10."
+  },
+  {
+    "id": "stablelm-zephyr-3b",
+    "name": "StableLM Zephyr 3B",
+    "provider": "Stability AI",
+    "category": "llm",
+    "released": "2023-11",
+    "released_source": "https://huggingface.co/stabilityai/stablelm-zephyr-3b",
+    "open_weights": true,
+    "license": "other",
+    "license_source": "https://huggingface.co/stabilityai/stablelm-zephyr-3b/blob/fe1fd5e36ccb8cb2cb1dc225ab6d2962692b9837/README.md",
+    "params_b": 2.8,
+    "active_b": 2.8,
+    "params_note": "HF safetensors metadata 2,795,443,200 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 1.6,
+          "gb_estimated": true,
+          "cmd": "ollama run stablelm-zephyr:3b",
+          "source": "https://ollama.com/library/stablelm-zephyr/tags",
+          "note": "ollama tag stablelm-zephyr:3b (digest 0a108dbd846e; arch stablelm, 2.8B parameters, Q4_0): 1.6GB as printed (rounded), 4K context window, Text input; fetched 2026-10-10."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/stabilityai/stablelm-zephyr-3b",
+    "identity_note": "stabilityai/stablelm-zephyr-3b @fe1fd5e (created 2023-11-21, licence other). Independent row: Open PT-LLM (Portuguese) leaderboard average.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+        "reported_label": "stabilityai/stablelm-zephyr-3b"
+      },
+      {
+        "source": "https://ollama.com/library/stablelm-zephyr/tags",
+        "reported_label": "stablelm-zephyr:3b"
+      }
+    ],
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/stabilityai/stablelm-zephyr-3b/blob/fe1fd5e36ccb8cb2cb1dc225ab6d2962692b9837/config.json",
+    "context_note": "config.json max_position_embeddings 4096. Observed 2026-10-10."
+  },
+  {
+    "id": "internlm2-5-1-8b-chat",
+    "name": "InternLM2.5 1.8B Chat",
+    "provider": "Shanghai AI Laboratory (InternLM)",
+    "category": "llm",
+    "released": "2024-07",
+    "released_source": "https://huggingface.co/internlm/internlm2_5-1_8b-chat",
+    "open_weights": true,
+    "license": "other",
+    "license_source": "https://huggingface.co/internlm/internlm2_5-1_8b-chat/blob/57dcbc5455bf050d27a80f0ebd7808387caa714d/README.md",
+    "params_b": 1.89,
+    "active_b": 1.89,
+    "params_note": "HF safetensors metadata 1,889,110,016 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 1.1,
+          "gb_estimated": true,
+          "cmd": "ollama run internlm2:1.8b",
+          "source": "https://ollama.com/library/internlm2/tags",
+          "note": "ollama tag internlm2:1.8b (digest 653be3eb69a0; arch internlm2, 1.89B parameters, Q4_0): 1.1GB as printed (rounded), 32K context window, Text input; fetched 2026-10-10. Same digest as internlm2:1.8b-chat-v2.5-q4_0."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/internlm/internlm2_5-1_8b-chat",
+    "identity_note": "internlm/internlm2_5-1_8b-chat @57dcbc5 (created 2024-07-30, licence other). Independent row: Open PT-LLM (Portuguese) leaderboard average.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+        "reported_label": "internlm/internlm2_5-1_8b-chat"
+      },
+      {
+        "source": "https://ollama.com/library/internlm2/tags",
+        "reported_label": "internlm2:1.8b"
+      }
+    ],
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/internlm/internlm2_5-1_8b-chat/blob/57dcbc5455bf050d27a80f0ebd7808387caa714d/config.json",
+    "context_note": "config.json max_position_embeddings 32768. Observed 2026-10-10."
+  },
+  {
+    "id": "nous-hermes-2-solar-10-7b",
+    "name": "Nous Hermes 2 SOLAR 10.7B",
+    "provider": "Nous Research",
+    "category": "llm",
+    "released": "2024-01",
+    "released_source": "https://huggingface.co/NousResearch/Nous-Hermes-2-SOLAR-10.7B",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/NousResearch/Nous-Hermes-2-SOLAR-10.7B/blob/14c1fbe2f71acdcd58247b30d5439bd572d52386/README.md",
+    "params_b": 10.73,
+    "active_b": 10.73,
+    "params_note": "HF safetensors metadata 10,731,540,480 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 6.1,
+          "gb_estimated": true,
+          "cmd": "ollama run nous-hermes2:10.7b",
+          "source": "https://ollama.com/library/nous-hermes2/tags",
+          "note": "ollama tag nous-hermes2:10.7b (digest d50977d0b36a; arch llama, 10.7B parameters, Q4_0): 6.1GB as printed (rounded), 4K context window, Text input; fetched 2026-10-10. Library: '10.7b ... based on Solar'."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/NousResearch/Nous-Hermes-2-SOLAR-10.7B",
+    "identity_note": "NousResearch/Nous-Hermes-2-SOLAR-10.7B @14c1fbe (created 2024-01-01, licence apache-2.0). Independent row: Open PT-LLM (Portuguese) leaderboard average.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+        "reported_label": "NousResearch/Nous-Hermes-2-SOLAR-10.7B"
+      },
+      {
+        "source": "https://ollama.com/library/nous-hermes2/tags",
+        "reported_label": "nous-hermes2:10.7b"
+      }
+    ],
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/NousResearch/Nous-Hermes-2-SOLAR-10.7B/blob/14c1fbe2f71acdcd58247b30d5439bd572d52386/config.json",
+    "context_note": "config.json max_position_embeddings 4096. Observed 2026-10-10."
+  },
+  {
+    "id": "nous-hermes-2-yi-34b",
+    "name": "Nous Hermes 2 Yi 34B",
+    "provider": "Nous Research",
+    "category": "llm",
+    "released": "2023-12",
+    "released_source": "https://huggingface.co/NousResearch/Nous-Hermes-2-Yi-34B",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/NousResearch/Nous-Hermes-2-Yi-34B/blob/fcb0a8847e76aea14aba9aa44009d4418ad7c18f/README.md",
+    "params_b": 34.39,
+    "active_b": 34.39,
+    "params_note": "HF safetensors metadata 34,388,917,248 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 19,
+          "gb_estimated": true,
+          "cmd": "ollama run nous-hermes2:34b",
+          "source": "https://ollama.com/library/nous-hermes2/tags",
+          "note": "ollama tag nous-hermes2:34b (digest 1fbb49caabbd; arch llama, 34.4B parameters, Q4_0): 19GB as printed (rounded), 4K context window, Text input; fetched 2026-10-10. Library: '34b ... The original Nous Hermes 2 34B model based on Yi'."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/NousResearch/Nous-Hermes-2-Yi-34B",
+    "identity_note": "NousResearch/Nous-Hermes-2-Yi-34B @fcb0a88 (created 2023-12-23, licence apache-2.0). Independent row: Open PT-LLM (Portuguese) leaderboard average.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+        "reported_label": "NousResearch/Nous-Hermes-2-Yi-34B"
+      },
+      {
+        "source": "https://ollama.com/library/nous-hermes2/tags",
+        "reported_label": "nous-hermes2:34b"
+      }
+    ],
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/NousResearch/Nous-Hermes-2-Yi-34B/blob/fcb0a8847e76aea14aba9aa44009d4418ad7c18f/config.json",
+    "context_note": "config.json max_position_embeddings 4096. Observed 2026-10-10."
+  },
+  {
+    "id": "notus-7b-v1",
+    "name": "Notus 7B v1",
+    "provider": "Argilla",
+    "category": "llm",
+    "released": "2023-11",
+    "released_source": "https://huggingface.co/argilla/notus-7b-v1",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/argilla/notus-7b-v1/blob/30172203a2d41cb487bf7e2b92a821080783b2c9/README.md",
+    "params_b": 7.24,
+    "active_b": 7.24,
+    "params_note": "HF safetensors metadata 7,241,732,096 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 4.1,
+          "gb_estimated": true,
+          "cmd": "ollama run notus:7b",
+          "source": "https://ollama.com/library/notus/tags",
+          "note": "ollama tag notus:7b (digest 43c512e16786; arch llama, 7.24B parameters, Q4_0): 4.1GB as printed (rounded), 32K context window, Text input; fetched 2026-10-10. Same digest as notus:7b-v1."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/argilla/notus-7b-v1",
+    "identity_note": "argilla/notus-7b-v1 @3017220 (created 2023-11-16, licence mit). Independent row: Open PT-LLM (Portuguese) leaderboard average.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+        "reported_label": "argilla/notus-7b-v1"
+      },
+      {
+        "source": "https://ollama.com/library/notus/tags",
+        "reported_label": "notus:7b"
+      }
+    ]
+  },
+  {
+    "id": "solar-pro-preview",
+    "name": "Solar Pro Preview (22B)",
+    "provider": "Upstage",
+    "category": "llm",
+    "released": "2024-09",
+    "released_source": "https://huggingface.co/upstage/solar-pro-preview-instruct",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/upstage/solar-pro-preview-instruct/blob/dd4bcf7006df9b1ce3f87711e702e4063832aae3/README.md",
+    "params_b": 22.14,
+    "active_b": 22.14,
+    "params_note": "HF safetensors metadata 22,140,032,000 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 13,
+          "gb_estimated": true,
+          "cmd": "ollama run solar-pro:22b",
+          "source": "https://ollama.com/library/solar-pro/tags",
+          "note": "ollama tag solar-pro:22b (digest 9a8c71c441ca; arch solar, 22.1B parameters, Q4_K_M): 13GB as printed (rounded), 4K context window, Text input; fetched 2026-10-10. Same digest as solar-pro:preview."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/upstage/solar-pro-preview-instruct",
+    "identity_note": "upstage/solar-pro-preview-instruct @dd4bcf7 (created 2024-09-09, licence mit). Independent row: Open PT-LLM (Portuguese) leaderboard average.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+        "reported_label": "upstage/solar-pro-preview-instruct"
+      },
+      {
+        "source": "https://ollama.com/library/solar-pro/tags",
+        "reported_label": "solar-pro:22b"
+      }
+    ],
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/upstage/solar-pro-preview-instruct/blob/dd4bcf7006df9b1ce3f87711e702e4063832aae3/config.json",
+    "context_note": "config.json max_position_embeddings 4096. Observed 2026-10-10."
+  },
+  {
+    "id": "nous-hermes-2-mistral-7b-dpo",
+    "name": "Nous Hermes 2 Mistral 7B DPO",
+    "provider": "Nous Research",
+    "category": "llm",
+    "released": "2024-02",
+    "released_source": "https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO/blob/ebec0a691037d38955727d6949798429a63929dd/README.md",
+    "params_b": 7.24,
+    "active_b": 7.24,
+    "params_note": "HF safetensors metadata 7,241,748,480 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 4.37,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO-GGUF/tree/eb85cf06e8663157611e8ee472e61b43f50ee49f",
+          "note": "Nous-Hermes-2-Mistral-7B-DPO.Q4_K_M.gguf 4,368,450,560 bytes (HF API listing @eb85cf0, fetched 2026-10-10). Nous Research's own GGUF repo."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO",
+    "identity_note": "NousResearch/Nous-Hermes-2-Mistral-7B-DPO @ebec0a6 (created 2024-02-18, licence apache-2.0). Independent row: Open PT-LLM leaderboard average.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+        "reported_label": "NousResearch/Nous-Hermes-2-Mistral-7B-DPO"
+      }
+    ],
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/NousResearch/Nous-Hermes-2-Mistral-7B-DPO/blob/ebec0a691037d38955727d6949798429a63929dd/config.json",
+    "context_note": "config.json max_position_embeddings 32768. Observed 2026-10-10."
+  },
+  {
+    "id": "jan-v1-4b",
+    "name": "Jan v1 4B",
+    "provider": "Jan (Menlo Research)",
+    "category": "llm",
+    "released": "2025-08",
+    "released_source": "https://huggingface.co/janhq/Jan-v1-4B",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/janhq/Jan-v1-4B/blob/3a6fedb2f282925db523e1ca9fbbdbc6d86ef552/README.md",
+    "params_b": 4.02,
+    "active_b": 4.02,
+    "params_note": "HF safetensors metadata 4,022,468,096 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 2.5,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf janhq/Jan-v1-4B-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/janhq/Jan-v1-4B-GGUF/tree/a567ac3bab9d26fc0ddce96c2c21439b1ea7d115",
+          "note": "Jan-v1-4B-Q4_K_M.gguf 2,497,281,632 bytes (HF API listing @a567ac3, fetched 2026-10-10). Jan's own GGUF repo (the model the Jan desktop app ships)."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/janhq/Jan-v1-4B",
+    "identity_note": "janhq/Jan-v1-4B @3a6fedb (created 2025-08-08, licence apache-2.0). Jan's agentic 4B model (Aug 2025, Qwen3-4B-Thinking based). Independent row: Open PT-LLM leaderboard average.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+        "reported_label": "janhq/Jan-v1-4B"
+      }
+    ]
+  },
+  {
+    "id": "command-r7b-arabic-02-2025",
+    "name": "Command R7B Arabic (02-2025)",
+    "provider": "Cohere",
+    "category": "llm",
+    "released": "2025-02",
+    "released_source": "https://huggingface.co/CohereLabs/c4ai-command-r7b-arabic-02-2025",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "license_source": "https://huggingface.co/CohereLabs/c4ai-command-r7b-arabic-02-2025/blob/2d5440c7cea22410006fb461a1b24c067683da77/README.md",
+    "params_b": 8.03,
+    "active_b": 8.03,
+    "params_note": "HF safetensors metadata 8,028,033,024 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 5.1,
+          "gb_estimated": true,
+          "cmd": "ollama run command-r7b-arabic:7b",
+          "source": "https://ollama.com/library/command-r7b-arabic/tags",
+          "note": "ollama tag command-r7b-arabic:7b (digest 4bbe3353e56a; arch cohere2, 8.03B parameters, Q4_K_M): 5.1GB as printed (rounded), 16K context window, Text input; fetched 2026-10-10."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/CohereLabs/c4ai-command-r7b-arabic-02-2025",
+    "identity_note": "CohereLabs/c4ai-command-r7b-arabic-02-2025 @2d5440c (created 2025-02-27, licence cc-by-nc-4.0). Cohere's Arabic-optimised Command R7B (Feb 2025; gated, CC BY-NC). Independent row: Inception AraGen-v3 (3C3H).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json",
+        "reported_label": "CohereForAI/c4ai-command-r7b-arabic-02-2025"
+      },
+      {
+        "source": "https://ollama.com/library/command-r7b-arabic/tags",
+        "reported_label": "command-r7b-arabic:7b"
+      }
+    ]
+  },
+  {
+    "id": "fanar-1-9b-instruct",
+    "name": "Fanar 1 9B Instruct",
+    "provider": "QCRI",
+    "category": "llm",
+    "released": "2025-06",
+    "released_source": "https://huggingface.co/QCRI/Fanar-1-9B-Instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/QCRI/Fanar-1-9B-Instruct/blob/d30938d0efb1fd251727ee96df6987802ff84662/README.md",
+    "params_b": 8.78,
+    "active_b": 8.78,
+    "params_note": "HF safetensors metadata 8,783,871,488 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 17.6,
+          "gb_estimated": true,
+          "cmd": "vllm serve QCRI/Fanar-1-9B-Instruct",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/QCRI/Fanar-1-9B-Instruct/tree/d30938d0efb1fd251727ee96df6987802ff84662",
+          "note": "BF16 safetensors (parameter count x 2 bytes, estimated)."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/QCRI/Fanar-1-9B-Instruct",
+    "identity_note": "QCRI/Fanar-1-9B-Instruct @d30938d (created 2025-06-01, licence apache-2.0). Qatar Computing Research Institute's Arabic-English model (Gemma-2 9B continual pretraining). Independent row: Inception AraGen-v3 (3C3H).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json",
+        "reported_label": "QCRI/Fanar-1-9B-Instruct"
+      }
+    ]
+  },
+  {
+    "id": "diffusiongemma-26b-a4b",
+    "name": "DiffusionGemma 26B-A4B",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2026-06",
+    "released_source": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md",
+    "params_b": 25.82,
+    "active_b": 3.8,
+    "params_note": "Card: 'Total Parameters 25.2B', 'Active Parameters 3.8B' (HF safetensors metadata 25,823,778,864 incl. the ~550M vision encoder).",
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
+    "identity_note": "google/diffusiongemma-26B-A4B-it @f7f5b7f (created 2026-06-09, licence apache-2.0). Google's block-diffusion Gemma 4 variant (June 2026; 25.2B total / 3.8B active per the card; text and image input). Comparison-only for now: the card's inference path is transformers' DiffusionGemmaForBlockDiffusion (no one-line command) and the GGUF needs a llama.cpp branch with llama-diffusion-cli, so no run option is claimed. Lab rows from its own card, paired with the catalogued Gemma 4 26B-A4B column.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md",
+        "reported_label": "DiffusionGemma 26B A4B"
+      }
+    ],
+    "context_k": 262.144,
+    "context_source": "https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md",
+    "context_note": "Card: 'Context Length: Up to 256K tokens'. Observed 2026-10-10."
+  },
+  {
+    "id": "spark-x2-5-4b",
+    "name": "Spark-X2.5 4B",
+    "provider": "iFLYTEK (SparkLLM)",
+    "category": "llm",
+    "released": "2026-08",
+    "released_source": "https://huggingface.co/XHToken/Spark-X2.5-4B",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md",
+    "params_b": 4.11,
+    "active_b": 4.11,
+    "params_note": "HF safetensors metadata 4,112,079,360 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 8.2,
+          "gb_estimated": true,
+          "cmd": "ollama run SparkLLM/Spark-X2.5-4B",
+          "source": "https://ollama.com/SparkLLM/Spark-X2.5-4B/tags",
+          "note": "Maker's own ollama.com namespace (named in the card: 'ollama run SparkLLM/Spark-X2.5-4B'); tag latest digest 2d6194f978ca, 8.2GB as printed, 1M context window, text input; fetched 2026-10-10."
+        },
+        {
+          "quant": "q4_k_m",
+          "gb": 2.6,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf XHToken/Spark-X2.5-4B-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/XHToken/Spark-X2.5-4B-GGUF/tree/9826e0be84e6e6e8b9668abc91421109a1df1e2d",
+          "note": "Spark-X2.5-4B-Q4_K_M.gguf 2,600,224,352 bytes (HF API listing @9826e0b, fetched 2026-10-10). Maker's own GGUF repo."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/XHToken/Spark-X2.5-4B",
+    "identity_note": "XHToken/Spark-X2.5-4B @0bcb356 (created 2026-08-24, licence apache-2.0). SparkLLM (XHToken org; links to the SparkLLM channels) compact agentic model, Aug 2026; hybrid full/sliding-window attention with a native 1M context. Lab rows plus the authors' own runs of six catalogued comparators in the card table.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md",
+        "reported_label": "Spark‑X2.5‑4B"
+      },
+      {
+        "source": "https://ollama.com/SparkLLM/Spark-X2.5-4B/tags",
+        "reported_label": "SparkLLM/Spark-X2.5-4B"
+      }
+    ],
+    "context_k": 1048.576,
+    "context_source": "https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md",
+    "context_note": "Card: 'native context windows of up to 1M tokens' (serving example uses --context-length 1048576). Observed 2026-10-10."
+  },
+  {
+    "id": "spark-x2-5-1-7b",
+    "name": "Spark-X2.5 1.7B",
+    "provider": "iFLYTEK (SparkLLM)",
+    "category": "llm",
+    "released": "2026-08",
+    "released_source": "https://huggingface.co/XHToken/Spark-X2.5-1.7B",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/XHToken/Spark-X2.5-1.7B/blob/14d6e83c13c7add2b62a7c39b2131f4ed1cddcf8/README.md",
+    "params_b": 1.71,
+    "active_b": 1.71,
+    "params_note": "HF safetensors metadata 1,707,657,216 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 3.4,
+          "gb_estimated": true,
+          "cmd": "ollama run SparkLLM/Spark-X2.5-1.7B",
+          "source": "https://ollama.com/SparkLLM/Spark-X2.5-1.7B/tags",
+          "note": "Maker's own ollama.com namespace (named in the card: 'ollama run SparkLLM/Spark-X2.5-4B'); tag latest digest 42a27a0c9d96, 3.4GB as printed, 1M context window, text input; fetched 2026-10-10."
+        },
+        {
+          "quant": "q4_k_m",
+          "gb": 1.11,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf XHToken/Spark-X2.5-1.7B-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/XHToken/Spark-X2.5-1.7B-GGUF/tree/1f7fa33b1245c14730da39e125714ad3a327901b",
+          "note": "Spark-X2.5-1.7B-Q4_K_M.gguf 1,107,457,856 bytes (HF API listing @1f7fa33, fetched 2026-10-10). Maker's own GGUF repo."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/XHToken/Spark-X2.5-1.7B",
+    "identity_note": "XHToken/Spark-X2.5-1.7B @14d6e83 (created 2026-08-24, licence apache-2.0). Smaller Spark-X2.5 sibling (Aug 2026). Lab rows from the Spark-X2.5-4B card table (same table prints both sizes).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md",
+        "reported_label": "Spark‑X2.5‑1.7B"
+      },
+      {
+        "source": "https://ollama.com/SparkLLM/Spark-X2.5-1.7B/tags",
+        "reported_label": "SparkLLM/Spark-X2.5-1.7B"
+      }
+    ],
+    "context_k": 1048.576,
+    "context_source": "https://huggingface.co/XHToken/Spark-X2.5-4B/blob/0bcb35678590218655dff3765b9e61c83b35e9c4/README.md",
+    "context_note": "Card (4B repo, describing both sizes): 'native context windows of up to 1M tokens'. Observed 2026-10-10."
+  },
+  {
+    "id": "gigachat-3-5-ultra-reasoning",
+    "name": "GigaChat 3.5 Ultra Reasoning (432B-A28B)",
+    "provider": "Sber",
+    "category": "llm",
+    "released": "2026-09",
+    "released_source": "https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md",
+    "params_b": 438.09,
+    "active_b": 28,
+    "params_note": "HF safetensors metadata 438,085,063,424 parameters; 28B active per the maker card.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp8",
+          "gb": 438,
+          "gb_estimated": true,
+          "cmd": "vllm serve ai-sage/GigaChat3.5-432B-A28B-Reasoning --tensor-parallel-size 8",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/tree/02f55379ac0b20abd9378791bffd6254725e6f5c",
+          "note": "FP8 weights (~1 byte per parameter, estimated); the maker card's vLLM/SGLang instructions build those projects from source; multi-GPU node required."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning",
+    "identity_note": "ai-sage/GigaChat3.5-432B-A28B-Reasoning @02f5537 (created 2026-09-03, licence mit). Sber's first GigaChat with full reasoning trained with online RL (Sept 2026), FP8 weights; 432B MoE with 28B active. Lab rows from the GigaChat 3.5 Reasoning card table (with Sber's run of the catalogued DeepSeek V4 Flash Preview).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md",
+        "reported_label": "GigaChat 3.5 Ultra Reasoning"
+      }
+    ],
+    "context_k": 262.144,
+    "context_source": "https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md",
+    "context_note": "Card: 'The maximum supported context length is 262K tokens.' Observed 2026-10-10."
+  },
+  {
+    "id": "gigachat-3-5-ultra-instruct",
+    "name": "GigaChat 3.5 Ultra Instruct (432B-A28B)",
+    "provider": "Sber",
+    "category": "llm",
+    "released": "2026-07",
+    "released_source": "https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B/blob/d10dcaeccb04ca3186fdfa3bb3874b4474e6b41b/README.md",
+    "params_b": 433.77,
+    "active_b": 28,
+    "params_note": "HF safetensors metadata 433,773,248,160 parameters; 28B active per the maker card.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp8",
+          "gb": 434,
+          "gb_estimated": true,
+          "cmd": "vllm serve ai-sage/GigaChat3.5-432B-A28B --tensor-parallel-size 8",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B/tree/d10dcaeccb04ca3186fdfa3bb3874b4474e6b41b",
+          "note": "FP8 weights (~1 byte per parameter, estimated); the maker card's vLLM/SGLang instructions build those projects from source; multi-GPU node required."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B",
+    "identity_note": "ai-sage/GigaChat3.5-432B-A28B @d10dcae (created 2026-07-05, licence mit). Sber's GigaChat 3.5 Ultra instruct model (July 2026), 432B MoE with 28B active. Lab rows from the GigaChat 3.5 Reasoning card table (with Sber's run of the catalogued DeepSeek V4 Flash Preview).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md",
+        "reported_label": "GigaChat 3.5 Ultra Instruct"
+      }
+    ],
+    "context_k": 262.144,
+    "context_source": "https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md",
+    "context_note": "Card: 'The maximum supported context length is 262K tokens.' Observed 2026-10-10."
+  },
+  {
+    "id": "ax-k2",
+    "name": "A.X K2 (688B-A33B)",
+    "provider": "SK Telecom",
+    "category": "llm",
+    "released": "2026-07",
+    "released_source": "https://huggingface.co/skt/A.X-K2",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/skt/A.X-K2/blob/2287ca456927eed33b899c404c0b2ffaf17aa09f/README.md",
+    "params_b": 691.69,
+    "active_b": 33,
+    "params_note": "HF safetensors metadata 691,690,231,040 parameters; 33B active per the maker card.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 1383.4,
+          "gb_estimated": true,
+          "cmd": "vllm serve skt/A.X-K2 --tensor-parallel-size 8",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/skt/A.X-K2/tree/2287ca456927eed33b899c404c0b2ffaf17aa09f",
+          "note": "Card serving command 'vllm serve skt/A.X-K2 --tensor-parallel-size <N>'; BF16 size estimated from 691.7B parameters; multi-node scale."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/skt/A.X-K2",
+    "identity_note": "skt/A.X-K2 @2287ca4 (created 2026-07-28, licence apache-2.0). SK Telecom A.X K2 (July 2026), 688B MoE with 33B active, Korean/English; thinking and non-thinking modes. Rows from SKT's CC BY technical report (own runs of A.X K2/K1 and five open-weight baselines).",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2608.30181v1",
+        "reported_label": "A.X K2"
+      }
+    ],
+    "context_k": 262.144,
+    "context_source": "https://huggingface.co/skt/A.X-K2/blob/2287ca456927eed33b899c404c0b2ffaf17aa09f/README.md",
+    "context_note": "Card: 'Context length: 262,144 tokens (256K) — 128K trained natively, extended to 256K via YaRN scaling'. Observed 2026-10-10."
+  },
+  {
+    "id": "ax-k1",
+    "name": "A.X K1 (519B-A33B)",
+    "provider": "SK Telecom",
+    "category": "llm",
+    "released": "2025-12",
+    "released_source": "https://huggingface.co/skt/A.X-K1",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/skt/A.X-K1/blob/bb56f50f36b6c0b7b0c108da02db47a5e3bd9ee1/README.md",
+    "params_b": 518.98,
+    "active_b": 33,
+    "params_note": "HF safetensors metadata 518,983,059,456 parameters; 33B active per the maker card.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 1038,
+          "gb_estimated": true,
+          "cmd": "vllm serve skt/A.X-K1 --tensor-parallel-size 8",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/skt/A.X-K1/tree/bb56f50f36b6c0b7b0c108da02db47a5e3bd9ee1",
+          "note": "BF16 size estimated from 519B parameters; multi-node scale."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/skt/A.X-K1",
+    "identity_note": "skt/A.X-K1 @bb56f50 (created 2025-12-29, licence apache-2.0). SK Telecom A.X K1 (Dec 2025), 519B MoE with 33B active; predecessor of A.X K2. Lab rows from the A.X K2 technical report tables.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2608.30181v1",
+        "reported_label": "A.X K1"
+      }
+    ]
+  },
+  {
+    "id": "qwen-agentworld-35b-a3b",
+    "name": "Qwen-AgentWorld 35B-A3B",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2026-06",
+    "released_source": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md",
+    "params_b": 34.66,
+    "active_b": 3,
+    "params_note": "HF safetensors metadata 34,660,610,688 parameters; 3B active per the maker card.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_xl",
+          "gb": 22.32,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf unsloth/Qwen-AgentWorld-35B-A3B-GGUF:UD-Q4_K_XL",
+          "source": "https://huggingface.co/unsloth/Qwen-AgentWorld-35B-A3B-GGUF/tree/3a305abf5cfd119ee999dfe929c433746edd8d63",
+          "note": "unsloth dynamic quantisation; UD-Q4_K_XL file(s) 22,324,804,864 bytes (@3a305ab, fetched 2026-10-10)."
+        },
+        {
+          "quant": "bf16",
+          "gb": 69.3,
+          "gb_estimated": true,
+          "cmd": "vllm serve Qwen/Qwen-AgentWorld-35B-A3B",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/tree/60d2b0434a53d2e62a7c00a489586815d94ebffb",
+          "note": "BF16 safetensors (parameter count x 2 bytes, estimated). Card example uses --tensor-parallel-size 4 and --reasoning-parser qwen3."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B",
+    "identity_note": "Qwen/Qwen-AgentWorld-35B-A3B @60d2b04 (created 2026-06-22, licence apache-2.0). Qwen's language world model (June 2026; Qwen3.5-35B-A3B-Base, 35B total / 3B activated) trained to simulate agentic environments. Rows: its own AgentWorldBench table (new benchmark proposal), with 11 catalogued comparators.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md",
+        "reported_label": "Qwen-AgentWorld-35B-A3B"
+      }
+    ],
+    "context_k": 262.144,
+    "context_source": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md",
+    "context_note": "Card: 'Context Length: 262,144 tokens'. Observed 2026-10-10."
+  },
+  {
+    "id": "nemotron-labs-3-puzzle-75b-a9b",
+    "name": "Nemotron-Labs-3 Puzzle 75B-A9B",
+    "provider": "NVIDIA",
+    "category": "llm",
+    "released": "2026-06",
+    "released_source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16",
+    "open_weights": true,
+    "license": "openmdw-1.1",
+    "license_source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md",
+    "params_b": 75.35,
+    "active_b": 9.3,
+    "params_note": "Card: 'reduces the model from 120.7B total / 12.8B active parameters to 75.3B total / 9.3B active parameters' (HF safetensors metadata 75,353,324,544).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 150.7,
+          "gb_estimated": true,
+          "cmd": "vllm serve nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16 --tensor-parallel-size 2",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/tree/8fe5546888e9bd03fdbf52d808adebdfca901b52",
+          "note": "BF16 safetensors (parameter count x 2 bytes, estimated). Hybrid Mamba-Transformer MoE compressed from Nemotron 3 Super; multi-GPU."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16",
+    "identity_note": "nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16 @8fe5546 (created 2026-06-24, licence openmdw-1.1). NVIDIA Puzzle-compressed Nemotron 3 Super (June 2026): 75.3B total / 9.3B active (card). Lab rows from its own card table next to the catalogued Nemotron 3 Super 120B-A12B column (rule b, pooled in first-party-nvidia-scores).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16/blob/8fe5546888e9bd03fdbf52d808adebdfca901b52/README.md#benchmarks",
+        "reported_label": "Nemotron-Labs-3-Puzzle-75B-A9B-BF16"
+      }
+    ]
+  },
+  {
+    "id": "mellum2-12b-a2-5b-instruct",
+    "name": "Mellum2 12B-A2.5B Instruct",
+    "provider": "JetBrains",
+    "category": "llm",
+    "released": "2026-05",
+    "released_source": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md",
+    "params_b": 12.15,
+    "active_b": 2.5,
+    "params_note": "HF safetensors metadata 12,149,923,072 parameters; 2.5B active per the maker card.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 24.3,
+          "gb_estimated": true,
+          "cmd": "vllm serve JetBrains/Mellum2-12B-A2.5B-Instruct",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/tree/273d9c1c6882ac8e1562e5b7e043857d35a787b6",
+          "note": "BF16 safetensors (parameter count x 2 bytes, estimated). Card: 'vllm serve JetBrains/Mellum2-12B-A2.5B-Instruct --max-model-len 131072'."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct",
+    "identity_note": "JetBrains/Mellum2-12B-A2.5B-Instruct @273d9c1 (created 2026-05-26, licence apache-2.0). JetBrains Mellum2 coding-focused MoE (instruct, May 2026; 64 experts, 8 active, 12B total / 2.5B active per the name). Rows from its own card table with JetBrains' runs of catalogued Qwen3.5 4B/9B, OLMo 3 7B and Ministral 3 14B.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md",
+        "reported_label": "Mellum2 Instruct"
+      }
+    ],
+    "context_k": 131.072,
+    "context_source": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md",
+    "context_note": "Card: 'Context Length: 131,072'. Observed 2026-10-10."
+  },
+  {
+    "id": "mellum2-12b-a2-5b-thinking",
+    "name": "Mellum2 12B-A2.5B Thinking",
+    "provider": "JetBrains",
+    "category": "llm",
+    "released": "2026-05",
+    "released_source": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md",
+    "params_b": 12.15,
+    "active_b": 2.5,
+    "params_note": "HF safetensors metadata 12,149,923,072 parameters; 2.5B active per the maker card.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 24.3,
+          "gb_estimated": true,
+          "cmd": "vllm serve JetBrains/Mellum2-12B-A2.5B-Thinking",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/tree/a7311550557e93cc706ab5dd3d879c1a11703ab4",
+          "note": "BF16 safetensors (parameter count x 2 bytes, estimated). Card: 'vllm serve JetBrains/Mellum2-12B-A2.5B-Thinking --max-model-len 131072'."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking",
+    "identity_note": "JetBrains/Mellum2-12B-A2.5B-Thinking @a731155 (created 2026-05-26, licence apache-2.0). JetBrains Mellum2 coding-focused MoE (thinking, May 2026; 64 experts, 8 active, 12B total / 2.5B active per the name). Rows from its own card table with JetBrains' runs of catalogued Qwen3.5 4B/9B, OLMo 3 7B and Ministral 3 14B.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md",
+        "reported_label": "Mellum2 Thinking"
+      }
+    ],
+    "context_k": 131.072,
+    "context_source": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/README.md",
+    "context_note": "Card: 'Context Length: 131,072'. Observed 2026-10-10."
+  },
+  {
+    "id": "mellum2-1-12b-a2-5b-thinking",
+    "name": "Mellum2.1 12B-A2.5B Thinking",
+    "provider": "JetBrains",
+    "category": "llm",
+    "released": "2026-09",
+    "released_source": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md",
+    "params_b": 12.15,
+    "active_b": 2.5,
+    "params_note": "HF safetensors metadata 12,149,923,072 parameters; 2.5B active per the maker card.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 24.3,
+          "gb_estimated": true,
+          "cmd": "vllm serve JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/tree/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4",
+          "note": "BF16 safetensors (parameter count x 2 bytes, estimated)."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+    "identity_note": "JetBrains/Mellum2.1-12B-A2.5B-Thinking @92ddae9 (created 2026-09-20, licence apache-2.0). JetBrains Mellum2.1 thinking model (Sept 2026), successor of Mellum2 Thinking. Rows from its own card table (JetBrains' runs of Mellum2 Thinking, Gemma 4 E4B and Qwen3.5 9B in thinking mode).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/blob/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4/README.md",
+        "reported_label": "Mellum2.1 Thinking"
+      }
+    ]
+  },
+  {
+    "id": "translategemma-4b",
+    "name": "TranslateGemma 4B",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2026-01",
+    "released_source": "https://huggingface.co/google/translategemma-4b-it",
+    "open_weights": true,
+    "license": "gemma",
+    "license_source": "https://huggingface.co/google/translategemma-4b-it/blob/10042cb0e6e7fdce748996a71dc3dc432a4e0c89/README.md",
+    "params_b": 4.97,
+    "active_b": 4.97,
+    "params_note": "HF safetensors metadata 4,971,331,952 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 3.3,
+          "gb_estimated": true,
+          "cmd": "ollama run translategemma:4b",
+          "source": "https://ollama.com/library/translategemma/tags",
+          "note": "ollama tag translategemma:4b (digest c49d986b0764; arch gemma3, 4.3B parameters, Q4_K_M): 3.3GB as printed (rounded), 128K context window, Text, Image input; fetched 2026-10-10. Library: 'A new collection of open translation models built on Gemma 3, helping people communicate across 55 languages.'"
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/google/translategemma-4b-it",
+    "identity_note": "google/translategemma-4b-it @10042cb (created 2026-01-12, licence gemma). Google TranslateGemma 4B (Jan 2026), Gemma 3 4B fine-tuned for translation across 55 languages (text and image input; gated Gemma terms). Lab row from the CC BY technical report (Comet22 on WMT24++) next to the catalogued Gemma 3 4B baseline.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/pdf/2601.09012v2",
+        "reported_label": "TranslateGemma 4B"
+      },
+      {
+        "source": "https://ollama.com/library/translategemma/tags",
+        "reported_label": "translategemma:4b"
+      }
+    ]
+  },
+  {
+    "id": "translategemma-12b",
+    "name": "TranslateGemma 12B",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2026-01",
+    "released_source": "https://huggingface.co/google/translategemma-12b-it",
+    "open_weights": true,
+    "license": "gemma",
+    "license_source": "https://huggingface.co/google/translategemma-12b-it/blob/d1b225e1caa17f1ddc7e62065d8637d0923f34e2/README.md",
+    "params_b": 13.19,
+    "active_b": 13.19,
+    "params_note": "HF safetensors metadata 13,194,203,760 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 8.1,
+          "gb_estimated": true,
+          "cmd": "ollama run translategemma:12b",
+          "source": "https://ollama.com/library/translategemma/tags",
+          "note": "ollama tag translategemma:12b (digest c2f9a9ca1ec7; arch gemma3, 12.2B parameters, Q4_K_M): 8.1GB as printed (rounded), 128K context window, Text, Image input; fetched 2026-10-10. Library: 'A new collection of open translation models built on Gemma 3, helping people communicate across 55 languages.'"
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/google/translategemma-12b-it",
+    "identity_note": "google/translategemma-12b-it @d1b225e (created 2026-01-12, licence gemma). Google TranslateGemma 12B (Jan 2026), Gemma 3 12B fine-tuned for translation across 55 languages (text and image input; gated Gemma terms). Lab row from the CC BY technical report (Comet22 on WMT24++) next to the catalogued Gemma 3 12B baseline.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/pdf/2601.09012v2",
+        "reported_label": "TranslateGemma 12B"
+      },
+      {
+        "source": "https://ollama.com/library/translategemma/tags",
+        "reported_label": "translategemma:12b"
+      }
+    ]
+  },
+  {
+    "id": "translategemma-27b",
+    "name": "TranslateGemma 27B",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2026-01",
+    "released_source": "https://huggingface.co/google/translategemma-27b-it",
+    "open_weights": true,
+    "license": "gemma",
+    "license_source": "https://huggingface.co/google/translategemma-27b-it/blob/7d10f0b72f89a2d0f268cea30727d8b77c0d25c2/README.md",
+    "params_b": 28.84,
+    "active_b": 28.84,
+    "params_note": "HF safetensors metadata 28,842,036,848 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 17,
+          "gb_estimated": true,
+          "cmd": "ollama run translategemma:27b",
+          "source": "https://ollama.com/library/translategemma/tags",
+          "note": "ollama tag translategemma:27b (digest 21b597a243ec; arch gemma3, 27.4B parameters, Q4_K_M): 17GB as printed (rounded), 128K context window, Text, Image input; fetched 2026-10-10. Library: 'A new collection of open translation models built on Gemma 3, helping people communicate across 55 languages.'"
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/google/translategemma-27b-it",
+    "identity_note": "google/translategemma-27b-it @7d10f0b (created 2026-01-12, licence gemma). Google TranslateGemma 27B (Jan 2026), Gemma 3 27B fine-tuned for translation across 55 languages (text and image input; gated Gemma terms). Lab row from the CC BY technical report (Comet22 on WMT24++) next to the catalogued Gemma 3 27B baseline.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/pdf/2601.09012v2",
+        "reported_label": "TranslateGemma 27B"
+      },
+      {
+        "source": "https://ollama.com/library/translategemma/tags",
+        "reported_label": "translategemma:27b"
+      }
+    ]
+  },
+  {
+    "id": "qwen2-5-coder-0-5b",
+    "name": "Qwen2.5 Coder 0.5B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-11",
+    "released_source": "https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct/blob/ea3f2471cf1b1f0db85067f1ef93848e38e88c25/README.md",
+    "params_b": 0.49,
+    "active_b": 0.49,
+    "params_note": "HF safetensors metadata 494,032,768 parameters (Qwen/Qwen2.5-Coder-0.5B-Instruct @ea3f247).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 0.398,
+          "gb_estimated": true,
+          "cmd": "ollama run qwen2.5-coder:0.5b",
+          "source": "https://ollama.com/library/qwen2.5-coder/tags",
+          "note": "ollama tag qwen2.5-coder:0.5b (digest 4ff64a7f502a; arch qwen2, 494M parameters, Q4_K_M): 398MB as printed (rounded), 32K context window, Text input; fetched 2026-10-10. Alias qwen2.5-coder:0.5b-instruct."
+        },
+        {
+          "quant": "q4_k_m",
+          "gb": 0.49,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF/tree/ebb2015119c907b064c512bf053e945850b5875f",
+          "note": "qwen2.5-coder-0.5b-instruct-q4_k_m.gguf 491,400,064 bytes (HF API listing @ebb2015, fetched 2026-10-10). Qwen's own GGUF repo."
+        }
+      ]
+    },
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct/blob/ea3f2471cf1b1f0db85067f1ef93848e38e88c25/README.md",
+    "context_note": "Model card: 'Context Length: Full 32,768 tokens'. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "identity_note": "Qwen/Qwen2.5-Coder-0.5B-Instruct @ea3f247 (created 2024-11-06, licence apache-2.0). Smallest Qwen2.5-Coder instruct model. Lab rows from the Qwen2.5-Coder report (rule b) in runs with the catalogued 1.5B/7B/14B/32B and CodeQwen1.5 siblings; independent Aider code-editing row.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2409.12186v3",
+        "reported_label": "Qwen2.5-Coder-0.5B-Instruct"
+      },
+      {
+        "source": "https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml",
+        "reported_label": "Qwen2.5-Coder-0.5B-Instruct"
+      },
+      {
+        "source": "https://ollama.com/library/qwen2.5-coder/tags",
+        "reported_label": "qwen2.5-coder:0.5b"
+      }
+    ]
+  },
+  {
+    "id": "qwen2-5-coder-3b",
+    "name": "Qwen2.5 Coder 3B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-11",
+    "released_source": "https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct",
+    "open_weights": true,
+    "license": "qwen-research",
+    "license_source": "https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct/blob/488639f1ff808d1d3d0ba301aef8c11461451ec5/README.md",
+    "params_b": 3.09,
+    "active_b": 3.09,
+    "params_note": "HF safetensors metadata 3,085,938,688 parameters (Qwen/Qwen2.5-Coder-3B-Instruct @488639f).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 1.9,
+          "gb_estimated": true,
+          "cmd": "ollama run qwen2.5-coder:3b",
+          "source": "https://ollama.com/library/qwen2.5-coder/tags",
+          "note": "ollama tag qwen2.5-coder:3b (digest f72c60cabf62; arch qwen2, 3.09B parameters, Q4_K_M): 1.9GB as printed (rounded), 32K context window, Text input; fetched 2026-10-10. Alias qwen2.5-coder:3b-instruct."
+        },
+        {
+          "quant": "q4_k_m",
+          "gb": 2.1,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf Qwen/Qwen2.5-Coder-3B-Instruct-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct-GGUF/tree/f74adce6aa16316c625447af059dbebe4983757c",
+          "note": "qwen2.5-coder-3b-instruct-q4_k_m.gguf 2,104,932,800 bytes (HF API listing @f74adce, fetched 2026-10-10). Qwen's own GGUF repo."
+        }
+      ]
+    },
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct/blob/488639f1ff808d1d3d0ba301aef8c11461451ec5/README.md",
+    "context_note": "Model card: 'Context Length: Full 32,768 tokens'. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct",
+    "identity_note": "Qwen/Qwen2.5-Coder-3B-Instruct @488639f (created 2024-11-06, licence qwen-research). Qwen2.5-Coder 3B instruct (Qwen Research licence, unlike the Apache-2.0 sizes). Lab rows from the Qwen2.5-Coder report (rule b) with the catalogued siblings; independent Aider code-editing row.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2409.12186v3",
+        "reported_label": "Qwen2.5-Coder-3B-Instruct"
+      },
+      {
+        "source": "https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml",
+        "reported_label": "Qwen2.5-Coder-3B-Instruct"
+      },
+      {
+        "source": "https://ollama.com/library/qwen2.5-coder/tags",
+        "reported_label": "qwen2.5-coder:3b"
+      }
+    ]
+  },
+  {
+    "id": "qwen2-vl-2b",
+    "name": "Qwen2-VL 2B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-08",
+    "released_source": "https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct/blob/895c3a49bc3fa70a340399125c650a463535e71c/README.md",
+    "params_b": 2.21,
+    "active_b": 2.21,
+    "params_note": "HF safetensors metadata 2,208,985,600 parameters (Qwen/Qwen2-VL-2B-Instruct @895c3a4).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 1.7,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf ggml-org/Qwen2-VL-2B-Instruct-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/ggml-org/Qwen2-VL-2B-Instruct-GGUF/tree/bb307c036e8a1ed7b663bbd0c35b41c4c9294cfd",
+          "note": "ggml-org GGUF repo: Qwen2-VL-2B-Instruct-Q4_K_M.gguf 986,046,944 bytes plus mmproj-Qwen2-VL-2B-Instruct-Q8_0.gguf 709,883,360 bytes (vision projector, downloaded by llama-server -hf); @bb307c0, fetched 2026-10-10."
+        }
+      ]
+    },
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct/blob/895c3a49bc3fa70a340399125c650a463535e71c/config.json",
+    "context_note": "config.json max_position_embeddings 32768. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct",
+    "identity_note": "Qwen/Qwen2-VL-2B-Instruct @895c3a4 (created 2024-08-28, licence apache-2.0). Smallest Qwen2-VL instruct model (vision encoder 675M + 1.5B LLM per report Table 1). Lab rows from the Qwen2-VL report (rule b) pooled with the catalogued Qwen2-VL 7B/72B and Qwen2.5-VL runs of first-party-qwen-scores; independent Vectara HHEM row. No ollama library tag (ollama ships qwen2.5vl only).",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2409.12191v2",
+        "reported_label": "Qwen2-VL-2B"
+      },
+      {
+        "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+        "reported_label": "Qwen2-VL-2B-Instruct"
+      }
+    ]
+  },
+  {
+    "id": "qwen1-5-0-5b-chat",
+    "name": "Qwen1.5 0.5B Chat",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-01",
+    "released_source": "https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat",
+    "open_weights": true,
+    "license": "tongyi-qianwen-research",
+    "license_source": "https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat/blob/4d14e384a4b037942bb3f3016665157c8bcb70ea/README.md",
+    "params_b": 0.62,
+    "active_b": 0.62,
+    "params_note": "HF safetensors metadata 619,570,176 parameters (Qwen/Qwen1.5-0.5B-Chat @4d14e38).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 0.395,
+          "gb_estimated": true,
+          "cmd": "ollama run qwen:0.5b",
+          "source": "https://ollama.com/library/qwen/tags",
+          "note": "ollama tag qwen:0.5b (digest b5dc5e784f2a; arch qwen2, 620M parameters, Q4_0): 395MB as printed (rounded), 32K context window, Text input; fetched 2026-10-10. Same digest as qwen:0.5b-chat and qwen:0.5b-chat-v1.5-q4_0; the library's 'qwen' family is Qwen1.5 ('Qwen 1.5 is a series of large language models')."
+        },
+        {
+          "quant": "q4_k_m",
+          "gb": 0.41,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf Qwen/Qwen1.5-0.5B-Chat-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat-GGUF/tree/cfab082d2fef4a8736ef384dc764c2fb6887f387",
+          "note": "qwen1_5-0_5b-chat-q4_k_m.gguf 407,155,552 bytes (HF API listing @cfab082, fetched 2026-10-10). Qwen's own GGUF repo."
+        }
+      ]
+    },
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat/blob/4d14e384a4b037942bb3f3016665157c8bcb70ea/README.md",
+    "context_note": "Model card: 'Stable support of 32K context length for models of all sizes'; config max_position_embeddings 32768. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat",
+    "identity_note": "Qwen/Qwen1.5-0.5B-Chat @4d14e38 (created 2024-01-31, licence tongyi-qianwen-research). Qwen1.5 0.5B chat model, sibling of the catalogued Qwen1.5 4B/7B/14B/32B/72B/110B chat entries. Independent rows: LiveBench 2024-07-26, Open PT-LLM, EuroEval.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet",
+        "reported_label": "qwen1.5-0.5b-chat"
+      },
+      {
+        "source": "https://ollama.com/library/qwen/tags",
+        "reported_label": "qwen:0.5b"
+      }
+    ]
+  },
+  {
+    "id": "qwen1-5-1-8b-chat",
+    "name": "Qwen1.5 1.8B Chat",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-01",
+    "released_source": "https://huggingface.co/Qwen/Qwen1.5-1.8B-Chat",
+    "open_weights": true,
+    "license": "tongyi-qianwen-research",
+    "license_source": "https://huggingface.co/Qwen/Qwen1.5-1.8B-Chat/blob/e482ee3f73c375a627a16fdf66fd0c8279743ca6/README.md",
+    "params_b": 1.84,
+    "active_b": 1.84,
+    "params_note": "HF safetensors metadata 1,836,828,672 parameters (Qwen/Qwen1.5-1.8B-Chat @e482ee3).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 1.1,
+          "gb_estimated": true,
+          "cmd": "ollama run qwen:1.8b",
+          "source": "https://ollama.com/library/qwen/tags",
+          "note": "ollama tag qwen:1.8b (digest b6e8ec2e7126; arch qwen2, 1.84B parameters, Q4_0): 1.1GB as printed (rounded), 32K context window, Text input; fetched 2026-10-10. Same digest as qwen:1.8b-chat and qwen:1.8b-chat-v1.5-q4_0; the library's 'qwen' family is Qwen1.5 ('Qwen 1.5 is a series of large language models')."
+        },
+        {
+          "quant": "q4_k_m",
+          "gb": 1.22,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf Qwen/Qwen1.5-1.8B-Chat-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/Qwen/Qwen1.5-1.8B-Chat-GGUF/tree/c6414b00c3ed52df27201a5386a971869a72496a",
+          "note": "qwen1_5-1_8b-chat-q4_k_m.gguf 1,217,752,928 bytes (HF API listing @c6414b0, fetched 2026-10-10). Qwen's own GGUF repo."
+        }
+      ]
+    },
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/Qwen/Qwen1.5-1.8B-Chat/blob/e482ee3f73c375a627a16fdf66fd0c8279743ca6/README.md",
+    "context_note": "Model card: 'Stable support of 32K context length for models of all sizes'; config max_position_embeddings 32768. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/Qwen/Qwen1.5-1.8B-Chat",
+    "identity_note": "Qwen/Qwen1.5-1.8B-Chat @e482ee3 (created 2024-01-30, licence tongyi-qianwen-research). Qwen1.5 1.8B chat model, sibling of the catalogued Qwen1.5 4B/7B/14B/32B/72B/110B chat entries. Independent rows: LiveBench 2024-07-26, Open PT-LLM, EuroEval, AlpacaEval 2.0.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet",
+        "reported_label": "qwen1.5-1.8b-chat"
+      },
+      {
+        "source": "https://ollama.com/library/qwen/tags",
+        "reported_label": "qwen:1.8b"
+      }
+    ]
+  },
+  {
+    "id": "qwen1-5-moe-a2-7b-chat",
+    "name": "Qwen1.5 MoE A2.7B Chat",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-03",
+    "released_source": "https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B-Chat",
+    "open_weights": true,
+    "license": "tongyi-qianwen",
+    "license_source": "https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B-Chat/blob/ec052fda178e241c7c443468d2fa1db6618996be/README.md",
+    "params_b": 14.32,
+    "active_b": 2.7,
+    "params_note": "HF safetensors metadata 14,315,784,192 parameters; active 2.7B from the maker's 'A2.7B' naming.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 28.63,
+          "gb_estimated": true,
+          "cmd": "vllm serve Qwen/Qwen1.5-MoE-A2.7B-Chat",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B-Chat/tree/ec052fda178e241c7c443468d2fa1db6618996be",
+          "note": "BF16 safetensors (14.3B params x 2 bytes, estimated); the maker card documents vLLM/transformers use; no ollama library tag."
+        }
+      ]
+    },
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B-Chat/blob/ec052fda178e241c7c443468d2fa1db6618996be/config.json",
+    "context_note": "config.json max_position_embeddings 32768. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B-Chat",
+    "identity_note": "Qwen/Qwen1.5-MoE-A2.7B-Chat @ec052fd (created 2024-03-14, licence tongyi-qianwen). Qwen's first MoE chat model (14.3B total, 2.7B activated per the 'A2.7B' name and the Qwen1.5-MoE blog). Single independent run: Open PT-LLM (142 catalogue models).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+        "reported_label": "Qwen/Qwen1.5-MoE-A2.7B-Chat"
+      }
+    ]
+  },
+  {
+    "id": "qwen2-math-1-5b",
+    "name": "Qwen2-Math 1.5B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-08",
+    "released_source": "https://huggingface.co/Qwen/Qwen2-Math-1.5B-Instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Qwen/Qwen2-Math-1.5B-Instruct/blob/19bd485b6474f7263545b4d5a1c29d78bcbf3a4f/README.md",
+    "params_b": 1.54,
+    "active_b": 1.54,
+    "params_note": "HF safetensors metadata 1,543,714,304 parameters (Qwen/Qwen2-Math-1.5B-Instruct @19bd485).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 0.935,
+          "gb_estimated": true,
+          "cmd": "ollama run qwen2-math:1.5b",
+          "source": "https://ollama.com/library/qwen2-math/tags",
+          "note": "ollama tag qwen2-math:1.5b (digest a4fdda0c6cc5; arch qwen2, 1.54B parameters, Q4_0): 935MB as printed (rounded), 4K context window, Text input; fetched 2026-10-10. Alias qwen2-math:1.5b-instruct; library description: 'Qwen2 Math is a series of specialized math language models built upon the Qwen2 LLMs'."
+        }
+      ]
+    },
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/Qwen/Qwen2-Math-1.5B-Instruct/blob/19bd485b6474f7263545b4d5a1c29d78bcbf3a4f/config.json",
+    "context_note": "config.json max_position_embeddings 4096. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/Qwen/Qwen2-Math-1.5B-Instruct",
+    "identity_note": "Qwen/Qwen2-Math-1.5B-Instruct @19bd485 (created 2024-08-08, licence apache-2.0). Math-specialised Qwen2 instruct model (English). Lab rows from the Qwen2.5-Math report Table 3 (rule b; with the catalogued Qwen2-1.5B/7B/72B-Instruct columns).",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2409.12122v1",
+        "reported_label": "Qwen2-Math-1.5B-Instruct"
+      },
+      {
+        "source": "https://ollama.com/library/qwen2-math/tags",
+        "reported_label": "qwen2-math:1.5b"
+      }
+    ]
+  },
+  {
+    "id": "qwen2-math-7b",
+    "name": "Qwen2-Math 7B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-08",
+    "released_source": "https://huggingface.co/Qwen/Qwen2-Math-7B-Instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Qwen/Qwen2-Math-7B-Instruct/blob/26843d37d3b00ee4a14263b161f312c2738660f9/README.md",
+    "params_b": 7.62,
+    "active_b": 7.62,
+    "params_note": "HF safetensors metadata 7,615,616,512 parameters (Qwen/Qwen2-Math-7B-Instruct @26843d3).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 4.4,
+          "gb_estimated": true,
+          "cmd": "ollama run qwen2-math:7b",
+          "source": "https://ollama.com/library/qwen2-math/tags",
+          "note": "ollama tag qwen2-math:7b (digest 28cc3a337734; arch qwen2, 7.62B parameters, Q4_0): 4.4GB as printed (rounded), 4K context window, Text input; fetched 2026-10-10. Alias qwen2-math:7b-instruct; library description: 'Qwen2 Math is a series of specialized math language models built upon the Qwen2 LLMs'."
+        }
+      ]
+    },
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/Qwen/Qwen2-Math-7B-Instruct/blob/26843d37d3b00ee4a14263b161f312c2738660f9/config.json",
+    "context_note": "config.json max_position_embeddings 4096. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/Qwen/Qwen2-Math-7B-Instruct",
+    "identity_note": "Qwen/Qwen2-Math-7B-Instruct @26843d3 (created 2024-08-08, licence apache-2.0). Math-specialised Qwen2 instruct model (English). Lab rows from the Qwen2.5-Math report Table 3 (rule b; with the catalogued Qwen2-1.5B/7B/72B-Instruct columns).",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2409.12122v1",
+        "reported_label": "Qwen2-Math-7B-Instruct"
+      },
+      {
+        "source": "https://ollama.com/library/qwen2-math/tags",
+        "reported_label": "qwen2-math:7b"
+      }
+    ]
+  },
+  {
+    "id": "qwen2-math-72b",
+    "name": "Qwen2-Math 72B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-08",
+    "released_source": "https://huggingface.co/Qwen/Qwen2-Math-72B-Instruct",
+    "open_weights": true,
+    "license": "tongyi-qianwen",
+    "license_source": "https://huggingface.co/Qwen/Qwen2-Math-72B-Instruct/blob/5c267882f3377bcfc35882f8609098a894eeeaa8/README.md",
+    "params_b": 72.71,
+    "active_b": 72.71,
+    "params_note": "HF safetensors metadata 72,706,203,648 parameters (Qwen/Qwen2-Math-72B-Instruct @5c26788).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 41,
+          "gb_estimated": true,
+          "cmd": "ollama run qwen2-math:72b",
+          "source": "https://ollama.com/library/qwen2-math/tags",
+          "note": "ollama tag qwen2-math:72b (digest 9cf426342464; arch qwen2, 72.7B parameters, Q4_0): 41GB as printed (rounded), 4K context window, Text input; fetched 2026-10-10. Alias qwen2-math:72b-instruct; library description: 'Qwen2 Math is a series of specialized math language models built upon the Qwen2 LLMs'."
+        }
+      ]
+    },
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/Qwen/Qwen2-Math-72B-Instruct/blob/5c267882f3377bcfc35882f8609098a894eeeaa8/config.json",
+    "context_note": "config.json max_position_embeddings 4096. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/Qwen/Qwen2-Math-72B-Instruct",
+    "identity_note": "Qwen/Qwen2-Math-72B-Instruct @5c26788 (created 2024-08-08, licence tongyi-qianwen). Math-specialised Qwen2 instruct model (English). Lab rows from the Qwen2.5-Math report Table 3 (rule b; with the catalogued Qwen2-1.5B/7B/72B-Instruct columns); independent LiveBench 2024-07-26 row.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2409.12122v1",
+        "reported_label": "Qwen2-Math-72B-Instruct"
+      },
+      {
+        "source": "https://ollama.com/library/qwen2-math/tags",
+        "reported_label": "qwen2-math:72b"
+      }
+    ]
+  },
+  {
+    "id": "qwen2-5-math-1-5b",
+    "name": "Qwen2.5-Math 1.5B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-09",
+    "released_source": "https://huggingface.co/Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Qwen/Qwen2.5-Math-1.5B-Instruct/blob/aafeb0fc6f22cbf0eaeed126eff8be45b0360a35/README.md",
+    "params_b": 1.54,
+    "active_b": 1.54,
+    "params_note": "HF safetensors metadata 1,543,714,304 parameters (Qwen/Qwen2.5-Math-1.5B-Instruct @aafeb0f).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 0.99,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf bartowski/Qwen2.5-Math-1.5B-Instruct-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/bartowski/Qwen2.5-Math-1.5B-Instruct-GGUF/tree/951ed2aea09c43e331c612e74d83e4a23ca98e3b",
+          "note": "Qwen2.5-Math-1.5B-Instruct-Q4_K_M.gguf 986,048,832 bytes (HF API listing @951ed2a, fetched 2026-10-10). bartowski GGUF quantisation of the maker checkpoint (linked as quantized from the maker repo)."
+        }
+      ]
+    },
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/Qwen/Qwen2.5-Math-1.5B-Instruct/blob/aafeb0fc6f22cbf0eaeed126eff8be45b0360a35/config.json",
+    "context_note": "config.json max_position_embeddings 4096. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "identity_note": "Qwen/Qwen2.5-Math-1.5B-Instruct @aafeb0f (created 2024-09-16, licence apache-2.0). Math-specialised Qwen2.5 instruct model (CoT and tool-integrated reasoning). Lab rows from its own report Table 3 (rule b) with the catalogued Qwen2-Instruct columns. No ollama library tag.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2409.12122v1",
+        "reported_label": "Qwen2.5-Math-1.5B-Instruct"
+      }
+    ]
+  },
+  {
+    "id": "qwen2-5-math-7b",
+    "name": "Qwen2.5-Math 7B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-09",
+    "released_source": "https://huggingface.co/Qwen/Qwen2.5-Math-7B-Instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Qwen/Qwen2.5-Math-7B-Instruct/blob/ef9926d75ab1d54532f6a30dd5e760355eb9aa4d/README.md",
+    "params_b": 7.62,
+    "active_b": 7.62,
+    "params_note": "HF safetensors metadata 7,615,616,512 parameters (Qwen/Qwen2.5-Math-7B-Instruct @ef9926d).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 4.68,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf bartowski/Qwen2.5-Math-7B-Instruct-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/bartowski/Qwen2.5-Math-7B-Instruct-GGUF/tree/22e2c9c42470193b2b643636564765c84bcb06cb",
+          "note": "Qwen2.5-Math-7B-Instruct-Q4_K_M.gguf 4,683,074,272 bytes (HF API listing @22e2c9c, fetched 2026-10-10). bartowski GGUF quantisation of the maker checkpoint (linked as quantized from the maker repo)."
+        }
+      ]
+    },
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/Qwen/Qwen2.5-Math-7B-Instruct/blob/ef9926d75ab1d54532f6a30dd5e760355eb9aa4d/config.json",
+    "context_note": "config.json max_position_embeddings 4096. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/Qwen/Qwen2.5-Math-7B-Instruct",
+    "identity_note": "Qwen/Qwen2.5-Math-7B-Instruct @ef9926d (created 2024-09-19, licence apache-2.0). Math-specialised Qwen2.5 instruct model (CoT and tool-integrated reasoning). Lab rows from its own report Table 3 (rule b) with the catalogued Qwen2-Instruct columns. No ollama library tag.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2409.12122v1",
+        "reported_label": "Qwen2.5-Math-7B-Instruct"
+      }
+    ]
+  },
+  {
+    "id": "qwen2-5-math-72b",
+    "name": "Qwen2.5-Math 72B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-09",
+    "released_source": "https://huggingface.co/Qwen/Qwen2.5-Math-72B-Instruct",
+    "open_weights": true,
+    "license": "qwen",
+    "license_source": "https://huggingface.co/Qwen/Qwen2.5-Math-72B-Instruct/blob/8fcf92b1eac8eca48c3d49778ad3dd1b394c9a17/README.md",
+    "params_b": 72.71,
+    "active_b": 72.71,
+    "params_note": "HF safetensors metadata 72,706,203,648 parameters (Qwen/Qwen2.5-Math-72B-Instruct @8fcf92b).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 47.42,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf bartowski/Qwen2.5-Math-72B-Instruct-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/bartowski/Qwen2.5-Math-72B-Instruct-GGUF/tree/71122712ff373230143d65feb785ba782b6520d4",
+          "note": "Qwen2.5-Math-72B-Instruct-Q4_K_M.gguf 47,415,715,520 bytes (HF API listing @7112271, fetched 2026-10-10). bartowski GGUF quantisation of the maker checkpoint (linked as quantized from the maker repo)."
+        }
+      ]
+    },
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/Qwen/Qwen2.5-Math-72B-Instruct/blob/8fcf92b1eac8eca48c3d49778ad3dd1b394c9a17/config.json",
+    "context_note": "config.json max_position_embeddings 4096. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/Qwen/Qwen2.5-Math-72B-Instruct",
+    "identity_note": "Qwen/Qwen2.5-Math-72B-Instruct @8fcf92b (created 2024-09-16, licence qwen). Math-specialised Qwen2.5 instruct model (CoT and tool-integrated reasoning). Lab rows from its own report Table 3 (rule b) with the catalogued Qwen2-Instruct columns. No ollama library tag.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2409.12122v1",
+        "reported_label": "Qwen2.5-Math-72B-Instruct"
+      }
+    ]
+  },
+  {
+    "id": "openthinker-7b",
+    "name": "OpenThinker 7B",
+    "provider": "Open Thoughts",
+    "category": "llm",
+    "released": "2025-01",
+    "released_source": "https://huggingface.co/open-thoughts/OpenThinker-7B",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/README.md",
+    "params_b": 7.62,
+    "active_b": 7.62,
+    "params_note": "HF safetensors metadata 7,615,616,512 parameters (open-thoughts/OpenThinker-7B @4ba9dee).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 4.7,
+          "gb_estimated": true,
+          "cmd": "ollama run openthinker:7b",
+          "source": "https://ollama.com/library/openthinker/tags",
+          "note": "ollama tag openthinker:7b (digest 4e61774f7d1c; arch qwen2, 7.62B parameters, Q4_K_M): 4.7GB as printed (rounded), 32K context window, Text input; fetched 2026-10-10. Library readme: 'OpenThinker is a family of fine-tuned models from Qwen2.5 on the OpenThoughts-114k dataset' (v1, not OpenThinker2/3)."
+        }
+      ]
+    },
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/config.json",
+    "context_note": "config.json max_position_embeddings 32768 (Qwen2.5 base); trained with a 16k context per the card. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/open-thoughts/OpenThinker-7B",
+    "identity_note": "open-thoughts/OpenThinker-7B @4ba9dee (created 2025-01-28, licence apache-2.0). Open Thoughts' first-generation reasoning model fine-tuned from Qwen2.5-7B-Instruct on OpenThoughts-114k (Jan/Feb 2025). Rows from Open Thoughts' Evalchemy tables (own cards and the OpenThinker2 cards), with catalogued comparators (DeepSeek-R1-Distill-Qwen-7B, GPT-4o 0513, o1-mini).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/open-thoughts/OpenThinker-7B/blob/4ba9dee9b7e6e4796c6bccf6e15c2f5b60843e1e/README.md",
+        "reported_label": "OpenThinker-7B"
+      },
+      {
+        "source": "https://ollama.com/library/openthinker/tags",
+        "reported_label": "openthinker:7b"
+      }
+    ]
+  },
+  {
+    "id": "openthinker-32b",
+    "name": "OpenThinker 32B",
+    "provider": "Open Thoughts",
+    "category": "llm",
+    "released": "2025-02",
+    "released_source": "https://huggingface.co/open-thoughts/OpenThinker-32B",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md",
+    "params_b": 32.76,
+    "active_b": 32.76,
+    "params_note": "HF safetensors metadata 32,763,876,352 parameters (open-thoughts/OpenThinker-32B @840749c).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 20,
+          "gb_estimated": true,
+          "cmd": "ollama run openthinker:32b",
+          "source": "https://ollama.com/library/openthinker/tags",
+          "note": "ollama tag openthinker:32b (digest 04b5937dcb16; arch qwen2, 32.8B parameters, Q4_K_M): 20GB as printed (rounded), 32K context window, Text input; fetched 2026-10-10. Library readme: 'OpenThinker is a family of fine-tuned models from Qwen2.5 on the OpenThoughts-114k dataset' (v1, not OpenThinker2/3)."
+        }
+      ]
+    },
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/config.json",
+    "context_note": "config.json max_position_embeddings 32768 (Qwen2.5 base); trained with a 16k context per the card. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/open-thoughts/OpenThinker-32B",
+    "identity_note": "open-thoughts/OpenThinker-32B @840749c (created 2025-02-12, licence apache-2.0). Open Thoughts' first-generation reasoning model fine-tuned from Qwen2.5-32B-Instruct on OpenThoughts-114k (Jan/Feb 2025). Rows from Open Thoughts' Evalchemy tables (own cards and the OpenThinker2 cards), with catalogued comparators (DeepSeek-R1-Distill-Qwen-32B, s1.1-32B).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md",
+        "reported_label": "OpenThinker-32B"
+      },
+      {
+        "source": "https://ollama.com/library/openthinker/tags",
+        "reported_label": "openthinker:32b"
+      }
+    ]
+  },
+  {
+    "id": "openthinker2-7b",
+    "name": "OpenThinker2 7B",
+    "provider": "Open Thoughts",
+    "category": "llm",
+    "released": "2025-04",
+    "released_source": "https://huggingface.co/open-thoughts/OpenThinker2-7B",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md",
+    "params_b": 7.62,
+    "active_b": 7.62,
+    "params_note": "HF safetensors metadata 7,615,616,512 parameters (open-thoughts/OpenThinker2-7B @57922a0).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 4.68,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf bartowski/open-thoughts_OpenThinker2-7B-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/bartowski/open-thoughts_OpenThinker2-7B-GGUF/tree/894134150cf4e8a58cebd62c27b8998c764bff33",
+          "note": "open-thoughts_OpenThinker2-7B-Q4_K_M.gguf 4,683,074,432 bytes (HF API listing @8941341, fetched 2026-10-10). bartowski quantisation of the maker checkpoint."
+        }
+      ]
+    },
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/config.json",
+    "context_note": "config.json max_position_embeddings 32768. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/open-thoughts/OpenThinker2-7B",
+    "identity_note": "open-thoughts/OpenThinker2-7B @57922a0 (created 2025-04-03, licence apache-2.0). Open Thoughts' second-generation 7B reasoning model (OpenThoughts2-1M data), sibling of the catalogued OpenThinker2-32B and OpenThinker3-7B. Rows from its own Evalchemy table with OpenThinker-7B and DeepSeek-R1-Distill-Qwen-7B. No ollama library tag.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/open-thoughts/OpenThinker2-7B/blob/57922a00cca8bae9776277bc51c3aceedacc643c/README.md",
+        "reported_label": "OpenThinker2-7B"
+      }
+    ]
+  },
+  {
+    "id": "hermes-3-llama-3-1-70b",
+    "name": "Hermes 3 Llama 3.1 70B",
+    "provider": "Nous Research",
+    "category": "llm",
+    "released": "2024-07",
+    "released_source": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-70B",
+    "open_weights": true,
+    "license": "llama3",
+    "license_source": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-70B/blob/1fc86da0ce9cdb14cd775ad270bc7d1b4bf70ede/README.md",
+    "params_b": 70.55,
+    "active_b": 70.55,
+    "params_note": "HF safetensors metadata 70,553,706,496 parameters (NousResearch/Hermes-3-Llama-3.1-70B @1fc86da).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 40,
+          "gb_estimated": true,
+          "cmd": "ollama run hermes3:70b",
+          "source": "https://ollama.com/library/hermes3/tags",
+          "note": "ollama tag hermes3:70b (digest 60ef54cd913f; arch llama, 70.6B parameters, Q4_0): 40GB as printed (rounded), 128K context window, Text input; fetched 2026-10-10."
+        },
+        {
+          "quant": "q4_k_m",
+          "gb": 42.52,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf NousResearch/Hermes-3-Llama-3.1-70B-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-70B-GGUF/tree/2426f0fa281115286ea90967a480666fa502bade",
+          "note": "Hermes-3-Llama-3.1-70B.Q4_K_M.gguf 42,520,392,992 bytes (HF API listing @2426f0f, fetched 2026-10-10). Nous Research's own GGUF repo."
+        }
+      ]
+    },
+    "context_k": 131.072,
+    "context_source": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-70B/blob/1fc86da0ce9cdb14cd775ad270bc7d1b4bf70ede/config.json",
+    "context_note": "config.json max_position_embeddings 131072 (Llama 3.1 base). Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-70B",
+    "identity_note": "NousResearch/Hermes-3-Llama-3.1-70B @1fc86da (created 2024-07-29, licence llama3). Nous Research Hermes 3 70B (Aug 2024), full-parameter fine-tune of Llama 3.1 70B; sibling of the catalogued hermes-3-llama-3-1-8b. Lab rows from the Hermes 3 report Table 5 (rule b; 405B evaluated under FP8); independent LiveBench 2024-07-26 row.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/pdf/2408.11857v1",
+        "reported_label": "Hermes 3 70B"
+      },
+      {
+        "source": "https://ollama.com/library/hermes3/tags",
+        "reported_label": "hermes3:70b"
+      }
+    ]
+  },
+  {
+    "id": "hermes-3-llama-3-1-405b",
+    "name": "Hermes 3 Llama 3.1 405B",
+    "provider": "Nous Research",
+    "category": "llm",
+    "released": "2024-08",
+    "released_source": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-405B",
+    "open_weights": true,
+    "license": "llama3",
+    "license_source": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-405B/blob/b9fe8ede1f5075f171b2c0a235e20ae4aba33767/README.md",
+    "params_b": 405.85,
+    "active_b": 405.85,
+    "params_note": "HF safetensors metadata 405,853,388,800 parameters (NousResearch/Hermes-3-Llama-3.1-405B @b9fe8ed).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 229,
+          "gb_estimated": true,
+          "cmd": "ollama run hermes3:405b",
+          "source": "https://ollama.com/library/hermes3/tags",
+          "note": "ollama tag hermes3:405b (digest 7e675bc10887; arch llama, 406B parameters, Q4_0): 229GB as printed (rounded), 128K context window, Text input; fetched 2026-10-10."
+        }
+      ]
+    },
+    "context_k": 131.072,
+    "context_source": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-405B/blob/b9fe8ede1f5075f171b2c0a235e20ae4aba33767/config.json",
+    "context_note": "config.json max_position_embeddings 131072 (Llama 3.1 base). Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-405B",
+    "identity_note": "NousResearch/Hermes-3-Llama-3.1-405B @b9fe8ed (created 2024-08-13, licence llama3). Nous Research Hermes 3 405B (Aug 2024), full-parameter fine-tune of Llama 3.1 405B; sibling of the catalogued hermes-3-llama-3-1-8b. Lab rows from the Hermes 3 report Table 5 (rule b; 405B evaluated under FP8); independent Aider code-editing row (OpenRouter route).",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/pdf/2408.11857v1",
+        "reported_label": "Hermes 3 405B"
+      },
+      {
+        "source": "https://ollama.com/library/hermes3/tags",
+        "reported_label": "hermes3:405b"
+      }
+    ]
+  },
+  {
+    "id": "cogito-v1-preview-qwen-14b",
+    "name": "Cogito v1 Preview Qwen 14B",
+    "provider": "Deep Cogito",
+    "category": "llm",
+    "released": "2025-03",
+    "released_source": "https://huggingface.co/deepcogito/cogito-v1-preview-qwen-14B",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/deepcogito/cogito-v1-preview-qwen-14B/blob/b5a6c9ab8fc8e5bc786ae88f66af479096367566/README.md",
+    "params_b": 14.77,
+    "active_b": 14.77,
+    "params_note": "HF safetensors metadata 14,765,947,904 parameters (deepcogito/cogito-v1-preview-qwen-14B @b5a6c9a).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 9,
+          "gb_estimated": true,
+          "cmd": "ollama run cogito:14b",
+          "source": "https://ollama.com/library/cogito/tags",
+          "note": "ollama tag cogito:14b (digest d0cac86a2347; arch qwen2, 14.8B parameters, Q4_K_M): 9.0GB as printed (rounded), 128K context window, Text input; fetched 2026-10-10. Library: 'Cogito v1 Preview is a family of hybrid reasoning models by Deep Cogito'."
+        }
+      ]
+    },
+    "context_k": 131.072,
+    "context_source": "https://huggingface.co/deepcogito/cogito-v1-preview-qwen-14B/blob/b5a6c9ab8fc8e5bc786ae88f66af479096367566/README.md",
+    "context_note": "Card: 'Each model is trained in over 30 languages and supports a context length of 128k' (config max_position_embeddings 131072). Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/deepcogito/cogito-v1-preview-qwen-14B",
+    "identity_note": "deepcogito/cogito-v1-preview-qwen-14B @b5a6c9a (created 2025-03-31, licence apache-2.0). Deep Cogito v1 Preview 14B hybrid reasoning model (Mar 2025), sibling of the catalogued Llama 3B/8B previews. Independent rows: EuroEval English (both datasets).",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "deepcogito/cogito-v1-preview-qwen-14B"
+      },
+      {
+        "source": "https://ollama.com/library/cogito/tags",
+        "reported_label": "cogito:14b"
+      }
+    ]
+  },
+  {
+    "id": "cogito-v1-preview-qwen-32b",
+    "name": "Cogito v1 Preview Qwen 32B",
+    "provider": "Deep Cogito",
+    "category": "llm",
+    "released": "2025-03",
+    "released_source": "https://huggingface.co/deepcogito/cogito-v1-preview-qwen-32B",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/deepcogito/cogito-v1-preview-qwen-32B/blob/118e6e43c46a51667f544dae9cbe4027f59eb697/README.md",
+    "params_b": 32.76,
+    "active_b": 32.76,
+    "params_note": "HF safetensors metadata 32,759,790,592 parameters (deepcogito/cogito-v1-preview-qwen-32B @118e6e4).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 20,
+          "gb_estimated": true,
+          "cmd": "ollama run cogito:32b",
+          "source": "https://ollama.com/library/cogito/tags",
+          "note": "ollama tag cogito:32b (digest 0b4aab772f57; arch qwen2, 32.8B parameters, Q4_K_M): 20GB as printed (rounded), 128K context window, Text input; fetched 2026-10-10. Library: 'Cogito v1 Preview is a family of hybrid reasoning models by Deep Cogito'."
+        }
+      ]
+    },
+    "context_k": 131.072,
+    "context_source": "https://huggingface.co/deepcogito/cogito-v1-preview-qwen-32B/blob/118e6e43c46a51667f544dae9cbe4027f59eb697/README.md",
+    "context_note": "Card: 'Each model is trained in over 30 languages and supports a context length of 128k' (config max_position_embeddings 131072). Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/deepcogito/cogito-v1-preview-qwen-32B",
+    "identity_note": "deepcogito/cogito-v1-preview-qwen-32B @118e6e4 (created 2025-03-31, licence apache-2.0). Deep Cogito v1 Preview 32B hybrid reasoning model (Mar 2025), sibling of the catalogued Llama 3B/8B previews. Independent rows: EuroEval English (both datasets).",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "deepcogito/cogito-v1-preview-qwen-32B"
+      },
+      {
+        "source": "https://ollama.com/library/cogito/tags",
+        "reported_label": "cogito:32b"
+      }
+    ]
+  },
+  {
+    "id": "cogito-v1-preview-llama-70b",
+    "name": "Cogito v1 Preview Llama 70B",
+    "provider": "Deep Cogito",
+    "category": "llm",
+    "released": "2025-03",
+    "released_source": "https://huggingface.co/deepcogito/cogito-v1-preview-llama-70B",
+    "open_weights": true,
+    "license": "llama3.1",
+    "license_source": "https://huggingface.co/deepcogito/cogito-v1-preview-llama-70B/blob/1d624e2293b5b35f9cfd2349f8e02c7ebf32ca83/README.md",
+    "params_b": 70.55,
+    "active_b": 70.55,
+    "params_note": "HF safetensors metadata 70,553,706,496 parameters (deepcogito/cogito-v1-preview-llama-70B @1d624e2).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 43,
+          "gb_estimated": true,
+          "cmd": "ollama run cogito:70b",
+          "source": "https://ollama.com/library/cogito/tags",
+          "note": "ollama tag cogito:70b (digest 8f2632d0faa4; arch llama, 70.6B parameters, Q4_K_M): 43GB as printed (rounded), 128K context window, Text input; fetched 2026-10-10. Library: 'Cogito v1 Preview is a family of hybrid reasoning models by Deep Cogito'."
+        }
+      ]
+    },
+    "context_k": 131.072,
+    "context_source": "https://huggingface.co/deepcogito/cogito-v1-preview-llama-70B/blob/1d624e2293b5b35f9cfd2349f8e02c7ebf32ca83/README.md",
+    "context_note": "Card: 'Each model is trained in over 30 languages and supports a context length of 128k' (config max_position_embeddings 131072). Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/deepcogito/cogito-v1-preview-llama-70B",
+    "identity_note": "deepcogito/cogito-v1-preview-llama-70B @1d624e2 (created 2025-03-31, licence llama3.1). Deep Cogito v1 Preview 70B hybrid reasoning model (Mar 2025), sibling of the catalogued Llama 3B/8B previews. Independent rows: EuroEval English (both datasets).",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "deepcogito/cogito-v1-preview-llama-70B"
+      },
+      {
+        "source": "https://ollama.com/library/cogito/tags",
+        "reported_label": "cogito:70b"
+      }
+    ]
+  },
+  {
+    "id": "cogito-v2-preview-llama-70b",
+    "name": "Cogito v2 Preview Llama 70B",
+    "provider": "Deep Cogito",
+    "category": "llm",
+    "released": "2025-07",
+    "released_source": "https://huggingface.co/deepcogito/cogito-v2-preview-llama-70B",
+    "open_weights": true,
+    "license": "llama3.1",
+    "license_source": "https://huggingface.co/deepcogito/cogito-v2-preview-llama-70B/blob/1e1d12e8eaebd6084a8dcf45ecdeaa2f4b8879ce/README.md",
+    "params_b": 70.55,
+    "active_b": 70.55,
+    "params_note": "HF safetensors metadata 70,553,706,496 parameters (deepcogito/cogito-v2-preview-llama-70B @1e1d12e).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 141.1,
+          "gb_estimated": true,
+          "cmd": "vllm serve deepcogito/cogito-v2-preview-llama-70B --tensor-parallel-size 4",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/deepcogito/cogito-v2-preview-llama-70B/tree/1e1d12e8eaebd6084a8dcf45ecdeaa2f4b8879ce",
+          "note": "BF16 safetensors (70.55B params x 2 bytes, estimated); no ollama library tag."
+        }
+      ]
+    },
+    "context_k": 131.072,
+    "context_source": "https://huggingface.co/deepcogito/cogito-v2-preview-llama-70B/blob/1e1d12e8eaebd6084a8dcf45ecdeaa2f4b8879ce/README.md",
+    "context_note": "Card: 'This model is trained in over 30 languages and supports a context length of 128k'. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/deepcogito/cogito-v2-preview-llama-70B",
+    "identity_note": "deepcogito/cogito-v2-preview-llama-70B @1e1d12e (created 2025-07-27, licence llama3.1). Deep Cogito v2 Preview 70B (Jul 2025) hybrid reasoning model. Independent rows: EuroEval English (both datasets).",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "deepcogito/cogito-v2-preview-llama-70B"
+      }
+    ]
+  },
+  {
+    "id": "smollm2-360m",
+    "name": "SmolLM2 360M Instruct",
+    "provider": "Hugging Face",
+    "category": "llm",
+    "released": "2024-10",
+    "released_source": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md",
+    "params_b": 0.362,
+    "active_b": 0.362,
+    "params_note": "HF safetensors metadata 361,821,120 parameters (HuggingFaceTB/SmolLM2-360M-Instruct @a10cc15).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 0.726,
+          "gb_estimated": true,
+          "cmd": "ollama run smollm2:360m",
+          "source": "https://ollama.com/library/smollm2/tags",
+          "note": "ollama tag smollm2:360m (digest 297281b699fc; arch llama, 362M parameters, F16): 726MB as printed (rounded), 8K context window, Text input; fetched 2026-10-10. Library: 'SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters' (instruct builds, the same as the catalogued smollm2:1.7b)."
+        },
+        {
+          "quant": "q8_0",
+          "gb": 0.39,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf HuggingFaceTB/SmolLM2-360M-Instruct-GGUF:Q8_0",
+          "source": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct-GGUF/tree/593b5a2e04c8f3e4ee880263f93e0bd2901ad47f",
+          "note": "smollm2-360m-instruct-q8_0.gguf 386,404,992 bytes (HF API listing @593b5a2, fetched 2026-10-10). Hugging Face's own GGUF repo."
+        }
+      ]
+    },
+    "context_k": 8.192,
+    "context_source": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/config.json",
+    "context_note": "config.json max_position_embeddings 8192 (paper: context extended to 8k). Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct",
+    "identity_note": "HuggingFaceTB/SmolLM2-360M-Instruct @a10cc15 (created 2024-10-31, licence apache-2.0). Hugging Face SmolLM2 360M instruct model, sibling of the catalogued smollm2-1-7b. Lab rows from its own card's lighteval table with the catalogued Qwen2.5-0.5B-Instruct comparator; independent EuroEval row.",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "HuggingFaceTB/SmolLM2-360M-Instruct"
+      },
+      {
+        "source": "https://ollama.com/library/smollm2/tags",
+        "reported_label": "smollm2:360m"
+      }
+    ]
+  },
+  {
+    "id": "smollm2-135m",
+    "name": "SmolLM2 135M Instruct",
+    "provider": "Hugging Face",
+    "category": "llm",
+    "released": "2024-10",
+    "released_source": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/blob/12fd25f77366fa6b3b4b768ec3050bf629380bac/README.md",
+    "params_b": 0.135,
+    "active_b": 0.135,
+    "params_note": "HF safetensors metadata 134,515,008 parameters (HuggingFaceTB/SmolLM2-135M-Instruct @12fd25f).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 0.271,
+          "gb_estimated": true,
+          "cmd": "ollama run smollm2:135m",
+          "source": "https://ollama.com/library/smollm2/tags",
+          "note": "ollama tag smollm2:135m (digest 9077fe9d2ae1; arch llama, 135M parameters, F16): 271MB as printed (rounded), 8K context window, Text input; fetched 2026-10-10. Library: 'SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters' (instruct builds, the same as the catalogued smollm2:1.7b)."
+        }
+      ]
+    },
+    "context_k": 8.192,
+    "context_source": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/blob/12fd25f77366fa6b3b4b768ec3050bf629380bac/config.json",
+    "context_note": "config.json max_position_embeddings 8192 (paper: context extended to 8k). Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct",
+    "identity_note": "HuggingFaceTB/SmolLM2-135M-Instruct @12fd25f (created 2024-10-31, licence apache-2.0). Hugging Face SmolLM2 135M instruct model, sibling of the catalogued smollm2-1-7b. Independent EuroEval row only (its card compares only against the uncatalogued SmolLM-135M-Instruct).",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "HuggingFaceTB/SmolLM2-135M-Instruct"
+      },
+      {
+        "source": "https://ollama.com/library/smollm2/tags",
+        "reported_label": "smollm2:135m"
+      }
+    ]
+  },
+  {
+    "id": "lfm2-350m",
+    "name": "LFM2 350M",
+    "provider": "Liquid AI",
+    "category": "llm",
+    "released": "2025-07",
+    "released_source": "https://huggingface.co/LiquidAI/LFM2-350M",
+    "open_weights": true,
+    "license": "lfm1.0",
+    "license_source": "https://huggingface.co/LiquidAI/LFM2-350M/blob/f37d3f5c8c5484bc01dad379a595cf4c68c4e70e/README.md",
+    "params_b": 0.354,
+    "active_b": 0.354,
+    "params_note": "HF safetensors metadata 354,483,968 parameters (LiquidAI/LFM2-350M @f37d3f5).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 0.23,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/LiquidAI/LFM2-350M-GGUF/tree/8fdc9d526b7ed346b19257551b05816c7912ecc2",
+          "note": "LFM2-350M-Q4_K_M.gguf 229,309,376 bytes (HF API listing @8fdc9d5, fetched 2026-10-10). Liquid AI's own GGUF repo."
+        }
+      ]
+    },
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md",
+    "context_note": "LFM2 card model-property table: 'Context length 32,768 tokens' for LFM2-350M/700M/1.2B/2.6B (config allows 128000). Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/LiquidAI/LFM2-350M",
+    "identity_note": "LiquidAI/LFM2-350M @f37d3f5 (created 2025-07-10, licence lfm1.0). Liquid AI LFM2 hybrid (conv + attention) instruct model, July-Sept 2025; earlier generation than the catalogued LFM2.5 models. Lab rows from the LFM2-1.2B card's own LFM2 columns (3-model runs) plus independent EuroEval rows.",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "LiquidAI/LFM2-350M"
+      },
+      {
+        "source": "https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md",
+        "reported_label": "LFM2-350M"
+      }
+    ]
+  },
+  {
+    "id": "lfm2-700m",
+    "name": "LFM2 700M",
+    "provider": "Liquid AI",
+    "category": "llm",
+    "released": "2025-07",
+    "released_source": "https://huggingface.co/LiquidAI/LFM2-700M",
+    "open_weights": true,
+    "license": "lfm1.0",
+    "license_source": "https://huggingface.co/LiquidAI/LFM2-700M/blob/86f49fc9a3800c3a325b7320bde179c318062583/README.md",
+    "params_b": 0.742,
+    "active_b": 0.742,
+    "params_note": "HF safetensors metadata 742,489,344 parameters (LiquidAI/LFM2-700M @86f49fc).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 0.47,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/LiquidAI/LFM2-700M-GGUF/tree/fd39e80d7a5ac61494ffff577e61bbbfddbd0d02",
+          "note": "LFM2-700M-Q4_K_M.gguf 468,624,320 bytes (HF API listing @fd39e80, fetched 2026-10-10). Liquid AI's own GGUF repo."
+        }
+      ]
+    },
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md",
+    "context_note": "LFM2 card model-property table: 'Context length 32,768 tokens' for LFM2-350M/700M/1.2B/2.6B (config allows 128000). Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/LiquidAI/LFM2-700M",
+    "identity_note": "LiquidAI/LFM2-700M @86f49fc (created 2025-07-10, licence lfm1.0). Liquid AI LFM2 hybrid (conv + attention) instruct model, July-Sept 2025; earlier generation than the catalogued LFM2.5 models. Lab rows from the LFM2-1.2B card's own LFM2 columns (3-model runs) plus independent EuroEval rows.",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "LiquidAI/LFM2-700M"
+      },
+      {
+        "source": "https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md",
+        "reported_label": "LFM2-700M"
+      }
+    ]
+  },
+  {
+    "id": "lfm2-1-2b",
+    "name": "LFM2 1.2B",
+    "provider": "Liquid AI",
+    "category": "llm",
+    "released": "2025-07",
+    "released_source": "https://huggingface.co/LiquidAI/LFM2-1.2B",
+    "open_weights": true,
+    "license": "lfm1.0",
+    "license_source": "https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md",
+    "params_b": 1.17,
+    "active_b": 1.17,
+    "params_note": "HF safetensors metadata 1,170,340,608 parameters (LiquidAI/LFM2-1.2B @40f3da0).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 0.73,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf LiquidAI/LFM2-1.2B-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/LiquidAI/LFM2-1.2B-GGUF/tree/5399e76c648f4eb8c053feb1ab747277dea5bf8b",
+          "note": "LFM2-1.2B-Q4_K_M.gguf 730,893,248 bytes (HF API listing @5399e76, fetched 2026-10-10). Liquid AI's own GGUF repo."
+        }
+      ]
+    },
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md",
+    "context_note": "LFM2 card model-property table: 'Context length 32,768 tokens' for LFM2-350M/700M/1.2B/2.6B (config allows 128000). Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/LiquidAI/LFM2-1.2B",
+    "identity_note": "LiquidAI/LFM2-1.2B @40f3da0 (created 2025-07-10, licence lfm1.0). Liquid AI LFM2 hybrid (conv + attention) instruct model, July-Sept 2025; earlier generation than the catalogued LFM2.5 models. Lab rows from the LFM2-1.2B card's own LFM2 columns (3-model runs) plus independent EuroEval rows.",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "LiquidAI/LFM2-1.2B"
+      },
+      {
+        "source": "https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md",
+        "reported_label": "LFM2-1.2B"
+      }
+    ]
+  },
+  {
+    "id": "lfm2-2-6b",
+    "name": "LFM2 2.6B",
+    "provider": "Liquid AI",
+    "category": "llm",
+    "released": "2025-09",
+    "released_source": "https://huggingface.co/LiquidAI/LFM2-2.6B",
+    "open_weights": true,
+    "license": "lfm1.0",
+    "license_source": "https://huggingface.co/LiquidAI/LFM2-2.6B/blob/36ed799f7024ef169ba92ffe184821835e15cc66/README.md",
+    "params_b": 2.57,
+    "active_b": 2.57,
+    "params_note": "HF safetensors metadata 2,569,272,320 parameters (LiquidAI/LFM2-2.6B @36ed799).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 1.56,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf LiquidAI/LFM2-2.6B-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/LiquidAI/LFM2-2.6B-GGUF/tree/a759abdc5955d4ca97763e5cb7ff3940589ba898",
+          "note": "LFM2-2.6B-Q4_K_M.gguf 1,563,668,704 bytes (HF API listing @a759abd, fetched 2026-10-10). Liquid AI's own GGUF repo."
+        }
+      ]
+    },
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md",
+    "context_note": "LFM2 card model-property table: 'Context length 32,768 tokens' for LFM2-350M/700M/1.2B/2.6B (config allows 128000). Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/LiquidAI/LFM2-2.6B",
+    "identity_note": "LiquidAI/LFM2-2.6B @36ed799 (created 2025-09-22, licence lfm1.0). Liquid AI LFM2 hybrid (conv + attention) instruct model, July-Sept 2025; earlier generation than the catalogued LFM2.5 models. Independent EuroEval rows (its own card prints only the 2.6B column next to uncredited comparators).",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "LiquidAI/LFM2-2.6B"
+      }
+    ]
+  },
+  {
+    "id": "lfm2-5-1-2b-instruct",
+    "name": "LFM2.5 1.2B Instruct",
+    "provider": "Liquid AI",
+    "category": "llm",
+    "released": "2026-01",
+    "released_source": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct",
+    "open_weights": true,
+    "license": "lfm1.0",
+    "license_source": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/blob/0f604ada3f766f9f257460c4c9f0b5d6f69d431b/README.md",
+    "params_b": 1.17,
+    "active_b": 1.17,
+    "params_note": "HF safetensors metadata 1,170,340,608 parameters (LiquidAI/LFM2.5-1.2B-Instruct @0f604ad).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 0.73,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf LiquidAI/LFM2.5-1.2B-Instruct-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF/tree/8ed288026e23958ad9dfa92d53ed773a8eee7125",
+          "note": "LFM2.5-1.2B-Instruct-Q4_K_M.gguf 730,895,168 bytes (HF API listing @8ed2880, fetched 2026-10-10). Liquid AI's own GGUF repo."
+        }
+      ]
+    },
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/blob/0f604ada3f766f9f257460c4c9f0b5d6f69d431b/README.md",
+    "context_note": "Model card: 'Context length: 32,768 tokens'. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct",
+    "identity_note": "LiquidAI/LFM2.5-1.2B-Instruct @0f604ad (created 2026-01-06, licence lfm1.0). Liquid AI LFM2.5 1.2B instruction model (Jan 2026), sibling of the catalogued LFM2.5-1.2B-Thinking. Lab rows from the LFM2.5-1.2B-Thinking card table (existing runs with Qwen3-1.7B, Granite 4.0 1B, Gemma 3 1B, Llama 3.2 1B); independent EuroEval rows.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md",
+        "reported_label": "LFM2.5-1.2B-Instruct"
+      },
+      {
+        "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+        "reported_label": "LiquidAI/LFM2.5-1.2B-Instruct"
+      }
+    ]
   }
 ]
