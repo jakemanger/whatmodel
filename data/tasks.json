@@ -289,7 +289,9 @@
       "mmmu-pro-standard-lmms-exaone45",
       "mmmu-pro-vision-lmms-exaone45",
       "vmmu-mean",
-      "kaleidoscope-overall"
+      "kaleidoscope-overall",
+      "vhelm-mmmu-val-em",
+      "vhelm-mathvista-testmini-em"
     ]
   },
   {

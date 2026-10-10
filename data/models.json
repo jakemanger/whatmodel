@@ -42700,5 +42700,2087 @@
         "reported_label": "Palmyra X4 (palmyra-x4)"
       }
     ]
+  },
+  {
+    "id": "claude-haiku-5-5",
+    "name": "Claude Haiku 5.5",
+    "provider": "Anthropic",
+    "category": "llm",
+    "released": "2026-10",
+    "released_source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+      "provider": "Anthropic",
+      "price_in": 0.1,
+      "price_out": 0.5,
+      "price_source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+      "price_note": "Observed 2026-10-09 on Anthropic's own Claude Haiku 5.5 model page (Pricing table; same rows on platform.claude.com/docs/en/about-claude/pricing): USD per million tokens, standard uncached input/output 'for prompts up to 100,000 tokens'. Prompts over 100,000 tokens cost $0.50 input / $2.50 output; batch (50% off) and cache rates excluded."
+    },
+    "local": null,
+    "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+    "identity_note": "Official Anthropic model claude-haiku-5-5 (Claude API alias = pinned dateless snapshot; Bedrock anthropic.claude-haiku-5-5), 'Released October 7, 2026', status 'Active (latest)'. Announced alongside Sonnet 5.5 on 2026-09-28. Text and images -> text, adaptive thinking (default effort medium). Scores below are from its system card at max effort. Not the earlier claude-haiku-4-5.",
+    "identity_evidence": [
+      {
+        "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+        "reported_label": "claude-haiku-5-5"
+      },
+      {
+        "source": "https://www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf",
+        "reported_label": "Claude Haiku 5.5"
+      }
+    ],
+    "context_k": 1000,
+    "context_source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+    "context_note": "Anthropic model page: 'Context window: 1M tokens · Max output: 128K tokens' (300K output on the Batch API with a beta header). Observed 2026-10-09."
+  },
+  {
+    "id": "claude-mythos-preview",
+    "name": "Claude Mythos Preview (limited preview)",
+    "provider": "Anthropic",
+    "category": "llm",
+    "availability": "preview",
+    "availability_source": "https://www.anthropic.com/glasswing",
+    "released": "2026-04",
+    "released_source": "https://www.anthropic.com/glasswing",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "source": "https://www-cdn.anthropic.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5/Claude%20Mythos%20Preview%20System%20Card.pdf",
+    "identity_note": "Anthropic's gated research-preview model announced April 7, 2026 with Project Glasswing ('a general-purpose, unreleased frontier model'); access limited to launch partners and vetted organisations, and Anthropic says 'We do not plan to make Claude Mythos Preview generally available'. Distinct from Claude Mythos 5 / Mythos 5.1, which Anthropic documents as the same models as Claude Fable 5 / Fable 5.1 with more permissive safeguards (platform.claude.com mythos-5 and mythos-5-1 pages; Fable 5.1 system card p.1). Comparison identity only: no public run route is listed (the $25/$125 per MTok post-preview pricing on the Glasswing page is prospective). Precedent: gemini-4-argon (cyber-gated limited preview). Scores are Anthropic's own (system cards).",
+    "identity_evidence": [
+      {
+        "source": "https://www-cdn.anthropic.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5/Claude%20Mythos%20Preview%20System%20Card.pdf",
+        "reported_label": "Claude Mythos Preview"
+      },
+      {
+        "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=251",
+        "reported_label": "Mythos Preview"
+      }
+    ],
+    "context_k": 1000,
+    "context_source": "https://platform.claude.com/docs/en/about-claude/pricing",
+    "context_note": "Anthropic pricing page, 'Long context pricing': 'Claude 4.6 and later models (except Claude Haiku 5.5) and Claude Mythos Preview include the full 1M token context window at standard pricing'. Observed 2026-10-09."
+  },
+  {
+    "id": "qwen3-8-omni-flash",
+    "name": "Qwen3.8-Omni-Flash",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2026-09",
+    "released_source": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen-omni",
+      "provider": "Alibaba Cloud Model Studio",
+      "price_in": 0.15,
+      "price_out": 0.47,
+      "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "price_note": "Observed 2026-10-09 on Alibaba Cloud Model Studio 'Model pricing', Qwen-Omni table, Singapore region, model ID qwen3.8-omni-flash, deployment scope International: input USD 0.15, cache-hit input USD 0.016, output USD 0.47 per million tokens. Other regions (e.g. China (Beijing)) price differently; realtime API excluded."
+    },
+    "local": null,
+    "source": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+    "identity_note": "Alibaba Qwen API model qwen3.8-omni-flash (Model Studio 'Qwen-Omni' docs and pricing; no dated snapshot id listed), launched 2026-09-18 per the Qwen blog article metadata. Native omnimodal (text, image, audio, video in; text and speech out), 1M context, reasoning_effort low/medium/xhigh. API-only, no open weights at launch. Distinct from the open-weight Qwen3.8-Flash-Next and from Qwen3.5-Omni models. Not to be confused with qwen3.8-omni-flash-realtime (separate realtime API).",
+    "identity_evidence": [
+      {
+        "source": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+        "reported_label": "Qwen3.8-Omni-Flash"
+      },
+      {
+        "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "reported_label": "qwen3.8-omni-flash"
+      }
+    ],
+    "context_k": 1000,
+    "context_source": "https://www.alibabacloud.com/help/en/model-studio/qwen-omni",
+    "context_note": "Alibaba Cloud Model Studio Qwen-Omni page: 'The context length is 1M tokens' for qwen3.8-omni-flash. Observed 2026-10-09."
+  },
+  {
+    "id": "kat-coder-v2-5-dev",
+    "name": "KAT-Coder-V2.5-Dev (35B-A3B)",
+    "provider": "Kuaishou (Kwaipilot)",
+    "category": "llm",
+    "released": "2026-07",
+    "released_source": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md",
+    "params_b": 35,
+    "active_b": 3,
+    "params_note": "Card: 'an MOE model with a total parameter count of 35B and 3B activated parameters'; safetensors metadata 34,660,610,688 (language-model weights only).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 21.39,
+          "cmd": "llama-server -hf bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF/tree/d8f684f08d2950ea9d2db6a35ef7dada0707858b",
+          "note": "Download size from the Hugging Face API file listing at d8f684f (fetched 2026-10-09).",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 36.91,
+          "cmd": "llama-server -hf bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF:Q8_0",
+          "source": "https://huggingface.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF/tree/d8f684f08d2950ea9d2db6a35ef7dada0707858b",
+          "note": "Download size from the Hugging Face API file listing at d8f684f (fetched 2026-10-09).",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "context_k": 262.144,
+    "context_source": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md",
+    "context_note": "Official card deployment section: 'create an API endpoint with maximum context length 262,144 tokens' (vLLM --max-model-len 262144; config max_position_embeddings 262144). Observed 2026-10-09.",
+    "model_repo": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev",
+    "identity_note": "Kwaipilot (Kuaishou) open-weight release Kwaipilot/KAT-Coder-V2.5-Dev @7be56fe (created 2026-07-23, Apache-2.0): 'Following the release of KAT-Coder-V2.5 in July, we are pleased to release the open-weight version KAT-Coder-V2.5-Dev'; post-trained from Qwen3.6-35B-A3B (SFT + RL); text-only (vision weights not shipped). Distinct from the API models KAT-Coder-Pro V1 (catalogued kat-coder-pro-v1) and KAT-Coder-V2/V2.5.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md",
+        "reported_label": "KAT-Coder-V2.5-Dev"
+      }
+    ]
+  },
+  {
+    "id": "deepseek-v4-flash-vision-exp",
+    "name": "DeepSeek V4 Flash Vision (Exp)",
+    "provider": "DeepSeek",
+    "category": "llm",
+    "released": "2026-08",
+    "released_source": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md",
+    "params_b": 304.6,
+    "params_note": "Safetensors metadata total 304,646,824,126 parameters (repo @6821d6a, includes the vision encoder/aligner and MTP/DSpark weights); the card states no parameter count or active parameters, so active_b is left out.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ud-q4_k_xl",
+          "gb": 156.03,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF:UD-Q4_K_XL",
+          "source": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF/tree/87ce15810931a270f165e5e50439cd446f6b4ba5",
+          "note": "Hugging Face API file listing at 87ce158 (fetched 2026-10-09): UD-Q4_K_XL/ 5 shards 155.10 GB plus mmproj-BF16.gguf 0.93 GB."
+        },
+        {
+          "quant": "ud-q2_k_xl",
+          "gb": 97.76,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF:UD-Q2_K_XL",
+          "source": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF/tree/87ce15810931a270f165e5e50439cd446f6b4ba5",
+          "note": "Hugging Face API file listing at 87ce158 (fetched 2026-10-09): UD-Q2_K_XL/ shards 96.83 GB plus mmproj-BF16.gguf 0.93 GB."
+        },
+        {
+          "quant": "fp8",
+          "gb": 167.82,
+          "platform": "nvidia",
+          "cmd": "sglang serve --model-path deepseek-ai/DeepSeek-V4-Flash-Vision-Exp --tp 4 --speculative-algorithm DSPARK",
+          "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/tree/6821d6ad3681a4b137b066b76094fa82ebd0a380",
+          "note": "Official weights (config quantization_config fp8 e4m3 block 128) 167.82 GB of safetensors at 6821d6a; command from the card's 'How to Run with SGLang' section.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "identity_note": "DeepSeek's 'first experimental multimodal model in the DeepSeek-V4 family. It builds on the DeepSeek-V4-Flash architecture by incorporating visual modules and undergoing continued training' (repo @6821d6a, created 2026-08-31, MIT). A separate checkpoint from DeepSeek-V4-Flash-0731 (catalogued deepseek-v4-flash), which the card compares against. No first-party API id found (DeepSeek API docs not checked for a vision alias).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md",
+        "reported_label": "DeepSeek-V4-Flash-Vision-Exp"
+      }
+    ]
+  },
+  {
+    "id": "mimo-v2-6-flash",
+    "name": "MiMo-V2.6-Flash (309B-A15B)",
+    "provider": "Xiaomi",
+    "category": "llm",
+    "released": "2026-09",
+    "released_source": "https://mimo.mi.com/docs/en-US/updates/model",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md",
+    "params_b": 309,
+    "active_b": 15,
+    "params_note": "Model card (XiaomiMiMo/MiMo-V2.6-Flash-RL @5711b26) 'Model Summary': 'Sparse MoE (Mixture of Experts), 309B total / 15B activated parameters' (safetensors metadata total 310,756,322,688 incl. vision/audio encoders and MTP).",
+    "api": {
+      "url": "https://mimo.mi.com/docs/en-US/quick-start/summary/model",
+      "provider": "Xiaomi MiMo",
+      "price_in": 0.14,
+      "price_out": 0.28,
+      "price_source": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
+      "price_note": "Xiaomi MiMo API Pricing (pay-as-you-go), 'Overseas Pricing of the Model', Language Models, Real-time API row 'mimo-v2.6-flash': Input (Cache Hit) $0.0028, Input (Cache Miss) $0.14, Output $0.28 per M tokens (USD); cache-miss input and output used; batch API ($0.07/$0.14) and China RMB prices excluded. Observed 2026-10-09."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "q2_k",
+          "gb": 127.77,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf ggml-org/MiMo-V2.6-Flash-RL-GGUF:Q2_K",
+          "source": "https://huggingface.co/ggml-org/MiMo-V2.6-Flash-RL-GGUF/tree/a5d1269fdcf9c3346934411f700038e9cd9d5102",
+          "note": "gb is the download size from the Hugging Face API file listing of ggml-org/MiMo-V2.6-Flash-RL-GGUF@a5d1269 (fetched 2026-10-09): MiMo-V2.6-Flash-RL-Q2_K-00001/00002-of-00002.gguf 126.21 GB plus the vision/audio projector mmproj-MiMo-V2.6-Flash-RL-Q8_0.gguf 1.56 GB (same pairing as the catalogued MiMo-V2.6-Pro entry). The repo README: 'The Q2_K output keeps the expert down projections at MXFP4, and quantizes the gate/up projections to Q2_K.'"
+        },
+        {
+          "quant": "mxfp4",
+          "gb": 170.12,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf ggml-org/MiMo-V2.6-Flash-RL-GGUF:MXFP4",
+          "source": "https://huggingface.co/ggml-org/MiMo-V2.6-Flash-RL-GGUF/tree/a5d1269fdcf9c3346934411f700038e9cd9d5102",
+          "note": "gb is the download size from the Hugging Face API file listing of ggml-org/MiMo-V2.6-Flash-RL-GGUF@a5d1269 (fetched 2026-10-09): MiMo-V2.6-Flash-RL-MXFP4-00001/00002-of-00002.gguf 167.37 GB plus mmproj-MiMo-V2.6-Flash-RL-BF16.gguf 2.75 GB (pairing as in the catalogued MiMo-V2.6-Pro entry)."
+        }
+      ]
+    },
+    "context_k": 1000,
+    "context_source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md",
+    "context_note": "Official model card 'Model Summary': 'Context Length: 1M tokens'; Xiaomi API model page lists mimo-v2.6-flash 'Context Window: 1M', 'Maximum Output: 128K'. Observed 2026-10-09.",
+    "model_repo": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "identity_note": "Xiaomi's MiMo-V2.6 efficiency checkpoint: card 'MiMo-V2.6-Flash-RL is the efficiency-balanced checkpoint of the MiMo-V2.6 series' (XiaomiMiMo/MiMo-V2.6-Flash-RL @5711b26, created 2026-09-21, licence mit). Xiaomi model updates page: '2026-09-22 MiMo-V2.6 Series Release ... mimo-v2.6-flash: Full-modality, high-intelligence, low-cost reasoning model'. Arena entry 'mimo-v2.6-flash' (organization xiaomi, licence MIT). A later post-trained checkpoint XiaomiMiMo/MiMo-V2.6-Flash-MOPD (2026-09-27, 'the MOPD upgrade of the MiMo-V2.6-Flash-RL checkpoint', no evaluation table) exists; as for the catalogued mimo-v2-6-pro, the API/Arena model is taken as the launch checkpoint (-RL) because Xiaomi does not state that mimo-v2.6-flash was switched to MOPD (the updates page lists no such change, observed 2026-10-09). Not merged with the older MiMo-V2-Flash (mimo-v2-flash, 2025-12).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet",
+        "reported_label": "mimo-v2.6-flash"
+      },
+      {
+        "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md",
+        "reported_label": "MiMo-V2.6-Flash-RL / 'MiMo-V2.6 Flash' (evaluation table column)"
+      },
+      {
+        "source": "https://mimo.mi.com/docs/en-US/updates/model",
+        "reported_label": "mimo-v2.6-flash"
+      }
+    ]
+  },
+  {
+    "id": "mimo-v2-6-distill-qwen-9b",
+    "name": "MiMo-V2.6-Distill-Qwen-9B",
+    "provider": "Xiaomi",
+    "category": "llm",
+    "released": "2026-09",
+    "released_source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md",
+    "params_b": 9.41,
+    "active_b": 9.41,
+    "params_note": "Safetensors metadata of XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B @2367e86: 9,409,813,744 parameters (includes the inherited Qwen3.5-9B vision encoder). Card: 'a 9B agentic model'.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 6.76,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF/tree/4371da10c84fb26da3592d4cf312d24aa82b7b65",
+          "note": "Hugging Face API file listing of bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF@4371da1 (fetched 2026-10-09): Q4_K_M weights 5.84 GB plus the vision projector (mmproj ...-bf16/f16.gguf 0.92 GB, which llama-server -hf may also fetch)."
+        },
+        {
+          "quant": "q8_0",
+          "gb": 10.15,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf ggml-org/MiMo-V2.6-Distill-Qwen-9B-GGUF:Q8_0",
+          "source": "https://huggingface.co/ggml-org/MiMo-V2.6-Distill-Qwen-9B-GGUF/tree/81baddc39bc48924a88e87b8d31aceb03058e559",
+          "note": "Hugging Face API file listing of ggml-org/MiMo-V2.6-Distill-Qwen-9B-GGUF@81baddc (fetched 2026-10-09): Q8_0 weights 9.53 GB plus mmproj-MiMo-V2.6-Distill-Qwen-9B-Q8_0.gguf 0.62 GB."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "identity_note": "Xiaomi SFT checkpoint: card 'MiMo-V2.6-Distill-Qwen-9B is a 9B agentic model developed by Xiaomi MiMo through supervised fine-tuning of Qwen3.5-9B on MiMo-generated data' (repo created 2026-09-21, sha 2367e86, licence mit, base_model Qwen/Qwen3.5-9B). The SFT checkpoint is the released one; the report's 'RL' column in Table 6 is a set of unreleased domain-specific GRPO checkpoints and is not this model. Its card rows are alone in their run unless the owner accepts the Qwen3.5-9B comparator cells (held_for_owner).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md",
+        "reported_label": "MiMo-V2.6-Distill-Qwen-9B (SFT)"
+      }
+    ]
+  },
+  {
+    "id": "north-small-translate-1-0",
+    "name": "North Small Translate 1.0",
+    "provider": "Cohere",
+    "category": "llm",
+    "released": "2026-08",
+    "released_source": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "license_source": "https://huggingface.co/api/models/CohereLabs/North-Small-Translate-1.0",
+    "params_b": 218,
+    "active_b": 25,
+    "params_note": "Cohere docs model table: 'North Small Translate is a 218B total / 25B active parameter MoE model purpose-built for machine translation across more than 50 languages'; paper Table 1 '218B (25B)'; HF safetensors metadata 218,254,938,112.",
+    "api": {
+      "url": "https://docs.cohere.com/docs/models",
+      "provider": "Cohere"
+    },
+    "local": null,
+    "context_k": 16,
+    "context_source": "https://docs.cohere.com/docs/models",
+    "context_note": "Cohere API model table: north-small-translate-1-0, Live, context length 16k, maximum output 16k tokens. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0",
+    "identity_note": "Cohere's translation model (API id north-small-translate-1-0; weights CohereLabs/North-Small-Translate-1.0 @e5b9495, created 2026-08-14, licence cc-by-nc-4.0, gated). Subject of arXiv 2609.13916v1, whose Table 1 row 'North Small Translate' is this model (same 218B (25B) size). The repo is gated and only vLLM fp8/w4a16 variants exist from Cohere; no verified local command could be read (card behind the gate), so local is left null. Translation-specialised: its rows are on the three translation tests only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2609.13916v1",
+        "reported_label": "North Small Translate"
+      },
+      {
+        "source": "https://docs.cohere.com/docs/models",
+        "reported_label": "north-small-translate-1-0"
+      }
+    ]
+  },
+  {
+    "id": "command-a-translate-08-2025",
+    "name": "Command A Translate (08-2025)",
+    "provider": "Cohere",
+    "category": "llm",
+    "released": "2025-08",
+    "released_source": "https://huggingface.co/CohereLabs/command-a-translate-08-2025",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "license_source": "https://huggingface.co/api/models/CohereLabs/command-a-translate-08-2025",
+    "params_b": 111,
+    "active_b": 111,
+    "params_note": "Paper Table 1 '111B (111B)' (Cohere's own table); HF safetensors metadata 111,057,580,032.",
+    "api": {
+      "url": "https://docs.cohere.com/docs/models",
+      "provider": "Cohere"
+    },
+    "local": null,
+    "context_k": 8,
+    "context_source": "https://docs.cohere.com/docs/models",
+    "context_note": "Cohere API model table: command-a-translate-08-2025, Live, context length 8K, maximum output 8k tokens. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/CohereLabs/command-a-translate-08-2025",
+    "identity_note": "Cohere API id command-a-translate-08-2025 ('Command A Translate is Cohere's state of the art machine translation model ... 23 languages'); weights CohereLabs/command-a-translate-08-2025 @15bf49e (created 2025-08-27, cc-by-nc-4.0, gated). Paper 2609.13916v1 Table 1 row 'Command A Translate (2025)' (111B dense) is this checkpoint, Cohere's only Command A Translate. Only third-party GGUF conversions exist, so local is null.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2609.13916v1",
+        "reported_label": "Command A Translate (2025)"
+      },
+      {
+        "source": "https://docs.cohere.com/docs/models",
+        "reported_label": "command-a-translate-08-2025"
+      }
+    ]
+  },
+  {
+    "id": "north-micro-vision-instruct",
+    "name": "North Micro Vision Instruct (2.4B)",
+    "provider": "Cohere",
+    "category": "llm",
+    "released": "2026-08",
+    "released_source": "https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md",
+    "params_b": 2.4,
+    "active_b": 2.4,
+    "params_note": "Model card: 'Total parameters 2.4B' (2B language model + 400M vision encoder).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "mlx-4bit",
+          "gb": 2.17,
+          "platform": "mac",
+          "cmd": "pip install -U \"mlx-vlm @ git+https://github.com/Blaizzy/mlx-vlm.git\" && mlx_vlm.generate --model mlx-community/North-Micro-Vision-Instruct-4bit --image /path/to/image.jpg --prompt \"Describe this image.\" --max-tokens 512 --temperature 0.0",
+          "source": "https://huggingface.co/mlx-community/North-Micro-Vision-Instruct-4bit/blob/87466363e6c5f57adf91c18c3a62c3c74765f8df/README.md",
+          "note": "Commands copied from the mlx-community conversion card (MLX-VLM main branch required: 'Cohere Compass support is available on the current MLX-VLM main branch'). gb = model.safetensors 2,172,214,057 bytes at @8746636 (Hugging Face API file listing, fetched 2026-10-10). The maker card says public vLLM support is 'coming soon'; Transformers is the maker's documented route.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "context_k": 128,
+    "context_source": "https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md",
+    "context_note": "Model card: 'LM Backbone context window 128K tokens'; 'Multimodal training context 8K tokens' (longer multimodal contexts not validated). Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct",
+    "identity_note": "Cohere's 2.4B vision-language model, CohereLabs/North-Micro-Vision-Instruct @fa548d9 (created 2026-08-10, Apache-2.0). Its own column in the card's Benchmark Results table, whose comparator columns are already recorded under card2-coherelabs-north-micro-vision-instruct.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md",
+        "reported_label": "North-Micro-Vision-Instruct"
+      }
+    ]
+  },
+  {
+    "id": "ornith-1-0-35b",
+    "name": "Ornith 1.0 35B (35B-A3B)",
+    "provider": "DeepReinforce",
+    "category": "llm",
+    "released": "2026-06",
+    "released_source": "https://huggingface.co/ornith-ai/Ornith-1.0-35B",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/ornith-ai/Ornith-1.0-35B/blob/5df2ed3f675c7beaa490328cc70bb573b65fb660/README.md",
+    "params_b": 35,
+    "active_b": 3,
+    "params_note": "Maker: the Ornith 1.0 card lists a '35B-MoE' member ('post-trained on top of Gemma 4 and Qwen 3.5'); the Ornith 1.5 card labels it 'Ornith-1.0-35B-A3B'. ollama reports 34.7B parameters (arch qwen35moe).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 21,
+          "gb_estimated": true,
+          "cmd": "ollama run ornith:35b",
+          "source": "https://ollama.com/library/ornith/tags",
+          "note": "ollama tag ornith:35b (digest 5a470e0f652c): Q4_K_M, 21GB as printed (rounded), arch qwen35moe, 34.7B parameters, 256K context."
+        },
+        {
+          "quant": "q8_0",
+          "gb": 37,
+          "gb_estimated": true,
+          "cmd": "ollama run ornith:35b-q8_0",
+          "source": "https://ollama.com/library/ornith/tags",
+          "note": "ollama tag ornith:35b-q8_0 (digest 44788b2fdab4), 37GB as printed (rounded)."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/ornith-ai/Ornith-1.0-35B",
+    "identity_note": "DeepReinforce's Ornith 1.0 35B MoE agentic-coding model (ornith-ai/Ornith-1.0-35B @5df2ed3, created 2026-06-21, MIT; the card's links use the former org name deepreinforce-ai, which the Hub redirects to ornith-ai). Reasoning model (opens with <think>). Independent rows: Kwaipilot's in-house column 'Ornith-1.0-35B' in the KAT-Coder-V2.5-Dev card; lab rows: the 'Ornith-1.0-35B-A3B' sibling column of the Ornith 1.5 35B card. ollama 'ornith' (35b tags, updated 3 months ago) is this 1.0 release; 'ornith-1.5' is the later one.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md",
+        "reported_label": "Ornith-1.0-35B"
+      },
+      {
+        "source": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md",
+        "reported_label": "Ornith-1.0-35B-A3B"
+      },
+      {
+        "source": "https://ollama.com/library/ornith/tags",
+        "reported_label": "ornith:35b"
+      }
+    ]
+  },
+  {
+    "id": "ornith-1-5-35b-a3b",
+    "name": "Ornith 1.5 35B-A3B",
+    "provider": "DeepReinforce",
+    "category": "llm",
+    "released": "2026-08",
+    "released_source": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md",
+    "params_b": 35.95,
+    "active_b": 3,
+    "params_note": "HF safetensors metadata 35,951,822,704 parameters; active 3B from the maker's 'A3B' naming. ollama: 35.5B LM + 447M vision projector.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 23,
+          "gb_estimated": true,
+          "cmd": "ollama run ornith-1.5:35b",
+          "source": "https://ollama.com/library/ornith-1.5/tags",
+          "note": "ollama tag ornith-1.5:35b (digest 9f3b89b25219): model Q4_K_M 22GB + BF16 vision projector 903MB = 23GB as printed (rounded); 256K context; text and image input."
+        }
+      ]
+    },
+    "context_k": 262.144,
+    "context_source": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md",
+    "context_note": "Maker card serving recipe: '--max-model-len 262144' (native; 'original_max_position_embeddings': 262144), with an optional YaRN factor-4 override to 1,000,000 tokens; ollama lists 256K. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+    "identity_note": "DeepReinforce's Ornith 1.5 35B-A3B (ornith-ai/Ornith-1.5-35B-A3B @10fbf86, created 2026-08-18, MIT). Lab rows from its own card table, which also prints the same-lab Ornith 1.0 35B column (anchored to other makers through Kwaipilot's independent Ornith-1.0-35B run).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md",
+        "reported_label": "Ornith-1.5-35B-A3B"
+      },
+      {
+        "source": "https://ollama.com/library/ornith-1.5/tags",
+        "reported_label": "ornith-1.5:35b"
+      }
+    ]
+  },
+  {
+    "id": "laguna-s-2-1",
+    "name": "Laguna S 2.1 (118B-A8B)",
+    "provider": "Poolside",
+    "category": "llm",
+    "released": "2026-07",
+    "released_source": "https://huggingface.co/poolside/Laguna-S-2.1",
+    "open_weights": true,
+    "license": "openmdw-1.1",
+    "license_source": "https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md",
+    "params_b": 118,
+    "active_b": 8,
+    "params_note": "Card: 'a 118B total parameter Mixture-of-Experts model with 8B activated parameters per token' (safetensors metadata 117,561,977,600).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 96,
+          "gb_estimated": true,
+          "cmd": "ollama run laguna-s-2.1:q4_K_M",
+          "source": "https://ollama.com/library/laguna-s-2.1/tags",
+          "note": "ollama tag laguna-s-2.1:q4_K_M (= latest, digest 1adabf138c90), 96GB as printed (rounded), 256K context. The maker card documents 'ollama run laguna-s-2.1'."
+        },
+        {
+          "quant": "q8_0",
+          "gb": 128,
+          "gb_estimated": true,
+          "cmd": "ollama run laguna-s-2.1:q8_0",
+          "source": "https://ollama.com/library/laguna-s-2.1/tags",
+          "note": "ollama tag laguna-s-2.1:q8_0 (digest fcc6705b7cd8), 128GB as printed (rounded)."
+        },
+        {
+          "quant": "bf16",
+          "gb": 235.13,
+          "platform": "nvidia",
+          "cmd": "vllm serve --model poolside/Laguna-S-2.1 --tensor-parallel-size 4 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{\"enable_thinking\": true}'",
+          "source": "https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md",
+          "gb_source": "https://huggingface.co/poolside/Laguna-S-2.1/tree/0f573140834b11cfac0c2af97a101a7a69a13e22",
+          "note": "The card's vLLM command (line breaks joined). gb = 46 safetensors files at @0f57314 (HF API listing, fetched 2026-10-10); card: 'roughly 236GB of weights'.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/poolside/Laguna-S-2.1",
+    "identity_note": "Poolside's Laguna S 2.1 (poolside/Laguna-S-2.1 @0f57314, created 2026-07-13, licence openmdw-1.1), between Laguna XS 2.1 (33B-A3B) and Laguna M.1 (225B-A23B) per the card. Hosted access is via third-party gateways only (OpenRouter, Vercel), so api is null.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md",
+        "reported_label": "Laguna S 2.1"
+      },
+      {
+        "source": "https://ollama.com/library/laguna-s-2.1/tags",
+        "reported_label": "laguna-s-2.1"
+      }
+    ]
+  },
+  {
+    "id": "laguna-xs-2-1",
+    "name": "Laguna XS 2.1 (33B-A3B)",
+    "provider": "Poolside",
+    "category": "llm",
+    "released": "2026-06",
+    "released_source": "https://huggingface.co/poolside/Laguna-XS-2.1",
+    "open_weights": true,
+    "license": "openmdw-1.1",
+    "license_source": "https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md",
+    "params_b": 33,
+    "active_b": 3,
+    "params_note": "Card: '33B total parameters and 3B activated' (safetensors metadata 33,442,617,088).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 20,
+          "gb_estimated": true,
+          "cmd": "ollama run laguna-xs-2.1:q4_K_M",
+          "source": "https://ollama.com/library/laguna-xs-2.1/tags",
+          "note": "ollama tag laguna-xs-2.1:q4_K_M (= latest, digest 0175be1e57f4), 20GB as printed (rounded), 256K context. Card caveat: 'ollama run may currently return empty output on Apple Silicon (a Metal f16 overflow in the MoE down-projection; fix pending in ggml-org/llama.cpp#25389)'."
+        },
+        {
+          "quant": "q8_0",
+          "gb": 36,
+          "gb_estimated": true,
+          "cmd": "ollama run laguna-xs-2.1:q8_0",
+          "source": "https://ollama.com/library/laguna-xs-2.1/tags",
+          "note": "ollama tag laguna-xs-2.1:q8_0 (digest a249c0765c04), 36GB as printed (rounded); same Apple Silicon caveat."
+        },
+        {
+          "quant": "bf16",
+          "gb": 66.89,
+          "platform": "nvidia",
+          "cmd": "pip install 'vllm>=0.21.0' && vllm serve --model poolside/Laguna-XS-2.1 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{\"enable_thinking\": true}'",
+          "source": "https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md",
+          "gb_source": "https://huggingface.co/poolside/Laguna-XS-2.1/tree/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db",
+          "note": "The card's Local deployment > vLLM commands (line breaks joined; card: support 'available in vLLM 0.21.0 and later', and use a build with vllm-project/vllm#47311 for the poolside_v1 tool parser). gb = 14 safetensors files at @c5f3626 (HF API listing, fetched 2026-10-10).",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/poolside/Laguna-XS-2.1",
+    "identity_note": "Poolside's Laguna XS 2.1 (poolside/Laguna-XS-2.1 @c5f3626, created 2026-06-20, licence openmdw-1.1); successor of the catalogued Laguna XS.2 (apache-2.0), which its card prints as a bold same-lab row.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md",
+        "reported_label": "Laguna XS 2.1"
+      },
+      {
+        "source": "https://ollama.com/library/laguna-xs-2.1/tags",
+        "reported_label": "laguna-xs-2.1"
+      }
+    ]
+  },
+  {
+    "id": "longcat-flash-chat",
+    "name": "LongCat-Flash-Chat (560B-A27B)",
+    "provider": "Meituan",
+    "category": "llm",
+    "released": "2025-08",
+    "released_source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md",
+    "params_b": 560,
+    "active_b": 27,
+    "params_note": "Card: '560 billion total parameters ... activates 18.6B∼31.3B parameters (averaging∼27B) based on contextual demands'; safetensors metadata 561,862,880,256.",
+    "api": null,
+    "local": null,
+    "context_k": 128,
+    "context_source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md",
+    "context_note": "LongCat-Flash card: mid-training extended 'the context length to 128k'. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/meituan-longcat/LongCat-Flash-Chat",
+    "identity_note": "Meituan LongCat team, meituan-longcat/LongCat-Flash-Chat @f0b8e8d (created 2025-08-29, MIT). Comparison-only for now: weights are public (about 1.12 TB BF16, 75 safetensors files) but the card points to an external SGLang/vLLM deployment guide rather than giving a command, so no run option is recorded. Its own columns sit in the card runs that already hold six catalogued comparators. Arena entry 'longcat-flash-chat' (MIT). Non-thinking chat model. Not LongCat 2.0 or the 2602-exp chat preview (separate entries).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md",
+        "reported_label": "LongCat-Flash-Chat"
+      },
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet",
+        "reported_label": "longcat-flash-chat"
+      }
+    ]
+  },
+  {
+    "id": "longcat-flash-thinking",
+    "name": "LongCat-Flash-Thinking (560B-A27B)",
+    "provider": "Meituan",
+    "category": "llm",
+    "released": "2025-09",
+    "released_source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md",
+    "params_b": 560,
+    "active_b": 27,
+    "params_note": "Card: '560 billion total parameters ... activates 18.6B∼31.3B parameters (averaging∼27B) based on contextual demands'; safetensors metadata 561,862,880,256.",
+    "api": null,
+    "local": null,
+    "context_k": 128,
+    "context_source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Chat/blob/f0b8e8d7380330f450ca1fde4ec56823a514584c/README.md",
+    "context_note": "LongCat-Flash card: mid-training extended 'the context length to 128k'. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking",
+    "identity_note": "Meituan LongCat team, meituan-longcat/LongCat-Flash-Thinking @7c9aad1 (created 2025-09-21, MIT). Comparison-only for now: weights are public (about 1.12 TB BF16, 75 safetensors files) but the card points to an external SGLang/vLLM deployment guide rather than giving a command, so no run option is recorded. Its own columns sit in the card runs that already hold six catalogued comparators. Reasoning model (arXiv 2509.18883). Not LongCat 2.0 or the 2602-exp chat preview (separate entries).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md",
+        "reported_label": "LongCat-Flash-Thinking"
+      }
+    ]
+  },
+  {
+    "id": "magistral-medium-2509",
+    "name": "Magistral Medium 1.2 (2509)",
+    "provider": "Mistral",
+    "category": "llm",
+    "released": "2025-09",
+    "released_source": "https://docs.mistral.ai/models/model-cards/magistral-medium-1-2-25-09",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only. Mistral docs: 'September 18, 2025 ... Deprecated ... v 25.09 ... magistral-medium-2509 ... Context 128k ... This model is deprecated. Use Mistral Medium 3.5 for new integrations. Deprecation date 5/22/2026'. API kept null (retired or deprecated in favour of Mistral Medium 3.5). Rows: Mistral's own Magistral-Small-2509 card table, row 'Magistral Medium 1.2'.",
+    "identity_sources": [
+      "https://docs.mistral.ai/models/model-cards/magistral-medium-1-2-25-09"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md",
+        "reported_label": "Magistral Medium 1.2"
+      },
+      {
+        "source": "https://docs.mistral.ai/models/model-cards/magistral-medium-1-2-25-09",
+        "reported_label": "magistral-medium-2509"
+      }
+    ]
+  },
+  {
+    "id": "magistral-medium-2507",
+    "name": "Magistral Medium 1.1 (2507)",
+    "provider": "Mistral",
+    "category": "llm",
+    "released": "2025-07",
+    "released_source": "https://docs.mistral.ai/models/model-cards/magistral-medium-1-1-25-07",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only. Mistral docs: 'July 24, 2025 Retired ... v 25.07 ... magistral-medium-2507 ... Context 40k ... Retirement date 11/30/2025'. API kept null (retired or deprecated in favour of Mistral Medium 3.5). Rows: Mistral's own Magistral-Small-2509 card table, row 'Magistral Medium 1.1'.",
+    "identity_sources": [
+      "https://docs.mistral.ai/models/model-cards/magistral-medium-1-1-25-07"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md",
+        "reported_label": "Magistral Medium 1.1"
+      },
+      {
+        "source": "https://docs.mistral.ai/models/model-cards/magistral-medium-1-1-25-07",
+        "reported_label": "magistral-medium-2507"
+      }
+    ]
+  },
+  {
+    "id": "magistral-small-2507",
+    "name": "Magistral Small 1.1 (2507)",
+    "provider": "Mistral",
+    "category": "llm",
+    "released": "2025-07",
+    "released_source": "https://docs.mistral.ai/models/model-cards/magistral-small-1-1-25-07",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/mistralai/Magistral-Small-2507/blob/b3583a426ca23186681c4297926dfe9219be6161/README.md",
+    "params_b": 23.57,
+    "active_b": 23.57,
+    "params_note": "HF safetensors metadata 23,572,403,200 (BF16).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 47.14,
+          "platform": "nvidia",
+          "cmd": "vllm serve mistralai/Magistral-Small-2507 --reasoning-parser mistral --tokenizer_mode mistral --config_format mistral --load_format mistral --tool-call-parser mistral --enable-auto-tool-choice --tensor-parallel-size 2",
+          "source": "https://huggingface.co/mistralai/Magistral-Small-2507/blob/b3583a426ca23186681c4297926dfe9219be6161/README.md",
+          "gb_source": "https://huggingface.co/mistralai/Magistral-Small-2507/tree/b3583a426ca23186681c4297926dfe9219be6161",
+          "note": "Command copied from the model card ('Serve model as follows'). gb = consolidated.safetensors 47,144,846,024 bytes, the file --load_format mistral reads (the repo also holds a duplicate 10-shard copy). HF API listing fetched 2026-10-10.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/mistralai/Magistral-Small-2507",
+    "identity_note": "Mistral docs: 'Magistral Small 1.1 ... July 24, 2025 Retired Apache 2.0 v 25.07 ... magistral-small-2507 ... Retirement date 11/30/2025' (API retired; weights remain). Weights mistralai/Magistral-Small-2507 @b3583a4 (created 2025-07-18, apache-2.0). Distinct from catalogued magistral-small-2506 (1.0) and magistral-small-2509 (1.2).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md",
+        "reported_label": "Magistral Small 1.1"
+      },
+      {
+        "source": "https://docs.mistral.ai/models/model-cards/magistral-small-1-1-25-07",
+        "reported_label": "magistral-small-2507"
+      }
+    ]
+  },
+  {
+    "id": "minicpm5-2b",
+    "name": "MiniCPM5 2B",
+    "provider": "OpenBMB",
+    "category": "llm",
+    "released": "2026-09",
+    "released_source": "https://huggingface.co/openbmb/MiniCPM5-2B",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md",
+    "params_b": 2.52,
+    "active_b": 2.52,
+    "params_note": "HF safetensors metadata 2,516,756,480 parameters.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 1.56,
+          "cmd": "llama-server -hf openbmb/MiniCPM5-2B-GGUF:Q4_K_M --jinja",
+          "source": "https://huggingface.co/openbmb/MiniCPM5-2B-GGUF/tree/2079a22f3beaa4e306449978533478fe0522f4b3",
+          "note": "Maker GGUF repo (linked from the card); MiniCPM5-2B-Q4_K_M.gguf 1,561,318,368 bytes at @2079a22 (HF API listing, fetched 2026-10-10). The card's llama.cpp example uses '--jinja'.",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 2.68,
+          "cmd": "llama-server -hf openbmb/MiniCPM5-2B-GGUF:Q8_0 --jinja",
+          "source": "https://huggingface.co/openbmb/MiniCPM5-2B-GGUF/tree/2079a22f3beaa4e306449978533478fe0522f4b3",
+          "note": "MiniCPM5-2B-Q8_0.gguf 2,679,710,688 bytes at @2079a22.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "context_k": 131.072,
+    "context_source": "https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md",
+    "context_note": "Model card: 'Context Length: 131,072'. Observed 2026-10-10.",
+    "model_repo": "https://huggingface.co/openbmb/MiniCPM5-2B",
+    "identity_note": "OpenBMB's MiniCPM5-2B (openbmb/MiniCPM5-2B @f974000, created 2026-09-06, apache-2.0), the second model of the MiniCPM5 series (MiniCPM5-1B came first). Deep-thinking model (SFT + RL + on-policy distillation).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md",
+        "reported_label": "MiniCPM5-2B"
+      }
+    ]
+  },
+  {
+    "id": "lfm2-5-2-6b",
+    "name": "LFM2.5 2.6B",
+    "provider": "Liquid AI",
+    "category": "llm",
+    "released": "2026-07",
+    "released_source": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
+    "open_weights": true,
+    "license": "lfm1.0",
+    "license_source": "https://huggingface.co/LiquidAI/LFM2.5-2.6B/blob/654f9463ce32b05d0429d76fe1f580b27d4c1ac0/README.md",
+    "params_b": 2.7,
+    "active_b": 2.7,
+    "params_note": "HF safetensors metadata 2,697,198,592 parameters (card names it 2.6B).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 1.67,
+          "cmd": "llama-server -hf LiquidAI/LFM2.5-2.6B-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF/tree/e7caca5d835a3901a8e0d63e94009429bafafdfc",
+          "note": "Maker GGUF repo linked from the card; LFM2.5-2.6B-Q4_K_M.gguf 1,674,455,040 bytes at @e7caca5 (HF API listing, fetched 2026-10-10).",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 2.87,
+          "cmd": "llama-server -hf LiquidAI/LFM2.5-2.6B-GGUF:Q8_0",
+          "source": "https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF/tree/e7caca5d835a3901a8e0d63e94009429bafafdfc",
+          "note": "LFM2.5-2.6B-Q8_0.gguf 2,874,779,648 bytes at @e7caca5.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
+    "identity_note": "Liquid AI's LFM2.5-2.6B (LiquidAI/LFM2.5-2.6B @654f946, created 2026-07-28, LFM Open License v1.0), post-trained for agentic workloads. Scored through OpenBMB's internally reproduced 'LFM2.5-2.6B' column in the MiniCPM5-2B card (independent). Its own card's comparison table is held for the owner (no statement that Liquid ran the comparators).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md",
+        "reported_label": "LFM2.5-2.6B"
+      },
+      {
+        "source": "https://huggingface.co/LiquidAI/LFM2.5-2.6B/blob/654f9463ce32b05d0429d76fe1f580b27d4c1ac0/README.md",
+        "reported_label": "LFM2.5-2.6B"
+      }
+    ]
+  },
+  {
+    "id": "qwen2-5-vl-7b",
+    "name": "Qwen2.5-VL 7B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2025-01",
+    "released_source": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/blob/cc594898137f460bfe9f0759e9844b3ce807cfb5/README.md",
+    "params_b": 8.29,
+    "active_b": 8.29,
+    "params_note": "HF safetensors metadata (dense).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 6,
+          "gb_estimated": true,
+          "cmd": "ollama run qwen2.5vl:7b-q4_K_M",
+          "source": "https://ollama.com/library/qwen2.5vl/tags",
+          "note": "ollama tag qwen2.5vl:7b-q4_K_M (digest 5ced39dfa4ba), 6.0GB as printed (rounded), 125K context, text and image input."
+        },
+        {
+          "quant": "q8_0",
+          "gb": 9.4,
+          "gb_estimated": true,
+          "cmd": "ollama run qwen2.5vl:7b-q8_0",
+          "source": "https://ollama.com/library/qwen2.5vl/tags",
+          "note": "ollama tag qwen2.5vl:7b-q8_0 (digest 434c6f75b469), 9.4GB as printed (rounded), 125K context, text and image input."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct",
+    "identity_note": "Qwen's Qwen2.5-VL 7B Instruct (Qwen/Qwen2.5-VL-7B-Instruct @cc59489, created 2025-01-26, licence apache-2.0). The Qwen2.5-VL technical report (arXiv 2502.13923v1) evaluates the released Instruct models; its 'Qwen2.5-VL 7B' columns are this checkpoint. ollama qwen2.5vl:7b tags package the same model. Smaller siblings of the catalogued qwen2-5-vl-32b / qwen2-5-vl-72b.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2502.13923v1",
+        "reported_label": "Qwen2.5-VL 7B"
+      },
+      {
+        "source": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct",
+        "reported_label": "Qwen/Qwen2.5-VL-7B-Instruct"
+      }
+    ]
+  },
+  {
+    "id": "qwen2-5-vl-3b",
+    "name": "Qwen2.5-VL 3B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2025-01",
+    "released_source": "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct",
+    "open_weights": true,
+    "license": "qwen-research",
+    "license_source": "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct/blob/66285546d2b821cf421d4f5eb2576359d3770cd3/README.md",
+    "params_b": 3.75,
+    "active_b": 3.75,
+    "params_note": "HF safetensors metadata (dense).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 3.2,
+          "gb_estimated": true,
+          "cmd": "ollama run qwen2.5vl:3b-q4_K_M",
+          "source": "https://ollama.com/library/qwen2.5vl/tags",
+          "note": "ollama tag qwen2.5vl:3b-q4_K_M (digest fb90415cde1e), 3.2GB as printed (rounded), 125K context, text and image input."
+        },
+        {
+          "quant": "q8_0",
+          "gb": 4.6,
+          "gb_estimated": true,
+          "cmd": "ollama run qwen2.5vl:3b-q8_0",
+          "source": "https://ollama.com/library/qwen2.5vl/tags",
+          "note": "ollama tag qwen2.5vl:3b-q8_0 (digest 21858d9f5230), 4.6GB as printed (rounded), 125K context, text and image input."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct",
+    "identity_note": "Qwen's Qwen2.5-VL 3B Instruct (Qwen/Qwen2.5-VL-3B-Instruct @6628554, created 2025-01-26, licence qwen-research). The Qwen2.5-VL technical report (arXiv 2502.13923v1) evaluates the released Instruct models; its 'Qwen2.5-VL 3B' columns are this checkpoint. ollama qwen2.5vl:3b tags package the same model. Smaller siblings of the catalogued qwen2-5-vl-32b / qwen2-5-vl-72b.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2502.13923v1",
+        "reported_label": "Qwen2.5-VL 3B"
+      },
+      {
+        "source": "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct",
+        "reported_label": "Qwen/Qwen2.5-VL-3B-Instruct"
+      }
+    ]
+  },
+  {
+    "id": "solar-open-2",
+    "name": "Solar Open 2 (250B-A15B)",
+    "provider": "Upstage",
+    "category": "llm",
+    "released": "2026-07",
+    "released_source": "https://huggingface.co/upstage/Solar-Open2-250B/commits/main",
+    "open_weights": true,
+    "license": "upstage-solar-license",
+    "license_source": "https://huggingface.co/upstage/Solar-Open2-250B/blob/9190fbe63a2ad8e17fc766ccceb36de7c66f004b/LICENSE",
+    "params_b": 250.29,
+    "active_b": 15,
+    "params_note": "Model card (upstage/Solar-Open2-250B @9190fbe): 'Total Parameters | 250B (250,287,794,944)', 'Active Parameters | 15B (per token)'; report Table 1 '250B' / '15B'.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 500.58,
+          "cmd": "vllm serve upstage/Solar-Open2-250B --served-model-name solar-open2-250b --tensor-parallel-size 8 --enable-expert-parallel --moe-backend triton --default-chat-template-kwargs '{\"think_render_option\":\"preserved\"}' --reasoning-parser solar_open2 --tool-call-parser solar_open2 --enable-auto-tool-choice --logits-processors vllm.v1.sample.logits_processor.solar_open2:SolarOpen2TemplateLogitsProcessor",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/upstage/Solar-Open2-250B/tree/9190fbe63a2ad8e17fc766ccceb36de7c66f004b",
+          "note": "gb = sum of the 94 model-*.safetensors files at @9190fbe from the HF API tree listing (500,581,539,176 bytes). Command copied from the model card Quickstart; it needs Upstage's vLLM fork (git+https://github.com/UpstageAI/vllm.git@v0.22.0-solar-open2) and, per the card, 8 GPUs with at least 141 GB each.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/upstage/Solar-Open2-250B",
+    "identity_note": "Upstage's own open-weights model, repo upstage/Solar-Open2-250B @9190fbe (created 2026-07-22, commit 'Release Solar Open2 250B'; licence tag other / upstage-solar-license; safetensors metadata 250,287,810,304 parameters). The technical report's column 'Solar Open 2 / 250B-A15B' is this checkpoint (the card links the same report and prints the same Table 3). No first-party API page verified; local vLLM only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2607.20062v2",
+        "reported_label": "Solar Open 2 250B-A15B"
+      },
+      {
+        "source": "https://huggingface.co/upstage/Solar-Open2-250B/blob/9190fbe63a2ad8e17fc766ccceb36de7c66f004b/README.md",
+        "reported_label": "upstage/Solar-Open2-250B"
+      }
+    ]
+  },
+  {
+    "id": "solar-open-100b",
+    "name": "Solar Open 100B (102B-A12B)",
+    "provider": "Upstage",
+    "category": "llm",
+    "released": "2025-12",
+    "released_source": "https://huggingface.co/upstage/Solar-Open-100B/commits/main",
+    "open_weights": true,
+    "license": "upstage-solar-license",
+    "license_source": "https://huggingface.co/upstage/Solar-Open-100B/blob/1f591439b14055004d1a5d1a975608953a022fea/LICENSE",
+    "params_b": 102.6,
+    "active_b": 12,
+    "params_note": "Model card (upstage/Solar-Open-100B @1f59143): 'Total Parameters: 102.6B', 'Active Parameters: 12B (per token)'; report arXiv 2601.07022v1 Table 2 same.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 205.31,
+          "cmd": "vllm serve upstage/Solar-Open-100B --trust-remote-code --enable-auto-tool-choice --tool-call-parser solar_open --reasoning-parser solar_open --logits-processors vllm.model_executor.models.parallel_tool_call_logits_processor:ParallelToolCallLogitsProcessor --logits-processors vllm.model_executor.models.solar_open_logits_processor:SolarOpenTemplateLogitsProcessor --tensor-parallel-size 8",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/upstage/Solar-Open-100B/tree/1f591439b14055004d1a5d1a975608953a022fea",
+          "note": "gb = sum of the 42 model-*.safetensors files at @1f59143 (205,305,975,840 bytes, HF API tree). Command copied from the model card; it needs Upstage's vLLM fork (git+https://github.com/UpstageAI/vllm.git@v0.12.0-solar-open), 8 GPUs.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "context_k": 131.072,
+    "context_source": "https://arxiv.org/html/2601.07022v1",
+    "context_note": "Solar Open Technical Report (arXiv 2601.07022v1) Table 2: 'Context Length 131,072'; model card: '128k'. Observed 2026-10-09.",
+    "model_repo": "https://huggingface.co/upstage/Solar-Open-100B",
+    "identity_note": "Upstage's first Solar Open release, repo upstage/Solar-Open-100B @1f59143 (created 2025-12-10; model card added 2025-12-13; licence tag other / upstage-solar-license; safetensors 102,651,793,408 parameters). Printed as 'Solar Open (102B)' in its own report (arXiv 2601.07022v1) and as 'Solar Open 1 / 102B-A12B' in the Solar Open 2 report, whose abstract says Solar Open 2 is 'scaled up from Solar Open 1 (Solar Open 100B)'. Not solar-pro-4 (API model). No first-party API verified.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2601.07022v1",
+        "reported_label": "Solar Open (102B)"
+      },
+      {
+        "source": "https://arxiv.org/html/2607.20062v2",
+        "reported_label": "Solar Open 1 102B-A12B"
+      }
+    ]
+  },
+  {
+    "id": "k-exaone-236b-a23b",
+    "name": "K-EXAONE (236B-A23B)",
+    "provider": "LG AI Research",
+    "category": "llm",
+    "released": "2025-12",
+    "released_source": "https://huggingface.co/api/models/LGAI-EXAONE/K-EXAONE-236B-A23B",
+    "open_weights": true,
+    "license": "k-exaone",
+    "license_source": "https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/LICENSE",
+    "params_b": 236,
+    "active_b": 23,
+    "params_note": "Model card @61e6d57: '236B in total and 23B activated' (safetensors metadata 237,099,669,632 incl. MTP).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 143.47,
+          "cmd": "llama-server -hf LGAI-EXAONE/K-EXAONE-236B-A23B-GGUF:Q4_K_M --jinja",
+          "source": "https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B-GGUF/tree/5bd0394e4f42c00df63e207b9c434387523a6b77",
+          "note": "Maker's GGUF repo @5bd0394: K-EXAONE-236B-A23B-Q4_K_M.gguf, 143.47 GB (HF API tree). The GGUF card requires llama.cpp >= b7737.",
+          "gb_estimated": true
+        },
+        {
+          "quant": "bf16",
+          "gb": 474.2,
+          "cmd": "vllm serve LGAI-EXAONE/K-EXAONE-236B-A23B --reasoning-parser deepseek_v3 --tensor-parallel-size 4 --enable-auto-tool-choice --tool-call-parser hermes",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/tree/61e6d578eb102b578e5704e2916ac841df9eca0a",
+          "note": "96 safetensors files at @61e6d57, 474,201,679,088 bytes; command from the model card (vllm >= 0.14.0; 'serve the model with a 256K context length using tensor parallel on 4 H200 GPUs').",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B",
+    "identity_note": "LG AI Research's first K-EXAONE release, repo LGAI-EXAONE/K-EXAONE-236B-A23B @61e6d57 (created 2025-12-26, main history from 2025-12-31; licence tag other / k-exaone). Printed as 'K-EXAONE (Reasoning)' (236B / 23B active) in its own card and as 'K-EXAONE' (236B/23B) in the K-EXAONE 2.0 card. FriendliAI is linked from the card as an API partner but no first-party API page was verified.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md",
+        "reported_label": "K-EXAONE (Reasoning)"
+      },
+      {
+        "source": "https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md",
+        "reported_label": "K-EXAONE 236B / 23B"
+      }
+    ]
+  },
+  {
+    "id": "k-exaone-2-0",
+    "name": "K-EXAONE 2.0 (750B-A37B)",
+    "provider": "LG AI Research",
+    "category": "llm",
+    "released": "2026-07",
+    "released_source": "https://huggingface.co/api/models/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/LICENSE",
+    "params_b": 750,
+    "active_b": 37,
+    "params_note": "Model card @fec0c8d: 'Number of Parameters 750B', 'Active Parameters 37B' (safetensors metadata 749,357,484,800).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp8",
+          "gb": 752.09,
+          "cmd": "vllm serve LGAI-EXAONE/K-EXAONE-2.0-750B-A37B-FP8 --served-model-name K-EXAONE-2.0-750B-A37B-FP8 --trust-remote-code --tensor-parallel-size 8 --kv-cache-dtype fp8_e4m3 --max-num-seqs 256 --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser qwen3_xml",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B-FP8/tree/b219707595c1330a95964abf9a06e38dae2f062c",
+          "note": "Maker's FP8 repo @b219707: 38 safetensors shards + 1, 752,091,359,872 bytes (HF API tree). Command from that card ('single node of 8 x NVIDIA H200 GPUs'; MTP speculative config omitted); requires LG's vLLM fork git+https://github.com/lkm2835/vllm@add-k-exaone2 and transformers fork.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "context_k": 262.144,
+    "context_source": "https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md",
+    "context_note": "LG model card: 'Context Length 262,144'. Observed 2026-10-09.",
+    "model_repo": "https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B",
+    "identity_note": "LG AI Research, repo LGAI-EXAONE/K-EXAONE-2.0-750B-A37B @fec0c8d (created 2026-07-29, licence apache-2.0). Printed as 'K-EXAONE 2.0' (750B / 37B) in its card and as 'K-EXAONE 2.0 (Reasoning)' in the technical report (arXiv 2608.04505v1, CC BY-NC-ND, read for setup only). FriendliAI is linked from the card as an API partner; no first-party API page verified.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md",
+        "reported_label": "K-EXAONE 2.0"
+      }
+    ]
+  },
+  {
+    "id": "hyperclova-x-seed-32b-think",
+    "name": "HyperCLOVA X SEED 32B Think",
+    "provider": "NAVER Cloud",
+    "category": "llm",
+    "released": "2025-12",
+    "released_source": "https://huggingface.co/api/models/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B",
+    "open_weights": true,
+    "license": "hyperclovax",
+    "license_source": "https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/3c2b6338613c4e5ede30788d868363125a262934/LICENSE",
+    "params_b": 33.31,
+    "active_b": 33.31,
+    "params_note": "Card @3c2b633 says 'Parameters : 32B'; safetensors metadata 33,313,410,304 (vision-language model, includes the vision encoder).",
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B",
+    "identity_note": "NAVER Cloud's open-weights vision-language thinking model, repo naver-hyperclovax/HyperCLOVAX-SEED-Think-32B @3c2b633 (created 2025-12-23; licence tag other / hyperclovax; 14 safetensors shards, 66.63 GB). Subject of arXiv 2601.03286v1 ('HyperCLOVA X 32B Think', abbreviated THINK). Comparison-only for now: the card's only documented run route is NAVER's OmniServe Docker stack on 4x A100 80GB (clone, convert_model.py, docker compose), not a single command; no maker GGUF/ollama tag or first-party API page verified. New provider string 'NAVER Cloud' (no existing NAVER entry in data/models.json).",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2601.03286v1",
+        "reported_label": "HyperCLOVA X 32B Think"
+      },
+      {
+        "source": "https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/3c2b6338613c4e5ede30788d868363125a262934/README.md",
+        "reported_label": "HyperCLOVA X SEED 32B Think"
+      }
+    ]
+  },
+  {
+    "id": "nemotron-cascade-8b",
+    "name": "Nemotron-Cascade-8B",
+    "provider": "NVIDIA",
+    "category": "llm",
+    "released": "2025-12",
+    "released_source": "https://huggingface.co/api/models/nvidia/Nemotron-Cascade-8B",
+    "open_weights": true,
+    "license": "nvidia-open-model-license",
+    "license_source": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/",
+    "params_b": 8.19,
+    "active_b": 8.19,
+    "params_note": "safetensors metadata of nvidia/Nemotron-Cascade-8B @276a779: 8,190,735,360 parameters (dense).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 5.03,
+          "cmd": "llama-server -hf bartowski/nvidia_Nemotron-Cascade-8B-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-8B-GGUF/tree/a276f0387d3d2708030e130a4c9e2b3e291a7616",
+          "note": "bartowski GGUF of nvidia/Nemotron-Cascade-8B; Q4_K_M file size from the HF API tree @a276f03.",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 8.71,
+          "cmd": "llama-server -hf bartowski/nvidia_Nemotron-Cascade-8B-GGUF:Q8_0",
+          "source": "https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-8B-GGUF/tree/a276f0387d3d2708030e130a4c9e2b3e291a7616",
+          "note": "bartowski GGUF of nvidia/Nemotron-Cascade-8B; Q8_0 file size from the HF API tree @a276f03.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/nvidia/Nemotron-Cascade-8B",
+    "identity_note": "NVIDIA's own model, repo nvidia/Nemotron-Cascade-8B @276a779 (licence nvidia-open-model-license). Unified model (thinking and instruct modes), 'post-trained from the Qwen3-8B-Base model'. Printed as 'Nemotron-Cascade-8B' in the Nemotron-Cascade report (arXiv 2512.13607v2) Table 9; listed so the report's NVIDIA rows join the existing LiveCodeBench Pro 25Q2 runs.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2512.13607v2",
+        "reported_label": "Nemotron-Cascade-8B"
+      },
+      {
+        "source": "https://huggingface.co/nvidia/Nemotron-Cascade-8B/blob/276a779fe0c1fe2d63a68fd573fec7b4b0a1907e/README.md",
+        "reported_label": "nvidia/Nemotron-Cascade-8B"
+      }
+    ]
+  },
+  {
+    "id": "nemotron-cascade-8b-thinking",
+    "name": "Nemotron-Cascade-8B-Thinking",
+    "provider": "NVIDIA",
+    "category": "llm",
+    "released": "2025-12",
+    "released_source": "https://huggingface.co/api/models/nvidia/Nemotron-Cascade-8B-Thinking",
+    "open_weights": true,
+    "license": "nvidia-open-model-license",
+    "license_source": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/",
+    "params_b": 8.19,
+    "active_b": 8.19,
+    "params_note": "safetensors metadata of nvidia/Nemotron-Cascade-8B-Thinking @922c4fe: 8,190,735,360 parameters (dense).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 5.03,
+          "cmd": "llama-server -hf bartowski/nvidia_Nemotron-Cascade-8B-Thinking-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-8B-Thinking-GGUF/tree/92a27d2d91739082140235872b16745e47517adf",
+          "note": "bartowski GGUF of nvidia/Nemotron-Cascade-8B-Thinking; Q4_K_M file size from the HF API tree @92a27d2.",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 8.71,
+          "cmd": "llama-server -hf bartowski/nvidia_Nemotron-Cascade-8B-Thinking-GGUF:Q8_0",
+          "source": "https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-8B-Thinking-GGUF/tree/92a27d2d91739082140235872b16745e47517adf",
+          "note": "bartowski GGUF of nvidia/Nemotron-Cascade-8B-Thinking; Q8_0 file size from the HF API tree @92a27d2.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/nvidia/Nemotron-Cascade-8B-Thinking",
+    "identity_note": "NVIDIA's own model, repo nvidia/Nemotron-Cascade-8B-Thinking @922c4fe (licence nvidia-open-model-license). Thinking-only sibling of Nemotron-Cascade-8B ('designed exclusively for the thinking mode'), separate checkpoint. Printed as 'Nemotron-Cascade-8B-Thinking' in the Nemotron-Cascade report (arXiv 2512.13607v2) Table 9; listed so the report's NVIDIA rows join the existing LiveCodeBench Pro 25Q2 runs.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2512.13607v2",
+        "reported_label": "Nemotron-Cascade-8B-Thinking"
+      },
+      {
+        "source": "https://huggingface.co/nvidia/Nemotron-Cascade-8B-Thinking/blob/922c4fe0b33248fa02d2ed450046755f6442e638/README.md",
+        "reported_label": "nvidia/Nemotron-Cascade-8B-Thinking"
+      }
+    ]
+  },
+  {
+    "id": "nemotron-cascade-14b-thinking",
+    "name": "Nemotron-Cascade-14B-Thinking",
+    "provider": "NVIDIA",
+    "category": "llm",
+    "released": "2025-12",
+    "released_source": "https://huggingface.co/api/models/nvidia/Nemotron-Cascade-14B-Thinking",
+    "open_weights": true,
+    "license": "nvidia-open-model-license",
+    "license_source": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/",
+    "params_b": 14.77,
+    "active_b": 14.77,
+    "params_note": "safetensors metadata of nvidia/Nemotron-Cascade-14B-Thinking @8aa18a0: 14,768,307,200 parameters (dense).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 9,
+          "cmd": "llama-server -hf bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF/tree/bd0a557fd819faa543d240b70a5312c4bbff317b",
+          "note": "bartowski GGUF of nvidia/Nemotron-Cascade-14B-Thinking; Q4_K_M file size from the HF API tree @bd0a557.",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 15.7,
+          "cmd": "llama-server -hf bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF:Q8_0",
+          "source": "https://huggingface.co/bartowski/nvidia_Nemotron-Cascade-14B-Thinking-GGUF/tree/bd0a557fd819faa543d240b70a5312c4bbff317b",
+          "note": "bartowski GGUF of nvidia/Nemotron-Cascade-14B-Thinking; Q8_0 file size from the HF API tree @bd0a557.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/nvidia/Nemotron-Cascade-14B-Thinking",
+    "identity_note": "NVIDIA's own model, repo nvidia/Nemotron-Cascade-14B-Thinking @8aa18a0 (licence nvidia-open-model-license). 'post-trained from the Qwen3-14B Base model', thinking mode only. Printed as 'Nemotron-Cascade-14B-Thinking' in the Nemotron-Cascade report (arXiv 2512.13607v2) Table 9; listed so the report's NVIDIA rows join the existing LiveCodeBench Pro 25Q2 runs.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2512.13607v2",
+        "reported_label": "Nemotron-Cascade-14B-Thinking"
+      },
+      {
+        "source": "https://huggingface.co/nvidia/Nemotron-Cascade-14B-Thinking/blob/8aa18a07ea16c52261675f766ed2ea3ec80ea841/README.md",
+        "reported_label": "nvidia/Nemotron-Cascade-14B-Thinking"
+      }
+    ]
+  },
+  {
+    "id": "openreasoning-nemotron-32b",
+    "name": "OpenReasoning-Nemotron-32B",
+    "provider": "NVIDIA",
+    "category": "llm",
+    "released": "2025-07",
+    "released_source": "https://huggingface.co/api/models/nvidia/OpenReasoning-Nemotron-32B",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "license_source": "https://creativecommons.org/licenses/by/4.0/legalcode.en",
+    "params_b": 32.76,
+    "active_b": 32.76,
+    "params_note": "safetensors metadata of nvidia/OpenReasoning-Nemotron-32B @2e8aa1b: 32,763,876,352 parameters (dense).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 19.85,
+          "cmd": "llama-server -hf bartowski/nvidia_OpenReasoning-Nemotron-32B-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/bartowski/nvidia_OpenReasoning-Nemotron-32B-GGUF/tree/5e5d5c072b86580ef2920e2f3915e6c5696eb65d",
+          "note": "bartowski GGUF of nvidia/OpenReasoning-Nemotron-32B; Q4_K_M file size from the HF API tree @5e5d5c0.",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 34.82,
+          "cmd": "llama-server -hf bartowski/nvidia_OpenReasoning-Nemotron-32B-GGUF:Q8_0",
+          "source": "https://huggingface.co/bartowski/nvidia_OpenReasoning-Nemotron-32B-GGUF/tree/5e5d5c072b86580ef2920e2f3915e6c5696eb65d",
+          "note": "bartowski GGUF of nvidia/OpenReasoning-Nemotron-32B; Q8_0 file size from the HF API tree @5e5d5c0.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/nvidia/OpenReasoning-Nemotron-32B",
+    "identity_note": "NVIDIA's own model, repo nvidia/OpenReasoning-Nemotron-32B @2e8aa1b (licence cc-by-4.0). Reasoning model 'derivative of Qwen2.5-32B', post-trained for math, code and science. Printed as 'OpenReasoning-Nemotron-32B' in the Nemotron-Cascade report (arXiv 2512.13607v2) Table 9; listed so the report's NVIDIA rows join the existing LiveCodeBench Pro 25Q2 runs.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2512.13607v2",
+        "reported_label": "OpenReasoning-Nemotron-32B"
+      },
+      {
+        "source": "https://huggingface.co/nvidia/OpenReasoning-Nemotron-32B/blob/2e8aa1b19ac610df1f5aef508aad0ed5ca6c5a36/README.md",
+        "reported_label": "nvidia/OpenReasoning-Nemotron-32B"
+      }
+    ]
+  },
+  {
+    "id": "acereason-nemotron-14b",
+    "name": "AceReason-Nemotron-1.0-14B",
+    "provider": "NVIDIA",
+    "category": "llm",
+    "released": "2025-05",
+    "released_source": "https://huggingface.co/api/models/nvidia/AceReason-Nemotron-14B",
+    "open_weights": true,
+    "license": "nvidia-open-model-license",
+    "license_source": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/",
+    "params_b": 14.77,
+    "active_b": 14.77,
+    "params_note": "safetensors metadata of nvidia/AceReason-Nemotron-14B @b244ed5: 14,770,033,664 parameters (dense).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 8.99,
+          "cmd": "llama-server -hf bartowski/nvidia_AceReason-Nemotron-14B-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/bartowski/nvidia_AceReason-Nemotron-14B-GGUF/tree/defcea7703e6ca24360559ead83fd075c7bf0d8b",
+          "note": "bartowski GGUF of nvidia/AceReason-Nemotron-14B; Q4_K_M file size from the HF API tree @defcea7.",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 15.7,
+          "cmd": "llama-server -hf bartowski/nvidia_AceReason-Nemotron-14B-GGUF:Q8_0",
+          "source": "https://huggingface.co/bartowski/nvidia_AceReason-Nemotron-14B-GGUF/tree/defcea7703e6ca24360559ead83fd075c7bf0d8b",
+          "note": "bartowski GGUF of nvidia/AceReason-Nemotron-14B; Q8_0 file size from the HF API tree @defcea7.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/nvidia/AceReason-Nemotron-14B",
+    "identity_note": "NVIDIA's own model, repo nvidia/AceReason-Nemotron-14B @b244ed5 (licence nvidia-open-model-license). Math and code RL model 'starting from the DeepSeek-R1-Distilled-Qwen-14B' (version 1.0; the report prints 'AceReason-Nemotron-1.0-14B'). Printed as 'AceReason-Nemotron-1.0-14B' in the Nemotron-Cascade report (arXiv 2512.13607v2) Table 9; listed so the report's NVIDIA rows join the existing LiveCodeBench Pro 25Q2 runs.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2512.13607v2",
+        "reported_label": "AceReason-Nemotron-1.0-14B"
+      },
+      {
+        "source": "https://huggingface.co/nvidia/AceReason-Nemotron-14B/blob/b244ed5578b03df25c49c7d1e7bc30fbcf8a63b5/README.md",
+        "reported_label": "nvidia/AceReason-Nemotron-14B"
+      }
+    ]
+  },
+  {
+    "id": "acereason-nemotron-1-1-7b",
+    "name": "AceReason-Nemotron-1.1-7B",
+    "provider": "NVIDIA",
+    "category": "llm",
+    "released": "2025-06",
+    "released_source": "https://huggingface.co/api/models/nvidia/AceReason-Nemotron-1.1-7B",
+    "open_weights": true,
+    "license": "nvidia-open-model-license",
+    "license_source": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/",
+    "params_b": 7.62,
+    "active_b": 7.62,
+    "params_note": "safetensors metadata of nvidia/AceReason-Nemotron-1.1-7B @2be9ed2: 7,615,616,512 parameters (dense).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 4.68,
+          "cmd": "llama-server -hf bartowski/nvidia_AceReason-Nemotron-1.1-7B-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/bartowski/nvidia_AceReason-Nemotron-1.1-7B-GGUF/tree/7b4f7f68d4c66933c7a5d376db8a413cbc6b49b1",
+          "note": "bartowski GGUF of nvidia/AceReason-Nemotron-1.1-7B; Q4_K_M file size from the HF API tree @7b4f7f6.",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 8.1,
+          "cmd": "llama-server -hf bartowski/nvidia_AceReason-Nemotron-1.1-7B-GGUF:Q8_0",
+          "source": "https://huggingface.co/bartowski/nvidia_AceReason-Nemotron-1.1-7B-GGUF/tree/7b4f7f68d4c66933c7a5d376db8a413cbc6b49b1",
+          "note": "bartowski GGUF of nvidia/AceReason-Nemotron-1.1-7B; Q8_0 file size from the HF API tree @7b4f7f6.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/nvidia/AceReason-Nemotron-1.1-7B",
+    "identity_note": "NVIDIA's own model, repo nvidia/AceReason-Nemotron-1.1-7B @2be9ed2 (licence nvidia-open-model-license). 'built upon the Qwen2.5-Math-7B base' (Release Date: June 16, 2025). Printed as 'AceReason-Nemotron-1.1-7B' in the Nemotron-Cascade report (arXiv 2512.13607v2) Table 9; listed so the report's NVIDIA rows join the existing LiveCodeBench Pro 25Q2 runs.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2512.13607v2",
+        "reported_label": "AceReason-Nemotron-1.1-7B"
+      },
+      {
+        "source": "https://huggingface.co/nvidia/AceReason-Nemotron-1.1-7B/blob/2be9ed2fe532f39332ee47fd21899cab5fd6ec15/README.md",
+        "reported_label": "nvidia/AceReason-Nemotron-1.1-7B"
+      }
+    ]
+  },
+  {
+    "id": "qwen3-vl-32b-instruct",
+    "name": "Qwen3-VL 32B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2025-10",
+    "released_source": "https://huggingface.co/api/models/Qwen/Qwen3-VL-32B-Instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct/blob/0cfaf48183f594c314753d30a4c4974bc75f3ccb/README.md",
+    "params_b": 33.4,
+    "active_b": 33.4,
+    "params_note": "33,357,390,064 parameters in the Hugging Face safetensors metadata of Qwen/Qwen3-VL-32B-Instruct @0cfaf48 (vision encoder included); dense, so active = total.",
+    "model_repo": "https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct",
+    "identity_note": "Maker repo Qwen/Qwen3-VL-32B-Instruct @0cfaf48 (licence tag apache-2.0, created 2025-10-19); the separate Instruct checkpoint, not Qwen3-VL-32B-Thinking. Scored from the Qwen3-VL Technical Report (arXiv 2511.21631v2, Tables 3/4 and 7-10: column 'Qwen3-VL 32B instruct'), whose instruct and thinking columns are the two published checkpoints. Released 2025-10: month the maker's Hugging Face repo was created.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct/blob/0cfaf48183f594c314753d30a4c4974bc75f3ccb/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/pdf/2511.21631v2",
+        "reported_label": "Qwen3-VL 32B (instruct)"
+      },
+      {
+        "source": "https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct",
+        "reported_label": "Qwen/Qwen3-VL-32B-Instruct"
+      },
+      {
+        "source": "https://ollama.com/library/qwen3-vl/tags",
+        "reported_label": "qwen3-vl:32b-instruct"
+      }
+    ],
+    "api": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "provider": "Alibaba Cloud Model Studio",
+      "price_in": 0.16,
+      "price_out": 0.64,
+      "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "price_note": "USD per 1M tokens, Alibaba Cloud Model Studio, Singapore (International deployment scope), API model qwen3-vl-32b-instruct (Non-Thinking mode only): input $0.16, output $0.64. Chinese-mainland/Global (US) deployments priced differently and not used, following the International convention of other Alibaba rows; free quota, batch and context-cache discounts excluded. Observed 2026-10-09."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 21,
+          "cmd": "ollama run qwen3-vl:32b-instruct",
+          "source": "https://ollama.com/library/qwen3-vl/tags",
+          "gb_estimated": true,
+          "note": "ollama tag qwen3-vl:32b-instruct (q4_K_M default; same digest as qwen3-vl:32b-instruct-q4_K_M); size 21GB as printed (rounded) on the tags page, observed 2026-10-09."
+        },
+        {
+          "quant": "q8_0",
+          "gb": 36,
+          "cmd": "ollama run qwen3-vl:32b-instruct-q8_0",
+          "source": "https://ollama.com/library/qwen3-vl/tags",
+          "gb_estimated": true,
+          "note": "Size 36GB as printed (rounded) on the ollama tags page, observed 2026-10-09."
+        }
+      ]
+    }
+  },
+  {
+    "id": "qwen3-vl-30b-a3b-instruct",
+    "name": "Qwen3-VL 30B-A3B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2025-09",
+    "released_source": "https://huggingface.co/api/models/Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct/blob/9c4b90e1e4ba969fd3b5378b57d966d725f1b86c/README.md",
+    "params_b": 31.1,
+    "active_b": 3,
+    "params_note": "31,070,754,032 parameters in the Hugging Face safetensors metadata of Qwen/Qwen3-VL-30B-A3B-Instruct @9c4b90e (vision encoder included); MoE with ~3B activated per token per the model name ('30B-A3B').",
+    "model_repo": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct",
+    "identity_note": "Maker repo Qwen/Qwen3-VL-30B-A3B-Instruct @9c4b90e (licence tag apache-2.0, created 2025-09-30); the separate Instruct checkpoint, not Qwen3-VL-30B-A3B-Thinking. Scored from the Qwen3-VL Technical Report (arXiv 2511.21631v2, Tables 3/4 and 7-10: column 'Qwen3-VL 30B-A3B instruct'), whose instruct and thinking columns are the two published checkpoints. Released 2025-09: month the maker's Hugging Face repo was created.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct/blob/9c4b90e1e4ba969fd3b5378b57d966d725f1b86c/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/pdf/2511.21631v2",
+        "reported_label": "Qwen3-VL 30B-A3B (instruct)"
+      },
+      {
+        "source": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct",
+        "reported_label": "Qwen/Qwen3-VL-30B-A3B-Instruct"
+      },
+      {
+        "source": "https://ollama.com/library/qwen3-vl/tags",
+        "reported_label": "qwen3-vl:30b-a3b-instruct"
+      }
+    ],
+    "api": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "provider": "Alibaba Cloud Model Studio",
+      "price_in": 0.2,
+      "price_out": 0.8,
+      "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "price_note": "USD per 1M tokens, Alibaba Cloud Model Studio, Singapore (International deployment scope), API model qwen3-vl-30b-a3b-instruct (Non-Thinking mode only): input $0.2, output $0.8. Chinese-mainland/Global (US) deployments priced differently and not used, following the International convention of other Alibaba rows; free quota, batch and context-cache discounts excluded. Observed 2026-10-09."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 20,
+          "cmd": "ollama run qwen3-vl:30b-a3b-instruct",
+          "source": "https://ollama.com/library/qwen3-vl/tags",
+          "gb_estimated": true,
+          "note": "ollama tag qwen3-vl:30b-a3b-instruct (q4_K_M default; same digest as qwen3-vl:30b-a3b-instruct-q4_K_M); size 20GB as printed (rounded) on the tags page, observed 2026-10-09."
+        },
+        {
+          "quant": "q8_0",
+          "gb": 34,
+          "cmd": "ollama run qwen3-vl:30b-a3b-instruct-q8_0",
+          "source": "https://ollama.com/library/qwen3-vl/tags",
+          "gb_estimated": true,
+          "note": "Size 34GB as printed (rounded) on the ollama tags page, observed 2026-10-09."
+        }
+      ]
+    }
+  },
+  {
+    "id": "qwen3-vl-30b-a3b-thinking",
+    "name": "Qwen3-VL 30B-A3B Thinking",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2025-09",
+    "released_source": "https://huggingface.co/api/models/Qwen/Qwen3-VL-30B-A3B-Thinking",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Thinking/blob/d0ed0380729be07a546fdefafbb4fe411f341e92/README.md",
+    "params_b": 31.1,
+    "active_b": 3,
+    "params_note": "31,070,754,032 parameters in the Hugging Face safetensors metadata of Qwen/Qwen3-VL-30B-A3B-Thinking @d0ed038 (vision encoder included); MoE with ~3B activated per token per the model name ('30B-A3B').",
+    "model_repo": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Thinking",
+    "identity_note": "Maker repo Qwen/Qwen3-VL-30B-A3B-Thinking @d0ed038 (licence tag apache-2.0, created 2025-09-30); the separate Thinking checkpoint, not Qwen3-VL-30B-A3B-Instruct. Scored from the Qwen3-VL Technical Report (arXiv 2511.21631v2, Tables 3/4 and 7-10: column 'Qwen3-VL 30B-A3B thinking'), whose instruct and thinking columns are the two published checkpoints. Released 2025-09: month the maker's Hugging Face repo was created.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Thinking/blob/d0ed0380729be07a546fdefafbb4fe411f341e92/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/pdf/2511.21631v2",
+        "reported_label": "Qwen3-VL 30B-A3B (thinking)"
+      },
+      {
+        "source": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Thinking",
+        "reported_label": "Qwen/Qwen3-VL-30B-A3B-Thinking"
+      },
+      {
+        "source": "https://ollama.com/library/qwen3-vl/tags",
+        "reported_label": "qwen3-vl:30b-a3b-thinking"
+      }
+    ],
+    "api": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "provider": "Alibaba Cloud Model Studio",
+      "price_in": 0.2,
+      "price_out": 2.4,
+      "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "price_note": "USD per 1M tokens, Alibaba Cloud Model Studio, Singapore (International deployment scope), API model qwen3-vl-30b-a3b-thinking (Thinking mode only): input $0.2, output $2.4. Chinese-mainland/Global (US) deployments priced differently and not used, following the International convention of other Alibaba rows; free quota, batch and context-cache discounts excluded. Observed 2026-10-09."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 20,
+          "cmd": "ollama run qwen3-vl:30b-a3b-thinking",
+          "source": "https://ollama.com/library/qwen3-vl/tags",
+          "gb_estimated": true,
+          "note": "ollama tag qwen3-vl:30b-a3b-thinking (q4_K_M default; same digest as qwen3-vl:30b-a3b-thinking-q4_K_M); size 20GB as printed (rounded) on the tags page, observed 2026-10-09."
+        },
+        {
+          "quant": "q8_0",
+          "gb": 34,
+          "cmd": "ollama run qwen3-vl:30b-a3b-thinking-q8_0",
+          "source": "https://ollama.com/library/qwen3-vl/tags",
+          "gb_estimated": true,
+          "note": "Size 34GB as printed (rounded) on the ollama tags page, observed 2026-10-09."
+        }
+      ]
+    }
+  },
+  {
+    "id": "qwen3-vl-8b-instruct",
+    "name": "Qwen3-VL 8B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2025-10",
+    "released_source": "https://huggingface.co/api/models/Qwen/Qwen3-VL-8B-Instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/blob/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b/README.md",
+    "params_b": 8.77,
+    "active_b": 8.77,
+    "params_note": "8,767,123,696 parameters in the Hugging Face safetensors metadata of Qwen/Qwen3-VL-8B-Instruct @0c351dd (vision encoder included); dense, so active = total.",
+    "model_repo": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct",
+    "identity_note": "Maker repo Qwen/Qwen3-VL-8B-Instruct @0c351dd (licence tag apache-2.0, created 2025-10-11); the separate Instruct checkpoint, not Qwen3-VL-8B-Thinking. Scored from the Qwen3-VL Technical Report (arXiv 2511.21631v2, Tables 3/4 and 7-10: column 'Qwen3-VL 8B instruct'), whose instruct and thinking columns are the two published checkpoints. Released 2025-10: month the maker's Hugging Face repo was created.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/blob/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/pdf/2511.21631v2",
+        "reported_label": "Qwen3-VL 8B (instruct)"
+      },
+      {
+        "source": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct",
+        "reported_label": "Qwen/Qwen3-VL-8B-Instruct"
+      },
+      {
+        "source": "https://ollama.com/library/qwen3-vl/tags",
+        "reported_label": "qwen3-vl:8b-instruct"
+      }
+    ],
+    "api": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "provider": "Alibaba Cloud Model Studio",
+      "price_in": 0.18,
+      "price_out": 0.7,
+      "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "price_note": "USD per 1M tokens, Alibaba Cloud Model Studio, Singapore (International deployment scope), API model qwen3-vl-8b-instruct (Non-Thinking mode only): input $0.18, output $0.7. Chinese-mainland/Global (US) deployments priced differently and not used, following the International convention of other Alibaba rows; free quota, batch and context-cache discounts excluded. Observed 2026-10-09."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 6.1,
+          "cmd": "ollama run qwen3-vl:8b-instruct",
+          "source": "https://ollama.com/library/qwen3-vl/tags",
+          "gb_estimated": true,
+          "note": "ollama tag qwen3-vl:8b-instruct (q4_K_M default; same digest as qwen3-vl:8b-instruct-q4_K_M); size 6.1GB as printed (rounded) on the tags page, observed 2026-10-09."
+        },
+        {
+          "quant": "q8_0",
+          "gb": 9.8,
+          "cmd": "ollama run qwen3-vl:8b-instruct-q8_0",
+          "source": "https://ollama.com/library/qwen3-vl/tags",
+          "gb_estimated": true,
+          "note": "Size 9.8GB as printed (rounded) on the ollama tags page, observed 2026-10-09."
+        }
+      ]
+    }
+  },
+  {
+    "id": "qwen3-vl-8b-thinking",
+    "name": "Qwen3-VL 8B Thinking",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2025-10",
+    "released_source": "https://huggingface.co/api/models/Qwen/Qwen3-VL-8B-Thinking",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking/blob/92f3c4b4feadd3a016ef468d103bb5f58b2a2c6b/README.md",
+    "params_b": 8.77,
+    "active_b": 8.77,
+    "params_note": "8,767,123,696 parameters in the Hugging Face safetensors metadata of Qwen/Qwen3-VL-8B-Thinking @92f3c4b (vision encoder included); dense, so active = total.",
+    "model_repo": "https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking",
+    "identity_note": "Maker repo Qwen/Qwen3-VL-8B-Thinking @92f3c4b (licence tag apache-2.0, created 2025-10-11); the separate Thinking checkpoint, not Qwen3-VL-8B-Instruct. Scored from the Qwen3-VL Technical Report (arXiv 2511.21631v2, Tables 3/4 and 7-10: column 'Qwen3-VL 8B thinking'), whose instruct and thinking columns are the two published checkpoints. Released 2025-10: month the maker's Hugging Face repo was created.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking/blob/92f3c4b4feadd3a016ef468d103bb5f58b2a2c6b/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/pdf/2511.21631v2",
+        "reported_label": "Qwen3-VL 8B (thinking)"
+      },
+      {
+        "source": "https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking",
+        "reported_label": "Qwen/Qwen3-VL-8B-Thinking"
+      },
+      {
+        "source": "https://ollama.com/library/qwen3-vl/tags",
+        "reported_label": "qwen3-vl:8b-thinking"
+      }
+    ],
+    "api": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "provider": "Alibaba Cloud Model Studio",
+      "price_in": 0.18,
+      "price_out": 2.1,
+      "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "price_note": "USD per 1M tokens, Alibaba Cloud Model Studio, Singapore (International deployment scope), API model qwen3-vl-8b-thinking (Thinking mode only): input $0.18, output $2.1. Chinese-mainland/Global (US) deployments priced differently and not used, following the International convention of other Alibaba rows; free quota, batch and context-cache discounts excluded. Observed 2026-10-09."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 6.1,
+          "cmd": "ollama run qwen3-vl:8b-thinking",
+          "source": "https://ollama.com/library/qwen3-vl/tags",
+          "gb_estimated": true,
+          "note": "ollama tag qwen3-vl:8b-thinking (q4_K_M default; same digest as qwen3-vl:8b-thinking-q4_K_M); size 6.1GB as printed (rounded) on the tags page, observed 2026-10-09."
+        },
+        {
+          "quant": "q8_0",
+          "gb": 9.8,
+          "cmd": "ollama run qwen3-vl:8b-thinking-q8_0",
+          "source": "https://ollama.com/library/qwen3-vl/tags",
+          "gb_estimated": true,
+          "note": "Size 9.8GB as printed (rounded) on the ollama tags page, observed 2026-10-09."
+        }
+      ]
+    }
+  },
+  {
+    "id": "qwen3-vl-4b-instruct",
+    "name": "Qwen3-VL 4B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2025-10",
+    "released_source": "https://huggingface.co/api/models/Qwen/Qwen3-VL-4B-Instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct/blob/ebb281ec70b05090aa6165b016eac8ec08e71b17/README.md",
+    "params_b": 4.44,
+    "active_b": 4.44,
+    "params_note": "4,437,815,808 parameters in the Hugging Face safetensors metadata of Qwen/Qwen3-VL-4B-Instruct @ebb281e (vision encoder included); dense, so active = total.",
+    "model_repo": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct",
+    "identity_note": "Maker repo Qwen/Qwen3-VL-4B-Instruct @ebb281e (licence tag apache-2.0, created 2025-10-11); the separate Instruct checkpoint, not Qwen3-VL-4B-Thinking. Scored from the Qwen3-VL Technical Report (arXiv 2511.21631v2, Tables 3/4 and 7-10: column 'Qwen3-VL 4B instruct'), whose instruct and thinking columns are the two published checkpoints. Released 2025-10: month the maker's Hugging Face repo was created.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct/blob/ebb281ec70b05090aa6165b016eac8ec08e71b17/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/pdf/2511.21631v2",
+        "reported_label": "Qwen3-VL 4B (instruct)"
+      },
+      {
+        "source": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct",
+        "reported_label": "Qwen/Qwen3-VL-4B-Instruct"
+      },
+      {
+        "source": "https://ollama.com/library/qwen3-vl/tags",
+        "reported_label": "qwen3-vl:4b-instruct"
+      }
+    ],
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 3.3,
+          "cmd": "ollama run qwen3-vl:4b-instruct",
+          "source": "https://ollama.com/library/qwen3-vl/tags",
+          "gb_estimated": true,
+          "note": "ollama tag qwen3-vl:4b-instruct (q4_K_M default; same digest as qwen3-vl:4b-instruct-q4_K_M); size 3.3GB as printed (rounded) on the tags page, observed 2026-10-09."
+        },
+        {
+          "quant": "q8_0",
+          "gb": 5.1,
+          "cmd": "ollama run qwen3-vl:4b-instruct-q8_0",
+          "source": "https://ollama.com/library/qwen3-vl/tags",
+          "gb_estimated": true,
+          "note": "Size 5.1GB as printed (rounded) on the ollama tags page, observed 2026-10-09."
+        }
+      ]
+    }
+  },
+  {
+    "id": "qwen3-vl-4b-thinking",
+    "name": "Qwen3-VL 4B Thinking",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2025-10",
+    "released_source": "https://huggingface.co/api/models/Qwen/Qwen3-VL-4B-Thinking",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking/blob/1de27d8c51f12e819435303b9e84c4e25ba8401e/README.md",
+    "params_b": 4.44,
+    "active_b": 4.44,
+    "params_note": "4,437,815,808 parameters in the Hugging Face safetensors metadata of Qwen/Qwen3-VL-4B-Thinking @1de27d8 (vision encoder included); dense, so active = total.",
+    "model_repo": "https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking",
+    "identity_note": "Maker repo Qwen/Qwen3-VL-4B-Thinking @1de27d8 (licence tag apache-2.0, created 2025-10-11); the separate Thinking checkpoint, not Qwen3-VL-4B-Instruct. Scored from the Qwen3-VL Technical Report (arXiv 2511.21631v2, Tables 3/4 and 7-10: column 'Qwen3-VL 4B thinking'), whose instruct and thinking columns are the two published checkpoints. Released 2025-10: month the maker's Hugging Face repo was created.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking/blob/1de27d8c51f12e819435303b9e84c4e25ba8401e/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/pdf/2511.21631v2",
+        "reported_label": "Qwen3-VL 4B (thinking)"
+      },
+      {
+        "source": "https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking",
+        "reported_label": "Qwen/Qwen3-VL-4B-Thinking"
+      },
+      {
+        "source": "https://ollama.com/library/qwen3-vl/tags",
+        "reported_label": "qwen3-vl:4b-thinking"
+      }
+    ],
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 3.3,
+          "cmd": "ollama run qwen3-vl:4b-thinking",
+          "source": "https://ollama.com/library/qwen3-vl/tags",
+          "gb_estimated": true,
+          "note": "ollama tag qwen3-vl:4b-thinking (q4_K_M default; same digest as qwen3-vl:4b-thinking-q4_K_M); size 3.3GB as printed (rounded) on the tags page, observed 2026-10-09."
+        },
+        {
+          "quant": "q8_0",
+          "gb": 5.1,
+          "cmd": "ollama run qwen3-vl:4b-thinking-q8_0",
+          "source": "https://ollama.com/library/qwen3-vl/tags",
+          "gb_estimated": true,
+          "note": "Size 5.1GB as printed (rounded) on the ollama tags page, observed 2026-10-09."
+        }
+      ]
+    }
+  },
+  {
+    "id": "qwen3-vl-2b-instruct",
+    "name": "Qwen3-VL 2B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2025-10",
+    "released_source": "https://huggingface.co/api/models/Qwen/Qwen3-VL-2B-Instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct/blob/89644892e4d85e24eaac8bacfd4f463576704203/README.md",
+    "params_b": 2.13,
+    "active_b": 2.13,
+    "params_note": "2,127,532,032 parameters in the Hugging Face safetensors metadata of Qwen/Qwen3-VL-2B-Instruct @8964489 (vision encoder included); dense, so active = total.",
+    "model_repo": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct",
+    "identity_note": "Maker repo Qwen/Qwen3-VL-2B-Instruct @8964489 (licence tag apache-2.0, created 2025-10-19); the separate Instruct checkpoint, not Qwen3-VL-2B-Thinking. Scored from the Qwen3-VL Technical Report (arXiv 2511.21631v2, Tables 3/4 and 7-10: column 'Qwen3-VL 2B instruct'), whose instruct and thinking columns are the two published checkpoints. Released 2025-10: month the maker's Hugging Face repo was created.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct/blob/89644892e4d85e24eaac8bacfd4f463576704203/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/pdf/2511.21631v2",
+        "reported_label": "Qwen3-VL 2B (instruct)"
+      },
+      {
+        "source": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct",
+        "reported_label": "Qwen/Qwen3-VL-2B-Instruct"
+      },
+      {
+        "source": "https://ollama.com/library/qwen3-vl/tags",
+        "reported_label": "qwen3-vl:2b-instruct"
+      }
+    ],
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 1.9,
+          "cmd": "ollama run qwen3-vl:2b-instruct",
+          "source": "https://ollama.com/library/qwen3-vl/tags",
+          "gb_estimated": true,
+          "note": "ollama tag qwen3-vl:2b-instruct (q4_K_M default; same digest as qwen3-vl:2b-instruct-q4_K_M); size 1.9GB as printed (rounded) on the tags page, observed 2026-10-09."
+        },
+        {
+          "quant": "q8_0",
+          "gb": 2.6,
+          "cmd": "ollama run qwen3-vl:2b-instruct-q8_0",
+          "source": "https://ollama.com/library/qwen3-vl/tags",
+          "gb_estimated": true,
+          "note": "Size 2.6GB as printed (rounded) on the ollama tags page, observed 2026-10-09."
+        }
+      ]
+    }
+  },
+  {
+    "id": "qwen3-vl-2b-thinking",
+    "name": "Qwen3-VL 2B Thinking",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2025-10",
+    "released_source": "https://huggingface.co/api/models/Qwen/Qwen3-VL-2B-Thinking",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Qwen/Qwen3-VL-2B-Thinking/blob/33e0ad94c327808ebc7d3bbc97e78e600f1eeecd/README.md",
+    "params_b": 2.13,
+    "active_b": 2.13,
+    "params_note": "2,127,532,032 parameters in the Hugging Face safetensors metadata of Qwen/Qwen3-VL-2B-Thinking @33e0ad9 (vision encoder included); dense, so active = total.",
+    "model_repo": "https://huggingface.co/Qwen/Qwen3-VL-2B-Thinking",
+    "identity_note": "Maker repo Qwen/Qwen3-VL-2B-Thinking @33e0ad9 (licence tag apache-2.0, created 2025-10-19); the separate Thinking checkpoint, not Qwen3-VL-2B-Instruct. Scored from the Qwen3-VL Technical Report (arXiv 2511.21631v2, Tables 3/4 and 7-10: column 'Qwen3-VL 2B thinking'), whose instruct and thinking columns are the two published checkpoints. Released 2025-10: month the maker's Hugging Face repo was created.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen3-VL-2B-Thinking/blob/33e0ad94c327808ebc7d3bbc97e78e600f1eeecd/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/pdf/2511.21631v2",
+        "reported_label": "Qwen3-VL 2B (thinking)"
+      },
+      {
+        "source": "https://huggingface.co/Qwen/Qwen3-VL-2B-Thinking",
+        "reported_label": "Qwen/Qwen3-VL-2B-Thinking"
+      },
+      {
+        "source": "https://ollama.com/library/qwen3-vl/tags",
+        "reported_label": "qwen3-vl:2b-thinking"
+      }
+    ],
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 1.9,
+          "cmd": "ollama run qwen3-vl:2b-thinking",
+          "source": "https://ollama.com/library/qwen3-vl/tags",
+          "gb_estimated": true,
+          "note": "ollama tag qwen3-vl:2b-thinking (q4_K_M default; same digest as qwen3-vl:2b-thinking-q4_K_M); size 1.9GB as printed (rounded) on the tags page, observed 2026-10-09."
+        },
+        {
+          "quant": "q8_0",
+          "gb": 2.6,
+          "cmd": "ollama run qwen3-vl:2b-thinking-q8_0",
+          "source": "https://ollama.com/library/qwen3-vl/tags",
+          "gb_estimated": true,
+          "note": "Size 2.6GB as printed (rounded) on the ollama tags page, observed 2026-10-09."
+        }
+      ]
+    }
+  },
+  {
+    "id": "jamba2-mini",
+    "name": "Jamba2 Mini",
+    "provider": "AI21 Labs",
+    "category": "llm",
+    "released": "2026-01",
+    "released_source": "https://huggingface.co/ai21labs/AI21-Jamba2-Mini/blob/24cbbd23e3df170f254aa601d907cdf416ffd344/README.md",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/ai21labs/AI21-Jamba2-Mini/blob/24cbbd23e3df170f254aa601d907cdf416ffd344/README.md",
+    "params_b": 52,
+    "active_b": 12,
+    "params_note": "AI21 docs Model Details table: 'Jamba Mini 52B parameters (12B active) 256K 2 2026-01'; card: '12B active parameters (52B total)'; HF safetensors metadata 51,570,323,328 (BF16).",
+    "api": {
+      "url": "https://docs.ai21.com/docs/jamba-foundation-models",
+      "provider": "AI21 Labs"
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16 weights, experts_int8 at load",
+          "gb": 103.14,
+          "cmd": "vllm serve ai21labs/AI21-Jamba2-Mini --mamba-ssm-cache-dtype float32 --enable-auto-tool-choice --tool-call-parser hermes --enable-prefix-caching --quantization experts_int8",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/ai21labs/AI21-Jamba2-Mini/blob/24cbbd23e3df170f254aa601d907cdf416ffd344/README.md",
+          "gb_source": "https://huggingface.co/ai21labs/AI21-Jamba2-Mini/tree/24cbbd23e3df170f254aa601d907cdf416ffd344",
+          "note": "Command copied from the model card's 'Run with vLLM' section ('Best results require vLLM version 0.12.0 or higher'). gb = the 21 safetensors weight files in ai21labs/AI21-Jamba2-Mini@24cbbd2 (Hugging Face API file listing, fetched 2026-10-09); config.json architectures ['JambaForCausalLM'], dtype bfloat16. Not gated.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/ai21labs/AI21-Jamba2-Mini",
+    "identity_note": "AI21 docs (observed 2026-10-09): 'jamba-mini currently points to jamba-mini-2-2026-01', 'jamba-mini-2 points to jamba-mini-2-2026-01', Model Details row 'Jamba Mini ... Version 2, Snapshot 2026-01', and the docs' model card text 'Jamba2 Mini blends efficiency and steerability into a 12B-active parameters model'. Weights: ai21labs/AI21-Jamba2-Mini @24cbbd2 (created 2026-01-06, licence apache-2.0). The Vectara leaderboard row 'ai21labs/jamba-mini-2' is the API id jamba-mini-2 (= jamba-mini-2-2026-01). Not Jamba Mini 1.7 or 1.5 (separate entries).",
+    "identity_evidence": [
+      {
+        "source": "https://docs.ai21.com/docs/jamba-foundation-models",
+        "reported_label": "jamba-mini-2"
+      },
+      {
+        "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+        "reported_label": "ai21labs/jamba-mini-2"
+      },
+      {
+        "source": "https://huggingface.co/ai21labs/AI21-Jamba2-Mini",
+        "reported_label": "ai21labs/AI21-Jamba2-Mini"
+      }
+    ]
+  },
+  {
+    "id": "jamba-large-1-7",
+    "name": "Jamba Large 1.7",
+    "provider": "AI21 Labs",
+    "category": "llm",
+    "released": "2025-07",
+    "released_source": "https://docs.ai21.com/docs/jamba-foundation-models",
+    "open_weights": true,
+    "license": "jamba-open-model-license",
+    "license_source": "https://huggingface.co/api/models/ai21labs/AI21-Jamba-Large-1.7",
+    "params_b": 398,
+    "active_b": 94,
+    "params_note": "AI21 docs Model Details: 'Jamba Large 398B parameters (94B active) 256K 1.7 2025-07'; HF safetensors metadata 398,555,145,696 (BF16).",
+    "api": {
+      "url": "https://docs.ai21.com/docs/jamba-foundation-models",
+      "provider": "AI21 Labs"
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 797.11,
+          "cmd": "vllm serve ai21labs/AI21-Jamba-Large-1.7 --tensor-parallel-size 8 --quantization experts_int8",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/ai21labs/AI21-Jamba-Large-1.7/tree/f95d1c3c9ac9028a9306e717047b5515e73c1dd1",
+          "gb_estimated": true,
+          "note": "gb = the 166 safetensors weight files in ai21labs/AI21-Jamba-Large-1.7@f95d1c3 (Hugging Face API file listing, fetched 2026-10-09). The repo is gated (card not readable without accepting the Jamba Open Model License); the command follows the sibling Jamba 1.5 Large card's vLLM route (8x80GB with experts_int8) and vLLM's JambaForCausalLM support (see catalogue jamba-1-5-large). Accept the licence on Hugging Face and log in before the first run."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/ai21labs/AI21-Jamba-Large-1.7",
+    "identity_note": "AI21 docs (observed 2026-10-09): 'jamba-large currently points to jamba-large-1.7-2025-07' and 'jamba-large-1.7 points to jamba-large-1.7-2025-07'. Weights ai21labs/AI21-Jamba-Large-1.7 @f95d1c3 (created 2025-07-02, licence other: jamba-open-model-license, gated). Vectara row label 'ai21labs/jamba-large-1.7-2025-07' is that exact dated API snapshot.",
+    "identity_evidence": [
+      {
+        "source": "https://docs.ai21.com/docs/jamba-foundation-models",
+        "reported_label": "jamba-large-1.7-2025-07"
+      },
+      {
+        "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+        "reported_label": "ai21labs/jamba-large-1.7-2025-07"
+      }
+    ]
+  },
+  {
+    "id": "jamba-mini-1-7",
+    "name": "Jamba Mini 1.7",
+    "provider": "AI21 Labs",
+    "category": "llm",
+    "released": "2025-07",
+    "released_source": "https://docs.ai21.com/docs/jamba-foundation-models",
+    "open_weights": true,
+    "license": "jamba-open-model-license",
+    "license_source": "https://huggingface.co/api/models/ai21labs/AI21-Jamba-Mini-1.7",
+    "params_b": 52,
+    "active_b": 12,
+    "params_note": "HF safetensors metadata 51,570,323,328 (BF16), same architecture size as Jamba Mini (AI21 docs: Jamba Mini '52B parameters (12B active)').",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 103.14,
+          "cmd": "vllm serve ai21labs/AI21-Jamba-Mini-1.7",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/ai21labs/AI21-Jamba-Mini-1.7/tree/e8986f3aa2e7ce119329cde6120238f8802f92cb",
+          "gb_estimated": true,
+          "note": "gb = the 21 safetensors weight files in ai21labs/AI21-Jamba-Mini-1.7@e8986f3 (Hugging Face API file listing, fetched 2026-10-09). Gated repo (Jamba Open Model License): accept the terms and log in first. vLLM supports JambaForCausalLM (see catalogue jamba-1-5-mini)."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/ai21labs/AI21-Jamba-Mini-1.7",
+    "identity_note": "AI21 docs deprecation table (observed 2026-10-09): 'Jamba Mini 1.7 | 2025-07 | jamba-mini-1.7-2025-08 | 2026-02-01' (API removed 2026-02-01, so api null; weights remain). Weights ai21labs/AI21-Jamba-Mini-1.7 @e8986f3 (created 2025-07-01, licence other: jamba-open-model-license, gated). Vectara row 'ai21labs/jamba-mini-1.7-2025-07' (the 2025-07 Jamba Mini 1.7 snapshot; the docs print the endpoint as jamba-mini-1.7-2025-08 — same model version 1.7).",
+    "identity_evidence": [
+      {
+        "source": "https://docs.ai21.com/docs/jamba-foundation-models",
+        "reported_label": "Jamba Mini 1.7"
+      },
+      {
+        "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+        "reported_label": "ai21labs/jamba-mini-1.7-2025-07"
+      }
+    ]
   }
 ]

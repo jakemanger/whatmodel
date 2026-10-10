@@ -26,7 +26,8 @@
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/text_to_video/latest-00000-of-00001.parquet",
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/image_to_video/latest-00000-of-00001.parquet",
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
-      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet"
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/webdev/latest-00000-of-00001.parquet"
     ],
     "name": "LMArena leaderboard dataset",
     "kind": "dataset",
@@ -3101,13 +3102,14 @@
       "alibabacloud.com/help/en/model-studio/qwen-image-3-0-pro",
       "alibabacloud.com/help/en/model-studio/text-generation-model",
       "alibabacloud.com/help/en/model-studio/model-qwen3-max",
-      "alibabacloud.com/help/en/model-studio/qwen-plus"
+      "alibabacloud.com/help/en/model-studio/qwen-plus",
+      "alibabacloud.com/help/en/model-studio/qwen-omni"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "exact": true,
     "icon": "alibabacloud.com",
     "attribution": "Alibaba Cloud Model Studio official pricing/docs, observed 2026-09-25",
@@ -11220,7 +11222,10 @@
     "name": "Xiaomi MiMo official model cards and documentation",
     "kind": "first-party",
     "match": [
-      "huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/73875d00b30a89ef8cc353a0b60b0e9f9561952d/README.md"
+      "huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/73875d00b30a89ef8cc353a0b60b0e9f9561952d/README.md",
+      "mimo.mi.com/docs/en-US/price/pay-as-you-go",
+      "huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md",
+      "mimo.mi.com/docs/en-US/updates/model"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -11228,7 +11233,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "Xiaomi MiMo official model cards and documentation, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-06"
+    "checked": "2026-10-09"
   },
   {
     "id": "euroeval-leaderboards",
@@ -11355,11 +11360,13 @@
     "license": "Factual list price and context specification (not licensed content)",
     "terms_url": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
     "match": [
-      "platform.claude.com/docs/en/models/sonnet-5-5/overview"
+      "platform.claude.com/docs/en/models/sonnet-5-5/overview",
+      "platform.claude.com/docs/en/models/haiku-5-5/overview",
+      "platform.claude.com/docs/en/about-claude/pricing"
     ],
     "exact": true,
     "verdict": "allowed",
-    "checked": "2026-10-06",
+    "checked": "2026-10-09",
     "icon": "anthropic.com",
     "attribution": "Anthropic official model documentation, observed 2026-10-06.",
     "quote": "Owner policy 2026-09-25: manually record the vendor’s own price and context limits as facts with observation date; benchmark numbers are excluded."
@@ -11546,7 +11553,9 @@
       "www-cdn.anthropic.com/037f06850df7fbe871e206dad004c3db5fd50340/Claude%20Opus%204.7%20System%20Card.pdf",
       "www-cdn.anthropic.com/6a5fa276ac68b9aeb0c8b6af5fa36326e0e166dd/Claude%20Opus%204.6%20System%20Card.pdf",
       "www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47/Claude%20Opus%204.5%20System%20Card.pdf",
-      "www-cdn.anthropic.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75/Claude%20Sonnet%204.6%20System%20Card.pdf"
+      "www-cdn.anthropic.com/bbd8ef16d70b7a1665f14f306ee88b53f686aa75/Claude%20Sonnet%204.6%20System%20Card.pdf",
+      "www-cdn.anthropic.com/e1080d6bf5ae2018ea3c2f414064be03232f5be5/Claude%20Haiku%205.5%20System%20Card.pdf",
+      "www-cdn.anthropic.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5/Claude%20Mythos%20Preview%20System%20Card.pdf"
     ],
     "kind": "first-party",
     "license": "Factual vendor-reported score (not licensed content)",
@@ -14339,5 +14348,284 @@
     "verdict": "allowed",
     "checked": "2026-10-09",
     "icon": "huggingface.co"
+  },
+  {
+    "id": "livebench-model-judgment-apache",
+    "name": "LiveBench model judgments (HF livebench/model_judgment, 2024-10-22 revision) with the LiveBench question datasets",
+    "kind": "dataset",
+    "match": [
+      "huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet",
+      "huggingface.co/datasets/livebench/math/blob/17808a1857c4504ca390b380c40ab6dc604fd8c4/data/test-00000-of-00001.parquet",
+      "huggingface.co/datasets/livebench/reasoning/blob/2335f69aecfbe07126abe9b333ba04def8515c9c/data/test-00000-of-00001.parquet",
+      "huggingface.co/datasets/livebench/coding/blob/204020a05f23d75e8a61d3e0373bdc9ee9f12bb0/data/test-00000-of-00001.parquet",
+      "huggingface.co/datasets/livebench/language/blob/1561feebcfa3a5adaf8ecb3a0bc3b01536af5710/data/test-00000-of-00001.parquet",
+      "huggingface.co/datasets/livebench/data_analysis/blob/9b73ab813303e71fa34e71598e3108df14c1222c/data/test-00000-of-00001.parquet",
+      "huggingface.co/datasets/livebench/instruction_following/blob/4f7ab12f0d47848da31de92bd7cc3d7d4acfe695/data/test-00000-of-00001.parquet"
+    ],
+    "exact": true,
+    "license": "Apache-2.0 (stated in the LiveBench datasheet)",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://github.com/LiveBench/LiveBench/blob/24364d65076429adfcba7be18af4d44fddc43dce/docs/DATASHEET.md",
+    "quote": "docs/DATASHEET.md @24364d6, 'What license (if any) is it distributed under?': 'The benchmark suite is public as of June 12, 2024, distributed under the Apache License 2.0.'; 'Are there any copyrights on the data?': 'There are no copyrights on the data.'; 'Are there any fees or access/export restrictions?': 'There are no fees or restrictions.' The datasheet gives the data location as 'https://huggingface.co/livebench' and points to livebench/model_answer for raw answers. The HF cards themselves carry no licence field, and the repo LICENSE is only the copied FastChat (Apache-2.0) and LiveCodeBench (MIT) licences (GitHub reports NOASSERTION).",
+    "attribution": "LiveBench (White et al., ICLR 2025), livebench/model_judgment @5896e3b with question datasets livebench/<category> @2024-10-22 revisions, Apache-2.0 per the LiveBench datasheet. Release-2024-07-26 averages recomputed from the per-question judgments with LiveBench's own aggregation; catalogue ids mapped. No endorsement.",
+    "scope": "Per-question judgment scores aggregated to release 2024-07-26 overall averages for models with complete judgments. OWNER REVIEW FLAG: the licence comes from the datasheet's statement about the LiveBench 'benchmark suite'/'data' on huggingface.co/livebench, not from a card licence field; confirm this covers the judgment (score) files. The livebench.ai website tables (livebench.github.io repo, no licence) are not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-09"
+  },
+  {
+    "id": "paper-2406.15877v4-bigcodebench",
+    "name": "BigCodeBench paper (Zhuo et al., ICLR 2025), arXiv 2406.15877v4",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2406.15877v4",
+      "arxiv.org/abs/2406.15877v4",
+      "arxiv.org/pdf/2406.15877v4"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2406.15877v4",
+    "quote": "arXiv abs page for 2406.15877v4 (submitted Tue, 1 Apr 2025) links its licence as http://creativecommons.org/licenses/by/4.0/ (v1–v4 all CC BY 4.0; no v5 exists). Tables 6 and 7 are the authors' own runs: 'we extensively evaluate 60 state-of-the-art LLMs on BigCodeBench-Complete and 35 instruction-tuned LLMs on BigCodeBench-Instruct ... we report Pass@1 with greedy decoding for the main experiments in the zero-shot setting.'",
+    "attribution": "Terry Yue Zhuo et al., 'BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions', arXiv:2406.15877v4, CC BY 4.0. Tables 6–7 greedy 'Original' pass@1 cells; converted to catalogue model ids. No endorsement.",
+    "scope": "Tables 6 (Complete) and 7 (Instruct), greedy-decoding 'Original' pass@1 column, full 1,140-task set. GPT-4-Turbo row held (identity conflict with Table 4). The separate BigCodeBench leaderboard data (HF bigcode/bigcodebench-results, website repo) is NOT covered: no licence.",
+    "verdict": "allowed",
+    "checked": "2026-10-09"
+  },
+  {
+    "id": "opencompass-compassacademic-space-predictions",
+    "name": "OpenCompass CompassAcademic leaderboard (full version) Space: committed predictions file",
+    "kind": "leaderboard",
+    "match": [
+      "huggingface.co/spaces/opencompass/CompassAcademic-Leaderboard-Full-Version/blob/73af091f28193d1e3e232851b940cadbb856556e/data/hf-academic-predictions.json"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/spaces/opencompass/CompassAcademic-Leaderboard-Full-Version/blob/73af091f28193d1e3e232851b940cadbb856556e/README.md",
+    "quote": "Space README front matter at 73af091f: 'license: apache-2.0'. data/hf-academic-predictions.json (398 MB; last commit 7ff51fcd 'test', 2025-03-31) is committed in the Space repo and read by app.py (findfile_predictions). It holds OpenCompass's own IFEval (8 models) and DROP (4 models) predictions with per-model 'results'. The leaderboard's main score table is NOT covered: app.py fetches it from http://opencompass.oss-cn-shanghai.aliyuncs.com/dev-assets/hf-research/hf-academic.json (outside the repo, no licence).",
+    "attribution": "OpenCompass Contributors, CompassAcademic Leaderboard (Full Version) Space, data/hf-academic-predictions.json @73af091f, Apache-2.0. IFEval prompt-level strict and DROP F1 'results' fields only; percentages converted to fractions; catalogue ids mapped. No endorsement.",
+    "scope": "'results' fields of the IFEval and drop entries only. The file's cfg blocks contain third-party API credentials: never copy or republish the cfg contents.",
+    "verdict": "allowed",
+    "checked": "2026-10-09"
+  },
+  {
+    "id": "nvidia-ruler-readme-results",
+    "name": "NVIDIA RULER repository README results table",
+    "kind": "leaderboard",
+    "match": [
+      "github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/LICENSE",
+    "terms_url": "https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/LICENSE",
+    "quote": "Root LICENSE at the pinned commit is the Apache License 2.0 (GitHub API: Apache-2.0); the README with the results table is a committed file of that repository. README: 'We benchmark 17 open-source models ... Here are our main results.' Notes list the rows reported by model authors (Jamba-1.5-large, FILM-7B, Qwen2.5-1M, Qwen3, EXAONE 4.0); GradientAI rows were added in commit e8a25c3 'add results from GradientAI'.",
+    "attribution": "NVIDIA, RULER (Hsieh et al., 2024), github.com/NVIDIA/RULER README @c3f5e3b, Apache-2.0. 64K and 128K columns of NVIDIA's own rows; percentages converted to fractions; catalogue ids mapped. No endorsement.",
+    "scope": "README main table, 64K and 128K columns, rows without an asterisk and not from the GradientAI commit, only where the evaluated length is within the row's claimed context length.",
+    "verdict": "allowed",
+    "checked": "2026-10-09"
+  },
+  {
+    "id": "paper-2410.07112v2-vhelm",
+    "name": "VHELM: A Holistic Evaluation of Vision Language Models (Stanford CRFM), arXiv 2410.07112v2",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2410.07112v2",
+      "arxiv.org/abs/2410.07112v2",
+      "arxiv.org/pdf/2410.07112v2"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2410.07112v2",
+    "quote": "arXiv abs page for 2410.07112v2 (submitted 24 Oct 2024) links http://creativecommons.org/licenses/by/4.0/. §4: 'We evaluate 22 recent models from 6 developers, as listed in Table A2 ... In addition to implementing consistent adaptation and evaluation methods across all the models'; §3: 'In this study, we use only zero-shot prompting'.",
+    "attribution": "Tony Lee et al., 'VHELM: A Holistic Evaluation of Vision Language Models', arXiv:2410.07112v2, CC BY 4.0. Table 4 MMMU (EM) and MathVista (EM) cells; catalogue ids mapped. No endorsement.",
+    "scope": "Table 4, MMMU (EM) and MathVista (EM) columns for catalogue API models. Judge-scored (Prometheus-Vision) columns and mean win rates (pool-dependent) not used. The live HELM/VHELM leaderboard data (GCS bucket, no licence) is NOT covered.",
+    "verdict": "allowed",
+    "checked": "2026-10-09"
+  },
+  {
+    "id": "speech-stt-danish-asr-ryeai-mit",
+    "name": "Danish Speech-to-Text Leaderboard (RyeAI) · results dataset",
+    "kind": "leaderboard",
+    "match": [
+      "huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/data/results.parquet"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://github.com/Rye-A1/danish-asr-leaderboard/blob/f4a0ddc2d6703c43130788507a89231a44f32d1d/LICENSE",
+    "terms_url": "https://huggingface.co/datasets/RyeAI/danish-asr-leaderboard/blob/344e5a7047d9b5f3b1c8248050ae5e1dba186f43/README.md",
+    "quote": "Results dataset RyeAI/danish-asr-leaderboard @344e5a7: card 'license: mit'. Space RyeAI/danish-asr-leaderboard @feb3f84: 'license: mit' with the same numbers baked into the committed leaderboard.json. Harness github.com/Rye-A1/danish-asr-leaderboard @f4a0ddc README: 'every model is transcribed and scored the same way on the same five public Danish test sets' ... 'License: MIT'.",
+    "attribution": "RyeAI, Danish Speech-to-Text Leaderboard (huggingface.co/datasets/RyeAI/danish-asr-leaderboard @344e5a7, MIT). mean_wer column; percentages converted to fractions; catalogue ids mapped. No endorsement.",
+    "scope": "mean_wer of catalogue models. OWNER REVIEW FLAG: the README invites outside contributors to 'Run the eval and open a PR with the result JSON', and rows carry no submitter field; the imported rows are general-purpose models (Whisper, NVIDIA, Mistral, Qwen, Meta, OpenAI/ElevenLabs APIs) run with the published harness, and per-sample hypotheses are published under outputs/ for re-scoring.",
+    "verdict": "allowed",
+    "checked": "2026-10-09"
+  },
+  {
+    "id": "speech-stt-dutch-asr-tvosch-apache",
+    "name": "Dutch ASR Leaderboard (tvosch) · committed result files",
+    "kind": "leaderboard",
+    "match": [
+      "huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/results/CohereLabs__cohere-transcribe-03-2026.json",
+      "huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/results/ElevenLabs-scribe_v2.json",
+      "huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/results/Qwen__Qwen3-ASR-1.7B.json",
+      "huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/results/mistralai__Voxtral-Mini-4B-Realtime-2602.json",
+      "huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/results/nvidia__parakeet-tdt-0.6b-v3.json",
+      "huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/results/openai__whisper-large-v3.json",
+      "huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/results/voxtral-mini-2602.json"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/spaces/tvosch/Dutch-ASR-Leaderboard/blob/939431c9206d1e7676347a95d13317f9a3226181/README.md",
+    "quote": "Space card at 939431c: 'license: apache-2.0'; results/<model>.json files are committed in the Space and read by app.py; README: 'Local models are benchmarked on H100 HBM2e GPUs' and 'How to Submit: 1. Run eval.py to generate results JSON 2. Add your results/<model>.json file 3. Open a PR'.",
+    "attribution": "tvosch, Dutch ASR Leaderboard Space (@939431c, Apache-2.0). Three-set average WER recomputed as app.py does; catalogue ids mapped. No endorsement.",
+    "scope": "Seven result files of catalogue models. OWNER REVIEW FLAG: community-PR leaderboard; files carry per-sample outputs but no submitter field. Vendor-looking entries (Murmel, Resonate-1) and the community fine-tune Qwen3-ASR-1.7B-NL are not imported.",
+    "verdict": "allowed",
+    "checked": "2026-10-09"
+  },
+  {
+    "id": "card3-kwaipilot-kat-coder-v2-5-dev",
+    "name": "Kwaipilot/KAT-Coder-V2.5-Dev model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md",
+    "quote": "README front-matter at the pinned revision declares 'license: apache-2.0'. Note 1 under the benchmark table: 'All metrics presented in the table are reproduced in-house: we download the public model checkpoints, deploy them via vLLM or SGLang, and evaluate under a unified standardized pipeline. No officially reported results of the respective models are directly adopted in this table.' So every column is Kwaipilot's own measurement.",
+    "attribution": "Kwaipilot (Kuaishou). Kwaipilot/KAT-Coder-V2.5-Dev model card. Source: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md. Licence: Apache-2.0. Changes: selected numerical cells transcribed into JSON; percentages divided by 100; Terminal-Bench 2.1 per-harness (Terminus-2) values used. No endorsement.",
+    "scope": "Benchmark performance table: KAT-Coder-V2.5-Dev (by: lab) and catalogued comparator columns Qwen3.5-27B, Qwen3.6-35B-A3B, Gemma 4 31B, Qwen3.5-35B-A3B, Gemma 4 26B-A4B, Qwen3-Coder-30B-A3B (by: independent, authors' in-house runs). Ornith-1.0-35B not catalogued. PinchBench and KAT-Code-Bench (internal) have no id.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card3-deepseek-ai-deepseek-v4-flash-vision-exp",
+    "name": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md",
+    "terms_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md",
+    "quote": "README front-matter at the pinned revision declares 'license: mit'; '## License: This repository is licensed under the MIT License.' Own-lab columns (DeepSeek-V4-Flash-Vision-Exp, DeepSeek-V4-Flash-0731) only; the Opus-4.8 column is not used.",
+    "attribution": "DeepSeek-AI. deepseek-ai/DeepSeek-V4-Flash-Vision-Exp model card. Source: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md. Licence: MIT. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100. No endorsement.",
+    "scope": "Own-lab columns of the introduction table on benchmarks with existing ids.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card3-xiaomimimo-mimo-v2-6-flash-rl",
+    "name": "XiaomiMiMo/MiMo-V2.6-Flash-RL model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md",
+    "terms_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md",
+    "quote": "README front-matter at the pinned revision declares 'license: mit' (repo licence tag mit). Own-lab columns of the '## 3. Evaluation Results' table (MiMo-V2.6 Pro, MiMo-V2.6 Flash, MiMo-V2.5 Pro) only. The Claude Opus 5 / GPT-5.6 Sol / Claude Fable 5 columns are NOT used: no statement that Xiaomi measured them, and several cells equal the vendors' own published figures (e.g. GPT-5.6 Sol Terminal Bench 2.1 88.8 = OpenAI's 0.888; Claude Fable 5 Terminal Bench 2.1 84.3 = Anthropic's 0.843; Claude Opus 5 Toolathlon-Verified 80.6 = Anthropic's 0.806). GDPval-AA (Artificial Analysis) and CyberGym (environments modified by Xiaomi, report §5.2 footnote 1) rows not used.",
+    "attribution": "Xiaomi MiMo Team. XiaomiMiMo/MiMo-V2.6-Flash-RL model card. Source: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md. Licence: MIT. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100. No endorsement.",
+    "scope": "Own-lab columns of the evaluation table; benchmark rows mapped to existing ids (deepswe-v1-1, toolathlon-verified, agents-last-exam-unspecified, terminal-bench-4, terminal-bench-2.1, osworld-verified, automationbench-v1-0-6, exploitgym, sec-bench-pro).",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card3-xiaomimimo-mimo-v2-6-distill-qwen-9b",
+    "name": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md",
+    "terms_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md",
+    "quote": "README front-matter at the pinned revision declares 'license: mit'. Own-model column 'MiMo-V2.6-Distill-Qwen-9B (SFT)' only; the Qwen3.5-9B column is held for the owner (see held_for_owner).",
+    "attribution": "Xiaomi MiMo Team. XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B model card. Source: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/2367e865d009c13ac81713a2878291d33ab28177/README.md. Licence: MIT. Changes: selected numerical cells transcribed into JSON; percentages divided by 100. No endorsement.",
+    "scope": "Own-model SFT column of the evaluation table (public benchmarks with existing ids).",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card3-ornith-ai-ornith-1-5-35b-a3b",
+    "name": "ornith-ai/Ornith-1.5-35B-A3B model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://opensource.org/licenses/MIT",
+    "terms_url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md",
+    "quote": "README front-matter at the pinned revision declares 'license: mit' (the Ornith 1.0 card: 'Licence: MIT licensed, globally accessible, and free from regional limitations'). Own-lab Ornith 1.5 and Ornith 1.0 columns only; comparator columns (Qwen3.6-35B-A3B, Gemma-4-31B, Muse-Glimmer-30B, Qwen3.5-397B) are not used: the card does not say the authors measured them, and several cells equal those makers' published numbers.",
+    "attribution": "DeepReinforce (ornith-ai). Ornith-1.5-35B-A3B model card. Source: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md. Licence: MIT. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100. No endorsement.",
+    "scope": "Benchmark table: Ornith-1.5-35B-A3B and Ornith-1.0-35B-A3B columns (by: lab) on 12 rows with existing ids. Claude Code harness Terminal-Bench row, DeepSWE (version not stated), Frontier-Bench, SWE Atlas and ClawEval (version/metric not stated) not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "first-party-poolside-scores",
+    "name": "Poolside vendor-reported benchmark scores for its own Laguna models (Hugging Face model cards)",
+    "match": [
+      "huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md#benchmark-results",
+      "huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results"
+    ],
+    "kind": "first-party",
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "exact": true,
+    "icon": "huggingface.co",
+    "attribution": "Poolside, vendor-reported results for Poolside's own Laguna models from its pinned Hugging Face cards; individual figures hand-recorded 2026-10-10; percentages converted to fractions. Lab-reported. No endorsement.",
+    "quote": "Owner rule (b), approved 2026-10-07: a vendor's own published score for its own model may be recorded by hand one figure at a time with exact URL, date and printed settings; other labs' cells excluded; rows labelled by: 'lab'. Cards are tagged openmdw-1.1; recorded under rule (b) rather than as licensed copies (same treatment as first-party-arcee-scores). Match URLs carry the '#benchmark-results' fragment so the score rows stay separate from the first-party-poolside price/doc entry. Comparison rows on these cards are other makers' published or third-party (incl. Artificial Analysis) figures and are not used."
+  },
+  {
+    "id": "card3-openbmb-minicpm5-2b",
+    "name": "openbmb/MiniCPM5-2B model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md",
+    "quote": "README front-matter at the pinned revision declares 'license: apache-2.0'. Table footnote 2: 'Scores marked † come from the official Artificial Analysis release; all others are reproduced internally.' Only unmarked cells are used (the † cells are Artificial Analysis figures and are excluded).",
+    "attribution": "OpenBMB. openbmb/MiniCPM5-2B model card. Source: https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md. Licence: Apache-2.0. Changes: selected unmarked numerical cells transcribed into JSON; percentages divided by 100. No endorsement.",
+    "scope": "'Evaluation Results of MiniCPM5-2B and Baselines' table: MiniCPM5-2B (by: lab) and OpenBMB's internally reproduced columns LFM2.5-2.6B, Qwen3.5-2B, Gemma-4-E2B-it, Qwen3.5-4B, granite-4.2-3B, Nemotron-3-Nano-4B, Gemma-4-E4B-it, LFM2.5-8B-A1B (by: independent) on 21 rows with existing ids. All † cells (SciCode, HLE, GPQA-Diamond, AA-LCR, Terminal-Bench v2.1 and some τ²/τ³/GDPval cells) excluded as Artificial Analysis figures; NoLiMa, LongBenchPro, BrowseComp Top100, GAIA Text-103, GDPval-AA, Claw-Gym, WildClaw, QwenClaw have no id.",
+    "verdict": "allowed",
+    "checked": "2026-10-10",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card3-lgai-exaone-k-exaone-2-0-750b-a37b",
+    "name": "LGAI-EXAONE/K-EXAONE-2.0-750B-A37B model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/LICENSE",
+    "terms_url": "https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md",
+    "quote": "README front-matter at the pinned revision declares 'license: apache-2.0' with 'license_link: LICENSE'; the card's License section: 'The model is licensed under Apache License 2.0' and 'We also release K-EXAONE 2.0 under the Apache license 2.0 so that the broader AI ecosystem can inspect, deploy, and build upon it.'",
+    "attribution": "LG AI Research. LGAI-EXAONE/K-EXAONE-2.0-750B-A37B model card. Licence: Apache-2.0. Changes: selected numerical cells transcribed into JSON; percentages divided by 100. No endorsement.",
+    "scope": "Evaluation Results table: K-EXAONE 2.0 and K-EXAONE (236B) columns (LG's own models, by lab) on MMLU-Pro, GPQA-Diamond, HLE (text-only), AIME 2026, HMMT Feb 2026, IMO-AnswerBench, SWE-bench Verified, Terminal-Bench 2.1, τ3-Banking, IFEval, IFBench; plus the comparator cells that the technical report (arXiv 2608.04505v1, Table 6) leaves without an asterisk, i.e. LG's own internal runs ('when official scores are unavailable, we evaluate them in our internal environment'): GLM-5.1 MMLU-Pro/SWE-bench Verified/IFEval, DeepSeek V4 Pro (max, April preview) AIME 2026/IFEval, Qwen3.5-397B HMMT Feb 2026. Asterisked (copied official) cells excluded. Not used: SciCode and Claw-Eval (card and report values differ for K-EXAONE 2.0), AA-LCR, OpenAI-MRCR, Ko-LongBench, Korean rows, MMMLU/GlobalMMLU-Lite/PolyMath (nine-language subsets), safety rows.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "huggingface.co",
+    "evidence_url": "https://arxiv.org/html/2608.04505v1"
   }
 ]
