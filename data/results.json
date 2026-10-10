@@ -255386,5 +255386,1149 @@
     "date": "2026-10-08",
     "note": "SpaceCast-Bench (arXiv:2610.12402v1, CC BY 4.0) Table 1 (accuracy on all 16 SpaceCast-Bench task types), row 'Qwen3.5-2B', Overall = 31.3%; stored /100. Authors' own run: chain-of-thought prompt, deterministic decoding, macro-average accuracy over 16 task types.",
     "source_id": "paper-2610.12402v1-spacecast-bench"
+  },
+  {
+    "model": "bloom-1b7",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2856,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'bigscience/bloom-1b7' (source=hub, precision=float16, type=pretrained); published average 28.56 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha cc72a88036. Identity: catalogue bloom-1b7 (HF bigscience/bloom-1b7).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "bloom-3b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.3354,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'bigscience/bloom-3b' (source=hub, precision=float16, type=pretrained); published average 33.54 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 52bc5b4301. Identity: catalogue bloom-3b (HF bigscience/bloom-3b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "bloom-560m",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2543,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'bigscience/bloom-560m' (source=hub, precision=float16, type=pretrained); published average 25.43 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha ac2ae5fab2. Identity: catalogue bloom-560m (HF bigscience/bloom-560m).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "bloom-7b1",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2887,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'bigscience/bloom-7b1' (source=hub, precision=float16, type=pretrained); published average 28.87 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 6232703e39. Identity: catalogue bloom-7b1 (HF bigscience/bloom-7b1).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "deepseek-r1-distill-llama-8b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.4239,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2025-01-29",
+    "note": "Open PT-LLM Leaderboard row 'deepseek-ai/DeepSeek-R1-Distill-Llama-8B' (source=hub, precision=bfloat16, type=chat (RLHF, DPO, IFT, ...)); published average 42.39 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 24ae87a9c3. Identity: catalogue deepseek-r1-distill-llama-8b (HF deepseek-ai/DeepSeek-R1-Distill-Llama-8B).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "deepseek-r1-distill-qwen-1-5b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2534,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2025-01-28",
+    "note": "Open PT-LLM Leaderboard row 'deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B' (source=hub, precision=bfloat16, type=chat (RLHF, DPO, IFT, ...)); published average 25.34 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 0092dee1c3. Identity: catalogue deepseek-r1-distill-qwen-1-5b (HF deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "deepseek-r1-distill-qwen-14b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.681,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2025-01-29",
+    "note": "Open PT-LLM Leaderboard row 'deepseek-ai/DeepSeek-R1-Distill-Qwen-14B' (source=hub, precision=bfloat16, type=chat (RLHF, DPO, IFT, ...)); published average 68.1 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha . Identity: catalogue deepseek-r1-distill-qwen-14b (HF deepseek-ai/DeepSeek-R1-Distill-Qwen-14B).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "deepseek-r1-distill-qwen-7b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.504,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2025-01-28",
+    "note": "Open PT-LLM Leaderboard row 'deepseek-ai/DeepSeek-R1-Distill-Qwen-7B' (source=hub, precision=bfloat16, type=chat (RLHF, DPO, IFT, ...)); published average 50.4 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 09db661939. Identity: catalogue deepseek-r1-distill-qwen-7b (HF deepseek-ai/DeepSeek-R1-Distill-Qwen-7B).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "falcon-7b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.3686,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'tiiuae/falcon-7b' (source=hub, precision=bfloat16, type=pretrained); published average 36.86 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 898df1396f. Identity: catalogue falcon-7b (HF tiiuae/falcon-7b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "gemma-2b-base",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.4407,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-21",
+    "note": "Open PT-LLM Leaderboard row 'google/gemma-2b' (source=hub, precision=bfloat16, type=pretrained); published average 44.07 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 9d067f00de. Identity: catalogue gemma-2b-base (HF google/gemma-2b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "gemma-7b-base",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.6418,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-21",
+    "note": "Open PT-LLM Leaderboard row 'google/gemma-7b' (source=hub, precision=bfloat16, type=pretrained); published average 64.18 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 227defe192. Identity: catalogue gemma-7b-base (HF google/gemma-7b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "gpt-2-large",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2739,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'openai-community/gpt2-large' (source=hub, precision=float16, type=pretrained); published average 27.39 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 97935fc1a4. Identity: catalogue gpt-2-large (HF openai-community/gpt2-large).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "gpt-2-medium",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2906,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'openai-community/gpt2-medium' (source=hub, precision=float16, type=pretrained); published average 29.06 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha f65d4965d1. Identity: catalogue gpt-2-medium (HF openai-community/gpt2-medium).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "gpt-2-xl",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2586,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'openai-community/gpt2-xl' (source=hub, precision=float16, type=pretrained); published average 25.86 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha b81cf803a4. Identity: catalogue gpt-2-xl (HF openai-community/gpt2-xl).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "gpt-j-6b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.3571,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'EleutherAI/gpt-j-6b' (source=hub, precision=float16, type=pretrained); published average 35.71 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 47e169305d. Identity: catalogue gpt-j-6b (HF EleutherAI/gpt-j-6b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "gpt-neo-1-3b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2668,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'EleutherAI/gpt-neo-1.3B' (source=hub, precision=float16, type=pretrained); published average 26.68 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha dbe59a7f4a. Identity: catalogue gpt-neo-1-3b (HF EleutherAI/gpt-neo-1.3B).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "gpt-neo-125m",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2555,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'EleutherAI/gpt-neo-125m' (source=hub, precision=float16, type=pretrained); published average 25.55 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 21def0189f. Identity: catalogue gpt-neo-125m (HF EleutherAI/gpt-neo-125m).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "gpt-neo-2-7b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2804,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'EleutherAI/gpt-neo-2.7B' (source=hub, precision=float16, type=pretrained); published average 28.04 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha e24fa29113. Identity: catalogue gpt-neo-2-7b (HF EleutherAI/gpt-neo-2.7B).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "gpt-neox-20b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2832,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'EleutherAI/gpt-neox-20b' (source=hub, precision=float16, type=pretrained); published average 28.32 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha c292233c83. Identity: catalogue gpt-neox-20b (HF EleutherAI/gpt-neox-20b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "gpt-oss-120b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.4296,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2025-08-29",
+    "note": "Open PT-LLM Leaderboard row 'openai/gpt-oss-120b' (source=hub, precision=bfloat16, type=chat (RLHF, DPO, IFT, ...)); published average 42.96 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha b5c939de8f. Identity: catalogue gpt-oss-120b (HF openai/gpt-oss-120b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "gpt-oss-20b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.4283,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2025-08-29",
+    "note": "Open PT-LLM Leaderboard row 'openai/gpt-oss-20b' (source=hub, precision=bfloat16, type=chat (RLHF, DPO, IFT, ...)); published average 42.83 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 6cee5e81ee. Identity: catalogue gpt-oss-20b (HF openai/gpt-oss-20b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "lfm2-1-2b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.5869,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2025-08-30",
+    "note": "Open PT-LLM Leaderboard row 'LiquidAI/LFM2-1.2B' (source=hub, precision=bfloat16, type=chat (RLHF, DPO, IFT, ...)); published average 58.69 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 5d7e47e946. Identity: catalogue lfm2-1-2b (HF LiquidAI/LFM2-1.2B).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "lfm2-350m",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.3216,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2025-08-30",
+    "note": "Open PT-LLM Leaderboard row 'LiquidAI/LFM2-350M' (source=hub, precision=bfloat16, type=chat (RLHF, DPO, IFT, ...)); published average 32.16 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 8707ee0cbe. Identity: catalogue lfm2-350m (HF LiquidAI/LFM2-350M).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "lfm2-700m",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.5503,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2025-08-30",
+    "note": "Open PT-LLM Leaderboard row 'LiquidAI/LFM2-700M' (source=hub, precision=bfloat16, type=chat (RLHF, DPO, IFT, ...)); published average 55.03 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha ab26029373. Identity: catalogue lfm2-700m (HF LiquidAI/LFM2-700M).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "llama-2-13b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.5749,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'meta-llama/Llama-2-13b-hf' (source=hub, precision=float16, type=pretrained); published average 57.49 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha dc1d3b3bfd. Identity: catalogue llama-2-13b (HF meta-llama/Llama-2-13b-hf).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "llama-2-70b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.6773,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'meta-llama/Llama-2-70b-hf' (source=hub, precision=float16, type=pretrained); published average 67.73 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 90052941a6. Identity: catalogue llama-2-70b (HF meta-llama/Llama-2-70b-hf).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "llama-2-7b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.489,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'meta-llama/Llama-2-7b-hf' (source=hub, precision=float16, type=pretrained); published average 48.9 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 8cca527612. Identity: catalogue llama-2-7b (HF meta-llama/Llama-2-7b-hf).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "mistral-7b-v0-1",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.6113,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'mistralai/Mistral-7B-v0.1' (source=hub, precision=bfloat16, type=pretrained); published average 61.13 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 26bca36bde. Identity: catalogue mistral-7b-v0-1 (HF mistralai/Mistral-7B-v0.1).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "mixtral-8x7b-v0-1",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.6787,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'mistralai/Mixtral-8x7B-v0.1' (source=hub, precision=bfloat16, type=pretrained); published average 67.87 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 985aa05589. Identity: catalogue mixtral-8x7b-v0-1 (HF mistralai/Mixtral-8x7B-v0.1).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "opt-1-3b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2555,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'facebook/opt-1.3b' (source=hub, precision=float16, type=pretrained); published average 25.55 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 3f5c25d0bc. Identity: catalogue opt-1-3b (HF facebook/opt-1.3b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "opt-125m",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2437,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'facebook/opt-125m' (source=hub, precision=float16, type=pretrained); published average 24.37 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 27dcfa74d3. Identity: catalogue opt-125m (HF facebook/opt-125m).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "opt-13b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2822,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'facebook/opt-13b' (source=hub, precision=float16, type=pretrained); published average 28.22 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha e515202d1e. Identity: catalogue opt-13b (HF facebook/opt-13b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "opt-2-7b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.27,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'facebook/opt-2.7b' (source=hub, precision=float16, type=pretrained); published average 27.0 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 905a4b602c. Identity: catalogue opt-2-7b (HF facebook/opt-2.7b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "opt-30b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.3954,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'facebook/opt-30b' (source=hub, precision=float16, type=pretrained); published average 39.54 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha ceea0a90ac. Identity: catalogue opt-30b (HF facebook/opt-30b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "opt-350m",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2332,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'facebook/opt-350m' (source=hub, precision=float16, type=pretrained); published average 23.32 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 08ab08cc4b. Identity: catalogue opt-350m (HF facebook/opt-350m).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "opt-6-7b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2865,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'facebook/opt-6.7b' (source=hub, precision=float16, type=pretrained); published average 28.65 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha a45aa65bbe. Identity: catalogue opt-6-7b (HF facebook/opt-6.7b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "opt-66b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.3499,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'facebook/opt-66b' (source=hub, precision=float16, type=pretrained); published average 34.99 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 7259969061. Identity: catalogue opt-66b (HF facebook/opt-66b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "phi-1-5",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2964,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'microsoft/phi-1_5' (source=hub, precision=float16, type=pretrained); published average 29.64 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha bffd3b29c4. Identity: catalogue phi-1-5 (HF microsoft/phi-1_5).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "phi-2",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.3652,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'microsoft/phi-2' (source=hub, precision=float16, type=pretrained); published average 36.52 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha b10c3eba54. Identity: catalogue phi-2 (HF microsoft/phi-2).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "phi-4-reasoning",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.6792,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2025-05-01",
+    "note": "Open PT-LLM Leaderboard row 'microsoft/Phi-4-reasoning' (source=hub, precision=bfloat16, type=chat (RLHF, DPO, IFT, ...)); published average 67.92 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha a2b4ce1926. Identity: catalogue phi-4-reasoning (HF microsoft/Phi-4-reasoning).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "phi-4-reasoning-plus",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.6595,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2025-05-01",
+    "note": "Open PT-LLM Leaderboard row 'microsoft/Phi-4-reasoning-plus' (source=hub, precision=bfloat16, type=chat (RLHF, DPO, IFT, ...)); published average 65.95 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 459ab9fc2d. Identity: catalogue phi-4-reasoning-plus (HF microsoft/Phi-4-reasoning-plus).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "pythia-12b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.3401,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-11",
+    "note": "Open PT-LLM Leaderboard row 'EleutherAI/pythia-12b' (source=hub, precision=float16, type=pretrained); published average 34.01 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 35c9d7f32f. Identity: catalogue pythia-12b (HF EleutherAI/pythia-12b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "pythia-160m",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2945,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-11",
+    "note": "Open PT-LLM Leaderboard row 'EleutherAI/pythia-160m' (source=hub, precision=float16, type=pretrained); published average 29.45 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 50f5173d93. Identity: catalogue pythia-160m (HF EleutherAI/pythia-160m).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "pythia-1b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2523,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-11",
+    "note": "Open PT-LLM Leaderboard row 'EleutherAI/pythia-1b' (source=hub, precision=float16, type=pretrained); published average 25.23 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha f73d7dcc54. Identity: catalogue pythia-1b (HF EleutherAI/pythia-1b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "pythia-2-8b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.24,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-11",
+    "note": "Open PT-LLM Leaderboard row 'EleutherAI/pythia-2.8b' (source=hub, precision=float16, type=pretrained); published average 24.0 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 2a259cdd96. Identity: catalogue pythia-2-8b (HF EleutherAI/pythia-2.8b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "pythia-410m",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2637,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-11",
+    "note": "Open PT-LLM Leaderboard row 'EleutherAI/pythia-410m' (source=hub, precision=float16, type=pretrained); published average 26.37 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 9879c9b5f8. Identity: catalogue pythia-410m (HF EleutherAI/pythia-410m).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "pythia-6-9b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2904,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-11",
+    "note": "Open PT-LLM Leaderboard row 'EleutherAI/pythia-6.9b' (source=hub, precision=float16, type=pretrained); published average 29.04 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha f271943e88. Identity: catalogue pythia-6-9b (HF EleutherAI/pythia-6.9b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "pythia-70m",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2318,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-11",
+    "note": "Open PT-LLM Leaderboard row 'EleutherAI/pythia-70m' (source=hub, precision=float16, type=pretrained); published average 23.18 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha a39f36b100. Identity: catalogue pythia-70m (HF EleutherAI/pythia-70m).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "qwen3-4b-thinking-2507",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.5907,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2025-08-30",
+    "note": "Open PT-LLM Leaderboard row 'Qwen/Qwen3-4B-Thinking-2507' (source=hub, precision=bfloat16, type=chat (RLHF, DPO, IFT, ...)); published average 59.07 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 768f209d9e. Identity: catalogue qwen3-4b-thinking-2507 (HF Qwen/Qwen3-4B-Thinking-2507).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "redpajama-incite-7b-base",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.3297,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'togethercomputer/RedPajama-INCITE-7B-Base' (source=hub, precision=float16, type=pretrained); published average 32.97 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 78f7e48244. Identity: catalogue redpajama-incite-7b-base (HF togethercomputer/RedPajama-INCITE-7B-Base).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "redpajama-incite-base-3b-v1",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.297,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'togethercomputer/RedPajama-INCITE-Base-3B-v1' (source=hub, precision=float16, type=pretrained); published average 29.7 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 094fbdd0c9. Identity: catalogue redpajama-incite-base-3b-v1 (HF togethercomputer/RedPajama-INCITE-Base-3B-v1).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "stablelm-3b-4e1t",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.3979,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'stabilityai/stablelm-3b-4e1t' (source=hub, precision=bfloat16, type=pretrained); published average 39.79 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha e3be657f4d. Identity: catalogue stablelm-3b-4e1t (HF stabilityai/stablelm-3b-4e1t).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "stablelm-base-alpha-3b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2764,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'stabilityai/stablelm-base-alpha-3b' (source=hub, precision=float16, type=pretrained); published average 27.64 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 819657db42. Identity: catalogue stablelm-base-alpha-3b (HF stabilityai/stablelm-base-alpha-3b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "stablelm-base-alpha-7b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2545,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'stabilityai/stablelm-base-alpha-7b' (source=hub, precision=float16, type=pretrained); published average 25.45 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 1d43a3b40d. Identity: catalogue stablelm-base-alpha-7b (HF stabilityai/stablelm-base-alpha-7b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "tulu-2-13b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.635,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-05-22",
+    "note": "Open PT-LLM Leaderboard row 'allenai/tulu-2-13b' (source=hub, precision=bfloat16, type=chat (RLHF, DPO, IFT, ...)); published average 63.5 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 9c8375d9f2. Identity: catalogue tulu-2-13b (HF allenai/tulu-2-13b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "tulu-2-7b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.63,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-05-22",
+    "note": "Open PT-LLM Leaderboard row 'allenai/tulu-2-7b' (source=hub, precision=bfloat16, type=chat (RLHF, DPO, IFT, ...)); published average 63.0 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 3c6e328ae9. Identity: catalogue tulu-2-7b (HF allenai/tulu-2-7b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "tulu-2-dpo-13b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.6577,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-03-05",
+    "note": "Open PT-LLM Leaderboard row 'allenai/tulu-2-dpo-13b' (source=hub, precision=bfloat16, type=chat (RLHF, DPO, IFT, ...)); published average 65.77 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha aa3e5cfac9. Identity: catalogue tulu-2-dpo-13b (HF allenai/tulu-2-dpo-13b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "tulu-2-dpo-7b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.6395,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-03-05",
+    "note": "Open PT-LLM Leaderboard row 'allenai/tulu-2-dpo-7b' (source=hub, precision=bfloat16, type=chat (RLHF, DPO, IFT, ...)); published average 63.95 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 8ffe1eb804. Identity: catalogue tulu-2-dpo-7b (HF allenai/tulu-2-dpo-7b).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "deepseek-r1-distill-qwen-32b",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2615,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2025-01-29",
+    "note": "Open PT-LLM Leaderboard row 'deepseek-ai/DeepSeek-R1-Distill-Qwen-32B' (source=hub, precision=bfloat16, type=chat (RLHF, DPO, IFT, ...)); published average 26.15 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha d66bcfc2f3. Identity: catalogue deepseek-r1-distill-qwen-32b (HF deepseek-ai/DeepSeek-R1-Distill-Qwen-32B).",
+    "invalid": "Failed run: several task scores fall far below the trivial baselines (OAB Exams 5.06 on 4-option questions, PT Hate Speech 3.73 and tweetSentBR 3.42 macro-F1) while ASSIN2 RTE is 89.84, i.e. most answers in those tasks were not parsed (reasoning output); the 26.15 average (random baseline 32.64) is not a measurement of ability.",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "command-r-03-2024",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.6828,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-04-05",
+    "note": "Open PT-LLM Leaderboard row 'CohereForAI/c4ai-command-r-v01' (source=hub, precision=float16, type=chat (RLHF, DPO, IFT, ...)); published average 68.28 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 16881ccde1. Identity: catalogue command-r-03-2024 (HF CohereLabs/c4ai-command-r-v01). Row path CohereForAI/c4ai-command-r-v01 is the same Hugging Face repository as the catalogue's CohereLabs/c4ai-command-r-v01 (Cohere renamed the CohereForAI organisation to CohereLabs; the old path redirects).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "gpt-2-small",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.2331,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 'gpt2' (source=hub, precision=float16, type=pretrained); published average 23.31 (divided by 100). Local harness run, float16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 11c5a3d581. Identity: catalogue gpt-2-small (HF openai-community/gpt2). Row path 'gpt2' is the legacy root-namespace name of openai-community/gpt2 (the catalogue identity note: 'formerly the root-namespace gpt2 repo').",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "t5-small",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.1263,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 't5-small' (source=hub, precision=bfloat16, type=pretrained); published average 12.63 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha df1b051c49. Identity: catalogue t5-small (HF google-t5/t5-small). Row path 't5-small' is the legacy root-namespace name of google-t5/t5-small (same repository).",
+    "invalid": "Failed run: average 12.63 vs the leaderboard's random baseline 32.64; the original T5 encoder-decoder checkpoint does not follow the few-shot generative answer format (every task near or below chance), so this is not a measurement of ability.",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "t5-base",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.1368,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 't5-base' (source=hub, precision=bfloat16, type=pretrained); published average 13.68 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha fe6d9bf207. Identity: catalogue t5-base (HF google-t5/t5-base). Row path 't5-base' is the legacy root-namespace name of google-t5/t5-base (same repository).",
+    "invalid": "Failed run: average 13.68 vs the leaderboard's random baseline 32.64; the original T5 encoder-decoder checkpoint does not follow the few-shot generative answer format (every task near or below chance), so this is not a measurement of ability.",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "t5-large",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.1476,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-02-05",
+    "note": "Open PT-LLM Leaderboard row 't5-large' (source=hub, precision=bfloat16, type=pretrained); published average 14.76 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 150ebc2c4b. Identity: catalogue t5-large (HF google-t5/t5-large). Row path 't5-large' is the legacy root-namespace name of google-t5/t5-large (same repository).",
+    "invalid": "Failed run: average 14.76 vs the leaderboard's random baseline 32.64; the original T5 encoder-decoder checkpoint does not follow the few-shot generative answer format (every task near or below chance), so this is not a measurement of ability.",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "llama-3-1-8b-base",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.6536,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "Open PT-LLM Leaderboard row 'meta-llama/Meta-Llama-3.1-8B' (source=hub, precision=bfloat16, type=pretrained); published average 65.36 (divided by 100). Local harness run, bfloat16. Date is the leaderboard's row date (evaluation/submission), not model release. Evaluated revision main = model_sha 13f04ed6f8. Identity: catalogue llama-3-1-8b-base (HF meta-llama/Llama-3.1-8B). Row path meta-llama/Meta-Llama-3.1-8B is the same Hugging Face repository as the catalogue's meta-llama/Llama-3.1-8B (Meta renamed the Llama 3.1 repos; the old path redirects).",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "gemini-2-0-flash-lite-001",
+    "bench": "open-pt-llm-avg9",
+    "score": 0.8056,
+    "source": "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz",
+    "by": "independent",
+    "date": "2025-04-03",
+    "note": "Open PT-LLM Leaderboard row 'Gemini 2.0 Flash Lite (001) [2025-04-03]' (source=external, precision=?); published average 80.56 (divided by 100). API run (external); versioned gemini-2.0-flash-lite-001. Date is the leaderboard's row date (evaluation/submission), not model release.",
+    "source_id": "open-pt-llm-leaderboard"
+  },
+  {
+    "model": "bielik-1-5b-v3-0-instruct",
+    "bench": "euroeval-en-life-in-the-uk-test-5shot",
+    "score": 0.7178,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '62.36 ± 1.17 / 71.78 ± 0.94' (MCC / accuracy); entry 'speakleash/Bielik-1.5B-v3.0-Instruct', instruction-tuned (📝), default setting; EuroEval version 16.11.0.dev0.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "bielik-1-5b-v3-0-instruct",
+    "bench": "euroeval-en-hellaswag-test-5shot",
+    "score": 0.5065,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset hellaswag: HellaSwag (common-sense, 4-option MC), test split (2048 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '35.25 ± 1.58 / 50.65 ± 1.31' (MCC / accuracy); entry 'speakleash/Bielik-1.5B-v3.0-Instruct', instruction-tuned (📝), default setting; EuroEval version 16.11.0.dev0.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "bielik-11b-v2-3-instruct",
+    "bench": "euroeval-en-life-in-the-uk-test-5shot",
+    "score": 0.8383,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '78.29 ± 0.81 / 83.83 ± 0.58' (MCC / accuracy); entry 'speakleash/Bielik-11B-v2.3-Instruct', instruction-tuned (📝), default setting; EuroEval version 15.10.1.dev0.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "bielik-11b-v2-6-instruct",
+    "bench": "euroeval-en-life-in-the-uk-test-5shot",
+    "score": 0.8016,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '72.93 ± 1.20 / 80.16 ± 0.87' (MCC / accuracy); entry 'speakleash/Bielik-11B-v2.6-Instruct', instruction-tuned (📝), default setting; EuroEval version 16.10.0.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "bielik-11b-v2-6-instruct",
+    "bench": "euroeval-en-hellaswag-test-5shot",
+    "score": 0.7617,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset hellaswag: HellaSwag (common-sense, 4-option MC), test split (2048 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '68.51 ± 1.72 / 76.17 ± 1.34' (MCC / accuracy); entry 'speakleash/Bielik-11B-v2.6-Instruct', instruction-tuned (📝), default setting; EuroEval version 16.10.0.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "bielik-11b-v3-0-instruct",
+    "bench": "euroeval-en-life-in-the-uk-test-5shot",
+    "score": 0.8266,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '76.63 ± 1.53 / 82.66 ± 1.13' (MCC / accuracy); entry 'speakleash/Bielik-11B-v3.0-Instruct', instruction-tuned (📝), default setting; EuroEval version 16.10.0.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "bielik-11b-v3-0-instruct",
+    "bench": "euroeval-en-hellaswag-test-5shot",
+    "score": 0.7743,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset hellaswag: HellaSwag (common-sense, 4-option MC), test split (2048 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '70.19 ± 2.43 / 77.43 ± 1.95' (MCC / accuracy); entry 'speakleash/Bielik-11B-v3.0-Instruct', instruction-tuned (📝), default setting; EuroEval version 16.10.0.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "bielik-4-5b-v3-0-instruct",
+    "bench": "euroeval-en-life-in-the-uk-test-5shot",
+    "score": 0.8049,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '73.42 ± 1.11 / 80.49 ± 0.85' (MCC / accuracy); entry 'speakleash/Bielik-4.5B-v3.0-Instruct', instruction-tuned (📝), default setting; EuroEval version 16.11.0.dev0.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "bielik-4-5b-v3-0-instruct",
+    "bench": "euroeval-en-hellaswag-test-5shot",
+    "score": 0.7219,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset hellaswag: HellaSwag (common-sense, 4-option MC), test split (2048 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '63.74 ± 1.33 / 72.19 ± 1.18' (MCC / accuracy); entry 'speakleash/Bielik-4.5B-v3.0-Instruct', instruction-tuned (📝), default setting; EuroEval version 16.11.0.dev0.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "opencoder-8b-instruct",
+    "bench": "euroeval-en-life-in-the-uk-test-5shot",
+    "score": 0.4623,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '24.64 ± 2.14 / 46.23 ± 1.58' (MCC / accuracy); entry 'infly/OpenCoder-8B-Instruct', instruction-tuned (📝), default setting; EuroEval version 15.10.1.dev0.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "phi-4-reasoning-plus",
+    "bench": "euroeval-en-life-in-the-uk-test-5shot",
+    "score": 0.5281,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '41.25 ± 11.28 / 52.81 ± 8.75' (MCC / accuracy); entry 'microsoft/Phi-4-reasoning-plus', reasoning (🤔), reasoning model at EuroEval default settings; EuroEval version 15.10.1.dev0.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "llama-3-8b-base",
+    "bench": "euroeval-en-life-in-the-uk-test-5shot",
+    "score": 0.8234,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '76.19 ± 1.82 / 82.34 ± 1.41' (MCC / accuracy); entry 'meta-llama/Meta-Llama-3-8B', base model (🧠), default setting; EuroEval version 15.10.1.dev0.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "llama-3-70b-base",
+    "bench": "euroeval-en-life-in-the-uk-test-5shot",
+    "score": 0.9182,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '88.89 ± 1.08 / 91.82 ± 0.80' (MCC / accuracy); entry 'meta-llama/Meta-Llama-3-70B', base model (🧠), default setting; EuroEval version 15.10.1.dev0.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "llama-3-1-8b-base",
+    "bench": "euroeval-en-life-in-the-uk-test-5shot",
+    "score": 0.8355,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '77.82 ± 1.54 / 83.55 ± 1.15' (MCC / accuracy); entry 'meta-llama/Llama-3.1-8B', base model (🧠), default setting; EuroEval version 16.5.0.dev0.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "llama-3-1-8b-base",
+    "bench": "euroeval-en-hellaswag-test-5shot",
+    "score": 0.4603,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset hellaswag: HellaSwag (common-sense, 4-option MC), test split (2048 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '32.23 ± 2.11 / 46.03 ± 1.65' (MCC / accuracy); entry 'meta-llama/Llama-3.1-8B', base model (🧠), default setting; EuroEval version 16.5.0.dev0.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "mistral-7b-v0-1",
+    "bench": "euroeval-en-life-in-the-uk-test-5shot",
+    "score": 0.7627,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '68.96 ± 2.19 / 76.27 ± 1.93' (MCC / accuracy); entry 'mistralai/Mistral-7B-v0.1', base model (🧠), default setting; EuroEval version 15.10.1.dev0.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "yi-1-5-34b-base",
+    "bench": "euroeval-en-life-in-the-uk-test-5shot",
+    "score": 0.883,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '84.01 ± 0.85 / 88.30 ± 0.62' (MCC / accuracy); entry '01-ai/Yi-1.5-34B', base model (🧠), default setting; EuroEval version 15.10.1.dev0.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "yi-1-5-34b-base",
+    "bench": "euroeval-en-hellaswag-test-5shot",
+    "score": 0.9589,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset hellaswag: HellaSwag (common-sense, 4-option MC), test split (2048 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '94.53 ± 0.20 / 95.89 ± 0.15' (MCC / accuracy); entry '01-ai/Yi-1.5-34B', base model (🧠), default setting; EuroEval version 15.8.2.dev0.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "yi-1-5-9b-base",
+    "bench": "euroeval-en-life-in-the-uk-test-5shot",
+    "score": 0.8303,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '76.72 ± 1.56 / 83.03 ± 1.12' (MCC / accuracy); entry '01-ai/Yi-1.5-9B', base model (🧠), default setting; EuroEval version 15.10.1.dev0.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "yi-1-5-9b-base",
+    "bench": "euroeval-en-hellaswag-test-5shot",
+    "score": 0.7941,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset hellaswag: HellaSwag (common-sense, 4-option MC), test split (2048 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '73.12 ± 0.87 / 79.41 ± 0.68' (MCC / accuracy); entry '01-ai/Yi-1.5-9B', base model (🧠), default setting; EuroEval version 15.8.2.dev0.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "yi-1-5-6b-base",
+    "bench": "euroeval-en-life-in-the-uk-test-5shot",
+    "score": 0.7736,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '69.09 ± 1.55 / 77.36 ± 1.16' (MCC / accuracy); entry '01-ai/Yi-1.5-6B', base model (🧠), default setting; EuroEval version 15.10.1.dev0.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "phi-3-mini-4k-instruct-june-2024",
+    "bench": "euroeval-en-life-in-the-uk-test-5shot",
+    "score": 0.802,
+    "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+    "by": "independent",
+    "date": "2026-04-17",
+    "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; cell '72.81 ± 0.93 / 80.20 ± 0.69' (MCC / accuracy); entry 'microsoft/Phi-3-mini-4k-instruct', instruction-tuned (📝), default setting; EuroEval version 15.10.1.dev0. Checkpoint: the entry names the repo without a revision and the cell was produced with EuroEval 15.10.1.dev0 (development version after the 15.10.0 release on PyPI, 2025-06-17, before 15.10.1 on 2025-06-20), when the repo's main revision held Microsoft's June 2024 update (pushed July 2024), so catalogue phi-3-mini-4k-instruct-june-2024, not the April 2024 weights.",
+    "source_id": "euroeval-leaderboards"
+  },
+  {
+    "model": "bielik-7b-instruct-v0-1",
+    "bench": "polish-eq-bench-v2",
+    "score": 0.3427,
+    "source": "https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv",
+    "by": "lab",
+    "date": "2024-06-18",
+    "note": "SpeakLeash Polish EQ-Bench row run_id 'Bielik_v0.1', model path speakleash/Bielik-7B-Instruct-v0.1; eq-bench_v2_pl score 34.27 (divided by 100); 156.0 of 171 questions parseable; 1 iteration(s); inference engine transformers; completed 2024-06-18 14:01:46. Latest of 2 unquantised eq-bench_v2_pl runs for this path; earlier run(s) not imported: 34.17 (2024-06-18). Identity: catalogue bielik-7b-instruct-v0-1 (HF speakleash/Bielik-7B-Instruct-v0.1). SpeakLeash's own model on SpeakLeash's own benchmark Space, so by: lab (as for the Bielik CPTUB rows). Run after the public repo was created (2024-03-30).",
+    "source_id": "speakleash-polish-eq-bench"
+  },
+  {
+    "model": "bielik-11b-v2-3-instruct",
+    "bench": "polish-eq-bench-v2",
+    "score": 0.7086,
+    "source": "https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv",
+    "by": "lab",
+    "date": "2024-09-14",
+    "note": "SpeakLeash Polish EQ-Bench row run_id 'Bielik_v2.3', model path speakleash/Bielik-11B-v2.3-Instruct; eq-bench_v2_pl score 70.86 (divided by 100); 171.0 of 171 questions parseable; 1 iteration(s); inference engine transformers; completed 2024-09-14 10:40:57. Identity: catalogue bielik-11b-v2-3-instruct (HF speakleash/Bielik-11B-v2.3-Instruct). SpeakLeash's own model on SpeakLeash's own benchmark Space, so by: lab (as for the Bielik CPTUB rows). Run after the public repo was created (2024-08-30).",
+    "source_id": "speakleash-polish-eq-bench"
+  },
+  {
+    "model": "bielik-11b-v2-5-instruct",
+    "bench": "polish-eq-bench-v2",
+    "score": 0.7242,
+    "source": "https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv",
+    "by": "lab",
+    "date": "2025-05-01",
+    "note": "SpeakLeash Polish EQ-Bench row run_id 'Bielik-11B-v2.5-Instruct', model path speakleash/Bielik-11B-v2.5-Instruct; eq-bench_v2_pl score 72.42 (divided by 100); 170.0 of 171 questions parseable; 1 iteration(s); inference engine transformers; completed 2025-05-01 19:27:42. Identity: catalogue bielik-11b-v2-5-instruct (HF speakleash/Bielik-11B-v2.5-Instruct). SpeakLeash's own model on SpeakLeash's own benchmark Space, so by: lab (as for the Bielik CPTUB rows). Run after the public repo was created (2025-05-01 09:10 UTC).",
+    "source_id": "speakleash-polish-eq-bench"
+  },
+  {
+    "model": "bielik-4-5b-v3-0-instruct",
+    "bench": "polish-eq-bench-v2",
+    "score": 0.5621,
+    "source": "https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv",
+    "by": "lab",
+    "date": "2025-05-04",
+    "note": "SpeakLeash Polish EQ-Bench row run_id 'Bielik-4.5B-v3.0-Instruct', model path speakleash/Bielik-4.5B-v3.0-Instruct; eq-bench_v2_pl score 56.21 (divided by 100); 163.0 of 171 questions parseable; 1 iteration(s); inference engine transformers; completed 2025-05-04 16:16:42. Identity: catalogue bielik-4-5b-v3-0-instruct (HF speakleash/Bielik-4.5B-v3.0-Instruct). SpeakLeash's own model on SpeakLeash's own benchmark Space, so by: lab (as for the Bielik CPTUB rows). Run after the public repo was created (2025-04-18).",
+    "source_id": "speakleash-polish-eq-bench"
+  },
+  {
+    "model": "bielik-11b-v3-0-instruct",
+    "bench": "polish-eq-bench-v2",
+    "score": 0.712,
+    "source": "https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv",
+    "by": "lab",
+    "date": "2025-12-21",
+    "note": "SpeakLeash Polish EQ-Bench row run_id 'Bielik-11B-v3.0-Instruct', model path speakleash/Bielik-11B-v3.0-Instruct; eq-bench_v2_pl score 71.2 (divided by 100); 171.0 of 171 questions parseable; 1 iteration(s); inference engine transformers; completed 2025-12-21 14:47:06. Identity: catalogue bielik-11b-v3-0-instruct (HF speakleash/Bielik-11B-v3.0-Instruct). SpeakLeash's own model on SpeakLeash's own benchmark Space, so by: lab (as for the Bielik CPTUB rows). Run after the public repo was created (2025-11-07).",
+    "source_id": "speakleash-polish-eq-bench"
+  },
+  {
+    "model": "openchat-3-5-0106-gemma",
+    "bench": "polish-eq-bench-v2",
+    "score": 0.5862,
+    "source": "https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv",
+    "by": "independent",
+    "date": "2024-06-19",
+    "note": "SpeakLeash Polish EQ-Bench row run_id 'openchat/openchat-3.5-0106-gemma', model path openchat/openchat-3.5-0106-gemma; eq-bench_v2_pl score 58.62 (divided by 100); 169.0 of 171 questions parseable; 1 iteration(s); inference engine transformers; completed 2024-06-19 17:30:31. Latest of 5 unquantised eq-bench_v2_pl runs for this path; earlier run(s) not imported: 60.11 (2024-06-19), 60.11 (2024-06-19), 59.93 (2024-06-19), 59.93 (2024-06-19). Identity: catalogue openchat-3-5-0106-gemma (HF openchat/openchat-3.5-0106-gemma).",
+    "source_id": "speakleash-polish-eq-bench"
+  },
+  {
+    "model": "nous-hermes-2-solar-10-7b",
+    "bench": "polish-eq-bench-v2",
+    "score": 0.4985,
+    "source": "https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv",
+    "by": "independent",
+    "date": "2024-06-19",
+    "note": "SpeakLeash Polish EQ-Bench row run_id 'NousResearch/Nous-Hermes-2-SOLAR-10.7B', model path NousResearch/Nous-Hermes-2-SOLAR-10.7B; eq-bench_v2_pl score 49.85 (divided by 100); 169.0 of 171 questions parseable; 1 iteration(s); inference engine transformers; completed 2024-06-19 23:51:07. Latest of 2 unquantised eq-bench_v2_pl runs for this path; earlier run(s) not imported: 48.22 (2024-06-19). Identity: catalogue nous-hermes-2-solar-10-7b (HF NousResearch/Nous-Hermes-2-SOLAR-10.7B).",
+    "source_id": "speakleash-polish-eq-bench"
+  },
+  {
+    "model": "hermes-2-pro-llama-3-8b",
+    "bench": "polish-eq-bench-v2",
+    "score": 0.5457,
+    "source": "https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv",
+    "by": "independent",
+    "date": "2024-06-19",
+    "note": "SpeakLeash Polish EQ-Bench row run_id 'NousResearch/Hermes-2-Pro-Llama-3-8B', model path NousResearch/Hermes-2-Pro-Llama-3-8B; eq-bench_v2_pl score 54.57 (divided by 100); 171.0 of 171 questions parseable; 1 iteration(s); inference engine transformers; completed 2024-06-19 21:18:18. Identity: catalogue hermes-2-pro-llama-3-8b (HF NousResearch/Hermes-2-Pro-Llama-3-8B).",
+    "source_id": "speakleash-polish-eq-bench"
+  },
+  {
+    "model": "hermes-2-theta-llama-3-8b",
+    "bench": "polish-eq-bench-v2",
+    "score": 0.5488,
+    "source": "https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv",
+    "by": "independent",
+    "date": "2024-06-19",
+    "note": "SpeakLeash Polish EQ-Bench row run_id 'NousResearch/Hermes-2-Theta-Llama-3-8B', model path NousResearch/Hermes-2-Theta-Llama-3-8B; eq-bench_v2_pl score 54.88 (divided by 100); 171.0 of 171 questions parseable; 1 iteration(s); inference engine transformers; completed 2024-06-19 21:25:22. Identity: catalogue hermes-2-theta-llama-3-8b (HF NousResearch/Hermes-2-Theta-Llama-3-8B).",
+    "source_id": "speakleash-polish-eq-bench"
+  },
+  {
+    "model": "falcon2-11b",
+    "bench": "polish-eq-bench-v2",
+    "score": 0.4241,
+    "source": "https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv",
+    "by": "independent",
+    "date": "2024-06-20",
+    "note": "SpeakLeash Polish EQ-Bench row run_id 'tiiuae/falcon-11B', model path tiiuae/falcon-11B; eq-bench_v2_pl score 42.41 (divided by 100); 171.0 of 171 questions parseable; 1 iteration(s); inference engine transformers; completed 2024-06-20 01:23:54. Identity: catalogue falcon2-11b (HF tiiuae/falcon-11B).",
+    "source_id": "speakleash-polish-eq-bench"
+  },
+  {
+    "model": "trurl-2-13b-academic",
+    "bench": "polish-eq-bench-v2",
+    "score": 0.2592,
+    "source": "https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv",
+    "by": "independent",
+    "date": "2024-06-20",
+    "note": "SpeakLeash Polish EQ-Bench row run_id 'Voicelab/trurl-2-13b-academic', model path Voicelab/trurl-2-13b-academic; eq-bench_v2_pl score 25.92 (divided by 100); 162.0 of 171 questions parseable; 1 iteration(s); inference engine transformers; completed 2024-06-20 02:38:04. Identity: catalogue trurl-2-13b-academic (HF Voicelab/trurl-2-13b-academic).",
+    "source_id": "speakleash-polish-eq-bench"
+  },
+  {
+    "model": "internlm2-chat-20b",
+    "bench": "polish-eq-bench-v2",
+    "score": 0.3652,
+    "source": "https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv",
+    "by": "independent",
+    "date": "2024-06-20",
+    "note": "SpeakLeash Polish EQ-Bench row run_id 'internlm/internlm2-chat-20b', model path internlm/internlm2-chat-20b; eq-bench_v2_pl score 36.52 (divided by 100); 170.0 of 171 questions parseable; 1 iteration(s); inference engine transformers; completed 2024-06-20 09:47:11. Identity: catalogue internlm2-chat-20b (HF internlm/internlm2-chat-20b).",
+    "source_id": "speakleash-polish-eq-bench"
+  },
+  {
+    "model": "qwen2-57b-a14b-instruct",
+    "bench": "polish-eq-bench-v2",
+    "score": 0.5764,
+    "source": "https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv",
+    "by": "independent",
+    "date": "2024-06-20",
+    "note": "SpeakLeash Polish EQ-Bench row run_id 'Qwen/Qwen2-57B-A14B-Instruct', model path Qwen/Qwen2-57B-A14B-Instruct; eq-bench_v2_pl score 57.64 (divided by 100); 171.0 of 171 questions parseable; 1 iteration(s); inference engine transformers; completed 2024-06-20 16:19:41. Identity: catalogue qwen2-57b-a14b-instruct (HF Qwen/Qwen2-57B-A14B-Instruct).",
+    "source_id": "speakleash-polish-eq-bench"
+  },
+  {
+    "model": "llama-3-70b-base",
+    "bench": "polish-eq-bench-v2",
+    "score": 0.461,
+    "source": "https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv",
+    "by": "independent",
+    "date": "2024-06-20",
+    "note": "SpeakLeash Polish EQ-Bench row run_id 'meta-llama/Meta-Llama-3-70B', model path meta-llama/Meta-Llama-3-70B; eq-bench_v2_pl score 46.1 (divided by 100); 145.0 of 171 questions parseable; 1 iteration(s); inference engine transformers; completed 2024-06-20 16:59:30. Identity: catalogue llama-3-70b-base (HF meta-llama/Meta-Llama-3-70B). Base (pretrained) checkpoint; 145 of 171 answers parseable, above the harness minimum of 83%.",
+    "source_id": "speakleash-polish-eq-bench"
+  },
+  {
+    "model": "llama-3-1-70b",
+    "bench": "hindigen-v1-3c3h",
+    "score": 0.7045,
+    "source": "https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json",
+    "by": "independent",
+    "date": "2026-04-06",
+    "note": "Inception HindiGen-v1 entry 'meta-llama/Llama-3.1-70B-Instruct'; 3C3H Score 0.7045 (95% CI 0.652239-0.755251, n=259); judge claude-3-7-sonnet-20250219; 259/279 entries answered; precision bfloat16. No run date in the file; date is the pinned Space revision date. Identity: catalogue llama-3-1-70b (HF meta-llama/Llama-3.1-70B-Instruct); the same entry's AraGen-v3 and Arabic IFEval rows are already imported.",
+    "source_id": "inception-leaderboards-space"
+  },
+  {
+    "model": "mpt-7b",
+    "bench": "arc-challenge",
+    "score": 0.4189419795221843,
+    "source": "https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json",
+    "by": "independent",
+    "date": "2024-04-08",
+    "note": "Original full-dataset zero-shot lm-evaluation-harness run; JSON results.arc_challenge.acc_norm; task version 0; model config use_fast=True,pretrained=mosaicml/mpt-7b,trust_remote_code=True,low_cpu_mem_usage=True,dtype=auto. ARC/HellaSwag use byte-length-normalized accuracy; other tasks use accuracy, TruthfulQA uses mc2. StableLM README describes df3da98/add-siqa for Alpha and lm-bench for 4E1T; no run date published (date is repository snapshot). Identity: catalogue mpt-7b (MPT-7B base); model config pretrained=mosaicml/mpt-7b, MosaicML's own repository.",
+    "source_id": "stablelm-original-eval-json"
+  },
+  {
+    "model": "mpt-7b",
+    "bench": "arc-easy",
+    "score": 0.7003367003367004,
+    "source": "https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json",
+    "by": "independent",
+    "date": "2024-04-08",
+    "note": "Original full-dataset zero-shot lm-evaluation-harness run; JSON results.arc_easy.acc_norm; task version 0; model config use_fast=True,pretrained=mosaicml/mpt-7b,trust_remote_code=True,low_cpu_mem_usage=True,dtype=auto. ARC/HellaSwag use byte-length-normalized accuracy; other tasks use accuracy, TruthfulQA uses mc2. StableLM README describes df3da98/add-siqa for Alpha and lm-bench for 4E1T; no run date published (date is repository snapshot). Identity: catalogue mpt-7b (MPT-7B base); model config pretrained=mosaicml/mpt-7b, MosaicML's own repository.",
+    "source_id": "stablelm-original-eval-json"
+  },
+  {
+    "model": "mpt-7b",
+    "bench": "boolq",
+    "score": 0.7394495412844037,
+    "source": "https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json",
+    "by": "independent",
+    "date": "2024-04-08",
+    "note": "Original full-dataset zero-shot lm-evaluation-harness run; JSON results.boolq.acc; task version 1; model config use_fast=True,pretrained=mosaicml/mpt-7b,trust_remote_code=True,low_cpu_mem_usage=True,dtype=auto. ARC/HellaSwag use byte-length-normalized accuracy; other tasks use accuracy, TruthfulQA uses mc2. StableLM README describes df3da98/add-siqa for Alpha and lm-bench for 4E1T; no run date published (date is repository snapshot). Identity: catalogue mpt-7b (MPT-7B base); model config pretrained=mosaicml/mpt-7b, MosaicML's own repository.",
+    "source_id": "stablelm-original-eval-json"
+  },
+  {
+    "model": "mpt-7b",
+    "bench": "hellaswag",
+    "score": 0.7617008564031069,
+    "source": "https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json",
+    "by": "independent",
+    "date": "2024-04-08",
+    "note": "Original full-dataset zero-shot lm-evaluation-harness run; JSON results.hellaswag.acc_norm; task version 0; model config use_fast=True,pretrained=mosaicml/mpt-7b,trust_remote_code=True,low_cpu_mem_usage=True,dtype=auto. ARC/HellaSwag use byte-length-normalized accuracy; other tasks use accuracy, TruthfulQA uses mc2. StableLM README describes df3da98/add-siqa for Alpha and lm-bench for 4E1T; no run date published (date is repository snapshot). Identity: catalogue mpt-7b (MPT-7B base); model config pretrained=mosaicml/mpt-7b, MosaicML's own repository.",
+    "source_id": "stablelm-original-eval-json"
+  },
+  {
+    "model": "mpt-7b",
+    "bench": "lambada-openai",
+    "score": 0.6863962740151368,
+    "source": "https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json",
+    "by": "independent",
+    "date": "2024-04-08",
+    "note": "Original full-dataset zero-shot lm-evaluation-harness run; JSON results.lambada_openai.acc; task version 0; model config use_fast=True,pretrained=mosaicml/mpt-7b,trust_remote_code=True,low_cpu_mem_usage=True,dtype=auto. ARC/HellaSwag use byte-length-normalized accuracy; other tasks use accuracy, TruthfulQA uses mc2. StableLM README describes df3da98/add-siqa for Alpha and lm-bench for 4E1T; no run date published (date is repository snapshot). Identity: catalogue mpt-7b (MPT-7B base); model config pretrained=mosaicml/mpt-7b, MosaicML's own repository.",
+    "source_id": "stablelm-original-eval-json"
+  },
+  {
+    "model": "mpt-7b",
+    "bench": "openbookqa",
+    "score": 0.314,
+    "source": "https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json",
+    "by": "independent",
+    "date": "2024-04-08",
+    "note": "Original full-dataset zero-shot lm-evaluation-harness run; JSON results.openbookqa.acc; task version 0; model config use_fast=True,pretrained=mosaicml/mpt-7b,trust_remote_code=True,low_cpu_mem_usage=True,dtype=auto. ARC/HellaSwag use byte-length-normalized accuracy; other tasks use accuracy, TruthfulQA uses mc2. StableLM README describes df3da98/add-siqa for Alpha and lm-bench for 4E1T; no run date published (date is repository snapshot). Identity: catalogue mpt-7b (MPT-7B base); model config pretrained=mosaicml/mpt-7b, MosaicML's own repository.",
+    "source_id": "stablelm-original-eval-json"
+  },
+  {
+    "model": "mpt-7b",
+    "bench": "piqa",
+    "score": 0.7889009793253536,
+    "source": "https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json",
+    "by": "independent",
+    "date": "2024-04-08",
+    "note": "Original full-dataset zero-shot lm-evaluation-harness run; JSON results.piqa.acc; task version 0; model config use_fast=True,pretrained=mosaicml/mpt-7b,trust_remote_code=True,low_cpu_mem_usage=True,dtype=auto. ARC/HellaSwag use byte-length-normalized accuracy; other tasks use accuracy, TruthfulQA uses mc2. StableLM README describes df3da98/add-siqa for Alpha and lm-bench for 4E1T; no run date published (date is repository snapshot). Identity: catalogue mpt-7b (MPT-7B base); model config pretrained=mosaicml/mpt-7b, MosaicML's own repository.",
+    "source_id": "stablelm-original-eval-json"
+  },
+  {
+    "model": "mpt-7b",
+    "bench": "sciq",
+    "score": 0.937,
+    "source": "https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json",
+    "by": "independent",
+    "date": "2024-04-08",
+    "note": "Original full-dataset zero-shot lm-evaluation-harness run; JSON results.sciq.acc; task version 0; model config use_fast=True,pretrained=mosaicml/mpt-7b,trust_remote_code=True,low_cpu_mem_usage=True,dtype=auto. ARC/HellaSwag use byte-length-normalized accuracy; other tasks use accuracy, TruthfulQA uses mc2. StableLM README describes df3da98/add-siqa for Alpha and lm-bench for 4E1T; no run date published (date is repository snapshot). Identity: catalogue mpt-7b (MPT-7B base); model config pretrained=mosaicml/mpt-7b, MosaicML's own repository.",
+    "source_id": "stablelm-original-eval-json"
+  },
+  {
+    "model": "mpt-7b",
+    "bench": "social-iqa",
+    "score": 0.45138178096212894,
+    "source": "https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json",
+    "by": "independent",
+    "date": "2024-04-08",
+    "note": "Original full-dataset zero-shot lm-evaluation-harness run; JSON results.siqa.acc; task version 0; model config use_fast=True,pretrained=mosaicml/mpt-7b,trust_remote_code=True,low_cpu_mem_usage=True,dtype=auto. ARC/HellaSwag use byte-length-normalized accuracy; other tasks use accuracy, TruthfulQA uses mc2. StableLM README describes df3da98/add-siqa for Alpha and lm-bench for 4E1T; no run date published (date is repository snapshot). Identity: catalogue mpt-7b (MPT-7B base); model config pretrained=mosaicml/mpt-7b, MosaicML's own repository.",
+    "source_id": "stablelm-original-eval-json"
+  },
+  {
+    "model": "mpt-7b",
+    "bench": "winogrande",
+    "score": 0.6803472770323599,
+    "source": "https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json",
+    "by": "independent",
+    "date": "2024-04-08",
+    "note": "Original full-dataset zero-shot lm-evaluation-harness run; JSON results.winogrande.acc; task version 0; model config use_fast=True,pretrained=mosaicml/mpt-7b,trust_remote_code=True,low_cpu_mem_usage=True,dtype=auto. ARC/HellaSwag use byte-length-normalized accuracy; other tasks use accuracy, TruthfulQA uses mc2. StableLM README describes df3da98/add-siqa for Alpha and lm-bench for 4E1T; no run date published (date is repository snapshot). Identity: catalogue mpt-7b (MPT-7B base); model config pretrained=mosaicml/mpt-7b, MosaicML's own repository.",
+    "source_id": "stablelm-original-eval-json"
+  },
+  {
+    "model": "mpt-7b",
+    "bench": "truthfulqa-mc2",
+    "score": 0.3348523259251629,
+    "source": "https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json",
+    "by": "independent",
+    "date": "2024-04-08",
+    "note": "Original full-dataset zero-shot lm-evaluation-harness run; JSON results.truthfulqa_mc.mc2; task version 1; model config use_fast=True,pretrained=mosaicml/mpt-7b,trust_remote_code=True,low_cpu_mem_usage=True,dtype=auto. ARC/HellaSwag use byte-length-normalized accuracy; other tasks use accuracy, TruthfulQA uses mc2. StableLM README describes df3da98/add-siqa for Alpha and lm-bench for 4E1T; no run date published (date is repository snapshot). Identity: catalogue mpt-7b (MPT-7B base); model config pretrained=mosaicml/mpt-7b, MosaicML's own repository.",
+    "source_id": "stablelm-original-eval-json"
   }
 ]
