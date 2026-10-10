@@ -42345,7 +42345,10 @@
         "source": "https://github.com/eth-sri/matharena/blob/b89f2f0ad64c/configs/models/other/qed-nano.yaml",
         "reported_label": "lm-provers/QED-Nano"
       }
-    ]
+    ],
+    "context_k": 262.144,
+    "context_source": "https://huggingface.co/lm-provers/QED-Nano/blob/1016ddef8dd40552b97216ce34e3fece2fffa2bb/config.json",
+    "context_note": "Official configuration at the pinned revision: max_position_embeddings 262144 (as its Qwen3-4B-Thinking-2507 base). Configured maximum, not a benchmarked long-context claim: the card states no context window (RL rollouts were 49,152 tokens). Observed 2026-10-09."
   },
   {
     "id": "grok-4-1-fast-non-reasoning",
@@ -42497,7 +42500,10 @@
         "source": "https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv",
         "reported_label": "MiniCPM3-4B-FC (FC)"
       }
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://huggingface.co/openbmb/MiniCPM3-4B/blob/d6b14ddaefdb11c624dd75c3c779549bc90b08cb/README.md",
+    "context_note": "Model card: 'MiniCPM3-4B has a 32k context window.'"
   },
   {
     "id": "openthinker2-32b",
@@ -42536,7 +42542,10 @@
         "source": "https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md",
         "reported_label": "OpenThinker2-32B"
       }
-    ]
+    ],
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/config.json",
+    "context_note": "Open Thoughts configuration for OpenThinker2-32B (pinned commit): max_position_embeddings 32768. Configured maximum, not a benchmarked long-context claim: the card states no context length. Observed 2026-10-09."
   },
   {
     "id": "s1-1-32b",
@@ -42575,7 +42584,10 @@
         "source": "https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md",
         "reported_label": "S1.1-32B"
       }
-    ]
+    ],
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/simplescaling/s1.1-32B/blob/7b641db5bccde475f38ab3ee8345b4521ab12d64/config.json",
+    "context_note": "s1.1-32B configuration (pinned commit): max_position_embeddings 32768. Configured maximum, not a benchmarked long-context claim: the card states no context length. Observed 2026-10-09."
   },
   {
     "id": "qwen2-5-coder-1-5b",
@@ -42616,7 +42628,10 @@
         "source": "https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml",
         "reported_label": "Qwen2.5-Coder-1.5B-Instruct"
       }
-    ]
+    ],
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct/blob/2e1fd397ee46e1388853d2af2c993145b0f1098a/README.md",
+    "context_note": "Model card: 'Context Length: Full 32,768 tokens'. Observed 2026-10-09."
   },
   {
     "id": "gemini-2-5-pro-preview-03-25",
@@ -42893,7 +42908,10 @@
         "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md",
         "reported_label": "DeepSeek-V4-Flash-Vision-Exp"
       }
-    ]
+    ],
+    "context_k": 1048.576,
+    "context_source": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/config.json",
+    "context_note": "config.json max_position_embeddings 1,048,576 at the pinned revision (the card states no context length). Observed 2026-10-09."
   },
   {
     "id": "mimo-v2-6-flash",
@@ -43155,7 +43173,10 @@
         "source": "https://ollama.com/library/ornith/tags",
         "reported_label": "ornith:35b"
       }
-    ]
+    ],
+    "context_k": 262.144,
+    "context_source": "https://huggingface.co/ornith-ai/Ornith-1.0-35B/blob/5df2ed3f675c7beaa490328cc70bb573b65fb660/README.md",
+    "context_note": "Maker card serving recipes: '--max-model-len 262144' (vLLM) / '--context-length 262144' (SGLang); ollama lists a 256K context window. Observed 2026-10-10."
   },
   {
     "id": "ornith-1-5-35b-a3b",
@@ -43254,7 +43275,10 @@
         "source": "https://ollama.com/library/laguna-s-2.1/tags",
         "reported_label": "laguna-s-2.1"
       }
-    ]
+    ],
+    "context_k": 1048.576,
+    "context_source": "https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/README.md",
+    "context_note": "Card: 'Context window: 1,048,576 tokens'; the ollama GGUF tags are listed with 256K. Observed 2026-10-10."
   },
   {
     "id": "laguna-xs-2-1",
@@ -43311,7 +43335,10 @@
         "source": "https://ollama.com/library/laguna-xs-2.1/tags",
         "reported_label": "laguna-xs-2.1"
       }
-    ]
+    ],
+    "context_k": 262.144,
+    "context_source": "https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md",
+    "context_note": "Card: 'Context window: 262,144 tokens'. Observed 2026-10-10."
   },
   {
     "id": "longcat-flash-chat",
@@ -43395,7 +43422,10 @@
         "source": "https://docs.mistral.ai/models/model-cards/magistral-medium-1-2-25-09",
         "reported_label": "magistral-medium-2509"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://docs.mistral.ai/models/model-cards/magistral-medium-1-2-25-09",
+    "context_note": "Mistral docs model card: context 128k. Observed 2026-10-10."
   },
   {
     "id": "magistral-medium-2507",
@@ -43421,7 +43451,10 @@
         "source": "https://docs.mistral.ai/models/model-cards/magistral-medium-1-1-25-07",
         "reported_label": "magistral-medium-2507"
       }
-    ]
+    ],
+    "context_k": 40,
+    "context_source": "https://docs.mistral.ai/models/model-cards/magistral-medium-1-1-25-07",
+    "context_note": "Mistral docs model card: context 40k. Observed 2026-10-10."
   },
   {
     "id": "magistral-small-2507",
@@ -43462,7 +43495,10 @@
         "source": "https://docs.mistral.ai/models/model-cards/magistral-small-1-1-25-07",
         "reported_label": "magistral-small-2507"
       }
-    ]
+    ],
+    "context_k": 40,
+    "context_source": "https://docs.mistral.ai/models/model-cards/magistral-small-1-1-25-07",
+    "context_note": "Mistral docs model card: context 40k (API retired 11/30/2025). Observed 2026-10-10."
   },
   {
     "id": "minicpm5-2b",
@@ -43555,7 +43591,10 @@
         "source": "https://huggingface.co/LiquidAI/LFM2.5-2.6B/blob/654f9463ce32b05d0429d76fe1f580b27d4c1ac0/README.md",
         "reported_label": "LFM2.5-2.6B"
       }
-    ]
+    ],
+    "context_k": 131.072,
+    "context_source": "https://huggingface.co/LiquidAI/LFM2.5-2.6B/blob/654f9463ce32b05d0429d76fe1f580b27d4c1ac0/README.md",
+    "context_note": "Model card: 'Context length: 131,072 tokens'. Observed 2026-10-10."
   },
   {
     "id": "qwen2-5-vl-7b",
@@ -43689,7 +43728,10 @@
         "source": "https://huggingface.co/upstage/Solar-Open2-250B/blob/9190fbe63a2ad8e17fc766ccceb36de7c66f004b/README.md",
         "reported_label": "upstage/Solar-Open2-250B"
       }
-    ]
+    ],
+    "context_k": 1048.576,
+    "context_source": "https://huggingface.co/upstage/Solar-Open2-250B/blob/9190fbe63a2ad8e17fc766ccceb36de7c66f004b/README.md",
+    "context_note": "Upstage model card: 'Context Length | 1M'; technical report (arXiv 2607.20062v2) Table 1: '1,048,576 (1M)'. Observed 2026-10-09."
   },
   {
     "id": "solar-open-100b",
@@ -43780,7 +43822,10 @@
         "source": "https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md",
         "reported_label": "K-EXAONE 236B / 23B"
       }
-    ]
+    ],
+    "context_k": 262.144,
+    "context_source": "https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/61e6d578eb102b578e5704e2916ac841df9eca0a/README.md",
+    "context_note": "LG model card: 'Context Length: 262,144 tokens'. Observed 2026-10-09."
   },
   {
     "id": "k-exaone-2-0",
@@ -43847,7 +43892,10 @@
         "source": "https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/3c2b6338613c4e5ede30788d868363125a262934/README.md",
         "reported_label": "HyperCLOVA X SEED 32B Think"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/3c2b6338613c4e5ede30788d868363125a262934/README.md",
+    "context_note": "NAVER model card: 'Context Length : 128K' (stated rounded). Observed 2026-10-09."
   },
   {
     "id": "nemotron-cascade-8b",
@@ -44190,7 +44238,10 @@
           "note": "Size 36GB as printed (rounded) on the ollama tags page, observed 2026-10-09."
         }
       ]
-    }
+    },
+    "context_k": 256,
+    "context_source": "https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct/blob/0cfaf48183f594c314753d30a4c4974bc75f3ccb/README.md",
+    "context_note": "Official Qwen model card: 'Native 256K context, expandable to 1M'. Observed 2026-10-09."
   },
   {
     "id": "qwen3-vl-30b-a3b-instruct",
@@ -44251,7 +44302,10 @@
           "note": "Size 34GB as printed (rounded) on the ollama tags page, observed 2026-10-09."
         }
       ]
-    }
+    },
+    "context_k": 256,
+    "context_source": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct/blob/9c4b90e1e4ba969fd3b5378b57d966d725f1b86c/README.md",
+    "context_note": "Official Qwen model card: 'Native 256K context, expandable to 1M'. Observed 2026-10-09."
   },
   {
     "id": "qwen3-vl-30b-a3b-thinking",
@@ -44312,7 +44366,10 @@
           "note": "Size 34GB as printed (rounded) on the ollama tags page, observed 2026-10-09."
         }
       ]
-    }
+    },
+    "context_k": 256,
+    "context_source": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Thinking/blob/d0ed0380729be07a546fdefafbb4fe411f341e92/README.md",
+    "context_note": "Official Qwen model card: 'Native 256K context, expandable to 1M'. Observed 2026-10-09."
   },
   {
     "id": "qwen3-vl-8b-instruct",
@@ -44373,7 +44430,10 @@
           "note": "Size 9.8GB as printed (rounded) on the ollama tags page, observed 2026-10-09."
         }
       ]
-    }
+    },
+    "context_k": 256,
+    "context_source": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/blob/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b/README.md",
+    "context_note": "Official Qwen model card: 'Native 256K context, expandable to 1M'. Observed 2026-10-09."
   },
   {
     "id": "qwen3-vl-8b-thinking",
@@ -44434,7 +44494,10 @@
           "note": "Size 9.8GB as printed (rounded) on the ollama tags page, observed 2026-10-09."
         }
       ]
-    }
+    },
+    "context_k": 256,
+    "context_source": "https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking/blob/92f3c4b4feadd3a016ef468d103bb5f58b2a2c6b/README.md",
+    "context_note": "Official Qwen model card: 'Native 256K context, expandable to 1M'. Observed 2026-10-09."
   },
   {
     "id": "qwen3-vl-4b-instruct",
@@ -44488,7 +44551,10 @@
           "note": "Size 5.1GB as printed (rounded) on the ollama tags page, observed 2026-10-09."
         }
       ]
-    }
+    },
+    "context_k": 256,
+    "context_source": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct/blob/ebb281ec70b05090aa6165b016eac8ec08e71b17/README.md",
+    "context_note": "Official Qwen model card: 'Native 256K context, expandable to 1M'. Observed 2026-10-09."
   },
   {
     "id": "qwen3-vl-4b-thinking",
@@ -44542,7 +44608,10 @@
           "note": "Size 5.1GB as printed (rounded) on the ollama tags page, observed 2026-10-09."
         }
       ]
-    }
+    },
+    "context_k": 256,
+    "context_source": "https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking/blob/1de27d8c51f12e819435303b9e84c4e25ba8401e/README.md",
+    "context_note": "Official Qwen model card: 'Native 256K context, expandable to 1M'. Observed 2026-10-09."
   },
   {
     "id": "qwen3-vl-2b-instruct",
@@ -44596,7 +44665,10 @@
           "note": "Size 2.6GB as printed (rounded) on the ollama tags page, observed 2026-10-09."
         }
       ]
-    }
+    },
+    "context_k": 256,
+    "context_source": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct/blob/89644892e4d85e24eaac8bacfd4f463576704203/README.md",
+    "context_note": "Official Qwen model card: 'Native 256K context, expandable to 1M'. Observed 2026-10-09."
   },
   {
     "id": "qwen3-vl-2b-thinking",
@@ -44650,7 +44722,10 @@
           "note": "Size 2.6GB as printed (rounded) on the ollama tags page, observed 2026-10-09."
         }
       ]
-    }
+    },
+    "context_k": 256,
+    "context_source": "https://huggingface.co/Qwen/Qwen3-VL-2B-Thinking/blob/33e0ad94c327808ebc7d3bbc97e78e600f1eeecd/README.md",
+    "context_note": "Official Qwen model card: 'Native 256K context, expandable to 1M'. Observed 2026-10-09."
   },
   {
     "id": "jamba2-mini",
@@ -44698,7 +44773,10 @@
         "source": "https://huggingface.co/ai21labs/AI21-Jamba2-Mini",
         "reported_label": "ai21labs/AI21-Jamba2-Mini"
       }
-    ]
+    ],
+    "context_k": 256,
+    "context_source": "https://docs.ai21.com/docs/jamba-foundation-models",
+    "context_note": "AI21 docs Model Details: 'Max Tokens 256K' for Jamba Mini version 2 (snapshot 2026-01); config.json max_position_embeddings 262144. Observed 2026-10-09."
   },
   {
     "id": "jamba-large-1-7",
@@ -44741,7 +44819,10 @@
         "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
         "reported_label": "ai21labs/jamba-large-1.7-2025-07"
       }
-    ]
+    ],
+    "context_k": 256,
+    "context_source": "https://docs.ai21.com/docs/jamba-foundation-models",
+    "context_note": "AI21 docs Model Details: 'Max Tokens 256K' for Jamba Large 1.7. Observed 2026-10-09."
   },
   {
     "id": "jamba-mini-1-7",
@@ -44781,7 +44862,10 @@
         "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
         "reported_label": "ai21labs/jamba-mini-1.7-2025-07"
       }
-    ]
+    ],
+    "context_k": 256,
+    "context_source": "https://docs.ai21.com/docs/jamba-foundation-models",
+    "context_note": "AI21 docs: Jamba models 'feature the longest context window (256K tokens)'; Jamba Mini 1.7 API snapshot deprecated 2026-02-01. Observed 2026-10-09."
   },
   {
     "id": "glm-tts",
