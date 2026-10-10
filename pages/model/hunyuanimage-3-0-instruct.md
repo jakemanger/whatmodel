@@ -6,7 +6,7 @@
 
 Tencent · released 2026-01 · 80B params · tencent-hunyuan-community
 
-**score 60.9** ±3.1 · #33 of 143 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 61.9** ±3.1 · #33 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1302.7    65.5   2026-09-30   52% ▇▇▇▇▇▇
-<a name="visual-infoedit"></a>InfoEdit: Probing Glo…  <a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing …</a>    3.2%    56.4   2026-09-27   43% ▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1302.7    66.5   2026-09-30   52% ▇▇▇▇▇▇
+<a name="visual-infoedit"></a>InfoEdit: Probing Glo…  <a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing …</a>    3.2%    57.6   2026-09-27   43% ▇▇▇▇▇
 prior                   pull toward the middle                    49.9                 4% ▇
-                        weighted average                        = 60.9
+                        weighted average                        = 61.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,7 +34,7 @@ api (fal.ai) · $0.090/image · [fal.ai](https://fal.ai/models/fal-ai/hunyuan-im
 
 <pre>
 version                                      needs  score
-bf16 (official, multi-GPU) · nvidia only  ~202.7GB   60.9
+bf16 (official, multi-GPU) · nvidia only  ~202.7GB   61.9
 </pre>
 
 ```sh

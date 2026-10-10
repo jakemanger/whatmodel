@@ -6,7 +6,7 @@
 
 NightPrince (Yahya Elnawasany) · released 2026-07 · 0.467B params · coqui-public-model-license
 
-**score 53.7** ±9.4 · #53 of 109 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.7** ±9.5 · #54 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source            test                             score  implies  date        weight
-<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena  <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>  1049.8    56.0   2026-09-24   65% ▇▇▇▇▇▇▇▇
-prior             pull toward the middle                    49.6                35% ▇▇▇▇
-                  weighted average                        = 53.7
+<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena  <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>  1049.8    57.6   2026-09-24   64% ▇▇▇▇▇▇▇▇
+prior             pull toward the middle                    49.7                36% ▇▇▇▇
+                  weighted average                        = 54.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior             pull toward the middle                    49.6                
 
 <pre>
 version                                  needs  score
-fp32 (coqui-tts 0.27.5) · nvidia only  ~1.88GB   53.7
+fp32 (coqui-tts 0.27.5) · nvidia only  ~1.88GB   54.7
 </pre>
 
 ```sh

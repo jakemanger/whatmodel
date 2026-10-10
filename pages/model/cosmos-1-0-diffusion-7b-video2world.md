@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                             score  implies  date        weight
 <a name="paper-2501.03575v3-cosmos"></a>Cosmos World Foundati…  <a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: camera…</a>   68.4%    50.6   2025-07-09   87% ▇▇▇▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: Sampso…</a>  0.4730     6.8   2025-07-09    4% ▇
+                        <a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: Sampso…</a>  0.4730     6.6   2025-07-09    4% ▇
 prior                   pull toward the middle                    49.9                 9% ▇
                         weighted average                        = 48.7
 </pre>

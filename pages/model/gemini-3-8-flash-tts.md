@@ -4,12 +4,32 @@
 
 # Gemini 3.8 Flash TTS
 
-Google · released 2026-09
+Google · released 2026-09 · proprietary
 
-No reviewed benchmark results yet. This catalogue entry has no score or rank.
+**score 37.7** ±2.9 · #91 of 117 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+
+Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
+
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+
+<pre>
+source                  test                            score  implies  date        weight
+<a name="card3-cloud0day3-antalia-mini"></a>Antalia-2 Mini model …  <a href="https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page">Freya-TR-Eval Turkish TTS int…</a>   1.2%    37.9   2026-10-09   53% ▇▇▇▇▇▇
+<a name="card3-canberkkkkkk-ema-lightning"></a>EMA Lightning model c…  <a href="https://huggingface.co/canberkkkkkk/ema-lightning/blob/7a6ba1ad216bb2f1da9863f80ac8770a6a807632/README.md#benchmarks">Freya-TR-Eval Turkish TTS int…</a>   1.4%    36.5   2026-10-06   43% ▇▇▇▇▇
+prior                   pull toward the middle                   49.7                 3% ▇
+                        weighted average                       = 37.7
+</pre>
+
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Antalia-2 Mini model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · EMA Lightning model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
 api  · price unknown · [ai.google.dev](https://ai.google.dev/gemini-api/docs/pricing)
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/gemini-3-8-flash-tts)
+no verified local download listed
+
+[interactive version](https://whatmodel.sh/model/gemini-3-8-flash-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

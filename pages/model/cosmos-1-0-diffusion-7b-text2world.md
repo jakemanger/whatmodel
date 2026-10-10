@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-01 · 7B params · nvidia-open-model
 
-**score 46.0** ±3.1 · #60 of 92 · from 3 benchmark results across 2 sources
+**score 46.0** ±3.1 · #61 of 93 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>   24.1%    43.9   2026-01-30   52% ▇▇▇▇▇▇
-<a name="paper-2501.03575v3-cosmos"></a>Cosmos World Foundati…  <a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: camera…</a>   62.6%    47.3   2025-07-09   42% ▇▇▇▇▇
+<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>   24.1%    44.0   2026-01-30   52% ▇▇▇▇▇▇
+<a name="paper-2501.03575v3-cosmos"></a>Cosmos World Foundati…  <a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: camera…</a>   62.6%    47.2   2025-07-09   42% ▇▇▇▇▇
                         <a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: Sampso…</a>  0.3550    66.6   2025-07-09    2% ▇
 prior                   pull toward the middle                    49.9                 4% ▇
                         weighted average                        = 46.0

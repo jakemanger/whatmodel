@@ -6,7 +6,7 @@
 
 NAVER Cloud · released 2025-12 · 33.31B params · hyperclovax
 
-**score 60.7** ±1.8 · comparison only: no current run option verified · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 63.2** ±1.9 · comparison only: no current run option verified · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,15 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                       score  implies  date        weight
-<a name="paper-2601.03286v1-hyperclova-x-32b-think"></a>HyperCLOVA X 32B Think  <a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard (lab)</a>   9.9%    61.6   2026-01-03   29% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Telecom (lab)</a>     65.1%    66.3   2026-01-03   29% ▇▇▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail (lab)</a>      71.6%    65.2   2026-01-03   15% ▇▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline (lab)</a>     58.0%    64.7   2026-01-03   11% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag (lab)</a>            57.2%    34.1   2026-01-03    7% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU (lab)</a>                 87.7%    59.8   2026-01-03    5% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">PIQA (lab)</a>                 76.7%    28.0   2026-01-03    3% ▇
+<a name="paper-2601.03286v1-hyperclova-x-32b-think"></a>HyperCLOVA X 32B Think  <a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard (lab)</a>   9.9%    64.2   2026-01-03   30% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Telecom (lab)</a>     65.1%    69.4   2026-01-03   28% ▇▇▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail (lab)</a>      71.6%    68.1   2026-01-03   15% ▇▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline (lab)</a>     58.0%    67.7   2026-01-03   10% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag (lab)</a>            57.2%    31.7   2026-01-03    7% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU (lab)</a>                 87.7%    61.6   2026-01-03    6% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">PIQA (lab)</a>                 76.7%    24.8   2026-01-03    2% ▇
 prior                   pull toward the middle              50.0                 2% ▇
-                        weighted average                  = 60.7
+                        weighted average                  = 63.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,6 +30,8 @@ prior                   pull toward the middle              50.0                
 <sub>Licences: HyperCLOVA X 32B Think ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
+
+<sub>[context source](https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/3c2b6338613c4e5ede30788d868363125a262934/README.md): NAVER model card: 'Context Length : 128K' (stated rounded). Observed 2026-10-09.</sub>
 
 no current API or local download verified
 

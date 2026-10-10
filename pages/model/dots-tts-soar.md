@@ -6,7 +6,7 @@
 
 dots.tts · released 2026-06 · 2B params · apache-2.0
 
-**score 63.6** ±1.6 · #15 of 109 · from 16 benchmark results across 3 sources
+**score 65.2** ±1.5 · #15 of 117 · from 16 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,24 +16,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>             11.7%    58.2   2026-07-27   11% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · DNSMOS (pr…</a>  3.72 / 5    60.7   2026-07-27    9% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>             11.8%    58.8   2026-07-27    8% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>     10.6%    55.5   2026-07-27    8% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-zh · speaker si…</a>     81.8%    66.6   2026-07-27    7% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-en · speaker si…</a>     79.2%    67.0   2026-07-27    7% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · speaker si…</a>     76.0%    67.8   2026-07-27    5% ▇
-<a name="speech-dots-tts-report"></a>dots.tts Technical Re…  <a href="https://arxiv.org/html/2606.07080v2">CV3-Eval hard-en · WER (lab)</a>        4.5%    71.0   2026-08-10    9% ▇
-                        <a href="https://arxiv.org/html/2606.07080v2">CV3-Eval EN (zero-shot Englis…</a>      4.5%    64.7   2026-08-10    8% ▇
-                        <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-en · speaker si…</a>     77.1%    66.9   2026-08-10    7% ▇
-                        <a href="https://arxiv.org/html/2606.07080v2">CV3-Eval hard-zh · CER (lab)</a>        9.2%    63.2   2026-08-10    6% ▇
-                        <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-zh · speaker si…</a>     81.0%    65.9   2026-08-10    6% ▇
-                        <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-en · Whisper la…</a>      1.3%    70.7   2026-08-10    3% ▇
-                        <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-zh · Paraformer…</a>      0.9%    66.7   2026-08-10    2% ▇
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice…</a>     60.0%    63.9   2026-10-01    3% ▇
-                        <a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice…</a>      6.0%   166.1   2026-10-01    0% ▇
-prior                   pull toward the middle                      49.6                 1% ▇
-                        weighted average                          = 63.6
+<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>             11.7%    60.1   2026-07-27   12% ▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · DNSMOS (pr…</a>  3.72 / 5    62.6   2026-07-27   10% ▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>     10.6%    57.7   2026-07-27    8% ▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>             11.8%    60.7   2026-07-27    8% ▇
+                        <a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-zh · speaker si…</a>     81.8%    68.2   2026-07-27    7% ▇
+                        <a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-en · speaker si…</a>     79.2%    68.7   2026-07-27    7% ▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · speaker si…</a>     76.0%    69.6   2026-07-27    4% ▇
+<a name="speech-dots-tts-report"></a>dots.tts Technical Re…  <a href="https://arxiv.org/html/2606.07080v2">CV3-Eval hard-en · WER (lab)</a>        4.5%    72.5   2026-08-10    9% ▇
+                        <a href="https://arxiv.org/html/2606.07080v2">CV3-Eval EN (zero-shot Englis…</a>      4.5%    66.4   2026-08-10    8% ▇
+                        <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-en · speaker si…</a>     77.1%    68.5   2026-08-10    7% ▇
+                        <a href="https://arxiv.org/html/2606.07080v2">CV3-Eval hard-zh · CER (lab)</a>        9.2%    64.9   2026-08-10    6% ▇
+                        <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-zh · speaker si…</a>     81.0%    67.6   2026-08-10    6% ▇
+                        <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-en · Whisper la…</a>      1.3%    72.2   2026-08-10    3% ▇
+                        <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-zh · Paraformer…</a>      0.9%    68.4   2026-08-10    2% ▇
+<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice…</a>     60.0%    65.6   2026-10-01    3% ▇
+                        <a href="https://arxiv.org/html/2602.00443v3">RVCBench LibriTTS clean voice…</a>      6.0%   132.4   2026-10-01    0% ▇
+prior                   pull toward the middle                      49.7                 1% ▇
+                        weighted average                          = 65.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -44,7 +44,7 @@ prior                   pull toward the middle                      49.6        
 
 <pre>
 version                                     needs  score
-bf16 (dots.tts package CLI) · nvidia on…  ~5.16GB   63.6
+bf16 (dots.tts package CLI) · nvidia on…  ~5.16GB   65.2
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 StepFun · released 2025-09 · apache-2.0
 
-**score 48.5** ±4.5 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 49.8** ±4.5 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card2-stepfun-ai-step1x-edit-v1p2"></a>stepfun-ai/Step1X-Edi…  <a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (lab)</a>        52.5%    46.7   2025-12-29   46% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">GEdit-Bench overall (G_O, lan…</a>  74.2%    50.0   2025-12-29   45% ▇▇▇▇▇
+<a name="card2-stepfun-ai-step1x-edit-v1p2"></a>stepfun-ai/Step1X-Edi…  <a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (lab)</a>        52.5%    48.2   2025-12-29   46% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">GEdit-Bench overall (G_O, lan…</a>  74.2%    51.5   2025-12-29   45% ▇▇▇▇▇
 prior                   pull toward the middle                   49.9                 9% ▇
-                        weighted average                       = 48.5
+                        weighted average                       = 49.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-09 · proprietary
 
-**score 71.9** ±1.5 · #37 of 598 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+**score 75.2** ±1.6 · #39 of 935 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="first-party-qwen-scores"></a>Qwen    <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">GPQA Diamond (lab)</a>              91.0%    69.8   2026-09-18   23% ▇▇▇
-        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">CharXiv (reasoning questions)…</a>  83.5%    71.5   2026-09-18   22% ▇▇▇
-        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">Humanity's Last Exam (lab)</a>      36.5%    71.5   2026-09-18   12% ▇
-        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">LiveCodeBench v6 (window unsp…</a>  92.6%    75.9   2026-09-18   12% ▇
-        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Multilingual (lab)</a>    80.5%    73.6   2026-09-18    9% ▇
-        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Pro public set, Qwe…</a>  63.3%    72.2   2026-09-18    9% ▇
-        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">IFBench (aggregation unspecif…</a>  81.5%    72.2   2026-09-18    8% ▇
-        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (lab)</a>   57.8%    75.9   2026-09-18    4% ▇
+<a name="first-party-qwen-scores"></a>Qwen    <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">CharXiv (reasoning questions)…</a>  83.5%    74.7   2026-09-18   23% ▇▇▇
+        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">GPQA Diamond (lab)</a>              91.0%    73.3   2026-09-18   21% ▇▇▇
+        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">Humanity's Last Exam (lab)</a>      36.5%    74.8   2026-09-18   13% ▇▇
+        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Multilingual (lab)</a>    80.5%    77.0   2026-09-18   10% ▇
+        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">LiveCodeBench v6 (window unsp…</a>  92.6%    80.5   2026-09-18   10% ▇
+        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Pro public set, Qwe…</a>  63.3%    75.5   2026-09-18    9% ▇
+        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">IFBench (aggregation unspecif…</a>  81.5%    74.8   2026-09-18    9% ▇
+        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (lab)</a>   57.8%    79.5   2026-09-18    4% ▇
 prior   pull toward the middle                   50.0                 1% ▇
-        weighted average                       = 71.9
+        weighted average                       = 75.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

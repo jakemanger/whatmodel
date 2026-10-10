@@ -6,7 +6,7 @@
 
 LM Provers · released 2026-02 · 4.02B params · apache-2.0
 
-**score 54.9** ±2.1 · #227 of 598 · from 3 benchmark results across 1 source
+**score 57.7** ±2.2 · #260 of 935 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>  37.0%    56.6   2026-09-11   39% ▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  14.1%    53.3   2026-09-11   35% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>  26.5%    54.9   2026-09-11   24% ▇▇▇
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>  37.0%    59.5   2026-09-11   39% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  14.1%    56.0   2026-09-11   35% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>  26.5%    57.6   2026-09-11   24% ▇▇▇
 prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 54.9
+                        weighted average                       = 57.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,9 +27,11 @@ prior                   pull toward the middle                   50.0           
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/lm-provers/QED-Nano/blob/1016ddef8dd40552b97216ce34e3fece2fffa2bb/config.json): Official configuration at the pinned revision: max\_position\_embeddings 262144 (as its Qwen3-4B-Thinking-2507 base). Configured maximum, not a benchmarked long-context claim: the card states no context window (RL rollouts were 49,152 tokens). Observed 2026-10-09.</sub>
+
 <pre>
 download                      size  score
-16-bit bf16 · nvidia only  ~8.04GB   54.9
+16-bit bf16 · nvidia only  ~8.04GB   57.7
 </pre>
 
 ```sh

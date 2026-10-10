@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-06 · 2B params · stabilityai-community
 
-**score 38.9** ±2.2 · #107 of 143 · from 4 benchmark results across 4 sources
+**score 39.3** ±2.3 · #109 of 144 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>          52.1%    39.7   2026-07-01   43% ▇▇▇▇▇
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  3.27 / 5    40.4   2024-12-25   36% ▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>     42.0%    36.5   2026-06-02   17% ▇▇
-<a name="hpsv3-readme-mit"></a>HPSv3 repository READ…  <a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchm…</a>    5.3100    -9.8   2025-12-05    1% ▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>          52.1%    40.4   2026-07-01   47% ▇▇▇▇▇▇
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  3.27 / 5    40.4   2024-12-25   38% ▇▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>     42.0%    36.6   2026-06-02   11% ▇
+<a name="hpsv3-readme-mit"></a>HPSv3 repository READ…  <a href="https://github.com/MizzenAI/HPSv3/blob/bd0c5fcb5f587617b0169c07222ab78d01e2f3c2/README.md">HPSv3 image generation benchm…</a>    5.3100    -8.8   2025-12-05    2% ▇
 prior                   pull toward the middle                      49.9                 2% ▇
-                        weighted average                          = 38.9
+                        weighted average                          = 39.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,8 +36,8 @@ api (fal.ai) · $0.035/image · [fal.ai](https://fal.ai/models/fal-ai/stable-dif
 
 <pre>
 version                           needs  score
-fp16 incl. CLIPs + T5 (sd.cpp)  ~19.4GB   38.9
-q8_0 (sd.cpp --type)            ~10.5GB   38.9
+fp16 incl. CLIPs + T5 (sd.cpp)  ~19.4GB   39.3
+q8_0 (sd.cpp --type)            ~10.5GB   39.3
 </pre>
 
 ```sh

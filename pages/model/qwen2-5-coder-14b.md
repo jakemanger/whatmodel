@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 14.77B params · apache-2.0
 
-**score 52.8** ±1.8 · #259 of 598 · from 7 benchmark results across 4 sources
+**score 55.2** ±1.2 · #307 of 935 · from 15 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  69.2%    54.2   2024-10-29   49% ▇▇▇▇▇▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>  37.3%    49.0   2025-05-31    9% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  56.2%    49.2   2025-05-31    6% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  46.6%    58.3   2025-05-31    5% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  73.9%    94.6   2025-05-31    0% ▇
-<a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>  32.8%    54.4   2026-08-31   19% ▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  73.1%    46.3   2024-11-12   11% ▇
+<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/html/2409.12186v3">HumanEval (lab)</a>                 89.6%    52.4   2024-11-12   12% ▇
+                        <a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (lab)</a>                87.2%    53.3   2024-11-12   11% ▇
+                        <a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                      86.2%    56.8   2024-11-12    8% ▇
+                        <a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                 79.6%    57.5   2024-11-12    7% ▇
+                        <a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                     72.8%    54.0   2024-11-12    6% ▇
+                        <a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>   48.4%    57.1   2024-11-12    5% ▇
+                        <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                69.5%    59.4   2024-11-12    3% ▇
+                        <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                79.5%    72.2   2024-11-12    1% ▇
+<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  69.2%    56.1   2024-10-29   24% ▇▇▇
+<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>  37.3%    50.9   2025-05-31    4% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  56.2%    50.8   2025-05-31    3% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  46.6%    60.4   2025-05-31    2% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  73.9%    88.8   2025-05-31    0% ▇
+<a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>  32.8%    57.0   2026-08-31    8% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  73.1%    48.5   2024-11-12    5% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 52.8
+                        weighted average                       = 55.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,8 +43,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~9.36GB   52.8
-8-bit q8_0    ~18.22GB   52.8
+4-bit q4_k_m   ~9.36GB   55.2
+8-bit q8_0    ~18.22GB   55.2
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Maya Research · released 2025-11 · 3.3B params · apache-2.0
 
-**score 35.1** ±6.3 · #89 of 109 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.9** ±6.2 · #89 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-tts-deepfake-age-ccby"></a>Audio Deepfake Detect…  <a href="https://arxiv.org/html/2601.20510v1">DailyDialog TTS · Whisper-lar…</a>  11.2%    32.4   2026-01-28   85% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.6                15% ▇▇
-                        weighted average                       = 35.1
+<a name="speech-tts-deepfake-age-ccby"></a>Audio Deepfake Detect…  <a href="https://arxiv.org/html/2601.20510v1">DailyDialog TTS · Whisper-lar…</a>  11.2%    35.7   2026-01-28   85% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.7                15% ▇▇
+                        weighted average                       = 37.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,8 +29,8 @@ prior                   pull toward the middle                   49.6           
 
 <pre>
 version                       needs  score
-bf16 · nvidia only          ~8.42GB   35.1
-bf16 (transformers + snac)  ~6.71GB   35.1
+bf16 · nvidia only          ~8.42GB   37.9
+bf16 (transformers + snac)  ~6.71GB   37.9
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Kuaishou (Kling AI) · released 2025-05 · closed weights
 
-**score 52.2** ±1.9 · #45 of 92 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.5** ±1.9 · #45 of 93 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>           1162.9    51.1   2026-09-22   61% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>    1235.0    54.2   2026-09-22   38% ▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>           1162.9    51.3   2026-09-22   59% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>    1235.0    54.4   2026-09-22   39% ▇▇▇▇▇
 prior                   pull toward the middle            49.9                 1% ▇
-                        weighted average                = 52.2
+                        weighted average                = 52.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

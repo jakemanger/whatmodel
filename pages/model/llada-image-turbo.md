@@ -6,7 +6,7 @@
 
 Ant Group · released 2026-09 · 6B params · apache-2.0
 
-**score 52.5** ±2.6 · #70 of 143 · from 6 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 53.4** ±2.6 · #70 of 144 · from 6 benchmark results across 2 sources · † every result so far was reported by its maker
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-llada-image"></a>LLaDA-Image: Building…  <a href="https://arxiv.org/html/2609.03796v1#S5.T5">LongText-Bench (EN) (lab)</a>       89.9%    51.2   2026-09-03   20% ▇▇
-                        <a href="https://arxiv.org/html/2609.03796v1#S5.T5">LongText-Bench (CN) (lab)</a>       91.9%    53.9   2026-09-03   16% ▇▇
-                        <a href="https://arxiv.org/html/2609.03796v1#S5.T7">GenEval (lab)</a>                   82.0%    52.1   2026-09-03   15% ▇▇
-                        <a href="https://arxiv.org/html/2609.03796v1#S5.T6">CVTG-2K word accuracy (lab)</a>     84.0%    51.2   2026-09-03   13% ▇▇
-                        <a href="https://arxiv.org/html/2609.03796v1#S5.T8">DPG-Bench (lab)</a>                 88.5%    51.9   2026-09-03   11% ▇
-<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>  41.3%    54.3   2026-10-07   23% ▇▇▇
+<a name="visual-llada-image"></a>LLaDA-Image: Building…  <a href="https://arxiv.org/html/2609.03796v1#S5.T5">LongText-Bench (EN) (lab)</a>       89.9%    52.0   2026-09-03   20% ▇▇
+                        <a href="https://arxiv.org/html/2609.03796v1#S5.T5">LongText-Bench (CN) (lab)</a>       91.9%    54.7   2026-09-03   15% ▇▇
+                        <a href="https://arxiv.org/html/2609.03796v1#S5.T7">GenEval (lab)</a>                   82.0%    53.0   2026-09-03   14% ▇▇
+                        <a href="https://arxiv.org/html/2609.03796v1#S5.T6">CVTG-2K word accuracy (lab)</a>     84.0%    52.1   2026-09-03   12% ▇
+                        <a href="https://arxiv.org/html/2609.03796v1#S5.T8">DPG-Bench (lab)</a>                 88.5%    52.9   2026-09-03   11% ▇
+<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>  41.3%    55.0   2026-10-07   26% ▇▇▇
 prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 52.5
+                        weighted average                       = 53.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,9 +34,9 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version                                     needs  score
-bf16 · nvidia only                        ~59.6GB   52.5
-f16 + LLaDA2 text encoder q8_0 (sd.cpp)   ~38.5GB   52.5
-gguf-q8_0 + LLaDA2 text encoder q4_k (s…  ~21.6GB   52.5
+bf16 · nvidia only                        ~59.6GB   53.4
+f16 + LLaDA2 text encoder q8_0 (sd.cpp)   ~38.5GB   53.4
+gguf-q8_0 + LLaDA2 text encoder q4_k (s…  ~21.6GB   53.4
 </pre>
 
 ```sh

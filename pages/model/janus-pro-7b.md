@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 7B params · deepseek
 
-**score 36.4** ±2.2 · #114 of 143 · from 6 benchmark results across 5 sources
+**score 37.4** ±2.3 · #113 of 144 · from 6 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       42.3%    34.3   2026-07-01   44% ▇▇▇▇▇
-<a name="report-2501.17811v1"></a>DeepSeek-AI             <a href="https://arxiv.org/html/2501.17811v1">GenEval (lab)</a>                   80.0%    45.4   2025-01-29   11% ▇
-                        <a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                 84.2%    40.2   2025-01-29    9% ▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  35.0%    31.8   2026-06-02   17% ▇▇
-<a name="paper-2604.25072v1-xtcbench"></a>Beyond Accuracy: Benc…  <a href="https://arxiv.org/html/2604.25072v1">XTC-Bench generation (Overall…</a>  49.9%    36.2   2026-04-27   10% ▇
-<a name="paper-2506.10963v2-mmmg-kg"></a>MMMG: A Massive         <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generati…</a>  13.1%    37.2   2025-06-13    8% ▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       42.3%    34.9   2026-07-01   45% ▇▇▇▇▇
+<a name="report-2501.17811v1"></a>DeepSeek-AI             <a href="https://arxiv.org/html/2501.17811v1">GenEval (lab)</a>                   80.0%    46.9   2025-01-29   11% ▇
+                        <a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                 84.2%    41.5   2025-01-29    9% ▇
+<a name="paper-2506.10963v2-mmmg-kg"></a>MMMG: A Massive         <a href="https://arxiv.org/html/2506.10963v2">MMMG knowledge-image generati…</a>  13.1%    38.4   2025-06-13   11% ▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  35.0%    31.3   2026-06-02   11% ▇
+<a name="paper-2604.25072v1-xtcbench"></a>Beyond Accuracy: Benc…  <a href="https://arxiv.org/html/2604.25072v1">XTC-Bench generation (Overall…</a>  49.9%    36.7   2026-04-27   10% ▇
 prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 36.4
+                        weighted average                       = 37.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · DeepSeek-AI ([CC BY 4.0](../../licenses/report-2501.17811v1.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · Beyond Accuracy: Benchmarking Cross-Task Consistency in Unified Multimodal Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MMMG: A Massive ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/))</sub>
+<sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · DeepSeek-AI ([CC BY 4.0](../../licenses/report-2501.17811v1.txt)) · MMMG: A Massive ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · Beyond Accuracy: Benchmarking Cross-Task Consistency in Unified Multimodal Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -38,7 +38,7 @@ api (DeepInfra) · $0.0020/image · [deepinfra.com](https://deepinfra.com/deepse
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~18.3GB   36.4
+bf16 · nvidia only  ~18.3GB   37.4
 </pre>
 
 ```sh

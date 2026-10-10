@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-03 · proprietary
 
-**score 61.0** ±2.9 · #27 of 109 · from 3 benchmark results across 2 sources
+**score 62.9** ±2.7 · #27 of 117 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1260.7    64.0   2026-09-25   72% ▇▇▇▇▇▇▇▇▇
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>   36.8%    51.0   2025-08-10   20% ▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>     10.1%    67.1   2025-08-10    5% ▇
-prior                   pull toward the middle                    49.6                 3% ▇
-                        weighted average                        = 61.0
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1260.7    66.2   2026-09-25   69% ▇▇▇▇▇▇▇▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>   36.8%    53.7   2025-08-10   23% ▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>     10.1%    68.0   2025-08-10    5% ▇
+prior                   pull toward the middle                    49.7                 3% ▇
+                        weighted average                        = 62.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

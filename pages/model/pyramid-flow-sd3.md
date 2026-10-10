@@ -6,7 +6,7 @@
 
 Peking University / Kuaishou · released 2024-10 · 2B params · stabilityai-ai-community
 
-**score 42.3** ±3.2 · #66 of 92 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.1** ±3.2 · #67 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source       test                             score  implies  date        weight
-<a name="video-genai-arena-space"></a>GenAI-Arena  <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>  1113.9    41.9   2025-03-22   96% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="video-genai-arena-space"></a>GenAI-Arena  <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>  1113.9    41.7   2025-03-22   96% ▇▇▇▇▇▇▇▇▇▇▇
 prior        pull toward the middle                    49.9                 4% ▇
-             weighted average                        = 42.3
+             weighted average                        = 42.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior        pull toward the middle                    49.9                 4% �
 
 <pre>
 version             needs  score
-bf16 · nvidia only   ~8GB   42.3
+bf16 · nvidia only   ~8GB   42.1
 </pre>
 
 ```sh

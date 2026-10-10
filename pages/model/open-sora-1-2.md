@@ -6,7 +6,7 @@
 
 HPC-AI Tech · released 2024-06 · 1.1B params · apache-2.0
 
-**score 27.0** ±2.7 · #86 of 92 · from 3 benchmark results across 3 sources
+**score 26.6** ±2.8 · #87 of 93 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                score  implies  date        weight
-<a name="video-genai-arena-space"></a>GenAI-Arena             <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>      871.5    24.6   2025-03-22   67% ▇▇▇▇▇▇▇▇
-<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>   6.11 / 10    32.8   2025-02-28   15% ▇▇
-<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>      50.0%    26.9   2024-10-01   14% ▇▇
+<a name="video-genai-arena-space"></a>GenAI-Arena             <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>      871.5    24.2   2025-03-22   69% ▇▇▇▇▇▇▇▇
+<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>   6.11 / 10    32.6   2025-02-28   15% ▇▇
+<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>      50.0%    26.4   2024-10-01   13% ▇▇
 prior                   pull toward the middle                       49.9                 3% ▇
-                        weighted average                           = 27.0
+                        weighted average                           = 26.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                       49.9       
 
 <pre>
 version             needs  score
-bf16 · nvidia only  ~39GB   27.0
+bf16 · nvidia only  ~39GB   26.6
 </pre>
 
 ```sh

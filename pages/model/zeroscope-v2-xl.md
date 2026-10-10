@@ -6,7 +6,7 @@
 
 cerspense · released 2023-06 · cc-by-nc-4.0
 
-**score 24.2** ±2.3 · #91 of 92 · from 4 benchmark results across 1 source
+**score 23.4** ±2.3 · #92 of 93 · from 4 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                  score  implies  weight
-<a name="visual-evalcrafter-2023"></a>EvalCrafter: original…  <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quali…</a>  53.61 / 100    25.8    25% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quali…</a>  53.41 / 100    22.6    25% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal con…</a>  58.91 / 100    25.4    24% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video a…</a>  51.21 / 100    20.3    23% ▇▇▇
+<a name="visual-evalcrafter-2023"></a>EvalCrafter: original…  <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quali…</a>  53.61 / 100    25.0    25% ▇▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quali…</a>  53.41 / 100    21.8    25% ▇▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal con…</a>  58.91 / 100    24.7    24% ▇▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video a…</a>  51.21 / 100    19.5    23% ▇▇▇
 prior                   pull toward the middle                         49.9     2% ▇
-                        weighted average                             = 24.2
+                        weighted average                             = 23.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                         49.9     
 
 <pre>
 version                                     needs  score
-fp16 + model CPU offload (576w base, th…  ~15.3GB   24.2
+fp16 + model CPU offload (576w base, th…  ~15.3GB   23.4
 </pre>
 
 ```sh

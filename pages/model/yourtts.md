@@ -6,7 +6,7 @@
 
 Coqui / Edresson Casanova et al. · released 2021-12 · cc-by-nc-nd-4.0
 
-**score 14.3** ±2.8 · #107 of 109 · from 7 benchmark results across 3 sources
+**score 18.4** ±2.7 · #114 of 117 · from 7 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,15 +16,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-voicecraft-report-bysa"></a>VoiceCraft: Zero-Shot…  <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS list…</a>  2.79 / 5     8.7   2024-06-14   23% ▇▇▇
-                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>      6.6%    18.5   2024-06-14    8% ▇
-                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>     41.0%    19.7   2024-06-14    8% ▇
-<a name="speech-zstts-eval-casanova-mit"></a>ZS-TTS-Evaluation       <a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/YourTTS_original/metrics.csv">ZS-TTS-Evaluation · English z…</a>      2.9%     8.8   2024-01-28   23% ▇▇▇
-                        <a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/YourTTS_original/metrics.csv">ZS-TTS-Evaluation · English z…</a>     46.2%    16.9   2024-01-28   14% ▇▇
-<a name="speech-ditto-tts-report-ccby"></a>DiTTo-TTS: Diffusion …  <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>     37.5%    19.0   2025-02-17   11% ▇
-                        <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>      7.9%    11.9   2025-02-17    9% ▇
-prior                   pull toward the middle                      49.6                 3% ▇
-                        weighted average                          = 14.3
+<a name="speech-voicecraft-report-bysa"></a>VoiceCraft: Zero-Shot…  <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS list…</a>  2.79 / 5    12.0   2024-06-14   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>     41.0%    22.6   2024-06-14    9% ▇
+                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>      6.6%    21.5   2024-06-14    9% ▇
+<a name="speech-zstts-eval-casanova-mit"></a>ZS-TTS-Evaluation       <a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/YourTTS_original/metrics.csv">ZS-TTS-Evaluation · English z…</a>      2.9%    14.4   2024-01-28   22% ▇▇▇
+                        <a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/YourTTS_original/metrics.csv">ZS-TTS-Evaluation · English z…</a>     46.2%    21.7   2024-01-28   10% ▇
+<a name="speech-ditto-tts-report-ccby"></a>DiTTo-TTS: Diffusion …  <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>      7.9%    17.9   2025-02-17   14% ▇▇
+                        <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>     37.5%    23.0   2025-02-17   10% ▇
+prior                   pull toward the middle                      49.7                 3% ▇
+                        weighted average                          = 18.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,7 +35,7 @@ prior                   pull toward the middle                      49.6        
 
 <pre>
 version             needs  score
-fp32 (coqui-tts)  ~0.42GB   14.3
+fp32 (coqui-tts)  ~0.42GB   18.4
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · 27B params (14B active) · apache-2.0
 
-**score 49.4** ±1.6 · #51 of 92 · from 6 benchmark results across 5 sources
+**score 49.8** ±1.6 · #52 of 93 · from 6 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                           1131.6    48.3   2026-09-22   46% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                    1170.2    47.8   2026-09-22   29% ▇▇▇
-<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, …</a>           88.2%    55.0   2026-06-23    7% ▇
-<a name="visual-worldjen"></a>WorldJen: An End-to-E…  <a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Br…</a>          1518.0    55.7   2026-05-06    7% ▇
-<a name="video-videoverse"></a>VideoVerse: Does Your…  <a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.…</a>  1085.08 / 1608    48.5   2026-05-15    6% ▇
-<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-…</a>           84.1%    54.8   2026-08-06    4% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                           1131.6    48.5   2026-09-22   44% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                    1170.2    48.0   2026-09-22   29% ▇▇▇▇
+<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T14">Cosmos HUE human evaluation, …</a>           88.2%    55.5   2026-06-23    9% ▇
+<a name="visual-worldjen"></a>WorldJen: An End-to-E…  <a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Br…</a>          1518.0    55.9   2026-05-06    6% ▇
+<a name="video-videoverse"></a>VideoVerse: Does Your…  <a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.…</a>  1085.08 / 1608    48.6   2026-05-15    6% ▇
+<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-…</a>           84.1%    54.6   2026-08-06    4% ▇
 prior                   pull toward the middle                            49.9                 1% ▇
-                        weighted average                                = 49.4
+                        weighted average                                = 49.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,10 +36,10 @@ api (fal.ai) · $0.080/sec · [fal.ai](https://fal.ai/models/fal-ai/wan/v2.2-a14
 
 <pre>
 version                                     needs  score
-bf16 · nvidia only                        ~65.3GB   49.4
-bf16 · mac only                           ~65.3GB   49.4
-gguf-q8_0 ×2 experts + umt5 q8_0 (sd.cp…    ~45GB   49.4
-gguf-q4_k_m ×2 experts + umt5 q8_0 (sd.…  ~31.2GB   49.4
+bf16 · nvidia only                        ~65.3GB   49.8
+bf16 · mac only                           ~65.3GB   49.8
+gguf-q8_0 ×2 experts + umt5 q8_0 (sd.cp…    ~45GB   49.8
+gguf-q4_k_m ×2 experts + umt5 q8_0 (sd.…  ~31.2GB   49.8
 </pre>
 
 ```sh

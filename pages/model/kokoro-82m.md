@@ -6,7 +6,7 @@
 
 hexgrad · released 2025-01 · 0.082B params · apache-2.0
 
-**score 50.2** ±3.1 · #60 of 109 · from 7 benchmark results across 4 sources
+**score 52.5** ±2.9 · #58 of 117 · from 7 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,20 +16,20 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-paradee-report-ccby"></a>Paradee: Distilling K…  <a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison …</a>  4.52 / 5    51.9   2026-10-05   18% ▇▇
-                        <a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison …</a>      5.7%    45.9   2026-10-05   13% ▇▇
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     25.9%    43.4   2025-08-10   21% ▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       13.4%    54.0   2025-08-10    5% ▇
-<a name="speech-carun-tts-bench-apache"></a>carun/tts-bench: inte…  <a href="https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/data/REPORT_DATA.md">carun tts-bench · 56-sentence…</a>      2.3%    50.9   2026-09-10   21% ▇▇▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Ident…</a>  3.50 / 5    58.3   2026-07-16   16% ▇▇
-                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form S…</a>  3.54 / 5    55.4   2026-07-16    2% ▇
-prior                   pull toward the middle                      49.6                 4% ▇
-                        weighted average                          = 50.2
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     25.9%    46.8   2025-08-10   25% ▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       13.4%    56.4   2025-08-10    6% ▇
+<a name="speech-paradee-report-ccby"></a>Paradee: Distilling K…  <a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison …</a>  4.52 / 5    54.5   2026-10-05   16% ▇▇
+                        <a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison …</a>      5.7%    48.6   2026-10-05   12% ▇
+<a name="speech-carun-tts-bench-apache"></a>carun/tts-bench: inte…  <a href="https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/data/REPORT_DATA.md">carun tts-bench · 56-sentence…</a>      2.3%    53.3   2026-09-10   20% ▇▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Ident…</a>  3.50 / 5    60.3   2026-07-16   15% ▇▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form S…</a>  3.54 / 5    57.7   2026-07-16    2% ▇
+prior                   pull toward the middle                      49.7                 3% ▇
+                        weighted average                          = 52.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Paradee: Distilling Kokoro-82M into an 8M-Parameter Single-Voice TTS Model ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · carun/tts-bench: intelligibility benchmark of four open TTS engines ([Apache-2.0](https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/LICENSE.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
+<sub>Licences: EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · Paradee: Distilling Kokoro-82M into an 8M-Parameter Single-Voice TTS Model ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · carun/tts-bench: intelligibility benchmark of four open TTS engines ([Apache-2.0](https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/LICENSE.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
 
 ## How to run it
 
@@ -39,8 +39,8 @@ api (DeepInfra) · $0.62/M chars · [deepinfra.com](https://deepinfra.com/hexgra
 
 <pre>
 version                        needs  score
-bf16 · mac only               ~0.7GB   50.2
-fp32 (kokoro package 0.9.4)  ~0.33GB   50.2
+bf16 · mac only               ~0.7GB   52.5
+fp32 (kokoro package 0.9.4)  ~0.33GB   52.5
 </pre>
 
 ```sh

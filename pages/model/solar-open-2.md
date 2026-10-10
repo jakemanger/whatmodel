@@ -6,7 +6,7 @@
 
 Upstage · released 2026-07 · 250.29B params (15B active) · upstage-solar-license
 
-**score 68.1** ±1.2 · #70 of 598 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
+**score 71.5** ±1.3 · #72 of 935 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,21 +14,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2607.20062v2-solar-open-2"></a>Solar Open 2 Technica…  <a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond (lab)</a>              86.3%    65.9   2026-07-24   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam (lab)</a>      28.8%    69.1   2026-07-24   12% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard (lab)</a>       28.3%    64.3   2026-07-24    9% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1) (lab)</a>      16.6%    71.6   2026-07-24    9% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro (lab)</a>                  86.2%    65.2   2026-07-24    7% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026 (lab)</a>                 95.7%    67.4   2026-07-24    7% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecif…</a>  80.0%    70.2   2026-07-24    6% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unsp…</a>  92.4%    70.8   2026-07-24    6% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge (lab)</a>            61.0%    69.3   2026-07-24    5% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking (lab)</a>          19.6%    72.3   2026-07-24    5% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>        70.4%    68.5   2026-07-24    4% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set) (lab)</a>    58.2%    67.7   2026-07-24    3% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026 (lab)</a>        93.9%    75.3   2026-07-24    3% ▇
+<a name="paper-2607.20062v2-solar-open-2"></a>Solar Open 2 Technica…  <a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond (lab)</a>              86.3%    69.5   2026-07-24   20% ▇▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam (lab)</a>      28.8%    72.3   2026-07-24   13% ▇▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1) (lab)</a>      16.6%    74.9   2026-07-24    9% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard (lab)</a>       28.3%    67.6   2026-07-24    8% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026 (lab)</a>                 95.7%    70.0   2026-07-24    7% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro (lab)</a>                  86.2%    68.4   2026-07-24    7% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecif…</a>  80.0%    72.9   2026-07-24    7% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge (lab)</a>            61.0%    72.5   2026-07-24    5% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking (lab)</a>          19.6%    75.7   2026-07-24    5% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set) (lab)</a>    58.2%    71.4   2026-07-24    5% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unsp…</a>  92.4%    75.1   2026-07-24    4% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026 (lab)</a>        93.9%    77.3   2026-07-24    4% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>        70.4%    72.0   2026-07-24    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 68.1
+                        weighted average                       = 71.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -37,9 +37,11 @@ prior                   pull toward the middle                   50.0           
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/upstage/Solar-Open2-250B/blob/9190fbe63a2ad8e17fc766ccceb36de7c66f004b/README.md): Upstage model card: 'Context Length \| 1M'; technical report (arXiv 2607.20062v2) Table 1: '1,048,576 (1M)'. Observed 2026-10-09.</sub>
+
 <pre>
 download                        size  score
-16-bit bf16 · nvidia only  ~500.58GB   68.1
+16-bit bf16 · nvidia only  ~500.58GB   71.5
 </pre>
 
 ```sh

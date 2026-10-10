@@ -6,7 +6,7 @@
 
 Meta · released 2024-01 · 68.98B params · llama2
 
-**score 42.6** ±0.9 · #396 of 598 · from 4 benchmark results across 2 sources
+**score 43.6** ±1.0 · #623 of 935 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               60.4%    42.3   2024-03-28   42% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       40.1%    42.4   2024-03-28   27% ▇▇▇
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>         57.3%    42.2   2024-01-31   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>              65.6%    45.0   2024-01-31    9% ▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               60.4%    43.4   2024-03-28   42% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       40.1%    43.5   2024-03-28   25% ▇▇▇
+<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>         57.3%    43.2   2024-01-31   23% ▇▇▇
+                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>              65.6%    46.0   2024-01-31   10% ▇
 prior                   pull toward the middle           50.0                 0% ▇
-                        weighted average               = 42.6
+                        weighted average               = 43.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,8 +32,8 @@ prior                   pull toward the middle           50.0                 0%
 
 <pre>
 download       size  score
-4-bit q4_k_m  ~41GB   42.6
-8-bit q8_0    ~73GB   42.6
+4-bit q4_k_m  ~41GB   43.6
+8-bit q8_0    ~73GB   43.6
 </pre>
 
 ```sh

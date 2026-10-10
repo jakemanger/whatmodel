@@ -6,7 +6,7 @@
 
 WizardLM · released 2023-08 · 13B params · llama2
 
-**score 40.9** ±2.3 · #425 of 598 · from 3 benchmark results across 2 sources
+**score 41.9** ±2.4 · #662 of 935 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="first-party-wizardlm-scores"></a>WizardLM team vendor-…  <a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">HumanEval (lab)</a>         64.0%    41.9   2024-01-19   61% ▇▇▇▇▇▇▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              36.5%    37.3   2024-01-03   19% ▇▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              41.3%    40.3   2024-01-03   17% ▇▇
-prior                   pull toward the middle           50.0                 2% ▇
-                        weighted average               = 40.9
+<a name="first-party-wizardlm-scores"></a>WizardLM team vendor-…  <a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">HumanEval (lab)</a>         64.0%    43.1   2024-01-19   59% ▇▇▇▇▇▇▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              36.5%    38.0   2024-01-03   20% ▇▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              41.3%    41.2   2024-01-03   18% ▇▇
+prior                   pull toward the middle           50.0                 3% ▇
+                        weighted average               = 41.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior                   pull toward the middle           50.0                 2%
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~7.9GB   40.9
-8-bit q8_0     ~14GB   40.9
+4-bit q4_k_m  ~7.9GB   41.9
+8-bit q8_0     ~14GB   41.9
 </pre>
 
 ```sh

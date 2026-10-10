@@ -4,20 +4,39 @@
 
 # Glow-TTS Common Voice (Turkish)
 
-Coqui TTS / Fatih Akademi · released 2022-03
+Coqui TTS / Fatih Akademi · released 2022-03 · MIT
 
-Exact registry entry tts\_models/tr/common-voice/glow-tts. Default vocoder vocoder\_models/tr/common-voice/hifigan. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint.
+**score 10.8** ±3.9 · #117 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-[Model and usage documentation](https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json)
+Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-[Catalogue source](https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json)
+## How the score was worked out
 
-No reviewed benchmark results yet. This catalogue entry has no score or rank.
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+
+<pre>
+source                  test                            score  implies  date        weight
+<a name="card3-cloud0day3-antalia-mini"></a>Antalia-2 Mini model …  <a href="https://huggingface.co/cloud0day3/antalia-mini/blob/1e8166a7436f3e11f7f03b339258ec30f366db60/README.md#on-the-public-benchmark-page">Freya-TR-Eval Turkish TTS int…</a>  10.9%     8.3   2026-10-09   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.7                 6% ▇
+                        weighted average                       = 10.8
+</pre>
+
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Antalia-2 Mini model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
+<pre>
+version     needs  score
+fp32 · CPU   ~4GB   10.8
+</pre>
+
 ```sh
+# fp32 · CPU
 uv run --python 3.11 --with 'coqui-tts[languages]' --with torch --with torchaudio --with torchcodec tts --model_name tts_models/tr/common-voice/glow-tts --text "Merhaba dünya." --out_path speech.wav --device cpu
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/coqui-tr-common-voice-glow-tts)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/coqui-tr-common-voice-glow-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

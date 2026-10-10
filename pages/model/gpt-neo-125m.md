@@ -6,7 +6,7 @@
 
 EleutherAI · released 2021-03 · 0.125B params · mit
 
-**score 16.0** ±10.4 · #579 of 598 · from 3 benchmark results across 1 source
+**score 19.0** ±11.3 · #905 of 935 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="copen-emnlp2022-zero-shot"></a>COPEN   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  28.8%   -14.3   2022-12-07   48% ▇▇▇▇▇▇
-        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>   7.9%   -40.6   2022-12-07    3% ▇
-        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  47.6%   -40.5   2022-12-07    1% ▇
-prior   pull toward the middle                   50.0                49% ▇▇▇▇▇▇
-        weighted average                       = 16.0
+<a name="copen-emnlp2022-zero-shot"></a>COPEN   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  28.8%   -18.9   2022-12-07   40% ▇▇▇▇▇
+        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>   7.9%   -64.9   2022-12-07    2% ▇
+        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  47.6%   -44.4   2022-12-07    1% ▇
+prior   pull toward the middle                   50.0                57% ▇▇▇▇▇▇▇
+        weighted average                       = 19.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior   pull toward the middle                   50.0                49% ▇▇�
 
 <pre>
 download       size  score
-4-bit fp32  ~0.53GB   16.0
+4-bit fp32  ~0.53GB   19.0
 </pre>
 
 ```sh

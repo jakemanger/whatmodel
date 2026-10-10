@@ -6,7 +6,7 @@
 
 LEMAS Project · released 2026-01 · cc-by-4.0
 
-**score 48.0** ±6.2 · #67 of 109 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 50.0** ±6.1 · #65 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-lemas-report-bysa"></a>LEMAS multilingual au…  <a href="https://arxiv.org/html/2601.04233v1">LEMAS multilingual TTS eval ·…</a>   5.7%    47.7   2026-01-04   85% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.6                15% ▇▇
-                        weighted average                       = 48.0
+<a name="speech-lemas-report-bysa"></a>LEMAS multilingual au…  <a href="https://arxiv.org/html/2601.04233v1">LEMAS multilingual TTS eval ·…</a>   5.7%    50.1   2026-01-04   85% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.7                15% ▇▇
+                        weighted average                       = 50.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                   49.6           
 
 <pre>
 version                                    needs  score
-official checkpoint (LEMAS-TTS repo, F5…  ~1.4GB   48.0
+official checkpoint (LEMAS-TTS repo, F5…  ~1.4GB   50.0
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Mistral · released 2025-07 · 23.57B params · apache-2.0
 
-**score 52.7** ±1.4 · #260 of 598 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 54.8** ±1.4 · #319 of 935 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card2-mistralai-magistral-small-2509"></a>mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>                 62.0%    52.6   2025-09-17   32% ▇▇▇▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (lab)</a>              65.8%    53.4   2025-09-17   31% ▇▇▇▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>                 70.5%    52.0   2025-09-17   27% ▇▇▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unsp…</a>  59.2%    53.4   2025-09-17    9% ▇
+<a name="card2-mistralai-magistral-small-2509"></a>mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>                 62.0%    54.7   2025-09-17   33% ▇▇▇▇
+                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (lab)</a>              65.8%    55.5   2025-09-17   29% ▇▇▇
+                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>                 70.5%    54.1   2025-09-17   28% ▇▇▇
+                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unsp…</a>  59.2%    55.6   2025-09-17   10% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 52.7
+                        weighted average                       = 54.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,9 +28,11 @@ prior                   pull toward the middle                   50.0           
 
 ## How to run it
 
+<sub>[context source](https://docs.mistral.ai/models/model-cards/magistral-small-1-1-25-07): Mistral docs model card: context 40k (API retired 11/30/2025). Observed 2026-10-10.</sub>
+
 <pre>
 download                       size  score
-16-bit bf16 · nvidia only  ~47.14GB   52.7
+16-bit bf16 · nvidia only  ~47.14GB   54.8
 </pre>
 
 ```sh

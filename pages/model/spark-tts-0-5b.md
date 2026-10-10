@@ -6,7 +6,7 @@
 
 SparkAudio · released 2025-02 · 0.5B params · cc-by-nc-sa-4.0
 
-**score 50.1** ±3.2 · #61 of 109 · from 6 benchmark results across 2 sources
+**score 52.3** ±3.1 · #59 of 117 · from 6 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-dmospeech2-report-bysa"></a>DMOSpeech 2: Reinforc…  <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker si…</a>  57.2%    50.8   2025-07-20   32% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker si…</a>  65.7%    51.0   2025-07-20   32% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper la…</a>   2.3%    58.7   2025-07-20   10% ▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer…</a>   1.7%    53.3   2025-07-20    7% ▇
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  41.0%    39.5   2026-05-24   14% ▇▇
-                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  33.0%  -340.9   2026-05-24    0% ▇
-prior                   pull toward the middle                   49.6                 4% ▇
-                        weighted average                       = 50.1
+<a name="speech-dmospeech2-report-bysa"></a>DMOSpeech 2: Reinforc…  <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker si…</a>  57.2%    52.9   2025-07-20   33% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker si…</a>  65.7%    53.0   2025-07-20   32% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper la…</a>   2.3%    60.5   2025-07-20   11% ▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer…</a>   1.7%    55.2   2025-07-20    7% ▇
+<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  41.0%    42.9   2026-05-24   14% ▇▇
+                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  33.0%  -214.3   2026-05-24    0% ▇
+prior                   pull toward the middle                   49.7                 4% ▇
+                        weighted average                       = 52.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -46,8 +46,8 @@ Spark-TTS: An Efficie…  <a href="https://arxiv.org/html/2503.01710v1">Seed-TTS
 
 <pre>
 version                                  needs  score
-fp32 (Spark-TTS repo CLI)              ~3.92GB   50.1
-mlx-bf16 (mlx-audio 0.5.x) · mac only   ~2.9GB   50.1
+fp32 (Spark-TTS repo CLI)              ~3.92GB   52.3
+mlx-bf16 (mlx-audio 0.5.x) · mac only   ~2.9GB   52.3
 </pre>
 
 ```sh

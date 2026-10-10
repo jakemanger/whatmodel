@@ -6,7 +6,7 @@
 
 AI21 Labs · released 2025-07 · 52B params (12B active) · jamba-open-model-license
 
-**score 48.7** ±14.8 · #308 of 598 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.7** ±14.9 · #469 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  85.3%   -90.6   2026-09-22    1% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  85.3%   -87.4   2026-09-22    1% ▇
 prior                   pull toward the middle                   50.0                99% ▇▇▇▇▇▇▇▇▇▇▇▇
                         weighted average                       = 48.7
 </pre>
@@ -24,6 +24,8 @@ prior                   pull toward the middle                   50.0           
 <sub>Licences: Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
+
+<sub>[context source](https://docs.ai21.com/docs/jamba-foundation-models): AI21 docs: Jamba models 'feature the longest context window (256K tokens)'; Jamba Mini 1.7 API snapshot deprecated 2026-02-01. Observed 2026-10-09.</sub>
 
 <pre>
 download                        size  score

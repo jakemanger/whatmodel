@@ -6,7 +6,7 @@
 
 Columbia University / NewsBreak (Yinghao Aaron Li, Xilin Jiang et al.) · released 2025-07 · 0.3B params · mit
 
-**score 59.9** ±3.7 · #36 of 109 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 61.7** ±3.6 · #35 of 117 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-dmospeech2-report-bysa"></a>DMOSpeech 2: Reinforc…  <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker si…</a>  69.8%    60.4   2025-07-20   37% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker si…</a>  76.0%    60.3   2025-07-20   34% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper la…</a>   1.8%    64.6   2025-07-20   14% ▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer…</a>   1.5%    55.9   2025-07-20   10% ▇
-prior                   pull toward the middle                   49.6                 5% ▇
-                        weighted average                       = 59.9
+<a name="speech-dmospeech2-report-bysa"></a>DMOSpeech 2: Reinforc…  <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker si…</a>  69.8%    62.2   2025-07-20   37% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker si…</a>  76.0%    62.1   2025-07-20   34% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper la…</a>   1.8%    66.3   2025-07-20   14% ▇▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer…</a>   1.5%    57.8   2025-07-20   10% ▇
+prior                   pull toward the middle                   49.7                 5% ▇
+                        weighted average                       = 61.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +32,7 @@ prior                   pull toward the middle                   49.6           
 
 <pre>
 version                                 needs  score
-fp32 (DMOSpeech2 repo) · nvidia only  ~4.34GB   59.9
+fp32 (DMOSpeech2 repo) · nvidia only  ~4.34GB   61.7
 </pre>
 
 ```sh

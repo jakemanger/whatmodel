@@ -6,7 +6,7 @@
 
 Google · released 2026-10 · proprietary
 
-**score 79.7** ±2.1 · #4 of 143 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 80.9** ±2.2 · #4 of 144 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1327.8    80.5   2026-10-07   74% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1428.1    79.6   2026-10-06   24% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1327.8    81.8   2026-10-07   72% ▇▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1428.1    80.8   2026-10-06   26% ▇▇▇
 prior                   pull toward the middle            49.9                 2% ▇
-                        weighted average                = 79.7
+                        weighted average                = 80.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

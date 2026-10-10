@@ -6,7 +6,7 @@
 
 Meituan · released 2026-03 · 3.5B params · mit
 
-**score 64.3** ±2.0 · #8 of 109 · from 10 benchmark results across 2 sources
+**score 66.0** ±2.0 · #9 of 117 · from 10 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,18 +16,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>              8.5%    62.6   2026-07-27   18% ▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · DNSMOS (pr…</a>  3.84 / 5    63.5   2026-07-27   15% ▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>              9.2%    63.1   2026-07-27   14% ▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-zh · speaker si…</a>     80.6%    64.7   2026-07-27   11% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-en · speaker si…</a>     77.1%    64.3   2026-07-27   11% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · speaker si…</a>     73.9%    66.0   2026-07-27    8% ▇
-<a name="card3-meituan-longcat-longcat-audiodit-3-5b"></a>meituan-longcat/LongC…  <a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-en · speaker si…</a>     78.6%    68.3   2026-04-03    9% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-zh · speaker si…</a>     81.8%    66.9   2026-04-03    8% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-en · Whisper la…</a>      1.5%    67.8   2026-04-03    4% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-zh · Paraformer…</a>      1.1%    63.6   2026-04-03    3% ▇
-prior                   pull toward the middle                      49.6                 2% ▇
-                        weighted average                          = 64.3
+<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>              8.5%    64.4   2026-07-27   19% ▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · DNSMOS (pr…</a>  3.84 / 5    65.3   2026-07-27   15% ▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>              9.2%    64.8   2026-07-27   13% ▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-zh · speaker si…</a>     80.6%    66.4   2026-07-27   11% ▇
+                        <a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-en · speaker si…</a>     77.1%    66.0   2026-07-27   11% ▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · speaker si…</a>     73.9%    67.8   2026-07-27    7% ▇
+<a name="card3-meituan-longcat-longcat-audiodit-3-5b"></a>meituan-longcat/LongC…  <a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-en · speaker si…</a>     78.6%    69.9   2026-04-03    9% ▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-zh · speaker si…</a>     81.8%    68.5   2026-04-03    8% ▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-en · Whisper la…</a>      1.5%    69.4   2026-04-03    4% ▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B/blob/5d3e6dc007872d756c3a69b44951598d7d9bdf6d/README.md">Seed-TTS test-zh · Paraformer…</a>      1.1%    65.3   2026-04-03    3% ▇
+prior                   pull toward the middle                      49.7                 2% ▇
+                        weighted average                          = 66.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,7 +38,7 @@ prior                   pull toward the middle                      49.6        
 
 <pre>
 version                                      needs  score
-fp32 weights (official LongCat-AudioDiT…  ~15.34GB   64.3
+fp32 weights (official LongCat-AudioDiT…  ~15.34GB   66.0
 </pre>
 
 ```sh

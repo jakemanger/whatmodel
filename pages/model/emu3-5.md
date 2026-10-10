@@ -6,7 +6,7 @@
 
 BAAI · released 2025-10 · 34.1B params · apache-2.0
 
-**score 56.2** ±4.5 · #59 of 143 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 57.0** ±4.5 · #60 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>  85.9%    56.8   2026-07-12   91% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>  85.9%    57.6   2026-07-12   91% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                 9% ▇
-                        weighted average                       = 56.2
+                        weighted average                       = 57.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version                                     needs  score
-bf16 (official repo, Transformers backe…  ~84.5GB   56.2
+bf16 (official repo, Transformers backe…  ~84.5GB   57.0
 </pre>
 
 ```sh

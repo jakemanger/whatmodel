@@ -6,7 +6,7 @@
 
 Alibaba (FunAudioLLM) · released 2024-12 · 0.5B params · apache-2.0
 
-**score 59.2** ±1.1 · #37 of 109 · from 31 benchmark results across 7 sources
+**score 61.0** ±1.0 · #39 of 117 · from 31 benchmark results across 7 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,39 +16,39 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">CV3-Eval hard-en · WER</a>             13.9%    56.0   2025-12-08    6% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">Seed-TTS test-en · speaker si…</a>     65.4%    56.7   2025-12-08    6% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">Seed-TTS test-zh · speaker si…</a>     75.0%    59.5   2025-12-08    6% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">CV3-Eval ZH (zero-shot Chines…</a>      4.0%    60.6   2025-12-08    6% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">CV3-Eval EN (zero-shot Englis…</a>      7.6%    57.1   2025-12-08    5% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">CV3-Eval hard-en · speaker si…</a>     70.9%    63.6   2025-12-08    5% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">CV3-Eval hard-zh · CER</a>              8.3%    65.1   2025-12-08    4% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">Seed-TTS test-en · Whisper la…</a>      3.2%    50.5   2025-12-08    2% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">Seed-TTS test-zh · Paraformer…</a>      1.3%    60.0   2025-12-08    2% ▇
-<a name="speech-raon-opentts-report-ccby"></a>Raon-OpenTTS: Open Mo…  <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval EN (zero-shot Englis…</a>      6.3%    60.0   2026-06-15    6% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · speaker si…</a>     65.9%    57.2   2026-06-15    5% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · speaker si…</a>     71.0%    63.6   2026-06-15    4% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · DNSMOS (pr…</a>  3.95 / 5    66.0   2026-06-15    4% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall s…</a>     60.3%    59.4   2026-06-15    4% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · human spe…</a>  3.53 / 5    61.2   2026-06-15    3% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · WER</a>             10.3%    60.2   2026-06-15    3% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · Whisper la…</a>      2.6%    55.6   2026-06-15    2% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall W…</a>     11.0%    54.9   2026-06-15    2% ▇
-<a name="speech-voxcpm-report-ccby"></a>VoxCPM: Tokenizer-Fre…  <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Chine…</a>  4.01 / 5    61.2   2025-09-29    3% ▇
-                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Engli…</a>  3.97 / 5    57.2   2025-09-29    3% ▇
-                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Engli…</a>  4.14 / 5    63.7   2025-09-29    3% ▇
-                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Chine…</a>  3.38 / 5    53.2   2025-09-29    3% ▇
-<a name="speech-dmospeech2-report-bysa"></a>DMOSpeech 2: Reinforc…  <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker si…</a>     64.1%    55.7   2025-07-20    3% ▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker si…</a>     75.4%    59.7   2025-07-20    3% ▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper la…</a>      3.4%    49.7   2025-07-20    1% ▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer…</a>      1.6%    55.1   2025-07-20    1% ▇
-<a name="speech-distar-report-ccby"></a>DiSTAR: Diffusion ove…  <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · human spea…</a>  3.07 / 5    57.7   2025-10-15    3% ▇
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     60.0%    64.2   2026-05-24    2% ▇
-                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     17.0%  -140.4   2026-05-24    0% ▇
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.43 / 5    78.1   2026-03-15    0% ▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.24 / 5    51.3   2026-03-15    0% ▇
-prior                   pull toward the middle                      49.6                 0% ▇
-                        weighted average                          = 59.2
+<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">CV3-Eval hard-en · WER</a>             13.9%    57.9   2025-12-08    7% ▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">Seed-TTS test-en · speaker si…</a>     65.4%    58.7   2025-12-08    6% ▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">Seed-TTS test-zh · speaker si…</a>     75.0%    61.3   2025-12-08    6% ▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">CV3-Eval ZH (zero-shot Chines…</a>      4.0%    62.4   2025-12-08    6% ▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">CV3-Eval EN (zero-shot Englis…</a>      7.6%    58.9   2025-12-08    5% ▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">CV3-Eval hard-zh · CER</a>              8.3%    66.8   2025-12-08    4% ▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">CV3-Eval hard-en · speaker si…</a>     70.9%    65.3   2025-12-08    4% ▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">Seed-TTS test-en · Whisper la…</a>      3.2%    52.5   2025-12-08    2% ▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">Seed-TTS test-zh · Paraformer…</a>      1.3%    61.8   2025-12-08    2% ▇
+<a name="speech-raon-opentts-report-ccby"></a>Raon-OpenTTS: Open Mo…  <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval EN (zero-shot Englis…</a>      6.3%    61.8   2026-06-15    6% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · speaker si…</a>     65.9%    59.1   2026-06-15    5% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · speaker si…</a>     71.0%    65.4   2026-06-15    4% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · DNSMOS (pr…</a>  3.95 / 5    67.7   2026-06-15    4% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall s…</a>     60.3%    61.3   2026-06-15    4% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · human spe…</a>  3.53 / 5    63.0   2026-06-15    3% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · WER</a>             10.3%    62.1   2026-06-15    3% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · Whisper la…</a>      2.6%    57.6   2026-06-15    2% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall W…</a>     11.0%    56.8   2026-06-15    2% ▇
+<a name="speech-voxcpm-report-ccby"></a>VoxCPM: Tokenizer-Fre…  <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Chine…</a>  4.01 / 5    63.0   2025-09-29    3% ▇
+                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Engli…</a>  3.97 / 5    59.1   2025-09-29    3% ▇
+                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Engli…</a>  4.14 / 5    65.5   2025-09-29    3% ▇
+                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Chine…</a>  3.38 / 5    55.2   2025-09-29    3% ▇
+<a name="speech-dmospeech2-report-bysa"></a>DMOSpeech 2: Reinforc…  <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker si…</a>     64.1%    57.6   2025-07-20    3% ▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker si…</a>     75.4%    61.6   2025-07-20    3% ▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper la…</a>      3.4%    51.8   2025-07-20    1% ▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer…</a>      1.6%    56.9   2025-07-20    1% ▇
+<a name="speech-distar-report-ccby"></a>DiSTAR: Diffusion ove…  <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · human spea…</a>  3.07 / 5    59.6   2025-10-15    3% ▇
+<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     60.0%    65.9   2026-05-24    2% ▇
+                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     17.0%   -77.3   2026-05-24    0% ▇
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.43 / 5    78.7   2026-03-15    0% ▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.24 / 5    51.0   2026-03-15    0% ▇
+prior                   pull toward the middle                      49.7                 0% ▇
+                        weighted average                          = 61.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -59,7 +59,7 @@ prior                   pull toward the middle                      49.6        
 
 <pre>
 version                  needs  score
-fp32 (CosyVoice repo)  ~4.07GB   59.2
+fp32 (CosyVoice repo)  ~4.07GB   61.0
 </pre>
 
 ```sh

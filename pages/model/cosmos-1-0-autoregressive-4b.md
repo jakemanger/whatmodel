@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-01 · 4B params · nvidia-open-model
 
-**score 34.3** ±4.5 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 34.2** ±4.5 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="paper-2501.03575v3-cosmos"></a>Cosmos World Foundati…  <a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: camera…</a>   35.6%    32.8   2025-07-09   87% ▇▇▇▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: Sampso…</a>  0.4330    31.7   2025-07-09    4% ▇
+<a name="paper-2501.03575v3-cosmos"></a>Cosmos World Foundati…  <a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: camera…</a>   35.6%    32.7   2025-07-09   87% ▇▇▇▇▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2501.03575v3">Cosmos 3D consistency: Sampso…</a>  0.4330    31.6   2025-07-09    4% ▇
 prior                   pull toward the middle                    49.9                 9% ▇
-                        weighted average                        = 34.3
+                        weighted average                        = 34.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -6,7 +6,7 @@
 
 StepFun · released 2025-04 · 12.43B params · apache-2.0
 
-**score 47.1** ±6.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.3** ±5.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-edival"></a>EdiVal-Agent: An Obje…  <a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing ove…</a>  39.0%    46.5   2026-03-17   83% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                17% ▇▇
-                        weighted average                       = 47.1
+<a name="visual-edival"></a>EdiVal-Agent: An Obje…  <a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing ove…</a>  39.0%    48.0   2026-03-17   86% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                14% ▇▇
+                        weighted average                       = 48.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

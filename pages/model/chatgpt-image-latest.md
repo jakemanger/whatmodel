@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-12 · proprietary
 
-**score 73.3** ±4.2 · #13 of 143 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 74.3** ±4.2 · #13 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1388.6    75.1   2026-10-06   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1388.6    76.3   2026-10-06   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle            49.9                 7% ▇
-                        weighted average                = 73.3
+                        weighted average                = 74.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

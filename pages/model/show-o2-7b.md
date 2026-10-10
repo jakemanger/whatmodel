@@ -6,7 +6,7 @@
 
 Show Lab, NUS · released 2025-06 · 7B params · apache-2.0
 
-**score 40.7** ±2.5 · #101 of 143 · from 4 benchmark results across 3 sources
+**score 41.3** ±2.5 · #103 of 144 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  11.2%    39.8   2026-05-14   63% ▇▇▇▇▇▇▇▇
-<a name="first-party-showlab-show-o2-paper"></a>Show Lab Show-o2 paper  <a href="https://arxiv.org/html/2506.15564v3#S4.T5">GenEval (lab)</a>                   76.0%    46.7   2025-09-22   13% ▇▇
-                        <a href="https://arxiv.org/html/2506.15564v3#S4.T6">DPG-Bench (lab)</a>                 86.1%    46.4   2025-09-22   10% ▇
-<a name="paper-2604.25072v1-xtcbench"></a>Beyond Accuracy: Benc…  <a href="https://arxiv.org/html/2604.25072v1">XTC-Bench generation (Overall…</a>  46.5%    32.4   2026-04-27   12% ▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  11.2%    40.4   2026-05-14   63% ▇▇▇▇▇▇▇▇
+<a name="first-party-showlab-show-o2-paper"></a>Show Lab Show-o2 paper  <a href="https://arxiv.org/html/2506.15564v3#S4.T5">GenEval (lab)</a>                   76.0%    47.4   2025-09-22   12% ▇
+                        <a href="https://arxiv.org/html/2506.15564v3#S4.T6">DPG-Bench (lab)</a>                 86.1%    47.3   2025-09-22   10% ▇
+<a name="paper-2604.25072v1-xtcbench"></a>Beyond Accuracy: Benc…  <a href="https://arxiv.org/html/2604.25072v1">XTC-Bench generation (Overall…</a>  46.5%    33.0   2026-04-27   12% ▇
 prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 40.7
+                        weighted average                       = 41.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +32,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version                                     needs  score
-official scripts (checkpoint as stored)…  ~22.5GB   40.7
+official scripts (checkpoint as stored)…  ~22.5GB   41.3
 </pre>
 
 ```sh

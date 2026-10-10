@@ -6,7 +6,7 @@
 
 Show Lab, NUS · released 2025-06 · 1.5B params · apache-2.0
 
-**score 43.9** ±5.1 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 44.7** ±5.2 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="first-party-showlab-show-o2-paper"></a>Show Lab Show-o2 paper  <a href="https://arxiv.org/html/2506.15564v3#S4.T5">GenEval (lab)</a>           73.0%    42.8   2025-09-22   51% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2506.15564v3#S4.T6">DPG-Bench (lab)</a>         85.0%    43.7   2025-09-22   38% ▇▇▇▇▇
+<a name="first-party-showlab-show-o2-paper"></a>Show Lab Show-o2 paper  <a href="https://arxiv.org/html/2506.15564v3#S4.T5">GenEval (lab)</a>           73.0%    43.6   2025-09-22   50% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2506.15564v3#S4.T6">DPG-Bench (lab)</a>         85.0%    44.7   2025-09-22   39% ▇▇▇▇▇
 prior                   pull toward the middle           49.9                11% ▇
-                        weighted average               = 43.9
+                        weighted average               = 44.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

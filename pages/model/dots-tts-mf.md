@@ -6,7 +6,7 @@
 
 dots.tts · released 2026-06 · 2B params · apache-2.0
 
-**score 66.6** ±2.5 · #5 of 109 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 68.2** ±2.5 · #5 of 117 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,15 +16,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-dots-tts-report"></a>dots.tts Technical Re…  <a href="https://arxiv.org/html/2606.07080v2">CV3-Eval hard-en · WER (lab)</a>     4.4%    71.2   2026-08-10   23% ▇▇▇
-                        <a href="https://arxiv.org/html/2606.07080v2">CV3-Eval EN (zero-shot Englis…</a>   4.0%    66.1   2026-08-10   20% ▇▇
-                        <a href="https://arxiv.org/html/2606.07080v2">CV3-Eval hard-zh · CER (lab)</a>     9.1%    63.2   2026-08-10   15% ▇▇
-                        <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-en · speaker si…</a>  76.2%    66.0   2026-08-10   15% ▇▇
-                        <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-zh · speaker si…</a>  80.0%    64.6   2026-08-10   13% ▇▇
-                        <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-en · Whisper la…</a>   1.3%    70.8   2026-08-10    7% ▇
-                        <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-zh · Paraformer…</a>   0.9%    66.7   2026-08-10    5% ▇
-prior                   pull toward the middle                   49.6                 2% ▇
-                        weighted average                       = 66.6
+<a name="speech-dots-tts-report"></a>dots.tts Technical Re…  <a href="https://arxiv.org/html/2606.07080v2">CV3-Eval hard-en · WER (lab)</a>     4.4%    72.7   2026-08-10   24% ▇▇▇
+                        <a href="https://arxiv.org/html/2606.07080v2">CV3-Eval EN (zero-shot Englis…</a>   4.0%    67.8   2026-08-10   19% ▇▇
+                        <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-en · speaker si…</a>  76.2%    67.7   2026-08-10   15% ▇▇
+                        <a href="https://arxiv.org/html/2606.07080v2">CV3-Eval hard-zh · CER (lab)</a>     9.1%    65.0   2026-08-10   15% ▇▇
+                        <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-zh · speaker si…</a>  80.0%    66.3   2026-08-10   13% ▇▇
+                        <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-en · Whisper la…</a>   1.3%    72.3   2026-08-10    7% ▇
+                        <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-zh · Paraformer…</a>   0.9%    68.4   2026-08-10    5% ▇
+prior                   pull toward the middle                   49.7                 2% ▇
+                        weighted average                       = 68.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,7 +35,7 @@ prior                   pull toward the middle                   49.6           
 
 <pre>
 version                                     needs  score
-bf16 (dots.tts package CLI) · nvidia on…  ~5.16GB   66.6
+bf16 (dots.tts package CLI) · nvidia on…  ~5.16GB   68.2
 </pre>
 
 ```sh

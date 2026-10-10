@@ -6,7 +6,7 @@
 
 Floor33 Pictures · released 2023-08 · closed weights
 
-**score 24.4** ±2.3 · comparison only: no current run option verified · from 4 benchmark results across 1 source
+**score 23.7** ±2.3 · comparison only: no current run option verified · from 4 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                  score  implies  weight
-<a name="visual-evalcrafter-2023"></a>EvalCrafter: original…  <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quali…</a>  49.16 / 100    22.6    26% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quali…</a>  58.78 / 100    26.3    25% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal con…</a>  50.24 / 100    19.4    24% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video a…</a>  61.32 / 100    27.5    23% ▇▇▇
+<a name="visual-evalcrafter-2023"></a>EvalCrafter: original…  <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quali…</a>  49.16 / 100    21.8    26% ▇▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quali…</a>  58.78 / 100    25.6    25% ▇▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal con…</a>  50.24 / 100    18.6    24% ▇▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video a…</a>  61.32 / 100    26.8    23% ▇▇▇
 prior                   pull toward the middle                         49.9     2% ▇
-                        weighted average                             = 24.4
+                        weighted average                             = 23.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

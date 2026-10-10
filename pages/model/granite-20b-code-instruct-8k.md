@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 20.07B params · apache-2.0
 
-**score 42.9** ±1.2 · #389 of 598 · from 7 benchmark results across 3 sources
+**score 43.8** ±1.3 · #614 of 935 · from 7 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  50.5%    42.4   2024-05-07   31% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  38.2%    44.4   2024-05-07   18% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  41.1%    44.5   2024-05-07   16% ▇▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         42.1%    43.4   2025-04-01   16% ▇▇
-                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>         33.7%    43.8   2025-04-01   14% ▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  45.4%    20.0   2026-04-17    2% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  33.1%    25.4   2026-04-17    2% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  50.5%    43.3   2024-05-07   26% ▇▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  38.2%    45.4   2024-05-07   18% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  41.1%    45.4   2024-05-07   17% ▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         42.1%    44.7   2025-04-01   16% ▇▇
+                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>         33.7%    45.2   2025-04-01   16% ▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  33.1%    31.9   2026-04-17    3% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  45.4%    24.7   2026-04-17    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 42.9
+                        weighted average                       = 43.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,12 +33,15 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~12.82GB   42.9
+4-bit q4_k_m  ~12.82GB   43.8
+4-bit q4_0       ~12GB   43.8
 </pre>
 
 ```sh
 # 4-bit q4_k_m
 llama-server -hf ibm-granite/granite-20b-code-instruct-8k-GGUF:Q4_K_M
+# 4-bit q4_0
+ollama run granite-code:20b
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

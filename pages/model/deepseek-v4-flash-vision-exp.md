@@ -6,7 +6,7 @@
 
 DeepSeek · released 2026-08 · 304.6B params · mit
 
-**score 72.7** ±2.3 · #30 of 598 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 76.3** ±2.3 · #33 of 935 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,15 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card3-deepseek-ai-deepseek-v4-flash-vision-exp"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Terminal-Bench 2.1 (lab)</a>        83.9%    74.2   2026-08-31   23% ▇▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">NL2Repo (lab)</a>                   57.7%    74.7   2026-08-31   17% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">DeepSWE v1.1 (resolved) (lab)</a>   59.3%    72.4   2026-08-31   14% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">CyberGym (lab)</a>                  75.3%    72.7   2026-08-31   13% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Agents' Last Exam (metric/har…</a>  27.3%    69.6   2026-08-31   12% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">AutomationBench (Public) (lab)</a>  25.7%    70.2   2026-08-31   10% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Toolathlon-Verified (lab)</a>       75.9%    77.9   2026-08-31    9% ▇
+<a name="card3-deepseek-ai-deepseek-v4-flash-vision-exp"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Terminal-Bench 2.1 (lab)</a>        83.9%    77.7   2026-08-31   25% ▇▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">NL2Repo (lab)</a>                   57.7%    78.0   2026-08-31   18% ▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">DeepSWE v1.1 (resolved) (lab)</a>   59.3%    76.2   2026-08-31   13% ▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">CyberGym (lab)</a>                  75.3%    76.4   2026-08-31   12% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Agents' Last Exam (metric/har…</a>  27.3%    73.4   2026-08-31   11% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">AutomationBench (Public) (lab)</a>  25.7%    74.0   2026-08-31   10% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Toolathlon-Verified (lab)</a>       75.9%    81.9   2026-08-31    9% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 72.7
+                        weighted average                       = 76.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,11 +31,13 @@ prior                   pull toward the middle                   50.0           
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/config.json): config.json max\_position\_embeddings 1,048,576 at the pinned revision (the card states no context length). Observed 2026-10-09.</sub>
+
 <pre>
 download                      size  score
-4-bit ud-q4_k_xl         ~156.03GB   72.7
-2-bit ud-q2_k_xl          ~97.76GB   72.7
-4-bit fp8 · nvidia only  ~167.82GB   72.7
+4-bit ud-q4_k_xl         ~156.03GB   76.3
+2-bit ud-q2_k_xl          ~97.76GB   76.3
+4-bit fp8 · nvidia only  ~167.82GB   76.3
 </pre>
 
 ```sh

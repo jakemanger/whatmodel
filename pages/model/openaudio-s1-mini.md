@@ -6,7 +6,7 @@
 
 Fish Audio · released 2025-06 · 0.5B params · cc-by-nc-sa-4.0
 
-**score 38.2** ±5.2 · #83 of 109 · from 4 benchmark results across 3 sources
+**score 40.5** ±5.0 · #84 of 117 · from 4 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-lemas-report-bysa"></a>LEMAS multilingual au…  <a href="https://arxiv.org/html/2601.04233v1">LEMAS multilingual TTS eval ·…</a>     12.3%    36.1   2026-01-04   59% ▇▇▇▇▇▇▇
-<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena        <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>     931.4    27.1   2026-09-24   20% ▇▇
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.29 / 5    65.5   2026-03-15    7% ▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.16 / 5    46.6   2026-03-15    5% ▇
-prior                   pull toward the middle                      49.6                10% ▇
-                        weighted average                          = 38.2
+<a name="speech-lemas-report-bysa"></a>LEMAS multilingual au…  <a href="https://arxiv.org/html/2601.04233v1">LEMAS multilingual TTS eval ·…</a>     12.3%    38.6   2026-01-04   58% ▇▇▇▇▇▇▇
+<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena        <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>     931.4    28.3   2026-09-24   18% ▇▇
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.16 / 5    47.9   2026-03-15    7% ▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.29 / 5    66.9   2026-03-15    7% ▇
+prior                   pull toward the middle                      49.7                10% ▇
+                        weighted average                          = 40.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,8 +34,8 @@ api  · price unknown · [docs.fish.audio](https://docs.fish.audio/developer-gui
 
 <pre>
 version                                 needs  score
-bf16 · nvidia only                     ~1.7GB   38.2
-bf16 (fish-speech official repo CLI)  ~3.61GB   38.2
+bf16 · nvidia only                     ~1.7GB   40.5
+bf16 (fish-speech official repo CLI)  ~3.61GB   40.5
 </pre>
 
 ```sh

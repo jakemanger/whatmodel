@@ -6,7 +6,7 @@
 
 UC Santa Barbara · released 2024-05 · cc-by-4.0
 
-**score 39.1** ±6.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 39.1** ±6.5 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                      score  implies  date        weight
-<a name="paper-2405.18750v2-t2vturbo"></a>T2V-Turbo: Breaking t…  <a href="https://arxiv.org/html/2405.18750v2">VBench (T2V total) (lab)</a>  80.6%    36.9   2024-10-11   83% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle             49.9                17% ▇▇
+<a name="paper-2405.18750v2-t2vturbo"></a>T2V-Turbo: Breaking t…  <a href="https://arxiv.org/html/2405.18750v2">VBench (T2V total) (lab)</a>  80.6%    36.8   2024-10-11   82% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle             49.9                18% ▇▇
                         weighted average                 = 39.1
 </pre>
 

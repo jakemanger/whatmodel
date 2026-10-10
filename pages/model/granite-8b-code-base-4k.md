@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 8.05B params · apache-2.0
 
-**score 38.3** ±1.1 · #459 of 598 · from 10 benchmark results across 3 sources
+**score 38.6** ±1.2 · #724 of 935 · from 10 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,18 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  43.5%    39.5   2024-05-07   26% ▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  26.4%    39.0   2024-05-07   13% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      42.2%    35.7   2024-05-07   12% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  29.6%    40.8   2024-05-07   11% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                36.0%    34.6   2024-05-07    8% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                36.1%    34.7   2024-05-07    7% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MATH (lab)</a>                      21.4%    40.7   2024-05-07    4% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">GSM8K (lab)</a>                     61.9%    43.5   2024-05-07    4% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         35.6%    39.4   2025-04-01   12% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  34.5%    14.7   2026-04-17    2% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  43.5%    40.1   2024-05-07   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  26.4%    39.6   2024-05-07   13% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      42.2%    35.8   2024-05-07   12% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  29.6%    41.6   2024-05-07   12% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                36.0%    34.8   2024-05-07    9% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                36.1%    34.9   2024-05-07    7% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MATH (lab)</a>                      21.4%    41.1   2024-05-07    4% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">GSM8K (lab)</a>                     61.9%    44.1   2024-05-07    4% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         35.6%    40.4   2025-04-01   13% ▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  34.5%    19.8   2026-04-17    2% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 38.3
+                        weighted average                       = 38.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,7 +36,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.88GB   38.3
+4-bit q4_k_m  ~4.88GB   38.6
 </pre>
 
 ```sh

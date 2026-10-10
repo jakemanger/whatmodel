@@ -6,7 +6,7 @@
 
 Tsinghua / Zhipu · released 2022-05 · 9.4B params · cogvideo-license
 
-**score 23.5** ±6.7 · #92 of 92 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 23.2** ±6.8 · #93 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="visual-fetv-ccby"></a>FETV: A Benchmark for…  <a href="https://arxiv.org/html/2311.01813v3#A6.F20">FETV manual video quality (me…</a>  3.27 / 5    17.4   2023-12-26   81% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-fetv-ccby"></a>FETV: A Benchmark for…  <a href="https://arxiv.org/html/2311.01813v3#A6.F20">FETV manual video quality (me…</a>  3.27 / 5    16.7   2023-12-26   81% ▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                      49.9                19% ▇▇
-                        weighted average                          = 23.5
+                        weighted average                          = 23.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                      49.9        
 
 <pre>
 version                                     needs  score
-fp16 (--fp16), both stages · nvidia only  ~51.7GB   23.5
+fp16 (--fp16), both stages · nvidia only  ~51.7GB   23.2
 </pre>
 
 ```sh

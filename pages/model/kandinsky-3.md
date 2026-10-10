@@ -6,7 +6,7 @@
 
 AI Forever · released 2023-11 · 3B params · apache-2.0
 
-**score 48.0** ±10.2 · #84 of 143 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.3** ±10.5 · #86 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2502.10663v1-real"></a>REAL: Realism Evaluat…  <a href="https://arxiv.org/html/2502.10663v1">REAL realism benchmark for T2…</a>  63.2%    46.5   2025-02-15   55% ▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                45% ▇▇▇▇▇
-                        weighted average                       = 48.0
+<a name="paper-2502.10663v1-real"></a>REAL: Realism Evaluat…  <a href="https://arxiv.org/html/2502.10663v1">REAL realism benchmark for T2…</a>  63.2%    46.9   2025-02-15   54% ▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                46% ▇▇▇▇▇▇
+                        weighted average                       = 48.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -43,7 +43,7 @@ Kandinsky 3.0  <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 · vi
 
 <pre>
 version             needs  score
-fp16 · nvidia only  ~32GB   48.0
+fp16 · nvidia only  ~32GB   48.3
 </pre>
 
 ```sh

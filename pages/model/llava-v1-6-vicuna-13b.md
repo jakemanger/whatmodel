@@ -6,7 +6,7 @@
 
 LLaVA · released 2024-01 · 13.35B params · llama2
 
-**score 32.2** ±5.7 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 33.6** ±5.6 · #804 of 935 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="llava-model-zoo-apache"></a>LLaVA repository mode…  <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">MMMU (val) (lab)</a>        36.2%    28.6   2024-01-30   72% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">TextVQA (lab)</a>           67.1%    31.3   2024-01-30   14% ▇▇
-prior                   pull toward the middle           50.0                15% ▇▇
-                        weighted average               = 32.2
+<a name="llava-model-zoo-apache"></a>LLaVA repository mode…  <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">MMMU (val) (lab)</a>        36.2%    31.1   2024-01-30   74% ▇▇▇▇▇▇▇▇▇
+                        <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">TextVQA (lab)</a>           67.1%    29.6   2024-01-30   12% ▇
+prior                   pull toward the middle           50.0                14% ▇▇
+                        weighted average               = 33.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -26,6 +26,16 @@ prior                   pull toward the middle           50.0                15%
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download    size  score
+4-bit q4_0  ~8GB   33.6
+</pre>
+
+```sh
+# 4-bit q4_0
+ollama run llava:13b
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/llava-v1-6-vicuna-13b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

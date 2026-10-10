@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-08 · 2.7B params · mit
 
-**score 51.9** ±6.1 · #57 of 109 · from 3 benchmark results across 2 sources
+**score 53.7** ±6.0 · #55 of 117 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     48.0%    48.7   2026-05-24   53% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     23.0%  -231.2   2026-05-24    0% ▇
-<a name="speech-vibevoice-mit-figure"></a>Microsoft VibeVoice o…  <a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preferenc…</a>  3.43 / 5    59.1   2026-09-25   32% ▇▇▇▇
-prior                   pull toward the middle                      49.6                15% ▇▇
-                        weighted average                          = 51.9
+<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     48.0%    51.5   2026-05-24   52% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     23.0%  -139.2   2026-05-24    0% ▇
+<a name="speech-vibevoice-mit-figure"></a>Microsoft VibeVoice o…  <a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preferenc…</a>  3.43 / 5    60.5   2026-09-25   33% ▇▇▇▇
+prior                   pull toward the middle                      49.7                15% ▇▇
+                        weighted average                          = 53.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle                      49.6        
 
 <pre>
 version                         needs  score
-bf16 (transformers &gt;=5.17.0)  ~5.42GB   51.9
+bf16 (transformers &gt;=5.17.0)  ~5.42GB   53.7
 </pre>
 
 ```sh

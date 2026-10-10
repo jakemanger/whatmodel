@@ -6,7 +6,7 @@
 
 Dreamlike.art · released 2023-01 · 0.86B params · dreamlike-modified-creativeml-openrail-m
 
-**score 30.2** ±3.3 · #130 of 143 · from 3 benchmark results across 3 sources
+**score 29.7** ±3.3 · #132 of 144 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                        score  implies  date        weight
-<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  4.5600 mean human alignment score    25.3   2024-10-10   72% ▇▇▇▇▇▇▇▇▇
-<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>                              85.1%    41.0   2023-11-07   23% ▇▇▇
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>                              27.9%    56.9   2024-02-21    0% ▇
+<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  4.5600 mean human alignment score    24.9   2024-10-10   73% ▇▇▇▇▇▇▇▇▇
+<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>                              85.1%    40.7   2023-11-07   22% ▇▇▇
+<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>                              27.9%    57.9   2024-02-21    0% ▇
 prior                   pull toward the middle                                               49.9                 5% ▇
-                        weighted average                                                   = 30.2
+                        weighted average                                                   = 29.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior                   pull toward the middle                                  
 
 <pre>
 version                needs  score
-fp16 · nvidia only    ~2.6GB   30.2
-q8_0 (sd.cpp --type)  ~2.1GB   30.2
+fp16 · nvidia only    ~2.6GB   29.7
+q8_0 (sd.cpp --type)  ~2.1GB   29.7
 </pre>
 
 ```sh

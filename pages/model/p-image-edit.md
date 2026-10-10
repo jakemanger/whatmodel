@@ -6,7 +6,7 @@
 
 Pruna · released 2025-12 · proprietary
 
-**score 54.6** ±4.2 · #64 of 143 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.5** ±4.2 · #63 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1210.7    55.0   2026-09-30   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1210.7    55.9   2026-09-30   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle            49.9                 7% ▇
-                        weighted average                = 54.6
+                        weighted average                = 55.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -6,7 +6,7 @@
 
 LG AI Research · released 2024-12 · 2.41B params · exaone
 
-**score 33.9** ±2.9 · #510 of 598 · from 6 benchmark results across 3 sources
+**score 36.7** ±2.4 · #763 of 935 · from 7 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  33.4%    29.0   2026-08-11   46% ▇▇▇▇▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  26.7%    40.6   2025-05-31   10% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>   3.8%    19.3   2025-05-31    8% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   0.8%    26.9   2025-05-31    7% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  65.3%    47.6   2025-05-31    0% ▇
-<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">IFEval (aggregation unspecifi…</a>  73.6%    44.6   2024-12-01   25% ▇▇▇
-prior                   pull toward the middle                   50.0                 4% ▇
-                        weighted average                       = 33.9
+<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">Arena-Hard (version/judge uns…</a>  48.2%    41.7   2024-12-01   26% ▇▇▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">IFEval (aggregation unspecifi…</a>  73.6%    46.6   2024-12-01   19% ▇▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  33.4%    29.2   2026-08-11   35% ▇▇▇▇
+<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  26.7%    41.5   2025-05-31    7% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>   3.8%    20.8   2025-05-31    6% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   0.8%    28.9   2025-05-31    5% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  65.3%    48.7   2025-05-31    0% ▇
+prior                   pull toward the middle                   50.0                 3% ▇
+                        weighted average                       = 36.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,8 +35,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~1.95GB   33.9
-8-bit q8_0    ~3.39GB   33.9
+4-bit q4_k_m  ~1.95GB   36.7
+8-bit q8_0    ~3.39GB   36.7
 </pre>
 
 ```sh

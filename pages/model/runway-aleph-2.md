@@ -6,7 +6,7 @@
 
 Runway · released 2026-05 · proprietary
 
-**score 55.5** ±10.7 · #32 of 92 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 65.3** ±6.7 · #22 of 93 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="visual-wrop-object-permanence"></a>Training Object Perma…  <a href="https://arxiv.org/html/2609.28654v1#S5.T2">WROP object-permanence exam (…</a>  1518.3    60.8   2026-09-23   52% ▇▇▇▇▇▇
-prior                   pull toward the middle                    49.9                48% ▇▇▇▇▇▇
-                        weighted average                        = 55.5
+<a name="visual-wrop-object-permanence"></a>Training Object Perma…  <a href="https://arxiv.org/html/2609.28654v1#S5.T2">WROP object-permanence exam (…</a>  1518.3    68.9   2026-09-23   81% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                    49.9                19% ▇▇
+                        weighted average                        = 65.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

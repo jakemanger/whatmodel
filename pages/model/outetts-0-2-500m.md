@@ -6,7 +6,7 @@
 
 OuteAI · released 2024-11 · 0.5B params · cc-by-nc-4.0
 
-**score 29.0** ±6.6 · #98 of 109 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.3** ±6.3 · #102 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-cloneval-space-apache"></a>ClonEval · Open Voice…  <a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · LibriSpeech test-c…</a>  88.4%    24.8   2025-04-09   83% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.6                17% ▇▇
-                        weighted average                       = 29.0
+<a name="speech-cloneval-space-apache"></a>ClonEval · Open Voice…  <a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · LibriSpeech test-c…</a>  88.4%    27.8   2025-04-09   84% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.7                16% ▇▇
+                        weighted average                       = 31.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,8 +29,8 @@ prior                   pull toward the middle                   49.6           
 
 <pre>
 version                                    needs  score
-fp32 (outetts 0.3.3)                     ~1.35GB   29.0
-q8_0 (outetts 0.3.3 + llama-cpp-python)  ~0.88GB   29.0
+fp32 (outetts 0.3.3)                     ~1.35GB   31.3
+q8_0 (outetts 0.3.3 + llama-cpp-python)  ~0.88GB   31.3
 </pre>
 
 ```sh

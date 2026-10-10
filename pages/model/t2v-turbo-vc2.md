@@ -6,7 +6,7 @@
 
 UC Santa Barbara · released 2024-05 · cc-by-4.0
 
-**score 38.0** ±2.7 · #71 of 92 · from 3 benchmark results across 3 sources · † every result so far was reported by its maker
+**score 37.8** ±2.7 · #73 of 93 · from 3 benchmark results across 3 sources · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="video-genai-arena-space"></a>GenAI-Arena             <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>  1054.7    37.7   2025-03-22   67% ▇▇▇▇▇▇▇▇
+<a name="video-genai-arena-space"></a>GenAI-Arena             <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>  1054.7    37.5   2025-03-22   67% ▇▇▇▇▇▇▇▇
 <a name="paper-2405.18750v2-t2vturbo"></a>T2V-Turbo: Breaking t…  <a href="https://arxiv.org/html/2405.18750v2">VBench (T2V total) (lab)</a>         81.0%    37.6   2024-10-11   15% ▇▇
 <a name="paper-2410.05677v3-t2vturbo2"></a>T2V-Turbo-v2: Enhanci…  <a href="https://arxiv.org/html/2410.05677v3#S4.T1">VBench (T2V total) (lab)</a>         80.5%    36.8   2025-09-16   15% ▇▇
 prior                   pull toward the middle                    49.9                 3% ▇
-                        weighted average                        = 38.0
+                        weighted average                        = 37.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,8 +29,8 @@ prior                   pull toward the middle                    49.9          
 
 <pre>
 version                                    needs  score
-fp32 · nvidia only                        ~9.4GB   38.0
-fp32 checkpoints (official Gradio demo,…  ~9.9GB   38.0
+fp32 · nvidia only                        ~9.4GB   37.8
+fp32 checkpoints (official Gradio demo,…  ~9.9GB   37.8
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 StepFun · released 2025-07 · 12.43B params · apache-2.0
 
-**score 46.9** ±3.2 · #88 of 143 · from 4 benchmark results across 3 sources
+**score 48.2** ±3.2 · #87 of 144 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card2-stepfun-ai-step1x-edit-v1p2"></a>stepfun-ai/Step1X-Edi…  <a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (lab)</a>        51.6%    46.7   2025-12-29   24% ▇▇▇
-                        <a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">GEdit-Bench overall (G_O, lan…</a>  69.7%    45.7   2025-12-29   24% ▇▇▇
-<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>         69.2%    45.6   2025-12-01   33% ▇▇▇▇
-<a name="visual-weavebench"></a>WEAVE: Unleashing and…  <a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-t…</a>  66.9%    51.5   2025-11-14   13% ▇▇
+<a name="card2-stepfun-ai-step1x-edit-v1p2"></a>stepfun-ai/Step1X-Edi…  <a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall (lab)</a>        51.6%    48.2   2025-12-29   23% ▇▇▇
+                        <a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">GEdit-Bench overall (G_O, lan…</a>  69.7%    47.2   2025-12-29   23% ▇▇▇
+<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>         69.2%    46.0   2025-12-01   30% ▇▇▇▇
+<a name="visual-weavebench"></a>WEAVE: Unleashing and…  <a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-t…</a>  66.9%    52.1   2025-11-14   21% ▇▇
 prior                   pull toward the middle                   49.9                 4% ▇
-                        weighted average                       = 46.9
+                        weighted average                       = 48.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -41,7 +41,7 @@ stepfun-ai/Step1X-Edi…  <a href="https://github.com/stepfun-ai/Step1X-Edit/blo
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~50.6GB   46.9
+bf16 · nvidia only  ~50.6GB   48.2
 </pre>
 
 ```sh

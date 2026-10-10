@@ -6,7 +6,7 @@
 
 Meituan · released 2025-12 · 6B params · apache-2.0
 
-**score 50.5** ±3.9 · #76 of 143 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.8** ±3.4 · #76 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,14 +16,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  83.9%    50.5   2026-08-25   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                 7% ▇
-                        weighted average                       = 50.5
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  83.9%    51.3   2026-08-25   71% ▇▇▇▇▇▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#A10.T11">WISE (WiScore overall, GPT-4o…</a>  65.0%    53.6   2026-06-02   24% ▇▇▇
+prior                   pull toward the middle                   49.9                 5% ▇
+                        weighted average                       = 51.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt))</sub>
+<sub>Licences: QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
 
 <details><summary>Not counted (4)</summary>
 
@@ -45,7 +46,7 @@ api (fal.ai) · $0.13/image · [fal.ai](https://fal.ai/models/fal-ai/longcat-ima
 
 <pre>
 version                                 needs  score
-gguf-q4_k_m + Qwen2.5-VL q8_0 (sd.cpp)  ~15GB   50.5
+gguf-q4_k_m + Qwen2.5-VL q8_0 (sd.cpp)  ~15GB   51.8
 </pre>
 
 ```sh

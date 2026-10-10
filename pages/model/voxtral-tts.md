@@ -6,7 +6,7 @@
 
 Mistral · released 2026-03 · 4B params · cc-by-nc-4.0
 
-**score 69.5** ±3.9 · #2 of 109 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 71.5** ±3.9 · #1 of 117 · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source       test                            score  implies  date        weight
-<a name="speech-voxtral-tts-report"></a>Voxtral TTS  <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>  62.8%    75.3   2026-04-06   33% ▇▇▇▇
-             <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language spea…</a>  74.3%    76.1   2026-04-06   30% ▇▇▇▇
-             <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER …</a>   1.9%    61.7   2026-04-06   17% ▇▇
-             <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>   1.2%    59.6   2026-04-06   14% ▇▇
-prior        pull toward the middle                   49.6                 6% ▇
-             weighted average                       = 69.5
+<a name="speech-voxtral-tts-report"></a>Voxtral TTS  <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>  62.8%    77.5   2026-04-06   33% ▇▇▇▇
+             <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language spea…</a>  74.3%    78.3   2026-04-06   29% ▇▇▇▇
+             <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER …</a>   1.9%    64.1   2026-04-06   17% ▇▇
+             <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>   1.2%    62.1   2026-04-06   15% ▇▇
+prior        pull toward the middle                   49.7                 6% ▇
+             weighted average                       = 71.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,8 +36,8 @@ api (Mistral AI) · $16.00/M chars · [docs.mistral.ai](https://docs.mistral.ai/
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~10.1GB   69.5
-bf16 · mac only     ~10.1GB   69.5
+bf16 · nvidia only  ~10.1GB   71.5
+bf16 · mac only     ~10.1GB   71.5
 </pre>
 
 ```sh

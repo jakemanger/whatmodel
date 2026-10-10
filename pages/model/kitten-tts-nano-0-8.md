@@ -6,7 +6,7 @@
 
 KittenML · released 2026-02 · 0.014B params · apache-2.0
 
-**score 42.3** ±5.0 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.7** ±5.0 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-paradee-report-ccby"></a>Paradee: Distilling K…  <a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison …</a>  4.01 / 5    35.9   2026-10-05   57% ▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison …</a>      5.5%    51.0   2026-10-05   33% ▇▇▇▇
-prior                   pull toward the middle                      49.6                10% ▇
-                        weighted average                          = 42.3
+<a name="speech-paradee-report-ccby"></a>Paradee: Distilling K…  <a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison …</a>  4.01 / 5    38.7   2026-10-05   57% ▇▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison …</a>      5.5%    53.5   2026-10-05   33% ▇▇▇▇
+prior                   pull toward the middle                      49.7                10% ▇
+                        weighted average                          = 44.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

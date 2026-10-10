@@ -6,7 +6,7 @@
 
 AI21 Labs · released 2025-07 · 398B params (94B active) · jamba-open-model-license
 
-**score 50.2** ±14.8 · #293 of 598 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.2** ±14.9 · #427 of 935 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  90.3%    71.3   2026-09-22    1% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  90.3%    73.9   2026-09-22    1% ▇
 prior                   pull toward the middle                   50.0                99% ▇▇▇▇▇▇▇▇▇▇▇▇
                         weighted average                       = 50.2
 </pre>
@@ -26,6 +26,8 @@ prior                   pull toward the middle                   50.0           
 ## How to run it
 
 api (AI21 Labs) · price unknown · [docs.ai21.com](https://docs.ai21.com/docs/jamba-foundation-models)
+
+<sub>[context source](https://docs.ai21.com/docs/jamba-foundation-models): AI21 docs Model Details: 'Max Tokens 256K' for Jamba Large 1.7. Observed 2026-10-09.</sub>
 
 <pre>
 download                        size  score

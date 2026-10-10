@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 8.29B params · apache-2.0
 
-**score 43.4** ±1.7 · #377 of 598 · from 12 benchmark results across 5 sources
+**score 46.0** ±1.0 · #550 of 935 · from 27 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -14,20 +14,35 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                      score  implies  date        weight
-<a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>                                                      68.5%    43.7   2024-10-10   19% ▇▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval</a>                                                 62.2%    45.5   2024-10-10    9% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  5.4500 MM-MT-Bench score (1-10)    46.4   2024-10-10    8% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified)</a>                                 27.9%    34.9   2024-10-10    7% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               75.9%    50.7   2024-10-10    5% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                48.1%    44.9   2024-10-10    5% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      53.7%    47.8   2024-10-10    4% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   41.2%   -18.4   2024-10-10    0% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                           1030.8    44.1   2026-10-02   22% ▇▇▇
-<a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>                         -49.0000    37.2   2025-03-16   14% ▇▇
-<a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>                           1025.0    46.3   2024-09-25    3% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>                            95.8%    53.4   2025-10-16    2% ▇
-prior                   pull toward the middle                                             50.0                 1% ▇
-                        weighted average                                                 = 43.4
+<a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/html/2409.12191v2">MMMU (val) (lab)</a>                                          54.1%    45.3   2024-10-03   13% ▇▇
+                        <a href="https://arxiv.org/html/2409.12191v2">MathVista (testmini) (lab)</a>                                58.2%    43.1   2024-10-03   11% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">MMStar (lab)</a>                                              60.7%    46.6   2024-10-03    9% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">MMMU Pro (lab)</a>                                            43.5%    48.5   2024-10-03    6% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">Video-MME (without subtitles)…</a>                            63.3%    47.1   2024-10-03    5% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">MATH-Vision (lab)</a>                                         16.3%    38.8   2024-10-03    4% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">HallusionBench (lab)</a>                                      50.6%    46.2   2024-10-03    4% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">ChartQA (lab)</a>                                             83.0%    47.2   2024-10-03    3% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">InfographicVQA (lab)</a>                                      76.5%    48.0   2024-10-03    3% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">DocVQA (lab)</a>                                              94.5%    50.7   2024-10-03    3% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">RealWorldQA (lab)</a>                                         70.1%    49.7   2024-10-03    3% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">Video-MME (with subtitles) (l…</a>                            69.0%    46.3   2024-10-03    2% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">MVBench (lab)</a>                                             67.0%    50.5   2024-10-03    2% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">OCRBench (lab)</a>                                            86.6%    55.6   2024-10-03    1% ▇
+                        <a href="https://arxiv.org/html/2409.12191v2">TextVQA (lab)</a>                                             84.3%    62.1   2024-10-03    1% ▇
+<a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>                                                      68.5%    45.2   2024-10-10    6% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  5.4500 MM-MT-Bench score (1-10)    48.2   2024-10-10    3% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval</a>                                                 62.2%    46.7   2024-10-10    2% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified)</a>                                 27.9%    36.4   2024-10-10    2% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                48.1%    47.2   2024-10-10    2% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      53.7%    50.7   2024-10-10    2% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               75.9%    52.6   2024-10-10    2% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   41.2%     1.5   2024-10-10    0% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                           1030.8    45.6   2026-10-02    6% ▇
+<a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>                         -49.0000    38.6   2025-03-16    4% ▇
+<a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>                           1025.0    48.2   2024-09-25    1% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>                            95.8%    55.3   2025-10-16    1% ▇
+prior                   pull toward the middle                                             50.0                 0% ▇
+                        weighted average                                                 = 46.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,8 +53,8 @@ prior                   pull toward the middle                                  
 
 <pre>
 download         size  score
-4-bit q4_k_m   ~5.4GB   43.4
-8-bit q8_0    ~8.82GB   43.4
+4-bit q4_k_m   ~5.4GB   46.0
+8-bit q8_0    ~8.82GB   46.0
 </pre>
 
 ```sh

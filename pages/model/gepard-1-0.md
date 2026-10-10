@@ -6,7 +6,7 @@
 
 nineninesix.ai · released 2026-06 · 0.556B params · apache-2.0
 
-**score 51.0** ±3.9 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 53.0** ±3.8 · comparison only: no current run option verified · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="card3-nineninesix-gepard-1-0"></a>nineninesix/gepard-1.…  <a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en · speaker si…</a>     58.5%    51.7   2026-09-10   39% ▇▇▇▇▇
-                        <a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en WER (transcr…</a>      3.6%    50.4   2026-09-10   39% ▇▇▇▇▇
-                        <a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en · UTMOS (pre…</a>  2.64 / 5    51.4   2026-09-10   16% ▇▇
-prior                   pull toward the middle                      49.6                 6% ▇
-                        weighted average                          = 51.0
+<a name="card3-nineninesix-gepard-1-0"></a>nineninesix/gepard-1.…  <a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en · speaker si…</a>     58.5%    53.8   2026-09-10   40% ▇▇▇▇▇
+                        <a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en WER (transcr…</a>      3.6%    52.5   2026-09-10   39% ▇▇▇▇▇
+                        <a href="https://huggingface.co/nineninesix/gepard-1.0/blob/440c3a27797e98673c8e56f0569a86c09ea5de34/README.md">Seed-TTS test-en · UTMOS (pre…</a>  2.64 / 5    53.5   2026-09-10   16% ▇▇
+prior                   pull toward the middle                      49.7                 6% ▇
+                        weighted average                          = 53.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

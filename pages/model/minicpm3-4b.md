@@ -6,7 +6,7 @@
 
 OpenBMB · released 2024-09 · minicpm-model-license
 
-**score 45.1** ±4.1 · #351 of 598 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.8** ±4.0 · #522 of 935 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  25.6%    43.5   2025-12-16   63% ▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         50.3%    47.3   2025-06-14   30% ▇▇▇▇
-prior                   pull toward the middle                   50.0                 8% ▇
-                        weighted average                       = 45.1
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  25.6%    45.2   2025-12-16   58% ▇▇▇▇▇▇▇
+                        <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         50.3%    48.7   2025-06-14   35% ▇▇▇▇
+prior                   pull toward the middle                   50.0                 7% ▇
+                        weighted average                       = 46.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -26,9 +26,11 @@ prior                   pull toward the middle                   50.0           
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/openbmb/MiniCPM3-4B/blob/d6b14ddaefdb11c624dd75c3c779549bc90b08cb/README.md): Model card: 'MiniCPM3-4B has a 32k context window.'</sub>
+
 <pre>
 download         size  score
-4-bit q4_k_m  ~2.47GB   45.1
+4-bit q4_k_m  ~2.47GB   46.8
 </pre>
 
 ```sh

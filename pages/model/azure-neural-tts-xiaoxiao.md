@@ -6,7 +6,7 @@
 
 Microsoft Azure · closed weights
 
-**score 73.3** ±4.5 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 74.2** ±4.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="speech-cn-news-tts-ccby"></a>CN-NewsTTS Bench v0.1  <a href="https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv">CN-NewsTTS v0.1 · strict pron…</a>  75.6%    75.4   2026-06-22   92% ▇▇▇▇▇▇▇▇▇▇▇
-prior                  pull toward the middle                   49.6                 8% ▇
-                       weighted average                       = 73.3
+<a name="speech-cn-news-tts-ccby"></a>CN-NewsTTS Bench v0.1  <a href="https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv">CN-NewsTTS v0.1 · strict pron…</a>  75.6%    76.2   2026-06-22   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior                  pull toward the middle                   49.7                 8% ▇
+                       weighted average                       = 74.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

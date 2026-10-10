@@ -6,7 +6,7 @@
 
 Segmind · released 2023-10 · 1.3B params · apache-2.0
 
-**score 35.9** ±3.5 · #117 of 143 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 35.9** ±3.6 · #118 of 144 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,8 +16,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  2.93 / 5    35.2   2024-12-25   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                      49.9                 5% ▇
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  2.93 / 5    35.1   2024-12-25   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                      49.9                 6% ▇
                         weighted average                          = 35.9
 </pre>
 

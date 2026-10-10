@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2025-04 · 7B params · proprietary
 
-**score 50.1** ±6.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 50.2** ±6.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="video-seaweed-7b"></a>Seaweed-7B: Cost-Effe…  <a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo…</a>  1047.0    50.1   2025-05-05   84% ▇▇▇▇▇▇▇▇▇▇
+<a name="video-seaweed-7b"></a>Seaweed-7B: Cost-Effe…  <a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo…</a>  1047.0    50.3   2025-05-05   84% ▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                    49.9                16% ▇▇
-                        weighted average                        = 50.1
+                        weighted average                        = 50.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

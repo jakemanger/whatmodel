@@ -6,7 +6,7 @@
 
 Meta · released 2023-05 · 0.036B params · cc-by-nc-4.0
 
-**score 60.2** ±9.1 · #33 of 109 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 49.7** ±15.8 · #67 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-amharic-addis-bysa"></a>Addis AI Amharic TTS …  <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (…</a>   7.9%    65.3   2026-08-12   68% ▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.6                32% ▇▇▇▇
-                        weighted average                       = 60.2
+<a name="speech-amharic-addis-bysa"></a>Addis AI Amharic TTS …  <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (…</a>   7.9%    86.2   2026-08-12    0% ▇
+prior                   pull toward the middle                   49.7               100% ▇▇▇▇▇▇▇▇▇▇▇▇
+                        weighted average                       = 49.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                   49.6           
 
 <pre>
 version                          needs  score
-fp32 (transformers VitsModel)  ~0.15GB   60.2
+fp32 (transformers VitsModel)  ~0.15GB   49.7
 </pre>
 
 ```sh

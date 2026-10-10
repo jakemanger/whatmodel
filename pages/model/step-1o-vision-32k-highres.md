@@ -6,7 +6,7 @@
 
 StepFun · proprietary
 
-**score 54.4** ±3.5 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.5** ±3.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1124.2    54.6   2026-10-02   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                    50.0                 6% ▇
-                        weighted average                        = 54.4
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1124.2    57.0   2026-10-02   93% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                    50.0                 7% ▇
+                        weighted average                        = 56.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

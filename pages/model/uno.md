@@ -6,7 +6,7 @@
 
 ByteDance · released 2025-04 · cc-by-nc-4.0
 
-**score 42.6** ±3.9 · #95 of 143 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 43.1** ±4.0 · #97 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>  78.0%    43.4   2026-03-29   78% ▇▇▇▇▇▇▇▇▇
-<a name="report-2506.18871v4"></a>BAAI                    <a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 …</a>  47.1%    35.6   2026-04-21   15% ▇▇
-prior                   pull toward the middle                   49.9                 6% ▇
-                        weighted average                       = 42.6
+<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>  78.0%    44.0   2026-03-29   78% ▇▇▇▇▇▇▇▇▇
+<a name="report-2506.18871v4"></a>BAAI                    <a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 …</a>  47.1%    35.5   2026-04-21   15% ▇▇
+prior                   pull toward the middle                   49.9                 7% ▇
+                        weighted average                       = 43.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version                                   needs  score
-fp8 FLUX.1-dev base + UNO LoRA, CPU off…  ~16GB   42.6
+fp8 FLUX.1-dev base + UNO LoRA, CPU off…  ~16GB   43.1
 </pre>
 
 ```sh

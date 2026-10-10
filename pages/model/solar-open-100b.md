@@ -6,7 +6,7 @@
 
 Upstage · released 2025-12 · 102.6B params (12B active) · upstage-solar-license
 
-**score 56.6** ±1.1 · #205 of 598 · from 14 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 59.9** ±1.1 · #216 of 935 · from 14 benchmark results across 2 sources · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,22 +14,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2607.20062v2-solar-open-2"></a>Solar Open 2 Technica…  <a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond (lab)</a>              66.2%    58.0   2026-07-24   30% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026 (lab)</a>                 87.7%    57.9   2026-07-24   12% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro (lab)</a>                  80.4%    61.7   2026-07-24    9% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unsp…</a>  56.5%    48.9   2026-07-24    9% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecif…</a>  57.7%    55.7   2026-07-24    6% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam (lab)</a>      11.5%    56.8   2026-07-24    5% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026 (lab)</a>        68.9%    59.8   2026-07-24    4% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge (lab)</a>            40.5%    57.7   2026-07-24    4% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard (lab)</a>        2.3%    48.3   2026-07-24    4% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1) (lab)</a>       2.4%    51.0   2026-07-24    3% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>        15.4%    48.1   2026-07-24    3% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set) (lab)</a>    34.4%    53.3   2026-07-24    2% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking (lab)</a>           7.4%    56.9   2026-07-24    2% ▇
-<a name="report-2601.07022v1"></a>Solar Open Technical …  <a href="https://arxiv.org/html/2601.07022v1">τ²-bench Telecom (lab)</a>          55.6%    62.9   2026-01-11    6% ▇
+<a name="paper-2607.20062v2-solar-open-2"></a>Solar Open 2 Technica…  <a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond (lab)</a>              66.2%    60.5   2026-07-24   27% ▇▇▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026 (lab)</a>                 87.7%    61.6   2026-07-24   15% ▇▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro (lab)</a>                  80.4%    64.8   2026-07-24    9% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecif…</a>  57.7%    58.9   2026-07-24    7% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unsp…</a>  56.5%    50.3   2026-07-24    6% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026 (lab)</a>        68.9%    63.6   2026-07-24    6% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam (lab)</a>      11.5%    60.2   2026-07-24    6% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge (lab)</a>            40.5%    60.8   2026-07-24    4% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set) (lab)</a>    34.4%    59.3   2026-07-24    4% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard (lab)</a>        2.3%    51.3   2026-07-24    3% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1) (lab)</a>       2.4%    54.2   2026-07-24    3% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>        15.4%    50.3   2026-07-24    3% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking (lab)</a>           7.4%    60.0   2026-07-24    2% ▇
+<a name="report-2601.07022v1"></a>Solar Open Technical …  <a href="https://arxiv.org/html/2601.07022v1">τ²-bench Telecom (lab)</a>          55.6%    65.6   2026-01-11    6% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 56.6
+                        weighted average                       = 59.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -42,7 +42,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                        size  score
-16-bit bf16 · nvidia only  ~205.31GB   56.6
+16-bit bf16 · nvidia only  ~205.31GB   59.9
 </pre>
 
 ```sh

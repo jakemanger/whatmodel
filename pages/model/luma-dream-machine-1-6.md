@@ -6,7 +6,7 @@
 
 Luma AI · released 2024-09 · proprietary
 
-**score 49.9** ±7.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.0** ±7.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>  7.72 / 10    49.9   2025-02-28   78% ▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                      49.9                22% ▇▇▇
-                        weighted average                          = 49.9
+<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>  7.72 / 10    50.1   2025-02-28   77% ▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                      49.9                23% ▇▇▇
+                        weighted average                          = 50.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

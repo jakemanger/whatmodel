@@ -6,7 +6,7 @@
 
 BAAI · released 2024-10 · 3.88B params · mit
 
-**score 37.5** ±5.6 · #112 of 143 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 35.1** ±4.2 · #121 of 144 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,21 +16,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-edival"></a>EdiVal-Agent: An Obje…  <a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing ove…</a>  29.9%    36.8   2026-03-17   56% ▇▇▇▇▇▇▇
-<a name="report-2506.18871v4"></a>BAAI                    <a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 …</a>  43.4%    33.6   2026-04-21   31% ▇▇▇▇
-prior                   pull toward the middle                   49.9                13% ▇▇
-                        weighted average                       = 37.5
+<a name="visual-weavebench"></a>WEAVE: Unleashing and…  <a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-t…</a>  40.4%    28.8   2025-11-14   39% ▇▇▇▇▇
+<a name="visual-edival"></a>EdiVal-Agent: An Obje…  <a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing ove…</a>  29.9%    39.1   2026-03-17   37% ▇▇▇▇
+<a name="report-2506.18871v4"></a>BAAI                    <a href="https://arxiv.org/html/2506.18871v4">OmniContext average (GPT-4.1 …</a>  43.4%    33.9   2026-04-21   17% ▇▇
+prior                   pull toward the middle                   49.9                 7% ▇
+                        weighted average                       = 35.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · BAAI ([CC BY 4.0](../../licenses/report-2506.18871v4.txt))</sub>
+<sub>Licences: WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · BAAI ([CC BY 4.0](../../licenses/report-2506.18871v4.txt))</sub>
 
 ## How to run it
 
 <pre>
 version                                   needs  score
-official OmniGen package, default setti…   ~9GB   37.5
+official OmniGen package, default setti…   ~9GB   35.1
 </pre>
 
 ```sh

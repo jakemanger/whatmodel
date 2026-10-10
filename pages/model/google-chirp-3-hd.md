@@ -6,7 +6,7 @@
 
 Google · released 2025-03 · proprietary
 
-**score 63.9** ±4.1 · #12 of 109 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 65.1** ±4.0 · #16 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="speech-cn-news-tts-ccby"></a>CN-NewsTTS Bench v0.1  <a href="https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv">CN-NewsTTS v0.1 · strict pron…</a>  60.4%    64.9   2026-06-22   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior                  pull toward the middle                   49.6                 7% ▇
-                       weighted average                       = 63.9
+<a name="speech-cn-news-tts-ccby"></a>CN-NewsTTS Bench v0.1  <a href="https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv">CN-NewsTTS v0.1 · strict pron…</a>  60.4%    66.1   2026-06-22   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior                  pull toward the middle                   49.7                 6% ▇
+                       weighted average                       = 65.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

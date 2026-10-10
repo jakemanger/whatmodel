@@ -6,7 +6,7 @@
 
 Cohere · released 2025-08 · 111B params · cc-by-nc-4.0
 
-**score 51.7** ±4.0 · #272 of 598 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 51.5** ±4.6 · #393 of 935 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="paper-2609.13916v1-north-small-translate"></a>Cohere  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>  56.9%    44.4   2026-09-12   49% ▇▇▇▇▇▇
-        <a href="https://arxiv.org/html/2609.13916v1">WMT24++ (lab)</a>                   76.9%    63.1   2026-09-12   26% ▇▇▇
-        <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, …</a>  70.0%    56.2   2026-09-12   17% ▇▇
-prior   pull toward the middle                   50.0                 7% ▇
-        weighted average                       = 51.7
+<a name="paper-2609.13916v1-north-small-translate"></a>Cohere  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>  56.9%    45.6   2026-09-12   56% ▇▇▇▇▇▇▇
+        <a href="https://arxiv.org/html/2609.13916v1">WMT24++ (lab)</a>                   76.9%    64.7   2026-09-12   19% ▇▇
+        <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, …</a>  70.0%    57.6   2026-09-12   16% ▇▇
+prior   pull toward the middle                   50.0                 9% ▇
+        weighted average                       = 51.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

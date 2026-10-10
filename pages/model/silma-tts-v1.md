@@ -6,7 +6,7 @@
 
 SILMA AI · released 2026-03 · 0.15B params · apache-2.0
 
-**score 46.9** ±9.4 · #71 of 109 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.0** ±9.5 · #71 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source            test                             score  implies  date        weight
-<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena  <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>  1006.7    45.5   2026-09-24   65% ▇▇▇▇▇▇▇▇
-prior             pull toward the middle                    49.6                35% ▇▇▇▇
-                  weighted average                        = 46.9
+<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena  <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>  1006.7    47.1   2026-09-24   64% ▇▇▇▇▇▇▇▇
+prior             pull toward the middle                    49.7                36% ▇▇▇▇
+                  weighted average                        = 48.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior             pull toward the middle                    49.6                
 
 <pre>
 version                              needs  score
-fp32 checkpoint (silma-tts 1.0.5)  ~2.65GB   46.9
+fp32 checkpoint (silma-tts 1.0.5)  ~2.65GB   48.0
 </pre>
 
 ```sh

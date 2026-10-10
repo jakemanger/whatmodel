@@ -6,7 +6,7 @@
 
 Puyuan Peng et al. (UT Austin) · released 2024-03 · 0.83B params · coqui-public-model-license
 
-**score 30.5** ±4.5 · #95 of 109 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 32.6** ±4.2 · #100 of 117 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-voicecraft-report-bysa"></a>VoiceCraft: Zero-Shot…  <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS list…</a>  4.17 / 5    32.2   2024-06-14   50% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>      4.5%    21.0   2024-06-14   21% ▇▇▇
-                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>     55.0%    29.0   2024-06-14   21% ▇▇
-prior                   pull toward the middle                      49.6                 8% ▇
-                        weighted average                          = 30.5
+<a name="speech-voicecraft-report-bysa"></a>VoiceCraft: Zero-Shot…  <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS list…</a>  4.17 / 5    34.7   2024-06-14   47% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>     55.0%    31.2   2024-06-14   24% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>      4.5%    24.1   2024-06-14   23% ▇▇▇
+prior                   pull toward the middle                      49.7                 7% ▇
+                        weighted average                          = 32.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle                      49.6        
 
 <pre>
 version                   needs  score
-fp32 (VoiceCraft repo)  ~4.53GB   30.5
+fp32 (VoiceCraft repo)  ~4.53GB   32.6
 </pre>
 
 ```sh

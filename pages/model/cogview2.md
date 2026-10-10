@@ -6,7 +6,7 @@
 
 THUDM · released 2022-04 · apache-2.0
 
-**score 2.0** ±4.0 · #143 of 143 · from 4 benchmark results across 3 sources
+**score 1.2** ±4.0 · #144 of 144 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                   score  implies  date        weight
-<a name="visual-imagereward"></a>ImageReward: Learning…  <a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward human ranking of …</a>  74.0000 wins    -3.0   2023-12-28   63% ▇▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2304.05977v4#S2.T1">MS-COCO 2014 zero-shot FID-30…</a>   26.2000 FID     8.2   2023-12-28   13% ▇▇
-<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>          7.4%    -4.6   2023-11-07   17% ▇▇
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>         26.5%    40.3   2024-02-21    0% ▇
+<a name="visual-imagereward"></a>ImageReward: Learning…  <a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward human ranking of …</a>  74.0000 wins    -3.8   2023-12-28   63% ▇▇▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2304.05977v4#S2.T1">MS-COCO 2014 zero-shot FID-30…</a>   26.2000 FID     7.5   2023-12-28   13% ▇▇
+<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>          7.4%    -5.6   2023-11-07   16% ▇▇
+<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>         26.5%    40.2   2024-02-21    0% ▇
 prior                   pull toward the middle                          49.9                 7% ▇
-                        weighted average                               = 2.0
+                        weighted average                               = 1.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,8 +32,8 @@ prior                   pull toward the middle                          49.9    
 
 <pre>
 version                                     needs  score
-fp16 (--fp16), 3 stages · nvidia only     ~43.7GB    2.0
-fp16 (--fp16), first stage only · nvidi…  ~13.5GB    2.0
+fp16 (--fp16), 3 stages · nvidia only     ~43.7GB    1.2
+fp16 (--fp16), first stage only · nvidi…  ~13.5GB    1.2
 </pre>
 
 ```sh

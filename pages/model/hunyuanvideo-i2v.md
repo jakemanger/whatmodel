@@ -6,7 +6,7 @@
 
 Tencent · released 2025-03 · tencent-hunyuan-community
 
-**score 44.3** ±4.2 · #62 of 92 · from 3 benchmark results across 2 sources
+**score 44.6** ±3.5 · #63 of 93 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,22 +14,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  56.8%    42.0   2025-04-21   53% ▇▇▇▇▇▇
-<a name="paper-2512.01989v1-paibench"></a>PAI-Bench: A Comprehe…  <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference …</a>  964.3    45.7   2025-12-01   25% ▇▇▇
-                        <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video…</a>  77.6%    47.5   2025-12-01   15% ▇▇
-prior                   pull toward the middle                   49.9                 7% ▇
-                        weighted average                       = 44.3
+<a name="paper-2512.01989v1-paibench"></a>PAI-Bench: A Comprehe…  <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference …</a>  964.3    46.6   2025-12-01   43% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video…</a>  77.6%    42.8   2025-12-01   15% ▇▇
+<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  56.8%    42.2   2025-04-21   37% ▇▇▇▇
+prior                   pull toward the middle                   49.9                 5% ▇
+                        weighted average                       = 44.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt)) · PAI-Bench: A Comprehensive Benchmark For Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: PAI-Bench: A Comprehensive Benchmark For Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt))</sub>
 
 ## How to run it
 
 <pre>
 version                                     needs  score
-bf16 720p + CPU offload (official scrip…  ~57.3GB   44.3
+bf16 720p + CPU offload (official scrip…  ~57.3GB   44.6
 </pre>
 
 ```sh

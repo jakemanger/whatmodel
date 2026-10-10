@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 1.01B params · apache-2.0
 
-**score 18.4** ±1.0 · #575 of 598 · from 14 benchmark results across 2 sources
+**score 15.1** ±1.2 · #914 of 935 · from 14 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,22 +14,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  56.9%    20.1   2023-05-31   13% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      84.0%    18.6   2023-05-31   11% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      70.7%    21.0   2023-05-31    7% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                53.7%    14.1   2023-05-31    7% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  56.2%    21.1   2023-05-31    7% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             24.4%    11.6   2023-05-31    5% ▇
-<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            86.0%    18.5   2024-06-07    9% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   33.1%    23.8   2024-06-07    8% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        50.2%    16.1   2024-06-07    6% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      37.8%    24.1   2024-06-07    6% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      53.3%    12.6   2024-06-07    6% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       44.7%    11.6   2024-06-07    6% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           61.8%    20.1   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            69.1%    18.0   2024-06-07    4% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 18.4
+<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  56.9%    16.7   2023-05-31   13% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      84.0%    15.0   2023-05-31   11% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                53.7%    10.0   2023-05-31    7% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      70.7%    17.8   2023-05-31    7% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  56.2%    18.0   2023-05-31    7% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             24.4%     6.9   2023-05-31    5% ▇
+<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            86.0%    15.4   2024-06-07   10% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   33.1%    20.9   2024-06-07    7% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       44.7%     8.3   2024-06-07    7% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        50.2%    12.5   2024-06-07    6% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      53.3%     8.5   2024-06-07    6% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      37.8%    23.2   2024-06-07    5% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           61.8%    17.7   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            69.1%    14.6   2024-06-07    4% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 15.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -42,7 +42,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp16  ~2.09GB   18.4
+4-bit fp16  ~2.09GB   15.1
 </pre>
 
 ```sh

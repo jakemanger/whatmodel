@@ -6,7 +6,7 @@
 
 MosaicML · released 2023-05 · 6.7B params · apache-2.0
 
-**score 31.1** ±0.8 · comparison only: no current run option verified · from 19 benchmark results across 4 sources
+**score 29.8** ±0.9 · comparison only: no current run option verified · from 19 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,27 +14,27 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   46.5%    30.5   2024-06-07   16% ▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      48.6%    29.9   2024-06-07    8% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      69.9%    33.3   2024-06-07    7% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        70.5%    32.8   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       77.6%    35.1   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           74.2%    32.4   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            93.7%    31.8   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            77.3%    30.8   2024-06-07    3% ▇
-<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   40.5%    32.9   2023-09-11   12% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      68.0%    30.5   2023-09-11    7% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           73.9%    32.1   2023-09-11    5% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       57.1%    31.9   2023-09-11    4% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        74.9%    32.8   2023-09-11    4% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      31.4%    32.5   2023-09-11    4% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                      45.1%    27.6   2023-09-11    3% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            78.9%    32.6   2023-09-11    2% ▇
-<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>   3.5%    21.5   2024-04-24    5% ▇
-                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  30.4%    30.5   2024-04-24    5% ▇
-<a name="paper-2410.14897v1-gencopa"></a>From Test-Taking to T…  <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                            65.6%    13.9   2024-10-18    0% ▇
+<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   46.5%    29.0   2024-06-07   14% ▇▇
+                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      48.6%    28.4   2024-06-07    8% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      69.9%    32.2   2024-06-07    7% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       77.6%    33.8   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        70.5%    31.4   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           74.2%    31.1   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            93.7%    30.3   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            77.3%    29.5   2024-06-07    2% ▇
+<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   40.5%    31.9   2023-09-11   11% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      68.0%    29.2   2023-09-11    7% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           73.9%    30.7   2023-09-11    6% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      31.4%    31.2   2023-09-11    4% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       57.1%    30.2   2023-09-11    4% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        74.9%    31.7   2023-09-11    4% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                      45.1%    26.2   2023-09-11    4% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            78.9%    31.7   2023-09-11    2% ▇
+<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>   3.5%    19.2   2024-04-24    5% ▇
+                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  30.4%    29.0   2024-04-24    4% ▇
+<a name="paper-2410.14897v1-gencopa"></a>From Test-Taking to T…  <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                            65.6%    12.7   2024-10-18    0% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 31.1
+                        weighted average                       = 29.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

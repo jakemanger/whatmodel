@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 0.405B params · apache-2.0
 
-**score 15.5** ±1.5 · #580 of 598 · from 6 benchmark results across 1 source · † every result so far was reported by its maker
+**score 11.6** ±1.7 · #920 of 935 · from 6 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  52.1%    16.1   2023-05-31   25% ▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      81.1%    15.5   2023-05-31   25% ▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      66.8%    14.4   2023-05-31   15% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  51.6%    18.2   2023-05-31   15% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                53.7%    13.5   2023-05-31   12% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             21.3%     8.8   2023-05-31    7% ▇
+<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  52.1%    12.2   2023-05-31   26% ▇▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      81.1%    11.5   2023-05-31   26% ▇▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      66.8%    10.2   2023-05-31   14% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  51.6%    14.6   2023-05-31   14% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                53.7%     9.3   2023-05-31   12% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             21.3%     3.5   2023-05-31    7% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 15.5
+                        weighted average                       = 11.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,7 +34,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp16  ~0.91GB   15.5
+4-bit fp16  ~0.91GB   11.6
 </pre>
 
 ```sh

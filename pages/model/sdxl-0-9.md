@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-06 · 3.5B params · sdxl-0.9-research
 
-**score 38.6** ±5.0 · #108 of 143 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 39.6** ±6.3 · #108 of 144 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  43.0%    37.1   2026-06-02   89% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>  27.7%    54.1   2024-02-21    1% ▇
-prior                   pull toward the middle                   49.9                11% ▇
-                        weighted average                       = 38.6
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  43.0%    37.3   2026-06-02   82% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>  27.7%    54.9   2024-02-21    1% ▇
+prior                   pull toward the middle                   49.9                17% ▇▇
+                        weighted average                       = 39.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,8 +30,8 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version                needs  score
-fp16 · nvidia only    ~8.9GB   38.6
-q8_0 (sd.cpp --type)  ~4.9GB   38.6
+fp16 · nvidia only    ~8.9GB   39.6
+q8_0 (sd.cpp --type)  ~4.9GB   39.6
 </pre>
 
 ```sh

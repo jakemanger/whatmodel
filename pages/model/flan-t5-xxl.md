@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 11.3B params · apache-2.0
 
-**score 33.9** ±1.2 · #509 of 598 · from 8 benchmark results across 4 sources
+**score 33.6** ±1.2 · #803 of 935 · from 8 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                              score  implies  date        weight
-<a name="paper-2210.11416v5"></a>Scaling Instruction-F…  <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                              45.3%    33.5   2022-12-06   25% ▇▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                                        55.1%    34.9   2022-12-06   14% ▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>                                         4.9%    34.4   2022-12-06   11% ▇
-<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                                    43.9%    36.0   2024-03-10   20% ▇▇
-                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                              54.5%    38.9   2024-03-10    7% ▇
-<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>                    20.6%    32.9   2024-04-24   12% ▇
-                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>                    20.9%    25.2   2024-04-24   10% ▇
-<a name="paper-2306.02561v3-llmblender"></a>LLM-Blender: Ensembli…  <a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Ble…</a>  8.8100 mean rank (1-11)  -170.4   2023-06-30    0% ▇
+<a name="paper-2210.11416v5"></a>Scaling Instruction-F…  <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                              45.3%    33.4   2022-12-06   24% ▇▇▇
+                        <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                                        55.1%    34.8   2022-12-06   14% ▇▇
+                        <a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>                                         4.9%    34.0   2022-12-06   12% ▇
+<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                                    43.9%    35.3   2024-03-10   23% ▇▇▇
+                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                              54.5%    38.3   2024-03-10    8% ▇
+<a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>                    20.6%    31.9   2024-04-24   11% ▇
+                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>                    20.9%    23.0   2024-04-24    7% ▇
+<a name="paper-2306.02561v3-llmblender"></a>LLM-Blender: Ensembli…  <a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Ble…</a>  8.8100 mean rank (1-11)  -152.2   2023-06-30    0% ▇
 prior                   pull toward the middle                                     50.0                 1% ▇
-                        weighted average                                         = 33.9
+                        weighted average                                         = 33.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,7 +34,7 @@ prior                   pull toward the middle                                  
 
 <pre>
 download        size  score
-4-bit fp32  ~45.07GB   33.9
+4-bit fp32  ~45.07GB   33.6
 </pre>
 
 ```sh

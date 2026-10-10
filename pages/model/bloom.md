@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 176.2B params · bigscience-bloom-rail-1.0
 
-**score 29.6** ±1.8 · #540 of 598 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 27.3** ±1.9 · #868 of 935 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2211.05100v4"></a>BLOOM: A 176B-Paramet…  <a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>         15.5%    29.7   2023-06-27   97% ▇▇▇▇▇▇▇▇▇▇▇▇
-<a name="paper-2410.14897v1-gencopa"></a>From Test-Taking to T…  <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                    57.6%     3.6   2024-10-18    1% ▇
-prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 29.6
+<a name="paper-2211.05100v4"></a>BLOOM: A 176B-Paramet…  <a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>         15.5%    27.4   2023-06-27   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2410.14897v1-gencopa"></a>From Test-Taking to T…  <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                    57.6%     2.9   2024-10-18    2% ▇
+prior                   pull toward the middle           50.0                 2% ▇
+                        weighted average               = 27.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle           50.0                 1%
 
 <pre>
 download          size  score
-16-bit bf16  ~352.49GB   29.6
+16-bit bf16  ~352.49GB   27.3
 </pre>
 
 ```sh
