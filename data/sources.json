@@ -14408,9 +14408,9 @@
     "terms_url": "https://github.com/LiveBench/LiveBench/blob/24364d65076429adfcba7be18af4d44fddc43dce/docs/DATASHEET.md",
     "quote": "docs/DATASHEET.md @24364d6, 'What license (if any) is it distributed under?': 'The benchmark suite is public as of June 12, 2024, distributed under the Apache License 2.0.'; 'Are there any copyrights on the data?': 'There are no copyrights on the data.'; 'Are there any fees or access/export restrictions?': 'There are no fees or restrictions.' The datasheet gives the data location as 'https://huggingface.co/livebench' and points to livebench/model_answer for raw answers. The HF cards themselves carry no licence field, and the repo LICENSE is only the copied FastChat (Apache-2.0) and LiveCodeBench (MIT) licences (GitHub reports NOASSERTION).",
     "attribution": "LiveBench (White et al., ICLR 2025), livebench/model_judgment @5896e3b with question datasets livebench/<category> @2024-10-22 revisions, Apache-2.0 per the LiveBench datasheet. Release-2024-07-26 averages recomputed from the per-question judgments with LiveBench's own aggregation; catalogue ids mapped. No endorsement.",
-    "scope": "Per-question judgment scores aggregated to release 2024-07-26 overall averages for models with complete judgments. OWNER REVIEW FLAG: the licence comes from the datasheet's statement about the LiveBench 'benchmark suite'/'data' on huggingface.co/livebench, not from a card licence field; confirm this covers the judgment (score) files. The livebench.ai website tables (livebench.github.io repo, no licence) are not used.",
+    "scope": "Per-question judgment scores aggregated to release 2024-07-26 overall averages for models with complete judgments. OWNER REVIEW FLAG: the licence comes from the datasheet's statement about the LiveBench 'benchmark suite'/'data' on huggingface.co/livebench, not from a card licence field; confirm this covers the judgment (score) files. The livebench.ai website tables (livebench.github.io repo, no licence) are not used. Also release 2024-08-31, only for catalogue models with no 2024-07-26 result (o1-preview, o1-mini, Qwen2.5-72B, Gemini 1.5 Pro/Flash 002, Llama-3.1-Nemotron-70B), so each model has one LiveBench release.",
     "verdict": "allowed",
-    "checked": "2026-10-09"
+    "checked": "2026-10-10"
   },
   {
     "id": "paper-2406.15877v4-bigcodebench",

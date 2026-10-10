@@ -235401,5 +235401,65 @@
     "date": "2026-07-14",
     "note": "GigaAM Multilingual card @2f8a571 (MIT), 'Model Performance' table, row 'English | CV', column 'GigaAM Multilingual Large' = 21.5% WER. Card 'Model Performance': 'Word Error Rate (%) on Common Voice (CV), FLEURS, and internal in-the-wild test sets. Utterances longer than 30 s and references containing digits are excluded; references/hypotheses are normalized (lowercasing, punctuation removal, numerals→words); greedy decoding.' Same-lab sibling columns (GigaAM Multilingual = ctc 220M, GigaAM Multilingual Large = large_ctc 600M). Common Voice version not stated.",
     "source_id": "card3-ai-sage-gigaam-multilingual"
+  },
+  {
+    "model": "gemini-1-5-flash-002",
+    "bench": "livebench-20240831",
+    "score": 0.4957,
+    "source": "https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2024-10-22",
+    "note": "LiveBench model judgments (HF livebench/model_judgment @5896e3b, committed 2024-10-22), model 'gemini-1.5-flash-002'. Release 2024-08-31 question set (1,000 questions: livebench_release_date in {2024-06-24, 2024-07-26, 2024-08-31} and not removed by 2024-08-31; release/removal dates from the question datasets livebench/<category> pinned at their 2024-10-22 revisions): judgments for all 1,000 questions, no duplicates. Score computed by whatmodel.sh exactly as LiveBench's show_livebench_result.py (LiveBench/LiveBench @24364d6) does: mean per-question score per task → mean of task means per category → mean of the six categories = 49.57. Category means: math 47.2, coding 41.9, reasoning 50.0, language 29.5, instruction_following 84.5, data_analysis 44.2. Answers generated and scored by the LiveBench team ('We will evaluate your model!', README). Identity: stable API version gemini-1.5-flash-002; answers generated 2024-09-24..25.",
+    "source_id": "livebench-model-judgment-apache"
+  },
+  {
+    "model": "gemini-1-5-pro-002",
+    "bench": "livebench-20240831",
+    "score": 0.5494,
+    "source": "https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2024-10-22",
+    "note": "LiveBench model judgments (HF livebench/model_judgment @5896e3b, committed 2024-10-22), model 'gemini-1.5-pro-002'. Release 2024-08-31 question set (1,000 questions: livebench_release_date in {2024-06-24, 2024-07-26, 2024-08-31} and not removed by 2024-08-31; release/removal dates from the question datasets livebench/<category> pinned at their 2024-10-22 revisions): judgments for all 1,000 questions, no duplicates. Score computed by whatmodel.sh exactly as LiveBench's show_livebench_result.py (LiveBench/LiveBench @24364d6) does: mean per-question score per task → mean of task means per category → mean of the six categories = 54.94. Category means: math 57.4, coding 48.8, reasoning 46.0, language 47.4, instruction_following 77.7, data_analysis 52.3. Answers generated and scored by the LiveBench team ('We will evaluate your model!', README). Identity: stable API version gemini-1.5-pro-002; answers generated 2024-09-24.",
+    "source_id": "livebench-model-judgment-apache"
+  },
+  {
+    "model": "llama-3-1-nemotron-70b",
+    "bench": "livebench-20240831",
+    "score": 0.4311,
+    "source": "https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2024-10-22",
+    "note": "LiveBench model judgments (HF livebench/model_judgment @5896e3b, committed 2024-10-22), model 'llama-3.1-nemotron-70b-instruct'. Release 2024-08-31 question set (1,000 questions: livebench_release_date in {2024-06-24, 2024-07-26, 2024-08-31} and not removed by 2024-08-31; release/removal dates from the question datasets livebench/<category> pinned at their 2024-10-22 revisions): judgments for all 1,000 questions, no duplicates. Score computed by whatmodel.sh exactly as LiveBench's show_livebench_result.py (LiveBench/LiveBench @24364d6) does: mean per-question score per task → mean of task means per category → mean of the six categories = 43.11. Category means: math 37.6, coding 32.7, reasoning 48.0, language 31.8, instruction_following 69.6, data_analysis 39.1. Answers generated and scored by the LiveBench team ('We will evaluate your model!', README). Identity: NVIDIA Llama-3.1-Nemotron-70B-Instruct; answers generated 2024-10-16..17.",
+    "source_id": "livebench-model-judgment-apache"
+  },
+  {
+    "model": "o1-mini",
+    "bench": "livebench-20240831",
+    "score": 0.5909,
+    "source": "https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2024-10-22",
+    "note": "LiveBench model judgments (HF livebench/model_judgment @5896e3b, committed 2024-10-22), model 'o1-mini-2024-09-12'. Release 2024-08-31 question set (1,000 questions: livebench_release_date in {2024-06-24, 2024-07-26, 2024-08-31} and not removed by 2024-08-31; release/removal dates from the question datasets livebench/<category> pinned at their 2024-10-22 revisions): judgments for all 1,000 questions, no duplicates. Score computed by whatmodel.sh exactly as LiveBench's show_livebench_result.py (LiveBench/LiveBench @24364d6) does: mean per-question score per task → mean of task means per category → mean of the six categories = 59.09. Category means: math 59.2, coding 48.1, reasoning 77.3, language 45.7, instruction_following 70.2, data_analysis 54.1. Answers generated and scored by the LiveBench team ('We will evaluate your model!', README). Identity: dated API snapshot o1-mini-2024-09-12 (the only o1-mini snapshot); default reasoning (o1-mini had no reasoning-effort parameter at the time); answers generated 2024-09-12..13.",
+    "source_id": "livebench-model-judgment-apache"
+  },
+  {
+    "model": "o1-preview",
+    "bench": "livebench-20240831",
+    "score": 0.6602,
+    "source": "https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2024-10-22",
+    "note": "LiveBench model judgments (HF livebench/model_judgment @5896e3b, committed 2024-10-22), model 'o1-preview-2024-09-12'. Release 2024-08-31 question set (1,000 questions: livebench_release_date in {2024-06-24, 2024-07-26, 2024-08-31} and not removed by 2024-08-31; release/removal dates from the question datasets livebench/<category> pinned at their 2024-10-22 revisions): judgments for all 1,000 questions, no duplicates. Score computed by whatmodel.sh exactly as LiveBench's show_livebench_result.py (LiveBench/LiveBench @24364d6) does: mean per-question score per task → mean of task means per category → mean of the six categories = 66.02. Category means: math 62.9, coding 50.8, reasoning 68.0, language 72.7, instruction_following 77.7, data_analysis 64.0. Answers generated and scored by the LiveBench team ('We will evaluate your model!', README). Identity: dated API snapshot o1-preview-2024-09-12 (the only o1-preview snapshot); default reasoning (no effort parameter); answers generated 2024-09-12..13.",
+    "source_id": "livebench-model-judgment-apache"
+  },
+  {
+    "model": "qwen2-5-72b",
+    "bench": "livebench-20240831",
+    "score": 0.5289,
+    "source": "https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2024-10-22",
+    "note": "LiveBench model judgments (HF livebench/model_judgment @5896e3b, committed 2024-10-22), model 'qwen2.5-72b-instruct'. Release 2024-08-31 question set (1,000 questions: livebench_release_date in {2024-06-24, 2024-07-26, 2024-08-31} and not removed by 2024-08-31; release/removal dates from the question datasets livebench/<category> pinned at their 2024-10-22 revisions): judgments for all 1,000 questions, no duplicates. Score computed by whatmodel.sh exactly as LiveBench's show_livebench_result.py (LiveBench/LiveBench @24364d6) does: mean per-question score per task → mean of task means per category → mean of the six categories = 52.89. Category means: math 52.4, coding 56.6, reasoning 46.0, language 38.1, instruction_following 75.5, data_analysis 48.8. Answers generated and scored by the LiveBench team ('We will evaluate your model!', README). Identity: Qwen/Qwen2.5-72B-Instruct; answers generated 2024-09-20.",
+    "source_id": "livebench-model-judgment-apache"
   }
 ]
