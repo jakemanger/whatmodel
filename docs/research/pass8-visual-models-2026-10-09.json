@@ -1,0 +1,1854 @@
+{
+  "about": "Pass 8 (2026-10-09): new image and video generation/editing models not yet in data/models.json, with their results from allowed sources (LMArena CC BY 4.0 dataset at revision 088c6079, openly licensed papers/cards/READMEs, vendor own-model facts). Parent section: LMArena audit of every row in the latest visual configs plus the gap models OmniGen v1, UNO and Step1X-Edit v1.0. Entries tagged part A (open-weights releases: Cosmos3-Super, Kandinsky 6.0 Pro/Lite) and part B (closed/API models in recent CC BY papers: Wan 3.0 Prime, Runway Aleph 2.0) come from two sub-passes that were cut short by a usage limit; the parent re-checked every proposed cell against its source. refresh_candidates holds optional same-entry refreshes of existing LMArena image rows. Proposals only; nothing in data/ was edited.",
+  "models": [
+    {
+      "id": "nano-banana-2-1",
+      "name": "Nano Banana 2.1",
+      "provider": "Google",
+      "category": "image",
+      "released": "2026-10",
+      "released_source": "https://ai.google.dev/gemini-api/docs/changelog",
+      "open_weights": false,
+      "license": "proprietary",
+      "api": {
+        "url": "https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1",
+        "provider": "Google",
+        "price": 0.0336,
+        "unit": "image",
+        "price_source": "https://ai.google.dev/gemini-api/docs/pricing",
+        "price_note": "USD per 1K (1024x1024) generated image on the Gemini Developer API Standard paid tier: image output is $30.00 per 1M tokens and Google states that 1K output images consume 1,120 tokens and are 'equivalent to $0.0336 per image' (2K $0.0504, 4K $0.113; Batch $0.0168 per 1K image). Input ($1.50 per 1M text/image/video) and text/thinking output ($7.50 per 1M) are additional; free tier 'Not available'. Product: Gemini Developer API. API model: gemini-nano-banana-2.1. Settings: tier=Standard paid, resolution=1K, batch=no, n=1. Price basis: provider-published per-image equivalent of the image-output rate. Currency: USD. Google Gemini API official pricing page (page footer 'Last updated 2026-10-07 UTC'), observed 2026-10-09."
+      },
+      "local": null,
+      "identity_note": "Google's Gemini Nano Banana 2.1, API model gemini-nano-banana-2.1, released generally available on the Gemini API on 6 Oct 2026 as 'An update to Nano Banana 2 (gemini-3.1-flash-image)'; the same release note deprecates gemini-3.1-flash-image. The Arena entry 'gemini-nano-banana-2.1' (organization google, licence column Proprietary) is the exact API model id; first listed in image_edit on 2026-10-06 and in text_to_image on 2026-10-06/07. Distinct from nano-banana-2 (gemini-3.1-flash-image) and nano-banana-2-lite.",
+      "identity_evidence": [
+        {
+          "source": "https://ai.google.dev/gemini-api/docs/changelog",
+          "reported_label": "October 6, 2026 - Gemini Nano Banana 2.1 generally available (GA): Released Gemini Nano Banana 2.1 ( gemini-nano-banana-2.1 ) ... An update to Nano Banana 2 ( gemini-3.1-flash-image )",
+          "note": "observed 2026-10-09"
+        },
+        {
+          "source": "https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1",
+          "reported_label": "Gemini Nano Banana 2.1; model code gemini-nano-banana-2.1; 1K/2K/4K output",
+          "note": "observed 2026-10-09"
+        },
+        {
+          "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+          "reported_label": "gemini-nano-banana-2.1",
+          "organization": "google",
+          "arena_license_column": "Proprietary"
+        },
+        {
+          "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+          "reported_label": "gemini-nano-banana-2.1",
+          "organization": "google",
+          "arena_license_column": "Proprietary"
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-image-latest",
+      "name": "ChatGPT Image Latest (chatgpt-image-latest)",
+      "provider": "OpenAI",
+      "category": "image",
+      "released": "2025-12",
+      "released_source": "https://developers.openai.com/api/docs/changelog",
+      "open_weights": false,
+      "license": "proprietary",
+      "api": {
+        "url": "https://developers.openai.com/api/docs/models/chatgpt-image-latest",
+        "provider": "OpenAI",
+        "price": 0.034,
+        "unit": "image",
+        "price_source": "https://developers.openai.com/api/docs/models/chatgpt-image-latest",
+        "price_note": "USD for one generated 1024x1024 medium-quality image on the OpenAI API: the model page's Image generation tables list 1024x1024 at Low $0.009, Medium $0.034, High $0.133 per image (1024x1536/1536x1024: $0.013 / $0.05 / $0.2). Text input ($5 per 1M) and image input ($8 per 1M) tokens are additional. Product: OpenAI Image API (v1/images/generations and v1/images/edits; Batch supported). API model: chatgpt-image-latest (only alias listed; no dated snapshot). Settings: quality=medium, 1024x1024, n=1. Price basis: published per-image list rate. Currency: USD. OpenAI official model page, observed 2026-10-09."
+      },
+      "local": null,
+      "identity_note": "OpenAI API model chatgpt-image-latest, released on 16 Dec 2025 alongside gpt-image-1.5 (OpenAI API changelog: 'Released gpt-image-1.5 and chatgpt-image-latest'). Its model page now reads 'Previous image model used in ChatGPT ... This points to the Image snapshot previously used in ChatGPT' and lists the single alias chatgpt-image-latest. Arena image_edit entry 'chatgpt-image-latest-high-fidelity (20251216)' (openai, Proprietary; listed since 2026-01-26) carries that release date and the high-fidelity edit setting. Kept separate from gpt-image-1-5: OpenAI lists them as separate models and Arena rates them as separate entries (1388.6 vs 1369.7 for 'gpt-image-1.5-high-fidelity'). Caveat: OpenAI publishes no dated snapshot for the alias. No text_to_image Arena entry.",
+      "identity_evidence": [
+        {
+          "source": "https://developers.openai.com/api/docs/changelog",
+          "reported_label": "Dec 16 [2025]: Released gpt-image-1.5 and chatgpt-image-latest, our latest and most advanced models for image generation.",
+          "note": "observed 2026-10-09"
+        },
+        {
+          "source": "https://developers.openai.com/api/docs/models/chatgpt-image-latest",
+          "reported_label": "chatgpt-image-latest - Previous image model used in ChatGPT. Model ID: chatgpt-image-latest",
+          "note": "observed 2026-10-09"
+        },
+        {
+          "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+          "reported_label": "chatgpt-image-latest-high-fidelity (20251216)",
+          "organization": "openai",
+          "arena_license_column": "Proprietary"
+        }
+      ]
+    },
+    {
+      "id": "omnigen-v1",
+      "name": "OmniGen (v1)",
+      "provider": "BAAI",
+      "category": "image",
+      "released": "2024-10",
+      "released_source": "https://huggingface.co/Shitao/OmniGen-v1/blob/58e249c7c7634423c0ba41c34a774af79aa87889/README.md",
+      "open_weights": true,
+      "license": "mit",
+      "license_source": "https://huggingface.co/Shitao/OmniGen-v1/blob/58e249c7c7634423c0ba41c34a774af79aa87889/README.md",
+      "params_b": 3.88,
+      "params_b_source": "https://huggingface.co/api/models/Shitao/OmniGen-v1?expand[]=safetensors",
+      "params_note": "HF safetensors metadata for Shitao/OmniGen-v1@58e249c: 3,875,318,800 parameters (F32) in model.safetensors, the single transformer that includes the LLM backbone; equals the BF16 transformer of the official diffusers conversion Shitao/OmniGen-v1-diffusers@016e2f6 (7.75 GB). VAE (vae/diffusion_pytorch_model.safetensors, 0.33 GB) excluded. Observed 2026-10-09.",
+      "model_repo": "https://huggingface.co/Shitao/OmniGen-v1",
+      "api": null,
+      "local": {
+        "variants": [
+          {
+            "quant": "official OmniGen package, default settings",
+            "gb_estimated": true,
+            "gb": 9,
+            "cmd": "git clone https://github.com/staoxiao/OmniGen.git && cd OmniGen && pip install -e . && python -c \"from OmniGen import OmniGenPipeline; pipe = OmniGenPipeline.from_pretrained('Shitao/OmniGen-v1'); pipe(prompt='A curly-haired man in a red shirt is drinking tea.', height=1024, width=1024, guidance_scale=2.5, seed=0)[0].save('example_t2i.png')\"",
+            "platform": "nvidia",
+            "source": "https://huggingface.co/Shitao/OmniGen-v1/blob/58e249c7c7634423c0ba41c34a774af79aa87889/README.md",
+            "gb_source": "https://github.com/VectorSpaceLab/OmniGen/blob/d4752019ae16741dc3801fd4989432aad4c81a4f/docs/inference.md#requiremented-resources",
+            "note": "Install and 'Text to Image' example from the pinned model card ('Using OmniGen'), joined into one line (the card's images = pipe(...); images[0].save(...) written inline). gb: docs/inference.md 'Requiremented Resources', A800 table, 'Only Text' at max_input_image_size=1024, height=1024, width=1024 with the default settings (use_kv_cache=True, offload_kv_cache=True, separate_cfg_infer=True): '9G, 31s'; input images raise it to 12-13G; the card suggests offload_model=True if out of memory. Weights: model.safetensors 15.5 GB (F32) + VAE 0.33 GB. github.com/staoxiao/OmniGen is the card's clone URL (the project now lives at github.com/VectorSpaceLab/OmniGen). Command not executed."
+          }
+        ]
+      },
+      "identity_note": "OmniGen v1 (Xiao et al., 'OmniGen: Unified Image Generation', BAAI / VectorSpaceLab), released 22 Oct 2024 as Shitao/OmniGen-v1 (MIT); the only OmniGen 1 checkpoint (BAAI/OmniGen-v1 is a later mirror with the same parameter count). Reported as 'OmniGen [98]' (citing Xiao et al. 2025) in BAAI's own OmniGen2 report Table 4 and as 'OmniGen' (date column 24.09.11, repository github.com/VectorSpaceLab/OmniGen) in EdiVal Table 3. Distinct from omnigen2.",
+      "identity_evidence": [
+        {
+          "source": "https://huggingface.co/Shitao/OmniGen-v1/blob/58e249c7c7634423c0ba41c34a774af79aa87889/README.md",
+          "reported_label": "2024-10-22: We release the first version of OmniGen. Model Weight: Shitao/OmniGen-v1"
+        },
+        {
+          "source": "https://arxiv.org/html/2506.18871v4",
+          "reported_label": "OmniGen [98] (Xiao et al. 2025, 'Omnigen: unified image generation'), Table 4"
+        },
+        {
+          "source": "https://arxiv.org/html/2509.13399v3#S3.T3",
+          "reported_label": "OmniGen (date column 24.09.11; Appendix M.5: 'OmniGen: repository at https://github.com/VectorSpaceLab/OmniGen')"
+        }
+      ]
+    },
+    {
+      "id": "uno",
+      "name": "UNO",
+      "provider": "ByteDance",
+      "category": "image",
+      "released": "2025-04",
+      "released_source": "https://huggingface.co/bytedance-research/UNO/blob/cd4a5a8896243db22aaf4a2d3d2a9511c437fb12/README.md",
+      "open_weights": true,
+      "license": "cc-by-nc-4.0",
+      "license_source": "https://huggingface.co/bytedance-research/UNO/blob/cd4a5a8896243db22aaf4a2d3d2a9511c437fb12/README.md",
+      "model_repo": "https://huggingface.co/bytedance-research/UNO",
+      "api": null,
+      "local": {
+        "variants": [
+          {
+            "quant": "fp8 FLUX.1-dev base + UNO LoRA, CPU offload",
+            "gb_estimated": true,
+            "gb": 16,
+            "cmd": "git clone https://github.com/bytedance/UNO.git && cd UNO && pip install -e . && python inference.py --prompt \"A clock on the beach is under a red sun umbrella\" --image_paths \"assets/clock.png\" --width 704 --height 704 --offload --model_type flux-dev-fp8",
+            "platform": "nvidia",
+            "source": "https://github.com/bytedance/UNO/blob/a563432dcfb4caf98df4368facb8102bf97d376c/README.md",
+            "gb_source": "https://github.com/bytedance/UNO/blob/a563432dcfb4caf98df4368facb8102bf97d376c/README.md",
+            "note": "README Quick Start install ('pip install -e .  # for who wanna to run the demo/inference only') and its first Inference example, with the low-memory flags: the README says 'For low vmemory usage, please pass the --offload and --name flux-dev-fp8 args. The peak memory usage will be 16GB' (for app.py); inference.py at the pinned commit takes the same switches as --offload and --model_type flux-dev-fp8 (InferenceArgs: offload: bool, model_type: Literal['flux-dev', 'flux-dev-fp8', 'flux-schnell']). gb is that README peak figure, not the estimation rule. Checkpoints (FLUX.1-dev, xflux T5 and CLIP encoders, UNO LoRA dit_lora.safetensors 1.91 GB) download on first run, 37 GB on disk per the README; FLUX.1-dev is a gated repo that needs a Hugging Face login with its licence accepted. Subject-driven generation: needs a reference image (assets/clock.png ships with the repo). Command not executed."
+          }
+        ]
+      },
+      "identity_note": "UNO (Wu et al., 'Less-to-More Generalization: Unlocking More Controllability by In-Context Generation', arXiv 2504.02160; ByteDance Intelligent Creation Team), a subject-driven multi-reference generator trained from FLUX.1-dev and released in April 2025 as a single LoRA checkpoint (bytedance-research/UNO, dit_lora.safetensors). It is the only UNO release; OmniGen2 report Table 4 cites it as 'UNO [97]' and ImagenWorld Table 2 as 'UNO (Wu et al., 2025c)'. Parameter count not stated by the makers (LoRA on the 12B FLUX.1-dev transformer), so params_b is left out. Licence: the card's front matter says apache-2.0, but its text says 'Our code is released under the Apache 2.0 License, while our models are under the CC BY-NC 4.0 License. Any models related to FLUX.1-dev base model must adhere to the original licensing terms.' Recorded as the stricter weights licence (cc-by-nc-4.0); the base model FLUX.1-dev is under the FLUX.1 [dev] non-commercial licence.",
+      "identity_evidence": [
+        {
+          "source": "https://huggingface.co/bytedance-research/UNO/blob/cd4a5a8896243db22aaf4a2d3d2a9511c437fb12/README.md",
+          "reported_label": "[04/2025] The training code, inference code, and model of UNO are released; base_model black-forest-labs/FLUX.1-dev"
+        },
+        {
+          "source": "https://arxiv.org/html/2506.18871v4",
+          "reported_label": "UNO [97] (S. Wu et al. 2025, Less-to-more generalization, arXiv:2504.02160), Table 4"
+        },
+        {
+          "source": "https://arxiv.org/html/2603.27862v1#S4.T2",
+          "reported_label": "UNO (Wu et al., 2025c), AR + Diffusion; TIG, SRIG, MRIG"
+        }
+      ]
+    },
+    {
+      "id": "step1x-edit-v1-0",
+      "name": "Step1X-Edit v1.0",
+      "provider": "StepFun",
+      "category": "image",
+      "released": "2025-04",
+      "released_source": "https://github.com/stepfun-ai/Step1X-Edit/blob/4cca05dfcd6c32dc810d0b4db84c2bf0682a5aeb/README.md",
+      "open_weights": true,
+      "license": "apache-2.0",
+      "license_source": "https://huggingface.co/stepfun-ai/Step1X-Edit/blob/752c0bc28a43f56249f588432a5964f1878c01ff/README.md",
+      "params_b": 12.43,
+      "params_b_source": "https://huggingface.co/stepfun-ai/Step1X-Edit/blob/752c0bc28a43f56249f588432a5964f1878c01ff/step1x-edit-i1258.safetensors",
+      "params_note": "Diffusion transformer only: OUR COUNT from the safetensors header of step1x-edit-i1258.safetensors (the v1.0 checkpoint; inference.py maps --version v1.0 to this file) at the pinned revision: 12,427,800,385 BF16. The Qwen2.5-VL-7B-Instruct encoder and vae.safetensors are not included. Observed 2026-10-09.",
+      "model_repo": "https://huggingface.co/stepfun-ai/Step1X-Edit",
+      "api": null,
+      "local": null,
+      "identity_note": "StepFun's original Step1X-Edit, released 25 Apr 2025 (GitHub README news: 'We release the inference code and model weights of Step1X-Edit'); checkpoint step1x-edit-i1258.safetensors in stepfun-ai/Step1X-Edit, which since 9 Jul 2025 also holds the v1.1 file step1x-edit-v1p1-official.safetensors (catalogued separately as step1x-edit-v1-1). StepFun's own README table labels it 'Step1X-Edit (v1.0)'; EdiVal Table 3 lists 'Step1X-Edit' with release-date column 25.04.25 and weights 'https://huggingface.co/stepfun-ai/Step1X-Edit' (Appendix M.5), and the EdiVal ledger scope already identifies that row as the v1.0 repo. No local variant: the official route (inference.py --version v1.0) needs flash-attn built for the local CUDA/torch and a manually placed Qwen2.5-VL-7B-Instruct folder, and the README gives no single copy-paste command; peak memory per the README A2 table is 49.8 GB at 1024 (18 GB with --quantized --offload).",
+      "identity_evidence": [
+        {
+          "source": "https://github.com/stepfun-ai/Step1X-Edit/blob/4cca05dfcd6c32dc810d0b4db84c2bf0682a5aeb/README.md",
+          "reported_label": "Apr 25, 2025: We release the inference code and model weights of Step1X-Edit; table row 'Step1X-Edit (v1.0)'"
+        },
+        {
+          "source": "https://arxiv.org/html/2509.13399v3#S3.T3",
+          "reported_label": "Step1X-Edit (date column 25.04.25; Appendix M.5 weights https://huggingface.co/stepfun-ai/Step1X-Edit)"
+        },
+        {
+          "source": "https://github.com/stepfun-ai/Step1X-Edit/blob/4cca05dfcd6c32dc810d0b4db84c2bf0682a5aeb/inference.py",
+          "reported_label": "--version choices ['v1.0', 'v1.1']; v1.0 -> step1x-edit-i1258.safetensors"
+        }
+      ]
+    },
+    {
+      "id": "cosmos3-super",
+      "name": "Cosmos3-Super",
+      "provider": "NVIDIA",
+      "category": "video",
+      "released": "2026-05",
+      "released_source": "https://huggingface.co/nvidia/Cosmos3-Super/blob/f543c56225b2e04d0ad141e29655be3a45d9c455/README.md",
+      "open_weights": true,
+      "license": "openmdw-1.1",
+      "license_source": "https://huggingface.co/nvidia/Cosmos3-Super/blob/f543c56225b2e04d0ad141e29655be3a45d9c455/README.md",
+      "params_b": 64,
+      "params_b_source": "https://huggingface.co/nvidia/Cosmos3-Super/blob/f543c56225b2e04d0ad141e29655be3a45d9c455/README.md",
+      "params_note": "Whole Mixture-of-Transformers model (autoregressive reasoner tower + diffusion generator tower) trainable parameters, as stated by NVIDIA ('Cosmos3-Super: 64B'). HF safetensors header total 64,615,003,632.",
+      "model_repo": "https://huggingface.co/nvidia/Cosmos3-Super",
+      "identity_note": "The mid-trained Cosmos 3 Super omnimodel checkpoint (nvidia/Cosmos3-Super, pinned f543c56), catalogued as a video model like cosmos3-nano. The Cosmos 3 report (arXiv 2606.02800v4) lists 'Cosmos3-Super huggingface.co/nvidia/Cosmos3-Super' among its open-weight checkpoints and says the post-trained Cosmos3-Super-Text2Image and Cosmos3-Super-Image2Video were produced from this mid-trained checkpoint; Table 1 stars (∗) only post-trained variants, and the Text2Video 80.0 / Image2Video 82.8 cells for Cosmos3-Super are unstarred, so Tables 12 and 14 rows 'Cosmos3-Super' are this checkpoint, not the separate Cosmos3-Super-Image2Video repo (not proposed: no scored rows). Repo last modified 2026-09-16; weights may have been refreshed after the v4 report. Distinct from the catalogued cosmos3-super-text2image.",
+      "identity_evidence": [
+        {
+          "source": "https://arxiv.org/html/2606.02800v4#S6.T12",
+          "reported_label": "Cosmos3-Super"
+        },
+        {
+          "source": "https://arxiv.org/html/2606.02800v4#S1.T1",
+          "reported_label": "Cosmos3-Super (Text2Video 80.0, Image2Video 82.8, unstarred = not a post-trained variant)"
+        },
+        {
+          "source": "https://huggingface.co/nvidia/Cosmos3-Super/blob/f543c56225b2e04d0ad141e29655be3a45d9c455/README.md",
+          "reported_label": "Cosmos3-Super (64B), Hugging Face release 05/31/2026"
+        }
+      ],
+      "api": null,
+      "local": {
+        "variants": [
+          {
+            "quant": "bf16",
+            "gb": 159.7,
+            "gb_estimated": true,
+            "cmd": "uvx --from huggingface_hub hf download nvidia/Cosmos3-Super assets/ --local-dir Cosmos3-Super && cd Cosmos3-Super && uv run --python 3.13 --with git+https://github.com/huggingface/diffusers --with accelerate --with av --with cosmos_guardrail --with huggingface_hub --with imageio --with imageio-ffmpeg --with torch --with torchvision --with transformers python -c \"import json, torch; from diffusers import Cosmos3OmniPipeline; from diffusers.schedulers.scheduling_unipc_multistep import UniPCMultistepScheduler; from diffusers.utils import export_to_video; p=Cosmos3OmniPipeline.from_pretrained('nvidia/Cosmos3-Super', torch_dtype=torch.bfloat16, device_map='cuda', enable_safety_checker=True); p.scheduler=UniPCMultistepScheduler.from_config(p.scheduler.config, flow_shift=10.0); r=p(prompt=json.dumps(json.load(open('assets/example_t2v_prompt.json'))), negative_prompt=json.dumps(json.load(open('assets/negative_prompt.json'))), num_frames=189, height=720, width=1280, num_inference_steps=35, guidance_scale=6.0, generator=torch.Generator(device='cuda').manual_seed(123)); export_to_video(r.video, 'cosmos3_super_t2v.mp4', fps=24)\"",
+            "platform": "nvidia",
+            "source": "https://huggingface.co/nvidia/Cosmos3-Super/blob/f543c56225b2e04d0ad141e29655be3a45d9c455/README.md",
+            "gb_source": "https://huggingface.co/nvidia/Cosmos3-Super/tree/f543c56225b2e04d0ad141e29655be3a45d9c455",
+            "note": "Diffusers text-to-video example from the model card at the pinned commit (Python 3.13 and the listed packages, diffusers from source; the card's assets/ download for the JSON-upsampled prompt; 1280x720, 189 frames, 35 steps, guidance 6.0, written to the working directory instead of /tmp), same shape as the catalogued cosmos3-nano command. Files: transformer 128.04 GB, sound_tokenizer 1.99 GB, vae 1.41 GB, vision_encoder 1.19 GB (nvidia/Cosmos3-Super@f543c56); from_pretrained loads every component in model_index.json. gb = 1.2 × 132.63 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. The card lists Linux on Ampere, Hopper or Blackwell, says only BF16 is tested, and recommends multi-GPU vLLM-Omni serving (8xH200/H100/A100). Command not executed."
+          }
+        ]
+      },
+      "part": "A"
+    },
+    {
+      "id": "kandinsky-6-0-pro",
+      "name": "Kandinsky 6.0 Video Pro",
+      "provider": "Sber",
+      "category": "video",
+      "released": "2026-10",
+      "released_source": "https://github.com/kandinskylab/kandinsky-6/blob/8195e726f95261d9dd8fcf6db4634844d1e9a2c4/README.md",
+      "open_weights": true,
+      "license": "mit",
+      "license_source": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers/blob/5686616f04318cbec7b0a4978b4ff1697395de15/README.md",
+      "params_b": 29,
+      "params_b_source": "https://arxiv.org/html/2610.05608v1#S3",
+      "params_note": "29B in total as stated in the report (video stream 19B, audio stream 5B, cross-attention 5B); Qwen2.5-VL/CLIP text encoders, HunyuanVideo VAE and the MMAudio VAE/vocoder are separate components.",
+      "model_repo": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Pro-5s-Diffusers",
+      "identity_note": "Kandinsky 6.0 Video (Sber / Kandinsky Lab), open-sourced 2026-10-06 under MIT (GitHub kandinskylab/kandinsky-6 README news, @8195e72). The arXiv report (2610.05608v1) evaluates 'Kandinsky 6.0 Video Pro and Kandinsky 6.0 Video Lite after RL post-training'; the family table on the HF cards lists separate Pro / Pro-distill (10 steps) / Pro-pretrain and Lite / Lite-distill / Lite-pretrain repos, and the non-distilled, non-pretrain repo is described as 'the main ... checkpoint, the strongest quality setting' of its line, so it is mapped to the report's final (RL post-trained) model. Distilled and pretrain checkpoints are not catalogued (no scored rows). Pro repo kandinskylab/Kandinsky-6.0-Pro-5s-Diffusers pinned 295ca97 (gated: Hugging Face asks users to agree to share contact information; licence MIT in card metadata). Text-to-audio-video and image-to-audio-video, 5-second clips with 44 kHz audio.",
+      "identity_evidence": [
+        {
+          "source": "https://arxiv.org/html/2610.05608v1#S7.T11",
+          "reported_label": "Kandinsky 6.0 Video Pro"
+        },
+        {
+          "source": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers/blob/5686616f04318cbec7b0a4978b4ff1697395de15/README.md",
+          "reported_label": "family table: Pro | kandinskylab/Kandinsky-6.0-Pro-5s-Diffusers | generation"
+        }
+      ],
+      "api": null,
+      "local": {
+        "variants": [
+          {
+            "quant": "bf16 + model CPU offload",
+            "gb": 108.5,
+            "gb_estimated": true,
+            "cmd": "uv run --with git+https://github.com/huggingface/diffusers --with torch --with transformers --with accelerate --with av python -c \"import torch; from diffusers import Kandinsky6TI2VAPipeline; from diffusers.utils import encode_video; p=Kandinsky6TI2VAPipeline.from_pretrained('kandinskylab/Kandinsky-6.0-Pro-5s-Diffusers', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); o=p(prompt='A red dragon wakes on a mound of gold coins in a sunlit cave and slowly unfolds its wings. Audio: deep rumbling breath, clinking coins.', height=480, width=864, num_frames=121, num_inference_steps=50, guidance_scale=5.0); encode_video(o.frames[0], fps=24, output_path='output.mp4', audio=o.audio[0][None], audio_sample_rate=p.audio_sample_rate)\"",
+            "platform": "nvidia",
+            "source": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Pro-5s-Diffusers",
+            "gb_source": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Pro-5s-Diffusers/tree/295ca976810e318fb45c870ba4fc72c9a37fd548",
+            "note": "T2AV Diffusers usage from the Kandinsky 6.0 Pro card (Kandinsky6TI2VAPipeline, enable_model_cpu_offload, 480x864, 121 frames, 50 steps, guidance 5.0), with a short prompt; the same code is printed verbatim on the open Lite card (@5686616). The pipeline is only on diffusers main (not in v0.41.0), hence the git install. The Pro repo is gated (agree to share contact details); raw card not fetched, rendered page checked 2026-10-09. Files: transformer 69.74 GB, text_encoder (Qwen2.5-VL) 16.60 GB, audio_vae 1.71 GB, vae 0.99 GB, text_encoder_2 (CLIP) 0.49 GB, vocoder 0.49 GB (@295ca97). gb = 1.2 × 90.01 GB of weights loaded + 0.5 GB, the catalogue estimation rule, as for kandinsky-5-0-pro's offload route; not a measured peak. The report (Table 7) measured 72.8 GiB peak resident and 21.7-39.8 GiB with block offload on H100 with its own code path. Command not executed."
+          }
+        ]
+      },
+      "part": "A"
+    },
+    {
+      "id": "kandinsky-6-0-lite",
+      "name": "Kandinsky 6.0 Video Lite",
+      "provider": "Sber",
+      "category": "video",
+      "released": "2026-10",
+      "released_source": "https://github.com/kandinskylab/kandinsky-6/blob/8195e726f95261d9dd8fcf6db4634844d1e9a2c4/README.md",
+      "open_weights": true,
+      "license": "mit",
+      "license_source": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers/blob/5686616f04318cbec7b0a4978b4ff1697395de15/README.md",
+      "params_b": 3,
+      "params_b_source": "https://arxiv.org/html/2610.05608v1#S3",
+      "params_note": "3B in total as stated in the report (video stream 2B, audio stream 0.6B, cross-attention 0.4B); text encoders, VAEs and vocoder are separate components.",
+      "model_repo": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers",
+      "identity_note": "Kandinsky 6.0 Video (Sber / Kandinsky Lab), open-sourced 2026-10-06 under MIT (GitHub kandinskylab/kandinsky-6 README news, @8195e72). The arXiv report (2610.05608v1) evaluates 'Kandinsky 6.0 Video Pro and Kandinsky 6.0 Video Lite after RL post-training'; the family table on the HF cards lists separate Pro / Pro-distill (10 steps) / Pro-pretrain and Lite / Lite-distill / Lite-pretrain repos, and the non-distilled, non-pretrain repo is described as 'the main ... checkpoint, the strongest quality setting' of its line, so it is mapped to the report's final (RL post-trained) model. Distilled and pretrain checkpoints are not catalogued (no scored rows). Lite repo kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers pinned 5686616 ('This repository contains Kandinsky 6.0 Lite: the 3B checkpoint of the Lite line').",
+      "identity_evidence": [
+        {
+          "source": "https://arxiv.org/html/2610.05608v1#S7.T11",
+          "reported_label": "Kandinsky 6.0 Video Lite"
+        },
+        {
+          "source": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers/blob/5686616f04318cbec7b0a4978b4ff1697395de15/README.md",
+          "reported_label": "Kandinsky 6.0 Lite: the 3B checkpoint of the Lite line"
+        }
+      ],
+      "api": null,
+      "local": {
+        "variants": [
+          {
+            "quant": "bf16 + model CPU offload",
+            "gb": 33.8,
+            "gb_estimated": true,
+            "cmd": "uv run --with git+https://github.com/huggingface/diffusers --with torch --with transformers --with accelerate --with av python -c \"import torch; from diffusers import Kandinsky6TI2VAPipeline; from diffusers.utils import encode_video; p=Kandinsky6TI2VAPipeline.from_pretrained('kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); o=p(prompt='A red dragon wakes on a mound of gold coins in a sunlit cave and slowly unfolds its wings. Audio: deep rumbling breath, clinking coins.', height=480, width=864, num_frames=121, num_inference_steps=50, guidance_scale=5.0); encode_video(o.frames[0], fps=24, output_path='output.mp4', audio=o.audio[0][None], audio_sample_rate=p.audio_sample_rate)\"",
+            "platform": "nvidia",
+            "source": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers/blob/5686616f04318cbec7b0a4978b4ff1697395de15/README.md",
+            "gb_source": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers/tree/5686616f04318cbec7b0a4978b4ff1697395de15",
+            "note": "'Text-to-audio-video (T2AV)' Diffusers usage from the card at the pinned commit (enable_model_cpu_offload, 480x864, 121 frames, 50 steps, guidance 5.0, encode_video with the generated audio), with a shorter prompt. Kandinsky6TI2VAPipeline is only on diffusers main (not in v0.41.0), hence the git install. Files: transformer 7.48 GB, text_encoder (Qwen2.5-VL) 16.60 GB, audio_vae 1.71 GB, vae 0.99 GB, text_encoder_2 (CLIP) 0.49 GB, vocoder 0.49 GB (@5686616). gb = 1.2 × 27.75 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. The report (Table 7) measured 43.5-44.8 GiB peak resident and 21.7-39.8 GiB with block offload on H100 with its own code path; its 16 GB preset (Table 9) uses an NF4 text encoder. Command not executed."
+          }
+        ]
+      },
+      "part": "A"
+    },
+    {
+      "id": "wan-3-0-prime",
+      "name": "Wan 3.0 Prime",
+      "provider": "Alibaba",
+      "category": "video",
+      "released": "2026-08",
+      "released_source": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "open_weights": false,
+      "license": "proprietary",
+      "api": {
+        "url": "https://www.alibabacloud.com/help/en/model-studio/video-generation",
+        "provider": "Alibaba Cloud Model Studio",
+        "price": 0.14,
+        "unit": "video-second",
+        "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "price_note": "USD per second of video, 720P, International deployment (Singapore) list price. Product: Model Studio Wan 3.0 video generation. API model: wan3.0-video-prime (not wan3.0-video, $0.1/s at 720P). Settings: resolution=720P. Price basis: published list price; no discount shown for this model. Pricing rule on the page: input and output videos are both billed by duration (billable duration = input + output), so video-to-video costs more. 480P $0.068/s, 1080P $0.28/s; Global deployments list $0.127199/s at 720P. Free quota (30 s, Singapore only) excluded. Currency: USD. Alibaba Cloud Model Studio pricing page, observed 2026-10-09."
+      },
+      "local": null,
+      "identity_note": "Alibaba's speed-optimised Wan 3.0 SKU, a separate Model Studio model ID (wan3.0-video-prime) with its own price, released 2026-08-20. Alibaba: 'Wan3.0-Video-Prime is the high-speed version of the Wan3.0 video generation model, with capabilities aligned with the Wan3.0-Video standard version.' Kept separate from wan-3-0 (wan3.0-video) in the same way as other speed tiers (veo-3-1-fast). The WROP paper (arXiv:2609.28654v1) ran 'Wan 3.0 Prime' through the FAL API in reference-to-video mode.",
+      "identity_evidence": [
+        {
+          "source": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+          "reported_label": "wan3.0-video-prime",
+          "quote": "Video generation 2026-08-20 International wan3.0-video-prime Wan3.0-Video-Prime is the high-speed version of the Wan3.0 video generation model, with capabilities aligned with the Wan3.0-Video standard version.",
+          "observed": "2026-10-09"
+        },
+        {
+          "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+          "reported_label": "wan3.0-video-prime",
+          "quote": "wan3.0-video-prime International 480P $0.068/second 30 seconds 720P $0.14/second 1080P $0.28/second",
+          "observed": "2026-10-09"
+        },
+        {
+          "source": "https://arxiv.org/html/2609.28654v1#S5.T2",
+          "reported_label": "Wan 3.0 Prime (FAL API, reference-to-video)"
+        }
+      ],
+      "part": "B"
+    },
+    {
+      "id": "runway-aleph-2",
+      "name": "Runway Aleph 2.0",
+      "provider": "Runway",
+      "category": "video",
+      "released": "2026-05",
+      "released_source": "https://runway.com/news/introducing-aleph-2-and-edit-studio",
+      "open_weights": false,
+      "license": "proprietary",
+      "api": {
+        "url": "https://docs.dev.runwayml.com/guides/models",
+        "provider": "Runway",
+        "price": 0.28,
+        "unit": "video-second",
+        "price_source": "https://docs.dev.runwayml.com/guides/pricing",
+        "price_note": "USD per second of output video on the Runway developer API. Product: Runway API video-to-video. API model: aleph2 (listed as 'Aleph 2.0'). Price basis: 28 credits per second × $0.01 per credit; 56-credit minimum per generation. Professional/HDR output formats (prores, png_sequence, 10-bit/HDR profiles) add 5–40 credits per second; sales tax excluded. Currency: USD. Runway API pricing documentation, observed 2026-10-09."
+      },
+      "local": null,
+      "identity_note": "Runway's second-generation in-context video editing model (announced 21 May 2026 with Edit Studio), served on the Runway API as aleph2. Distinct from runway-aleph (Gen-4 Aleph, 2025-07). The WROP paper ran 'Runway Aleph 2' through the Runway API as a frame-wise edit/transfer model.",
+      "identity_evidence": [
+        {
+          "source": "https://runway.com/news/introducing-aleph-2-and-edit-studio",
+          "reported_label": "Aleph 2.0",
+          "quote": "Aleph 2.0 ... Work with up to 30s of 1080p video",
+          "observed": "2026-10-09",
+          "date": "2026-05-21"
+        },
+        {
+          "source": "https://docs.dev.runwayml.com/guides/models",
+          "reported_label": "Aleph 2.0 / aleph2",
+          "quote": "Aleph 2.0 | aleph2 | Video",
+          "observed": "2026-10-09"
+        },
+        {
+          "source": "https://docs.dev.runwayml.com/guides/pricing",
+          "reported_label": "aleph2",
+          "quote": "aleph2 | 28 credits per second (56 credit minimum per generation)",
+          "observed": "2026-10-09"
+        },
+        {
+          "source": "https://arxiv.org/html/2609.28654v1#S5.T2",
+          "reported_label": "Runway Aleph 2 (Runway API, frame-wise edit/transfer)"
+        }
+      ],
+      "part": "B"
+    }
+  ],
+  "results": [
+    {
+      "model": "nano-banana-2-1",
+      "bench": "lmarena-image",
+      "score": 1327.8,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'gemini-nano-banana-2.1'; 5,310 votes; published 95% interval 1319.0–1336.5; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit)."
+    },
+    {
+      "model": "nano-banana-2-1",
+      "bench": "lmarena-image-edit",
+      "score": 1428.1,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'gemini-nano-banana-2.1'; 12,985 votes; published 95% interval 1422.3–1433.9; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit)."
+    },
+    {
+      "model": "chatgpt-image-latest",
+      "bench": "lmarena-image-edit",
+      "score": 1388.6,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'chatgpt-image-latest-high-fidelity (20251216)'; 629,464 votes; published 95% interval 1385.9–1391.3; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit)."
+    },
+    {
+      "model": "omnigen-v1",
+      "bench": "omnicontext-average",
+      "score": 0.434,
+      "source": "https://arxiv.org/html/2506.18871v4",
+      "source_id": "report-2506.18871v4",
+      "by": "lab",
+      "date": "2026-04-21",
+      "note": "OmniGen2 report (BAAI), arXiv:2506.18871v4, CC BY 4.0, Table 4 'Overall comparison of existing models on our proposed OmniContext benchmark', column 'Average', row 'OmniGen [98]' = 4.34 (cited as Xiao et al. 2025, 'Omnigen: unified image generation', i.e. OmniGen v1). OmniContext is introduced in this report (Section 5.4; GPT-4.1 judge), so every cell is the authors' own run; OmniGen v1 is BAAI's own earlier model, hence by lab. 0-10 scale divided by 10."
+    },
+    {
+      "model": "uno",
+      "bench": "omnicontext-average",
+      "score": 0.471,
+      "source": "https://arxiv.org/html/2506.18871v4",
+      "source_id": "report-2506.18871v4",
+      "by": "independent",
+      "date": "2026-04-21",
+      "note": "OmniGen2 report (BAAI), arXiv:2506.18871v4, CC BY 4.0, Table 4 'Overall comparison of existing models on our proposed OmniContext benchmark', column 'Average', row 'UNO [97]' = 4.71 (cited as S. Wu et al. 2025, 'Less-to-more generalization', arXiv:2504.02160). OmniContext is introduced in this report (Section 5.4; GPT-4.1 judge), so every cell is the authors' own run. 0-10 scale divided by 10."
+    },
+    {
+      "model": "omnigen-v1",
+      "bench": "edival-o-turn3",
+      "score": 0.2991,
+      "source": "https://arxiv.org/html/2509.13399v3#S3.T3",
+      "source_id": "visual-edival",
+      "by": "independent",
+      "date": "2026-03-17",
+      "note": "'OmniGen' (release date column 24.09.11; Appendix M.5: 'OmniGen: repository at https://github.com/VectorSpaceLab/OmniGen', default settings); Table 3 EdiVal-O at turn 3 29.91 -> /100 (overall rank 12)."
+    },
+    {
+      "model": "step1x-edit-v1-0",
+      "bench": "edival-o-turn3",
+      "score": 0.3898,
+      "source": "https://arxiv.org/html/2509.13399v3#S3.T3",
+      "source_id": "visual-edival",
+      "by": "independent",
+      "date": "2026-03-17",
+      "note": "'Step1X-Edit' (release date column 25.04.25 = the v1.0 release; Appendix M.5: 'Step1X-Edit: repository at https://github.com/stepfun-ai/Step1X-Edit ; weights at https://huggingface.co/stepfun-ai/Step1X-Edit', default settings); Table 3 EdiVal-O at turn 3 38.98 -> /100 (overall rank 10). The visual-edival ledger scope already identifies this row as the v1.0 repo."
+    },
+    {
+      "model": "uno",
+      "bench": "imagenworld-tig-human",
+      "score": 0.78,
+      "source": "https://arxiv.org/html/2603.27862v1#S5.T3",
+      "source_id": "visual-imagenworld",
+      "by": "independent",
+      "date": "2026-03-29",
+      "note": "UNO; Table 3 Text-guided Image Generation (TIG) human overall 0.78±0.18 (mean±sd across images); default configuration, seed 42 for open models (Section 4). Table 2 lists 'UNO (Wu et al., 2025c)' as covering TIG, SRIG and MRIG; only the TIG row is used (no benchmark id for the reference-image tasks)."
+    },
+    {
+      "model": "step1x-edit-v1-0",
+      "bench": "gedit-bench-en-overall",
+      "score": 0.644,
+      "source": "https://github.com/stepfun-ai/Step1X-Edit/blob/4cca05dfcd6c32dc810d0b4db84c2bf0682a5aeb/README.md",
+      "source_id": "visual-step1x-edit-readme",
+      "by": "lab",
+      "date": "2025-07-09",
+      "note": "StepFun's own evaluation in the Step1X-Edit GitHub README (Apache-2.0) at commit 4cca05d, news item 'Jul 09, 2025', table introduced as 'Quantitative evaluation on GEdit-Bench-EN (Full set). G_SC, G_PQ, and G_O refer to the metrics evaluated by GPT-4.1, while Q_SC, Q_PQ, and Q_O refer to the metrics evaluated by Qwen2.5-VL-72B'; row 'Step1X-Edit (v1.0)', column G_O = 6.44 -> /10. Intermediate results released by the authors (huggingface.co/datasets/Shiyu95/gedit_results)."
+    },
+    {
+      "model": "step1x-edit-v1-1",
+      "bench": "gedit-bench-en-overall",
+      "score": 0.697,
+      "source": "https://github.com/stepfun-ai/Step1X-Edit/blob/4cca05dfcd6c32dc810d0b4db84c2bf0682a5aeb/README.md",
+      "source_id": "visual-step1x-edit-readme",
+      "by": "lab",
+      "date": "2025-07-09",
+      "note": "Same table as the v1.0 row (Step1X-Edit GitHub README @4cca05d, 'Jul 09, 2025' news item, GEdit-Bench-EN Full set, GPT-4.1 judge); row 'Step1X-Edit (v1.1)', column G_O = 6.97 -> /10. Same-maker sibling cell added so the v1.0 row is not alone in its run. NOTE: the existing gedit-bench-overall-lang-unspecified row for step1x-edit-v1-1 (0.697, v1p2 card) is the same measurement; see held_for_owner."
+    },
+    {
+      "model": "cosmos3-super",
+      "bench": "cosmos-hue-t2v-human",
+      "score": 0.893,
+      "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+      "source_id": "visual-cosmos3-report",
+      "by": "lab",
+      "date": "2026-06-23",
+      "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Cosmos3-Super', column 'Cosmos HUE / Text-to-Video' = 89.3 -> 89.3/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. NVIDIA's own model (mid-trained nvidia/Cosmos3-Super; Table 1 cell unstarred).",
+      "part": "A"
+    },
+    {
+      "model": "cosmos3-super",
+      "bench": "cosmos-hue-i2v-human",
+      "score": 0.896,
+      "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+      "source_id": "visual-cosmos3-report",
+      "by": "lab",
+      "date": "2026-06-23",
+      "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Cosmos3-Super', column 'Cosmos HUE / Image-to-Video' = 89.6 -> 89.6/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. NVIDIA's own model (mid-trained nvidia/Cosmos3-Super; Table 1 cell unstarred).",
+      "part": "A"
+    },
+    {
+      "model": "cosmos3-nano",
+      "bench": "cosmos-hue-t2v-human",
+      "score": 0.876,
+      "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+      "source_id": "visual-cosmos3-report",
+      "by": "lab",
+      "date": "2026-06-23",
+      "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Cosmos3-Nano', column 'Cosmos HUE / Text-to-Video' = 87.6 -> 87.6/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. NVIDIA's own model (nvidia/Cosmos3-Nano; Table 1 cell unstarred).",
+      "part": "A"
+    },
+    {
+      "model": "cosmos3-nano",
+      "bench": "cosmos-hue-i2v-human",
+      "score": 0.886,
+      "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+      "source_id": "visual-cosmos3-report",
+      "by": "lab",
+      "date": "2026-06-23",
+      "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Cosmos3-Nano', column 'Cosmos HUE / Image-to-Video' = 88.6 -> 88.6/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. NVIDIA's own model (nvidia/Cosmos3-Nano; Table 1 cell unstarred).",
+      "part": "A"
+    },
+    {
+      "model": "wan-2-2-a14b",
+      "bench": "cosmos-hue-t2v-human",
+      "score": 0.882,
+      "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+      "source_id": "visual-cosmos3-report",
+      "by": "independent",
+      "date": "2026-06-23",
+      "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Wan2.2-A14B', column 'Cosmos HUE / Text-to-Video' = 88.2 -> 88.2/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. T2V column mapped to the catalogued Wan2.2-T2V-A14B (the report names only 'Wan2.2-A14B').",
+      "part": "A"
+    },
+    {
+      "model": "wan-2-2-i2v-a14b",
+      "bench": "cosmos-hue-i2v-human",
+      "score": 0.884,
+      "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+      "source_id": "visual-cosmos3-report",
+      "by": "independent",
+      "date": "2026-06-23",
+      "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Wan2.2-A14B', column 'Cosmos HUE / Image-to-Video' = 88.4 -> 88.4/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. I2V column mapped to Wan2.2-I2V-A14B, the A14B checkpoint that takes an image (the report names only 'Wan2.2-A14B'; the T2V-A14B checkpoint has no image input).",
+      "part": "A"
+    },
+    {
+      "model": "hunyuanvideo-1-5",
+      "bench": "cosmos-hue-t2v-human",
+      "score": 0.865,
+      "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+      "source_id": "visual-cosmos3-report",
+      "by": "independent",
+      "date": "2026-06-23",
+      "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'HunyuanVideo-1.5', column 'Cosmos HUE / Text-to-Video' = 86.5 -> 86.5/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. T2V column mapped to the catalogued HunyuanVideo 1.5 (T2V).",
+      "part": "A"
+    },
+    {
+      "model": "hunyuanvideo-1-5-i2v",
+      "bench": "cosmos-hue-i2v-human",
+      "score": 0.856,
+      "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+      "source_id": "visual-cosmos3-report",
+      "by": "independent",
+      "date": "2026-06-23",
+      "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'HunyuanVideo-1.5', column 'Cosmos HUE / Image-to-Video' = 85.6 -> 85.6/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. I2V column mapped to the catalogued HunyuanVideo 1.5 (I2V).",
+      "part": "A"
+    },
+    {
+      "model": "wan-2-1-14b",
+      "bench": "cosmos-hue-t2v-human",
+      "score": 0.84,
+      "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+      "source_id": "visual-cosmos3-report",
+      "by": "independent",
+      "date": "2026-06-23",
+      "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Wan2.1-14B', column 'Cosmos HUE / Text-to-Video' = 84.0 -> 84.0/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. T2V column mapped to Wan2.1-T2V-14B; the I2V cell (Wan2.1-I2V-14B) is not mapped (checkpoint not catalogued).",
+      "part": "A"
+    },
+    {
+      "model": "wan-2-2-5b",
+      "bench": "cosmos-hue-t2v-human",
+      "score": 0.808,
+      "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+      "source_id": "visual-cosmos3-report",
+      "by": "independent",
+      "date": "2026-06-23",
+      "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Wan2.2-5B', column 'Cosmos HUE / Text-to-Video' = 80.8 -> 80.8/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. Wan2.2-TI2V-5B handles both T2V and I2V.",
+      "part": "A"
+    },
+    {
+      "model": "wan-2-2-5b",
+      "bench": "cosmos-hue-i2v-human",
+      "score": 0.804,
+      "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+      "source_id": "visual-cosmos3-report",
+      "by": "independent",
+      "date": "2026-06-23",
+      "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Wan2.2-5B', column 'Cosmos HUE / Image-to-Video' = 80.4 -> 80.4/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. Wan2.2-TI2V-5B handles both T2V and I2V.",
+      "part": "A"
+    },
+    {
+      "model": "veo-3-1",
+      "bench": "cosmos-hue-t2v-human",
+      "score": 0.913,
+      "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+      "source_id": "visual-cosmos3-report",
+      "by": "independent",
+      "date": "2026-06-23",
+      "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Veo-3.1', column 'Cosmos HUE / Text-to-Video' = 91.3 -> 91.3/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. Closed-source; mapped to Veo 3.1 (standard, not Fast).",
+      "part": "A"
+    },
+    {
+      "model": "veo-3-1",
+      "bench": "cosmos-hue-i2v-human",
+      "score": 0.897,
+      "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+      "source_id": "visual-cosmos3-report",
+      "by": "independent",
+      "date": "2026-06-23",
+      "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Veo-3.1', column 'Cosmos HUE / Image-to-Video' = 89.7 -> 89.7/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. Closed-source; mapped to Veo 3.1 (standard, not Fast).",
+      "part": "A"
+    },
+    {
+      "model": "seedance-1-5-pro",
+      "bench": "cosmos-hue-t2v-human",
+      "score": 0.9,
+      "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+      "source_id": "visual-cosmos3-report",
+      "by": "independent",
+      "date": "2026-06-23",
+      "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Seedance-1.5-Pro', column 'Cosmos HUE / Text-to-Video' = 90.0 -> 90.0/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. Closed-source API model.",
+      "part": "A"
+    },
+    {
+      "model": "seedance-1-5-pro",
+      "bench": "cosmos-hue-i2v-human",
+      "score": 0.876,
+      "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+      "source_id": "visual-cosmos3-report",
+      "by": "independent",
+      "date": "2026-06-23",
+      "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Seedance-1.5-Pro', column 'Cosmos HUE / Image-to-Video' = 87.6 -> 87.6/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. Closed-source API model.",
+      "part": "A"
+    },
+    {
+      "model": "sora-2",
+      "bench": "vabench-t2av-visual-qa",
+      "score": 0.7994,
+      "source": "https://arxiv.org/html/2512.09299v2#S3.T1",
+      "source_id": "visual-vabench",
+      "by": "independent",
+      "date": "2026-04-06",
+      "note": "VABench v2 Table 1 (T2AV), row 'sora2', column 'Visual QA' = 0.7994. end-to-end AV model 'Sora2' via API. VABench paper (arXiv 2512.09299v2, CC BY 4.0) Sec. 4.1: 'Veo3-fast, Wan2.5 Preview, Sora2, Seedance-1.0-lite, Kling2.5 Turbo were accessed via APIs ... Wan2.2-TI2V ... deployed locally. Video outputs were set to 720P ... frame rate and duration following default settings.' Visual QA = mean over T2AV samples of the share of 3-7 prompt-derived visual detail questions the LLM judge marks as satisfied (Eq. 2).",
+      "part": "A"
+    },
+    {
+      "model": "veo-3-fast",
+      "bench": "vabench-t2av-visual-qa",
+      "score": 0.8095,
+      "source": "https://arxiv.org/html/2512.09299v2#S3.T1",
+      "source_id": "visual-vabench",
+      "by": "independent",
+      "date": "2026-04-06",
+      "note": "VABench v2 Table 1 (T2AV), row 'veo3', column 'Visual QA' = 0.8095. end-to-end AV model; the paper's abbreviation list reads 'veo3 (Veo3-Fast)', so mapped to Veo 3 Fast. VABench paper (arXiv 2512.09299v2, CC BY 4.0) Sec. 4.1: 'Veo3-fast, Wan2.5 Preview, Sora2, Seedance-1.0-lite, Kling2.5 Turbo were accessed via APIs ... Wan2.2-TI2V ... deployed locally. Video outputs were set to 720P ... frame rate and duration following default settings.' Visual QA = mean over T2AV samples of the share of 3-7 prompt-derived visual detail questions the LLM judge marks as satisfied (Eq. 2).",
+      "part": "A"
+    },
+    {
+      "model": "wan-2-5-preview",
+      "bench": "vabench-t2av-visual-qa",
+      "score": 0.7933,
+      "source": "https://arxiv.org/html/2512.09299v2#S3.T1",
+      "source_id": "visual-vabench",
+      "by": "independent",
+      "date": "2026-04-06",
+      "note": "VABench v2 Table 1 (T2AV), row 'wan2.5', column 'Visual QA' = 0.7933. end-to-end AV model; 'wan2.5 (Wan2.5 Preview)' via API. VABench paper (arXiv 2512.09299v2, CC BY 4.0) Sec. 4.1: 'Veo3-fast, Wan2.5 Preview, Sora2, Seedance-1.0-lite, Kling2.5 Turbo were accessed via APIs ... Wan2.2-TI2V ... deployed locally. Video outputs were set to 720P ... frame rate and duration following default settings.' Visual QA = mean over T2AV samples of the share of 3-7 prompt-derived visual detail questions the LLM judge marks as satisfied (Eq. 2).",
+      "part": "A"
+    },
+    {
+      "model": "seedance-1-0-lite",
+      "bench": "vabench-t2av-visual-qa",
+      "score": 0.7265,
+      "source": "https://arxiv.org/html/2512.09299v2#S3.T1",
+      "source_id": "visual-vabench",
+      "by": "independent",
+      "date": "2026-04-06",
+      "note": "VABench v2 Table 1 (T2AV), row 'seed_think / seed_mm', column 'Visual QA' = 0.7265. decoupled V+A pipeline whose video generator is Seedance-1.0-Lite (API, 720P); the Visual QA cell spans both audio pairings (rowspan=2 in the HTML table), so it measures the video generator alone. VABench paper (arXiv 2512.09299v2, CC BY 4.0) Sec. 4.1: 'Veo3-fast, Wan2.5 Preview, Sora2, Seedance-1.0-lite, Kling2.5 Turbo were accessed via APIs ... Wan2.2-TI2V ... deployed locally. Video outputs were set to 720P ... frame rate and duration following default settings.' Visual QA = mean over T2AV samples of the share of 3-7 prompt-derived visual detail questions the LLM judge marks as satisfied (Eq. 2).",
+      "part": "A"
+    },
+    {
+      "model": "wan-2-2-5b",
+      "bench": "vabench-t2av-visual-qa",
+      "score": 0.6363,
+      "source": "https://arxiv.org/html/2512.09299v2#S3.T1",
+      "source_id": "visual-vabench",
+      "by": "independent",
+      "date": "2026-04-06",
+      "note": "VABench v2 Table 1 (T2AV), row 'wan2.2_think / wan2.2_mm', column 'Visual QA' = 0.6363. decoupled V+A pipeline whose video generator is Wan2.2-TI2V (5B, run locally); the Visual QA cell spans both audio pairings (rowspan=2), so it measures the video generator alone. VABench paper (arXiv 2512.09299v2, CC BY 4.0) Sec. 4.1: 'Veo3-fast, Wan2.5 Preview, Sora2, Seedance-1.0-lite, Kling2.5 Turbo were accessed via APIs ... Wan2.2-TI2V ... deployed locally. Video outputs were set to 720P ... frame rate and duration following default settings.' Visual QA = mean over T2AV samples of the share of 3-7 prompt-derived visual detail questions the LLM judge marks as satisfied (Eq. 2).",
+      "part": "A"
+    },
+    {
+      "model": "kandinsky-6-0-pro",
+      "bench": "vabench-t2av-visual-qa",
+      "score": 0.652,
+      "source": "https://arxiv.org/html/2610.05608v1#S7.T11",
+      "source_id": "visual-kandinsky6-report",
+      "by": "lab",
+      "date": "2026-10-04",
+      "note": "Kandinsky 6.0 report Table 11 'VABench results', column 'Kandinsky 6.0 Video Pro', row 'visual_qa' = 0.652. The authors' own model. Kandinsky 6.0 report (arXiv 2610.05608v1, CC BY 4.0) Sec. 7.1: 'We evaluate the final Kandinsky 6.0 Video checkpoints on VABench ... Results are reported for Kandinsky 6.0 Video Pro and Kandinsky 6.0 Video Lite after RL post-training, both at 512 × 768 resolution, alongside LTX 2.5 in its two-stage Full HD configuration.' Table 11 columns are VABench's T2AV metric set (speech_qn, lipsync present), so this is the T2AV track.",
+      "part": "A"
+    },
+    {
+      "model": "kandinsky-6-0-lite",
+      "bench": "vabench-t2av-visual-qa",
+      "score": 0.691,
+      "source": "https://arxiv.org/html/2610.05608v1#S7.T11",
+      "source_id": "visual-kandinsky6-report",
+      "by": "lab",
+      "date": "2026-10-04",
+      "note": "Kandinsky 6.0 report Table 11 'VABench results', column 'Kandinsky 6.0 Video Lite', row 'visual_qa' = 0.691. The authors' own model. Kandinsky 6.0 report (arXiv 2610.05608v1, CC BY 4.0) Sec. 7.1: 'We evaluate the final Kandinsky 6.0 Video checkpoints on VABench ... Results are reported for Kandinsky 6.0 Video Pro and Kandinsky 6.0 Video Lite after RL post-training, both at 512 × 768 resolution, alongside LTX 2.5 in its two-stage Full HD configuration.' Table 11 columns are VABench's T2AV metric set (speech_qn, lipsync present), so this is the T2AV track.",
+      "part": "A"
+    },
+    {
+      "model": "ltx-2-5",
+      "bench": "vabench-t2av-visual-qa",
+      "score": 0.617,
+      "source": "https://arxiv.org/html/2610.05608v1#S7.T11",
+      "source_id": "visual-kandinsky6-report",
+      "by": "independent",
+      "date": "2026-10-04",
+      "note": "Kandinsky 6.0 report Table 11 'VABench results', column 'LTX 2.5', row 'visual_qa' = 0.617. Lightricks' open LTX-2.5 run by the Kandinsky authors in its two-stage Full HD configuration. Kandinsky 6.0 report (arXiv 2610.05608v1, CC BY 4.0) Sec. 7.1: 'We evaluate the final Kandinsky 6.0 Video checkpoints on VABench ... Results are reported for Kandinsky 6.0 Video Pro and Kandinsky 6.0 Video Lite after RL post-training, both at 512 × 768 resolution, alongside LTX 2.5 in its two-stage Full HD configuration.' Table 11 columns are VABench's T2AV metric set (speech_qn, lipsync present), so this is the T2AV track.",
+      "part": "A"
+    },
+    {
+      "model": "wan-3-0-prime",
+      "bench": "wrop-object-permanence-human-elo",
+      "score": 1723.6,
+      "source": "https://arxiv.org/html/2609.28654v1#S5.T2",
+      "source_id": "visual-wrop-object-permanence",
+      "by": "independent",
+      "date": "2026-09-23",
+      "note": "'Wan 3.0 Prime'; Table 2 human Bradley-Terry Elo 1723.6 (rank 1; 95% CI [1629.2, 1864.9], score rate 77.9%, 52 games); FAL API, reference-to-video (Table 1). Same table and run as the four WROP rows already imported; withheld in pass 'thin-visual' only because the tier was not catalogued.",
+      "part": "B"
+    },
+    {
+      "model": "runway-aleph-2",
+      "bench": "wrop-object-permanence-human-elo",
+      "score": 1518.3,
+      "source": "https://arxiv.org/html/2609.28654v1#S5.T2",
+      "source_id": "visual-wrop-object-permanence",
+      "by": "independent",
+      "date": "2026-09-23",
+      "note": "'Runway Aleph 2'; Table 2 human Bradley-Terry Elo 1518.3 (rank 5; 95% CI [1425.1, 1621.6], score rate 52.9%, 51 games); Runway API, frame-wise edit/transfer (Table 1). The automatic-metric table marks it † n=297 (the Runway API refused some items). Same table and run as the four WROP rows already imported.",
+      "part": "B"
+    }
+  ],
+  "benchmarks": [
+    {
+      "id": "vabench-t2av-visual-qa",
+      "name": "VABench T2AV micro Visual QA",
+      "category": "video",
+      "kind": "acc",
+      "chance": 0,
+      "url": "https://arxiv.org/html/2512.09299v2#S3.T1",
+      "task": "text-to-video",
+      "suggested_tasks": [
+        "text-to-video"
+      ],
+      "reported_scale": "0-1",
+      "benchmark_family": "vabench",
+      "setup": {
+        "url": "https://arxiv.org/html/2512.09299v2#S3",
+        "version": "VABench as released with arXiv:2512.09299v2 (6 Apr 2026), text-to-audio-video (T2AV) track, 778 samples",
+        "metric": "Micro-level Visual QA: for each sample, 3-7 human-verified questions about visual elements and physical action details in the prompt; an LLM judge marks each as satisfied or not; score = mean over samples of satisfied/asked (Eq. 2), 0-1.",
+        "protocol": "Each model generates one video per T2AV prompt with default frame rate/duration at 720P (VABench paper) or the evaluator's stated resolution; the VABench toolkit scores the output.",
+        "limitations": "Only the Visual QA column is used (one metric; the other 12 VABench metrics are correlated sub-scores of the same outputs and are not imported). Judge model not named in the extracted text. V+A pipelines (video model + separate audio model) are mapped only through the merged visual cells that belong to the video generator. I2AV track (Table 2) not used."
+      },
+      "why_new": "No VABench id exists. 8 catalogue models across two CC BY sources (VABench paper: sora-2, veo-3-fast, wan-2-5-preview, seedance-1-0-lite, wan-2-2-5b; Kandinsky 6.0 report: ltx-2-5, kandinsky-6-0-pro, kandinsky-6-0-lite).",
+      "part": "A"
+    },
+    {
+      "id": "cosmos-hue-t2v-human",
+      "name": "Cosmos HUE human evaluation, text-to-video (Cosmos 3 report)",
+      "category": "video",
+      "kind": "acc",
+      "chance": 0,
+      "url": "https://arxiv.org/html/2606.02800v4#S6.T14",
+      "task": "text-to-video",
+      "suggested_tasks": [
+        "text-to-video"
+      ],
+      "reported_scale": "0-100 (% Yes)",
+      "benchmark_family": "cosmos-hue",
+      "setup": {
+        "url": "https://arxiv.org/html/2606.02800v4#S6",
+        "version": "Cosmos 3 report v4 (23 Jun 2026), Table 14 'Cosmos HUE Text-to-Video' (per-dimension breakdown in Appendix Table 32)",
+        "metric": "Per-video HUE = share of atomic questions answered Yes by human annotators (Eq. 12), averaged; %, stored /100. Real-video ground truth scores 93.6.",
+        "protocol": "Human annotators verify single-fact Yes/No/Unclear questions on four dimensions (semantic alignment, physical laws, geometric reasoning, visual integrity) for videos generated from the PAIBench-G prompt set (same generation settings as Table 12).",
+        "limitations": "NVIDIA-run human protocol; Cosmos rows lab-reported; Wan 2.6 not rated. Correlated with pai-bench-g-t2v-cosmos3 (same videos, different judge)."
+      },
+      "why_new": "Human-verified protocol; 8 catalogue models in one run (6 independent).",
+      "part": "A"
+    },
+    {
+      "id": "cosmos-hue-i2v-human",
+      "name": "Cosmos HUE human evaluation, image-to-video (Cosmos 3 report)",
+      "category": "video",
+      "kind": "acc",
+      "chance": 0,
+      "url": "https://arxiv.org/html/2606.02800v4#S6.T14",
+      "task": "image-to-video",
+      "suggested_tasks": [
+        "image-to-video"
+      ],
+      "reported_scale": "0-100 (% Yes)",
+      "benchmark_family": "cosmos-hue",
+      "setup": {
+        "url": "https://arxiv.org/html/2606.02800v4#S6",
+        "version": "Cosmos 3 report v4 (23 Jun 2026), Table 14 'Cosmos HUE Image-to-Video' (per-dimension breakdown in Appendix Table 33)",
+        "metric": "Per-video HUE = share of atomic questions answered Yes by human annotators (Eq. 12), averaged; %, stored /100. Real-video ground truth scores 94.4.",
+        "protocol": "As cosmos-hue-t2v-human with image conditioning (PAIBench-G I2V prompt set).",
+        "limitations": "NVIDIA-run human protocol; Cosmos rows lab-reported; Wan 2.6 not rated; Wan2.1-I2V-14B row not mapped. Correlated with pai-bench-g-i2v-cosmos3."
+      },
+      "why_new": "Human-verified protocol; 7 catalogue models in one run (5 independent).",
+      "part": "A"
+    }
+  ],
+  "ledger": [
+    {
+      "action": "add_match",
+      "id": "lmarena-dataset",
+      "add_match": [
+        "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+        "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet"
+      ],
+      "note": "Revision 088c607919d1d0d3385409070657f4623e414872 is dataset main on 2026-10-09 (commit 'Update agent_tool_hallucination for 2026-10-08'). Its text_to_image file is byte-identical to the 1361ea04 'Update text_to_image for 2026-10-07' commit (LFS sha256 0c6f2048...) and its image_edit file to the 9490abd9 'Update image_edit for 2026-10-06' commit (sha256 2d9aa678...). text_to_video, image_to_video and video_edit are unchanged since 46919c46 (sha256 4cbc25e6..., 55fd7438..., bb11fb01...), so no video URLs are added. Licence unchanged: dataset card front matter 'license: cc-by-4.0', not gated."
+    },
+    {
+      "action": "add_match",
+      "id": "first-party-openai",
+      "add_match": [
+        "developers.openai.com/api/docs/models/chatgpt-image-latest"
+      ],
+      "note": "OpenAI's own model page for chatgpt-image-latest; list price only (per-image Image generation table), observed 2026-10-09."
+    },
+    {
+      "action": "new",
+      "id": "visual-step1x-edit-readme",
+      "name": "stepfun-ai/Step1X-Edit repository README results",
+      "kind": "first-party",
+      "match": [
+        "github.com/stepfun-ai/Step1X-Edit/blob/4cca05dfcd6c32dc810d0b4db84c2bf0682a5aeb/README.md"
+      ],
+      "exact": true,
+      "license": "Apache-2.0",
+      "license_url": "https://github.com/stepfun-ai/Step1X-Edit/blob/4cca05dfcd6c32dc810d0b4db84c2bf0682a5aeb/LICENSE",
+      "terms_url": "https://github.com/stepfun-ai/Step1X-Edit/blob/4cca05dfcd6c32dc810d0b4db84c2bf0682a5aeb/LICENSE",
+      "quote": "GitHub API reports the repository licence as Apache-2.0 (spdx_id Apache-2.0); README section '## LICENSE' at the pinned commit. Only StepFun's own-model GEdit-Bench-EN cells in the README news tables are used; the README states the judge ('G_SC, G_PQ, and G_O refer to the metrics evaluated by GPT-4.1') and the split ('GEdit-Bench-EN (Full set)').",
+      "attribution": "StepFun. stepfun-ai/Step1X-Edit README @4cca05d, Apache-2.0. Selected own-model GEdit-Bench-EN G_O cells transcribed and divided by 10. No values estimated or rerun. No endorsement.",
+      "scope": "Own-model rows 'Step1X-Edit (v1.0)' and 'Step1X-Edit (v1.1)' of the 'Jul 09, 2025' GEdit-Bench-EN (Full set) table, G_O column only. Not used: Qwen2.5-VL-72B (Q_*) columns, the KRIS-Bench rows (already recorded from card2-stepfun-ai-step1x-edit-v1p2), the image-only results in assets/eval_res_en.png.",
+      "verdict": "allowed",
+      "checked": "2026-10-09",
+      "evidence_url": "https://api.github.com/repos/stepfun-ai/Step1X-Edit",
+      "icon": "github.com"
+    },
+    {
+      "action": "scope_note",
+      "id": "visual-edival",
+      "note": "Scope extension if accepted: Table 3 EdiVal-O at T3 rows 'Step1X-Edit' (-> new step1x-edit-v1-0) and 'OmniGen' (-> new omnigen-v1) now map to catalogue models; remove them from the 'Withheld' list."
+    },
+    {
+      "action": "scope_note",
+      "id": "visual-imagenworld",
+      "note": "Scope extension if accepted: Table 3 TIG row 'UNO' (-> new uno); remove 'UNO (subject-driven model, not added)' from the omitted list."
+    },
+    {
+      "action": "scope_note",
+      "id": "report-2506.18871v4",
+      "note": "Scope unchanged in kind (Table 4 OmniContext Average for every catalogue model): adds rows 'OmniGen [98]' (-> omnigen-v1, by lab, BAAI's own earlier model) and 'UNO [97]' (-> uno)."
+    },
+    {
+      "action": "new",
+      "id": "visual-vabench",
+      "name": "VABench: A Comprehensive Benchmark for Audio-Video Generation (arXiv:2512.09299v2)",
+      "kind": "paper",
+      "match": [
+        "arxiv.org/html/2512.09299v2"
+      ],
+      "exact": true,
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "terms_url": "https://arxiv.org/abs/2512.09299v2",
+      "quote": "arXiv abs page https://arxiv.org/abs/2512.09299 (v1 10 Dec 2025, v2 6 Apr 2026) links http://creativecommons.org/licenses/by/4.0/.",
+      "attribution": "D. Hua, X. Wang, B. Zeng et al. VABench: A Comprehensive Benchmark for Audio-Video Generation, arXiv:2512.09299v2, CC BY 4.0. Extracted Table 1 (T2AV) 'Visual QA' cells for end-to-end AV models and the merged video-generator cells of V+A pipelines. No values estimated or rerun. No endorsement.",
+      "scope": "Benchmark authors' own runs of third-party models (Sec. 4.1 says which were accessed via APIs and which were deployed locally). Only Table 1 Visual QA used; other metrics, I2AV Table 2 and per-category Tables 5-6 not imported. Kling2.5 Turbo (720P = Standard mode) not mapped.",
+      "verdict": "allowed",
+      "checked": "2026-10-09",
+      "icon": "arxiv.org",
+      "part": "A"
+    },
+    {
+      "action": "new",
+      "id": "visual-kandinsky6-report",
+      "name": "Kandinsky 6.0 Video: Foundation Models for Synchronized Video and Audio Generation (arXiv:2610.05608v1)",
+      "kind": "paper",
+      "match": [
+        "arxiv.org/html/2610.05608v1"
+      ],
+      "exact": true,
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "terms_url": "https://arxiv.org/abs/2610.05608v1",
+      "quote": "arXiv abs page https://arxiv.org/abs/2610.05608 (v1, 4 Oct 2026) links http://creativecommons.org/licenses/by/4.0/.",
+      "attribution": "Kandinsky Lab (Sber AI). Kandinsky 6.0 Video: Foundation Models for Synchronized Video and Audio Generation, arXiv:2610.05608v1, CC BY 4.0. Extracted Table 11 VABench 'visual_qa' row. No values estimated or rerun. No endorsement.",
+      "scope": "Authors' own VABench run of Kandinsky 6.0 Pro/Lite (lab) and of LTX 2.5 (independent: 'alongside LTX 2.5 in its two-stage Full HD configuration'). Side-by-side human results are bar charts only (not used). Memory/time tables not imported.",
+      "verdict": "allowed",
+      "checked": "2026-10-09",
+      "icon": "arxiv.org",
+      "part": "A"
+    },
+    {
+      "action": "scope_update",
+      "id": "visual-cosmos3-report",
+      "scope_append": "Pass 8: Table 12 PAIBench-G Text2Video/Image2Video 'Overall' and Table 14 Cosmos HUE Text-to-Video/Image-to-Video imported (new ids pai-bench-g-t2v-cosmos3, pai-bench-g-i2v-cosmos3, cosmos-hue-t2v-human, cosmos-hue-i2v-human). NVIDIA's own internal evaluation of all rows (Sec. 6.2.2: 'For every prompt, we generate videos across 5 seeds ...'; 'Qwen2.5-VL-72B-Instruct as the domain-score judge for our internal evaluation (Tab. 12)'). Cosmos3-Super (mid-trained nvidia/Cosmos3-Super) now proposed for the catalogue. RBench, Physics-IQ, HWB, Cosmos-SoundBench and Artificial Analysis mentions still not used. Cosmos-Predict2.5 and Wan2.1-I2V-14B rows not mapped.",
+      "note": "Existing entry already matches arxiv.org/html/2606.02800v4; no new match needed.",
+      "part": "A"
+    }
+  ],
+  "gaps": [
+    {
+      "model": "grok-imagine-video-1.5-lite (xAI API, $0.020 per second)",
+      "category": "video",
+      "why": "New xAI API model (docs.x.ai models page, observed 2026-10-09); no Arena entry and no openly licensed result found, so not proposed."
+    },
+    {
+      "model": "kandinsky-2-0 / Kandinsky 1.0",
+      "category": "image",
+      "why": "Unchanged from pass 7: the only result (Kandinsky 2.1 card FID 20.00) would make coco30k-fid-kandinsky21 a two-model benchmark, below the three-model minimum; Kandinsky 1.0 has no identifiable open checkpoint."
+    },
+    {
+      "model": "Step1X-Edit (version unstated) in ImagenWorld TIE (0.46) and RealPref-Bench",
+      "category": "image",
+      "why": "Papers from 2026 that cite only 'Step1X-Edit (Liu et al., 2025)' while v1.0, v1.1, v1.2-preview and v1.2 all existed; not mapped."
+    },
+    {
+      "model": "UNO reference-image rows (ImagenWorld SRIG 0.61, MRIG 0.60; OmniContext subtasks)",
+      "category": "image",
+      "why": "No benchmark id for single/multi-reference generation; only TIG and the OmniContext average used."
+    },
+    {
+      "part": "A",
+      "model": "Cosmos-Predict2.5-2B / Cosmos-Predict2.5-14B (NVIDIA)",
+      "category": "video",
+      "why": "Rows in Cosmos 3 report Tables 12 and 14 (and PAWBench); not catalogued. Would add two more NVIDIA rows to the new PAIBench-G/HUE runs if the owner adds them."
+    },
+    {
+      "part": "A",
+      "model": "nvidia/Cosmos3-Super-Image2Video (post-trained I2V variant)",
+      "category": "video",
+      "why": "Open weights (pinned 580f3f2) but the Cosmos 3 report's I2V cells belong to the mid-trained Cosmos3-Super; its only third-party row is PAWBench (diagnostic, not imported). WROP's 'Cosmos3 Super' (edge-control edit/transfer, 1409.2) is not mapped to cosmos3-super because the control checkpoint is not stated."
+    },
+    {
+      "part": "B",
+      "model": "MAGI-1 24B, Wan-VACE 14B, HY-OmniWeaving (WROP Table 2)",
+      "category": "video",
+      "why": "Open-weights comparators in the WROP human Elo table; not catalogued, and not new (2025)."
+    }
+  ],
+  "checked": [
+    {
+      "source": "LMArena leaderboard dataset, revision 088c607919d1d0d3385409070657f4623e414872 (main on 2026-10-09)",
+      "outcome": "Every category-overall row of the latest split of text_to_image (2026-10-07), image_edit (2026-10-06), text_to_video, image_to_video (2026-09-22) and video_edit (2026-08-27) checked against the exact-entry labels in data/results.json notes. Unmapped entries: gemini-nano-banana-2.1 (new model, proposed), chatgpt-image-latest-high-fidelity (20251216) (OpenAI API model chatgpt-image-latest, proposed), step1x-edit (proposed as step1x-edit-v1-0; Arena row held), grok-imagine-image-2.0 (20260801)/(canvas) and grok-imagine-image-quality (20260519) (held, see held_for_owner), grok-imagine-video-1.5-agent (t2v, 1,218 votes; an agent pipeline, not an xAI API model id; not mapped), and resolution/setting variants of catalogued models that the lmarena comparability rule keeps unmerged: gemini-3-pro-image-2k (nano-banana-pro), seedream-4-fal, seedream-4-high-res-fal, qwen-image-prompt-extend, Cosmos3-Super-Text2Image (Agentic), veo-3.1-audio-1080p, veo-3.1-fast-audio-1080p, veo-3, veo-3-fast (no audio), hailuo-02-pro, hailuo-02-fast, grok-imagine-video-480p. Video files are byte-identical to revision 46919c46, so no video rows change."
+    },
+    {
+      "source": "LMArena existing rows vs latest snapshot",
+      "outcome": "73 existing lmarena-image / lmarena-image-edit rows (revision 46919c46) differ from the latest snapshot by 0.1 to 4.7 points; listed under refresh_candidates. The 'grok-imagine-image-2.0 (low)' entry used by grok-imagine-image-2 is absent from the latest text_to_image and image_edit files (last seen 2026-09-24 / 2026-09-30), so that row stays as is under the 'earlier rows retained when absent' rule."
+    },
+    {
+      "source": "Rapidata datasets (text-to-image-human-preference-6M dde5a48, image-to-video-realism 70ae7df, camera-movement-human-preference-324k 6206acf, world-model-physics-human-preference-283k cf0e072, relative-camera-movement e03ac78, Face_Generation_Benchmark c6ed7ea) and Datapoint (image e1d8719, video 49295b5)",
+      "outcome": "README files byte-identical to the ledger revisions or already covered (camera-movement-human-preference-324k@6206acf, which added Flux 3, is already in the ledger). No new models."
+    },
+    {
+      "source": "Live GitHub leaderboards: OpenGVLab/GenExam (1f820db), MizzenAI/HPSv3 (bd0c5fc), Hritikbansal/videophy (01d366c), OneIG-Bench (41b4983), TIIF-Bench (cca586f), djghosh13/geneval (af4902f)",
+      "outcome": "No commits after the revisions already used; nothing new."
+    },
+    {
+      "source": "53 pinned arXiv HTML versions of image-category ledger papers (scratchpad p8-papers/ledger)",
+      "outcome": "Table scan for OmniGen v1, UNO and Step1X-Edit rows. Usable: OmniGen2 report Table 4 (OmniGen, UNO), EdiVal Table 3 (OmniGen, Step1X-Edit with date 25.04.25), ImagenWorld Table 3 TIG (UNO). Not used: BAGEL report / UniWorld / LongCat / Mage-Flow / WEAVE GEdit and ImgEdit tables (OmniGen 5.06 / 2.96 and Step1X-Edit 6.70 are the circulated Step1X-Edit-paper and ImgEdit-paper values, not these authors' runs); ImagenWorld TIE 'Step1xEdit' and RealPref 'Step1X-Edit' (version not stated)."
+    },
+    {
+      "source": "https://arxiv.org/abs/2504.17761 (Step1X-Edit report, v1-v5)",
+      "outcome": "Licence is arXiv non-exclusive distribution; not usable. The Apache-2.0 GitHub README at 4cca05d prints StepFun's own GEdit-Bench-EN (Full set, GPT-4.1) table for v1.0 and v1.1; used via new ledger entry visual-step1x-edit-readme."
+    },
+    {
+      "source": "https://ai.google.dev/gemini-api/docs/changelog and /pricing (observed 2026-10-09)",
+      "outcome": "Nano Banana 2.1 (gemini-nano-banana-2.1) GA on 6 Oct 2026; price $0.0336 per 1K image (page last updated 2026-10-07)."
+    },
+    {
+      "source": "https://developers.openai.com/api/docs/models/chatgpt-image-latest.md and /changelog.md (observed 2026-10-09)",
+      "outcome": "chatgpt-image-latest released 16 Dec 2025 with gpt-image-1.5; medium 1024x1024 $0.034 per image."
+    },
+    {
+      "source": "https://docs.x.ai/developers/models.md (observed 2026-10-09)",
+      "outcome": "Imagine pricing lists grok-imagine-image-2.0, grok-imagine-image-quality, grok-imagine-image, grok-imagine-video-1.5-lite ($0.020/s, new, not catalogued), grok-imagine-video-1.5, grok-imagine-video. grok-imagine-image-quality aliases: grok-imagine-image-quality-20260403, -latest, grok-imagine-image-pro."
+    },
+    {
+      "source": "Kandinsky cards (kandinsky-community/kandinsky-2-2-decoder@9ae140d, ai-forever/Kandinsky_2.0@04e8fc7)",
+      "outcome": "The 2.2 card reprints the 2.1 COCO-30k FID table unchanged; no third model for coco30k-fid-kandinsky21, so the held Kandinsky 2.0 proposal (pass7-lone-E) still would not count. Kandinsky 1.0 has no public checkpoint."
+    },
+    {
+      "part": "A",
+      "source": "Open-weights releases since mid-May 2026 (HF repos pinned in scratchpad p8-forkA/shas.txt): Krea-2-Raw, Ming-Image-0.1-Design(-Layer), SenseNova-U1.5-8B-MoT, SenseNova-Vision-7B-MoT, Boogu-Image-0.1 Base/Edit/Edit-Turbo, JoyAI-Image-Edit-Plus, JoyAI-Echo, Fibo 1.5 / Fibo-Edit-1.5, baidu/NAVA, Wan-Dancer-14B, SCAIL-2, SANA-WM, LongLive-2.0-5B, Lance, LTX-2.5-Pre-Trained, lingbot-world-v2, DreamX-World-5B, Stable-Layers, GAE-D64-1B, Prism, Kroma, iris-3b, interfaze-1-lite, Supra2-IMG, TeleStyleV2, bonsai-image, ABot-World, AnimeGen, Cosmos3-Super-Image2Video(-4Step), Kandinsky-6.0 Pro-distill",
+      "outcome": "Not proposed: no openly licensed result that lands in a run with two or more catalogue models. Checked examples: NAVA report (arXiv 2605.30073v1, CC BY) Verse-Bench compares mostly uncatalogued audio-video models (Ovi, MOVA); Wan-Dancer (2607.09581v3) compares dance generators only; Prism (2610.05416v1) 2K-Bench has one catalogue model (LTX-2.3); Iris-3B (2610.09450v1, CC0) copies its comparator rows from other papers; JoyAI-Echo-1.5 report (2608.23383v2) has no comparison table with catalogue models."
+    },
+    {
+      "part": "A",
+      "source": "https://arxiv.org/html/2606.02800v4 (Cosmos 3 report, ledger visual-cosmos3-report)",
+      "outcome": "Tables 12 (PAIBench-G T2V/I2V Overall) and 14 (Cosmos HUE T2V/I2V) re-extracted and every proposed cell re-checked by the parent against the HTML. NVIDIA ran all rows itself (5 seeds per prompt, Qwen2.5-VL-72B domain judge for the internal PAIBench-G run; human HUE annotation). Proposed new model cosmos3-super (mid-trained nvidia/Cosmos3-Super; Table 1 marks post-trained variants with an asterisk and the T2V/I2V cells are unstarred) and 4 new benchmark ids. Not mapped: Cosmos-Predict2.5-2B/14B and the Wan2.1 I2V cell (not catalogued); RBench and Human World Bench columns."
+    },
+    {
+      "part": "A",
+      "source": "https://arxiv.org/html/2512.09299v2 (VABench, CC BY 4.0) and https://arxiv.org/html/2610.05608v1 (Kandinsky 6.0 Video report, CC BY 4.0)",
+      "outcome": "VABench Table 1 (T2AV) Visual QA and Kandinsky 6.0 report Table 11 visual_qa re-checked by the parent. New benchmark vabench-t2av-visual-qa (8 catalogue models over two runs); new models kandinsky-6-0-pro and kandinsky-6-0-lite (MIT, open-sourced 2026-10-06; Pro repo is gated with automatic approval). Kling2.5 Turbo 720P (Standard) and the V+A audio pairings not mapped."
+    },
+    {
+      "part": "B",
+      "source": "~1,180 recent arXiv cs.CV/cs.MM HTML papers (2026-06 to 2026-10) scanned for model names in tables (scratchpad p8-forkB)",
+      "outcome": "Usable new-model rows: WROP (arXiv 2609.28654v1, ledger visual-wrop-object-permanence) Table 2 'Wan 3.0 Prime' and 'Runway Aleph 2', previously withheld only because the models were not catalogued; values re-checked by the parent. Other leads not imported: PAWBench (2608.27345v3, CC BY; 'Cosmos 3 Super I2V' with seven catalogue video models, calibration/coverage diagnostics only), AdSpark-Bench (2610.10047v1, CC BY; Pixverse V6, Kling3.0 Omni, SkyReels-V3, ViduQ3 with Seedance 2.0, HappyHorse-1.1, LTX-2; 18 sub-metrics and no overall score, reference-driven multi-shot ad task), arXiv 2610.11112 (Seedream 5.0 Flash, 'Grok Imagen 2.0'; arXiv non-exclusive licence, not usable), 2609.10787 / 2606.00101 / 2609.07884 / 2610.02205 (CC BY, but lighting-probe yield, category statistics, segmentation and world-model control tables, not generation-quality benchmarks)."
+    },
+    {
+      "part": "B",
+      "source": "Alibaba Cloud Model Studio pricing and 'newly released models' pages; Runway developer docs (models, pricing) and runway.com/news/introducing-aleph-2-and-edit-studio (observed 2026-10-09)",
+      "outcome": "wan3.0-video-prime released 2026-08-20, 720P /bin/zsh.14/s (International); Runway Aleph 2.0 announced 21 May 2026, API model aleph2 at 28 credits/s x /bin/zsh.01 per credit."
+    }
+  ],
+  "held_for_owner": [
+    {
+      "item": "Arena image_edit row for step1x-edit-v1-0 (entry 'step1x-edit').",
+      "why": "The entry is unversioned. It was first listed on 2025-06-24, before v1.1 existed (released 2025-07-09), and its rating stayed flat (1017-1025) while votes grew from 2,373 to 104,962 across the v1.1 release, so it is probably v1.0; but Arena does not document whether its serving endpoint was later switched to v1.1. Ready to merge if accepted.",
+      "proposed_result": {
+        "model": "step1x-edit-v1-0",
+        "bench": "lmarena-image-edit",
+        "score": 998.3,
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+        "source_id": "lmarena-dataset",
+        "by": "independent",
+        "date": "2026-10-06",
+        "note": "image_edit, category overall, split latest; exact entry 'step1x-edit'; 155,418 votes; published 95% interval 993.8–1002.7; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit)."
+      }
+    },
+    {
+      "item": "grok-imagine-image-2.0 (20260801) and (canvas) Arena entries.",
+      "why": "The existing grok-imagine-image-2 rows cite 'grok-imagine-image-2.0 (low)', which is no longer in the latest text_to_image/image_edit files. Candidate replacements: '(20260801)' t2i 1294.2 (14,483 votes, CI 1287.9-1300.6), image_edit 1424.5 (50,427 votes, CI 1419.5-1429.6); '(canvas)' t2i 1333.5 (3,113 votes), image_edit 1439.1 (11,589 votes). xAI documents one API model grok-imagine-image-2.0 ($0.04/image) with no dated alias, so neither label can be tied to an API setting; '(canvas)' looks like a product surface. Not proposed."
+    },
+    {
+      "item": "grok-imagine-image-quality (20260519) image_edit entry (1391.2, 38,195 votes, CI 1385.6-1396.8).",
+      "why": "Would give grok-imagine-image-pro (alias of grok-imagine-image-quality) an image_edit row, but xAI lists the dated alias grok-imagine-image-quality-20260403, not 20260519. Not proposed."
+    },
+    {
+      "item": "Refresh of 73 existing lmarena-image / lmarena-image-edit rows to revision 088c6079 (refresh_candidates).",
+      "why": "New-model rows are pinned to 088c6079, whose image files are newer than the 46919c46 files the existing rows cite. Changes are small (0.1-4.7 Elo). Applying the refresh keeps each image run on one snapshot; the refresh rows replace, not add to, the existing rows (same model, bench and exact entry)."
+    },
+    {
+      "item": "GEdit-Bench duplicate measurement for Step1X-Edit v1.1.",
+      "why": "The proposed step1x-edit-v1-1 gedit-bench-en-overall row (0.697, GitHub README, explicitly 'GEdit-Bench-EN (Full set)', GPT-4.1) is the same number as its existing gedit-bench-overall-lang-unspecified row (v1p2 card, which printed no split/judge). The README now documents the split and judge for the v1.1 (6.97) and v1p2-preview (7.42) values, so the owner may prefer to re-label the three lang-unspecified rows as gedit-bench-en-overall (v1p2 final 7.58 is not in the README tables) or to drop the lang-unspecified v1.1 row. Without the v1.1 cell the v1.0 README row would sit alone in its run."
+    },
+    {
+      "part": "A",
+      "item": "Four new Cosmos-3-report benchmarks (pai-bench-g-t2v-cosmos3, pai-bench-g-i2v-cosmos3, cosmos-hue-t2v-human, cosmos-hue-i2v-human).",
+      "why": "Each has 7-9 catalogue models in one NVIDIA run (Cosmos rows by lab, others independent), which makes cosmos3-super count. But PAIBench-G (VLM judge) and Cosmos HUE (human) score the same generated videos, so per task they are correlated measurements of one generation run; the owner may prefer to keep only one per task (HUE is the human protocol; PAIBench-G has Wan 2.6). They are also kept apart from the existing pai-bench-g-overall (PAI-Bench paper protocol, different judge)."
+    },
+    {
+      "part": "A",
+      "item": "Kandinsky 6.0 Video Pro repo is gated.",
+      "why": "kandinskylab/Kandinsky-6.0-Pro-5s-Diffusers reports gated='auto' (agree to share contact details, automatic approval); licence MIT. The local command works after accepting on Hugging Face; the Lite repo is not gated."
+    }
+  ],
+  "refresh_candidates": [
+    {
+      "model": "gpt-image-2-5-sunburst",
+      "bench": "lmarena-image",
+      "score": 1424.6,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'gpt-image-2.5-sunburst'; 17,752 votes; published 95% interval 1417.7–1431.4; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1423.6); same exact entry."
+    },
+    {
+      "model": "gpt-image-2-5-flare",
+      "bench": "lmarena-image",
+      "score": 1397.6,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'gpt-image-2.5-flare'; 16,889 votes; published 95% interval 1390.9–1404.4; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1400.9); same exact entry."
+    },
+    {
+      "model": "gpt-image-1-5",
+      "bench": "lmarena-image",
+      "score": 1237.4,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'gpt-image-1.5-high-fidelity'; 169,927 votes; published 95% interval 1234.3–1240.4; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1238.5); same exact entry."
+    },
+    {
+      "model": "gpt-image-1",
+      "bench": "lmarena-image",
+      "score": 1115.6,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'gpt-image-1'; 268,453 votes; published 95% interval 1112.5–1118.7; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1115.7); same exact entry."
+    },
+    {
+      "model": "mai-image-2-6",
+      "bench": "lmarena-image",
+      "score": 1332.1,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'mai-image-2.6'; 25,091 votes; published 95% interval 1326.7–1337.5; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1335); same exact entry."
+    },
+    {
+      "model": "nano-banana-2",
+      "bench": "lmarena-image",
+      "score": 1261.8,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'gemini-3.1-flash-image (nano-banana-2) [web-search]'; 60,515 votes; published 95% interval 1257.6–1265.9; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1261.2); same exact entry."
+    },
+    {
+      "model": "nano-banana",
+      "bench": "lmarena-image",
+      "score": 1150.3,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'gemini-2.5-flash-image-preview (nano-banana)'; 890,539 votes; published 95% interval 1147.9–1152.7; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1150.2); same exact entry."
+    },
+    {
+      "model": "muse-image",
+      "bench": "lmarena-image",
+      "score": 1274.0,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'muse-image'; 42,262 votes; published 95% interval 1268.9–1279.1; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1276); same exact entry."
+    },
+    {
+      "model": "seedream-5-0-pro",
+      "bench": "lmarena-image",
+      "score": 1255.5,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'seedream-5.0-pro'; 94,181 votes; published 95% interval 1251.6–1259.4; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1256.2); same exact entry."
+    },
+    {
+      "model": "seedream-4-0",
+      "bench": "lmarena-image",
+      "score": 1139.9,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'seedream-4-2k'; 12,562 votes; published 95% interval 1133.3–1146.4; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1140); same exact entry."
+    },
+    {
+      "model": "qwen-image-3-0-pro",
+      "bench": "lmarena-image",
+      "score": 1255.2,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'qwen-image-3.0-pro'; 11,440 votes; published 95% interval 1248.7–1261.7; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1255.9); same exact entry."
+    },
+    {
+      "model": "flux-2-pro",
+      "bench": "lmarena-image",
+      "score": 1153.3,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'flux-2-pro'; 212,359 votes; published 95% interval 1150.5–1156.1; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1153.9); same exact entry."
+    },
+    {
+      "model": "recraft-v4",
+      "bench": "lmarena-image",
+      "score": 1114.9,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'recraft-v4'; 137,017 votes; published 95% interval 1111.7–1118.1; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1115); same exact entry."
+    },
+    {
+      "model": "wan-2-6-t2i",
+      "bench": "lmarena-image",
+      "score": 1137.5,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'wan2.6-t2i'; 233,292 votes; published 95% interval 1134.7–1140.3; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1136.7); same exact entry."
+    },
+    {
+      "model": "flux-2-dev",
+      "bench": "lmarena-image",
+      "score": 1145.8,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'flux-2-dev'; 77,988 votes; published 95% interval 1141.6–1149.9; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1145.6); same exact entry."
+    },
+    {
+      "model": "flux-2-klein-9b",
+      "bench": "lmarena-image",
+      "score": 1070.3,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'flux-2-klein-9b'; 150,782 votes; published 95% interval 1067.1–1073.5; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1070.2); same exact entry."
+    },
+    {
+      "model": "z-image-turbo",
+      "bench": "lmarena-image",
+      "score": 1083.5,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'z-image-turbo'; 24,808 votes; published 95% interval 1078.2–1088.8; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1083.9); same exact entry."
+    },
+    {
+      "model": "hidream-o1-image",
+      "bench": "lmarena-image",
+      "score": 1116.2,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'hidream-o1-image'; 66,906 votes; published 95% interval 1112.5–1119.9; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1115.8); same exact entry."
+    },
+    {
+      "model": "ideogram-4",
+      "bench": "lmarena-image",
+      "score": 1205.1,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'ideogram-4.0-quality'; 60,591 votes; published 95% interval 1201.1–1209.1; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1204.8); same exact entry."
+    },
+    {
+      "model": "cosmos3-super-text2image",
+      "bench": "lmarena-image",
+      "score": 1151.6,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'Cosmos3-Super-Text2Image'; 18,485 votes; published 95% interval 1145.7–1157.4; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1151.8); same exact entry."
+    },
+    {
+      "model": "glm-image",
+      "bench": "lmarena-image",
+      "score": 1012.1,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'glm-image'; 4,854 votes; published 95% interval 1003.2–1021.0; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1012); same exact entry."
+    },
+    {
+      "model": "imagen-4",
+      "bench": "lmarena-image",
+      "score": 1129.0,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'imagen-4.0-generate-001'; 539,732 votes; published 95% interval 1126.3–1131.8; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1129.1); same exact entry."
+    },
+    {
+      "model": "seedream-4-5",
+      "bench": "lmarena-image",
+      "score": 1148.5,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'seedream-4.5'; 300,107 votes; published 95% interval 1146.0–1151.1; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1147.5); same exact entry."
+    },
+    {
+      "model": "mai-image-2-5",
+      "bench": "lmarena-image",
+      "score": 1254.2,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'mai-image-2.5'; 61,265 votes; published 95% interval 1250.0–1258.3; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1254); same exact entry."
+    },
+    {
+      "model": "reve-2-0",
+      "bench": "lmarena-image",
+      "score": 1269.2,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'reve-2.0'; 15,773 votes; published 95% interval 1263.0–1275.4; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1268.9); same exact entry."
+    },
+    {
+      "model": "reve-2-1",
+      "bench": "lmarena-image",
+      "score": 1301.7,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'reve-2.1'; 8,249 votes; published 95% interval 1294.2–1309.2; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1302.3); same exact entry."
+    },
+    {
+      "model": "krea-2-large",
+      "bench": "lmarena-image",
+      "score": 1111.5,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'krea-2-large'; 56,888 votes; published 95% interval 1107.4–1115.7; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1109.8); same exact entry."
+    },
+    {
+      "model": "krea-2-medium",
+      "bench": "lmarena-image",
+      "score": 1124.2,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'krea-2-medium'; 58,098 votes; published 95% interval 1120.1–1128.4; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1123.2); same exact entry."
+    },
+    {
+      "model": "krea-2-turbo",
+      "bench": "lmarena-image",
+      "score": 1113.2,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'krea-2-turbo'; 51,552 votes; published 95% interval 1108.7–1117.6; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1112.9); same exact entry."
+    },
+    {
+      "model": "nano-banana-2-lite",
+      "bench": "lmarena-image",
+      "score": 1250.2,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'gemini-3.1-flash-lite-image (nano-banana-2-lite)'; 17,804 votes; published 95% interval 1244.3–1256.2; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1250); same exact entry."
+    },
+    {
+      "model": "qwen-image-2-1",
+      "bench": "lmarena-image",
+      "score": 1222.9,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'qwen-image-2.1'; 11,441 votes; published 95% interval 1216.3–1229.6; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1227.6); same exact entry."
+    },
+    {
+      "model": "gpt-image-2-5-sunburst",
+      "bench": "lmarena-image-edit",
+      "score": 1523.6,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'gpt-image-2.5-sunburst'; 59,825 votes; published 95% interval 1518.2–1529.0; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1522.4); same exact entry."
+    },
+    {
+      "model": "gpt-image-2-5-flare",
+      "bench": "lmarena-image-edit",
+      "score": 1481.0,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'gpt-image-2.5-flare'; 57,408 votes; published 95% interval 1475.7–1486.3; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1478.5); same exact entry."
+    },
+    {
+      "model": "gpt-image-2",
+      "bench": "lmarena-image-edit",
+      "score": 1461.7,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'gpt-image-2 (medium)'; 305,825 votes; published 95% interval 1458.6–1464.9; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1461.3); same exact entry."
+    },
+    {
+      "model": "mai-image-2-6",
+      "bench": "lmarena-image-edit",
+      "score": 1428.3,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'mai-image-2.6'; 51,384 votes; published 95% interval 1423.3–1433.3; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1426.7); same exact entry."
+    },
+    {
+      "model": "muse-image",
+      "bench": "lmarena-image-edit",
+      "score": 1402.6,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'muse-image'; 142,644 votes; published 95% interval 1398.4–1406.9; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1403.5); same exact entry."
+    },
+    {
+      "model": "seedream-5-0-pro",
+      "bench": "lmarena-image-edit",
+      "score": 1393.6,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'seedream-5.0-pro'; 282,865 votes; published 95% interval 1390.5–1396.7; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1393.7); same exact entry."
+    },
+    {
+      "model": "nano-banana-pro",
+      "bench": "lmarena-image-edit",
+      "score": 1386.0,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'gemini-3-pro-image-preview (nano-banana-pro)'; 540,775 votes; published 95% interval 1383.1–1388.8; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1385.9); same exact entry."
+    },
+    {
+      "model": "gpt-image-1-5",
+      "bench": "lmarena-image-edit",
+      "score": 1369.7,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'gpt-image-1.5-high-fidelity'; 654,249 votes; published 95% interval 1367.1–1372.3; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1369.6); same exact entry."
+    },
+    {
+      "model": "seedream-4-5",
+      "bench": "lmarena-image-edit",
+      "score": 1301.9,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'seedream-4.5'; 1,294,217 votes; published 95% interval 1299.7–1304.0; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1301.7); same exact entry."
+    },
+    {
+      "model": "nano-banana",
+      "bench": "lmarena-image-edit",
+      "score": 1293.2,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'gemini-2.5-flash-image-preview (nano-banana)'; 11,383,435 votes; published 95% interval 1291.2–1295.2; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1293.1); same exact entry."
+    },
+    {
+      "model": "seedream-4-0",
+      "bench": "lmarena-image-edit",
+      "score": 1270.2,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'seedream-4-2k'; 210,059 votes; published 95% interval 1263.5–1276.8; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1270.1); same exact entry."
+    },
+    {
+      "model": "flux-2-max",
+      "bench": "lmarena-image-edit",
+      "score": 1261.7,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'flux-2-max'; 375,861 votes; published 95% interval 1258.5–1264.8; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1261.6); same exact entry."
+    },
+    {
+      "model": "flux-2-dev",
+      "bench": "lmarena-image-edit",
+      "score": 1224.6,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'flux-2-dev'; 254,281 votes; published 95% interval 1220.7–1228.6; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1224.7); same exact entry."
+    },
+    {
+      "model": "flux-1-kontext-dev",
+      "bench": "lmarena-image-edit",
+      "score": 1149.2,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'flux-1-kontext-dev'; 3,639,808 votes; published 95% interval 1145.9–1152.5; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1149.1); same exact entry."
+    },
+    {
+      "model": "mai-image-2-5",
+      "bench": "lmarena-image-edit",
+      "score": 1400.9,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'mai-image-2.5'; 190,081 votes; published 95% interval 1397.2–1404.6; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1400.8); same exact entry."
+    },
+    {
+      "model": "reve-2-1",
+      "bench": "lmarena-image-edit",
+      "score": 1374.3,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'reve-2.1'; 20,792 votes; published 95% interval 1368.2–1380.3; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1374.2); same exact entry."
+    },
+    {
+      "model": "reve-2-0",
+      "bench": "lmarena-image-edit",
+      "score": 1358.5,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'reve-2.0'; 19,265 votes; published 95% interval 1352.0–1365.0; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1358.6); same exact entry."
+    },
+    {
+      "model": "reve-v1-1-fast",
+      "bench": "lmarena-image-edit",
+      "score": 1207.2,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'reve-v1.1-fast'; 553,317 votes; published 95% interval 1204.2–1210.2; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1207.3); same exact entry."
+    },
+    {
+      "model": "uni-1-1",
+      "bench": "lmarena-image-edit",
+      "score": 1315.2,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'uni-1.1'; 188,834 votes; published 95% interval 1311.9–1318.6; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1314.8); same exact entry."
+    },
+    {
+      "model": "nano-banana-2-lite",
+      "bench": "lmarena-image-edit",
+      "score": 1313.5,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'gemini-3.1-flash-lite-image (nano-banana-2-lite)'; 65,669 votes; published 95% interval 1308.8–1318.2; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1313.6); same exact entry."
+    },
+    {
+      "model": "qwen-image-2-1",
+      "bench": "lmarena-image-edit",
+      "score": 1368.7,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'qwen-image-2.1'; 21,941 votes; published 95% interval 1362.8–1374.6; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1366.4); same exact entry."
+    },
+    {
+      "model": "grok-imagine-image",
+      "bench": "lmarena-image-edit",
+      "score": 1329.0,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'grok-imagine-image'; 756,681 votes; published 95% interval 1326.5–1331.4; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1329.5); same exact entry."
+    },
+    {
+      "model": "seedream-5-0-lite",
+      "bench": "lmarena-image-edit",
+      "score": 1294.1,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'seedream-5.0-lite'; 459,744 votes; published 95% interval 1291.5–1296.8; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1293.9); same exact entry."
+    },
+    {
+      "model": "wan-2-5-i2i-preview",
+      "bench": "lmarena-image-edit",
+      "score": 1181.1,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'wan2.5-i2i-preview'; 723,697 votes; published 95% interval 1178.5–1183.7; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1180.6); same exact entry."
+    },
+    {
+      "model": "flux-2-flex",
+      "bench": "lmarena-image",
+      "score": 1156.6,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'flux-2-flex'; 156,923 votes; published 95% interval 1153.2–1159.9; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1156.5); same exact entry."
+    },
+    {
+      "model": "uni-1-1",
+      "bench": "lmarena-image",
+      "score": 1184.3,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'uni-1.1'; 46,699 votes; published 95% interval 1179.9–1188.7; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1183.5); same exact entry."
+    },
+    {
+      "model": "uni-1-1-max",
+      "bench": "lmarena-image",
+      "score": 1189.3,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'uni-1.1-max'; 14,072 votes; published 95% interval 1183.1–1195.5; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1189.1); same exact entry."
+    },
+    {
+      "model": "grok-imagine-image",
+      "bench": "lmarena-image",
+      "score": 1169.7,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'grok-imagine-image'; 272,085 votes; published 95% interval 1167.0–1172.3; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1170.3); same exact entry."
+    },
+    {
+      "model": "grok-imagine-image-pro",
+      "bench": "lmarena-image",
+      "score": 1162.4,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'grok-imagine-image-pro'; 99,455 votes; published 95% interval 1158.6–1166.1; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1162.2); same exact entry."
+    },
+    {
+      "model": "seedream-5-0-lite",
+      "bench": "lmarena-image",
+      "score": 1137.9,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'seedream-5.0-lite'; 129,950 votes; published 95% interval 1134.7–1141.1; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1138.1); same exact entry."
+    },
+    {
+      "model": "wan-2-7-image",
+      "bench": "lmarena-image",
+      "score": 1101.1,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'wan2.7-image'; 30,630 votes; published 95% interval 1096.1–1106.1; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1101.3); same exact entry."
+    },
+    {
+      "model": "wan-2-5-t2i-preview",
+      "bench": "lmarena-image",
+      "score": 1115.6,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'wan2.5-t2i-preview'; 279,229 votes; published 95% interval 1112.9–1118.4; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1116.2); same exact entry."
+    },
+    {
+      "model": "recraft-v4-1-pro",
+      "bench": "lmarena-image",
+      "score": 1133.0,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'recraft-v4.1-pro'; 2,795 votes; published 95% interval 1122.6–1143.5; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1132.5); same exact entry."
+    },
+    {
+      "model": "recraft-v4-1-flash",
+      "bench": "lmarena-image",
+      "score": 1099.5,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'recraft-v4.1-flash'; 3,516 votes; published 95% interval 1090.0–1109.0; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1100.4); same exact entry."
+    },
+    {
+      "model": "recraft-v3",
+      "bench": "lmarena-image",
+      "score": 1020.6,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'recraft-v3'; 195,627 votes; published 95% interval 1017.0–1024.3; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1020.7); same exact entry."
+    },
+    {
+      "model": "seedream-3-0",
+      "bench": "lmarena-image",
+      "score": 1081.6,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'seedream-3'; 36,885 votes; published 95% interval 1076.6–1086.6; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1081.5); same exact entry."
+    },
+    {
+      "model": "runway-gen-4-image",
+      "bench": "lmarena-image",
+      "score": 1024.2,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'runway-gen4'; 54,361 votes; published 95% interval 1019.8–1028.6; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1024.3); same exact entry."
+    },
+    {
+      "model": "ideogram-2",
+      "bench": "lmarena-image",
+      "score": 1013.3,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'ideogram-v2'; 72,090 votes; published 95% interval 1009.8–1016.9; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1013.4); same exact entry."
+    },
+    {
+      "model": "qwen-image-2-0-pro-2026-06-22",
+      "bench": "lmarena-image",
+      "score": 1191.8,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'qwen-image-2.0-pro-2026-06-22'; 13,096 votes; published 95% interval 1185.9–1197.6; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1191.7); same exact entry."
+    },
+    {
+      "model": "qwen-image-2-0-pro-2026-06-22",
+      "bench": "lmarena-image-edit",
+      "score": 1303.2,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'qwen-image-2.0-pro-2026-06-22'; 56,723 votes; published 95% interval 1298.5–1307.8; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1303.4); same exact entry."
+    },
+    {
+      "model": "p-image",
+      "bench": "lmarena-image",
+      "score": 1033.2,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-07",
+      "note": "text_to_image, category overall, split latest; exact entry 'p-image'; 109,762 votes; published 95% interval 1029.8–1036.7; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1033.1); same exact entry."
+    },
+    {
+      "model": "ideogram-4-5",
+      "bench": "lmarena-image-edit",
+      "score": 1347.4,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-06",
+      "note": "image_edit, category overall, split latest; exact entry 'ideogram-4.5'; 19,318 votes; published 95% interval 1341.9–1352.8; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit). REFRESH: replaces the existing row citing revision 46919c46 (score 1351.4); same exact entry."
+    }
+  ],
+  "owner_decisions": [
+    "2026-10-09: PAIBench-G T2V/I2V rows dropped; the Cosmos HUE human evaluation of the same generated videos is kept (one test per task, human-verified)."
+  ]
+}

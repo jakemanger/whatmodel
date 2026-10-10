@@ -41887,5 +41887,421 @@
         "reported_label": "qwen3-max-2026-01-23"
       }
     ]
+  },
+  {
+    "id": "nano-banana-2-1",
+    "name": "Nano Banana 2.1",
+    "provider": "Google",
+    "category": "image",
+    "released": "2026-10",
+    "released_source": "https://ai.google.dev/gemini-api/docs/changelog",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1",
+      "provider": "Google",
+      "price": 0.0336,
+      "unit": "image",
+      "price_source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "price_note": "USD per 1K (1024x1024) generated image on the Gemini Developer API Standard paid tier: image output is $30.00 per 1M tokens and Google states that 1K output images consume 1,120 tokens and are 'equivalent to $0.0336 per image' (2K $0.0504, 4K $0.113; Batch $0.0168 per 1K image). Input ($1.50 per 1M text/image/video) and text/thinking output ($7.50 per 1M) are additional; free tier 'Not available'. Product: Gemini Developer API. API model: gemini-nano-banana-2.1. Settings: tier=Standard paid, resolution=1K, batch=no, n=1. Price basis: provider-published per-image equivalent of the image-output rate. Currency: USD. Google Gemini API official pricing page (page footer 'Last updated 2026-10-07 UTC'), observed 2026-10-09."
+    },
+    "local": null,
+    "identity_note": "Google's Gemini Nano Banana 2.1, API model gemini-nano-banana-2.1, released generally available on the Gemini API on 6 Oct 2026 as 'An update to Nano Banana 2 (gemini-3.1-flash-image)'; the same release note deprecates gemini-3.1-flash-image. The Arena entry 'gemini-nano-banana-2.1' (organization google, licence column Proprietary) is the exact API model id; first listed in image_edit on 2026-10-06 and in text_to_image on 2026-10-06/07. Distinct from nano-banana-2 (gemini-3.1-flash-image) and nano-banana-2-lite.",
+    "identity_evidence": [
+      {
+        "source": "https://ai.google.dev/gemini-api/docs/changelog",
+        "reported_label": "October 6, 2026 - Gemini Nano Banana 2.1 generally available (GA): Released Gemini Nano Banana 2.1 ( gemini-nano-banana-2.1 ) ... An update to Nano Banana 2 ( gemini-3.1-flash-image )",
+        "note": "observed 2026-10-09"
+      },
+      {
+        "source": "https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1",
+        "reported_label": "Gemini Nano Banana 2.1; model code gemini-nano-banana-2.1; 1K/2K/4K output",
+        "note": "observed 2026-10-09"
+      },
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+        "reported_label": "gemini-nano-banana-2.1",
+        "organization": "google",
+        "arena_license_column": "Proprietary"
+      },
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+        "reported_label": "gemini-nano-banana-2.1",
+        "organization": "google",
+        "arena_license_column": "Proprietary"
+      }
+    ]
+  },
+  {
+    "id": "chatgpt-image-latest",
+    "name": "ChatGPT Image Latest (chatgpt-image-latest)",
+    "provider": "OpenAI",
+    "category": "image",
+    "released": "2025-12",
+    "released_source": "https://developers.openai.com/api/docs/changelog",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://developers.openai.com/api/docs/models/chatgpt-image-latest",
+      "provider": "OpenAI",
+      "price": 0.034,
+      "unit": "image",
+      "price_source": "https://developers.openai.com/api/docs/models/chatgpt-image-latest",
+      "price_note": "USD for one generated 1024x1024 medium-quality image on the OpenAI API: the model page's Image generation tables list 1024x1024 at Low $0.009, Medium $0.034, High $0.133 per image (1024x1536/1536x1024: $0.013 / $0.05 / $0.2). Text input ($5 per 1M) and image input ($8 per 1M) tokens are additional. Product: OpenAI Image API (v1/images/generations and v1/images/edits; Batch supported). API model: chatgpt-image-latest (only alias listed; no dated snapshot). Settings: quality=medium, 1024x1024, n=1. Price basis: published per-image list rate. Currency: USD. OpenAI official model page, observed 2026-10-09."
+    },
+    "local": null,
+    "identity_note": "OpenAI API model chatgpt-image-latest, released on 16 Dec 2025 alongside gpt-image-1.5 (OpenAI API changelog: 'Released gpt-image-1.5 and chatgpt-image-latest'). Its model page now reads 'Previous image model used in ChatGPT ... This points to the Image snapshot previously used in ChatGPT' and lists the single alias chatgpt-image-latest. Arena image_edit entry 'chatgpt-image-latest-high-fidelity (20251216)' (openai, Proprietary; listed since 2026-01-26) carries that release date and the high-fidelity edit setting. Kept separate from gpt-image-1-5: OpenAI lists them as separate models and Arena rates them as separate entries (1388.6 vs 1369.7 for 'gpt-image-1.5-high-fidelity'). Caveat: OpenAI publishes no dated snapshot for the alias. No text_to_image Arena entry.",
+    "identity_evidence": [
+      {
+        "source": "https://developers.openai.com/api/docs/changelog",
+        "reported_label": "Dec 16 [2025]: Released gpt-image-1.5 and chatgpt-image-latest, our latest and most advanced models for image generation.",
+        "note": "observed 2026-10-09"
+      },
+      {
+        "source": "https://developers.openai.com/api/docs/models/chatgpt-image-latest",
+        "reported_label": "chatgpt-image-latest - Previous image model used in ChatGPT. Model ID: chatgpt-image-latest",
+        "note": "observed 2026-10-09"
+      },
+      {
+        "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+        "reported_label": "chatgpt-image-latest-high-fidelity (20251216)",
+        "organization": "openai",
+        "arena_license_column": "Proprietary"
+      }
+    ]
+  },
+  {
+    "id": "omnigen-v1",
+    "name": "OmniGen (v1)",
+    "provider": "BAAI",
+    "category": "image",
+    "released": "2024-10",
+    "released_source": "https://huggingface.co/Shitao/OmniGen-v1/blob/58e249c7c7634423c0ba41c34a774af79aa87889/README.md",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/Shitao/OmniGen-v1/blob/58e249c7c7634423c0ba41c34a774af79aa87889/README.md",
+    "params_b": 3.88,
+    "params_b_source": "https://huggingface.co/api/models/Shitao/OmniGen-v1?expand[]=safetensors",
+    "params_note": "HF safetensors metadata for Shitao/OmniGen-v1@58e249c: 3,875,318,800 parameters (F32) in model.safetensors, the single transformer that includes the LLM backbone; equals the BF16 transformer of the official diffusers conversion Shitao/OmniGen-v1-diffusers@016e2f6 (7.75 GB). VAE (vae/diffusion_pytorch_model.safetensors, 0.33 GB) excluded. Observed 2026-10-09.",
+    "model_repo": "https://huggingface.co/Shitao/OmniGen-v1",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "official OmniGen package, default settings",
+          "gb_estimated": true,
+          "gb": 9,
+          "cmd": "git clone https://github.com/staoxiao/OmniGen.git && cd OmniGen && pip install -e . && python -c \"from OmniGen import OmniGenPipeline; pipe = OmniGenPipeline.from_pretrained('Shitao/OmniGen-v1'); pipe(prompt='A curly-haired man in a red shirt is drinking tea.', height=1024, width=1024, guidance_scale=2.5, seed=0)[0].save('example_t2i.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/Shitao/OmniGen-v1/blob/58e249c7c7634423c0ba41c34a774af79aa87889/README.md",
+          "gb_source": "https://github.com/VectorSpaceLab/OmniGen/blob/d4752019ae16741dc3801fd4989432aad4c81a4f/docs/inference.md#requiremented-resources",
+          "note": "Install and 'Text to Image' example from the pinned model card ('Using OmniGen'), joined into one line (the card's images = pipe(...); images[0].save(...) written inline). gb: docs/inference.md 'Requiremented Resources', A800 table, 'Only Text' at max_input_image_size=1024, height=1024, width=1024 with the default settings (use_kv_cache=True, offload_kv_cache=True, separate_cfg_infer=True): '9G, 31s'; input images raise it to 12-13G; the card suggests offload_model=True if out of memory. Weights: model.safetensors 15.5 GB (F32) + VAE 0.33 GB. github.com/staoxiao/OmniGen is the card's clone URL (the project now lives at github.com/VectorSpaceLab/OmniGen). Command not executed."
+        }
+      ]
+    },
+    "identity_note": "OmniGen v1 (Xiao et al., 'OmniGen: Unified Image Generation', BAAI / VectorSpaceLab), released 22 Oct 2024 as Shitao/OmniGen-v1 (MIT); the only OmniGen 1 checkpoint (BAAI/OmniGen-v1 is a later mirror with the same parameter count). Reported as 'OmniGen [98]' (citing Xiao et al. 2025) in BAAI's own OmniGen2 report Table 4 and as 'OmniGen' (date column 24.09.11, repository github.com/VectorSpaceLab/OmniGen) in EdiVal Table 3. Distinct from omnigen2.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/Shitao/OmniGen-v1/blob/58e249c7c7634423c0ba41c34a774af79aa87889/README.md",
+        "reported_label": "2024-10-22: We release the first version of OmniGen. Model Weight: Shitao/OmniGen-v1"
+      },
+      {
+        "source": "https://arxiv.org/html/2506.18871v4",
+        "reported_label": "OmniGen [98] (Xiao et al. 2025, 'Omnigen: unified image generation'), Table 4"
+      },
+      {
+        "source": "https://arxiv.org/html/2509.13399v3#S3.T3",
+        "reported_label": "OmniGen (date column 24.09.11; Appendix M.5: 'OmniGen: repository at https://github.com/VectorSpaceLab/OmniGen')"
+      }
+    ]
+  },
+  {
+    "id": "uno",
+    "name": "UNO",
+    "provider": "ByteDance",
+    "category": "image",
+    "released": "2025-04",
+    "released_source": "https://huggingface.co/bytedance-research/UNO/blob/cd4a5a8896243db22aaf4a2d3d2a9511c437fb12/README.md",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "license_source": "https://huggingface.co/bytedance-research/UNO/blob/cd4a5a8896243db22aaf4a2d3d2a9511c437fb12/README.md",
+    "model_repo": "https://huggingface.co/bytedance-research/UNO",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp8 FLUX.1-dev base + UNO LoRA, CPU offload",
+          "gb_estimated": true,
+          "gb": 16,
+          "cmd": "git clone https://github.com/bytedance/UNO.git && cd UNO && pip install -e . && python inference.py --prompt \"A clock on the beach is under a red sun umbrella\" --image_paths \"assets/clock.png\" --width 704 --height 704 --offload --model_type flux-dev-fp8",
+          "platform": "nvidia",
+          "source": "https://github.com/bytedance/UNO/blob/a563432dcfb4caf98df4368facb8102bf97d376c/README.md",
+          "gb_source": "https://github.com/bytedance/UNO/blob/a563432dcfb4caf98df4368facb8102bf97d376c/README.md",
+          "note": "README Quick Start install ('pip install -e .  # for who wanna to run the demo/inference only') and its first Inference example, with the low-memory flags: the README says 'For low vmemory usage, please pass the --offload and --name flux-dev-fp8 args. The peak memory usage will be 16GB' (for app.py); inference.py at the pinned commit takes the same switches as --offload and --model_type flux-dev-fp8 (InferenceArgs: offload: bool, model_type: Literal['flux-dev', 'flux-dev-fp8', 'flux-schnell']). gb is that README peak figure, not the estimation rule. Checkpoints (FLUX.1-dev, xflux T5 and CLIP encoders, UNO LoRA dit_lora.safetensors 1.91 GB) download on first run, 37 GB on disk per the README; FLUX.1-dev is a gated repo that needs a Hugging Face login with its licence accepted. Subject-driven generation: needs a reference image (assets/clock.png ships with the repo). Command not executed."
+        }
+      ]
+    },
+    "identity_note": "UNO (Wu et al., 'Less-to-More Generalization: Unlocking More Controllability by In-Context Generation', arXiv 2504.02160; ByteDance Intelligent Creation Team), a subject-driven multi-reference generator trained from FLUX.1-dev and released in April 2025 as a single LoRA checkpoint (bytedance-research/UNO, dit_lora.safetensors). It is the only UNO release; OmniGen2 report Table 4 cites it as 'UNO [97]' and ImagenWorld Table 2 as 'UNO (Wu et al., 2025c)'. Parameter count not stated by the makers (LoRA on the 12B FLUX.1-dev transformer), so params_b is left out. Licence: the card's front matter says apache-2.0, but its text says 'Our code is released under the Apache 2.0 License, while our models are under the CC BY-NC 4.0 License. Any models related to FLUX.1-dev base model must adhere to the original licensing terms.' Recorded as the stricter weights licence (cc-by-nc-4.0); the base model FLUX.1-dev is under the FLUX.1 [dev] non-commercial licence.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/bytedance-research/UNO/blob/cd4a5a8896243db22aaf4a2d3d2a9511c437fb12/README.md",
+        "reported_label": "[04/2025] The training code, inference code, and model of UNO are released; base_model black-forest-labs/FLUX.1-dev"
+      },
+      {
+        "source": "https://arxiv.org/html/2506.18871v4",
+        "reported_label": "UNO [97] (S. Wu et al. 2025, Less-to-more generalization, arXiv:2504.02160), Table 4"
+      },
+      {
+        "source": "https://arxiv.org/html/2603.27862v1#S4.T2",
+        "reported_label": "UNO (Wu et al., 2025c), AR + Diffusion; TIG, SRIG, MRIG"
+      }
+    ]
+  },
+  {
+    "id": "step1x-edit-v1-0",
+    "name": "Step1X-Edit v1.0",
+    "provider": "StepFun",
+    "category": "image",
+    "released": "2025-04",
+    "released_source": "https://github.com/stepfun-ai/Step1X-Edit/blob/4cca05dfcd6c32dc810d0b4db84c2bf0682a5aeb/README.md",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/stepfun-ai/Step1X-Edit/blob/752c0bc28a43f56249f588432a5964f1878c01ff/README.md",
+    "params_b": 12.43,
+    "params_b_source": "https://huggingface.co/stepfun-ai/Step1X-Edit/blob/752c0bc28a43f56249f588432a5964f1878c01ff/step1x-edit-i1258.safetensors",
+    "params_note": "Diffusion transformer only: OUR COUNT from the safetensors header of step1x-edit-i1258.safetensors (the v1.0 checkpoint; inference.py maps --version v1.0 to this file) at the pinned revision: 12,427,800,385 BF16. The Qwen2.5-VL-7B-Instruct encoder and vae.safetensors are not included. Observed 2026-10-09.",
+    "model_repo": "https://huggingface.co/stepfun-ai/Step1X-Edit",
+    "api": null,
+    "local": null,
+    "identity_note": "StepFun's original Step1X-Edit, released 25 Apr 2025 (GitHub README news: 'We release the inference code and model weights of Step1X-Edit'); checkpoint step1x-edit-i1258.safetensors in stepfun-ai/Step1X-Edit, which since 9 Jul 2025 also holds the v1.1 file step1x-edit-v1p1-official.safetensors (catalogued separately as step1x-edit-v1-1). StepFun's own README table labels it 'Step1X-Edit (v1.0)'; EdiVal Table 3 lists 'Step1X-Edit' with release-date column 25.04.25 and weights 'https://huggingface.co/stepfun-ai/Step1X-Edit' (Appendix M.5), and the EdiVal ledger scope already identifies that row as the v1.0 repo. No local variant: the official route (inference.py --version v1.0) needs flash-attn built for the local CUDA/torch and a manually placed Qwen2.5-VL-7B-Instruct folder, and the README gives no single copy-paste command; peak memory per the README A2 table is 49.8 GB at 1024 (18 GB with --quantized --offload).",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/stepfun-ai/Step1X-Edit/blob/4cca05dfcd6c32dc810d0b4db84c2bf0682a5aeb/README.md",
+        "reported_label": "Apr 25, 2025: We release the inference code and model weights of Step1X-Edit; table row 'Step1X-Edit (v1.0)'"
+      },
+      {
+        "source": "https://arxiv.org/html/2509.13399v3#S3.T3",
+        "reported_label": "Step1X-Edit (date column 25.04.25; Appendix M.5 weights https://huggingface.co/stepfun-ai/Step1X-Edit)"
+      },
+      {
+        "source": "https://github.com/stepfun-ai/Step1X-Edit/blob/4cca05dfcd6c32dc810d0b4db84c2bf0682a5aeb/inference.py",
+        "reported_label": "--version choices ['v1.0', 'v1.1']; v1.0 -> step1x-edit-i1258.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "cosmos3-super",
+    "name": "Cosmos3-Super",
+    "provider": "NVIDIA",
+    "category": "video",
+    "released": "2026-05",
+    "released_source": "https://huggingface.co/nvidia/Cosmos3-Super/blob/f543c56225b2e04d0ad141e29655be3a45d9c455/README.md",
+    "open_weights": true,
+    "license": "openmdw-1.1",
+    "license_source": "https://huggingface.co/nvidia/Cosmos3-Super/blob/f543c56225b2e04d0ad141e29655be3a45d9c455/README.md",
+    "params_b": 64,
+    "params_b_source": "https://huggingface.co/nvidia/Cosmos3-Super/blob/f543c56225b2e04d0ad141e29655be3a45d9c455/README.md",
+    "params_note": "Whole Mixture-of-Transformers model (autoregressive reasoner tower + diffusion generator tower) trainable parameters, as stated by NVIDIA ('Cosmos3-Super: 64B'). HF safetensors header total 64,615,003,632.",
+    "model_repo": "https://huggingface.co/nvidia/Cosmos3-Super",
+    "identity_note": "The mid-trained Cosmos 3 Super omnimodel checkpoint (nvidia/Cosmos3-Super, pinned f543c56), catalogued as a video model like cosmos3-nano. The Cosmos 3 report (arXiv 2606.02800v4) lists 'Cosmos3-Super huggingface.co/nvidia/Cosmos3-Super' among its open-weight checkpoints and says the post-trained Cosmos3-Super-Text2Image and Cosmos3-Super-Image2Video were produced from this mid-trained checkpoint; Table 1 stars (∗) only post-trained variants, and the Text2Video 80.0 / Image2Video 82.8 cells for Cosmos3-Super are unstarred, so Tables 12 and 14 rows 'Cosmos3-Super' are this checkpoint, not the separate Cosmos3-Super-Image2Video repo (not proposed: no scored rows). Repo last modified 2026-09-16; weights may have been refreshed after the v4 report. Distinct from the catalogued cosmos3-super-text2image.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2606.02800v4#S6.T12",
+        "reported_label": "Cosmos3-Super"
+      },
+      {
+        "source": "https://arxiv.org/html/2606.02800v4#S1.T1",
+        "reported_label": "Cosmos3-Super (Text2Video 80.0, Image2Video 82.8, unstarred = not a post-trained variant)"
+      },
+      {
+        "source": "https://huggingface.co/nvidia/Cosmos3-Super/blob/f543c56225b2e04d0ad141e29655be3a45d9c455/README.md",
+        "reported_label": "Cosmos3-Super (64B), Hugging Face release 05/31/2026"
+      }
+    ],
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 159.7,
+          "gb_estimated": true,
+          "cmd": "uvx --from huggingface_hub hf download nvidia/Cosmos3-Super assets/ --local-dir Cosmos3-Super && cd Cosmos3-Super && uv run --python 3.13 --with git+https://github.com/huggingface/diffusers --with accelerate --with av --with cosmos_guardrail --with huggingface_hub --with imageio --with imageio-ffmpeg --with torch --with torchvision --with transformers python -c \"import json, torch; from diffusers import Cosmos3OmniPipeline; from diffusers.schedulers.scheduling_unipc_multistep import UniPCMultistepScheduler; from diffusers.utils import export_to_video; p=Cosmos3OmniPipeline.from_pretrained('nvidia/Cosmos3-Super', torch_dtype=torch.bfloat16, device_map='cuda', enable_safety_checker=True); p.scheduler=UniPCMultistepScheduler.from_config(p.scheduler.config, flow_shift=10.0); r=p(prompt=json.dumps(json.load(open('assets/example_t2v_prompt.json'))), negative_prompt=json.dumps(json.load(open('assets/negative_prompt.json'))), num_frames=189, height=720, width=1280, num_inference_steps=35, guidance_scale=6.0, generator=torch.Generator(device='cuda').manual_seed(123)); export_to_video(r.video, 'cosmos3_super_t2v.mp4', fps=24)\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/nvidia/Cosmos3-Super/blob/f543c56225b2e04d0ad141e29655be3a45d9c455/README.md",
+          "gb_source": "https://huggingface.co/nvidia/Cosmos3-Super/tree/f543c56225b2e04d0ad141e29655be3a45d9c455",
+          "note": "Diffusers text-to-video example from the model card at the pinned commit (Python 3.13 and the listed packages, diffusers from source; the card's assets/ download for the JSON-upsampled prompt; 1280x720, 189 frames, 35 steps, guidance 6.0, written to the working directory instead of /tmp), same shape as the catalogued cosmos3-nano command. Files: transformer 128.04 GB, sound_tokenizer 1.99 GB, vae 1.41 GB, vision_encoder 1.19 GB (nvidia/Cosmos3-Super@f543c56); from_pretrained loads every component in model_index.json. gb = 1.2 × 132.63 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. The card lists Linux on Ampere, Hopper or Blackwell, says only BF16 is tested, and recommends multi-GPU vLLM-Omni serving (8xH200/H100/A100). Command not executed."
+        }
+      ]
+    },
+    "part": "A"
+  },
+  {
+    "id": "kandinsky-6-0-pro",
+    "name": "Kandinsky 6.0 Video Pro",
+    "provider": "Sber",
+    "category": "video",
+    "released": "2026-10",
+    "released_source": "https://github.com/kandinskylab/kandinsky-6/blob/8195e726f95261d9dd8fcf6db4634844d1e9a2c4/README.md",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers/blob/5686616f04318cbec7b0a4978b4ff1697395de15/README.md",
+    "params_b": 29,
+    "params_b_source": "https://arxiv.org/html/2610.05608v1#S3",
+    "params_note": "29B in total as stated in the report (video stream 19B, audio stream 5B, cross-attention 5B); Qwen2.5-VL/CLIP text encoders, HunyuanVideo VAE and the MMAudio VAE/vocoder are separate components.",
+    "model_repo": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Pro-5s-Diffusers",
+    "identity_note": "Kandinsky 6.0 Video (Sber / Kandinsky Lab), open-sourced 2026-10-06 under MIT (GitHub kandinskylab/kandinsky-6 README news, @8195e72). The arXiv report (2610.05608v1) evaluates 'Kandinsky 6.0 Video Pro and Kandinsky 6.0 Video Lite after RL post-training'; the family table on the HF cards lists separate Pro / Pro-distill (10 steps) / Pro-pretrain and Lite / Lite-distill / Lite-pretrain repos, and the non-distilled, non-pretrain repo is described as 'the main ... checkpoint, the strongest quality setting' of its line, so it is mapped to the report's final (RL post-trained) model. Distilled and pretrain checkpoints are not catalogued (no scored rows). Pro repo kandinskylab/Kandinsky-6.0-Pro-5s-Diffusers pinned 295ca97 (gated: Hugging Face asks users to agree to share contact information; licence MIT in card metadata). Text-to-audio-video and image-to-audio-video, 5-second clips with 44 kHz audio.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2610.05608v1#S7.T11",
+        "reported_label": "Kandinsky 6.0 Video Pro"
+      },
+      {
+        "source": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers/blob/5686616f04318cbec7b0a4978b4ff1697395de15/README.md",
+        "reported_label": "family table: Pro | kandinskylab/Kandinsky-6.0-Pro-5s-Diffusers | generation"
+      }
+    ],
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16 + model CPU offload",
+          "gb": 108.5,
+          "gb_estimated": true,
+          "cmd": "uv run --with git+https://github.com/huggingface/diffusers --with torch --with transformers --with accelerate --with av python -c \"import torch; from diffusers import Kandinsky6TI2VAPipeline; from diffusers.utils import encode_video; p=Kandinsky6TI2VAPipeline.from_pretrained('kandinskylab/Kandinsky-6.0-Pro-5s-Diffusers', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); o=p(prompt='A red dragon wakes on a mound of gold coins in a sunlit cave and slowly unfolds its wings. Audio: deep rumbling breath, clinking coins.', height=480, width=864, num_frames=121, num_inference_steps=50, guidance_scale=5.0); encode_video(o.frames[0], fps=24, output_path='output.mp4', audio=o.audio[0][None], audio_sample_rate=p.audio_sample_rate)\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Pro-5s-Diffusers",
+          "gb_source": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Pro-5s-Diffusers/tree/295ca976810e318fb45c870ba4fc72c9a37fd548",
+          "note": "T2AV Diffusers usage from the Kandinsky 6.0 Pro card (Kandinsky6TI2VAPipeline, enable_model_cpu_offload, 480x864, 121 frames, 50 steps, guidance 5.0), with a short prompt; the same code is printed verbatim on the open Lite card (@5686616). The pipeline is only on diffusers main (not in v0.41.0), hence the git install. The Pro repo is gated (agree to share contact details); raw card not fetched, rendered page checked 2026-10-09. Files: transformer 69.74 GB, text_encoder (Qwen2.5-VL) 16.60 GB, audio_vae 1.71 GB, vae 0.99 GB, text_encoder_2 (CLIP) 0.49 GB, vocoder 0.49 GB (@295ca97). gb = 1.2 × 90.01 GB of weights loaded + 0.5 GB, the catalogue estimation rule, as for kandinsky-5-0-pro's offload route; not a measured peak. The report (Table 7) measured 72.8 GiB peak resident and 21.7-39.8 GiB with block offload on H100 with its own code path. Command not executed."
+        }
+      ]
+    },
+    "part": "A"
+  },
+  {
+    "id": "kandinsky-6-0-lite",
+    "name": "Kandinsky 6.0 Video Lite",
+    "provider": "Sber",
+    "category": "video",
+    "released": "2026-10",
+    "released_source": "https://github.com/kandinskylab/kandinsky-6/blob/8195e726f95261d9dd8fcf6db4634844d1e9a2c4/README.md",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers/blob/5686616f04318cbec7b0a4978b4ff1697395de15/README.md",
+    "params_b": 3,
+    "params_b_source": "https://arxiv.org/html/2610.05608v1#S3",
+    "params_note": "3B in total as stated in the report (video stream 2B, audio stream 0.6B, cross-attention 0.4B); text encoders, VAEs and vocoder are separate components.",
+    "model_repo": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers",
+    "identity_note": "Kandinsky 6.0 Video (Sber / Kandinsky Lab), open-sourced 2026-10-06 under MIT (GitHub kandinskylab/kandinsky-6 README news, @8195e72). The arXiv report (2610.05608v1) evaluates 'Kandinsky 6.0 Video Pro and Kandinsky 6.0 Video Lite after RL post-training'; the family table on the HF cards lists separate Pro / Pro-distill (10 steps) / Pro-pretrain and Lite / Lite-distill / Lite-pretrain repos, and the non-distilled, non-pretrain repo is described as 'the main ... checkpoint, the strongest quality setting' of its line, so it is mapped to the report's final (RL post-trained) model. Distilled and pretrain checkpoints are not catalogued (no scored rows). Lite repo kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers pinned 5686616 ('This repository contains Kandinsky 6.0 Lite: the 3B checkpoint of the Lite line').",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2610.05608v1#S7.T11",
+        "reported_label": "Kandinsky 6.0 Video Lite"
+      },
+      {
+        "source": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers/blob/5686616f04318cbec7b0a4978b4ff1697395de15/README.md",
+        "reported_label": "Kandinsky 6.0 Lite: the 3B checkpoint of the Lite line"
+      }
+    ],
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16 + model CPU offload",
+          "gb": 33.8,
+          "gb_estimated": true,
+          "cmd": "uv run --with git+https://github.com/huggingface/diffusers --with torch --with transformers --with accelerate --with av python -c \"import torch; from diffusers import Kandinsky6TI2VAPipeline; from diffusers.utils import encode_video; p=Kandinsky6TI2VAPipeline.from_pretrained('kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); o=p(prompt='A red dragon wakes on a mound of gold coins in a sunlit cave and slowly unfolds its wings. Audio: deep rumbling breath, clinking coins.', height=480, width=864, num_frames=121, num_inference_steps=50, guidance_scale=5.0); encode_video(o.frames[0], fps=24, output_path='output.mp4', audio=o.audio[0][None], audio_sample_rate=p.audio_sample_rate)\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers/blob/5686616f04318cbec7b0a4978b4ff1697395de15/README.md",
+          "gb_source": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers/tree/5686616f04318cbec7b0a4978b4ff1697395de15",
+          "note": "'Text-to-audio-video (T2AV)' Diffusers usage from the card at the pinned commit (enable_model_cpu_offload, 480x864, 121 frames, 50 steps, guidance 5.0, encode_video with the generated audio), with a shorter prompt. Kandinsky6TI2VAPipeline is only on diffusers main (not in v0.41.0), hence the git install. Files: transformer 7.48 GB, text_encoder (Qwen2.5-VL) 16.60 GB, audio_vae 1.71 GB, vae 0.99 GB, text_encoder_2 (CLIP) 0.49 GB, vocoder 0.49 GB (@5686616). gb = 1.2 × 27.75 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. The report (Table 7) measured 43.5-44.8 GiB peak resident and 21.7-39.8 GiB with block offload on H100 with its own code path; its 16 GB preset (Table 9) uses an NF4 text encoder. Command not executed."
+        }
+      ]
+    },
+    "part": "A"
+  },
+  {
+    "id": "wan-3-0-prime",
+    "name": "Wan 3.0 Prime",
+    "provider": "Alibaba",
+    "category": "video",
+    "released": "2026-08",
+    "released_source": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/video-generation",
+      "provider": "Alibaba Cloud Model Studio",
+      "price": 0.14,
+      "unit": "video-second",
+      "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "price_note": "USD per second of video, 720P, International deployment (Singapore) list price. Product: Model Studio Wan 3.0 video generation. API model: wan3.0-video-prime (not wan3.0-video, $0.1/s at 720P). Settings: resolution=720P. Price basis: published list price; no discount shown for this model. Pricing rule on the page: input and output videos are both billed by duration (billable duration = input + output), so video-to-video costs more. 480P $0.068/s, 1080P $0.28/s; Global deployments list $0.127199/s at 720P. Free quota (30 s, Singapore only) excluded. Currency: USD. Alibaba Cloud Model Studio pricing page, observed 2026-10-09."
+    },
+    "local": null,
+    "identity_note": "Alibaba's speed-optimised Wan 3.0 SKU, a separate Model Studio model ID (wan3.0-video-prime) with its own price, released 2026-08-20. Alibaba: 'Wan3.0-Video-Prime is the high-speed version of the Wan3.0 video generation model, with capabilities aligned with the Wan3.0-Video standard version.' Kept separate from wan-3-0 (wan3.0-video) in the same way as other speed tiers (veo-3-1-fast). The WROP paper (arXiv:2609.28654v1) ran 'Wan 3.0 Prime' through the FAL API in reference-to-video mode.",
+    "identity_evidence": [
+      {
+        "source": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+        "reported_label": "wan3.0-video-prime",
+        "quote": "Video generation 2026-08-20 International wan3.0-video-prime Wan3.0-Video-Prime is the high-speed version of the Wan3.0 video generation model, with capabilities aligned with the Wan3.0-Video standard version.",
+        "observed": "2026-10-09"
+      },
+      {
+        "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+        "reported_label": "wan3.0-video-prime",
+        "quote": "wan3.0-video-prime International 480P $0.068/second 30 seconds 720P $0.14/second 1080P $0.28/second",
+        "observed": "2026-10-09"
+      },
+      {
+        "source": "https://arxiv.org/html/2609.28654v1#S5.T2",
+        "reported_label": "Wan 3.0 Prime (FAL API, reference-to-video)"
+      }
+    ],
+    "part": "B"
+  },
+  {
+    "id": "runway-aleph-2",
+    "name": "Runway Aleph 2.0",
+    "provider": "Runway",
+    "category": "video",
+    "released": "2026-05",
+    "released_source": "https://runway.com/news/introducing-aleph-2-and-edit-studio",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://docs.dev.runwayml.com/guides/models",
+      "provider": "Runway",
+      "price": 0.28,
+      "unit": "video-second",
+      "price_source": "https://docs.dev.runwayml.com/guides/pricing",
+      "price_note": "USD per second of output video on the Runway developer API. Product: Runway API video-to-video. API model: aleph2 (listed as 'Aleph 2.0'). Price basis: 28 credits per second × $0.01 per credit; 56-credit minimum per generation. Professional/HDR output formats (prores, png_sequence, 10-bit/HDR profiles) add 5–40 credits per second; sales tax excluded. Currency: USD. Runway API pricing documentation, observed 2026-10-09."
+    },
+    "local": null,
+    "identity_note": "Runway's second-generation in-context video editing model (announced 21 May 2026 with Edit Studio), served on the Runway API as aleph2. Distinct from runway-aleph (Gen-4 Aleph, 2025-07). The WROP paper ran 'Runway Aleph 2' through the Runway API as a frame-wise edit/transfer model.",
+    "identity_evidence": [
+      {
+        "source": "https://runway.com/news/introducing-aleph-2-and-edit-studio",
+        "reported_label": "Aleph 2.0",
+        "quote": "Aleph 2.0 ... Work with up to 30s of 1080p video",
+        "observed": "2026-10-09",
+        "date": "2026-05-21"
+      },
+      {
+        "source": "https://docs.dev.runwayml.com/guides/models",
+        "reported_label": "Aleph 2.0 / aleph2",
+        "quote": "Aleph 2.0 | aleph2 | Video",
+        "observed": "2026-10-09"
+      },
+      {
+        "source": "https://docs.dev.runwayml.com/guides/pricing",
+        "reported_label": "aleph2",
+        "quote": "aleph2 | 28 credits per second (56 credit minimum per generation)",
+        "observed": "2026-10-09"
+      },
+      {
+        "source": "https://arxiv.org/html/2609.28654v1#S5.T2",
+        "reported_label": "Runway Aleph 2 (Runway API, frame-wise edit/transfer)"
+      }
+    ],
+    "part": "B"
   }
 ]

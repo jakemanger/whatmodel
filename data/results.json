@@ -216270,5 +216270,355 @@
     "date": "2026-09-12",
     "note": "Cohere, 'North Small Translate: Advanced Cost-Effective Translation (Cohere CAT+)', arXiv:2609.13916v1 (12 Sep 2026), CC BY 4.0, Table 1, row 'Qwen 3.6 27B', column 'Terminology' = 89.2. §3: 'We evaluate all systems in an identical setup, in a clean zero-shot approach without any inference techniques' (the authors' own runs). Reasoning setting not stated. WMT25 Terminology Translation Task, proper-terminology condition, en→de/es/ru/zh-Hant and zh-Hant→en; corpus-level term success rate, micro-averaged over both tracks.",
     "source_id": "paper-2609.13916v1-north-small-translate"
+  },
+  {
+    "model": "nano-banana-2-1",
+    "bench": "lmarena-image",
+    "score": 1327.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-10-07",
+    "note": "text_to_image, category overall, split latest; exact entry 'gemini-nano-banana-2.1'; 5,310 votes; published 95% interval 1319.0–1336.5; leaderboard_publish_date 2026-10-07. Pinned to dataset revision 088c6079 (file identical to the 1361ea04 2026-10-07 update commit).",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "nano-banana-2-1",
+    "bench": "lmarena-image-edit",
+    "score": 1428.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-10-06",
+    "note": "image_edit, category overall, split latest; exact entry 'gemini-nano-banana-2.1'; 12,985 votes; published 95% interval 1422.3–1433.9; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit).",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "chatgpt-image-latest",
+    "bench": "lmarena-image-edit",
+    "score": 1388.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-10-06",
+    "note": "image_edit, category overall, split latest; exact entry 'chatgpt-image-latest-high-fidelity (20251216)'; 629,464 votes; published 95% interval 1385.9–1391.3; leaderboard_publish_date 2026-10-06. Pinned to dataset revision 088c6079 (file identical to the 9490abd9 2026-10-06 update commit).",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "omnigen-v1",
+    "bench": "omnicontext-average",
+    "score": 0.434,
+    "source": "https://arxiv.org/html/2506.18871v4",
+    "by": "lab",
+    "date": "2026-04-21",
+    "note": "OmniGen2 report (BAAI), arXiv:2506.18871v4, CC BY 4.0, Table 4 'Overall comparison of existing models on our proposed OmniContext benchmark', column 'Average', row 'OmniGen [98]' = 4.34 (cited as Xiao et al. 2025, 'Omnigen: unified image generation', i.e. OmniGen v1). OmniContext is introduced in this report (Section 5.4; GPT-4.1 judge), so every cell is the authors' own run; OmniGen v1 is BAAI's own earlier model, hence by lab. 0-10 scale divided by 10.",
+    "source_id": "report-2506.18871v4"
+  },
+  {
+    "model": "uno",
+    "bench": "omnicontext-average",
+    "score": 0.471,
+    "source": "https://arxiv.org/html/2506.18871v4",
+    "by": "independent",
+    "date": "2026-04-21",
+    "note": "OmniGen2 report (BAAI), arXiv:2506.18871v4, CC BY 4.0, Table 4 'Overall comparison of existing models on our proposed OmniContext benchmark', column 'Average', row 'UNO [97]' = 4.71 (cited as S. Wu et al. 2025, 'Less-to-more generalization', arXiv:2504.02160). OmniContext is introduced in this report (Section 5.4; GPT-4.1 judge), so every cell is the authors' own run. 0-10 scale divided by 10.",
+    "source_id": "report-2506.18871v4"
+  },
+  {
+    "model": "omnigen-v1",
+    "bench": "edival-o-turn3",
+    "score": 0.2991,
+    "source": "https://arxiv.org/html/2509.13399v3#S3.T3",
+    "by": "independent",
+    "date": "2026-03-17",
+    "note": "'OmniGen' (release date column 24.09.11; Appendix M.5: 'OmniGen: repository at https://github.com/VectorSpaceLab/OmniGen', default settings); Table 3 EdiVal-O at turn 3 29.91 -> /100 (overall rank 12).",
+    "source_id": "visual-edival"
+  },
+  {
+    "model": "step1x-edit-v1-0",
+    "bench": "edival-o-turn3",
+    "score": 0.3898,
+    "source": "https://arxiv.org/html/2509.13399v3#S3.T3",
+    "by": "independent",
+    "date": "2026-03-17",
+    "note": "'Step1X-Edit' (release date column 25.04.25 = the v1.0 release; Appendix M.5: 'Step1X-Edit: repository at https://github.com/stepfun-ai/Step1X-Edit ; weights at https://huggingface.co/stepfun-ai/Step1X-Edit', default settings); Table 3 EdiVal-O at turn 3 38.98 -> /100 (overall rank 10). The visual-edival ledger scope already identifies this row as the v1.0 repo.",
+    "source_id": "visual-edival"
+  },
+  {
+    "model": "uno",
+    "bench": "imagenworld-tig-human",
+    "score": 0.78,
+    "source": "https://arxiv.org/html/2603.27862v1#S5.T3",
+    "by": "independent",
+    "date": "2026-03-29",
+    "note": "UNO; Table 3 Text-guided Image Generation (TIG) human overall 0.78±0.18 (mean±sd across images); default configuration, seed 42 for open models (Section 4). Table 2 lists 'UNO (Wu et al., 2025c)' as covering TIG, SRIG and MRIG; only the TIG row is used (no benchmark id for the reference-image tasks).",
+    "source_id": "visual-imagenworld"
+  },
+  {
+    "model": "step1x-edit-v1-0",
+    "bench": "gedit-bench-en-overall",
+    "score": 0.644,
+    "source": "https://github.com/stepfun-ai/Step1X-Edit/blob/4cca05dfcd6c32dc810d0b4db84c2bf0682a5aeb/README.md",
+    "by": "lab",
+    "date": "2025-07-09",
+    "note": "StepFun's own evaluation in the Step1X-Edit GitHub README (Apache-2.0) at commit 4cca05d, news item 'Jul 09, 2025', table introduced as 'Quantitative evaluation on GEdit-Bench-EN (Full set). G_SC, G_PQ, and G_O refer to the metrics evaluated by GPT-4.1, while Q_SC, Q_PQ, and Q_O refer to the metrics evaluated by Qwen2.5-VL-72B'; row 'Step1X-Edit (v1.0)', column G_O = 6.44 -> /10. Intermediate results released by the authors (huggingface.co/datasets/Shiyu95/gedit_results).",
+    "source_id": "visual-step1x-edit-readme"
+  },
+  {
+    "model": "step1x-edit-v1-1",
+    "bench": "gedit-bench-en-overall",
+    "score": 0.697,
+    "source": "https://github.com/stepfun-ai/Step1X-Edit/blob/4cca05dfcd6c32dc810d0b4db84c2bf0682a5aeb/README.md",
+    "by": "lab",
+    "date": "2025-07-09",
+    "note": "Same table as the v1.0 row (Step1X-Edit GitHub README @4cca05d, 'Jul 09, 2025' news item, GEdit-Bench-EN Full set, GPT-4.1 judge); row 'Step1X-Edit (v1.1)', column G_O = 6.97 -> /10. Same-maker sibling cell added so the v1.0 row is not alone in its run. NOTE: the existing gedit-bench-overall-lang-unspecified row for step1x-edit-v1-1 (0.697, v1p2 card) is the same measurement; see held_for_owner.",
+    "source_id": "visual-step1x-edit-readme"
+  },
+  {
+    "model": "cosmos3-super",
+    "bench": "cosmos-hue-t2v-human",
+    "score": 0.893,
+    "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+    "by": "lab",
+    "date": "2026-06-23",
+    "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Cosmos3-Super', column 'Cosmos HUE / Text-to-Video' = 89.3 -> 89.3/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. NVIDIA's own model (mid-trained nvidia/Cosmos3-Super; Table 1 cell unstarred).",
+    "source_id": "visual-cosmos3-report"
+  },
+  {
+    "model": "cosmos3-super",
+    "bench": "cosmos-hue-i2v-human",
+    "score": 0.896,
+    "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+    "by": "lab",
+    "date": "2026-06-23",
+    "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Cosmos3-Super', column 'Cosmos HUE / Image-to-Video' = 89.6 -> 89.6/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. NVIDIA's own model (mid-trained nvidia/Cosmos3-Super; Table 1 cell unstarred).",
+    "source_id": "visual-cosmos3-report"
+  },
+  {
+    "model": "cosmos3-nano",
+    "bench": "cosmos-hue-t2v-human",
+    "score": 0.876,
+    "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+    "by": "lab",
+    "date": "2026-06-23",
+    "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Cosmos3-Nano', column 'Cosmos HUE / Text-to-Video' = 87.6 -> 87.6/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. NVIDIA's own model (nvidia/Cosmos3-Nano; Table 1 cell unstarred).",
+    "source_id": "visual-cosmos3-report"
+  },
+  {
+    "model": "cosmos3-nano",
+    "bench": "cosmos-hue-i2v-human",
+    "score": 0.886,
+    "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+    "by": "lab",
+    "date": "2026-06-23",
+    "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Cosmos3-Nano', column 'Cosmos HUE / Image-to-Video' = 88.6 -> 88.6/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. NVIDIA's own model (nvidia/Cosmos3-Nano; Table 1 cell unstarred).",
+    "source_id": "visual-cosmos3-report"
+  },
+  {
+    "model": "wan-2-2-a14b",
+    "bench": "cosmos-hue-t2v-human",
+    "score": 0.882,
+    "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+    "by": "independent",
+    "date": "2026-06-23",
+    "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Wan2.2-A14B', column 'Cosmos HUE / Text-to-Video' = 88.2 -> 88.2/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. T2V column mapped to the catalogued Wan2.2-T2V-A14B (the report names only 'Wan2.2-A14B').",
+    "source_id": "visual-cosmos3-report"
+  },
+  {
+    "model": "wan-2-2-i2v-a14b",
+    "bench": "cosmos-hue-i2v-human",
+    "score": 0.884,
+    "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+    "by": "independent",
+    "date": "2026-06-23",
+    "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Wan2.2-A14B', column 'Cosmos HUE / Image-to-Video' = 88.4 -> 88.4/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. I2V column mapped to Wan2.2-I2V-A14B, the A14B checkpoint that takes an image (the report names only 'Wan2.2-A14B'; the T2V-A14B checkpoint has no image input).",
+    "source_id": "visual-cosmos3-report"
+  },
+  {
+    "model": "hunyuanvideo-1-5",
+    "bench": "cosmos-hue-t2v-human",
+    "score": 0.865,
+    "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+    "by": "independent",
+    "date": "2026-06-23",
+    "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'HunyuanVideo-1.5', column 'Cosmos HUE / Text-to-Video' = 86.5 -> 86.5/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. T2V column mapped to the catalogued HunyuanVideo 1.5 (T2V).",
+    "source_id": "visual-cosmos3-report"
+  },
+  {
+    "model": "hunyuanvideo-1-5-i2v",
+    "bench": "cosmos-hue-i2v-human",
+    "score": 0.856,
+    "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+    "by": "independent",
+    "date": "2026-06-23",
+    "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'HunyuanVideo-1.5', column 'Cosmos HUE / Image-to-Video' = 85.6 -> 85.6/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. I2V column mapped to the catalogued HunyuanVideo 1.5 (I2V).",
+    "source_id": "visual-cosmos3-report"
+  },
+  {
+    "model": "wan-2-1-14b",
+    "bench": "cosmos-hue-t2v-human",
+    "score": 0.84,
+    "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+    "by": "independent",
+    "date": "2026-06-23",
+    "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Wan2.1-14B', column 'Cosmos HUE / Text-to-Video' = 84.0 -> 84.0/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. T2V column mapped to Wan2.1-T2V-14B; the I2V cell (Wan2.1-I2V-14B) is not mapped (checkpoint not catalogued).",
+    "source_id": "visual-cosmos3-report"
+  },
+  {
+    "model": "wan-2-2-5b",
+    "bench": "cosmos-hue-t2v-human",
+    "score": 0.808,
+    "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+    "by": "independent",
+    "date": "2026-06-23",
+    "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Wan2.2-5B', column 'Cosmos HUE / Text-to-Video' = 80.8 -> 80.8/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. Wan2.2-TI2V-5B handles both T2V and I2V.",
+    "source_id": "visual-cosmos3-report"
+  },
+  {
+    "model": "wan-2-2-5b",
+    "bench": "cosmos-hue-i2v-human",
+    "score": 0.804,
+    "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+    "by": "independent",
+    "date": "2026-06-23",
+    "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Wan2.2-5B', column 'Cosmos HUE / Image-to-Video' = 80.4 -> 80.4/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. Wan2.2-TI2V-5B handles both T2V and I2V.",
+    "source_id": "visual-cosmos3-report"
+  },
+  {
+    "model": "veo-3-1",
+    "bench": "cosmos-hue-t2v-human",
+    "score": 0.913,
+    "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+    "by": "independent",
+    "date": "2026-06-23",
+    "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Veo-3.1', column 'Cosmos HUE / Text-to-Video' = 91.3 -> 91.3/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. Closed-source; mapped to Veo 3.1 (standard, not Fast).",
+    "source_id": "visual-cosmos3-report"
+  },
+  {
+    "model": "veo-3-1",
+    "bench": "cosmos-hue-i2v-human",
+    "score": 0.897,
+    "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+    "by": "independent",
+    "date": "2026-06-23",
+    "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Veo-3.1', column 'Cosmos HUE / Image-to-Video' = 89.7 -> 89.7/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. Closed-source; mapped to Veo 3.1 (standard, not Fast).",
+    "source_id": "visual-cosmos3-report"
+  },
+  {
+    "model": "seedance-1-5-pro",
+    "bench": "cosmos-hue-t2v-human",
+    "score": 0.9,
+    "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+    "by": "independent",
+    "date": "2026-06-23",
+    "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Seedance-1.5-Pro', column 'Cosmos HUE / Text-to-Video' = 90.0 -> 90.0/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. Closed-source API model.",
+    "source_id": "visual-cosmos3-report"
+  },
+  {
+    "model": "seedance-1-5-pro",
+    "bench": "cosmos-hue-i2v-human",
+    "score": 0.876,
+    "source": "https://arxiv.org/html/2606.02800v4#S6.T14",
+    "by": "independent",
+    "date": "2026-06-23",
+    "note": "Cosmos 3 report (NVIDIA, arXiv 2606.02800v4, CC BY 4.0) Table 14, row 'Seedance-1.5-Pro', column 'Cosmos HUE / Image-to-Video' = 87.6 -> 87.6/100. Cosmos HUE human evaluation on the PAIBench-G prompt set: atomic Yes/No/Unclear question verification by human annotators; score = share of Yes answers. Closed-source API model.",
+    "source_id": "visual-cosmos3-report"
+  },
+  {
+    "model": "sora-2",
+    "bench": "vabench-t2av-visual-qa",
+    "score": 0.7994,
+    "source": "https://arxiv.org/html/2512.09299v2#S3.T1",
+    "by": "independent",
+    "date": "2026-04-06",
+    "note": "VABench v2 Table 1 (T2AV), row 'sora2', column 'Visual QA' = 0.7994. end-to-end AV model 'Sora2' via API. VABench paper (arXiv 2512.09299v2, CC BY 4.0) Sec. 4.1: 'Veo3-fast, Wan2.5 Preview, Sora2, Seedance-1.0-lite, Kling2.5 Turbo were accessed via APIs ... Wan2.2-TI2V ... deployed locally. Video outputs were set to 720P ... frame rate and duration following default settings.' Visual QA = mean over T2AV samples of the share of 3-7 prompt-derived visual detail questions the LLM judge marks as satisfied (Eq. 2).",
+    "source_id": "visual-vabench"
+  },
+  {
+    "model": "veo-3-fast",
+    "bench": "vabench-t2av-visual-qa",
+    "score": 0.8095,
+    "source": "https://arxiv.org/html/2512.09299v2#S3.T1",
+    "by": "independent",
+    "date": "2026-04-06",
+    "note": "VABench v2 Table 1 (T2AV), row 'veo3', column 'Visual QA' = 0.8095. end-to-end AV model; the paper's abbreviation list reads 'veo3 (Veo3-Fast)', so mapped to Veo 3 Fast. VABench paper (arXiv 2512.09299v2, CC BY 4.0) Sec. 4.1: 'Veo3-fast, Wan2.5 Preview, Sora2, Seedance-1.0-lite, Kling2.5 Turbo were accessed via APIs ... Wan2.2-TI2V ... deployed locally. Video outputs were set to 720P ... frame rate and duration following default settings.' Visual QA = mean over T2AV samples of the share of 3-7 prompt-derived visual detail questions the LLM judge marks as satisfied (Eq. 2).",
+    "source_id": "visual-vabench"
+  },
+  {
+    "model": "wan-2-5-preview",
+    "bench": "vabench-t2av-visual-qa",
+    "score": 0.7933,
+    "source": "https://arxiv.org/html/2512.09299v2#S3.T1",
+    "by": "independent",
+    "date": "2026-04-06",
+    "note": "VABench v2 Table 1 (T2AV), row 'wan2.5', column 'Visual QA' = 0.7933. end-to-end AV model; 'wan2.5 (Wan2.5 Preview)' via API. VABench paper (arXiv 2512.09299v2, CC BY 4.0) Sec. 4.1: 'Veo3-fast, Wan2.5 Preview, Sora2, Seedance-1.0-lite, Kling2.5 Turbo were accessed via APIs ... Wan2.2-TI2V ... deployed locally. Video outputs were set to 720P ... frame rate and duration following default settings.' Visual QA = mean over T2AV samples of the share of 3-7 prompt-derived visual detail questions the LLM judge marks as satisfied (Eq. 2).",
+    "source_id": "visual-vabench"
+  },
+  {
+    "model": "seedance-1-0-lite",
+    "bench": "vabench-t2av-visual-qa",
+    "score": 0.7265,
+    "source": "https://arxiv.org/html/2512.09299v2#S3.T1",
+    "by": "independent",
+    "date": "2026-04-06",
+    "note": "VABench v2 Table 1 (T2AV), row 'seed_think / seed_mm', column 'Visual QA' = 0.7265. decoupled V+A pipeline whose video generator is Seedance-1.0-Lite (API, 720P); the Visual QA cell spans both audio pairings (rowspan=2 in the HTML table), so it measures the video generator alone. VABench paper (arXiv 2512.09299v2, CC BY 4.0) Sec. 4.1: 'Veo3-fast, Wan2.5 Preview, Sora2, Seedance-1.0-lite, Kling2.5 Turbo were accessed via APIs ... Wan2.2-TI2V ... deployed locally. Video outputs were set to 720P ... frame rate and duration following default settings.' Visual QA = mean over T2AV samples of the share of 3-7 prompt-derived visual detail questions the LLM judge marks as satisfied (Eq. 2).",
+    "source_id": "visual-vabench"
+  },
+  {
+    "model": "wan-2-2-5b",
+    "bench": "vabench-t2av-visual-qa",
+    "score": 0.6363,
+    "source": "https://arxiv.org/html/2512.09299v2#S3.T1",
+    "by": "independent",
+    "date": "2026-04-06",
+    "note": "VABench v2 Table 1 (T2AV), row 'wan2.2_think / wan2.2_mm', column 'Visual QA' = 0.6363. decoupled V+A pipeline whose video generator is Wan2.2-TI2V (5B, run locally); the Visual QA cell spans both audio pairings (rowspan=2), so it measures the video generator alone. VABench paper (arXiv 2512.09299v2, CC BY 4.0) Sec. 4.1: 'Veo3-fast, Wan2.5 Preview, Sora2, Seedance-1.0-lite, Kling2.5 Turbo were accessed via APIs ... Wan2.2-TI2V ... deployed locally. Video outputs were set to 720P ... frame rate and duration following default settings.' Visual QA = mean over T2AV samples of the share of 3-7 prompt-derived visual detail questions the LLM judge marks as satisfied (Eq. 2).",
+    "source_id": "visual-vabench"
+  },
+  {
+    "model": "kandinsky-6-0-pro",
+    "bench": "vabench-t2av-visual-qa",
+    "score": 0.652,
+    "source": "https://arxiv.org/html/2610.05608v1#S7.T11",
+    "by": "lab",
+    "date": "2026-10-04",
+    "note": "Kandinsky 6.0 report Table 11 'VABench results', column 'Kandinsky 6.0 Video Pro', row 'visual_qa' = 0.652. The authors' own model. Kandinsky 6.0 report (arXiv 2610.05608v1, CC BY 4.0) Sec. 7.1: 'We evaluate the final Kandinsky 6.0 Video checkpoints on VABench ... Results are reported for Kandinsky 6.0 Video Pro and Kandinsky 6.0 Video Lite after RL post-training, both at 512 × 768 resolution, alongside LTX 2.5 in its two-stage Full HD configuration.' Table 11 columns are VABench's T2AV metric set (speech_qn, lipsync present), so this is the T2AV track.",
+    "source_id": "visual-kandinsky6-report"
+  },
+  {
+    "model": "kandinsky-6-0-lite",
+    "bench": "vabench-t2av-visual-qa",
+    "score": 0.691,
+    "source": "https://arxiv.org/html/2610.05608v1#S7.T11",
+    "by": "lab",
+    "date": "2026-10-04",
+    "note": "Kandinsky 6.0 report Table 11 'VABench results', column 'Kandinsky 6.0 Video Lite', row 'visual_qa' = 0.691. The authors' own model. Kandinsky 6.0 report (arXiv 2610.05608v1, CC BY 4.0) Sec. 7.1: 'We evaluate the final Kandinsky 6.0 Video checkpoints on VABench ... Results are reported for Kandinsky 6.0 Video Pro and Kandinsky 6.0 Video Lite after RL post-training, both at 512 × 768 resolution, alongside LTX 2.5 in its two-stage Full HD configuration.' Table 11 columns are VABench's T2AV metric set (speech_qn, lipsync present), so this is the T2AV track.",
+    "source_id": "visual-kandinsky6-report"
+  },
+  {
+    "model": "ltx-2-5",
+    "bench": "vabench-t2av-visual-qa",
+    "score": 0.617,
+    "source": "https://arxiv.org/html/2610.05608v1#S7.T11",
+    "by": "independent",
+    "date": "2026-10-04",
+    "note": "Kandinsky 6.0 report Table 11 'VABench results', column 'LTX 2.5', row 'visual_qa' = 0.617. Lightricks' open LTX-2.5 run by the Kandinsky authors in its two-stage Full HD configuration. Kandinsky 6.0 report (arXiv 2610.05608v1, CC BY 4.0) Sec. 7.1: 'We evaluate the final Kandinsky 6.0 Video checkpoints on VABench ... Results are reported for Kandinsky 6.0 Video Pro and Kandinsky 6.0 Video Lite after RL post-training, both at 512 × 768 resolution, alongside LTX 2.5 in its two-stage Full HD configuration.' Table 11 columns are VABench's T2AV metric set (speech_qn, lipsync present), so this is the T2AV track.",
+    "source_id": "visual-kandinsky6-report"
+  },
+  {
+    "model": "wan-3-0-prime",
+    "bench": "wrop-object-permanence-human-elo",
+    "score": 1723.6,
+    "source": "https://arxiv.org/html/2609.28654v1#S5.T2",
+    "by": "independent",
+    "date": "2026-09-23",
+    "note": "'Wan 3.0 Prime'; Table 2 human Bradley-Terry Elo 1723.6 (rank 1; 95% CI [1629.2, 1864.9], score rate 77.9%, 52 games); FAL API, reference-to-video (Table 1). Same table and run as the four WROP rows already imported; withheld in pass 'thin-visual' only because the tier was not catalogued.",
+    "source_id": "visual-wrop-object-permanence"
+  },
+  {
+    "model": "runway-aleph-2",
+    "bench": "wrop-object-permanence-human-elo",
+    "score": 1518.3,
+    "source": "https://arxiv.org/html/2609.28654v1#S5.T2",
+    "by": "independent",
+    "date": "2026-09-23",
+    "note": "'Runway Aleph 2'; Table 2 human Bradley-Terry Elo 1518.3 (rank 5; 95% CI [1425.1, 1621.6], score rate 52.9%, 51 games); Runway API, frame-wise edit/transfer (Table 1). The automatic-metric table marks it † n=297 (the Runway API refused some items). Same table and run as the four WROP rows already imported.",
+    "source_id": "visual-wrop-object-permanence"
   }
 ]

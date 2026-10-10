@@ -426,7 +426,9 @@
       "evalcrafter2023-temporal",
       "fetv-human-video-quality",
       "cosmos-3d-pose-success",
-      "cosmos-3d-sampson-error"
+      "cosmos-3d-sampson-error",
+      "vabench-t2av-visual-qa",
+      "cosmos-hue-t2v-human"
     ]
   },
   {
@@ -448,7 +450,8 @@
       "magicarena-i2v-elo-seaweed",
       "worldreasonbench-human-elo",
       "pai-bench-g-overall",
-      "pai-bench-g-human-elo"
+      "pai-bench-g-human-elo",
+      "cosmos-hue-i2v-human"
     ]
   },
   {

@@ -24,14 +24,16 @@
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/video_edit/latest-00000-of-00001.parquet",
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet",
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/text_to_video/latest-00000-of-00001.parquet",
-      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/image_to_video/latest-00000-of-00001.parquet"
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/image_to_video/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_to_image/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/image_edit/latest-00000-of-00001.parquet"
     ],
     "name": "LMArena leaderboard dataset",
     "kind": "dataset",
     "license": "CC BY 4.0",
     "terms_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
     "verdict": "allowed",
-    "checked": "2026-10-08",
+    "checked": "2026-10-09",
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "attribution": "Arena Leaderboard Dataset by LMArena (lmarena-ai), CC BY 4.0. Selected snapshots; ratings rounded to one decimal and transformed into relative scores. No endorsement. Refreshed exact model/task rows from revision 46919c467f7f93d9609b668a283bcd20d87c28bc, observed 2026-10-06. Earlier rows are retained only when their exact entry is absent from the new snapshot. Agent aggregate IPS values from the October 2 snapshot retained in their original signed units; one highest available effort per model, with no component-signal duplication. Latent fit uses a fixed 0.1 IPS unit conversion.",
     "icon": "arena.ai",
@@ -7080,11 +7082,11 @@
     "license": "CC-BY-4.0",
     "terms_url": "https://creativecommons.org/licenses/by/4.0/",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "license_url": "/licenses/visual-imagenworld.txt",
     "attribution": "Samin Mahdizadeh Sani, Max Ku, Nima Jamali, Matina Mahdizadeh Sani, Paria Khoshtab, Wei-Chieh Sun, Parnian Fazel, Zhi Rui Tam, Thomas Chong, Edisy Kin Wai Chan, Donald Wai Tong Tsang, Chiao-Wei Hsu, Ting Wai Lam, Ho Yin Sam Ng, Chiafeng Chu, Chak-Wing Mak, Keming Wu, Hiu Tung Wong, Yik Chun Ho, Chi Ruan, Zhuofeng Li, I-Sheng Fang, Shih-Ying Yeh, Ho Kei Cheng, Ping Nie, Wenhu Chen (University of Waterloo et al.). arXiv:2603.27862v1, CC BY 4.0. Extracted Table 3 human-annotated overall (TIG and TIE); model labels mapped only to the stated release. No values estimated or rerun. No endorsement; provided as-is.",
     "quote": "arXiv abstract page for 2603.27862v1 links the licence http://creativecommons.org/licenses/by/4.0/ (CC BY 4.0); HTML header reads 'License: CC BY 4.0 arXiv:2603.27862v1'.",
-    "scope": "Authors' own generation (paper/official default configurations, seed 42 for open models, closed models via API) and three-annotator human ratings; Table 3 O_Human for the TIG and TIE tasks only. InstructPix2Pix TIE row added 2026-09-29 (Table 2 cites Brooks et al. 2023; single public checkpoint timbrooks/instruct-pix2pix). Omitted: Gemini 2.0 Flash (exp vs preview-image-generation not stated), Step1X-Edit (version unstated), Janus Pro (size unstated), Infinity (2B vs 8B unstated), IC-Edit (LoRA variant unstated), UNO (subject-driven model, not added); reference-image tasks and VLM columns not imported.",
+    "scope": "Authors' own generation (paper/official default configurations, seed 42 for open models, closed models via API) and three-annotator human ratings; Table 3 O_Human for the TIG and TIE tasks only. InstructPix2Pix TIE row added 2026-09-29 (Table 2 cites Brooks et al. 2023; single public checkpoint timbrooks/instruct-pix2pix). Omitted: Gemini 2.0 Flash (exp vs preview-image-generation not stated), Step1X-Edit (version unstated), Janus Pro (size unstated), Infinity (2B vs 8B unstated), IC-Edit (LoRA variant unstated), UNO (subject-driven model, not added); reference-image tasks and VLM columns not imported. Extended 2026-10-09: Scope extension if accepted: Table 3 TIG row 'UNO' (-> new uno); remove 'UNO (subject-driven model, not added)' from the omitted list.",
     "icon": "arxiv.org"
   },
   {
@@ -7227,13 +7229,14 @@
       "cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf",
       "cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
       "developers.openai.com/api/docs/models/gpt-6.1-sol",
-      "developers.openai.com/api/docs/pricing"
+      "developers.openai.com/api/docs/pricing",
+      "developers.openai.com/api/docs/models/chatgpt-image-latest"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://developers.openai.com/api/docs/models/gpt-5.5-pro",
     "verdict": "allowed",
-    "checked": "2026-10-07",
+    "checked": "2026-10-09",
     "exact": true,
     "icon": "openai.com",
     "attribution": "OpenAI official pricing/docs, observed 2026-09-25 GPT-6.1 Sol facts observed 2026-10-06.",
@@ -8817,7 +8820,7 @@
     "checked": "2026-10-09",
     "icon": "arxiv.org",
     "attribution": "Chenyuan Wu et al. (BAAI). OmniGen2: Towards Instruction-Aligned Multimodal Generation. arXiv:2506.18871v4. CC BY 4.0. Source: https://arxiv.org/html/2506.18871v4. Changes: selected own-model numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement.",
-    "scope": " Extended 2026-10-09: Table 4 OmniContext Average for every catalogue model (OmniContext is introduced in this report, so all its cells are the authors' own GPT-4.1-judged runs)."
+    "scope": " Extended 2026-10-09: Table 4 OmniContext Average for every catalogue model (OmniContext is introduced in this report, so all its cells are the authors' own GPT-4.1-judged runs). Extended 2026-10-09: Scope unchanged in kind (Table 4 OmniContext Average for every catalogue model): adds rows 'OmniGen [98]' (-> omnigen-v1, by lab, BAAI's own earlier model) and 'UNO [97]' (-> uno)."
   },
   {
     "id": "report-2512.07584v1",
@@ -12497,10 +12500,10 @@
     "quote": "arXiv abs page https://arxiv.org/abs/2606.02800v4 (latest version v4, 23 Jun 2026) links http://creativecommons.org/licenses/by/4.0/; the v4 HTML header reads 'License: CC BY 4.0'.",
     "attribution": "NVIDIA. Cosmos 3: Omnimodal World Models for Physical AI, arXiv:2606.02800v4 (23 Jun 2026), CC BY 4.0. Extracted Table 11 UniGenBench 'All (1170)' scores, divided by 100. No values estimated or rerun. No endorsement.",
     "verdict": "allowed",
-    "checked": "2026-10-07",
+    "checked": "2026-10-09",
     "evidence_url": "https://arxiv.org/abs/2606.02800v4",
     "icon": "arxiv.org",
-    "scope": "NVIDIA's own evaluation (Cosmos rows lab-reported). Only Table 11 UniGenBench 'All' imported; Orig/Phys splits are components, CVTG and image-level metrics (Aesv2, HPSv3) not imported, and the video tables (PAIBench-G, RBench) and Artificial Analysis leaderboard mentions are not used. Withheld: Cosmos3-Super (omnimodel checkpoint, not in catalogue), Cosmos3-Nano (catalogued as a video model; its image row is not mapped)."
+    "scope": "NVIDIA's own evaluation (Cosmos rows lab-reported). Only Table 11 UniGenBench 'All' imported; Orig/Phys splits are components, CVTG and image-level metrics (Aesv2, HPSv3) not imported, and the video tables (PAIBench-G, RBench) and Artificial Analysis leaderboard mentions are not used. Withheld: Cosmos3-Super (omnimodel checkpoint, not in catalogue), Cosmos3-Nano (catalogued as a video model; its image row is not mapped). Extended 2026-10-09: Existing entry already matches arxiv.org/html/2606.02800v4; no new match needed."
   },
   {
     "action": "new",
@@ -12577,10 +12580,10 @@
     "quote": "arXiv abs page https://arxiv.org/abs/2509.13399v3 (latest version v3, 17 Mar 2026) links http://creativecommons.org/licenses/by/4.0/; the v3 HTML header reads 'License: CC BY 4.0 arXiv:2509.13399v3 [cs.CV] 17 Mar 2026'.",
     "attribution": "Tianyu Chen, Yasi Zhang et al. (EdiVal-Agent authors). EdiVal-Agent, arXiv:2509.13399v3 (17 Mar 2026), CC BY 4.0. Extracted Table 3 EdiVal-O at turn 3, divided by 100. No values estimated or rerun. No endorsement.",
     "verdict": "allowed",
-    "checked": "2026-10-07",
+    "checked": "2026-10-09",
     "evidence_url": "https://arxiv.org/abs/2509.13399v3",
     "icon": "arxiv.org",
-    "scope": "Authors' own multi-turn edits with default settings (Appendix M.5) and automatic scoring. Only Table 3 EdiVal-O at T3 imported (the ranking column). Withheld: Gemini 2.0 Flash (API model id not stated; experimental vs preview image generation unclear), Step1X-Edit (stepfun-ai/Step1X-Edit v1.0 repo, not in catalogue), OmniGen (v1), AnyEdit, UltraEdit, MagicBrush (not in catalogue)."
+    "scope": "Authors' own multi-turn edits with default settings (Appendix M.5) and automatic scoring. Only Table 3 EdiVal-O at T3 imported (the ranking column). Withheld: Gemini 2.0 Flash (API model id not stated; experimental vs preview image generation unclear), Step1X-Edit (stepfun-ai/Step1X-Edit v1.0 repo, not in catalogue), OmniGen (v1), AnyEdit, UltraEdit, MagicBrush (not in catalogue). Extended 2026-10-09: Scope extension if accepted: Table 3 EdiVal-O at T3 rows 'Step1X-Edit' (-> new step1x-edit-v1-0) and 'OmniGen' (-> new omnigen-v1) now map to catalogue models; remove them from the 'Withheld' list."
   },
   {
     "action": "new",
@@ -14247,5 +14250,62 @@
     "verdict": "allowed",
     "checked": "2026-10-09",
     "icon": "arxiv.org"
+  },
+  {
+    "id": "visual-step1x-edit-readme",
+    "name": "stepfun-ai/Step1X-Edit repository README results",
+    "kind": "first-party",
+    "match": [
+      "github.com/stepfun-ai/Step1X-Edit/blob/4cca05dfcd6c32dc810d0b4db84c2bf0682a5aeb/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/stepfun-ai/Step1X-Edit/blob/4cca05dfcd6c32dc810d0b4db84c2bf0682a5aeb/LICENSE",
+    "terms_url": "https://github.com/stepfun-ai/Step1X-Edit/blob/4cca05dfcd6c32dc810d0b4db84c2bf0682a5aeb/LICENSE",
+    "quote": "GitHub API reports the repository licence as Apache-2.0 (spdx_id Apache-2.0); README section '## LICENSE' at the pinned commit. Only StepFun's own-model GEdit-Bench-EN cells in the README news tables are used; the README states the judge ('G_SC, G_PQ, and G_O refer to the metrics evaluated by GPT-4.1') and the split ('GEdit-Bench-EN (Full set)').",
+    "attribution": "StepFun. stepfun-ai/Step1X-Edit README @4cca05d, Apache-2.0. Selected own-model GEdit-Bench-EN G_O cells transcribed and divided by 10. No values estimated or rerun. No endorsement.",
+    "scope": "Own-model rows 'Step1X-Edit (v1.0)' and 'Step1X-Edit (v1.1)' of the 'Jul 09, 2025' GEdit-Bench-EN (Full set) table, G_O column only. Not used: Qwen2.5-VL-72B (Q_*) columns, the KRIS-Bench rows (already recorded from card2-stepfun-ai-step1x-edit-v1p2), the image-only results in assets/eval_res_en.png.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "evidence_url": "https://api.github.com/repos/stepfun-ai/Step1X-Edit",
+    "icon": "github.com"
+  },
+  {
+    "id": "visual-vabench",
+    "name": "VABench: A Comprehensive Benchmark for Audio-Video Generation (arXiv:2512.09299v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2512.09299v2"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2512.09299v2",
+    "quote": "arXiv abs page https://arxiv.org/abs/2512.09299 (v1 10 Dec 2025, v2 6 Apr 2026) links http://creativecommons.org/licenses/by/4.0/.",
+    "attribution": "D. Hua, X. Wang, B. Zeng et al. VABench: A Comprehensive Benchmark for Audio-Video Generation, arXiv:2512.09299v2, CC BY 4.0. Extracted Table 1 (T2AV) 'Visual QA' cells for end-to-end AV models and the merged video-generator cells of V+A pipelines. No values estimated or rerun. No endorsement.",
+    "scope": "Benchmark authors' own runs of third-party models (Sec. 4.1 says which were accessed via APIs and which were deployed locally). Only Table 1 Visual QA used; other metrics, I2AV Table 2 and per-category Tables 5-6 not imported. Kling2.5 Turbo (720P = Standard mode) not mapped.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "arxiv.org",
+    "part": "A"
+  },
+  {
+    "id": "visual-kandinsky6-report",
+    "name": "Kandinsky 6.0 Video: Foundation Models for Synchronized Video and Audio Generation (arXiv:2610.05608v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2610.05608v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2610.05608v1",
+    "quote": "arXiv abs page https://arxiv.org/abs/2610.05608 (v1, 4 Oct 2026) links http://creativecommons.org/licenses/by/4.0/.",
+    "attribution": "Kandinsky Lab (Sber AI). Kandinsky 6.0 Video: Foundation Models for Synchronized Video and Audio Generation, arXiv:2610.05608v1, CC BY 4.0. Extracted Table 11 VABench 'visual_qa' row. No values estimated or rerun. No endorsement.",
+    "scope": "Authors' own VABench run of Kandinsky 6.0 Pro/Lite (lab) and of LTX 2.5 (independent: 'alongside LTX 2.5 in its two-stage Full HD configuration'). Side-by-side human results are bar charts only (not used). Memory/time tables not imported.",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "arxiv.org",
+    "part": "A"
   }
 ]
