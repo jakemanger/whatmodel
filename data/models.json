@@ -42303,5 +42303,402 @@
       }
     ],
     "part": "B"
+  },
+  {
+    "id": "qed-nano",
+    "name": "QED-Nano",
+    "provider": "LM Provers",
+    "category": "llm",
+    "released": "2026-02",
+    "released_source": "https://huggingface.co/api/models/lm-provers/QED-Nano",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/lm-provers/QED-Nano/blob/1016ddef8dd40552b97216ce34e3fece2fffa2bb/README.md",
+    "params_b": 4.02,
+    "active_b": 4.02,
+    "params_b_source": "https://huggingface.co/api/models/lm-provers/QED-Nano",
+    "params_note": "Hugging Face safetensors metadata at the pinned revision: BF16 4,022,468,096 parameters (Qwen3ForCausalLM, 36 layers); the card calls it a 4B model.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 8.04,
+          "cmd": "vllm serve lm-provers/QED-Nano",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/lm-provers/QED-Nano/tree/1016ddef8dd40552b97216ce34e3fece2fffa2bb",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/lm-provers/QED-Nano",
+    "identity_note": "Proposed so the three MathArena ArXivMath runs (Dec 2025, Jan 2026, Feb 2026; 18-24 catalogue models each) that include it count it. LM Provers' 4B proof-writing model, post-trained (SFT + RL with a reasoning cache, arXiv 2602.03773) from Qwen/Qwen3-4B-Thinking-2507; not the intermediate lm-provers/QED-Nano-SFT. MathArena config configs/models/other/qed-nano.yaml (eth-sri/matharena b89f2f0ad64c): model 'lm-provers/QED-Nano', huggingface_id lm-provers/QED-Nano, creator LM-Provers, parameters 4, date 2026-02-15. Repo created 2026-02-12 (HF API createdAt). The card documents 'vllm serve lm-provers/QED-Nano'; gb = the two BF16 safetensors shards at the pinned revision (4,967,215,360 + 3,077,766,632 bytes), weights only.",
+    "identity_sources": [
+      "https://huggingface.co/lm-provers/QED-Nano/blob/1016ddef8dd40552b97216ce34e3fece2fffa2bb/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet",
+        "reported_label": "QED-Nano (model_config other/qed-nano)"
+      },
+      {
+        "source": "https://github.com/eth-sri/matharena/blob/b89f2f0ad64c/configs/models/other/qed-nano.yaml",
+        "reported_label": "lm-provers/QED-Nano"
+      }
+    ]
+  },
+  {
+    "id": "grok-4-1-fast-non-reasoning",
+    "name": "Grok 4.1 Fast (Non-Reasoning)",
+    "provider": "SpaceXAI (xAI)",
+    "category": "llm",
+    "released": "2025-11",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "provider": "Microsoft Azure",
+      "price_in": 0.2,
+      "price_out": 0.5,
+      "price_source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/grok",
+      "price_note": "USD per 1M tokens, Azure AI Foundry Models pay-as-you-go (xAI Grok table), row 'Grok 4.1 Fast Global': input $0.20, output $0.50 (us-east; the amounts are in the page's price-data attributes). The row is not split by reasoning mode; Azure's Foundry models page lists grok-4.1-fast-non-reasoning and grok-4.1-fast-reasoning as separate deployable chat-completion models. Same price row as the catalogued grok-4-1-fast-reasoning. Microsoft Azure official pricing page, observed 2026-10-09."
+    },
+    "local": null,
+    "context_k": 128,
+    "context_source": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+    "context_note": "Azure's Foundry models page lists grok-4.1-fast-non-reasoning with input text, image (128,000 tokens) and output text (128,000 tokens), observed 2026-10-09.",
+    "identity_note": "xAI API model 'grok-4-1-fast-non-reasoning', the non-reasoning mode of Grok 4.1 Fast; a separate API model id from the catalogued grok-4-1-fast-reasoning (whose identity note already calls the non-reasoning variant distinct). Release month taken from the reasoning sibling (same Grok 4.1 Fast launch). Proposed so its BFCL V4 (2025-12-16) and Vectara hallucination-leaderboard rows can be recorded; both are multi-model runs.",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv",
+        "reported_label": "Grok-4-1-fast-non-reasoning (FC)"
+      },
+      {
+        "source": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+        "reported_label": "grok-4.1-fast-non-reasoning"
+      },
+      {
+        "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+        "reported_label": "xai-org/grok-4-1-fast-non-reasoning"
+      }
+    ]
+  },
+  {
+    "id": "gemini-2-0-flash-lite-001",
+    "name": "Gemini 2.0 Flash-Lite (001)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2025-02",
+    "released_source": "https://ai.google.dev/gemini-api/docs/deprecations",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only. Stable Gemini API version gemini-2.0-flash-lite-001; Gemini API deprecations page (observed 2026-10-09): release date February 25, 2025, shutdown date June 1, 2026 (so no current API). Distinct from the catalogued gemini-2-0-flash-lite-preview-02-05. Appears in several ledger sources' multi-model runs: BFCL v3 (2025-06-14, result folder gemini-2.0-flash-lite-001-FC), Galileo Agent Leaderboard v1, SpeakLeash CPTUB, EuroEval and Open Persian LLM Leaderboard.",
+    "identity_sources": [
+      "https://ai.google.dev/gemini-api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv",
+        "reported_label": "Gemini-2.0-Flash-Lite-001 (FC)"
+      },
+      {
+        "source": "https://ai.google.dev/gemini-api/docs/deprecations",
+        "reported_label": "gemini-2.0-flash-lite-001"
+      }
+    ]
+  },
+  {
+    "id": "bielik-11b-v2-3-instruct",
+    "name": "Bielik 11B v2.3 Instruct",
+    "provider": "SpeakLeash",
+    "category": "llm",
+    "released": "2024-08",
+    "released_source": "https://huggingface.co/speakleash/Bielik-11B-v2.3-Instruct",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/speakleash/Bielik-11B-v2.3-Instruct/blob/73f5f7fb9a79a4409d02740155a3868c1ff0d2bc/README.md",
+    "params_b": 11.17,
+    "active_b": 11.17,
+    "params_b_source": "https://huggingface.co/speakleash/Bielik-11B-v2.3-Instruct/tree/73f5f7fb9a79a4409d02740155a3868c1ff0d2bc",
+    "params_note": "11,168,796,672 parameters from the Hugging Face safetensors metadata (F16; dense, so active = total).",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 6.72,
+          "cmd": "llama-server -hf speakleash/Bielik-11B-v2.3-Instruct-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/speakleash/Bielik-11B-v2.3-Instruct-GGUF/tree/b6b2f467358d9eca16fddcc2f0fd506ea3e87858",
+          "note": "Official SpeakLeash GGUF. gb is the file size from the Hugging Face API listing of speakleash/Bielik-11B-v2.3-Instruct-GGUF@b6b2f46 (fetched 2026-10-09): Bielik-11B-v2.3-Instruct.Q4_K_M.gguf 6,724,050,496 bytes. The HF manifest for tag Q4_K_M resolves to that file.",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 11.87,
+          "cmd": "llama-server -hf speakleash/Bielik-11B-v2.3-Instruct-GGUF --hf-file Bielik-11B-v2.3-Instruct.Q8_0.gguf",
+          "source": "https://huggingface.co/speakleash/Bielik-11B-v2.3-Instruct-GGUF/tree/b6b2f467358d9eca16fddcc2f0fd506ea3e87858",
+          "note": "Official SpeakLeash GGUF, file Bielik-11B-v2.3-Instruct.Q8_0.gguf, 11,868,810,816 bytes (HF API listing @b6b2f46, fetched 2026-10-09). Named with --hf-file because the repo's Q8_0 tag resolves to the separate EF16-OF16.Q8_0 file.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/speakleash/Bielik-11B-v2.3-Instruct",
+    "identity_note": "Polish-focused 11B instruct model by SpeakLeash & ACK Cyfronet AGH (maker repo speakleash/Bielik-11B-v2.3-Instruct @73f5f7f, licence tag apache-2.0; repo created 2024-08-30). Appears in multi-model runs of several ledger sources: BFCL v3 (2025-06-14) and V4 (2025-12-16) as 'Bielik-11B-v2.3-Instruct (Prompt)', SpeakLeash Polish EQ-Bench and CPTUB, EuroEval. Not v2.0/v2.1/v2.2/v3.",
+    "identity_sources": [
+      "https://huggingface.co/speakleash/Bielik-11B-v2.3-Instruct/blob/73f5f7fb9a79a4409d02740155a3868c1ff0d2bc/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv",
+        "reported_label": "Bielik-11B-v2.3-Instruct (Prompt)"
+      },
+      {
+        "source": "https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv",
+        "reported_label": "Bielik-11B-v2.3-Instruct (Prompt)"
+      }
+    ]
+  },
+  {
+    "id": "minicpm3-4b",
+    "name": "MiniCPM3-4B",
+    "provider": "OpenBMB",
+    "category": "llm",
+    "released": "2024-09",
+    "released_source": "https://huggingface.co/openbmb/MiniCPM3-4B",
+    "open_weights": true,
+    "license": "minicpm-model-license",
+    "license_source": "https://huggingface.co/openbmb/MiniCPM3-4B/blob/d6b14ddaefdb11c624dd75c3c779549bc90b08cb/README.md",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 2.47,
+          "cmd": "llama-server -hf openbmb/MiniCPM3-4B-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/openbmb/MiniCPM3-4B-GGUF/tree/816dc79b35f92827e0d2d87aacea3567e49661a8",
+          "note": "Official OpenBMB GGUF. gb is the file size from the Hugging Face API listing of openbmb/MiniCPM3-4B-GGUF@816dc79 (fetched 2026-10-09): minicpm3-4b-q4_k_m.gguf 2,469,791,584 bytes; the HF manifest for tag Q4_K_M resolves to that file.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/openbmb/MiniCPM3-4B",
+    "identity_note": "Third-generation MiniCPM text model (maker repo openbmb/MiniCPM3-4B @d6b14dd, repo created 2024-09-03). Card front matter says apache-2.0 for the repository code, but 'The usage of MiniCPM3-4B model weights must strictly follow MiniCPM Model License.md' (free academic use; commercial use after registration), hence licence minicpm-model-license as for minicpm-v-2-6. Parameter count not stated by the maker in the card and no safetensors metadata, so params_b is left out. Appears in BFCL v3 (2025-06-14) and V4 (2025-12-16) as 'MiniCPM3-4B-FC (FC)' / 'MiniCPM3-4B (Prompt)', and in the LiveCodeBench website release 2024-12-26 (aa37a9f).",
+    "identity_sources": [
+      "https://huggingface.co/openbmb/MiniCPM3-4B/blob/d6b14ddaefdb11c624dd75c3c779549bc90b08cb/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv",
+        "reported_label": "MiniCPM3-4B-FC (FC)"
+      },
+      {
+        "source": "https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv",
+        "reported_label": "MiniCPM3-4B-FC (FC)"
+      }
+    ]
+  },
+  {
+    "id": "openthinker2-32b",
+    "name": "OpenThinker2 32B",
+    "provider": "Open Thoughts",
+    "category": "llm",
+    "released": "2025-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 32.76,
+    "active_b": 32.76,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 65.53,
+          "cmd": "vllm serve open-thoughts/OpenThinker2-32B",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/open-thoughts/OpenThinker2-32B/tree/0aefafe3ee27e073e14fb94a0563795fddf38c50",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/open-thoughts/OpenThinker2-32B",
+    "identity_note": "Maker repo open-thoughts/OpenThinker2-32B @0aefafe: licence tag apache-2.0; fine-tune of Qwen/Qwen2.5-32B-Instruct on OpenThoughts2-1M. 32,763,876,352 parameters (BF16) from the Hugging Face safetensors metadata; dense, so active = total. Download 65.53 GB = sum of the 14 safetensors shards at the pinned revision. Released 2025-04: month the maker's repo was created (createdAt 2025-04-03). Distinct from OpenThinker-32B (v1, not catalogued) and OpenThinker3-7B. Ollama's openthinker library has '32b-v2-*' tags, but its readme describes only the v1 model, so no Ollama command is proposed. Why proposed: Lands in both Arena-Hard v2 README runs (21 catalogue models each) and, with the proposed card3 entry, in 4 runs of its own card table with DeepSeek-R1-Distill-Qwen-32B and s1.1-32B: 6 results.",
+    "identity_sources": [
+      "https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md",
+        "reported_label": "OpenThinker2-32B"
+      },
+      {
+        "source": "https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md",
+        "reported_label": "OpenThinker2-32B"
+      }
+    ]
+  },
+  {
+    "id": "s1-1-32b",
+    "name": "s1.1 32B",
+    "provider": "Simple Scaling",
+    "category": "llm",
+    "released": "2025-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 32.76,
+    "active_b": 32.76,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 131.06,
+          "cmd": "vllm serve simplescaling/s1.1-32B",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/simplescaling/s1.1-32B/tree/7b641db5bccde475f38ab3ee8345b4521ab12d64",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/simplescaling/s1.1-32B",
+    "identity_note": "Maker repo simplescaling/s1.1-32B @7b641db (s1 project, arXiv 2501.19393, Stanford/Hashimoto group): licence tag apache-2.0; successor of s1-32B fine-tuned from Qwen/Qwen2.5-32B-Instruct on s1K-1.1 (DeepSeek-R1 traces). 32,763,876,352 parameters from the Hugging Face safetensors metadata, stored as F32; dense, so active = total. Download 131.06 GB = sum of the safetensors shards at the pinned revision (float32 weights; vLLM's default dtype serves them at half precision). Released 2025-02: month the repo was created (createdAt 2025-02-08). Provider string 'Simple Scaling' is new (HF org simplescaling); no maker logo yet. Distinct from s1-32B (not catalogued). Why proposed: Lands in both Arena-Hard v2 README runs and in the OpenThinker2-32B card runs (as an independent comparator): 6 results.",
+    "identity_sources": [
+      "https://huggingface.co/simplescaling/s1.1-32B/blob/7b641db5bccde475f38ab3ee8345b4521ab12d64/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md",
+        "reported_label": "s1.1-32B"
+      },
+      {
+        "source": "https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md",
+        "reported_label": "S1.1-32B"
+      }
+    ]
+  },
+  {
+    "id": "qwen2-5-coder-1-5b",
+    "name": "Qwen2.5 Coder 1.5B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-09",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.54,
+    "active_b": 1.54,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 0.99,
+          "cmd": "ollama run qwen2.5-coder:1.5b",
+          "source": "https://ollama.com/library/qwen2.5-coder/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 1.6,
+          "cmd": "ollama run qwen2.5-coder:1.5b-instruct-q8_0",
+          "source": "https://ollama.com/library/qwen2.5-coder/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "identity_note": "Maker repo Qwen/Qwen2.5-Coder-1.5B-Instruct @2e1fd39: licence tag apache-2.0; card 'Number of Parameters: 1.54B'; 1,543,714,304 parameters (BF16) in the safetensors metadata; dense. Released 2024-09: repo createdAt 2024-09-18. Ollama tags (observed 2026-10-09): qwen2.5-coder:1.5b = 1.5b-instruct = 1.5b-instruct-q4_K_M (digest d7372fd82851, 986MB); 1.5b-instruct-q8_0 1.6GB. Sizes as listed by Ollama (rounded by the page). Same family as the catalogued qwen2-5-coder-7b/14b/32b. Why proposed: Lands in the 48-model aider-code-editing run (one result only; low weight). Popular small local coding model.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct/blob/2e1fd397ee46e1388853d2af2c993145b0f1098a/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml",
+        "reported_label": "Qwen2.5-Coder-1.5B-Instruct"
+      }
+    ]
+  },
+  {
+    "id": "gemini-2-5-pro-preview-03-25",
+    "name": "Gemini 2.5 Pro Preview (03-25)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2025-04",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison-only, proposed so the Galileo Agent Leaderboard v1 (galileo-agent-v1-tsq, 28 catalogue models) and WebApp1K-Duo (webapp1k-duo-react-pass1, 43 catalogue models) rows count; also its aider polyglot run of 2025-04-12 (aider-polyglot-runs). Epoch's math_level_5.csv 'gemini-2.5-pro-preview-03-25' run started 2025-05-07, after the repoint, so it is not mapped. Paid preview API model gemini-2.5-pro-preview-03-25: Gemini API changelog, April 4, 2025: 'Released gemini-2.5-pro-preview-03-25, a public preview Gemini 2.5 Pro version with billing enabled. You can continue to use gemini-2.5-pro-exp-03-25 on the free tier.' May 6, 2025: 'gemini-2.5-pro-preview-03-25 will automatically point to the new version of the model' (05-06); June 26, 2025: redirected to gemini-2.5-pro. Only results first published before 2025-05-06 are mapped here. Kept separate from gemini-2-5-pro-exp-03-25 (the catalogue's existing decision: different API id, no source states they are the same checkpoint), gemini-2-5-pro-preview-05-06 and GA gemini-2-5-pro. Shut down (deprecations: December 2, 2025).",
+    "identity_sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv",
+        "reported_label": "gemini-2.5-pro-preview-03-25"
+      },
+      {
+        "source": "https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv",
+        "reported_label": "gemini-2.5-pro-preview-03-25"
+      },
+      {
+        "source": "https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml",
+        "reported_label": "Gemini 2.5 Pro Preview 03-25 (aider --model gemini/gemini-2.5-pro-preview-03-25, 2025-04-12)"
+      }
+    ]
+  },
+  {
+    "id": "gpt-5-codex",
+    "name": "GPT-5-Codex",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2025-09",
+    "open_weights": false,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison-only, proposed so the WebApp1K-Duo entry 'gpt-5-codex' (webapp1k-duo-react-pass1, 43 catalogue models) counts. Released 2025-09: OpenAI API changelog, Sep 23 (2025): 'Launched special-purpose model gpt-5-codex, built and optimized for use with the Codex CLI'. Undated API alias (no dated snapshot listed). OpenAI deprecations page: gpt-5-codex shut down July 23, 2026 (replacement gpt-5.6-sol). Distinct from gpt-5-1-codex and gpt-5.",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/changelog",
+      "https://developers.openai.com/api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv",
+        "reported_label": "gpt-5-codex"
+      }
+    ]
+  },
+  {
+    "id": "palmyra-x-004",
+    "name": "Palmyra X4 (palmyra-x-004)",
+    "provider": "Writer",
+    "category": "llm",
+    "released": "2024-10",
+    "released_source": "https://writer.com/engineering/actions-with-palmyra-x-004/",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only. Writer's Palmyra X4, evaluated under the model string 'palmyra-x-004' by BFCL (entry 'palmyra-x-004 (FC)', Organization 'Writer', Model Link writer.com/engineering/actions-with-palmyra-x-004/) and Galileo (row 'palmyra-x-004', Vendor 'Writer'). That linked Writer post is titled 'Introducing actions with Palmyra X4' (Sam Julien, October 9, 2024), tying the string to Palmyra X4. Writer's docs (dev.writer.com/home/models.md, observed 2026-10-09) list Palmyra X4 with API model ID `palmyra-x4` (Bedrock writer.palmyra-x4-v1:0, 128k context, $2.50/$10.00 per 1M tokens), deprecated 2026-12-14; no Writer page states that `palmyra-x4` serves the same checkpoint as the 'palmyra-x-004' id the evaluators called, so no run route or price is attached. Proposed so its BFCL v3, BFCL V4 and Galileo v1 rows (three multi-model runs) count. New provider string 'Writer' (no logo yet).",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv",
+        "reported_label": "palmyra-x-004 (FC)"
+      },
+      {
+        "source": "https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv",
+        "reported_label": "palmyra-x-004"
+      },
+      {
+        "source": "https://writer.com/engineering/actions-with-palmyra-x-004/",
+        "reported_label": "Introducing actions with Palmyra X4"
+      },
+      {
+        "source": "https://dev.writer.com/home/models",
+        "reported_label": "Palmyra X4 (palmyra-x4)"
+      }
+    ]
   }
 ]

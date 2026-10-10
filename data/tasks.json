@@ -241,7 +241,8 @@
       "omega",
       "dynamath",
       "we-math",
-      "think-bench-accuracy"
+      "think-bench-accuracy",
+      "math-l5-zeroeval"
     ]
   },
   {

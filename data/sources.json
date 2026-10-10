@@ -1151,14 +1151,15 @@
       "github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/mistralai--Mistral-Small-Instruct-2409_vllm_temp_1.0_evalperf_results.brief.json",
       "github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/nvidia--Llama-3.1-Nemotron-70B-Instruct-HF_vllm_temp_1.0_evalperf_results.brief.json",
       "github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/o1-mini-2024-09-12_openai_temp_1.0_evalperf_results.brief.json",
-      "github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json"
+      "github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json",
+      "github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/ise-uiuc--Magicoder-S-DS-6.7B_vllm_temp_1.0_evalperf_results.brief.json"
     ],
     "exact": true,
     "license": "Apache-2.0",
     "terms_url": "https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/LICENSE",
     "license_url": "/licenses/evalplus-published-runs-Apache-2.0.txt",
     "verdict": "allowed",
-    "checked": "2026-10-07",
+    "checked": "2026-10-09",
     "attribution": "EvalPlus authors. Selected published numerical results; model IDs mapped and percentages converted to fractions. No endorsement. Full licence and change notice supplied in independent-NOTICE.txt.",
     "quote": "Root licence in the same pinned repository as these published result files; no nested override found in their paths.",
     "icon": "huggingface.co"
@@ -1186,14 +1187,16 @@
     "kind": "dataset",
     "match": [
       "github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv",
-      "github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv"
+      "github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv",
+      "github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-25/score/data_overall.csv",
+      "github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv"
     ],
     "exact": true,
     "license": "Apache-2.0",
     "terms_url": "https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/LICENSE",
     "license_url": "/licenses/bfcl-result-archive-v4-Apache-2.0.txt",
     "verdict": "allowed",
-    "checked": "2026-10-07",
+    "checked": "2026-10-09",
     "attribution": "Huanzhi Mao and the BFCL authors. Selected published numerical results; model IDs mapped and percentages converted to fractions. No endorsement. Full licence and change notice supplied in independent-NOTICE.txt.",
     "quote": "Root licence in the same pinned repository as the imported result files; no nested licence override found. BFCL README additionally explicitly includes evaluation scores.",
     "icon": "huggingface.co"
@@ -1206,14 +1209,15 @@
       "github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json",
       "github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json",
       "github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json",
-      "github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json"
+      "github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json",
+      "github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json"
     ],
     "exact": true,
     "license": "Apache-2.0",
     "terms_url": "https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/LICENSE",
     "license_url": "/licenses/zeroeval-published-results-Apache-2.0.txt",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-09",
     "attribution": "WildEval / ZeroEval contributors. Selected published numerical results; model IDs mapped and percentages converted to fractions. No endorsement. Full licence and change notice supplied in independent-NOTICE.txt.",
     "quote": "Root licence in the same pinned repository as these published result files; no nested override found in their paths.",
     "icon": "huggingface.co"
@@ -7432,14 +7436,16 @@
       "huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-2-pro-2025-12-11-medium/results.json",
       "huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/claude-3-haiku",
       "huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-4-mini-low",
-      "huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-4-nano-medium"
+      "huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-4-nano-medium",
+      "huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-4o",
+      "huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-4o"
     ],
     "exact": true,
     "license": "MIT",
     "terms_url": "https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/README.md",
     "license_url": "/licenses/arcprize-model-baseline-outputs-MIT.txt",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "attribution": "ARC Prize Foundation, model outputs from github.com/arcprizeorg/model_baseline published as Hugging Face datasets arcprize/arc_agi_v1_public_eval and arcprize/arc_agi_v2_public_eval, MIT. Selected model runs; scores divided by task count or recomputed from the published per-attempt correctness flags; catalogue IDs mapped. No endorsement.",
     "quote": "Each dataset card declares YAML 'license: mit' and describes the data as 'the output of models tested with https://github.com/arcprizeorg/model_baseline'; that harness repository's LICENSE.md is 'MIT License, Copyright (c) 2025 ARC Prize Foundation'. The arcprize.org leaderboard website is not used.",
     "icon": "huggingface.co"
@@ -7848,14 +7854,22 @@
       "huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/miniwob.json",
       "huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/webarena.json",
       "huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/workarena-l1.json",
-      "huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/workarena-l2.json"
+      "huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-o1-mini/workarena-l2.json",
+      "huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/miniwob.json",
+      "huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/webarena.json",
+      "huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/workarena-l1.json",
+      "huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-4o/workarena-l2.json",
+      "huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/miniwob.json",
+      "huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/webarena.json",
+      "huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/workarena-l1.json",
+      "huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-Claude-3.5-Sonnet/workarena-l2.json"
     ],
     "exact": true,
     "license": "MIT",
     "terms_url": "https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/README.md",
     "license_url": "/licenses/hf-leaderboard-spaces-MIT.txt",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-09",
     "icon": "huggingface.co",
     "attribution": "ServiceNow Research, BrowserGym Leaderboard Space; GenericAgent from AgentLab. MIT. Selected GenericAgent rows; percentages converted to fractions. No endorsement.",
     "quote": "Space card YAML at the pinned revision: `license: mit`. Only GenericAgent-* folders (ServiceNow's own AgentLab agent, per each folder README) are imported; third-party agent submissions are excluded."
@@ -14307,5 +14321,23 @@
     "checked": "2026-10-09",
     "icon": "arxiv.org",
     "part": "A"
+  },
+  {
+    "id": "card3-open-thoughts-openthinker2-32b",
+    "name": "open-thoughts/OpenThinker2-32B model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md",
+    "quote": "README front matter at the pinned revision declares 'license: apache-2.0' and the card body states 'Apache 2.0 License' (section 'Intended uses & limitations'); no separate LICENSE file in the repo. Evaluation statement: 'The numbers reported in the table below are evaluated with our open-source tool Evalchemy.' (covers every row of the table, so comparator rows are the authors' own runs).",
+    "attribution": "Open Thoughts team. open-thoughts/OpenThinker2-32B model card. Source: https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md. Licence: Apache-2.0. Changes: selected numerical cells (own model and comparators evaluated by the authors with Evalchemy) transcribed into JSON; percentages divided by 100. No endorsement.",
+    "scope": "AIME24, AIME25, MATH500 and GPQA-D cells of the single results table, for catalogue models (OpenThinker2-32B as lab; DeepSeek-R1-Distill-Qwen-32B and S1.1-32B as independent). AMC23 and LCBv2 columns unused (no matching benchmark id).",
+    "verdict": "allowed",
+    "checked": "2026-10-09",
+    "icon": "huggingface.co"
   }
 ]
