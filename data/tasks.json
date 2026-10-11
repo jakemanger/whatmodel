@@ -82,7 +82,8 @@
       "eegagentbench-overall",
       "e2e-swe-pass1",
       "klinikebench-strict-pass1",
-      "video2world-v2wscore-opencode"
+      "video2world-v2wscore-opencode",
+      "legal-research-bench-allpass"
     ]
   },
   {
@@ -332,7 +333,8 @@
       "seal-0",
       "deepsearchqa",
       "hle-with-tools",
-      "k-browsecomp-verified"
+      "k-browsecomp-verified",
+      "legal-research-bench-allpass"
     ]
   },
   {

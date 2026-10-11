@@ -15955,5 +15955,25 @@
     "checked": "2026-10-10",
     "evidence_url": "https://arxiv.org/abs/2610.12402v1",
     "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2610.00609v1-legal-research-bench",
+    "name": "Legal Research Bench (Vals AI, arXiv:2610.00609v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/abs/2610.00609v1",
+      "arxiv.org/html/2610.00609v1",
+      "arxiv.org/pdf/2610.00609v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2610.00609v1",
+    "quote": "arXiv abstract page for 2610.00609v1 (submitted 30 Sep 2026, only version) links 'http://creativecommons.org/licenses/by/4.0/' as the article licence. CC BY 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including commercially, subject to attribution.",
+    "attribution": "Katrina Drozdov, Oliver Chen, Langston Nashold, Rayan Krishnan (Vals AI), Legal Research Bench: Measuring End-to-End Reliability in Long-Horizon Legal Research Agents, arXiv:2610.00609v1, CC BY 4.0. Table 3 and Table 4 all-pass cells; percentages converted to fractions; catalogue IDs mapped. No endorsement.",
+    "scope": "Table 3 all-pass (agentic, with tools) and Table 4 all-pass (1-shot, no tools) for all 13 models; the authors ran every model themselves. Not imported: weighted pass (a partial-credit metric on the same answers), judge-calibration Table 2, per-category Tables 5-7. The live vals.ai leaderboard page is not covered by this licence.",
+    "verdict": "allowed",
+    "checked": "2026-10-11",
+    "icon": "arxiv.org"
   }
 ]

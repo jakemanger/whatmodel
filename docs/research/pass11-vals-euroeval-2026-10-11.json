@@ -1,0 +1,477 @@
+{
+ "about": "2026-10-11: owner questions on Vals AI and the held EuroEval rows. Imports Legal Research Bench (a CC BY paper by Vals AI; Vals was wrongly listed as an aggregator in the agent briefs) and the 16 EuroEval cells held at the 2026-10-06 import.",
+ "results": [
+  {
+   "model": "llama-2-7b",
+   "bench": "euroeval-en-life-in-the-uk-test-5shot",
+   "score": 0.5275,
+   "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+   "source_id": "euroeval-leaderboards",
+   "by": "independent",
+   "date": "2026-04-17",
+   "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; entry 'meta-llama/Llama-2-7b-hf', instruction-tuned (📝), default setting; EuroEval version 15.10.1.dev0. Cell 'MCC / accuracy' = '37.06 ± 1.97 / 52.75 ± 1.81'. The leaderboard lists this base checkpoint as 📝. Held at the 2026-10-06 import (near chance / historical bridge); imported 2026-10-11 under the include-every-result rule."
+  },
+  {
+   "model": "llama-2-7b",
+   "bench": "euroeval-en-hellaswag-test-5shot",
+   "score": 0.3125,
+   "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+   "source_id": "euroeval-leaderboards",
+   "by": "independent",
+   "date": "2026-04-17",
+   "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset hellaswag: HellaSwag (common-sense, 4-option MC), test split (2048 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; entry 'meta-llama/Llama-2-7b-hf', instruction-tuned (📝), default setting; EuroEval version 9.2.0. Cell 'MCC / accuracy' = '11.77 ± 1.81 / 31.25 ± 1.99'. The leaderboard lists this base checkpoint as 📝. Held at the 2026-10-06 import (near chance / historical bridge); imported 2026-10-11 under the include-every-result rule."
+  },
+  {
+   "model": "llama-2-13b",
+   "bench": "euroeval-en-life-in-the-uk-test-5shot",
+   "score": 0.7395,
+   "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+   "source_id": "euroeval-leaderboards",
+   "by": "independent",
+   "date": "2026-04-17",
+   "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; entry 'meta-llama/Llama-2-13b-hf', base model (🧠), default setting; EuroEval version 15.10.1.dev0. Cell 'MCC / accuracy' = '64.96 ± 1.29 / 73.95 ± 1.03'. Held at the 2026-10-06 import (near chance / historical bridge); imported 2026-10-11 under the include-every-result rule."
+  },
+  {
+   "model": "gpt-2-small",
+   "bench": "euroeval-en-life-in-the-uk-test-5shot",
+   "score": 0.2279,
+   "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+   "source_id": "euroeval-leaderboards",
+   "by": "independent",
+   "date": "2026-04-17",
+   "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; entry 'openai-community/gpt2', base model (🧠), default setting; EuroEval version 15.10.1.dev0. Cell 'MCC / accuracy' = '-1.53 ± 1.17 / 22.79 ± 2.61'. Held at the 2026-10-06 import (near chance / historical bridge); imported 2026-10-11 under the include-every-result rule."
+  },
+  {
+   "model": "gpt-2-small",
+   "bench": "euroeval-en-hellaswag-test-5shot",
+   "score": 0.2472,
+   "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+   "source_id": "euroeval-leaderboards",
+   "by": "independent",
+   "date": "2026-04-17",
+   "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset hellaswag: HellaSwag (common-sense, 4-option MC), test split (2048 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; entry 'openai-community/gpt2', base model (🧠), default setting; EuroEval version 15.4.1. Cell 'MCC / accuracy' = '-0.29 ± 1.13 / 24.72 ± 0.35'. Held at the 2026-10-06 import (near chance / historical bridge); imported 2026-10-11 under the include-every-result rule."
+  },
+  {
+   "model": "gpt-2-medium",
+   "bench": "euroeval-en-life-in-the-uk-test-5shot",
+   "score": 0.2586,
+   "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+   "source_id": "euroeval-leaderboards",
+   "by": "independent",
+   "date": "2026-04-17",
+   "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; entry 'openai-community/gpt2-medium', base model (🧠), default setting; EuroEval version 15.10.1.dev0. Cell 'MCC / accuracy' = '-0.38 ± 1.96 / 25.86 ± 2.48'. Held at the 2026-10-06 import (near chance / historical bridge); imported 2026-10-11 under the include-every-result rule."
+  },
+  {
+   "model": "gpt-2-medium",
+   "bench": "euroeval-en-hellaswag-test-5shot",
+   "score": 0.2488,
+   "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+   "source_id": "euroeval-leaderboards",
+   "by": "independent",
+   "date": "2026-04-17",
+   "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset hellaswag: HellaSwag (common-sense, 4-option MC), test split (2048 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; entry 'openai-community/gpt2-medium', base model (🧠), default setting; EuroEval version 15.4.1. Cell 'MCC / accuracy' = '-0.17 ± 0.33 / 24.88 ± 0.47'. Held at the 2026-10-06 import (near chance / historical bridge); imported 2026-10-11 under the include-every-result rule."
+  },
+  {
+   "model": "gpt-2-large",
+   "bench": "euroeval-en-life-in-the-uk-test-5shot",
+   "score": 0.2652,
+   "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+   "source_id": "euroeval-leaderboards",
+   "by": "independent",
+   "date": "2026-04-17",
+   "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; entry 'openai-community/gpt2-large', base model (🧠), default setting; EuroEval version 15.10.1.dev0. Cell 'MCC / accuracy' = '-1.86 ± 2.62 / 26.52 ± 3.06'. Held at the 2026-10-06 import (near chance / historical bridge); imported 2026-10-11 under the include-every-result rule."
+  },
+  {
+   "model": "gpt-2-large",
+   "bench": "euroeval-en-hellaswag-test-5shot",
+   "score": 0.2503,
+   "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+   "source_id": "euroeval-leaderboards",
+   "by": "independent",
+   "date": "2026-04-17",
+   "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset hellaswag: HellaSwag (common-sense, 4-option MC), test split (2048 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; entry 'openai-community/gpt2-large', base model (🧠), default setting; EuroEval version 15.4.1. Cell 'MCC / accuracy' = '-0.07 ± 0.57 / 25.03 ± 0.52'. Held at the 2026-10-06 import (near chance / historical bridge); imported 2026-10-11 under the include-every-result rule."
+  },
+  {
+   "model": "gemma-3-270m",
+   "bench": "euroeval-en-life-in-the-uk-test-5shot",
+   "score": 0.2672,
+   "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+   "source_id": "euroeval-leaderboards",
+   "by": "independent",
+   "date": "2026-04-17",
+   "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; entry 'google/gemma-3-270m-it', instruction-tuned (📝), default setting; EuroEval version 16.9.0.dev0. Cell 'MCC / accuracy' = '-1.50 ± 2.29 / 26.72 ± 2.63'. Held at the 2026-10-06 import (near chance / historical bridge); imported 2026-10-11 under the include-every-result rule."
+  },
+  {
+   "model": "gemma-3-270m",
+   "bench": "euroeval-en-hellaswag-test-5shot",
+   "score": 0.2517,
+   "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+   "source_id": "euroeval-leaderboards",
+   "by": "independent",
+   "date": "2026-04-17",
+   "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset hellaswag: HellaSwag (common-sense, 4-option MC), test split (2048 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; entry 'google/gemma-3-270m-it', instruction-tuned (📝), default setting; EuroEval version 16.9.0.dev0. Cell 'MCC / accuracy' = '0.69 ± 1.22 / 25.17 ± 1.03'. Held at the 2026-10-06 import (near chance / historical bridge); imported 2026-10-11 under the include-every-result rule."
+  },
+  {
+   "model": "gemma-2b",
+   "bench": "euroeval-en-hellaswag-test-5shot",
+   "score": 0.2762,
+   "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+   "source_id": "euroeval-leaderboards",
+   "by": "independent",
+   "date": "2026-04-17",
+   "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset hellaswag: HellaSwag (common-sense, 4-option MC), test split (2048 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; entry 'google/gemma-2b-it', instruction-tuned (📝), default setting; EuroEval version 15.8.2. Cell 'MCC / accuracy' = '4.55 ± 1.03 / 27.62 ± 0.78'. Held at the 2026-10-06 import (near chance / historical bridge); imported 2026-10-11 under the include-every-result rule."
+  },
+  {
+   "model": "gemma-2b-base",
+   "bench": "euroeval-en-hellaswag-test-5shot",
+   "score": 0.2685,
+   "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+   "source_id": "euroeval-leaderboards",
+   "by": "independent",
+   "date": "2026-04-17",
+   "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset hellaswag: HellaSwag (common-sense, 4-option MC), test split (2048 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; entry 'google/gemma-2b', base model (🧠), default setting; EuroEval version 15.8.2. Cell 'MCC / accuracy' = '5.43 ± 1.02 / 26.85 ± 0.46'. Held at the 2026-10-06 import (near chance / historical bridge); imported 2026-10-11 under the include-every-result rule."
+  },
+  {
+   "model": "gemma-7b",
+   "bench": "euroeval-en-hellaswag-test-5shot",
+   "score": 0.2651,
+   "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+   "source_id": "euroeval-leaderboards",
+   "by": "independent",
+   "date": "2026-04-17",
+   "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset hellaswag: HellaSwag (common-sense, 4-option MC), test split (2048 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; entry 'google/gemma-7b-it', instruction-tuned (📝), default setting; EuroEval version 15.6.1. Cell 'MCC / accuracy' = '4.67 ± 1.97 / 26.51 ± 1.10'. Held at the 2026-10-06 import (near chance / historical bridge); imported 2026-10-11 under the include-every-result rule."
+  },
+  {
+   "model": "phi-4-reasoning-plus",
+   "bench": "euroeval-en-hellaswag-test-5shot",
+   "score": 0.2498,
+   "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+   "source_id": "euroeval-leaderboards",
+   "by": "independent",
+   "date": "2026-04-17",
+   "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset hellaswag: HellaSwag (common-sense, 4-option MC), test split (2048 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; entry 'microsoft/Phi-4-reasoning-plus', reasoning model (🤔), default setting; EuroEval version 15.10.1.dev0. Cell 'MCC / accuracy' = '0.57 ± 1.03 / 24.98 ± 0.53'. Held at the 2026-10-06 import (near chance / historical bridge); imported 2026-10-11 under the include-every-result rule."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-1-5b",
+   "bench": "euroeval-en-life-in-the-uk-test-5shot",
+   "score": 0.2994,
+   "source": "https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv",
+   "source_id": "euroeval-leaderboards",
+   "by": "independent",
+   "date": "2026-04-17",
+   "note": "EuroEval English generative leaderboard, leaderboards/english_all.csv @1a77f1d (english_all.json: 'Last updated: 2026-04-17 17:12:00 CET'); dataset life_in_the_uk: Life in the UK (knowledge, 4-option MC), test split (512 questions), 5-shot (EuroEval default; not zero-shot), answered with a letter (EuroEval prompt templates); score = accuracy, EuroEval's secondary metric (primary is MCC), mean over EuroEval's 10 evaluation iterations, divided by 100; entry 'deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B', reasoning model (🤔), default setting; EuroEval version 15.10.1.dev0. Cell 'MCC / accuracy' = '6.48 ± 1.81 / 29.94 ± 1.35'. Held at the 2026-10-06 import (near chance / historical bridge); imported 2026-10-11 under the include-every-result rule."
+  },
+  {
+   "model": "claude-opus-4-8",
+   "bench": "legal-research-bench-allpass",
+   "score": 0.429,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 3, row 'Claude Opus 4.8', All-pass (%) printed as mean ± s.e.; also Table 4 'All-pass (tools)' = 42.9; stored /100. Agentic harness: Tavily web search, CourtListener case-law search, page parsing, retrieval and submit tools; 3-hour wall-clock cap per question. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "claude-opus-4-8",
+   "bench": "legal-research-bench-no-tools-allpass",
+   "score": 0.087,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 4 (tool ablation), row 'Claude Opus 4.8', 'All-pass (1-shot)' = 8.7 (%); single-shot answer with no tool access; stored /100. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "gpt-5-5",
+   "bench": "legal-research-bench-allpass",
+   "score": 0.4,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 3, row 'GPT-5.5', All-pass (%) printed as mean ± s.e.; also Table 4 'All-pass (tools)' = 40.0; stored /100. Agentic harness: Tavily web search, CourtListener case-law search, page parsing, retrieval and submit tools; 3-hour wall-clock cap per question. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "gpt-5-5",
+   "bench": "legal-research-bench-no-tools-allpass",
+   "score": 0.068,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 4 (tool ablation), row 'GPT-5.5', 'All-pass (1-shot)' = 6.8 (%); single-shot answer with no tool access; stored /100. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "claude-sonnet-4-6",
+   "bench": "legal-research-bench-allpass",
+   "score": 0.385,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 3, row 'Claude Sonnet 4.6', All-pass (%) printed as mean ± s.e.; also Table 4 'All-pass (tools)' = 38.5; stored /100. Agentic harness: Tavily web search, CourtListener case-law search, page parsing, retrieval and submit tools; 3-hour wall-clock cap per question. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "claude-sonnet-4-6",
+   "bench": "legal-research-bench-no-tools-allpass",
+   "score": 0.073,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 4 (tool ablation), row 'Claude Sonnet 4.6', 'All-pass (1-shot)' = 7.3 (%); single-shot answer with no tool access; stored /100. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "glm-5-2",
+   "bench": "legal-research-bench-allpass",
+   "score": 0.312,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 3, row 'GLM-5.2', All-pass (%) printed as mean ± s.e.; also Table 4 'All-pass (tools)' = 31.2; stored /100. Agentic harness: Tavily web search, CourtListener case-law search, page parsing, retrieval and submit tools; 3-hour wall-clock cap per question. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "glm-5-2",
+   "bench": "legal-research-bench-no-tools-allpass",
+   "score": 0.034,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 4 (tool ablation), row 'GLM-5.2', 'All-pass (1-shot)' = 3.4 (%); single-shot answer with no tool access; stored /100. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "gemini-3-5-flash",
+   "bench": "legal-research-bench-allpass",
+   "score": 0.308,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 3, row 'Gemini 3.5 Flash', All-pass (%) printed as mean ± s.e.; also Table 4 'All-pass (tools)' = 30.8; stored /100. Agentic harness: Tavily web search, CourtListener case-law search, page parsing, retrieval and submit tools; 3-hour wall-clock cap per question. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "gemini-3-5-flash",
+   "bench": "legal-research-bench-no-tools-allpass",
+   "score": 0.063,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 4 (tool ablation), row 'Gemini 3.5 Flash', 'All-pass (1-shot)' = 6.3 (%); single-shot answer with no tool access; stored /100. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "minimax-m3",
+   "bench": "legal-research-bench-allpass",
+   "score": 0.298,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 3, row 'MiniMax-M3', All-pass (%) printed as mean ± s.e.; also Table 4 'All-pass (tools)' = 29.8; stored /100. Agentic harness: Tavily web search, CourtListener case-law search, page parsing, retrieval and submit tools; 3-hour wall-clock cap per question. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "minimax-m3",
+   "bench": "legal-research-bench-no-tools-allpass",
+   "score": 0.029,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 4 (tool ablation), row 'MiniMax-M3', 'All-pass (1-shot)' = 2.9 (%); single-shot answer with no tool access; stored /100. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "glm-5-1",
+   "bench": "legal-research-bench-allpass",
+   "score": 0.276,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 3, row 'GLM-5.1', All-pass (%) printed as mean ± s.e.; also Table 4 'All-pass (tools)' = 27.6; stored /100. Agentic harness: Tavily web search, CourtListener case-law search, page parsing, retrieval and submit tools; 3-hour wall-clock cap per question. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "glm-5-1",
+   "bench": "legal-research-bench-no-tools-allpass",
+   "score": 0.031,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 4 (tool ablation), row 'GLM-5.1', 'All-pass (1-shot)' = 3.1 (%); single-shot answer with no tool access; stored /100. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "qwen3-7-max",
+   "bench": "legal-research-bench-allpass",
+   "score": 0.252,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 3, row 'Qwen3.7-Max', All-pass (%) printed as mean ± s.e.; also Table 4 'All-pass (tools)' = 25.2; stored /100. Agentic harness: Tavily web search, CourtListener case-law search, page parsing, retrieval and submit tools; 3-hour wall-clock cap per question. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "qwen3-7-max",
+   "bench": "legal-research-bench-no-tools-allpass",
+   "score": 0.027,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 4 (tool ablation), row 'Qwen3.7-Max', 'All-pass (1-shot)' = 2.7 (%); single-shot answer with no tool access; stored /100. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "deepseek-v4-pro-preview",
+   "bench": "legal-research-bench-allpass",
+   "score": 0.232,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 3, row 'DeepSeek-V4-Pro', All-pass (%) printed as mean ± s.e.; also Table 4 'All-pass (tools)' = 23.2; stored /100. Agentic harness: Tavily web search, CourtListener case-law search, page parsing, retrieval and submit tools; 3-hour wall-clock cap per question. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1). 'DeepSeek-V4-Pro' mapped to the April 2026 preview: the paper says every evaluated model was released between February and June 2026, and the GA checkpoint came out in August 2026."
+  },
+  {
+   "model": "deepseek-v4-pro-preview",
+   "bench": "legal-research-bench-no-tools-allpass",
+   "score": 0.041,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 4 (tool ablation), row 'DeepSeek-V4-Pro', 'All-pass (1-shot)' = 4.1 (%); single-shot answer with no tool access; stored /100. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1). 'DeepSeek-V4-Pro' mapped to the April 2026 preview: the paper says every evaluated model was released between February and June 2026, and the GA checkpoint came out in August 2026."
+  },
+  {
+   "model": "gemini-3-1-pro",
+   "bench": "legal-research-bench-allpass",
+   "score": 0.208,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 3, row 'Gemini 3.1 Pro Preview', All-pass (%) printed as mean ± s.e.; also Table 4 'All-pass (tools)' = 20.8; stored /100. Agentic harness: Tavily web search, CourtListener case-law search, page parsing, retrieval and submit tools; 3-hour wall-clock cap per question. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "gemini-3-1-pro",
+   "bench": "legal-research-bench-no-tools-allpass",
+   "score": 0.065,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 4 (tool ablation), row 'Gemini 3.1 Pro Preview', 'All-pass (1-shot)' = 6.5 (%); single-shot answer with no tool access; stored /100. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "kimi-k2-6",
+   "bench": "legal-research-bench-allpass",
+   "score": 0.155,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 3, row 'Kimi K2.6', All-pass (%) printed as mean ± s.e.; also Table 4 'All-pass (tools)' = 15.5; stored /100. Agentic harness: Tavily web search, CourtListener case-law search, page parsing, retrieval and submit tools; 3-hour wall-clock cap per question. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "kimi-k2-6",
+   "bench": "legal-research-bench-no-tools-allpass",
+   "score": 0.029,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 4 (tool ablation), row 'Kimi K2.6', 'All-pass (1-shot)' = 2.9 (%); single-shot answer with no tool access; stored /100. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "grok-4-3",
+   "bench": "legal-research-bench-allpass",
+   "score": 0.153,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 3, row 'Grok 4.3', All-pass (%) printed as mean ± s.e.; also Table 4 'All-pass (tools)' = 15.3; stored /100. Agentic harness: Tavily web search, CourtListener case-law search, page parsing, retrieval and submit tools; 3-hour wall-clock cap per question. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "grok-4-3",
+   "bench": "legal-research-bench-no-tools-allpass",
+   "score": 0.041,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 4 (tool ablation), row 'Grok 4.3', 'All-pass (1-shot)' = 4.1 (%); single-shot answer with no tool access; stored /100. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "gpt-5-4-mini",
+   "bench": "legal-research-bench-allpass",
+   "score": 0.126,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 3, row 'GPT-5.4-mini', All-pass (%) printed as mean ± s.e.; also Table 4 'All-pass (tools)' = 12.6; stored /100. Agentic harness: Tavily web search, CourtListener case-law search, page parsing, retrieval and submit tools; 3-hour wall-clock cap per question. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  },
+  {
+   "model": "gpt-5-4-mini",
+   "bench": "legal-research-bench-no-tools-allpass",
+   "score": 0.022,
+   "source": "https://arxiv.org/abs/2610.00609v1",
+   "source_id": "paper-2610.00609v1-legal-research-bench",
+   "by": "independent",
+   "date": "2026-09-30",
+   "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 4 (tool ablation), row 'GPT-5.4-mini', 'All-pass (1-shot)' = 2.2 (%); single-shot answer with no tool access; stored /100. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1)."
+  }
+ ],
+ "benchmarks": [
+  {
+   "id": "legal-research-bench-allpass",
+   "name": "Legal Research Bench (agentic, all-pass)",
+   "kind": "acc",
+   "category": "llm",
+   "chance": 0,
+   "url": "https://arxiv.org/abs/2610.00609v1",
+   "description": "Legal Research Bench (Vals AI, arXiv:2610.00609v1, CC BY 4.0): 413 original U.S. legal research questions written by practising attorneys across eight areas of law. Models run as tool-using agents (web search, case-law search, page parsing, retrieval). Score = all-pass: an answer counts only if it meets every attorney-written rubric criterion and every cited authority verifies. Graded by a GPT-5.4 judge validated against attorneys.",
+   "suggested_tasks": [
+    "agents",
+    "search"
+   ]
+  },
+  {
+   "id": "legal-research-bench-no-tools-allpass",
+   "name": "Legal Research Bench (single-shot, no tools, all-pass)",
+   "kind": "acc",
+   "category": "llm",
+   "chance": 0,
+   "url": "https://arxiv.org/abs/2610.00609v1",
+   "description": "Legal Research Bench (Vals AI, arXiv:2610.00609v1, CC BY 4.0) tool ablation, Table 4: the same 413 attorney-written U.S. legal research questions answered in one shot with no tool access. Score = all-pass (every rubric criterion met and every cited authority valid), GPT-5.4 judge.",
+   "suggested_tasks": []
+  }
+ ],
+ "ledger": [
+  {
+   "action": "new",
+   "id": "paper-2610.00609v1-legal-research-bench",
+   "name": "Legal Research Bench (Vals AI, arXiv:2610.00609v1)",
+   "kind": "paper",
+   "match": [
+    "arxiv.org/abs/2610.00609v1",
+    "arxiv.org/html/2610.00609v1",
+    "arxiv.org/pdf/2610.00609v1"
+   ],
+   "exact": true,
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "terms_url": "https://arxiv.org/abs/2610.00609v1",
+   "quote": "arXiv abstract page for 2610.00609v1 (submitted 30 Sep 2026, only version) links 'http://creativecommons.org/licenses/by/4.0/' as the article licence. CC BY 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including commercially, subject to attribution.",
+   "attribution": "Katrina Drozdov, Oliver Chen, Langston Nashold, Rayan Krishnan (Vals AI), Legal Research Bench: Measuring End-to-End Reliability in Long-Horizon Legal Research Agents, arXiv:2610.00609v1, CC BY 4.0. Table 3 and Table 4 all-pass cells; percentages converted to fractions; catalogue IDs mapped. No endorsement.",
+   "scope": "Table 3 all-pass (agentic, with tools) and Table 4 all-pass (1-shot, no tools) for all 13 models; the authors ran every model themselves. Not imported: weighted pass (a partial-credit metric on the same answers), judge-calibration Table 2, per-category Tables 5-7. The live vals.ai leaderboard page is not covered by this licence.",
+   "verdict": "allowed",
+   "checked": "2026-10-11",
+   "icon": "arxiv.org"
+  }
+ ],
+ "models": [],
+ "gaps": [],
+ "checked": [],
+ "held_for_owner": []
+}
