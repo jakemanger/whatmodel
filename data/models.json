@@ -61661,5 +61661,225 @@
       }
     ],
     "params_note": "HF safetensors metadata (2026-10-11) lists parameters BF16 32,762,123,264 (its separate total field reads 676,864, which is inconsistent with the 65.5 GB of BF16 weights and is not used); card base_model Qwen/Qwen3-32B (dense, so active = total)."
+  },
+  {
+    "id": "seed-2-0-lite",
+    "name": "Seed2.0 Lite",
+    "provider": "ByteDance Seed",
+    "category": "llm",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only. ByteDance Seed's Seed2.0 Lite, one of the three sizes (Pro / Lite / Mini) of the Seed2.0 series described in its model card (arXiv 2607.00248v1, submitted 2026-06-30), which lists its Volcengine price per 1M tokens. Added so the card's own tau2-telecom figures for Seed2.0 Pro (catalogue dola-seed-2-0-pro) and Lite form a two-model ByteDance run. Release month not printed in the card (omitted).",
+    "identity_sources": [
+      "https://arxiv.org/pdf/2607.00248v1"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/pdf/2607.00248v1",
+        "reported_label": "Seed2.0 Lite"
+      }
+    ]
+  },
+  {
+    "id": "ring-2-6-1t",
+    "name": "Ring-2.6-1T",
+    "provider": "inclusionAI (Ant Group)",
+    "category": "llm",
+    "released": "2026-05",
+    "released_source": "https://huggingface.co/api/models/inclusionAI/Ring-2.6-1T",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 1025,
+    "active_b": 63,
+    "params_b_source": "https://huggingface.co/api/models/inclusionAI/Ring-2.6-1T",
+    "params_note": "1,025,414,425,344 parameters in the repo's safetensors metadata; the Ling-3.0-flash card's table prints the size as '1T-A63B' (63B active).",
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/inclusionAI/Ring-2.6-1T",
+    "identity_note": "Comparison-only. inclusionAI's Ring-2.6-1T reasoning model (repo inclusionAI/Ring-2.6-1T @2314abd, created 2026-05-14, MIT; card: 'a trillion-parameter flagship reasoning model', reasoning effort levels high and xhigh). Added because the same lab's Ling-3.0-flash card prints a 'Ring-2.6-1T (xhigh)' column on 14 benchmarks that otherwise hold only Ling-3.0-flash. No verified run route recorded.",
+    "identity_sources": [
+      "https://huggingface.co/inclusionAI/Ring-2.6-1T/blob/2314abdf9e380b7fa7b4b79369ceb5f69cc46b32/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md",
+        "reported_label": "Ring-2.6-1T (xhigh)"
+      },
+      {
+        "source": "https://huggingface.co/inclusionAI/Ring-2.6-1T/blob/2314abdf9e380b7fa7b4b79369ceb5f69cc46b32/README.md",
+        "reported_label": "Ring-2.6-1T"
+      }
+    ]
+  },
+  {
+    "id": "deepseek-v3-2-speciale",
+    "name": "DeepSeek V3.2 Speciale",
+    "provider": "DeepSeek",
+    "category": "llm",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 685,
+    "active_b": 37,
+    "params_b_source": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V3.2-Speciale",
+    "params_note": "685,396,921,376 parameters in the repo's safetensors metadata; DeepSeek-V3.2 card: 'The model structure of DeepSeek-V3.2 and DeepSeek-V3.2-Speciale are the same as DeepSeek-V3.2-Exp' (37B active, as catalogued for deepseek-v3-2).",
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Speciale",
+    "identity_note": "Comparison-only. DeepSeek's high-compute reasoning variant of V3.2 (repo deepseek-ai/DeepSeek-V3.2-Speciale @c562883, MIT; card: 'designed exclusively for deep reasoning tasks and does not support the tool-calling functionality'). Distinct from deepseek-v3-2 (the hatched 'DeepSeek-V3.2-Thinking' bars). Added for the Speciale bars of DeepSeek's own V3.2 chart. No verified run route recorded.",
+    "identity_sources": [
+      "https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Speciale/blob/c562883eda916fd699a44bbf1f4987a53b96008b/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/README.md",
+        "reported_label": "DeepSeek-V3.2-Speciale"
+      }
+    ]
+  },
+  {
+    "id": "kandinsky-2-0",
+    "name": "Kandinsky 2.0",
+    "provider": "AI Forever",
+    "category": "image",
+    "released": "2022-11",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.2,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/ai-forever/Kandinsky_2.0",
+    "identity_note": "Comparison-only, proposed so the Kandinsky 2.1 card's COCO-30k FID table counts. 'Kandinsky 2.0 (2022)' in that table = the AI Forever (Sber AI) multilingual latent diffusion model released as ai-forever/Kandinsky_2.0 (sha 04e8fc7ea945965edfcb33705ac272d14b9d0f6c, created 2022-11-22, apache-2.0; card: 'Kandinsky 2.0 — the first multilingual text2image model', 'UNet size: 1.2B parameters', text encoders mCLIP-XLMR 560M + mT5-encoder-small 146M). The 2.1 card says 2.1 kept 'the UNet diffusion block from Kandinsky 2.0'. params_b is the UNet only. Not Kandinsky 2.1/2.2 or the earlier ruDALL-E 'Kandinsky 1.0'.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/kandinsky-community/kandinsky-2-1/blob/04b366659663bf60deacb96fd3e38f1cb39a3be4/README.md",
+        "reported_label": "Kandinsky 2.0 (2022)"
+      },
+      {
+        "source": "https://huggingface.co/ai-forever/Kandinsky_2.0/blob/04e8fc7ea945965edfcb33705ac272d14b9d0f6c/README.md",
+        "reported_label": "Kandinsky 2.0"
+      }
+    ],
+    "identity_sources": [
+      "https://huggingface.co/ai-forever/Kandinsky_2.0/blob/04e8fc7ea945965edfcb33705ac272d14b9d0f6c/README.md",
+      "https://huggingface.co/kandinsky-community/kandinsky-2-1/blob/04b366659663bf60deacb96fd3e38f1cb39a3be4/README.md"
+    ]
+  },
+  {
+    "id": "gpt-4o-audio-preview-2024-10-01",
+    "name": "GPT-4o Audio Preview (2024-10-01)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2024-10",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only. OpenAI audio-input API snapshot 'gpt-4o-audio-preview-2024-10-01' (exact identifier and release date in AHELM Table 3, arXiv 2508.21376v2). Distinct from the text GPT-4o snapshots. No run route or price recorded.",
+    "identity_sources": [
+      "https://arxiv.org/html/2508.21376v2#S4.T3"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2508.21376v2#S4.T3",
+        "reported_label": "gpt-4o-audio-preview-2024-10-01"
+      }
+    ]
+  },
+  {
+    "id": "gpt-4o-audio-preview-2024-12-17",
+    "name": "GPT-4o Audio Preview (2024-12-17)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2024-12",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only. OpenAI audio-input API snapshot 'gpt-4o-audio-preview-2024-12-17' (exact identifier and release date in AHELM Table 3, arXiv 2508.21376v2). Distinct from the text GPT-4o snapshots. No run route or price recorded.",
+    "identity_sources": [
+      "https://arxiv.org/html/2508.21376v2#S4.T3"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2508.21376v2#S4.T3",
+        "reported_label": "gpt-4o-audio-preview-2024-12-17"
+      }
+    ]
+  },
+  {
+    "id": "gpt-4o-mini-audio-preview-2024-12-17",
+    "name": "GPT-4o mini Audio Preview (2024-12-17)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2024-12",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only. OpenAI audio-input API snapshot 'gpt-4o-mini-audio-preview-2024-12-17' (exact identifier and release date in AHELM Table 3, arXiv 2508.21376v2). Distinct from the text GPT-4o snapshots. No run route or price recorded.",
+    "identity_sources": [
+      "https://arxiv.org/html/2508.21376v2#S4.T3"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2508.21376v2#S4.T3",
+        "reported_label": "gpt-4o-mini-audio-preview-2024-12-17"
+      }
+    ]
+  },
+  {
+    "id": "qwen2-audio-7b-instruct",
+    "name": "Qwen2-Audio 7B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-07",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 8.4,
+    "active_b": 8.4,
+    "params_b_source": "https://huggingface.co/api/models/Qwen/Qwen2-Audio-7B-Instruct",
+    "params_note": "8,397,094,912 parameters in the repo's safetensors metadata (AHELM Table 3: 8.4B).",
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/Qwen/Qwen2-Audio-7B-Instruct",
+    "identity_note": "Comparison-only. Qwen's audio-language chat model, repo Qwen/Qwen2-Audio-7B-Instruct @0a09522 (apache-2.0, created 2024-07-31); AHELM identifier 'qwen2-audio-7b-instruct'. No verified run command recorded.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen2-Audio-7B-Instruct/blob/0a095220c30b7b31434169c3086508ef3ea5bf0a/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2508.21376v2#S4.T3",
+        "reported_label": "qwen2-audio-7b-instruct"
+      }
+    ]
+  },
+  {
+    "id": "qwen2-5-omni-7b",
+    "name": "Qwen2.5-Omni 7B",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2025-03",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 10.7,
+    "active_b": 10.7,
+    "params_b_source": "https://huggingface.co/api/models/Qwen/Qwen2.5-Omni-7B",
+    "params_note": "10,732,225,440 parameters in the repo's safetensors metadata (AHELM Table 3: 10.7B, incl. audio/vision encoders and speech decoder).",
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/Qwen/Qwen2.5-Omni-7B",
+    "identity_note": "Comparison-only. Qwen's omni-modal model, repo Qwen/Qwen2.5-Omni-7B @ae9e169 (licence apache-2.0 via license_name/link, created 2025-03-22); AHELM identifier 'qwen2.5-omni-7b'. No verified run command recorded.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen2.5-Omni-7B/blob/ae9e1690543ffd5c0221dc27f79834d0294cba00/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2508.21376v2#S4.T3",
+        "reported_label": "qwen2.5-omni-7b"
+      }
+    ]
   }
 ]

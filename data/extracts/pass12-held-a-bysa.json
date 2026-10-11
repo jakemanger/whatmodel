@@ -1,0 +1,307 @@
+{
+  "license": "CC BY-SA 4.0",
+  "note": "Results adapted from CC BY-SA 4.0 sources; this subset is distributed under the same licence. Each source lists its attribution and changes.",
+  "sources": [
+    {
+      "id": "paper-2406.18521v1-charxiv",
+      "name": "CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs (arXiv:2406.18521v1)",
+      "kind": "paper",
+      "match": [
+        "arxiv.org/html/2406.18521v1",
+        "arxiv.org/abs/2406.18521v1"
+      ],
+      "exact": true,
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "terms_url": "https://arxiv.org/abs/2406.18521v1",
+      "quote": "arXiv abstract page for 2406.18521 (only version v1) links http://creativecommons.org/licenses/by-sa/4.0/ as the article licence (checked 2026-10-11). Owner note 2026-10-09: 'The CharXiv arXiv paper is CC BY-SA 4.0 and usable.' Table 11 'Run configurations for all models' documents the authors' own runs of every model.",
+      "attribution": "Zirui Wang et al. (Princeton NLP), CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs, arXiv:2406.18521v1, CC BY-SA 4.0. Test-set overall accuracies from Appendix C Table 4; percentages converted to fractions; model names mapped via Table 11. Adapted rows are distributed under CC BY-SA 4.0 (data/extracts). No endorsement.",
+      "scope": "Appendix C Table 4 test-split RQ All and DQ All for the 7 models whose Table 11 checkpoint is catalogued (gpt-4o-2024-05-13, gpt-4-turbo-2024-04-09, Claude 3 Sonnet/Haiku/Opus, reka-flash-20240226, llava-v1.6-34b). Not used: Reka Core (reka-core-20240415 not catalogued), Gemini 1.0 Pro Vision, Qwen VL Max/Plus (no snapshot), Reka Edge and open models not in the catalogue.",
+      "verdict": "allowed",
+      "checked": "2026-10-11",
+      "icon": "arxiv.org"
+    },
+    {
+      "id": "paper-2509.14128v2-canary-parakeet",
+      "name": "Canary-1B-v2 & Parakeet-TDT-0.6B-v3: Efficient and High-Performance Models for Multilingual ASR and AST (NVIDIA, arXiv:2509.14128v2)",
+      "kind": "paper",
+      "match": [
+        "arxiv.org/html/2509.14128v2",
+        "arxiv.org/abs/2509.14128v2"
+      ],
+      "exact": true,
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "terms_url": "https://arxiv.org/abs/2509.14128v2",
+      "quote": "arXiv abstract page for 2509.14128v2 links http://creativecommons.org/licenses/by-sa/4.0/ (checked 2026-10-11; v1 has the same licence); the HTML header states 'License: CC BY-SA 4.0'. Sec. 6.1: 'For comparative analysis, we consider several strong baselines ...' and normalized WER with the Open ASR normalizers including 'the newly added multilingual normalizer for non-English test sets'.",
+      "attribution": "Monica Sekoyan et al. (NVIDIA), Canary-1B-v2 & Parakeet-TDT-0.6B-v3, arXiv:2509.14128v2, CC BY-SA 4.0. Per-language WERs from Appendix Tables 11-13 averaged (unweighted) into the benchmark's language sets; percentages converted to fractions. Adapted rows are distributed under CC BY-SA 4.0 (data/extracts). No endorsement.",
+      "scope": "Appendix Tables 11-13 (FLEURS, MLS, CoVoST2 per-language WER) for models with every language of the benchmark set: whisper-large-v3 (all three), seamless-m4t-v2-large (MLS only; FLEURS and CoVoST2 lack Latvian), Parakeet-TDT-0.6B-v3 and Canary-1B-v2 (own, all three). Not used: Table 5 (Open ASR Leaderboard figures), Voxtral-Mini and Phi-4-multimodal (partial language coverage), seamless-m4t-medium (not catalogued), AST/COMET tables.",
+      "verdict": "allowed",
+      "checked": "2026-10-11",
+      "icon": "arxiv.org"
+    }
+  ],
+  "benchmarks": [
+    {
+      "id": "charxiv-rq-test",
+      "name": "CharXiv reasoning questions (test split)",
+      "category": "llm",
+      "kind": "acc",
+      "chance": 0,
+      "url": "https://arxiv.org/html/2406.18521v1#A3.T4",
+      "description": "CharXiv reasoning-question accuracy on the held-out TEST split (1,323 charts, answers kept private, scored by the CharXiv authors), as printed in Appendix C Table 4 of arXiv:2406.18521v1. Different questions from charxiv-rq (validation split); not merged with it."
+    },
+    {
+      "id": "charxiv-dq-test",
+      "name": "CharXiv descriptive questions (test split)",
+      "category": "llm",
+      "kind": "acc",
+      "chance": 0,
+      "url": "https://arxiv.org/html/2406.18521v1#A3.T4",
+      "description": "CharXiv descriptive-question accuracy on the held-out TEST split (1,323 charts, answers kept private, scored by the CharXiv authors), as printed in Appendix C Table 4 of arXiv:2406.18521v1. Different questions from charxiv-dq (validation split); not merged with it."
+    }
+  ],
+  "models": [],
+  "results": [
+    {
+      "model": "gpt-4o-2024-05-13",
+      "bench": "charxiv-rq-test",
+      "score": 0.4701,
+      "source": "https://arxiv.org/html/2406.18521v1#A3.T4",
+      "source_id": "paper-2406.18521v1-charxiv",
+      "by": "independent",
+      "date": "2024-06-26",
+      "note": "CharXiv paper (Wang et al., arXiv:2406.18521v1, CC BY-SA 4.0), Appendix C Table 4 'Model evaluation results on test set', row 'GPT-4o [1]', column 'Reasoning Questions / All' = 47.01; re-read 2026-10-11. Test split: 1,323 charts with private answers, scored by the authors (their own runs of every model; the validation-set results of the same models are in charxiv-rq/charxiv-dq from the authors' README). Checkpoint from Table 11 'Run configurations for all models': gpt-4o-2024-05-13. Share-alike: also listed in this file's extracts."
+    },
+    {
+      "model": "gpt-4o-2024-05-13",
+      "bench": "charxiv-dq-test",
+      "score": 0.8492,
+      "source": "https://arxiv.org/html/2406.18521v1#A3.T4",
+      "source_id": "paper-2406.18521v1-charxiv",
+      "by": "independent",
+      "date": "2024-06-26",
+      "note": "CharXiv paper (Wang et al., arXiv:2406.18521v1, CC BY-SA 4.0), Appendix C Table 4 'Model evaluation results on test set', row 'GPT-4o [1]', column 'Descriptive Questions / All' = 84.92; re-read 2026-10-11. Test split: 1,323 charts with private answers, scored by the authors (their own runs of every model; the validation-set results of the same models are in charxiv-rq/charxiv-dq from the authors' README). Checkpoint from Table 11 'Run configurations for all models': gpt-4o-2024-05-13. Share-alike: also listed in this file's extracts."
+    },
+    {
+      "model": "gpt-4-turbo-2024-04-09",
+      "bench": "charxiv-rq-test",
+      "score": 0.3379,
+      "source": "https://arxiv.org/html/2406.18521v1#A3.T4",
+      "source_id": "paper-2406.18521v1-charxiv",
+      "by": "independent",
+      "date": "2024-06-26",
+      "note": "CharXiv paper (Wang et al., arXiv:2406.18521v1, CC BY-SA 4.0), Appendix C Table 4 'Model evaluation results on test set', row 'GPT-4V [1]', column 'Reasoning Questions / All' = 33.79; re-read 2026-10-11. Test split: 1,323 charts with private answers, scored by the authors (their own runs of every model; the validation-set results of the same models are in charxiv-rq/charxiv-dq from the authors' README). Checkpoint from Table 11 'Run configurations for all models': gpt-4-turbo-2024-04-09. Share-alike: also listed in this file's extracts."
+    },
+    {
+      "model": "gpt-4-turbo-2024-04-09",
+      "bench": "charxiv-dq-test",
+      "score": 0.7978,
+      "source": "https://arxiv.org/html/2406.18521v1#A3.T4",
+      "source_id": "paper-2406.18521v1-charxiv",
+      "by": "independent",
+      "date": "2024-06-26",
+      "note": "CharXiv paper (Wang et al., arXiv:2406.18521v1, CC BY-SA 4.0), Appendix C Table 4 'Model evaluation results on test set', row 'GPT-4V [1]', column 'Descriptive Questions / All' = 79.78; re-read 2026-10-11. Test split: 1,323 charts with private answers, scored by the authors (their own runs of every model; the validation-set results of the same models are in charxiv-rq/charxiv-dq from the authors' README). Checkpoint from Table 11 'Run configurations for all models': gpt-4-turbo-2024-04-09. Share-alike: also listed in this file's extracts."
+    },
+    {
+      "model": "claude-3-sonnet-20240229",
+      "bench": "charxiv-rq-test",
+      "score": 0.3235,
+      "source": "https://arxiv.org/html/2406.18521v1#A3.T4",
+      "source_id": "paper-2406.18521v1-charxiv",
+      "by": "independent",
+      "date": "2024-06-26",
+      "note": "CharXiv paper (Wang et al., arXiv:2406.18521v1, CC BY-SA 4.0), Appendix C Table 4 'Model evaluation results on test set', row 'Claude 3 Sonnet [3]', column 'Reasoning Questions / All' = 32.35; re-read 2026-10-11. Test split: 1,323 charts with private answers, scored by the authors (their own runs of every model; the validation-set results of the same models are in charxiv-rq/charxiv-dq from the authors' README). Checkpoint from Table 11 'Run configurations for all models': claude-3-sonnet-20240229. Share-alike: also listed in this file's extracts."
+    },
+    {
+      "model": "claude-3-sonnet-20240229",
+      "bench": "charxiv-dq-test",
+      "score": 0.7275,
+      "source": "https://arxiv.org/html/2406.18521v1#A3.T4",
+      "source_id": "paper-2406.18521v1-charxiv",
+      "by": "independent",
+      "date": "2024-06-26",
+      "note": "CharXiv paper (Wang et al., arXiv:2406.18521v1, CC BY-SA 4.0), Appendix C Table 4 'Model evaluation results on test set', row 'Claude 3 Sonnet [3]', column 'Descriptive Questions / All' = 72.75; re-read 2026-10-11. Test split: 1,323 charts with private answers, scored by the authors (their own runs of every model; the validation-set results of the same models are in charxiv-rq/charxiv-dq from the authors' README). Checkpoint from Table 11 'Run configurations for all models': claude-3-sonnet-20240229. Share-alike: also listed in this file's extracts."
+    },
+    {
+      "model": "claude-3-haiku-20240307",
+      "bench": "charxiv-rq-test",
+      "score": 0.3046,
+      "source": "https://arxiv.org/html/2406.18521v1#A3.T4",
+      "source_id": "paper-2406.18521v1-charxiv",
+      "by": "independent",
+      "date": "2024-06-26",
+      "note": "CharXiv paper (Wang et al., arXiv:2406.18521v1, CC BY-SA 4.0), Appendix C Table 4 'Model evaluation results on test set', row 'Claude 3 Haiku [3]', column 'Reasoning Questions / All' = 30.46; re-read 2026-10-11. Test split: 1,323 charts with private answers, scored by the authors (their own runs of every model; the validation-set results of the same models are in charxiv-rq/charxiv-dq from the authors' README). Checkpoint from Table 11 'Run configurations for all models': claude-3-haiku-20240307. Share-alike: also listed in this file's extracts."
+    },
+    {
+      "model": "claude-3-haiku-20240307",
+      "bench": "charxiv-dq-test",
+      "score": 0.6449,
+      "source": "https://arxiv.org/html/2406.18521v1#A3.T4",
+      "source_id": "paper-2406.18521v1-charxiv",
+      "by": "independent",
+      "date": "2024-06-26",
+      "note": "CharXiv paper (Wang et al., arXiv:2406.18521v1, CC BY-SA 4.0), Appendix C Table 4 'Model evaluation results on test set', row 'Claude 3 Haiku [3]', column 'Descriptive Questions / All' = 64.49; re-read 2026-10-11. Test split: 1,323 charts with private answers, scored by the authors (their own runs of every model; the validation-set results of the same models are in charxiv-rq/charxiv-dq from the authors' README). Checkpoint from Table 11 'Run configurations for all models': claude-3-haiku-20240307. Share-alike: also listed in this file's extracts."
+    },
+    {
+      "model": "claude-3-opus-20240229",
+      "bench": "charxiv-rq-test",
+      "score": 0.288,
+      "source": "https://arxiv.org/html/2406.18521v1#A3.T4",
+      "source_id": "paper-2406.18521v1-charxiv",
+      "by": "independent",
+      "date": "2024-06-26",
+      "note": "CharXiv paper (Wang et al., arXiv:2406.18521v1, CC BY-SA 4.0), Appendix C Table 4 'Model evaluation results on test set', row 'Claude 3 Opus [3]', column 'Reasoning Questions / All' = 28.80; re-read 2026-10-11. Test split: 1,323 charts with private answers, scored by the authors (their own runs of every model; the validation-set results of the same models are in charxiv-rq/charxiv-dq from the authors' README). Checkpoint from Table 11 'Run configurations for all models': claude-3-opus-20240229. Share-alike: also listed in this file's extracts."
+    },
+    {
+      "model": "claude-3-opus-20240229",
+      "bench": "charxiv-dq-test",
+      "score": 0.7222,
+      "source": "https://arxiv.org/html/2406.18521v1#A3.T4",
+      "source_id": "paper-2406.18521v1-charxiv",
+      "by": "independent",
+      "date": "2024-06-26",
+      "note": "CharXiv paper (Wang et al., arXiv:2406.18521v1, CC BY-SA 4.0), Appendix C Table 4 'Model evaluation results on test set', row 'Claude 3 Opus [3]', column 'Descriptive Questions / All' = 72.22; re-read 2026-10-11. Test split: 1,323 charts with private answers, scored by the authors (their own runs of every model; the validation-set results of the same models are in charxiv-rq/charxiv-dq from the authors' README). Checkpoint from Table 11 'Run configurations for all models': claude-3-opus-20240229. Share-alike: also listed in this file's extracts."
+    },
+    {
+      "model": "reka-flash-21b-20240226",
+      "bench": "charxiv-rq-test",
+      "score": 0.2714,
+      "source": "https://arxiv.org/html/2406.18521v1#A3.T4",
+      "source_id": "paper-2406.18521v1-charxiv",
+      "by": "independent",
+      "date": "2024-06-26",
+      "note": "CharXiv paper (Wang et al., arXiv:2406.18521v1, CC BY-SA 4.0), Appendix C Table 4 'Model evaluation results on test set', row 'Reka Flash [52]', column 'Reasoning Questions / All' = 27.14; re-read 2026-10-11. Test split: 1,323 charts with private answers, scored by the authors (their own runs of every model; the validation-set results of the same models are in charxiv-rq/charxiv-dq from the authors' README). Checkpoint from Table 11 'Run configurations for all models': reka-flash-20240226. Share-alike: also listed in this file's extracts."
+    },
+    {
+      "model": "reka-flash-21b-20240226",
+      "bench": "charxiv-dq-test",
+      "score": 0.5472,
+      "source": "https://arxiv.org/html/2406.18521v1#A3.T4",
+      "source_id": "paper-2406.18521v1-charxiv",
+      "by": "independent",
+      "date": "2024-06-26",
+      "note": "CharXiv paper (Wang et al., arXiv:2406.18521v1, CC BY-SA 4.0), Appendix C Table 4 'Model evaluation results on test set', row 'Reka Flash [52]', column 'Descriptive Questions / All' = 54.72; re-read 2026-10-11. Test split: 1,323 charts with private answers, scored by the authors (their own runs of every model; the validation-set results of the same models are in charxiv-rq/charxiv-dq from the authors' README). Checkpoint from Table 11 'Run configurations for all models': reka-flash-20240226. Share-alike: also listed in this file's extracts."
+    },
+    {
+      "model": "llava-v1-6-34b",
+      "bench": "charxiv-rq-test",
+      "score": 0.2003,
+      "source": "https://arxiv.org/html/2406.18521v1#A3.T4",
+      "source_id": "paper-2406.18521v1-charxiv",
+      "by": "independent",
+      "date": "2024-06-26",
+      "note": "CharXiv paper (Wang et al., arXiv:2406.18521v1, CC BY-SA 4.0), Appendix C Table 4 'Model evaluation results on test set', row 'LLaVA 1.6 Yi 34B [41]', column 'Reasoning Questions / All' = 20.03; re-read 2026-10-11. Test split: 1,323 charts with private answers, scored by the authors (their own runs of every model; the validation-set results of the same models are in charxiv-rq/charxiv-dq from the authors' README). Checkpoint from Table 11 'Run configurations for all models': llava-hf/llava-v1.6-34b-hf (HF conversion of liuhaotian/llava-v1.6-34b, as for the README rows). Share-alike: also listed in this file's extracts."
+    },
+    {
+      "model": "llava-v1-6-34b",
+      "bench": "charxiv-dq-test",
+      "score": 0.5146,
+      "source": "https://arxiv.org/html/2406.18521v1#A3.T4",
+      "source_id": "paper-2406.18521v1-charxiv",
+      "by": "independent",
+      "date": "2024-06-26",
+      "note": "CharXiv paper (Wang et al., arXiv:2406.18521v1, CC BY-SA 4.0), Appendix C Table 4 'Model evaluation results on test set', row 'LLaVA 1.6 Yi 34B [41]', column 'Descriptive Questions / All' = 51.46; re-read 2026-10-11. Test split: 1,323 charts with private answers, scored by the authors (their own runs of every model; the validation-set results of the same models are in charxiv-rq/charxiv-dq from the authors' README). Checkpoint from Table 11 'Run configurations for all models': llava-hf/llava-v1.6-34b-hf (HF conversion of liuhaotian/llava-v1.6-34b, as for the README rows). Share-alike: also listed in this file's extracts."
+    },
+    {
+      "model": "whisper-large-v3",
+      "bench": "fleurs-25eu-avg-wer",
+      "score": 0.125876,
+      "source": "https://arxiv.org/html/2509.14128v2#A2.T11",
+      "source_id": "paper-2509.14128v2-canary-parakeet",
+      "by": "independent",
+      "date": "2025-09-25",
+      "note": "Canary-1B-v2 & Parakeet-TDT-0.6B-v3 report (NVIDIA, arXiv 2509.14128v2, CC BY-SA 4.0), Appendix Table 11 'Per-language WER (%) results on the FLEURS benchmark', row 'whisper-large-v3': derived unweighted mean of the 25 printed per-language cells over the 25 FLEURS languages (bg ... uk) = 12.5876% (cells: 12.86, 11.33, 12.57, 4.30, 27.03, 4.25, 3.12, 19.12, 7.70, 6.31, 11.07, 14.11, 2.31, 22.34, 18.29, 68.89, 5.57, 4.74, 3.65, 8.24, 4.17, 8.40, 19.93, 7.88, 6.51); read 2026-10-11. Same language set and averaging as the benchmark definition (for Parakeet/Canary the mean reproduces the model cards' printed averages). NVIDIA's own runs: Sec. 6.1 'For comparative analysis, we consider several strong baselines: Whisper-large-v3 (1.55B), seamless-m4t-v2-large (2.3B), and seamless-m4t-medium (1.2B) ...' and 'we report normalized WER (%). We use the Hugging Face Open ASR Leaderboard normalizers ... and the newly added multilingual normalizer for non-English test sets', so no other publisher has these baseline numbers. Share-alike: also in this file's extracts."
+    },
+    {
+      "model": "parakeet-tdt-0-6b-v3",
+      "bench": "fleurs-25eu-avg-wer",
+      "score": 0.119696,
+      "source": "https://arxiv.org/html/2509.14128v2#A2.T11",
+      "source_id": "paper-2509.14128v2-canary-parakeet",
+      "by": "lab",
+      "date": "2025-09-25",
+      "note": "Canary-1B-v2 & Parakeet-TDT-0.6B-v3 report (NVIDIA, arXiv 2509.14128v2, CC BY-SA 4.0), Appendix Table 11 'Per-language WER (%) results on the FLEURS benchmark', row 'Parakeet-TDT-0.6B-v3': derived unweighted mean of the 25 printed per-language cells over the 25 FLEURS languages (bg ... uk) = 11.9696% (cells: 12.64, 11.01, 18.41, 5.04, 20.70, 4.85, 3.45, 17.73, 13.21, 5.15, 12.46, 15.72, 3.00, 20.35, 22.84, 20.46, 7.48, 7.31, 4.76, 12.44, 5.51, 8.82, 24.03, 15.08, 6.79); read 2026-10-11. Same language set and averaging as the benchmark definition (for Parakeet/Canary the mean reproduces the model cards' printed averages). Own model (by: lab). Share-alike: also in this file's extracts."
+    },
+    {
+      "model": "canary-1b-v2",
+      "bench": "fleurs-25eu-avg-wer",
+      "score": 0.083964,
+      "source": "https://arxiv.org/html/2509.14128v2#A2.T11",
+      "source_id": "paper-2509.14128v2-canary-parakeet",
+      "by": "lab",
+      "date": "2025-09-25",
+      "note": "Canary-1B-v2 & Parakeet-TDT-0.6B-v3 report (NVIDIA, arXiv 2509.14128v2, CC BY-SA 4.0), Appendix Table 11 'Per-language WER (%) results on the FLEURS benchmark', row 'Canary-1B-v2': derived unweighted mean of the 25 printed per-language cells over the 25 FLEURS languages (bg ... uk) = 8.3964% (cells: 9.25, 7.86, 11.25, 4.40, 9.21, 4.50, 2.90, 12.55, 8.59, 5.02, 8.29, 12.90, 3.07, 12.36, 9.66, 18.31, 6.12, 6.64, 4.39, 6.61, 6.90, 5.74, 13.32, 9.57, 10.50); read 2026-10-11. Same language set and averaging as the benchmark definition (for Parakeet/Canary the mean reproduces the model cards' printed averages). Own model (by: lab). Share-alike: also in this file's extracts."
+    },
+    {
+      "model": "whisper-large-v3",
+      "bench": "mls-6lang-avg-wer",
+      "score": 0.080367,
+      "source": "https://arxiv.org/html/2509.14128v2#A2.T12",
+      "source_id": "paper-2509.14128v2-canary-parakeet",
+      "by": "independent",
+      "date": "2025-09-25",
+      "note": "Canary-1B-v2 & Parakeet-TDT-0.6B-v3 report (NVIDIA, arXiv 2509.14128v2, CC BY-SA 4.0), Appendix Table 12 'Per-language WER (%) results on the MLS benchmark', row 'whisper-large-v3': derived unweighted mean of the 6 printed per-language cells over the 6 MLS languages (es, fr, it, nl, pl, pt) = 8.0367% (cells: 4.89, 7.15, 9.26, 12.08, 8.88, 5.96); read 2026-10-11. Same language set and averaging as the benchmark definition (for Parakeet/Canary the mean reproduces the model cards' printed averages). NVIDIA's own runs: Sec. 6.1 'For comparative analysis, we consider several strong baselines: Whisper-large-v3 (1.55B), seamless-m4t-v2-large (2.3B), and seamless-m4t-medium (1.2B) ...' and 'we report normalized WER (%). We use the Hugging Face Open ASR Leaderboard normalizers ... and the newly added multilingual normalizer for non-English test sets', so no other publisher has these baseline numbers. Share-alike: also in this file's extracts."
+    },
+    {
+      "model": "seamless-m4t-v2-large",
+      "bench": "mls-6lang-avg-wer",
+      "score": 0.053583,
+      "source": "https://arxiv.org/html/2509.14128v2#A2.T12",
+      "source_id": "paper-2509.14128v2-canary-parakeet",
+      "by": "independent",
+      "date": "2025-09-25",
+      "note": "Canary-1B-v2 & Parakeet-TDT-0.6B-v3 report (NVIDIA, arXiv 2509.14128v2, CC BY-SA 4.0), Appendix Table 12 'Per-language WER (%) results on the MLS benchmark', row 'seamless-m4t-v2-large': derived unweighted mean of the 6 printed per-language cells over the 6 MLS languages (es, fr, it, nl, pl, pt) = 5.3583% (cells: 3.08, 3.73, 6.83, 6.91, 5.74, 5.86); read 2026-10-11. Same language set and averaging as the benchmark definition (for Parakeet/Canary the mean reproduces the model cards' printed averages). NVIDIA's own runs: Sec. 6.1 'For comparative analysis, we consider several strong baselines: Whisper-large-v3 (1.55B), seamless-m4t-v2-large (2.3B), and seamless-m4t-medium (1.2B) ...' and 'we report normalized WER (%). We use the Hugging Face Open ASR Leaderboard normalizers ... and the newly added multilingual normalizer for non-English test sets', so no other publisher has these baseline numbers. Share-alike: also in this file's extracts."
+    },
+    {
+      "model": "parakeet-tdt-0-6b-v3",
+      "bench": "mls-6lang-avg-wer",
+      "score": 0.078333,
+      "source": "https://arxiv.org/html/2509.14128v2#A2.T12",
+      "source_id": "paper-2509.14128v2-canary-parakeet",
+      "by": "lab",
+      "date": "2025-09-25",
+      "note": "Canary-1B-v2 & Parakeet-TDT-0.6B-v3 report (NVIDIA, arXiv 2509.14128v2, CC BY-SA 4.0), Appendix Table 12 'Per-language WER (%) results on the MLS benchmark', row 'Parakeet-TDT-0.6B-v3': derived unweighted mean of the 6 printed per-language cells over the 6 MLS languages (es, fr, it, nl, pl, pt) = 7.8333% (cells: 4.39, 4.97, 10.08, 12.78, 7.28, 7.50); read 2026-10-11. Same language set and averaging as the benchmark definition (for Parakeet/Canary the mean reproduces the model cards' printed averages). Own model (by: lab). Share-alike: also in this file's extracts."
+    },
+    {
+      "model": "canary-1b-v2",
+      "bench": "mls-6lang-avg-wer",
+      "score": 0.072733,
+      "source": "https://arxiv.org/html/2509.14128v2#A2.T12",
+      "source_id": "paper-2509.14128v2-canary-parakeet",
+      "by": "lab",
+      "date": "2025-09-25",
+      "note": "Canary-1B-v2 & Parakeet-TDT-0.6B-v3 report (NVIDIA, arXiv 2509.14128v2, CC BY-SA 4.0), Appendix Table 12 'Per-language WER (%) results on the MLS benchmark', row 'Canary-1B-v2': derived unweighted mean of the 6 printed per-language cells over the 6 MLS languages (es, fr, it, nl, pl, pt) = 7.2733% (cells: 2.94, 3.36, 9.16, 11.27, 8.77, 8.14); read 2026-10-11. Same language set and averaging as the benchmark definition (for Parakeet/Canary the mean reproduces the model cards' printed averages). Own model (by: lab). Share-alike: also in this file's extracts."
+    },
+    {
+      "model": "whisper-large-v3",
+      "bench": "covost2-13lang-avg-wer",
+      "score": 0.102746,
+      "source": "https://arxiv.org/html/2509.14128v2#A2.T13",
+      "source_id": "paper-2509.14128v2-canary-parakeet",
+      "by": "independent",
+      "date": "2025-09-25",
+      "note": "Canary-1B-v2 & Parakeet-TDT-0.6B-v3 report (NVIDIA, arXiv 2509.14128v2, CC BY-SA 4.0), Appendix Table 13 'Per-language WER (%) results on the CoVoST2 benchmark', row 'whisper-large-v3': derived unweighted mean of the 13 printed per-language cells over the 13 CoVoST2 languages (de, en, es, et, fr, it, lv, nl, pt, ru, sl, sv, uk) = 10.2746% (cells: 5.94, 8.52, 4.32, 28.54, 11.02, 5.45, 18.84, 5.97, 3.72, 4.04, 16.63, 8.06, 12.52); read 2026-10-11. Same language set and averaging as the benchmark definition (for Parakeet/Canary the mean reproduces the model cards' printed averages). NVIDIA's own runs: Sec. 6.1 'For comparative analysis, we consider several strong baselines: Whisper-large-v3 (1.55B), seamless-m4t-v2-large (2.3B), and seamless-m4t-medium (1.2B) ...' and 'we report normalized WER (%). We use the Hugging Face Open ASR Leaderboard normalizers ... and the newly added multilingual normalizer for non-English test sets', so no other publisher has these baseline numbers. Share-alike: also in this file's extracts."
+    },
+    {
+      "model": "parakeet-tdt-0-6b-v3",
+      "bench": "covost2-13lang-avg-wer",
+      "score": 0.119777,
+      "source": "https://arxiv.org/html/2509.14128v2#A2.T13",
+      "source_id": "paper-2509.14128v2-canary-parakeet",
+      "by": "lab",
+      "date": "2025-09-25",
+      "note": "Canary-1B-v2 & Parakeet-TDT-0.6B-v3 report (NVIDIA, arXiv 2509.14128v2, CC BY-SA 4.0), Appendix Table 13 'Per-language WER (%) results on the CoVoST2 benchmark', row 'Parakeet-TDT-0.6B-v3': derived unweighted mean of the 13 printed per-language cells over the 13 CoVoST2 languages (de, en, es, et, fr, it, lv, nl, pt, ru, sl, sv, uk) = 11.9777% (cells: 4.84, 6.80, 3.41, 22.04, 6.05, 3.69, 38.36, 6.50, 3.96, 3.00, 31.80, 20.16, 5.10); read 2026-10-11. Same language set and averaging as the benchmark definition (for Parakeet/Canary the mean reproduces the model cards' printed averages). Own model (by: lab). Share-alike: also in this file's extracts."
+    },
+    {
+      "model": "canary-1b-v2",
+      "bench": "covost2-13lang-avg-wer",
+      "score": 0.088508,
+      "source": "https://arxiv.org/html/2509.14128v2#A2.T13",
+      "source_id": "paper-2509.14128v2-canary-parakeet",
+      "by": "lab",
+      "date": "2025-09-25",
+      "note": "Canary-1B-v2 & Parakeet-TDT-0.6B-v3 report (NVIDIA, arXiv 2509.14128v2, CC BY-SA 4.0), Appendix Table 13 'Per-language WER (%) results on the CoVoST2 benchmark', row 'Canary-1B-v2': derived unweighted mean of the 13 printed per-language cells over the 13 CoVoST2 languages (de, en, es, et, fr, it, lv, nl, pt, ru, sl, sv, uk) = 8.8508% (cells: 5.53, 6.85, 3.81, 18.28, 6.30, 4.80, 11.49, 6.93, 6.87, 5.14, 7.59, 13.32, 18.15); read 2026-10-11. Same language set and averaging as the benchmark definition (for Parakeet/Canary the mean reproduces the model cards' printed averages). Own model (by: lab). Share-alike: also in this file's extracts."
+    }
+  ]
+}

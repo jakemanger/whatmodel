@@ -194,7 +194,8 @@
       "mt-bench-gpt4-single",
       "alpacaeval2-lc",
       "alpacaeval1-winrate",
-      "llm-blender-mixinstruct-gpt-rank"
+      "llm-blender-mixinstruct-gpt-rank",
+      "polyrating-chatbot-arena-rating"
     ]
   },
   {
@@ -321,7 +322,9 @@
       "diagram-mmu-dqa",
       "bear-bench-overall",
       "scidocbench-overall",
-      "spacecast-bench-overall"
+      "spacecast-bench-overall",
+      "charxiv-rq-test",
+      "charxiv-dq-test"
     ]
   },
   {
@@ -399,7 +402,8 @@
       "xtc-bench-gen-overall",
       "cvtg-500l-pned-cosmos3",
       "cvtg-102ch-pned-cosmos3",
-      "hpsv3-cosmos3"
+      "hpsv3-cosmos3",
+      "chineseword-longcat-overall"
     ]
   },
   {
@@ -553,7 +557,8 @@
       "voxtral-rt-2026-mcv12",
       "cose-e-eu4-mean-wer",
       "iberian-asr-7lang-macro-wer",
-      "mu-bench-batch-uer"
+      "mu-bench-batch-uer",
+      "aura-ar-en-22set-avg-wer"
     ]
   }
 ]

@@ -8406,89 +8406,26 @@
     "scope": " Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-D-2026-10-09.md."
   },
   {
-    "id": "card2-nvidia-parakeet-tdt-0-6b-v2",
-    "name": "nvidia/parakeet-tdt-0.6b-v2 model card",
+    "id": "first-party-nvidia-asr-cards",
+    "name": "NVIDIA ASR model cards (Parakeet / Canary, Hugging Face)",
     "kind": "first-party",
-    "match": [
-      "huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md"
-    ],
-    "exact": true,
     "license": "CC BY 4.0",
-    "license_url": "/licenses/nvidia--parakeet-tdt-0.6b-v2.txt",
-    "terms_url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md",
-    "quote": "README front-matter declares 'license: cc-by-4.0'; the card's License/Terms of Use section states the model is governed by the CC-BY-4.0 license. No root LICENSE file at this revision. Selected own-lab result cells in the pinned README only; linked blogs, images hosted elsewhere and competitor columns are not used.",
-    "verdict": "allowed",
-    "checked": "2026-09-26",
-    "icon": "huggingface.co",
-    "attribution": "NVIDIA. nvidia/parakeet-tdt-0.6b-v2 model card. Source: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md. Licence: CC BY 4.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
-  },
-  {
-    "id": "card2-nvidia-parakeet-tdt-0-6b-v3",
-    "name": "nvidia/parakeet-tdt-0.6b-v3 model card",
-    "kind": "first-party",
     "match": [
-      "huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/541d1f99c6b0c3cd0b11a95167540bb8edefd82b/README.md"
-    ],
-    "exact": true,
-    "license": "CC BY 4.0",
-    "license_url": "/licenses/nvidia--parakeet-tdt-0.6b-v3.txt",
-    "terms_url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/541d1f99c6b0c3cd0b11a95167540bb8edefd82b/README.md",
-    "quote": "README front-matter declares 'license: cc-by-4.0'; the card's License/Terms of Use section states the model is governed by the CC-BY-4.0 license. No root LICENSE file at this revision. Selected own-lab result cells in the pinned README only; linked blogs, images hosted elsewhere and competitor columns are not used.",
-    "verdict": "allowed",
-    "checked": "2026-09-26",
-    "icon": "huggingface.co",
-    "attribution": "NVIDIA. nvidia/parakeet-tdt-0.6b-v3 model card. Source: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/541d1f99c6b0c3cd0b11a95167540bb8edefd82b/README.md. Licence: CC BY 4.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
-  },
-  {
-    "id": "card2-nvidia-parakeet-rnnt-1-1b",
-    "name": "nvidia/parakeet-rnnt-1.1b model card",
-    "kind": "first-party",
-    "match": [
-      "huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md"
-    ],
-    "exact": true,
-    "license": "CC BY 4.0",
-    "license_url": "/licenses/nvidia--parakeet-rnnt-1.1b.txt",
-    "terms_url": "https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md",
-    "quote": "README front-matter declares 'license: cc-by-4.0'; the card's License/Terms of Use section states the model is governed by the CC-BY-4.0 license. No root LICENSE file at this revision. Selected own-lab result cells in the pinned README only; linked blogs, images hosted elsewhere and competitor columns are not used.",
-    "verdict": "allowed",
-    "checked": "2026-09-26",
-    "icon": "huggingface.co",
-    "attribution": "NVIDIA and Suno.ai. nvidia/parakeet-rnnt-1.1b model card. Source: https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md. Licence: CC BY 4.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
-  },
-  {
-    "id": "card2-nvidia-canary-qwen-2-5b",
-    "name": "nvidia/canary-qwen-2.5b model card",
-    "kind": "first-party",
-    "match": [
+      "huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/541d1f99c6b0c3cd0b11a95167540bb8edefd82b/README.md",
+      "huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md",
+      "huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md",
+      "huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md",
       "huggingface.co/nvidia/canary-qwen-2.5b/blob/b1469e1bba1cfe140205529c79c434ca47180960/README.md"
     ],
     "exact": true,
-    "license": "CC BY 4.0",
-    "license_url": "/licenses/nvidia--canary-qwen-2.5b.txt",
-    "terms_url": "https://huggingface.co/nvidia/canary-qwen-2.5b/blob/b1469e1bba1cfe140205529c79c434ca47180960/README.md",
-    "quote": "README front-matter declares 'license: cc-by-4.0'; the card's License/Terms of Use section states the model is governed by the CC-BY-4.0 license. No root LICENSE file at this revision. Selected own-lab result cells in the pinned README only; linked blogs, images hosted elsewhere and competitor columns are not used.",
+    "scope": "One NVIDIA evaluator for its own ASR cards (Open ASR Leaderboard datasets, greedy decoding, no external LM; multilingual averages after removing punctuation and capitalisation), like first-party-meta-asr-cards / first-party-speechbrain-asr-cards.",
+    "license_url": "/licenses/nvidia--parakeet-tdt-0.6b-v2.txt",
+    "terms_url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md",
+    "quote": "Each of the five pinned READMEs declares 'license: cc-by-4.0' in its front matter (full notices: /licenses/nvidia--parakeet-tdt-0.6b-v2.txt, /licenses/nvidia--parakeet-tdt-0.6b-v3.txt, /licenses/nvidia--parakeet-rnnt-1.1b.txt, /licenses/nvidia--canary-qwen-2.5b.txt, /licenses/nvidia--canary-1b-v2.txt). Own-lab result cells only; competitor columns are not used.",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-11",
     "icon": "huggingface.co",
-    "attribution": "NVIDIA. nvidia/canary-qwen-2.5b model card. Source: https://huggingface.co/nvidia/canary-qwen-2.5b/blob/b1469e1bba1cfe140205529c79c434ca47180960/README.md. Licence: CC BY 4.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
-  },
-  {
-    "id": "card2-nvidia-canary-1b-v2",
-    "name": "nvidia/canary-1b-v2 model card",
-    "kind": "first-party",
-    "match": [
-      "huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md"
-    ],
-    "exact": true,
-    "license": "CC BY 4.0",
-    "license_url": "/licenses/nvidia--canary-1b-v2.txt",
-    "terms_url": "https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md",
-    "quote": "README front-matter declares 'license: cc-by-4.0'; the card's License/Terms of Use section states the model is governed by the CC-BY-4.0 license. No root LICENSE file at this revision. Selected own-lab result cells in the pinned README only; linked blogs, images hosted elsewhere and competitor columns are not used.",
-    "verdict": "allowed",
-    "checked": "2026-09-26",
-    "icon": "huggingface.co",
-    "attribution": "NVIDIA. nvidia/canary-1b-v2 model card. Source: https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md. Licence: CC BY 4.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "NVIDIA. Model cards for nvidia/parakeet-tdt-0.6b-v2, nvidia/parakeet-tdt-0.6b-v3, nvidia/parakeet-rnnt-1.1b, nvidia/canary-qwen-2.5b, nvidia/canary-1b-v2 on Hugging Face (pinned revisions). Licence: CC BY 4.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
   },
   {
     "id": "card2-qwen-qwen3-asr-1-7b",
@@ -11783,13 +11720,15 @@
       "help.openai.com/en/articles/9624314-model-release-notes",
       "openai.com/index/gpt-4-1",
       "openai.com/index/introducing-gpt-5-2",
-      "openai.com/index/introducing-gpt-5-for-developers"
+      "openai.com/index/introducing-gpt-5-for-developers",
+      "openai.com/index/gpt-5-5-instant",
+      "openai.com/index/gpt-5-1-for-developers"
     ],
     "kind": "first-party",
     "license": "Factual vendor-reported score (not licensed content)",
     "terms_url": "https://openai.com/policies/terms-of-use/",
     "verdict": "allowed",
-    "checked": "2026-10-09",
+    "checked": "2026-10-11",
     "exact": true,
     "icon": "openai.com",
     "attribution": "OpenAI, vendor-reported results for OpenAI's own models from openai.com announcement posts and Deployment Safety Hub system cards; individual figures hand-recorded 2026-10-07 (openai.com posts read from Internet Archive captures because openai.com returns HTTP 403 to direct fetches); percentages converted to fractions. Lab-reported, not independent measurements. No endorsement.",
@@ -14155,7 +14094,8 @@
     "kind": "first-party",
     "match": [
       "mimo.xiaomi.com/mimo-v2-omni",
-      "mimo.xiaomi.com/mimo-v2-5"
+      "mimo.xiaomi.com/mimo-v2-5",
+      "mimo.xiaomi.com/mimo-v2-pro"
     ],
     "exact": true,
     "license": "Factual vendor-reported score (not licensed content)",
@@ -14164,7 +14104,7 @@
     "attribution": "Xiaomi MiMo Team, vendor-reported results for its own MiMo models from the mimo.xiaomi.com launch pages (MiMo-V2-Omni, 2026-03-18; MiMo-V2.5, 2026-04-22); hand-recorded 2026-10-09; percentages converted to fractions. Lab-reported. No endorsement.",
     "scope": "CharXiv RQ values for MiMo's own models, from the chart data in the page HTML that the page renders as text labels. Other labs' values on the same charts are not used.",
     "verdict": "allowed",
-    "checked": "2026-10-09"
+    "checked": "2026-10-11"
   },
   {
     "id": "card2-coherelabs-north-micro-vision-instruct",
@@ -16121,5 +16061,205 @@
     "verdict": "allowed",
     "checked": "2026-10-11",
     "icon": "github.com"
+  },
+  {
+    "id": "paper-2409.00696v3-polyrating",
+    "name": "Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation (arXiv:2409.00696v3)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2409.00696v3"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2409.00696v3",
+    "quote": "arXiv abstract page for 2409.00696v3 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+    "attribution": "Authors of arXiv:2409.00696 (Polyrating), CC BY 4.0. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-11",
+    "evidence_url": "https://arxiv.org/abs/2409.00696v3",
+    "icon": "arxiv.org",
+    "scope": "Table 7 Rating column (not the modifier columns, not unidimensional Table 8) for 96 rows: 82 matched to catalogue models by exact id/name, 13 whose Arena key is mapped exactly as our lmarena-text rows map the same key, and reka-core-20240501. Unmapped: preview/product keys (gemini-advanced-0514, bard-jan-24-gemini-pro, gemini-1.5-pro-api-0514/-0409-preview, gemini-1.5-flash-api-0514, gemini-pro, reka-flash-preview-20240611, reka-flash-21b-20240226-online, mistral-next, pplx-*-online) and uncatalogued models (yi-large(-preview), claude-1, claude-instant-1, qwen-max-0428, glm-4-0116, gpt-3.5-turbo-0314)."
+  },
+  {
+    "id": "report-2602.04705v1",
+    "name": "Baidu - ERNIE 5.0 Technical Report (arXiv:2602.04705v1)",
+    "kind": "first-party",
+    "match": [
+      "arxiv.org/html/2602.04705v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2602.04705v1",
+    "quote": "arXiv abstract page for 2602.04705 (only version v1, submitted 2026-02-04) links http://creativecommons.org/licenses/by/4.0/ (checked 2026-10-11); the HTML header reads 'License: CC BY 4.0'. Sec. 6: 'We conduct systematic evaluations of ERNIE 5.0 against state-of-the-art models across a wide range of text (Sec. 6.1), vision (Sec. 6.2), and audio benchmarks (Sec. 6.3) with internal evaluation framework, ERNIE-Eval'.",
+    "attribution": "Baidu ERNIE Team. ERNIE 5.0 Technical Report. arXiv:2602.04705v1. CC BY 4.0. Selected numerical cells transcribed; percentages divided by 100; 'ChartXiv' read as CharXiv. No endorsement.",
+    "scope": "Table 3 rows ChartXiv-RQ and ChartXiv-DQ: ERNIE 5.0 column (lab) and the ChartXiv-DQ cells of Gemini 2.5-Pro, GPT-5 (High) and Gemini 3-Pro (independent; covered by the Sec. 6 ERNIE-Eval statement and not published by their makers). Not used: competitor ChartXiv-RQ cells (GPT-5 81.10 and Gemini 3-Pro 81.40 equal the makers' own published figures, so they look copied), the unsized Qwen3-VL Thinking column, other rows.",
+    "verdict": "allowed",
+    "checked": "2026-10-11",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "first-party-opengvlab-scores",
+    "name": "OpenGVLab (Shanghai AI Laboratory) vendor-reported scores for its own InternVL models (InternVL2.5 report, arXiv 2412.05271v5)",
+    "kind": "first-party",
+    "match": [
+      "arxiv.org/html/2412.05271v5"
+    ],
+    "exact": true,
+    "license": "Factual vendor-reported score (not licensed content)",
+    "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "terms_url": "https://arxiv.org/abs/2412.05271v5",
+    "quote": "Owner rule (b), approved 2026-10-07: a vendor's own published score for its own model may be recorded by hand one figure at a time with the exact URL, date and printed settings; other labs' cells excluded; rows labelled by: 'lab'. The arXiv abstract page for 2412.05271v5 links http://arxiv.org/licenses/nonexclusive-distrib/1.0/ (not an open licence), so only rule (b) applies.",
+    "attribution": "OpenGVLab / Shanghai AI Laboratory (Zhe Chen et al.), 'Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling', arXiv:2412.05271v5; own-model figures hand-recorded 2026-10-11; percentages converted to fractions. Lab-reported. No endorsement.",
+    "scope": "Table 7 row 'InternVL2-4B' CharXiv (RQ / DQ) only. InternVL2-26B row excluded (its 33.4 / 62.4 equals the CharXiv authors' README figure, already recorded from that source); InternVL2.5 rows not catalogued; other labs' rows excluded.",
+    "verdict": "allowed",
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "paper-2406.18521v1-charxiv",
+    "name": "CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs (arXiv:2406.18521v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2406.18521v1",
+      "arxiv.org/abs/2406.18521v1"
+    ],
+    "exact": true,
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "terms_url": "https://arxiv.org/abs/2406.18521v1",
+    "quote": "arXiv abstract page for 2406.18521 (only version v1) links http://creativecommons.org/licenses/by-sa/4.0/ as the article licence (checked 2026-10-11). Owner note 2026-10-09: 'The CharXiv arXiv paper is CC BY-SA 4.0 and usable.' Table 11 'Run configurations for all models' documents the authors' own runs of every model.",
+    "attribution": "Zirui Wang et al. (Princeton NLP), CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs, arXiv:2406.18521v1, CC BY-SA 4.0. Test-set overall accuracies from Appendix C Table 4; percentages converted to fractions; model names mapped via Table 11. Adapted rows are distributed under CC BY-SA 4.0 (data/extracts). No endorsement.",
+    "scope": "Appendix C Table 4 test-split RQ All and DQ All for the 7 models whose Table 11 checkpoint is catalogued (gpt-4o-2024-05-13, gpt-4-turbo-2024-04-09, Claude 3 Sonnet/Haiku/Opus, reka-flash-20240226, llava-v1.6-34b). Not used: Reka Core (reka-core-20240415 not catalogued), Gemini 1.0 Pro Vision, Qwen VL Max/Plus (no snapshot), Reka Edge and open models not in the catalogue.",
+    "verdict": "allowed",
+    "checked": "2026-10-11",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "first-party-minimax-scores",
+    "name": "MiniMax vendor-reported benchmark scores for its own models (Hugging Face model cards)",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md"
+    ],
+    "exact": true,
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.1/blob/cd97f59135f37b2a6bf09356e485d5e4aeb7dc9c/README.md",
+    "quote": "Owner rule (b), approved 2026-10-07: a vendor's own published score for its own model may be recorded by hand one figure at a time with the exact URL, date and printed settings; other labs' cells excluded; rows labelled by: 'lab'. (The card's repo licence is 'modified-mit' (MIT plus a condition to display 'MiniMax M2.1' in commercial products); it is not relied on here.)",
+    "attribution": "MiniMax, MiniMax-M2.1 model card (@cd97f59), own-model figures hand-recorded 2026-10-11; percentages converted to fractions. Lab-reported. No endorsement.",
+    "scope": "Last benchmark table, row '𝜏²-Bench Telecom', columns MiniMax-M2.1 and MiniMax-M2 (MiniMax's own AA-methodology runs). Other labs' columns excluded.",
+    "verdict": "allowed",
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "paper-2607.00248v1-seed2-0",
+    "name": "ByteDance Seed - Seed2.0 Model Card (arXiv:2607.00248v1)",
+    "kind": "first-party",
+    "match": [
+      "arxiv.org/pdf/2607.00248v1",
+      "arxiv.org/abs/2607.00248v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2607.00248v1",
+    "quote": "arXiv abstract page for 2607.00248 (only version v1, submitted 2026-06-30) links http://creativecommons.org/licenses/by/4.0/ (checked 2026-10-11). No HTML rendering; values read from the PDF text layer.",
+    "attribution": "ByteDance Seed, Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity, arXiv:2607.00248v1, CC BY 4.0. Own-model cells transcribed; percentages converted to fractions. No endorsement.",
+    "scope": "Own-model cells only (Seed2.0 Pro / Lite), Sec. 3.3 agentic tables, row τ2-Bench (telecom). Competitor cells excluded: Sec. 3.3 takes 'the maximum of the score reported in the official documentation and the score obtained in our tests', so they mix vendor figures and ByteDance runs.",
+    "verdict": "allowed",
+    "checked": "2026-10-11",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2509.14128v2-canary-parakeet",
+    "name": "Canary-1B-v2 & Parakeet-TDT-0.6B-v3: Efficient and High-Performance Models for Multilingual ASR and AST (NVIDIA, arXiv:2509.14128v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2509.14128v2",
+      "arxiv.org/abs/2509.14128v2"
+    ],
+    "exact": true,
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "terms_url": "https://arxiv.org/abs/2509.14128v2",
+    "quote": "arXiv abstract page for 2509.14128v2 links http://creativecommons.org/licenses/by-sa/4.0/ (checked 2026-10-11; v1 has the same licence); the HTML header states 'License: CC BY-SA 4.0'. Sec. 6.1: 'For comparative analysis, we consider several strong baselines ...' and normalized WER with the Open ASR normalizers including 'the newly added multilingual normalizer for non-English test sets'.",
+    "attribution": "Monica Sekoyan et al. (NVIDIA), Canary-1B-v2 & Parakeet-TDT-0.6B-v3, arXiv:2509.14128v2, CC BY-SA 4.0. Per-language WERs from Appendix Tables 11-13 averaged (unweighted) into the benchmark's language sets; percentages converted to fractions. Adapted rows are distributed under CC BY-SA 4.0 (data/extracts). No endorsement.",
+    "scope": "Appendix Tables 11-13 (FLEURS, MLS, CoVoST2 per-language WER) for models with every language of the benchmark set: whisper-large-v3 (all three), seamless-m4t-v2-large (MLS only; FLEURS and CoVoST2 lack Latvian), Parakeet-TDT-0.6B-v3 and Canary-1B-v2 (own, all three). Not used: Table 5 (Open ASR Leaderboard figures), Voxtral-Mini and Phi-4-multimodal (partial language coverage), seamless-m4t-medium (not catalogued), AST/COMET tables.",
+    "verdict": "allowed",
+    "checked": "2026-10-11",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "speech-stt-qcri-aura-ccby",
+    "name": "QCRI Arabic + English ASR leaderboard (Hugging Face Space QCRI/AURA-Arabic-English-ASR-leaderboard)",
+    "kind": "leaderboard",
+    "match": [
+      "huggingface.co/spaces/QCRI/AURA-Arabic-English-ASR-leaderboard/blob/208ff13439f377131207a2b32bf73364ba0e2d0c/leaderboard.tsv"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://huggingface.co/spaces/QCRI/AURA-Arabic-English-ASR-leaderboard/blob/208ff13439f377131207a2b32bf73364ba0e2d0c/README.md",
+    "quote": "Space README front matter at @208ff13: 'license: cc-by-4.0'; the committed leaderboard.tsv is the data the Space renders. index.html: 'All reported WER/CER scores use the same bilingual Arabic–English text normalizer before scoring.'",
+    "attribution": "QCRI (Qatar Computing Research Institute), Bilingual Arabic-English ASR Leaderboard, leaderboard.tsv @208ff13, CC BY 4.0. Average WER converted to a fraction; model labels mapped to catalogue ids. No endorsement.",
+    "scope": "'Average WER' column for rows whose label maps to one catalogued speech model (cohere-transcribe-arabic-07-2026, qwen3_asr_1_7b, qwen3_asr_0_6b). Not used: QCRI's own AURA rows (not catalogued), 'whisper3' (size not stated), the Nemotron streaming variants (checkpoint not stated), Gemma-4 / Qwen2.5-Omni (LLM-category models), per-set columns.",
+    "verdict": "allowed",
+    "checked": "2026-10-11",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "paper-2508.21376v2-ahelm",
+    "name": "AHELM: A Holistic Evaluation of Audio-Language Models (Stanford CRFM, arXiv:2508.21376v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2508.21376v2",
+      "arxiv.org/abs/2508.21376v2"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2508.21376v2",
+    "quote": "arXiv abstract page for 2508.21376v2 links http://creativecommons.org/licenses/by/4.0/ (checked 2026-10-11). The paper is a benchmark (HELM framework) in which the authors run every model themselves: 'To guarantee equitable and reliable comparisons among ALMs, we standardize the inference parameters by setting the model temperature to 0 and the maximum number of output tokens to 200'; prompts and raw outputs are released.",
+    "attribution": "Tony Lee, Haoqin Tu, Chi Heem Wong et al. (Stanford CRFM), AHELM: A Holistic Evaluation of Audio-Language Models, arXiv:2508.21376v2, CC BY 4.0. Selected per-scenario scores from Appendix Tables A8-A19; model identifiers mapped via Table 3. No endorsement.",
+    "scope": "Appendix Tables A8 (VoxCeleb2, VocalSound, LibriSpeech), A9 (AIR-Bench Foundation), A10 (CoRe-Bench), A11 (MELD, MUStARD), A15 (FLEURS, MLS WER) and A19 (Robust Speech Bench) for the 14 audio-language models (not the ASR+GPT-4o baseline pipelines). Not used: GPT-4o-judge critique scores, mean win rates, CoVoST-2 BLEU, bias/fairness/toxicity/safety tables.",
+    "verdict": "allowed",
+    "checked": "2026-10-11",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "hallucinations-leaderboard-results-apache",
+    "name": "Hallucinations Leaderboard results (HF dataset hallucinations-leaderboard/results)",
+    "kind": "leaderboard",
+    "match": [
+      "huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/"
+    ],
+    "exact": false,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/datasets/hallucinations-leaderboard/results/blob/30f759225f89edcc18cb403b93f27bf4231223f7/README.md",
+    "quote": "Dataset card front matter at @30f7592: 'license: apache-2.0'. Each file is an EleutherAI lm-evaluation-harness results JSON written by the leaderboard backend (config.model, model_args 'pretrained=<repo>,revision=main,...', task versions), i.e. the leaderboard's own runs.",
+    "attribution": "Hallucinations Leaderboard (Hong, Minervini et al.), hallucinations-leaderboard/results @30f7592, Apache-2.0. Selected task scores (nq8, tqa8, truthfulqa_mc2, halueval_qa), latest run per model and task; model repos mapped to catalogue ids. No endorsement.",
+    "scope": "Files under the pinned revision for the 36 catalogued model repos; tasks nq8 (NQ-Open 8-shot EM), tqa8 (TriviaQA 8-shot EM), truthfulqa_mc2 and halueval_qa; latest run per model and task. Other tasks (summarisation ROUGE/factKB, FEVER, RACE, SQuADv2, MemoTrap, IFEval, SelfCheckGPT, ...) not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-11",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "openlifescienceai-results-apache",
+    "name": "Open Medical-LLM Leaderboard results (HF dataset openlifescienceai/results)",
+    "kind": "leaderboard",
+    "match": [
+      "huggingface.co/datasets/openlifescienceai/results/blob/62d7322cf11bf622399f7f54e5a7620ec6ef013d/"
+    ],
+    "exact": false,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/datasets/openlifescienceai/results",
+    "quote": "Dataset licence apache-2.0 (Hugging Face card metadata at @62d7322). Only lm-evaluation-harness outputs written by the leaderboard backend (config.model_args 'pretrained=<repo>,revision=main,dtype=...') are used; hand-entered files (Flan-PaLM, GPT-4, Med-PaLM 2, Gemini, GPT-3.5, the 2024-03-14_04-32-21 seed files and template-timestamp files) are excluded as possibly copied.",
+    "attribution": "Open Medical-LLM Leaderboard (Open Life Science AI), openlifescienceai/results @62d7322, Apache-2.0. MedQA (4 options), MedMCQA and PubMedQA accuracies from harness result files; model repos mapped to catalogue ids. No endorsement.",
+    "scope": "Harness-generated result files for 18 catalogued model repos (latest file per repo); tasks medqa_4options, medmcqa, pubmedqa. The six MMLU medical subsets are not used (parts of MMLU).",
+    "verdict": "allowed",
+    "checked": "2026-10-11",
+    "icon": "huggingface.co"
   }
 ]
