@@ -1,0 +1,634 @@
+{
+  "checked": "2026-10-11",
+  "placeholders": {
+    "{repo}": "Hugging Face repo id, e.g. unsloth/Qwen3-0.6B-GGUF or mlx-community/Qwen3-0.6B-4bit",
+    "{quant}": "GGUF quant label as it appears in the file name, e.g. Q4_K_M, Q8_0, UD-Q4_K_XL (case-insensitive for llama.cpp and Ollama)",
+    "{tag}": "Ollama library tag, e.g. qwen3.5:4b",
+    "<model-key>": "LM Studio model key printed by `lms ls` (not derivable from the repo id; e.g. qwen3-0.6b)"
+  },
+  "machine": {
+    "chip": "Apple M2 Pro",
+    "memory_gb": 16,
+    "os": "macOS 27.0 (build 26A5368g), arm64",
+    "homebrew": "7.0.7",
+    "uv": "0.11.17",
+    "note": "Swap was 10-12 GB in use and other agents were writing to the same disk during the run, so free space moved by more than this work's own footprint."
+  },
+  "runtimes": [
+    {
+      "id": "llamacpp",
+      "name": "llama.cpp",
+      "formats": ["gguf"],
+      "install": {
+        "mac": "curl -LsSf https://llama.app/install.sh | sh",
+        "linux": "curl -LsSf https://llama.app/install.sh | sh",
+        "windows": "irm https://llama.app/install.ps1 | iex",
+        "source_url": "https://github.com/ggml-org/llama.cpp#quick-start",
+        "quote": "# curl\ncurl -LsSf https://llama.app/install.sh | sh\n\n# powershell\nirm https://llama.app/install.ps1 | iex"
+      },
+      "install_alt": {
+        "mac": "brew install llama.cpp",
+        "linux": "brew install llama.cpp",
+        "windows": "winget install llama.cpp",
+        "desktop_app_mac": "brew install --cask llama-app",
+        "source_url": "https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md",
+        "quote": "brew install llama.cpp ... The formula is automatically updated with new `llama.cpp` releases. | winget install llama.cpp"
+      },
+      "run": {
+        "gguf_chat": "llama cli -hf {repo}:{quant}",
+        "gguf_server": "llama serve -hf {repo}:{quant}",
+        "mlx_chat": null,
+        "mlx_server": null,
+        "ollama": null,
+        "safetensors": null
+      },
+      "run_alt": {
+        "gguf_oneshot": "llama cli -hf {repo}:{quant} -st -p \"Your prompt\"",
+        "gguf_server_fixed_port": "llama serve -hf {repo}:{quant} --port 9931",
+        "gguf_chat_classic_binary": "llama-cli -hf {repo}:{quant}",
+        "gguf_server_classic_binary": "llama-server -hf {repo}:{quant}",
+        "windows_winget": "llama-server -hf {repo}:{quant}  (winget exposes llama-server.exe / llama-cli.exe, not llama.exe)"
+      },
+      "open_url": "http://localhost:9931",
+      "notes": "Default server port changed from 8080 to 9931 on 2026-10-09 (PR #30159, first nightly b11521). The llama.app installer and winget currently ship b11540, which listens on 9931 (tested). Homebrew stable 0.6.0 still listens on 8080 and prints 'notice: server default port will be changed to :9931 in a future release'. The llama.app docs pages (quickstart, serve) still say 8080. The server prints 'listening on http://127.0.0.1:PORT'; tell users to open that URL, or pin it with --port. Without :{quant}, -hf picks Q4_K_M, then Q8_0, then the first GGUF in the repo (common/download.cpp); ggml-org repos often have only Q4_0/Q8_0/BF16, so ggml-org/Qwen3.5-0.8B-GGUF resolves to Q8_0 (834 MB). Since 0.6.x, -hf downloads go to the standard Hugging Face cache (~/.cache/huggingface/hub, or LLAMA_CACHE / HF_HUB_CACHE / HF_HOME), not ~/Library/Caches/llama.cpp. The unified `llama` binary also has `llama bench`. The llama.app install.sh only has prebuilt Mac binaries for brand strings M1-M5 and A18 (Metal), so Intel Macs get 'No prebuilt llama binary is available' and should use Homebrew. The web UI is served gzip-only: curl without --compressed gets 415, but browsers are fine.",
+      "vision": "-hf downloads the matching mmproj automatically, choosing the closest quant (Q8_0 mmproj for a Q4_K_M model). Disable it with --no-mmproj. Tested with SmolVLM2: modalities text, vision, video.",
+      "split": "Split GGUFs (-00001-of-0000N), including ones in a per-quant subfolder, are resolved by {repo}:{quant}, and every shard is downloaded. Tested.",
+      "docs": [
+        "https://github.com/ggml-org/llama.cpp#quick-start",
+        "https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md",
+        "https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md",
+        "https://github.com/ggml-org/llama.cpp/blob/master/tools/cli/README.md",
+        "https://github.com/ggml-org/llama.cpp/pull/30159",
+        "https://github.com/ggml-org/llama.cpp/pull/26508",
+        "https://llama.app",
+        "https://llama.app/docs/quickstart",
+        "https://llama.app/docs/serve",
+        "https://llama.app/docs/cli",
+        "https://github.com/ggml-org/llama.cpp/blob/master/common/download.cpp",
+        "https://github.com/huggingface/huggingface.js/blob/main/packages/tasks/src/local-apps.ts",
+        "https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/ggml/llamacpp/b11540",
+        "https://formulae.brew.sh/formula/llama.cpp"
+      ],
+      "tested": [
+        {
+          "form": "install (llama.app script, scratch HOME so the user's install was untouched)",
+          "command": "curl -LsSf https://llama.app/install.sh | HOME=<scratch> sh",
+          "version": "b11540 (0.6.0-dev, build 11540, commit 1e6f04a75)",
+          "ok": true,
+          "excerpt": "Version: b11540 / Probing Metal... / Found: m2 / Downloading llama... / Installation completed successfully"
+        },
+        {
+          "form": "install (Homebrew)",
+          "command": "brew upgrade llama.cpp",
+          "version": "0.4.1 -> 0.6.0_1 (build 11429, commit d81235049); pulled ggml 0.26.0, openssl@4 4.0.3, libomp 23.1.3",
+          "ok": true,
+          "excerpt": "Upgraded 1 requested outdated package llama.cpp 0.4.1 -> 0.6.0_1"
+        },
+        {
+          "form": "gguf_chat (one-shot)",
+          "command": "llama cli -hf unsloth/Qwen3-0.6B-GGUF:Q4_K_M -st -p \"Say hello in five words.\" -n 80",
+          "version": "Homebrew 0.6.0 (b11429)",
+          "ok": true,
+          "excerpt": "model : unsloth/Qwen3-0.6B-GGUF:Q4_K_M / ftype : Q4_K - Medium / ... [ Prompt: 48.1 t/s | Generation: 173.6 t/s ]  (download landed in ~/.cache/huggingface/hub/models--unsloth--Qwen3-0.6B-GGUF)"
+        },
+        {
+          "form": "gguf_server (Homebrew)",
+          "command": "llama serve -hf unsloth/Qwen3-0.6B-GGUF:Q4_K_M ; curl http://127.0.0.1:8080/health ; POST /v1/chat/completions",
+          "version": "Homebrew 0.6.0 (b11429)",
+          "ok": true,
+          "excerpt": "llama_server: listening on http://127.0.0.1:8080 | notice: server default port will be changed to :9931 in a future release | /health -> {\"status\":\"ok\"} | content: \"ok\""
+        },
+        {
+          "form": "gguf_server (llama.app build)",
+          "command": "llama serve -hf unsloth/Qwen3-0.6B-GGUF:Q4_K_M ; curl http://127.0.0.1:9931/health",
+          "version": "b11540",
+          "ok": true,
+          "excerpt": "llama_server: listening on http://127.0.0.1:9931 | 9931 health=200 | 8080 -> connection refused | reused the cached download (shared HF cache)"
+        },
+        {
+          "form": "web UI",
+          "command": "curl --compressed http://127.0.0.1:8080/",
+          "version": "Homebrew 0.6.0",
+          "ok": true,
+          "excerpt": "200 text/html (without --compressed: 415 'Error: gzip is not supported by this browser')"
+        },
+        {
+          "form": "vision (auto mmproj)",
+          "command": "llama cli -hf ggml-org/SmolVLM2-256M-Video-Instruct-GGUF:Q4_K_M --image redblue.png -st -p \"What colors are in this image?\" -n 40",
+          "version": "Homebrew 0.6.0",
+          "ok": true,
+          "excerpt": "modalities : text, vision, video / Loaded media from 'redblue.png' / '...two vertical rectangles, each colored in red and blue' ; files: SmolVLM2-256M-Video-Instruct-Q4_K_M.gguf + mmproj-SmolVLM2-256M-Video-Instruct-Q8_0.gguf"
+        },
+        {
+          "form": "split GGUF in subfolder",
+          "command": "llama cli -hf owalsh/SmolLM2-135M-Instruct-GGUF-Split:Q4_0 -st -p \"Name a colour.\" -n 30",
+          "version": "Homebrew 0.6.0",
+          "ok": true,
+          "excerpt": "model : owalsh/SmolLM2-135M-Instruct-GGUF-Split:Q4_0 / ftype : Q4_0 ; Q4_0/...-00001-of-00003.gguf, -00002-, -00003- all downloaded"
+        },
+        {
+          "form": "classic binary names",
+          "command": "llama-server -hf ggml-org/gemma-3-270m-it-GGUF:Q8_0 --port 8091 ; llama-cli -hf ggml-org/gemma-3-270m-it-GGUF:Q8_0 -st -p \"Name one colour.\"",
+          "version": "Homebrew 0.6.0",
+          "ok": true,
+          "excerpt": "health=200 ; model ggml-org/gemma-3-270m-it-GGUF:Q8_0 ; 'The colour blue.'"
+        },
+        {
+          "form": "benchmark on a file in the HF cache",
+          "command": "llama-bench -m ~/.cache/huggingface/hub/models--unsloth--Qwen3-0.6B-GGUF/snapshots/<rev>/Qwen3-0.6B-Q4_K_M.gguf -p 64 -n 16 -r 1 -o json ; llama bench (same args)",
+          "version": "Homebrew 0.6.0 llama-bench; b11540 unified `llama bench`",
+          "ok": true,
+          "excerpt": "llama-bench: pp64 2726 t/s, tg16 137 t/s ; llama bench: pp64 2938 t/s, tg16 213 t/s (same JSON schema)"
+        }
+      ]
+    },
+    {
+      "id": "lmstudio",
+      "name": "LM Studio",
+      "formats": ["gguf", "mlx"],
+      "install": {
+        "mac": "Download from https://lmstudio.ai/download (or: brew install --cask lm-studio), open it once, then use lms",
+        "linux": "AppImage from https://lmstudio.ai/download ; headless: curl -fsSL https://lmstudio.ai/install.sh | bash",
+        "windows": "Installer from https://lmstudio.ai/download ; headless: irm https://lmstudio.ai/install.ps1 | iex",
+        "source_url": "https://lmstudio.ai/docs/cli",
+        "quote": "`lms` ships with LM Studio, so you don't need to do any additional installation steps if you have LM Studio installed. ... You need to run LM Studio _at least once_ before you can use `lms`."
+      },
+      "install_alt": {
+        "headless_llmster": "curl -fsSL https://lmstudio.ai/install.sh | bash   (Windows: irm https://lmstudio.ai/install.ps1 | iex), then: lms daemon up",
+        "source_url": "https://lmstudio.ai/docs/developer/core/headless",
+        "quote": "**Linux / Mac** curl -fsSL https://lmstudio.ai/install.sh | bash ... **Windows** irm https://lmstudio.ai/install.ps1 | iex ... lms daemon up"
+      },
+      "run": {
+        "gguf_chat": "lms get https://huggingface.co/{repo}@{quant} -y && lms ls && lms chat <model-key>",
+        "gguf_server": "lms get https://huggingface.co/{repo}@{quant} -y && lms load <model-key> && lms server start",
+        "mlx_chat": "lms get https://huggingface.co/{repo} -y && lms ls && lms chat <model-key>",
+        "mlx_server": "lms get https://huggingface.co/{repo} -y && lms load <model-key> && lms server start",
+        "ollama": null,
+        "safetensors": null
+      },
+      "run_alt": {
+        "deeplink": "lmstudio://open_from_hf?model={repo}",
+        "deeplink_with_file": "lmstudio://open_from_hf?model={repo}&file={file}",
+        "oneshot": "lms chat <model-key> -p \"Your prompt\"",
+        "interactive_pick": "lms load   (without -y, opens a picker)"
+      },
+      "open_url": "http://localhost:1234",
+      "notes": "Write `lms get` with the full https://huggingface.co/ URL. A bare `lms get {repo}@{quant}` is looked up as an LM Studio Hub artifact and fails: 'Failed to resolve artifact \"unsloth/qwen3-0.6b-gguf\": The artifact does not exist or you do not have permission to read it'. The quant goes after @ (case-insensitive). After the download, lms names the model by a derived key (e.g. qwen3-0.6b), not the repo id, and `lms load mlx-community/Qwen3-0.6B-4bit` fails with 'No model found that matches model key'. A GGUF and an MLX build of one model can share the same key. `lms chat -p` with no model loaded gives 'No loaded model found, load with: lms load'. If the app is not running, lms starts it as a background service (--run-as-service). On first launch the app appended `export PATH=\"$PATH:$HOME/.lmstudio/bin\"` to ~/.zshrc, ~/.bash_profile and ~/.profile. Models are stored in ~/.lmstudio/models/{owner}/{repo}/. The server is OpenAI-compatible at http://localhost:1234/v1. LM Studio has no `lms rm`; delete models in the app's My Models view or remove the folder. macOS needs Apple Silicon and macOS 14+; Intel Macs are not supported. The deep link format comes from Hugging Face's 'Use this model' button definition (huggingface.js local-apps.ts), not from LM Studio's own docs, which only document lmstudio://add_mcp.",
+      "vision": "lms get downloads the mmproj automatically (it chose mmproj-...-f16.gguf for SmolVLM2 Q4_K_M), and `lms ls --json` shows vision: true. An image sent to /v1/chat/completions was answered correctly (tested).",
+      "split": "Split GGUFs in a subfolder download every shard, then load and chat normally (tested with owalsh/SmolLM2-135M-Instruct-GGUF-Split@Q4_0).",
+      "docs": [
+        "https://lmstudio.ai/docs/cli",
+        "https://lmstudio.ai/docs/cli/local-models/get",
+        "https://lmstudio.ai/docs/cli/local-models/chat",
+        "https://lmstudio.ai/docs/cli/local-models/load",
+        "https://lmstudio.ai/docs/cli/serve/server-start",
+        "https://lmstudio.ai/docs/developer/core/headless",
+        "https://lmstudio.ai/docs/app/system-requirements",
+        "https://lmstudio.ai/download",
+        "https://github.com/lmstudio-ai/lms/blob/main/src/subcommands/get.ts",
+        "https://github.com/lmstudio-ai/docs",
+        "https://github.com/huggingface/huggingface.js/blob/main/packages/tasks/src/local-apps.ts",
+        "https://formulae.brew.sh/cask/lm-studio"
+      ],
+      "tested": [
+        {
+          "form": "install (app)",
+          "command": "curl -L https://lmstudio.ai/download/latest/darwin/arm64 (-> LM-Studio-0.4.26-4-arm64.dmg, 571 MB) ; copy LM Studio.app to /Applications ; open once",
+          "version": "LM Studio 0.4.26+4, lms CLI commit dcefd5a, engines llama.cpp-mac-arm64-apple-metal-advsimd@2.54.0 and mlx-llm-mac-arm64-apple-metal-advsimd@1.13.1",
+          "ok": true,
+          "excerpt": "codesign: Developer ID Application: Element Labs Inc (D65G88RHWN) ; ~/.lmstudio/bin/lms created on first launch"
+        },
+        {
+          "form": "lms before the first app launch",
+          "command": "\"/Applications/LM Studio.app/Contents/Resources/app/.webpack/lms\" ls",
+          "version": "0.4.26+4",
+          "ok": false,
+          "excerpt": "Error: LM Studio daemon is not running and no valid installation could be found or installed."
+        },
+        {
+          "form": "gguf download, bare repo id (documented model-name form)",
+          "command": "lms get unsloth/Qwen3-0.6B-GGUF@Q4_K_M -y",
+          "version": "0.4.26+4",
+          "ok": false,
+          "excerpt": "Error: Failed to resolve artifact \"unsloth/qwen3-0.6b-gguf\": The artifact does not exist or you do not have permission to read it"
+        },
+        {
+          "form": "gguf download, full HF URL",
+          "command": "lms get https://huggingface.co/unsloth/Qwen3-0.6B-GGUF@Q4_K_M -y",
+          "version": "0.4.26+4",
+          "ok": true,
+          "excerpt": "To download: Qwen3 0.6B Q4_K_M [GGUF] - 396.71 MB ... Download completed. -> ~/.lmstudio/models/unsloth/Qwen3-0.6B-GGUF/Qwen3-0.6B-Q4_K_M.gguf, key qwen3-0.6b"
+        },
+        {
+          "form": "gguf_chat (one-shot)",
+          "command": "lms chat qwen3-0.6b -p \"Say hello in five words. /no_think\" -y",
+          "version": "0.4.26+4",
+          "ok": true,
+          "excerpt": "Hello! 🌞"
+        },
+        {
+          "form": "gguf load",
+          "command": "lms load qwen3-0.6b -y",
+          "version": "0.4.26+4",
+          "ok": true,
+          "excerpt": "Model loaded successfully in 1.32s. To use the model in the API/SDK, use the identifier \"qwen3-0.6b\"."
+        },
+        {
+          "form": "gguf_server",
+          "command": "lms server start ; curl http://127.0.0.1:1234/v1/models ; POST /v1/chat/completions",
+          "version": "0.4.26+4",
+          "ok": true,
+          "excerpt": "Success! Server is now running on port 1234 ; models: qwen3-0.6b ; content: \"ok\""
+        },
+        {
+          "form": "mlx download + chat",
+          "command": "lms get https://huggingface.co/mlx-community/Qwen3-0.6B-4bit -y ; lms chat qwen3-0.6b -p \"Say hello in five words. /no_think\" -y",
+          "version": "0.4.26+4 (mlx-llm engine 1.13.1)",
+          "ok": true,
+          "excerpt": "To download: Qwen3 0.6B 4bit [MLX] - 351.38 MB ... Download completed. ; Hello! 😊 ; server chat via :1234 -> \"**ok**\""
+        },
+        {
+          "form": "load by repo id",
+          "command": "lms load mlx-community/Qwen3-0.6B-4bit -y",
+          "version": "0.4.26+4",
+          "ok": false,
+          "excerpt": "No model found that matches model key \"mlx-community/Qwen3-0.6B-4bit\"."
+        },
+        {
+          "form": "vision (auto mmproj)",
+          "command": "lms get https://huggingface.co/ggml-org/SmolVLM2-256M-Video-Instruct-GGUF@Q4_K_M -y ; lms load smolvlm2-256m-video-instruct -y ; POST image_url to :1234/v1/chat/completions",
+          "version": "0.4.26+4",
+          "ok": true,
+          "excerpt": "321.27 MB incl. mmproj-SmolVLM2-256M-Video-Instruct-f16.gguf ; 'The image consists of two vertical rectangles, one red and the other blue.'"
+        },
+        {
+          "form": "split GGUF in subfolder",
+          "command": "lms get https://huggingface.co/owalsh/SmolLM2-135M-Instruct-GGUF-Split@Q4_0 -y ; lms chat smollm2-135m-instruct-split -p \"Name a colour.\" -y",
+          "version": "0.4.26+4",
+          "ok": true,
+          "excerpt": "To download: SmolLM2 135M Instruct Q4_0 [GGUF] - 91.89 MB ; three shards saved ; chat answered"
+        },
+        {
+          "form": "deep link",
+          "command": "open \"lmstudio://open_from_hf?model=unsloth/Qwen3-0.6B-GGUF\"",
+          "version": "0.4.26+4",
+          "ok": true,
+          "excerpt": "open exit 0; Info.plist registers CFBundleURLSchemes = lmstudio; nothing downloaded automatically. The resulting UI was not checked visually."
+        }
+      ]
+    },
+    {
+      "id": "ollama",
+      "name": "Ollama",
+      "formats": ["gguf", "ollama"],
+      "install": {
+        "mac": "curl -fsSL https://ollama.com/install.sh | sh",
+        "linux": "curl -fsSL https://ollama.com/install.sh | sh",
+        "windows": "irm https://ollama.com/install.ps1 | iex",
+        "source_url": "https://github.com/ollama/ollama#download",
+        "quote": "### macOS\ncurl -fsSL https://ollama.com/install.sh | sh\nor [download manually](https://ollama.com/download/Ollama.dmg)\n### Windows\nirm https://ollama.com/install.ps1 | iex\n### Linux\ncurl -fsSL https://ollama.com/install.sh | sh"
+      },
+      "install_alt": {
+        "mac_dmg": "https://ollama.com/download/Ollama.dmg",
+        "windows_exe": "https://ollama.com/download/OllamaSetup.exe",
+        "mac_homebrew": "brew install ollama (formula, CLI + server) or brew install --cask ollama-app",
+        "source_url": "https://github.com/ollama/ollama#download"
+      },
+      "run": {
+        "gguf_chat": "ollama run hf.co/{repo}:{quant}",
+        "gguf_server": "ollama pull hf.co/{repo}:{quant}  (the Ollama app/service serves http://localhost:11434; use model name hf.co/{repo}:{quant})",
+        "mlx_chat": null,
+        "mlx_server": null,
+        "ollama": "ollama run {tag}",
+        "safetensors": null
+      },
+      "run_alt": {
+        "oneshot": "ollama run hf.co/{repo}:{quant} \"Your prompt\"",
+        "start_server_without_app": "ollama serve"
+      },
+      "open_url": "http://localhost:11434",
+      "notes": "From HF docs: 'ollama run hf.co/{username}/{repository}:{quantization}'; the quant is case-insensitive and a full .gguf file name also works. Without a tag, HF's registry chooses: Q4_K_M if present, otherwise 'one reasonable quant type'. For ggml-org/Qwen3.5-0.8B-GGUF, which has no Q4_K_M, that was the 1.56 GB BF16, so always pass :{quant}. Split/sharded repos are rejected (HTTP 400, tested). 11434 is an API, not a web page; the OpenAI-compatible base is http://localhost:11434/v1. Tested on Ollama 0.30.8, the version installed here; the latest is 0.40.2 (2026-10-08) and was not installed. Library tags confirmed to exist on registry.ollama.ai: llama3.2:3b, qwen3.5:4b, qwen3.5:0.8b, gemma3:270m, qwen3:0.6b, gemma4:latest.",
+      "vision": "For vision repos, HF's Ollama registry adds an application/vnd.ollama.image.projector layer (the mmproj), so `ollama run hf.co/...` pulls it. `ollama show` listed 'vision' and a clip projector. /api/chat with images[] answered correctly. The one-shot CLI form with an image path printed 'Added image' but then an empty reply for SmolVLM2. That looks model- or template-specific and was not investigated further.",
+      "split": "Not supported. The registry answers: 'This repository only contains sharded GGUF files. Ollama does not yet support pulling sharded GGUF via the registry; please download the shards and merge them locally with `ollama create` (workaround detailed at https://github.com/ollama/ollama/issues/5245), or use a repository with single-file quantizations.'",
+      "docs": [
+        "https://github.com/ollama/ollama#download",
+        "https://huggingface.co/docs/hub/ollama",
+        "https://docs.ollama.com/quickstart",
+        "https://docs.ollama.com/api",
+        "https://ollama.com/library",
+        "https://github.com/ollama/ollama/issues/5245",
+        "https://github.com/huggingface/huggingface.js/blob/main/packages/tasks/src/local-apps.ts"
+      ],
+      "tested": [
+        {
+          "form": "gguf_chat (one-shot)",
+          "command": "ollama run hf.co/unsloth/Qwen3-0.6B-GGUF:Q4_K_M \"Say hello in five words. /no_think\"",
+          "version": "0.30.8 (Homebrew)",
+          "ok": true,
+          "excerpt": "Hello! How can I assist you today?  (pulled 396 MB; ollama list: hf.co/unsloth/Qwen3-0.6B-GGUF:Q4_K_M 2c90981467c2 396 MB)"
+        },
+        {
+          "form": "OpenAI-compatible endpoint",
+          "command": "curl http://127.0.0.1:11434/v1/chat/completions -d '{\"model\":\"hf.co/unsloth/Qwen3-0.6B-GGUF:Q4_K_M\",...}'",
+          "version": "0.30.8",
+          "ok": true,
+          "excerpt": "\"model\":\"hf.co/unsloth/Qwen3-0.6B-GGUF:Q4_K_M\" ... \"content\":\"ok\""
+        },
+        {
+          "form": "ollama library tag",
+          "command": "ollama run gemma3:270m \"Name one colour.\"",
+          "version": "0.30.8",
+          "ok": true,
+          "excerpt": "gemma3:270m e7d36fb2c3b3 291 MB ; model answered"
+        },
+        {
+          "form": "split GGUF",
+          "command": "ollama pull hf.co/owalsh/SmolLM2-135M-Instruct-GGUF-Split:Q4_0",
+          "version": "0.30.8",
+          "ok": false,
+          "excerpt": "Error: pull model manifest: 400: {\"error\":\"This repository only contains sharded GGUF files. Ollama does not yet support pulling sharded GGUF via the registry; ...\"}"
+        },
+        {
+          "form": "vision (projector)",
+          "command": "ollama run hf.co/ggml-org/SmolVLM2-256M-Video-Instruct-GGUF:Q4_K_M ; POST /api/chat with images[]",
+          "version": "0.30.8",
+          "ok": true,
+          "excerpt": "Capabilities: completion, vision ; Projector: clip 93.51M ; /api/chat -> ' A red and blue rectangle.'"
+        },
+        {
+          "form": "no-tag resolution (manifest only, no pull)",
+          "command": "GET https://hf.co/v2/ggml-org/Qwen3.5-0.8B-GGUF/manifests/latest",
+          "version": "HF registry",
+          "ok": true,
+          "excerpt": "application/vnd.ollama.image.model 1557.7 MB (BF16), whereas .../unsloth/Qwen3.5-0.8B-GGUF/manifests/Q4_K_M -> model 532.5 MB + projector 205.0 MB"
+        }
+      ]
+    },
+    {
+      "id": "mlx-lm",
+      "name": "MLX-LM",
+      "formats": ["mlx"],
+      "install": {
+        "mac": "uv tool install mlx-lm",
+        "linux": null,
+        "windows": null,
+        "source_url": "https://github.com/ml-explore/mlx-lm#readme",
+        "quote": "**With `pip`**: pip install mlx-lm  **With `conda`**: conda install -c conda-forge mlx-lm"
+      },
+      "install_alt": {
+        "pip": "pip install mlx-lm",
+        "conda": "conda install -c conda-forge mlx-lm",
+        "homebrew": "brew install mlx-lm",
+        "no_install": "uvx --from mlx-lm mlx_lm.chat --model {repo}",
+        "source_url": "https://github.com/huggingface/huggingface.js/blob/main/packages/tasks/src/local-apps.ts",
+        "quote": "setup: [\"# Install MLX LM\", \"uv tool install mlx-lm\"] ... `mlx_lm.chat --model \"${model.id}\"` ... `mlx_lm.server --model \"${model.id}\"`"
+      },
+      "run": {
+        "gguf_chat": null,
+        "gguf_server": null,
+        "mlx_chat": "mlx_lm.chat --model {repo}",
+        "mlx_server": "mlx_lm.server --model {repo}",
+        "ollama": null,
+        "safetensors": null
+      },
+      "run_alt": {
+        "oneshot": "mlx_lm.generate --model {repo} --prompt \"Your prompt\"",
+        "no_install_chat": "uvx --from mlx-lm mlx_lm.chat --model {repo}"
+      },
+      "open_url": null,
+      "notes": "API only, with no web UI (GET / returns 404). The server listens on http://localhost:8080/v1 by default ('This will start a text generation server on port `8080`'), which is the same default port as Homebrew llama.cpp 0.6.0. Hugging Face's 'Use this model' snippet curls localhost:8000, which is wrong for mlx_lm.server. Needs Python >= 3.11 (PyPI) and Apple silicon. Downloads use the Hugging Face cache. huggingface_hub 2.2.0 (pulled in by mlx-lm 0.32.0) now writes into a shared ~/.cache/huggingface/hub/blobs store, so deleting a models--* folder does not free the space. Use `hf cache rm model/{repo}`, but beware: `hf cache prune` also removes other 'unreferenced' repos.",
+      "vision": "mlx-lm is text-only. For VLM repos use mlx-vlm: pip install -U mlx-vlm ; mlx_vlm.generate --model {repo} --image <path> --prompt \"...\" ; mlx_vlm.server --model {repo}. LM Studio's MLX engine also loads vision MLX repos (not tested here).",
+      "split": "Sharded safetensors (model-0000N-of-0000M.safetensors) are normal for MLX repos and are downloaded automatically. GGUF is not applicable.",
+      "docs": [
+        "https://github.com/ml-explore/mlx-lm#readme",
+        "https://github.com/ml-explore/mlx-lm/blob/main/mlx_lm/SERVER.md",
+        "https://pypi.org/project/mlx-lm/",
+        "https://formulae.brew.sh/formula/mlx-lm",
+        "https://github.com/Blaizzy/mlx-vlm#readme",
+        "https://github.com/huggingface/huggingface.js/blob/main/packages/tasks/src/local-apps.ts"
+      ],
+      "tested": [
+        {
+          "form": "install",
+          "command": "uv tool install mlx-lm",
+          "version": "mlx-lm 0.32.0, mlx 0.32.3, transformers 5.19.0, huggingface_hub 2.2.0",
+          "ok": true,
+          "excerpt": "Installed 18 executables: mlx_lm, ..., mlx_lm.chat, ..., mlx_lm.generate, ..., mlx_lm.server, ..."
+        },
+        {
+          "form": "mlx one-shot",
+          "command": "mlx_lm.generate --model mlx-community/Qwen3-0.6B-4bit --prompt \"Say hello in five words. /no_think\" --max-tokens 40",
+          "version": "0.32.0",
+          "ok": true,
+          "excerpt": "Hello! ... Generation: 7 tokens, 50.261 tokens-per-sec ... Peak memory: 0.454 GB"
+        },
+        {
+          "form": "mlx_chat (stdin piped)",
+          "command": "printf 'Say hello in five words. /no_think\\nq\\n' | mlx_lm.chat --model mlx-community/Qwen3-0.6B-4bit --max-tokens 40",
+          "version": "0.32.0",
+          "ok": true,
+          "excerpt": "Hello! / 7 tokens · 64.1 tok/s · prompt 116.9 tok/s · peak 0.45 GB / bye"
+        },
+        {
+          "form": "mlx_server",
+          "command": "mlx_lm.server --model mlx-community/Qwen3-0.6B-4bit ; curl :8080/health ; :8080/v1/models ; POST :8080/v1/chat/completions",
+          "version": "0.32.0",
+          "ok": true,
+          "excerpt": "Starting httpd at 127.0.0.1 on port 8080... ; /health 200 ; {\"id\": \"mlx-community/Qwen3-0.6B-4bit\"} ; content \"**ok**\" ; GET / -> 404"
+        },
+        {
+          "form": "uvx (no install)",
+          "command": "uvx --from mlx-lm mlx_lm.generate --model mlx-community/Qwen3-0.6B-4bit --prompt \"Name one colour. /no_think\" --max-tokens 20",
+          "version": "0.32.0",
+          "ok": true,
+          "excerpt": "The color **blue** is one of the most commonly recognized ... Generation: 20 tokens, 122.148 tokens-per-sec"
+        }
+      ]
+    },
+    {
+      "id": "vllm",
+      "name": "vLLM",
+      "formats": ["safetensors"],
+      "install": {
+        "mac": null,
+        "linux": "uv venv --python 3.12 --seed && source .venv/bin/activate && uv pip install vllm --torch-backend=auto && vllm download-kernels",
+        "windows": null,
+        "source_url": "https://docs.vllm.ai/en/latest/getting_started/quickstart.html",
+        "quote": "uv venv --python 3.12 --seed\nsource .venv/bin/activate\nuv pip install vllm --torch-backend=auto\nvllm download-kernels"
+      },
+      "install_alt": {
+        "docker": "docker run --runtime nvidia --gpus all -v ~/.cache/huggingface:/root/.cache/huggingface --env \"HF_TOKEN=$HF_TOKEN\" -p 8000:8000 --ipc=host vllm/vllm-openai:latest --model {repo}",
+        "pip": "pip install vllm --extra-index-url https://download.pytorch.org/whl/cu129 && vllm download-kernels",
+        "source_url": "https://docs.vllm.ai/en/latest/getting_started/installation/gpu.html"
+      },
+      "run": {
+        "gguf_chat": null,
+        "gguf_server": null,
+        "mlx_chat": null,
+        "mlx_server": null,
+        "ollama": null,
+        "safetensors": "vllm serve {repo}"
+      },
+      "run_alt": {
+        "gguf_experimental": "uv pip install vllm-gguf-plugin && vllm serve {repo}:{quant} --tokenizer <base-model-repo>"
+      },
+      "open_url": "http://localhost:8000",
+      "notes": "Docs only; this Mac has no NVIDIA GPU. Requirements: Linux, Python 3.11-3.14, NVIDIA GPU with compute capability 7.5 or higher. Windows only via WSL ('vLLM does not support Windows natively'). Latest PyPI release is 0.31.0 (2026-10-05). The server is API only at http://localhost:8000/v1, one model per server. `vllm download-kernels` is a new post-install step (precompiled FlashInfer kernels); without it they are compiled at startup. Gated repos need HF_TOKEN.",
+      "vision": "Multimodal repos (e.g. Qwen/Qwen3-VL-8B-Instruct) are served by the same `vllm serve {repo}`; images go in as OpenAI image_url parts.",
+      "split": "Sharded safetensors are standard and load natively. GGUF is experimental, needs vllm-gguf-plugin, and takes the repo:quant form; split-GGUF support is not documented.",
+      "docs": [
+        "https://docs.vllm.ai/en/latest/getting_started/quickstart.html",
+        "https://docs.vllm.ai/en/latest/getting_started/installation/gpu.html",
+        "https://docs.vllm.ai/en/latest/features/quantization/gguf.html",
+        "https://docs.vllm.ai/en/latest/features/multimodal_inputs.html",
+        "https://pypi.org/project/vllm/"
+      ],
+      "tested": []
+    },
+    {
+      "id": "jan",
+      "name": "Jan",
+      "formats": ["gguf", "mlx"],
+      "install": {
+        "mac": "Download from https://jan.ai/download (or: brew install --cask jan); open it once to install the jan CLI",
+        "linux": "Download from https://jan.ai/download",
+        "windows": "Download from https://jan.ai/download",
+        "source_url": "https://www.jan.ai/docs/desktop/cli",
+        "quote": "Jan CLI is installed automatically when you launch the Jan desktop app for the first time — no extra steps needed."
+      },
+      "run": {
+        "gguf_chat": null,
+        "gguf_server": "jan serve {repo}",
+        "mlx_chat": null,
+        "mlx_server": "jan serve {repo}",
+        "ollama": null,
+        "safetensors": null
+      },
+      "run_alt": {
+        "deeplink": "jan://models/huggingface/{repo}"
+      },
+      "open_url": "http://localhost:6767",
+      "notes": "Docs only (not installed). From the docs: 'jan serve unsloth/Qwen3.5-9B-GGUF # download and serve a HuggingFace model' and 'Load a local model and expose it at `localhost:6767/v1` ... Auto-detects LlamaCPP or MLX.' There is no documented way to choose a quant for an HF repo id. The desktop app's own Local API Server defaults to 1337, while the CLI's `jan serve` uses 6767. The jan:// deep link comes from Hugging Face's 'Use this model' definition. Latest release v0.8.6 (2026-10-09).",
+      "vision": "Not documented for `jan serve`.",
+      "split": "Not documented.",
+      "docs": [
+        "https://www.jan.ai/docs/desktop/cli",
+        "https://github.com/janhq/jan/blob/main/docs/src/pages/docs/desktop/cli.mdx",
+        "https://github.com/janhq/jan/blob/main/docs/src/pages/docs/desktop/api-server.mdx",
+        "https://github.com/huggingface/huggingface.js/blob/main/packages/tasks/src/local-apps.ts",
+        "https://formulae.brew.sh/cask/jan"
+      ],
+      "tested": []
+    }
+  ],
+  "bench_py": [
+    {
+      "line": 39,
+      "current": "LOCAL_PORTS = [('llama.cpp server', 8080), ('LM Studio', 1234), ('vLLM / SGLang', 8000), ('SGLang', 30000), ('Jan', 1337)]",
+      "verdict": "outdated",
+      "correction": "Also probe ('llama.cpp server', 9931). llama.cpp's default port is 9931 since 2026-10-09 (b11521+), which covers llama.app, winget and the Llama desktop app; Homebrew 0.6.0 still uses 8080. Also probe ('Jan CLI', 6767) for `jan serve`; 1337 is the Jan desktop API server and is still right. 8080 is also mlx_lm.server's default, so a label like 'llama.cpp / MLX-LM server' avoids mislabelling.",
+      "source_url": "https://github.com/ggml-org/llama.cpp/pull/30159"
+    },
+    {
+      "line": 41,
+      "current": "'Ollama': 'curl -fsSL https://ollama.com/install.sh | sh'",
+      "verdict": "correct (macOS and Linux)",
+      "correction": "None needed. On Windows the README uses: irm https://ollama.com/install.ps1 | iex",
+      "source_url": "https://github.com/ollama/ollama#download"
+    },
+    {
+      "line": 42,
+      "current": "'llama.cpp': 'curl -LsSf https://llama.app/install.sh | sh'",
+      "verdict": "correct (README Quick start; tested, installs build b11540 to ~/.local/bin/llama)",
+      "correction": "None for macOS (Apple silicon) and Linux. Windows uses: irm https://llama.app/install.ps1 | iex. Intel Macs get no prebuilt binary from this script and should use `brew install llama.cpp`. The installer only provides the unified `llama` binary, with no `llama-bench`; see the line 347 entry.",
+      "source_url": "https://github.com/ggml-org/llama.cpp#quick-start"
+    },
+    {
+      "line": 43,
+      "current": "'Claude Code': 'curl -fsSL https://claude.ai/install.sh | bash'",
+      "verdict": "correct",
+      "correction": "None (Windows: irm https://claude.ai/install.ps1 | iex ; also brew install --cask claude-code, winget install Anthropic.ClaudeCode)",
+      "source_url": "https://github.com/anthropics/claude-code#readme"
+    },
+    {
+      "line": 44,
+      "current": "'Codex CLI': 'npm install -g @openai/codex'",
+      "verdict": "still valid but no longer the primary method",
+      "correction": "Optional: the README now leads with `curl -fsSL https://chatgpt.com/codex/install.sh | sh` (Windows: powershell -ExecutionPolicy ByPass -c \"irm https://chatgpt.com/codex/install.ps1 | iex\"). npm and `brew install --cask codex` remain listed as package-manager options.",
+      "source_url": "https://github.com/openai/codex#readme"
+    },
+    {
+      "line": 45,
+      "current": "'Gemini CLI': 'npm install -g @google/gemini-cli'",
+      "verdict": "correct",
+      "correction": "None (alternatives: npx @google/gemini-cli, brew install gemini-cli)",
+      "source_url": "https://github.com/google-gemini/gemini-cli#readme"
+    },
+    {
+      "line": 46,
+      "current": "'Kimi Code': 'curl -fsSL https://code.kimi.com/kimi-code/install.sh | bash'",
+      "verdict": "correct",
+      "correction": "None. The script header reads 'kimi-code installer for macOS and Linux. Usage: curl -fsSL https://code.kimi.com/kimi-code/install.sh | bash' and it installs ~/.kimi-code/bin/kimi.",
+      "source_url": "https://code.kimi.com/kimi-code/install.sh"
+    },
+    {
+      "line": 341,
+      "current": "dirs = [os.environ.get('LLAMA_CACHE'), home / 'Library/Caches/llama.cpp', home / '.cache/llama.cpp', home / '.lmstudio/models', home / '.cache/lm-studio/models']",
+      "verdict": "outdated: misses where current llama.cpp stores -hf downloads",
+      "correction": "Add the Hugging Face hub cache: os.environ.get('HF_HUB_CACHE'), Path(os.environ['HF_HOME'])/'hub' when HF_HOME is set, and home/'.cache/huggingface/hub'. llama.cpp 0.6.0 (Homebrew) and b11540 (llama.app) both wrote `-hf` downloads to ~/.cache/huggingface/hub/models--{owner}--{repo}/snapshots/<rev>/*.gguf (symlinks into the repo's blobs/). Path.is_file() follows the symlink, and llama-bench accepts the snapshot path (tested). Without this, someone who follows the line 509 hint gets 'installed · no GGUF files in the usual caches'. ~/.lmstudio/models is still LM Studio's current models dir (verified).",
+      "source_url": "https://github.com/ggml-org/llama.cpp/blob/master/common/hf-cache.cpp"
+    },
+    {
+      "line": 347,
+      "current": "bench = shutil.which('llama-bench')",
+      "verdict": "incomplete for llama.app installs",
+      "correction": "Fall back to the unified binary when llama-bench is absent: ['llama', 'bench', '-m', path, '-p', '512', '-n', N, '-r', '1', '-o', 'json']. llama.app installs ship only `llama`, which has a `bench` subcommand with the same JSON output (tested with b11540). Homebrew and winget still ship llama-bench.",
+      "source_url": "https://llama.app/install.sh"
+    },
+    {
+      "line": 508,
+      "current": "('Ollama', 'easiest way to run local models; then: ollama pull llama3.2:3b')",
+      "verdict": "valid (tag exists on registry.ollama.ai) but dated",
+      "correction": "Optional: the README now leads with `ollama run gemma4`. To mirror the llama.cpp hint, `ollama pull qwen3.5:0.8b` (tag exists) would match; it was not pulled or run here.",
+      "source_url": "https://github.com/ollama/ollama#chat-with-a-model"
+    },
+    {
+      "line": 509,
+      "current": "('llama.cpp', 'fastest local engine; then: llama serve -hf ggml-org/Qwen3.5-0.8B-GGUF')",
+      "verdict": "real (verbatim from the llama.cpp README) but has two gotchas",
+      "correction": "The repo has no Q4_K_M, so -hf falls back to Q8_0 (834 MB). Pin it with ggml-org/Qwen3.5-0.8B-GGUF:Q8_0, or :Q4_0 (563 MB), or use unsloth/Qwen3.5-0.8B-GGUF:Q4_K_M (533 MB + mmproj). A llama.app install serves it on :9931, which LOCAL_PORTS does not probe (line 39). For a bench run, `llama cli -hf ...` or `llama download` alone puts the GGUF in the HF cache, which gguf_dirs then needs to scan (line 341).",
+      "source_url": "https://github.com/ggml-org/llama.cpp#quick-start"
+    }
+  ],
+  "disk": {
+    "before": "5,751,756 KiB free (5.49 GiB) on /System/Volumes/Data at 2026-10-11 08:43 AWST",
+    "after": "5,386,332 KiB free (5.14 GiB) on /System/Volumes/Data at 2026-10-11 09:19 AWST",
+    "persistent_additions": {
+      "/Applications/LM Studio.app": "665 MB (1.6 GB before first launch moved its engines out)",
+      "~/.lmstudio": "1.5 GB (extensions/engines 1.2 GB, lms 65 MB, bundled nomic embedding 84 MB); no test models left in ~/.lmstudio/models",
+      "~/.local/share/uv/tools/mlx-lm": "341 MB",
+      "~/.cache/uv": "198 MB -> 540 MB (wheel cache for mlx-lm)",
+      "Homebrew": "llama.cpp 0.6.0_1 19 MB, ggml 0.26.0 7.8 MB, openssl@4 24 MB, libomp 1.8 MB; old llama.cpp 0.4.1 and ggml 0.24.0 kept (no brew cleanup run)",
+      "~/.cache/huggingface/hub/blobs": "331 MB of orphaned shared blobs from the MLX-LM test (NOT deleted, see cleanup_pending)"
+    },
+    "deleted": [
+      "~/.cache/huggingface/hub/models--unsloth--Qwen3-0.6B-GGUF",
+      "~/.cache/huggingface/hub/models--ggml-org--SmolVLM2-256M-Video-Instruct-GGUF",
+      "~/.cache/huggingface/hub/models--owalsh--SmolLM2-135M-Instruct-GGUF-Split",
+      "~/.cache/huggingface/hub/models--ggml-org--gemma-3-270m-it-GGUF",
+      "~/.cache/huggingface/hub/models--mlx-community--Qwen3-0.6B-4bit (folder only; its blobs live in the shared store)",
+      "ollama rm hf.co/unsloth/Qwen3-0.6B-GGUF:Q4_K_M, gemma3:270m, hf.co/ggml-org/SmolVLM2-256M-Video-Instruct-GGUF:Q4_K_M (pre-existing qwen3:8b, qwen2.5:3b, qwen2.5:1.5b untouched)",
+      "~/.lmstudio/models/{unsloth,mlx-community,ggml-org,owalsh} test downloads",
+      "LM Studio DMG and the scratch llama.app install"
+    ],
+    "cleanup_pending": "huggingface_hub 2.2.0 created a shared blob store during the MLX-LM test, and the command to remove it was blocked by the permission classifier. For the owner to run: rm -rf ~/.cache/huggingface/hub/blobs ~/.cache/huggingface/hub/CACHEDIR.TAG ~/.cache/huggingface/hub/.locks/models--mlx-community--Qwen3-0.6B-4bit  (the store holds only 7f99ed60... model.safetensors 335 MB and 6aec3963... tokenizer.json 11 MB, created 08:57-08:58, refs pointing only at mlx-community/Qwen3-0.6B-4bit; the pre-existing kyutai repo keeps its own blobs inside its folder). Do NOT run `hf cache prune`: its dry run also lists the pre-existing kyutai/pocket-tts-without-voice-cloning repo for deletion.",
+    "note": "Free space moves with swap (10-12 GB used) and with other agents writing to the same volume during this run, so before minus after is not this work's footprint. See persistent_additions."
+  },
+  "side_effects": [
+    "Homebrew upgraded llama.cpp 0.4.1 -> 0.6.0_1 and its deps; openssl@4 was installed and openssl@3 was unlinked (still installed).",
+    "On PATH, `llama` resolves to the user's earlier llama.app install ~/.local/bin/llama (0.4.0-dev, build 10909, port 8080), not Homebrew's 0.6.0. Run `llama update` or reorder PATH to change that.",
+    "LM Studio first launch appended `export PATH=\"$PATH:/Users/jakemanger/.lmstudio/bin\"` to ~/.zshrc, ~/.bash_profile and ~/.profile.",
+    "Ollama 0.30.8 was started with `ollama serve` for the tests and stopped afterwards. It was not upgraded (latest is 0.40.2).",
+    "LM Studio was quit after the tests. No llama, mlx_lm, ollama or LM Studio processes were left running."
+  ]
+}

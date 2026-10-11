@@ -1196,14 +1196,16 @@
       "github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv",
       "github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv",
       "github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-25/score/data_overall.csv",
-      "github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv"
+      "github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv",
+      "github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-11-03/score/data_overall.csv",
+      "github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-08-26/score/data_overall.csv"
     ],
     "exact": true,
     "license": "Apache-2.0",
     "terms_url": "https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/LICENSE",
     "license_url": "/licenses/bfcl-result-archive-v4-Apache-2.0.txt",
     "verdict": "allowed",
-    "checked": "2026-10-09",
+    "checked": "2026-10-11",
     "attribution": "Huanzhi Mao and the BFCL authors. Selected published numerical results; model IDs mapped and percentages converted to fractions. No endorsement. Full licence and change notice supplied in independent-NOTICE.txt.",
     "quote": "Root licence in the same pinned repository as the imported result files; no nested licence override found. BFCL README additionally explicitly includes evaluation scores.",
     "icon": "huggingface.co"
@@ -1981,14 +1983,15 @@
     "name": "LiveCodeBench official website results (2025-08-01)",
     "kind": "dataset",
     "match": [
-      "github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json"
+      "github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json",
+      "github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/v5.json"
     ],
     "exact": true,
     "license": "CC-BY-SA-4.0",
     "license_url": "/licenses/lcb-sharealike-NOTICE.txt",
     "terms_url": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/README.md",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-11",
     "attribution": "LiveCodeBench website evaluation results by the LiveCodeBench authors (Naman Jain, King Han, Alex Gu, Wen-Ding Li, Fanjia Yan, Tianjun Zhang, Sida Wang, Armando Solar-Lezama, Koushik Sen, Ion Stoica). CC BY-SA 4.0. Adapted by whatmodel.sh: selected models and explicit date windows, reproduced the website arithmetic mean and one-decimal percentage rounding, mapped catalogue IDs, converted percentages to fractions, and added provenance. No endorsement.",
     "quote": "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.",
     "adapter_license": "CC-BY-SA-4.0",
@@ -2234,7 +2237,7 @@
     "kind": "paper",
     "icon": "arxiv.org",
     "license_url": "/licenses/cards-gap-NOTICE.txt",
-    "scope": "Pinned report explicitly declares CC BY4.0; Table7 states all results use the authors’ internal evaluation harness. These are Liquid AI’s independent evaluations of SmolLM3-3B, not third-party copied comparisons. The report licence permits commercial reuse independently of any LFM model licence/revenue threshold. Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-A-2026-10-09.md. Detail: Table 7 (internal harness, all columns): SmolLM3-3B plus LFM2-8B-A1B (lab), Llama-3.2-3B-Instruct, Gemma-3-4B-it and Qwen3-4B (original).",
+    "scope": "Pinned report explicitly declares CC BY4.0; Table7 states all results use the authors’ internal evaluation harness. These are Liquid AI’s independent evaluations of SmolLM3-3B, not third-party copied comparisons. The report licence permits commercial reuse independently of any LFM model licence/revenue threshold. Extended 2026-10-09 (pass 7): also comparator columns that the document shows the authors measured themselves (same-lab sibling columns as by: lab; other makers' models as by: independent); copied, uncredited or third-party-credited cells are still excluded. Evidence per source: docs/research/pass7-lone-A-2026-10-09.md. Detail: Table 7 (internal harness, all columns): SmolLM3-3B plus LFM2-8B-A1B (lab), Llama-3.2-3B-Instruct, Gemma-3-4B-it and Qwen3-4B (original). Pass 12 (2026-10-11): also the LFM2-2.6B column of Table 7 (same internal harness; by: lab).",
     "quote": "Explicit licence on the pinned publication. Full terms, attribution and modification notices retained in the linked notice."
   },
   {
@@ -7476,14 +7479,38 @@
       "huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-4-mini-low",
       "huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-4-nano-medium",
       "huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-4o",
-      "huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-4o"
+      "huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-4o",
+      "huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/blob/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gemini-3-flash-preview-thinking-minimal/results.json",
+      "huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/QwQ-32B-Fireworks",
+      "huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/claude-haiku-4-5-20251001-thinking-32k",
+      "huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/claude-sonnet-4-5-20250929-thinking-32k",
+      "huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-4-1-2025-04-14",
+      "huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-4-1-mini-2025-04-14",
+      "huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-4-1-nano-2025-04-14",
+      "huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-4-5-2025-02-27",
+      "huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-4-high",
+      "huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-4-pro-xhigh",
+      "huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-pro-2025-10-06",
+      "huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/grok-4-fast-reasoning",
+      "huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/grok-4.20-beta-0309b-reasoning",
+      "huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/qwen3-235b-a22b-instruct-2507",
+      "huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/claude-haiku-4-5-20251001-thinking-32k",
+      "huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/claude-sonnet-4-5-20250929-thinking-32k",
+      "huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-4-1-2025-04-14",
+      "huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-4-1-mini-2025-04-14",
+      "huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-4-1-nano-2025-04-14",
+      "huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-4-high",
+      "huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-pro-2025-10-06",
+      "huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/grok-4-fast-reasoning",
+      "huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/grok-4.20-beta-0309b-reasoning",
+      "huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/qwen3-235b-a22b-instruct-2507"
     ],
     "exact": true,
     "license": "MIT",
     "terms_url": "https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/README.md",
     "license_url": "/licenses/arcprize-model-baseline-outputs-MIT.txt",
     "verdict": "allowed",
-    "checked": "2026-10-09",
+    "checked": "2026-10-11",
     "attribution": "ARC Prize Foundation, model outputs from github.com/arcprizeorg/model_baseline published as Hugging Face datasets arcprize/arc_agi_v1_public_eval and arcprize/arc_agi_v2_public_eval, MIT. Selected model runs; scores divided by task count or recomputed from the published per-attempt correctness flags; catalogue IDs mapped. No endorsement.",
     "quote": "Each dataset card declares YAML 'license: mit' and describes the data as 'the output of models tested with https://github.com/arcprizeorg/model_baseline'; that harness repository's LICENSE.md is 'MIT License, Copyright (c) 2025 ARC Prize Foundation'. The arcprize.org leaderboard website is not used.",
     "icon": "huggingface.co"
@@ -11517,7 +11544,9 @@
       "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json",
       "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b-v2.json",
       "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b-v2.json",
-      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json"
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/mosaicml-mpt-7b.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/huggyllama-llama-7b.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/kittn_mistral-7B-v0.1-hf.json"
     ],
     "exact": true,
     "kind": "dataset",
@@ -11525,7 +11554,7 @@
     "terms_url": "https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/LICENSE",
     "license_url": "/licenses/stablelm-original-eval-json-Apache-2.0.txt",
     "verdict": "allowed",
-    "checked": "2026-10-09",
+    "checked": "2026-10-11",
     "quote": "Repository root Apache License 2.0 grants reproduction, derivative works and distribution. Scope is the committed evals/*.json output data, not the separately licensed model weights or a hosted leaderboard. README states these evaluations were performed with lm-evaluation-harness and links these full run outputs.",
     "attribution": "Stability AI and the StableLM contributors. Original zero-shot evaluation JSONs, revision 93eea082c49c61e64da1a0e1092fe82cc74b46d3. Selected accuracy/mc2 fields retained as fractions; exact model config and task version recorded. No endorsement.",
     "icon": "github.com"
@@ -13199,7 +13228,7 @@
     "checked": "2026-10-08",
     "evidence_url": "https://arxiv.org/abs/2406.12793v2",
     "icon": "arxiv.org",
-    "scope": "Table 7 (BFCL Overall, authors' runs) only. GLM-4-Air (0605) not in the catalogue. Table 1's ChatGLM3 column is ChatGLM3-6B-Base (not the catalogue chat model), so Table 1 was not used for chatglm3-6b."
+    "scope": "Table 7 (BFCL Overall, authors' runs) only. GLM-4-Air (0605) not in the catalogue. Table 1's ChatGLM3 column is ChatGLM3-6B-Base (not the catalogue chat model), so Table 1 was not used for chatglm3-6b. Pass 12 (2026-10-11): also Table 2 'GLM-4 performance on academic benchmarks', GLM-4 (0116) and GLM-4 (0520) rows only (Zhipu's own models, by: lab; MMLU, GSM8K, MATH, BBH, GPQA, HumanEval); baseline rows are not the authors' runs and are not used."
   },
   {
     "id": "first-party-meta-asr-cards",
@@ -13692,7 +13721,8 @@
       "github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-4-1_openai_2024-06-20/submission.json",
       "github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
       "github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-5_sierra_2025-08-09/submission.json",
-      "github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/o4-mini_openai_2024-06-20/submission.json"
+      "github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/o4-mini_openai_2024-06-20/submission.json",
+      "github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/qwen3-8-max_sierra_2026-08-04/submission.json"
     ],
     "kind": "leaderboard",
     "exact": true,
@@ -13701,7 +13731,7 @@
     "terms_url": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/LICENSE",
     "quote": "The repository LICENSE at the pinned commit is the MIT License (Copyright (c) 2025 Sierra Research): 'Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files ... to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute ...'. The leaderboard submission files are committed files of the repository.",
     "verdict": "allowed",
-    "checked": "2026-10-08",
+    "checked": "2026-10-11",
     "icon": "github.com",
     "attribution": "Sierra Research, τ-bench leaderboard submissions run by Sierra (sierra-research/tau2-bench @4ce7c03), MIT. pass^1 per domain.",
     "scope": "pass^1 per domain from the committed submission.json files listed in match; each submitting organisation is a separate evaluator."
@@ -14892,7 +14922,7 @@
     "terms_url": "https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md",
     "quote": "README front matter at the pinned revision: 'license: mit'; '## License: This project is licensed under the MIT License.' The same table is printed in arXiv:2607.21075v2 Table 4 (CC BY 4.0), whose caption identifies the comparators (Parakeet-TDT-0.6B-v2, Whisper Large-v3, SenseVoice-small, FunASR-Nano) without saying who ran them; those columns are not used.",
     "attribution": "Microsoft Research. microsoft/VibeVoice-ASR-BitNet model card, https://huggingface.co/microsoft/VibeVoice-ASR-BitNet/blob/66e78021ab8f5f06133d1ab421ba4d348bda97c9/README.md, MIT. Changes: same-lab WER cells transcribed, % / 100. No endorsement.",
-    "scope": "VibeVoice-ASR-7B and VibeVoice-ASR-BitNet columns: FLEURS en/zh, LibriSpeech clean/other, VoxPopuli.",
+    "scope": "VibeVoice-ASR-7B and VibeVoice-ASR-BitNet columns (by: lab) and, since pass 12, the Parakeet / Whisper / SenseVoice / FunASR comparator columns (by: independent; identified as Parakeet-TDT-0.6B-v2, Whisper Large-v3, SenseVoice-small, FunASR-Nano by arXiv:2607.21075v2 Table 4, CC BY 4.0): FLEURS en/zh, LibriSpeech clean/other, VoxPopuli.",
     "verdict": "allowed",
     "checked": "2026-10-09",
     "icon": "huggingface.co"
@@ -15491,7 +15521,7 @@
     "quote": "Same licence and treatment as the ledger's card-liquidai-lfm2-5-1-2b-thinking: the card front matter links the LFM Open License v1.0 (license_name lfm1.0), which covers documentation and grants reproduction, adaptation, display and distribution subject to its terms (Section 5 commercial revenue / Legal Entity conditions apply to recipients). Own-model cells only.",
     "conditions": "LFM Open License v1.0 includes commercial revenue and Legal Entity conditions. Downstream users must assess their own eligibility; this compilation does not remove these restrictions.",
     "attribution": "Liquid AI. LiquidAI/LFM2-1.2B model card. Source: https://huggingface.co/LiquidAI/LFM2-1.2B/blob/40f3da0d0164913923aee9462c23077868b816a3/README.md. Licensed under LFM Open License v1.0. Modified for whatmodel.sh: selected own-model cells, percentages to fractions. No endorsement.",
-    "scope": "'Automated benchmarks' table: LFM2-350M / 700M / 1.2B rows (MMLU, GPQA, IFEval, IFBench, GSM8K, MGSM, MMMLU) and the model-property table (context length).",
+    "scope": "'Automated benchmarks' table: LFM2-350M / 700M / 1.2B rows (by: lab) and, since pass 12, the Qwen3-0.6B, Qwen3-1.7B, Llama-3.2-1B-Instruct, gemma-3-1b-it comparator rows (by: independent, read as Liquid's own runs) for MMLU, GPQA, IFEval, IFBench, GSM8K, MGSM, MMMLU; and the model-property table (context length).",
     "verdict": "allowed",
     "checked": "2026-10-10",
     "icon": "huggingface.co"
@@ -16035,5 +16065,61 @@
     "verdict": "allowed",
     "checked": "2026-10-11",
     "icon": "arxiv.org"
+  },
+  {
+    "id": "card3-liquidai-lfm2-5-2-6b",
+    "name": "LiquidAI/LFM2.5-2.6B model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/LiquidAI/LFM2.5-2.6B/blob/654f9463ce32b05d0429d76fe1f580b27d4c1ac0/README.md#benchmarks"
+    ],
+    "exact": true,
+    "license": "LFM Open License v1.0",
+    "license_url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B/blob/654f9463ce32b05d0429d76fe1f580b27d4c1ac0/LICENSE",
+    "terms_url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B/blob/654f9463ce32b05d0429d76fe1f580b27d4c1ac0/LICENSE",
+    "quote": "Same licence and treatment as the ledger's card-liquidai-lfm2-5-1-2b-thinking and card3-liquidai-lfm2-1-2b: the card front matter (license: other, license_name: lfm1.0, license_link: LICENSE) links the LFM Open License v1.0 ('TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION'), which covers documentation and grants reproduction, adaptation, display and distribution subject to its terms (Section 5 commercial revenue / Legal Entity conditions apply to recipients). The match carries the '#benchmarks' fragment because the same README URL is already matched by first-party-liquid-ai (facts only: list price/context); the fragment keeps these score rows on this licence entry.",
+    "conditions": "LFM Open License v1.0 includes commercial revenue and Legal Entity conditions. Downstream users must assess their own eligibility; this compilation does not remove these restrictions.",
+    "attribution": "Liquid AI. LiquidAI/LFM2.5-2.6B model card. Source: https://huggingface.co/LiquidAI/LFM2.5-2.6B/blob/654f9463ce32b05d0429d76fe1f580b27d4c1ac0/README.md. Licensed under LFM Open License v1.0. Modified for whatmodel.sh: selected cells, percentages to fractions. No endorsement.",
+    "scope": "'### Benchmarks' table: LFM2.5-2.6B own column and the gemma-4-E2B-it, gemma-4-E4B-it, Qwen3.5-4B, Qwen3.5-9B comparator columns (two-decimal values that differ from the makers' published figures, read as Liquid's own runs) for AIME25, LiveCodeBenchv6, IFBench, Multi-IF, BFCLv4, Claw-Eval average (EN), τ³-Bench Banking. AA-Omni-Public rows excluded.",
+    "verdict": "allowed",
+    "checked": "2026-10-11",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "nsanku-tts-benchmark-mit",
+    "name": "nsanku TTS Benchmark (GhanaNLP community Space)",
+    "kind": "leaderboard",
+    "match": [
+      "huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark/blob/41b828ed6803bd052b1bef94bb6802fecd2edf8c/bundled_data.json"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark/blob/41b828ed6803bd052b1bef94bb6802fecd2edf8c/README.md",
+    "terms_url": "https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark/blob/41b828ed6803bd052b1bef94bb6802fecd2edf8c/README.md",
+    "quote": "Space card YAML at the pinned revision: 'license: mit'. README: 'Multi-metric Text-to-Speech benchmark for Ghanaian languages ... Per-language ASR judges transcribe each clip; scored against the sentence read.' The Space holds only README.md, bundled_data.json, index.html and style.css; no contrary terms. The linked GitHub repo (GhanaNLP/nsanku-tts-benchmark) has no licence and is not used.",
+    "attribution": "GhanaNLP community, nsanku TTS Benchmark (huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark), MIT. Selected per-language CER values averaged over 7 languages; model IDs mapped; no endorsement.",
+    "scope": "bundled_data.json per-language 'cer' for the entries Google/gemini-3.1-flash-tts-preview, k2-fsa/OmniVoice-ref and ghananlpcommunity/ghana-tts-72k-ref.",
+    "verdict": "allowed",
+    "checked": "2026-10-11",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "speech-sglang-omni-cookbooks-apache",
+    "name": "SGLang-Omni serving cookbooks (SGLang-Omni team measurements)",
+    "kind": "leaderboard",
+    "match": [
+      "github.com/sgl-project/sglang-omni/blob/9641219b320597393d915afb8d03352c629d94a5/docs/cookbook/moss_tts.md",
+      "github.com/sgl-project/sglang-omni/blob/9641219b320597393d915afb8d03352c629d94a5/docs/cookbook/qwen3_tts.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/sgl-project/sglang-omni/blob/9641219b320597393d915afb8d03352c629d94a5/LICENSE",
+    "terms_url": "https://github.com/sgl-project/sglang-omni/blob/9641219b320597393d915afb8d03352c629d94a5/LICENSE",
+    "quote": "Repository root LICENSE at the pinned commit is the Apache License 2.0 (GitHub licence detection: Apache-2.0) and covers the documentation files. The cookbook benchmark sections are the SGLang-Omni team's own serving measurements ('reference numbers tabulated in benchmarks/eval/benchmark_tts_seedtts.py'; 'Hardware: 1× H200 SXM'). Same repository as the existing speech-higgs3-sglang-apache entry (Boson AI tables at 0aafd76), which is a different contributor and commit.",
+    "attribution": "SGLang-Omni contributors, sgl-project/sglang-omni docs/cookbook (moss_tts.md, qwen3_tts.md) at 9641219b320597393d915afb8d03352c629d94a5. Apache License 2.0. Changes: selected corpus WER/CER cells for catalogued models, percentages divided by 100. No endorsement.",
+    "scope": "Seed-TTS-Eval corpus WER/CER from the 'Benchmark Results' sections whose protocol matches an existing benchmark id: moss_tts.md (MOSS-TTS-v1.5, cloning, Whisper-large-v3 EN / paraformer-zh ZH) and qwen3_tts.md '0.6B Base' (cloning, Whisper-large-v3 EN). Preset-voice, Qwen3-ASR-scored and x-vector experiment tables are not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-11",
+    "icon": "github.com"
   }
 ]

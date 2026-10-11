@@ -7825,10 +7825,10 @@
     "api": {
       "url": "https://elevenlabs.io/pricing/api",
       "provider": "ElevenLabs",
-      "price": 50,
+      "price": 40,
       "unit": "1M-chars",
       "price_source": "https://elevenlabs.io/pricing/api",
-      "price_note": "USD per 1M input characters: ElevenLabs lists v3 Conversational Text to Speech at $0.05 per 1K characters (x1000). Product: ElevenAPI text to speech. API model: eleven_v3_conversational. Settings: standard API rate (same per-1K rate on pay-as-you-go and plan tiers shown). Price basis: published list rate, per-1K to per-1M scaling only. Exclusions: subscription fees, taxes. Currency: USD. ElevenLabs official API pricing page, observed 2026-09-25."
+      "price_note": "USD per 1M input characters: ElevenLabs lists v3 Conversational Text to Speech at $0.04 per 1K characters (x1000), with no discount label (the 72%-off launch offer on the same page applies only to v4 / v4 Turbo). Product: ElevenAPI text to speech. API model: eleven_v3_conversational. Settings: standard API rate (same per-1K rate on the pay-as-you-go and plan tiers shown). Price basis: published list rate, per-1K to per-1M scaling only. Exclusions: subscription fees, taxes. Currency: USD. ElevenLabs official API pricing page, observed 2026-10-11 (was $0.05 per 1K when observed 2026-09-25)."
     },
     "local": null
   },
@@ -13085,6 +13085,14 @@
           "cmd": "ollama run laguna-xs.2:latest",
           "source": "https://ollama.com/library/laguna-xs.2/tags",
           "gb_estimated": true
+        },
+        {
+          "quant": "q4_k_m",
+          "gb": 23,
+          "cmd": "ollama run laguna-xs.2:latest",
+          "source": "https://ollama.com/library/laguna-xs.2/tags",
+          "gb_estimated": true,
+          "note": "ollama tag laguna-xs.2:latest (digest ba9ecde43b0e), Q4_K_M, 23GB as printed, 128K context; observed 2026-10-11."
         }
       ]
     },
@@ -36253,6 +36261,14 @@
           "cmd": "ollama run granite-code:20b",
           "source": "https://ollama.com/library/granite-code/tags",
           "gb_estimated": true
+        },
+        {
+          "quant": "q4_0",
+          "gb": 12,
+          "cmd": "ollama run granite-code:20b",
+          "source": "https://ollama.com/library/granite-code/tags",
+          "gb_estimated": true,
+          "note": "ollama tag granite-code:20b = granite-code:20b-instruct (digest 59db7b531bb4), 12GB as printed, 8K context (the 8k checkpoint; the 3b/8b tags show 125K, i.e. the 128k checkpoints); observed 2026-10-11."
         }
       ]
     },
@@ -36330,6 +36346,14 @@
           "cmd": "ollama run granite-code:34b",
           "source": "https://ollama.com/library/granite-code/tags",
           "gb_estimated": true
+        },
+        {
+          "quant": "q4_0",
+          "gb": 19,
+          "cmd": "ollama run granite-code:34b",
+          "source": "https://ollama.com/library/granite-code/tags",
+          "gb_estimated": true,
+          "note": "ollama tag granite-code:34b = granite-code:34b-instruct (digest 4ce00960ca84), 19GB as printed, 8K context; observed 2026-10-11."
         }
       ]
     },
@@ -36699,6 +36723,14 @@
           "cmd": "ollama run starcoder:15b",
           "source": "https://ollama.com/library/starcoder/tags",
           "gb_estimated": true
+        },
+        {
+          "quant": "q4_0",
+          "gb": 9,
+          "cmd": "ollama run starcoder:15b",
+          "source": "https://ollama.com/library/starcoder/tags",
+          "gb_estimated": true,
+          "note": "ollama tag starcoder:15b (digest fc59c84e00c5; distinct from starcoder:15b-base d7484a05d753, which is StarCoderBase), Q4_0, 9.0GB as printed, 8K context; observed 2026-10-11."
         }
       ]
     },
@@ -36940,6 +36972,14 @@
           "cmd": "ollama run starcoder:3b",
           "source": "https://ollama.com/library/starcoder/tags",
           "gb_estimated": true
+        },
+        {
+          "quant": "q4_0",
+          "gb": 1.8,
+          "cmd": "ollama run starcoder:3b",
+          "source": "https://ollama.com/library/starcoder/tags",
+          "gb_estimated": true,
+          "note": "ollama tag starcoder:3b = starcoder:3b-base (digest 847e5a7aa26f), Q4_0, 1.8GB as printed, 8K context; observed 2026-10-11."
         }
       ]
     },
@@ -36986,6 +37026,14 @@
           "cmd": "ollama run starcoder:7b",
           "source": "https://ollama.com/library/starcoder/tags",
           "gb_estimated": true
+        },
+        {
+          "quant": "q4_0",
+          "gb": 4.3,
+          "cmd": "ollama run starcoder:7b",
+          "source": "https://ollama.com/library/starcoder/tags",
+          "gb_estimated": true,
+          "note": "ollama tag starcoder:7b = starcoder:7b-base (digest 53fdbc3a2006), Q4_0, 4.3GB as printed, 8K context; observed 2026-10-11."
         }
       ]
     },
@@ -41936,8 +41984,34 @@
     "license": "apache-2.0",
     "params_b": 33.4,
     "active_b": 33.4,
-    "api": null,
-    "local": null,
+    "api": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "provider": "Alibaba Cloud Model Studio",
+      "price_in": 0.16,
+      "price_out": 0.64,
+      "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "price_note": "USD per 1M tokens, Alibaba Cloud Model Studio, API model qwen3-vl-32b-thinking ('Thinking mode only', deployment scope 'Global'): input $0.16, output $0.64, the same in both regional tables that list it and equal to the catalogued qwen3-vl-32b-instruct row. Free quota, batch and context-cache discounts excluded. Observed 2026-10-11."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 21,
+          "cmd": "ollama run qwen3-vl:32b-thinking",
+          "source": "https://ollama.com/library/qwen3-vl/tags",
+          "gb_estimated": true,
+          "note": "ollama tag qwen3-vl:32b-thinking (q4_K_M default; same digest ff2e46876908 as qwen3-vl:32b-thinking-q4_K_M and qwen3-vl:32b); size 21GB as printed (rounded) on the tags page, observed 2026-10-11."
+        },
+        {
+          "quant": "q8_0",
+          "gb": 36,
+          "cmd": "ollama run qwen3-vl:32b-thinking-q8_0",
+          "source": "https://ollama.com/library/qwen3-vl/tags",
+          "gb_estimated": true,
+          "note": "ollama tag qwen3-vl:32b-thinking-q8_0 (digest 76a7fcb8a3c0); size 36GB as printed (rounded) on the tags page, observed 2026-10-11."
+        }
+      ]
+    },
     "model_repo": "https://huggingface.co/Qwen/Qwen3-VL-32B-Thinking",
     "identity_note": "Comparison-only, proposed so the HyperCLOVA X 32B Think report's Terminal Bench Hard run (Table 5) has two catalogue models (with exaone-4-0-32b). The report column 'Qwen3-VL 32B-Thinking' (cited Yang et al., 2025). Maker repo Qwen/Qwen3-VL-32B-Thinking @7edd10f: licence tag apache-2.0, created 2025-10-19, 33,357,390,064 parameters in safetensors metadata (dense). Separate Thinking checkpoint (not Qwen3-VL-32B-Instruct). Card: 'Native 256K context, expandable to 1M'.",
     "identity_sources": [
@@ -50052,6 +50126,14 @@
           "cmd": "ollama run starcoder2:15b-instruct",
           "source": "https://ollama.com/library/starcoder2/tags",
           "gb_estimated": true
+        },
+        {
+          "quant": "q4_0",
+          "gb": 9.1,
+          "cmd": "ollama run starcoder2:15b-instruct",
+          "source": "https://ollama.com/library/starcoder2/tags",
+          "gb_estimated": true,
+          "note": "ollama tag starcoder2:15b-instruct (digest 432973cfbc4c), Q4_0, 9.1GB as printed, 16K context; observed 2026-10-11."
         }
       ]
     },
@@ -50101,6 +50183,14 @@
           "cmd": "ollama run starcoder:1b",
           "source": "https://ollama.com/library/starcoder/tags",
           "gb_estimated": true
+        },
+        {
+          "quant": "q4_0",
+          "gb": 0.726,
+          "cmd": "ollama run starcoder:1b",
+          "source": "https://ollama.com/library/starcoder/tags",
+          "gb_estimated": true,
+          "note": "ollama tag starcoder:1b = starcoder:1b-base (digest 77e6c46054d9), Q4_0, 726MB as printed on the tags page, 8K context; observed 2026-10-11."
         }
       ]
     },
@@ -61344,5 +61434,232 @@
         "reported_label": "LiquidAI/LFM2.5-1.2B-Instruct"
       }
     ]
+  },
+  {
+    "id": "ghana-tts-72k",
+    "name": "Ghana TTS 72k",
+    "provider": "GhanaNLP",
+    "category": "tts",
+    "released": "2026-06",
+    "released_source": "https://huggingface.co/api/models/ghananlpcommunity/ghana-tts-72k",
+    "open_weights": true,
+    "license": "mit",
+    "license_source": "https://huggingface.co/api/models/ghananlpcommunity/ghana-tts-72k",
+    "params_b": 0.652,
+    "params_note": "652,287,296 parameters (F32) in the HF safetensors metadata of model.safetensors; the nsanku benchmark lists the architecture as 'VoxCPM v1 (0.7B)'.",
+    "model_repo": "https://huggingface.co/ghananlpcommunity/ghana-tts-72k",
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only. GhanaNLP community's Ghanaian-language TTS ghananlpcommunity/ghana-tts-72k (revision e8a51f1, created 2026-06-28, card licence mit, library voxcpm; card metadata lists ~40 Ghanaian languages plus English). A VoxCPM v1 fine-tune per the nsanku benchmark ('architecture': 'VoxCPM v1 (0.7B)'). The repo is gated (automatic approval after sharing contact details), so the card text was not read and no run command is listed. Added so the nsanku 7-language CER run has three catalogue models (with gemini-3-1-flash-tts-preview and omnivoice); its row there is by: lab (same maker as the benchmark).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark/blob/41b828ed6803bd052b1bef94bb6802fecd2edf8c/bundled_data.json",
+        "reported_label": "ghananlpcommunity/ghana-tts-72k-ref (model_url https://huggingface.co/ghananlpcommunity/ghana-tts-72k)"
+      }
+    ],
+    "identity_sources": [
+      "https://huggingface.co/api/models/ghananlpcommunity/ghana-tts-72k"
+    ]
+  },
+  {
+    "id": "qwen-agentworld-35b-a3b",
+    "name": "Qwen-AgentWorld 35B-A3B",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2026-06",
+    "released_source": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md",
+    "params_b": 34.66,
+    "active_b": 3,
+    "params_note": "HF safetensors metadata 34,660,610,688 parameters; 3B active per the maker card.",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_xl",
+          "gb": 22.32,
+          "gb_estimated": true,
+          "cmd": "llama-server -hf unsloth/Qwen-AgentWorld-35B-A3B-GGUF:UD-Q4_K_XL",
+          "source": "https://huggingface.co/unsloth/Qwen-AgentWorld-35B-A3B-GGUF/tree/3a305abf5cfd119ee999dfe929c433746edd8d63",
+          "note": "unsloth dynamic quantisation; UD-Q4_K_XL file(s) 22,324,804,864 bytes (@3a305ab, fetched 2026-10-10)."
+        },
+        {
+          "quant": "bf16",
+          "gb": 69.3,
+          "gb_estimated": true,
+          "cmd": "vllm serve Qwen/Qwen-AgentWorld-35B-A3B",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/tree/60d2b0434a53d2e62a7c00a489586815d94ebffb",
+          "note": "BF16 safetensors (parameter count x 2 bytes, estimated). Card example uses --tensor-parallel-size 4 and --reasoning-parser qwen3."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B",
+    "identity_note": "Qwen/Qwen-AgentWorld-35B-A3B @60d2b04 (created 2026-06-22, licence apache-2.0). Qwen's language world model (June 2026; Qwen3.5-35B-A3B-Base, 35B total / 3B activated) trained to simulate agentic environments. Rows: its own AgentWorldBench table (new benchmark proposal), with 11 catalogued comparators. Held at the 2026-10-10 merge because its only result is Qwen's own AgentWorldBench (a test built for this model); imported under the 2026-10-11 owner decision.",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md",
+        "reported_label": "Qwen-AgentWorld-35B-A3B"
+      }
+    ],
+    "context_k": 262.144,
+    "context_source": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md",
+    "context_note": "Card: 'Context Length: 262,144 tokens'. Observed 2026-10-10."
+  },
+  {
+    "id": "yi-large",
+    "name": "Yi-Large",
+    "provider": "01.AI",
+    "category": "llm",
+    "released": "2024-05",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison-only. 01.AI's proprietary flagship API model 'yi-large' (launched with Yi-1.5 in May 2024; released month from the evaluation record, not a vendor page: 01.AI's international API platform is gone). LMArena's leaderboard table (arena-leaderboard Space @6f2eeeb) lists key 'yi-large' as 'Yi-Large' (01 AI, Proprietary) linking https://platform.01.ai/docs#models-and-pricing. The id is undated and no 01.AI page documents a version change; results come from ZeroEval, WildBench v2 and Arena-Hard v0.1 runs labelled 'yi-large' (2024). Distinct from the earlier 'yi-large-preview'.",
+    "identity_sources": [
+      "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
+        "reported_label": "yi-large,Yi-Large,...,Proprietary,01 AI,https://platform.01.ai/docs#models-and-pricing"
+      },
+      {
+        "source": "https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json",
+        "reported_label": "yi-large"
+      }
+    ]
+  },
+  {
+    "id": "yi-large-preview",
+    "name": "Yi-Large Preview",
+    "provider": "01.AI",
+    "category": "llm",
+    "released": "2024-05",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison-only. 01.AI's pre-release API model 'yi-large-preview' (AlpacaEval config 'Yi-Large Preview', added 2024-05-08 in PR #304, served from 01.AI's endpoint). LMArena's leaderboard table (arena-leaderboard Space @6f2eeeb) lists key 'yi-large-preview' as 'Yi-Large-preview' (01 AI, Proprietary) linking https://platform.lingyiwanwu.com/docs. Kept separate from 'yi-large' (each source labels them as two models with different scores). Results: ZeroEval, WildBench v2, AlpacaEval 2.0.",
+    "identity_sources": [
+      "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
+      "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/models_configs/yi-large-preview/configs.yaml"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
+        "reported_label": "yi-large-preview,Yi-Large-preview,...,Proprietary,01 AI"
+      },
+      {
+        "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/models_configs/yi-large-preview/configs.yaml",
+        "reported_label": "model_name: yi-large-preview; pretty_name: Yi-Large Preview"
+      }
+    ]
+  },
+  {
+    "id": "glm-4-0116",
+    "name": "GLM-4 (0116)",
+    "provider": "Z.ai",
+    "category": "llm",
+    "released": "2024-01",
+    "released_source": "https://arxiv.org/html/2406.12793v2",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison-only. Zhipu AI's original GLM-4 API model, GLM-4 (0116): the ChatGLM report (Team GLM, arXiv 2406.12793v2, CC BY 4.0) states 'Since Janurary 16, 2024, GLM-4 (0116) has been made available through the GLM-4 API at https://bigmodel.cn' and that 'GLM-4 (0520) is slightly better than its original 0116 version'. LMSYS/LMArena key 'glm-4-0116' ('GLM-4-0116', Zhipu AI, Proprietary). Superseded by glm-4-0520; no longer offered.",
+    "identity_sources": [
+      "https://arxiv.org/html/2406.12793v2",
+      "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2406.12793v2",
+        "reported_label": "GLM-4 (0116)"
+      },
+      {
+        "source": "https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md",
+        "reported_label": "glm-4-0116"
+      }
+    ]
+  },
+  {
+    "id": "yehia-7b-reasoning-preview",
+    "name": "Yehia 7B Reasoning (preview)",
+    "provider": "JasperV13",
+    "category": "llm",
+    "released": "2025-04",
+    "released_source": "https://huggingface.co/api/models/JasperV13/Yehia-7B-Reasoning-preview",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/JasperV13/Yehia-7B-Reasoning-preview/blob/f761e889b9ab71929307470e6a29479da35bb6a9/README.md",
+    "params_b": 7,
+    "params_note": "7,000,559,616 parameters (BF16) in the HF safetensors metadata.",
+    "model_repo": "https://huggingface.co/JasperV13/Yehia-7B-Reasoning-preview",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 14,
+          "gb_estimated": true,
+          "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='JasperV13/Yehia-7B-Reasoning-preview', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/JasperV13/Yehia-7B-Reasoning-preview/tree/f761e889b9ab71929307470e6a29479da35bb6a9",
+          "note": "gb is the size of the 3 safetensors weight files (14,001,153,080 bytes) at @f761e88 (HF API listing, fetched 2026-10-11); config.json torch_dtype bfloat16, which torch_dtype='auto' keeps. Generic transformers text-generation snippet (the card gives no usage code); a Llama-architecture Arabic/English chat model."
+        }
+      ]
+    },
+    "identity_note": "Community GRPO fine-tune JasperV13/Yehia-7B-Reasoning-preview @f761e88 (created 2025-04-20, apache-2.0; card: 'Finetuned from model: Navid-AI/Yehia-7B-preview', itself built on ALLaM-AI/ALLaM-7B-Instruct-preview; Llama architecture, 4,096-token max_position_embeddings in config.json). 'preview' is part of the repo name. Added in pass 12 for its AraGen-v3 run (held in pass 9 as a single-source model with two precision runs).",
+    "identity_sources": [
+      "https://huggingface.co/JasperV13/Yehia-7B-Reasoning-preview/blob/f761e889b9ab71929307470e6a29479da35bb6a9/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json",
+        "reported_label": "JasperV13/Yehia-7B-Reasoning-preview (Precision bfloat16 and float16, Revision main)"
+      }
+    ]
+  },
+  {
+    "id": "hivemind-32b-preview",
+    "name": "Hivemind 32B Preview",
+    "provider": "PrentisAI (HiveLabsAI)",
+    "category": "llm",
+    "released": "2026-04",
+    "open_weights": true,
+    "license": "other (proprietary)",
+    "params_b": 32.76,
+    "active_b": 32.76,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 65.52,
+          "gb_estimated": true,
+          "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='PrentisAI/hivemind-32b-preview', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/PrentisAI/hivemind-32b-preview/tree/78df78b54df86a50855abbcaccd6632b4c6ebfba",
+          "note": "gb is the size of the 14 safetensors weight file(s) transformers downloads from PrentisAI/hivemind-32b-preview@78df78b (Hugging Face API file listing, fetched 2026-10-10); quant from safetensors metadata dtype BF16, which torch_dtype='auto' keeps."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/PrentisAI/hivemind-32b-preview",
+    "identity_note": "Maker repo PrentisAI/hivemind-32b-preview @78df78b (requested as HiveLabsAI/hivemind-32b-preview, which the HF API redirects to PrentisAI/hivemind-32b-preview): licence tag other (license_name proprietary), card base_model Qwen/Qwen3-32B, tags emotional-intelligence / conversational. Released 2026-04: month the maker's Hugging Face repo was created (createdAt 2026-04-03). Held at the 2026-10-10 merge because its only result is one EQ-Bench 3 Elo (placed far above its size class); imported under the 2026-10-11 owner decision.",
+    "identity_sources": [
+      "https://huggingface.co/PrentisAI/hivemind-32b-preview/blob/78df78b54df86a50855abbcaccd6632b4c6ebfba/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz",
+        "reported_label": "HiveLabsAI/hivemind-32b-preview"
+      }
+    ],
+    "params_note": "HF safetensors metadata (2026-10-11) lists parameters BF16 32,762,123,264 (its separate total field reads 676,864, which is inconsistent with the 65.5 GB of BF16 weights and is not used); card base_model Qwen/Qwen3-32B (dense, so active = total)."
   }
 ]

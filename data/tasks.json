@@ -3,8 +3,8 @@
     "id": "agents",
     "category": "llm",
     "label": "agent tasks",
-    "title": "models for AI agents",
-    "description": "Tool use, terminal work, browser and computer tasks, and repository-level software work. Scores depend on the evaluated agent harness as well as the model.",
+    "title": "AI models for agents",
+    "description": "Models are ranked on agent tests like SWE-bench and Terminal-Bench, where they use tools, write code and work in a terminal.",
     "benchmarks": [
       "swe-bench-verified",
       "swe-bench-pro",
@@ -85,15 +85,17 @@
       "video2world-v2wscore-opencode",
       "legal-research-bench-allpass",
       "finance-agent-benchmark-v1-class-balanced",
-      "vibe-code-bench-test"
+      "vibe-code-bench-test",
+      "bfcl-v4-2025-11-03",
+      "bfcl-v4-2025-08-26"
     ]
   },
   {
     "id": "coding",
     "category": "llm",
     "label": "coding",
-    "title": "coding models",
-    "description": "Code generation, software repair and web development. Each evaluator and benchmark version stays separate.",
+    "title": "AI models for coding",
+    "description": "Models are ranked on coding tests like HumanEval, SWE-bench and Aider.",
     "benchmarks": [
       "swe-bench-verified",
       "swe-bench-pro",
@@ -162,15 +164,16 @@
       "viseditbench-pass",
       "gamelogicbench-claude-code",
       "e2e-swe-pass1",
-      "vibe-code-bench-test"
+      "vibe-code-bench-test",
+      "livecodebench-official-20231101-20250201"
     ]
   },
   {
     "id": "chat",
     "category": "llm",
     "label": "chat & writing",
-    "title": "models for chat and writing",
-    "description": "Human chat preferences, instruction following and writing evaluations.",
+    "title": "AI models for chat and writing",
+    "description": "Models are ranked on human votes from LMArena and on writing and instruction-following tests.",
     "benchmarks": [
       "lmarena-text",
       "ifeval-gemma4-report",
@@ -198,8 +201,8 @@
     "id": "math",
     "category": "llm",
     "label": "math",
-    "title": "models for math",
-    "description": "Published math problem-solving evaluations, with benchmark versions and tool settings kept separate.",
+    "title": "AI models for math",
+    "description": "Models are ranked on math tests, from competition problems like AIME to research problems like FrontierMath.",
     "benchmarks": [
       "aime-2025",
       "aime-2026",
@@ -269,8 +272,8 @@
     "id": "vision",
     "category": "llm",
     "label": "vision & documents",
-    "title": "models for image and document understanding",
-    "description": "Image understanding and document question answering: Arena's vision and document ratings plus reviewed image, chart, document and OCR question-answering benchmarks. These models interpret images; they are not image generators.",
+    "title": "AI models for images and documents",
+    "description": "Models are ranked on tests that ask questions about images, charts and documents, like MMMU and CharXiv.",
     "benchmarks": [
       "lmarena-vision",
       "lmarena-document",
@@ -325,8 +328,8 @@
     "id": "search",
     "category": "llm",
     "label": "web search",
-    "title": "models for web search",
-    "description": "Published comparisons of search-enabled model systems. Results describe the evaluated search setup, not the base model in isolation.",
+    "title": "AI models for web search",
+    "description": "Models are ranked on web research tests like BrowseComp, with search turned on.",
     "benchmarks": [
       "lmarena-search",
       "browsecomp",
@@ -347,7 +350,7 @@
     "category": "image",
     "label": "text to image",
     "title": "text-to-image models",
-    "description": "Generate images from a text prompt. Rankings use text-to-image evaluations only.",
+    "description": "Models are ranked on human votes and image generation tests like GenEval.",
     "benchmarks": [
       "lmarena-image",
       "geneval",
@@ -403,8 +406,8 @@
     "id": "image-to-image",
     "category": "image",
     "label": "image to image / editing",
-    "title": "image-to-image and image editing models",
-    "description": "Transform or edit an existing image with instructions. Rankings use image editing evaluations only.",
+    "title": "image editing models",
+    "description": "Models are ranked on human votes and image editing tests.",
     "benchmarks": [
       "lmarena-image-edit",
       "edit-compass-en-overall",
@@ -430,7 +433,7 @@
     "category": "video",
     "label": "text to video",
     "title": "text-to-video models",
-    "description": "Generate video from a text prompt. Image-conditioned and mixed-input studies are excluded.",
+    "description": "Models are ranked on human votes and video generation tests.",
     "benchmarks": [
       "lmarena-video",
       "humanscore-t2v",
@@ -470,7 +473,7 @@
     "category": "video",
     "label": "image to video",
     "title": "image-to-video models",
-    "description": "Animate a source image or predict a video from an image and instructions. Scores use image-conditioned evaluations.",
+    "description": "Models are ranked on human votes and tests that turn an image into a video.",
     "benchmarks": [
       "lmarena-video-i2v",
       "rapidata-physics-i2v-reference",
@@ -495,7 +498,7 @@
     "category": "video",
     "label": "video editing",
     "title": "video editing models",
-    "description": "Edit an existing video, ranked on published video editing comparisons.",
+    "description": "Models are ranked on human votes comparing their video edits.",
     "benchmarks": [
       "lmarena-video-edit"
     ]
@@ -505,7 +508,7 @@
     "category": "tts",
     "label": "voice cloning",
     "title": "voice cloning models",
-    "description": "Reference-voice synthesis, scored on reviewed zero-shot cloning evaluations. Similarity and intelligibility measure different aspects of the generated voice.",
+    "description": "Models are ranked on how clear the cloned voice is and how much it sounds like the original speaker.",
     "benchmarks": [
       "voxtral-tts-minimax9-wer",
       "voxtral-tts-minimax9-speaker",
@@ -523,15 +526,16 @@
       "zstts-daps-flores-en-cer",
       "seed-tts-zh-eres2net-sim",
       "seed-tts-en-eres2net-sim",
-      "minimax-ml21-ultraeval-macro-err"
+      "minimax-ml21-ultraeval-macro-err",
+      "nsanku-ghana7-macro-cer"
     ]
   },
   {
     "id": "long-form",
     "category": "stt",
     "label": "long-form transcription",
-    "title": "long-form transcription models",
-    "description": "Transcribe long recordings. Scores use long-form evaluation protocols rather than short-clip recognition tests.",
+    "title": "speech-to-text models for long recordings",
+    "description": "Models are ranked on transcription tests with long recordings.",
     "benchmarks": [
       "open-asr-longform-wer",
       "voxtral-rt-2026-en-long"
@@ -541,8 +545,8 @@
     "id": "multilingual",
     "category": "stt",
     "label": "multilingual transcription",
-    "title": "multilingual transcription models",
-    "description": "Speech recognition across multiple languages. The tested languages and word or character error metric depend on the source.",
+    "title": "multilingual speech-to-text models",
+    "description": "Models are ranked on transcription tests in many languages.",
     "benchmarks": [
       "open-asr-multilingual-wer",
       "voxtral-rt-2026-fleurs13",
