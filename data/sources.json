@@ -15975,5 +15975,65 @@
     "verdict": "allowed",
     "checked": "2026-10-11",
     "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2508.00828v1-finance-agent-benchmark",
+    "name": "Finance Agent Benchmark (Vals AI, arXiv:2508.00828v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/abs/2508.00828v1",
+      "arxiv.org/html/2508.00828v1",
+      "arxiv.org/pdf/2508.00828v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2508.00828v1",
+    "quote": "arXiv abstract page for 2508.00828v1 (submitted 20 May 2025, only version) links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; the HTML version header states 'License: CC BY 4.0'. CC BY 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including commercially, subject to attribution. Sec. 4.1: 'All models were evaluated under consistent conditions to ensure a fair comparison' (identical prompt, temperature 0 where supported, 16,384 max tokens).",
+    "attribution": "Antoine Bigeard, Rayan Krishnan, Langston Nashold (Vals AI), Shirley Wu (Stanford), Finance Agent Benchmark: Benchmarking LLMs on Real-world Financial Research Tasks, arXiv:2508.00828v1, CC BY 4.0. Table 2 'Acc. (Class-Balanced)' cells; percentages converted to fractions; catalogue IDs mapped. No endorsement.",
+    "scope": "Table 2 class-balanced accuracy (the paper's headline metric) on all 537 questions, highest reasoning row per model. Not imported: naive accuracy (same answers, different averaging), the non-thinking Claude 3.7 Sonnet row and the low-reasoning Grok 3 Mini Fast row (lower settings of a printed model), time/cost columns. Vals AI's later Finance Agent v1.1/v2 leaderboards on vals.ai are different versions and not covered by this licence.",
+    "verdict": "allowed",
+    "checked": "2026-10-11",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2603.04601v3-vibe-code-bench",
+    "name": "Vibe Code Bench (Vals AI, arXiv:2603.04601v3)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/abs/2603.04601v3",
+      "arxiv.org/html/2603.04601v3",
+      "arxiv.org/pdf/2603.04601v3"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2603.04601v3",
+    "quote": "arXiv abstract page for 2603.04601v3 (v1 4 Mar 2026, v2 5 May 2026, v3 13 May 2026) links 'http://creativecommons.org/licenses/by/4.0/' as the licence of this version (v1 and v2 carry the same licence); the HTML version header states 'License: CC BY 4.0'. CC BY 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including commercially, subject to attribution. Sec. 4: 'We evaluate 16 models from 9 providers ... All models use vision if supported, the highest reasoning level available for that model, and the default temperature specified by the model provider.'",
+    "attribution": "Hung Tran, Langston Nashold, Rayan Krishnan, Antoine Bigeard (Vals AI), Alex Gu (MIT), Vibe Code Bench: Evaluating AI Models on End-to-End Web Application Development, arXiv:2603.04601v3, CC BY 4.0. Table 4 accuracy cells; percentages converted to fractions; catalogue IDs mapped. No endorsement.",
+    "scope": "Table 4 accuracy on the 50-app test split for 15 of 16 rows (the plain 'Claude Opus 4.6' row is a lower setting of the printed 'Claude Opus 4.6 Thinking'); model ids and reasoning settings from Table 15. Table 4 is identical in v1, v2 and v3. Not imported: per-difficulty/integration/domain breakdowns (Tables 5-7, 11-13: same answers), the six-app variance panel (Table 9), evaluator-agreement Table 10, ablation figures, cost/latency. The vals.ai Vibe Code Bench leaderboard and the vibe-code-bench-cais-2026-artifacts repo (no licence) are not covered.",
+    "verdict": "allowed",
+    "checked": "2026-10-11",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2603.26996v1-formalproofbench",
+    "name": "FormalProofBench (Vals AI, arXiv:2603.26996v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/abs/2603.26996v1",
+      "arxiv.org/html/2603.26996v1",
+      "arxiv.org/pdf/2603.26996v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2603.26996v1",
+    "quote": "arXiv abstract page for 2603.26996v1 (submitted 27 Mar 2026, only version) links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; the HTML version header states 'License: CC BY 4.0'. CC BY 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including commercially, subject to attribution. Sec. 3.2: 'We standardize our evaluation settings by using the default sampling settings from each model provider, and by using the native model provider rather than a third-party inference provider.' Sec. 5: 'Table 2 summarizes the overall results on models from OpenAI, Anthropic, xAI, Zhipu AI, Google, and DeepSeek.'",
+    "attribution": "Nikil Ravi, Kexing Ying, Vasilii Nesterov, Rayan Krishnan, Elif Uskuplu, Bingyu Xia, Janitha Aswedige, Langston Nashold (Vals AI and co-authors), FormalProofBench: Can Models Write Graduate Level Math Proofs That Are Formally Verified?, arXiv:2603.26996v1, CC BY 4.0. Table 2 accuracy cells; percentages converted to fractions; catalogue IDs mapped. No endorsement.",
+    "scope": "Table 2 accuracy (200 problems) for 11 catalogued models, highest reasoning row per model (DeepSeek V3.2 Thinking, not Nonthinking). Not imported: DeepSeek V3.2 (Nonthinking) (lower setting), GPT 5.1 Codex Max (not catalogued), cost/latency columns, tool-use figures. The vals.ai ProofBench leaderboard is not covered by this licence.",
+    "verdict": "allowed",
+    "checked": "2026-10-11",
+    "icon": "arxiv.org"
   }
 ]

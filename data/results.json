@@ -256950,5 +256950,455 @@
     "date": "2026-09-30",
     "note": "Legal Research Bench (arXiv:2610.00609v1, CC BY 4.0) Table 4 (tool ablation), row 'GPT-5.4-mini', 'All-pass (1-shot)' = 2.2 (%); single-shot answer with no tool access; stored /100. Authors' own runs (Vals AI): 'We evaluate thirteen frontier models using this harness'; every model answers all 413 questions, one run per question, graded by a GPT-5.4 judge validated against attorneys. Reasoning effort / thinking setting not stated in the paper. Models 'all released between February and June 2026' (Sec. 4.1).",
     "source_id": "paper-2610.00609v1-legal-research-bench"
+  },
+  {
+    "model": "o3",
+    "bench": "finance-agent-benchmark-v1-class-balanced",
+    "score": 0.468,
+    "source": "https://arxiv.org/abs/2508.00828v1",
+    "by": "independent",
+    "date": "2025-05-20",
+    "note": "Finance Agent Benchmark (arXiv:2508.00828v1, CC BY 4.0) Table 2, row 'o3', 'Acc. (Class-Balanced)' = 46.8 ± 2.2 (%); stored /100. Class-balanced accuracy is the paper's headline metric (Sec. 4.2: 'We find the class-balanced accuracy to be more representative of the model's general agentic financial capabilities'); naive accuracy on the same answers not imported. All 537 questions ('All metrics reported in this paper were calculated on the complete 537 samples'). Agent harness with Google search (SerpAPI), EDGAR search, HTML parsing and retrieval tools; identical prompt, temperature 0 where supported, 16,384 max tokens; rubric LLM-judge grading. Authors' own runs (Vals AI): 'All models were evaluated under consistent conditions to ensure a fair comparison'. Model id from the harness README 'Available Models' list at vals-ai/finance-agent@ac07b92 (2025-05-16, four days before submission; 'This repo contains the codebase to run the agent that was used to create the benchmark'): openai/o3-2025-04-16 (the only o3 snapshot). The harness sends no reasoning_effort (llm.py @ac07b92), so the API's default effort applies; Table 2 Reasoning = ✓.",
+    "source_id": "paper-2508.00828v1-finance-agent-benchmark"
+  },
+  {
+    "model": "claude-3-7-sonnet-20250219",
+    "bench": "finance-agent-benchmark-v1-class-balanced",
+    "score": 0.459,
+    "source": "https://arxiv.org/abs/2508.00828v1",
+    "by": "independent",
+    "date": "2025-05-20",
+    "note": "Finance Agent Benchmark (arXiv:2508.00828v1, CC BY 4.0) Table 2, row 'Claude 3.7 Sonnet (Thinking)', 'Acc. (Class-Balanced)' = 45.9 ± 2.2 (%); stored /100. Class-balanced accuracy is the paper's headline metric (Sec. 4.2: 'We find the class-balanced accuracy to be more representative of the model's general agentic financial capabilities'); naive accuracy on the same answers not imported. All 537 questions ('All metrics reported in this paper were calculated on the complete 537 samples'). Agent harness with Google search (SerpAPI), EDGAR search, HTML parsing and retrieval tools; identical prompt, temperature 0 where supported, 16,384 max tokens; rubric LLM-judge grading. Authors' own runs (Vals AI): 'All models were evaluated under consistent conditions to ensure a fair comparison'. Model id from the harness README 'Available Models' list at vals-ai/finance-agent@ac07b92 (2025-05-16, four days before submission; 'This repo contains the codebase to run the agent that was used to create the benchmark'): anthropic/claude-3-7-sonnet-20250219-thinking: extended thinking enabled with budget_tokens 13384, max_tokens 16384 (llm.py @ac07b92). Highest reasoning row printed; the non-thinking 'Claude 3.7 Sonnet' row (44.3) is not imported.",
+    "source_id": "paper-2508.00828v1-finance-agent-benchmark"
+  },
+  {
+    "model": "o4-mini",
+    "bench": "finance-agent-benchmark-v1-class-balanced",
+    "score": 0.373,
+    "source": "https://arxiv.org/abs/2508.00828v1",
+    "by": "independent",
+    "date": "2025-05-20",
+    "note": "Finance Agent Benchmark (arXiv:2508.00828v1, CC BY 4.0) Table 2, row 'o4 Mini', 'Acc. (Class-Balanced)' = 37.3 ± 2.2 (%); stored /100. Class-balanced accuracy is the paper's headline metric (Sec. 4.2: 'We find the class-balanced accuracy to be more representative of the model's general agentic financial capabilities'); naive accuracy on the same answers not imported. All 537 questions ('All metrics reported in this paper were calculated on the complete 537 samples'). Agent harness with Google search (SerpAPI), EDGAR search, HTML parsing and retrieval tools; identical prompt, temperature 0 where supported, 16,384 max tokens; rubric LLM-judge grading. Authors' own runs (Vals AI): 'All models were evaluated under consistent conditions to ensure a fair comparison'. Model id from the harness README 'Available Models' list at vals-ai/finance-agent@ac07b92 (2025-05-16, four days before submission; 'This repo contains the codebase to run the agent that was used to create the benchmark'): openai/o4-mini-2025-04-16 (the only o4-mini snapshot); no reasoning_effort sent, so the API's default effort applies.",
+    "source_id": "paper-2508.00828v1-finance-agent-benchmark"
+  },
+  {
+    "model": "gpt-4-1",
+    "bench": "finance-agent-benchmark-v1-class-balanced",
+    "score": 0.267,
+    "source": "https://arxiv.org/abs/2508.00828v1",
+    "by": "independent",
+    "date": "2025-05-20",
+    "note": "Finance Agent Benchmark (arXiv:2508.00828v1, CC BY 4.0) Table 2, row 'GPT 4.1', 'Acc. (Class-Balanced)' = 26.7 ± 2.0 (%); stored /100. Class-balanced accuracy is the paper's headline metric (Sec. 4.2: 'We find the class-balanced accuracy to be more representative of the model's general agentic financial capabilities'); naive accuracy on the same answers not imported. All 537 questions ('All metrics reported in this paper were calculated on the complete 537 samples'). Agent harness with Google search (SerpAPI), EDGAR search, HTML parsing and retrieval tools; identical prompt, temperature 0 where supported, 16,384 max tokens; rubric LLM-judge grading. Authors' own runs (Vals AI): 'All models were evaluated under consistent conditions to ensure a fair comparison'. Model id from the harness README 'Available Models' list at vals-ai/finance-agent@ac07b92 (2025-05-16, four days before submission; 'This repo contains the codebase to run the agent that was used to create the benchmark'): openai/gpt-4.1-2025-04-14 (the only GPT-4.1 snapshot); non-reasoning model.",
+    "source_id": "paper-2508.00828v1-finance-agent-benchmark"
+  },
+  {
+    "model": "grok-3-beta",
+    "bench": "finance-agent-benchmark-v1-class-balanced",
+    "score": 0.258,
+    "source": "https://arxiv.org/abs/2508.00828v1",
+    "by": "independent",
+    "date": "2025-05-20",
+    "note": "Finance Agent Benchmark (arXiv:2508.00828v1, CC BY 4.0) Table 2, row 'Grok 3 Beta', 'Acc. (Class-Balanced)' = 25.8 ± 1.9 (%); stored /100. Class-balanced accuracy is the paper's headline metric (Sec. 4.2: 'We find the class-balanced accuracy to be more representative of the model's general agentic financial capabilities'); naive accuracy on the same answers not imported. All 537 questions ('All metrics reported in this paper were calculated on the complete 537 samples'). Agent harness with Google search (SerpAPI), EDGAR search, HTML parsing and retrieval tools; identical prompt, temperature 0 where supported, 16,384 max tokens; rubric LLM-judge grading. Authors' own runs (Vals AI): 'All models were evaluated under consistent conditions to ensure a fair comparison'. Model id from the harness README 'Available Models' list at vals-ai/finance-agent@ac07b92 (2025-05-16, four days before submission; 'This repo contains the codebase to run the agent that was used to create the benchmark'): grok/grok-3-beta (xAI API model grok-3-beta); non-reasoning model.",
+    "source_id": "paper-2508.00828v1-finance-agent-benchmark"
+  },
+  {
+    "model": "o1-2024-12-17",
+    "bench": "finance-agent-benchmark-v1-class-balanced",
+    "score": 0.214,
+    "source": "https://arxiv.org/abs/2508.00828v1",
+    "by": "independent",
+    "date": "2025-05-20",
+    "note": "Finance Agent Benchmark (arXiv:2508.00828v1, CC BY 4.0) Table 2, row 'o1', 'Acc. (Class-Balanced)' = 21.4 ± 1.7 (%); stored /100. Class-balanced accuracy is the paper's headline metric (Sec. 4.2: 'We find the class-balanced accuracy to be more representative of the model's general agentic financial capabilities'); naive accuracy on the same answers not imported. All 537 questions ('All metrics reported in this paper were calculated on the complete 537 samples'). Agent harness with Google search (SerpAPI), EDGAR search, HTML parsing and retrieval tools; identical prompt, temperature 0 where supported, 16,384 max tokens; rubric LLM-judge grading. Authors' own runs (Vals AI): 'All models were evaluated under consistent conditions to ensure a fair comparison'. Model id from the harness README 'Available Models' list at vals-ai/finance-agent@ac07b92 (2025-05-16, four days before submission; 'This repo contains the codebase to run the agent that was used to create the benchmark'): openai/o1-2024-12-17 (dated snapshot; not o1-preview); no reasoning_effort sent, so the API's default effort applies.",
+    "source_id": "paper-2508.00828v1-finance-agent-benchmark"
+  },
+  {
+    "model": "gpt-4-1-mini",
+    "bench": "finance-agent-benchmark-v1-class-balanced",
+    "score": 0.203,
+    "source": "https://arxiv.org/abs/2508.00828v1",
+    "by": "independent",
+    "date": "2025-05-20",
+    "note": "Finance Agent Benchmark (arXiv:2508.00828v1, CC BY 4.0) Table 2, row 'GPT 4.1 mini', 'Acc. (Class-Balanced)' = 20.3 ± 1.7 (%); stored /100. Class-balanced accuracy is the paper's headline metric (Sec. 4.2: 'We find the class-balanced accuracy to be more representative of the model's general agentic financial capabilities'); naive accuracy on the same answers not imported. All 537 questions ('All metrics reported in this paper were calculated on the complete 537 samples'). Agent harness with Google search (SerpAPI), EDGAR search, HTML parsing and retrieval tools; identical prompt, temperature 0 where supported, 16,384 max tokens; rubric LLM-judge grading. Authors' own runs (Vals AI): 'All models were evaluated under consistent conditions to ensure a fair comparison'. Model id from the harness README 'Available Models' list at vals-ai/finance-agent@ac07b92 (2025-05-16, four days before submission; 'This repo contains the codebase to run the agent that was used to create the benchmark'): openai/gpt-4.1-mini-2025-04-14 (the only snapshot); non-reasoning model.",
+    "source_id": "paper-2508.00828v1-finance-agent-benchmark"
+  },
+  {
+    "model": "gpt-4o-2024-08-06",
+    "bench": "finance-agent-benchmark-v1-class-balanced",
+    "score": 0.2,
+    "source": "https://arxiv.org/abs/2508.00828v1",
+    "by": "independent",
+    "date": "2025-05-20",
+    "note": "Finance Agent Benchmark (arXiv:2508.00828v1, CC BY 4.0) Table 2, row 'GPT 4o (2024-08-06)', 'Acc. (Class-Balanced)' = 20.0 ± 1.7 (%); stored /100. Class-balanced accuracy is the paper's headline metric (Sec. 4.2: 'We find the class-balanced accuracy to be more representative of the model's general agentic financial capabilities'); naive accuracy on the same answers not imported. All 537 questions ('All metrics reported in this paper were calculated on the complete 537 samples'). Agent harness with Google search (SerpAPI), EDGAR search, HTML parsing and retrieval tools; identical prompt, temperature 0 where supported, 16,384 max tokens; rubric LLM-judge grading. Authors' own runs (Vals AI): 'All models were evaluated under consistent conditions to ensure a fair comparison'. Model id from the harness README 'Available Models' list at vals-ai/finance-agent@ac07b92 (2025-05-16, four days before submission; 'This repo contains the codebase to run the agent that was used to create the benchmark'): openai/gpt-4o-2024-08-06 (dated snapshot as printed). Table 2 marks it Reasoning ✓, apparently a typo; GPT-4o has no reasoning setting.",
+    "source_id": "paper-2508.00828v1-finance-agent-benchmark"
+  },
+  {
+    "model": "gemini-2-0-flash-001",
+    "bench": "finance-agent-benchmark-v1-class-balanced",
+    "score": 0.144,
+    "source": "https://arxiv.org/abs/2508.00828v1",
+    "by": "independent",
+    "date": "2025-05-20",
+    "note": "Finance Agent Benchmark (arXiv:2508.00828v1, CC BY 4.0) Table 2, row 'Gemini 2.0 Flash (001)', 'Acc. (Class-Balanced)' = 14.4 ± 1.4 (%); stored /100. Class-balanced accuracy is the paper's headline metric (Sec. 4.2: 'We find the class-balanced accuracy to be more representative of the model's general agentic financial capabilities'); naive accuracy on the same answers not imported. All 537 questions ('All metrics reported in this paper were calculated on the complete 537 samples'). Agent harness with Google search (SerpAPI), EDGAR search, HTML parsing and retrieval tools; identical prompt, temperature 0 where supported, 16,384 max tokens; rubric LLM-judge grading. Authors' own runs (Vals AI): 'All models were evaluated under consistent conditions to ensure a fair comparison'. Model id from the harness README 'Available Models' list at vals-ai/finance-agent@ac07b92 (2025-05-16, four days before submission; 'This repo contains the codebase to run the agent that was used to create the benchmark'): google/gemini-2.0-flash-001 (stable version as printed); no thinking.",
+    "source_id": "paper-2508.00828v1-finance-agent-benchmark"
+  },
+  {
+    "model": "claude-3-5-haiku-20241022",
+    "bench": "finance-agent-benchmark-v1-class-balanced",
+    "score": 0.131,
+    "source": "https://arxiv.org/abs/2508.00828v1",
+    "by": "independent",
+    "date": "2025-05-20",
+    "note": "Finance Agent Benchmark (arXiv:2508.00828v1, CC BY 4.0) Table 2, row 'Claude 3.5 Haiku Latest', 'Acc. (Class-Balanced)' = 13.1 ± 1.4 (%); stored /100. Class-balanced accuracy is the paper's headline metric (Sec. 4.2: 'We find the class-balanced accuracy to be more representative of the model's general agentic financial capabilities'); naive accuracy on the same answers not imported. All 537 questions ('All metrics reported in this paper were calculated on the complete 537 samples'). Agent harness with Google search (SerpAPI), EDGAR search, HTML parsing and retrieval tools; identical prompt, temperature 0 where supported, 16,384 max tokens; rubric LLM-judge grading. Authors' own runs (Vals AI): 'All models were evaluated under consistent conditions to ensure a fair comparison'. Model id from the harness README 'Available Models' list at vals-ai/finance-agent@ac07b92 (2025-05-16, four days before submission; 'This repo contains the codebase to run the agent that was used to create the benchmark'): README lists anthropic/claude-3-5-haiku-20241022, the only Claude 3.5 Haiku snapshot (the 'latest' alias pointed to it); non-reasoning model.",
+    "source_id": "paper-2508.00828v1-finance-agent-benchmark"
+  },
+  {
+    "model": "o3-mini",
+    "bench": "finance-agent-benchmark-v1-class-balanced",
+    "score": 0.128,
+    "source": "https://arxiv.org/abs/2508.00828v1",
+    "by": "independent",
+    "date": "2025-05-20",
+    "note": "Finance Agent Benchmark (arXiv:2508.00828v1, CC BY 4.0) Table 2, row 'o3 Mini', 'Acc. (Class-Balanced)' = 12.8 ± 1.4 (%); stored /100. Class-balanced accuracy is the paper's headline metric (Sec. 4.2: 'We find the class-balanced accuracy to be more representative of the model's general agentic financial capabilities'); naive accuracy on the same answers not imported. All 537 questions ('All metrics reported in this paper were calculated on the complete 537 samples'). Agent harness with Google search (SerpAPI), EDGAR search, HTML parsing and retrieval tools; identical prompt, temperature 0 where supported, 16,384 max tokens; rubric LLM-judge grading. Authors' own runs (Vals AI): 'All models were evaluated under consistent conditions to ensure a fair comparison'. Model id from the harness README 'Available Models' list at vals-ai/finance-agent@ac07b92 (2025-05-16, four days before submission; 'This repo contains the codebase to run the agent that was used to create the benchmark'): openai/o3-mini-2025-01-31 (the only o3-mini snapshot); no reasoning_effort sent, so the API's default effort applies.",
+    "source_id": "paper-2508.00828v1-finance-agent-benchmark"
+  },
+  {
+    "model": "gpt-4o-mini-2024-07-18",
+    "bench": "finance-agent-benchmark-v1-class-balanced",
+    "score": 0.108,
+    "source": "https://arxiv.org/abs/2508.00828v1",
+    "by": "independent",
+    "date": "2025-05-20",
+    "note": "Finance Agent Benchmark (arXiv:2508.00828v1, CC BY 4.0) Table 2, row 'GPT 4o Mini', 'Acc. (Class-Balanced)' = 10.8 ± 1.2 (%); stored /100. Class-balanced accuracy is the paper's headline metric (Sec. 4.2: 'We find the class-balanced accuracy to be more representative of the model's general agentic financial capabilities'); naive accuracy on the same answers not imported. All 537 questions ('All metrics reported in this paper were calculated on the complete 537 samples'). Agent harness with Google search (SerpAPI), EDGAR search, HTML parsing and retrieval tools; identical prompt, temperature 0 where supported, 16,384 max tokens; rubric LLM-judge grading. Authors' own runs (Vals AI): 'All models were evaluated under consistent conditions to ensure a fair comparison'. Model id from the harness README 'Available Models' list at vals-ai/finance-agent@ac07b92 (2025-05-16, four days before submission; 'This repo contains the codebase to run the agent that was used to create the benchmark'): openai/gpt-4o-mini-2024-07-18 (the only gpt-4o-mini snapshot); non-reasoning model.",
+    "source_id": "paper-2508.00828v1-finance-agent-benchmark"
+  },
+  {
+    "model": "mistral-small-3-1",
+    "bench": "finance-agent-benchmark-v1-class-balanced",
+    "score": 0.108,
+    "source": "https://arxiv.org/abs/2508.00828v1",
+    "by": "independent",
+    "date": "2025-05-20",
+    "note": "Finance Agent Benchmark (arXiv:2508.00828v1, CC BY 4.0) Table 2, row 'Mistral Small 3.1 (03/2025)', 'Acc. (Class-Balanced)' = 10.8 ± 1.3 (%); stored /100. Class-balanced accuracy is the paper's headline metric (Sec. 4.2: 'We find the class-balanced accuracy to be more representative of the model's general agentic financial capabilities'); naive accuracy on the same answers not imported. All 537 questions ('All metrics reported in this paper were calculated on the complete 537 samples'). Agent harness with Google search (SerpAPI), EDGAR search, HTML parsing and retrieval tools; identical prompt, temperature 0 where supported, 16,384 max tokens; rubric LLM-judge grading. Authors' own runs (Vals AI): 'All models were evaluated under consistent conditions to ensure a fair comparison'. Model id from the harness README 'Available Models' list at vals-ai/finance-agent@ac07b92 (2025-05-16, four days before submission; 'This repo contains the codebase to run the agent that was used to create the benchmark'): mistralai/mistral-small-2503 = Mistral Small 3.1 (25.03); non-reasoning model.",
+    "source_id": "paper-2508.00828v1-finance-agent-benchmark"
+  },
+  {
+    "model": "llama-4-scout",
+    "bench": "finance-agent-benchmark-v1-class-balanced",
+    "score": 0.058,
+    "source": "https://arxiv.org/abs/2508.00828v1",
+    "by": "independent",
+    "date": "2025-05-20",
+    "note": "Finance Agent Benchmark (arXiv:2508.00828v1, CC BY 4.0) Table 2, row 'LLaMA 4 Scout', 'Acc. (Class-Balanced)' = 5.8 ± 1.0 (%); stored /100. Class-balanced accuracy is the paper's headline metric (Sec. 4.2: 'We find the class-balanced accuracy to be more representative of the model's general agentic financial capabilities'); naive accuracy on the same answers not imported. All 537 questions ('All metrics reported in this paper were calculated on the complete 537 samples'). Agent harness with Google search (SerpAPI), EDGAR search, HTML parsing and retrieval tools; identical prompt, temperature 0 where supported, 16,384 max tokens; rubric LLM-judge grading. Authors' own runs (Vals AI): 'All models were evaluated under consistent conditions to ensure a fair comparison'. Model id from the harness README 'Available Models' list at vals-ai/finance-agent@ac07b92 (2025-05-16, four days before submission; 'This repo contains the codebase to run the agent that was used to create the benchmark'): together/meta-llama/Llama-4-Scout-17B-16E-Instruct (served by Together AI); non-reasoning model.",
+    "source_id": "paper-2508.00828v1-finance-agent-benchmark"
+  },
+  {
+    "model": "command-a",
+    "bench": "finance-agent-benchmark-v1-class-balanced",
+    "score": 0.046,
+    "source": "https://arxiv.org/abs/2508.00828v1",
+    "by": "independent",
+    "date": "2025-05-20",
+    "note": "Finance Agent Benchmark (arXiv:2508.00828v1, CC BY 4.0) Table 2, row 'Command A', 'Acc. (Class-Balanced)' = 4.6 ± 0.9 (%); stored /100. Class-balanced accuracy is the paper's headline metric (Sec. 4.2: 'We find the class-balanced accuracy to be more representative of the model's general agentic financial capabilities'); naive accuracy on the same answers not imported. All 537 questions ('All metrics reported in this paper were calculated on the complete 537 samples'). Agent harness with Google search (SerpAPI), EDGAR search, HTML parsing and retrieval tools; identical prompt, temperature 0 where supported, 16,384 max tokens; rubric LLM-judge grading. Authors' own runs (Vals AI): 'All models were evaluated under consistent conditions to ensure a fair comparison'. Model id from the harness README 'Available Models' list at vals-ai/finance-agent@ac07b92 (2025-05-16, four days before submission; 'This repo contains the codebase to run the agent that was used to create the benchmark'): cohere/command-a-03-2025; non-reasoning model.",
+    "source_id": "paper-2508.00828v1-finance-agent-benchmark"
+  },
+  {
+    "model": "llama-4-maverick",
+    "bench": "finance-agent-benchmark-v1-class-balanced",
+    "score": 0.031,
+    "source": "https://arxiv.org/abs/2508.00828v1",
+    "by": "independent",
+    "date": "2025-05-20",
+    "note": "Finance Agent Benchmark (arXiv:2508.00828v1, CC BY 4.0) Table 2, row 'LLaMA 4 Maverick', 'Acc. (Class-Balanced)' = 3.1 ± 0.8 (%); stored /100. Class-balanced accuracy is the paper's headline metric (Sec. 4.2: 'We find the class-balanced accuracy to be more representative of the model's general agentic financial capabilities'); naive accuracy on the same answers not imported. All 537 questions ('All metrics reported in this paper were calculated on the complete 537 samples'). Agent harness with Google search (SerpAPI), EDGAR search, HTML parsing and retrieval tools; identical prompt, temperature 0 where supported, 16,384 max tokens; rubric LLM-judge grading. Authors' own runs (Vals AI): 'All models were evaluated under consistent conditions to ensure a fair comparison'. Model id from the harness README 'Available Models' list at vals-ai/finance-agent@ac07b92 (2025-05-16, four days before submission; 'This repo contains the codebase to run the agent that was used to create the benchmark'): together/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8 (Meta's official FP8 release of the instruct model, served by Together AI; same mapping as other FP8 Maverick rows in the catalogue); non-reasoning model.",
+    "source_id": "paper-2508.00828v1-finance-agent-benchmark"
+  },
+  {
+    "model": "llama-3-3-70b",
+    "bench": "finance-agent-benchmark-v1-class-balanced",
+    "score": 0.028,
+    "source": "https://arxiv.org/abs/2508.00828v1",
+    "by": "independent",
+    "date": "2025-05-20",
+    "note": "Finance Agent Benchmark (arXiv:2508.00828v1, CC BY 4.0) Table 2, row 'LLaMA 3.3 Instruct Turbo (70B)', 'Acc. (Class-Balanced)' = 2.8 ± 0.8 (%); stored /100. Class-balanced accuracy is the paper's headline metric (Sec. 4.2: 'We find the class-balanced accuracy to be more representative of the model's general agentic financial capabilities'); naive accuracy on the same answers not imported. All 537 questions ('All metrics reported in this paper were calculated on the complete 537 samples'). Agent harness with Google search (SerpAPI), EDGAR search, HTML parsing and retrieval tools; identical prompt, temperature 0 where supported, 16,384 max tokens; rubric LLM-judge grading. Authors' own runs (Vals AI): 'All models were evaluated under consistent conditions to ensure a fair comparison'. Model id from the harness README 'Available Models' list at vals-ai/finance-agent@ac07b92 (2025-05-16, four days before submission; 'This repo contains the codebase to run the agent that was used to create the benchmark'): together/meta-llama/Llama-3.3-70B-Instruct-Turbo (Together AI's serving of Llama 3.3 70B Instruct; same mapping as the ContractBench and Galileo rows); non-reasoning model.",
+    "source_id": "paper-2508.00828v1-finance-agent-benchmark"
+  },
+  {
+    "model": "gpt-4-1-nano-2025-04-14",
+    "bench": "finance-agent-benchmark-v1-class-balanced",
+    "score": 0.024,
+    "source": "https://arxiv.org/abs/2508.00828v1",
+    "by": "independent",
+    "date": "2025-05-20",
+    "note": "Finance Agent Benchmark (arXiv:2508.00828v1, CC BY 4.0) Table 2, row 'GPT 4.1 nano', 'Acc. (Class-Balanced)' = 2.4 ± 0.7 (%); stored /100. Class-balanced accuracy is the paper's headline metric (Sec. 4.2: 'We find the class-balanced accuracy to be more representative of the model's general agentic financial capabilities'); naive accuracy on the same answers not imported. All 537 questions ('All metrics reported in this paper were calculated on the complete 537 samples'). Agent harness with Google search (SerpAPI), EDGAR search, HTML parsing and retrieval tools; identical prompt, temperature 0 where supported, 16,384 max tokens; rubric LLM-judge grading. Authors' own runs (Vals AI): 'All models were evaluated under consistent conditions to ensure a fair comparison'. Model id from the harness README 'Available Models' list at vals-ai/finance-agent@ac07b92 (2025-05-16, four days before submission; 'This repo contains the codebase to run the agent that was used to create the benchmark'): openai/gpt-4.1-nano-2025-04-14 (the only snapshot); non-reasoning model.",
+    "source_id": "paper-2508.00828v1-finance-agent-benchmark"
+  },
+  {
+    "model": "gpt-5-3-codex",
+    "bench": "vibe-code-bench-test",
+    "score": 0.6177,
+    "source": "https://arxiv.org/abs/2603.04601v3",
+    "by": "independent",
+    "date": "2026-05-13",
+    "note": "Vibe Code Bench (arXiv:2603.04601v3, CC BY 4.0) Table 4, row 'GPT-5.3-Codex', Accuracy = 61.77 ± 4.71%; stored /100. Accuracy = share of browser workflows passed (pass = at least 90% of substeps succeed, Browser Use evaluator with Claude Sonnet 4.5), mean over the 50 test-split apps, printed as mean ± s.e.; Table 4 identical in v1-v3. OpenHands-based harness with terminal, browser, Supabase/MailHog/Stripe and Tavily, 5-hour wall-clock budget per app. Authors' own runs (Vals AI): 'We evaluate 16 models from 9 providers'; 'All models use vision if supported, the highest reasoning level available for that model, and the default temperature specified by the model provider.' Table 15 id openai/gpt-5.3-codex-api-preview (API preview access before the paper's 2026-03-04 v1), reasoning xhigh.",
+    "source_id": "paper-2603.04601v3-vibe-code-bench"
+  },
+  {
+    "model": "gpt-5-2",
+    "bench": "vibe-code-bench-test",
+    "score": 0.535,
+    "source": "https://arxiv.org/abs/2603.04601v3",
+    "by": "independent",
+    "date": "2026-05-13",
+    "note": "Vibe Code Bench (arXiv:2603.04601v3, CC BY 4.0) Table 4, row 'GPT-5.2', Accuracy = 53.50 ± 5.07%; stored /100. Accuracy = share of browser workflows passed (pass = at least 90% of substeps succeed, Browser Use evaluator with Claude Sonnet 4.5), mean over the 50 test-split apps, printed as mean ± s.e.; Table 4 identical in v1-v3. OpenHands-based harness with terminal, browser, Supabase/MailHog/Stripe and Tavily, 5-hour wall-clock budget per app. Authors' own runs (Vals AI): 'We evaluate 16 models from 9 providers'; 'All models use vision if supported, the highest reasoning level available for that model, and the default temperature specified by the model provider.' Table 15 id openai/gpt-5.2, reasoning xhigh.",
+    "source_id": "paper-2603.04601v3-vibe-code-bench"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "bench": "vibe-code-bench-test",
+    "score": 0.535,
+    "source": "https://arxiv.org/abs/2603.04601v3",
+    "by": "independent",
+    "date": "2026-05-13",
+    "note": "Vibe Code Bench (arXiv:2603.04601v3, CC BY 4.0) Table 4, row 'Claude Opus 4.6 Thinking', Accuracy = 53.50 ± 4.68%; stored /100. Accuracy = share of browser workflows passed (pass = at least 90% of substeps succeed, Browser Use evaluator with Claude Sonnet 4.5), mean over the 50 test-split apps, printed as mean ± s.e.; Table 4 identical in v1-v3. OpenHands-based harness with terminal, browser, Supabase/MailHog/Stripe and Tavily, 5-hour wall-clock budget per app. Authors' own runs (Vals AI): 'We evaluate 16 models from 9 providers'; 'All models use vision if supported, the highest reasoning level available for that model, and the default temperature specified by the model provider.' Table 15 id anthropic/claude-opus-4-6-thinking, temperature 1.0. Highest reasoning row printed for this model; the plain 'Claude Opus 4.6' row (anthropic/claude-opus-4-6, 57.57 ± 4.37) is not imported.",
+    "source_id": "paper-2603.04601v3-vibe-code-bench"
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "bench": "vibe-code-bench-test",
+    "score": 0.5148,
+    "source": "https://arxiv.org/abs/2603.04601v3",
+    "by": "independent",
+    "date": "2026-05-13",
+    "note": "Vibe Code Bench (arXiv:2603.04601v3, CC BY 4.0) Table 4, row 'Claude Sonnet 4.6', Accuracy = 51.48 ± 4.64%; stored /100. Accuracy = share of browser workflows passed (pass = at least 90% of substeps succeed, Browser Use evaluator with Claude Sonnet 4.5), mean over the 50 test-split apps, printed as mean ± s.e.; Table 4 identical in v1-v3. OpenHands-based harness with terminal, browser, Supabase/MailHog/Stripe and Tavily, 5-hour wall-clock budget per app. Authors' own runs (Vals AI): 'We evaluate 16 models from 9 providers'; 'All models use vision if supported, the highest reasoning level available for that model, and the default temperature specified by the model provider.' Table 15 id anthropic/claude-sonnet-4-6, temperature 1.0; no thinking/effort setting printed (only row for this model).",
+    "source_id": "paper-2603.04601v3-vibe-code-bench"
+  },
+  {
+    "model": "gpt-5-2-codex",
+    "bench": "vibe-code-bench-test",
+    "score": 0.3791,
+    "source": "https://arxiv.org/abs/2603.04601v3",
+    "by": "independent",
+    "date": "2026-05-13",
+    "note": "Vibe Code Bench (arXiv:2603.04601v3, CC BY 4.0) Table 4, row 'GPT-5.2-Codex', Accuracy = 37.91 ± 4.58%; stored /100. Accuracy = share of browser workflows passed (pass = at least 90% of substeps succeed, Browser Use evaluator with Claude Sonnet 4.5), mean over the 50 test-split apps, printed as mean ± s.e.; Table 4 identical in v1-v3. OpenHands-based harness with terminal, browser, Supabase/MailHog/Stripe and Tavily, 5-hour wall-clock budget per app. Authors' own runs (Vals AI): 'We evaluate 16 models from 9 providers'; 'All models use vision if supported, the highest reasoning level available for that model, and the default temperature specified by the model provider.' Table 15 id openai/gpt-5.2-codex, reasoning high (the only setting printed).",
+    "source_id": "paper-2603.04601v3-vibe-code-bench"
+  },
+  {
+    "model": "gemini-3-1-pro",
+    "bench": "vibe-code-bench-test",
+    "score": 0.3203,
+    "source": "https://arxiv.org/abs/2603.04601v3",
+    "by": "independent",
+    "date": "2026-05-13",
+    "note": "Vibe Code Bench (arXiv:2603.04601v3, CC BY 4.0) Table 4, row 'Gemini 3.1 Pro', Accuracy = 32.03 ± 4.34%; stored /100. Accuracy = share of browser workflows passed (pass = at least 90% of substeps succeed, Browser Use evaluator with Claude Sonnet 4.5), mean over the 50 test-split apps, printed as mean ± s.e.; Table 4 identical in v1-v3. OpenHands-based harness with terminal, browser, Supabase/MailHog/Stripe and Tavily, 5-hour wall-clock budget per app. Authors' own runs (Vals AI): 'We evaluate 16 models from 9 providers'; 'All models use vision if supported, the highest reasoning level available for that model, and the default temperature specified by the model provider.' Table 15 id google/gemini-3.1-pro-preview, reasoning high.",
+    "source_id": "paper-2603.04601v3-vibe-code-bench"
+  },
+  {
+    "model": "glm-5",
+    "bench": "vibe-code-bench-test",
+    "score": 0.2336,
+    "source": "https://arxiv.org/abs/2603.04601v3",
+    "by": "independent",
+    "date": "2026-05-13",
+    "note": "Vibe Code Bench (arXiv:2603.04601v3, CC BY 4.0) Table 4, row 'GLM-5', Accuracy = 23.36 ± 4.03%; stored /100. Accuracy = share of browser workflows passed (pass = at least 90% of substeps succeed, Browser Use evaluator with Claude Sonnet 4.5), mean over the 50 test-split apps, printed as mean ± s.e.; Table 4 identical in v1-v3. OpenHands-based harness with terminal, browser, Supabase/MailHog/Stripe and Tavily, 5-hour wall-clock budget per app. Authors' own runs (Vals AI): 'We evaluate 16 models from 9 providers'; 'All models use vision if supported, the highest reasoning level available for that model, and the default temperature specified by the model provider.' Table 15 id zai/glm-5, temperature 1.0, top-p 0.95, vision disabled ('Some provider configurations did not expose usable browser-vision support'); no reasoning setting printed.",
+    "source_id": "paper-2603.04601v3-vibe-code-bench"
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "vibe-code-bench-test",
+    "score": 0.202,
+    "source": "https://arxiv.org/abs/2603.04601v3",
+    "by": "independent",
+    "date": "2026-05-13",
+    "note": "Vibe Code Bench (arXiv:2603.04601v3, CC BY 4.0) Table 4, row 'Gemini 3 Flash', Accuracy = 20.20 ± 3.95%; stored /100. Accuracy = share of browser workflows passed (pass = at least 90% of substeps succeed, Browser Use evaluator with Claude Sonnet 4.5), mean over the 50 test-split apps, printed as mean ± s.e.; Table 4 identical in v1-v3. OpenHands-based harness with terminal, browser, Supabase/MailHog/Stripe and Tavily, 5-hour wall-clock budget per app. Authors' own runs (Vals AI): 'We evaluate 16 models from 9 providers'; 'All models use vision if supported, the highest reasoning level available for that model, and the default temperature specified by the model provider.' Table 15 id google/gemini-3-flash-preview, reasoning high.",
+    "source_id": "paper-2603.04601v3-vibe-code-bench"
+  },
+  {
+    "model": "kimi-k2-5",
+    "bench": "vibe-code-bench-test",
+    "score": 0.1754,
+    "source": "https://arxiv.org/abs/2603.04601v3",
+    "by": "independent",
+    "date": "2026-05-13",
+    "note": "Vibe Code Bench (arXiv:2603.04601v3, CC BY 4.0) Table 4, row 'Kimi-K2.5 Thinking', Accuracy = 17.54 ± 3.26%; stored /100. Accuracy = share of browser workflows passed (pass = at least 90% of substeps succeed, Browser Use evaluator with Claude Sonnet 4.5), mean over the 50 test-split apps, printed as mean ± s.e.; Table 4 identical in v1-v3. OpenHands-based harness with terminal, browser, Supabase/MailHog/Stripe and Tavily, 5-hour wall-clock budget per app. Authors' own runs (Vals AI): 'We evaluate 16 models from 9 providers'; 'All models use vision if supported, the highest reasoning level available for that model, and the default temperature specified by the model provider.' Table 15 id kimi/kimi-k2.5-thinking (thinking mode), temperature 1.0.",
+    "source_id": "paper-2603.04601v3-vibe-code-bench"
+  },
+  {
+    "model": "qwen3-5-plus",
+    "bench": "vibe-code-bench-test",
+    "score": 0.1574,
+    "source": "https://arxiv.org/abs/2603.04601v3",
+    "by": "independent",
+    "date": "2026-05-13",
+    "note": "Vibe Code Bench (arXiv:2603.04601v3, CC BY 4.0) Table 4, row 'Qwen3.5 Plus Thinking', Accuracy = 15.74 ± 3.18%; stored /100. Accuracy = share of browser workflows passed (pass = at least 90% of substeps succeed, Browser Use evaluator with Claude Sonnet 4.5), mean over the 50 test-split apps, printed as mean ± s.e.; Table 4 identical in v1-v3. OpenHands-based harness with terminal, browser, Supabase/MailHog/Stripe and Tavily, 5-hour wall-clock budget per app. Authors' own runs (Vals AI): 'We evaluate 16 models from 9 providers'; 'All models use vision if supported, the highest reasoning level available for that model, and the default temperature specified by the model provider.' Table 15 id alibaba/qwen3.5-plus-thinking (hosted Qwen3.5-Plus, thinking mode), temperature 0.6. Table 4 marks it open-weight; the catalogue keeps the hosted qwen3.5-plus separate from the open 397B-A17B weights, and this run used the hosted API model.",
+    "source_id": "paper-2603.04601v3-vibe-code-bench"
+  },
+  {
+    "model": "minimax-m2-5",
+    "bench": "vibe-code-bench-test",
+    "score": 0.1485,
+    "source": "https://arxiv.org/abs/2603.04601v3",
+    "by": "independent",
+    "date": "2026-05-13",
+    "note": "Vibe Code Bench (arXiv:2603.04601v3, CC BY 4.0) Table 4, row 'MiniMax M2.5', Accuracy = 14.85 ± 2.95%; stored /100. Accuracy = share of browser workflows passed (pass = at least 90% of substeps succeed, Browser Use evaluator with Claude Sonnet 4.5), mean over the 50 test-split apps, printed as mean ± s.e.; Table 4 identical in v1-v3. OpenHands-based harness with terminal, browser, Supabase/MailHog/Stripe and Tavily, 5-hour wall-clock budget per app. Authors' own runs (Vals AI): 'We evaluate 16 models from 9 providers'; 'All models use vision if supported, the highest reasoning level available for that model, and the default temperature specified by the model provider.' Table 15 id minimax/MiniMax-M2.5, temperature 1.0, vision disabled; no reasoning setting printed.",
+    "source_id": "paper-2603.04601v3-vibe-code-bench"
+  },
+  {
+    "model": "gpt-5-mini",
+    "bench": "vibe-code-bench-test",
+    "score": 0.1417,
+    "source": "https://arxiv.org/abs/2603.04601v3",
+    "by": "independent",
+    "date": "2026-05-13",
+    "note": "Vibe Code Bench (arXiv:2603.04601v3, CC BY 4.0) Table 4, row 'GPT-5 Mini', Accuracy = 14.17 ± 3.54%; stored /100. Accuracy = share of browser workflows passed (pass = at least 90% of substeps succeed, Browser Use evaluator with Claude Sonnet 4.5), mean over the 50 test-split apps, printed as mean ± s.e.; Table 4 identical in v1-v3. OpenHands-based harness with terminal, browser, Supabase/MailHog/Stripe and Tavily, 5-hour wall-clock budget per app. Authors' own runs (Vals AI): 'We evaluate 16 models from 9 providers'; 'All models use vision if supported, the highest reasoning level available for that model, and the default temperature specified by the model provider.' Table 15 id openai/gpt-5-mini-2025-08-07, reasoning high.",
+    "source_id": "paper-2603.04601v3-vibe-code-bench"
+  },
+  {
+    "model": "claude-haiku-4-5",
+    "bench": "vibe-code-bench-test",
+    "score": 0.1139,
+    "source": "https://arxiv.org/abs/2603.04601v3",
+    "by": "independent",
+    "date": "2026-05-13",
+    "note": "Vibe Code Bench (arXiv:2603.04601v3, CC BY 4.0) Table 4, row 'Claude Haiku 4.5 Thinking', Accuracy = 11.39 ± 3.13%; stored /100. Accuracy = share of browser workflows passed (pass = at least 90% of substeps succeed, Browser Use evaluator with Claude Sonnet 4.5), mean over the 50 test-split apps, printed as mean ± s.e.; Table 4 identical in v1-v3. OpenHands-based harness with terminal, browser, Supabase/MailHog/Stripe and Tavily, 5-hour wall-clock budget per app. Authors' own runs (Vals AI): 'We evaluate 16 models from 9 providers'; 'All models use vision if supported, the highest reasoning level available for that model, and the default temperature specified by the model provider.' Table 15 id anthropic/claude-haiku-4-5-20251001-thinking (extended thinking), temperature 1.0.",
+    "source_id": "paper-2603.04601v3-vibe-code-bench"
+  },
+  {
+    "model": "deepseek-v3-2",
+    "bench": "vibe-code-bench-test",
+    "score": 0.0511,
+    "source": "https://arxiv.org/abs/2603.04601v3",
+    "by": "independent",
+    "date": "2026-05-13",
+    "note": "Vibe Code Bench (arXiv:2603.04601v3, CC BY 4.0) Table 4, row 'DeepSeek V3.2 Thinking', Accuracy = 5.11 ± 2.13%; stored /100. Accuracy = share of browser workflows passed (pass = at least 90% of substeps succeed, Browser Use evaluator with Claude Sonnet 4.5), mean over the 50 test-split apps, printed as mean ± s.e.; Table 4 identical in v1-v3. OpenHands-based harness with terminal, browser, Supabase/MailHog/Stripe and Tavily, 5-hour wall-clock budget per app. Authors' own runs (Vals AI): 'We evaluate 16 models from 9 providers'; 'All models use vision if supported, the highest reasoning level available for that model, and the default temperature specified by the model provider.' Table 15 id deepseek-v3p2-thinking via Fireworks (DeepSeek-V3.2 open weights, thinking mode), reasoning high, vision disabled.",
+    "source_id": "paper-2603.04601v3-vibe-code-bench"
+  },
+  {
+    "model": "grok-4-1-fast-reasoning",
+    "bench": "vibe-code-bench-test",
+    "score": 0.012,
+    "source": "https://arxiv.org/abs/2603.04601v3",
+    "by": "independent",
+    "date": "2026-05-13",
+    "note": "Vibe Code Bench (arXiv:2603.04601v3, CC BY 4.0) Table 4, row 'Grok 4.1 Fast Reasoning', Accuracy = 1.20 ± 1.20%; stored /100. Accuracy = share of browser workflows passed (pass = at least 90% of substeps succeed, Browser Use evaluator with Claude Sonnet 4.5), mean over the 50 test-split apps, printed as mean ± s.e.; Table 4 identical in v1-v3. OpenHands-based harness with terminal, browser, Supabase/MailHog/Stripe and Tavily, 5-hour wall-clock budget per app. Authors' own runs (Vals AI): 'We evaluate 16 models from 9 providers'; 'All models use vision if supported, the highest reasoning level available for that model, and the default temperature specified by the model provider.' Table 15 id grok/grok-4-1-fast-reasoning, temperature 0.7.",
+    "source_id": "paper-2603.04601v3-vibe-code-bench"
+  },
+  {
+    "model": "claude-opus-4-5",
+    "bench": "formalproofbench",
+    "score": 0.335,
+    "source": "https://arxiv.org/abs/2603.26996v1",
+    "by": "independent",
+    "date": "2026-03-27",
+    "note": "FormalProofBench (arXiv:2603.26996v1, CC BY 4.0) Table 2, row 'Claude Opus 4.5 (Thinking)', Acc. (%) = 33.50; stored /100. 200 problems, Lean 4 kernel-checked proofs, agent harness with lean_loogle, lean_run_code and submit_proof, up to 40 turns. Authors' own runs (Vals AI and co-authors): Sec. 3.2 'We standardize our evaluation settings by using the default sampling settings from each model provider, and by using the native model provider rather than a third-party inference provider.' Reasoning effort beyond the printed label is not stated (provider defaults). Thinking enabled as labelled (budget not stated); native Anthropic API.",
+    "source_id": "paper-2603.26996v1-formalproofbench"
+  },
+  {
+    "model": "gemini-3-pro-preview",
+    "bench": "formalproofbench",
+    "score": 0.185,
+    "source": "https://arxiv.org/abs/2603.26996v1",
+    "by": "independent",
+    "date": "2026-03-27",
+    "note": "FormalProofBench (arXiv:2603.26996v1, CC BY 4.0) Table 2, row 'Gemini 3 Pro (11/25)', Acc. (%) = 18.50; stored /100. 200 problems, Lean 4 kernel-checked proofs, agent harness with lean_loogle, lean_run_code and submit_proof, up to 40 turns. Authors' own runs (Vals AI and co-authors): Sec. 3.2 'We standardize our evaluation settings by using the default sampling settings from each model provider, and by using the native model provider rather than a third-party inference provider.' Reasoning effort beyond the printed label is not stated (provider defaults). '11/25' = the November 2025 Gemini 3 Pro preview (API gemini-3-pro-preview); native Google API, provider-default settings.",
+    "source_id": "paper-2603.26996v1-formalproofbench"
+  },
+  {
+    "model": "claude-sonnet-4-5",
+    "bench": "formalproofbench",
+    "score": 0.18,
+    "source": "https://arxiv.org/abs/2603.26996v1",
+    "by": "independent",
+    "date": "2026-03-27",
+    "note": "FormalProofBench (arXiv:2603.26996v1, CC BY 4.0) Table 2, row 'Claude Sonnet 4.5 (Thinking)', Acc. (%) = 18.00; stored /100. 200 problems, Lean 4 kernel-checked proofs, agent harness with lean_loogle, lean_run_code and submit_proof, up to 40 turns. Authors' own runs (Vals AI and co-authors): Sec. 3.2 'We standardize our evaluation settings by using the default sampling settings from each model provider, and by using the native model provider rather than a third-party inference provider.' Reasoning effort beyond the printed label is not stated (provider defaults). Thinking enabled as labelled (budget not stated); native Anthropic API.",
+    "source_id": "paper-2603.26996v1-formalproofbench"
+  },
+  {
+    "model": "gpt-5",
+    "bench": "formalproofbench",
+    "score": 0.17,
+    "source": "https://arxiv.org/abs/2603.26996v1",
+    "by": "independent",
+    "date": "2026-03-27",
+    "note": "FormalProofBench (arXiv:2603.26996v1, CC BY 4.0) Table 2, row 'GPT 5', Acc. (%) = 17.00; stored /100. 200 problems, Lean 4 kernel-checked proofs, agent harness with lean_loogle, lean_run_code and submit_proof, up to 40 turns. Authors' own runs (Vals AI and co-authors): Sec. 3.2 'We standardize our evaluation settings by using the default sampling settings from each model provider, and by using the native model provider rather than a third-party inference provider.' Reasoning effort beyond the printed label is not stated (provider defaults). GPT-5 (gpt-5-2025-08-07, the only snapshot); native OpenAI API, provider-default reasoning effort.",
+    "source_id": "paper-2603.26996v1-formalproofbench"
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "formalproofbench",
+    "score": 0.15,
+    "source": "https://arxiv.org/abs/2603.26996v1",
+    "by": "independent",
+    "date": "2026-03-27",
+    "note": "FormalProofBench (arXiv:2603.26996v1, CC BY 4.0) Table 2, row 'Gemini 3 Flash (12/25)', Acc. (%) = 15.00; stored /100. 200 problems, Lean 4 kernel-checked proofs, agent harness with lean_loogle, lean_run_code and submit_proof, up to 40 turns. Authors' own runs (Vals AI and co-authors): Sec. 3.2 'We standardize our evaluation settings by using the default sampling settings from each model provider, and by using the native model provider rather than a third-party inference provider.' Reasoning effort beyond the printed label is not stated (provider defaults). '12/25' = the December 2025 Gemini 3 Flash preview (API gemini-3-flash-preview); native Google API, provider-default settings.",
+    "source_id": "paper-2603.26996v1-formalproofbench"
+  },
+  {
+    "model": "gpt-5-2",
+    "bench": "formalproofbench",
+    "score": 0.135,
+    "source": "https://arxiv.org/abs/2603.26996v1",
+    "by": "independent",
+    "date": "2026-03-27",
+    "note": "FormalProofBench (arXiv:2603.26996v1, CC BY 4.0) Table 2, row 'GPT 5.2', Acc. (%) = 13.50; stored /100. 200 problems, Lean 4 kernel-checked proofs, agent harness with lean_loogle, lean_run_code and submit_proof, up to 40 turns. Authors' own runs (Vals AI and co-authors): Sec. 3.2 'We standardize our evaluation settings by using the default sampling settings from each model provider, and by using the native model provider rather than a third-party inference provider.' Reasoning effort beyond the printed label is not stated (provider defaults). Native OpenAI API, provider-default reasoning effort (not printed).",
+    "source_id": "paper-2603.26996v1-formalproofbench"
+  },
+  {
+    "model": "gpt-5-nano",
+    "bench": "formalproofbench",
+    "score": 0.125,
+    "source": "https://arxiv.org/abs/2603.26996v1",
+    "by": "independent",
+    "date": "2026-03-27",
+    "note": "FormalProofBench (arXiv:2603.26996v1, CC BY 4.0) Table 2, row 'GPT 5 Nano', Acc. (%) = 12.50; stored /100. 200 problems, Lean 4 kernel-checked proofs, agent harness with lean_loogle, lean_run_code and submit_proof, up to 40 turns. Authors' own runs (Vals AI and co-authors): Sec. 3.2 'We standardize our evaluation settings by using the default sampling settings from each model provider, and by using the native model provider rather than a third-party inference provider.' Reasoning effort beyond the printed label is not stated (provider defaults). Native OpenAI API, provider-default reasoning effort.",
+    "source_id": "paper-2603.26996v1-formalproofbench"
+  },
+  {
+    "model": "deepseek-v3-2",
+    "bench": "formalproofbench",
+    "score": 0.03,
+    "source": "https://arxiv.org/abs/2603.26996v1",
+    "by": "independent",
+    "date": "2026-03-27",
+    "note": "FormalProofBench (arXiv:2603.26996v1, CC BY 4.0) Table 2, row 'DeepSeek V3.2 (Thinking)', Acc. (%) = 3.00; stored /100. 200 problems, Lean 4 kernel-checked proofs, agent harness with lean_loogle, lean_run_code and submit_proof, up to 40 turns. Authors' own runs (Vals AI and co-authors): Sec. 3.2 'We standardize our evaluation settings by using the default sampling settings from each model provider, and by using the native model provider rather than a third-party inference provider.' Reasoning effort beyond the printed label is not stated (provider defaults). Thinking mode is the highest reasoning row printed for this model; the 'DeepSeek V3.2 (Nonthinking)' row (8.00) is not imported. Native DeepSeek API, which served V3.2 from December 2025 (the table includes the December 2025 Gemini 3 Flash, so runs postdate it).",
+    "source_id": "paper-2603.26996v1-formalproofbench"
+  },
+  {
+    "model": "gpt-5-mini",
+    "bench": "formalproofbench",
+    "score": 0.07,
+    "source": "https://arxiv.org/abs/2603.26996v1",
+    "by": "independent",
+    "date": "2026-03-27",
+    "note": "FormalProofBench (arXiv:2603.26996v1, CC BY 4.0) Table 2, row 'GPT 5 Mini', Acc. (%) = 7.00; stored /100. 200 problems, Lean 4 kernel-checked proofs, agent harness with lean_loogle, lean_run_code and submit_proof, up to 40 turns. Authors' own runs (Vals AI and co-authors): Sec. 3.2 'We standardize our evaluation settings by using the default sampling settings from each model provider, and by using the native model provider rather than a third-party inference provider.' Reasoning effort beyond the printed label is not stated (provider defaults). Native OpenAI API, provider-default reasoning effort.",
+    "source_id": "paper-2603.26996v1-formalproofbench"
+  },
+  {
+    "model": "glm-4-7",
+    "bench": "formalproofbench",
+    "score": 0.045,
+    "source": "https://arxiv.org/abs/2603.26996v1",
+    "by": "independent",
+    "date": "2026-03-27",
+    "note": "FormalProofBench (arXiv:2603.26996v1, CC BY 4.0) Table 2, row 'GLM 4.7', Acc. (%) = 4.50; stored /100. 200 problems, Lean 4 kernel-checked proofs, agent harness with lean_loogle, lean_run_code and submit_proof, up to 40 turns. Authors' own runs (Vals AI and co-authors): Sec. 3.2 'We standardize our evaluation settings by using the default sampling settings from each model provider, and by using the native model provider rather than a third-party inference provider.' Reasoning effort beyond the printed label is not stated (provider defaults). Native Zhipu AI API; default settings.",
+    "source_id": "paper-2603.26996v1-formalproofbench"
+  },
+  {
+    "model": "grok-4-1-fast-reasoning",
+    "bench": "formalproofbench",
+    "score": 0.04,
+    "source": "https://arxiv.org/abs/2603.26996v1",
+    "by": "independent",
+    "date": "2026-03-27",
+    "note": "FormalProofBench (arXiv:2603.26996v1, CC BY 4.0) Table 2, row 'Grok 4.1 Fast (Reasoning)', Acc. (%) = 4.00; stored /100. 200 problems, Lean 4 kernel-checked proofs, agent harness with lean_loogle, lean_run_code and submit_proof, up to 40 turns. Authors' own runs (Vals AI and co-authors): Sec. 3.2 'We standardize our evaluation settings by using the default sampling settings from each model provider, and by using the native model provider rather than a third-party inference provider.' Reasoning effort beyond the printed label is not stated (provider defaults). Reasoning variant as labelled (xAI API grok-4-1-fast-reasoning); native xAI API.",
+    "source_id": "paper-2603.26996v1-formalproofbench"
+  },
+  {
+    "model": "grok-3-mini-beta",
+    "bench": "finance-agent-benchmark-v1-class-balanced",
+    "score": 0.309,
+    "source": "https://arxiv.org/abs/2508.00828v1",
+    "by": "independent",
+    "date": "2025-05-20",
+    "note": "Finance Agent Benchmark (arXiv:2508.00828v1, CC BY 4.0) Table 2, row 'Grok 3 Mini Fast High Reasoning', 'Acc. (Class-Balanced)' = 30.9 ± 1.9 (%); stored /100. Harness llm.py @ac07b92 calls model='grok-3-mini-fast-beta' with reasoning_effort='high'. Mapped to grok-3-mini-beta: the fast tier serves the same model on faster infrastructure (Oracle Cloud's xAI page: 'The xai.grok-3-mini and xai.grok-3-mini-fast models, both use the same underlying model and deliver identical response quality'; that statement covers the GA ids). Owner rule 2026-10-11: only licensing holds rows back.",
+    "source_id": "paper-2508.00828v1-finance-agent-benchmark"
   }
 ]

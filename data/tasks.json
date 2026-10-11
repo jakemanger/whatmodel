@@ -83,7 +83,9 @@
       "e2e-swe-pass1",
       "klinikebench-strict-pass1",
       "video2world-v2wscore-opencode",
-      "legal-research-bench-allpass"
+      "legal-research-bench-allpass",
+      "finance-agent-benchmark-v1-class-balanced",
+      "vibe-code-bench-test"
     ]
   },
   {
@@ -159,7 +161,8 @@
       "swe-atlas-mini-swe-agent",
       "viseditbench-pass",
       "gamelogicbench-claude-code",
-      "e2e-swe-pass1"
+      "e2e-swe-pass1",
+      "vibe-code-bench-test"
     ]
   },
   {
@@ -258,7 +261,8 @@
       "dynamath",
       "we-math",
       "think-bench-accuracy",
-      "math-l5-zeroeval"
+      "math-l5-zeroeval",
+      "formalproofbench"
     ]
   },
   {
@@ -334,7 +338,8 @@
       "deepsearchqa",
       "hle-with-tools",
       "k-browsecomp-verified",
-      "legal-research-bench-allpass"
+      "legal-research-bench-allpass",
+      "finance-agent-benchmark-v1-class-balanced"
     ]
   },
   {
