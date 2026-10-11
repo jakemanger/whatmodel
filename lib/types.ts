@@ -7,6 +7,7 @@ export type Variant = {
   cmd: string;
   platform?: "any" | "mac" | "nvidia";
   source?: string;
+  split?: boolean; // a GGUF published in several files (Ollama can't load these)
 };
 
 export type Api = {

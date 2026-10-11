@@ -49,7 +49,8 @@ export const RUNTIMES: Runtime[] = [
   { id: "other", name: "other", url: "", install: [] },
 ];
 
-// Hugging Face caps files at 50GB, so anything bigger is split into parts, which Ollama can't load.
+// GGUFs published in parts can't be loaded by Ollama. Hugging Face caps files at 50GB, so anything
+// bigger is split even when the variant doesn't say so.
 const SPLIT_GB = 45;
 
 export function artifactOf(v: Variant): Artifact {
@@ -81,7 +82,7 @@ export function stepsFor(v: Variant): { runtime: RuntimeId; steps: Step[] }[] {
         { label: "or start a local server and open the address it prints (http://localhost:9931)", cmd: `llama serve -hf ${ref}` },
       ] },
       { runtime: "lmstudio", steps: lms(a.repo, a.quant) },
-      ...(v.gb > SPLIT_GB ? [] : [{ runtime: "ollama" as const, steps: [{ label: "chat in the terminal", cmd: `ollama run hf.co/${ref}` }] }]),
+      ...(v.split || v.gb > SPLIT_GB ? [] : [{ runtime: "ollama" as const, steps: [{ label: "chat in the terminal", cmd: `ollama run hf.co/${ref}` }] }]),
     ];
   }
   if (a.kind === "mlx") return [
