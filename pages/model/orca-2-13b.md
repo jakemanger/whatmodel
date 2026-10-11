@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-11 · other (microsoft-research-license)
 
-**score 57.9** ±10.7 · #250 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.0** ±10.7 · #247 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  97.5%    66.3   2025-10-16   49% ▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                51% ▇▇▇▇▇▇
-                        weighted average                       = 57.9
+                        weighted average                       = 58.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp32  ~52.06GB   57.9
+4-bit fp32  ~52.06GB   58.0
 </pre>
 
 ```sh

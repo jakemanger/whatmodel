@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-10 · 8.77B params · apache-2.0
 
-**score 58.1** ±0.8 · #244 of 934 · from 26 benchmark results across 2 sources
+**score 58.0** ±0.8 · #245 of 934 · from 26 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -28,20 +28,20 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=24">SuperGPQA (lab)</a>                 51.2%    58.5   2025-11-27    5% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">LVBench (lab)</a>                   55.8%    54.4   2025-11-27    3% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">AndroidWorld (lab)</a>              50.0%    54.8   2025-11-27    3% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">Video-MME (without subtitles)…</a>  71.8%    55.8   2025-11-27    3% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=24">IFEval (aggregation unspecifi…</a>  83.2%    56.3   2025-11-27    3% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">Video-MME (without subtitles)…</a>  71.8%    55.7   2025-11-27    3% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=24">IFEval (aggregation unspecifi…</a>  83.2%    56.2   2025-11-27    3% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">HallusionBench (lab)</a>            65.4%    60.6   2025-11-27    2% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=24">BFCL v3 (lab)</a>                   63.0%    53.1   2025-11-27    2% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=24">BFCL v3 (lab)</a>                   63.0%    53.0   2025-11-27    2% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">ChartQA (lab)</a>                   88.6%    58.6   2025-11-27    1% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">RealWorldQA (lab)</a>               73.5%    53.9   2025-11-27    1% ▇
-                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">DocVQA (lab)</a>                    95.3%    54.3   2025-11-27    1% ▇
+                        <a href="https://arxiv.org/pdf/2511.21631v2#page=18">DocVQA (lab)</a>                    95.3%    54.2   2025-11-27    1% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">ScreenSpot-Pro (lab)</a>            46.6%    50.0   2025-11-27    1% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">MVBench (lab)</a>                   69.0%    53.0   2025-11-27    1% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">CC-OCR (lab)</a>                    76.3%    53.4   2025-11-27    1% ▇
                         <a href="https://arxiv.org/pdf/2511.21631v2#page=18">OCRBench (lab)</a>                  81.9%    42.7   2025-11-27    1% ▇
 <a name="paper-2606.01348v3-chartarena"></a>ChartArena: Benchmark…  <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (Eng…</a>  39.6%    61.0   2026-07-05    3% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 58.1
+                        weighted average                       = 58.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -56,8 +56,8 @@ api (Alibaba Cloud Model Studio) · $0.66/M blended · $0.18 in / $2.1 out per 1
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~6.1GB   58.1
-8-bit q8_0    ~9.8GB   58.1
+4-bit q4_k_m  ~6.1GB   58.0
+8-bit q8_0    ~9.8GB   58.0
 </pre>
 
 ```sh

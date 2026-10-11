@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                             score  implies  date        weight
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        38.2%    70.0   2026-08-30   31% ▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>               57.9%    64.8   2026-05-14   13% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>               57.9%    64.9   2026-05-14   13% ▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     88.4%    72.5   2026-08-07    8% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     12.0%    66.3   2026-08-27    4% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            17.0%    68.7   2026-08-07    3% ▇
@@ -26,8 +26,8 @@ source                  test                             score  implies  date   
 <a name="first-party-qwen-scores"></a>Qwen                    <a href="https://qwen.ai/blog?id=qwen3.6">CharXiv (reasoning questions)…</a>   81.5%    73.1   2026-04-02    8% ▇
 <a name="paper-2606.05405v2"></a>Agents' Last Exam       <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall ful…</a>    8.6%    69.2   2026-06-11    4% ▇
 <a name="card3-qwen-qwen-agentworld-35b-a3b"></a>Qwen/Qwen-AgentWorld-…  <a href="https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md">AgentWorldBench (open-ended, …</a>   50.8%    70.5   2026-06-25    3% ▇
-<a name="paper-2608.17895v1-bear-bench"></a>BEAR-Bench: A Bilingu…  <a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench (bilingual RU/EN e…</a>   65.0%    72.1   2026-08-18    2% ▇
-<a name="paper-2605.08498v1"></a>MathConstraint: Autom…  <a href="https://arxiv.org/html/2605.08498v1">MathConstraint full release, …</a>   47.4%    76.8   2026-05-08    2% ▇
+<a name="paper-2608.17895v1-bear-bench"></a>BEAR-Bench: A Bilingu…  <a href="https://arxiv.org/html/2608.17895v1">BEAR-Bench (bilingual RU/EN e…</a>   65.0%    72.2   2026-08-18    2% ▇
+<a name="paper-2605.08498v1"></a>MathConstraint: Autom…  <a href="https://arxiv.org/html/2605.08498v1">MathConstraint full release, …</a>   47.4%    76.9   2026-05-08    2% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
                         weighted average                        = 70.1
 </pre>

@@ -6,7 +6,7 @@
 
 Nexusflow · released 2024-07 · 70.6B params · nexusflow-research
 
-**score 50.3** ±0.8 · #421 of 934 · from 8 benchmark results across 4 sources
+**score 50.4** ±0.8 · #416 of 934 · from 8 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -20,10 +20,10 @@ source                  test                                       score  implie
                         <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>             16.7%    49.5                 9% ▇
                         <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/math-l5.summary.json">MATH Level 5 (ZeroEval, 721 p…</a>             20.7%    45.8                 9% ▇
 <a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>             77.6%    56.3   2024-11-14   16% ▇▇
-<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  59.5374 WB-Score    59.1   2024-08-01    6% ▇
+<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  59.5374 WB-Score    59.2   2024-08-01    6% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                            1306.6    54.7   2026-10-02    6% ▇
 prior                   pull toward the middle                              50.0                 0% ▇
-                        weighted average                                  = 50.3
+                        weighted average                                  = 50.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,8 +34,8 @@ prior                   pull toward the middle                              50.0
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~42.52GB   50.3
-2-bit q2_k    ~26.38GB   50.3
+4-bit q4_k_m  ~42.52GB   50.4
+2-bit q2_k    ~26.38GB   50.4
 </pre>
 
 ```sh

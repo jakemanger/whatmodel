@@ -6,7 +6,7 @@
 
 Hugging Face · released 2025-07 · 3.08B params · apache-2.0
 
-**score 43.3** ±1.0 · #628 of 934 · from 25 benchmark results across 6 sources
+**score 43.3** ±1.0 · #630 of 934 · from 25 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -16,29 +16,29 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                             score  implies  date        weight
 <a name="report-2511.23404v1"></a>LFM2 Technical Report   <a href="https://arxiv.org/html/2511.23404v1">MMLU</a>                             59.8%    42.7   2026-09-25    6% ▇
                         <a href="https://arxiv.org/html/2511.23404v1">MMLU-Pro</a>                         23.9%    36.3   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">MATH-500</a>                         73.6%    45.8   2026-09-25    5% ▇
                         <a href="https://arxiv.org/html/2511.23404v1">IFEval mean of four measures</a>     72.4%    40.3   2026-09-25    5% ▇
                         <a href="https://arxiv.org/html/2511.23404v1">GPQA Diamond</a>                     26.3%    37.3   2026-09-25    5% ▇
+                        <a href="https://arxiv.org/html/2511.23404v1">MATH-500</a>                         73.6%    45.7   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2511.23404v1">IFBench (aggregation unspecif…</a>   17.9%    39.8   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2511.23404v1">Multi-IF three-turn average</a>      58.9%    42.7   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2511.23404v1">MMMLU seven languages (Liquid)</a>   50.0%    42.3   2026-09-25    3% ▇
                         <a href="https://arxiv.org/html/2511.23404v1">MGSM six languages, loose (Li…</a>   68.7%    39.6   2026-09-25    2% ▇
                         <a href="https://arxiv.org/html/2511.23404v1">GSM-Plus</a>                         58.9%    27.9   2026-09-25    1% ▇
-                        <a href="https://arxiv.org/html/2511.23404v1">GSM8K loose substring accuracy</a>   81.1%    48.0   2026-09-25    0% ▇
+                        <a href="https://arxiv.org/html/2511.23404v1">GSM8K loose substring accuracy</a>   81.1%    47.9   2026-09-25    0% ▇
 <a name="card2-huggingfacetb-smollm3-3b"></a>HuggingFaceTB/SmolLM3…  <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">AIME 2025 (lab)</a>                  36.7%    46.6   2025-09-10    8% ▇
                         <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">GPQA Diamond (lab)</a>               41.7%    46.9   2025-09-10    8% ▇
                         <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">Global-MMLU (lab)</a>                64.1%    47.5   2025-09-10    3% ▇
-                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">LiveCodeBench v4 (lab)</a>           30.0%    40.7   2025-09-10    3% ▇
-                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">IFEval (aggregation unspecifi…</a>   71.2%    42.6   2025-09-10    2% ▇
+                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">LiveCodeBench v4 (lab)</a>           30.0%    40.6   2025-09-10    3% ▇
+                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">IFEval (aggregation unspecifi…</a>   71.2%    42.5   2025-09-10    2% ▇
                         <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">BFCL (version not stated) (la…</a>   88.8%    52.1   2025-09-10    2% ▇
                         <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">MixEval-Hard (lab)</a>               30.8%    44.9   2025-09-10    2% ▇
                         <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">GSM-Plus (lab)</a>                   83.4%    51.6   2025-09-10    1% ▇
 <a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.3548    43.6   2026-05-02   15% ▇▇
                         <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   35.5%    44.5   2026-05-02    7% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   59.0%    45.2   2026-04-17    2% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   75.7%    44.6   2026-04-17    1% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   59.0%    45.9   2026-04-17    2% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   75.7%    44.8   2026-04-17    1% ▇
 <a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   16.2%    41.4   2025-09-30    3% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   67.5%    46.3   2025-07-08    2% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   67.5%    46.2   2025-07-08    2% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
                         weighted average                        = 43.3
 </pre>

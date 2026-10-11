@@ -14,15 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                 score  implies  date        weight
-<a name="card2-tencent-hy4-preview"></a>Tencent Hy4 preview m…  <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">SWE-bench Pro (split unspecif…</a>       65.7%    76.8   2026-08-28    7% ▇
+<a name="card2-tencent-hy4-preview"></a>Tencent Hy4 preview m…  <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">SWE-bench Pro (split unspecif…</a>       65.7%    76.7   2026-08-28    7% ▇
                         <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">GPQA Diamond (lab)</a>                   92.3%    74.1   2026-08-28    7% ▇
                         <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">Terminal-Bench 2.1 (lab)</a>             85.4%    81.9   2026-08-28    6% ▇
-                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">APEX-Agents (pass@1) (lab)</a>           37.1%    81.4   2026-08-28    6% ▇
+                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">APEX-Agents (pass@1) (lab)</a>           37.1%    81.4   2026-08-28    5% ▇
                         <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">Humanity's Last Exam (lab)</a>           43.4%    78.4   2026-08-28    5% ▇
-                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">NL2Repo (lab)</a>                        58.9%    80.0   2026-08-28    5% ▇
+                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">NL2Repo (lab)</a>                        58.9%    80.0   2026-08-28    4% ▇
                         <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">SWE-bench Multilingual (lab)</a>         82.9%    79.6   2026-08-28    4% ▇
                         <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">MCP-Atlas (public set) (lab)</a>         83.7%    81.4   2026-08-28    4% ▇
-                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">Humanity's Last Exam with too…</a>       55.4%    77.1   2026-08-28    3% ▇
+                        <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">Humanity's Last Exam with too…</a>       55.4%    77.0   2026-08-28    3% ▇
                         <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">SkillsBench 79-task text-only…</a>       62.9%    79.7   2026-08-28    3% ▇
                         <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">WideSearch (lab)</a>                     83.9%    81.4   2026-08-28    3% ▇
                         <a href="https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix">MathArena Apex (pass@1) (lab)</a>        74.2%    89.0   2026-08-28    3% ▇

@@ -14,57 +14,57 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="report-2606.15007v1"></a>NVIDIA                  <a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified)</a>        88.5%    71.5   2026-06-12    4% ▇
+<a name="report-2606.15007v1"></a>NVIDIA                  <a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified)</a>        88.5%    71.4   2026-06-12    4% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified</a>               73.5%    70.2   2026-06-12    3% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam</a>             32.2%    72.2   2026-06-12    3% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro</a>                         86.4%    70.3   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam</a>             32.2%    72.1   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro</a>                         86.4%    70.2   2026-06-12    3% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1</a>               54.2%    69.5   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual</a>           75.0%    72.1   2026-06-12    2% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual</a>           75.0%    72.0   2026-06-12    2% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">SciCode subproblems</a>              48.2%    71.3   2026-06-12    2% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">LiveCodeBench v6 (window unsp…</a>   90.9%    75.2   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">LongBench v2</a>                     57.0%    66.8   2026-06-12    2% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX</a>                        84.3%    70.8   2026-06-12    1% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">LongBench v2</a>                     57.0%    66.7   2026-06-12    2% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX</a>                        84.3%    70.7   2026-06-12    1% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">BrowseComp</a>                       46.9%    67.4   2026-06-12    1% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam with too…</a>   45.1%    70.3   2026-06-12    1% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam with too…</a>   45.1%    70.2   2026-06-12    1% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench</a>                  91.1%    75.5   2026-06-12    1% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose)</a>     82.0%    74.8   2026-06-12    1% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">MultiChallenge</a>                   63.5%    72.4   2026-06-12    1% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">τ³-bench</a>                         73.7%    74.8   2026-06-12    1% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose)</a>     82.0%    74.7   2026-06-12    1% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">MultiChallenge</a>                   63.5%    72.3   2026-06-12    1% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">τ³-bench</a>                         73.7%    74.7   2026-06-12    1% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">CritPt</a>                           10.6%    78.2   2026-06-12    1% ▇
 <a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 202…</a>   47.5%    72.3   2026-09-11    6% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>   43.8%    71.9   2026-09-11    4% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>   43.8%    71.8   2026-09-11    4% ▇
                         <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 202…</a>   52.5%    70.9   2026-09-11    3% ▇
                         <a href="https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet">MathArena ArXivMath May 2026 …</a>   55.8%    73.5   2026-09-11    2% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet">MathArena BrokenArXiv April 2…</a>   23.8%    73.2   2026-09-11    2% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet">MathArena BrokenArXiv April 2…</a>   23.8%    73.3   2026-09-11    2% ▇
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0526_outputs/blob/7ca7ebc694e921b56eb9b5968374918bf2a2b4e4/data/train-00000-of-00001.parquet">MathArena BrokenArXiv May 202…</a>   19.5%    74.7   2026-06-23    1% ▇
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2…</a>   19.6%    74.8   2026-09-11    1% ▇
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv Februar…</a>   17.7%    74.2   2026-09-11    1% ▇
 <a name="paper-2607.20062v2-solar-open-2"></a>Solar Open 2 Technica…  <a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond</a>                     88.9%    71.6   2026-07-24    4% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam</a>             32.3%    74.5   2026-07-24    2% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam</a>             32.3%    74.4   2026-07-24    3% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>             13.2%    71.1   2026-07-24    2% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>              34.1%    69.9   2026-07-24    2% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>                        97.0%    73.1   2026-07-24    1% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro</a>                         85.9%    67.8   2026-07-24    1% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecif…</a>   80.3%    73.0   2026-07-24    1% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge</a>                   62.0%    73.1   2026-07-24    1% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge</a>                   62.0%    73.0   2026-07-24    1% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking</a>                 22.3%    78.7   2026-07-24    1% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>           58.2%    71.3   2026-07-24    1% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unsp…</a>   92.3%    75.0   2026-07-24    1% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unsp…</a>   92.3%    74.9   2026-07-24    1% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026</a>               94.7%    77.9   2026-07-24    1% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified</a>               73.8%    73.5   2026-07-24    1% ▇
 <a name="card3-ai-sage-gigachat3-5-432b-a28b-reasoning"></a>ai-sage/GigaChat3.5-4…  <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">GPQA Diamond</a>                     87.4%    68.3   2026-09-10    2% ▇
-                        <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">SWE-bench Verified</a>               78.6%    71.5   2026-09-10    2% ▇
+                        <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">SWE-bench Verified</a>               78.6%    71.4   2026-09-10    2% ▇
                         <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">Terminal-Bench 2.0</a>               56.6%    75.1   2026-09-10    2% ▇
                         <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">IMO-AnswerBench</a>                  85.8%    74.9   2026-09-10    1% ▇
-                        <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">LiveCodeBench v6 (window unsp…</a>   87.9%    71.5   2026-09-10    1% ▇
+                        <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">LiveCodeBench v6 (window unsp…</a>   87.9%    71.4   2026-09-10    1% ▇
                         <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">AIME 2025</a>                        88.9%    65.2   2026-09-10    1% ▇
                         <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">AIME 2026</a>                        90.4%    65.5   2026-09-10    1% ▇
                         <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">HMMT 2025 (edition unspecifie…</a>   95.2%    78.9   2026-09-10    1% ▇
-                        <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">IFBench (aggregation unspecif…</a>   73.3%    68.6   2026-09-10    1% ▇
-                        <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">τ³-bench</a>                         67.7%    75.3   2026-09-10    0% ▇
+                        <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">IFBench (aggregation unspecif…</a>   73.3%    68.5   2026-09-10    1% ▇
+                        <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">τ³-bench</a>                         67.7%    75.2   2026-09-10    0% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1430.3    70.3   2026-10-01    5% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1438.4    70.5   2026-10-02    3% ▇
-<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   57.2%    67.1   2026-09-07    2% ▇
+<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   57.2%    67.0   2026-09-07    2% ▇
                         <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   90.6%    64.6   2026-09-07    1% ▇
 <a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>   57.7%    72.0   2026-08-31    2% ▇
 <a name="paper-2609.21562v2-gamelogicbench"></a>GameLogicBench: Evalu…  <a href="https://arxiv.org/html/2609.21562v2">GameLogicBench solve rate (72…</a>   16.7%    65.9   2026-09-21    2% ▇

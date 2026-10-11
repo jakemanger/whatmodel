@@ -6,7 +6,7 @@
 
 Xwin-LM · released 2023-09 · 70B params · llama2
 
-**score 44.0** ±1.2 · #611 of 934 · from 7 benchmark results across 2 sources
+**score 44.0** ±1.2 · #612 of 934 · from 7 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  65.6%    44.5   2023-11-20   24% ▇▇▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       66.1%    40.0   2023-11-20    9% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            65.0%    44.9   2023-11-20    8% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            65.0%    45.0   2023-11-20    8% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           65.5%    46.8   2023-11-20    8% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  38.2%    31.1   2023-11-20    2% ▇
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>  24.6%    44.2   2025-08-09   45% ▇▇▇▇▇
-                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  95.6%    47.8   2025-08-09    3% ▇
+<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>  24.6%    44.3   2025-08-09   45% ▇▇▇▇▇
+                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  95.6%    47.9   2025-08-09    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 44.0
 </pre>

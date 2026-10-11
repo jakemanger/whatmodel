@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="card3-kwaipilot-kat-coder-v2-5-dev"></a>Kwaipilot/KAT-Coder-V…  <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1 (lab)</a>        32.6%    66.7   2026-07-23   29% ▇▇▇
                         <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified (lab)</a>        69.4%    71.3   2026-07-23   24% ▇▇▇
-                        <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecif…</a>  46.0%    71.2   2026-07-23   22% ▇▇▇
+                        <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecif…</a>  46.0%    71.1   2026-07-23   23% ▇▇▇
                         <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Multilingual (lab)</a>    63.0%    73.4   2026-07-23   12% ▇
                         <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SciCode (level unspecified) (…</a>  44.2%    74.3   2026-07-23   11% ▇
 prior                   pull toward the middle                   50.0                 1% ▇

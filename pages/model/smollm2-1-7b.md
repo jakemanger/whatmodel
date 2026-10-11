@@ -27,11 +27,11 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2502.02737v1">HumanEval (lab)</a>                  28.1%    31.6   2025-02-04    7% ▇
                         <a href="https://arxiv.org/html/2502.02737v1">MATH (subset unspecified) (la…</a>   21.0%    30.8   2025-02-04    5% ▇
                         <a href="https://arxiv.org/html/2502.02737v1">HellaSwag (lab)</a>                  66.1%    34.4   2025-02-04    3% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecifi…</a>   56.7%    34.7   2025-02-04    2% ▇
+                        <a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecifi…</a>   56.7%    34.6   2025-02-04    2% ▇
                         <a href="https://arxiv.org/html/2502.02737v1">PIQA (lab)</a>                       74.4%    28.5   2025-02-04    2% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1114.6    31.7   2026-10-02   10% ▇
 <a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   29.9%    26.7   2026-08-11    7% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   50.2%    27.8   2026-04-17    2% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   50.2%    28.7   2026-04-17    2% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 30.4
 </pre>

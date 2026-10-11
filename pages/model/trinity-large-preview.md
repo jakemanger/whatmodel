@@ -6,7 +6,7 @@
 
 Arcee AI · released 2026-01 · 398B params (13B active) · openmdw-1.1
 
-**score 58.8** ±2.1 · #234 of 934 · from 5 benchmark results across 3 sources
+**score 58.8** ±2.1 · #232 of 934 · from 5 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="first-party-arcee-scores"></a>Arcee AI vendor-repor…  <a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">GPQA Diamond (lab)</a>               63.3%    57.7   2026-01-27   35% ▇▇▇▇
-                        <a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">MMLU-Pro (lab)</a>                   75.2%    58.6   2026-01-27   18% ▇▇
+<a name="first-party-arcee-scores"></a>Arcee AI vendor-repor…  <a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">GPQA Diamond (lab)</a>               63.3%    57.6   2026-01-27   34% ▇▇▇▇
+                        <a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">MMLU-Pro (lab)</a>                   75.2%    58.5   2026-01-27   18% ▇▇
                         <a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">AIME 2025 (lab)</a>                  24.0%    41.1   2026-01-27    7% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1378.6    63.3   2026-10-02   39% ▇▇▇▇▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   93.1%   167.0   2026-09-22    0% ▇

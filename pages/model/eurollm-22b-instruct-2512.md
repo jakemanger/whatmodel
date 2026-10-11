@@ -6,7 +6,7 @@
 
 UTTER (EuroLLM) · released 2025-12 · 22.64B params · apache-2.0
 
-**score 52.3** ±5.6 · #379 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.6** ±5.8 · #377 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  71.5%    51.5   2026-04-17   59% ▇▇▇▇▇▇▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  87.7%    55.1   2026-04-17   27% ▇▇▇
-prior                  pull toward the middle                   50.0                14% ▇▇
-                       weighted average                       = 52.3
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  71.5%    52.1   2026-04-17   55% ▇▇▇▇▇▇▇
+                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  87.7%    54.9   2026-04-17   30% ▇▇▇▇
+prior                  pull toward the middle                   50.0                15% ▇▇
+                       weighted average                       = 52.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                  pull toward the middle                   50.0            
 
 <pre>
 download                       size  score
-16-bit bf16 · nvidia only  ~45.27GB   52.3
+16-bit bf16 · nvidia only  ~45.27GB   52.6
 </pre>
 
 ```sh

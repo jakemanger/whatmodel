@@ -18,8 +18,8 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      27.4%    33.1   2024-12-26   18% ▇▇
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       31.1%    33.7   2024-03-28   13% ▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               20.2%    33.0   2024-03-28    6% ▇
-<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 31.7%    33.4   2024-02-29    8% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      57.4%    35.0   2024-02-29    4% ▇
+<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 31.7%    33.5   2024-02-29    8% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      57.4%    35.1   2024-02-29    4% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   25.0%    34.9   2024-02-29    3% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                     27.7%    31.9   2024-02-29    2% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-I (lab)</a>                32.7%    32.2   2024-02-29    1% ▇

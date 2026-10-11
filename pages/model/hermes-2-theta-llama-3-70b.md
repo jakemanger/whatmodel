@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source    test                      score  implies  date        weight
 <a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>              22.7%    47.7   2025-01-27   59% ▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              37.5%    48.7   2025-01-27   32% ▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              37.5%    48.6   2025-01-27   32% ▇▇▇▇
           <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   2.5%    45.2   2025-04-01    7% ▇
 prior     pull toward the middle             50.0                 2% ▇
           weighted average                 = 47.9

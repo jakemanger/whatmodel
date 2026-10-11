@@ -6,7 +6,7 @@
 
 Deep Cogito · released 2025-03 · 14.77B params · apache-2.0
 
-**score 60.5** ±6.7 · #207 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 60.3** ±6.8 · #209 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  90.0%    64.1   2026-04-17   56% ▇▇▇▇▇▇▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  91.6%    60.7   2026-04-17   24% ▇▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  90.0%    64.3   2026-04-17   53% ▇▇▇▇▇▇
+                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  91.6%    60.1   2026-04-17   26% ▇▇▇
 prior                  pull toward the middle                   50.0                20% ▇▇
-                       weighted average                       = 60.5
+                       weighted average                       = 60.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                  pull toward the middle                   50.0            
 
 <pre>
 download      size  score
-4-bit q4_k_m  ~9GB   60.5
+4-bit q4_k_m  ~9GB   60.3
 </pre>
 
 ```sh

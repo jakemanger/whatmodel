@@ -6,7 +6,7 @@
 
 DeepReinforce · released 2026-06 · 35B params (3B active) · mit
 
-**score 67.8** ±1.1 · #110 of 934 · from 17 benchmark results across 2 sources
+**score 67.8** ±1.1 · #109 of 934 · from 17 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card3-ornith-ai-ornith-1-5-35b-a3b"></a>ornith-ai/Ornith-1.5-…  <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">GPQA Diamond (lab)</a>              86.2%    68.7   2026-08-18    9% ▇
-                        <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Pro (split unspecif…</a>  50.4%    69.4   2026-08-18    7% ▇
+<a name="card3-ornith-ai-ornith-1-5-35b-a3b"></a>ornith-ai/Ornith-1.5-…  <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">GPQA Diamond (lab)</a>              86.2%    68.6   2026-08-18    9% ▇
+                        <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Pro (split unspecif…</a>  50.4%    69.3   2026-08-18    7% ▇
                         <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">SWE-bench Verified (lab)</a>        75.6%    70.0   2026-08-18    6% ▇
                         <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Terminal-Bench 2.1 (lab)</a>        64.2%    70.0   2026-08-18    6% ▇
                         <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam (lab)</a>      20.8%    67.7   2026-08-18    4% ▇
@@ -23,9 +23,9 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">NL2Repo (lab)</a>                   34.6%    67.0   2026-08-18    4% ▇
                         <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">BrowseComp (lab)</a>                63.5%    72.4   2026-08-18    4% ▇
                         <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">MCP-Atlas (public set) (lab)</a>    64.4%    68.6   2026-08-18    4% ▇
-                        <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam with too…</a>  30.1%    64.7   2026-08-18    3% ▇
+                        <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Humanity's Last Exam with too…</a>  30.1%    64.8   2026-08-18    3% ▇
                         <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">WideSearch (lab)</a>                63.4%    67.3   2026-08-18    3% ▇
-                        <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Toolathlon-Verified (lab)</a>       42.4%    59.2   2026-08-18    2% ▇
+                        <a href="https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/README.md">Toolathlon-Verified (lab)</a>       42.4%    59.3   2026-08-18    2% ▇
 <a name="card3-kwaipilot-kat-coder-v2-5-dev"></a>Kwaipilot/KAT-Coder-V…  <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">Terminal-Bench 2.1</a>              36.0%    68.5   2026-07-23   13% ▇▇
                         <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Verified</a>              55.8%    65.7   2026-07-23   12% ▇
                         <a href="https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/blob/7be56fe773e72b6f5ca93c1ae45d828ddb893922/README.md">SWE-bench Pro (split unspecif…</a>  34.5%    66.9   2026-07-23   10% ▇

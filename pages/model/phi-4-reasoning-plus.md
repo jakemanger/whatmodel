@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-04 · 14.7B params · mit
 
-**score 58.9** ±0.8 · #231 of 934 · from 30 benchmark results across 5 sources
+**score 58.4** ±0.8 · #239 of 934 · from 31 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,43 +14,44 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="report-2601.02346v1"></a>Falcon-H1R: Pushing t…  <a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond</a>                    67.9%    60.1   2026-01-05    9% ▇
+<a name="report-2601.02346v1"></a>Falcon-H1R: Pushing t…  <a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond</a>                    67.9%    60.0   2026-01-05    9% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">AIME 2024</a>                       77.2%    55.4   2026-01-05    7% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">AIME 2025</a>                       71.2%    56.1   2026-01-05    6% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecifie…</a>  47.7%    55.6   2026-01-05    6% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unsp…</a>  53.1%    53.9   2026-01-05    4% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro</a>                        79.2%    62.7   2026-01-05    4% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam</a>             5.9%    55.0   2026-01-05    4% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecifie…</a>  47.7%    55.5   2026-01-05    6% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unsp…</a>  53.1%    53.8   2026-01-05    4% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam</a>             5.9%    54.8   2026-01-05    4% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro</a>                        79.2%    62.6   2026-01-05    4% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">MATH-500</a>                        95.4%    55.7   2026-01-05    3% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecif…</a>  51.7%    60.1   2026-01-05    1% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecif…</a>  51.7%    60.0   2026-01-05    1% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">SciCode main problems</a>            7.2%    62.0   2026-01-05    1% ▇
-<a name="report-2504.21318v1"></a>Microsoft               <a href="https://arxiv.org/html/2504.21318v1">GPQA Diamond (lab)</a>              69.3%    61.1   2025-04-30   10% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">HumanEval+ (lab)</a>                92.3%    59.2   2025-04-30    4% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">AIME 2025 (lab)</a>                 78.0%    65.6   2025-04-30    3% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">HMMT February 2025 (lab)</a>        53.6%    58.4   2025-04-30    3% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">MMLU-Pro (lab)</a>                  76.0%    58.2   2025-04-30    3% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">AIME 2024 (lab)</a>                 81.3%    64.2   2025-04-30    2% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">FlenQA (3K-token subset) (lab)</a>  97.9%    66.0   2025-04-30    1% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">IFEval (aggregation unspecifi…</a>  84.9%    60.7   2025-04-30    1% ▇
-                        <a href="https://arxiv.org/html/2504.21318v1">Omni-MATH (lab)</a>                 81.9%    72.1   2025-04-30    0% ▇
-<a name="card-microsoft--phi-4-reasoning"></a>microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">GPQA Diamond (lab)</a>              68.9%    59.5   2025-04-09    5% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">AIME 2024 (lab)</a>                 81.3%    60.9   2025-04-09    4% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">HumanEval+ (lab)</a>                92.3%    59.2   2025-04-09    4% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">AIME 2025 (lab)</a>                 78.0%    62.5   2025-04-09    4% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">MMLU-Pro (lab)</a>                  76.0%    58.2   2025-04-09    3% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">Arena-Hard (version/judge uns…</a>  79.0%    60.2   2025-04-09    3% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">FlenQA (3K-token subset) (lab)</a>  97.9%    66.0   2025-04-09    1% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">IFEval strict (prompt/instruc…</a>  84.9%    64.1   2025-04-09    1% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">Omni-MATH (lab)</a>                 81.9%    70.8   2025-04-09    1% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  66.0%    42.1   2025-05-01    1% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  52.8%     4.4   2026-04-17    0% ▇
+<a name="report-2504.21318v1"></a>Microsoft               <a href="https://arxiv.org/html/2504.21318v1">GPQA Diamond (lab)</a>              69.3%    61.0   2025-04-30    9% ▇
+                        <a href="https://arxiv.org/html/2504.21318v1">HumanEval+ (lab)</a>                92.3%    59.1   2025-04-30    4% ▇
+                        <a href="https://arxiv.org/html/2504.21318v1">AIME 2025 (lab)</a>                 78.0%    65.5   2025-04-30    3% ▇
+                        <a href="https://arxiv.org/html/2504.21318v1">MMLU-Pro (lab)</a>                  76.0%    58.1   2025-04-30    3% ▇
+                        <a href="https://arxiv.org/html/2504.21318v1">HMMT February 2025 (lab)</a>        53.6%    58.1   2025-04-30    3% ▇
+                        <a href="https://arxiv.org/html/2504.21318v1">AIME 2024 (lab)</a>                 81.3%    64.1   2025-04-30    2% ▇
+                        <a href="https://arxiv.org/html/2504.21318v1">FlenQA (3K-token subset) (lab)</a>  97.9%    65.8   2025-04-30    1% ▇
+                        <a href="https://arxiv.org/html/2504.21318v1">IFEval (aggregation unspecifi…</a>  84.9%    60.6   2025-04-30    1% ▇
+                        <a href="https://arxiv.org/html/2504.21318v1">Omni-MATH (lab)</a>                 81.9%    72.3   2025-04-30    0% ▇
+<a name="card-microsoft--phi-4-reasoning"></a>microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">GPQA Diamond (lab)</a>              68.9%    59.3   2025-04-09    5% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">HumanEval+ (lab)</a>                92.3%    59.1   2025-04-09    4% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">AIME 2024 (lab)</a>                 81.3%    60.8   2025-04-09    4% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">AIME 2025 (lab)</a>                 78.0%    62.4   2025-04-09    4% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">MMLU-Pro (lab)</a>                  76.0%    58.1   2025-04-09    3% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">Arena-Hard (version/judge uns…</a>  79.0%    60.1   2025-04-09    3% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">FlenQA (3K-token subset) (lab)</a>  97.9%    65.8   2025-04-09    1% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">IFEval strict (prompt/instruc…</a>  84.9%    64.0   2025-04-09    1% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">Omni-MATH (lab)</a>                 81.9%    71.2   2025-04-09    0% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  25.0%    18.9   2026-04-17    1% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  52.8%     6.7   2026-04-17    0% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  66.0%    42.3   2025-05-01    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 58.9
+                        weighted average                       = 58.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling ([CC BY 4.0](../../licenses/report-2601.02346v1.txt)) · Microsoft ([CC BY 4.0](../../licenses/report-2504.21318v1.txt)) · microsoft/Phi-4-reasoning model card ([mit](../../licenses/microsoft--Phi-4-reasoning.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
+<sub>Licences: Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling ([CC BY 4.0](../../licenses/report-2601.02346v1.txt)) · Microsoft ([CC BY 4.0](../../licenses/report-2504.21318v1.txt)) · microsoft/Phi-4-reasoning model card ([mit](../../licenses/microsoft--Phi-4-reasoning.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 <details><summary>Not counted (2)</summary>
 
@@ -66,7 +67,7 @@ Microsoft               <a href="https://arxiv.org/html/2504.21318v1">LiveCodeBe
 
 <pre>
 download       size  score
-4-bit q4_k_m  ~11GB   58.9
+4-bit q4_k_m  ~11GB   58.4
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 69B params · llama2
 
-**score 40.9** ±0.9 · #683 of 934 · from 22 benchmark results across 6 sources
+**score 40.9** ±0.9 · #684 of 934 · from 22 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -17,25 +17,25 @@ source                  test                            score  implies  date    
 <a name="paper-mixtral-2401.04088v1"></a>Mixtral of Experts      <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval</a>                       29.3%    37.4   2024-01-08   11% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge</a>                   56.5%    37.6   2024-01-08    9% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU</a>                            69.9%    42.4   2024-01-08    6% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande</a>                      80.4%    41.5   2024-01-08    6% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande</a>                      80.4%    41.5   2024-01-08    5% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA</a>                        73.0%    40.5   2024-01-08    4% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K</a>                           69.6%    44.0   2024-01-08    4% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K</a>                           69.6%    44.1   2024-01-08    4% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP</a>                            49.8%    38.6   2024-01-08    4% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH</a>                            13.8%    37.1   2024-01-08    4% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag</a>                       85.4%    40.7   2024-01-08    3% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed boo…</a>  25.4%    37.9   2024-01-08    3% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy</a>                        79.9%    37.7   2024-01-08    2% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed boo…</a>  25.4%    38.0   2024-01-08    3% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy</a>                        79.9%    37.8   2024-01-08    2% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA</a>                            82.6%    38.8   2024-01-08    1% ▇
 <a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  66.0%    44.9   2023-11-20   12% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       60.1%    38.1   2023-11-20    5% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           55.5%    43.2   2023-11-20    4% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            64.5%    44.8   2023-11-20    4% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            64.5%    44.9   2023-11-20    4% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           55.5%    43.3   2023-11-20    4% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  62.6%    51.5   2023-11-20    1% ▇
-<a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Llama-2-70b-hf_5shots.zip">MMLU-Pro</a>                        36.3%    39.3                11% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  59.0%    45.4   2026-04-17    1% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  86.0%    51.5   2026-04-17    1% ▇
+<a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Llama-2-70b-hf_5shots.zip">MMLU-Pro</a>                        36.3%    39.4                11% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  59.0%    46.2   2026-04-17    1% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  86.0%    51.3   2026-04-17    1% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  67.7%    46.5   2024-02-05    1% ▇
-<a name="paper-2410.14897v1-gencopa"></a>From Test-Taking to T…  <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                            97.6%    57.2   2024-10-18    0% ▇
+<a name="paper-2410.14897v1-gencopa"></a>From Test-Taking to T…  <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                            97.6%    57.4   2024-10-18    0% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 40.9
 </pre>

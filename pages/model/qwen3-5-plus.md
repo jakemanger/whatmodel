@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-02 · proprietary
 
-**score 69.5** ±1.8 · #92 of 934 · from 6 benchmark results across 2 sources
+**score 69.4** ±1.8 · #92 of 934 · from 6 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    84.8%    70.4   2026-08-07   40% ▇▇▇▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>    16.0%    69.2   2026-08-05   17% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        86.7%    70.0   2026-08-07   17% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        86.7%    70.0   2026-08-07   15% ▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>           22.0%    71.6   2026-08-07   15% ▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>               25.4%    65.2   2026-08-27   11% ▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  89.3%    40.4   2026-09-22    0% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  89.3%    40.3   2026-09-22    0% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 69.5
+                        weighted average                       = 69.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

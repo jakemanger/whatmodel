@@ -6,7 +6,7 @@
 
 Katanemo · released 2025-06 · 32.76B params · other (katanemo-research)
 
-**score 58.4** ±4.5 · #241 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.4** ±4.5 · #240 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

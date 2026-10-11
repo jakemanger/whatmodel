@@ -6,7 +6,7 @@
 
 Sber · released 2026-09 · 438.09B params (28B active) · mit
 
-**score 66.8** ±1.4 · #123 of 934 · from 10 benchmark results across 1 source · † every result so far was reported by its maker
+**score 66.7** ±1.4 · #124 of 934 · from 10 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -25,7 +25,7 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">IFBench (aggregation unspecif…</a>  77.0%    72.5   2026-09-10    6% ▇
                         <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">τ³-bench (lab)</a>                  47.8%    59.1   2026-09-10    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 66.8
+                        weighted average                       = 66.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,7 +38,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                   size  score
-4-bit fp8 · nvidia only  ~438GB   66.8
+4-bit fp8 · nvidia only  ~438GB   66.7
 </pre>
 
 ```sh

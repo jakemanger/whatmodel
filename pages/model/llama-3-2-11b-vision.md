@@ -6,7 +6,7 @@
 
 Meta · released 2024-09 · 10.7B params · llama3.2
 
-**score 42.6** ±1.8 · #647 of 934 · from 11 benchmark results across 4 sources
+**score 42.7** ±1.8 · #646 of 934 · from 11 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -26,7 +26,7 @@ source                  test                                                    
 <a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>                            24.4%    47.2   2025-09-29    9% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>                            71.0%    48.8   2024-12-05    6% ▇
 prior                   pull toward the middle                                             50.0                 1% ▇
-                        weighted average                                                 = 42.6
+                        weighted average                                                 = 42.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -39,8 +39,8 @@ prior                   pull toward the middle                                  
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~6.92GB   42.6
-8-bit q8_0    ~13.34GB   42.6
+4-bit q4_k_m   ~6.92GB   42.7
+8-bit q8_0    ~13.34GB   42.7
 </pre>
 
 ```sh

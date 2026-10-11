@@ -6,7 +6,7 @@
 
 Moonshot AI · released 2026-06 · 1000B params (32B active) · modified-mit
 
-**score 72.3** ±0.9 · #65 of 934 · from 7 benchmark results across 2 sources
+**score 72.2** ±1.0 · #65 of 934 · from 7 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -20,9 +20,9 @@ source                  test                        score  implies  date        
                         <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>       21.0%    70.9   2026-08-07    6% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>           36.5%    70.6   2026-08-27    3% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    95.6%    74.7   2026-08-07    3% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1472.9    72.2   2026-10-01   13% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1472.9    72.2   2026-10-01   14% ▇▇
 prior                   pull toward the middle               50.0                 0% ▇
-                        weighted average                   = 72.3
+                        weighted average                   = 72.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -37,8 +37,8 @@ api (Moonshot AI) · $1.71/M blended · $0.95 in / $4 out per 1M tokens · [plat
 
 <pre>
 download               size  score
-4-bit ud-q4_k_xl  ~584.66GB   72.3
-2-bit ud-q2_k_xl  ~340.42GB   72.3
+4-bit ud-q4_k_xl  ~584.66GB   72.2
+2-bit ud-q2_k_xl  ~340.42GB   72.2
 </pre>
 
 ```sh

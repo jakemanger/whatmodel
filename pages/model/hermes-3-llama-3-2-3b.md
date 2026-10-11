@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-12 · 3.21B params · llama3
 
-**score 38.2** ±3.8 · #740 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 38.2** ±3.8 · #738 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source            test                            score  implies  date        weight
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB  <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  46.1%    37.4   2026-08-11   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior             pull toward the middle                   50.0                 7% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB  <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  46.1%    37.4   2026-08-11   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior             pull toward the middle                   50.0                 6% ▇
                   weighted average                       = 38.2
 </pre>
 

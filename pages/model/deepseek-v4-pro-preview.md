@@ -6,7 +6,7 @@
 
 DeepSeek · released 2026-04 · 1600B params (49B active) · mit
 
-**score 72.4** ±0.5 · #64 of 934 · from 40 benchmark results across 11 sources
+**score 72.4** ±0.5 · #64 of 934 · from 42 benchmark results across 12 sources
 
 ## How the score was worked out
 
@@ -15,13 +15,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                             score  implies  date        weight
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        45.3%    71.5   2026-06-17   14% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>            2.4%    68.3   2026-06-17    8% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>            2.4%    68.2   2026-06-17    7% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>               77.6%    73.6   2026-06-18    5% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     89.6%    73.7   2026-06-16    3% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            20.0%    70.5   2026-06-16    2% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         96.7%    75.4   2026-06-17    1% ▇
 <a name="report-2606.15007v1"></a>NVIDIA                  <a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified)</a>        87.8%    70.6   2026-06-12    4% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified</a>               74.5%    70.6   2026-06-12    3% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified</a>               74.5%    70.5   2026-06-12    3% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam</a>             37.7%    75.1   2026-06-12    3% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1</a>               49.2%    67.1   2026-06-12    2% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro</a>                         87.5%    71.4   2026-06-12    2% ▇
@@ -33,8 +33,8 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2606.15007v1">BrowseComp</a>                       59.4%    74.2   2026-06-12    1% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam with too…</a>   48.2%    72.1   2026-06-12    1% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench</a>                  93.0%    77.4   2026-06-12    1% ▇
-                        <a href="https://arxiv.org/html/2606.15007v1">MultiChallenge</a>                   64.1%    72.7   2026-06-12    1% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose)</a>     79.1%    71.8   2026-06-12    1% ▇
+                        <a href="https://arxiv.org/html/2606.15007v1">MultiChallenge</a>                   64.1%    72.6   2026-06-12    1% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">τ³-bench</a>                         73.2%    74.2   2026-06-12    1% ▇
                         <a href="https://arxiv.org/html/2606.15007v1">CritPt</a>                           14.0%    83.7   2026-06-12    1% ▇
 <a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 202…</a>   51.2%    73.7   2026-09-11    6% ▇
@@ -45,11 +45,13 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2…</a>   15.2%    72.0   2026-09-11    1% ▇
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv Februar…</a>   13.3%    71.4   2026-09-11    1% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1463.4    71.8   2026-10-01    4% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1455.0    72.5   2026-10-02    3% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1455.0    72.5   2026-10-02    2% ▇
 <a name="card3-lgai-exaone-k-exaone-2-0-750b-a37b"></a>LGAI-EXAONE/K-EXAONE-…  <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">AIME 2026</a>                        95.2%    70.4   2026-07-29    2% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">IFEval (aggregation unspecifi…</a>   94.0%    73.6   2026-07-29    1% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/README.md">IFEval (aggregation unspecifi…</a>   94.0%    73.7   2026-07-29    1% ▇
 <a name="paper-2606.02404v1-k-browsecomp"></a>K-BrowseComp: A Web B…  <a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean…</a>   30.0%    74.3   2026-06-01    2% ▇
 <a name="paper-2609.21562v2-gamelogicbench"></a>GameLogicBench: Evalu…  <a href="https://arxiv.org/html/2609.21562v2">GameLogicBench solve rate (72…</a>   25.0%    71.2   2026-09-21    2% ▇
+<a name="paper-2610.00609v1-legal-research-bench"></a>Legal Research Bench    <a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (single-…</a>    4.1%    71.9   2026-09-30    1% ▇
+                        <a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic…</a>   23.2%    70.7   2026-09-30    1% ▇
 <a name="card-zai-org--glm-5.2"></a>zai-org/GLM-5.2 model…  <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">MCP-Atlas (public set)</a>           73.6%    73.9   2026-09-25    2% ▇
 <a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1329.7    74.2   2026-05-10    2% ▇
 <a name="paper-2605.10912v1-wildclawbench"></a>WildClawBench: A Benc…  <a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                    43.7%    73.2   2026-05-11    1% ▇
@@ -60,7 +62,7 @@ prior                   pull toward the middle                    50.0          
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · NVIDIA ([CC BY 4.0](../../licenses/report-2606.15007v1.txt)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LGAI-EXAONE/K-EXAONE-2.0-750B-A37B model card ([Apache-2.0](https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/LICENSE)) · K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · zai-org/GLM-5.2 model card ([mit](../../licenses/zai-org--GLM-5.2.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · WildClawBench: A Benchmark for Real-World ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · NVIDIA ([CC BY 4.0](../../licenses/report-2606.15007v1.txt)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LGAI-EXAONE/K-EXAONE-2.0-750B-A37B model card ([Apache-2.0](https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/fec0c8dd25fdd20ffd09869d5af5277966d5523d/LICENSE)) · K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Legal Research Bench ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · zai-org/GLM-5.2 model card ([mit](../../licenses/zai-org--GLM-5.2.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · WildClawBench: A Benchmark for Real-World ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 

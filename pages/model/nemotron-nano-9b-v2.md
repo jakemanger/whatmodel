@@ -17,13 +17,13 @@ source                  test                            score  implies  date    
 <a name="report-2512.13961v2"></a>Olmo 3                  <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified)</a>       56.2%    56.4   2026-09-25    7% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">AIME 2025</a>                       58.9%    51.6   2026-09-25    6% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard</a>                  86.2%    54.9   2026-09-25    6% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2024</a>                       72.1%    54.4   2026-09-25    6% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2024</a>                       72.1%    54.4   2026-09-25    5% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">MMLU</a>                            84.3%    55.0   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlled</a>  58.0%    54.9   2026-09-25    3% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">AGIEval English</a>                 83.1%    55.0   2026-09-25    2% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic</a>                      60.8%    52.1   2026-09-25    2% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">MBPP+</a>                           66.1%    52.1   2026-09-25    2% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3</a>                83.4%    60.1   2026-09-25    1% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3</a>                83.4%    60.1   2026-09-25    2% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">HumanEval+</a>                      89.7%    56.8   2026-09-25    1% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecif…</a>  34.6%    48.7   2026-09-25    1% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">PopQA</a>                           17.9%    45.3   2026-09-25    1% ▇
@@ -38,14 +38,14 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2512.13607v2">MMLU-Pro (lab)</a>                  73.3%    57.8   2026-03-27    2% ▇
                         <a href="https://arxiv.org/html/2512.13607v2">IFBench (aggregation unspecif…</a>  37.4%    54.3   2026-03-27    2% ▇
                         <a href="https://arxiv.org/html/2512.13607v2">IFEval prompt-level strict (l…</a>  86.1%    60.4   2026-03-27    1% ▇
-                        <a href="https://arxiv.org/html/2512.13607v2">BFCL v3 (lab)</a>                   66.9%    59.1   2026-03-27    1% ▇
+                        <a href="https://arxiv.org/html/2512.13607v2">BFCL v3 (lab)</a>                   66.9%    59.0   2026-03-27    1% ▇
 <a name="first-party-nvidia-scores"></a>NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md#evaluation-results">AIME 2025 (lab)</a>                 72.1%    54.0   2025-08-18    6% ▇
                         <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md#evaluation-results">GPQA (subset unspecified) (la…</a>  64.0%    58.4   2025-08-18    5% ▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md#evaluation-results">MATH-500 (lab)</a>                  97.8%    64.2   2025-08-18    2% ▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md#evaluation-results">LiveCodeBench (version unspec…</a>  71.1%    65.6   2025-08-18    1% ▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md#evaluation-results">MATH-500 (lab)</a>                  97.8%    64.5   2025-08-18    2% ▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md#evaluation-results">LiveCodeBench (version unspec…</a>  71.1%    65.8   2025-08-18    1% ▇
                         <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md#evaluation-results">BFCL v3 (lab)</a>                   66.9%    58.7   2025-08-18    1% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  62.4%    45.6   2026-04-17    1% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  92.1%    60.5   2026-04-17    0% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  62.4%    46.4   2026-04-17    1% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  92.1%    60.0   2026-04-17    0% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 55.5
 </pre>

@@ -24,7 +24,7 @@ source                  test                                  score  implies  da
                         <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Agents' Last Exam (metric/har…</a>        13.2%    61.4   2026-09-21    3% ▇
                         <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">Toolathlon-Verified (lab)</a>             49.1%    60.4   2026-09-21    2% ▇
                         <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">ExploitGym (pass@1) (lab)</a>              0.2%    57.5   2026-09-21    2% ▇
-                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">DeepSWE v1.1 (resolved) (lab)</a>         19.0%    51.4   2026-09-21    2% ▇
+                        <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/5711b268169967567844e1e560e8a3966da959b1/README.md">DeepSWE v1.1 (resolved) (lab)</a>         19.0%    51.5   2026-09-21    2% ▇
 <a name="paper-2609.21562v2-gamelogicbench"></a>GameLogicBench: Evalu…  <a href="https://arxiv.org/html/2609.21562v2">GameLogicBench solve rate (72…</a>        16.7%    65.5   2026-09-21    7% ▇
 <a name="paper-2605.10912v1-wildclawbench"></a>WildClawBench: A Benc…  <a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                         43.0%    73.3   2026-05-11    6% ▇
 <a name="paper-2609.31632v1-eegagentbench"></a>EEGAgentBench: Benchm…  <a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench overall (tool-b…</a>        49.1%    73.0   2026-09-10    3% ▇

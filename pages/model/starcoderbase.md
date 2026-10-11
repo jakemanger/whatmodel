@@ -6,7 +6,7 @@
 
 BigCode · released 2023-05 · 15.5B params · bigcode-openrail-m
 
-**score 32.9** ±1.0 · #814 of 934 · from 12 benchmark results across 3 sources
+**score 32.9** ±1.0 · #815 of 934 · from 12 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 29.3%    32.5   2024-02-29   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      50.6%    31.4   2024-02-29   11% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      50.6%    31.5   2024-02-29   11% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   23.8%    34.0   2024-02-29    8% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                     21.5%    29.2   2024-02-29    6% ▇
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  31.9%    34.4   2024-05-07   13% ▇▇

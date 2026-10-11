@@ -25,7 +25,7 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">BFCL (version not stated) (la…</a>   80.7%    46.4   2024-08-22    3% ▇
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">ARC Challenge (lab)</a>              85.7%    53.2   2024-08-22    3% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1239.7    46.7   2026-10-02   14% ▇▇
-<a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                        92.8%    58.8   2025-10-09    3% ▇
+<a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                        92.8%    58.9   2025-10-09    3% ▇
                         <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                       90.0%    63.4   2025-10-09    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   97.1%    59.2   2025-10-16    1% ▇
 prior                   pull toward the middle                    50.0                 1% ▇

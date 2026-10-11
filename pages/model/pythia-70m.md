@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 0.0704B params · apache-2.0
 
-**score -7.7** ±2.0 · #933 of 934 · from 7 benchmark results across 2 sources
+**score -7.8** ±2.0 · #933 of 934 · from 7 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      60.1%    -9.5   2023-05-31   45% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  37.4%    -6.3   2023-05-31   21% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  18.5%   -15.0   2023-05-31   14% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      59.5%    -8.1   2023-05-31   13% ▇▇
+<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      60.1%    -9.6   2023-05-31   45% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  37.4%    -6.4   2023-05-31   21% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  18.5%   -15.1   2023-05-31   14% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      59.5%    -8.2   2023-05-31   13% ▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                52.8%    13.9   2023-05-31    4% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             18.1%   -15.7   2023-05-31    1% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  23.2%   -20.2   2024-02-11    0% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = -7.7
+                        weighted average                       = -7.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,7 +35,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp16  ~0.17GB   -7.7
+4-bit fp16  ~0.17GB   -7.8
 </pre>
 
 ```sh

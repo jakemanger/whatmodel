@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 33.7B params · llama2
 
-**score 40.1** ±0.7 · #699 of 934 · from 15 benchmark results across 6 sources
+**score 40.1** ±0.7 · #700 of 934 · from 15 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                             score  implies  date        weight
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                        51.8%    40.6   2024-03-28   23% ▇▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                33.3%    40.4   2024-03-28   12% ▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>   41.3%    39.0   2024-05-07    8% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>   30.3%    41.7   2024-05-07    5% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>   28.2%    40.8   2024-05-07    5% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>   41.3%    39.1   2024-05-07    8% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>   30.3%    41.8   2024-05-07    5% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>   28.2%    40.9   2024-05-07    5% ▇
 <a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                  41.5%    38.0   2024-01-31   12% ▇
                         <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                       57.0%    41.6   2024-01-31    5% ▇
 <a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                   59.2%    41.7   2023-11-20    8% ▇

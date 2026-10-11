@@ -33,7 +33,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2204.06745v1">SciQ (lab)</a>                      92.8%    27.7   2022-04-14    2% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">LAMBADA (OpenAI version), las…</a>  72.0%    28.0   2022-04-14    2% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">PIQA (lab)</a>                      77.9%    29.4   2022-04-14    1% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  28.3%    12.6   2024-02-05    1% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  28.3%    12.7   2024-02-05    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 28.2
 </pre>

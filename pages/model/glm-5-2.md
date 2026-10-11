@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-06 · 753B params (40B active) · mit
 
-**score 73.7** ±0.5 · #54 of 934 · from 48 benchmark results across 11 sources
+**score 73.6** ±0.5 · #54 of 934 · from 50 benchmark results across 12 sources
 
 ## How the score was worked out
 
@@ -14,25 +14,25 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                 score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            59.2%    74.4   2026-06-19   13% ▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            59.2%    74.3   2026-06-19   12% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               29.3%    74.9   2026-06-19    8% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   78.7%    74.2   2026-06-25    4% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                     9.5%    70.9   2026-06-29    4% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         15.0%    69.8   2026-08-27    3% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         91.9%    75.5   2026-06-24    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         91.9%    75.6   2026-06-24    2% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                21.0%    71.1   2026-06-17    2% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    34.2%    69.6   2026-08-27    1% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             86.4%    68.3   2026-06-25    1% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             86.4%    68.4   2026-06-25    1% ▇
 <a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026…</a>       46.5%    70.3   2026-09-07    7% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 202…</a>       47.5%    72.2   2026-09-11    6% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 202…</a>       47.5%    72.2   2026-09-11    5% ▇
                         <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>       46.1%    72.8   2026-09-11    3% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 202…</a>       61.7%    75.3   2026-09-11    3% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 202…</a>       61.7%    75.2   2026-09-11    3% ▇
                         <a href="https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet">MathArena ArXivMath May 2026 …</a>       56.7%    73.7   2026-09-11    2% ▇
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet">MathArena BrokenArXiv April 2…</a>       18.4%    71.3   2026-09-11    2% ▇
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0626_outputs/blob/c4fac0ea2939a252ea72e9712fa49c639becb252/data/train-00000-of-00001.parquet">MathArena BrokenArXiv June 20…</a>       14.2%    68.8   2026-08-25    1% ▇
                         <a href="https://huggingface.co/datasets/MathArena/arxivlean-0626_outputs/blob/4221f7241f21cf4d39a80b934b7ea76d53ba29ed/data/train-00000-of-00001.parquet">MathArena ArXivLean June 2026…</a>        8.7%    70.3   2026-09-11    1% ▇
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0526_outputs/blob/7ca7ebc694e921b56eb9b5968374918bf2a2b4e4/data/train-00000-of-00001.parquet">MathArena BrokenArXiv May 202…</a>       10.5%    68.3   2026-06-23    1% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2…</a>       12.1%    70.5   2026-09-11    1% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2…</a>       12.1%    70.4   2026-09-11    1% ▇
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv Februar…</a>       10.5%    70.0   2026-09-11    1% ▇
 <a name="card-zai-org--glm-5.2"></a>zai-org/GLM-5.2 model…  <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">GPQA Diamond (lab)</a>                   91.2%    74.0   2026-09-25    2% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">MCP-Atlas (public set) (lab)</a>         76.8%    76.0   2026-09-25    1% ▇
@@ -40,11 +40,11 @@ source                  test                                 score  implies  dat
                         <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">IMO-AnswerBench (lab)</a>                91.0%    76.8   2026-09-25    1% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">Terminal-Bench 2.1 (lab)</a>             81.0%    78.7   2026-09-25    1% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">Humanity's Last Exam (lab)</a>           40.5%    76.6   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">AIME 2026 (lab)</a>                      99.2%    81.8   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">NL2Repo (lab)</a>                        48.9%    74.7   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">HMMT November 2025 (lab)</a>             94.4%    75.1   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">AIME 2026 (lab)</a>                      99.2%    81.7   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">NL2Repo (lab)</a>                        48.9%    74.6   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">HMMT November 2025 (lab)</a>             94.4%    75.0   2026-09-25    1% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">Toolathlon (Tool Decathlon) (…</a>       48.2%    75.7   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">Humanity's Last Exam with too…</a>       54.7%    75.7   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">Humanity's Last Exam with too…</a>       54.7%    75.6   2026-09-25    1% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">CritPt (lab)</a>                         20.9%    87.6   2026-09-25    1% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">SWE-bench Pro (lab)</a>                  62.1%    76.5   2026-09-25    0% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  0.0348 IPS    78.8   2026-10-02    4% ▇
@@ -52,23 +52,25 @@ source                  test                                 score  implies  dat
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1475.8    75.0   2026-10-02    2% ▇
 <a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>       74.0%    75.2   2026-09-07    2% ▇
                         <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>       89.0%    59.2   2026-09-07    1% ▇
+<a name="paper-2610.00609v1-legal-research-bench"></a>Legal Research Bench    <a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (single-…</a>        3.4%    69.7   2026-09-30    1% ▇
+                        <a href="https://arxiv.org/abs/2610.00609v1">Legal Research Bench (agentic…</a>       31.2%    76.5   2026-09-30    1% ▇
 <a name="paper-2609.21562v2-gamelogicbench"></a>GameLogicBench: Evalu…  <a href="https://arxiv.org/html/2609.21562v2">GameLogicBench solve rate (72…</a>       37.5%    78.6   2026-09-21    2% ▇
 <a name="paper-2609.38335v1-e2e-swe"></a>E2E-SWE: Benchmarking…  <a href="https://arxiv.org/html/2609.38335v1">E2E-SWE (build a working code…</a>       22.2%    69.3   2026-09-29    2% ▇
 <a name="card2-zai-org-glm-5-3-flash"></a>zai-org/GLM-5.3-Flash…  <a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">AutomationBench v1.0.6 (lab)</a>         26.2%    65.3   2026-09-07    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">Agents' Last Exam (metric/har…</a>       20.4%    67.4   2026-09-07    1% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">DeepSWE v1.1 (resolved) (lab)</a>        46.2%    67.1   2026-09-07    1% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">Agents' Last Exam (metric/har…</a>       20.4%    67.4   2026-09-07    1% ▇
 <a name="tau2-bench-leaderboard-sierra"></a>τ²/τ³-bench leaderboa…  <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/glm-5-2_sierra_2026-08-04/submission.json">τ³-bench banking_knowledge (v…</a>       37.1%    78.2   2026-07-24    2% ▇
 <a name="paper-2609.31632v1-eegagentbench"></a>EEGAgentBench: Benchm…  <a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench overall (tool-b…</a>       45.5%    68.9   2026-09-10    1% ▇
 <a name="paper-2609.13916v1-north-small-translate"></a>Cohere                  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>       78.2%    53.2   2026-09-12    0% ▇
                         <a href="https://arxiv.org/html/2609.13916v1">WMT24++</a>                              78.8%    68.9   2026-09-12    0% ▇
                         <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, …</a>       76.5%    67.1   2026-09-12    0% ▇
 prior                   pull toward the middle                        50.0                 0% ▇
-                        weighted average                            = 73.7
+                        weighted average                            = 73.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · zai-org/GLM-5.2 model card ([mit](../../licenses/zai-org--GLM-5.2.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · E2E-SWE: Benchmarking LLMs on Building Working Codebases from Scratch ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · zai-org/GLM-5.3-Flash model card ([MIT](../../licenses/zai-org--GLM-5.3-Flash.txt)) · τ²/τ³-bench leaderboard: Sierra's own evaluation runs ([MIT](https://opensource.org/license/mit)) · EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Cohere ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · zai-org/GLM-5.2 model card ([mit](../../licenses/zai-org--GLM-5.2.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · Legal Research Bench ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · E2E-SWE: Benchmarking LLMs on Building Working Codebases from Scratch ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · zai-org/GLM-5.3-Flash model card ([MIT](../../licenses/zai-org--GLM-5.3-Flash.txt)) · τ²/τ³-bench leaderboard: Sierra's own evaluation runs ([MIT](https://opensource.org/license/mit)) · EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Cohere ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -78,9 +80,9 @@ api (Z.AI) · $2.15/M blended · $1.4 in / $4.4 out per 1M tokens · [docs.z.ai]
 
 <pre>
 download               size  score
-4-bit ud-q4_k_xl   ~452.3GB   73.7
-2-bit ud-q2_k_xl   ~226.4GB   73.7
-1-bit ud-iq1_s    ~113.45GB   73.7
+4-bit ud-q4_k_xl   ~452.3GB   73.6
+2-bit ud-q2_k_xl   ~226.4GB   73.6
+1-bit ud-iq1_s    ~113.45GB   73.6
 </pre>
 
 ```sh

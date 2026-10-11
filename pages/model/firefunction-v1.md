@@ -6,7 +6,7 @@
 
 Fireworks AI · released 2024-02 · 46.7B params (12.9B active) · apache-2.0
 
-**score 41.8** ±6.2 · #665 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.9** ±6.2 · #664 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                    score  implies  date        weight
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>                 40.7%    40.1   2025-04-13   83% ▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle           50.0                17% ▇▇
-                        weighted average               = 41.8
+                        weighted average               = 41.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle           50.0                17%
 
 <pre>
 download        size  score
-4-bit fp16  ~93.41GB   41.8
+4-bit fp16  ~93.41GB   41.9
 </pre>
 
 ```sh

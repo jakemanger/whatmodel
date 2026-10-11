@@ -6,7 +6,7 @@
 
 Cornell AGI (REBEL) · released 2024-05 · apache-2.0
 
-**score 47.4** ±1.7 · #504 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.4** ±1.7 · #505 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

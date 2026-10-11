@@ -6,7 +6,7 @@
 
 WhiteRabbitNeo · released 2023-12 · other (deepseek)
 
-**score 47.1** ±0.8 · #514 of 934 · from 3 benchmark results across 1 source
+**score 47.1** ±0.8 · #513 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               72.0%    46.8   2024-12-26   51% ▇▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              65.9%    46.9   2024-12-26   41% ▇▇▇▇▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               72.0%    46.9   2024-12-26   51% ▇▇▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              65.9%    47.0   2024-12-26   41% ▇▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   66.9%    49.5   2024-12-26    7% ▇
 prior                   pull toward the middle           50.0                 0% ▇
                         weighted average               = 47.1

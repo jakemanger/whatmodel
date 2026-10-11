@@ -17,18 +17,18 @@ source                  test                                  score  implies  da
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>                61.0%    80.0   2026-07-09   12% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>             82.1%    79.7   2026-07-09   11% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>            42.5%    78.3   2026-09-10    5% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>          21.0%    73.3   2026-07-28    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>          21.0%    73.2   2026-07-28    4% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 40.0%    78.0   2026-07-09    2% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                          91.6%    75.4   2026-07-09    2% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                     41.0%    72.7   2026-08-10    1% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              98.3%    79.3   2026-07-09    0% ▇
 <a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/gpt-5-6">FrontierMath tier 4 v2 (lab)</a>          58.5%    77.1   2026-07-09   11% ▇
-                        <a href="https://openai.com/index/gpt-5-6">FrontierMath tiers 1–3 v2 (la…</a>        78.6%    77.2   2026-07-09    6% ▇
+                        <a href="https://openai.com/index/gpt-5-6">FrontierMath tiers 1–3 v2 (la…</a>        78.6%    77.1   2026-07-09    6% ▇
                         <a href="https://openai.com/index/gpt-5-6">BrowseComp (lab)</a>                      83.3%    77.6   2026-07-09    3% ▇
-                        <a href="https://openai.com/index/gpt-5-6">Terminal-Bench 2.1 (lab)</a>              84.7%    78.7   2026-07-09    2% ▇
-                        <a href="https://openai.com/index/gpt-5-6">SWE-bench Pro (split unspecif…</a>        62.7%    79.5   2026-07-09    2% ▇
-                        <a href="https://openai.com/index/gpt-5-6">MMMU Pro (lab)</a>                        78.4%    75.5   2026-07-09    2% ▇
-                        <a href="https://openai.com/index/gpt-5-6">Toolathlon (Tool Decathlon) (…</a>        53.4%    78.4   2026-07-09    2% ▇
+                        <a href="https://openai.com/index/gpt-5-6">Terminal-Bench 2.1 (lab)</a>              84.7%    78.7   2026-07-09    3% ▇
+                        <a href="https://openai.com/index/gpt-5-6">SWE-bench Pro (split unspecif…</a>        62.7%    79.4   2026-07-09    2% ▇
+                        <a href="https://openai.com/index/gpt-5-6">MMMU Pro (lab)</a>                        78.4%    75.4   2026-07-09    2% ▇
+                        <a href="https://openai.com/index/gpt-5-6">Toolathlon (Tool Decathlon) (…</a>        53.4%    78.3   2026-07-09    2% ▇
                         <a href="https://openai.com/index/gpt-5-6">DeepSWE v1.1 (resolved) (lab)</a>         67.2%    79.6   2026-07-09    1% ▇
                         <a href="https://openai.com/index/gpt-5-6">Agents' Last Exam (metric/har…</a>        50.3%    82.8   2026-07-09    1% ▇
                         <a href="https://deploymentsafety.openai.com/gpt-5-6#healthbench">HealthBench Hard (lab)</a>                31.4%    80.3   2026-07-09    1% ▇
@@ -39,7 +39,7 @@ source                  test                                  score  implies  da
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>       1259.8    73.5   2026-10-02    2% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>       1462.0    74.8   2026-09-13    1% ▇
 <a name="korean-personal-benchmark-runs"></a>Daekeun Kim Korean LL…  <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">KMMLU-HARD (Daekeun Kim, zero…</a>        75.8%    74.9                 3% ▇
-                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">KoBALT-700 (Daekeun Kim)</a>              77.0%    75.9                 1% ▇
+                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">KoBALT-700 (Daekeun Kim)</a>              77.0%    76.0                 1% ▇
                         <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">KMMLU-Pro (Daekeun Kim)</a>               85.5%    75.8                 1% ▇
                         <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">CLIcK Korean (Daekeun Kim)</a>            91.5%    76.4                 1% ▇
                         <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>             93.2%    76.3                 1% ▇
@@ -48,9 +48,9 @@ source                  test                                  score  implies  da
 <a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>        72.6%    74.2   2026-09-07    1% ▇
                         <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>        95.8%    78.7   2026-09-07    1% ▇
 <a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard ave…</a>        53.9%    76.9   2026-09-07    1% ▇
-<a name="paper-2609.05141v2-scidocbench"></a>SciDocBench: A Workfl…  <a href="https://arxiv.org/html/2609.05141v2">SciDocBench scientific-docume…</a>        50.6%    71.8   2026-09-28    1% ▇
-<a name="paper-2609.38480v2-klinikebench"></a>KlinikeBench: Evaluat…  <a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (3…</a>         7.5%    68.2   2026-10-06    1% ▇
-<a name="paper-2610.12402v1-spacecast-bench"></a>SpaceCast-Bench: Eval…  <a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench predictive sp…</a>        46.6%    74.1   2026-10-08    0% ▇
+<a name="paper-2609.05141v2-scidocbench"></a>SciDocBench: A Workfl…  <a href="https://arxiv.org/html/2609.05141v2">SciDocBench scientific-docume…</a>        50.6%    71.9   2026-09-28    1% ▇
+<a name="paper-2609.38480v2-klinikebench"></a>KlinikeBench: Evaluat…  <a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (3…</a>         7.5%    68.1   2026-10-06    1% ▇
+<a name="paper-2610.12402v1-spacecast-bench"></a>SpaceCast-Bench: Eval…  <a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench predictive sp…</a>        46.6%    74.2   2026-10-08    0% ▇
 prior                   pull toward the middle                         50.0                 0% ▇
                         weighted average                             = 76.9
 </pre>

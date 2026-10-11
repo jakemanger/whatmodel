@@ -6,7 +6,7 @@
 
 SK Telecom · released 2026-07 · 691.69B params (33B active) · apache-2.0
 
-**score 69.4** ±1.4 · #93 of 934 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
+**score 69.3** ±1.4 · #93 of 934 · from 7 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="paper-2608.30181v1-ax-k2"></a>A.X K2 Technical Repo…  <a href="https://arxiv.org/html/2608.30181v1">GPQA Diamond (lab)</a>              85.6%    68.0   2026-08-31   33% ▇▇▇▇
                         <a href="https://arxiv.org/html/2608.30181v1">Global-MMLU-Lite (lab)</a>          87.6%    67.9   2026-08-31   16% ▇▇
-                        <a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam (lab)</a>      27.8%    70.6   2026-08-31   14% ▇▇
+                        <a href="https://arxiv.org/html/2608.30181v1">Humanity's Last Exam (lab)</a>      27.8%    70.5   2026-08-31   14% ▇▇
                         <a href="https://arxiv.org/html/2608.30181v1">IFBench (aggregation unspecif…</a>  75.9%    69.5   2026-08-31   11% ▇
                         <a href="https://arxiv.org/html/2608.30181v1">LiveCodeBench v6 (Feb–May 202…</a>  84.0%    72.5   2026-08-31    9% ▇
                         <a href="https://arxiv.org/html/2608.30181v1">SciCode (level unspecified) (…</a>  41.0%    68.4   2026-08-31    8% ▇
                         <a href="https://arxiv.org/html/2608.30181v1">AIME 2026 (lab)</a>                 97.1%    74.9   2026-08-31    8% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 69.4
+                        weighted average                       = 69.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,7 +35,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                        size  score
-16-bit bf16 · nvidia only  ~1383.4GB   69.4
+16-bit bf16 · nvidia only  ~1383.4GB   69.3
 </pre>
 
 ```sh

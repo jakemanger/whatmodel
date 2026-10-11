@@ -21,7 +21,7 @@ source                  test                                                   s
                         <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                          3.3%    23.1   2025-08-09   11% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                        1023.5    20.8   2026-10-02   21% ▇▇▇
 <a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  4.3200 MT-Bench score (1-10)    22.5   2023-06-19   18% ▇▇
-<a name="paper-2306.02561v3-llmblender"></a>LLM-Blender: Ensembli…  <a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Ble…</a>       3.9000 mean rank (1-11)   266.7   2023-06-30    0% ▇
+<a name="paper-2306.02561v3-llmblender"></a>LLM-Blender: Ensembli…  <a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Ble…</a>       3.9000 mean rank (1-11)   267.7   2023-06-30    0% ▇
 prior                   pull toward the middle                                          50.0                 1% ▇
                         weighted average                                              = 21.7
 </pre>

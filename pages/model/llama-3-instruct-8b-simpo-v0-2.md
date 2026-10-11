@@ -6,7 +6,7 @@
 
 Princeton NLP · released 2024-07 · 8.03B params
 
-**score 37.9** ±1.0 · #745 of 934 · from 4 benchmark results across 3 sources
+**score 37.9** ±1.0 · #744 of 934 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 

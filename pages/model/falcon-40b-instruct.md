@@ -6,7 +6,7 @@
 
 TII · released 2023-05 · 41.8B params · apache-2.0
 
-**score 27.8** ±2.2 · #865 of 934 · from 3 benchmark results across 2 sources
+**score 27.9** ±2.2 · #864 of 934 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                                                   score  implies  date        weight
 <a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                          5.6%    28.3   2025-08-09   39% ▇▇▇▇▇
                         <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>                         45.7%    25.4   2025-08-09   24% ▇▇▇
-<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  5.1700 MT-Bench score (1-10)    27.7   2025-08-04   34% ▇▇▇▇
+<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  5.1700 MT-Bench score (1-10)    27.7   2025-08-04   35% ▇▇▇▇
 prior                   pull toward the middle                                          50.0                 2% ▇
-                        weighted average                                              = 27.8
+                        weighted average                                              = 27.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                                  
 
 <pre>
 download     size  score
-4-bit q4_0  ~24GB   27.8
+4-bit q4_0  ~24GB   27.9
 </pre>
 
 ```sh

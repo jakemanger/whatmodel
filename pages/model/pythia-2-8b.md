@@ -15,12 +15,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  64.4%    22.3   2023-05-31   18% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             29.5%    23.8   2023-05-31   16% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             29.5%    23.7   2023-05-31   16% ▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                59.4%    20.0   2023-05-31   15% ▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      88.2%    19.9   2023-05-31   11% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      73.9%    22.5   2023-05-31   10% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  64.7%    23.5   2023-05-31    8% ▇
-<a name="redpajama-2024-original-zero-shot"></a>RedPajama               <a href="https://arxiv.org/html/2411.12372v1">WinoGrande</a>                      60.1%    22.1   2024-11-19    9% ▇
+<a name="redpajama-2024-original-zero-shot"></a>RedPajama               <a href="https://arxiv.org/html/2411.12372v1">WinoGrande</a>                      60.1%    22.0   2024-11-19    9% ▇
                         <a href="https://arxiv.org/html/2411.12372v1">HellaSwag</a>                       59.3%    23.5   2024-11-19    6% ▇
                         <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  64.7%    22.4   2024-11-19    3% ▇
                         <a href="https://arxiv.org/html/2411.12372v1">PIQA</a>                            74.0%    24.1   2024-11-19    2% ▇

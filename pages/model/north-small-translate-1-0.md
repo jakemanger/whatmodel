@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="paper-2609.13916v1-north-small-translate"></a>Cohere  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>  89.7%    72.9   2026-09-12   42% ▇▇▇▇▇
+<a name="paper-2609.13916v1-north-small-translate"></a>Cohere  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>  89.7%    72.8   2026-09-12   42% ▇▇▇▇▇
         <a href="https://arxiv.org/html/2609.13916v1">WMT24++ (lab)</a>                   80.6%    74.4   2026-09-12   24% ▇▇▇
         <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, …</a>  83.6%    82.6   2026-09-12   19% ▇▇
 prior   pull toward the middle                   50.0                16% ▇▇

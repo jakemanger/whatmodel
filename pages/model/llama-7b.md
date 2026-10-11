@@ -24,17 +24,17 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>                      35.1%    21.8   2023-02-27    2% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>                      17.7%    24.5   2023-02-27    2% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                57.2%    39.3   2023-02-27    2% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                  72.8%    29.6   2023-02-27    1% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                  72.8%    29.7   2023-02-27    1% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                48.9%    30.5   2023-02-27    1% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>                      79.8%    33.3   2023-02-27    1% ▇
 <a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   44.5%    27.6   2024-06-07    8% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      51.2%    29.9   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      70.5%    32.6   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      70.5%    32.7   2024-06-07    4% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       76.2%    32.2   2024-06-07    3% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        67.9%    28.4   2024-06-07    3% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           75.4%    32.1   2024-06-07    2% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            93.9%    30.4   2024-06-07    2% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            77.2%    28.9   2024-06-07    1% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            77.2%    29.0   2024-06-07    1% ▇
 <a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   38.5%    30.0   2023-09-11    6% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      66.9%    27.7   2023-09-11    4% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           73.2%    29.7   2023-09-11    3% ▇

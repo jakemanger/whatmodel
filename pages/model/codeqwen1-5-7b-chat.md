@@ -26,7 +26,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>   39.6%    51.3   2024-11-12    2% ▇
                         <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                44.0%    40.0   2024-11-12    1% ▇
                         <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                38.8%    36.8   2024-11-12    0% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>   39.3%    49.0   2025-04-01    6% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct) (lab)</a>   39.3%    49.1   2025-04-01    6% ▇
                         <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete) (lab)</a>   43.7%    45.8   2025-04-01    5% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 50.7

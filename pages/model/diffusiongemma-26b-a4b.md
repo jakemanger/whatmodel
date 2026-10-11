@@ -15,13 +15,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="card3-google-diffusiongemma-26b-a4b-it"></a>google/diffusiongemma…  <a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">GPQA Diamond (lab)</a>              73.2%    60.6   2026-07-15   16% ▇▇
-                        <a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">AIME 2026 (lab)</a>                 69.1%    54.3   2026-07-15   12% ▇
-                        <a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">MedXPertQA MM (lab)</a>             49.0%    61.1   2026-07-15   10% ▇
+                        <a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">AIME 2026 (lab)</a>                 69.1%    54.2   2026-07-15   12% ▇
+                        <a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">MedXPertQA MM (lab)</a>             49.0%    61.0   2026-07-15   10% ▇
                         <a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">LiveCodeBench v6 (window unsp…</a>  69.1%    60.1   2026-07-15    9% ▇
                         <a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">τ²-bench aggregate (lab)</a>        56.2%    57.5   2026-07-15    9% ▇
                         <a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">MMLU-Pro (lab)</a>                  77.6%    60.8   2026-07-15    8% ▇
                         <a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">MATH-Vision (lab)</a>               70.5%    60.0   2026-07-15    7% ▇
-                        <a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">MRCR v2 8-needle, 128k (lab)</a>    32.0%    54.4   2026-07-15    7% ▇
+                        <a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">MRCR v2 8-needle, 128k (lab)</a>    32.0%    54.3   2026-07-15    7% ▇
                         <a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">MMMLU (lab)</a>                     81.5%    61.7   2026-07-15    7% ▇
                         <a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">Humanity's Last Exam (lab)</a>      11.0%    62.6   2026-07-15    6% ▇
                         <a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it/blob/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md">MMMU Pro (lab)</a>                  54.3%    54.3   2026-07-15    5% ▇

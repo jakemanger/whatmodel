@@ -6,7 +6,7 @@
 
 01.AI · released 2024-08 · 8.83B params · apache-2.0
 
-**score 48.7** ±1.4 · #472 of 934 · from 8 benchmark results across 5 sources
+**score 48.7** ±1.4 · #473 of 934 · from 8 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  54.1%    50.2   2024-09-04   35% ▇▇▇▇
 <a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>  23.5%    49.1   2024-12-26   34% ▇▇▇▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   3.9%    39.0   2025-05-31    5% ▇
+<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   3.9%    39.0   2025-05-31    6% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>  33.0%    43.5   2025-05-31    5% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  32.4%    50.0   2025-05-31    4% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  52.1%    10.9   2025-05-31    0% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>  32.4%    49.9   2025-05-31    4% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>  52.1%    14.8   2025-05-31    0% ▇
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/01-ai--Yi-Coder-9B-Chat_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  78.8%    51.7   2024-10-19   12% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  61.9%    41.9   2024-09-21    4% ▇
 prior                   pull toward the middle                   50.0                 1% ▇

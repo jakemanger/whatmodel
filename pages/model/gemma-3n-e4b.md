@@ -6,7 +6,7 @@
 
 Google · released 2025-06 · 7.85B params (4B active) · gemma
 
-**score 47.8** ±1.4 · #494 of 934 · from 12 benchmark results across 4 sources
+**score 47.8** ±1.4 · #493 of 934 · from 12 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -24,7 +24,7 @@ source                  test                             score  implies  date   
                         <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">Global-MMLU (lab)</a>                60.3%    46.2   2026-09-25    4% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1317.4    56.0   2026-10-02   18% ▇▇
 <a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   55.0%    47.8   2026-09-19    7% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   71.3%    51.4   2026-04-17    4% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   71.3%    52.0   2026-04-17    4% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   80.2%    48.1   2026-04-17    2% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 47.8

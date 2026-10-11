@@ -6,7 +6,7 @@
 
 Google · released 2026-07 · closed weights
 
-**score 73.8** ±0.6 · #52 of 934 · from 27 benchmark results across 8 sources
+**score 73.7** ±0.6 · #53 of 934 · from 27 benchmark results across 8 sources
 
 ## How the score was worked out
 
@@ -31,18 +31,18 @@ source                  test                                  score  implies  da
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1536.3    75.2   2026-10-01    5% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                       1483.0    75.8   2026-10-02    3% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>       1279.7    75.9   2026-10-02    2% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>       1453.4    73.1   2026-09-13    1% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>       1453.4    73.2   2026-09-13    1% ▇
 <a name="first-party-google-scores"></a>Google DeepMind Gemin…  <a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">CharXiv (reasoning questions)…</a>        85.2%    76.2   2026-08-13    4% ▇
                         <a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">Terminal-Bench 2.1 (lab)</a>              78.0%    72.6   2026-08-13    2% ▇
-                        <a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">MRCR v2 8-needle, 128k (lab)</a>          91.8%    79.9   2026-08-13    1% ▇
+                        <a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">MRCR v2 8-needle, 128k (lab)</a>          91.8%    79.8   2026-08-13    1% ▇
                         <a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">LVBench (lab)</a>                         84.2%    75.9   2026-08-13    1% ▇
                         <a href="https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation">Terminal-Bench 3.0 (lab)</a>               5.4%    63.7   2026-08-13    1% ▇
-<a name="paper-2609.38335v1-e2e-swe"></a>E2E-SWE: Benchmarking…  <a href="https://arxiv.org/html/2609.38335v1">E2E-SWE (build a working code…</a>        11.7%    64.8   2026-09-29    2% ▇
+<a name="paper-2609.38335v1-e2e-swe"></a>E2E-SWE: Benchmarking…  <a href="https://arxiv.org/html/2609.38335v1">E2E-SWE (build a working code…</a>        11.7%    64.9   2026-09-29    2% ▇
 <a name="google-cloud-gemini-guides"></a>Google Cloud develope…  <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-7-flash#whats-new">Terminal-Bench 2.1 (lab)</a>              73.0%    70.7   2026-10-06    2% ▇
 <a name="paper-2609.05141v2-scidocbench"></a>SciDocBench: A Workfl…  <a href="https://arxiv.org/html/2609.05141v2">SciDocBench scientific-docume…</a>        59.9%    80.6   2026-09-28    1% ▇
-<a name="paper-2605.07492v2-puredocbench"></a>How Far Is Document P…  <a href="https://arxiv.org/html/2605.07492v2">PureDocBench document parsing…</a>        78.3%   100.3   2026-09-27    0% ▇
+<a name="paper-2605.07492v2-puredocbench"></a>How Far Is Document P…  <a href="https://arxiv.org/html/2605.07492v2">PureDocBench document parsing…</a>        78.3%   100.4   2026-09-27    0% ▇
 prior                   pull toward the middle                         50.0                 0% ▇
-                        weighted average                             = 73.8
+                        weighted average                             = 73.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

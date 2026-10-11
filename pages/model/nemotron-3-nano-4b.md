@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-03 · 3.97B params · nvidia-open-model
 
-**score 54.3** ±0.8 · #333 of 934 · from 26 benchmark results across 2 sources
+**score 54.3** ±0.8 · #334 of 934 · from 26 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -15,8 +15,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="card3-openbmb-minicpm5-2b"></a>openbmb/MiniCPM5-2B m…  <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">HMMT February 2026</a>              51.3%    57.6   2026-09-06    9% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2025</a>                       56.3%    54.5   2026-09-06    8% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2026</a>                       62.1%    54.6   2026-09-06    7% ▇
+                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2025</a>                       56.3%    54.4   2026-09-06    8% ▇
+                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">AIME 2026</a>                       62.1%    54.5   2026-09-06    7% ▇
                         <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench v6 (window unsp…</a>  50.7%    54.8   2026-09-06    5% ▇
                         <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LiveCodeBench Pro 2025Q2 (Eas…</a>  51.6%    58.4   2026-09-06    4% ▇
                         <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">MMLU-Pro</a>                        65.7%    53.3   2026-09-06    4% ▇
@@ -31,15 +31,15 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">LongBench v2</a>                    32.0%    49.8   2026-09-06    2% ▇
                         <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">τ³-bench Banking</a>                 1.2%    42.1   2026-09-06    2% ▇
                         <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">IFBench (aggregation unspecif…</a>  58.3%    58.3   2026-09-06    2% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">Multi-IF (aggregation unspeci…</a>  65.9%    54.6   2026-09-06    2% ▇
-                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Pro (split unspecif…</a>   0.1%    44.6   2026-09-06    2% ▇
+                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">SWE-bench Pro (split unspecif…</a>   0.1%    44.7   2026-09-06    2% ▇
+                        <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">Multi-IF (aggregation unspeci…</a>  65.9%    54.5   2026-09-06    2% ▇
                         <a href="https://huggingface.co/openbmb/MiniCPM5-2B/blob/f97400052a43d642bbc6e9975e2397e3ae6a6b52/README.md">IFEval (aggregation unspecifi…</a>  88.0%    62.3   2026-09-06    0% ▇
 <a name="first-party-nvidia-scores"></a>NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">τ²-bench Telecom (lab)</a>          33.0%    56.3   2026-03-20    9% ▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">AIME 2025 (lab)</a>                 78.5%    58.2   2026-03-16    9% ▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">AIME 2025 (lab)</a>                 78.5%    58.1   2026-03-16    9% ▇
                         <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">GPQA (subset unspecified) (la…</a>  53.2%    52.4   2026-03-16    7% ▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">MATH-500 (lab)</a>                  95.4%    57.0   2026-03-16    3% ▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">MATH-500 (lab)</a>                  95.4%    57.2   2026-03-16    3% ▇
                         <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">LiveCodeBench (version unspec…</a>  51.8%    53.6   2026-03-16    2% ▇
-                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">BFCL v3 (lab)</a>                   61.1%    52.5   2026-03-16    1% ▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">BFCL v3 (lab)</a>                   61.1%    52.4   2026-03-16    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 54.3
 </pre>

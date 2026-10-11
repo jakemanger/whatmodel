@@ -14,18 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">ARC Challenge</a>                   42.4%    29.4   2024-04-08   47% ▇▇▇▇▇▇
+<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">ARC Challenge</a>                   42.4%    29.5   2024-04-08   47% ▇▇▇▇▇▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">WinoGrande</a>                      65.8%    27.9   2024-04-08   11% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">BoolQ</a>                           71.4%    28.7   2024-04-08    9% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">BoolQ</a>                           71.4%    28.8   2024-04-08    9% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">ARC Easy</a>                        69.7%    30.6   2024-04-08    6% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">HellaSwag</a>                       74.6%    30.6   2024-04-08    5% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">HellaSwag</a>                       74.6%    30.7   2024-04-08    5% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">OpenBookQA</a>                      30.2%    29.3   2024-04-08    5% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">SciQ</a>                            93.8%    31.5   2024-04-08    5% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">PIQA</a>                            79.2%    32.1   2024-04-08    4% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">PIQA</a>                            79.2%    32.2   2024-04-08    4% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">Social IQA</a>                      42.0%    24.4   2024-04-08    3% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">LAMBADA (OpenAI version), las…</a>  71.0%    29.1   2024-04-08    2% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/openlm-research-open_llama_7b_v2.json">TruthfulQA MC2</a>                  34.6%    20.2   2024-04-08    1% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  39.2%    20.5   2024-02-11    1% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  39.2%    20.6   2024-02-11    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 29.3
 </pre>

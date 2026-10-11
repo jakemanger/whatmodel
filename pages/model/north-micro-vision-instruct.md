@@ -6,7 +6,7 @@
 
 Cohere · released 2026-08 · 2.4B params · apache-2.0
 
-**score 40.9** ±1.8 · #684 of 934 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
+**score 40.9** ±1.8 · #685 of 934 · from 13 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -19,14 +19,14 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMLU-Pro (lab)</a>                  30.7%    38.8   2026-08-10   14% ▇▇
                         <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMStar (lab)</a>                    51.8%    42.2   2026-08-10   12% ▇
                         <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">Multi-IF (aggregation unspeci…</a>  37.3%    37.6   2026-08-10    9% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMBench-EN dev v1.1 (lab)</a>       68.7%    39.5   2026-08-10    7% ▇
+                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">MMBench-EN dev v1.1 (lab)</a>       68.7%    39.4   2026-08-10    7% ▇
                         <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">IFEval (aggregation unspecifi…</a>  74.9%    47.0   2026-08-10    6% ▇
                         <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">HallusionBench (lab)</a>            61.5%    47.5   2026-08-10    6% ▇
                         <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">CountBench (lab)</a>                72.5%    36.8   2026-08-10    3% ▇
                         <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">RealWorldQA (lab)</a>               62.2%    42.0   2026-08-10    3% ▇
                         <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">OCRBench (lab)</a>                  79.2%    46.3   2026-08-10    2% ▇
                         <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">AI2D test (lab)</a>                 77.5%    37.0   2026-08-10    2% ▇
-                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">ChartQA (lab)</a>                   80.8%    50.5   2026-08-10    1% ▇
+                        <a href="https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct/blob/fa548d9aa62c1220bfd21fc6cfc465f1bd2a1a40/README.md">ChartQA (lab)</a>                   80.8%    50.4   2026-08-10    1% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
                         weighted average                       = 40.9
 </pre>

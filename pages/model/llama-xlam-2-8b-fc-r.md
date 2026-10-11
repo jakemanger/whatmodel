@@ -6,7 +6,7 @@
 
 Salesforce · released 2025-03 · 8.03B params · cc-by-nc-4.0
 
-**score 62.0** ±3.8 · #188 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.9** ±3.8 · #190 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                            score  implies  date    
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  46.7%    60.1   2025-12-16   65% ▇▇▇▇▇▇▇▇
                         <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         72.0%    68.9   2025-06-14   29% ▇▇▇
 prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 62.0
+                        weighted average                       = 61.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~16.06GB   62.0
+16-bit bf16  ~16.06GB   61.9
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 FreedomIntelligence (CUHK-SZ) · released 2024-12 · 70.55B params · apache-2.0
 
-**score 54.3** ±3.7 · #335 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 54.2** ±3.6 · #337 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -15,9 +15,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  33.9%    52.1   2025-07-22   69% ▇▇▇▇▇▇▇▇
-<a name="paper-2606.08071v1-surgiq"></a>SurgiQ: A Large-Scale…  <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-sho…</a>  65.5%    61.3   2026-06-06   25% ▇▇▇
+<a name="paper-2606.08071v1-surgiq"></a>SurgiQ: A Large-Scale…  <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-sho…</a>  65.5%    61.2   2026-06-06   25% ▇▇▇
 prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 54.3
+                        weighted average                       = 54.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-16-bit bf16  ~141.11GB   54.3
+16-bit bf16  ~141.11GB   54.2
 </pre>
 
 ```sh

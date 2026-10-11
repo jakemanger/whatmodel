@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2024-12 · 13.72B params · apache-2.0
 
-**score 46.5** ±1.4 · #535 of 934 · from 11 benchmark results across 3 sources
+**score 46.5** ±1.4 · #536 of 934 · from 11 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                      68.5%    45.0   2025-10-08   24% ▇▇▇
+<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                      68.5%    45.0   2025-10-08   25% ▇▇▇
                         <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>            63.0%    44.5   2025-10-08   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                     87.4%    49.1   2025-10-08   11% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                     87.4%    49.1   2025-10-08   12% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlle…</a>  39.5%    49.3   2025-10-08   10% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>            64.3%    49.7   2025-10-08    8% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (la…</a>  39.2%    40.4   2025-10-08    6% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                     28.8%    47.6   2025-10-08    4% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                     28.8%    47.7   2025-10-08    4% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (la…</a>  82.6%    52.9   2025-10-08    4% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  68.5%    50.0   2026-04-17    4% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  83.0%    50.3   2026-04-17    2% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  68.5%    50.6   2026-04-17    3% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  83.0%    50.2   2026-04-17    2% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  89.2%    35.5   2025-10-16    1% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 46.5

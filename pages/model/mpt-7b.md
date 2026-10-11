@@ -42,8 +42,8 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                      45.1%    25.7   2023-09-11    2% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            78.9%    31.3   2023-09-11    1% ▇
 <a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>   3.5%    18.8   2024-04-24    3% ▇
-                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  30.4%    28.6   2024-04-24    2% ▇
-<a name="paper-2410.14897v1-gencopa"></a>From Test-Taking to T…  <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                            65.6%    13.1   2024-10-18    0% ▇
+                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  30.4%    28.7   2024-04-24    2% ▇
+<a name="paper-2410.14897v1-gencopa"></a>From Test-Taking to T…  <a href="https://arxiv.org/html/2410.14897v1">COPA</a>                            65.6%    12.8   2024-10-18    0% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 29.7
 </pre>

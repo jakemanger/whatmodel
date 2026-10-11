@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 2.85B params · apache-2.0
 
-**score 31.4** ±1.4 · #833 of 934 · from 5 benchmark results across 2 sources
+**score 31.4** ±1.4 · #834 of 934 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 

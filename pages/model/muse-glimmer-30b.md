@@ -6,7 +6,7 @@
 
 Meta · released 2026-08 · 29.8B params · apache-2.0
 
-**score 69.6** ±1.2 · #89 of 934 · from 19 benchmark results across 5 sources
+**score 69.6** ±1.2 · #88 of 934 · from 19 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="speed-meta-muse-glimmer-30b"></a>meta-models/Muse-Glim…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SWE-bench Pro (split unspecif…</a>   51.2%    71.1   2026-08-11   10% ▇
-                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SWE-bench Verified (lab)</a>         76.0%    71.2   2026-08-11    7% ▇
+<a name="speed-meta-muse-glimmer-30b"></a>meta-models/Muse-Glim…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SWE-bench Pro (split unspecif…</a>   51.2%    71.0   2026-08-11   10% ▇
+                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SWE-bench Verified (lab)</a>         76.0%    71.1   2026-08-11    7% ▇
                         <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">OSWorld-Verified (lab)</a>           65.9%    68.9   2026-08-11    5% ▇
-                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">WildClawBench (lab)</a>              47.6%    72.8   2026-08-11    5% ▇
+                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">WildClawBench (lab)</a>              47.6%    72.7   2026-08-11    5% ▇
                         <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">CharXiv (reasoning questions)…</a>   78.8%    69.7   2026-08-11    4% ▇
                         <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">MCP-Atlas (public set) (lab)</a>     75.5%    76.5   2026-08-11    4% ▇
                         <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">IFBench (aggregation unspecif…</a>   77.0%    72.4   2026-08-11    4% ▇
-                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">OmniDocBench 1.5 overall (hig…</a>   75.8%    61.7   2026-08-11    4% ▇
+                        <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">OmniDocBench 1.5 overall (hig…</a>   75.8%    61.8   2026-08-11    4% ▇
                         <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">DeepSearchQA (lab)</a>               74.6%    70.5   2026-08-11    4% ▇
                         <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">Gaia2 (lab)</a>                      43.3%    71.3   2026-08-11    3% ▇
                         <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SkillsBench (with skills) (la…</a>   44.3%    71.0   2026-08-11    3% ▇

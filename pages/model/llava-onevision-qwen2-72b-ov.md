@@ -6,7 +6,7 @@
 
 LLaVA (lmms-lab) · released 2024-08 · 73.2B params · apache-2.0
 
-**score 44.4** ±2.9 · #595 of 934 · from 3 benchmark results across 3 sources
+**score 44.4** ±2.9 · #594 of 934 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                               score  implies  date        weight
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>     978.3    39.3   2026-10-02   52% ▇▇▇▇▇▇
 <a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>  -12.3300    47.7   2025-03-16   34% ▇▇▇▇
-<a name="paper-2505.20740v3-msearth"></a>MSEarth: A Multimodal…  <a href="https://arxiv.org/html/2505.20740v3">MSEarth-Bench Earth-science f…</a>     51.1%    56.9   2026-05-03   11% ▇
+<a name="paper-2505.20740v3-msearth"></a>MSEarth: A Multimodal…  <a href="https://arxiv.org/html/2505.20740v3">MSEarth-Bench Earth-science f…</a>     51.1%    56.9   2026-05-03   10% ▇
 prior                   pull toward the middle                      50.0                 4% ▇
                         weighted average                          = 44.4
 </pre>

@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 68.98B params · llama2
 
-**score 38.3** ±0.8 · #734 of 934 · from 27 benchmark results across 15 sources
+**score 38.4** ±0.8 · #732 of 934 · from 27 benchmark results across 15 sources
 
 ## How the score was worked out
 
@@ -14,35 +14,35 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                   score  implies  date        weight
-<a name="paper-2311.11045v2"></a>Orca 2: Teaching Smal…  <a href="https://arxiv.org/html/2311.11045v2">BIG-Bench Hard</a>                                         44.7%    38.8   2023-11-21    7% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>                                          67.7%    40.3   2023-11-21    5% ▇
+<a name="paper-2311.11045v2"></a>Orca 2: Teaching Smal…  <a href="https://arxiv.org/html/2311.11045v2">BIG-Bench Hard</a>                                         44.7%    38.9   2023-11-21    7% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>                                          67.7%    40.4   2023-11-21    5% ▇
                         <a href="https://arxiv.org/html/2311.11045v2">GSM8K</a>                                                  52.0%    37.2   2023-11-21    4% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">MMLU</a>                                                   58.5%    41.8   2023-11-21    3% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">MMLU</a>                                                   58.5%    41.9   2023-11-21    3% ▇
                         <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>                                        46.7%    38.1   2023-11-21    3% ▇
                         <a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>                                               82.2%    42.3   2023-11-21    1% ▇
 <a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                                         49.0%    36.8   2023-11-20    9% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>                              52.1%    35.5   2023-11-20    5% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                                                  59.0%    44.7   2023-11-20    3% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                                                  59.0%    44.8   2023-11-20    3% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                                   60.9%    43.1   2023-11-20    3% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>                         44.4%    36.5   2023-11-20    1% ▇
-<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                         14.7%    38.2   2025-08-09   13% ▇▇
+<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                         14.7%    38.3   2025-08-09   13% ▇▇
                         <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>                         92.7%    43.4   2025-08-09    2% ▇
 <a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>                         11.6%    37.9   2024-11-14    7% ▇
 <a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>              20.6596 WB-Score    35.4   2024-08-01    6% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                        1170.6    38.4   2026-10-02    6% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                                            3.3%    37.0   2025-01-27    3% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                                            3.3%    37.1   2025-01-27    3% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                           26.3%    33.6   2025-01-27    2% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>                                0.0%    33.7   2025-02-25    0% ▇
-<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  6.8600 MT-Bench score (1-10)    38.1   2023-07-17    5% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>                          3.0%    29.5   2026-04-06    3% ▇
+<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  6.8600 MT-Bench score (1-10)    38.2   2023-07-17    5% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>                          3.0%    29.6   2026-04-06    3% ▇
 <a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>                         25.1%    41.9   2025-06-03    3% ▇
 <a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>                         51.6%    47.4   2024-01-03    2% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>                         32.6%    28.7   2026-09-19    2% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>                         32.6%    28.8   2026-09-19    2% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>                         65.7%    45.2   2024-02-18    1% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>                         57.5%    32.5   2026-04-17    1% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>                         57.5%    33.3   2026-04-17    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>                         94.1%    48.1   2025-10-16    1% ▇
 prior                   pull toward the middle                                          50.0                 0% ▇
-                        weighted average                                              = 38.3
+                        weighted average                                              = 38.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -55,8 +55,8 @@ prior                   pull toward the middle                                  
 
 <pre>
 download        size  score
-4-bit q4_0  ~41.89GB   38.3
-8-bit q8_0  ~83.28GB   38.3
+4-bit q4_0  ~41.89GB   38.4
+8-bit q8_0  ~83.28GB   38.4
 </pre>
 
 ```sh

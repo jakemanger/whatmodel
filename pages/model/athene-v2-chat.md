@@ -6,7 +6,7 @@
 
 Nexusflow · released 2024-11 · 72.7B params · nexusflow-research
 
-**score 56.4** ±1.5 · #278 of 934 · from 5 benchmark results across 4 sources
+**score 56.5** ±1.5 · #276 of 934 · from 5 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -20,7 +20,7 @@ source                  test                             score  implies  date   
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1314.1    55.6   2026-10-02   18% ▇▇
 <a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   41.7%    60.3   2025-04-28   11% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 56.4
+                        weighted average                        = 56.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,8 +33,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~44.12GB   56.4
-8-bit q8_0    ~87.74GB   56.4
+4-bit q4_k_m  ~44.12GB   56.5
+8-bit q8_0    ~87.74GB   56.5
 </pre>
 
 ```sh

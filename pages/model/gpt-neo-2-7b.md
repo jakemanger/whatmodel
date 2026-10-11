@@ -21,19 +21,19 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   27.4%    14.9   2023-09-11    4% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        61.1%    18.4   2023-09-11    4% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       42.7%    18.0   2023-09-11    4% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                      40.0%    14.8   2023-09-11    3% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>                      40.0%    14.7   2023-09-11    3% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            72.9%    20.5   2023-09-11    2% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      23.2%     8.2   2023-09-11    2% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      23.2%     8.1   2023-09-11    2% ▇
 <a name="eleutherai-gpt-j-6b-card"></a>EleutherAI GPT-J-6B m…  <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag (lab)</a>                 55.8%    18.3   2021-08-06    7% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande (lab)</a>                56.5%    14.4   2021-08-06    5% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande (lab)</a>                56.5%    14.4   2021-08-06    4% ▇
                         <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  62.2%    19.2   2021-08-06    4% ▇
                         <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA (lab)</a>                      73.0%    18.3   2021-08-06    2% ▇
 <a name="redpajama-2024-original-zero-shot"></a>RedPajama               <a href="https://arxiv.org/html/2411.12372v1">WinoGrande</a>                      57.7%    18.5   2024-11-19    4% ▇
                         <a href="https://arxiv.org/html/2411.12372v1">HellaSwag</a>                       55.8%    21.4   2024-11-19    3% ▇
                         <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  62.2%    20.9   2024-11-19    2% ▇
                         <a href="https://arxiv.org/html/2411.12372v1">PIQA</a>                            72.2%    21.0   2024-11-19    1% ▇
-<a name="eleutherai-gpt-neo-2-7b-card"></a>EleutherAI GPT-Neo 2.…  <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA (lab)</a>                    24.7%    14.7   2021-04-12    2% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">PubMedQA (lab)</a>                  57.5%    14.2   2021-04-12    2% ▇
+<a name="eleutherai-gpt-neo-2-7b-card"></a>EleutherAI GPT-Neo 2.…  <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA (lab)</a>                    24.7%    14.6   2021-04-12    3% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">PubMedQA (lab)</a>                  57.5%    14.1   2021-04-12    2% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  28.0%     4.3   2024-02-05    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 18.1

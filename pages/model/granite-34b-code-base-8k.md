@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 33.72B params · apache-2.0
 
-**score 41.7** ±1.2 · #667 of 934 · from 7 benchmark results across 2 sources
+**score 41.8** ±1.2 · #665 of 934 · from 7 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -22,7 +22,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                44.8%    42.0   2024-05-07    8% ▇
 <a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         38.5%    42.5   2025-04-01   13% ▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 41.7
+                        weighted average                       = 41.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,7 +33,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~21.38GB   41.7
+4-bit q4_k_m  ~21.38GB   41.8
 </pre>
 
 ```sh

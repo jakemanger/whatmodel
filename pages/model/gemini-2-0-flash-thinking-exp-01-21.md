@@ -6,7 +6,7 @@
 
 Google · released 2025-01 · proprietary
 
-**score 57.6** ±1.4 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+**score 57.5** ±1.4 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -15,11 +15,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    57.1%    58.3   2025-02-06   33% ▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        57.8%    63.5   2025-03-07   17% ▇▇
-<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>  18.2%    55.1   2025-01-21   45% ▇▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        57.8%    63.5   2025-03-07   15% ▇▇
+<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>  18.2%    55.1   2025-01-21   46% ▇▇▇▇▇▇
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         58.7%    56.2   2025-06-14    4% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 57.6
+                        weighted average                       = 57.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

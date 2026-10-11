@@ -6,7 +6,7 @@
 
 Princeton NLP · released 2024-08 · 8.03B params · llama3
 
-**score 50.4** ±4.6 · #416 of 934 · from 3 benchmark results across 2 sources
+**score 50.4** ±4.6 · #417 of 934 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                       83.2%    50.7   2025-10-09   36% ▇▇▇▇
+<a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>                       83.2%    50.8   2025-10-09   36% ▇▇▇▇
                         <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>                      81.6%    59.0   2025-10-09   14% ▇▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  68.8%    47.1   2024-09-17   40% ▇▇▇▇▇
 prior                   pull toward the middle                   50.0                10% ▇

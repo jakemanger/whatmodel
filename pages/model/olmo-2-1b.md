@@ -19,7 +19,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>            35.0%    29.1   2025-10-08   19% ▇▇
                         <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>            48.7%    34.8   2025-10-08    9% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (la…</a>  70.1%    41.8   2025-10-08    6% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlle…</a>   9.1%    31.5   2025-10-08    5% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlle…</a>   9.1%    31.6   2025-10-08    5% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (la…</a>  20.7%    30.7   2025-10-08    5% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                     12.9%    30.2   2025-10-08    3% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  45.0%    27.5   2025-05-01    3% ▇

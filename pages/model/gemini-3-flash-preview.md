@@ -6,7 +6,7 @@
 
 Google · released 2025-12 · closed weights
 
-**score 72.9** ±0.7 · #60 of 934 · from 25 benchmark results across 10 sources
+**score 72.8** ±0.7 · #61 of 934 · from 25 benchmark results across 10 sources
 
 ## How the score was worked out
 
@@ -21,12 +21,12 @@ source                  test                             score  implies  date   
                         <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     20.0%    71.9   2026-08-05    4% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            40.0%    79.1   2026-08-06    3% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                66.8%    84.3   2026-08-27    2% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         95.6%    74.9   2026-08-06    1% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         95.6%    75.0   2026-08-06    1% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1438.9    70.7   2026-10-01    7% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1472.7    74.6   2026-10-02    4% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1272.9    75.1   2026-10-02    3% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style c…</a>  1191.3    72.4   2026-08-24    2% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>  1439.2    70.2   2026-09-13    1% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style c…</a>  1191.3    72.5   2026-08-24    2% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>  1439.2    70.3   2026-09-13    1% ▇
 <a name="tau2-bench-leaderboard-sierra"></a>τ²/τ³-bench leaderboa…  <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-flash_sierra_2026-03-02/submission.json">τ³-bench banking_knowledge (v…</a>   27.3%    72.8   2026-03-02    3% ▇
                         <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-flash_sierra_2026-03-02/submission.json">τ³-bench airline (tau2-bench …</a>   82.5%    73.0   2026-03-02    2% ▇
                         <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-flash_sierra_2026-03-02/submission.json">τ³-bench retail (tau2-bench ≥…</a>   76.8%    70.0   2026-03-02    2% ▇
@@ -35,12 +35,12 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>   43.4%    68.4   2026-09-11    3% ▇
 <a name="first-party-google-scores"></a>Google DeepMind Gemin…  <a href="https://deepmind.google/models/model-cards/gemini-3-5-flash/#evaluation">CharXiv (reasoning questions)…</a>   80.3%    72.0   2026-05-19    5% ▇
 <a name="paper-2606.05104v2-kina"></a>Knowledge Index of No…  <a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah…</a>   43.9%    74.7   2026-06-04    3% ▇
-<a name="arcprize-model-baseline-outputs"></a>ARC Prize Foundation …  <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gemini-3-flash-preview-thinking-high/results.json">ARC-AGI-2 public evaluation s…</a>   34.0%    74.5   2026-06-04    3% ▇
+<a name="arcprize-model-baseline-outputs"></a>ARC Prize Foundation …  <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gemini-3-flash-preview-thinking-high/results.json">ARC-AGI-2 public evaluation s…</a>   34.0%    74.4   2026-06-04    3% ▇
 <a name="paper-2608.12262v1-diagram-mmu"></a>Diagram-MMU: A Multi-…  <a href="https://arxiv.org/html/2608.12262v1">Diagram-MMU diagram question …</a>   84.1%    76.3   2026-08-12    1% ▇
-<a name="paper-2610.12402v1-spacecast-bench"></a>SpaceCast-Bench: Eval…  <a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench predictive sp…</a>   56.7%    87.8   2026-10-08    0% ▇
+<a name="paper-2610.12402v1-spacecast-bench"></a>SpaceCast-Bench: Eval…  <a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench predictive sp…</a>   56.7%    88.0   2026-10-08    0% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   86.5%   -56.2   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 72.9
+                        weighted average                        = 72.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

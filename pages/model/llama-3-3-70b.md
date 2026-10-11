@@ -6,7 +6,7 @@
 
 Meta · released 2024-12 · 70B params · llama-3.3
 
-**score 54.5** ±0.6 · #324 of 934 · from 57 benchmark results across 26 sources
+**score 54.5** ±0.6 · #325 of 934 · from 57 benchmark results across 26 sources
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                             score  implies  date   
 <a name="report-2504.00698v2"></a>Cohere                  <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified</a>               29.4%    55.1   2025-04-14    3% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises…</a>    8.4%    51.7   2025-04-14    3% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Fe…</a>   32.9%    60.2   2025-04-14    2% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">AIME 2024</a>                        20.0%    49.2   2025-04-14    2% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">AIME 2024</a>                        20.0%    49.0   2025-04-14    2% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8)</a>      85.6%    53.8   2025-04-14    2% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct)</a>          41.9%    53.9   2025-04-14    1% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+</a>                            81.0%    51.6   2025-04-14    1% ▇
@@ -25,13 +25,13 @@ source                  test                             score  implies  date   
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     41.6%    52.1   2025-01-27    7% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     47.4%    54.2   2025-01-27    5% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          5.1%    50.3   2025-02-25    2% ▇
-<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                             85.9%    56.4   2025-10-08    3% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                   85.8%    56.3   2025-10-08    3% ▇
+<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                             85.9%    56.5   2025-10-08    3% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                   85.8%    56.4   2025-10-08    3% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>   36.5%    47.6   2025-10-08    2% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                   66.1%    51.3   2025-10-08    1% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                            93.6%    55.6   2025-10-08    1% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>        71.8%    55.7   2025-10-08    1% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                            48.2%    62.7   2025-10-08    1% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                            48.2%    62.8   2025-10-08    1% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>        90.8%    63.3   2025-10-08    0% ▇
 <a name="report-2412.08905v1"></a>Microsoft Research      <a href="https://arxiv.org/html/2412.08905v1">GPQA Diamond (simple-evals)</a>      49.1%    54.4   2024-12-12    3% ▇
                         <a href="https://arxiv.org/html/2412.08905v1">HumanEval+</a>                       77.9%    51.2   2024-12-12    3% ▇
@@ -40,19 +40,19 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2412.08905v1">MMLU (simple-evals, zero-shot…</a>   86.3%    57.9   2024-12-12    1% ▇
                         <a href="https://arxiv.org/html/2412.08905v1">HumanEval (simple-evals)</a>         78.9%    50.3   2024-12-12    1% ▇
                         <a href="https://arxiv.org/html/2412.08905v1">MGSM (simple-evals)</a>              89.1%    60.8   2024-12-12    1% ▇
-                        <a href="https://arxiv.org/html/2412.08905v1">IFEval (aggregation unspecifi…</a>   89.3%    64.3   2024-12-12    0% ▇
+                        <a href="https://arxiv.org/html/2412.08905v1">IFEval (aggregation unspecifi…</a>   89.3%    64.4   2024-12-12    0% ▇
                         <a href="https://arxiv.org/html/2412.08905v1">DROP F1, 3-shot (simple-evals)</a>   90.2%    76.4   2024-12-12    0% ▇
 <a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>   31.8%    52.8   2024-12-26    7% ▇
 <a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5364    61.3   2026-05-02    5% ▇
                         <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   53.6%    60.7   2026-05-02    2% ▇
 <a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>   59.4%    52.1   2024-12-06    5% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>   58.2%    53.0   2026-04-06    2% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>   58.2%    53.1   2026-04-06    2% ▇
                         <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   52.1%    59.5   2025-09-29    1% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1317.8    56.1   2026-10-02    3% ▇
-<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   66.6%    59.7   2025-05-31    1% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>   78.0%    58.4   2025-05-31    1% ▇
+<a name="paper-2503.16167v2-codereviewqa"></a>CodeReviewQA: The Cod…  <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change localisa…</a>   66.6%    59.6   2025-05-31    1% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: solution identi…</a>   78.0%    58.3   2025-05-31    1% ▇
                         <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: automated code …</a>   32.9%    50.3   2025-05-31    1% ▇
-                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>   66.0%    49.1   2025-05-31    0% ▇
+                        <a href="https://arxiv.org/html/2503.16167v2">CodeReviewQA: change type rec…</a>   66.0%    48.7   2025-05-31    0% ▇
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   31.9%    50.2   2025-12-16    1% ▇
                         <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                          52.2%    50.4   2025-06-14    1% ▇
 <a name="paper-2606.12250v1-polish-medical-exams"></a>Reassessing High-Perf…  <a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, b…</a>   65.8%    61.9   2026-06-10    2% ▇
@@ -66,10 +66,10 @@ source                  test                             score  implies  date   
 <a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   20.0%    45.4   2025-11-18    1% ▇
                         <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 …</a>   77.4%    48.1   2025-07-02    0% ▇
 <a name="paper-2609.31632v1-eegagentbench"></a>EEGAgentBench: Benchm…  <a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench overall (tool-b…</a>   42.9%    67.7   2026-09-10    1% ▇
-<a name="paper-2605.08614v1-diagnosticiq"></a>DiagnosticIQ: A Bench…  <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maint…</a>   61.7%    63.0   2026-05-09    1% ▇
+<a name="paper-2605.08614v1-diagnosticiq"></a>DiagnosticIQ: A Bench…  <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maint…</a>   61.7%    63.1   2026-05-09    1% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   79.2%    55.3   2025-04-03    1% ▇
-<a name="paper-2605.08498v1"></a>MathConstraint: Autom…  <a href="https://arxiv.org/html/2605.08498v1">MathConstraint full release, …</a>    8.5%    47.9   2026-05-08    0% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   94.4%    62.7   2026-04-17    0% ▇
+<a name="paper-2605.08498v1"></a>MathConstraint: Autom…  <a href="https://arxiv.org/html/2605.08498v1">MathConstraint full release, …</a>    8.5%    47.7   2026-05-08    0% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   94.4%    62.2   2026-04-17    0% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   96.0%    58.4   2025-10-16    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
                         weighted average                        = 54.5

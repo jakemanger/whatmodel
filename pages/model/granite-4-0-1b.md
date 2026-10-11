@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 1.63B params · apache-2.0
 
-**score 40.6** ±0.8 · #690 of 934 · from 32 benchmark results across 3 sources
+**score 40.7** ±0.8 · #689 of 934 · from 32 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -29,25 +29,25 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MultiPL-E (lab)</a>                 32.2%    36.9   2025-10-23    3% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MBPP (lab)</a>                      65.0%    38.7   2025-10-23    3% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MMMLU (lab)</a>                     45.0%    40.3   2025-10-23    2% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MGSM, 5 languages (en, es, fr…</a>  37.8%    44.1   2025-10-23    2% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MGSM, 5 languages (en, es, fr…</a>  37.8%    44.2   2025-10-23    2% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">MBPP+ (lab)</a>                     57.0%    39.1   2025-10-23    2% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">IFEval prompt-level strict (l…</a>  73.9%    44.2   2025-10-23    2% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">IFEval instruction-level stri…</a>  80.8%    39.6   2025-10-23    2% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">CRUXEval-O (lab)</a>                33.1%    35.5   2025-10-23    1% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-4.0-h-1b/blob/d18cca4c121edb87d022116d281ce212c9136f57/README.md">BFCL v3 (lab)</a>                   54.8%    44.4   2025-10-23    1% ▇
-<a name="card-liquidai-lfm2-5-1-2b-thinking"></a>LiquidAI/LFM2.5-1.2B-…  <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GSM8K</a>                           73.4%    42.5   2026-09-25    7% ▇
+<a name="card-liquidai-lfm2-5-1-2b-thinking"></a>LiquidAI/LFM2.5-1.2B-…  <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GSM8K</a>                           73.4%    42.5   2026-09-25    6% ▇
                         <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MMLU-Pro</a>                        33.5%    39.0   2026-09-25    3% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFBench (aggregation unspecif…</a>  21.0%    36.1   2026-09-25    2% ▇
                         <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025</a>                        3.3%    33.4   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFBench (aggregation unspecif…</a>  21.0%    36.0   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500</a>                        44.8%    31.8   2026-09-25    2% ▇
                         <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFEval mean of four measures</a>    79.6%    43.6   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500</a>                        44.8%    31.4   2026-09-25    2% ▇
                         <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GPQA Diamond</a>                    24.2%    32.0   2026-09-25    2% ▇
                         <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">BFCL v3</a>                         52.4%    47.3   2026-09-25    1% ▇
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    24.0%    32.9   2026-08-28    3% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         0.8%    39.0   2026-08-30    0% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         0.8%    38.9   2026-08-30    0% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            0.0%    33.9   2026-08-30    0% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 40.6
+                        weighted average                       = 40.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -60,7 +60,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-16-bit bf16  ~4.41GB   40.6
+16-bit bf16  ~4.41GB   40.7
 </pre>
 
 ```sh

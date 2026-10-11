@@ -6,7 +6,7 @@
 
 MBZUAI IFM (LLM360) · released 2025-09 · 32.76B params · apache-2.0
 
-**score 55.8** ±4.2 · #294 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.7** ±4.2 · #295 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  37.8%    56.3   2025-11-01   92% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  37.8%    56.2   2025-11-01   92% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 8% ▇
-                        weighted average                       = 55.8
+                        weighted average                       = 55.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~65.53GB   55.8
+16-bit bf16  ~65.53GB   55.7
 </pre>
 
 ```sh

@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            74.8%     3.8   2023-05-31   32% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        44.0%     2.6   2023-05-31   25% ▇▇▇
+<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            74.8%     3.7   2023-05-31   32% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        44.0%     2.5   2023-05-31   25% ▇▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  45.2%     8.8   2023-05-31   15% ▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            64.4%     4.1   2023-05-31   14% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      52.3%     2.5   2023-05-31    8% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      52.3%     2.4   2023-05-31    8% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   20.7%    -3.7   2023-05-31    4% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  23.3%    -8.4   2024-02-05    1% ▇
 prior                   pull toward the middle                   50.0                 1% ▇

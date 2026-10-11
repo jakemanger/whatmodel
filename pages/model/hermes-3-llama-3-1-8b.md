@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-07 · 8.03B params · llama3
 
-**score 41.8** ±1.1 · #664 of 934 · from 16 benchmark results across 4 sources
+**score 41.8** ±1.2 · #666 of 934 · from 16 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -18,18 +18,18 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (lab)</a>             58.1%    44.3   2024-08-15   10% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">MMLU (lab)</a>                      64.8%    41.0   2024-08-15    8% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (lab)</a>                77.7%    42.4   2024-08-15    7% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (la…</a>  29.4%    37.9   2024-08-15    7% ▇
+                        <a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (la…</a>  29.4%    38.0   2024-08-15    7% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (lab)</a>                  32.1%    38.7   2024-08-15    6% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (lab)</a>                     85.0%    44.2   2024-08-15    6% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (lab)</a>                 82.8%    43.3   2024-08-15    5% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (lab)</a>                47.8%    47.1   2024-08-15    5% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">IFEval (aggregation unspecifi…</a>  62.3%    35.1   2024-08-15    3% ▇
+                        <a href="https://arxiv.org/pdf/2408.11857v1">IFEval (aggregation unspecifi…</a>  62.3%    34.9   2024-08-15    3% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">MuSR (lab)</a>                      43.5%    43.2   2024-08-15    2% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">PIQA (lab)</a>                      80.3%    37.2   2024-08-15    2% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">TruthfulQA MC2 (lab)</a>            58.7%    42.8   2024-08-15    2% ▇
+                        <a href="https://arxiv.org/pdf/2408.11857v1">TruthfulQA MC2 (lab)</a>            58.7%    42.9   2024-08-15    2% ▇
 <a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  30.1%    40.8   2024-09-30   20% ▇▇
 <a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  50.4%    44.0   2026-09-19    5% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  68.7%    47.2   2024-08-30    3% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  68.7%    47.1   2024-08-30    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 41.8
 </pre>

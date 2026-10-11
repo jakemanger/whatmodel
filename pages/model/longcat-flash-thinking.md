@@ -19,19 +19,19 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">AIME 2024 (lab)</a>                 93.3%    68.0   2025-09-24    9% ▇
                         <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">HMMT 2025 (edition unspecifie…</a>  83.7%    69.7   2025-09-24    7% ▇
                         <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">MMLU-Pro (lab)</a>                  82.6%    64.8   2025-09-24    7% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">LiveCodeBench (version unspec…</a>  79.4%    71.3   2025-09-24    6% ▇
                         <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">MMLU-Redux (lab)</a>                89.3%    62.9   2025-09-24    6% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">τ²-bench Retail (lab)</a>           71.5%    68.0   2025-09-24    6% ▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">τ²-bench Retail (lab)</a>           71.5%    67.9   2025-09-24    6% ▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">LiveCodeBench (version unspec…</a>  79.4%    71.5   2025-09-24    6% ▇
                         <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">OJBench (lab)</a>                   40.7%    70.5   2025-09-24    6% ▇
                         <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">VitaBench (lab)</a>                 29.5%    69.3   2025-09-24    5% ▇
                         <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">τ²-bench Telecom (lab)</a>          83.1%    76.1   2025-09-24    5% ▇
                         <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">ZebraLogic (lab)</a>                95.5%    71.1   2025-09-24    4% ▇
                         <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">IFEval prompt-level strict (l…</a>  86.9%    62.9   2025-09-24    3% ▇
                         <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">BeyondAIME (lab)</a>                69.5%    71.1   2025-09-24    3% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">τ²-bench Airline (lab)</a>          67.5%    73.5   2025-09-24    3% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">MATH-500 (lab)</a>                  99.2%    75.2   2025-09-24    3% ▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">τ²-bench Airline (lab)</a>          67.5%    73.4   2025-09-24    3% ▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">MATH-500 (lab)</a>                  99.2%    75.5   2025-09-24    2% ▇
                         <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">BFCL v3 (lab)</a>                   74.4%    68.7   2025-09-24    1% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">miniF2F (pass@1) (lab)</a>          67.6%    97.7   2025-09-24    1% ▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Thinking/blob/7c9aad1e2daceaeab3a5a03deedb8e11e7a7819f/README.md">miniF2F (pass@1) (lab)</a>          67.6%    97.6   2025-09-24    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 68.6
 </pre>

@@ -6,7 +6,7 @@
 
 Cohere · released 2026-05 · 218B params (25B active) · apache-2.0
 
-**score 64.3** ±1.0 · #157 of 934 · from 23 benchmark results across 3 sources
+**score 64.3** ±1.0 · #156 of 934 · from 23 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2607.20062v2-solar-open-2"></a>Solar Open 2 Technica…  <a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond</a>                    75.6%    64.1   2026-07-24   20% ▇▇
+<a name="paper-2607.20062v2-solar-open-2"></a>Solar Open 2 Technica…  <a href="https://arxiv.org/html/2607.20062v2#S5.T3">GPQA Diamond</a>                    75.6%    64.1   2026-07-24   19% ▇▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">AIME 2026</a>                       96.0%    69.9   2026-07-24    9% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro</a>                        79.0%    62.8   2026-07-24    6% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam</a>            11.4%    59.9   2026-07-24    6% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecif…</a>  73.9%    68.6   2026-07-24    5% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unsp…</a>  86.1%    68.6   2026-07-24    4% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026</a>              73.5%    64.9   2026-07-24    4% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>             25.0%    67.0   2026-07-24    4% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>             25.0%    66.9   2026-07-24    4% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>             1.6%    54.6   2026-07-24    4% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge</a>                  45.8%    63.5   2026-07-24    3% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>          27.2%    54.6   2026-07-24    3% ▇
@@ -32,9 +32,9 @@ source                  test                            score  implies  date    
                         <a href="https://cohere.com/blog/command-a-plus">Terminal-Bench Hard (lab)</a>       25.0%    70.6   2026-05-20    4% ▇
                         <a href="https://cohere.com/blog/command-a-plus">CharXiv (reasoning questions)…</a>  52.7%    57.5   2026-05-20    3% ▇
                         <a href="https://cohere.com/blog/command-a-plus">CharXiv descriptive questions…</a>  88.0%    62.1   2026-05-20    3% ▇
-                        <a href="https://cohere.com/blog/command-a-plus">SciCode (level unspecified) (…</a>  38.0%    64.0   2026-05-20    2% ▇
-                        <a href="https://cohere.com/blog/command-a-plus">IFBench prompt-level (loose) …</a>  74.0%    71.5   2026-05-20    1% ▇
-<a name="paper-2609.13916v1-north-small-translate"></a>Cohere                  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>  68.7%    49.1   2026-09-12    2% ▇
+                        <a href="https://cohere.com/blog/command-a-plus">SciCode (level unspecified) (…</a>  38.0%    63.9   2026-05-20    2% ▇
+                        <a href="https://cohere.com/blog/command-a-plus">IFBench prompt-level (loose) …</a>  74.0%    71.4   2026-05-20    1% ▇
+<a name="paper-2609.13916v1-north-small-translate"></a>Cohere                  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>  68.7%    49.0   2026-09-12    2% ▇
                         <a href="https://arxiv.org/html/2609.13916v1">WMT24++ (lab)</a>                   81.0%    75.4   2026-09-12    1% ▇
                         <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, …</a>  76.5%    68.1   2026-09-12    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇

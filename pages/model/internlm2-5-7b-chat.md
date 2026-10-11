@@ -18,7 +18,7 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GSM8K (lab)</a>                     86.0%    47.6   2024-07-03   20% ▇▇
                         <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU (lab)</a>                      72.8%    46.4   2024-07-03   17% ▇▇
                         <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GPQA (subset unspecified) (la…</a>  38.4%    48.9   2024-07-03   15% ▇▇
-                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MATH (subset unspecified) (la…</a>  60.1%    50.5   2024-07-03   12% ▇
+                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MATH (subset unspecified) (la…</a>  60.1%    50.6   2024-07-03   12% ▇
                         <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">CMMLU (lab)</a>                     78.0%    53.2   2024-07-03    5% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  69.2%    47.5   2024-07-05    6% ▇
 prior                   pull toward the middle                   50.0                 1% ▇

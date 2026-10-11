@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-04 · 32.76B params · apache-2.0
 
-**score 54.5** ±1.4 · #325 of 934 · from 6 benchmark results across 2 sources
+**score 54.4** ±1.4 · #329 of 934 · from 6 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card3-open-thoughts-openthinker2-32b"></a>open-thoughts/OpenThi…  <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (lab)</a>              64.1%    55.3   2025-06-05   25% ▇▇▇
-                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2025 (lab)</a>                 58.7%    57.7   2025-06-05   19% ▇▇
-                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2024 (lab)</a>                 76.7%    58.3   2025-06-05   17% ▇▇
-                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">MATH-500 (lab)</a>                  90.8%    55.9   2025-06-05   12% ▇
-<a name="arena-hard-auto-readme-v2"></a>Arena-Hard-Auto v2.0-…  <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts …</a>   3.2%    47.7   2025-05-01   22% ▇▇▇
-                        <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writ…</a>  23.6%    52.6   2025-05-01    4% ▇
+<a name="card3-open-thoughts-openthinker2-32b"></a>open-thoughts/OpenThi…  <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (lab)</a>              64.1%    55.2   2025-06-05   26% ▇▇▇
+                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2025 (lab)</a>                 58.7%    57.6   2025-06-05   19% ▇▇
+                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2024 (lab)</a>                 76.7%    58.2   2025-06-05   17% ▇▇
+                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">MATH-500 (lab)</a>                  90.8%    55.8   2025-06-05   12% ▇
+<a name="arena-hard-auto-readme-v2"></a>Arena-Hard-Auto v2.0-…  <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts …</a>   3.2%    47.6   2025-05-01   22% ▇▇▇
+                        <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writ…</a>  23.6%    52.5   2025-05-01    4% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 54.5
+                        weighted average                       = 54.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,7 +34,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                       size  score
-16-bit bf16 · nvidia only  ~65.53GB   54.5
+16-bit bf16 · nvidia only  ~65.53GB   54.4
 </pre>
 
 ```sh

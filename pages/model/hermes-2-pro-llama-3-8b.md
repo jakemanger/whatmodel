@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-04 · 8.03B params · llama3
 
-**score 46.3** ±3.3 · #543 of 934 · from 3 benchmark results across 3 sources
+**score 46.4** ±3.3 · #538 of 934 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -15,10 +15,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  54.6%    45.8   2024-06-19   50% ▇▇▇▇▇▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>                         46.8%    45.7   2025-04-13   24% ▇▇▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-04-13/score/data_overall.csv">BFCL v3</a>                         46.8%    45.7   2025-04-13   23% ▇▇▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  69.4%    47.6   2024-05-06   21% ▇▇▇
 prior                   pull toward the middle                   50.0                 5% ▇
-                        weighted average                       = 46.3
+                        weighted average                       = 46.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp16  ~16.06GB   46.3
+4-bit fp16  ~16.06GB   46.4
 </pre>
 
 ```sh

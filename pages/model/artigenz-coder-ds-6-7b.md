@@ -6,7 +6,7 @@
 
 Artigenz · released 2024-04 · 6.74B params · other (deepseek)
 
-**score 49.1** ±0.9 · #461 of 934 · from 3 benchmark results across 1 source
+**score 49.1** ±0.9 · #460 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2023-08 · 7.72B params · other (tongyi-qianwen-license-agreement)
 
-**score 31.5** ±0.9 · #832 of 934 · from 11 benchmark results across 2 sources
+**score 31.5** ±0.9 · #833 of 934 · from 11 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -18,8 +18,8 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">WinoGrande</a>                      68.6%    30.7   2024-04-08   11% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">BoolQ</a>                           71.7%    29.0   2024-04-08    9% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">ARC Easy</a>                        64.5%    25.4   2024-04-08    6% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">OpenBookQA</a>                      35.6%    38.4   2024-04-08    6% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">HellaSwag</a>                       85.0%    39.2   2024-04-08    4% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">OpenBookQA</a>                      35.6%    38.5   2024-04-08    6% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">HellaSwag</a>                       85.0%    39.3   2024-04-08    4% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">SciQ</a>                            90.7%    22.5   2024-04-08    4% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">PIQA</a>                            78.7%    31.2   2024-04-08    4% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/Qwen-Qwen-7B-Chat.json">Social IQA</a>                      47.0%    33.7   2024-04-08    3% ▇

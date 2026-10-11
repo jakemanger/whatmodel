@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-01 · 1.64B params · other
 
-**score 39.8** ±6.6 · #704 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 39.8** ±6.5 · #705 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  55.8%    37.3   2024-02-27   81% ▇▇▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  55.8%    37.4   2024-02-27   81% ▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                19% ▇▇
                         weighted average                       = 39.8
 </pre>

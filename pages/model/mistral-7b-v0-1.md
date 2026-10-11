@@ -14,51 +14,51 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       28.7%    32.1   2024-12-26   24% ▇▇▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       28.7%    32.2   2024-12-26   24% ▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      23.8%    31.8   2024-12-26   16% ▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           42.1%    33.8   2024-12-26    3% ▇
 <a name="paper-mixtral-2401.04088v1"></a>Mixtral of Experts      <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval (lab)</a>                 26.2%    37.0   2024-01-08    3% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge (lab)</a>             54.9%    37.9   2024-01-08    3% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU (lab)</a>                      62.5%    38.7   2024-01-08    2% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande (lab)</a>                74.2%    35.8   2024-01-08    2% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge (lab)</a>             54.9%    38.0   2024-01-08    3% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU (lab)</a>                      62.5%    38.8   2024-01-08    2% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande (lab)</a>                74.2%    35.9   2024-01-08    2% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA (lab)</a>                  62.5%    34.7   2024-01-08    2% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K (lab)</a>                     50.0%    36.9   2024-01-08    2% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag (lab)</a>                 81.0%    36.3   2024-01-08    2% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP (lab)</a>                      50.2%    39.8   2024-01-08    1% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed boo…</a>  23.2%    36.8   2024-01-08    1% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag (lab)</a>                 81.0%    36.4   2024-01-08    2% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP (lab)</a>                      50.2%    39.9   2024-01-08    1% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed boo…</a>  23.2%    36.9   2024-01-08    1% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH (lab)</a>                      12.7%    36.7   2024-01-08    1% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy (lab)</a>                  80.5%    39.3   2024-01-08    1% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA (lab)</a>                      82.2%    38.6   2024-01-08    1% ▇
 <a name="paper-2404.06395v3"></a>MiniCPM: Unveiling th…  <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                  41.1%    36.8   2024-06-03    3% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>                       27.4%    34.8   2024-06-03    2% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>                       27.4%    34.9   2024-06-03    2% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                   70.7%    40.9   2024-06-03    2% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>                           33.1%    34.7   2024-06-03    2% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                            62.7%    41.2   2024-06-03    2% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                            62.7%    41.3   2024-06-03    2% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">MBPP</a>                            45.2%    37.4   2024-06-03    1% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                          46.1%    40.8   2024-06-03    1% ▇
 <a name="paper-2310.06825v1"></a>Mistral 7B              <a href="https://arxiv.org/html/2310.06825v1">HumanEval (lab)</a>                 30.5%    36.3   2023-10-10    2% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">ARC Challenge (lab)</a>             55.5%    39.5   2023-10-10    2% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">GSM8K (lab)</a>                     52.2%    41.2   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">MATH (lab)</a>                      13.1%    40.6   2023-10-10    1% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">ARC Challenge (lab)</a>             55.5%    39.6   2023-10-10    2% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">GSM8K (lab)</a>                     52.2%    41.3   2023-10-10    1% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">MATH (lab)</a>                      13.1%    40.7   2023-10-10    1% ▇
                         <a href="https://arxiv.org/html/2310.06825v1">MMLU (lab)</a>                      60.1%    41.5   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">WinoGrande (lab)</a>                75.3%    39.2   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">MBPP (lab)</a>                      47.5%    37.1   2023-10-10    1% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">WinoGrande (lab)</a>                75.3%    39.3   2023-10-10    1% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">MBPP (lab)</a>                      47.5%    37.2   2023-10-10    1% ▇
                         <a href="https://arxiv.org/html/2310.06825v1">HellaSwag (lab)</a>                 81.3%    40.7   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">TriviaQA (lab)</a>                  69.9%    40.9   2023-10-10    0% ▇
                         <a href="https://arxiv.org/html/2310.06825v1">Natural Questions (closed boo…</a>  28.8%    39.9   2023-10-10    0% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">ARC Easy (lab)</a>                  80.0%    40.7   2023-10-10    0% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">PIQA (lab)</a>                      83.0%    42.1   2023-10-10    0% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">TriviaQA (lab)</a>                  69.9%    41.0   2023-10-10    0% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">ARC Easy (lab)</a>                  80.0%    40.8   2023-10-10    0% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">PIQA (lab)</a>                      83.0%    42.2   2023-10-10    0% ▇
 <a name="paper-gemma-2403.08295v4"></a>Gemma report            <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BIG-Bench Hard</a>                  56.1%    39.2   2024-04-19    2% ▇
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">GSM8K</a>                           35.4%    32.5   2024-04-19    2% ▇
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MBPP</a>                            40.2%    33.5   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BoolQ</a>                           83.2%    39.8   2024-04-19    1% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BoolQ</a>                           83.2%    39.9   2024-04-19    1% ▇
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">AGIEval English (Gemma report)</a>  41.2%    37.2   2024-04-19    1% ▇
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">CommonsenseQA</a>                   66.3%    31.4   2024-04-19    1% ▇
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">Social IQA</a>                      47.0%    27.0   2024-04-19    1% ▇
 <a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  28.4%    36.3   2024-04-24    2% ▇
                         <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  40.8%    34.9   2024-04-24    1% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  61.1%    42.0   2024-02-05    0% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  76.3%    44.7   2026-04-17    0% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  76.3%    44.9   2026-04-17    0% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 35.2
 </pre>

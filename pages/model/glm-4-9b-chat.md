@@ -6,7 +6,7 @@
 
 Zhipu AI (Z.ai) · released 2024-06 · 9.4B params · glm-4
 
-**score 47.4** ±2.0 · #503 of 934 · from 7 benchmark results across 7 sources
+**score 47.4** ±1.9 · #504 of 934 · from 7 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                                       score  implies  date        weight
 <a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  39.0990 WB-Score    46.6   2024-08-01   33% ▇▇▇▇
 <a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>             59.0%    45.4   2026-08-11   23% ▇▇▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>             61.8%    49.2   2025-03-01   17% ▇▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>             61.8%    49.3   2025-03-01   17% ▇▇
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                                    39.1%    38.8   2025-06-14    8% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             75.0%    51.8   2024-06-05    7% ▇
-<a name="paper-2406.12793v2-chatglm"></a>ChatGLM: A Family of …  <a href="https://arxiv.org/html/2406.12793v2#S3.T7">BFCL (version not stated) (la…</a>             81.0%    51.5   2024-07-30    7% ▇
+<a name="paper-2406.12793v2-chatglm"></a>ChatGLM: A Family of …  <a href="https://arxiv.org/html/2406.12793v2#S3.T7">BFCL (version not stated) (la…</a>             81.0%    51.6   2024-07-30    7% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>             98.7%    64.9   2025-10-16    3% ▇
 prior                   pull toward the middle                              50.0                 2% ▇
                         weighted average                                  = 47.4

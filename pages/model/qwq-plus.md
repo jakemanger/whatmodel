@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-04 · proprietary
 
-**score 61.5** ±2.3 · #196 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 61.5** ±2.3 · #195 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    65.4%    61.5   2025-04-11   89% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="paper-2505.22113v1-thinkbench"></a>THINK-Bench: Evaluati…  <a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accu…</a>  89.6%    64.2   2025-05-28    8% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    65.4%    61.5   2025-04-11   90% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2505.22113v1-thinkbench"></a>THINK-Bench: Evaluati…  <a href="https://arxiv.org/html/2505.22113v1">THINK-Bench final-answer accu…</a>  89.6%    64.3   2025-05-28    8% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
                         weighted average                       = 61.5
 </pre>

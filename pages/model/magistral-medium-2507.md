@@ -6,7 +6,7 @@
 
 Mistral · released 2025-07 · proprietary
 
-**score 55.4** ±1.5 · comparison only: no current run option verified · from 4 benchmark results across 1 source · † every result so far was reported by its maker
+**score 55.3** ±1.5 · comparison only: no current run option verified · from 4 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card2-mistralai-magistral-small-2509"></a>mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>                 61.0%    54.0   2025-09-17   33% ▇▇▇▇
+<a name="card2-mistralai-magistral-small-2509"></a>mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>                 61.0%    53.9   2025-09-17   33% ▇▇▇▇
                         <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (lab)</a>              71.5%    57.9   2025-09-17   30% ▇▇▇▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>                 72.0%    54.5   2025-09-17   26% ▇▇▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unsp…</a>  59.4%    55.5   2025-09-17   10% ▇
+                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>                 72.0%    54.4   2025-09-17   26% ▇▇▇
+                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unsp…</a>  59.4%    55.4   2025-09-17   10% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 55.4
+                        weighted average                       = 55.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

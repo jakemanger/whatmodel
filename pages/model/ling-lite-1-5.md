@@ -6,7 +6,7 @@
 
 inclusionAI (Ant Group) · released 2025-05 · 16.8B params (2.75B active) · mit
 
-**score 52.0** ±6.2 · #382 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.0** ±6.2 · #383 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

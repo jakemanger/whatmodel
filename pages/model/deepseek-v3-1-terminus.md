@@ -14,15 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="card-deepseek-ai-deepseek-v3-1-terminus"></a>DeepSeek-V3.1-Terminu…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Aider polyglot (225 exercises…</a>   76.1%    66.2   2025-09-22   22% ▇▇▇
+<a name="card-deepseek-ai-deepseek-v3-1-terminus"></a>DeepSeek-V3.1-Terminu…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Aider polyglot (225 exercises…</a>   76.1%    66.2   2025-09-22   23% ▇▇▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">GPQA Diamond (lab)</a>               80.7%    65.9   2025-09-22   13% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Verified (lab)</a>         68.4%    67.4   2025-09-22    9% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp-ZH (lab)</a>              45.0%    63.5   2025-09-22    7% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Humanity's Last Exam (lab)</a>       21.7%    68.9   2025-09-22    6% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Verified (lab)</a>         68.4%    67.3   2025-09-22    9% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp-ZH (lab)</a>              45.0%    63.4   2025-09-22    7% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Humanity's Last Exam (lab)</a>       21.7%    68.9   2025-09-22    7% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">MMLU-Pro (lab)</a>                   85.0%    66.4   2025-09-22    6% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Multilingual (lab)</a>     57.8%    66.3   2025-09-22    6% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">LiveCodeBench (version unspec…</a>   74.9%    67.9   2025-09-22    6% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp (lab)</a>                 38.5%    65.4   2025-09-22    5% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">LiveCodeBench (version unspec…</a>   74.9%    68.1   2025-09-22    5% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp (lab)</a>                 38.5%    65.3   2025-09-22    5% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Terminal-Bench (pre-2.0 relea…</a>   36.7%    68.4   2025-09-22    4% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1417.2    68.0   2026-10-02   14% ▇▇
 prior                   pull toward the middle                    50.0                 1% ▇

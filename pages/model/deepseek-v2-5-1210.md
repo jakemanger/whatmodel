@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-12 · 236B params (21B active) · deepseek
 
-**score 56.5** ±1.8 · #276 of 934 · from 5 benchmark results across 4 sources
+**score 56.5** ±1.8 · #277 of 934 · from 5 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -18,7 +18,7 @@ source                  test                             score  implies  date   
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1323.4    56.7   2026-10-02   27% ▇▇▇
 <a name="opencompass-compassacademic-space-predictions"></a>OpenCompass CompassAc…  <a href="https://huggingface.co/spaces/opencompass/CompassAcademic-Leaderboard-Full-Version/blob/73af091f28193d1e3e232851b940cadbb856556e/data/hf-academic-predictions.json">IFEval prompt-level strict</a>       79.3%    55.0   2025-03-31   13% ▇▇
                         <a href="https://huggingface.co/spaces/opencompass/CompassAcademic-Leaderboard-Full-Version/blob/73af091f28193d1e3e232851b940cadbb856556e/data/hf-academic-predictions.json">DROP F1, 3-shot (simple-evals)</a>   89.1%    72.7   2025-03-31    1% ▇
-<a name="first-party-deepseek-scores"></a>DeepSeek vendor-repor…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2.5-1210/blob/6f134cbe88cb9284a8ce696e8ac8eefd0bc24ede/README.md#1-introduction">MATH-500 (lab)</a>                   82.8%    52.5   2024-12-10   12% ▇
+<a name="first-party-deepseek-scores"></a>DeepSeek vendor-repor…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2.5-1210/blob/6f134cbe88cb9284a8ce696e8ac8eefd0bc24ede/README.md#1-introduction">MATH-500 (lab)</a>                   82.8%    52.3   2024-12-10   11% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 56.5
 </pre>

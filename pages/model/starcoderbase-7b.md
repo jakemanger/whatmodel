@@ -22,13 +22,13 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  14.8%    32.0   2024-05-07    3% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      32.1%    31.7   2024-05-07    2% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  12.5%    33.0   2024-05-07    2% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">GSM8K</a>                            3.8%    19.5   2024-05-07    1% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">GSM8K</a>                            3.8%    19.4   2024-05-07    1% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">MATH</a>                             2.4%    21.3   2024-05-07    1% ▇
 <a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 30.5%    33.3   2024-02-29   10% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      47.4%    29.9   2024-02-29    5% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   19.1%    30.4   2024-02-29    3% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                     14.9%    25.8   2024-02-29    2% ▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      32.2%    34.0   2024-01-03    1% ▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      32.2%    34.1   2024-01-03    1% ▇
                         <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      29.7%    33.5   2024-01-03    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 30.6

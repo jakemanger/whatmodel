@@ -6,7 +6,7 @@
 
 Prime Intellect · released 2025-11 · 106B params (12B active) · mit
 
-**score 64.9** ±1.1 · #150 of 934 · from 9 benchmark results across 3 sources
+**score 64.8** ±1.1 · #152 of 934 · from 9 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -18,13 +18,13 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024 (lab)</a>                  90.8%    68.7   2025-11-27   13% ▇▇
                         <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Humanity's Last Exam (lab)</a>       14.6%    64.2   2025-11-27   11% ▇
                         <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2025 (lab)</a>                  88.0%    68.1   2025-11-27   11% ▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MMLU-Pro (lab)</a>                   81.9%    67.5   2025-11-27    6% ▇
+                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MMLU-Pro (lab)</a>                   81.9%    67.5   2025-11-27    7% ▇
                         <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">LiveCodeBench v6 (Aug 2024–Ma…</a>   69.3%    65.3   2025-11-27    5% ▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MATH-500 (lab)</a>                   98.1%    71.1   2025-11-27    1% ▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5660    63.9   2026-05-02   18% ▇▇
+                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MATH-500 (lab)</a>                   98.1%    71.3   2025-11-27    1% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5660    63.9   2026-05-02   19% ▇▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1355.8    60.6   2026-10-02   11% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 64.9
+                        weighted average                        = 64.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,8 +35,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~71.36GB   64.9
-2-bit q2_k    ~44.71GB   64.9
+4-bit q4_k_m  ~71.36GB   64.8
+2-bit q2_k    ~44.71GB   64.8
 </pre>
 
 ```sh

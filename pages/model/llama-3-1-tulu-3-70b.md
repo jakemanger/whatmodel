@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-11 · 70.6B params · llama3.1
 
-**score 53.7** ±1.4 · #344 of 934 · from 10 benchmark results across 2 sources
+**score 53.7** ±1.4 · #343 of 934 · from 10 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -17,8 +17,8 @@ source                  test                             score  implies  date   
 <a name="paper-2411.15124v5"></a>Tülu 3: Pushing Front…  <a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard (lab)</a>             85.0%    54.9   2025-04-14   16% ▇▇
                         <a href="https://arxiv.org/html/2411.15124v5">DROP (lab)</a>                       74.3%    54.2   2025-04-14   14% ▇▇
                         <a href="https://arxiv.org/html/2411.15124v5">MMLU (lab)</a>                       83.1%    52.9   2025-04-14   11% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">GSM8K (lab)</a>                      93.5%    57.0   2025-04-14   10% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified) (la…</a>   63.0%    51.7   2025-04-14   10% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">GSM8K (lab)</a>                      93.5%    57.1   2025-04-14   10% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified) (la…</a>   63.0%    51.8   2025-04-14   10% ▇
                         <a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlle…</a>   49.8%    50.4   2025-04-14    9% ▇
                         <a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose (la…</a>   83.2%    54.4   2025-04-14    5% ▇
                         <a href="https://arxiv.org/html/2411.15124v5">PopQA (lab)</a>                      46.5%    59.9   2025-04-14    4% ▇

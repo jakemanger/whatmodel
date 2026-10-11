@@ -14,21 +14,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">ARC Challenge</a>                   36.5%    25.3   2024-04-08   16% ▇▇
+<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">ARC Challenge</a>                   36.5%    25.4   2024-04-08   16% ▇▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">WinoGrande</a>                      64.2%    26.3   2024-04-08    5% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">BoolQ</a>                           65.4%    22.4   2024-04-08    4% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">ARC Easy</a>                        62.2%    23.8   2024-04-08    3% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">SciQ</a>                            91.5%    25.9   2024-04-08    3% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">HellaSwag</a>                       66.2%    24.3   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">PIQA</a>                            75.6%    25.5   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">PIQA</a>                            75.6%    25.6   2024-04-08    2% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">OpenBookQA</a>                      29.0%    27.0   2024-04-08    2% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">Social IQA</a>                      41.1%    22.1   2024-04-08    1% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">LAMBADA (OpenAI version), las…</a>  68.2%    26.6   2024-04-08    1% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">LAMBADA (OpenAI version), las…</a>  68.2%    26.7   2024-04-08    1% ▇
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       12.2%    23.5   2024-12-26   19% ▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      11.0%    23.7   2024-12-26   12% ▇
 <a name="paper-2204.06745v1"></a>GPT-NeoX-20B: An Open…  <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge (lab)</a>             34.0%    26.4   2022-04-14    4% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">WinoGrande (lab)</a>                64.0%    26.5   2022-04-14    3% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">TriviaQA (lab)</a>                  17.0%    20.7   2022-04-14    2% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">TriviaQA (lab)</a>                  17.0%    20.7   2022-04-14    3% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">HellaSwag (lab)</a>                 51.8%    25.7   2022-04-14    2% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA (lab)</a>                28.8%    26.5   2022-04-14    2% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">ARC Easy (lab)</a>                  67.0%    24.5   2022-04-14    2% ▇
@@ -37,7 +37,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2204.06745v1">PIQA (lab)</a>                      75.2%    24.3   2022-04-14    1% ▇
 <a name="eleutherai-gpt-j-6b-card"></a>EleutherAI GPT-J-6B m…  <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag (lab)</a>                 66.1%    25.8   2021-08-06    3% ▇
                         <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande (lab)</a>                65.3%    27.0   2021-08-06    3% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  69.7%    25.5   2021-08-06    1% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  69.7%    25.4   2021-08-06    1% ▇
                         <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA (lab)</a>                      76.5%    24.6   2021-08-06    1% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  35.7%    14.1   2024-02-05    0% ▇
 prior                   pull toward the middle                   50.0                 0% ▇

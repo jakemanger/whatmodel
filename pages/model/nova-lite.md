@@ -6,7 +6,7 @@
 
 Amazon · released 2024-12 · closed weights
 
-**score 48.9** ±2.2 · #464 of 934 · from 7 benchmark results across 4 sources
+**score 48.9** ±2.2 · #467 of 934 · from 7 benchmark results across 4 sources
 
 ## How the score was worked out
 

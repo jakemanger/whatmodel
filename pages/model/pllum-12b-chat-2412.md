@@ -6,7 +6,7 @@
 
 PLLuM consortium (CYFRAGOVPL) · released 2025-02 · 12.25B params · apache-2.0
 
-**score 43.0** ±3.0 · #640 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 43.1** ±3.0 · #639 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  62.7%    47.8   2026-08-11   57% ▇▇▇▇▇▇▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  62.7%    47.9   2026-08-11   57% ▇▇▇▇▇▇▇
 <a name="paper-2606.12250v1-polish-medical-exams"></a>Reassessing High-Perf…  <a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, b…</a>  29.5%    35.3   2026-06-10   39% ▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 4% ▇
-                        weighted average                       = 43.0
+                        weighted average                       = 43.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-16-bit bf16  ~24.5GB   43.0
+16-bit bf16  ~24.5GB   43.1
 </pre>
 
 ```sh

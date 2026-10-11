@@ -14,19 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-mixtral-2401.04088v1"></a>Mixtral of Experts      <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval</a>                       25.0%    36.1   2024-01-08    8% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge</a>                   54.4%    37.4   2024-01-08    7% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU</a>                            56.8%    34.9   2024-01-08    5% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande</a>                      76.2%    37.8   2024-01-08    5% ▇
+<a name="paper-mixtral-2401.04088v1"></a>Mixtral of Experts      <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval</a>                       25.0%    36.2   2024-01-08    8% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge</a>                   54.4%    37.5   2024-01-08    7% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU</a>                            56.8%    35.0   2024-01-08    5% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande</a>                      76.2%    37.9   2024-01-08    5% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA</a>                        68.5%    38.2   2024-01-08    4% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K</a>                           44.1%    34.3   2024-01-08    4% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag</a>                       83.7%    39.1   2024-01-08    3% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K</a>                           44.1%    34.4   2024-01-08    4% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag</a>                       83.7%    39.2   2024-01-08    3% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP</a>                            40.9%    34.3   2024-01-08    3% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed boo…</a>  24.1%    37.5   2024-01-08    3% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed boo…</a>  24.1%    37.6   2024-01-08    3% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH</a>                             8.4%    31.8   2024-01-08    2% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy</a>                        79.6%    38.1   2024-01-08    2% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA</a>                            82.2%    38.5   2024-01-08    1% ▇
-<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>                 21.7%    34.2   2023-02-27    7% ▇
+<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>                 21.7%    34.3   2023-02-27    7% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>                     35.6%    34.6   2023-02-27    5% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>                       7.1%    33.2   2023-02-27    5% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>             57.8%    35.8   2023-02-27    5% ▇
@@ -36,11 +36,11 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>                     83.1%    36.5   2023-02-27    3% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                58.6%    37.0   2023-02-27    3% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>                 82.8%    37.5   2023-02-27    2% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                  80.0%    37.0   2023-02-27    2% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                  80.0%    37.1   2023-02-27    2% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                50.4%    31.6   2023-02-27    2% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>                      82.3%    37.6   2023-02-27    1% ▇
 <a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  27.3%    35.5   2024-04-24    5% ▇
-                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  48.9%    39.8   2024-04-24    3% ▇
+                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  48.9%    39.9   2024-04-24    3% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 36.1
 </pre>

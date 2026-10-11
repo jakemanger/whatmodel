@@ -6,7 +6,7 @@
 
 SpeakLeash · released 2025-04 · 4.76B params · apache-2.0
 
-**score 47.7** ±2.3 · #497 of 934 · from 5 benchmark results across 4 sources
+**score 47.7** ±2.3 · #499 of 934 · from 5 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  67.5%    51.1   2026-08-11   31% ▇▇▇▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  67.5%    51.1   2026-08-11   32% ▇▇▇▇
 <a name="paper-2606.12250v1-polish-medical-exams"></a>Reassessing High-Perf…  <a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, b…</a>  37.8%    42.9   2026-06-10   27% ▇▇▇
 <a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  56.2%    46.5   2025-05-04   24% ▇▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  72.2%    51.9   2026-04-17   10% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  80.5%    48.3   2026-04-17    5% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  72.2%    52.4   2026-04-17    9% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  80.5%    48.4   2026-04-17    6% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
                         weighted average                       = 47.7
 </pre>

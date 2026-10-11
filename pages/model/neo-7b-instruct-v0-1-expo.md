@@ -6,7 +6,7 @@
 
 Chujie Zheng (ExPO) · released 2024-05 · 7.79B params · apache-2.0
 
-**score 37.5** ±3.3 · #750 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.6** ±3.3 · #748 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                                       score  implies  date        weight
 <a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  23.1142 WB-Score    36.9   2024-08-01   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                              50.0                 5% ▇
-                        weighted average                                  = 37.5
+                        weighted average                                  = 37.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                              50.0
 
 <pre>
 download         size  score
-16-bit bf16  ~15.59GB   37.5
+16-bit bf16  ~15.59GB   37.6
 </pre>
 
 ```sh

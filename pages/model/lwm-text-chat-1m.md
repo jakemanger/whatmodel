@@ -6,7 +6,7 @@
 
 Large World Model (UC Berkeley) · released 2024-02
 
-**score 42.0** ±5.3 · #660 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.0** ±5.3 · #661 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>               68.1%    38.4   2025-10-09   65% ▇▇▇▇▇▇▇▇
+<a name="nvidia-ruler-readme-results"></a>NVIDIA RULER reposito…  <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 64k</a>               68.1%    38.5   2025-10-09   65% ▇▇▇▇▇▇▇▇
                         <a href="https://github.com/NVIDIA/RULER/blob/c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a/README.md">RULER 128k</a>              65.0%    48.1   2025-10-09   22% ▇▇▇
 prior                   pull toward the middle           50.0                13% ▇▇
                         weighted average               = 42.0

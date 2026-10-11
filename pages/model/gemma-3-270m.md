@@ -6,7 +6,7 @@
 
 Google · released 2025-08 · 0.27B params · gemma
 
-**score 16.3** ±3.8 · #912 of 934 · from 3 benchmark results across 2 sources
+**score 14.7** ±3.6 · #913 of 934 · from 5 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="gap-google-gemma3"></a>Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIG-Bench Hard (lab)</a>            26.7%     9.9   2026-09-25   43% ▇▇▇▇▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecifi…</a>  51.2%    20.6   2026-09-25   41% ▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  28.2%     2.6   2025-08-30    9% ▇
+<a name="gap-google-gemma3"></a>Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecifi…</a>  51.2%    20.2   2026-09-25   39% ▇▇▇▇▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIG-Bench Hard (lab)</a>            26.7%     8.9   2026-09-25   36% ▇▇▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  26.7%     3.9   2026-04-17    9% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  25.2%     6.0   2026-04-17    3% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  28.2%     1.3   2025-08-30    8% ▇
 prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 16.3
+                        weighted average                       = 14.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Google DeepMind Gemma 3 270M IT model card ([CC-BY-4.0](../../licenses/cards-final-NOTICE.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Google DeepMind Gemma 3 270M IT model card ([CC-BY-4.0](../../licenses/cards-final-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 <details><summary>Not counted (4)</summary>
 
@@ -43,8 +45,8 @@ Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_c
 
 <pre>
 download          size  score
-8-bit q8_0     ~0.82GB   16.3
-4-bit QAT qat  ~0.66GB   16.3
+8-bit q8_0     ~0.82GB   14.7
+4-bit QAT qat  ~0.66GB   14.7
 </pre>
 
 ```sh

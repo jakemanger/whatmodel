@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-09 · 73.3B params · apache-2.0
 
-**score 49.9** ±1.7 · #436 of 934 · from 17 benchmark results across 4 sources
+**score 49.9** ±1.7 · #435 of 934 · from 17 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -16,17 +16,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                                                      score  implies  date        weight
 <a name="paper-2601.10611v4-molmo2"></a>Molmo2: Open Weights …  <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MMMU (val) (lab)</a>                                          54.1%    50.2   2026-04-02    9% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MathVista (testmini) (lab)</a>                                58.6%    49.0   2026-04-02    9% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">InfographicVQA (lab)</a>                                      81.9%    53.5   2026-04-02    8% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">InfographicVQA (lab)</a>                                      81.9%    53.4   2026-04-02    8% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">CountBench (lab)</a>                                          91.2%    49.7   2026-04-02    7% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">VQAv2 (val) (lab)</a>                                         86.5%    59.2   2026-04-02    4% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">DocVQA (lab)</a>                                              93.5%    51.1   2026-04-02    3% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">ChartQA (lab)</a>                                             87.3%    58.6   2026-04-02    3% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">RealWorldQA (lab)</a>                                         75.2%    54.0   2026-04-02    3% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                                           96.3%    88.7   2026-04-02    1% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">RealWorldQA (lab)</a>                                         75.2%    53.9   2026-04-02    3% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                                           96.3%    88.8   2026-04-02    1% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (lab)</a>                                             83.1%    62.2   2026-04-02    1% ▇
 <a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  3.5100 MM-MT-Bench score (1-10)    32.9   2024-10-10    9% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                52.7%    50.5   2024-10-10    7% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      52.2%    49.3   2024-10-10    7% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      52.2%    49.4   2024-10-10    6% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               75.2%    51.8   2024-10-10    5% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   75.6%    47.6   2024-10-10    0% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                           1044.9    47.4   2026-10-02   19% ▇▇

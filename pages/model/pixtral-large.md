@@ -6,7 +6,7 @@
 
 Mistral · released 2024-11 · 124B params · mistral-research
 
-**score 54.4** ±2.7 · #329 of 934 · from 4 benchmark results across 2 sources
+**score 54.4** ±2.7 · #328 of 934 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 

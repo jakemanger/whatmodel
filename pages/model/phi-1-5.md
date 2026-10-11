@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">ARC Challenge</a>                   48.0%    32.5   2024-04-08   36% ▇▇▇▇
+<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">ARC Challenge</a>                   48.0%    32.6   2024-04-08   36% ▇▇▇▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">WinoGrande</a>                      72.5%    34.5   2024-04-08    8% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">BoolQ</a>                           74.5%    31.8   2024-04-08    6% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">BoolQ</a>                           74.5%    31.9   2024-04-08    6% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">OpenBookQA</a>                      37.6%    40.9   2024-04-08    4% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">ARC Easy</a>                        73.1%    33.9   2024-04-08    4% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">HellaSwag</a>                       62.6%    20.1   2024-04-08    3% ▇
@@ -27,12 +27,12 @@ source                  test                            score  implies  date    
 <a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge (lab)</a>             44.4%    33.7   2023-09-11    8% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">WinoGrande (lab)</a>                73.4%    34.1   2023-09-11    5% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">BoolQ (lab)</a>                     75.8%    32.1   2023-09-11    4% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA (lab)</a>                37.2%    39.7   2023-09-11    4% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA (lab)</a>                37.2%    39.8   2023-09-11    4% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">HellaSwag (lab)</a>                 47.6%    21.8   2023-09-11    3% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA (lab)</a>                52.6%    37.9   2023-09-11    2% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA (lab)</a>                52.6%    38.0   2023-09-11    2% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">ARC Easy (lab)</a>                  75.6%    31.7   2023-09-11    2% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">PIQA (lab)</a>                      76.6%    26.3   2023-09-11    1% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  29.6%    15.6   2024-02-05    1% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  29.6%    15.7   2024-02-05    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 32.5
 </pre>

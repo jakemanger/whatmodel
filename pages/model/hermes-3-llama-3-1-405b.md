@@ -16,18 +16,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="first-party-nous-research-scores"></a>Nous Research vendor-…  <a href="https://arxiv.org/pdf/2408.11857v1">GPQA (subset unspecified) (la…</a>  44.8%    53.3   2024-08-15   12% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">BIG-Bench Hard (lab)</a>            75.4%    51.7   2024-08-15   11% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (lab)</a>             69.5%    47.3   2024-08-15   10% ▇
+                        <a href="https://arxiv.org/pdf/2408.11857v1">ARC Challenge (lab)</a>             69.5%    47.4   2024-08-15   10% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">MMLU (lab)</a>                      85.0%    54.4   2024-08-15    7% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">MMLU-Pro (lab)</a>                  54.1%    51.2   2024-08-15    7% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">OpenBookQA (lab)</a>                48.8%    44.6   2024-08-15    7% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">WinoGrande (lab)</a>                86.3%    50.5   2024-08-15    6% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (lab)</a>                     88.9%    47.8   2024-08-15    5% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (lab)</a>                 90.2%    52.0   2024-08-15    4% ▇
+                        <a href="https://arxiv.org/pdf/2408.11857v1">BoolQ (lab)</a>                     88.9%    47.8   2024-08-15    4% ▇
+                        <a href="https://arxiv.org/pdf/2408.11857v1">HellaSwag (lab)</a>                 90.2%    52.1   2024-08-15    4% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">MuSR (lab)</a>                      48.3%    44.5   2024-08-15    2% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">IFEval (aggregation unspecifi…</a>  84.9%    57.4   2024-08-15    2% ▇
-                        <a href="https://arxiv.org/pdf/2408.11857v1">PIQA (lab)</a>                      86.0%    49.2   2024-08-15    2% ▇
+                        <a href="https://arxiv.org/pdf/2408.11857v1">IFEval (aggregation unspecifi…</a>  84.9%    57.5   2024-08-15    2% ▇
+                        <a href="https://arxiv.org/pdf/2408.11857v1">PIQA (lab)</a>                      86.0%    49.3   2024-08-15    2% ▇
                         <a href="https://arxiv.org/pdf/2408.11857v1">TruthfulQA MC2 (lab)</a>            65.6%    49.2   2024-08-15    2% ▇
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  63.9%    54.0   2024-08-30   23% ▇▇▇
+<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  63.9%    54.0   2024-08-30   24% ▇▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 51.3
 </pre>

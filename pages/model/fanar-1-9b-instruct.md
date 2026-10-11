@@ -6,7 +6,7 @@
 
 QCRI · released 2025-06 · 8.78B params · apache-2.0
 
-**score 42.5** ±5.6 · #652 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.5** ±5.5 · #653 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

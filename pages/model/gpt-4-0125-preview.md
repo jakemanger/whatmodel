@@ -6,7 +6,7 @@
 
 OpenAI · released 2024-01 · proprietary
 
-**score 53.6** ±0.7 · comparison only: no current run option verified · from 15 benchmark results across 8 sources
+**score 53.7** ±0.7 · comparison only: no current run option verified · from 15 benchmark results across 8 sources
 
 ## How the score was worked out
 
@@ -15,8 +15,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                                       score  implies  date        weight
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                          65.1%    54.6   2024-03-28   12% ▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                                  83.5%    53.0   2024-03-28   11% ▇
-<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                       48.9%    53.9   2024-10-22   18% ▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                                  83.5%    53.0   2024-03-28   12% ▇
+<a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                       48.9%    54.0   2024-10-22   18% ▇▇
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                               35.4%    50.9   2025-01-27   11% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                               42.3%    51.7   2025-01-27    7% ▇
 <a name="openai-simple-evals-readme"></a>OpenAI simple-evals R…  <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">GPQA Diamond (simple-evals) (…</a>             41.4%    51.3   2024-05-13    8% ▇
@@ -25,12 +25,12 @@ source                  test                                       score  implie
                         <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">HumanEval (simple-evals) (lab)</a>             86.6%    53.3   2024-05-13    2% ▇
                         <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MGSM (simple-evals) (lab)</a>                  85.1%    54.5   2024-05-13    1% ▇
                         <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">DROP F1, 3-shot (simple-evals…</a>             81.5%    56.7   2024-04-11    0% ▇
-<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>             78.0%    56.7   2024-11-14    9% ▇
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>             66.2%    54.9   2024-01-25    7% ▇
+<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>             78.0%    56.8   2024-11-14    9% ▇
+<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>             66.2%    55.0   2024-01-25    7% ▇
 <a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  52.2775 WB-Score    54.6   2024-08-01    4% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                            1313.2    55.5   2026-10-02    4% ▇
 prior                   pull toward the middle                              50.0                 0% ▇
-                        weighted average                                  = 53.6
+                        weighted average                                  = 53.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

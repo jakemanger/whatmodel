@@ -6,7 +6,7 @@
 
 Part AI · released 2024-06 · 8.03B params · llama3
 
-**score 42.1** ±5.0 · #657 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.1** ±5.0 · #658 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 7B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 35.7** ±1.7 · #781 of 934 · from 6 benchmark results across 2 sources
+**score 35.8** ±1.7 · #779 of 934 · from 6 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -17,11 +17,11 @@ source                  test                            score  implies  date    
 <a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            48.5%    36.6   2023-11-20   39% ▇▇▇▇▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  36.9%    30.4   2023-11-20   22% ▇▇▇
                         <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     34.0%    35.6   2023-11-20   14% ▇▇
-                        <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      50.4%    36.9   2023-11-20   14% ▇▇
+                        <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      50.4%    37.0   2023-11-20   14% ▇▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  46.4%    38.3   2023-11-20    5% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  63.0%    43.5   2024-05-22    5% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 35.7
+                        weighted average                       = 35.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +32,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~13.48GB   35.7
+16-bit bf16  ~13.48GB   35.8
 </pre>
 
 ```sh

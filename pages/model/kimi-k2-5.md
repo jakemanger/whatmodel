@@ -41,13 +41,13 @@ source                  test                             score  implies  date   
 <a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1303.5    72.0   2026-05-10    3% ▇
 <a name="paper-2606.01348v3-chartarena"></a>ChartArena: Benchmark…  <a href="https://arxiv.org/html/2606.01348v3">ChartArena chart parsing (Eng…</a>   54.8%    72.1   2026-07-05    3% ▇
 <a name="paper-2605.10912v1-wildclawbench"></a>WildClawBench: A Benc…  <a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                    30.8%    66.1   2026-05-11    3% ▇
-<a name="first-party-moonshot-scores"></a>Moonshot AI vendor-re…  <a href="https://huggingface.co/moonshotai/Kimi-K2.5/blob/4d01dfe0332d63057c186e0b262165819efb6611/README.md">CharXiv (reasoning questions)…</a>   77.5%    70.8   2026-04-30    2% ▇
+<a name="first-party-moonshot-scores"></a>Moonshot AI vendor-re…  <a href="https://huggingface.co/moonshotai/Kimi-K2.5/blob/4d01dfe0332d63057c186e0b262165819efb6611/README.md">CharXiv (reasoning questions)…</a>   77.5%    70.7   2026-04-30    2% ▇
 <a name="paper-2605.08366v1-swe-atlas"></a>SWE Atlas: Benchmarki…  <a href="https://arxiv.org/html/2605.08366v1">SWE Atlas (Codebase Q&amp;A, Test…</a>   19.1%    66.6   2026-05-08    2% ▇
 <a name="paper-2605.09063v3"></a>Soohak: A Mathematici…  <a href="https://arxiv.org/html/2605.09063v3">SOOHAK Challenge (340 problem…</a>   13.9%    70.0   2026-05-19    1% ▇
                         <a href="https://arxiv.org/html/2605.09063v3">SOOHAK-Mini (702 problems, Av…</a>   66.1%    74.1   2026-05-19    1% ▇
 <a name="paper-2609.05141v2-scidocbench"></a>SciDocBench: A Workfl…  <a href="https://arxiv.org/html/2609.05141v2">SciDocBench scientific-docume…</a>   50.4%    72.4   2026-09-28    2% ▇
 <a name="paper-2606.28715v2-seataubench"></a>SEATauBench: Progress…  <a href="https://arxiv.org/html/2606.28715v2">τ²-bench Telecom</a>                 99.7%    80.9   2026-09-05    2% ▇
-<a name="paper-2608.12262v1-diagram-mmu"></a>Diagram-MMU: A Multi-…  <a href="https://arxiv.org/html/2608.12262v1">Diagram-MMU diagram question …</a>   79.7%    71.0   2026-08-12    1% ▇
+<a name="paper-2608.12262v1-diagram-mmu"></a>Diagram-MMU: A Multi-…  <a href="https://arxiv.org/html/2608.12262v1">Diagram-MMU diagram question …</a>   79.7%    70.9   2026-08-12    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   85.8%   -79.1   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
                         weighted average                        = 70.0

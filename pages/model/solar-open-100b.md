@@ -25,9 +25,9 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set) (lab)</a>    34.4%    59.2   2026-07-24    4% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard (lab)</a>        2.3%    50.9   2026-07-24    3% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1) (lab)</a>       2.4%    54.1   2026-07-24    3% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>        15.4%    50.3   2026-07-24    3% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">SWE-bench Verified (lab)</a>        15.4%    50.4   2026-07-24    3% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">τ³-bench Banking (lab)</a>           7.4%    59.9   2026-07-24    2% ▇
-<a name="report-2601.07022v1"></a>Solar Open Technical …  <a href="https://arxiv.org/html/2601.07022v1">τ²-bench Telecom (lab)</a>          55.6%    65.5   2026-01-11    5% ▇
+<a name="report-2601.07022v1"></a>Solar Open Technical …  <a href="https://arxiv.org/html/2601.07022v1">τ²-bench Telecom (lab)</a>          55.6%    65.4   2026-01-11    5% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 59.8
 </pre>

@@ -6,7 +6,7 @@
 
 Biomni (Stanford) · released 2025-10 · 32.76B params · mit
 
-**score 53.4** ±4.3 · #350 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.3** ±4.2 · #354 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  35.3%    53.7   2025-11-04   92% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  35.3%    53.6   2025-11-04   92% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 8% ▇
-                        weighted average                       = 53.4
+                        weighted average                       = 53.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit fp32  ~131.05GB   53.4
+4-bit fp32  ~131.05GB   53.3
 </pre>
 
 ```sh

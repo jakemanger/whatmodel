@@ -20,7 +20,7 @@ source                  test                    score  implies  date        weig
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               61.6%    43.7   2024-03-28   17% ▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       40.8%    43.8   2024-03-28   11% ▇
 <a name="first-party-wizardlm-scores"></a>WizardLM team vendor-…  <a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">HumanEval (lab)</a>         73.2%    46.3   2024-01-19    4% ▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              42.7%    42.4   2024-01-03    1% ▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              42.7%    42.5   2024-01-03    2% ▇
                         <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              43.4%    42.9   2024-01-03    1% ▇
 prior                   pull toward the middle           50.0                 0% ▇
                         weighted average               = 45.9

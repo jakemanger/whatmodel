@@ -6,7 +6,7 @@
 
 Meta · released 2024-09 · 88.59B params · llama3.2
 
-**score 50.1** ±1.3 · #428 of 934 · from 13 benchmark results across 7 sources
+**score 50.1** ±1.3 · #429 of 934 · from 13 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                                              39.4%    51.8   2025-01-27   33% ▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                                              39.4%    51.8   2025-01-27   32% ▇▇▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                                              41.0%    50.9   2025-01-27   18% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>                                   2.6%    46.6   2025-02-25    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>                                   2.6%    46.6   2025-02-25    4% ▇
 <a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  5.5000 MM-MT-Bench score (1-10)    48.3   2024-10-10    5% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                53.7%    51.3   2024-10-10    4% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      49.1%    47.2   2024-10-10    3% ▇
@@ -24,9 +24,9 @@ source                  test                                                    
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   33.8%   -12.5   2024-10-10    0% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                           1032.3    45.8   2026-10-02   10% ▇
 <a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>                         -25.6700    44.0   2025-03-16    7% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>                            50.5%    59.8   2025-09-29    6% ▇
-<a name="paper-2610.04118v1-longsocialbench"></a>LongSocialBench: Do L…  <a href="https://arxiv.org/html/2610.04118v1">LongSocialBench (full-context…</a>                            35.6%    49.7   2026-10-02    3% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>                            79.3%    55.2   2025-04-03    3% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>                            50.5%    59.8   2025-09-29    7% ▇
+<a name="paper-2610.04118v1-longsocialbench"></a>LongSocialBench: Do L…  <a href="https://arxiv.org/html/2610.04118v1">LongSocialBench (full-context…</a>                            35.6%    49.6   2026-10-02    3% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>                            79.3%    55.1   2025-04-03    3% ▇
 prior                   pull toward the middle                                             50.0                 1% ▇
                         weighted average                                                 = 50.1
 </pre>

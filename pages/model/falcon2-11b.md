@@ -6,7 +6,7 @@
 
 TII · released 2024-05 · 11.1B params · falcon-llm
 
-**score 41.9** ±3.5 · #663 of 934 · from 3 benchmark results across 3 sources
+**score 42.0** ±3.4 · #662 of 934 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  42.4%    40.1   2024-06-20   56% ▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  64.2%    43.8   2024-05-13   23% ▇▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  73.7%    43.2   2026-04-17   15% ▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  73.7%    43.5   2026-04-17   16% ▇▇
 prior                   pull toward the middle                   50.0                 5% ▇
-                        weighted average                       = 41.9
+                        weighted average                       = 42.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download      size  score
-4-bit q4_0  ~6.4GB   41.9
+4-bit q4_0  ~6.4GB   42.0
 </pre>
 
 ```sh

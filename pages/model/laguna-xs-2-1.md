@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                          score  implies  date        weight
-<a name="first-party-poolside-scores"></a>Poolside vendor-repor…  <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Verified (lab)</a>      70.9%    66.9   2026-06-20   32% ▇▇▇▇
+<a name="first-party-poolside-scores"></a>Poolside vendor-repor…  <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Verified (lab)</a>      70.9%    66.9   2026-06-20   33% ▇▇▇▇
                         <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">Terminal-Bench 2.0 (lab)</a>      37.5%    65.2   2026-06-20   28% ▇▇▇
                         <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Multilingual (lab)</a>  63.1%    67.0   2026-06-20   28% ▇▇▇
-                        <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Pro (lab)</a>           47.6%    64.8   2026-06-20    9% ▇
+                        <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Pro (lab)</a>           47.6%    64.7   2026-06-20    9% ▇
 prior                   pull toward the middle                 50.0                 3% ▇
                         weighted average                     = 65.8
 </pre>

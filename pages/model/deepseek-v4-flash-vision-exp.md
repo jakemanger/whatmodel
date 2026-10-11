@@ -21,7 +21,7 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Agents' Last Exam (metric/har…</a>  27.3%    73.4   2026-08-31   11% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">AutomationBench (Public) (lab)</a>  25.7%    74.0   2026-08-31   10% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/README.md">Toolathlon-Verified (lab)</a>       75.9%    82.0   2026-08-31    8% ▇
-<a name="paper-2605.07492v2-puredocbench"></a>How Far Is Document P…  <a href="https://arxiv.org/html/2605.07492v2">PureDocBench document parsing…</a>  50.1%     6.6   2026-09-27    1% ▇
+<a name="paper-2605.07492v2-puredocbench"></a>How Far Is Document P…  <a href="https://arxiv.org/html/2605.07492v2">PureDocBench document parsing…</a>  50.1%     6.4   2026-09-27    1% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
                         weighted average                       = 75.7
 </pre>

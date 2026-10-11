@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card2-mistralai-magistral-small-2509"></a>mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (lab)</a>              76.3%    58.8   2025-09-17   32% ▇▇▇▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>                 83.5%    63.4   2025-09-17   32% ▇▇▇▇
+<a name="card2-mistralai-magistral-small-2509"></a>mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025 (lab)</a>                 83.5%    63.4   2025-09-17   32% ▇▇▇▇
+                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond (lab)</a>              76.3%    58.8   2025-09-17   32% ▇▇▇▇
                         <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024 (lab)</a>                 91.8%    66.1   2025-09-17   23% ▇▇▇
-                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unsp…</a>  75.0%    65.5   2025-09-17   13% ▇▇
+                        <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unsp…</a>  75.0%    65.4   2025-09-17   13% ▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 62.6
 </pre>

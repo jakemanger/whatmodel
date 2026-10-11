@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-02 · closed weights
 
-**score 73.4** ±1.5 · #56 of 934 · from 7 benchmark results across 3 sources
+**score 73.3** ±1.5 · #56 of 934 · from 7 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                77.3%    72.8   2026-03-05   23% ▇▇▇
                         <a href="https://openai.com/index/introducing-gpt-5-4">Toolathlon (Tool Decathlon) (…</a>  51.9%    77.9   2026-03-05   12% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-3-codex">Terminal-Bench 2.0 (lab)</a>        77.3%    79.1   2026-02-05   11% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (lab)</a>          64.7%    74.3   2026-02-05    9% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-3-codex">Terminal-Bench 2.0 (lab)</a>        77.3%    79.0   2026-02-05   11% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (lab)</a>          64.7%    74.2   2026-02-05    9% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>             56.8%    73.6   2026-02-05    5% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>              74.8%    72.2   2026-02-25   34% ▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>              74.8%    72.2   2026-02-25   35% ▇▇▇▇
 <a name="paper-2609.38480v2-klinikebench"></a>KlinikeBench: Evaluat…  <a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (3…</a>   3.6%    62.2   2026-10-06    5% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 73.4
+                        weighted average                       = 73.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

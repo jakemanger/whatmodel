@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-01 · 10.73B params · apache-2.0
 
-**score 45.5** ±3.8 · #567 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 45.6** ±3.8 · #564 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  49.9%    43.5   2024-06-19   66% ▇▇▇▇▇▇▇▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  49.9%    43.6   2024-06-19   66% ▇▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  71.6%    49.3   2024-02-27   28% ▇▇▇
 prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 45.5
+                        weighted average                       = 45.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download      size  score
-4-bit q4_0  ~6.1GB   45.5
+4-bit q4_0  ~6.1GB   45.6
 </pre>
 
 ```sh

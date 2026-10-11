@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-05 · 4.15B params · mit
 
-**score 41.4** ±1.8 · #674 of 934 · from 9 benchmark results across 4 sources
+**score 41.4** ±1.8 · #675 of 934 · from 9 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -21,7 +21,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2404.14219v3#S7">MathVista (testmini) (lab)</a>      44.5%    46.0   2024-05-23    6% ▇
                         <a href="https://arxiv.org/html/2404.14219v3#S7">ChartQA (lab)</a>                   81.4%    52.4   2024-05-23    1% ▇
                         <a href="https://arxiv.org/html/2404.14219v3#S7">TextVQA (lab)</a>                   70.9%    39.1   2024-05-23    1% ▇
-                        <a href="https://arxiv.org/html/2404.14219v3#S7">AI2D test (lab)</a>                 76.7%    32.0   2024-05-23    1% ▇
+                        <a href="https://arxiv.org/html/2404.14219v3#S7">AI2D test (lab)</a>                 76.7%    31.9   2024-05-23    1% ▇
 <a name="paper-2501.16411v2-physbench"></a>PhysBench: Benchmarki…  <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world unde…</a>  38.4%    41.8   2025-01-29    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 41.4

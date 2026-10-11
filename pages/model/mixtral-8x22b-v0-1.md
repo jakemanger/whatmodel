@@ -6,7 +6,7 @@
 
 Mistral · released 2024-04 · 140.62B params (39B active) · apache-2.0
 
-**score 47.2** ±3.2 · #512 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.2** ±3.1 · #511 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source              test                     score  implies  date        weight
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper  <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>  45.5%    47.0   2025-04-01   96% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper  <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>  45.5%    47.1   2025-04-01   96% ▇▇▇▇▇▇▇▇▇▇▇
 prior               pull toward the middle            50.0                 4% ▇
                     weighted average                = 47.2
 </pre>

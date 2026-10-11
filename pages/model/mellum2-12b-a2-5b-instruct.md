@@ -6,7 +6,7 @@
 
 JetBrains · released 2026-05 · 12.15B params (2.5B active) · apache-2.0
 
-**score 50.4** ±1.7 · #420 of 934 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
+**score 50.4** ±1.7 · #421 of 934 · from 8 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -19,7 +19,7 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">LiveCodeBench v6 (window unsp…</a>  37.2%    51.9   2026-08-13   20% ▇▇
                         <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL V4 (December 2025 archiv…</a>  44.2%    56.6   2026-08-13    7% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">MultiPL-E (lab)</a>                 67.1%    58.0   2026-08-13    5% ▇
-                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">IFEval (aggregation unspecifi…</a>  75.8%    49.9   2026-08-13    4% ▇
+                        <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">IFEval (aggregation unspecifi…</a>  75.8%    49.8   2026-08-13    4% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">BFCL v3 (lab)</a>                   66.3%    60.6   2026-08-13    4% ▇
                         <a href="https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct/blob/273d9c1c6882ac8e1562e5b7e043857d35a787b6/README.md">GSM-Plus (lab)</a>                  80.5%    46.6   2026-08-13    4% ▇
 prior                   pull toward the middle                   50.0                 1% ▇

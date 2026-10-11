@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-06 · proprietary
 
-**score 70.4** ±1.6 · #80 of 934 · from 5 benchmark results across 4 sources
+**score 70.4** ±1.5 · #79 of 934 · from 5 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://help.openai.com/en/articles/9624314-model-release-notes">GPQA Diamond (lab)</a>              84.0%    70.6   2025-06-10   34% ▇▇▇▇
-                        <a href="https://help.openai.com/en/articles/9624314-model-release-notes">AIME 2024 (lab)</a>                 93.0%    71.7   2025-06-10   15% ▇▇
-<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>  84.9%    71.6   2025-06-28   42% ▇▇▇▇▇
-<a name="paper-2608.19741v4-thinkingbox"></a>One Success Isn't Rel…  <a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507…</a>  19.3%    64.7   2026-10-01    9% ▇
+<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://help.openai.com/en/articles/9624314-model-release-notes">GPQA Diamond (lab)</a>              84.0%    70.6   2025-06-10   33% ▇▇▇▇
+                        <a href="https://help.openai.com/en/articles/9624314-model-release-notes">AIME 2024 (lab)</a>                 93.0%    71.7   2025-06-10   14% ▇▇
+<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>  84.9%    71.5   2025-06-28   42% ▇▇▇▇▇
+<a name="paper-2608.19741v4-thinkingbox"></a>One Success Isn't Rel…  <a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507…</a>  19.3%    64.8   2026-10-01    9% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  76.7%  -390.0   2026-09-22    0% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 70.4

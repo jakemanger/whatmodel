@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-04 · 141B params (39B active) · apache-2.0
 
-**score 45.2** ±2.4 · #576 of 934 · from 3 benchmark results across 2 sources
+**score 45.2** ±2.4 · #578 of 934 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                             score  implies  date        weight
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1213.0    43.5   2026-10-02   49% ▇▇▇▇▇▇
 <a name="card-huggingfaceh4-zephyr-orpo-141b-a35b-v0-1"></a>HuggingFaceH4 zephyr-…  <a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">BIG-Bench Hard (lab)</a>             59.0%    47.4   2024-04-10   38% ▇▇▇▇▇
-                        <a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">IFEval (aggregation unspecifi…</a>   65.1%    44.1   2024-04-10   10% ▇
+                        <a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">IFEval (aggregation unspecifi…</a>   65.1%    44.0   2024-04-10   10% ▇
 prior                   pull toward the middle                    50.0                 3% ▇
                         weighted average                        = 45.2
 </pre>

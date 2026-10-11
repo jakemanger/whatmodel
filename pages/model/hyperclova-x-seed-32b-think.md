@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2601.03286v1-hyperclova-x-32b-think"></a>HyperCLOVA X 32B Think  <a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard (lab)</a>        9.9%    64.0   2026-01-03   23% ▇▇▇
+<a name="paper-2601.03286v1-hyperclova-x-32b-think"></a>HyperCLOVA X 32B Think  <a href="https://arxiv.org/html/2601.03286v1#S5.T5">Terminal-Bench Hard (lab)</a>        9.9%    63.9   2026-01-03   23% ▇▇▇
                         <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Telecom (lab)</a>          65.1%    69.5   2026-01-03   20% ▇▇
                         <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Retail (lab)</a>           71.6%    67.9   2026-01-03   14% ▇▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag (lab)</a>                 57.2%    37.2   2026-01-03   10% ▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">HellaSwag (lab)</a>                 57.2%    37.0   2026-01-03   10% ▇
                         <a href="https://arxiv.org/html/2601.03286v1#S5.T5">τ²-bench Airline (lab)</a>          58.0%    67.7   2026-01-03   10% ▇
                         <a href="https://arxiv.org/html/2601.03286v1#S5.T5">MMLU (lab)</a>                      87.7%    61.4   2026-01-03    6% ▇
-                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">PIQA (lab)</a>                      76.7%    27.4   2026-01-03    3% ▇
-<a name="paper-2606.02404v1-k-browsecomp"></a>K-BrowseComp: A Web B…  <a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean…</a>   2.3%    51.8   2026-06-01   13% ▇▇
+                        <a href="https://arxiv.org/html/2601.03286v1#S5.T5">PIQA (lab)</a>                      76.7%    27.3   2026-01-03    3% ▇
+<a name="paper-2606.02404v1-k-browsecomp"></a>K-BrowseComp: A Web B…  <a href="https://arxiv.org/html/2606.02404v1">K-BrowseComp-Verified (Korean…</a>   2.3%    51.8   2026-06-01   12% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
                         weighted average                       = 60.3
 </pre>

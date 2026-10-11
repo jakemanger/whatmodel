@@ -18,7 +18,7 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2402.00838v4#A5.T8">BIG-Bench Hard (lab)</a>             35.8%    31.4   2024-06-07   19% ▇▇
                         <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (la…</a>   27.8%    30.0   2024-06-07   19% ▇▇
                         <a href="https://arxiv.org/html/2402.00838v4#A5.T8">MMLU (lab)</a>                       46.1%    37.8   2024-06-07    8% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: TyDiQA gold passage, …</a>   21.7%    16.9   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: TyDiQA gold passage, …</a>   21.7%    17.0   2024-06-07    4% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1073.6    26.8   2026-10-02   29% ▇▇▇▇
 prior                   pull toward the middle                    50.0                 2% ▇
                         weighted average                        = 28.7

@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-04 · mit
 
-**score 48.1** ±0.8 · #489 of 934 · from 3 benchmark results across 1 source
+**score 48.2** ±0.9 · #486 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -15,10 +15,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                    score  implies  date        weight
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               75.0%    48.1   2024-12-26   51% ▇▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              69.5%    48.3   2024-12-26   42% ▇▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              69.5%    48.4   2024-12-26   42% ▇▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   63.5%    47.2   2024-12-26    7% ▇
 prior                   pull toward the middle           50.0                 0% ▇
-                        weighted average               = 48.1
+                        weighted average               = 48.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle           50.0                 0%
 
 <pre>
 download        size  score
-4-bit fp32  ~26.95GB   48.1
+4-bit fp32  ~26.95GB   48.2
 </pre>
 
 ```sh

@@ -16,15 +16,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="report-marco-moe-260425578v1"></a>Marco-MoE: Open Multi…  <a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                    39.7%    51.7   2026-09-25   18% ▇▇
                         <a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                            74.9%    49.9   2026-09-25   14% ▇▇
-                        <a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                           87.2%    50.9   2026-09-25   14% ▇▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                        57.6%    51.4   2026-09-25   11% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                           87.2%    50.8   2026-09-25   14% ▇▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                        57.6%    51.3   2026-09-25   11% ▇
                         <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>          43.3%    50.4   2026-09-25    9% ▇
                         <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>       83.9%    52.8   2026-09-25    7% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>   57.0%    50.1   2026-09-25    6% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>   57.0%    50.0   2026-09-25    6% ▇
                         <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>     29.3%    50.0   2026-09-25    6% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>        62.3%    52.1   2026-09-25    5% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>        62.3%    52.0   2026-09-25    5% ▇
                         <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>         67.8%    49.0   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecif…</a>  49.0%    51.9   2026-09-25    5% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecif…</a>  49.0%    51.8   2026-09-25    5% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 50.9
 </pre>

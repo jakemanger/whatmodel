@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-06 · 3.82B params · mit
 
-**score 43.9** ±0.9 · #614 of 934 · from 7 benchmark results across 3 sources
+**score 44.0** ±0.9 · #608 of 934 · from 7 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -22,7 +22,7 @@ source                  test                             score  implies  date   
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1143.1    35.1   2026-10-02    7% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   80.2%    47.9   2026-04-17    1% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 43.9
+                        weighted average                        = 44.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,8 +33,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~2.39GB   43.9
-8-bit q8_0    ~4.06GB   43.9
+4-bit q4_k_m  ~2.39GB   44.0
+8-bit q8_0    ~4.06GB   44.0
 </pre>
 
 ```sh

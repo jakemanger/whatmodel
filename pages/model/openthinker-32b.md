@@ -6,7 +6,7 @@
 
 Open Thoughts · released 2025-02 · 32.76B params · apache-2.0
 
-**score 54.8** ±1.3 · #317 of 934 · from 8 benchmark results across 2 sources · † every result so far was reported by its maker
+**score 54.7** ±1.3 · #318 of 934 · from 8 benchmark results across 2 sources · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="card3-open-thoughts-openthinker2-32b"></a>open-thoughts/OpenThi…  <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (lab)</a>      63.5%    54.9   2025-06-05   21% ▇▇
-                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2025 (lab)</a>         49.3%    53.8   2025-06-05   15% ▇▇
-                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2024 (lab)</a>         68.0%    54.1   2025-06-05   14% ▇▇
-                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">MATH-500 (lab)</a>          90.6%    55.6   2025-06-05   10% ▇
-<a name="card3-open-thoughts-openthinker-32b"></a>open-thoughts/OpenThi…  <a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">GPQA Diamond (lab)</a>      61.6%    56.2   2025-06-05   14% ▇▇
-                        <a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">AIME 2024 (lab)</a>         66.0%    53.4   2025-06-05   13% ▇▇
-                        <a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">MATH-500 (lab)</a>          90.6%    55.6   2025-06-05    8% ▇
-                        <a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">LiveCodeBench v2 (lab)</a>  68.9%    57.2   2025-06-05    5% ▇
+<a name="card3-open-thoughts-openthinker2-32b"></a>open-thoughts/OpenThi…  <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">GPQA Diamond (lab)</a>      63.5%    54.8   2025-06-05   21% ▇▇▇
+                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2025 (lab)</a>         49.3%    53.7   2025-06-05   15% ▇▇
+                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">AIME 2024 (lab)</a>         68.0%    54.0   2025-06-05   14% ▇▇
+                        <a href="https://huggingface.co/open-thoughts/OpenThinker2-32B/blob/0aefafe3ee27e073e14fb94a0563795fddf38c50/README.md">MATH-500 (lab)</a>          90.6%    55.5   2025-06-05    9% ▇
+<a name="card3-open-thoughts-openthinker-32b"></a>open-thoughts/OpenThi…  <a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">GPQA Diamond (lab)</a>      61.6%    56.0   2025-06-05   14% ▇▇
+                        <a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">AIME 2024 (lab)</a>         66.0%    53.3   2025-06-05   13% ▇▇
+                        <a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">MATH-500 (lab)</a>          90.6%    55.5   2025-06-05    8% ▇
+                        <a href="https://huggingface.co/open-thoughts/OpenThinker-32B/blob/840749ca114a8f02be56f378d2999ad6d9e42d4f/README.md">LiveCodeBench v2 (lab)</a>  68.9%    57.1   2025-06-05    5% ▇
 prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 54.8
+                        weighted average               = 54.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,7 +36,7 @@ prior                   pull toward the middle           50.0                 1%
 
 <pre>
 download       size  score
-4-bit q4_k_m  ~20GB   54.8
+4-bit q4_k_m  ~20GB   54.7
 </pre>
 
 ```sh

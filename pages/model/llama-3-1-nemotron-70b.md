@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-10 · 70.6B params · llama3.1
 
-**score 51.7** ±0.9 · #390 of 934 · from 19 benchmark results across 10 sources
+**score 51.7** ±0.9 · #391 of 934 · from 19 benchmark results across 10 sources
 
 ## How the score was worked out
 
@@ -31,8 +31,8 @@ source                  test                             score  implies  date   
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/nvidia--Llama-3.1-Nemotron-70B-Instruct-HF_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>   61.8%    40.0   2024-10-24    4% ▇
 <a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   32.8%    50.8   2025-04-28    4% ▇
 <a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-08-31</a>             43.1%    49.6   2024-10-22    4% ▇
-<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-…</a>   22.4%    44.4   2024-12-28    4% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   93.5%    60.7   2026-04-17    1% ▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-…</a>   22.4%    44.5   2024-12-28    4% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   93.5%    60.2   2026-04-17    1% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
                         weighted average                        = 51.7
 </pre>

@@ -14,17 +14,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge (lab)</a>             48.5%    30.0   2024-06-07   20% ▇▇
+<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge (lab)</a>             48.5%    30.1   2024-06-07   20% ▇▇
                         <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA (lab)</a>                50.4%    29.4   2024-06-07   11% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">WinoGrande (lab)</a>                67.9%    29.7   2024-06-07   11% ▇
                         <a href="https://arxiv.org/html/2402.00838v4#A5.T8">GSM8K (lab)</a>                      8.5%    22.1   2024-06-07    8% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (la…</a>  21.4%    25.5   2024-06-07    7% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (la…</a>  21.4%    25.6   2024-06-07    7% ▇
                         <a href="https://arxiv.org/html/2402.00838v4#A5.T8">BIG-Bench Hard (lab)</a>            31.7%    24.6   2024-06-07    7% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">HellaSwag (lab)</a>                 76.4%    32.3   2024-06-07    7% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">ARC Easy (lab)</a>                  65.4%    25.9   2024-06-07    7% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">BoolQ (lab)</a>                     73.4%    29.9   2024-06-07    6% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">SciQ (lab)</a>                      93.8%    30.1   2024-06-07    6% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">PIQA (lab)</a>                      78.4%    31.3   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">PIQA (lab)</a>                      78.4%    31.4   2024-06-07    4% ▇
                         <a href="https://arxiv.org/html/2402.00838v4#A5.T8">MMLU (lab)</a>                      28.3%    17.4   2024-06-07    3% ▇
                         <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: TyDiQA gold passage, …</a>  32.3%    29.9   2024-06-07    1% ▇
 prior                   pull toward the middle                   50.0                 1% ▇

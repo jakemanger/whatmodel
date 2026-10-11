@@ -6,7 +6,7 @@
 
 venkycs (aihub-app) · released 2024-01 · 1.1B params · apache-2.0
 
-**score 8.0** ±2.4 · #924 of 934 · from 3 benchmark results across 1 source
+**score 7.9** ±2.4 · #924 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -15,10 +15,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                    score  implies  date        weight
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                2.4%     9.7   2024-12-26   42% ▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>               1.8%     7.5   2024-12-26   29% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                    7.5%     1.6   2024-12-26   26% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>               1.8%     7.4   2024-12-26   29% ▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                    7.5%     1.5   2024-12-26   26% ▇▇▇
 prior                   pull toward the middle           50.0                 3% ▇
-                        weighted average                = 8.0
+                        weighted average                = 7.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle           50.0                 3%
 
 <pre>
 download      size  score
-4-bit fp16  ~2.2GB    8.0
+4-bit fp16  ~2.2GB    7.9
 </pre>
 
 ```sh

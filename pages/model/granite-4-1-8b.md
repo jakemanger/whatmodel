@@ -6,7 +6,7 @@
 
 IBM · released 2026-04 · 8.79B params · apache-2.0
 
-**score 54.3** ±0.9 · #334 of 934 · from 24 benchmark results across 3 sources
+**score 54.4** ±0.9 · #327 of 934 · from 24 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -31,15 +31,15 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">MultiPL-E (lab)</a>                  60.3%    51.9   2026-05-04    2% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">MBPP+ (lab)</a>                      73.8%    55.4   2026-05-04    2% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">GSM-Symbolic (lab)</a>               83.7%    54.5   2026-05-04    2% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">IFEval (aggregation unspecifi…</a>   87.1%    57.6   2026-05-04    2% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">IFEval (aggregation unspecifi…</a>   87.1%    57.7   2026-05-04    2% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">MGSM, 5 languages (en, es, fr…</a>   82.3%    67.0   2026-05-04    2% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">CRUXEval-O (lab)</a>                 47.6%    48.6   2026-05-04    1% ▇
                         <a href="https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md#evaluation-results">BFCL v3 (lab)</a>                    68.3%    57.9   2026-05-04    1% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1190.3    59.4   2026-10-01   12% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1304.1    54.4   2026-10-02    7% ▇
-<a name="paper-2606.03892v2-synthesize-and-reward"></a>Synthesize and Reward…  <a href="https://arxiv.org/html/2606.03892v2">τ²-bench Telecom (lab)</a>           17.5%    53.2   2026-06-03    7% ▇
+<a name="paper-2606.03892v2-synthesize-and-reward"></a>Synthesize and Reward…  <a href="https://arxiv.org/html/2606.03892v2">τ²-bench Telecom (lab)</a>           17.5%    53.1   2026-06-03    7% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 54.3
+                        weighted average                        = 54.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -54,9 +54,9 @@ api (Replicate) · $0.11/M blended · $0.06 in / $0.25 out per 1M tokens · [rep
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~5.35GB   54.3
-8-bit q8_0    ~9.35GB   54.3
-4-bit q4_k_m  ~5.35GB   54.3
+4-bit q4_k_m  ~5.35GB   54.4
+8-bit q8_0    ~9.35GB   54.4
+4-bit q4_k_m  ~5.35GB   54.4
 </pre>
 
 ```sh

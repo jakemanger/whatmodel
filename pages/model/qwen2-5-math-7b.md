@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 7.62B params · apache-2.0
 
-**score 52.3** ±2.2 · #380 of 934 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 52.4** ±2.2 · #379 of 934 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -15,10 +15,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source  test                            score  implies  date        weight
 <a name="first-party-qwen-scores"></a>Qwen    <a href="https://arxiv.org/html/2409.12122v1">Minerva MATH (lab)</a>              37.1%    50.0   2024-09-18   48% ▇▇▇▇▇▇
-        <a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                     95.2%    54.0   2024-09-18   30% ▇▇▇▇
-        <a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (la…</a>  83.6%    55.8   2024-09-18   19% ▇▇
+        <a href="https://arxiv.org/html/2409.12122v1">GSM8K (lab)</a>                     95.2%    54.1   2024-09-18   30% ▇▇▇▇
+        <a href="https://arxiv.org/html/2409.12122v1">MATH (subset unspecified) (la…</a>  83.6%    55.9   2024-09-18   19% ▇▇
 prior   pull toward the middle                   50.0                 2% ▇
-        weighted average                       = 52.3
+        weighted average                       = 52.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior   pull toward the middle                   50.0                 2% ▇
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.68GB   52.3
+4-bit q4_k_m  ~4.68GB   52.4
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-08 · 27.3B params · apache-2.0
 
-**score 73.7** ±0.8 · #53 of 934 · from 31 benchmark results across 8 sources
+**score 73.7** ±0.8 · #52 of 934 · from 31 benchmark results across 8 sources
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                  score  implies  date        weight
-<a name="card-qwen--qwen3.8-27b"></a>Qwen/Qwen3.8-27B mode…  <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">GPQA Diamond (lab)</a>                    89.2%    70.9   2026-08-14    5% ▇
+<a name="card-qwen--qwen3.8-27b"></a>Qwen/Qwen3.8-27B mode…  <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">GPQA Diamond (lab)</a>                    89.2%    70.9   2026-08-14    4% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">Terminal-Bench 2.1 (lab)</a>              73.0%    74.7   2026-08-14    4% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">LiveCodeBench v6 (window unsp…</a>        90.3%    73.7   2026-08-14    3% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">SWE-bench Pro public set, Qwe…</a>        61.7%    74.9   2026-08-14    3% ▇
@@ -38,13 +38,13 @@ source                  test                                  score  implies  da
                         <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">LiveCodeBench v6 (window unsp…</a>        90.3%    78.1   2026-09-18    3% ▇
                         <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Multilingual (lab)</a>          73.8%    72.0   2026-09-18    3% ▇
                         <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Pro public set, Qwe…</a>        61.7%    75.1   2026-09-18    3% ▇
-                        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">IFBench (aggregation unspecif…</a>        79.5%    73.3   2026-09-18    2% ▇
+                        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">IFBench (aggregation unspecif…</a>        79.5%    73.2   2026-09-18    2% ▇
                         <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (lab)</a>         42.2%    69.6   2026-09-18    1% ▇
 <a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>        46.6%    64.9   2026-08-18    4% ▇
 <a name="paper-2608.19741v4-thinkingbox"></a>One Success Isn't Rel…  <a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507…</a>        51.7%    78.9   2026-10-01    3% ▇
 <a name="paper-2609.05141v2-scidocbench"></a>SciDocBench: A Workfl…  <a href="https://arxiv.org/html/2609.05141v2">SciDocBench scientific-docume…</a>        52.9%    74.3   2026-09-28    2% ▇
 <a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>        76.0%    67.4   2026-09-19    1% ▇
-<a name="paper-2605.07492v2-puredocbench"></a>How Far Is Document P…  <a href="https://arxiv.org/html/2605.07492v2">PureDocBench document parsing…</a>        77.6%    98.2   2026-09-27    0% ▇
+<a name="paper-2605.07492v2-puredocbench"></a>How Far Is Document P…  <a href="https://arxiv.org/html/2605.07492v2">PureDocBench document parsing…</a>        77.6%    98.3   2026-09-27    0% ▇
 prior                   pull toward the middle                         50.0                 0% ▇
                         weighted average                             = 73.7
 </pre>

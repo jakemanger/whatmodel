@@ -6,7 +6,7 @@
 
 Poolside · released 2026-04 · 33B params (3B active) · apache-2.0
 
-**score 64.8** ±1.5 · #152 of 934 · from 8 benchmark results across 3 sources
+**score 64.8** ±1.5 · #151 of 934 · from 8 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                           score  implies  date        weight
-<a name="first-party-poolside-scores"></a>Poolside vendor-repor…  <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Verified (lab)</a>       69.9%    66.9   2026-06-20   12% ▇
+<a name="first-party-poolside-scores"></a>Poolside vendor-repor…  <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Verified (lab)</a>       69.9%    66.8   2026-06-20   12% ▇
                         <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Multilingual (lab)</a>   57.7%    63.8   2026-06-20   10% ▇
                         <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">Terminal-Bench 2.0 (lab)</a>       35.7%    64.6   2026-06-20   10% ▇
                         <a href="https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/README.md#benchmark-results">SWE-bench Pro (lab)</a>            46.3%    63.7   2026-06-20    3% ▇

@@ -6,7 +6,7 @@
 
 PLLuM consortium (CYFRAGOVPL) · released 2025-02 · 70.55B params · llama3.1
 
-**score 53.3** ±2.9 · #355 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 53.3** ±2.9 · #353 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="paper-2606.12250v1-polish-medical-exams"></a>Reassessing High-Perf…  <a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, b…</a>  57.1%    56.3   2026-06-10   50% ▇▇▇▇▇▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  66.5%    50.3   2026-08-11   46% ▇▇▇▇▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  66.5%    50.3   2026-08-11   46% ▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 4% ▇
                         weighted average                       = 53.3
 </pre>

@@ -6,7 +6,7 @@
 
 Cohere · released 2024-12 · 8.03B params · cc-by-nc-4.0
 
-**score 44.3** ±1.3 · #598 of 934 · from 14 benchmark results across 4 sources
+**score 44.3** ±1.3 · #597 of 934 · from 14 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,20 +14,20 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="report-2504.00698v2"></a>Cohere                  <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8) (…</a>  69.6%    42.5   2025-04-14   16% ▇▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                     72.0%    44.2   2025-04-14   10% ▇
+<a name="report-2504.00698v2"></a>Cohere                  <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8) (…</a>  69.6%    42.5   2025-04-14   15% ▇▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                     72.0%    44.3   2025-04-14   10% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>         3.6%    37.2   2025-04-14    9% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Fe…</a>   9.0%    40.1   2025-04-14    7% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">MMLU-Pro (lab)</a>                  42.4%    42.9   2025-04-14    7% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>   30.9%    46.5   2025-04-14    6% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>   30.9%    46.6   2025-04-14    6% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>            42.2%    46.2   2025-04-14    6% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">GPQA Diamond (simple-evals) (…</a>  26.3%    36.3   2025-04-14    5% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises…</a>   2.7%    45.4   2025-04-14    4% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">MMLU (simple-evals, zero-shot…</a>  65.2%    35.0   2025-04-14    3% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises…</a>   2.7%    45.5   2025-04-14    4% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">MMLU (simple-evals, zero-shot…</a>  65.2%    35.1   2025-04-14    3% ▇
 <a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>  56.4%    53.6   2026-04-06   12% ▇
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  32.1%    50.8   2025-12-16    6% ▇
                         <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         51.7%    50.0   2025-06-14    4% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  50.4%    43.9   2026-09-19    6% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  50.4%    44.0   2026-09-19    6% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 44.3
 </pre>

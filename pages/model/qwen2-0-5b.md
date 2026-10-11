@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-06 · 0.49B params · apache-2.0
 
-**score 25.3** ±1.7 · #879 of 934 · from 8 benchmark results across 4 sources
+**score 25.4** ±1.7 · #879 of 934 · from 8 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -18,12 +18,12 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">HumanEval (lab)</a>                 17.1%    24.3   2024-06-03   16% ▇▇
                         <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">MMLU (lab)</a>                      37.9%    23.9   2024-06-03   10% ▇
                         <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">C-Eval (lab)</a>                    45.2%    27.2   2024-06-03    8% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">IFEval prompt-level strict (l…</a>  20.0%    13.9   2024-06-03    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">IFEval prompt-level strict (l…</a>  20.0%    14.0   2024-06-03    5% ▇
 <a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>             7.7%    25.5   2024-10-22   31% ▇▇▇▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  30.6%    26.5   2026-09-19    8% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  44.4%    25.9   2024-06-07    3% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  30.6%    26.5   2026-09-19    9% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  44.4%    26.0   2024-06-07    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 25.3
+                        weighted average                       = 25.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,8 +36,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~0.79GB   25.3
-8-bit q8_0    ~1.09GB   25.3
+4-bit q4_k_m  ~0.79GB   25.4
+8-bit q8_0    ~1.09GB   25.4
 </pre>
 
 ```sh

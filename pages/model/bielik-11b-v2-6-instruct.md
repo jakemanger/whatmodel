@@ -6,7 +6,7 @@
 
 SpeakLeash · released 2025-06 · 11.17B params · apache-2.0
 
-**score 53.8** ±3.5 · #342 of 934 · from 3 benchmark results across 2 sources
+**score 53.9** ±3.5 · #342 of 934 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB       <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  72.7%    55.0   2026-08-11   64% ▇▇▇▇▇▇▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  76.2%    54.2   2026-04-17   21% ▇▇▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB       <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  72.7%    55.0   2026-08-11   65% ▇▇▇▇▇▇▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  76.2%    54.6   2026-04-17   19% ▇▇
                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  80.2%    47.1   2026-04-17   10% ▇
 prior                  pull toward the middle                   50.0                 5% ▇
-                       weighted average                       = 53.8
+                       weighted average                       = 53.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                  pull toward the middle                   50.0            
 
 <pre>
 download         size  score
-16-bit bf16  ~22.34GB   53.8
+16-bit bf16  ~22.34GB   53.9
 </pre>
 
 ```sh

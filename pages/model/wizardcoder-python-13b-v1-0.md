@@ -6,7 +6,7 @@
 
 WizardLM · released 2023-08 · 13B params · llama2
 
-**score 41.9** ±2.4 · #662 of 934 · from 3 benchmark results across 2 sources
+**score 41.9** ±2.4 · #663 of 934 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                    score  implies  date        weight
 <a name="first-party-wizardlm-scores"></a>WizardLM team vendor-…  <a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">HumanEval (lab)</a>         64.0%    43.1   2024-01-19   57% ▇▇▇▇▇▇▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              36.5%    38.2   2024-01-03   20% ▇▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              36.5%    38.2   2024-01-03   21% ▇▇
                         <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              41.3%    41.3   2024-01-03   20% ▇▇
 prior                   pull toward the middle           50.0                 3% ▇
                         weighted average               = 41.9

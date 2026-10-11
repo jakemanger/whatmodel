@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-09 · 51.5B params · nvidia-open-model-license
 
-**score 51.1** ±1.8 · #406 of 934 · from 6 benchmark results across 2 sources
+**score 51.1** ±1.8 · #405 of 934 · from 6 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                     score  implies  date        weight
 <a name="paper-2411.19146v5-puzzle"></a>Puzzle: Distillation-…  <a href="https://arxiv.org/html/2411.19146v5">ARC Challenge (lab)</a>      69.2%    48.9   2025-06-03   20% ▇▇
                         <a href="https://arxiv.org/html/2411.19146v5">GSM8K (lab)</a>              91.4%    53.3   2025-06-03   18% ▇▇
-                        <a href="https://arxiv.org/html/2411.19146v5">MMLU (lab)</a>               80.2%    52.1   2025-06-03   14% ▇▇
+                        <a href="https://arxiv.org/html/2411.19146v5">MMLU (lab)</a>               80.2%    52.2   2025-06-03   14% ▇▇
                         <a href="https://arxiv.org/html/2411.19146v5">WinoGrande (lab)</a>         84.5%    49.5   2025-06-03   11% ▇
                         <a href="https://arxiv.org/html/2411.19146v5">HellaSwag (lab)</a>          85.6%    48.7   2025-06-03    9% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1286.6    52.3   2026-10-02   27% ▇▇▇

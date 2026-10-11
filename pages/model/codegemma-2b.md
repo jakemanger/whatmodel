@@ -6,7 +6,7 @@
 
 Google · released 2024-03 · 2.51B params · gemma
 
-**score 31.5** ±0.7 · #831 of 934 · from 12 benchmark results across 4 sources
+**score 31.6** ±0.7 · #829 of 934 · from 12 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -25,9 +25,9 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>   4.4%    26.1   2024-05-07    2% ▇
 <a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 31.1%    34.0   2024-06-19    6% ▇
                         <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      43.6%    35.1   2024-06-19    2% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         23.9%    31.4   2025-04-01    4% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         23.9%    31.5   2025-04-01    4% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 31.5
+                        weighted average                       = 31.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,8 +38,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~1.6GB   31.5
-8-bit q8_0    ~2.7GB   31.5
+4-bit q4_k_m  ~1.6GB   31.6
+8-bit q8_0    ~2.7GB   31.6
 </pre>
 
 ```sh

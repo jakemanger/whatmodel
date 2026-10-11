@@ -6,7 +6,7 @@
 
 LG AI Research · released 2024-12 · 7.82B params · exaone
 
-**score 50.2** ±3.7 · #427 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 50.1** ±3.7 · #431 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -15,9 +15,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct/blob/553ea250b9a5317231459279d5847d6cf955b9aa/README.md#evaluation">Arena-Hard (version/judge uns…</a>  68.7%    49.9   2024-12-01   58% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct/blob/553ea250b9a5317231459279d5847d6cf955b9aa/README.md#evaluation">IFEval (aggregation unspecifi…</a>  78.9%    50.6   2024-12-01   36% ▇▇▇▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct/blob/553ea250b9a5317231459279d5847d6cf955b9aa/README.md#evaluation">IFEval (aggregation unspecifi…</a>  78.9%    50.6   2024-12-01   35% ▇▇▇▇
 prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 50.2
+                        weighted average                       = 50.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,8 +30,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m   ~4.8GB   50.2
-4-bit q4_k_m  ~4.77GB   50.2
+4-bit q4_k_m   ~4.8GB   50.1
+4-bit q4_k_m  ~4.77GB   50.1
 </pre>
 
 ```sh

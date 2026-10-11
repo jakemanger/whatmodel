@@ -16,8 +16,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  52.8%    44.5   2024-05-07   20% ▇▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  28.2%    40.6   2024-05-07   14% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  32.8%    42.5   2024-05-07   13% ▇▇
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                 53.0%    41.7   2024-01-31   29% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  32.8%    42.6   2024-05-07   13% ▇▇
+<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                 53.0%    41.8   2024-01-31   29% ▇▇▇▇
                         <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                      62.4%    44.3   2024-01-31   13% ▇▇
 <a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         44.3%    46.4   2025-04-01   11% ▇
 prior                   pull toward the middle                   50.0                 1% ▇

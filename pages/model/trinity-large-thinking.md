@@ -17,7 +17,7 @@ source                  test                        score  implies  date        
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1237.6    61.5   2026-10-01   42% ▇▇▇▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>             1367.3    62.0   2026-10-02   24% ▇▇▇
 <a name="first-party-arcee-scores"></a>Arcee AI vendor-repor…  <a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">GPQA Diamond (lab)</a>          76.3%    63.9   2026-04-01   20% ▇▇
-                        <a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">MMLU-Pro (lab)</a>              83.4%    65.0   2026-04-01   10% ▇
+                        <a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">MMLU-Pro (lab)</a>              83.4%    64.9   2026-04-01   10% ▇
                         <a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">AIME 2025 (lab)</a>             96.3%    72.8   2026-04-01    3% ▇
 prior                   pull toward the middle               50.0                 1% ▇
                         weighted average                   = 62.7

@@ -6,7 +6,7 @@
 
 Mistral · released 2026-04 · 128B params · modified-mit
 
-**score 64.3** ±0.9 · #156 of 934 · from 22 benchmark results across 5 sources
+**score 64.3** ±0.9 · #155 of 934 · from 22 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -19,9 +19,9 @@ source                  test                                  score  implies  da
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MMLU-Pro</a>                              81.2%    64.7   2026-07-24    5% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Humanity's Last Exam</a>                  12.8%    61.2   2026-07-24    5% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">IFBench (aggregation unspecif…</a>        69.0%    65.3   2026-07-24    4% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unsp…</a>        84.9%    67.8   2026-07-24    3% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">LiveCodeBench v6 (window unsp…</a>        84.9%    67.7   2026-07-24    3% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">HMMT February 2026</a>                    62.9%    59.8   2026-07-24    3% ▇
-                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>                   33.3%    71.9   2026-07-24    3% ▇
+                        <a href="https://arxiv.org/html/2607.20062v2#S5.T3">Terminal-Bench Hard</a>                   33.3%    71.8   2026-07-24    3% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">APEX-Agents (pass@1)</a>                   6.1%    62.4   2026-07-24    3% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MultiChallenge</a>                        49.8%    66.1   2026-07-24    3% ▇
                         <a href="https://arxiv.org/html/2607.20062v2#S5.T3">MCP-Atlas (public set)</a>                30.7%    56.6   2026-07-24    2% ▇
@@ -31,7 +31,7 @@ source                  test                                  score  implies  da
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1262.9    62.6   2026-10-01   12% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                       1426.9    69.1   2026-10-02    7% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>       1199.5    66.2   2026-10-02    5% ▇
-<a name="paper-2609.13916v1-north-small-translate"></a>Cohere                  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>        90.3%    72.6   2026-09-12    1% ▇
+<a name="paper-2609.13916v1-north-small-translate"></a>Cohere                  <a href="https://arxiv.org/html/2609.13916v1">WMT25 Terminology Translation…</a>        90.3%    72.5   2026-09-12    1% ▇
                         <a href="https://arxiv.org/html/2609.13916v1">WMT24++</a>                               76.7%    63.8   2026-09-12    1% ▇
                         <a href="https://arxiv.org/html/2609.13916v1">WMT26 General MT (GEMBA-ESA, …</a>        75.7%    66.5   2026-09-12    0% ▇
 <a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json">Icelandic LLM Leaderboard ave…</a>        14.9%    53.6   2026-09-26    2% ▇

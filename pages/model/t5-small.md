@@ -6,7 +6,7 @@
 
 Google · released 2019-10 · 0.061B params · apache-2.0
 
-**score 44.4** ±9.2 · #594 of 934 · from 3 benchmark results across 1 source
+**score 44.5** ±9.3 · #590 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="copen-emnlp2022-zero-shot"></a>COPEN   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  40.1%    40.0   2022-12-07   58% ▇▇▇▇▇▇▇
-        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>   6.5%   -85.8   2022-12-07    2% ▇
-        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  53.2%   219.2   2022-12-07    2% ▇
+<a name="copen-emnlp2022-zero-shot"></a>COPEN   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  40.1%    40.1   2022-12-07   58% ▇▇▇▇▇▇▇
+        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>   6.5%   -87.2   2022-12-07    2% ▇
+        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  53.2%   220.8   2022-12-07    2% ▇
 prior   pull toward the middle                   50.0                38% ▇▇▇▇▇
-        weighted average                       = 44.4
+        weighted average                       = 44.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -40,7 +40,7 @@ Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open
 
 <pre>
 download       size  score
-4-bit fp32  ~0.24GB   44.4
+4-bit fp32  ~0.24GB   44.5
 </pre>
 
 ```sh

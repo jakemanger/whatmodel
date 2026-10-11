@@ -15,13 +15,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                    score  implies  date        weight
 <a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>              60.7%    20.8   2023-09-11   17% ▇▇
-                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                   63.2%    18.7   2023-09-11   16% ▇▇
                         <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>           28.2%    17.0   2023-09-11   16% ▇▇
+                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                   63.2%    18.6   2023-09-11   16% ▇▇
                         <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                63.3%    20.4   2023-09-11   14% ▇▇
                         <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>               46.6%    21.9   2023-09-11   12% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>              40.5%    16.1   2023-09-11    9% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                    74.7%    24.0   2023-09-11    7% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>              24.4%     9.4   2023-09-11    7% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>              24.4%     9.3   2023-09-11    7% ▇
 prior                   pull toward the middle           50.0                 1% ▇
                         weighted average               = 19.4
 </pre>

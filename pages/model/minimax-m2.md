@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-10 · 230B params (10B active) · modified-mit
 
-**score 64.0** ±1.3 · #162 of 934 · from 6 benchmark results across 4 sources
+**score 64.0** ±1.3 · #161 of 934 · from 6 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                             score  implies  date   
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1296.6    64.2   2026-10-01   25% ▇▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1343.4    59.1   2026-10-02   14% ▇▇
 <a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5708    64.4   2026-05-02   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   57.1%    63.5   2026-05-02   11% ▇
+                        <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   57.1%    63.4   2026-05-02   11% ▇
 <a name="paper-2605.17281v2-contractbench"></a>ContractBench: Can LL…  <a href="https://arxiv.org/html/2605.17281v2">ContractBench success rate (3…</a>   53.5%    66.8   2026-09-27   13% ▇▇
 <a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   30.0%    67.3   2026-01-17   11% ▇
 prior                   pull toward the middle                    50.0                 1% ▇

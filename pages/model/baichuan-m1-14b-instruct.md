@@ -6,7 +6,7 @@
 
 Baichuan · released 2025-01 · 14.47B params
 
-**score 54.1** ±4.3 · #340 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.1** ±4.2 · #340 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  36.1%    54.5   2025-04-28   92% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  36.1%    54.4   2025-04-28   92% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 8% ▇
                         weighted average                       = 54.1
 </pre>

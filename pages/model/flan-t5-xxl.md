@@ -17,11 +17,11 @@ source                  test                                              score 
 <a name="paper-2210.11416v5"></a>Scaling Instruction-F…  <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>                              45.3%    33.3   2022-12-06   25% ▇▇▇
                         <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>                                        55.1%    34.7   2022-12-06   14% ▇▇
                         <a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>                                         4.9%    34.0   2022-12-06   12% ▇
-<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                                    43.9%    35.1   2024-03-10   23% ▇▇▇
+<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                                    43.9%    35.2   2024-03-10   23% ▇▇▇
                         <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                              54.5%    38.1   2024-03-10    8% ▇
 <a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>                    20.6%    31.6   2024-04-24   10% ▇
                         <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>                    20.9%    22.6   2024-04-24    7% ▇
-<a name="paper-2306.02561v3-llmblender"></a>LLM-Blender: Ensembli…  <a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Ble…</a>  8.8100 mean rank (1-11)  -152.7   2023-06-30    0% ▇
+<a name="paper-2306.02561v3-llmblender"></a>LLM-Blender: Ensembli…  <a href="https://arxiv.org/html/2306.02561v3">MixInstruct GPT-Rank (LLM-Ble…</a>  8.8100 mean rank (1-11)  -153.4   2023-06-30    0% ▇
 prior                   pull toward the middle                                     50.0                 1% ▇
                         weighted average                                         = 33.6
 </pre>

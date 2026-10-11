@@ -6,7 +6,7 @@
 
 AI21 Labs · released 2024-08 · 398B params (94B active) · jamba-open-model-license
 
-**score 50.1** ±1.1 · #429 of 934 · from 12 benchmark results across 3 sources
+**score 50.2** ±1.1 · #424 of 934 · from 12 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="paper-2408.12570v1-jamba15"></a>Jamba-1.5: Hybrid Tra…  <a href="https://arxiv.org/html/2408.12570v1#S6.T2">BIG-Bench Hard (lab)</a>             65.5%    50.3   2024-08-22   11% ▇
+<a name="paper-2408.12570v1-jamba15"></a>Jamba-1.5: Hybrid Tra…  <a href="https://arxiv.org/html/2408.12570v1#S6.T2">BIG-Bench Hard (lab)</a>             65.5%    50.4   2024-08-22   11% ▇
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified) (la…</a>   36.9%    49.9   2024-08-22   11% ▇
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">GSM8K (lab)</a>                      87.0%    51.8   2024-08-22   10% ▇
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">HumanEval (lab)</a>                  71.3%    48.3   2024-08-22    8% ▇
@@ -27,7 +27,7 @@ source                  test                             score  implies  date   
 <a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_jamba-1.5-large_5shots.zip">MMLU-Pro</a>                         49.5%    46.3                23% ▇▇▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1289.4    52.7   2026-10-02   11% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 50.1
+                        weighted average                        = 50.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,7 +38,7 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download                                       size  score
-16-bit bf16 weights, experts_int8 at lo…  ~797.11GB   50.1
+16-bit bf16 weights, experts_int8 at lo…  ~797.11GB   50.2
 </pre>
 
 ```sh

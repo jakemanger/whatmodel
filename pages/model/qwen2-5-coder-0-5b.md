@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="first-party-qwen-scores"></a>Qwen                    <a href="https://arxiv.org/html/2409.12186v3">HumanEval (lab)</a>                 61.6%    40.2   2024-11-12   28% ▇▇▇
                         <a href="https://arxiv.org/html/2409.12186v3">HumanEval+ (lab)</a>                57.3%    40.6   2024-11-12   21% ▇▇
-                        <a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                      52.4%    35.2   2024-11-12   12% ▇
+                        <a href="https://arxiv.org/html/2409.12186v3">MBPP (lab)</a>                      52.4%    35.1   2024-11-12   12% ▇
                         <a href="https://arxiv.org/html/2409.12186v3">MultiPL-E (lab)</a>                 49.6%    37.5   2024-11-12    8% ▇
                         <a href="https://arxiv.org/html/2409.12186v3">MBPP+ (lab)</a>                     43.7%    35.0   2024-11-12    7% ▇
                         <a href="https://arxiv.org/html/2409.12186v3">BigCodeBench (Instruct) (lab)</a>   11.1%    26.3   2024-11-12    3% ▇
                         <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-I (lab)</a>                33.9%    34.1   2024-11-12    3% ▇
                         <a href="https://arxiv.org/html/2409.12186v3">CRUXEval-O (lab)</a>                27.8%    28.3   2024-11-12    1% ▇
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  14.3%    32.6   2024-10-29   16% ▇▇
+<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  14.3%    32.6   2024-10-29   17% ▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 37.1
 </pre>

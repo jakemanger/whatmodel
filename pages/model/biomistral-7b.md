@@ -6,7 +6,7 @@
 
 BioMistral · released 2024-02 · apache-2.0
 
-**score 37.5** ±3.4 · #752 of 934 · from 3 benchmark results across 3 sources
+**score 37.5** ±3.3 · #751 of 934 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  20.4%    35.2   2025-04-28   43% ▇▇▇▇▇
-<a name="paper-2606.12250v1-polish-medical-exams"></a>Reassessing High-Perf…  <a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, b…</a>  30.6%    35.4   2026-06-10   38% ▇▇▇▇▇
+<a name="paper-2606.12250v1-polish-medical-exams"></a>Reassessing High-Perf…  <a href="https://arxiv.org/html/2606.12250v1">Polish medical board exams, b…</a>  30.6%    35.4   2026-06-10   37% ▇▇▇▇
 <a name="paper-2606.08071v1-surgiq"></a>SurgiQ: A Large-Scale…  <a href="https://arxiv.org/html/2606.08071v1">SurgiQ surgical MCQ (zero-sho…</a>  47.1%    45.4   2026-06-06   15% ▇▇
 prior                   pull toward the middle                   50.0                 5% ▇
                         weighted average                       = 37.5

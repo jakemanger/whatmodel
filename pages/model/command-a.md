@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="report-2504.00698v2"></a>Cohere                  <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises…</a>   14.7%    54.6   2025-04-14   15% ▇▇
+<a name="report-2504.00698v2"></a>Cohere                  <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises…</a>   14.7%    54.7   2025-04-14   15% ▇▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>         26.8%    53.6   2025-04-14   13% ▇▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Fe…</a>   26.9%    55.4   2025-04-14    8% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">AIME 2024 (lab)</a>                  23.3%    49.8   2025-04-14    7% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">AIME 2024 (lab)</a>                  23.3%    49.7   2025-04-14    7% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8) (…</a>   92.6%    62.1   2025-04-14    6% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">GPQA Diamond (simple-evals) (…</a>   50.8%    59.8   2025-04-14    5% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>    45.4%    56.1   2025-04-14    5% ▇
@@ -33,7 +33,7 @@ source                  test                             score  implies  date   
 <a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   70.0%    61.4   2026-09-19    4% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   95.5%    56.3   2025-10-16    0% ▇
                         <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   90.7%    87.4   2026-09-22    0% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
+prior                   pull toward the middle                    50.0                 0% ▇
                         weighted average                        = 57.1
 </pre>
 

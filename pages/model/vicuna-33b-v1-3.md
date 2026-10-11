@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-06 · 33B params · non-commercial
 
-**score 39.0** ±1.2 · #715 of 934 · from 9 benchmark results across 7 sources
+**score 39.1** ±1.2 · #715 of 934 · from 9 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -24,7 +24,7 @@ source                  test                                                   s
 <a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>                         36.5%    36.3   2024-01-03    5% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>                         65.3%    44.8   2024-03-05    3% ▇
 prior                   pull toward the middle                                          50.0                 1% ▇
-                        weighted average                                              = 39.0
+                        weighted average                                              = 39.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -37,8 +37,8 @@ prior                   pull toward the middle                                  
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~20.3GB   39.0
-8-bit q8_0    ~40.1GB   39.0
+4-bit q4_k_m  ~20.3GB   39.1
+8-bit q8_0    ~40.1GB   39.1
 </pre>
 
 ```sh

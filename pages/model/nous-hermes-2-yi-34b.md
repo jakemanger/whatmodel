@@ -6,7 +6,7 @@
 
 Nous Research · released 2023-12 · 34.39B params · apache-2.0
 
-**score 49.9** ±6.6 · #438 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 49.9** ±6.5 · #439 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-09 · 8.02B params · apache-2.0
 
-**score 40.7** ±1.4 · #689 of 934 · from 21 benchmark results across 5 sources
+**score 40.7** ±1.4 · #690 of 934 · from 21 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -18,7 +18,7 @@ source                  test                                                    
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  3.7200 MM-MT-Bench score (1-10)    35.6   2024-10-10    6% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval</a>                                                  3.7%    25.1   2024-10-10    5% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified)</a>                                 10.2%    26.9   2024-10-10    5% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               57.1%    33.3   2024-10-10    4% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               57.1%    33.2   2024-10-10    4% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                24.3%    25.2   2024-10-10    4% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      12.3%    22.4   2024-10-10    4% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   27.0%   -11.1   2024-10-10    0% ▇
@@ -28,9 +28,9 @@ source                  test                                                    
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MMMU (val) (lab)</a>                                          45.3%    44.6   2026-04-02    5% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">VQAv2 (val) (lab)</a>                                         85.6%    57.9   2026-04-02    3% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">DocVQA (lab)</a>                                              92.2%    47.1   2026-04-02    3% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">ChartQA (lab)</a>                                             84.1%    52.6   2026-04-02    3% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">ChartQA (lab)</a>                                             84.1%    52.5   2026-04-02    3% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">RealWorldQA (lab)</a>                                         70.7%    48.1   2026-04-02    2% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                                           93.2%    74.0   2026-04-02    1% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                                           93.2%    74.1   2026-04-02    1% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (lab)</a>                                             81.7%    58.1   2026-04-02    1% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                            993.8    41.2   2026-10-02   13% ▇▇
 <a name="paper-2504.07072v2-kaleidoscope"></a>Kaleidoscope: In-lang…  <a href="https://arxiv.org/html/2504.07072v2">Kaleidoscope (in-language mul…</a>                            32.9%    40.6   2025-04-29    7% ▇

@@ -6,7 +6,7 @@
 
 Reka AI · released 2025-05 · 20.91B params · apache-2.0
 
-**score 51.5** ±5.6 · #395 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.8** ±5.7 · #388 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  69.1%    50.3   2026-04-17   59% ▇▇▇▇▇▇▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  87.4%    54.7   2026-04-17   28% ▇▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  69.1%    50.8   2026-04-17   55% ▇▇▇▇▇▇▇
+                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  87.4%    54.5   2026-04-17   31% ▇▇▇▇
 prior                  pull toward the middle                   50.0                14% ▇▇
-                       weighted average                       = 51.5
+                       weighted average                       = 51.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                  pull toward the middle                   50.0            
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~13.61GB   51.5
+4-bit q4_k_m  ~13.61GB   51.8
 </pre>
 
 ```sh

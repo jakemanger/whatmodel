@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-12 · 8.66B params · apache-2.0
 
-**score 55.3** ±1.8 · #303 of 934 · from 15 benchmark results across 2 sources
+**score 55.3** ±1.8 · #302 of 934 · from 15 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,19 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="paper-2601.10611v4-molmo2"></a>Molmo2: Open Weights …  <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MMMU (val) (lab)</a>                 53.0%    47.7   2026-04-02   10% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MathVista (testmini) (lab)</a>       58.9%    47.6   2026-04-02    9% ▇
+<a name="paper-2601.10611v4-molmo2"></a>Molmo2: Open Weights …  <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MMMU (val) (lab)</a>                 53.0%    47.6   2026-04-02   10% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MathVista (testmini) (lab)</a>       58.9%    47.5   2026-04-02    9% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">InfographicVQA (lab)</a>             80.1%    50.0   2026-04-02    7% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">CountBench (lab)</a>                 93.7%    55.5   2026-04-02    6% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">VQAv2 (val) (lab)</a>                87.0%    60.0   2026-04-02    4% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">VQAv2 (val) (lab)</a>                87.0%    60.0   2026-04-02    3% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">ChartQA (lab)</a>                    86.0%    55.7   2026-04-02    3% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">DocVQA (lab)</a>                     93.2%    48.5   2026-04-02    3% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">RealWorldQA (lab)</a>                77.6%    57.4   2026-04-02    3% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-VideoCount accuracy (v…</a>   35.5%    73.4   2026-04-02    2% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Ai2 Molmo2 human preference E…</a>  1057.0    67.3   2026-04-02    2% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                  95.8%    89.1   2026-04-02    1% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-VideoCount accuracy (v…</a>   35.5%    73.3   2026-04-02    2% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Ai2 Molmo2 human preference E…</a>  1057.0    67.2   2026-04-02    2% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                  95.8%    89.2   2026-04-02    1% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (lab)</a>                    85.7%    69.7   2026-04-02    1% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-CapTest dense video ca…</a>   43.2%    69.5   2026-04-02    1% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-CapTest dense video ca…</a>   43.2%    69.4   2026-04-02    1% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1321.8    56.5   2026-10-02   27% ▇▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1111.7    55.5   2026-10-02   20% ▇▇
 prior                   pull toward the middle                    50.0                 1% ▇

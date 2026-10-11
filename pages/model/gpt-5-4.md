@@ -20,21 +20,21 @@ source                  test                                 score  implies  dat
                         <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           37.5%    76.8   2026-09-10    4% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         37.0%    78.0   2026-07-24    4% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   76.9%    72.4   2026-03-06    3% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                44.0%    79.2   2026-03-11    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                44.0%    79.3   2026-03-11    2% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         93.3%    77.3   2026-03-06    1% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    45.1%    74.4   2026-08-27    1% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#mirrorcode.csv">MirrorCode (Epoch)</a>                   15.6%    71.6   2026-08-10    0% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             95.3%    74.6   2026-03-06    0% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             95.3%    74.7   2026-03-06    0% ▇
 <a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam (lab)</a>           39.8%    78.5   2026-03-05    3% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                     82.7%    76.9   2026-03-05    2% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4">MMMU Pro (lab)</a>                       81.2%    78.1   2026-03-05    2% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-4">MMMU Pro (lab)</a>                       81.2%    78.0   2026-03-05    2% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-4">Toolathlon (Tool Decathlon) (…</a>       54.6%    79.0   2026-03-05    1% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with too…</a>       52.1%    78.8   2026-03-05    1% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4">Terminal-Bench 2.0 (lab)</a>             75.1%    77.8   2026-03-05    1% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4">OSWorld-Verified (lab)</a>               75.0%    79.9   2026-03-05    1% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-5">τ²-bench Telecom (lab)</a>               92.8%    81.0   2026-04-23    1% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with too…</a>       52.1%    78.7   2026-03-05    1% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-4">Terminal-Bench 2.0 (lab)</a>             75.1%    77.7   2026-03-05    1% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-5">τ²-bench Telecom (lab)</a>               92.8%    80.9   2026-04-23    1% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-4">OSWorld-Verified (lab)</a>               75.0%    79.8   2026-03-05    1% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-5">CyberGym (lab)</a>                       79.0%    79.9   2026-04-23    1% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4">SWE-bench Pro (lab)</a>                  57.7%    73.9   2026-03-05    1% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-4">SWE-bench Pro (lab)</a>                  57.7%    73.8   2026-03-05    1% ▇
                         <a href="https://deploymentsafety.openai.com/gpt-5-6#healthbench">HealthBench Hard (lab)</a>               30.3%    79.0   2026-07-09    1% ▇
                         <a href="https://deploymentsafety.openai.com/gpt-5-6#healthbench">HealthBench (lab)</a>                    55.7%    80.2   2026-07-09    1% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-4">FrontierScience-Research (lab)</a>       33.0%    79.6   2026-03-05    0% ▇
@@ -42,29 +42,29 @@ source                  test                                 score  implies  dat
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1464.9    71.8   2026-10-01    4% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1475.2    74.9   2026-10-02    2% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>      1283.8    76.4   2026-10-02    2% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style c…</a>      1194.5    72.8   2026-08-24    1% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style c…</a>      1194.5    72.9   2026-08-24    1% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>      1470.1    76.5   2026-09-13    1% ▇
 <a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>       59.4%    78.4   2026-09-11    3% ▇
                         <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 202…</a>       67.8%    78.2   2026-09-11    2% ▇
                         <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>       76.1%    79.8   2026-09-11    2% ▇
                         <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>       60.3%    78.9   2026-09-11    1% ▇
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2…</a>       36.6%    80.7   2026-09-11    1% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv Februar…</a>       37.9%    81.8   2026-09-11    1% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv Februar…</a>       37.9%    81.9   2026-09-11    1% ▇
                         <a href="https://huggingface.co/datasets/MathArena/arxivlean-0326_outputs/blob/47c34bc76c06596e0010c5c15a93c23ca9f082ed/data/train-00000-of-00001.parquet">MathArena ArXivLean March 202…</a>       17.1%    81.3   2026-09-11    1% ▇
-<a name="paper-2606.05405v2"></a>Agents' Last Exam       <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall ful…</a>       20.5%    81.7   2026-06-11    2% ▇
+<a name="paper-2606.05405v2"></a>Agents' Last Exam       <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall ful…</a>       20.5%    81.6   2026-06-11    2% ▇
 <a name="paper-2606.05104v2-kina"></a>Knowledge Index of No…  <a href="https://arxiv.org/html/2606.05104v2">KINA (Knowledge Index of Noah…</a>       48.5%    78.4   2026-06-04    2% ▇
 <a name="tau2-bench-leaderboard-sierra"></a>τ²/τ³-bench leaderboa…  <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-5-4_sierra_2026-03-25/submission.json">τ³-bench banking_knowledge (v…</a>       39.4%    78.9   2026-05-06    2% ▇
 <a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>       66.9%    77.7   2026-08-31    1% ▇
 <a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>      1328.0    74.0   2026-05-10    1% ▇
-<a name="paper-2605.10912v1-wildclawbench"></a>WildClawBench: A Benc…  <a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                        50.3%    76.5   2026-05-11    1% ▇
+<a name="paper-2605.10912v1-wildclawbench"></a>WildClawBench: A Benc…  <a href="https://arxiv.org/html/2605.10912v1">WildClawBench</a>                        50.3%    76.4   2026-05-11    1% ▇
 <a name="paper-2605.08366v1-swe-atlas"></a>SWE Atlas: Benchmarki…  <a href="https://arxiv.org/html/2605.08366v1">SWE Atlas (Codebase Q&amp;A, Test…</a>       38.0%    79.6   2026-05-08    1% ▇
 <a name="card3-qwen-qwen-agentworld-35b-a3b"></a>Qwen/Qwen-AgentWorld-…  <a href="https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B/blob/60d2b0434a53d2e62a7c00a489586815d94ebffb/README.md">AgentWorldBench (open-ended, …</a>       58.3%    75.7   2026-06-25    1% ▇
-<a name="paper-2608.19741v4-thinkingbox"></a>One Success Isn't Rel…  <a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507…</a>       65.4%    84.0   2026-10-01    1% ▇
+<a name="paper-2608.19741v4-thinkingbox"></a>One Success Isn't Rel…  <a href="https://arxiv.org/html/2608.19741v4">Thinkingbox-bench pass@1 (507…</a>       65.4%    83.9   2026-10-01    1% ▇
 <a name="paper-2609.38480v2-klinikebench"></a>KlinikeBench: Evaluat…  <a href="https://arxiv.org/html/2609.38480v2">KlinikeBench strict pass@1 (3…</a>       23.4%    83.7   2026-10-06    1% ▇
 <a name="paper-2609.31632v1-eegagentbench"></a>EEGAgentBench: Benchm…  <a href="https://arxiv.org/html/2609.31632v1">EEGAgentBench overall (tool-b…</a>       43.8%    66.9   2026-09-10    1% ▇
 <a name="paper-2605.08614v1-diagnosticiq"></a>DiagnosticIQ: A Bench…  <a href="https://arxiv.org/html/2605.08614v1">DiagnosticIQ industrial maint…</a>       73.3%    76.9   2026-05-09    0% ▇
 <a name="paper-2610.12402v1-spacecast-bench"></a>SpaceCast-Bench: Eval…  <a href="https://arxiv.org/html/2610.12402v1">SpaceCast-Bench predictive sp…</a>       37.7%    63.5   2026-10-08    0% ▇
-<a name="paper-2606.11070v1-t1-bench"></a>T1-Bench: Benchmarkin…  <a href="https://arxiv.org/html/2606.11070v1">T1-Bench multi-domain convers…</a>       20.9%    19.2   2026-06-09    0% ▇
+<a name="paper-2606.11070v1-t1-bench"></a>T1-Bench: Benchmarkin…  <a href="https://arxiv.org/html/2606.11070v1">T1-Bench multi-domain convers…</a>       20.9%    20.7   2026-06-09    0% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>       93.0%   168.3   2026-09-22    0% ▇
 prior                   pull toward the middle                        50.0                 0% ▇
                         weighted average                            = 77.6

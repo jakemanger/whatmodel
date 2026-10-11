@@ -18,7 +18,7 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                32.1%    39.8   2024-03-28   22% ▇▇▇
 <a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   12.4%    36.5   2025-08-09   20% ▇▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1139.3    34.7   2026-10-02    8% ▇
-<a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>   43.8%    41.6   2024-01-03    4% ▇
+<a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>   43.8%    41.7   2024-01-03    4% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
                         weighted average                        = 38.4
 </pre>

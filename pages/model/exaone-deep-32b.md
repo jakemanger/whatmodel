@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-03 · 32B params · exaone
 
-**score 56.1** ±1.5 · #284 of 934 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
+**score 56.0** ±1.6 · #285 of 934 · from 5 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">GPQA Diamond (lab)</a>              66.1%    56.2   2025-03-12   31% ▇▇▇▇
+<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">GPQA Diamond (lab)</a>              66.1%    56.1   2025-03-12   31% ▇▇▇▇
                         <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">AIME 2025 (lab)</a>                 65.8%    54.0   2025-03-12   27% ▇▇▇
                         <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">AIME 2024 (lab)</a>                 72.1%    56.5   2025-03-12   20% ▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">MATH-500 (lab)</a>                  95.7%    58.5   2025-03-12   11% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspec…</a>  59.5%    58.1   2025-03-12   11% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">MATH-500 (lab)</a>                  95.7%    58.7   2025-03-12   11% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B/blob/4e9a4c20b6c3f9093777bfe6a98b2be508abb919/README.md#evaluation">LiveCodeBench (version unspec…</a>  59.5%    58.2   2025-03-12   10% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 56.1
+                        weighted average                       = 56.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,8 +33,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m     ~19GB   56.1
-4-bit q4_k_m  ~19.34GB   56.1
+4-bit q4_k_m     ~19GB   56.0
+4-bit q4_k_m  ~19.34GB   56.0
 </pre>
 
 ```sh

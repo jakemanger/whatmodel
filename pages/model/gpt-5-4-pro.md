@@ -19,11 +19,11 @@ source                  test                            score  implies  date    
                         <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>           58.6%    83.4   2026-03-19    8% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    94.6%    78.9   2026-03-20    3% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>               46.3%    74.8   2026-08-27    3% ▇
-<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam (lab)</a>      42.7%    79.5   2026-03-05    9% ▇
+<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam (lab)</a>      42.7%    79.4   2026-03-05    9% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                89.3%    83.8   2026-03-05    6% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with too…</a>  58.7%    82.6   2026-03-05    5% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4">FrontierScience-Research (lab)</a>  36.7%    81.9   2026-03-05    1% ▇
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  75.8%    85.9   2026-09-11    9% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with too…</a>  58.7%    82.5   2026-03-05    5% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-4">FrontierScience-Research (lab)</a>  36.7%    81.8   2026-03-05    1% ▇
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  75.8%    85.9   2026-09-11   10% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  91.7%   123.4   2026-09-22    0% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 80.7

@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  52.1%    11.2   2023-05-31   26% ▇▇▇
+<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  52.1%    11.1   2023-05-31   26% ▇▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      81.1%    10.4   2023-05-31   25% ▇▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      66.8%     9.1   2023-05-31   14% ▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  51.6%    13.5   2023-05-31   14% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                53.7%     8.2   2023-05-31   12% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             21.3%     2.2   2023-05-31    7% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  26.4%    -2.8   2024-02-11    1% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                53.7%     8.1   2023-05-31   12% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             21.3%     2.1   2023-05-31    7% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  26.4%    -2.7   2024-02-11    1% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 10.4
 </pre>

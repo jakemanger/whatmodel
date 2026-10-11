@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2204.06745v1"></a>GPT-NeoX-20B: An Open…  <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge</a>                   43.5%    33.1   2022-04-14   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                      33.6%    35.0   2022-04-14   12% ▇
+<a name="paper-2204.06745v1"></a>GPT-NeoX-20B: An Open…  <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge</a>                   43.5%    33.2   2022-04-14   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                      33.6%    35.1   2022-04-14   12% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">WinoGrande</a>                      69.9%    31.9   2022-04-14   11% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                        40.9%    36.2   2022-04-14    9% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">HellaSwag</a>                       59.2%    30.5   2022-04-14    8% ▇

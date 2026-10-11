@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="first-party-qwen-scores"></a>Qwen    <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">CharXiv (reasoning questions)…</a>  83.5%    74.9   2026-09-18   23% ▇▇▇
+<a name="first-party-qwen-scores"></a>Qwen    <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">CharXiv (reasoning questions)…</a>  83.5%    74.8   2026-09-18   23% ▇▇▇
         <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">GPQA Diamond (lab)</a>              91.0%    73.5   2026-09-18   21% ▇▇▇
         <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">Humanity's Last Exam (lab)</a>      36.5%    75.0   2026-09-18   13% ▇▇
         <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Multilingual (lab)</a>    80.5%    77.2   2026-09-18   10% ▇
-        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">LiveCodeBench v6 (window unsp…</a>  92.6%    80.6   2026-09-18   10% ▇
+        <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">LiveCodeBench v6 (window unsp…</a>  92.6%    80.5   2026-09-18   10% ▇
         <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">SWE-bench Pro public set, Qwe…</a>  63.3%    75.6   2026-09-18   10% ▇
         <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">IFBench (aggregation unspecif…</a>  81.5%    74.9   2026-09-18    9% ▇
         <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash">DeepSWE v1.1 (resolved) (lab)</a>   57.8%    79.7   2026-09-18    4% ▇

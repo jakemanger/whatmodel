@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-07 · 32.76B params · cc-by-4.0
 
-**score 59.3** ±1.5 · #224 of 934 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
+**score 59.3** ±1.5 · #225 of 934 · from 3 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 

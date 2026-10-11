@@ -6,7 +6,7 @@
 
 uukuguy · released 2023-10 · llama2
 
-**score 41.0** ±0.8 · #682 of 934 · from 3 benchmark results across 1 source
+**score 41.1** ±0.8 · #681 of 934 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -18,7 +18,7 @@ source                  test                    score  implies  date        weig
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              50.6%    41.6   2024-12-26   39% ▇▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   50.6%    39.0   2024-12-26    6% ▇
 prior                   pull toward the middle           50.0                 0% ▇
-                        weighted average               = 41.0
+                        weighted average               = 41.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle           50.0                 0%
 
 <pre>
 download         size  score
-16-bit bf16  ~13.48GB   41.0
+16-bit bf16  ~13.48GB   41.1
 </pre>
 
 ```sh

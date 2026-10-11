@@ -23,7 +23,7 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">PIQA</a>                            75.1%    24.7   2024-04-08    2% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">OpenBookQA</a>                      25.8%    16.4   2024-04-08    2% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">LAMBADA (OpenAI version), las…</a>  67.0%    25.6   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">Social IQA</a>                      40.7%    21.2   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">Social IQA</a>                      40.7%    21.1   2024-04-08    2% ▇
 <a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   44.1%    28.4   2024-06-07    6% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      62.0%    23.1   2024-06-07    4% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      45.0%    26.5   2024-06-07    4% ▇
@@ -31,7 +31,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            91.1%    23.4   2024-06-07    3% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        61.9%    23.0   2024-06-07    3% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           61.1%    16.0   2024-06-07    2% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            75.1%    25.3   2024-06-07    1% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            75.1%    25.2   2024-06-07    1% ▇
 <a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             31.3%    27.2   2023-05-31    5% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  67.3%    25.0   2023-05-31    5% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                60.9%    22.0   2023-05-31    5% ▇
@@ -39,8 +39,8 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      75.2%    24.9   2023-05-31    3% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  67.3%    25.7   2023-05-31    2% ▇
 <a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  11.0%    23.9   2024-04-24    2% ▇
-                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  21.7%    22.3   2024-04-24    2% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  29.0%     9.0   2024-02-11    1% ▇
+                        <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>  21.7%    22.4   2024-04-24    2% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  29.0%     9.1   2024-02-11    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 23.7
 </pre>

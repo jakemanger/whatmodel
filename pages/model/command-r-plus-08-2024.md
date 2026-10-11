@@ -6,7 +6,7 @@
 
 Cohere · released 2024-08 · 104B params · cc-by-nc-4.0
 
-**score 47.3** ±1.0 · #507 of 934 · from 17 benchmark results across 7 sources
+**score 47.3** ±1.0 · #508 of 934 · from 17 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="report-2504.00698v2"></a>Cohere                  <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8) (…</a>   77.0%    47.2   2025-04-14    8% ▇
+<a name="report-2504.00698v2"></a>Cohere                  <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8) (…</a>   77.0%    47.3   2025-04-14    8% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified (lab)</a>         17.0%    49.0   2025-04-14    6% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                      78.8%    50.1   2025-04-14    5% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+ (lab)</a>                      78.8%    50.2   2025-04-14    5% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Fe…</a>   14.4%    46.2   2025-04-14    4% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct) (lab)</a>    25.8%    42.0   2025-04-14    4% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises…</a>    2.2%    44.8   2025-04-14    3% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises…</a>    2.2%    44.9   2025-04-14    3% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev) (lab)</a>             52.7%    53.4   2025-04-14    3% ▇
                         <a href="https://arxiv.org/pdf/2504.00698v2">LongBench v2 (lab)</a>               27.8%    38.8   2025-04-14    2% ▇
-                        <a href="https://arxiv.org/pdf/2504.00698v2">RULER 128k (lab)</a>                 64.6%    46.4   2025-04-14    2% ▇
+                        <a href="https://arxiv.org/pdf/2504.00698v2">RULER 128k (lab)</a>                 64.6%    46.3   2025-04-14    2% ▇
 <a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>             34.5%    47.0   2024-10-22   32% ▇▇▇▇
 <a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>   38.3%    44.2   2024-09-11   16% ▇▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1276.3    51.1   2026-10-02    8% ▇

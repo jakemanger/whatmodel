@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-08 · 7B params · llama2
 
-**score 32.4** ±1.4 · #820 of 934 · from 5 benchmark results across 5 sources
+**score 32.5** ±1.4 · #819 of 934 · from 5 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -17,10 +17,10 @@ source                  test                                                   s
 <a name="livebench-model-judgment-apache"></a>LiveBench model judgm…  <a href="https://huggingface.co/datasets/livebench/model_judgment/blob/5896e3b11081702c7f93f4733605fa4f5a072a11/data/leaderboard-00000-of-00001.parquet">LiveBench 2024-07-26</a>                                   12.6%    31.9   2024-10-22   37% ▇▇▇▇
 <a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                          7.6%    31.4   2025-08-09   26% ▇▇▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                        1115.2    31.8   2026-10-02   18% ▇▇
-<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  6.1700 MT-Bench score (1-10)    33.9   2023-08-02   15% ▇▇
+<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  6.1700 MT-Bench score (1-10)    34.0   2023-08-02   15% ▇▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>                         57.0%    38.9   2024-02-27    3% ▇
 prior                   pull toward the middle                                          50.0                 1% ▇
-                        weighted average                                              = 32.4
+                        weighted average                                              = 32.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,8 +33,8 @@ prior                   pull toward the middle                                  
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~4.7GB   32.4
-8-bit q8_0    ~8.9GB   32.4
+4-bit q4_k_m  ~4.7GB   32.5
+8-bit q8_0    ~8.9GB   32.5
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 SpeakLeash · released 2025-04 · 1.6B params · apache-2.0
 
-**score 39.6** ±3.2 · #707 of 934 · from 3 benchmark results across 2 sources
+**score 39.8** ±3.2 · #704 of 934 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB       <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  47.3%    38.1   2026-08-11   65% ▇▇▇▇▇▇▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  50.6%    40.8   2026-04-17   18% ▇▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  71.8%    41.9   2026-04-17   13% ▇▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB       <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  47.3%    38.1   2026-08-11   66% ▇▇▇▇▇▇▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  50.6%    41.6   2026-04-17   15% ▇▇
+                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  71.8%    42.2   2026-04-17   14% ▇▇
 prior                  pull toward the middle                   50.0                 5% ▇
-                       weighted average                       = 39.6
+                       weighted average                       = 39.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                  pull toward the middle                   50.0            
 
 <pre>
 download        size  score
-16-bit bf16  ~3.19GB   39.6
+16-bit bf16  ~3.19GB   39.8
 </pre>
 
 ```sh

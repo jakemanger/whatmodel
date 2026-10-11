@@ -6,7 +6,7 @@
 
 Team-ACE (Huawei Noah's Ark & USTC) · released 2025-03 · 8.03B params · apache-2.0
 
-**score 59.3** ±3.8 · #225 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 59.3** ±3.8 · #226 of 934 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

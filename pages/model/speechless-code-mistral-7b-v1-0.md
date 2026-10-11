@@ -6,7 +6,7 @@
 
 uukuguy · released 2023-10 · apache-2.0
 
-**score 38.6** ±0.8 · #725 of 934 · from 4 benchmark results across 2 sources
+**score 38.7** ±0.8 · #723 of 934 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -15,11 +15,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       48.2%    38.7   2024-12-26   54% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      41.5%    38.4   2024-12-26   38% ▇▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      41.5%    38.5   2024-12-26   38% ▇▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           48.7%    37.9   2024-12-26    6% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  64.4%    44.2   2024-06-16    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 38.6
+                        weighted average                       = 38.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp16  ~14.48GB   38.6
+4-bit fp16  ~14.48GB   38.7
 </pre>
 
 ```sh

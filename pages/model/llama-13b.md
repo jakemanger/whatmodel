@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                   score  implies  date        weight
-<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>                                        15.8%    32.3   2023-02-27    6% ▇
+<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>                                        15.8%    32.4   2023-02-27    6% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>                                            17.8%    26.6   2023-02-27    5% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>                                    52.7%    35.2   2023-02-27    5% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>                                            78.1%    31.8   2023-02-27    5% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>                                       73.0%    34.2   2023-02-27    4% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>                                              3.9%    27.0   2023-02-27    4% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>                                        79.2%    34.8   2023-02-27    4% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>                                              3.9%    27.1   2023-02-27    4% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>                                             46.9%    32.1   2023-02-27    4% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>                                        79.2%    34.8   2023-02-27    4% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>                                             22.0%    28.0   2023-02-27    4% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                                       56.4%    38.2   2023-02-27    3% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                                       56.4%    38.3   2023-02-27    3% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                                         74.8%    31.9   2023-02-27    3% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                                       50.4%    33.0   2023-02-27    2% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>                                             80.1%    33.8   2023-02-27    1% ▇
@@ -33,7 +33,7 @@ source                  test                                                   s
 <a name="paper-2404.16164v1-factrecall"></a>Towards a Holistic Ev…  <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>                         21.3%    32.7   2024-04-24    5% ▇
                         <a href="https://arxiv.org/html/2404.16164v1">Factual knowledge recall, Pre…</a>                         41.2%    36.1   2024-04-24    4% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/088c607919d1d0d3385409070657f4623e414872/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                         975.0    15.0   2026-10-08    8% ▇
-<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  2.6100 MT-Bench score (1-10)    11.3   2023-06-19    7% ▇
+<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  2.6100 MT-Bench score (1-10)    11.4   2023-06-19    7% ▇
 prior                   pull toward the middle                                          50.0                 0% ▇
                         weighted average                                              = 29.0
 </pre>

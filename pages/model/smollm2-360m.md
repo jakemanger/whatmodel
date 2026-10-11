@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-10 · 0.362B params · apache-2.0
 
-**score 18.5** ±2.7 · #906 of 934 · from 6 benchmark results across 2 sources
+**score 18.6** ±2.7 · #906 of 934 · from 6 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="card3-huggingfacetb-smollm2-360m-instruct"></a>HuggingFaceTB/SmolLM2…  <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">BIG-Bench Hard (lab)</a>            27.3%    16.0   2025-09-22   33% ▇▇▇▇
                         <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">GSM8K (lab)</a>                      7.4%    14.1   2025-09-22   31% ▇▇▇▇
-                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">HellaSwag (lab)</a>                 52.1%    23.4   2025-09-22   14% ▇▇
-                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">IFEval (aggregation unspecifi…</a>  41.0%    25.1   2025-09-22    9% ▇
+                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">HellaSwag (lab)</a>                 52.1%    23.3   2025-09-22   14% ▇▇
+                        <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">IFEval (aggregation unspecifi…</a>  41.0%    24.8   2025-09-22    9% ▇
                         <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md">PIQA (lab)</a>                      70.8%    20.8   2025-09-22    7% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  24.9%     8.6   2026-04-17    3% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  24.9%     8.9   2026-04-17    2% ▇
 prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 18.5
+                        weighted average                       = 18.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,8 +34,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp16  ~0.726GB   18.5
-8-bit q8_0   ~0.39GB   18.5
+4-bit fp16  ~0.726GB   18.6
+8-bit q8_0   ~0.39GB   18.6
 </pre>
 
 ```sh

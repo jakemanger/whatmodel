@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 6.74B params · llama2
 
-**score 36.1** ±0.7 · #775 of 934 · from 14 benchmark results across 5 sources
+**score 36.1** ±0.8 · #775 of 934 · from 14 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -16,18 +16,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       43.3%    38.0   2024-03-28   25% ▇▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               27.9%    37.7   2024-03-28   12% ▇
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                 34.8%    35.8   2024-01-31   13% ▇▇
+<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                 34.8%    35.9   2024-01-31   13% ▇▇
                         <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                      44.4%    35.2   2024-01-31    6% ▇
 <a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  38.4%    31.0   2023-11-20    7% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       64.1%    39.8   2023-11-20    4% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           17.0%    28.9   2023-11-20    3% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           17.0%    29.0   2023-11-20    3% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            41.5%    31.3   2023-11-20    3% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  41.6%    34.2   2023-11-20    1% ▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  37.9%    37.4   2024-05-07    8% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  41.6%    34.3   2023-11-20    1% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  37.9%    37.5   2024-05-07    8% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  25.1%    39.2   2024-05-07    5% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  12.8%    33.3   2024-05-07    4% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         25.4%    32.8   2025-04-01    5% ▇
-                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>         21.8%    35.5   2025-04-01    4% ▇
+<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         25.4%    32.9   2025-04-01    5% ▇
+                        <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Instruct)</a>         21.8%    35.6   2025-04-01    4% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 36.1
 </pre>

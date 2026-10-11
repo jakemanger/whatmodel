@@ -20,7 +20,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  17.7%    36.0   2024-05-07   13% ▇▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                39.1%    37.2   2024-05-07   11% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                37.5%    36.2   2024-05-07    9% ▇
-<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         25.8%    33.2   2025-04-01   13% ▇▇
+<a name="paper-2406.15877v4-bigcodebench"></a>BigCodeBench paper      <a href="https://arxiv.org/html/2406.15877v4">BigCodeBench (Complete)</a>         25.8%    33.2   2025-04-01   14% ▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 37.0
 </pre>

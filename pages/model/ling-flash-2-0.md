@@ -6,7 +6,7 @@
 
 inclusionAI (Ant Group) · released 2025-09 · 100B params (6.1B active) · mit
 
-**score 59.1** ±2.1 · #228 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 59.0** ±2.1 · #228 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                             score  implies  date   
 <a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V mean win rate (19 …</a>  0.5174    59.3   2026-05-02   62% ▇▇▇▇▇▇▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1343.8    59.2   2026-10-02   36% ▇▇▇▇
 prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 59.1
+                        weighted average                        = 59.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,8 +28,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~62.62GB   59.1
-2-bit q2_k    ~36.25GB   59.1
+4-bit q4_k_m  ~62.62GB   59.0
+2-bit q2_k    ~36.25GB   59.0
 </pre>
 
 ```sh

@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">GPQA Diamond (lab)</a>              80.5%    61.8   2026-04-04   33% ▇▇▇▇
+<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">GPQA Diamond (lab)</a>              80.5%    61.7   2026-04-04   32% ▇▇▇▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">τ²-bench Telecom (lab)</a>          73.0%    69.0   2026-07-06   23% ▇▇▇
                         <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">AIME 2025 (lab)</a>                 92.9%    68.7   2026-04-04   23% ▇▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">τ²-bench Telecom (lab)</a>          73.0%    69.1   2026-07-06   23% ▇▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">MMLU-Pro (lab)</a>                  83.3%    62.5   2026-04-04   15% ▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">IFEval (aggregation unspecifi…</a>  89.6%    64.5   2026-04-04    6% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">MMLU-Pro (lab)</a>                  83.3%    62.4   2026-04-04   15% ▇▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">IFEval (aggregation unspecifi…</a>  89.6%    64.6   2026-04-04    6% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
                         weighted average                       = 65.0
 </pre>

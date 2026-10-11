@@ -6,7 +6,7 @@
 
 Sber · released 2026-07 · 433.77B params (28B active) · mit
 
-**score 55.2** ±1.3 · #308 of 934 · from 10 benchmark results across 1 source · † every result so far was reported by its maker
+**score 55.1** ±1.3 · #311 of 934 · from 10 benchmark results across 1 source · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card3-ai-sage-gigachat3-5-432b-a28b-reasoning"></a>ai-sage/GigaChat3.5-4…  <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">GPQA Diamond (lab)</a>              61.1%    58.2   2026-09-10   17% ▇▇
+<a name="card3-ai-sage-gigachat3-5-432b-a28b-reasoning"></a>ai-sage/GigaChat3.5-4…  <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">GPQA Diamond (lab)</a>              61.1%    58.1   2026-09-10   17% ▇▇
                         <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">AIME 2026 (lab)</a>                 67.0%    55.1   2026-09-10   14% ▇▇
                         <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">AIME 2025 (lab)</a>                 68.0%    58.2   2026-09-10   14% ▇▇
                         <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">SWE-bench Verified (lab)</a>        42.6%    58.4   2026-09-10   12% ▇
@@ -22,10 +22,10 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">IMO-AnswerBench (lab)</a>           32.0%    49.4   2026-09-10    9% ▇
                         <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">HMMT 2025 (edition unspecifie…</a>  36.7%    49.6   2026-09-10    9% ▇
                         <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">Terminal-Bench 2.0 (lab)</a>        13.5%    53.2   2026-09-10    6% ▇
-                        <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">IFBench (aggregation unspecif…</a>  43.7%    52.5   2026-09-10    6% ▇
+                        <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">IFBench (aggregation unspecif…</a>  43.7%    52.4   2026-09-10    6% ▇
                         <a href="https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning/blob/02f55379ac0b20abd9378791bffd6254725e6f5c/README.md">τ³-bench (lab)</a>                  50.0%    63.8   2026-09-10    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 55.2
+                        weighted average                       = 55.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,7 +38,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                   size  score
-4-bit fp8 · nvidia only  ~434GB   55.2
+4-bit fp8 · nvidia only  ~434GB   55.1
 </pre>
 
 ```sh

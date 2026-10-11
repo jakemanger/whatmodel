@@ -6,7 +6,7 @@
 
 Kuaishou (Kwaipilot) · released 2025-10 · closed weights
 
-**score 61.9** ±2.5 · #190 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.9** ±2.5 · #189 of 934 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

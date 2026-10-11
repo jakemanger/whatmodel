@@ -6,7 +6,7 @@
 
 SpeakLeash · released 2024-03 · 7.24B params · cc-by-nc-4.0
 
-**score 41.4** ±2.9 · #676 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
+**score 41.5** ±2.9 · #673 of 934 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional · † every result so far was reported by its maker
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                            score  implies  date    
 <a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  57.7%    44.6   2026-08-11   56% ▇▇▇▇▇▇▇
 <a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  34.3%    36.2   2024-06-18   40% ▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 4% ▇
-                        weighted average                       = 41.4
+                        weighted average                       = 41.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-16-bit bf16  ~14.48GB   41.4
+16-bit bf16  ~14.48GB   41.5
 </pre>
 
 ```sh
